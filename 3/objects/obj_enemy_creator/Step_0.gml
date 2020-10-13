@@ -6,7 +6,7 @@ if place_meeting(x,y,obj_Player)
 		switch(obj_cr)
 		{
 			case obj_skeleton: obj_cr.hspd = hspd;break;
-			case obj_snake   : obj_cr.spd = huy_spd;break;
+			case obj_snake   : obj_cr.spd = spd;break;
 		}
 	
 	instance_destroy();	
