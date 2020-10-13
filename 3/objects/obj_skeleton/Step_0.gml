@@ -47,7 +47,6 @@ image_xscale = sign(hspd);
 
 #endregion
 
-
 #region death
 
 if state = 2
@@ -86,4 +85,3 @@ if enemy_hp < 1
 }
 
 #endregion
-
