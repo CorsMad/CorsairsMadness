@@ -47,6 +47,7 @@ image_xscale = sign(hspd);
 
 #endregion
 
+
 #region death
 
 if state = 2
