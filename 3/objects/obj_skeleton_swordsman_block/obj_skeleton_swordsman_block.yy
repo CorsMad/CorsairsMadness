@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_enemy_creator",
-    "path": "sprites/spr_enemy_creator/spr_enemy_creator.yy",
+    "name": "spr_skeleton_swordsman_mask",
+    "path": "sprites/spr_skeleton_swordsman_mask/spr_skeleton_swordsman_mask.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,17 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_enemy_creator","path":"objects/obj_enemy_creator/obj_enemy_creator.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Skeleton swordsman",
+    "path": "folders/Objects/Enemies/Skeletons/Skeleton swordsman.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_enemy_creator",
+  "name": "obj_skeleton_swordsman_block",
   "tags": [],
   "resourceType": "GMObject",
 }

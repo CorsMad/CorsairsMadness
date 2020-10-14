@@ -1,13 +1,13 @@
 {
   "spriteId": {
-    "name": "spr_skeleton_swordsman_mask",
-    "path": "sprites/spr_skeleton_swordsman_mask/spr_skeleton_swordsman_mask.yy",
+    "name": "spr_skeleton_mask",
+    "path": "sprites/spr_skeleton_mask/spr_skeleton_mask.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "spr_skeleton_swordsman_mask",
-    "path": "sprites/spr_skeleton_swordsman_mask/spr_skeleton_swordsman_mask.yy",
+    "name": "spr_skeleton_mask",
+    "path": "sprites/spr_skeleton_mask/spr_skeleton_mask.yy",
   },
   "persistent": false,
   "parentObjectId": null,
@@ -32,6 +32,7 @@
     {"varType":0,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"b","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":0,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"enemy_hp","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":0,"value":"0.5","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"spd ","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":0,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"vspd","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {

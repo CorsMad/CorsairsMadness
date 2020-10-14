@@ -24,7 +24,7 @@ if state = 1
 	
 	var dis = point_distance(x,y,obj_Player.x,obj_Player.y);
     
-	    if dis<180 
+	    if dis<60 
 		{
 			image_index = 0;
 	        state = 2;
@@ -50,7 +50,12 @@ if state = 2
 	}
 	if a = 90 
 	{
+		if image_xscale = 1
+		{
+			spd = 3;	
+		} else spd = -3;
 		state = 3;
+		a = 0;
 		image_index = 0;
 		image_speed = 1;
 		sprite_index = spr_skeleton_swordsman_attack;
@@ -68,28 +73,57 @@ if state = 3
 	{
 		image_speed = 0;
 	}
-	
-	if !position_meeting(bbox_left-1, bbox_bottom+1, obj_block) || !position_meeting(bbox_right+1, bbox_bottom+1, obj_block)
+	if place_meeting(x+spd,y,obj_block) || !position_meeting(bbox_left+spd, bbox_bottom+1, obj_block) || !position_meeting(bbox_right+spd, bbox_bottom+1, obj_block)
 	{
-		spd = -spd;
+		spd = -spd/1000;
 	}
-
-	if place_meeting(x+spd,y,obj_block)
+	if image_index > 1 
 	{
-		while(!place_meeting(x+sign(spd),y,obj_block))
+		x = x+spd;
+	}
+	if a = 40
+	{
+		spd = 0;
+	}
+	if a = 55 
+	{
+		if !place_meeting(x,y+1,obj_block)
 		{
-			x = x+sign(spd);	
-		}
-		spd = -spd;
-	}
-	x = x+spd;
-	
+			state = 4;
+			spd = 0;
+		} else state = 1;
+		a = 0;
+		image_speed = 1;
+		spd = choose(-0.5,0.5);	
+	}	
 }
 
 #endregion
 
-#region wait
+#region fall
 
+if state = 4
+{
+	sprite_index = spr_skeleton_swordsman_jump;
+	if place_meeting(x, y+vspd, obj_block) 
+	{
+	    while (!place_meeting(x,y+sign(vspd), obj_block )) 
+		{
+	        y+= sign(vspd);
+	    }
+	    vspd = 0;
+	}
+	y += vspd;
 
-
+	if !place_meeting(x,y+vspd, obj_block)
+	{
+		vspd +=0.2;	
+	}
+	if place_meeting(x,y+1,obj_block)
+	{
+		vspd = 0;
+		state = 1;
+		spd = choose(-0.5,0.5);
+	}
+}
 #endregion
