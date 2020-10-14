@@ -75,7 +75,7 @@ if state = 3
 	}
 	if place_meeting(x+spd,y,obj_block) || !position_meeting(bbox_left+spd, bbox_bottom+1, obj_block) || !position_meeting(bbox_right+spd, bbox_bottom+1, obj_block)
 	{
-		spd = -spd/1000;
+		spd = -spd/50;
 	}
 	if image_index > 1 
 	{
@@ -85,45 +85,29 @@ if state = 3
 	{
 		spd = 0;
 	}
-	if a = 55 
+	if a = 55   // Exit
 	{
-		if !place_meeting(x,y+1,obj_block)
-		{
-			state = 4;
-			spd = 0;
-		} else state = 1;
+		state = 4;
 		a = 0;
-		image_speed = 1;
-		spd = choose(-0.5,0.5);	
+		sprite_index = spr_skeleton_swordsman_walk;
+		image_speed = 0;
+		image_index = 0;
 	}	
 }
 
 #endregion
 
-#region fall
+#region wait
 
 if state = 4
 {
-	sprite_index = spr_skeleton_swordsman_jump;
-	if place_meeting(x, y+vspd, obj_block) 
+	a++;
+	if a = 20
 	{
-	    while (!place_meeting(x,y+sign(vspd), obj_block )) 
-		{
-	        y+= sign(vspd);
-	    }
-	    vspd = 0;
-	}
-	y += vspd;
-
-	if !place_meeting(x,y+vspd, obj_block)
-	{
-		vspd +=0.2;	
-	}
-	if place_meeting(x,y+1,obj_block)
-	{
-		vspd = 0;
+		a = 0;
 		state = 1;
-		spd = choose(-0.5,0.5);
+		image_speed = 1;
 	}
+	spd = choose(-0.5,0.5);	
 }
 #endregion
