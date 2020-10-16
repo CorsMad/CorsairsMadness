@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f1ffb3ad-ac9c-4f0a-b7d1-78c643ed968b","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f1ffb3ad-ac9c-4f0a-b7d1-78c643ed968b","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"LayerId":{"name":"155232ec-5e75-4ec3-b8d0-63b34200441a","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_archer_walk","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"resourceVersion":"1.0","name":"f1ffb3ad-ac9c-4f0a-b7d1-78c643ed968b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"75b96775-3522-4943-83a3-f72a92c4d1f0","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"75b96775-3522-4943-83a3-f72a92c4d1f0","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"LayerId":{"name":"155232ec-5e75-4ec3-b8d0-63b34200441a","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_archer_walk","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"resourceVersion":"1.0","name":"75b96775-3522-4943-83a3-f72a92c4d1f0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5ccf8270-ebc8-4634-af4f-4e63227e6beb","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5ccf8270-ebc8-4634-af4f-4e63227e6beb","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"LayerId":{"name":"04164aa1-0852-4d43-ba9d-a3f56ea3fe3b","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_skeleton_archer_walk","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"resourceVersion":"1.0","name":"5ccf8270-ebc8-4634-af4f-4e63227e6beb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1ea5342b-7683-4992-b323-ca3f1f5c10d5","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1ea5342b-7683-4992-b323-ca3f1f5c10d5","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"LayerId":{"name":"04164aa1-0852-4d43-ba9d-a3f56ea3fe3b","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_skeleton_archer_walk","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"resourceVersion":"1.0","name":"1ea5342b-7683-4992-b323-ca3f1f5c10d5","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_skeleton_archer_walk","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},
@@ -44,8 +44,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5a0a8a58-18ca-4bdb-8ed2-41c17f63822d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f1ffb3ad-ac9c-4f0a-b7d1-78c643ed968b","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"76b70efc-19b6-4c2f-a80a-05b1efd72885","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"75b96775-3522-4943-83a3-f72a92c4d1f0","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4dd77c99-6b35-4c05-903e-33eeebc90a59","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5ccf8270-ebc8-4634-af4f-4e63227e6beb","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8ea9331b-6cdc-41c6-bf54-2a984a13a78e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1ea5342b-7683-4992-b323-ca3f1f5c10d5","path":"sprites/spr_skeleton_archer_walk/spr_skeleton_archer_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -69,7 +69,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"155232ec-5e75-4ec3-b8d0-63b34200441a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"04164aa1-0852-4d43-ba9d-a3f56ea3fe3b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Skeleton archer",

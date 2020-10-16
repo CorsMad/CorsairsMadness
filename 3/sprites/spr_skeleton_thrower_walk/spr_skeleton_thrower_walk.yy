@@ -7,14 +7,14 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 5,
-  "bbox_right": 31,
+  "bbox_left": 21,
+  "bbox_right": 52,
   "bbox_top": 0,
   "bbox_bottom": 31,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 32,
+  "width": 64,
   "height": 32,
   "textureGroupId": {
     "name": "Default",
@@ -24,18 +24,18 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ea31424b-f4a9-443c-b547-1d261cdbabc9","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ea31424b-f4a9-443c-b547-1d261cdbabc9","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"LayerId":{"name":"f16c0242-29a8-4f7c-a9e7-0c306b7cd5b5","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_thrower_walk","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"resourceVersion":"1.0","name":"ea31424b-f4a9-443c-b547-1d261cdbabc9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a629b807-6c56-429e-b4a8-58ee115d5101","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a629b807-6c56-429e-b4a8-58ee115d5101","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"LayerId":{"name":"f16c0242-29a8-4f7c-a9e7-0c306b7cd5b5","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_thrower_walk","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"resourceVersion":"1.0","name":"a629b807-6c56-429e-b4a8-58ee115d5101","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b8c16b6b-28a9-4e84-bd16-bafb170c685e","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b8c16b6b-28a9-4e84-bd16-bafb170c685e","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"LayerId":{"name":"acf57c99-b539-48ea-b347-e36ed9d91dfd","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_skeleton_thrower_walk","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"resourceVersion":"1.0","name":"b8c16b6b-28a9-4e84-bd16-bafb170c685e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5bbf118d-d30f-4067-b860-95826760fc64","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5bbf118d-d30f-4067-b860-95826760fc64","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"LayerId":{"name":"acf57c99-b539-48ea-b347-e36ed9d91dfd","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_skeleton_thrower_walk","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"resourceVersion":"1.0","name":"5bbf118d-d30f-4067-b860-95826760fc64","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_skeleton_thrower_walk","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 20.0,
+    "playbackSpeed": 10.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -44,8 +44,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ba64ca92-259b-4556-8048-880d4d8ab81d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ea31424b-f4a9-443c-b547-1d261cdbabc9","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"81eb3737-4e27-45da-87b3-c773696a8ac7","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a629b807-6c56-429e-b4a8-58ee115d5101","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fc957ec9-8280-41f2-a820-07dad56d3b1e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b8c16b6b-28a9-4e84-bd16-bafb170c685e","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7d8d8799-e2df-4509-bea2-bac21d743c6e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5bbf118d-d30f-4067-b860-95826760fc64","path":"sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,7 +58,7 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 16,
+    "xorigin": 32,
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
@@ -69,7 +69,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f16c0242-29a8-4f7c-a9e7-0c306b7cd5b5","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"acf57c99-b539-48ea-b347-e36ed9d91dfd","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Skeleton thrower",

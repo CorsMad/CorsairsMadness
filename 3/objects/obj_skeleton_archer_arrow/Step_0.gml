@@ -19,7 +19,11 @@ if place_meeting(x,y,obj_block) && isOn = 1
 	isOn = 0;
 	vspd = -2;
 	mask_index = spr_blank;
-	image_speed = 1;
+	isRotating = 1;
+}
+if isRotating = 1
+{
+	image_angle +=(10*sign(image_xscale));	
 }
 if isOn = 0
 {
