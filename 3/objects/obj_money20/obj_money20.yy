@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_enemy_creator",
-    "path": "sprites/spr_enemy_creator/spr_enemy_creator.yy",
+    "name": "spr_money20",
+    "path": "sprites/spr_money20/spr_money20.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,17 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_enemy_creator","path":"objects/obj_enemy_creator/obj_enemy_creator.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objects/Enemies.yy",
+    "name": "Chest",
+    "path": "folders/Objects/Level objects/Other/Chest.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_enemy_creator",
+  "name": "obj_money20",
   "tags": [],
   "resourceType": "GMObject",
 }

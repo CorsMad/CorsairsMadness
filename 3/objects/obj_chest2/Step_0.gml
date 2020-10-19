@@ -1,0 +1,42 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+if isOn = 0 && place_meeting(x,y,obj_hitbox)
+{
+	
+	isOn = 1;
+	image_speed = 1;
+}
+if (image_index > image_number - 1) && isOn = 1
+{
+    image_speed = 0;
+}
+
+if isOn = 1 
+{
+	a++;
+}
+
+switch(a)
+{
+	case 1:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
+		   k.hspd  = -1.25; break;
+	case 5:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
+		   k.hspd = -1; break;
+	case 10:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
+		   k.hspd = -0.75; break;
+	case 15:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
+		   k.hspd  = -0.5; break;
+	case 20:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
+		   k.hspd = -0.25; break;
+	case 25:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
+		   k.hspd = 0.25; break;
+	case 30:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
+		   k.hspd = 0.5; break;
+	case 35:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
+		   k.hspd = 0.75; break;
+	case 40:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
+		   k.hspd  = 1; break;
+	case 45:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
+		   k.hspd = 1.25; break;
+}

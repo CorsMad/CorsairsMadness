@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_enemy_creator",
-    "path": "sprites/spr_enemy_creator/spr_enemy_creator.yy",
+    "name": "spr_chest",
+    "path": "sprites/spr_chest/spr_chest.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,16 +21,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_enemy_creator","path":"objects/obj_enemy_creator/obj_enemy_creator.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_chest1","path":"objects/obj_chest1/obj_chest1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_chest1","path":"objects/obj_chest1/obj_chest1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objects/Enemies.yy",
+    "name": "Chest",
+    "path": "folders/Objects/Level objects/Other/Chest.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_enemy_creator",
+  "name": "obj_chest1",
   "tags": [],
   "resourceType": "GMObject",
 }
