@@ -40,6 +40,7 @@
     {"id":{"name":"obj_enemy_parent_armor_full","path":"objects/obj_enemy_parent_armor_full/obj_enemy_parent_armor_full.yy",},"order":3,},
     {"id":{"name":"spr_skeleton_walk","path":"sprites/spr_skeleton_walk/spr_skeleton_walk.yy",},"order":2,},
     {"id":{"name":"spr_player_dash","path":"sprites/spr_player_dash/spr_player_dash.yy",},"order":7,},
+    {"id":{"name":"obj_chest","path":"objects/obj_chest/obj_chest.yy",},"order":0,},
     {"id":{"name":"spr_skeleton_swordsman_attack","path":"sprites/spr_skeleton_swordsman_attack/spr_skeleton_swordsman_attack.yy",},"order":4,},
     {"id":{"name":"spr_electric_pillar_electricity1","path":"sprites/spr_electric_pillar_electricity1/spr_electric_pillar_electricity1.yy",},"order":2,},
     {"id":{"name":"spr_armored_thing_open","path":"sprites/spr_armored_thing_open/spr_armored_thing_open.yy",},"order":4,},
@@ -120,6 +121,7 @@
     {"id":{"name":"bgr_sky_bright","path":"sprites/bgr_sky_bright/bgr_sky_bright.yy",},"order":2,},
     {"id":{"name":"obj_skeleton_archer_arrow","path":"objects/obj_skeleton_archer_arrow/obj_skeleton_archer_arrow.yy",},"order":1,},
     {"id":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"order":2,},
+    {"id":{"name":"spr_chest","path":"sprites/spr_chest/spr_chest.yy",},"order":0,},
     {"id":{"name":"create_enemy","path":"scripts/create_enemy/create_enemy.yy",},"order":2,},
     {"id":{"name":"spr_electric_pillar_electricity2","path":"sprites/spr_electric_pillar_electricity2/spr_electric_pillar_electricity2.yy",},"order":4,},
     {"id":{"name":"tls_forest_level1","path":"tilesets/tls_forest_level1/tls_forest_level1.yy",},"order":3,},
@@ -146,8 +148,8 @@
     "children": [],
   },
   "RoomOrder": [
-    {"name":"Room3","path":"rooms/Room3/Room3.yy",},
     {"name":"TESTROOM","path":"rooms/TESTROOM/TESTROOM.yy",},
+    {"name":"Room3","path":"rooms/Room3/Room3.yy",},
     {"name":"TO_COPY","path":"rooms/TO_COPY/TO_COPY.yy",},
   ],
   "Folders": [
@@ -205,6 +207,10 @@
     {"folderPath":"folders/Sprites/Enemies/Skeletons/Skeleton thrower.yy","order":4,"resourceVersion":"1.0","name":"Skeleton thrower","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Level objects/Forest level.yy","order":2,"resourceVersion":"1.0","name":"Forest level","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Level objects/Forest level.yy","order":2,"resourceVersion":"1.0","name":"Forest level","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Level objects/Other.yy","order":3,"resourceVersion":"1.0","name":"Other","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Level objects/Other/Chests.yy","order":1,"resourceVersion":"1.0","name":"Chests","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Level objects/Other.yy","order":3,"resourceVersion":"1.0","name":"Other","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Level objects/Other/Chest.yy","order":1,"resourceVersion":"1.0","name":"Chest","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
