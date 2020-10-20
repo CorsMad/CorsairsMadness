@@ -19,24 +19,26 @@ if isOn = 1
 
 switch(a)
 {
-	case 1:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
+	case 1:var k = instance_create_depth(x,y-16,-1,obj_money11);
 		   k.hspd  = -1.25; break;
-	case 5:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
+	case 5:var k = instance_create_depth(x,y-16,-1,obj_money11);
 		   k.hspd = -1; break;
-	case 10:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
+	case 10:var k = instance_create_depth(x,y-16,-1,obj_money11);
 		   k.hspd = -0.75; break;
-	case 15:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
+	case 15:var k = instance_create_depth(x,y-16,-1,obj_money11);
 		   k.hspd  = -0.5; break;
-	case 20:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
+	case 20:var k = instance_create_depth(x,y-16,-1,obj_money11);
 		   k.hspd = -0.25; break;
-	case 25:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
+	case 25:var k = instance_create_depth(x,y-16,-1,obj_money11);
+		   k.hspd = 0; break;
+	case 30:var k = instance_create_depth(x,y-16,-1,obj_money10);
 		   k.hspd = 0.25; break;
-	case 30:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
+	case 35:var k = instance_create_depth(x,y-16,-1,obj_money10);
 		   k.hspd = 0.5; break;
-	case 35:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
-		   k.hspd = 0.75; break;
-	case 40:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
-		   k.hspd  = 1; break;
-	case 45:var k = instance_create_depth(x-4,y-16,-1,obj_money11);
-		   k.hspd = 1.25; break;
+	case 40:var k = instance_create_depth(x,y-16,-1,obj_money10);
+		   k.hspd  = 0.75; break;
+	case 45:var k = instance_create_depth(x,y-16,-1,obj_money20);
+		   k.hspd = 1; break;
+	case 50:var k = instance_create_depth(x-4,y-16,-1,obj_money20);
+		   k.hspd = 1.5; break;
 }
