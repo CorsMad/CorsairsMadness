@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_pad_blue_mask",
-    "path": "sprites/spr_pad_blue_mask/spr_pad_blue_mask.yy",
+    "name": "spr_pad_blue_proj",
+    "path": "sprites/spr_pad_blue_proj/spr_pad_blue_proj.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,8 +21,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_pad_blue","path":"objects/obj_pad_blue/obj_pad_blue.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_pad_blue","path":"objects/obj_pad_blue/obj_pad_blue.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_pad_blue_proj","path":"objects/obj_pad_blue_proj/obj_pad_blue_proj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_pad_blue_proj","path":"objects/obj_pad_blue_proj/obj_pad_blue_proj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -31,7 +31,7 @@
     "path": "folders/Objects/Pads/Blue pad.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_pad_blue",
+  "name": "obj_pad_blue_proj",
   "tags": [],
   "resourceType": "GMObject",
 }

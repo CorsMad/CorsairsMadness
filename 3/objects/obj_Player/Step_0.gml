@@ -486,11 +486,6 @@ if isHooking = 1
 
 #region Pad Blue
 
-if place_meeting(x,y,obj_pad_blue) && key_jump_pressed && isAirattacking = 0 && isAttackingdown = 0 && isDashing = 0 && isClimbing = 0 && isHooking = 0 && isOutjump = 0
-{
-	vspd = -5;
-}
-
 #endregion
 
 #endregion
