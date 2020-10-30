@@ -16,6 +16,11 @@
 	if instance_exists(obj_Player)
 		{
 			x = 0;
-			y = obj_Player.y-32;
+			y = obj_Player.y;
 		}
+if (layer_exists("Backgrounds_1"))
+{
+	layer_y("Backgrounds_1",camera_get_view_y(view_camera[0]));	
+}			
+	
 #endregion

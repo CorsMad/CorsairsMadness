@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"bc075161-c31f-4136-a7b9-2487574e89eb","path":"sprites/spr_pad_blue_mask/spr_pad_blue_mask.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bc075161-c31f-4136-a7b9-2487574e89eb","path":"sprites/spr_pad_blue_mask/spr_pad_blue_mask.yy",},"LayerId":{"name":"0c16cd8f-6ac9-45eb-94c7-15a6d522c448","path":"sprites/spr_pad_blue_mask/spr_pad_blue_mask.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pad_blue_mask","path":"sprites/spr_pad_blue_mask/spr_pad_blue_mask.yy",},"resourceVersion":"1.0","name":"bc075161-c31f-4136-a7b9-2487574e89eb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"bc075161-c31f-4136-a7b9-2487574e89eb","path":"sprites/spr_pad_red_mask/spr_pad_red_mask.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"bc075161-c31f-4136-a7b9-2487574e89eb","path":"sprites/spr_pad_red_mask/spr_pad_red_mask.yy",},"LayerId":{"name":"0c16cd8f-6ac9-45eb-94c7-15a6d522c448","path":"sprites/spr_pad_red_mask/spr_pad_red_mask.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_pad_red_mask","path":"sprites/spr_pad_red_mask/spr_pad_red_mask.yy",},"resourceVersion":"1.0","name":"bc075161-c31f-4136-a7b9-2487574e89eb","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_pad_blue_mask","path":"sprites/spr_pad_blue_mask/spr_pad_blue_mask.yy",},
+    "spriteId": {"name":"spr_pad_red_mask","path":"sprites/spr_pad_red_mask/spr_pad_red_mask.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"dc290663-dd93-4a15-8ff2-7e81c00575fe","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bc075161-c31f-4136-a7b9-2487574e89eb","path":"sprites/spr_pad_blue_mask/spr_pad_blue_mask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"123c9406-2bda-44c1-9d8d-30f3e6750499","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bc075161-c31f-4136-a7b9-2487574e89eb","path":"sprites/spr_pad_red_mask/spr_pad_red_mask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 10,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_pad_blue_mask","path":"sprites/spr_pad_blue_mask/spr_pad_blue_mask.yy",},
+    "parent": {"name":"spr_pad_red_mask","path":"sprites/spr_pad_red_mask/spr_pad_red_mask.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_pad_blue_mask",
+    "name": "spr_pad_red_mask",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -68,11 +68,11 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0c16cd8f-6ac9-45eb-94c7-15a6d522c448","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Blue pad",
-    "path": "folders/Sprites/Pads/Blue pad.yy",
+    "name": "Red pad",
+    "path": "folders/Sprites/Pads/Red pad.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_pad_blue_mask",
+  "name": "spr_pad_red_mask",
   "tags": [],
   "resourceType": "GMSprite",
 }

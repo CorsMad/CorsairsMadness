@@ -92,8 +92,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"297def10-f137-4c3e-9d84-797b42ff576e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Pads",
-    "path": "folders/Sprites/Pads.yy",
+    "name": "Blue pad",
+    "path": "folders/Sprites/Pads/Blue pad.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pad_blue_player_sfx",
