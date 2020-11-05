@@ -2,17 +2,17 @@
 // You can write your code in this editor
 
 #region Горизонтальная Камера
-/*	
+	
 	if instance_exists(obj_Player)
 	{
 		x = obj_Player.x;
 		y = 0;
 	}
-*/	
+	
 #endregion
 
 #region Вертикальная Камера
-
+/*
 	if instance_exists(obj_Player)
 		{
 			x = 0;
@@ -22,5 +22,5 @@ if (layer_exists("Backgrounds_1"))
 {
 	layer_y("Backgrounds_1",camera_get_view_y(view_camera[0]));	
 }			
-	
+*/	
 #endregion
