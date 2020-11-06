@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "bgr_test_snowstorm",
-    "path": "sprites/bgr_test_snowstorm/bgr_test_snowstorm.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -21,16 +18,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_weather_snowstorm_screen","path":"objects/obj_weather_snowstorm_screen/obj_weather_snowstorm_screen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_weather_wind","path":"objects/obj_weather_wind/obj_weather_wind.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_weather_wind","path":"objects/obj_weather_wind/obj_weather_wind.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Snowstorm",
-    "path": "folders/Objects/Weather/Snowstorm.yy",
+    "name": "Wind",
+    "path": "folders/Objects/Weather/Wind.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_weather_snowstorm_screen",
+  "name": "obj_weather_wind",
   "tags": [],
   "resourceType": "GMObject",
 }

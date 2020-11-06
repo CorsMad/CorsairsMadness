@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "bgr_test_snowstorm",
-    "path": "sprites/bgr_test_snowstorm/bgr_test_snowstorm.yy",
+    "name": "bgr_test_sandstorm",
+    "path": "sprites/bgr_test_sandstorm/bgr_test_sandstorm.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,16 +21,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_weather_snowstorm_screen","path":"objects/obj_weather_snowstorm_screen/obj_weather_snowstorm_screen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_weather_sandstorm_screen","path":"objects/obj_weather_sandstorm_screen/obj_weather_sandstorm_screen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Snowstorm",
-    "path": "folders/Objects/Weather/Snowstorm.yy",
+    "name": "Sandstorm",
+    "path": "folders/Objects/Weather/Sandstorm.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_weather_snowstorm_screen",
+  "name": "obj_weather_sandstorm_screen",
   "tags": [],
   "resourceType": "GMObject",
 }
