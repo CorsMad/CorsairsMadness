@@ -203,8 +203,8 @@
     {"name":"T_Snowstorm","path":"rooms/T_Snowstorm/T_Snowstorm.yy",},
     {"name":"T_Day_wind","path":"rooms/T_Day_wind/T_Day_wind.yy",},
     {"name":"T_Snow","path":"rooms/T_Snow/T_Snow.yy",},
-    {"name":"TESTROOM","path":"rooms/TESTROOM/TESTROOM.yy",},
     {"name":"T_Night_rain","path":"rooms/T_Night_rain/T_Night_rain.yy",},
+    {"name":"TESTROOM","path":"rooms/TESTROOM/TESTROOM.yy",},
     {"name":"TO_COPY","path":"rooms/TO_COPY/TO_COPY.yy",},
   ],
   "Folders": [
