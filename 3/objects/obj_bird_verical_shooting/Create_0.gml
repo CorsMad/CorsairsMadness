@@ -6,7 +6,7 @@ states
 2 - смерть
 */
 
-sprite_index = spr_bird_green;
+sprite_index = spr_bird_red;
 state = 1;
 spd = 1;
 a = 0; // Таймер атак

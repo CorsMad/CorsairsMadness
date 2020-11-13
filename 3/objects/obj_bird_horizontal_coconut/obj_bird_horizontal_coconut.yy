@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "spr_bird_coconut",
-    "path": "sprites/spr_bird_coconut/spr_bird_coconut.yy",
+    "name": "spr_bird_coconut_mask",
+    "path": "sprites/spr_bird_coconut_mask/spr_bird_coconut_mask.yy",
   },
   "persistent": false,
   "parentObjectId": null,

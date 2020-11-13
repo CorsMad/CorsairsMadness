@@ -6,6 +6,6 @@ states
 1 - передвижение
 2 - смерть
 */
-sprite_index = spr_bird_green
+sprite_index = spr_bird_green;
 state = 1;
 spd = 1;
