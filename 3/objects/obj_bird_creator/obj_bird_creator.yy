@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "spr_block_mask",
-    "path": "sprites/spr_block_mask/spr_block_mask.yy",
+    "name": "spr_enemy_creator",
+    "path": "sprites/spr_enemy_creator/spr_enemy_creator.yy",
   },
-  "solid": true,
-  "visible": false,
+  "solid": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Blocks",
-    "path": "folders/Objects/Blocks.yy",
+    "name": "Horizontal fast",
+    "path": "folders/Objects/Enemies/Birds/Horizontal fast.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_block",
+  "name": "obj_bird_creator",
   "tags": [],
   "resourceType": "GMObject",
 }

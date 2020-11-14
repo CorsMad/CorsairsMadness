@@ -13,8 +13,12 @@ if state = 1
 	{
 		image_xscale = -1;	
 	} else image_xscale = 1;
-	
-	a++;
+	var dis = point_distance(x,y,obj_Player.x,obj_Player.y);
+    
+	    if dis<360 
+		{
+	        a++;
+	    } else a = 0;
 	if a = 155
 	{
 		instance_create_depth(x,y+8,-2,obj_sfx1);	
