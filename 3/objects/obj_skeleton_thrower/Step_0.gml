@@ -61,7 +61,7 @@ if state = 2
 	switch(a)
 	{
 		case 30:image_index = 1;
-				var i = instance_create_depth(x,y-16,1,obj_skeleton_thrower_axe);
+				var i = instance_create_depth(x,y-16,-1,obj_skeleton_thrower_axe);
 				if obj_Player.x > x
 				{
 					i.image_xscale = 1;	
@@ -69,7 +69,7 @@ if state = 2
 				break;
 		case 50:image_index = 0;break;
 		case 90:image_index = 1;
-				var i = instance_create_depth(x,y-16,1,obj_skeleton_thrower_axe);
+				var i = instance_create_depth(x,y-16,-1,obj_skeleton_thrower_axe);
 				if obj_Player.x > x
 				{
 					i.image_xscale = 1;	

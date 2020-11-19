@@ -12,3 +12,16 @@ if image_alpha < 1
 {
 	image_alpha += 0.05;	
 }
+
+
+#region Pickup
+	if pt < 15
+	{
+		pt++;
+	}	
+	if place_meeting(x,y,obj_Player) && pt > 14
+	{
+		instance_create_depth(x,y,1,obj_sfx3);
+		instance_destroy();
+	}
+#endregion

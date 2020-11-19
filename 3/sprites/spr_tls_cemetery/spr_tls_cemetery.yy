@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"2304fd88-b9cb-487b-9d33-1aa949e76245","path":"sprites/spr_tls_cemetery/spr_tls_cemetery.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2304fd88-b9cb-487b-9d33-1aa949e76245","path":"sprites/spr_tls_cemetery/spr_tls_cemetery.yy",},"LayerId":{"name":"839257c9-2103-45b5-a6f2-1a4907dd140d","path":"sprites/spr_tls_cemetery/spr_tls_cemetery.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_tls_cemetery","path":"sprites/spr_tls_cemetery/spr_tls_cemetery.yy",},"resourceVersion":"1.0","name":"2304fd88-b9cb-487b-9d33-1aa949e76245","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d83a267c-f986-4878-afed-35a9dcc41764","path":"sprites/spr_tls_cemetery/spr_tls_cemetery.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d83a267c-f986-4878-afed-35a9dcc41764","path":"sprites/spr_tls_cemetery/spr_tls_cemetery.yy",},"LayerId":{"name":"0516f166-f492-4204-9447-800cbf53d3e1","path":"sprites/spr_tls_cemetery/spr_tls_cemetery.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_tls_cemetery","path":"sprites/spr_tls_cemetery/spr_tls_cemetery.yy",},"resourceVersion":"1.0","name":"d83a267c-f986-4878-afed-35a9dcc41764","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_tls_cemetery","path":"sprites/spr_tls_cemetery/spr_tls_cemetery.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"2a79de8d-3c26-416f-8888-9cbef865e334","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2304fd88-b9cb-487b-9d33-1aa949e76245","path":"sprites/spr_tls_cemetery/spr_tls_cemetery.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e61e27fb-d3e4-4c89-86fd-eaa1c582473c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d83a267c-f986-4878-afed-35a9dcc41764","path":"sprites/spr_tls_cemetery/spr_tls_cemetery.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"839257c9-2103-45b5-a6f2-1a4907dd140d","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0516f166-f492-4204-9447-800cbf53d3e1","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Tileset",
