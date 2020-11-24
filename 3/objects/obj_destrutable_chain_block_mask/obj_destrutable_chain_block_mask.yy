@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Destructable blocks",
-    "path": "folders/Objects/Blocks/Destructable blocks.yy",
+    "name": "Destructable chain blocks",
+    "path": "folders/Objects/Blocks/Destructable chain blocks.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_destrutable_chain_block_mask",

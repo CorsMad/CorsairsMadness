@@ -1,9 +1,9 @@
 {
   "spriteId": {
-    "name": "spr_block_mask",
-    "path": "sprites/spr_block_mask/spr_block_mask.yy",
+    "name": "spr_player_hitbox_down",
+    "path": "sprites/spr_player_hitbox_down/spr_player_hitbox_down.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -20,15 +20,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_hitbox_down","path":"objects/obj_hitbox_down/obj_hitbox_down.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Blocks",
-    "path": "folders/Objects/Blocks.yy",
+    "name": "Player objects",
+    "path": "folders/Objects/Player objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_block",
+  "name": "obj_hitbox_down",
   "tags": [],
   "resourceType": "GMObject",
 }

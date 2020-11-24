@@ -1,13 +1,13 @@
 {
-  "spriteId": {
-    "name": "spr_block_mask",
-    "path": "sprites/spr_block_mask/spr_block_mask.yy",
-  },
-  "solid": true,
+  "spriteId": null,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_block",
+    "path": "objects/obj_block/obj_block.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Blocks",
-    "path": "folders/Objects/Blocks.yy",
+    "name": "Destructable blocks",
+    "path": "folders/Objects/Blocks/Destructable blocks.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_block",
+  "name": "obj_destructable_parent",
   "tags": [],
   "resourceType": "GMObject",
 }

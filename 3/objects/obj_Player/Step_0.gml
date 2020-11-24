@@ -310,7 +310,10 @@ if attackingdown_timer > 0
 {
 	attackingdown_timer +=1;	
 }
-
+if attackingdown_timer = 15
+{
+	instance_create_depth(x,y,1,obj_hitbox_down);
+}
 if attackingdown_timer > 15 
 {
 	sprite_index = spr_player_attackingdown;
