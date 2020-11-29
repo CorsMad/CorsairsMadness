@@ -1,10 +1,7 @@
 {
-  "spriteId": {
-    "name": "spr_block_mask",
-    "path": "sprites/spr_block_mask/spr_block_mask.yy",
-  },
-  "solid": true,
-  "visible": false,
+  "spriteId": null,
+  "solid": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -24,11 +21,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Blocks",
-    "path": "folders/Objects/Blocks.yy",
+    "name": "Stats",
+    "path": "folders/Objects/Stats.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_block",
+  "name": "obj_stats_controller",
   "tags": [],
   "resourceType": "GMObject",
 }

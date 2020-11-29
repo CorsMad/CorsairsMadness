@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5fdf35a3-cfa5-4830-a17e-a49d9203f76c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Tileset",
-    "path": "folders/Sprites/Tileset.yy",
+    "name": "Tileset and level stuff",
+    "path": "folders/Sprites/Tileset and level stuff.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_tls_forest_level1_bgr",

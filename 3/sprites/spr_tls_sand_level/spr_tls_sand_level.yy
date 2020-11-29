@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e00e3cb1-bda9-4505-9dea-8a08ed7f3d05","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Tileset",
-    "path": "folders/Sprites/Tileset.yy",
+    "name": "Tileset and level stuff",
+    "path": "folders/Sprites/Tileset and level stuff.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_tls_sand_level",

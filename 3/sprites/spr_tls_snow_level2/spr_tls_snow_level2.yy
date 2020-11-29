@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ddd437df-7ed9-457b-a899-887b7765037e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Tileset",
-    "path": "folders/Sprites/Tileset.yy",
+    "name": "Tileset and level stuff",
+    "path": "folders/Sprites/Tileset and level stuff.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_tls_snow_level2",
