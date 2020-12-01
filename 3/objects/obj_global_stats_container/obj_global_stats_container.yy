@@ -17,15 +17,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_global_stats_container","path":"objects/obj_global_stats_container/obj_global_stats_container.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Stats",
-    "path": "folders/Objects/Stats.yy",
+    "name": "Global variables",
+    "path": "folders/Objects/Global variables.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_stats_controller",
+  "name": "obj_global_stats_container",
   "tags": [],
   "resourceType": "GMObject",
 }
