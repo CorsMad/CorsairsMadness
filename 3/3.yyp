@@ -101,6 +101,7 @@
     {"id":{"name":"obj_enemy_creator_behind","path":"objects/obj_enemy_creator_behind/obj_enemy_creator_behind.yy",},"order":10,},
     {"id":{"name":"bgr_lvl1_far2","path":"sprites/bgr_lvl1_far2/bgr_lvl1_far2.yy",},"order":5,},
     {"id":{"name":"bgr_snow_level","path":"sprites/bgr_snow_level/bgr_snow_level.yy",},"order":1,},
+    {"id":{"name":"spr_hud_heart","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},"order":0,},
     {"id":{"name":"obj_electric_pillar_electicity2","path":"objects/obj_electric_pillar_electicity2/obj_electric_pillar_electicity2.yy",},"order":2,},
     {"id":{"name":"bgr_test_snowstorm","path":"sprites/bgr_test_snowstorm/bgr_test_snowstorm.yy",},"order":0,},
     {"id":{"name":"obj_enemy_creator","path":"objects/obj_enemy_creator/obj_enemy_creator.yy",},"order":7,},
@@ -230,6 +231,7 @@
     {"id":{"name":"spr_player_predash","path":"sprites/spr_player_predash/spr_player_predash.yy",},"order":6,},
     {"id":{"name":"spr_pad_blue_player_sfx","path":"sprites/spr_pad_blue_player_sfx/spr_pad_blue_player_sfx.yy",},"order":3,},
     {"id":{"name":"bgr_lvl1_far2_dark","path":"sprites/bgr_lvl1_far2_dark/bgr_lvl1_far2_dark.yy",},"order":7,},
+    {"id":{"name":"LoadingRoom","path":"rooms/LoadingRoom/LoadingRoom.yy",},"order":5,},
     {"id":{"name":"obj_sfx3","path":"objects/obj_sfx3/obj_sfx3.yy",},"order":6,},
     {"id":{"name":"spr_destrutable_block_expl","path":"sprites/spr_destrutable_block_expl/spr_destrutable_block_expl.yy",},"order":2,},
     {"id":{"name":"obj_diagonal_slime","path":"objects/obj_diagonal_slime/obj_diagonal_slime.yy",},"order":0,},
@@ -251,6 +253,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"LoadingRoom","path":"rooms/LoadingRoom/LoadingRoom.yy",},},
     {"roomId":{"name":"TEST","path":"rooms/TEST/TEST.yy",},},
     {"roomId":{"name":"TESTROOM","path":"rooms/TESTROOM/TESTROOM.yy",},},
     {"roomId":{"name":"TO_COPY","path":"rooms/TO_COPY/TO_COPY.yy",},},
@@ -345,6 +348,7 @@
     {"folderPath":"folders/Sprites/Tileset and level stuff/Trees.yy","order":8,"resourceVersion":"1.0","name":"Trees","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Stats.yy","order":10,"resourceVersion":"1.0","name":"Stats","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Global variables.yy","order":11,"resourceVersion":"1.0","name":"Global variables","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/HUD.yy","order":13,"resourceVersion":"1.0","name":"HUD","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
