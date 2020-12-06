@@ -3,11 +3,11 @@
 
 // main stats
 
-global.hp = 5;
-global.hp_max = 8;
-global.mana = 0;
+global.hp = 1;
+global.hp_max = 3;
+global.mana = 1;
 global.mana_max = 3;
-global.gold = 0;
-global.secrets = 0;
+global.gold = 256;
+global.secrets = 3;
 
 room_goto(TEST);
