@@ -55,5 +55,13 @@
 #region draw weaposelect
 
 draw_sprite_ext(spr_hud_weaponselect_border,0,(camera_get_view_x(view_camera[0]))+240,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1);
-
+if instance_exists(obj_Player)
+{
+	switch(global.choosed_item)
+	{
+		case 1: draw_sprite_ext(spr_hud_weapon_boomerang ,0,(camera_get_view_x(view_camera[0]))+240,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1);break;	
+		case 2: draw_sprite_ext(spr_hud_weapon_axe ,0,(camera_get_view_x(view_camera[0]))+240,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1);	break;
+		case 3: draw_sprite_ext(spr_hud_weapon_bomb ,0,(camera_get_view_x(view_camera[0]))+240,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1); break;
+	}
+}
 #endregion

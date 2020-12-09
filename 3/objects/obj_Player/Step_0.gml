@@ -13,6 +13,7 @@ key_jump_pressed = keyboard_check_pressed(ord("K"));
 key_attack = keyboard_check_pressed(ord("J"));
 key_dashing = keyboard_check_pressed(ord("L"));
 key_item = keyboard_check_pressed(ord("U"));
+key_item_choose = keyboard_check_pressed(ord("O"));
 #endregion
 #region Conditions
 //Направление спрайта
@@ -434,7 +435,34 @@ if climbing_timer = 25
 #endregion
 #region Using Items
 
-#region Hook
+#region choosing items
+
+if key_item_choose 
+{
+	global.choosed_item +=1;	
+}
+if global.choosed_item = 4
+{
+	global.choosed_item = 1;	
+}
+
+#endregion
+
+#region boomerang
+
+#endregion
+
+#region axe
+
+#endregion
+
+#region bomb
+
+#endregion
+
+
+/*
+#region hook
 
 if key_item && isHooking = 0 && isAirattacking = 0 && isAttacking = 0 && isClimbing = 0 && isAttackingdown = 0 && isDashing = 0 && isOutjump = 0 && isWallclimbing = 0
 {
@@ -483,7 +511,7 @@ if isHooking = 1
 }
 
 #endregion
-
+*/
 #endregion
 #region Pads
 

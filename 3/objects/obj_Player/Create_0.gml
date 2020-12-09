@@ -17,7 +17,8 @@ isAttackingdown = 0;
 isWallclimbing = 0;
 isOutjump = 0;
 isClimbing = 0;
-isHooking = 0;
+isUsingitem = 0;
+     isHooking = 0;
 isGravitate = 0;
 
 // Таймеры

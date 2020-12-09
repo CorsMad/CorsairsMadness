@@ -12,10 +12,11 @@ global.secrets = 5;
 
 // weapon controller
 
-enum weapon_controller
-{
-	weap_axe,
-	weap_boom,
-}
+/*
+1 - бумеранг
+2 - топор
+3 - бомба
+*/
+global.choosed_item = 1;
 
 room_goto(TEST);
