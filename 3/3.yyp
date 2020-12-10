@@ -172,6 +172,7 @@
     {"id":{"name":"fnc_enemy_no_armor_dmg","path":"scripts/fnc_enemy_no_armor_dmg/fnc_enemy_no_armor_dmg.yy",},"order":3,},
     {"id":{"name":"obj_money5","path":"objects/obj_money5/obj_money5.yy",},"order":2,},
     {"id":{"name":"obj_pad_red_player_sfx","path":"objects/obj_pad_red_player_sfx/obj_pad_red_player_sfx.yy",},"order":1,},
+    {"id":{"name":"obj_item_axe","path":"objects/obj_item_axe/obj_item_axe.yy",},"order":0,},
     {"id":{"name":"obj_sfx1","path":"objects/obj_sfx1/obj_sfx1.yy",},"order":5,},
     {"id":{"name":"spr_enemy_creator_small","path":"sprites/spr_enemy_creator_small/spr_enemy_creator_small.yy",},"order":12,},
     {"id":{"name":"bgr_lvl1_far1_dark","path":"sprites/bgr_lvl1_far1_dark/bgr_lvl1_far1_dark.yy",},"order":8,},
@@ -358,6 +359,7 @@
     {"folderPath":"folders/Objects/Stats.yy","order":10,"resourceVersion":"1.0","name":"Stats","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Global variables.yy","order":11,"resourceVersion":"1.0","name":"Global variables","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/HUD.yy","order":13,"resourceVersion":"1.0","name":"HUD","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Items/Axe.yy","order":2,"resourceVersion":"1.0","name":"Axe","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
