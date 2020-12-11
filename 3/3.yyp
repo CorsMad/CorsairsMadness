@@ -60,7 +60,6 @@
     {"id":{"name":"spr_money1","path":"sprites/spr_money1/spr_money1.yy",},"order":1,},
     {"id":{"name":"spr_destructable_block_big","path":"sprites/spr_destructable_block_big/spr_destructable_block_big.yy",},"order":2,},
     {"id":{"name":"obj_enemy_parent_armor_full","path":"objects/obj_enemy_parent_armor_full/obj_enemy_parent_armor_full.yy",},"order":3,},
-    {"id":{"name":"obj_item_bomb_dot","path":"objects/obj_item_bomb_dot/obj_item_bomb_dot.yy",},"order":1,},
     {"id":{"name":"spr_skeleton_walk","path":"sprites/spr_skeleton_walk/spr_skeleton_walk.yy",},"order":2,},
     {"id":{"name":"spr_destrutable_block_mask","path":"sprites/spr_destrutable_block_mask/spr_destrutable_block_mask.yy",},"order":1,},
     {"id":{"name":"spr_player_dash","path":"sprites/spr_player_dash/spr_player_dash.yy",},"order":7,},
