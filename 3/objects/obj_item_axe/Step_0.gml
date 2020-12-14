@@ -3,3 +3,7 @@
 x+=hspd;
 y+=vspd;
 vspd += 0.2;
+if hspd!=0
+{
+	image_xscale = 1*sign(hspd);
+}

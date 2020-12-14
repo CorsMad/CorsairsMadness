@@ -436,7 +436,6 @@ if climbing_timer = 25
 #endregion
 #region Using Items
 
-
 #region choosing items
 
 if key_item_choose 
@@ -449,193 +448,292 @@ if global.choosed_item = 4
 }
 
 #endregion
+	if global.choosed_item = 1
+	{	
+		#region boomerang
 	
-	/*
+		#region on ground
 	
-#region boomerang
-	#region on ground
-		if key_item && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && !instance_exists(obj_item_boomerang_dot)
-		{
-			image_index = 0;
-			isUsingitem = 1;
-			sprite_index = choose(spr_player_attack1,spr_player_attack2);
-			image_speed = 0.5;
-		}
-		if isUsingitem = 1 && isGrounded = 1
-		{
-			hspd = 0;
-		}	
-		if isUsingitem = 1 && image_index = 5
-		{
-			isUsingitem = 0;	
-		}
-		if isUsingitem = 1 && image_index = 1
-		{
-			instance_create_depth(x+obj_Player.image_xscale*(150),y-32,1,obj_item_boomerang_dot);
-			instance_create_depth(x,y-32,1,obj_item_boomerang);
-		}		
-	#endregion
-	#region in air
 	
-		if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && !instance_exists(obj_item_boomerang_dot)
-		{
-			image_index = 0;
-			isAirUsingitem = 1;
-			sprite_index = spr_player_attack1;
-			image_speed = 0.5;
-		}
-		if isAirUsingitem = 1 
-		{	
-			if key_left
+			if key_item && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && !instance_exists(obj_item_boomerang_dot)
 			{
-				if spd > 0 
-				{
-					spd = -2;
-				}
-				if spd <= 0 
-				{
-					if spd > -2
-					{
-						spd -=0.5;	
-					}
-				}
+				image_index = 0;
+				isUsingitem = 1;
+				sprite_index = choose(spr_player_attack1,spr_player_attack2);
+				image_speed = 0.5;
 			}
-			if key_right 
-			{
-				if spd < 0 
-			{
-				spd = 2;
-			}
-			if spd >= 0 
-			{
-				if spd < 2
-				{
-					spd += 0.5;	
-				}
-			}
-		
-			}
-			if (!key_left && !key_right) || (key_left && key_right) 
+			if isUsingitem = 1 && isGrounded = 1
 			{
 				hspd = 0;
-				spd = 0;
+			}	
+			if isUsingitem = 1 && image_index = 5
+			{
+				isUsingitem = 0;	
 			}
-			vspd += 0.25;	
-		}
-
-		if isAirUsingitem = 1 && jump_timer < 1
-		{
-			hspd = 0;	
-		}
-		if isAirUsingitem = 1 && image_index = 1
-		{
-			instance_create_depth(x+obj_Player.image_xscale*(150),y-32,1,obj_item_boomerang_dot);
-			instance_create_depth(x,y-32,1,obj_item_boomerang);
-		}
-		if isAirUsingitem = 1 && image_index = 5
-		{
-			isAirUsingitem = 0;	
-		}
-	
-	#endregion
-#endregion
-
-
-#region axe
-	#region on ground
-		if key_item && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0
-		{
-			image_index = 0;
-			isUsingitem = 1;
-			sprite_index = choose(spr_player_attack1,spr_player_attack2);
-			image_speed = 0.5;
-		}
-		if isUsingitem = 1 && isGrounded = 1
-		{
-			hspd = 0;
-		}	
-		if isUsingitem = 1 && image_index = 5
-		{
-			isUsingitem = 0;	
-		}
-		if isUsingitem = 1 && image_index = 1
-		{
-			var itemAxe = instance_create_depth(x,y-32,0,obj_item_axe);
-			if image_xscale = 1 
+			if isUsingitem = 1 && image_index = 1
 			{
-				itemAxe.hspd = 2	
-			} else itemAxe.hspd = -2;
-		}		
-	#endregion
-	#region in air
+				instance_create_depth(x+obj_Player.image_xscale*(150),y-32,1,obj_item_boomerang_dot);
+				instance_create_depth(x,y-32,1,obj_item_boomerang);
+			}
 	
-		if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0
-		{
-			image_index = 0;
-			isAirUsingitem = 1;
-			sprite_index = spr_player_attack1;
-			image_speed = 0.5;
-		}
-		if isAirUsingitem = 1 
-		{	
-			if key_left
+		#endregion
+		#region in air
+	
+			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && !instance_exists(obj_item_boomerang_dot)
 			{
-				if spd > 0 
+				image_index = 0;
+				isAirUsingitem = 1;
+				sprite_index = spr_player_attack1;
+				image_speed = 0.5;
+			}
+			if isAirUsingitem = 1 
+			{	
+				if key_left
 				{
-					spd = -2;
-				}
-				if spd <= 0 
-				{
-					if spd > -2
+					if spd > 0 
 					{
-						spd -=0.5;	
+						spd = -2;
+					}
+					if spd <= 0 
+					{
+						if spd > -2
+						{
+							spd -=0.5;	
+						}
 					}
 				}
-			}
-			if key_right 
-			{
-				if spd < 0 
-			{
-				spd = 2;
-			}
-			if spd >= 0 
-			{
-				if spd < 2
+				if key_right 
 				{
-					spd += 0.5;	
+					if spd < 0 
+				{
+					spd = 2;
 				}
-			}
+				if spd >= 0 
+				{
+					if spd < 2
+					{
+						spd += 0.5;	
+					}
+				}
 		
+				}
+				if (!key_left && !key_right) || (key_left && key_right) 
+				{
+					hspd = 0;
+					spd = 0;
+				}
+				vspd += 0.25;	
 			}
-			if (!key_left && !key_right) || (key_left && key_right) 
+
+			if isAirUsingitem = 1 && jump_timer < 1
+			{
+				hspd = 0;	
+			}
+			if isAirUsingitem = 1 && image_index = 1
+			{
+				instance_create_depth(x+obj_Player.image_xscale*(150),y-32,1,obj_item_boomerang_dot);
+				instance_create_depth(x,y-32,1,obj_item_boomerang);
+			}
+			if isAirUsingitem = 1 && image_index = 5
+			{
+				isAirUsingitem = 0;	
+			}
+	
+		#endregion
+	}
+#endregion
+	
+	if global.choosed_item = 2
+	{
+		#region axe
+		#region on ground
+			if key_item && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0
+			{
+				image_index = 0;
+				isUsingitem = 1;
+				sprite_index = choose(spr_player_attack1,spr_player_attack2);
+				image_speed = 0.5;
+			}
+			if isUsingitem = 1 && isGrounded = 1
 			{
 				hspd = 0;
-				spd = 0;
-			}
-			vspd += 0.25;	
-		}
-
-		if isAirUsingitem = 1 && jump_timer < 1
-		{
-			hspd = 0;	
-		}
-		if isAirUsingitem = 1 && image_index = 1
-		{
-			var itemAxe = instance_create_depth(x,y-32,0,obj_item_axe);
-			if image_xscale = 1 
+			}	
+			if isUsingitem = 1 && image_index = 5
 			{
-				itemAxe.hspd = 2	
-			} else itemAxe.hspd = -2;
-		}
-		if isAirUsingitem = 1 && image_index = 5
-		{
-			isAirUsingitem = 0;	
-		}
+				isUsingitem = 0;	
+			}
+			if isUsingitem = 1 && image_index = 1
+			{
+				var itemAxe = instance_create_depth(x,y-32,0,obj_item_axe);
+				if image_xscale = 1 
+				{
+					itemAxe.hspd = 2	
+				} else itemAxe.hspd = -2;
+			}		
+		#endregion
+		#region in air
 	
-	#endregion
+			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0
+			{
+				image_index = 0;
+				isAirUsingitem = 1;
+				sprite_index = spr_player_attack1;
+				image_speed = 0.5;
+			}
+			if isAirUsingitem = 1 
+			{	
+				if key_left
+				{
+					if spd > 0 
+					{
+						spd = -2;
+					}
+					if spd <= 0 
+					{
+						if spd > -2
+						{
+							spd -=0.5;	
+						}
+					}
+				}
+				if key_right 
+				{
+					if spd < 0 
+				{
+					spd = 2;
+				}
+				if spd >= 0 
+				{
+					if spd < 2
+					{
+						spd += 0.5;	
+					}
+				}
+		
+				}
+				if (!key_left && !key_right) || (key_left && key_right) 
+				{
+					hspd = 0;
+					spd = 0;
+				}
+				vspd += 0.25;	
+			}
+
+			if isAirUsingitem = 1 && jump_timer < 1
+			{
+				hspd = 0;	
+			}
+			if isAirUsingitem = 1 && image_index = 1
+			{
+				var itemAxe = instance_create_depth(x,y-32,0,obj_item_axe);
+				if image_xscale = 1 
+				{
+					itemAxe.hspd = 2	
+				} else itemAxe.hspd = -2;
+			}
+			if isAirUsingitem = 1 && image_index = 5
+			{
+				isAirUsingitem = 0;	
+			}
+	
+		#endregion
 #endregion
-*/
+	}
 #region bomb
+	if global.choosed_item = 3
+	{
+		#region on ground
+			if key_item && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0
+			{
+				image_index = 0;
+				isUsingitem = 1;
+				sprite_index = choose(spr_player_attack1,spr_player_attack2);
+				image_speed = 0.5;
+			}
+			if isUsingitem = 1 && isGrounded = 1
+			{
+				hspd = 0;
+			}	
+			if isUsingitem = 1 && image_index = 5
+			{
+				isUsingitem = 0;	
+			}
+			if isUsingitem = 1 && image_index = 1
+			{
+				var itemAxe = instance_create_depth(x,y-32,0,obj_item_bomb);
+				if image_xscale = 1 
+				{
+					itemAxe.hspd = 2	
+				} else itemAxe.hspd = -2;
+			}		
+		#endregion
+		#region in air
+	
+			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0
+			{
+				image_index = 0;
+				isAirUsingitem = 1;
+				sprite_index = spr_player_attack1;
+				image_speed = 0.5;
+			}
+			if isAirUsingitem = 1 
+			{	
+				if key_left
+				{
+					if spd > 0 
+					{
+						spd = -2;
+					}
+					if spd <= 0 
+					{
+						if spd > -2
+						{
+							spd -=0.5;	
+						}
+					}
+				}
+				if key_right 
+				{
+					if spd < 0 
+				{
+					spd = 2;
+				}
+				if spd >= 0 
+				{
+					if spd < 2
+					{
+						spd += 0.5;	
+					}
+				}
+		
+				}
+				if (!key_left && !key_right) || (key_left && key_right) 
+				{
+					hspd = 0;
+					spd = 0;
+				}
+				vspd += 0.25;	
+			}
+
+			if isAirUsingitem = 1 && jump_timer < 1
+			{
+				hspd = 0;	
+			}
+			if isAirUsingitem = 1 && image_index = 1
+			{
+				var itemAxe = instance_create_depth(x,y-32,0,obj_item_bomb);
+				if image_xscale = 1 
+				{
+					itemAxe.hspd = 2	
+				} else itemAxe.hspd = -2;
+			}
+			if isAirUsingitem = 1 && image_index = 5
+			{
+				isAirUsingitem = 0;	
+			}
+	
+		#endregion	
+	}
 
 #endregion
 

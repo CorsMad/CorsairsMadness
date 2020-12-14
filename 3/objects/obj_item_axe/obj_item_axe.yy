@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_hud_weapon_axe",
-    "path": "sprites/spr_hud_weapon_axe/spr_hud_weapon_axe.yy",
+    "name": "spr_item_axe",
+    "path": "sprites/spr_item_axe/spr_item_axe.yy",
   },
   "solid": false,
   "visible": true,

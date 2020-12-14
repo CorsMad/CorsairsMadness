@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_boomerang_dot",
-    "path": "sprites/spr_boomerang_dot/spr_boomerang_dot.yy",
+    "name": "spr_item_boomerang_dot",
+    "path": "sprites/spr_item_boomerang_dot/spr_item_boomerang_dot.yy",
   },
   "solid": false,
   "visible": true,

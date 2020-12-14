@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_block_climb",
-    "path": "sprites/spr_block_climb/spr_block_climb.yy",
+    "name": "spr_item_bomb",
+    "path": "sprites/spr_item_bomb/spr_item_bomb.yy",
   },
   "solid": false,
   "visible": true,

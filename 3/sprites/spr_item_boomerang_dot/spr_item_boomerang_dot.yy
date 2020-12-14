@@ -2,7 +2,7 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 0,
+  "origin": 4,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"bbaf2c56-2d04-43f6-a157-49365a47a817","path":"sprites/spr_boomerang_dot/spr_boomerang_dot.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bbaf2c56-2d04-43f6-a157-49365a47a817","path":"sprites/spr_boomerang_dot/spr_boomerang_dot.yy",},"LayerId":{"name":"12e4149d-dac6-4e26-bb31-fc2c475c49f3","path":"sprites/spr_boomerang_dot/spr_boomerang_dot.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boomerang_dot","path":"sprites/spr_boomerang_dot/spr_boomerang_dot.yy",},"resourceVersion":"1.0","name":"bbaf2c56-2d04-43f6-a157-49365a47a817","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"bbaf2c56-2d04-43f6-a157-49365a47a817","path":"sprites/spr_item_boomerang_dot/spr_item_boomerang_dot.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"bbaf2c56-2d04-43f6-a157-49365a47a817","path":"sprites/spr_item_boomerang_dot/spr_item_boomerang_dot.yy",},"LayerId":{"name":"12e4149d-dac6-4e26-bb31-fc2c475c49f3","path":"sprites/spr_item_boomerang_dot/spr_item_boomerang_dot.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_item_boomerang_dot","path":"sprites/spr_item_boomerang_dot/spr_item_boomerang_dot.yy",},"resourceVersion":"1.0","name":"bbaf2c56-2d04-43f6-a157-49365a47a817","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_boomerang_dot","path":"sprites/spr_boomerang_dot/spr_boomerang_dot.yy",},
+    "spriteId": {"name":"spr_item_boomerang_dot","path":"sprites/spr_item_boomerang_dot/spr_item_boomerang_dot.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5d8e7080-c7d2-4c47-ab46-6ab16c538439","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bbaf2c56-2d04-43f6-a157-49365a47a817","path":"sprites/spr_boomerang_dot/spr_boomerang_dot.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5d8e7080-c7d2-4c47-ab46-6ab16c538439","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bbaf2c56-2d04-43f6-a157-49365a47a817","path":"sprites/spr_item_boomerang_dot/spr_item_boomerang_dot.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,13 +54,13 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 0,
-    "yorigin": 0,
+    "xorigin": 1,
+    "yorigin": 1,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_boomerang_dot","path":"sprites/spr_boomerang_dot/spr_boomerang_dot.yy",},
+    "parent": {"name":"spr_item_boomerang_dot","path":"sprites/spr_item_boomerang_dot/spr_item_boomerang_dot.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_boomerang_dot",
+    "name": "spr_item_boomerang_dot",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -72,7 +72,7 @@
     "path": "folders/Sprites/Items/Boomerang.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_boomerang_dot",
+  "name": "spr_item_boomerang_dot",
   "tags": [],
   "resourceType": "GMSprite",
 }

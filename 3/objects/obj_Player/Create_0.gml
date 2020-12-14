@@ -19,7 +19,7 @@ isOutjump = 0;
 isClimbing = 0;
 isUsingitem = 0;
 isAirUsingitem = 0;
-     isHooking = 0;
+isHooking = 0;
 isGravitate = 0;
 
 // Таймеры
