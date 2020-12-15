@@ -18,7 +18,7 @@ if toDot = 0 {
     if acc <=8{
         acc+=1;
     }
-    var dir2 = point_direction(x,y,obj_Player.x,obj_Player.y-32);
+    var dir2 = point_direction(x,y,obj_Player.x,obj_Player.y-16);
     hspeed = lengthdir_x(acc,dir2);
     vspeed = lengthdir_y(acc,dir2);
 }
@@ -32,4 +32,4 @@ if TimerDeath > 0 {
 if TimerDeath = 6 {
     instance_destroy();
 }
-image_speed = 0.05*acc;
+image_speed = 0.5*acc;

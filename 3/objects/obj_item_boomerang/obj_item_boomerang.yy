@@ -1,11 +1,14 @@
 {
   "spriteId": {
-    "name": "spr_hud_weapon_boomerang",
-    "path": "sprites/spr_hud_weapon_boomerang/spr_hud_weapon_boomerang.yy",
+    "name": "spr_item_boomerang",
+    "path": "sprites/spr_item_boomerang/spr_item_boomerang.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_axe_boom_bomb_mask",
+    "path": "sprites/spr_axe_boom_bomb_mask/spr_axe_boom_bomb_mask.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

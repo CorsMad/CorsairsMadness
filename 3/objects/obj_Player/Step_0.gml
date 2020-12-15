@@ -472,8 +472,8 @@ if global.choosed_item = 4
 			}
 			if isUsingitem = 1 && image_index = 1
 			{
-				instance_create_depth(x+obj_Player.image_xscale*(150),y-32,1,obj_item_boomerang_dot);
-				instance_create_depth(x,y-32,1,obj_item_boomerang);
+				instance_create_depth(x+obj_Player.image_xscale*(150),y-16,1,obj_item_boomerang_dot);
+				instance_create_depth(x,y-16,1,obj_item_boomerang);
 			}
 	
 		#endregion
@@ -531,8 +531,8 @@ if global.choosed_item = 4
 			}
 			if isAirUsingitem = 1 && image_index = 1
 			{
-				instance_create_depth(x+obj_Player.image_xscale*(150),y-32,1,obj_item_boomerang_dot);
-				instance_create_depth(x,y-32,1,obj_item_boomerang);
+				instance_create_depth(x+obj_Player.image_xscale*(150),y-16,1,obj_item_boomerang_dot);
+				instance_create_depth(x,y-16,1,obj_item_boomerang);
 			}
 			if isAirUsingitem = 1 && image_index = 5
 			{
@@ -639,9 +639,10 @@ if global.choosed_item = 4
 		#endregion
 #endregion
 	}
-#region bomb
 	if global.choosed_item = 3
 	{
+		#region bomb
+	
 		#region on ground
 			if key_item && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0
 			{
@@ -733,9 +734,8 @@ if global.choosed_item = 4
 			}
 	
 		#endregion	
+		#endregion
 	}
-
-#endregion
 
 
 /*
