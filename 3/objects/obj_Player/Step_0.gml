@@ -448,6 +448,7 @@ if global.choosed_item = 4
 }
 
 #endregion
+
 	if global.choosed_item = 1
 	{	
 		#region boomerang
@@ -734,10 +735,10 @@ if global.choosed_item = 4
 			}
 	
 		#endregion	
+		
 		#endregion
 	}
-
-
+	
 /*
 #region hook
 

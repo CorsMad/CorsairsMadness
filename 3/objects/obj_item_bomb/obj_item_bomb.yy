@@ -5,10 +5,7 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "spr_axe_boom_bomb_mask",
-    "path": "sprites/spr_axe_boom_bomb_mask/spr_axe_boom_bomb_mask.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
