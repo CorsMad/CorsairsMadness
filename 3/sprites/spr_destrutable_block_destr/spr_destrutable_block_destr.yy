@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"fdbfad18-9c6b-47ee-bece-38464d2548b7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Chain deestructable",
-    "path": "folders/Sprites/Solid objects (blocks)/Chain deestructable.yy",
+    "name": "Chain destructable",
+    "path": "folders/Sprites/Solid objects (blocks)/Chain destructable.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_destrutable_block_destr",

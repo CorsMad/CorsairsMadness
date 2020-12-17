@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Destructable blocks ",
-    "path": "folders/Sprites/Solid objects (blocks)/Chain deestructable/Destructable blocks .yy",
+    "path": "folders/Sprites/Solid objects (blocks)/Chain destructable/Destructable blocks .yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_destructable_block_small",

@@ -109,7 +109,7 @@
   ],
   "parent": {
     "name": "Tiles",
-    "path": "folders/Sprites/Solid objects (blocks)/Chain deestructable/Tiles.yy",
+    "path": "folders/Sprites/Solid objects (blocks)/Chain destructable/Tiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_destructable_tile_cemetery",

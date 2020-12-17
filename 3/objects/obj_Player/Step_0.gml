@@ -460,7 +460,7 @@ if global.choosed_item = 4
 			{
 				image_index = 0;
 				isUsingitem = 1;
-				sprite_index = choose(spr_player_attack1,spr_player_attack2);
+				sprite_index = spr_player_item_use;
 				image_speed = 0.5;
 			}
 			if isUsingitem = 1 && isGrounded = 1
@@ -484,7 +484,7 @@ if global.choosed_item = 4
 			{
 				image_index = 0;
 				isAirUsingitem = 1;
-				sprite_index = spr_player_attack1;
+				sprite_index = spr_player_item_use;
 				image_speed = 0.5;
 			}
 			if isAirUsingitem = 1 
@@ -552,7 +552,7 @@ if global.choosed_item = 4
 			{
 				image_index = 0;
 				isUsingitem = 1;
-				sprite_index = choose(spr_player_attack1,spr_player_attack2);
+				sprite_index = spr_player_item_use;
 				image_speed = 0.5;
 			}
 			if isUsingitem = 1 && isGrounded = 1
@@ -578,7 +578,7 @@ if global.choosed_item = 4
 			{
 				image_index = 0;
 				isAirUsingitem = 1;
-				sprite_index = spr_player_attack1;
+				sprite_index = spr_player_item_use;
 				image_speed = 0.5;
 			}
 			if isAirUsingitem = 1 
@@ -649,7 +649,7 @@ if global.choosed_item = 4
 			{
 				image_index = 0;
 				isUsingitem = 1;
-				sprite_index = choose(spr_player_attack1,spr_player_attack2);
+				sprite_index = spr_player_item_use;
 				image_speed = 0.5;
 			}
 			if isUsingitem = 1 && isGrounded = 1
@@ -675,7 +675,7 @@ if global.choosed_item = 4
 			{
 				image_index = 0;
 				isAirUsingitem = 1;
-				sprite_index = spr_player_attack1;
+				sprite_index = spr_player_item_use;
 				image_speed = 0.5;
 			}
 			if isAirUsingitem = 1 
