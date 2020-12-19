@@ -9,7 +9,7 @@ if hspd!=0
 }
 
 
-if place_meeting(x,y,obj_enemy_parent) && a = 0
+if place_meeting(x,y,obj_enemy_parent_no_armor) && a = 0
 {
 	a = 1;
 	mask_index = spr_blank;

@@ -3,12 +3,12 @@
 
 // main stats
 
-global.hp = 1;
+global.hp = 3;
 global.hp_max = 3;
-global.mana = 1;
+global.mana = 2;
 global.mana_max = 3;
-global.gold = 2281488;
-global.secrets = 5;
+global.gold = 1337;
+global.secrets = 1;
 
 // weapon controller
 
