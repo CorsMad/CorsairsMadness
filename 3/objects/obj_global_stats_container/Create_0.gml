@@ -18,5 +18,3 @@ global.secrets = 1;
 3 - бомба
 */
 global.choosed_item = 1;
-
-room_goto(TEST);
