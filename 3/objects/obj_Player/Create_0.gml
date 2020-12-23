@@ -21,6 +21,7 @@ isUsingitem = 0;
 isAirUsingitem = 0;
 isHooking = 0;
 isGravitate = 0;
+isTakingdmg = 0;
 
 // Таймеры
 
@@ -30,6 +31,7 @@ attackingdown_timer = 0;
 wallclimb_timer = 0;
 climbing_timer = 0;
 coyote_timer = 0;
+damage_cd = 0;
 
 // Счетчики
 

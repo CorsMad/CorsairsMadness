@@ -47,7 +47,7 @@ hspd = spd;
 // движение влево
 
 
-if key_left && isUsingitem = 0 && isAirUsingitem = 0 && isAttacking = 0 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0
+if key_left && isUsingitem = 0 && isAirUsingitem = 0 && isAttacking = 0 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 {
 	image_xscale = -1;
 	sprite_index = spr_player_run;
@@ -70,7 +70,7 @@ if key_left && isUsingitem = 0 && isAirUsingitem = 0 && isAttacking = 0 && isAir
 
 // движение вправо
 
-if key_right && isUsingitem = 0 && isAttacking = 0 && isAirUsingitem = 0 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0
+if key_right && isUsingitem = 0 && isAttacking = 0 && isAirUsingitem = 0 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 { 
 	image_xscale = 1;
 	sprite_index = spr_player_run;
@@ -94,7 +94,7 @@ if key_right && isUsingitem = 0 && isAttacking = 0 && isAirUsingitem = 0 && isAi
 
 //  остановка
 
-if ((!key_left && !key_right) || (key_left && key_right) ) && isUsingitem = 0 && isAirUsingitem = 0 &&  isAttacking = 0 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0
+if ((!key_left && !key_right) || (key_left && key_right) ) && isUsingitem = 0 && isAirUsingitem = 0 &&  isAttacking = 0 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 {
 	hspd = 0;
 	spd = 0;
@@ -111,7 +111,7 @@ if place_meeting(x,y+1,obj_block)
 	isGrounded = 1;	
 } else isGrounded = 0; 
 
-if isGrounded = 0 && isAirattacking = 0 && isAirUsingitem = 0 &&  isAttackingdown = 0 && isWallclimbing = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 
+if isGrounded = 0 && isAirattacking = 0 && isAirUsingitem = 0 &&  isAttackingdown = 0 && isWallclimbing = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 {
 	sprite_index = spr_player_jump;
 	image_speed =0;
@@ -140,7 +140,7 @@ if isGrounded  = 1
 	coyote_timer = 1;
 }
 
-if jump_counts = 1 && key_jump && isUsingitem = 0 && isAttacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && coyote_timer!=0
+if jump_counts = 1 && key_jump && isUsingitem = 0 && isAttacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && coyote_timer!=0 && isTakingdmg = 0
 {
 	jump_timer+=1;
 	vspd = -6;	
@@ -157,7 +157,7 @@ if !place_meeting(x,y+1,obj_block) && coyote_timer > 0
 #endregion
 #region Attack on ground
 
-if key_attack && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0
+if key_attack && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 {
 	image_index = 0;
 	isAttacking = 1;
@@ -179,7 +179,7 @@ if isAttacking = 1 && image_index = 1
 #endregion
 #region Attack in air
 
-if ((key_attack && isGrounded = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirattacking = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0
+if ((key_attack && isGrounded = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirattacking = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 {
 	image_index = 0;
 	isAirattacking = 1;
@@ -240,7 +240,7 @@ if isAirattacking = 1 && image_index = 5
 
 #endregion
 #region Dashing
-if key_dashing && isUsingitem = 0 && isGrounded = 0 && isAttacking = 0 && isDashing = 0 && dash_counts > 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0
+if key_dashing && isUsingitem = 0 && isGrounded = 0 && isAttacking = 0 && isDashing = 0 && dash_counts > 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 {
 	dash_counts --;
 	image_index = 0;
@@ -294,7 +294,7 @@ if dashing_timer = 30
 #endregion
 #region Attacking down
 
-if isGrounded = 0 && key_down_pressed && isAttackingdown = 0 && isWallclimbing = 0 && isDashing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0
+if isGrounded = 0 && key_down_pressed && isAttackingdown = 0 && isWallclimbing = 0 && isDashing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 {
 	isAirattacking = 0;
 	isAttacking = 0;
@@ -330,7 +330,7 @@ if isGrounded = 1 && isAttackingdown = 1
 #endregion
 #region Wall climb
 
-if place_meeting(x-1,y,obj_block_climb) && isAirattacking = 0 && isAirUsingitem = 0 &&  isAttacking = 0 && isUsingitem = 0 && isDashing = 0 && isOutjump = 0 && wallclimb_timer = 0 && isClimbing = 0 && isHooking = 0
+if place_meeting(x-1,y,obj_block_climb) && isAirattacking = 0 && isAirUsingitem = 0 &&  isAttacking = 0 && isUsingitem = 0 && isDashing = 0 && isOutjump = 0 && wallclimb_timer = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 {
 	sprite_index = spr_player_wallclimbing;
 	isWallclimbing = 1;
@@ -339,7 +339,7 @@ if place_meeting(x-1,y,obj_block_climb) && isAirattacking = 0 && isAirUsingitem 
 	spd = 0;
 	wallclimb_timer += 1;
 }
-if place_meeting(x+1,y,obj_block_climb)  && isAirattacking = 0 && isAttacking = 0 && isUsingitem = 0  && isDashing = 0 && isOutjump = 0 && wallclimb_timer = 0 && isClimbing = 0
+if place_meeting(x+1,y,obj_block_climb)  && isAirattacking = 0 && isAirUsingitem = 0 && isAttacking = 0 && isUsingitem = 0  && isDashing = 0 && isOutjump = 0 && wallclimb_timer = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 {
 	sprite_index = spr_player_wallclimbing;
 	isWallclimbing = 1;
@@ -388,7 +388,7 @@ if wallclimb_timer = 10
 
 #endregion
 #region Climbing
-if place_meeting(x,y,obj_block_ladder) && isAttacking = 0 && isUsingitem = 0 && isAirattacking = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isAttackingdown = 0 && isOutjump = 0 && climbing_timer = 0 && isHooking = 0
+if place_meeting(x,y,obj_block_ladder) && isAttacking = 0 && isUsingitem = 0 && isAirattacking = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isAttackingdown = 0 && isOutjump = 0 && climbing_timer = 0 && isHooking = 0 && isTakingdmg = 0
 {
 	image_speed = 0;
 	sprite_index = spr_player_climb;
@@ -456,7 +456,7 @@ if global.choosed_item = 4
 		#region on ground
 	
 	
-			if key_item && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && !instance_exists(obj_item_boomerang_dot)
+			if key_item && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && !instance_exists(obj_item_boomerang_dot) && isTakingdmg = 0
 			{
 				image_index = 0;
 				isUsingitem = 1;
@@ -480,7 +480,7 @@ if global.choosed_item = 4
 		#endregion
 		#region in air
 	
-			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && !instance_exists(obj_item_boomerang_dot)
+			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && !instance_exists(obj_item_boomerang_dot) && isTakingdmg = 0
 			{
 				image_index = 0;
 				isAirUsingitem = 1;
@@ -548,7 +548,7 @@ if global.choosed_item = 4
 	{
 		#region axe
 		#region on ground
-			if key_item && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0
+			if key_item && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 			{
 				image_index = 0;
 				isUsingitem = 1;
@@ -574,7 +574,7 @@ if global.choosed_item = 4
 		#endregion
 		#region in air
 	
-			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0
+			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 			{
 				image_index = 0;
 				isAirUsingitem = 1;
@@ -645,7 +645,7 @@ if global.choosed_item = 4
 		#region bomb
 	
 		#region on ground
-			if key_item && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0
+			if key_item && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 			{
 				image_index = 0;
 				isUsingitem = 1;
@@ -671,7 +671,7 @@ if global.choosed_item = 4
 		#endregion
 		#region in air
 	
-			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0
+			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 			{
 				image_index = 0;
 				isAirUsingitem = 1;
@@ -796,6 +796,75 @@ if isHooking = 1
 #region Pad Blue
 
 #endregion
+
+#endregion
+#region Taking dmg
+
+if place_meeting(x,y,obj_enemy_parent) && damage_cd = 0 && isTakingdmg = 0
+{
+	hspd = 0;
+	vspd = -2;
+	isTakingdmg = 1;
+	damage_cd = 1;
+	isAttacking = 0;
+	isAirattacking = 0;
+	isAirattacking_timer = 0;
+	isGrounded = 0;
+	isSkidding = 0;
+	isSkidding_timer = 0;
+	isDashing = 0;
+	isAttackingdown = 0;
+	attackingdown_timer = 0;
+	isWallclimbing = 0;
+	isOutjump = 0;
+	isClimbing = 0;
+	isUsingitem = 0;
+	isAirUsingitem = 0;
+	isHooking = 0;
+	isGravitate = 0;		
+}
+
+if isTakingdmg = 1 
+{
+	image_blend = c_red;
+	if !place_meeting(x,y+1,obj_block)
+	{
+		vspd+=0.2;	
+	}
+	sprite_index = spr_player_hurt;
+	if image_xscale  = 1
+	{
+		hspd = -1.5;	
+	}
+	if image_xscale = -1 
+	{
+		hspd = 1.5;	
+	}
+}
+
+if damage_cd > 30 
+{
+	isTakingdmg = 0;
+	image_blend = c_white;
+}
+
+if damage_cd > 0 		
+{
+	damage_cd ++;
+	if round(damage_cd/5)*5 = damage_cd
+	{
+		if image_alpha = 1
+		{
+			image_alpha = 0.4;	
+		} else image_alpha = 1;
+	}
+
+}
+if damage_cd = 120 
+{
+	damage_cd = 0;
+	image_alpha = 1;
+}
 
 #endregion
 
