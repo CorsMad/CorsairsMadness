@@ -234,6 +234,7 @@
     {"id":{"name":"spr_bird_red_dead","path":"sprites/spr_bird_red_dead/spr_bird_red_dead.yy",},"order":5,},
     {"id":{"name":"obj_sfx_explosion_bomb","path":"objects/obj_sfx_explosion_bomb/obj_sfx_explosion_bomb.yy",},"order":1,},
     {"id":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"order":2,},
+    {"id":{"name":"L1_r1","path":"rooms/L1_r1/L1_r1.yy",},"order":6,},
     {"id":{"name":"spr_chest","path":"sprites/spr_chest/spr_chest.yy",},"order":0,},
     {"id":{"name":"create_enemy","path":"scripts/create_enemy/create_enemy.yy",},"order":2,},
     {"id":{"name":"spr_destructable_block_small","path":"sprites/spr_destructable_block_small/spr_destructable_block_small.yy",},"order":0,},
@@ -282,6 +283,7 @@
     {"roomId":{"name":"LoadingRoom","path":"rooms/LoadingRoom/LoadingRoom.yy",},},
     {"roomId":{"name":"TESTROOM","path":"rooms/TESTROOM/TESTROOM.yy",},},
     {"roomId":{"name":"TO_COPY","path":"rooms/TO_COPY/TO_COPY.yy",},},
+    {"roomId":{"name":"L1_r1","path":"rooms/L1_r1/L1_r1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
