@@ -1,11 +1,14 @@
 {
   "spriteId": {
-    "name": "spr_block_ladder",
-    "path": "sprites/spr_block_ladder/spr_block_ladder.yy",
+    "name": "spr_block_ladder_mask",
+    "path": "sprites/spr_block_ladder_mask/spr_block_ladder_mask.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_block_ladder_mask",
+    "path": "sprites/spr_block_ladder_mask/spr_block_ladder_mask.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
@@ -22,6 +25,8 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"parent":{"name":"obj_block_ladder","path":"objects/obj_block_ladder/obj_block_ladder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_block_ladder","path":"objects/obj_block_ladder/obj_block_ladder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_block_ladder","path":"objects/obj_block_ladder/obj_block_ladder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

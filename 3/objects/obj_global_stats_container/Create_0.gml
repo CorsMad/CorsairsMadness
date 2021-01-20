@@ -20,4 +20,4 @@ global.secrets = 1;
 global.choosed_item = 1;
 
 
-room_goto(L1_r3);
+room_goto(L1_r4);
