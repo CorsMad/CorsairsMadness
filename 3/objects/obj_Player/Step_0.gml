@@ -800,7 +800,7 @@ if isHooking = 1
 #endregion
 #region Taking dmg
 
-if place_meeting(x,y,obj_enemy_parent) && damage_cd = 0 && isTakingdmg = 0
+if (place_meeting(x,y,obj_enemy_parent) || place_meeting(x,y,obj_enemy_parent_object)) && damage_cd = 0 && isTakingdmg = 0
 {
 	hspd = 0;
 	vspd = -2;

@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function fnc_enemy_no_armor_dmg()
 {
-	if (place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_item_axe)) && hit_cd = 0
+	if (place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_hitbox_down) || place_meeting(x,y,obj_item_axe)) && hit_cd = 0
 	{
 		hit_cd = 1;
 		enemy_hp -= 1;

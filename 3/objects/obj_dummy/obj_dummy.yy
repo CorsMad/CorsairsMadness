@@ -31,8 +31,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Horizontal",
-    "path": "folders/Objects/Enemies/Birds/Horizontal.yy",
+    "name": "Dummies",
+    "path": "folders/Objects/Enemies/Dummies.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_dummy",
