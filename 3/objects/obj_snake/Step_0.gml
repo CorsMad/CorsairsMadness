@@ -1,4 +1,4 @@
-/// @description Insert description here
+ /// @description Insert description here
 // You can write your code in this editor
 
 if state = 0
@@ -39,14 +39,16 @@ if state = 0
 }
 
 #region #takedmg
+	if state != 1 
+	{
 		fnc_enemy_no_armor_dmg();
 		
 			if (place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_hitbox_down) ) && hit_cd = 0
 			{
 				instance_create_depth(x,y-16,-1,obj_sfx_weapon_slash);
 			}
-
-	#endregion
+	}
+#endregion
 	
 #region death
 	if state = 1
@@ -57,9 +59,23 @@ if state = 0
 		switch(b)
 		{
 			case 1: instance_create_depth(x,y-16,1,obj_sfx_explosion);break;
+			case 2: instance_destroy();
+					if obj_Player.x <= x 
+					{
+						var c = instance_create_depth(x,y-16,1,obj_snake_death);
+						c.image_xscale = facing;
+						c.hspd = 3;
+					} else 
+					{
+						var c = instance_create_depth(x,y-16,1,obj_snake_death);
+						c.image_xscale = facing;
+						c.hspd = -3;		
+					}
+					break;	
 		}
 		vspd += 0.1;
 	}
 #endregion
 
 y += vspd;
+facing = image_xscale;

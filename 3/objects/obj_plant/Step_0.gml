@@ -109,7 +109,6 @@ if state = 5
 
 #endregion
 
-
 #region #takedmg
 	fnc_enemy_no_armor_dmg();
 		
