@@ -14,3 +14,8 @@ if hit_cd > 10
 {
 	hit_cd = 0;	
 }
+
+if enemy_hp <= 0 
+{
+	hit_cd = -1;	
+}

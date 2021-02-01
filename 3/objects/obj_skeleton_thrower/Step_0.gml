@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
+
 if obj_Player.x >= x
 {
 	image_xscale = -1	
 } else image_xscale = 1;
+
 
 #region walk
 
@@ -129,13 +131,31 @@ if state = 3
 
 #region takedmg
 
-	fnc_enemy_no_armor_dmg();
+
 		
-		if place_meeting(x,y,obj_hitbox) && hit_cd = 0
+		if (place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_item_axe)) && hit_cd = 0
+		{
+			if obj_Player.x < x 
+			{
+				instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+			} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+		}
+		
+		if place_meeting(x,y,obj_item_axe) && hit_cd = 0
 		{
 			instance_create_depth(x,y-16,-1,obj_sfx_weapon_slash);
 		}
-		if enemy_hp < 0
+		
+		if place_meeting(x,y,obj_hitbox_down) && hit_cd = 0
+		{
+			instance_create_depth(x,y-32,-1,obj_sfx_weapon_slash);
+		}
+		
+		
+		
+		
+		
+		if enemy_hp <= 0
 		{
 			a = 0;
 			state = 4;
@@ -144,6 +164,7 @@ if state = 3
 			hspd = 0;
 			vspd = 0;
 		}
+		fnc_enemy_no_armor_dmg();
 		
 
 #endregion

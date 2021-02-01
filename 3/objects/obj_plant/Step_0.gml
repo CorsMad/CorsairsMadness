@@ -102,7 +102,7 @@ if state = 5
 	b++;
 	switch(b)
 	{
-		case 1: instance_create_depth(x,y-16,1,obj_sfx_explosion);break;
+		case 1: instance_create_depth(x,y-16,-1,obj_sfx_explosion);break;
 		case 5: instance_destroy();break;
 	}
 }
@@ -110,12 +110,21 @@ if state = 5
 #endregion
 
 #region #takedmg
-	fnc_enemy_no_armor_dmg();
-		
-		if (place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_hitbox_down) )&& hit_cd = 0
+	 
+	if (place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_item_axe))&& hit_cd = 0
 		{
-			instance_create_depth(x,y-16,-1,obj_sfx_weapon_slash);
+			if obj_Player.x < x 
+			{
+				instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+			} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
 		}
+		
+		if place_meeting(x,y,obj_hitbox_down) && hit_cd = 0
+		{
+			instance_create_depth(x,y-32,-1,obj_sfx_weapon_slash);
+		}
+		
+		fnc_enemy_no_armor_dmg();
 
 #endregion
 

@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Chest",
-    "path": "folders/Objects/Level objects/Other/Chest.yy",
+    "name": "Gold",
+    "path": "folders/Objects/Level objects/Collectables/Gold.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_money1",

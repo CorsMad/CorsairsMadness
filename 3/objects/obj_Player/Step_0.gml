@@ -548,12 +548,13 @@ if global.choosed_item = 4
 	{
 		#region axe
 		#region on ground
-			if key_item && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
+			if key_item && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && global.mana > 0
 			{
 				image_index = 0;
 				isUsingitem = 1;
 				sprite_index = spr_player_item_use;
 				image_speed = 0.5;
+				global.mana -= 1;
 			}
 			if isUsingitem = 1 && isGrounded = 1
 			{
@@ -574,8 +575,9 @@ if global.choosed_item = 4
 		#endregion
 		#region in air
 	
-			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
+			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && global.mana > 0
 			{
+				global.mana -= 1;
 				image_index = 0;
 				isAirUsingitem = 1;
 				sprite_index = spr_player_item_use;

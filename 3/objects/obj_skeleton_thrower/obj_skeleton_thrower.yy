@@ -10,8 +10,11 @@
     "path": "sprites/spr_skeleton_mask/spr_skeleton_mask.yy",
   },
   "persistent": false,
-  "parentObjectId": null,
-  "physicsObject": false,
+  "parentObjectId": {
+    "name": "obj_enemy_parent_no_armor",
+    "path": "objects/obj_enemy_parent_no_armor/obj_enemy_parent_no_armor.yy",
+  },
+  "physicsObject": true,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,

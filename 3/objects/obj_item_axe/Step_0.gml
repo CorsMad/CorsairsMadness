@@ -9,20 +9,26 @@ if hspd!=0
 }
 
 
-if place_meeting(x,y,obj_enemy_parent_no_armor) && a = 0
+if a = 1
+{
+	instance_destroy();	
+}
+
+
+if place_meeting(x,y,obj_enemy_parent_no_armor) && a = 0 && obj_enemy_parent_no_armor.enemy_hp > 0
 {
 	a = 1;
-	mask_index = spr_blank;
+	
 	var b = instance_create_depth(x,y,-1,obj_sfx_dust_expl_small);
 	b.image_angle = random(360);
 }
-
+if a = 2 
+{
+	mask_index = spr_blank;	
+	instance_destroy();
+}
 
 if a !=0 
 {
 	a++;
-	if a = 3
-	{	
-		instance_destroy();
-	}
 }
