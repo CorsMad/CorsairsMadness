@@ -16,5 +16,10 @@ switch(timer)
 	case 3: instance_create_depth(x+24,y+8,-1,obj_sfx_dust_expl_small);break;
 	case 4: instance_create_depth(x+8,y+24,-1,obj_sfx_dust_expl_small);break;
 	case 5: instance_create_depth(x+24,y+24,-1,obj_sfx_dust_expl_small);break;
-	case 10: instance_destroy();break;
+	case 10: if container = 2 
+			{
+				instance_create_depth(x+8,y+16,1,obj_cr1);
+				instance_create_depth(x+24,y+16,1,obj_cr2);
+			}
+			instance_destroy();break;
 }

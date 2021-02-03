@@ -24,5 +24,16 @@ if timer > 0
 switch(timer)
 {
 	case 2: instance_create_depth(x+20,y+20,-1,obj_sfx_dust_expl_big);break;
-	case 5: instance_destroy();break;
+	case 5: if container = 2
+			{
+				instance_create_depth(x+8,y+24,1,obj_cr1);
+				instance_create_depth(x+40,y+24,1,obj_cr2);
+			}
+			if container = 3
+			{
+				instance_create_depth(x+8,y+24,1,obj_cr1);
+				instance_create_depth(x+24,y+24,1,obj_cr2);
+				instance_create_depth(x+40,y+24,1,obj_cr3);
+			}
+			instance_destroy();break;
 }

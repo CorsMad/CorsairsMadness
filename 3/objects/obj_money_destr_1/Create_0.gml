@@ -1,9 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-timer = 0;
+vspd = -2;
 
-/* container 
-	выбрать 2 или 3;
-*/
-
-container = 0;

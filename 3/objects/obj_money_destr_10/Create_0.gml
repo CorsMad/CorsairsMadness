@@ -1,9 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-timer = 0;
-
-/* container 
-	выбрать 2 или 3;
-*/
-
-container = 0;
+image_alpha = 0;
+vspd = -2;
+pt = 0;
+hspd = 0;

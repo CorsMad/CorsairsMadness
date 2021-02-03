@@ -21,7 +21,7 @@ if image_alpha < 1
 	}	
 	if place_meeting(x,y,obj_Player) && pt > 14
 	{
-		global.gold += 10;
+		global.gold += 5;
 		instance_create_depth(x,y,1,obj_sfx3);
 		instance_destroy();
 	}

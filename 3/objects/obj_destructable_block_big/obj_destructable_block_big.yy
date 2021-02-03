@@ -3,10 +3,10 @@
     "name": "spr_destructable_block_big",
     "path": "sprites/spr_destructable_block_big/spr_destructable_block_big.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": false,
+  "persistent": true,
   "parentObjectId": {
     "name": "obj_destructable_parent",
     "path": "objects/obj_destructable_parent/obj_destructable_parent.yy",

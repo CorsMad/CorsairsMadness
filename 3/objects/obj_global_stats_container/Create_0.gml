@@ -5,10 +5,10 @@
 
 global.hp = 3;
 global.hp_max = 3;
-global.mana = 3;
+global.mana = 1;
 global.mana_max = 3;
-global.gold = 0;
-global.secrets = 0;
+global.gold = 294;
+global.secrets = 1;
 
 // weapon controller
 
@@ -20,4 +20,4 @@ global.secrets = 0;
 global.choosed_item = 2;
 
 
-room_goto(L1_r3);
+room_goto(L1_r4);
