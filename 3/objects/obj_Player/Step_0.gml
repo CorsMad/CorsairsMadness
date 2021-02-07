@@ -401,12 +401,12 @@ if isClimbing = 1
 	vspd = 0;
 	if key_up 
 	{
-		image_speed = 0.5;
+		image_speed = 1;
 		vspd = -1;	
 	}
 	if key_down 
 	{
-		image_speed = 0.5;
+		image_speed = 1;
 		vspd = 1;
 	}	
 }
