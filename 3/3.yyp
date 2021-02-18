@@ -179,6 +179,7 @@
     {"id":{"name":"spr_skeleton_jump","path":"sprites/spr_skeleton_jump/spr_skeleton_jump.yy",},"order":3,},
     {"id":{"name":"obj_destructable_block_medium","path":"objects/obj_destructable_block_medium/obj_destructable_block_medium.yy",},"order":2,},
     {"id":{"name":"obj_bird_verical_shooting","path":"objects/obj_bird_verical_shooting/obj_bird_verical_shooting.yy",},"order":0,},
+    {"id":{"name":"L1_r8","path":"rooms/L1_r8/L1_r8.yy",},"order":7,},
     {"id":{"name":"spr_armored_thing_prepare","path":"sprites/spr_armored_thing_prepare/spr_armored_thing_prepare.yy",},"order":5,},
     {"id":{"name":"spr_item_hook_anchor_mask","path":"sprites/spr_item_hook_anchor_mask/spr_item_hook_anchor_mask.yy",},"order":1,},
     {"id":{"name":"obj_parallax","path":"objects/obj_parallax/obj_parallax.yy",},"order":1,},
@@ -334,6 +335,7 @@
     {"roomId":{"name":"L1_r5","path":"rooms/L1_r5/L1_r5.yy",},},
     {"roomId":{"name":"L1_r6","path":"rooms/L1_r6/L1_r6.yy",},},
     {"roomId":{"name":"L1_r7","path":"rooms/L1_r7/L1_r7.yy",},},
+    {"roomId":{"name":"L1_r8","path":"rooms/L1_r8/L1_r8.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -450,6 +452,7 @@
     {"folderPath":"folders/Objects/Blocks/Wall trigger.yy","order":5,"resourceVersion":"1.0","name":"Wall trigger","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Level objects/Wall_closed_trigger.yy","order":7,"resourceVersion":"1.0","name":"Wall_closed_trigger","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Blocks/Destructable chain blocks/TEST.yy","order":4,"resourceVersion":"1.0","name":"TEST","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Enemies/TrapFire.yy","order":15,"resourceVersion":"1.0","name":"TrapFire","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
