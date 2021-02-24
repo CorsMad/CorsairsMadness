@@ -34,15 +34,27 @@ if isGrounded = 1
 #endregion
 #region Collision check
 
-	fnc_Collision(obj_block);
+	fnc_Collision_player(obj_block);
 	
 #endregion	
 #region Movement
 
 // Move left-right
 
-hspd = spd;
 
+hspd = spd;
+fspd = hspd + carryspd;
+carryspd = 0;
+
+
+if fspd > 2
+{
+	fspd = 2;	
+}
+if fspd < -2
+{
+	fspd = -2;	
+}
 
 // движение влево
 
@@ -164,9 +176,10 @@ if key_attack && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirat
 	sprite_index = choose(spr_player_attack1,spr_player_attack2);
 	image_speed = 0.5;
 }
-if isAttacking = 1 && isGrounded = 1
+if isAttacking = 1 && isGrounded = 1 
 {
 	hspd = 0;
+	spd = 0;
 }	
 if isAttacking = 1 && image_index = 5
 {
@@ -176,10 +189,14 @@ if isAttacking = 1 && image_index = 1
 {
 	instance_create_depth(x,y,0,obj_hitbox);
 }
+if isAttacking = 1 && !place_meeting(x,y+1,obj_block)
+{
+	isAttacking = 0;	
+}
 #endregion
 #region Attack in air
 
-if ((key_attack && isGrounded = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirattacking = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
+if ((key_attack && isGrounded = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirattacking = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && !place_meeting(x,y+1,obj_platform_2_h)
 {
 	image_index = 0;
 	isAirattacking = 1;
@@ -227,7 +244,7 @@ if isAirattacking = 1
 
 if isAirattacking = 1 && jump_timer < 1
 {
-	hspd = 0;	
+	spd = 0;	
 }
 if isAirattacking = 1 && image_index = 1
 {
@@ -255,8 +272,8 @@ if isDashing = 1
 	vspd = 0;
 	if dashing_timer > 10 
 	{
-		hspd = 4*dir;	
-	} else hspd = 0;
+		fspd = 4*dir;	
+	} else fspd = 0;
 	if dashing_timer = 1 
 	{
 			
@@ -298,7 +315,7 @@ if isGrounded = 0 && key_down_pressed && isAttackingdown = 0 && isWallclimbing =
 {
 	isAirattacking = 0;
 	isAttacking = 0;
-	hspd = 0;
+	fspd = 0;
 	isAttackingdown = 1;	
 	vspd = -1;
 	attackingdown_timer = 1;
@@ -306,7 +323,7 @@ if isGrounded = 0 && key_down_pressed && isAttackingdown = 0 && isWallclimbing =
 
 if isAttackingdown = 1 
 {
-	hspd = 0;	
+	fspd = 0;	
 }
 if attackingdown_timer > 0 
 {
@@ -396,7 +413,7 @@ if place_meeting(x,y,obj_block_ladder) && isAttacking = 0 && isUsingitem = 0 && 
 }
 if isClimbing = 1 
 {
-	hspd = 0;
+	fspd = 0;
 	spd = 0;
 	vspd = 0;
 	if key_up 
@@ -836,11 +853,11 @@ if isTakingdmg = 1
 	sprite_index = spr_player_hurt;
 	if image_xscale  = 1
 	{
-		hspd = -1.5;	
+		fspd = -1.5;	
 	}
 	if image_xscale = -1 
 	{
-		hspd = 1.5;	
+		fspd = 1.5;	
 	}
 }
 
@@ -871,7 +888,9 @@ if damage_cd = 120
 #endregion
 
 
+#region Test
 
+#endregion
 
 
 

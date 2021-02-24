@@ -4,12 +4,17 @@
 #region movement
 if state = 1
 {
-	if place_meeting(x+hspd, y, obj_block) 
+	if place_meeting(x+hspd, y, obj_skeleton_limiter)
+	{
+		hspd = -hspd;	
+	}
+	if place_meeting(x+hspd, y, obj_block)
 		{
 		while (!place_meeting(x+sign(hspd), y, obj_block )) 
 		{
 		    x+= sign(hspd);
 		}
+	
 		hspd = -hspd;
 	}
 	x += hspd;

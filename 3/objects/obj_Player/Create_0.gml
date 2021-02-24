@@ -3,6 +3,9 @@
 hspd = 0;
 vspd = 0;
 spd = 2;
+fspd = 0;
+
+carryspd = 0;
 
 // Состояния 
 
