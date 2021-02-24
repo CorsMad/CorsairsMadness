@@ -451,7 +451,8 @@
 						{ "__identifier": "Coins", "__grid": [51,7], "__pivot": [0,0], "__tile": null, "defUid": 23, "px": [816,112], "fieldInstances": [] },
 						{ "__identifier": "Coins", "__grid": [50,7], "__pivot": [0,0], "__tile": null, "defUid": 23, "px": [800,112], "fieldInstances": [] },
 						{ "__identifier": "Coins", "__grid": [49,7], "__pivot": [0,0], "__tile": null, "defUid": 23, "px": [784,112], "fieldInstances": [] },
-						{ "__identifier": "Coins", "__grid": [48,7], "__pivot": [0,0], "__tile": null, "defUid": 23, "px": [768,112], "fieldInstances": [] }
+						{ "__identifier": "Coins", "__grid": [48,7], "__pivot": [0,0], "__tile": null, "defUid": 23, "px": [768,112], "fieldInstances": [] },
+						{ "__identifier": "PlatformMovHorizontal", "__grid": [0,6], "__pivot": [0,0], "__tile": null, "defUid": 17, "px": [0,96], "fieldInstances": [] }
 					]
 				},
 				{
