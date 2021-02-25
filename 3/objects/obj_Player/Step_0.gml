@@ -56,8 +56,7 @@ if fspd < -2
 	fspd = -2;	
 }
 
-// движение влево
-
+#region движение влево
 
 if key_left && isUsingitem = 0 && isAirUsingitem = 0 && isAttacking = 0 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 {
@@ -80,7 +79,8 @@ if key_left && isUsingitem = 0 && isAirUsingitem = 0 && isAttacking = 0 && isAir
 	
 }
 
-// движение вправо
+#endregion
+#region движение вправо
 
 if key_right && isUsingitem = 0 && isAttacking = 0 && isAirUsingitem = 0 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 { 
@@ -104,7 +104,8 @@ if key_right && isUsingitem = 0 && isAttacking = 0 && isAirUsingitem = 0 && isAi
 	
 }
 
-//  остановка
+#endregion
+#region остановка
 
 if ((!key_left && !key_right) || (key_left && key_right) ) && isUsingitem = 0 && isAirUsingitem = 0 &&  isAttacking = 0 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 {
@@ -115,8 +116,8 @@ if ((!key_left && !key_right) || (key_left && key_right) ) && isUsingitem = 0 &&
 	
 }
 
-
-// прыжок 
+#endregion
+#region  прыжок 
 
 if place_meeting(x,y+1,obj_block) 
 {
@@ -143,7 +144,7 @@ if isGrounded = 0 && isAirattacking = 0 && isAirUsingitem = 0 &&  isAttackingdow
 		}
 		if vspd < 6 
 			{
-				vspd +=0.25;
+				vspd +=0.25;//0.25;
 			}
 }
 if isGrounded  = 1
@@ -151,6 +152,7 @@ if isGrounded  = 1
 	jump_counts = 1;	
 	coyote_timer = 1;
 }
+
 
 if jump_counts = 1 && key_jump && isUsingitem = 0 && isAttacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && coyote_timer!=0 && isTakingdmg = 0
 {
@@ -165,7 +167,7 @@ if !place_meeting(x,y+1,obj_block) && coyote_timer > 0
 {
 	coyote_timer -= 0.2;	
 }
-
+#endregion
 #endregion
 #region Attack on ground
 
@@ -886,7 +888,6 @@ if damage_cd = 120
 }
 
 #endregion
-
 
 #region Test
 

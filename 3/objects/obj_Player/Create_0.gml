@@ -4,6 +4,7 @@ hspd = 0;
 vspd = 0;
 spd = 2;
 fspd = 0;
+grav = 0.25;
 
 carryspd = 0;
 

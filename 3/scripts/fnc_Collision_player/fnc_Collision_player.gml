@@ -14,11 +14,14 @@ x+= fspd;
 
 if place_meeting(x,y+vspd,col_obj) 
 {
+	
 	while(!place_meeting(x,y+sign(vspd),col_obj)) 
 	{
-		y += sign(vspd);
+		y += sign(vspd); // *sign(vspd); //sign(vspd);
 	}
+	
 	vspd = 0;
+	
 }
 y+= vspd;
 
