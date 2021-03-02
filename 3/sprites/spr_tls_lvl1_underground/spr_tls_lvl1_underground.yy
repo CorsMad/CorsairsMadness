@@ -10,12 +10,12 @@
   "bbox_left": 0,
   "bbox_right": 79,
   "bbox_top": 16,
-  "bbox_bottom": 255,
+  "bbox_bottom": 271,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 80,
-  "height": 256,
+  "height": 272,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"04d2b386-a357-4c35-8063-1b5a3744747c","path":"sprites/spr_tls_lvl1_underground/spr_tls_lvl1_underground.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"04d2b386-a357-4c35-8063-1b5a3744747c","path":"sprites/spr_tls_lvl1_underground/spr_tls_lvl1_underground.yy",},"LayerId":{"name":"f4c1a44c-e60a-460d-be8f-4a7f9115ded3","path":"sprites/spr_tls_lvl1_underground/spr_tls_lvl1_underground.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_tls_lvl1_underground","path":"sprites/spr_tls_lvl1_underground/spr_tls_lvl1_underground.yy",},"resourceVersion":"1.0","name":"04d2b386-a357-4c35-8063-1b5a3744747c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3ac2b53f-e393-421a-8298-2a598abf5849","path":"sprites/spr_tls_lvl1_underground/spr_tls_lvl1_underground.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3ac2b53f-e393-421a-8298-2a598abf5849","path":"sprites/spr_tls_lvl1_underground/spr_tls_lvl1_underground.yy",},"LayerId":{"name":"26afb177-a699-42a6-bd39-cd6c76c247ed","path":"sprites/spr_tls_lvl1_underground/spr_tls_lvl1_underground.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_tls_lvl1_underground","path":"sprites/spr_tls_lvl1_underground/spr_tls_lvl1_underground.yy",},"resourceVersion":"1.0","name":"3ac2b53f-e393-421a-8298-2a598abf5849","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_tls_lvl1_underground","path":"sprites/spr_tls_lvl1_underground/spr_tls_lvl1_underground.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c859cd12-0e41-455c-a8af-5baba5c67b8d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"04d2b386-a357-4c35-8063-1b5a3744747c","path":"sprites/spr_tls_lvl1_underground/spr_tls_lvl1_underground.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"06a00a84-e0ce-491a-94ef-0ed853a6913b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3ac2b53f-e393-421a-8298-2a598abf5849","path":"sprites/spr_tls_lvl1_underground/spr_tls_lvl1_underground.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f4c1a44c-e60a-460d-be8f-4a7f9115ded3","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"26afb177-a699-42a6-bd39-cd6c76c247ed","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Tileset and level stuff",

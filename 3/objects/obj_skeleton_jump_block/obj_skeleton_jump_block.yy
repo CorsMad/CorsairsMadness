@@ -4,7 +4,7 @@
     "path": "sprites/spr_skeleton_jump_block/spr_skeleton_jump_block.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

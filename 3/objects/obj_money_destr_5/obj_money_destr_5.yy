@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Gold_destr",
-    "path": "folders/Objects/Level objects/Collectables/Gold_destr.yy",
+    "name": "Gold destr",
+    "path": "folders/Objects/Level objects/Collectables/Gold destr.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_money_destr_5",

@@ -3,11 +3,11 @@
 
 // main stats
 
-global.hp = 3;
+global.hp = 1;
 global.hp_max = 3;
-global.mana = 1;
+global.mana = 0;
 global.mana_max = 3;
-global.gold = 294;
+global.gold = 0;
 global.secrets = 1;
 
 // weapon controller
@@ -20,4 +20,4 @@ global.secrets = 1;
 global.choosed_item = 2;
 
 
-room_goto(TESTROOM);
+room_goto(L1_r11);
