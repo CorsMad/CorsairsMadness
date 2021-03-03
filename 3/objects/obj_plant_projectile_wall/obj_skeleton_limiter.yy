@@ -1,14 +1,14 @@
 {
   "spriteId": {
-    "name": "spr_block_mask",
-    "path": "sprites/spr_block_mask/spr_block_mask.yy",
+    "name": "spr_moving_platforms_limiter",
+    "path": "sprites/spr_moving_platforms_limiter/spr_moving_platforms_limiter.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
-  "physicsObject": true,
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Blocks",
-    "path": "folders/Objects/Blocks.yy",
+    "name": "Skeletons",
+    "path": "folders/Objects/Enemies/Skeletons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_block",
+  "name": "obj_skeleton_limiter",
   "tags": [],
   "resourceType": "GMObject",
 }
