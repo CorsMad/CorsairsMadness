@@ -17,6 +17,7 @@ global.secrets = 1;
 2 - топор
 3 - бомба
 */
+
 global.choosed_item = 2;
 
 
