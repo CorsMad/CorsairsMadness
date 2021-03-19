@@ -3,7 +3,7 @@
 #region movement
 if state = 1
 {
-	if place_meeting(x+spd,y,obj_block) || place_meeting(x+spd,y,obj_bird_limiter)
+	if place_meeting(x+spd,y,obj_block)
 	{
 		spd = -spd;	
 	}

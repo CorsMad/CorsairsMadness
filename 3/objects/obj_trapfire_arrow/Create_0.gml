@@ -2,7 +2,7 @@
 // You can write your code in this editor
 a = 1; // направление
 t = 0;
-spd = 4;
+spd = 3;
 
 image_alpha = 0;
 switch(image_angle)
