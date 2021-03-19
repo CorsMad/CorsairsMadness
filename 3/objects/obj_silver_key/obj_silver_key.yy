@@ -1,13 +1,13 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_room_trans",
+    "path": "sprites/spr_room_trans/spr_room_trans.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_enemy_parent",
-    "path": "objects/obj_enemy_parent/obj_enemy_parent.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -20,15 +20,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_silver_key","path":"objects/obj_silver_key/obj_silver_key.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "1.objPARENTING",
-    "path": "folders/Objects/Enemies/1.objPARENTING.yy",
+    "name": "Keys&Doors",
+    "path": "folders/Objects/Level objects/Keys&Doors.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_enemy_parent_armor_full",
+  "name": "obj_silver_key",
   "tags": [],
   "resourceType": "GMObject",
 }
