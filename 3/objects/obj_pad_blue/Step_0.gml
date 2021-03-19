@@ -1,9 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
-if isOn = 1 && place_meeting(x,y,obj_Player) && obj_Player.key_jump_pressed && obj_Player.isAirattacking = 0 && obj_Player.isAttackingdown = 0 && obj_Player.isDashing = 0 && obj_Player.isClimbing = 0 && obj_Player.isHooking = 0 && obj_Player.isOutjump = 0 && obj_Player.isTakingdmg = 0
+//if isOn = 1 && place_meeting(x,y,obj_Player) && obj_Player.key_jump_pressed && obj_Player.isAirattacking = 0 && obj_Player.isAttackingdown = 0 && obj_Player.isDashing = 0 && obj_Player.isClimbing = 0 && obj_Player.isHooking = 0 && obj_Player.isOutjump = 0 && obj_Player.isTakingdmg = 0
+if isOn = 1 && place_meeting(x,y,obj_Player) && obj_Player.key_jump_pressed && obj_Player.isAttackingdown = 0 && obj_Player.isClimbing = 0 && obj_Player.isHooking = 0 && obj_Player.isOutjump = 0 && obj_Player.isTakingdmg = 0
 {
 	instance_create_depth(obj_Player.x,obj_Player.y,-1,obj_pad_blue_player_sfx);
 	obj_Player.vspd = -5;
+	obj_Player.isAirattacking = 0;
+	obj_Player.isDashing = 0; 
 	isOn = 0;
 }
 if isOn = 0 

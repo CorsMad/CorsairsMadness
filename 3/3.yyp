@@ -86,6 +86,7 @@
     {"id":{"name":"spr_money1","path":"sprites/spr_money1/spr_money1.yy",},"order":1,},
     {"id":{"name":"spr_destructable_tile_underground","path":"sprites/spr_destructable_tile_underground/spr_destructable_tile_underground.yy",},"order":2,},
     {"id":{"name":"spr_moving_platform2","path":"sprites/spr_moving_platform2/spr_moving_platform2.yy",},"order":3,},
+    {"id":{"name":"Sprite182","path":"sprites/Sprite182/Sprite182.yy",},"order":0,},
     {"id":{"name":"obj_gift_on_ground_left","path":"objects/obj_gift_on_ground_left/obj_gift_on_ground_left.yy",},"order":1,},
     {"id":{"name":"obj_dummy_no_armor","path":"objects/obj_dummy_no_armor/obj_dummy_no_armor.yy",},"order":0,},
     {"id":{"name":"spr_gift_on_ground_part_left","path":"sprites/spr_gift_on_ground_part_left/spr_gift_on_ground_part_left.yy",},"order":1,},
@@ -113,6 +114,7 @@
     {"id":{"name":"obj_gift_non_ground_right","path":"objects/obj_gift_non_ground_right/obj_gift_non_ground_right.yy",},"order":2,},
     {"id":{"name":"spr_pad_red_off","path":"sprites/spr_pad_red_off/spr_pad_red_off.yy",},"order":4,},
     {"id":{"name":"obj_bird_vertical_coconut","path":"objects/obj_bird_vertical_coconut/obj_bird_vertical_coconut.yy",},"order":1,},
+    {"id":{"name":"L1_r13","path":"rooms/L1_r13/L1_r13.yy",},"order":12,},
     {"id":{"name":"spr_spikes","path":"sprites/spr_spikes/spr_spikes.yy",},"order":0,},
     {"id":{"name":"obj_destructable_parent","path":"objects/obj_destructable_parent/obj_destructable_parent.yy",},"order":1,},
     {"id":{"name":"spr_electric_pillar_on","path":"sprites/spr_electric_pillar_on/spr_electric_pillar_on.yy",},"order":0,},
@@ -189,7 +191,12 @@
     {"id":{"name":"obj_sfx_sparkle_2","path":"objects/obj_sfx_sparkle_2/obj_sfx_sparkle_2.yy",},"order":3,},
     {"id":{"name":"spr_armored_thing_in_shell","path":"sprites/spr_armored_thing_in_shell/spr_armored_thing_in_shell.yy",},"order":3,},
     {"id":{"name":"obj_skeleton_limiter","path":"objects/obj_skeleton_limiter/obj_skeleton_limiter.yy",},"order":6,},
+<<<<<<< Updated upstream
     {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"order":0,},
+=======
+    {"id":{"name":"L1_r14","path":"rooms/L1_r14/L1_r14.yy",},"order":13,},
+    {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"order":1,},
+>>>>>>> Stashed changes
     {"id":{"name":"obj_bird_creator","path":"objects/obj_bird_creator/obj_bird_creator.yy",},"order":1,},
     {"id":{"name":"obj_trapspikes","path":"objects/obj_trapspikes/obj_trapspikes.yy",},"order":0,},
     {"id":{"name":"spr_tls_tree1","path":"sprites/spr_tls_tree1/spr_tls_tree1.yy",},"order":0,},
@@ -210,6 +217,7 @@
     {"id":{"name":"obj_plant_projectile_wall","path":"objects/obj_plant_projectile_wall/obj_plant_projectile_wall.yy",},"order":2,},
     {"id":{"name":"spr_skeleton_jump","path":"sprites/spr_skeleton_jump/spr_skeleton_jump.yy",},"order":3,},
     {"id":{"name":"obj_destructable_block_medium","path":"objects/obj_destructable_block_medium/obj_destructable_block_medium.yy",},"order":2,},
+    {"id":{"name":"obj_hp1_mana1_gain_gift","path":"objects/obj_hp1_mana1_gain_gift/obj_hp1_mana1_gain_gift.yy",},"order":2,},
     {"id":{"name":"obj_bird_verical_shooting","path":"objects/obj_bird_verical_shooting/obj_bird_verical_shooting.yy",},"order":0,},
     {"id":{"name":"L1_r8","path":"rooms/L1_r8/L1_r8.yy",},"order":7,},
     {"id":{"name":"L1_r9","path":"rooms/L1_r9/L1_r9.yy",},"order":8,},
@@ -393,6 +401,8 @@
     {"roomId":{"name":"L1_r10","path":"rooms/L1_r10/L1_r10.yy",},},
     {"roomId":{"name":"L1_r11","path":"rooms/L1_r11/L1_r11.yy",},},
     {"roomId":{"name":"L1_r12","path":"rooms/L1_r12/L1_r12.yy",},},
+    {"roomId":{"name":"L1_r13","path":"rooms/L1_r13/L1_r13.yy",},},
+    {"roomId":{"name":"L1_r14","path":"rooms/L1_r14/L1_r14.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -522,10 +532,13 @@
     {"folderPath":"folders/Objects/Blocks/OneWayPlatform.yy","order":6,"resourceVersion":"1.0","name":"OneWayPlatform","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Enemies/Birds/Waving.yy","order":6,"resourceVersion":"1.0","name":"Waving","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Enemies/Trapspikes.yy","order":14,"resourceVersion":"1.0","name":"Trapspikes","tags":[],"resourceType":"GMFolder",},
+<<<<<<< Updated upstream
     {"folderPath":"folders/Objects/Enemies/TrapSpikes.yy","order":15,"resourceVersion":"1.0","name":"TrapSpikes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Enemies/1.objPARENTING.yy","order":16,"resourceVersion":"1.0","name":"1.objPARENTING","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Level objects/Keys&Doors.yy","order":5,"resourceVersion":"1.0","name":"Keys&Doors","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Level objects/Keys&Doors.yy","order":8,"resourceVersion":"1.0","name":"Keys&Doors","tags":[],"resourceType":"GMFolder",},
+=======
+>>>>>>> Stashed changes
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
