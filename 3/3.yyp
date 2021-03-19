@@ -525,6 +525,7 @@
     {"folderPath":"folders/Objects/Enemies/TrapSpikes.yy","order":15,"resourceVersion":"1.0","name":"TrapSpikes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Enemies/1.objPARENTING.yy","order":16,"resourceVersion":"1.0","name":"1.objPARENTING","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Level objects/Keys&Doors.yy","order":5,"resourceVersion":"1.0","name":"Keys&Doors","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Level objects/Keys&Doors.yy","order":8,"resourceVersion":"1.0","name":"Keys&Doors","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
