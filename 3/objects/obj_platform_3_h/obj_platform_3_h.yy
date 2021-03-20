@@ -32,7 +32,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Horizontal",
-    "path": "folders/Objects/Moving platforms/Horizontal.yy",
+    "path": "folders/Rooms/Objects/Moving platforms/Horizontal.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_platform_3_h",

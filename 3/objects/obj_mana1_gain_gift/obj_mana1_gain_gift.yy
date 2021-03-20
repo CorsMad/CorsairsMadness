@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "HP & mana",
-    "path": "folders/Objects/Level objects/Collectables/HP & mana.yy",
+    "path": "folders/Rooms/Objects/Level objects/Collectables/HP & mana.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_mana1_gain_gift",

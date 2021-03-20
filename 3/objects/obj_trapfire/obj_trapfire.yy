@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "TrapFire",
-    "path": "folders/Objects/Enemies/TrapFire.yy",
+    "path": "folders/Rooms/Objects/Enemies/TrapFire.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_trapfire",

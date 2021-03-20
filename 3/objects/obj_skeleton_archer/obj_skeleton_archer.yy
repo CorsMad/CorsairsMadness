@@ -36,7 +36,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Skeleton archer",
-    "path": "folders/Objects/Enemies/Skeletons/Skeleton archer.yy",
+    "path": "folders/Rooms/Objects/Enemies/Skeletons/Skeleton archer.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_skeleton_archer",

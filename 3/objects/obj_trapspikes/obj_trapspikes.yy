@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "TrapSpikes",
-    "path": "folders/Objects/Enemies/TrapSpikes.yy",
+    "path": "folders/Rooms/Objects/Enemies/TrapSpikes.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_trapspikes",

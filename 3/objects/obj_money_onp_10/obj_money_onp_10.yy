@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Gold on place",
-    "path": "folders/Objects/Level objects/Collectables/Gold on place.yy",
+    "path": "folders/Rooms/Objects/Level objects/Collectables/Gold on place.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_money_onp_10",

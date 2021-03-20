@@ -35,7 +35,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Horizontal shooting",
-    "path": "folders/Objects/Enemies/Birds/Horizontal shooting.yy",
+    "path": "folders/Rooms/Objects/Enemies/Birds/Horizontal shooting.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bird_horizontal_shooting",

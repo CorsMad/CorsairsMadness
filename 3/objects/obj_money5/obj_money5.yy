@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Gold",
-    "path": "folders/Objects/Level objects/Collectables/Gold.yy",
+    "path": "folders/Rooms/Objects/Level objects/Collectables/Gold.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_money5",

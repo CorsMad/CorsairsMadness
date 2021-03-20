@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Birds",
-    "path": "folders/Objects/Enemies/Birds.yy",
+    "path": "folders/Rooms/Objects/Enemies/Birds.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bird_feather",

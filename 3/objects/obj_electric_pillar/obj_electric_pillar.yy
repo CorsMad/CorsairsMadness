@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Sand level",
-    "path": "folders/Objects/Level objects/Sand level.yy",
+    "path": "folders/Rooms/Objects/Level objects/Sand level.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_electric_pillar",

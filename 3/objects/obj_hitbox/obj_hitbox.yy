@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Player objects",
-    "path": "folders/Objects/Player objects.yy",
+    "path": "folders/Rooms/Objects/Player objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_hitbox",

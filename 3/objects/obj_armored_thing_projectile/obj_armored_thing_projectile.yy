@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Armored thing",
-    "path": "folders/Objects/Enemies/Armored thing.yy",
+    "path": "folders/Rooms/Objects/Enemies/Armored thing.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_armored_thing_projectile",

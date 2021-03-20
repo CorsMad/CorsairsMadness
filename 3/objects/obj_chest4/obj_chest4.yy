@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Chest",
-    "path": "folders/Objects/Level objects/Other/Chest.yy",
+    "path": "folders/Rooms/Objects/Level objects/Other/Chest.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_chest4",

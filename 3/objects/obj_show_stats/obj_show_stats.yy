@@ -24,7 +24,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Stats",
-    "path": "folders/Objects/Stats.yy",
+    "path": "folders/Rooms/Objects/Stats.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_show_stats",

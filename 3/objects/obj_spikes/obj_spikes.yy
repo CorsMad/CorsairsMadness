@@ -33,7 +33,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Spikes",
-    "path": "folders/Objects/Enemies/Spikes.yy",
+    "path": "folders/Rooms/Objects/Enemies/Spikes.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_spikes",

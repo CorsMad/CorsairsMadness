@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Keys&Doors",
-    "path": "folders/Objects/Level objects/Keys&Doors.yy",
+    "path": "folders/Rooms/Objects/Level objects/Keys&Doors.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_silver_key",

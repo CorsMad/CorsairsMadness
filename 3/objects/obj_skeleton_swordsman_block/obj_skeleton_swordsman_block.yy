@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Skeleton swordsman",
-    "path": "folders/Objects/Enemies/Skeletons/Skeleton swordsman.yy",
+    "path": "folders/Rooms/Objects/Enemies/Skeletons/Skeleton swordsman.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_skeleton_swordsman_block",

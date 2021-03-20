@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Wall trigger",
-    "path": "folders/Objects/Blocks/Wall trigger.yy",
+    "path": "folders/Rooms/Objects/Blocks/Wall trigger.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_wall_trigger_close1_trigger",

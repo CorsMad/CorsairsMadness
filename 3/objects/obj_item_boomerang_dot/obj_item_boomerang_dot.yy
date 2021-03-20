@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Boomerang",
-    "path": "folders/Objects/Items/Boomerang.yy",
+    "path": "folders/Rooms/Objects/Items/Boomerang.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_item_boomerang_dot",

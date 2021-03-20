@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Blocks",
-    "path": "folders/Objects/Blocks.yy",
+    "path": "folders/Rooms/Objects/Blocks.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_block_climb",

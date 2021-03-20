@@ -38,7 +38,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Vertical",
-    "path": "folders/Objects/Enemies/Birds/Vertical.yy",
+    "path": "folders/Rooms/Objects/Enemies/Birds/Vertical.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bird_vertical",

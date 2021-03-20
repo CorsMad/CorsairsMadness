@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Bomb",
-    "path": "folders/Objects/Items/Bomb.yy",
+    "path": "folders/Rooms/Objects/Items/Bomb.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_item_bomb",

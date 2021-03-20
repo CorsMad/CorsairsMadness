@@ -32,7 +32,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Skeletons",
-    "path": "folders/Objects/Enemies/Skeletons.yy",
+    "path": "folders/Rooms/Objects/Enemies/Skeletons.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_skeleton_bone",

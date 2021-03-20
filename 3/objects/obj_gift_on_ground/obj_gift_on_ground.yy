@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "On ground",
-    "path": "folders/Objects/Level objects/Gifts/On ground.yy",
+    "path": "folders/Rooms/Objects/Level objects/Gifts/On ground.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_gift_on_ground",
