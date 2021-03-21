@@ -31,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Dummies",
-    "path": "folders/Rooms/Objects/Enemies/Dummies.yy",
+    "path": "folders/Objects/Enemies/Dummies.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_dummy_no_armor",

@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Triggers",
-    "path": "folders/Rooms/Objects/Triggers.yy",
+    "path": "folders/Objects/Triggers.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_room_transition_horizontal",

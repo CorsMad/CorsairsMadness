@@ -31,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Hook",
-    "path": "folders/Rooms/Objects/Items/Hook.yy",
+    "path": "folders/Objects/Items/Hook.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_item_hook",

@@ -4,7 +4,7 @@
     "path": "sprites/spr_block_mask/spr_block_mask.yy",
   },
   "solid": true,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Blocks",
-    "path": "folders/Rooms/Objects/Blocks.yy",
+    "path": "folders/Objects/Blocks.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_block",

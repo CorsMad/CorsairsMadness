@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Rain",
-    "path": "folders/Rooms/Objects/Weather/Rain.yy",
+    "path": "folders/Objects/Weather/Rain.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_weather_rain1",

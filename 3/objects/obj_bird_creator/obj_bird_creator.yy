@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Horizontal fast",
-    "path": "folders/Rooms/Objects/Enemies/Birds/Horizontal fast.yy",
+    "path": "folders/Objects/Enemies/Birds/Horizontal fast.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bird_creator",

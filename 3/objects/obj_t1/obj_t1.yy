@@ -31,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "TEST",
-    "path": "folders/Rooms/Objects/Blocks/Destructable chain blocks/TEST.yy",
+    "path": "folders/Objects/Blocks/Destructable chain blocks/TEST.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_t1",

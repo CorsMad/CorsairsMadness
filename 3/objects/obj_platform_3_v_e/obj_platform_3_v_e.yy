@@ -32,7 +32,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Vertical",
-    "path": "folders/Rooms/Objects/Moving platforms/Vertical.yy",
+    "path": "folders/Objects/Moving platforms/Vertical.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_platform_3_v_e",

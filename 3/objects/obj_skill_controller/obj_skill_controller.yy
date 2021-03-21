@@ -24,7 +24,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Global variables",
-    "path": "folders/Rooms/Objects/Global variables.yy",
+    "path": "folders/Objects/Global variables.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_skill_controller",

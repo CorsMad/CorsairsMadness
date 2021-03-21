@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Blue pad",
-    "path": "folders/Rooms/Objects/Pads/Blue pad.yy",
+    "path": "folders/Objects/Pads/Blue pad.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_pad_blue",

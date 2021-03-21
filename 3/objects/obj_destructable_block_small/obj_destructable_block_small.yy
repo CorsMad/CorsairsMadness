@@ -31,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Destructable blocks",
-    "path": "folders/Rooms/Objects/Blocks/Destructable blocks.yy",
+    "path": "folders/Objects/Blocks/Destructable blocks.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_destructable_block_small",

@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "HP & mana",
-    "path": "folders/Rooms/Objects/Level objects/Collectables/HP & mana.yy",
+    "path": "folders/Objects/Level objects/Collectables/HP & mana.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_hp1_mana1_gain_creator",

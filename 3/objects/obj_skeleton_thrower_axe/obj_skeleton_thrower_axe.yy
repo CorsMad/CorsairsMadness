@@ -34,7 +34,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Skeleton thrower",
-    "path": "folders/Rooms/Objects/Enemies/Skeletons/Skeleton thrower.yy",
+    "path": "folders/Objects/Enemies/Skeletons/Skeleton thrower.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_skeleton_thrower_axe",

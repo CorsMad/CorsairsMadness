@@ -32,7 +32,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "OneWayPlatform",
-    "path": "folders/Rooms/Objects/Blocks/OneWayPlatform.yy",
+    "path": "folders/Objects/Blocks/OneWayPlatform.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_ow_platform_3",

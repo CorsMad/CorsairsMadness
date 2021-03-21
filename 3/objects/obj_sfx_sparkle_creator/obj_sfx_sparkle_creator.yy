@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "SFX",
-    "path": "folders/Rooms/Objects/SFX.yy",
+    "path": "folders/Objects/SFX.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_sfx_sparkle_creator",

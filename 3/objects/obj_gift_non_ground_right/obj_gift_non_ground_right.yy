@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Non ground",
-    "path": "folders/Rooms/Objects/Level objects/Gifts/Non ground.yy",
+    "path": "folders/Objects/Level objects/Gifts/Non ground.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_gift_non_ground_right",

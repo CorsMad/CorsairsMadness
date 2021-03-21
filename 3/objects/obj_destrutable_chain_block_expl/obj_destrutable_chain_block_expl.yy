@@ -31,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Destructable chain blocks",
-    "path": "folders/Rooms/Objects/Blocks/Destructable chain blocks.yy",
+    "path": "folders/Objects/Blocks/Destructable chain blocks.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_destrutable_chain_block_expl",

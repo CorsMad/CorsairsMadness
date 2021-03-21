@@ -31,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Diagonal slime",
-    "path": "folders/Rooms/Objects/Enemies/Diagonal slime.yy",
+    "path": "folders/Objects/Enemies/Diagonal slime.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_diagonal_slime",

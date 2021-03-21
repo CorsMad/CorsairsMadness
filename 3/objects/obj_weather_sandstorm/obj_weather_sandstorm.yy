@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Sandstorm",
-    "path": "folders/Rooms/Objects/Weather/Sandstorm.yy",
+    "path": "folders/Objects/Weather/Sandstorm.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_weather_sandstorm",

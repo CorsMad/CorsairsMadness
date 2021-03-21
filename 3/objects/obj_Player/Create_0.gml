@@ -41,4 +41,7 @@ damage_cd = 0;
 
 dash_counts = 0;
 jump_counts = 0;
+silverkey_counts = 0;
+
+
 image_speed = 1.25;

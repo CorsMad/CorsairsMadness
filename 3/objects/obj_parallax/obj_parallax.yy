@@ -24,7 +24,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Camera",
-    "path": "folders/Rooms/Objects/Camera.yy",
+    "path": "folders/Objects/Camera.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_parallax",

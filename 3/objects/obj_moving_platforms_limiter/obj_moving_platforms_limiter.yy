@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Moving platforms",
-    "path": "folders/Rooms/Objects/Moving platforms.yy",
+    "path": "folders/Objects/Moving platforms.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_moving_platforms_limiter",

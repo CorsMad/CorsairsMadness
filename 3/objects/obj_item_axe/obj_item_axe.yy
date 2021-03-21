@@ -31,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Axe",
-    "path": "folders/Rooms/Objects/Items/Axe.yy",
+    "path": "folders/Objects/Items/Axe.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_item_axe",

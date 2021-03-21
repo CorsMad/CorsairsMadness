@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Red pad",
-    "path": "folders/Rooms/Objects/Pads/Red pad.yy",
+    "path": "folders/Objects/Pads/Red pad.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_pad_red_player_sfx",

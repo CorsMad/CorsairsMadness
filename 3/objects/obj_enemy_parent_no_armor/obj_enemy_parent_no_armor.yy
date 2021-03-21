@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "1.objPARENTING",
-    "path": "folders/Rooms/Objects/Enemies/1.objPARENTING.yy",
+    "path": "folders/Objects/Enemies/1.objPARENTING.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_enemy_parent_no_armor",

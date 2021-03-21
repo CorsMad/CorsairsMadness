@@ -34,7 +34,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Vertical shooting",
-    "path": "folders/Rooms/Objects/Enemies/Birds/Vertical shooting.yy",
+    "path": "folders/Objects/Enemies/Birds/Vertical shooting.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bird_vertical_coconut",

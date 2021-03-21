@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Snowstorm",
-    "path": "folders/Rooms/Objects/Weather/Snowstorm.yy",
+    "path": "folders/Objects/Weather/Snowstorm.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_weather_snowstorm_screen",

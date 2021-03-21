@@ -32,7 +32,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Blocks",
-    "path": "folders/Rooms/Objects/Blocks.yy",
+    "path": "folders/Objects/Blocks.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_block_ladder",

@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Waving",
-    "path": "folders/Rooms/Objects/Enemies/Birds/Waving.yy",
+    "path": "folders/Objects/Enemies/Birds/Waving.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bird_horizontal_waving_creator",

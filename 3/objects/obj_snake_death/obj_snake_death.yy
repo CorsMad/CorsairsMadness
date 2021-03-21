@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Snake",
-    "path": "folders/Rooms/Objects/Enemies/Snake.yy",
+    "path": "folders/Objects/Enemies/Snake.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_snake_death",
