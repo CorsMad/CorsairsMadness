@@ -12,10 +12,11 @@ if isOn = 1 && timer < 51
 {
 	timer++;
 }
-
-switch(timer)
+if timer = 45
 {
-	case 45 :	instance_create_depth(x,y-72,0,obj_sfx_checkpoint_cretor_big);
-				instance_create_depth(x,y-72,0,obj_sfx_checkpoint_cretor_small);
-				break;
+	instance_create_depth(x,y-72,0,obj_sfx_checkpoint_cretor_big);	
+}
+if timer = 25
+{
+	instance_create_depth(x,y-40,0,obj_sfx_checkpoint_cretor_small);
 }
