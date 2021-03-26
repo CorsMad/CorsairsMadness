@@ -22,6 +22,7 @@ if image_alpha < 1
 	{
 		global.gold += 20;
 		instance_create_depth(x,y,1,obj_sfx3);
+		fnc_snd_play_coin()
 		instance_destroy();
 	}
 #endregion

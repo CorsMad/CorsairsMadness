@@ -156,6 +156,7 @@ if isGrounded  = 1
 
 if jump_counts = 1 && key_jump && isUsingitem = 0 && isAttacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && coyote_timer!=0 && isTakingdmg = 0
 {
+	audio_play_sound(snd_player_jump,0,0);
 	jump_timer+=1;
 	vspd = -6;	
 	jump_counts -=1;
