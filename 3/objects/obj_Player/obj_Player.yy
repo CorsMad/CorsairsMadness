@@ -4,7 +4,7 @@
     "path": "sprites/spr_player_idle/spr_player_idle.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": {
     "name": "spr_player_mask",
     "path": "sprites/spr_player_mask/spr_player_mask.yy",
