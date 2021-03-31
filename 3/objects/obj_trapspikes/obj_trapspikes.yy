@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_trapspikes_mask_off",
+    "path": "sprites/spr_trapspikes_mask_off/spr_trapspikes_mask_off.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

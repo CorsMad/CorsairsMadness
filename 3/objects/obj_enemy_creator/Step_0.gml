@@ -17,7 +17,6 @@ if place_meeting(x,y,obj_Player)
 		switch(obj_cr)
 		{
 			case obj_snake   : obj_cr.spd = spd;break;
-			case obj_bird_horizontal_fast: obj_cr.spd = spd;break;
 		}
 	
 	instance_destroy();	

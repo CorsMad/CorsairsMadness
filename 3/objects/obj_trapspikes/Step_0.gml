@@ -26,7 +26,9 @@ if isOn = 1
 		case 25:	image_index = 6;break;
 		case 30:	image_index = 7;break;
 		case 35:	image_index = 8;break;
-		case 40:	image_index = 9;break;
+		case 40:	image_index = 9;
+					instance_create_depth(x,y,0,obj_trapspike_mask);
+					break;
 		case 113:	image_index = 10;break;
 		case 117:	image_index = 11;break;
 		case 120:	image_index = 12;break;

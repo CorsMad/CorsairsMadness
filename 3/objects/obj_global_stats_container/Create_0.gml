@@ -21,4 +21,4 @@ global.secrets = 1;
 global.choosed_item = 2;
 
 
-room_goto(TESTROOM);
+room_goto(L1_r22);
