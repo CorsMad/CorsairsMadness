@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if obj_Player.x >= x
+if (obj_Player.x >= x) && state !=4
 {
 	image_xscale = -1	
 } else image_xscale = 1;
