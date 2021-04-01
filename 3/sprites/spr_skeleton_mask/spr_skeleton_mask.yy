@@ -83,6 +83,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"940931c9-dec3-40ad-a305-fb65fed6e71c","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Skeletons",
     "path": "folders/Sprites/Enemies/Skeletons.yy",

@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 4,
-  "bbox_right": 26,
-  "bbox_top": 3,
-  "bbox_bottom": 31,
+  "bbox_left": 7,
+  "bbox_right": 29,
+  "bbox_top": 5,
+  "bbox_bottom": 32,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 32,
-  "height": 32,
+  "width": 36,
+  "height": 36,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ad67aab1-f002-48cf-9423-9dda485b95d9","path":"sprites/spr_skeleton_jump/spr_skeleton_jump.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ad67aab1-f002-48cf-9423-9dda485b95d9","path":"sprites/spr_skeleton_jump/spr_skeleton_jump.yy",},"LayerId":{"name":"e99f50d5-cd57-4f89-9f86-63fa9b758d2d","path":"sprites/spr_skeleton_jump/spr_skeleton_jump.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_jump","path":"sprites/spr_skeleton_jump/spr_skeleton_jump.yy",},"resourceVersion":"1.0","name":"ad67aab1-f002-48cf-9423-9dda485b95d9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e72f6887-4519-49be-baa2-e2c2a53bf214","path":"sprites/spr_skeleton_jump/spr_skeleton_jump.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e72f6887-4519-49be-baa2-e2c2a53bf214","path":"sprites/spr_skeleton_jump/spr_skeleton_jump.yy",},"LayerId":{"name":"bbc40d10-5740-40e9-9d9f-776b3f35be99","path":"sprites/spr_skeleton_jump/spr_skeleton_jump.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_skeleton_jump","path":"sprites/spr_skeleton_jump/spr_skeleton_jump.yy",},"resourceVersion":"1.0","name":"e72f6887-4519-49be-baa2-e2c2a53bf214","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_skeleton_jump","path":"sprites/spr_skeleton_jump/spr_skeleton_jump.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"889cac14-1d18-4c21-a7c2-3b1e6057f087","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ad67aab1-f002-48cf-9423-9dda485b95d9","path":"sprites/spr_skeleton_jump/spr_skeleton_jump.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7284ae28-7fcc-4c3d-9556-47c59ac9c3d0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e72f6887-4519-49be-baa2-e2c2a53bf214","path":"sprites/spr_skeleton_jump/spr_skeleton_jump.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 16,
-    "yorigin": 32,
+    "xorigin": 18,
+    "yorigin": 36,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_skeleton_jump","path":"sprites/spr_skeleton_jump/spr_skeleton_jump.yy",},
@@ -65,8 +65,9 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e99f50d5-cd57-4f89-9f86-63fa9b758d2d","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bbc40d10-5740-40e9-9d9f-776b3f35be99","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Skeleton",
     "path": "folders/Sprites/Enemies/Skeletons/Skeleton.yy",
