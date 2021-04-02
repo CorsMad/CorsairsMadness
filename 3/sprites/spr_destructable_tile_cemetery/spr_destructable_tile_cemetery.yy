@@ -107,9 +107,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f9b4316e-294f-4817-84d4-5f52d6601e4d","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
-    "name": "Tiles",
-    "path": "folders/Sprites/Solid objects (blocks)/Chain destructable/Tiles.yy",
+    "name": "AutoTiles",
+    "path": "folders/Sprites/Tileset and level stuff/AutoTiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_destructable_tile_cemetery",

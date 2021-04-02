@@ -111,9 +111,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a1e3b4cb-925b-44e4-90df-7eae32bc0220","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
-    "name": "Tiles",
-    "path": "folders/Sprites/Solid objects (blocks)/Chain destructable/Tiles.yy",
+    "name": "AutoTiles",
+    "path": "folders/Sprites/Tileset and level stuff/AutoTiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_destructable_tile_underground",

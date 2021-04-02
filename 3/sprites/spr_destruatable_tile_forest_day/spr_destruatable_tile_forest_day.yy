@@ -155,9 +155,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1dbb9aed-1a6c-4757-980d-7469a81c3359","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
-    "name": "Tiles",
-    "path": "folders/Sprites/Solid objects (blocks)/Chain destructable/Tiles.yy",
+    "name": "AutoTiles",
+    "path": "folders/Sprites/Tileset and level stuff/AutoTiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_destruatable_tile_forest_day",

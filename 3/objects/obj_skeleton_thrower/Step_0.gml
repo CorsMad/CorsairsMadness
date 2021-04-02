@@ -1,10 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-if (obj_Player.x >= x) && state !=4
+if state != 4
 {
-	image_xscale = -1	
-} else image_xscale = 1;
+	if (obj_Player.x >= x) 
+	{
+		image_xscale = -1	
+	} else image_xscale = 1;
+}
 
 
 #region walk
