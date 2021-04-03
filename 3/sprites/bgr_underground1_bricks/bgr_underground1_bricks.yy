@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8c321c01-fc99-43cb-972b-f155fe99e308","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "BGR_TEST",
     "path": "folders/Sprites/Backgrounds/BGR_TEST.yy",

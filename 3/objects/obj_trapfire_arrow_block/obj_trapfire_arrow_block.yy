@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_room_trans",
-    "path": "sprites/spr_room_trans/spr_room_trans.yy",
+    "name": "spr_trapfire_block",
+    "path": "sprites/spr_trapfire_block/spr_trapfire_block.yy",
   },
   "solid": false,
   "visible": false,
