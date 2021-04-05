@@ -10,7 +10,10 @@
     "path": "sprites/spr_bird_mask/spr_bird_mask.yy",
   },
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_parent_no_armor",
+    "path": "objects/obj_enemy_parent_no_armor/obj_enemy_parent_no_armor.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

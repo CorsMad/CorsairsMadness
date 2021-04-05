@@ -3,7 +3,7 @@
 
 // main stats
 
-global.hp = 1;
+global.hp = 2;
 global.hp_max = 3;
 global.mana = 0;
 global.mana_max = 3;
@@ -21,4 +21,4 @@ global.secrets = 1;
 global.choosed_item = 2;
 
 
-room_goto(TESTROOM);
+//room_goto(L1_r1);

@@ -3,3 +3,4 @@
 
 a = choose(1,2);
 spd = 1;
+angl_spd = 0;

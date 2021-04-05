@@ -8,13 +8,13 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 22,
+  "bbox_right": 31,
   "bbox_top": 0,
   "bbox_bottom": 5,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 23,
+  "width": 32,
   "height": 6,
   "textureGroupId": {
     "name": "Default",
@@ -54,7 +54,7 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 11,
+    "xorigin": 16,
     "yorigin": 3,
     "eventToFunction": {},
     "eventStubScript": null,
@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"909d2257-9dcd-4de6-9b6f-23015b48c7a9","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Skeleton archer",
     "path": "folders/Sprites/Enemies/Skeletons/Skeleton archer.yy",

@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 1,
-  "bbox_right": 14,
+  "bbox_left": 0,
+  "bbox_right": 15,
   "bbox_top": 0,
-  "bbox_bottom": 14,
+  "bbox_bottom": 15,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f50ef252-e878-4edd-b547-ab0d3cd21034","path":"sprites/spr_bird_coconut/spr_bird_coconut.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f50ef252-e878-4edd-b547-ab0d3cd21034","path":"sprites/spr_bird_coconut/spr_bird_coconut.yy",},"LayerId":{"name":"c38259e1-5978-495d-94e1-496ab4737e87","path":"sprites/spr_bird_coconut/spr_bird_coconut.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bird_coconut","path":"sprites/spr_bird_coconut/spr_bird_coconut.yy",},"resourceVersion":"1.0","name":"f50ef252-e878-4edd-b547-ab0d3cd21034","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"08c5c421-1b33-4d4e-a7b7-c8c21d10995c","path":"sprites/spr_bird_coconut/spr_bird_coconut.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"08c5c421-1b33-4d4e-a7b7-c8c21d10995c","path":"sprites/spr_bird_coconut/spr_bird_coconut.yy",},"LayerId":{"name":"7ac176d0-692c-429c-a1b8-86410c9104db","path":"sprites/spr_bird_coconut/spr_bird_coconut.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_bird_coconut","path":"sprites/spr_bird_coconut/spr_bird_coconut.yy",},"resourceVersion":"1.0","name":"08c5c421-1b33-4d4e-a7b7-c8c21d10995c","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_bird_coconut","path":"sprites/spr_bird_coconut/spr_bird_coconut.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"081cd05a-ae31-4c52-9d1c-c62eb08eb793","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f50ef252-e878-4edd-b547-ab0d3cd21034","path":"sprites/spr_bird_coconut/spr_bird_coconut.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bec180c1-8365-41d0-82d2-1685f3d83455","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"08c5c421-1b33-4d4e-a7b7-c8c21d10995c","path":"sprites/spr_bird_coconut/spr_bird_coconut.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,8 +65,9 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c38259e1-5978-495d-94e1-496ab4737e87","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7ac176d0-692c-429c-a1b8-86410c9104db","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Birds",
     "path": "folders/Sprites/Enemies/Birds.yy",

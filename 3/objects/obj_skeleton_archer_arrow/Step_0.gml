@@ -15,22 +15,8 @@ if hspd < 0 && isOn = 1
 
 if place_meeting(x,y,obj_block) && isOn = 1
 {
-	hspd = -(hspd/10);
-	isOn = 0;
-	vspd = -2;
-	mask_index = spr_blank;
-	isRotating = 1;
-}
-if isRotating = 1
-{
-	image_angle +=(10*sign(image_xscale));	
-}
-if isOn = 0
-{
-	image_alpha -= 0.02;
-	vspd+=0.1;	
-}
-if image_alpha < 0 
-{
-	instance_destroy();	
+	var i = instance_create_depth(x,y,-1,obj_skeleton_archer_arrow_dead);
+	i.hspd = -(hspd/10)
+	i.vspd = -2;
+	instance_destroy();
 }

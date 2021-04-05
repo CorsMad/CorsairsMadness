@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 31,
+  "bbox_right": 33,
   "bbox_top": 2,
-  "bbox_bottom": 31,
+  "bbox_bottom": 33,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 32,
-  "height": 32,
+  "width": 34,
+  "height": 34,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,15 +24,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"cc4742b2-a0e9-4968-91de-70850f206379","path":"sprites/spr_bird_red_dead/spr_bird_red_dead.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cc4742b2-a0e9-4968-91de-70850f206379","path":"sprites/spr_bird_red_dead/spr_bird_red_dead.yy",},"LayerId":{"name":"16c93a0f-708d-49dd-909f-0eb4dd7b4c97","path":"sprites/spr_bird_red_dead/spr_bird_red_dead.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bird_red_dead","path":"sprites/spr_bird_red_dead/spr_bird_red_dead.yy",},"resourceVersion":"1.0","name":"cc4742b2-a0e9-4968-91de-70850f206379","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ef6ecd3a-63e8-4b53-9b9e-5e4b895dde7c","path":"sprites/spr_bird_red_dead/spr_bird_red_dead.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ef6ecd3a-63e8-4b53-9b9e-5e4b895dde7c","path":"sprites/spr_bird_red_dead/spr_bird_red_dead.yy",},"LayerId":{"name":"7d50c077-f195-4ead-af57-c4bd4c1e223a","path":"sprites/spr_bird_red_dead/spr_bird_red_dead.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_bird_red_dead","path":"sprites/spr_bird_red_dead/spr_bird_red_dead.yy",},"resourceVersion":"1.0","name":"ef6ecd3a-63e8-4b53-9b9e-5e4b895dde7c","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_bird_red_dead","path":"sprites/spr_bird_red_dead/spr_bird_red_dead.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 10.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"70321b5d-77c7-45ff-9e59-3843e021bbfb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cc4742b2-a0e9-4968-91de-70850f206379","path":"sprites/spr_bird_red_dead/spr_bird_red_dead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a1c24d27-f608-4d0e-b0c7-86af3a2e61c4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ef6ecd3a-63e8-4b53-9b9e-5e4b895dde7c","path":"sprites/spr_bird_red_dead/spr_bird_red_dead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 16,
-    "yorigin": 16,
+    "xorigin": 17,
+    "yorigin": 17,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bird_red_dead","path":"sprites/spr_bird_red_dead/spr_bird_red_dead.yy",},
@@ -65,8 +65,9 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"16c93a0f-708d-49dd-909f-0eb4dd7b4c97","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7d50c077-f195-4ead-af57-c4bd4c1e223a","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Birds",
     "path": "folders/Sprites/Enemies/Birds.yy",

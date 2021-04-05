@@ -15,6 +15,7 @@ if state = 1
 	    if dis<180 
 		{
 	        state = 2;
+			sprite_index = spr_skeleton_archer_attack;
 	    }
 	}
 }
@@ -26,51 +27,50 @@ if state = 1
 if state = 2
 {
 	a++;
-	sprite_index = spr_skeleton_archer_attack;
-	if a = 60 
+	
+	switch(a)
 	{
-		image_speed = 1;	
-	}
-	if image_index = 3
-	{
-		var i = instance_create_depth(x,y-16,1,obj_skeleton_archer_arrow);
-		if image_xscale = 1
-		{
-			i.hspd = 5;
-		}
-		if image_xscale = -1
-		{
-			i.hspd = -5;	
-		}
-	}
-	if a = 120 
-	{
-		if  instance_exists(obj_Player) 
-		{
-	    var dis = point_distance(x,y,obj_Player.x,obj_Player.y);
+		case 1:		image_index = 0;break;
+		case 5:		image_index = 1;break;
+		case 10:	image_index = 2;break;
+		case 55:	image_index = 3;
+					var i = instance_create_depth(x,y-16,1,obj_skeleton_archer_arrow);
+					if image_xscale = 1
+					{
+						i.hspd = 5;
+					}
+					if image_xscale = -1
+					{
+						i.hspd = -5;	
+					}
+					break;
+		case 75:	image_index = 4;break;
+		case 90:	if  instance_exists(obj_Player) 
+					{
+				    var dis = point_distance(x,y,obj_Player.x,obj_Player.y);
     
-		    if dis<80 
-			{
-		        state = 3;
-				sprite_index = spr_skeleton_archer_walk;
-				image_speed = 0;
-				a = 0;
-		    } 
-			if dis >=80 &&  dis < 180
-			{
-				a = 0;
-				image_speed =0;
-			}
-			if dis >= 180 
-			{
-				a = 0;
-				state = 1;
-			}
-		}	
+					    if dis<80 
+						{
+					        state = 3;
+							sprite_index = spr_skeleton_archer_walk;
+							image_speed = 0;
+							a = 0;
+					    } 
+						if dis >=80 &&  dis < 180
+						{
+							a = 0;
+							image_speed =0;
+						}
+						if dis >= 180 
+						{
+							a = 0;
+							state = 1;
+						}
+					}
+					break;	
 	}
-}
-
-
+}	
+	
 #endregion
 
 #region run
