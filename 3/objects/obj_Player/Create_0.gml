@@ -10,6 +10,8 @@ carryspd = 0;
 
 // Состояния 
 
+isDead = 0;
+
 isAttacking = 0;
 isAirattacking = 0;
 isAirattacking_timer = 0;
@@ -36,6 +38,7 @@ wallclimb_timer = 0;
 climbing_timer = 0;
 coyote_timer = 0;
 damage_cd = 0;
+death_timer = 0;
 
 // Счетчики
 

@@ -199,6 +199,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cc440d74-f126-409c-8a10-3501e1278cc2","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Checkpoint",
     "path": "folders/Sprites/Level objects/Checkpoint.yy",

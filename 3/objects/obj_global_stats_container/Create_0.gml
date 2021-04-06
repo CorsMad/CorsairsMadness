@@ -3,12 +3,8 @@
 
 // main stats
 
-global.hp = 2;
-global.hp_max = 3;
-global.mana = 0;
-global.mana_max = 3;
-global.gold = 0;
-global.secrets = 1;
+global.hp = global.hp_max;
+global.mana = global.mana_max;
 
 // weapon controller
 
@@ -18,7 +14,10 @@ global.secrets = 1;
 3 - бомба
 */
 
-global.choosed_item = 2;
-
-
-//room_goto(L1_r1);
+// Восстановление после смерти
+if instance_exists(obj_Player)
+{
+	obj_Player.isDead = 0;
+	obj_Player.death_timer = 0;
+	obj_Player.image_blend = c_white;
+}

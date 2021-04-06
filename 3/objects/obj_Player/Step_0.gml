@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+#region Alive
+if isDead = 0 
+{
 #region Input
 key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
@@ -332,9 +335,10 @@ if attackingdown_timer > 0
 {
 	attackingdown_timer +=1;	
 }
-if attackingdown_timer = 15
+if attackingdown_timer = 16
 {
 	instance_create_depth(x,y,1,obj_hitbox_down);
+	instance_create_depth(x,y,1,obj_hitbox_destr_down);
 }
 if attackingdown_timer > 15 
 {
@@ -824,6 +828,7 @@ if isHooking = 1
 
 if (place_meeting(x,y,obj_enemy_parent) || place_meeting(x,y,obj_enemy_parent_object)) && damage_cd = 0 && isTakingdmg = 0
 {
+	global.hp -= 1;
 	hspd = 0;
 	vspd = -2;
 	isTakingdmg = 1;
@@ -889,13 +894,50 @@ if damage_cd = 120
 }
 
 #endregion
-
 #region Test
 
 #endregion
+#region Dead
+if global.hp <= 0
+	{
+		isDead = 1;	
+	}
+#endregion
+}
+#endregion
+#region Dead
 
-
-
-
-
-
+if isDead = 1
+{	
+	isAttacking = 0;
+	isAirattacking = 0;
+	isAirattacking_timer = 0;
+	isGrounded = 0;
+	isSkidding = 0;
+	isSkidding_timer = 0;
+	isDashing = 0;
+	isAttackingdown = 0;
+	isWallclimbing = 0;
+	isOutjump = 0;
+	isClimbing = 0;
+	isUsingitem = 0;
+	isAirUsingitem = 0;
+	isHooking = 0;
+	isGravitate = 0;
+	isTakingdmg = 0;
+	dashing_timer = 0;
+	jump_timer = 0;
+	attackingdown_timer = 0;
+	wallclimb_timer = 0;
+	climbing_timer = 0;
+	coyote_timer = 0;
+	damage_cd = 0;
+	
+	sprite_index = spr_player_death;
+	death_timer++;
+	switch(death_timer)
+	{
+		case 60: instance_create_depth(x,y-32,0,obj_room_transition_to_loading);
+	}
+}
+#endregion

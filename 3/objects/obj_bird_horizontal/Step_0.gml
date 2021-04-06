@@ -26,9 +26,7 @@ if state = 1
 if enemy_hp < 1
 {
 	state = 2;
-	mask_index = spr_blank;	
-	sprite_index = spr_bird_green_dead;
-	image_alpha = 0.8;
+	instance_create_depth(x,y,1,obj_bird_green_dead);
 }
 
 #endregion
@@ -37,12 +35,8 @@ if enemy_hp < 1
 
 if state = 2
 {
-	b++;
-	switch(b)
-	{
-		case 1: instance_create_depth(x,y,-1,obj_sfx_explosion); break;
-		case 10:	instance_destroy();break;
-	}
+	instance_create_depth(x,y,-1,obj_sfx_explosion);
+	instance_destroy();
 }
 
 #endregion

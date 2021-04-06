@@ -32,3 +32,8 @@ if a !=0
 {
 	a++;
 }
+
+if y > room_height+16
+{
+	instance_destroy();	
+}

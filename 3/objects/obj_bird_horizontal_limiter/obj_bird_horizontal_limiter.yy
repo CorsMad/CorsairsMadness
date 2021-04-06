@@ -4,7 +4,7 @@
     "path": "sprites/spr_bird_coconut_limiter/spr_bird_coconut_limiter.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

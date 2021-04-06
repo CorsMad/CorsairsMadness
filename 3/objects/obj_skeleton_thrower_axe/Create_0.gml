@@ -2,9 +2,12 @@
 // You can write your code in this editor
 vspd = -5;
 dis = round(x-obj_Player.x);
-
+if dis < 180 && dis > -180 
+{
+	spd = (dis/70);
+} else spd = 3;
 
 /*
 dis = point_distance(x,y,obj_Player.x,obj_Player.y);
 */
-spd = (dis/70);
+

@@ -121,6 +121,8 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":7.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":128.0,"resourceVersion":"1.0","name":"inst_622F4F92","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_room_transition_horizontal","path":"objects/obj_room_transition_horizontal/obj_room_transition_horizontal.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":2.6,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-16.0,"y":192.0,"resourceVersion":"1.0","name":"inst_4CB843EF","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_room_transition_horizontal","path":"objects/obj_room_transition_horizontal/obj_room_transition_horizontal.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":5.8,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":496.0,"y":128.0,"resourceVersion":"1.0","name":"inst_51F5E2EC","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_room_transition_black_screen","path":"objects/obj_room_transition_black_screen/obj_room_transition_black_screen.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":16.0,"y":0.0,"resourceVersion":"1.0","name":"inst_3B4B069F","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_checkpoint_projectile","path":"objects/obj_checkpoint_projectile/obj_checkpoint_projectile.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":344.0,"y":240.0,"resourceVersion":"1.0","name":"inst_17D8553F","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tls_underground_lvl1","path":"tilesets/tls_underground_lvl1/tls_underground_lvl1.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":30,"SerialiseHeight":17,"TileSerialiseData":[
 17,17,17,17,24,20,17,17,17,17,17,17,17,17,24,20,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
@@ -292,6 +294,8 @@
     {"name":"inst_622F4F92","path":"rooms/L1_r15/L1_r15.yy",},
     {"name":"inst_4CB843EF","path":"rooms/L1_r15/L1_r15.yy",},
     {"name":"inst_51F5E2EC","path":"rooms/L1_r15/L1_r15.yy",},
+    {"name":"inst_3B4B069F","path":"rooms/L1_r15/L1_r15.yy",},
+    {"name":"inst_17D8553F","path":"rooms/L1_r15/L1_r15.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -299,7 +303,7 @@
     "inheritRoomSettings": false,
     "Width": 480,
     "Height": 270,
-    "persistent": false,
+    "persistent": true,
   },
   "viewSettings": {
     "inheritViewSettings": false,
