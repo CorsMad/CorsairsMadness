@@ -18,7 +18,7 @@ if place_meeting(x,y,obj_hitbox) && timer = 0
 	}
 }
 
-if place_meeting(x,y,obj_hitbox_down) && timer = 0
+if place_meeting(x,y,obj_hitbox_destr_down) && timer = 0
 {
 	timer=1;	
 	mask_index = spr_blank;	

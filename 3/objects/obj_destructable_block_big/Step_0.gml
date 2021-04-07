@@ -7,7 +7,7 @@ if place_meeting(x,y,obj_sfx_explosion_bomb) && timer = 0
 	mask_index = spr_blank;
 }
 
-/*
+
 if place_meeting(x,y,obj_hitbox) && timer = 0
 {
 	timer=1;	
@@ -17,7 +17,7 @@ if place_meeting(x,y,obj_hitbox) && timer = 0
 		instance_create_depth(obj_hitbox.x+7,obj_hitbox.y-20,-1,obj_sfx_weapon_slash);
 	}
 }
-*/
+
 if place_meeting(x,y,obj_hitbox_destr_down) && timer = 0
 {
 	timer=1;	

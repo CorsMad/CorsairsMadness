@@ -7,11 +7,14 @@ if instance_exists(obj_Player)
 		x = obj_Player.x;
 		y = obj_Player.y;
 		
-		if place_meeting(x,y,obj_destructable_parent) || place_meeting(x,y,obj_gift_on_ground)
+		
+		if place_meeting(x,y,obj_destructable_parent) 
 		{
+			
+			obj_Player.vspd = -5;
 			obj_Player.isAttackingdown = 0;
 			obj_Player.attackingdown_timer = 0;
-			obj_Player.vspd = -5;		
+					
 		}
 		
 	} else instance_destroy();

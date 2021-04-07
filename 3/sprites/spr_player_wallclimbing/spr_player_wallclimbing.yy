@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 9,
-  "bbox_right": 28,
-  "bbox_top": 1,
-  "bbox_bottom": 40,
+  "bbox_left": 8,
+  "bbox_right": 29,
+  "bbox_top": 0,
+  "bbox_bottom": 41,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7e7ea2dd-e026-499c-9791-d0fcff148108","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7e7ea2dd-e026-499c-9791-d0fcff148108","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},"LayerId":{"name":"52e8bb73-36da-4bea-ae7b-27d95f6af5b8","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_wallclimbing","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},"resourceVersion":"1.0","name":"7e7ea2dd-e026-499c-9791-d0fcff148108","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"785a6c11-dada-4d25-a7a4-ae44d9312981","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"785a6c11-dada-4d25-a7a4-ae44d9312981","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},"LayerId":{"name":"5c92adc2-0440-4501-ac21-d7d259011ab9","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_player_wallclimbing","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},"resourceVersion":"1.0","name":"785a6c11-dada-4d25-a7a4-ae44d9312981","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_player_wallclimbing","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f1c6e0d5-bddc-409c-bf5d-f09ff57302a3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7e7ea2dd-e026-499c-9791-d0fcff148108","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d79b7638-5d1c-4b57-b8d9-c6bd36435a3a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"785a6c11-dada-4d25-a7a4-ae44d9312981","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,8 +65,9 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"52e8bb73-36da-4bea-ae7b-27d95f6af5b8","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5c92adc2-0440-4501-ac21-d7d259011ab9","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Player",
     "path": "folders/Sprites/Player.yy",

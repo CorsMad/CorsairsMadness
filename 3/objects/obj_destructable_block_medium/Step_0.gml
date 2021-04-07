@@ -4,15 +4,12 @@
 if place_meeting(x,y,obj_sfx_explosion_bomb) && timer = 0
 {	
 	timer=1;	
-	sprite_index = spr_blank;
 	mask_index = spr_blank;
 }
-
 
 if place_meeting(x,y,obj_hitbox) && timer = 0
 {
 	timer=1;	
-	sprite_index = spr_blank;
 	mask_index = spr_blank;	
 	if !instance_exists(obj_sfx_weapon_slash)
 	{
@@ -20,7 +17,7 @@ if place_meeting(x,y,obj_hitbox) && timer = 0
 	}
 }
 
-if place_meeting(x,y,obj_hitbox_down) && timer = 0
+if place_meeting(x,y,obj_hitbox_destr_down) && timer = 0
 {
 	timer=1;	
 	mask_index = spr_blank;	

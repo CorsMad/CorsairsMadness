@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 3,
-  "bbox_right": 31,
-  "bbox_top": 1,
-  "bbox_bottom": 41,
+  "bbox_left": 2,
+  "bbox_right": 32,
+  "bbox_top": 0,
+  "bbox_bottom": 42,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d20e3ec4-d2e6-4ab8-b710-5e3c4ec57e99","path":"sprites/spr_player_attackingdown/spr_player_attackingdown.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d20e3ec4-d2e6-4ab8-b710-5e3c4ec57e99","path":"sprites/spr_player_attackingdown/spr_player_attackingdown.yy",},"LayerId":{"name":"7dc6344a-aac4-4d97-8384-534420d7793f","path":"sprites/spr_player_attackingdown/spr_player_attackingdown.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_attackingdown","path":"sprites/spr_player_attackingdown/spr_player_attackingdown.yy",},"resourceVersion":"1.0","name":"d20e3ec4-d2e6-4ab8-b710-5e3c4ec57e99","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"44969881-8e10-4f2f-8bce-851efcc8d265","path":"sprites/spr_player_attackingdown/spr_player_attackingdown.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"44969881-8e10-4f2f-8bce-851efcc8d265","path":"sprites/spr_player_attackingdown/spr_player_attackingdown.yy",},"LayerId":{"name":"4341207b-9588-490a-ac99-a6b3b065252f","path":"sprites/spr_player_attackingdown/spr_player_attackingdown.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_player_attackingdown","path":"sprites/spr_player_attackingdown/spr_player_attackingdown.yy",},"resourceVersion":"1.0","name":"44969881-8e10-4f2f-8bce-851efcc8d265","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_player_attackingdown","path":"sprites/spr_player_attackingdown/spr_player_attackingdown.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"826e9907-db27-49dc-bdf3-e3f6d227d444","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d20e3ec4-d2e6-4ab8-b710-5e3c4ec57e99","path":"sprites/spr_player_attackingdown/spr_player_attackingdown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c30ff75b-0c44-42d0-b3eb-6fa2ce52fc5a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"44969881-8e10-4f2f-8bce-851efcc8d265","path":"sprites/spr_player_attackingdown/spr_player_attackingdown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,8 +65,9 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7dc6344a-aac4-4d97-8384-534420d7793f","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4341207b-9588-490a-ac99-a6b3b065252f","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Player",
     "path": "folders/Sprites/Player.yy",
