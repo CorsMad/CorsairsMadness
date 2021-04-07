@@ -3,8 +3,8 @@
 //Player stats
 
 global.choosed_item = 2;
-global.hp = 3;
-global.hp_max = 3;
+global.hp = 1;
+global.hp_max = 1;
 global.mana = 3;
 global.mana_max = 3;
 global.gold = 0;

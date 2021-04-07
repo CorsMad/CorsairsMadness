@@ -1,9 +1,6 @@
 {
-  "spriteId": {
-    "name": "spr_block_mask",
-    "path": "sprites/spr_block_mask/spr_block_mask.yy",
-  },
-  "solid": true,
+  "spriteId": null,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -20,15 +17,18 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Blocks",
-    "path": "folders/Objects/Blocks.yy",
+    "name": "SFX",
+    "path": "folders/Objects/SFX.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_block",
+  "name": "obj_sfx_player_dead_emitter",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -19,5 +19,6 @@ if instance_exists(obj_Player)
 {
 	obj_Player.isDead = 0;
 	obj_Player.death_timer = 0;
+	obj_Player.image_alpha = 1;
 	obj_Player.image_blend = c_white;
 }

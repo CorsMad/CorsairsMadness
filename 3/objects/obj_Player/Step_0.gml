@@ -901,6 +901,7 @@ if damage_cd = 120
 if global.hp <= 0
 	{
 		isDead = 1;	
+		vspd = -2;
 	}
 #endregion
 }
@@ -933,11 +934,19 @@ if isDead = 1
 	coyote_timer = 0;
 	damage_cd = 0;
 	
-	sprite_index = spr_player_death;
+	
+	
+	y+=vspd;
+	vspd = lerp(vspd,0,0.05);
 	death_timer++;
 	switch(death_timer)
 	{
-		case 60: instance_create_depth(x,y-32,0,obj_room_transition_to_loading);
+		case 1: instance_create_depth(x,y-24,-1,obj_sfx_player_dead_emitter);
+				sprite_index = spr_player_hurt;
+				break;
+		case 55:sprite_index = spr_player_death;break;
+		case 80: image_alpha = 0;break;
+		case 200: instance_create_depth(x,y-24,-1,obj_room_transition_to_loading);break;
 	}
 }
 #endregion
