@@ -8,4 +8,4 @@ states
 */
 sprite_index = spr_bird_green;
 state = 1;
-spd = 1;
+spd = -1;

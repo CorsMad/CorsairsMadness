@@ -112,6 +112,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_room_transition_vertical","path":"objects/obj_room_transition_vertical/obj_room_transition_vertical.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":3.4,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":56.0,"y":288.0,"resourceVersion":"1.0","name":"inst_547E356B","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_room_transition_black_screen","path":"objects/obj_room_transition_black_screen/obj_room_transition_black_screen.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":0.0,"resourceVersion":"1.0","name":"inst_10048206","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_checkpoint_projectile","path":"objects/obj_checkpoint_projectile/obj_checkpoint_projectile.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":240.0,"y":160.0,"resourceVersion":"1.0","name":"inst_708E6702","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_checkpoint_l1_r5","path":"objects/obj_checkpoint_l1_r5/obj_checkpoint_l1_r5.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.93023252,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":240.0,"y":160.0,"resourceVersion":"1.0","name":"inst_74DF57F5","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tls_underground_lvl1","path":"tilesets/tls_underground_lvl1/tls_underground_lvl1.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":30,"SerialiseHeight":17,"TileSerialiseData":[
 17,19,15,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,23,19,2147483648,2147483648,2147483648,15,
@@ -274,6 +275,7 @@
     {"name":"inst_547E356B","path":"rooms/L1_r5/L1_r5.yy",},
     {"name":"inst_10048206","path":"rooms/L1_r5/L1_r5.yy",},
     {"name":"inst_708E6702","path":"rooms/L1_r5/L1_r5.yy",},
+    {"name":"inst_74DF57F5","path":"rooms/L1_r5/L1_r5.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

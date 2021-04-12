@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_checkpoint_projectile",
+    "path": "sprites/spr_checkpoint_projectile/spr_checkpoint_projectile.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

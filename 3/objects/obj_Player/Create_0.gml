@@ -28,6 +28,7 @@ isAirUsingitem = 0;
 isHooking = 0;
 isGravitate = 0;
 isTakingdmg = 0;
+isCarry = 0;
 
 // Таймеры
 
