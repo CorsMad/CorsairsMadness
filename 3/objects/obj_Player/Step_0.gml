@@ -67,7 +67,7 @@ if key_left && isUsingitem = 0 && isAirUsingitem = 0 && isAttacking = 0 && isAir
 	if isCarry = 0
 	{
 		sprite_index = spr_player_run;
-	} else sprite_index = spr_player_run;
+	} else sprite_index = spr_player_run_carry;
 	image_speed = 1.25;
 	
 	if spd > 0 
@@ -94,7 +94,7 @@ if key_right && isUsingitem = 0 && isAttacking = 0 && isAirUsingitem = 0 && isAi
 	if isCarry = 0
 	{
 		sprite_index = spr_player_run;
-	} else sprite_index = spr_player_run;
+	} else sprite_index = spr_player_run_carry;
 	image_speed = 1.25;
 	
 	if spd < 0 
@@ -124,7 +124,7 @@ if ((!key_left && !key_right) || (key_left && key_right) ) && isUsingitem = 0 &&
 	if isCarry = 0
 	{
 		sprite_index = spr_player_idle;
-	} else sprite_index = spr_player_idle;
+	} else sprite_index = spr_player_idle_carry;
 	image_speed = 1.25;
 	
 }
@@ -142,7 +142,7 @@ if isGrounded = 0 && isAirattacking = 0 && isAirUsingitem = 0 &&  isAttackingdow
 	if isCarry = 0
 	{
 		sprite_index = spr_player_jump;
-	} else sprite_index = spr_player_jump;
+	} else sprite_index = spr_player_jump_carry;
 	image_speed =0;
 	
 		if vspd > 0 
@@ -926,6 +926,15 @@ if isCarry = 1
 
 #endregion
 #region Carry Bomb attack
+if isCarry = 1 && key_attack
+{
+	isCarry = 0;	
+	var iBomb = instance_create_depth(x+4*dir,y-48,obj_Player.depth-1,obj_bomb);
+	iBomb.hspd = 4*dir;
+	
+	
+	
+}
 #endregion
 #region Test
 
