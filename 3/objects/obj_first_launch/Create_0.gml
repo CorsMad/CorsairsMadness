@@ -21,8 +21,8 @@ global.TargetRoom = L1_r1;
 
 /*
 global.TargetX = 16;
-global.TargetY = 160;
-global.TargetRoom = L1_r9;
+global.TargetY = 128;
+global.TargetRoom = L1_r25;
 */
 
 // TESTROOM

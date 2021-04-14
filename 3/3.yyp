@@ -475,10 +475,10 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"FirstRoom","path":"rooms/FirstRoom/FirstRoom.yy",},},
+    {"roomId":{"name":"MainScreen","path":"rooms/MainScreen/MainScreen.yy",},},
     {"roomId":{"name":"LoadingRoom","path":"rooms/LoadingRoom/LoadingRoom.yy",},},
     {"roomId":{"name":"TESTROOM","path":"rooms/TESTROOM/TESTROOM.yy",},},
     {"roomId":{"name":"TO_COPY","path":"rooms/TO_COPY/TO_COPY.yy",},},
-    {"roomId":{"name":"MainScreen","path":"rooms/MainScreen/MainScreen.yy",},},
     {"roomId":{"name":"L1_r1","path":"rooms/L1_r1/L1_r1.yy",},},
     {"roomId":{"name":"L1_r2","path":"rooms/L1_r2/L1_r2.yy",},},
     {"roomId":{"name":"L1_r3","path":"rooms/L1_r3/L1_r3.yy",},},
