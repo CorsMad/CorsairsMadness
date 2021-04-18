@@ -29,7 +29,9 @@ isHooking = 0;
 isGravitate = 0;
 isTakingdmg = 0;
 isCarry = 0;
-
+isPickup = 0;
+isThrowingBomb = 0
+isAirThrowingBomb = 0;
 // Таймеры
 
 dashing_timer = 0;
@@ -40,6 +42,7 @@ climbing_timer = 0;
 coyote_timer = 0;
 damage_cd = 0;
 death_timer = 0;
+pickup_timer = 0;
 
 // Счетчики
 
