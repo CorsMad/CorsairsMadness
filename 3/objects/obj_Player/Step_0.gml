@@ -939,10 +939,12 @@ if damage_cd = 120
 	}	
 }
 #endregion
-#region Carry Bomb
-if isCarry = 1
+#region Carry Bomb with teleport
+if isCarry = 1 && (place_meeting(x,y,obj_room_transition_horizontal) || place_meeting(x,y,obj_room_transition_vertical))
 {
-		
+	isCarry = 0;
+	isAirThrowingBomb = 0;
+	isThrowingBomb = 0;
 }
 
 #endregion

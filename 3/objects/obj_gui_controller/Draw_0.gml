@@ -43,11 +43,16 @@
 
 #region draw secrets
 
+	draw_sprite_ext(spr_hud_secret,0,(camera_get_view_x(view_camera[0]))+384,camera_get_view_y(view_camera[0])+1,1,1,0, c_white,1);
+	draw_set_font(fnt_pixel);
+    draw_text_colour(camera_get_view_x(view_camera[0])+406,camera_get_view_y(view_camera[0])+4,string(global.secrets),c_white,c_white,c_white,c_white,1);
+
+/*
 	for (var i=24; i-24<global.secrets; i++) 
 	{
-		draw_sprite_ext(spr_hud_secret,1,(camera_get_view_x(view_camera[0]))+i*16,camera_get_view_y(view_camera[0])+1,1,1,0, c_white,1);
+		draw_sprite_ext(spr_hud_secret,0,(camera_get_view_x(view_camera[0]))+i*16,camera_get_view_y(view_camera[0])+1,1,1,0, c_white,1);
 	}
-
+*/
 #endregion
 
 #region draw weaposelect
