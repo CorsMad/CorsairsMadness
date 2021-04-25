@@ -20,10 +20,16 @@ global.TargetRoom = L1_r1;
 */
 
 
-global.TargetX = 16;
-global.TargetY = 160;
-global.TargetRoom = L1_r4;
+global.TargetX = 80;
+global.TargetY = 256;
+global.TargetRoom = L1_s3;
 
+
+/*
+global.TargetX = 48;
+global.TargetY = 256;
+global.TargetRoom = L1_s1_2;
+*/
 
 // TESTROOM
 

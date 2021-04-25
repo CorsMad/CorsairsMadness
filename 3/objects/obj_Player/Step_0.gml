@@ -875,9 +875,14 @@ if (place_meeting(x,y,obj_enemy_parent) || place_meeting(x,y,obj_enemy_parent_ob
 	isAirUsingitem = 0;
 	isHooking = 0;
 	isGravitate = 0;
-	isCarry = 0;
 	isPickup = 0
 	pickup_timer = 0;
+	if isCarry = 1
+	{
+		isCarry = 0;
+		var b_cr = instance_create_depth(x,y-32,1,obj_bomb);
+		b_cr.isOn = 1;
+	}
 }
 
 if isTakingdmg = 1 

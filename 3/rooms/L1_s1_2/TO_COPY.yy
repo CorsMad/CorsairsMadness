@@ -23,8 +23,8 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_8C8B260","path":"rooms/L1_r_bomb/L1_r_bomb.yy",},
-    {"name":"inst_E4B408A","path":"rooms/L1_r_bomb/L1_r_bomb.yy",},
+    {"name":"inst_8C8B260","path":"rooms/TO_COPY/TO_COPY.yy",},
+    {"name":"inst_E4B408A","path":"rooms/TO_COPY/TO_COPY.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -48,11 +48,11 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Level1",
-    "path": "folders/Rooms/Level1.yy",
+    "name": "Rooms",
+    "path": "folders/Rooms.yy",
   },
   "resourceVersion": "1.0",
-  "name": "L1_r_bomb",
+  "name": "TO_COPY",
   "tags": [],
   "resourceType": "GMRoom",
 }

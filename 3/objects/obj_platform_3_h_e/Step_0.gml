@@ -27,3 +27,9 @@ if isEnabled = 1
 	}
 }
 
+
+if place_meeting(x,y,obj_platform_destroyer)
+{
+	instance_destroy();	
+}
+

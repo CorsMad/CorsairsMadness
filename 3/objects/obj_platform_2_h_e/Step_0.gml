@@ -26,3 +26,9 @@ if isEnabled = 1
 		obj_Player.carryspd = spd;
 	}
 }
+
+
+if place_meeting(x,y,obj_platform_destroyer)
+{
+	instance_destroy();	
+}

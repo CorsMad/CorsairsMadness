@@ -25,3 +25,9 @@ if isEnabled = 1
 		obj_Player.y = y;
 	}
 }
+
+
+if place_meeting(x,y,obj_platform_destroyer)
+{
+	instance_destroy();	
+}

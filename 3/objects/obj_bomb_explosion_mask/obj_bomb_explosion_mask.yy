@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Carry Bomb",
-    "path": "folders/Objects/Carry Bomb.yy",
+    "path": "folders/Objects/Level objects/Carry Bomb.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bomb_explosion_mask",

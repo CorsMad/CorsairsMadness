@@ -19,3 +19,7 @@ if place_meeting(x,y-2,obj_Player)
 	obj_Player.y = y;
 }
 
+if place_meeting(x,y,obj_platform_destroyer)
+{
+	instance_destroy();	
+}
