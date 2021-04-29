@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Forest level",
-    "path": "folders/Objects/Level objects/Forest level.yy",
+    "path": "folders/Objects/Level objects/Death Pit/Forest level.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_leaves_area",

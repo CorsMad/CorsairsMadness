@@ -68,10 +68,23 @@ if instance_exists(obj_Player)
 	}
 }
 #endregion
-
+/*
 #region draw_room_name
 
 	draw_set_font(fnt_pixel);
     draw_text_colour(camera_get_view_x(view_camera[0])+420,camera_get_view_y(view_camera[0])+8,room_get_name(room),c_white,c_white,c_white,c_white,1);
 #endregion
 
+*/
+/*
+if instance_exists(obj_boss1_phase1)
+{
+	draw_set_font(fnt_pixel);
+    draw_text_colour(camera_get_view_x(view_camera[0])+420,camera_get_view_y(view_camera[0])+8,obj_boss1_phase1.state,c_white,c_white,c_white,c_white,1);
+}
+*/
+if instance_exists(obj_boss1_phase1)
+{
+	draw_set_font(fnt_pixel);
+    draw_text_colour(camera_get_view_x(view_camera[0])+420,camera_get_view_y(view_camera[0])+8,obj_boss1_phase1.state,c_white,c_white,c_white,c_white,1);
+}

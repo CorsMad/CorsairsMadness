@@ -10,26 +10,32 @@ global.mana_max = 3;
 global.gold = 0;
 global.secrets = 0;
 
+#region Secrets in levels
+global.secrets_l1_s1 = 1;
+global.secrets_l1_s2 = 1
+global.secrets_l1_s3 = 1;
+#endregion
 
 //Global transp
-
 /*
+
 global.TargetX = 16;
 global.TargetY = 224;
 global.TargetRoom = L1_r1;
 */
-
-
-global.TargetX = 80;
-global.TargetY = 256;
-global.TargetRoom = L1_s3;
-
-
 /*
-global.TargetX = 48;
-global.TargetY = 256;
-global.TargetRoom = L1_s1_2;
+
+global.TargetX = 960;
+global.TargetY = 224;
+global.TargetRoom = L1_s1_1;
+
 */
+
+
+global.TargetX = 32;
+global.TargetY = 256;
+global.TargetRoom = L1_boss_room;
+
 
 // TESTROOM
 
