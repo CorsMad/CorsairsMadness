@@ -160,6 +160,7 @@
     {"id":{"name":"spr_torch","path":"sprites/spr_torch/spr_torch.yy",},"order":0,},
     {"id":{"name":"spr_destruatable_tile_forest_day","path":"sprites/spr_destruatable_tile_forest_day/spr_destruatable_tile_forest_day.yy",},"order":1,},
     {"id":{"name":"spr_pad_red_player_sfx","path":"sprites/spr_pad_red_player_sfx/spr_pad_red_player_sfx.yy",},"order":1,},
+    {"id":{"name":"obj_firing_molded","path":"objects/obj_firing_molded/obj_firing_molded.yy",},"order":0,},
     {"id":{"name":"spr_trapfire_arrow","path":"sprites/spr_trapfire_arrow/spr_trapfire_arrow.yy",},"order":1,},
     {"id":{"name":"spr_player_outjump","path":"sprites/spr_player_outjump/spr_player_outjump.yy",},"order":10,},
     {"id":{"name":"spr_player_idle_carry","path":"sprites/spr_player_idle_carry/spr_player_idle_carry.yy",},"order":21,},
@@ -375,6 +376,7 @@
     {"id":{"name":"Test2","path":"rooms/Test2/Test2.yy",},"order":10,},
     {"id":{"name":"spr_silverkey","path":"sprites/spr_silverkey/spr_silverkey.yy",},"order":2,},
     {"id":{"name":"scr_deleting_from_persistence","path":"scripts/scr_deleting_from_persistence/scr_deleting_from_persistence.yy",},"order":0,},
+    {"id":{"name":"obj_firing_molded_projectile","path":"objects/obj_firing_molded_projectile/obj_firing_molded_projectile.yy",},"order":1,},
     {"id":{"name":"obj_wall_trigger_close1","path":"objects/obj_wall_trigger_close1/obj_wall_trigger_close1.yy",},"order":0,},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},"order":2,},
     {"id":{"name":"obj_saw_horizontal","path":"objects/obj_saw_horizontal/obj_saw_horizontal.yy",},"order":1,},
@@ -983,6 +985,7 @@
     {"folderPath":"folders/Objects/Items/Hook masked.yy","order":4,"resourceVersion":"1.0","name":"Hook masked","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Items/Hook masked.yy","order":6,"resourceVersion":"1.0","name":"Hook masked","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Enemies/Masked level enemies/Flying.yy","order":2,"resourceVersion":"1.0","name":"Flying","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Enemies/Masked level enemies/Firing.yy","order":3,"resourceVersion":"1.0","name":"Firing","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

@@ -128,15 +128,18 @@
 #region Получение урона и отлет назад
     if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
     {
-        obj_Player.vspd = -3.5;
-        
+		if obj_Player.isGrounded = 0 
+		{
+			obj_Player.vspd = -3.2;
+		}
+                
         hit_cd = 1;
         state = 9;
         if obj_Player.x >= x
         {
             hspd = -2;  
         } else hspd = 2;
-        vspd = -2;
+        vspd = -1.5;
         hspeed = 0;
         vspeed = 0;
     }
@@ -147,11 +150,12 @@
         state = 9;
         if obj_Player.x >= x
         {
-            hspd = -2;  
-        } else hspd = 2;
-        vspd = -2;
+            hspd = -3;  
+        } else hspd = 3;
+        vspd = -1.5;
         hspeed = 0;
         vspeed = 0;
+		obj_Player.image_index = 0;
         obj_Player.isRecoil = 1;
         if (obj_Player.dash_counts = 0) obj_Player.dash_counts = 1;
 		if obj_Player.x < x 
@@ -163,6 +167,7 @@
     
     if state = 9 
     {
+		t = 0;
         
         hspeed = 0;
         vspeed = 0;
@@ -190,6 +195,7 @@
         if vspd = 0 && hspd = 0
         {
             hit_cd = 0;
+			t = 0;
             state = 3;
         }
     }

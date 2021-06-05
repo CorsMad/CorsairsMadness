@@ -4,8 +4,8 @@
 //  draw_text(10, 100, obj_Player.silverkey_counts);
 
 //  draw_text(144, 48, obj_menu.vol);
-if instance_exists(obj_flying_molded)
+if instance_exists(obj_firing_molded)
 {
-    draw_text(144, 48, obj_flying_molded.state);
-    draw_text(144, 64, obj_Player.isHookiframes);
+    draw_text(144, 48, obj_firing_molded.state);
+    draw_text(144, 64, obj_firing_molded.t);
 }
