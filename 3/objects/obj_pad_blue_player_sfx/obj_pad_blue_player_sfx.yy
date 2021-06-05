@@ -21,13 +21,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_pad_blue_player_sfx","path":"objects/obj_pad_blue_player_sfx/obj_pad_blue_player_sfx.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Blue pad",
-    "path": "folders/Objects/Pads/Blue pad.yy",
+    "path": "folders/Objects/Pads Lanterns/Blue pad.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_pad_blue_player_sfx",

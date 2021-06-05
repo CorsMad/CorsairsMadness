@@ -1,0 +1,21 @@
+/// @description Insert description here
+// You can write your code in this editor
+if instance_exists(obj_Player)
+{
+	if obj_Player.isAttackingdown = 1
+	{
+		x = obj_Player.x;
+		y = obj_Player.y;
+		
+		
+		if place_meeting(x,y,obj_destructable_parent) 
+		{
+			
+			obj_Player.vspd = -5;
+			obj_Player.isAttackingdown = 0;
+			obj_Player.attackingdown_timer = 0;
+					
+		}
+		
+	} else instance_destroy();
+}

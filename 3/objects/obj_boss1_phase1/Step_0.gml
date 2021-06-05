@@ -6,18 +6,9 @@
 if state = 1
 {
 	t1++;
-	
-	switch(t1)
+	if t1 mod 40 == 0 
 	{
-		case 1  :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 20 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 40 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 60 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 80 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 90 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 110:	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 130:	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 150:	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
+		instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);
 	}
 	if t1 = 160
 	{
@@ -42,25 +33,21 @@ if state = 2
 if state = 3
 {
 	t3++;
-	if t3 mod 40 == 0 
+	if t3 = 1 
 	{
+		instance_create_depth(x,y,depth-1,obj_boss1_big_projectile_creator);
 		instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);
 	}
-	/*
-	switch(t3)
+	if t3 mod 90 == 0 
 	{
-		case 1  :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 40 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 80 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 120 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 160 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 200 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 240:	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 280:	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 320:	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;		
+		instance_create_depth(x,y,depth-1,obj_boss1_big_projectile_creator);
 	}
-	*/
-	if t3 = 350 
+	if t3 mod 40 == 0 
+	{	
+		instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);
+	}
+
+	if t3 = 319 
 	{
 		t3 = 0;
 		state = 4;
@@ -74,6 +61,10 @@ if state = 4
 	t2++;
 	if t2 = 60 
 	{
+		instance_create_depth(x,y,depth-1,obj_boss1_excl_mark);
+	}
+	if t2 = 140 
+	{
 		t2 = 0;
 		state = 5;
 	}
@@ -84,18 +75,19 @@ if state = 5
 {
 	
 	t5++;
-	switch(t5)
+	if t5 mod 40 == 0 
 	{
-		case 1  :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 40 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 80 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 120 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;			
+		instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);
+	}
+	if t5 = 1 
+	{
+		instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);;	
 	}
 	if t5 = 10 
 	{
 		instance_create_depth(x+32,y,depth-1,obj_sfx_boss1_dust);
 	}
-	if t5 = 200
+	if t5 = 159
 	{
 		t5 = 0;	
 		state = 6;
@@ -107,7 +99,7 @@ if state = 5
 if state = 6
 {
 	t6++;
-	if t6 = 40
+	if t6 = 60
 	{
 		t6 = 0;
 		state = 7;
@@ -118,17 +110,23 @@ if state = 6
 if state = 7
 {
 	t7++;
-	switch(t7)
+	if t7 mod 25 == 0 
 	{
-		case 1  :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 40 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 80 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 120 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 160 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 200 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 240:	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 280:	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;		
+		instance_create_depth(x+random_range(-16,16),y+random_range(0,-16),depth-1,obj_sfx3);
 	}
+	if t7 mod 20 == 0 
+	{
+		instance_create_depth(x+random_range(-16,16),y+random_range(0,-16),depth-1,obj_sfx_boss1_stars);
+	}
+	if t7 = 1 
+	{
+		instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);	
+	}
+	if t7 mod 40 == 0 
+	{
+		instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);
+	}
+	
 	if t7 = 300
 	{
 		t7 = 0;
@@ -151,19 +149,20 @@ if state = 8
 if state = 9 
 {
 	t9++;
-	switch(t9)
+	if t9 mod 90 == 0 
 	{
-		case 1  :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 40 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 80 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 120 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 160 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 200 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 240:	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 280:	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-				
+		instance_create_depth(x,y,depth-1,obj_boss1_big_projectile_creator);
 	}
-	if t9 = 350
+	if t9 = 1 
+	{
+		instance_create_depth(x,y,depth-1,obj_boss1_big_projectile_creator);
+		instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);
+	}
+	if t9 mod 40 == 0 
+	{
+		instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);
+	}
+	if t9 = 319
 	{
 		t9 = 0;
 		state = 10;
@@ -176,6 +175,10 @@ if state = 10
 	t2++;
 	if t2 = 60 
 	{
+		instance_create_depth(x,y,depth-1,obj_boss1_excl_mark);
+	}
+	if t2 = 140 
+	{
 		t2 = 0;
 		state = 11;
 	}	
@@ -185,19 +188,20 @@ if state = 10
 if state = 11
 {
 	t11++;	
-	switch(t11)
+	if t11 mod 40 == 0 
 	{
-		case 1  :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 40 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 80 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 120 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;			
+		instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);
+	}
+	if t11 = 1 
+	{
+		instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);	
 	}
 	if t11 = 10 
 	{
 		var d1 = instance_create_depth(x-32,y,depth-1,obj_sfx_boss1_dust);
 		d1.image_xscale = -1;
 	}
-	if t11 = 200
+	if t11 = 150
 	{
 		t11 = 0;	
 		state = 12;
@@ -220,16 +224,21 @@ if state = 12
 if state = 13
 {
 	t13++;
-	switch(t13)
+	if t13 mod 40 == 0 
 	{
-		case 1  :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 40 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 80 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 120 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 160 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 200 :	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 240:	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;
-		case 280:	instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);break;		
+		instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);
+	}
+	if t13 mod 25 == 0 
+	{
+		instance_create_depth(x+random_range(-16,16),y+random_range(0,-16),depth-1,obj_sfx3);
+	}
+	if t13 mod 20 == 0 
+	{
+		instance_create_depth(x+random_range(-16,16),y+random_range(0,-16),depth-1,obj_sfx_boss1_stars);
+	}
+	if t13 = 1
+	{
+		instance_create_depth(x,y,depth-1,obj_sfx_boss1_steam);	
 	}
 	if t13 = 300
 	{
@@ -253,7 +262,7 @@ if state = 14
 if state = 15
 {
 	path_end();
-	instance_create_depth(x,y,depth,obj_boss1_phase_death);
+	instance_create_depth(x,y,depth,obj_boss1_phase_death1);
 	instance_destroy();
 	
 }
@@ -274,6 +283,14 @@ if state !=15
 		} else instance_create_depth(obj_hitbox.x-8,obj_hitbox.y-20,depth-1,obj_sfx_weapon_slash);
 
 	}
+	
+	if place_meeting(x,y,obj_hitbox_down) && hit_cd = 0
+	{
+		hit_cd = 1;
+		enemy_hp -=1;
+		instance_create_depth(obj_hitbox_down.x,obj_hitbox_down.y+18,depth-1,obj_sfx_weapon_slash);
+	}
+	
 	if hit_cd !=0 
 	{
 		hit_cd++;	
@@ -282,6 +299,10 @@ if state !=15
 	{
 		hit_cd = 0;	
 	}
+	if hit_cd > 1 
+	{
+		image_blend = make_color_hsv(245,255,255);
+	} else image_blend = c_white;
 }
 
 #endregion

@@ -9,7 +9,7 @@ grav = 0.25;
 carryspd = 0;
 
 // Состояния 
-
+state = 0; // 0 - человек, 1 - маск
 isDead = 0;
 
 isAttacking = 0;
@@ -23,6 +23,7 @@ isAttackingdown = 0;
 isWallclimbing = 0;
 isOutjump = 0;
 isClimbing = 0;
+isRecoil = 0;
 isUsingitem = 0;
 isAirUsingitem = 0;
 isHooking = 0;
@@ -43,6 +44,7 @@ coyote_timer = 0;
 damage_cd = 0;
 death_timer = 0;
 pickup_timer = 0;
+recoil_timer = 0;
 
 // Счетчики
 
@@ -52,3 +54,7 @@ silverkey_counts = 0;
 
 
 image_speed = 1.25;
+
+
+
+isMeeting = 0;

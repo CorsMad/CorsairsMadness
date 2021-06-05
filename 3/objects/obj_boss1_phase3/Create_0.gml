@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+image_speed = 0;
+image_index = 2;
+depth = -1
 #region Стейты
 
 /* states
@@ -41,4 +43,4 @@ hspd = 0;
 vspd = 0;
 state = 1;
 hit_cd = 0;
-enemy_hp = 40;
+enemy_hp = 20;

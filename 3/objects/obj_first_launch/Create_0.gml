@@ -3,8 +3,8 @@
 //Player stats
 
 global.choosed_item = 2;
-global.hp = 3;
-global.hp_max = 4;
+global.hp = 5;
+global.hp_max = 5;
 global.mana = 3;
 global.mana_max = 3;
 global.gold = 0;
@@ -17,25 +17,24 @@ global.secrets_l1_s3 = 1;
 #endregion
 
 //Global transp
-/*
+
 
 global.TargetX = 16;
 global.TargetY = 224;
 global.TargetRoom = L1_r1;
-*/
+
+
 /*
-
-global.TargetX = 960;
-global.TargetY = 224;
-global.TargetRoom = L1_s1_1;
-
+global.TargetX = 448;
+global.TargetY = 112;
+global.TargetRoom = L1_r30;
 */
 
-
+/*
 global.TargetX = 32;
 global.TargetY = 256;
 global.TargetRoom = L1_boss_room;
-
+*/
 
 // TESTROOM
 
@@ -43,8 +42,8 @@ global.TargetRoom = L1_boss_room;
 global.TargetX = 98;
 global.TargetY = 168;
 global.TargetRoom = TESTROOM;
-*/
 
+*/
 
 instance_create_depth(16,16,0,obj_Player);
 instance_create_depth(16,16,0,obj_room_transition_to_loading);
