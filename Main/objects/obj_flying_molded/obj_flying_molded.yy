@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_ground_molded_mask",
+    "path": "sprites/spr_ground_molded_mask/spr_ground_molded_mask.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
@@ -28,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Flying",
-    "path": "folders/Objects/Enemies/Masked level enemies/Flying.yy",
+    "path": "folders/Objects/Enemies/Molded enemies/Flying.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_flying_molded",

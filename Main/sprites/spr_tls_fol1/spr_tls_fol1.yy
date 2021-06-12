@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Tileset and level stuff",
-    "path": "folders/Sprites/Tileset and level stuff.yy",
+    "name": "Temple1",
+    "path": "folders/Sprites/Tileset and level stuff/Temple1.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_tls_fol1",

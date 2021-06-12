@@ -54,6 +54,7 @@
 */
 #endregion
 
+/*
 #region draw weaposelect
 
 draw_sprite_ext(spr_hud_weaponselect_border,0,(camera_get_view_x(view_camera[0]))+240,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1);

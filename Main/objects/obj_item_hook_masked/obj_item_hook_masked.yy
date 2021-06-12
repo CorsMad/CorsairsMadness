@@ -1,11 +1,14 @@
 {
   "spriteId": {
-    "name": "spr_hook_masked_mask",
-    "path": "sprites/spr_hook_masked_mask/spr_hook_masked_mask.yy",
+    "name": "spr_hook_masked",
+    "path": "sprites/spr_hook_masked/spr_hook_masked.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_hook_masked_mask",
+    "path": "sprites/spr_hook_masked_mask/spr_hook_masked_mask.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
@@ -23,6 +26,7 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

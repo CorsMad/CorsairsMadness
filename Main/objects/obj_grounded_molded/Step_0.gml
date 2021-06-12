@@ -6,6 +6,46 @@ if image_xscale = 1
 	dir = 1;	
 } else dir = -1; 
 
+#region получение урона
+    if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
+	{
+		if obj_Player.x < x 
+		{
+			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+        
+        if state = 4
+        {
+            state = 7
+            t = 0;
+            if obj_Player.x < x
+            {
+                hspd = 2;
+            } else hspd = -2;
+        }
+	}
+    if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0
+	{
+		obj_Player.image_index = 0;
+        obj_Player.isRecoil = 1;
+        if (obj_Player.dash_counts = 0) obj_Player.dash_counts = 1;
+		if obj_Player.x < x 
+		{
+			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+        if state = 4
+        {
+            state = 7
+            t = 0;
+            if obj_Player.x < x
+            {
+                hspd = 2;
+            } else hspd = -2;
+        }
+	}
+    fnc_enemy_no_armor_dmg_masked();
+#endregion
+
 #region проверка
 if state = 1
 { 
@@ -52,21 +92,24 @@ if state = 2
 if state = 3
 {
     fnc_enemy_molded_grounded_attack_on_ground(obj_grounded_molded_limiter,obj_block);
-    t++;
-    hspd = dir*4;
-    if t = 20  
+    if !place_meeting(x,y,obj_item_hook_masked)
     {
-        t = 0;
-        hspd = 0;
-        state = 6;
-    }  
-    if place_meeting(x+sign(hspd),y,obj_block)   
-    {
-        t = 0;
-        hspd = 0;
-        attacks = 1;
-        state = 6;
-    }  
+        t++;
+        hspd = dir*4;
+        if t = 20  
+        {
+            t = 0;
+            hspd = 0;
+            state = 6;
+        }  
+        if place_meeting(x+sign(hspd),y,obj_block)   
+        {
+            t = 0;
+            hspd = 0;
+            attacks = 1;
+            state = 6;
+        }  
+    } else hspd = 0;
 }
 #endregion
 
@@ -74,25 +117,25 @@ if state = 3
 if state = 4 
 {
     fnc_enemy_molded_grounded_attack_on_ground(obj_grounded_molded_limiter,obj_block);
-    t++;
-    if t = 1 
+    if !place_meeting(x,y,obj_item_hook_masked)
     {
-        hspd = dir*2;
-        vspd = -4
-    }
-    if t > 2 && place_meeting(x,y+1,obj_block)
-    {
-        hspd = 0;
-        vspd = 0;
-        state = 6;
-        t = 0;
-    } 
-    if (place_meeting(x,y,obj_hitbox_mask) || place_meeting(x,y,obj_hitbox_mask_dash))
-    {
-        state = 7
-        t = 0;
-        hspd = -hspd;
-    }
+        t++;
+        if t = 1 
+        {
+            hspd = dir*2;
+            vspd = -4
+        }
+        if t > 2 && place_meeting(x,y+1,obj_block)
+        {
+            hspd = 0;
+            vspd = 0;
+            state = 6;
+            t = 0;
+        } 
+    } else  {
+                hspd = 0;
+                vspd = 0;
+            }
 }
 #endregion
 
@@ -101,22 +144,28 @@ if state = 4
 if state = 5
 {
     fnc_enemy_molded_grounded(obj_grounded_molded_limiter,obj_block); 
-    t++;
-    
-    if  t = 1 
+    if !place_meeting(x,y,obj_item_hook_masked)
     {
-        attacks = 0;
-        hspd = -dir*2;
-        vspd = -3;
-    }
+        t++;
     
-    if t > 2 && place_meeting(x,y+1,obj_block)
-    {
-        hspd = 0;
-        vspd = 0;
-        state = 2;
-        t = 0;
-    }
+        if  t = 1 
+        {
+            attacks = 0;
+            hspd = -dir*2;
+            vspd = -3;
+        }
+    
+        if t > 2 && place_meeting(x,y+1,obj_block)
+        {
+            hspd = 0;
+            vspd = 0;
+            state = 2;
+            t = 0;
+        }
+    } else  {
+                hspd = 0;
+                vspd = 0;
+            }
     
 }
 #endregion
@@ -154,38 +203,24 @@ if state = 6
 if state = 7
 {
     fnc_enemy_molded_grounded_attack_on_ground(obj_grounded_molded_limiter,obj_block);
-    if place_meeting(x,y+1,obj_block)
+    if !place_meeting(x,y,obj_item_hook_masked)
     {
-        hspd = 0;
-        vspd = 0;
-        state = 6;
-        t = 0;
-    } 
+        if place_meeting(x,y+1,obj_block)
+        {
+            hspd = 0;
+            vspd = 0;
+            state = 6;
+            t = 0;
+        } 
+    } else  {
+                hspd = 0;
+                vspd = 0;
+            }
 }
 
 #endregion
 
-#region получение урона
-    if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
-	{
-		if obj_Player.x < x 
-		{
-			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
-		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
-	}
-    if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0
-	{
-		obj_Player.image_index = 0;
-        obj_Player.isRecoil = 1;
-        if (obj_Player.dash_counts = 0) obj_Player.dash_counts = 1;
-		if obj_Player.x < x 
-		{
-			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
-		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
-	}
-    fnc_enemy_no_armor_dmg_masked();
-#endregion
-
 #region смерть
+
 #endregion
 

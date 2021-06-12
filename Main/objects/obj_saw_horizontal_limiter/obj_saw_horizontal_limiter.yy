@@ -4,7 +4,7 @@
     "path": "sprites/spr_saw_horizontal_limiter/spr_saw_horizontal_limiter.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

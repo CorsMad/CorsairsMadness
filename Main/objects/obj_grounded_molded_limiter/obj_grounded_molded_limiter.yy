@@ -22,7 +22,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Grounded",
-    "path": "folders/Objects/Enemies/Masked level enemies/Grounded.yy",
+    "path": "folders/Objects/Enemies/Molded enemies/Grounded.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_grounded_molded_limiter",

@@ -25,7 +25,7 @@ global.secrets_l1_s3 = 1;
 /*
 global.TargetX = 16;
 global.TargetY = 224;
-global.TargetRoom = L1_r1;
+global.TargetRoom = TEST;
 */
 
 /*
@@ -44,7 +44,7 @@ global.TargetRoom = Test1;
 
 
 global.TargetX = 98;
-global.TargetY = 168;
+global.TargetY = 64;
 global.TargetRoom = TESTROOM;
 
 

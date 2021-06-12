@@ -4,11 +4,15 @@ spd = 0;
 fspd = 0;
 state = 1;
 t = 0;
+image_speed = 0;
 if obj_Player.dir = 1 
 {
     dir = 1       
 } else dir = -1;
 isHooked = 0;
+
+
+depth = -5;
 /* states 
 1 - полет
 2 - возвращение 

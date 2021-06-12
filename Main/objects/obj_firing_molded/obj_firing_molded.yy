@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Firing",
-    "path": "folders/Objects/Enemies/Masked level enemies/Firing.yy",
+    "path": "folders/Objects/Enemies/Molded enemies/Firing.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_firing_molded",

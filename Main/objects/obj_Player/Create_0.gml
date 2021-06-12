@@ -8,6 +8,8 @@ grav = 0.25;
 
 carryspd = 0;
 afterhookspd = 0;
+hookspd = 0;
+attackspd = 0;
 
 #region Состояния 
 
@@ -37,13 +39,18 @@ isThrowingBomb = 0
 isAirThrowingBomb = 0;
 isVulnerable = 1;
 isHookiframes = 0;
+isAfterhook = 0;
 
+
+attackbuffer = 0;
+airattackbuffer = 0;
+dashingbuffer = 0;
+hookingbuffer = 0;
 
 #endregion
 
 #region Таймеры
 
-dashing_timer = 0;
 jump_timer = 0;
 attackingdown_timer = 0;
 wallclimb_timer = 0;
@@ -54,6 +61,8 @@ death_timer = 0;
 pickup_timer = 0;
 recoil_timer = 0;
 hook_iframes_timer = 0;
+sprkl_timer = 0;
+
 
 #endregion
 

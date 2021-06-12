@@ -4,7 +4,7 @@
     "path": "sprites/spr_hook_masked_iframes/spr_hook_masked_iframes.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
