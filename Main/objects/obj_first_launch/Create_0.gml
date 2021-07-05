@@ -35,16 +35,16 @@ global.TargetRoom = L1_r11;
 */
 
 /*
-global.TargetX = 16;
-global.TargetY = 224;
-global.TargetRoom = Test1;
+global.TargetX = 48;
+global.TargetY = 176;
+global.TargetRoom = VID;
 */
 
 // TESTROOM
 
 
-global.TargetX = 98;
-global.TargetY = 64;
+global.TargetX = 48;
+global.TargetY = 256;
 global.TargetRoom = TESTROOM;
 
 

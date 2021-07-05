@@ -89,8 +89,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Other",
-    "path": "folders/Sprites/Level objects/Other.yy",
+    "name": "Temple1",
+    "path": "folders/Sprites/Tileset and level stuff/Temple1.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_torch",

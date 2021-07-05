@@ -1,14 +1,10 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function fnc_enemy_molded_grounded(argument0,argument1)
-{
-    if place_meeting(x+hspd, y, argument0)
-	{
-		hspd = -hspd;	
-	}
-	if place_meeting(x+hspd, y, argument1)
+function fnc_enemy_molded_grounded(argument0)
+{   
+	if place_meeting(x+hspd, y, argument0)
 		{
-		while (!place_meeting(x+sign(hspd), y, argument1 )) 
+		while (!place_meeting(x+sign(hspd), y, argument0 )) 
 		{
 		    x+= sign(hspd);
 		}
@@ -17,9 +13,9 @@ function fnc_enemy_molded_grounded(argument0,argument1)
 	}
 	x += hspd;
 
-	if place_meeting(x, y+vspd, argument1) 
+	if place_meeting(x, y+vspd, argument0) 
 	{
-	    while (!place_meeting(x,y+sign(vspd), argument1 )) 
+	    while (!place_meeting(x,y+sign(vspd), argument0 )) 
 		{
 	        y+= sign(vspd);
 	    }
@@ -27,7 +23,7 @@ function fnc_enemy_molded_grounded(argument0,argument1)
 	}
 	y += vspd;
 
-	if !place_meeting(x,y+vspd, argument1)
+	if !place_meeting(x,y+vspd, argument0)
 	{
 		vspd +=0.2;	
 	}

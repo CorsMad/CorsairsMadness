@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_block_mask",
-    "path": "sprites/spr_block_mask/spr_block_mask.yy",
+    "name": "spr_hook_block",
+    "path": "sprites/spr_hook_block/spr_hook_block.yy",
   },
   "solid": false,
   "visible": true,

@@ -396,9 +396,23 @@ if isRecoil = 1
     
     if image_index  > 3 && key_item 
     {
-        hookingbuffer = 1;    
+        hookingbuffer = 1;  
+        dashingbuffer = 0;
+        airattackbuffer = 0;
     }
-    
+    if image_index > 3  && key_dashing
+    {
+        dashingbuffer = 1; 
+        airattackbuffer = 0;
+        hookingbuffer = 0;
+    }
+            
+    if image_index > 3  && key_attack
+    {
+        dashingbuffer = 0; 
+        airattackbuffer = 1;
+        hookingbuffer = 0;
+    }
     
     if (image_index > image_number - 1) 
     {
@@ -407,10 +421,47 @@ if isRecoil = 1
         {
             instance_create_depth(x+dir*4,y-16,depth,obj_item_hook_masked);   
             hookingbuffer = 0;
-        }   else    {
-                        hookingbuffer = 0;
-                        isRecoil = 0;
-                    }
+            dashingbuffer = 0; 
+            airattackbuffer = 0;
+            isRecoil = 0;
+        }   else    
+                        if airattackbuffer = 1
+                        {
+                            image_index = 0;
+                            isAirattacking = 1;
+                            sprite_index = spr_player_masked_attack1;
+                            image_speed = 1;
+                            isAfterhook = 0;
+                            airattackbuffer = 0;
+                            hookingbuffer = 0;
+                            dashingbuffer = 0; 
+                            isRecoil = 0;
+                        }   else    
+                                        if dashingbuffer = 1
+                                        {   
+                                            dash_counts --;
+                                            sprite_index = spr_player_masked_dash;
+                                            image_index = 0;
+                                            isDashing = 1;
+                                            vspd = 0;
+                                            isAirattacking = 0;
+                                            isAirThrowingBomb = 0;
+                                            isAirUsingitem = 0;
+                                            airattackbuffer = 0;
+                                            hookingbuffer = 0;
+                                            dashingbuffer = 0; 
+                                            isAfterhook = 0;
+                                            isRecoil = 0;
+                                            instance_create_depth(x,y,0,obj_hitbox_mask_dash);
+                            
+                                        }
+                        
+                                       else     {
+                                                    hookingbuffer = 0;
+                                                    isRecoil = 0;
+                                                }
+                    
+                    
     }
      /*
      if recoil_timer = 30
@@ -506,7 +557,18 @@ if isRecoil = 1
             if image_index > 3  && key_dashing
             {
                 dashingbuffer = 1; 
+                airattackbuffer = 0;
             }
+            
+            if image_index > 3  && key_attack
+            {
+                dashingbuffer = 0; 
+                airattackbuffer = 1;
+            }
+            if hspd != 0
+            {
+                image_xscale = sign(hspd);
+            } 
             
             if (image_index > image_number - 1) 
             {
@@ -523,16 +585,23 @@ if isRecoil = 1
                     dashingbuffer = 0;
                     isAfterhook = 0;
                     instance_create_depth(x,y,0,obj_hitbox_mask_dash);
-                }   else    {
-                                dashingbuffer = 0;
+                }   else    if airattackbuffer = 1
+                            {
+                                image_index = 0;
+                            	isAirattacking = 1;
+                            	sprite_index = spr_player_masked_attack1;
+                            	image_speed = 1;
                                 isAfterhook = 0;
-                            }
+                                airattackbuffer = 0;
+                            }   else
+                                {
+                                    dashingbuffer = 0;
+                                    airattackbuffer = 0;
+                                    isAfterhook = 0;
+                                }
             }
         }
         
-    
-        
-
     #endregion
     
     }

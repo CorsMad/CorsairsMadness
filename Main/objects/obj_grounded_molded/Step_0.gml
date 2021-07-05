@@ -1,226 +1,559 @@
-/// @description Insert description here
-// You can write your code in this editor
-dis = point_distance(x,y,obj_Player.x,obj_Player.y);
-if image_xscale = 1 
-{
-	dir = 1;	
-} else dir = -1; 
 
-#region получение урона
-    if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
-	{
-		if obj_Player.x < x 
-		{
-			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
-		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+#region Перемещение
+    #region коллиз
         
-        if state = 4
-        {
-            state = 7
-            t = 0;
-            if obj_Player.x < x
-            {
-                hspd = 2;
-            } else hspd = -2;
-        }
-	}
-    if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0
-	{
-		obj_Player.image_index = 0;
-        obj_Player.isRecoil = 1;
-        if (obj_Player.dash_counts = 0) obj_Player.dash_counts = 1;
-		if obj_Player.x < x 
-		{
-			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
-		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
-        if state = 4
-        {
-            state = 7
-            t = 0;
-            if obj_Player.x < x
-            {
-                hspd = 2;
-            } else hspd = -2;
-        }
-	}
-    fnc_enemy_no_armor_dmg_masked();
-#endregion
+    	if place_meeting(x+hspd, y, obj_block)
+    	{
+        	while (!place_meeting(x+sign(hspd), y, obj_block )) 
+        	{
+        		x+= sign(hspd);
+        	}
+            hspd = 0;   
+    	}
+    	x += hspd;
 
-#region проверка
-if state = 1
-{ 
-    fnc_enemy_molded_grounded(obj_grounded_molded_limiter,obj_block);
-    fnc_image_xscale();
-    #region проверка игрока и переход к подготовке
-    if instance_exists(obj_Player)
-    {
-        var dis = point_distance(x,y,obj_Player.x,obj_Player.y);
-	    if dis < 120 
-		{
-	        state = 2;
-	    }   
-    }
+    	if place_meeting(x, y+vspd, obj_block) 
+    	{
+    	    while (!place_meeting(x,y+sign(vspd), obj_block )) 
+    		{
+    	        y+= sign(vspd);
+    	    }
+    	    vspd = 0;
+    	}
+    	y += vspd;
+
+    	if !place_meeting(x,y+vspd, obj_block)
+    	{
+    		vspd +=0.2;	
+    	}    
     #endregion
-}
+        
+    dir = image_xscale;
 #endregion
 
-#region подготовка к бою
-if state = 2 
+#region Патрулирование
+if state = 1
 {
-    fnc_enemy_molded_grounded(obj_grounded_molded_limiter,obj_block);
-    hspd = 0;
-    t++;
-    if instance_exists(obj_Player)
+    if !place_meeting(x,y,obj_item_hook_masked)
     {
-        if obj_Player.x >= x
+        if hspd > 0 
         {
-            image_xscale = 1    
-        } else image_xscale = -1;
-    }
-    if t = 60
+            image_xscale = 1;   
+        } 
+        if hspd < 0 
+        {
+            image_xscale = -1;   
+        }
+    
+        t++;
+    
+        if hspd > 0 
+        {
+            mov = 1   
+        }
+    
+        if hspd < 0 
+        {
+            mov = -1;   
+        }
+    
+        if t = 100
+        {
+            hspd = 0;
+        }
+    
+        if t = 160
+        {
+            t = 0;
+            if mov = 1
+            {
+                hspd = -0.5;
+            } else hspd = 0.5;
+        }
+        if place_meeting(x+hspd,y,obj_block) || place_meeting(x-hspd,y,obj_block)
+        {
+            hspd = -hspd;
+        }
+    
+        if instance_exists(obj_Player)
+                {
+                    var dis = point_distance(x,y,obj_Player.x,obj_Player.y);
+            	    if dis < 160 
+            		{
+            	        state = 2;
+                        t = 0;
+                        hspd = 0;
+            	    }   
+                }
+    }   else    {
+                    hspd = 0;
+                    vspd = 0;
+                }
+    image_speed = 0.5;
+    if hspd != 0
     {
-        t = 0;
-        if collision_line(x,y-8,x+dir*48,y-8,obj_block,false,false)
-        {
-            state = 3;
-        } else state = choose(3,4);
-    }
+        sprite_index = spr_molded_grounded_walk;   
+    } else sprite_index = spr_molded_grounded_idle;
 }
 #endregion
 
-#region наземная атака
+#region Остановка при обнаружении
+if state = 2
+{
+    if !place_meeting(x,y,obj_item_hook_masked)
+    {
+        t++;
+        if t = 60
+        {
+            t = 0;
+            if abs(obj_Player.x - x) < 64 
+            {
+                if (image_xscale = -1 && place_meeting(x-8,y,obj_block)) || (image_xscale = 1 && place_meeting(x+8,y,obj_block)  )
+                {
+                    state = 6;  
+                } else state = choose(4,5);
+            }   else state = 3;
+        }
+    }   else    {
+                    hspd = 0;
+                    vspd = 0;
+                }
+    if obj_Player.x > x
+    {
+        image_xscale = 1;   
+    } else image_xscale = -1;
+    sprite_index = spr_molded_grounded_idle;
+    image_index = 0;
+    image_speed = 0;
+}
+#endregion
+
+#region Преследование игрока
 if state = 3
 {
-    fnc_enemy_molded_grounded_attack_on_ground(obj_grounded_molded_limiter,obj_block);
     if !place_meeting(x,y,obj_item_hook_masked)
     {
-        t++;
-        hspd = dir*4;
-        if t = 20  
+        if hspd > 0 
         {
-            t = 0;
-            hspd = 0;
-            state = 6;
-        }  
-        if place_meeting(x+sign(hspd),y,obj_block)   
-        {
-            t = 0;
-            hspd = 0;
-            attacks = 1;
-            state = 6;
-        }  
-    } else hspd = 0;
-}
-#endregion
-
-#region атака в прыжке
-if state = 4 
-{
-    fnc_enemy_molded_grounded_attack_on_ground(obj_grounded_molded_limiter,obj_block);
-    if !place_meeting(x,y,obj_item_hook_masked)
-    {
-        t++;
-        if t = 1 
-        {
-            hspd = dir*2;
-            vspd = -4
-        }
-        if t > 2 && place_meeting(x,y+1,obj_block)
-        {
-            hspd = 0;
-            vspd = 0;
-            state = 6;
-            t = 0;
+            image_xscale = 1;   
         } 
-    } else  {
-                hspd = 0;
-                vspd = 0;
-            }
+        if hspd < 0 
+        {
+            image_xscale = -1;   
+        }
+    
+        if (place_meeting(x+5,y,obj_block) && dir = 1) || (place_meeting(x-5,y,obj_block) && dir = -1 )
+        {
+            state = 31; 
+        } 
+        
+        if obj_Player.x > x
+        {
+            hspd = 3;   
+        } else hspd = -3;
+            
+        
+        if abs(obj_Player.x - x) < 64 
+        {
+            hspd = 0;
+            if (image_xscale = -1 && place_meeting(x-8,y,obj_block)) || (image_xscale = 1 && place_meeting(x+8,y,obj_block)  )
+            {
+                state = 6;  
+            } else state = choose(4,5);
+        
+        }
+    }   else    {
+                    hspd = 0;
+                    vspd = 0;
+                }
+    if hspd!= 0
+    {
+        sprite_index = spr_molded_grounded_run;   
+        image_speed = 1;
+    }   
+}
+
+
+//Остановка преследования
+if state  = 31
+{
+    if !place_meeting(x,y,obj_item_hook_masked)
+    {
+        hspd = 0; 
+        if abs(obj_Player.x - x) < 64 
+        {
+            hspd = 0;
+            if (image_xscale = -1 && place_meeting(x-8,y,obj_block)) || (image_xscale = 1 && place_meeting(x+8,y,obj_block)  )
+            {
+                state = 6;  
+            } else state = choose(4,5);
+        
+        }
+    }   else    {
+                    hspd = 0;
+                    vspd = 0;
+                }
+    sprite_index = spr_molded_grounded_idle;
+    image_speed = 0.5;
 }
 #endregion
 
-#region отскок
+#region 2 Удара
+
+if state = 4
+{
+    if !place_meeting(x,y,obj_item_hook_masked)
+    {
+        t++;
+        sprite_index = spr_molded_grounded_2strike
+        image_speed = 0;
+        switch(t)
+        {
+            case 1: image_index = 0;break;   
+            case 5: image_index = 1;break;
+            case 10:image_index = 2;break;
+            case 25:image_index = 3;break;
+            case 30:image_index = 4;break;
+            case 35:image_index = 5;break;
+            case 40:image_index = 6;break;
+            case 45:image_index = 7;break;
+            case 60:image_index = 8;break;
+            case 65:image_index = 9;break;
+            case 70:image_index = 10;break;
+        }
+        
+        if t = 75
+        {
+            hspd = 0;
+            t = 0;  
+            state = 7;
+        }
+    }   else    {
+                    hspd = 0;
+                    vspd = 0;
+                }
+}
+#endregion
+
+#region Удар с выпадом
 
 if state = 5
 {
-    fnc_enemy_molded_grounded(obj_grounded_molded_limiter,obj_block); 
+    sprite_index = spr_molded_grounded_strike_forward;
+    image_speed = 0;
     if !place_meeting(x,y,obj_item_hook_masked)
     {
         t++;
-    
-        if  t = 1 
+        switch(t)
         {
-            attacks = 0;
-            hspd = -dir*2;
-            vspd = -3;
+            case 1: image_index = 0;break;
+            case 5: image_index = 1;break;
+            case 10:image_index = 2;break;
+            case 30:image_index = 3;break;
+            case 35:image_index = 4;break;
+            case 40:image_index = 5;break;
+            case 45:image_index = 6;break;
         }
-    
-        if t > 2 && place_meeting(x,y+1,obj_block)
+        
+        if t = 30
+        {
+            hspd = 4*dir;   
+        }
+        if t = 45
+        {
+            hspd = 0;   
+        }
+        if t = 50 
         {
             hspd = 0;
-            vspd = 0;
-            state = 2;
             t = 0;
+            state = 7;
         }
-    } else  {
-                hspd = 0;
-                vspd = 0;
-            }
-    
+    }   else    {
+                    hspd = 0;
+                    vspd = 0;
+                }
 }
+
 #endregion
 
-#region ожидание
-if state = 6 
+#region Отскок прыжке
+
+if state = 6
 {
-    fnc_enemy_molded_grounded_attack_on_ground(obj_grounded_molded_limiter,obj_block);
-    t++;
-    if t = 40
-    {   
-        t = 0;
-        if attacks = 1 && dis < 220 
-        {
-            state = 5;
-        }
-        if attacks = 0 && dis < 220
-        {
-            state = 2;  
-        }
-        if dis >= 220 
-        {
-            state = 1;
-            attacks = 0;
-            hspd = choose(-1,1);
-        }
-
-
-    }
-}
-#endregion
-
-#region отражение атаки в воздухе
-
-if state = 7
-{
-    fnc_enemy_molded_grounded_attack_on_ground(obj_grounded_molded_limiter,obj_block);
     if !place_meeting(x,y,obj_item_hook_masked)
     {
-        if place_meeting(x,y+1,obj_block)
+        t++;
+        if t = 1
         {
-            hspd = 0;
-            vspd = 0;
-            state = 6;
+            if dir = 1
+            {
+                vspd = -4;
+                hspd = -2;
+            }
+            if dir = -1 
+            {
+                vspd = -4;
+                hspd = 2;
+            }
+        }
+        if t > 1 && place_meeting(x,y+1,obj_block)
+        {
             t = 0;
-        } 
-    } else  {
+            hspd = 0;
+            state = choose(4,5);   
+        }
+    }   else    {
+                    hspd = 0;
+                    vspd = 0;
+                }
+    sprite_index = spr_molded_grounded_outjump;
+}
+
+#endregion
+
+#region Ожидание после удара
+if state = 7
+{
+    if !place_meeting(x,y,obj_item_hook_masked)
+    {
+        if obj_Player.x >=x 
+        {
+            image_xscale = 1;
+        } else image_xscale = -1;
+        t++;
+        if t = 40
+        {
+            t = 0;
+            if abs(obj_Player.x - x) < 64 
+            {
+                if (image_xscale = -1 && place_meeting(x-8,y,obj_block)) || (image_xscale = 1 && place_meeting(x+8,y,obj_block)  )
+                {
+                    state = 6;  
+                } else state = choose(4,5);
+            }   else state = 3;  
+        }
+    }   else    {
+                    hspd = 0;
+                    vspd = 0;
+                }
+    sprite_index = spr_molded_grounded_idle;
+    image_speed = 0.5;
+}
+#endregion
+
+#region Получение урона на земле
+
+if place_meeting(x,y,obj_hitbox_mask)  && hit_cd = 0
+{
+    if !place_meeting(x,y,obj_item_hook_masked)
+    {
+        if obj_Player.isGrounded = 0 
+        {
+            obj_Player.vspd = -3.2;
+        }   
+        t =0;
+        hit_timer = 1;
+        hit_cd = 1;
+        enemy_hp -= 1;
+        state = 9;
+        combo_counter += 1;
+        combo_timer = 1;
+        hspd = 0;
+        vspd = 0;
+        if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+        if combo_counter > 2 
+        {
+            combo_counter = 0;
+            if obj_Player.x < x
+            {
+                hspd = 6;   
+            } else hspd = -6;
+        }
+    }   else 
+            {
                 hspd = 0;
                 vspd = 0;
             }
 }
 
+if place_meeting(x,y,obj_hitbox_mask_dash)  && hit_cd = 0
+{
+     
+    t =0;
+    hit_timer = 1;
+    hit_cd = 1;
+    enemy_hp -= 1;
+    state = 9;
+    combo_counter += 1;
+    combo_timer = 1;
+    hspd = 0;
+    vspd = 0;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+    obj_Player.image_index = 0;
+    obj_Player.isRecoil = 1;
+    if (obj_Player.dash_counts = 0) obj_Player.dash_counts = 1;
+    if combo_counter > 2 
+    {
+        combo_counter = 0;
+        if obj_Player.x < x
+        {
+            hspd = 6;   
+        } else hspd = -6;
+    }
+}
+
+if place_meeting(x,y,obj_hitbox_mask_hook)  && hit_cd = 0
+{
+    if !place_meeting(x,y,obj_item_hook_masked)
+    {
+        if obj_Player.isGrounded = 0 
+        {
+            obj_Player.vspd = -3.2;
+        }   
+        t =0;
+        hit_timer = 1;
+        hit_cd = 1;
+        enemy_hp -= 1;
+        state = 9;
+        combo_counter += 1;
+        combo_timer = 1;
+        hspd = 0;
+        vspd = 0;
+        if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+        combo_counter = 0;
+        if obj_Player.x < x
+        {
+            hspd = 6;   
+        } else hspd = -6;
+        
+    }   else 
+            {
+                hspd = 0;
+                vspd = 0;
+            }
+}
+
+if place_meeting(x,y,obj_firing_molded_projectile_reverse)  && hit_cd = 0
+{
+    if !place_meeting(x,y,obj_item_hook_masked)
+    { 
+        t =0;
+        hit_timer = 1;
+        hit_cd = 1;
+        enemy_hp -= 1;
+        state = 9;
+        combo_counter += 1;
+        combo_timer = 1;
+        hspd = 0;
+        vspd = 0;
+        var1 = instance_place(x,y,obj_firing_molded_projectile_reverse) 
+        {
+            with var1 
+            {
+                instance_destroy();
+            }
+        }
+        
+        if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+        if combo_counter > 2 
+        {
+            combo_counter = 0;
+            if obj_Player.x < x
+            {
+                hspd = 6;   
+            } else hspd = -6;
+        }
+    }   else 
+            {
+                hspd = 0;
+                vspd = 0;
+            }
+}
+
+
+
+if state = 9 
+{
+    if !place_meeting(x,y,obj_item_hook_masked)
+    {
+        sprite_index = spr_molded_grounded_takedmg;
+        hit_timer += 1;
+        if hit_timer = 20
+        {
+            hspd = 0;
+            
+            state = 7;
+            //state = choose(4,5);
+            
+            t = 15;
+               
+        }
+        if hspd !=0
+        {
+            hspd = lerp(hspd,0,0.1);
+        }
+    }   else 
+            {
+                hspd = 0;
+                vspd = 0;
+            }
+}
+
+
 #endregion
 
-#region смерть
+#region Комбометр
+
+if combo_timer!=0
+{
+    combo_timer++;   
+}
+if combo_timer = 40
+{
+    combo_counter = 0;
+    combo_timer = 0;   
+}
 
 #endregion
 
+#region HitCD
+    if hit_cd != 0
+        {
+            hit_cd ++;   
+        }
+        if hit_cd = 20
+        {
+            hit_cd = 0;   
+        }
+#endregion
+
+#region blob
+
+bl_t++;
+if bl_t = 20
+{
+    instance_create_depth(x,y-8,depth+1,obj_grounded_molded_blob);
+    bl_t = 0;
+}
+
+#endregion
+
+if enemy_hp <= 0 
+{
+    var m = instance_create_depth(x,y,depth,obj_grounded_molded_dead);
+    m.image_xscale = image_xscale;
+    instance_destroy();       
+}

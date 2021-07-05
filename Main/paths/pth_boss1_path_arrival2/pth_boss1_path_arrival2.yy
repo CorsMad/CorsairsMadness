@@ -8,7 +8,7 @@
   ],
   "parent": {
     "name": "Boss1",
-    "path": "folders/Paths/Boss1.yy",
+    "path": "folders/Rooms/Paths/Boss1.yy",
   },
   "resourceVersion": "1.0",
   "name": "pth_boss1_path_arrival2",

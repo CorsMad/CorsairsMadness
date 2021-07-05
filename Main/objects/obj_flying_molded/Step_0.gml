@@ -4,10 +4,72 @@
 if isAlive = 1
 {
     #region Патруль
+    
+    
+    
         if state = 1 && state != 9 
         {
-            sprite_index = spr_molded_flying_patrol;
+            if hspd != 0
+            {   
+                image_xscale = sign(hspd);
+                image_speed = 0;
+                sprite_index = spr_molded_flying_patrol;
+            } else image_index = 2;
             image_speed = 0.5;
+            x+=hspd;
+            #region Влево
+            if stl = 1 && stst = 0
+            {
+                hspd = -0.5;
+                t++;
+                if t = 110 
+                {
+                    t = 0;   
+                    stst = 1;
+                }
+            }
+            
+            #endregion
+
+            #region Вправо
+
+            if str = 1 && stst = 0
+            {
+                hspd = 0.5;
+                t++;
+                if t = 110 
+                {
+                    t = 0;   
+                    stst = 1;
+                }
+            }
+            #endregion
+
+            #region Стоп
+
+            if stst = 1
+            {
+                hspd = 0;
+                t++;
+                if t = 110
+                {
+                    t = 0;
+                    stst = 0;
+                    if stl = 1
+                    {
+                        stl = 0;
+                        str = 1;
+                    }   else    {
+                                    str = 0;
+                                    stl = 1;
+                                }
+
+                }
+            }
+
+            #endregion
+            
+            #region встреча с игроком
             if instance_exists(obj_Player)
             {
                 var dis = point_distance(x,y,obj_Player.x,obj_Player.y);
@@ -15,8 +77,10 @@ if isAlive = 1
         		{
                     image_index = 0;
         	        state = 2;
+                    t = 0;
         	    }   
             }
+            #endregion
         }
     #endregion
 
@@ -209,11 +273,7 @@ if isAlive = 1
                             } else hspd = 5;
                             combo_counter = 0;
                         }
-                
-                
-                
-                
-                
+                        
                 if obj_Player.x < x 
         		{
         			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
@@ -280,7 +340,57 @@ if isAlive = 1
         
         }
     
-    
+                if place_meeting(x,y,obj_firing_molded_projectile_reverse) && hit_cd = 0
+        {
+            if !place_meeting(x,y,obj_item_hook_masked)
+            {
+                sprite_index = spr_molded_flying_take_dmg;    
+                hit_cd = 1;
+                enemy_hp -= 1;
+                state = 9;
+                var1 = instance_place(x,y,obj_firing_molded_projectile_reverse) 
+                {
+                    with var1 
+                        {
+                        instance_destroy();
+                        }
+                }
+                
+                combo_counter += 1;
+                combo_timer = 1;
+                
+                if combo_counter < 3
+                {
+                    if obj_Player.x >= x
+                    {
+                        hspd = -3;  
+                    } else hspd = 3;
+                } else  {
+                            if obj_Player.x >= x
+                            {
+                                hspd = -5;  
+                            } else hspd = 5;
+                            combo_counter = 0;
+                        }
+                        
+                if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+                vspd = -1.5;
+                hspeed = 0;
+                vspeed = 0;
+            } else  {    
+                        hspeed = 0;
+                        vspeed = 0;
+                    }
+        
+        }
+        
+        
+        
+        
+        
     
         if state = 9 
         {
@@ -343,8 +453,7 @@ if isAlive = 1
         combo_timer = 0;
         combo_counter = 0;
     }
-    #endregion
-    
+    #endregion  
     
     if enemy_hp <= 0 
     {

@@ -8,5 +8,3 @@ if instance_exists(obj_Player)
     hspeed = lengthdir_x(spd,dir);
     vspeed = lengthdir_y(spd,dir);
 }
-
-state = 1;

@@ -1,11 +1,14 @@
 {
   "spriteId": {
-    "name": "spr_ground_molded_mask",
-    "path": "sprites/spr_ground_molded_mask/spr_ground_molded_mask.yy",
+    "name": "spr_molded_grounded_mask",
+    "path": "sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_molded_grounded_mask",
+    "path": "sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "obj_enemy_parent",
