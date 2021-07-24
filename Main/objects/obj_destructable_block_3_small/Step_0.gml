@@ -6,6 +6,10 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
     hp -=1;
     image_index +=1;
     im_cd = 1;
+    if obj_Player.isGrounded = 0 
+    {
+        obj_Player.vspd = -3.2;
+    }
     instance_create_depth(obj_hitbox_mask.x+30*sign(obj_hitbox_mask.image_xscale),obj_hitbox_mask.y-20,depth-1,obj_sfx_weapon_slash);
     instance_create_depth(x+8,y+8,depth-1,obj_sfx_dust_expl_small);
     instance_create_depth(x+24,y+8,depth-1,obj_sfx_dust_expl_small);

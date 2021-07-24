@@ -8,13 +8,34 @@
 
 	for (var i=1; i-1<global.hp_max; i++) 
 	{
-		draw_sprite_ext(spr_hud_heart,1,(camera_get_view_x(view_camera[0]))+i*16,camera_get_view_y(view_camera[0])+1,1,1,0, c_white,1);
+        if instance_exists(obj_Player)
+        {
+            if obj_Player.state = 0
+            {
+		        draw_sprite_ext(spr_hud_heart,1,(camera_get_view_x(view_camera[0]))+i*16,camera_get_view_y(view_camera[0])+1,1,1,0, c_white,1);
+            }
+            
+                        
+            if obj_Player.state = 1
+            {
+		        draw_sprite_ext(spr_hud_heart_molded,1,(camera_get_view_x(view_camera[0]))+i*16,camera_get_view_y(view_camera[0])+1,1,1,0, c_white,1);
+            }   
+        }
+        image_speed = 1;
 	}
 
  
 	for (var i=1; i-1<global.hp; i++)
 	{
-	    draw_sprite_ext(spr_hud_heart,0,(camera_get_view_x(view_camera[0]))+i*16,camera_get_view_y(view_camera[0])+1,1,1,0, c_white,1);
+        if obj_Player.state = 0
+        {
+	        draw_sprite_ext(spr_hud_heart,0,(camera_get_view_x(view_camera[0]))+i*16,camera_get_view_y(view_camera[0])+1,1,1,0, c_white,1);
+        }
+        if obj_Player.state = 1
+        {
+	        draw_sprite_ext(spr_hud_heart_molded,0,(camera_get_view_x(view_camera[0]))+i*16,camera_get_view_y(view_camera[0])+1,1,1,0, c_white,1);
+        }
+        
 	}
 
 #endregion

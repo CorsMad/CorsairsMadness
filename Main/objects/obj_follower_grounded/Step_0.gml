@@ -347,4 +347,12 @@ if state = 23
             hspd = sign(hspd)*3.75;
             vspd = -6;
         }
+        
+        if place_meeting(x,y,obj_block_jump_verysmall_flw) && state = 1 && isGrounded = 1 && state !=21 && state !=22 && state !=23 && state !=3 && state !=4
+        {
+            hspd = sign(hspd)*1.75;;
+            vspd = -6;
+        }
+        
+        
 #endregion

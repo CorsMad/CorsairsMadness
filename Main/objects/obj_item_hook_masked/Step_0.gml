@@ -127,6 +127,24 @@ if state = 1
         } else obj_Player.hookspd = -6;       
     }
     
+    // Столкновение с FastFly
+    if place_meeting(x,y,obj_fastfly_molded) && isHooked = 0
+    {
+        var HookBlockFastflyMolded = instance_place(x,y,obj_fastfly_molded);
+        if HookBlockFastflyMolded != noone 
+        {
+            var i = instance_create_depth(HookBlockFastflyMolded.x,HookBlockFastflyMolded.y-18,depth+1,obj_item_hook_iframes);   
+            i.oleg = HookBlockFastflyMolded;
+        }
+        
+        isHooked = 1;
+        obj_Player.isHooking = 1;
+        if dir = 1
+        {
+            obj_Player.hookspd = 6;   
+        } else obj_Player.hookspd = -6;       
+    }
+    
 #endregion
 
 #region привязан
