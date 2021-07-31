@@ -13,7 +13,7 @@ attackspd = 0;
 
 #region Состояния 
 
-state = 1; // 0 - человек, 1 - маск
+//state = 1; // 0 - человек, 1 - маск
 isDead = 0;
 
 isAttacking = 0;
@@ -62,6 +62,7 @@ pickup_timer = 0;
 recoil_timer = 0;
 hook_iframes_timer = 0;
 sprkl_timer = 0;
+dashing_timer = 0;
 
 
 #endregion
@@ -69,6 +70,7 @@ sprkl_timer = 0;
 #region Ограничения
 
 DashEnabled = 0;
+HookEnabled = 0;
 
 #endregion
 

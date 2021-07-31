@@ -2,9 +2,11 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function fnc_player_state1()
 {
+    
     #region Alive
 if isDead = 0 
 {
+    player_input();
 #region Conditions
 //Направление спрайта
 if image_xscale = 1 
@@ -394,7 +396,7 @@ if isRecoil = 1
     vspd = -1;
     fspd = -0.5*dir;
     
-    if image_index  > 3 && key_item 
+    if image_index  > 3 && key_item && HookEnabled = 1
     {
         hookingbuffer = 1;  
         dashingbuffer = 0;
@@ -475,7 +477,7 @@ if isRecoil = 1
 
 #region Hooking
     #region Hooking
-        if key_item && !instance_exists(obj_item_hook_masked) && isAfterhook = 0 && isAttacking = 0 && isAirattacking = 0 && isDashing = 0 && isRecoil = 0 && isTakingdmg = 0 && (hook_iframes_timer > 15 || hook_iframes_timer = 0)
+        if HookEnabled = 1 && key_item && !instance_exists(obj_item_hook_masked) && isAfterhook = 0 && isAttacking = 0 && isAirattacking = 0 && isDashing = 0 && isRecoil = 0 && isTakingdmg = 0 && (hook_iframes_timer > 15 || hook_iframes_timer = 0)
         {
             instance_create_depth(x+dir*4,y-16,depth,obj_item_hook_masked);
         }
@@ -643,14 +645,40 @@ if (place_meeting(x,y,obj_enemy_parent) || place_meeting(x,y,obj_enemy_parent_ob
     isVulnerable = 0;
     //isHookiframes = 0;
     //hook_iframes_timer = 0
-    
-	if isCarry = 1
-	{
-		isCarry = 0;
-		var b_cr = instance_create_depth(x,y-32,1,obj_bomb);
-		b_cr.isOn = 1;
-	}
+
 }
+
+if place_meeting(x,y,obj_enemy_parent_object) && damage_cd = 0 && isTakingdmg = 0 && isAfterhook = 1
+{
+	global.hp -= 1;
+	hspd = 0;
+	vspd = -2;
+	isTakingdmg = 1;
+	damage_cd = 1;
+    isRecoil = 0;
+	isAttacking = 0;
+	isAirattacking = 0;
+	isAirattacking_timer = 0;
+	isGrounded = 0;
+	isSkidding = 0;
+	isSkidding_timer = 0;
+	isDashing = 0;
+	attackingdown_timer = 0;
+	isWallclimbing = 0;
+	isOutjump = 0;
+	isClimbing = 0;
+	isUsingitem = 0;
+	isAirUsingitem = 0;
+	isHooking = 0;
+	isGravitate = 0;
+	isPickup = 0
+	pickup_timer = 0;
+    isVulnerable = 0;
+    isHookiframes = 0;
+    hook_iframes_timer = 0
+    isAfterhook = 0;
+}
+
 
 if isTakingdmg = 1 
 {
@@ -911,4 +939,10 @@ if isDead = 1
 	}
 }
 #endregion
+    #region Cutscene
+    if isDead = 2
+    {
+        fnc_player_cutscene();
+    }
+    #endregion
 }

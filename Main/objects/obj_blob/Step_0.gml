@@ -15,7 +15,7 @@ if place_meeting(x,y+1,obj_block)
 
 if sprite_index = spr_blob_destroy
 {
-    image_speed = 2;
+    image_speed = 1.5;
     if (image_index > image_number - 1)
     {
         instance_destroy();

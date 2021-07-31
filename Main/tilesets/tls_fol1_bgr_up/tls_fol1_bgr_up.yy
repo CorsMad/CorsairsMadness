@@ -2175,8 +2175,8 @@
     ],
   },
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Temple",
+    "path": "folders/Tile Sets/Temple.yy",
   },
   "resourceVersion": "1.0",
   "name": "tls_fol1_bgr_up",

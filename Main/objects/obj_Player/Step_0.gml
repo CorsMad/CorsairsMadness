@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-player_input();
+
 
 #region Человек
 if state = 0

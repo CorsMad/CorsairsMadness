@@ -4,7 +4,7 @@
     "path": "sprites/spr_player_hitbox_masked/spr_player_hitbox_masked.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

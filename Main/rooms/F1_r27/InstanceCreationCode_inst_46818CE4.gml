@@ -1,2 +1,2 @@
 TargetRoom = F1_r26;
-TargetX = 608;
+TargetX = 800;

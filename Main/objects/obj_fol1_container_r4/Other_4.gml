@@ -4,4 +4,10 @@ instance_create_depth(x,y,0,obj_room_transition_black_screen);
 
 instance_create_depth(320,144,0,obj_fastfly_molded);
 instance_create_depth(688,64,0,obj_fastfly_molded);
-instance_create_depth(800,112,0,obj_fastfly_molded);
+instance_create_depth(816,112,0,obj_fastfly_molded);
+
+var i = instance_create_depth(736,0,0,obj_enemy_creator);
+i.image_yscale = 17;
+i.x_cr = 624;
+i.y_cr = 224;
+i.obj_cr = obj_molded_small_fastfly;

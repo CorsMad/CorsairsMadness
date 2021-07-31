@@ -1,0 +1,43 @@
+{
+  "spriteId": {
+    "name": "spr_ground_molded_mask",
+    "path": "sprites/spr_ground_molded_mask/spr_ground_molded_mask.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": {
+    "name": "spr_ground_molded_mask",
+    "path": "sprites/spr_ground_molded_mask/spr_ground_molded_mask.yy",
+  },
+  "persistent": false,
+  "parentObjectId": {
+    "name": "obj_flying_molded",
+    "path": "objects/obj_flying_molded/obj_flying_molded.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Enemies",
+    "path": "folders/Objects/Level objects SPECIAL/F1_r17/Enemies.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "obj_flying_molded_f_r17",
+  "tags": [],
+  "resourceType": "GMObject",
+}
