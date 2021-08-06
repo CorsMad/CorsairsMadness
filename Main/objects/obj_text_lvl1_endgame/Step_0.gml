@@ -7,7 +7,7 @@ if t < 1205
 
 
 
-if t > 1201
+if t > 701
 {
     if keyboard_check(ord("K"))
     {

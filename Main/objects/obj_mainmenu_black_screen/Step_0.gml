@@ -13,3 +13,5 @@ alp -= 0.025;
 		instance_destroy();	
 	}
 }
+
+

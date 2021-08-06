@@ -41,11 +41,13 @@ if state = 1
         if HookBlockCollision != noone 
         {
             var i = instance_create_depth(HookBlockCollision.x+8,HookBlockCollision.y+8,depth+1,obj_item_hook_iframes);   
-            i.oleg = HookBlockCollision;   
+            i.oleg = HookBlockCollision; 
+            withBlock = 1;
         }
         
         isHooked = 1;
         obj_Player.isHooking = 1;
+        
         if dir = 1
         {
             obj_Player.hookspd = 6;   

@@ -5,7 +5,7 @@ function fnc_player_state0()
     #region Alive
 if isDead = 0 
 {
-
+    player_input();
 #region Conditions
 //Направление спрайта
 if image_xscale = 1 
@@ -125,9 +125,9 @@ if place_meeting(x,y+1,obj_block)
 	isGrounded = 1;	
 } else isGrounded = 0; 
 
-if isGrounded = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0 &&  isAirattacking = 0 && isAirUsingitem = 0 &&  isAttackingdown = 0 && isWallclimbing = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0
+if isGrounded = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0 &&  isAirattacking = 0 && isAirUsingitem = 0 &&  isAttackingdown = 0 && isWallclimbing = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0 && isDashing = 0
 {
-	if isCarry = 0
+	if isCarry = 0 
 	{
 		sprite_index = spr_player_jump;
 	} else sprite_index = spr_player_jump_carry;
@@ -263,34 +263,42 @@ if isAirattacking = 1 && image_index = 5
 }
 
 #endregion
+
 #region Dashing
-if key_dashing && DashEnabled = 1 && isCarry = 0 && isUsingitem = 0 && isGrounded = 0 && isAttacking = 0 && isDashing = 0 && dash_counts > 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0
+if key_dashing && dashing_timer_count = 0 && DashEnabled = 1 && isCarry = 0 && isUsingitem = 0 && isAttacking = 0 && isDashing = 0 && dash_counts > 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0
 {
 	dash_counts --;
 	image_index = 0;
 	isDashing = 1;
 	vspd = 0;
+    isAttacking = 0;
 	isAirattacking = 0;
 	isAirThrowingBomb = 0;
 	isAirUsingitem = 0;
 	dashing_timer = 1;
+    dashing_timer_count = 1;
+    if key_right = 1
+    {
+        image_xscale = 1;  
+    }
+    if key_left = 1
+    {
+        image_xscale = -1;
+        dir = -1;   
+    }
 }
 if isDashing = 1
 {
 	vspd = 0;
-	if dashing_timer > 10 
+	if dashing_timer > 5 
 	{
 		fspd = 4*dir;	
 	} else fspd = 0;
-	if dashing_timer = 1 
-	{
-			
-	}
 }
 
 if isDashing = 1 
 {
-	if dashing_timer > 0 && dashing_timer < 10
+	if dashing_timer > 0 && dashing_timer < 3
 	{
 		sprite_index = spr_player_predash;	
 	}
@@ -301,8 +309,86 @@ if isDashing = 1
 	}
 	if dashing_timer = 0
 	{
-		isDashing = 0;	
+		isDashing = 0;
 	}
+    
+    #region помощь при углах
+    if fspd > 0
+    {
+        if place_meeting(x+1,y,obj_block)
+        {
+            var lox1 = instance_place(x+1,y,obj_block);
+            var lox2 = abs(obj_Player.y-lox1.y);
+            var lox3 = abs((obj_Player.y-32)-lox1.bbox_bottom);
+            if lox2 <= 12
+            {
+                with(lox1)
+                {
+                    if !place_meeting(x,y-1,obj_block)
+                    {
+                        obj_Player.y-=lox2;   
+                    } 
+                }
+            } 
+            if lox3 <= 12
+            {
+                with(lox1)
+                {
+                    if !place_meeting(x,y+1,obj_block)
+                    {
+                        obj_Player.y+=lox3+1;   
+                    } 
+                }
+            }
+        }
+    }
+    
+    if fspd < 0
+    {
+        if place_meeting(x-1,y,obj_block)
+        {
+            var lox1 = instance_place(x-1,y,obj_block);
+            var lox2 = abs(obj_Player.y-lox1.y);
+            var lox3 = abs((obj_Player.y-32)-lox1.bbox_bottom);
+            if lox2 <= 12
+            {
+                with(lox1)
+                {
+                    if !place_meeting(x,y-1,obj_block)
+                    {
+                        obj_Player.y-=lox2;   
+                    }
+                }
+            }
+            if lox3 <= 12
+            {
+                with(lox1)
+                {
+                    if !place_meeting(x,y+1,obj_block)
+                    {
+                        obj_Player.y+=lox3+1;   
+                    } 
+                }
+            }
+        }
+    }
+    #endregion
+}
+
+if isDashing = 1 && isGrounded = 0
+{
+    dash_counts = 0;   
+}
+
+
+if dashing_timer_count = 1
+{
+    dashing_timer_count_timer ++;
+    if dashing_timer_count_timer = 40 
+    {
+        dashing_timer_count_timer = 0;
+        dashing_timer_count = 0;
+    }
 }
 
 // Таймеры и выход 
@@ -317,9 +403,10 @@ if dashing_timer = 30
 }
 
 #endregion
+
 #region Attacking down
 
-if isGrounded = 0 && key_down_pressed && isCarry = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isDashing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0
+if isGrounded = 0 && key_down && isCarry = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isDashing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0
 {
 	isAirattacking = 0;
 	isAttacking = 0;
@@ -327,8 +414,9 @@ if isGrounded = 0 && key_down_pressed && isCarry = 0 && isAttackingdown = 0 && i
 	isThrowingBomb = 0
 	fspd = 0;
 	isAttackingdown = 1;	
-	vspd = -1;
+	vspd = -0.5;
 	attackingdown_timer = 1;
+    sprite_index = spr_preattackingdown;
 }
 
 if isAttackingdown = 1 
@@ -830,13 +918,6 @@ if isHooking = 1
 
 #endregion
 */
-#endregion
-#region Pads
-
-#region Pad Blue
-
-#endregion
-
 #endregion
 #region Taking dmg
 

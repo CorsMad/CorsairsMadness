@@ -21,7 +21,7 @@ hspd = 0.5;
 vspd = 0;
 attacks = 0;
 t = 0;
-enemy_hp = 4;
+enemy_hp = 5;
 hit_cd = 0;
 
 bl_t = 0;

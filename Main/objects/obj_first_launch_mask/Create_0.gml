@@ -36,26 +36,18 @@ global.TargetX = 32;
 global.TargetY = 112;
 global.TargetRoom = F1_r1;
 */
-
-
-global.TargetX = 48;
-global.TargetY = 128;
-global.TargetRoom = F1_r31;
-
-
 /*
-global.TargetX = 96;
-global.TargetY = 112;
-global.TargetRoom = F1_r38;
+global.TargetX = 1120
+global.TargetY = 224;
+global.TargetRoom = F1_r14;
 */
-
 // TESTROOM
 
-/*
+
 global.TargetX = 48;
 global.TargetY = 256;
 global.TargetRoom = TESTROOM;
-*/
+
 
 var i = instance_create_depth(16,16,0,obj_Player);
 i.state = 1;

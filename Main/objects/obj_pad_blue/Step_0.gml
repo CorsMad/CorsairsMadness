@@ -5,6 +5,7 @@ if isOn = 1 && place_meeting(x,y,obj_Player) && obj_Player.key_jump_pressed && o
 	instance_create_depth(obj_Player.x,obj_Player.y,-1,obj_pad_blue_player_sfx);
 	obj_Player.vspd = -5;
 	isOn = 0;
+    audio_play_sound(snd_player_blue_pad,0,0);
 }
 if isOn = 0 
 {

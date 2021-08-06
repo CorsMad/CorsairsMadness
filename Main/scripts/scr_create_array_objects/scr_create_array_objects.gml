@@ -14,4 +14,8 @@ function scr_create_array_objects()
     {
         global.Destructable_non_renew_array[k,0] = 0;   
     } 
+    for(p=0;p<10000;p+=1)
+    {
+        global.Vases_array[p,0] = 0;   
+    } 
 }

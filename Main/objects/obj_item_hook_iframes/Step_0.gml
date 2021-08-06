@@ -33,6 +33,12 @@ if obj_Player.isTakingdmg = 1
             instance_create_depth(obj_Player.x,obj_Player.y,depth,obj_hitbox_mask_hook);
             if instance_exists(obj_item_hook_masked)
             {
+                if obj_item_hook_masked.withBlock = 1
+                {
+                    instance_create_depth(x,y-24,depth+1,obj_sfx_hook_sparkle);
+                    obj_Player.hooking_timer_count = 0;
+                    obj_Player.hooking_timer = 0;
+                }
                 instance_destroy(obj_item_hook_masked);   
             }
             instance_destroy();

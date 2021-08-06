@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_coin_pickup.wav",
-  "duration": 0.476088,
+  "duration": 0.471088,
   "parent": {
     "name": "Player sounds",
     "path": "folders/Sounds/Player sounds.yy",

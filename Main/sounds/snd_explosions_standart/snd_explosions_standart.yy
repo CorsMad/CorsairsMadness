@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_explosions_standart.wav",
-  "duration": 0.582596,
+  "duration": 0.577596,
   "parent": {
     "name": "Player sounds",
     "path": "folders/Sounds/Player sounds.yy",

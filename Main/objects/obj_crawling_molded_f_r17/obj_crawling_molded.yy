@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_ground_molded_mask",
-    "path": "sprites/spr_ground_molded_mask/spr_ground_molded_mask.yy",
+    "name": "spr_molded_crawling_death",
+    "path": "sprites/spr_molded_crawling_death/spr_molded_crawling_death.yy",
   },
   "solid": false,
   "visible": true,

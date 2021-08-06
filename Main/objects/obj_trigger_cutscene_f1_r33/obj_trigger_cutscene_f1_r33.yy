@@ -4,7 +4,7 @@
     "path": "sprites/spr_follower_grounded_creator/spr_follower_grounded_creator.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

@@ -880,14 +880,35 @@ if global.hp <= 0
 
 #region Искры
 
-sprkl_timer++;
+sprkl_timer_dash++;
 
-    if sprkl_timer = 10
+    if sprkl_timer_dash = 10
     {
     	instance_create_depth(x+random_range(-16,16),y+random_range(-32,-16),depth+1,choose(obj_sfx_sparkle_1_player,obj_sfx_sparkle_2_player));
-        sprkl_timer = 0;
+        sprkl_timer_dash = 0;
     }
 
+if hooking_timer_count = 0 
+{
+    sprkl_timer_hook++;
+
+    if  sprkl_timer_hook = 15
+    {
+    	instance_create_depth(x,y+random_range(-16,-8),depth+1,obj_sfx_sparkle_hook);
+        
+        sprkl_timer_hook = 0;
+    }
+
+}
 
 #endregion
+
+attackbuffer = 0;
+airattackbuffer = 0;
+dashingbuffer = 0;
+hookingbuffer = 0;
+if instance_exists(obj_item_hook_masked)
+{
+    instance_destroy(obj_item_hook_masked);   
+}
 }

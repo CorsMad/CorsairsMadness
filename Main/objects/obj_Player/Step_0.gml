@@ -15,14 +15,3 @@ if state = 1
     fnc_player_state1();
 }
 #endregion
-
-/*
-#region ТЕСТ
-if keyboard_check_pressed(ord("P"))
-{
-    if state = 0 
-    {
-       state = 1
-    } else state = 0;
-}
-#endregion

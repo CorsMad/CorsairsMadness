@@ -103,7 +103,7 @@ if state = 2
     if !place_meeting(x,y,obj_item_hook_masked)
     {
         t++;
-        if t = 60
+        if t = 30
         {
             t = 0;
             if abs(obj_Player.x - x) < 64 
@@ -153,7 +153,7 @@ if state = 3
         } else hspd = -3;
             
         
-        if abs(obj_Player.x - x) < 64 
+        if abs(obj_Player.x - x) < 48 
         {
             hspd = 0;
             if (image_xscale = -1 && place_meeting(x-8,y,obj_block)) || (image_xscale = 1 && place_meeting(x+8,y,obj_block)  )
@@ -213,11 +213,17 @@ if state = 4
             case 5: image_index = 1;break;
             case 10:image_index = 2;break;
             case 25:image_index = 3;break;
-            case 30:image_index = 4;break;
+            case 30:image_index = 4;
+                    var d1 = instance_create_depth(x,y,depth,obj_grounded_molded_hitbox_twstr);
+                    d1.image_xscale = sign(image_xscale);
+                    break;
             case 35:image_index = 5;break;
             case 40:image_index = 6;break;
             case 45:image_index = 7;break;
-            case 60:image_index = 8;break;
+            case 60:image_index = 8;
+                    var d2 = instance_create_depth(x,y,depth,obj_grounded_molded_hitbox_twstr);
+                    d2.image_xscale = sign(image_xscale);
+                    break;
             case 65:image_index = 9;break;
             case 70:image_index = 10;break;
         }
@@ -249,7 +255,11 @@ if state = 5
             case 1: image_index = 0;break;
             case 5: image_index = 1;break;
             case 10:image_index = 2;break;
-            case 30:image_index = 3;break;
+            case 30:image_index = 3;
+                    var d3 = instance_create_depth(x,y,depth,obj_grounded_molded_hitbox_round);
+                    d3.image_xscale = sign(image_xscale);
+                    d3.hspd = 4*dir;
+                    break;
             case 35:image_index = 4;break;
             case 40:image_index = 5;break;
             case 45:image_index = 6;break;
@@ -322,7 +332,7 @@ if state = 7
             image_xscale = 1;
         } else image_xscale = -1;
         t++;
-        if t = 40
+        if t = 20
         {
             t = 0;
             if abs(obj_Player.x - x) < 64 
@@ -370,8 +380,8 @@ if place_meeting(x,y,obj_hitbox_mask)  && hit_cd = 0
             combo_counter = 0;
             if obj_Player.x < x
             {
-                hspd = 6;   
-            } else hspd = -6;
+                hspd = 10;   
+            } else hspd = -10;
         }
     }   else 
             {
@@ -398,14 +408,15 @@ if place_meeting(x,y,obj_hitbox_mask_dash)  && hit_cd = 0
         		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
     obj_Player.image_index = 0;
     obj_Player.isRecoil = 1;
-    if (obj_Player.dash_counts = 0) obj_Player.dash_counts = 1;
+    obj_Player.dashing_timer_count = 1;
+    
     if combo_counter > 2 
     {
         combo_counter = 0;
         if obj_Player.x < x
         {
-            hspd = 6;   
-        } else hspd = -6;
+            hspd = 10;   
+        } else hspd = -10;
     }
 }
 
@@ -433,8 +444,8 @@ if place_meeting(x,y,obj_hitbox_mask_hook)  && hit_cd = 0
         combo_counter = 0;
         if obj_Player.x < x
         {
-            hspd = 6;   
-        } else hspd = -6;
+            hspd = 10;   
+        } else hspd = -10;
         
     }   else 
             {
@@ -473,8 +484,8 @@ if place_meeting(x,y,obj_firing_molded_projectile_reverse)  && hit_cd = 0
             combo_counter = 0;
             if obj_Player.x < x
             {
-                hspd = 6;   
-            } else hspd = -6;
+                hspd = 10;   
+            } else hspd = -10;
         }
     }   else 
             {
@@ -555,7 +566,7 @@ if enemy_hp <= 0
 {
     var m = instance_create_depth(x,y,depth,obj_grounded_molded_dead);
     m.image_xscale = image_xscale;
-    instance_destroy();   
+    instance_destroy(); 
     if instance_exists(obj_sp_f1_r28_trigger2)
     {
         obj_sp_f1_r28_trigger2.state = 2;   

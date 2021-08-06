@@ -121,27 +121,22 @@ if instance_exists(obj_Player)
 }
 #endregion
 
-/*
 #region draw_room_name
-    var sttt = 0;
-    if instance_exists(obj_Player)
-    {   if obj_Player.isDead = 0
-        {   
-            sttt = 0;   
-        }    else sttt = 2;
-    }
+    
 	draw_set_font(fnt_pixel);
     draw_text_colour(camera_get_view_x(view_camera[0])+420,camera_get_view_y(view_camera[0])+8,room_get_name(room),c_white,c_white,c_white,c_white,1);
-  
-    /*
-    if instance_exists(obj_follower_grounded_cutscene)
+    
+    if instance_exists(obj_Player)
     {
-        draw_text_colour(camera_get_view_x(view_camera[0])+120,camera_get_view_y(view_camera[0])+32,sttt,c_white,c_white,c_white,c_white,1);
+        draw_text(32,32, obj_Player.dashing_timer);
+        draw_text(32,48, obj_Player.dashing_timer_count);
+        draw_text(32,64, obj_Player.dash_on_ground);
+        draw_text(32,86, obj_Player.dash_in_air); 
     }
-    */
     
-    
+      
 #endregion
+
 
 
 

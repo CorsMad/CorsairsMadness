@@ -157,7 +157,8 @@ if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0
             vspd = -1.5;
     		obj_Player.image_index = 0;
             obj_Player.isRecoil = 1;
-            if (obj_Player.dash_counts = 0) obj_Player.dash_counts = 1;
+            obj_Player.dashing_timer_count = 1;
+            
     		if obj_Player.x < x 
     		{
     			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);

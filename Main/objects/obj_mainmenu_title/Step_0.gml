@@ -14,5 +14,5 @@ if isOn = 1 && t < 220
 if isOn = 1 && t = 220
 {
 	y = 0;	
-	instance_create_depth(48,192,-1,obj_mainmenu_controller);
+	instance_create_depth(86,198,-1,obj_mainmenu_controller);
 }

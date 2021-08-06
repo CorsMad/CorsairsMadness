@@ -5,8 +5,6 @@ if isAlive = 1
 {
     #region Патруль
     
-    
-    
         if state = 1 && state != 9 
         {
             if hspd != 0
@@ -108,9 +106,9 @@ if isAlive = 1
             if (image_index > image_number - 1) 
             {
                 image_speed = 0;
-            } else image_speed = 0.5;
+            } else image_speed = 1;
             t++;
-            if t = 90
+            if t = 35
             {
                 t = 0;
                 state = 4;            
@@ -154,7 +152,7 @@ if isAlive = 1
             {
                 state = 5;
                 spd = 0;
-                image_index = 0;
+                image_index = 2;
             }
         }
     #endregion
@@ -303,7 +301,8 @@ if isAlive = 1
             vspeed = 0;
     		obj_Player.image_index = 0;
             obj_Player.isRecoil = 1;
-            if (obj_Player.dash_counts = 0) obj_Player.dash_counts = 1;
+            obj_Player.dashing_timer_count = 1;
+            
     		if obj_Player.x < x 
     		{
     			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
@@ -434,7 +433,7 @@ if isAlive = 1
             {
                 hit_cd ++;   
             }
-            if hit_cd = 20
+            if hit_cd = 15
             {
                 hit_cd = 0;   
             }
@@ -468,11 +467,11 @@ if isAlive = 0
 {
     var i = instance_create_depth(x,y,depth,obj_flying_molded_dead);
     i.image_xscale = image_xscale;
-    instance_destroy();
     if instance_exists(obj_sp_f1_r14_trigger)
     {
         obj_sp_f1_r14_trigger.state = 2;   
     }
+    instance_destroy();
 }
 
 #endregion

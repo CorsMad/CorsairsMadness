@@ -13,7 +13,7 @@ attackspd = 0;
 
 #region Состояния 
 
-//state = 1; // 0 - человек, 1 - маск
+//state = 1; // 0 - человек, 1 - маск, 2 - катсцена
 isDead = 0;
 
 isAttacking = 0;
@@ -46,6 +46,7 @@ attackbuffer = 0;
 airattackbuffer = 0;
 dashingbuffer = 0;
 hookingbuffer = 0;
+jumpbuffer = 0;
 
 #endregion
 
@@ -61,15 +62,17 @@ death_timer = 0;
 pickup_timer = 0;
 recoil_timer = 0;
 hook_iframes_timer = 0;
-sprkl_timer = 0;
+sprkl_timer_dash = 0;
+sprkl_timer_hook = 0;
 dashing_timer = 0;
+hooking_timer = 0;
 
 
 #endregion
 
 #region Ограничения
 
-DashEnabled = 0;
+DashEnabled = 1;
 HookEnabled = 0;
 
 #endregion
@@ -78,7 +81,13 @@ HookEnabled = 0;
 
 dash_counts = 0;
 jump_counts = 0;
+dashing_timer_count = 0;
+hooking_timer_count = 0;
+dashing_timer_count_timer = 0;
 silverkey_counts = 0;
+dash_in_air = 0;
+dash_on_ground = 0;
+dash_count = 0;
 
 #endregion
 

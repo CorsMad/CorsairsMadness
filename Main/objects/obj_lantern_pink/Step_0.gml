@@ -8,7 +8,9 @@ if isOn = 1 && place_meeting(x,y,obj_hitbox_mask_dash) && obj_Player.isRecoil = 
     }
 	obj_Player.isRecoil = 1;
     obj_Player.image_index = 0;
-    obj_Player.dash_counts +=1;
+    obj_Player.dashing_timer = 0;
+    obj_Player.dashing_timer_count = 0;
+    instance_create_depth(obj_Player.x,obj_Player.y-16,obj_Player.depth+1,obj_sfx_dash_sparkle);
 	isOn = 0;
     
     if obj_Player.x > x 

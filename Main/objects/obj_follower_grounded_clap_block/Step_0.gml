@@ -1,7 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 y+=spd;
-spd+=0.1;
+if spd < 4
+{
+    spd+=0.1;
+}
 
 t++;
 switch(t)

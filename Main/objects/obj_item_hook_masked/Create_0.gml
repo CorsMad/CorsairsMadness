@@ -10,7 +10,7 @@ if obj_Player.dir = 1
     dir = 1       
 } else dir = -1;
 isHooked = 0;
-
+withBlock = 0;
 
 depth = -5;
 /* states 
