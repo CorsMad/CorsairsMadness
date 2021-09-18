@@ -7,14 +7,14 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "SFXvolume",
+    "path": "audiogroups/SFXvolume",
   },
   "soundFile": "snd_enemy_dies_sparkles.wav",
   "duration": 0.102925,
   "parent": {
-    "name": "Player sounds",
-    "path": "folders/Sounds/Player sounds.yy",
+    "name": "Enemy sounds",
+    "path": "folders/Sounds/Enemy sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_enemy_dies_sparkles",

@@ -12,6 +12,9 @@ depth = -10;
 isVulnerable = 1;
 hits = 0;
 hit_cd = 0;
+
+isOnMsc = 0;
+vol = 0;
 /*states 
 
 1 - ходьба влево

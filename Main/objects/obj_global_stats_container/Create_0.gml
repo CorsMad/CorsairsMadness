@@ -28,4 +28,9 @@ if instance_exists(obj_Player)
     {
         instance_create_depth(0,0,0,obj_music_controller_temple);   
     }
+    if obj_Player.state = 0
+    {
+        instance_create_depth(0,0,0,obj_music_controller_jungle)    
+        
+    }
 }

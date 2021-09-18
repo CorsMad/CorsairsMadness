@@ -1,0 +1,23 @@
+{
+  "compression": 0,
+  "volume": 1.0,
+  "preload": false,
+  "bitRate": 128,
+  "sampleRate": 44100,
+  "type": 0,
+  "bitDepth": 1,
+  "audioGroupId": {
+    "name": "SFXvolume",
+    "path": "audiogroups/SFXvolume",
+  },
+  "soundFile": "snd_boss_expl.wav",
+  "duration": 0.665578,
+  "parent": {
+    "name": "Boss1",
+    "path": "folders/Sounds/Enemy sounds/Boss1.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "snd_boss_expl",
+  "tags": [],
+  "resourceType": "GMSound",
+}

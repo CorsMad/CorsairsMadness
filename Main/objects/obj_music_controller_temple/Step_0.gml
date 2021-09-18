@@ -7,4 +7,5 @@ if a < 32
 if a = 30
 {
     audio_play_sound(msc_Temple1,1000,true);   
+    audio_sound_gain(msc_Temple1,global.MSCvolume_max,0);
 }

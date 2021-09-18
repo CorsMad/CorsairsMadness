@@ -59,6 +59,10 @@ if state = 2
     sprite_index = spr_follower_grounded_landing;
     t++;
     image_speed = 0.5;
+    if t = 1
+    {
+        fnc_snd_play_onetime(snd_follower_landing);   
+    }
     if t = 5
     {
         instance_create_depth(x+16,y-8,depth-1,obj_sfx_dust_expl_small);
@@ -123,7 +127,8 @@ if state = 7
     {
         sprite_index = spr_follower_grounded_jump;
         hspd = -4;
-    	vspd = -6;   
+    	vspd = -6;  
+        isOnMsc = 1;
     }
    
 }

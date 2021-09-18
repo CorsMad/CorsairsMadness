@@ -26,16 +26,17 @@ global.secrets_l1_s3 = 1;
 //Global transp
 
 //First Room
-/*
+
 global.TargetX = 32;
 global.TargetY = 224;
 global.TargetRoom = L1_r1;
+
+
+/*
+global.TargetX = 565;
+global.TargetY = 176;
+global.TargetRoom = L1_r29;
 */
-
-global.TargetX = 32;
-global.TargetY = 96;
-global.TargetRoom = L1_r3;
-
 
 // TESTROOM
 /*

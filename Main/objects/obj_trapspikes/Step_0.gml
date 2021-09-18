@@ -5,6 +5,7 @@ if isOn = 0
 {
 	if place_meeting(x,y,obj_Player)
 	{
+        fnc_snd_play_over(snd_spikes_trap_activation);
 		instance_create_depth(x+16,y+14,-1,obj_sfx4);
 		isOn = 1;	
 		image_index = 1;

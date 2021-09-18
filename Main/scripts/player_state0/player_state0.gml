@@ -2,10 +2,13 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function fnc_player_state0()
 {
-    #region Alive
+    #region Alive 
+    
+    
 if isDead = 0 
 {
     player_input();
+          
 #region Conditions
 //Направление спрайта
 if image_xscale = 1 
@@ -122,9 +125,23 @@ if ((!key_left && !key_right) || (key_left && key_right) ) && isUsingitem = 0 &&
 
 if place_meeting(x,y+1,obj_block) 
 {
-	isGrounded = 1;	
-} else isGrounded = 0; 
-
+    dash_pad = 0;
+	isGrounded = 1;
+    if oleg = 1 
+            {
+                if isDashing = 0
+                {
+                    fnc_snd_play_onetime(snd_player_landing);
+                }
+                oleg = 0;
+            }    
+} else 
+        {
+            isGrounded = 0; 
+            oleg = 1;
+        }
+        
+        
 if isGrounded = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0 &&  isAirattacking = 0 && isAirUsingitem = 0 &&  isAttackingdown = 0 && isWallclimbing = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0 && isDashing = 0
 {
 	if isCarry = 0 
@@ -180,6 +197,7 @@ if key_attack && isAirThrowingBomb = 0 && isCarry = 0 && isUsingitem = 0 && isAt
 {
 	image_index = 0;
 	isAttacking = 1;
+    isAirattacking = 0;
 	sprite_index = choose(spr_player_attack1,spr_player_attack2);
 	image_speed = 0.5;
 }
@@ -190,7 +208,43 @@ if isAttacking = 1 && isGrounded = 1
 }	
 if isAttacking = 1 && image_index = 5
 {
-	isAttacking = 0;	
+  
+    if attacking_buffer = 1
+    {
+        if isGrounded = 1 && !key_jump
+        {
+            if key_left
+            {
+                image_xscale = -1;   
+            }
+            if key_right 
+            {
+                image_xscale = 1;   
+            }
+            image_index = 0;
+        	isAttacking = 1;
+        	sprite_index = choose(spr_player_attack1,spr_player_attack2);
+        	image_speed = 0.5;
+            attacking_buffer = 0;
+        }
+        if isGrounded = 0
+        {
+            if key_left
+            {
+                image_xscale = -1;   
+            }
+            if key_right 
+            {
+                image_xscale = 1;   
+            }
+            image_index = 0;
+        	isAirattacking = 1;
+        	sprite_index = choose(spr_player_attack1,spr_player_attack2);
+        	image_speed = 0.5;
+            attacking_buffer = 0;
+        }   
+    }   else isAttacking = 0;	
+	
 }
 if isAttacking = 1 && image_index = 1
 {
@@ -200,15 +254,29 @@ if isAttacking = 1 && !place_meeting(x,y+1,obj_block)
 {
 	isAttacking = 0;	
 }
+
+if isAttacking = 1 && image_index > 2 && key_attack
+{
+    attacking_buffer = 1;
+}
+
+if isAttacking = 1 && key_jump
+{
+    isAttacking = 0;
+    isAirattacking = 1;
+    vspd = -6;
+}
+
 #endregion
 #region Attack in air
 
-if ((key_attack && isGrounded = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirattacking = 0 && isAirThrowingBomb = 0 && isCarry = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0
+if ((key_attack && isGrounded = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAttacking = 0 && isAirattacking = 0 && isAirThrowingBomb = 0 && isCarry = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0
 {
 	image_index = 0;
 	isAirattacking = 1;
 	sprite_index = spr_player_attack1;
 	image_speed = 0.5;
+    isAttacking = 0;
 }
 if isAirattacking = 1 
 {	
@@ -259,15 +327,59 @@ if isAirattacking = 1 && image_index = 1
 }
 if isAirattacking = 1 && image_index = 5
 {
-	isAirattacking = 0;	
+    
+    
+    if airattacking_buffer = 1
+    {
+        if isGrounded = 0
+        {
+            if key_left
+            {
+                image_xscale = -1;   
+            }
+            if key_right 
+            {
+                image_xscale = 1;   
+            }
+            image_index = 0;
+        	isAirattacking = 1;
+        	sprite_index = spr_player_attack1;
+        	image_speed = 0.5;
+            airattacking_buffer = 0;
+        } 
+        if isGrounded = 1
+        {
+            isAirattacking = 0;
+            image_index = 0;
+        	isAttacking = 1;
+        	sprite_index = choose(spr_player_attack1,spr_player_attack2);
+        	image_speed = 0.5;   
+            airattacking_buffer = 0;
+        }
+    } else isAirattacking = 0;	
+	
 }
-
-#endregion
-
-#region Dashing
-if key_dashing && dashing_timer_count = 0 && DashEnabled = 1 && isCarry = 0 && isUsingitem = 0 && isAttacking = 0 && isDashing = 0 && dash_counts > 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0
+if isAirattacking = 1 && image_index > 2 && key_attack
 {
+    airattacking_buffer = 1;
+}
+if isAirattacking = 1
+{
+    if key_jump_release && vspd < -4 
+		{
+			vspd = -3;
+		}
+}
+#endregion
+#region Dashing
+if key_dashing && dashing_timer_count = 0 && DashEnabled = 1 && isCarry = 0 && isUsingitem = 0  && isDashing = 0 && dash_counts > 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0
+{
+    fnc_snd_play_over(snd_dash_human);
 	dash_counts --;
+    if dash_pad > 0
+    {
+        dash_pad--;   
+    }
 	image_index = 0;
 	isDashing = 1;
 	vspd = 0;
@@ -310,6 +422,11 @@ if isDashing = 1
 	if dashing_timer = 0
 	{
 		isDashing = 0;
+        if dash_pad !=0 
+        {
+            dashing_timer_count_timer = 0;
+            dashing_timer_count = 0;       
+        }
 	}
     
     #region помощь при углах
@@ -375,7 +492,7 @@ if isDashing = 1
     #endregion
 }
 
-if isDashing = 1 && isGrounded = 0
+if isDashing = 1 && isGrounded = 0 && dash_pad = 0
 {
     dash_counts = 0;   
 }
@@ -397,21 +514,60 @@ if dashing_timer > 0
 {
 	dashing_timer ++;
 }	
-if dashing_timer = 30 
+if dashing_timer > 20 && key_dashing && dash_counts = 1 && DashEnabled = 1 && isGrounded = 0
+{
+    dash_buffer_human = 1;   
+}
+if dashing_timer = 30
 {
 	dashing_timer = 0;	
 }
 
-#endregion
+if dash_buffer_human = 1 && dashing_timer = 0
+{
+    dash_buffer_human = 0;
+    fnc_snd_play_over(snd_dash_human);
+	dash_counts --;
+    if dash_pad > 0
+    {
+        dash_pad--;   
+    }
+	image_index = 0;
+	isDashing = 1;
+	vspd = 0;
+    isAttacking = 0;
+	isAirattacking = 0;
+	isAirThrowingBomb = 0;
+	isAirUsingitem = 0;
+	dashing_timer = 1;
+    dashing_timer_count = 1;
+    if key_right = 1
+    {
+        image_xscale = 1;  
+    }
+    if key_left = 1
+    {
+        image_xscale = -1;
+        dir = -1;   
+    }   
+}
 
+
+
+
+
+#endregion
 #region Attacking down
 
 if isGrounded = 0 && key_down && isCarry = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isDashing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0
 {
+    fnc_snd_play_onetime(snd_player_preattackdown);  
 	isAirattacking = 0;
 	isAttacking = 0;
+    isAirUsingitem = 0;
 	isAirThrowingBomb = 0;
 	isThrowingBomb = 0
+    isUsingitem = 0;
 	fspd = 0;
 	isAttackingdown = 1;	
 	vspd = -0.5;
@@ -923,6 +1079,8 @@ if isHooking = 1
 
 if (place_meeting(x,y,obj_enemy_parent) || place_meeting(x,y,obj_enemy_parent_object) || place_meeting(x,y,obj_spikes)) && damage_cd = 0 && isTakingdmg = 0
 {
+
+    fnc_snd_play_onetime(snd_player_take_dmg);  
 	global.hp -= 1;
 	hspd = 0;
 	vspd = -2;
@@ -1157,16 +1315,24 @@ if isDead = 1
 	climbing_timer = 0;
 	coyote_timer = 0;
 	damage_cd = 0;
+    attacking_buffer = 0;
+    airattackbuffer = 0;
 	
 	
-	
+	if instance_exists(obj_music_controller_jungle)
+    {
+        instance_destroy(obj_music_controller_jungle);   
+    } 
+    audio_stop_sound(msc_Jungle1);
+    audio_stop_sound(msc_Jungle1_boss);
 	y+=vspd;
 	vspd = lerp(vspd,0,0.05);
 	death_timer++;
 	switch(death_timer)
 	{
 		case 1: instance_create_depth(x,y-24,-1,obj_sfx_player_dead_emitter);
-				sprite_index = spr_player_hurt;
+				audio_play_sound(snd_player_death,0,false);
+                sprite_index = spr_player_hurt;
 				break;
 		case 55:sprite_index = spr_player_death;break;
 		case 80:image_alpha = 0;break;

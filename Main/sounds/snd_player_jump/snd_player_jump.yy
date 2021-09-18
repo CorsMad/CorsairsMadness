@@ -7,11 +7,11 @@
   "type": 0,
   "bitDepth": 0,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "SFXvolume",
+    "path": "audiogroups/SFXvolume",
   },
   "soundFile": "snd_player_jump.wav",
-  "duration": 0.096508,
+  "duration": 0.048889,
   "parent": {
     "name": "Player sounds",
     "path": "folders/Sounds/Player sounds.yy",

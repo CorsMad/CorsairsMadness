@@ -141,7 +141,19 @@ if ((!key_left && !key_right) || (key_left && key_right) ) && isUsingitem = 0 &&
 if place_meeting(x,y+1,obj_block) 
 {
 	isGrounded = 1;	
-} else isGrounded = 0; 
+    if oleg = 1 
+            {
+                if isDashing = 0
+                {
+                    fnc_snd_play_onetime(snd_player_landing);
+                }
+                oleg = 0;
+            }  
+} else 
+        {
+            isGrounded = 0; 
+            oleg = 1;
+        } 
 
 if isGrounded = 0 && isRecoil = 0 && isAfterhook = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0 &&  isAirattacking = 0 && isAirUsingitem = 0 && isWallclimbing = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0
 {
@@ -259,6 +271,14 @@ if isAttacking = 1 && image_index = 1
 	instance_create_depth(x,y,0,obj_hitbox_mask);
 }
 
+if isAttacking = 1 && key_jump
+{
+    isAttacking = 0;
+    isAirattacking = 1;
+    vspd = -6;
+}
+
+
 #region буфферизация
 if isAttacking = 1
 {
@@ -272,7 +292,7 @@ if isAttacking = 1
 
 #region Attack in air
 
-if ((key_attack && isGrounded = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && ((isAfterhook = 0) || (isAfterhook = 1 && !instance_exists(obj_hitbox_mask_hook)))  && !instance_exists(obj_item_hook_masked) && isAirattacking = 0 && isRecoil = 0 && isAirThrowingBomb = 0 && isCarry = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0
+if ((key_attack && isGrounded = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && ((isAfterhook = 0) || (isAfterhook = 1 && !instance_exists(obj_hitbox_mask_hook)))  && !instance_exists(obj_item_hook_masked) && isAttacking = 0 && isAirattacking = 0 && isRecoil = 0 && isAirThrowingBomb = 0 && isCarry = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0
 {
 	image_index = 0;
 	isAirattacking = 1;
@@ -343,6 +363,14 @@ if isAirattacking = 1 && image_index = 5
     player_input_buffer_execute();
 }
 
+if isAirattacking = 1
+{
+    if key_jump_release && vspd < -4 
+		{
+			vspd = -3;
+		}
+}
+
 #region Буфферизация
 if isAirattacking = 1
 {
@@ -359,6 +387,7 @@ if isAirattacking = 1
 #region Dashing
 if key_dashing && dashing_timer_count = 0 && isCarry = 0 && isAfterhook = 0 && !instance_exists(obj_item_hook_masked) && isRecoil = 0 && isUsingitem = 0 && isAttacking = 0 && isDashing = 0  && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0
 {
+    audio_play_sound(snd_player_dash_masked,0,0);
     dashingbuffer = 0;
     sprite_index = spr_player_masked_dash;
     image_index = 0;
@@ -671,6 +700,7 @@ if isRecoil = 1
 
 if (place_meeting(x,y,obj_enemy_parent) || place_meeting(x,y,obj_enemy_parent_object)) && damage_cd = 0 && isTakingdmg = 0 && isVulnerable = 1
 {
+    fnc_snd_play_onetime(snd_player_take_dmg);  
 	global.hp -= 1;
 	hspd = 0;
 	vspd = -2;

@@ -7,8 +7,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "SFXvolume",
+    "path": "audiogroups/SFXvolume",
   },
   "soundFile": "snd_player_hook_recover.wav",
   "duration": 0.593469,

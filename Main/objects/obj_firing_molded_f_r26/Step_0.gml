@@ -207,9 +207,7 @@ if enemy_hp <= 0
     var i = instance_create_depth(x,y,depth,obj_firing_molded_dead);
     i.image_xscale = image_xscale;
     instance_destroy();
-    {
-        obj_wall_trigger_close1_f1_r26.state = 2;
+    obj_wall_trigger_close1_f1_r26.state = 2;
         obj_wall_trigger_close1_f1_r26.t = 0;   
-    }
 }
 #endregion

@@ -3,6 +3,7 @@
 
 if isOn = 0 && place_meeting(x,y,obj_hitbox)
 {
+    fnc_snd_play_over(snd_chest_destruct);
     global.chest_controller_28 = 0;
 	isOn = 1;
 	image_speed = 1;

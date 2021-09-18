@@ -12,7 +12,8 @@ switch(t)
     case 150:text = 3;isStop = 0;break;
     case 200:text = 4;isStop = 0;break;
     case 250:text = 5;isStop = 0;break;
-    case 300:isStop = 0;break;
+    case 300:text = 6;isStop = 0;break;
+    case 350:isStop = 0;break;
 }
 
 if isStop = 0
@@ -23,7 +24,7 @@ if isStop = 0
     }
     if t_text > 29
     {
-        if keyboard_check_pressed(ord("K"))
+        if keyboard_check_pressed(ord("K")) || gamepad_button_check(4,gp_face1) || gamepad_button_check(0,gp_face1)
         {
             isStop = 1; 
             t_text = 0;

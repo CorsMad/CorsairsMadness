@@ -19,6 +19,10 @@ if state = 1
     {
         image_index +=1;   
     }
+    if image_index = 7
+    {
+        fnc_snd_play_over(snd_wall_closed);      
+    }
     if t = 14
     {
         instance_create_depth(x+8,y+96,-1,obj_sfx1);

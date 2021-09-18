@@ -2,6 +2,7 @@
 // You can write your code in this editor
 if place_meeting(x,y,obj_hitbox) 
 {
+    fnc_snd_play_over(snd_gift_destruct);
 	instance_create_depth(x,y-24,1,obj_sfx_weapon_slash);
 	instance_create_depth(x,y-24,1,obj_gift_on_ground_left);
 	instance_create_depth(x,y-12,1,obj_gift_on_ground_right);
@@ -31,6 +32,7 @@ if place_meeting(x,y,obj_hitbox)
 
 if place_meeting(x,y,obj_hitbox_destr_down)
 {
+    fnc_snd_play_over(snd_gift_destruct);
 	obj_Player.vspd = -5;
 	obj_Player.isAttackingdown = 0;
 	obj_Player.attackingdown_timer = 0;

@@ -8,3 +8,10 @@ switch(a)
     case 400: alpha = 1;break;
     case 700: room_goto(F1_endscreen);break;
 }
+
+audio_sound_gain(msc_Temple1,vol,0);
+vol-=0.0025
+if vol <= 0 
+{
+    audio_stop_sound(msc_Temple1);
+}

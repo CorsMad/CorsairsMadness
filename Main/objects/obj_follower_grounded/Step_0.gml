@@ -243,6 +243,10 @@ if state = 4
     sprite_index = spr_follower_grounded_landing;
     t++;
     image_speed = 0.5;
+    if t = 1
+    {
+        fnc_snd_play_onetime(snd_follower_landing);   
+    }
     if t = 20
     {
         if instance_exists(obj_Player)

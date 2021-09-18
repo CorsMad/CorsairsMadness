@@ -7,3 +7,17 @@ if instance_exists(obj_Player)
 		y = 0;
 	}
     
+
+/*
+if paused = 0 && keyboard_check_pressed(vk_space)
+{
+    instance_deactivate_all(true);
+    paused = 1;
+}
+
+if paused = 1 && keyboard_check_pressed(vk_escape)
+{
+    instance_activate_all();
+    paused = 0;
+}
+*/

@@ -6,6 +6,7 @@ if place_meeting(x,y,obj_Player)
 	instance_create_depth(x,y,-1,obj_sfx3);
 	obj_Player.silverkey_counts +=1;
 	instance_destroy();	
+    fnc_snd_play_over(snd_take_key);
 }
 
 a++;

@@ -34,7 +34,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Enemies",
-    "path": "folders/Objects/Level objects SPECIAL/F1_r17/Enemies.yy",
+    "path": "folders/Objects/Level objects SPECIAL/F1_r14/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_flying_molded_f_r17",

@@ -566,9 +566,8 @@ if enemy_hp <= 0
 {
     var m = instance_create_depth(x,y,depth,obj_grounded_molded_dead);
     m.image_xscale = image_xscale;
-    instance_destroy(); 
-    if instance_exists(obj_sp_f1_r28_trigger2)
+    instance_destroy();  
     {
         obj_sp_f1_r28_trigger2.state = 2;   
-    } 
+    }
 }

@@ -8,6 +8,6 @@ instance_create_depth(288,64,100,obj_pad_red);
 instance_create_depth(352,208,100,obj_pad_blue);
 
 instance_create_depth(144,144,100,obj_bird_vertical);
-instance_create_depth(880,144,100,obj_bird_horizontal);
+instance_create_depth(880,144,100,obj_special_l1_r29);
 
 

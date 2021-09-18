@@ -11,3 +11,5 @@ if instance_exists(obj_Player)
 		x = 0;	
 	}
 }
+
+paused = 0;

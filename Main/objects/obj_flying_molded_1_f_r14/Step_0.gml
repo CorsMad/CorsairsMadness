@@ -258,6 +258,17 @@ if isAlive = 1
                 combo_counter += 1;
                 combo_timer = 1;
                 
+                if combo_counter >= 3
+                {
+                    if obj_Player.x >= x
+                    {
+                        hspd = -3;  
+                    } else hspd = 3;
+                    combo_counter = 0;
+                }
+                
+                
+                /*
                 if combo_counter < 3
                 {
                     if obj_Player.x >= x
@@ -271,7 +282,7 @@ if isAlive = 1
                             } else hspd = 5;
                             combo_counter = 0;
                         }
-                        
+                */     
                 if obj_Player.x < x 
         		{
         			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
@@ -292,10 +303,12 @@ if isAlive = 1
             hit_cd = 1;
             state = 9;
             enemy_hp -=1;
+            /*
             if obj_Player.x >= x
             {
                 hspd = -3;  
             } else hspd = 3;
+            */
             vspd = -1.5;
             hspeed = 0;
             vspeed = 0;
@@ -358,6 +371,18 @@ if isAlive = 1
                 combo_counter += 1;
                 combo_timer = 1;
                 
+                
+                if combo_counter >= 3
+                {
+                    if obj_Player.x >= x
+                    {
+                        hspd = -3;  
+                    } else hspd = 3;
+                    combo_counter = 0;
+                }
+                
+                
+                /*
                 if combo_counter < 3
                 {
                     if obj_Player.x >= x
@@ -371,6 +396,7 @@ if isAlive = 1
                             } else hspd = 5;
                             combo_counter = 0;
                         }
+                */     
                         
                 if obj_Player.x < x 
         		{
@@ -386,11 +412,7 @@ if isAlive = 1
         
         }
         
-        
-        
-        
-        
-    
+
         if state = 9 
         {
     		t = 0;
@@ -433,6 +455,7 @@ if isAlive = 1
             {
                 hit_cd ++;   
             }
+           // if hit_cd = 15
             if hit_cd = 15
             {
                 hit_cd = 0;   
@@ -467,11 +490,11 @@ if isAlive = 0
 {
     var i = instance_create_depth(x,y,depth,obj_flying_molded_dead);
     i.image_xscale = image_xscale;
+    instance_destroy();
     if instance_exists(obj_sp_f1_r14_trigger)
     {
         obj_sp_f1_r14_trigger.state = 2;   
     }
-    instance_destroy();
 }
 
 #endregion

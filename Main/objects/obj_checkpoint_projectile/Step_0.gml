@@ -5,6 +5,7 @@ if isOn = 0 && place_meeting(x,y,obj_Player)
 	sprite_index = spr_checkpoint_4_off_on;	
 	image_speed = 2;
 	isOn = 1;
+    fnc_snd_play_over(snd_checkpoint);
 }
 
 if isOn = 1

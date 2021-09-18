@@ -6,10 +6,15 @@ spd = 2;
 fspd = 0;
 grav = 0.25;
 
+oleg = 1;
+dash_buffer_human = 0;
+
 carryspd = 0;
 afterhookspd = 0;
 hookspd = 0;
 attackspd = 0;
+attacking_buffer = 0;
+airattacking_buffer = 0;
 
 #region Состояния 
 
@@ -72,7 +77,7 @@ hooking_timer = 0;
 
 #region Ограничения
 
-DashEnabled = 1;
+DashEnabled = 0;
 HookEnabled = 0;
 
 #endregion
@@ -88,6 +93,7 @@ silverkey_counts = 0;
 dash_in_air = 0;
 dash_on_ground = 0;
 dash_count = 0;
+dash_pad = 0;
 
 #endregion
 

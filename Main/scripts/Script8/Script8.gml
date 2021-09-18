@@ -8,3 +8,21 @@ function fnc_snd_play_coin()
 		audio_play_sound(snd_coin_pickup,0,0);
 	}
 }
+
+
+function fnc_snd_play_over(argument0)
+{
+    if audio_play_sound(argument0,0,0)
+    {
+        audio_stop_sound(argument0);
+        audio_play_sound(argument0,0,0);
+    }
+}
+
+function fnc_snd_play_onetime(argument1)
+{
+    if !audio_play_sound(argument1,0,0)   
+    {
+        audio_play_sound(argument1,0,0);   
+    }
+}

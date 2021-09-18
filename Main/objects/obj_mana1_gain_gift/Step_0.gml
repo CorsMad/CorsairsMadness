@@ -24,10 +24,7 @@ if to_player = 1
     vspeed = lengthdir_y(spd,dir);
 	if place_meeting(x,y,obj_Player)
 	{
-        if !audio_play_sound(snd_player_hpmana_gain,0,0)
-        {
-            audio_play_sound(snd_player_hpmana_gain,0,0);   
-        }
+        fnc_snd_play_over(snd_player_hpmana_gain);
 		if global.mana < global.mana_max 
 		{
 			global.mana +=1;

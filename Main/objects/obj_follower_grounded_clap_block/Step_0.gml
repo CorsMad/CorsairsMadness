@@ -6,6 +6,11 @@ if spd < 4
     spd+=0.1;
 }
 
+if snd = 0 && y > 0
+{
+    fnc_snd_play_onetime(snd_follower_block_fall);
+    snd = 1;
+}
 t++;
 switch(t)
 {

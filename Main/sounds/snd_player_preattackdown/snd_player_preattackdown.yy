@@ -7,11 +7,11 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "SFXvolume",
+    "path": "audiogroups/SFXvolume",
   },
   "soundFile": "snd_player_preattackdown.wav",
-  "duration": 0.255374,
+  "duration": 0.163447,
   "parent": {
     "name": "Player sounds",
     "path": "folders/Sounds/Player sounds.yy",

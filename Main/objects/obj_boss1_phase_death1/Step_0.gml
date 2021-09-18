@@ -5,11 +5,13 @@ if state = 1
 	t++;
 	if t mod 10 == 0
 	{
+        fnc_snd_play_over(snd_boss_expl);
 		instance_create_depth(x+random_range(-28,28),y+random_range(-28,+12),depth-1,obj_sfx_explosion_bomb);
 	}
 
 	if t mod 5 == 0
 	{
+        
 		instance_create_depth(x+random_range(-28,28),y+random_range(-28,+12),depth-1,obj_sfx2);
 	}
 	if t = 60 
@@ -28,6 +30,7 @@ if state = 2
 	
 	if t mod 20 == 0
 	{
+        fnc_snd_play_over(snd_boss_expl);
 		instance_create_depth(x+random_range(-28,28),y+random_range(-28,+12),depth-1,obj_sfx2);
 	}
 	

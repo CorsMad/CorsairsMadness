@@ -7,14 +7,14 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "SFXvolume",
+    "path": "audiogroups/SFXvolume",
   },
   "soundFile": "snd_take_key.wav",
   "duration": 1.027914,
   "parent": {
-    "name": "Player sounds",
-    "path": "folders/Sounds/Player sounds.yy",
+    "name": "Level sounds",
+    "path": "folders/Sounds/Level sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_take_key",

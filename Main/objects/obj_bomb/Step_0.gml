@@ -24,6 +24,7 @@ if isOn = 1
 }
 if timer = 115
 {
+    fnc_snd_play_over(snd_item_bomb_explosion);
 	instance_create_depth(x,y+7,depth-1,obj_bomb_explosion);
 }
 if timer = 120 

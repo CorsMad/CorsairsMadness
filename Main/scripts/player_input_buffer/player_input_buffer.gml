@@ -121,6 +121,7 @@ function player_input_buffer_execute()
 
     if dashingbuffer = 1 && dashing_timer_count = 0
     {
+        audio_play_sound(snd_player_dash_masked,0,0);
         attackbuffer = 0;
         airattackbuffer = 0;
         dashingbuffer = 0;

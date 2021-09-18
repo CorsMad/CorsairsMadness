@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if isOn = 1 && place_meeting(x,y,obj_Player) 
+if isOn = 1 && place_meeting(x,y,obj_Player) && obj_Player.dash_counts = 0 && obj_Player.dash_pad = 0
 {
 	instance_create_depth(x,y,-1,obj_pad_red_player_sfx);
 	/*
@@ -9,8 +9,11 @@ if isOn = 1 && place_meeting(x,y,obj_Player)
     obj_Player.dashing_timer = 0;
     obj_Player.dash_on_ground = 0;
     obj_Player.dash_in_air = 0;
-    obj_Player.dash_count = 0;
+   
     */
+    obj_Player.dash_counts = 1;
+    obj_Player.DashEnabled = 1;
+    obj_Player.dash_pad = 1;
 	isOn = 0;
 }
 if isOn = 0 

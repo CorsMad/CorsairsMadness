@@ -23,4 +23,5 @@ if isOn = 0
 	instance_create_depth(x,y+24,0,obj_silver_key_door3_part3);
 	instance_create_depth(x+8,y+24,0,obj_silver_key_door3_part4);
 	instance_destroy();	
+    fnc_snd_play_over(snd_door_open);
 }

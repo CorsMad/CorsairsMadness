@@ -245,6 +245,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_destructable_block_small_gold","path":"objects/obj_destructable_block_small_gold/obj_destructable_block_small_gold.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":176.0,"y":96.0,"resourceVersion":"1.0","name":"inst_72C95E78","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_destructable_block_small_gold","path":"objects/obj_destructable_block_small_gold/obj_destructable_block_small_gold.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":96.0,"resourceVersion":"1.0","name":"inst_3791FB13","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_destructable_block_big_gold","path":"objects/obj_destructable_block_big_gold/obj_destructable_block_big_gold.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":928.0,"y":112.0,"resourceVersion":"1.0","name":"inst_7E158E02","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_pause_controller","path":"objects/obj_pause_controller/obj_pause_controller.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":0.0,"resourceVersion":"1.0","name":"inst_43F83CE5","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_death_pit_trigger","path":"objects/obj_death_pit_trigger/obj_death_pit_trigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":10.2,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":628.0,"y":304.0,"resourceVersion":"1.0","name":"inst_60D3439A","tags":[],"resourceType":"GMRInstance",},
@@ -513,6 +514,7 @@
     {"name":"inst_72C95E78","path":"rooms/L1_r3/L1_r3.yy",},
     {"name":"inst_3791FB13","path":"rooms/L1_r3/L1_r3.yy",},
     {"name":"inst_7E158E02","path":"rooms/L1_r3/L1_r3.yy",},
+    {"name":"inst_43F83CE5","path":"rooms/L1_r3/L1_r3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
