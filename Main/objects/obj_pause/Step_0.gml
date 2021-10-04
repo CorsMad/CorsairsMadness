@@ -1,11 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-key_up = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(4,gp_padu) || gamepad_button_check_pressed(0,gp_padu);
-key_down = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || gamepad_button_check_pressed(4,gp_padd) || gamepad_button_check_pressed(0,gp_padd);
-key_left = keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A")) || gamepad_button_check_pressed(4,gp_padl) || gamepad_button_check_pressed(0,gp_padl);
-key_right = keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D")) || gamepad_button_check_pressed(4,gp_padr) || gamepad_button_check_pressed(0,gp_padr);
-key_back = keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("L")) || gamepad_button_check_pressed(4,gp_face2) || gamepad_button_check_pressed(0,gp_face2);
-key_action = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("K")) || gamepad_button_check_pressed(4,gp_face1) || gamepad_button_check_pressed(0,gp_face1);
+key_up = keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(4,gp_padu) || gamepad_button_check_pressed(0,gp_padu);
+key_down = keyboard_check_pressed(vk_down) || gamepad_button_check_pressed(4,gp_padd) || gamepad_button_check_pressed(0,gp_padd);
+key_left = keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(4,gp_padl) || gamepad_button_check_pressed(0,gp_padl);
+key_right = keyboard_check_pressed(vk_right) || gamepad_button_check_pressed(4,gp_padr) || gamepad_button_check_pressed(0,gp_padr);
+key_back = keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4,gp_face2) || gamepad_button_check_pressed(0,gp_face2);
+key_action = keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(4,gp_face1) || gamepad_button_check_pressed(0,gp_face1);
 
 audio_group_set_gain(MusicVolume,global.MSCvolume,0);
 audio_group_set_gain(SFXvolume,global.SFXvolume,0);
@@ -23,18 +23,18 @@ if b = 0
         fnc_snd_play_over(snd_menu_select);
         a--;   
     }
-    if a > 3
+    if a > 4
     {
         a = 0;
     }   
     if a < 0 
     {
-        a = 3;   
+        a = 4;   
     }
 }
 
 
-if a = 3 && key_action && b = 0
+if a = 4 && key_action && b = 0
 {
     b=1;
     fnc_snd_play_over(snd_menu_accept);  
@@ -65,7 +65,7 @@ if b >= 9
 
 #region визуал
 
-if a = 0
+if a = 0       // ГРОМКОСТЬ МУЗЫКИ
 {
     
     if key_left && global.MSCvolume > 0
@@ -78,7 +78,7 @@ if a = 0
     }
 }
 
-if a = 1
+if a = 1        // ГРОМКОСТЬ ЭФФЕКТОВ
 {
     
     if key_left && global.SFXvolume > 0
@@ -93,7 +93,22 @@ if a = 1
     }
 }
 
-if a = 2
+if a = 2        // ИЗМЕНЕНИЕ СХЕМЫ УПРАВЛЕНИЯ
+{
+    if key_left && global.controlScheme = 1 
+    {
+        global.controlScheme = 0 
+        fnc_snd_play_over(snd_menu_select);   
+    }
+    if key_right && global.controlScheme = 0 
+    {
+        global.controlScheme = 1 
+        fnc_snd_play_over(snd_menu_select);   
+    }    
+}
+
+
+if a = 3        // ВОЗВРАТ В ИГРУ  
 {
     if instance_exists(obj_pause_menu_selects)   
     {
@@ -104,7 +119,7 @@ if a = 2
         fnc_snd_play_over(snd_menu_accept);   
     }
 }
-if a = 3
+if a = 4        // ВЫХОД В ГЛАВНОЕ МЕНЮ
 {
     if instance_exists(obj_pause_menu_selects)   
     {
@@ -112,7 +127,7 @@ if a = 3
     }   
 }
 
-if a < 2 
+if a < 3 
 {
     if instance_exists(obj_pause_menu_selects)   
     {
@@ -126,4 +141,5 @@ if b > 5 && instance_exists(obj_pause_menu_confirmation)
 } else obj_pause_menu_confirmation.image_alpha = 0;
 
 #endregion
+
 global.MSCvolume_max = global.MSCvolume;

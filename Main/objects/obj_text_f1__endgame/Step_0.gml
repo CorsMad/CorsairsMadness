@@ -9,7 +9,7 @@ if t < 1205
 
 if t > 701
 {
-    if keyboard_check(ord("K")) || gamepad_button_check(4,gp_face1) || gamepad_button_check(0,gp_face1)
+    if keyboard_check(vk_enter) || gamepad_button_check(4,gp_face1) || gamepad_button_check(0,gp_face1)
     {
         game_restart();
     }

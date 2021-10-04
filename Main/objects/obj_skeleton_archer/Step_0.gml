@@ -132,60 +132,39 @@ if x <= obj_Player.x
 
 	if state = 4
 	{
-		b++;
-		switch(b)
-		{
-			case 1 : instance_create_depth(x,y-16,1,obj_skeleton_bone);instance_create_depth(x,y-16,1,obj_sfx_sparkle_creator);break;
-			case 10: instance_create_depth(x,y-16,1,obj_skeleton_bone);break;
-			case 15: instance_create_depth(x,y-16,1,obj_skeleton_bone);break;
-			case 20: instance_create_depth(x,y-16,1,obj_skeleton_bone);break;
-			case 25: instance_create_depth(x,y-16,1,obj_skeleton_bone);break;
-			case 30: instance_create_depth(x,y-16,1,obj_skeleton_bone);break;
-			case 45: instance_destroy();break;
-			
-		}
-		image_alpha = 0.5;	
-	}
+		var skel_d = instance_create_depth(x,y,-1,obj_skeleton_archer_dead);
+        skel_d.sprite_index = sprite_index;
+        skel_d.image_index = image_index;
+        skel_d.image_xscale = image_xscale;
+        skel_d.image_alpha = 0.5;
+        instance_destroy();
+    }
 
 #endregion
 
 #region takedmg
+ 
+ // Атака
 
-
-	if (place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_item_axe)) && hit_cd = 0
-	{
-		if obj_Player.x < x 
-		{
-			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
-		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
-	}
-		
-	if place_meeting(x,y,obj_item_axe) && hit_cd = 0
-	{
-		instance_create_depth(x,y-16,-1,obj_sfx_weapon_slash);
-	}
-		
-	if place_meeting(x,y,obj_hitbox_down) && hit_cd = 0
-	{
-        if instance_exists(obj_hitbox_down)
-        {
-            obj_Player.isAttackingdown = 0;
-    		obj_Player.attackingdown_timer = 0;
-    		obj_Player.vspd = -5;
-        }
-		instance_create_depth(x,y-32,-1,obj_sfx_weapon_slash);
-	}
-    fnc_enemy_no_armor_dmg();
+    fnc_take_dmg_hitbox(-10,-16,-1,10,-16,-1);
     
+// Топор
+
+    fnc_take_dmg_axe(-10,-16,-1,10,-16,-1);
+    
+// Удар вниз   
+
+    fnc_take_dmg_hitbox_down(0,-32,-1);
+
+// Получение урона
+
+    fnc_enemy_no_armor_dmg();
+ 
+ 
+ 
 		if enemy_hp < 0
-        
 		{
-			a = 0;
 			state = 4;
-			mask_index = spr_blank;
-			image_speed = 0;
-			hspd = 0;
-			vspd = 0;
 		}
 		
 

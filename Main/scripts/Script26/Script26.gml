@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function fnc_player_cutscene()
 {
-    #region Conditions
+#region Conditions
 //Направление спрайта
 if image_xscale = 1 
 {

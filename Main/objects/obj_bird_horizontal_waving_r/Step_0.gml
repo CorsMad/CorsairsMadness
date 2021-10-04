@@ -11,31 +11,23 @@ if state = 1
 #endregion
 
 #region #takedmg
-    if (place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_item_axe)) && hit_cd = 0
-	{
-		if obj_Player.x < x 
-		{
-			instance_create_depth(x-10,y,-1,obj_sfx_weapon_slash);
-		} else instance_create_depth(x+10,y,-1,obj_sfx_weapon_slash);
-	}
-		
-	if place_meeting(x,y,obj_item_axe) && hit_cd = 0
-	{
-		instance_create_depth(x,y,-1,obj_sfx_weapon_slash);
-	}
-		
-	if place_meeting(x,y,obj_hitbox_down) && hit_cd = 0
-	{
-        if instance_exists(obj_hitbox_down)
-        {
-            obj_Player.isAttackingdown = 0;
-    		obj_Player.attackingdown_timer = 0;
-    		obj_Player.vspd = -5;
-        }
-		instance_create_depth(x,y-16,-1,obj_sfx_weapon_slash);
-	}  
-	fnc_enemy_no_armor_dmg();
 
+ // Атака
+
+    fnc_take_dmg_hitbox(-10,0,-1,10,0,-1);
+    
+// Топор
+
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1);
+    
+// Удар вниз   
+
+    fnc_take_dmg_hitbox_down(0,-16,-1);
+
+// Получение урона
+
+    fnc_enemy_no_armor_dmg();
+    
 #endregion
 
 #region #hp

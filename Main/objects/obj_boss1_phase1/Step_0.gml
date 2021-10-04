@@ -273,6 +273,7 @@ if state = 15
 
 if state !=15
 {
+    #region Атака
 	if place_meeting(x,y,obj_hitbox) && hit_cd = 0
 	{
 		hit_cd = 1;
@@ -283,20 +284,31 @@ if state !=15
 		} else instance_create_depth(obj_hitbox.x-8,obj_hitbox.y-20,depth-1,obj_sfx_weapon_slash);
 
 	}
-    if place_meeting(x,y,obj_item_axe) && hit_cd = 0
-	{
-		hit_cd = 1;
-		enemy_hp -=2;
+    #endregion
+    
+    #region Топор
+    var axehit = instance_place(x,y,obj_item_axe);
+    if (axehit !=noone) && (hit_cd = 0)
+    {
+        hit_cd = 1;
+		enemy_hp -= 2;
         instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-1,obj_sfx_weapon_slash);
-	}
-	
+        axehit.a = 1;
+    }
+	#endregion
+    
+    #region Удар вниз
 	if place_meeting(x,y,obj_hitbox_down) && hit_cd = 0
 	{
 		hit_cd = 1;
 		enemy_hp -=1;
+        obj_Player.isAttackingdown = 0;
+    	obj_Player.attackingdown_timer = 0;
+    	obj_Player.vspd = -5;   
 		instance_create_depth(obj_hitbox_down.x,obj_hitbox_down.y+18,depth-1,obj_sfx_weapon_slash);
 	}
-	
+	#endregion
+    
 	if hit_cd !=0 
 	{
 		hit_cd++;	

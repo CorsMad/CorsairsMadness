@@ -19,7 +19,7 @@
     {"spriteId":{"name":"spr_block_mask","path":"sprites/spr_block_mask/spr_block_mask.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":-100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "${project_dir}/rooms/FirstRoom/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/FirstRoomHum/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_50C9E549","path":"rooms/FirstRoomHum/FirstRoomHum.yy",},
