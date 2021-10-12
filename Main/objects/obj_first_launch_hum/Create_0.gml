@@ -3,6 +3,10 @@
 //Player stats
 
 
+//global.controlScheme = 1; //!!!!!!!!!!!!!!!!!!!!!
+
+
+
 global.hp = 4;
 global.hp_max = 4;
 global.choosed_item = 2;
@@ -13,7 +17,7 @@ global.secrets = 0;
 
 scr_create_array_objects();
 scr_create_array_gold();
-scr_chest_controller()
+scr_chest_controller();
 
 //ТЕСТ
 
@@ -26,17 +30,17 @@ global.secrets_l1_s3 = 1;
 //Global transp
 
 //First Room
-
+/*
 global.TargetX = 32;
 global.TargetY = 224;
 global.TargetRoom = L1_r1;
-
-
-/*
-global.TargetX = 80;
-global.TargetY = 144;
-global.TargetRoom = L1_r33;
 */
+
+
+global.TargetX = 36;
+global.TargetY = 160;
+global.TargetRoom = L1_r9;
+
 
 // TESTROOM
 /*
@@ -44,6 +48,7 @@ global.TargetX = 48;
 global.TargetY = 256;
 global.TargetRoom = TESTROOM;
 */
+
 
 var i = instance_create_depth(16,16,0,obj_Player);
 i.state = 0;

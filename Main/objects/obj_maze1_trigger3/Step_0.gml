@@ -1,0 +1,1 @@
+fnc_maze1_triggers(obj_maze1_3);

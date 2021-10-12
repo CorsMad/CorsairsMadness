@@ -1,0 +1,23 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+if instance_exists(obj_maze1_1)
+{
+    draw_text(144, 96, obj_maze1_1.isOn);
+    draw_text(256, 96, obj_maze1_1.image_angle);
+}
+if instance_exists(obj_maze1_2)
+{
+    draw_text(144, 110, obj_maze1_2.isOn);
+    draw_text(256, 110, obj_maze1_2.image_angle);
+}
+if instance_exists(obj_maze1_3)
+{
+    draw_text(144, 120, obj_maze1_3.isOn);
+    draw_text(256, 120, obj_maze1_3.image_angle);
+}
+if instance_exists(obj_maze1_4)
+{
+    draw_text(144, 130, obj_maze1_4.isOn);
+    draw_text(256, 130, obj_maze1_4.image_angle);
+}

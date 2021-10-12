@@ -15,6 +15,7 @@ function player_input()
         key_jump_pressed = keyboard_check_pressed(ord("Z")) || gamepad_button_check_pressed(4,gp_face1) || gamepad_button_check_pressed(0,gp_face1);
         key_attack = keyboard_check_pressed(ord("X")) || gamepad_button_check_pressed(4,gp_face3) || gamepad_button_check_pressed(0,gp_face3);
         key_dashing = keyboard_check_pressed(ord("C")) || gamepad_button_check_pressed(4,gp_shoulderrb) || gamepad_button_check_pressed(0,gp_shoulderrb);
+        key_attack_press = keyboard_check(ord("X")) || gamepad_button_check(4,gp_face3) || gamepad_button_check(0,gp_face3);
         key_item = keyboard_check_pressed(ord("A")) || gamepad_button_check_pressed(4,gp_face4) || gamepad_button_check_pressed(4,gp_shoulderlb) || gamepad_button_check_pressed(0,gp_face4) || gamepad_button_check_pressed(0,gp_shoulderlb); 
         key_item_choose = keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(4,gp_shoulderl);
     }
@@ -29,6 +30,7 @@ function player_input()
         key_jump_release = keyboard_check_released(ord("K")) || gamepad_button_check_released(4,gp_face1) || gamepad_button_check_released(0,gp_face1);
         key_jump_pressed = keyboard_check_pressed(ord("K")) || gamepad_button_check_pressed(4,gp_face1) || gamepad_button_check_pressed(0,gp_face1);
         key_attack = keyboard_check_pressed(ord("J")) || gamepad_button_check_pressed(4,gp_face3) || gamepad_button_check_pressed(0,gp_face3);
+        key_attack_press = keyboard_check(ord("J")) || gamepad_button_check(4,gp_face3) || gamepad_button_check(0,gp_face3);
         key_dashing = keyboard_check_pressed(ord("L")) || gamepad_button_check_pressed(4,gp_shoulderrb) || gamepad_button_check_pressed(0,gp_shoulderrb);
         key_item = keyboard_check_pressed(ord("U")) || gamepad_button_check_pressed(4,gp_face4) || gamepad_button_check_pressed(4,gp_shoulderlb) || gamepad_button_check_pressed(0,gp_face4) || gamepad_button_check_pressed(0,gp_shoulderlb); 
         key_item_choose = keyboard_check_pressed(ord("O")) || gamepad_button_check_pressed(4,gp_shoulderl);
