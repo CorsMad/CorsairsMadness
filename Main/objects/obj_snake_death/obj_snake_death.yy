@@ -31,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Snake",
-    "path": "folders/Objects/Enemies/Snake.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Snake.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_snake_death",

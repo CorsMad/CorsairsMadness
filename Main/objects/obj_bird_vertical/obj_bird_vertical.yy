@@ -38,7 +38,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Vertical",
-    "path": "folders/Objects/Enemies/Birds/Vertical.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Birds/Vertical.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bird_vertical",

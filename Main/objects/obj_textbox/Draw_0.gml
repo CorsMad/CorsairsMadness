@@ -13,9 +13,9 @@ draw_set_font(fnt_pixel_small);
 
 if charCount < string_length(text[page])
 {
-    charCount+=0.25;
+    charCount+=0.5;
 }
 draw_set_halign(fa_center);
 textPart = string_copy(text[page],1,charCount);
-draw_text_ext(x+((boxWidth*sprw)/2),y+4,textPart,stringHeight/2,boxWidth*sprw);
+draw_text_ext(x+((boxWidth*sprw)/2),y+6,textPart,stringHeight/1.5,boxWidth*(sprw));
 

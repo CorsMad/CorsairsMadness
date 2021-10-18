@@ -42,8 +42,8 @@ global.TargetRoom = F1_r1;
 
 /*
 global.TargetX = 32
-global.TargetY = 96
-global.TargetRoom = F1_r36
+global.TargetY = 80
+global.TargetRoom = F1_r40
 */
 // TESTROOM
 

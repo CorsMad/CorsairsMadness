@@ -38,7 +38,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Horizontal",
-    "path": "folders/Objects/Enemies/Birds/Horizontal.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Birds/Horizontal.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bird_horizontal",

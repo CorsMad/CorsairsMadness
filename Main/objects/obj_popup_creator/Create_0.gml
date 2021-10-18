@@ -5,4 +5,4 @@ image_xscale = 3;
 image_yscale = 1;
 
 myText[0] = "Oleg";
-myText[1] = "tebe pizda 1x1 \nrazebu";
+myText[1] = "hello everyone \ni'm oleg";

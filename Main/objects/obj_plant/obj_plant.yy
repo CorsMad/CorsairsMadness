@@ -38,7 +38,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Plant",
-    "path": "folders/Objects/Enemies/Plant.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Plant.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_plant",

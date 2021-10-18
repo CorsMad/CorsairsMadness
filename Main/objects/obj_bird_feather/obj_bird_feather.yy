@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Birds",
-    "path": "folders/Objects/Enemies/Birds.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Birds.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bird_feather",

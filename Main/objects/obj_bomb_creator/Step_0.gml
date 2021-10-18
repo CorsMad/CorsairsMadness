@@ -2,9 +2,21 @@
 // You can write your code in this editor
 if place_meeting(x,y,obj_hitbox) && !instance_exists(obj_bomb) && obj_Player.isCarry = 0 && isOn = 0
 {
+    // Создание TIP
+    if instance_exists(obj_Player)
+    {
+        if obj_Player.tipBomb = 0
+        {
+            instance_create_depth(64,208,0,obj_popup_trigger_usebomb);       
+        }
+    }
+    
+    
+    
     fnc_snd_play_onetime(snd_bomb_selektor);
 	image_index = 1;
 	isOn = 1;
+    
 	if instance_exists(obj_bomb_emitter)
 	{
 		instance_create_depth(obj_bomb_emitter.x+16,obj_bomb_emitter.y+20,-1,obj_bomb);	

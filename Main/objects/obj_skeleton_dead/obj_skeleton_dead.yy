@@ -37,7 +37,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Skeleton",
-    "path": "folders/Objects/Enemies/Skeletons/Skeleton.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Skeletons/Skeleton.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_skeleton_dead",

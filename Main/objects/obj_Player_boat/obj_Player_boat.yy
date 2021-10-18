@@ -3,8 +3,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "spr_player_boat",
-    "path": "sprites/spr_player_boat/spr_player_boat.yy",
+    "name": "spr_player_boat_mask",
+    "path": "sprites/spr_player_boat_mask/spr_player_boat_mask.yy",
   },
   "persistent": false,
   "parentObjectId": null,
@@ -24,6 +24,7 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":32,"eventType":9,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

@@ -3,69 +3,184 @@
 
 player_input();
 
-#region Стрельба из пистолета
-    a = image_index ;
+#region режимы Стрельбы 
 
-    if b != 0
+#region Обычный пистолет
+
+if state = 0
+{
+    a = image_index;
+    t_mid = 30;
+    t_max = 60;
+    
+    if t!=0 && t!=t_mid
     {
-        b++;       
+        t++;   
+    }
+    
+    if t = t_max
+    {
+        t = 0;   
     }
 
-    if b = 7 
+    if t = 0   
     {
-        image_index++;   
+        image_index = 0   
     }
-    if b = 14
+    
+    if t > 0 && t <= t_mid/2    
     {
-        b = 0;   
+        image_index = 1;   
     }
-
-    if image_index > 3
+    
+    if t > t_mid/2 && t <= t_mid
+    {
+        image_index = 2;   
+    }
+    
+    if t > t_mid && t <= (t_mid+(t_mid/2))
+    {
+        image_index = 3;   
+    }
+    
+    if t > (t_mid+(t_mid/2))
     {
         image_index = 0;   
     }
-
-    if key_attack_press && b = 0 && ((image_index = 0) || (image_index = 2))
+    
+    
+    
+    if t = 0 || t = t_mid
     {
-        if image_index = 0
+       
+        if bonus_gain_fast_pistol = 1
         {
-            instance_create_depth(x+18,y-28,-1,obj_sfx1)
-            instance_create_depth(x+18,y-28,-1,obj_sfx3)
-        }
-        if image_index = 2
-        {
-            instance_create_depth(x+14,y-28,-1,obj_sfx1)
-            instance_create_depth(x+14,y-28,-1,obj_sfx3)   
-        }
-        image_index++;
-        b = 1;
+            if t <= t_mid && t > 0
+            {
+                t = 15;   
+            }
+            state = 1; 
+            t_mid = 15;
+            t_max = 30;
+            instance_create_depth(x,y-64,depth-1,obj_powerup_indicator);
+        } else 
         
-        instance_create_depth(x+18,y-28,-1,obj_player_boat_pistol_projectile);
-        instance_create_depth(x,y-36,-1,obj_Player_boat_used_pistol);
+        {
+            if key_attack_press
+            {
+                t++;
+                if image_index = 0
+                {
+                    instance_create_depth(x+18,y-28,-1,obj_sfx1)
+                    instance_create_depth(x+18,y-28,-1,obj_sfx3)
+                }
+                if image_index = 2
+                {
+                    instance_create_depth(x+14,y-28,-1,obj_sfx1)
+                    instance_create_depth(x+14,y-28,-1,obj_sfx3)   
+                }
+         
+                instance_create_depth(x+18,y-28,-1,obj_player_boat_pistol_projectile);
+                instance_create_depth(x,y-36,-1,obj_Player_boat_used_pistol);
+            }   
+        }    
     }
+
+}
+
+#endregion
+
+#region Быстрый пистолет
+
+if state = 1
+{
+    a = image_index;
+    bonus_cd++;  
+    
+    bonus_gain_fast_pistol = 0;
+    
+    if t!=0 && t!=t_mid
+    {
+        t++;   
+    }
+    
+    if t = t_max
+    {
+        t = 0;   
+    }
+
+    if t = 0   
+    {
+        image_index = 0   
+    }
+    
+    if t > 0 && t <= t_mid/2    
+    {
+        image_index = 1;   
+    }
+    
+    if t > t_mid/2 && t <= t_mid
+    {
+        image_index = 2;   
+    }
+    
+    if t > t_mid && t <= (t_mid+(t_mid/2))
+    {
+        image_index = 3;   
+    }
+    
+    if t > (t_mid+(t_mid/2))
+    {
+        image_index = 0;   
+    }
+    
+    
+    
+    if t = 0 || t = t_mid
+    {
+        
+        if bonus_lose = 1
+        {
+            bonus_lose = 0;
+            bonus_cd = 0;
+            state = 0;
+        }   else   
+                if key_attack_press
+                {
+                    t++; 
+                    if image_index = 0
+                    {
+                        instance_create_depth(x+18,y-28,-1,obj_sfx1)
+                        instance_create_depth(x+18,y-28,-1,obj_sfx3)
+                    }
+                    if image_index = 2
+                    {
+                        instance_create_depth(x+14,y-28,-1,obj_sfx1)
+                        instance_create_depth(x+14,y-28,-1,obj_sfx3)   
+                    }
+         
+                    instance_create_depth(x+18,y-28,-1,obj_player_boat_pistol_projectile);
+                    instance_create_depth(x,y-36,-1,obj_Player_boat_used_pistol);
+                }
+    }
+    
+    
+ 
+    //выход
+    if bonus_cd >= bonus_cd_max
+    {
+        bonus_cd = bonus_cd_max;
+        bonus_lose = 1;
+    }
+}
+
+
+#endregion
+
 #endregion
 
 #region Покачивание
- /*  
-    if toup = 1
-    {
-        rotat +=0.05;
-        if rotat = 3
-        {
-            toup = 0;       
-        }
-    }
-    
-    if toup = 0
-    {
-        rotat -=0.05;
-        if rotat = 0
-        {
-            toup = 1;       
-        }
-    }
-    */
-    
+
     if toup = 1
     {
         yob +=0.075;
@@ -83,6 +198,7 @@ player_input();
             toup = 1;       
         }
     }
+    
 #endregion
 
 #region Перемещение

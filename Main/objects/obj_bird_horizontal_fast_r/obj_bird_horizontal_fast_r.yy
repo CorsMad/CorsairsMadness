@@ -39,7 +39,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Horizontal fast",
-    "path": "folders/Objects/Enemies/Birds/Horizontal fast.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Birds/Horizontal fast.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bird_horizontal_fast_r",

@@ -8,8 +8,8 @@ stringHeight = string_height(text);
 creator = noone;
 charCount = 0;
 sprWidth = sprite_get_width(spr_textbox_popup);
-depth = -9999999999;
 
 
-sprw = 4;
-sprh = 1;
+
+sprw = 5;
+sprh = 2;

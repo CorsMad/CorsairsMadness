@@ -31,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Bird dead",
-    "path": "folders/Objects/Enemies/Birds/Bird dead.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Birds/Bird dead.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bird_blue_dead",

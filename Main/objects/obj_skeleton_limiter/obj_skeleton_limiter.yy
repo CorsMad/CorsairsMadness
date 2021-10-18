@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Skeletons",
-    "path": "folders/Objects/Enemies/Skeletons.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Skeletons.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_skeleton_limiter",

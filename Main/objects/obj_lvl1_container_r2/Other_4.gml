@@ -5,3 +5,11 @@ instance_create_depth(x,y,0,obj_room_transition_black_screen);
 instance_create_depth(160,160,100,obj_pad_blue);
 instance_create_depth(312,100,100,obj_pad_blue);
 instance_create_depth(312,168,100,obj_pad_blue);
+
+if instance_exists(obj_Player)
+{
+    if obj_Player.tipBluepad = 0
+    {
+        instance_create_depth(48,144,0,obj_popup_trigger_bluepadhelp);   
+    }
+}

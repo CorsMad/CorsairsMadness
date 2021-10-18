@@ -97,6 +97,14 @@ dash_pad = 0;
 
 #endregion
 
+#region TIPS
+tipBluepad = 0;
+tipUseitem = 0;
+tipBomb = 0;
+tipDash = 0;
+tipRedpad = 0;
+#endregion
+
 image_speed = 1.25;
 
 isMeeting = 0;

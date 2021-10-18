@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Backgrounds",
-    "path": "folders/Sprites/Backgrounds.yy",
+    "name": "Boat section",
+    "path": "folders/Sprites/Backgrounds/Boat section.yy",
   },
   "resourceVersion": "1.0",
   "name": "bgr_boat_level_test",

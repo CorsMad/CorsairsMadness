@@ -4,7 +4,7 @@ audio_group_load(MusicVolume);
 audio_group_load(SFXvolume);
 
 // Установка громкости звука
-global.MSCvolume = 0.5;
+global.MSCvolume = 0.1; //0,5
 global.MSCvolume_max = global.MSCvolume;
 global.SFXvolume = 0.5;
 
