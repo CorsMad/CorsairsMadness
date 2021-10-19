@@ -37,9 +37,9 @@ global.TargetRoom = L1_r1;
 */
 
 
-global.TargetX = 32;
-global.TargetY = 240;
-global.TargetRoom = L1_r17;
+global.TargetX = 96;
+global.TargetY = 144;
+global.TargetRoom = L1_r7;
 
 
 // TESTROOM
