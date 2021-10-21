@@ -12,7 +12,7 @@ if isDead = 1
     b++;
     switch(b)
     {
-        case 1: instance_create_depth(x+8,y-18,depth-1,obj_sfx_dust_expl_big);break;
+        case 1: instance_create_depth(x+4,y-20,depth-1,obj_sfx_dust_expl_big);break;
         case 4: instance_create_depth(x+8,y-18,depth-2,obj_sfx_explosion);break;
         case 5: instance_destroy();break;
     }

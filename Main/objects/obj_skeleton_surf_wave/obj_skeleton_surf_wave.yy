@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Skeleton Surf",
-    "path": "folders/Objects/Enemies/!BOAT GROUP/Skeleton Surf.yy",
+    "name": "Surf waving",
+    "path": "folders/Objects/Enemies/!BOAT GROUP/Skeleton Surf/Surf waving.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_skeleton_surf_wave",

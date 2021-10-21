@@ -30,11 +30,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Surf line",
-    "path": "folders/Objects/Enemies/!BOAT GROUP/Skeleton Surf/Surf line.yy",
+    "name": "Surf pointing",
+    "path": "folders/Objects/Enemies/!BOAT GROUP/Skeleton Surf/Surf pointing.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_skeleton_surf_2hp",
+  "name": "obj_skeleton_surf_poinitg",
   "tags": [],
   "resourceType": "GMObject",
 }
