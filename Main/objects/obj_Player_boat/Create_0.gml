@@ -37,3 +37,5 @@ bonus_lose = 0;
 
 bonus_cd = 0;
 bonus_cd_max = 120;
+
+fastshoot_count = 0;

@@ -3,11 +3,7 @@
 
 #region скорость анимации
 
-if hspd >= -1
-{
-    image_speed = 0.5;   
-}
-if hspd < -1 && hspd > -1.5
+if hspd >= -2 
 {
     image_speed = 1;   
 }

@@ -6,6 +6,7 @@ image_angle = -30;
 to_follow = id;
 var i = instance_create_depth(x,y,depth-1,obj_wave_every);
 i.follow_obj = to_follow;
-
+i.xoffset = 6;
+i.yoffset = 4;
 b = 0;
 isDead = 0;

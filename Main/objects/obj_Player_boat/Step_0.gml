@@ -59,6 +59,7 @@ if state = 0
             {
                 t = 15;   
             }
+            fastshoot_count = 50;
             state = 1; 
             t_mid = 15;
             t_max = 30;
@@ -92,6 +93,87 @@ if state = 0
 
 #region Быстрый пистолет
 
+if state = 1
+{
+    a = image_index;
+    
+    bonus_gain_fast_pistol = 0;
+    
+    if t!=0 && t!=t_mid
+    {
+        t++;   
+    }
+    
+    if t = t_max
+    {
+        t = 0;   
+    }
+
+    if t = 0   
+    {
+        image_index = 0   
+    }
+    
+    if t > 0 && t <= t_mid/2    
+    {
+        image_index = 1;   
+    }
+    
+    if t > t_mid/2 && t <= t_mid
+    {
+        image_index = 2;   
+    }
+    
+    if t > t_mid && t <= (t_mid+(t_mid/2))
+    {
+        image_index = 3;   
+    }
+    
+    if t > (t_mid+(t_mid/2))
+    {
+        image_index = 0;   
+    }
+    
+    
+    
+    if t = 0 || t = t_mid
+    {
+        
+        if bonus_lose = 1
+        {
+            bonus_lose = 0;
+            state = 0;
+        }   else   
+                if key_attack_press
+                {
+                    t++; 
+                    fastshoot_count--;
+                    if image_index = 0
+                    {
+                        instance_create_depth(x+18,y-28,-1,obj_sfx1)
+                        instance_create_depth(x+18,y-28,-1,obj_sfx3)
+                    }
+                    if image_index = 2
+                    {
+                        instance_create_depth(x+14,y-28,-1,obj_sfx1)
+                        instance_create_depth(x+14,y-28,-1,obj_sfx3)   
+                    }
+         
+                    instance_create_depth(x+18,y-28,-1,obj_player_boat_pistol_projectile);
+                    instance_create_depth(x,y-36,-1,obj_Player_boat_used_pistol);
+                }
+    }
+    
+    
+ 
+    //выход
+    if fastshoot_count <= 0
+    {
+        fastshoot_count = 0;
+        bonus_lose = 1;
+    }
+}
+/*
 if state = 1
 {
     a = image_index;
@@ -173,8 +255,7 @@ if state = 1
         bonus_lose = 1;
     }
 }
-
-
+*/
 #endregion
 
 #endregion

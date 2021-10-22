@@ -8,5 +8,5 @@ if a = 100
 }
 if a = 50
 {
-    instance_create_depth(448,160,0,obj_powerup_barrel);  
+    //instance_create_depth(448,160,0,obj_powerup_barrel);  
 }

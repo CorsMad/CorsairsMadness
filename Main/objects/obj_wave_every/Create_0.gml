@@ -3,3 +3,6 @@
 a = 0;
 isDead = 0;
 image_speed = 0.5;
+
+xoffset = 0;
+yoffset = 0;
