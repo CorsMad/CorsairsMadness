@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_boat_power_fastpistol",
-    "path": "sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",
+    "name": "spr_boat_powerup_indicator",
+    "path": "sprites/spr_boat_powerup_indicator/spr_boat_powerup_indicator.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,8 +21,10 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -31,7 +33,7 @@
     "path": "folders/Objects/Boat PowerUP.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_boat_power_fastpistol",
+  "name": "obj_powerup_indicator_fastshoot",
   "tags": [],
   "resourceType": "GMObject",
 }

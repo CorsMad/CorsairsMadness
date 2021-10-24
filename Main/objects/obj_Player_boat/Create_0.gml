@@ -33,9 +33,12 @@ state = 0;
 //bonus
 
 bonus_gain_fast_pistol = 0;
+bonus_gain_cannon = 0;
+
 bonus_lose = 0;
 
 bonus_cd = 0;
 bonus_cd_max = 120;
 
 fastshoot_count = 0;
+cannonshoot_count = 0;

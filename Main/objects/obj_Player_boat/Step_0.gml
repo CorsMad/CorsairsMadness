@@ -63,8 +63,23 @@ if state = 0
             state = 1; 
             t_mid = 15;
             t_max = 30;
-            instance_create_depth(x,y-64,depth-1,obj_powerup_indicator);
-        } else 
+            instance_create_depth(x,y-64,depth-1,obj_powerup_indicator_fastshoot);
+        } else
+        
+        if bonus_gain_cannon = 1
+        {
+            if t <= t_mid && t > 0
+            {
+                t = 0;   
+            }
+            image_index = 0;
+            cannonshoot_count = 50;
+            state = 3; 
+            t_mid = 30;
+            t_max = 10;
+            instance_create_depth(x,y-64,depth-1,obj_powerup_indicator_cannon);
+        } else
+ 
         
         {
             if key_attack_press
@@ -173,15 +188,18 @@ if state = 1
         bonus_lose = 1;
     }
 }
-/*
-if state = 1
+
+#endregion
+
+#region Пушка
+
+if state = 3
 {
     a = image_index;
-    bonus_cd++;  
+    bonus_gain_cannon = 0;
     
-    bonus_gain_fast_pistol = 0;
-    
-    if t!=0 && t!=t_mid
+    // Таймер
+    if t!=0 
     {
         t++;   
     }
@@ -190,72 +208,74 @@ if state = 1
     {
         t = 0;   
     }
-
-    if t = 0   
+    
+    // Анимация
+    
+    if t = 0
     {
         image_index = 0   
     }
     
-    if t > 0 && t <= t_mid/2    
+    if t != 0  
     {
         image_index = 1;   
-    }
+    }  
     
-    if t > t_mid/2 && t <= t_mid
-    {
-        image_index = 2;   
-    }
-    
-    if t > t_mid && t <= (t_mid+(t_mid/2))
-    {
-        image_index = 3;   
-    }
-    
-    if t > (t_mid+(t_mid/2))
+    if t > t_max/2 
     {
         image_index = 0;   
     }
+    //
     
-    
-    
-    if t = 0 || t = t_mid
+    if t = 0
     {
+        // Подбор быстрых выстрелов
+        if bonus_gain_fast_pistol = 1
+        {
+            state = 1;  
+            cannonshoot_count = 0;
+            fastshoot_count = 50;
+            bonus_lose = 0;
+            t_mid = 15;
+            t_max = 30;
+            if instance_exists(obj_powerup_indicator_cannon)
+            {
+                instance_destroy(obj_powerup_indicator_cannon);   
+            }
+            instance_create_depth(x,y-64,depth-1,obj_powerup_indicator_fastshoot);
+        } else
+        
+        //
         
         if bonus_lose = 1
         {
             bonus_lose = 0;
-            bonus_cd = 0;
             state = 0;
         }   else   
                 if key_attack_press
                 {
                     t++; 
+                    cannonshoot_count--;
                     if image_index = 0
                     {
-                        instance_create_depth(x+18,y-28,-1,obj_sfx1)
-                        instance_create_depth(x+18,y-28,-1,obj_sfx3)
+                        instance_create_depth(x+12,y-22,-1,obj_sfx1)
+                        instance_create_depth(x+12,y-22,-1,obj_sfx3)
                     }
-                    if image_index = 2
-                    {
-                        instance_create_depth(x+14,y-28,-1,obj_sfx1)
-                        instance_create_depth(x+14,y-28,-1,obj_sfx3)   
-                    }
-         
                     instance_create_depth(x+18,y-28,-1,obj_player_boat_pistol_projectile);
-                    instance_create_depth(x,y-36,-1,obj_Player_boat_used_pistol);
+                    
                 }
     }
-    
-    
+      
  
     //выход
-    if bonus_cd >= bonus_cd_max
+    if cannonshoot_count <= 0
     {
-        bonus_cd = bonus_cd_max;
+        cannonshoot_count = 0;
         bonus_lose = 1;
     }
 }
-*/
+
+
 #endregion
 
 #endregion
