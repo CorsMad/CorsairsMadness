@@ -25,3 +25,5 @@ if place_meeting(x,y,obj_Player_boat)
     obj_Player_boat.bonus_gain_fast_pistol = 1;
     //obj_Player_boat.image_index = 0;
 }
+
+fnc_boat_destroyer();

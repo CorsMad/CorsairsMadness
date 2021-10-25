@@ -30,3 +30,6 @@ if isDead = 1
         isDead = 1;  
     }    
 #endregion
+
+
+fnc_boat_destroyer();

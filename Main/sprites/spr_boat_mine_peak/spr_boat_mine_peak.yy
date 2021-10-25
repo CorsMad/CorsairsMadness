@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Mine",
-    "path": "folders/Sprites/Enemies/Mine.yy",
+    "path": "folders/Sprites/Enemies/Boat level/Mine.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_boat_mine_peak",

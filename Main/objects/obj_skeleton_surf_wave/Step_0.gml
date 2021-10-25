@@ -31,6 +31,8 @@ if hspd > -2
 
 #region Получение урона
 
+fnc_boat_destroyer();
+
 fnc_boat_take_dmg_pistol(0,-16,-1,0,-16,-1);
 
 fnc_enemy_no_armor_dmg();
