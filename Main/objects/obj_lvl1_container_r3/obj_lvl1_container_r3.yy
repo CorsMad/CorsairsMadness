@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Lvl1",
-    "path": "folders/Objects/Level Containers (PERS objects)/Lvl1.yy",
+    "name": "Beginning",
+    "path": "folders/Objects/Level Containers (PERS objects)/Lvl1/Beginning.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_lvl1_container_r3",

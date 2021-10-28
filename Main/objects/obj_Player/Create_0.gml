@@ -77,7 +77,7 @@ hooking_timer = 0;
 
 #region Ограничения
 
-DashEnabled = 0;
+DashEnabled = 1;
 HookEnabled = 0;   /////
 
 #endregion

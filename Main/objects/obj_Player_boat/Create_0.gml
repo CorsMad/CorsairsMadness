@@ -3,6 +3,18 @@
 image_speed = 0;
 image_index = 0;
 
+if !instance_exists(obj_player_boat_hitbox)
+{
+    instance_create_depth(x,y,depth,obj_player_boat_hitbox);
+}
+if !instance_exists(obj_player_boat_wave)
+{
+    instance_create_depth(x,y,depth,obj_player_boat_wave);
+}
+
+
+
+hp = 4;
 b = 0; // выстрел
 b_mid = 14; // кулдаун выстрелов
 spd = 2;
@@ -16,13 +28,15 @@ yob = 0; // покачивание по y
 toup = 1; // покачивание по y
 
 
+col = c_white; // Цвет спрайта
+alpha = 1; // alpha спрайта
 
 //таймеры
 
 t = 0;
 t_mid = 14;
 t_max = 28;
-
+hit_cd = 0; // получение урона
 
 // Чем стрелять
 /*

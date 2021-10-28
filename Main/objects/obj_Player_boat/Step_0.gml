@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+depth = -y;
 player_input();
 
 #region режимы Стрельбы 
@@ -9,6 +9,7 @@ player_input();
 
 if state = 0
 {
+    bonus_lose = 0;
     a = image_index;
     t_mid = 30;
     t_max = 60;
@@ -319,6 +320,26 @@ if state = 3
         }
     }
     
+#endregion
+
+#region Получение урона
+
+if hit_cd > 0 
+{
+    hit_cd++;
+    
+    // Получение урона
+    if hit_cd = 1
+    {
+        hp-=1;
+    }
+
+    if hit_cd = 120
+    {
+        hit_cd = 0;   
+    }
+}
+
 #endregion
 
 #region Перемещение

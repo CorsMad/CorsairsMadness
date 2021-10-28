@@ -18,11 +18,14 @@ if state = 1
     hspd = -2;
 }
 
-if place_meeting(x,y,obj_Player_boat)
+if place_meeting(x,y,obj_player_boat_hitbox)
 {
     instance_destroy();
     //obj_Player_boat.state = 1;
-    obj_Player_boat.bonus_gain_cannon = 1;
+    if obj_Player_boat.cannonshoot_count!= 0 
+    {
+        obj_Player_boat.cannonshoot_count = 50;   
+    }   else obj_Player_boat.bonus_gain_cannon = 1;
     //obj_Player_boat.image_index = 0;
 }
 

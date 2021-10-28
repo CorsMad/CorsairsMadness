@@ -12,12 +12,17 @@ if hspd < 0 && isOn = 1
 	image_xscale = -1;
 } 
 
-/*
-if place_meeting(x,y,obj_block) && isOn = 1
+#region Взамиодействие с игроком
+
+if instance_exists(obj_Player_boat)
 {
-	var i = instance_create_depth(x,y,-1,obj_skeleton_archer_arrow_dead);
-	i.hspd = -(hspd/10)
-	i.vspd = -2;
-	instance_destroy();
+    if place_meeting(x,y,obj_player_boat_hitbox) && obj_Player_boat.hit_cd = 0
+    {
+        obj_Player_boat.hit_cd = 1; 
+        obj_Player_boat.hp -=1;
+        instance_destroy();
+    } 
 }
-*/
+
+#endregion
+

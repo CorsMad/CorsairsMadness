@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_skeleton_surf",
-    "path": "sprites/spr_skeleton_surf/spr_skeleton_surf.yy",
+    "name": "spr_skeleton_surf_2hp",
+    "path": "sprites/spr_skeleton_surf_2hp/spr_skeleton_surf_2hp.yy",
   },
   "solid": false,
   "visible": true,

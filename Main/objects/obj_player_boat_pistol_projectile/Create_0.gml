@@ -2,3 +2,4 @@
 // You can write your code in this editor
 a = 0;
 spd = 3;
+depth = -1;

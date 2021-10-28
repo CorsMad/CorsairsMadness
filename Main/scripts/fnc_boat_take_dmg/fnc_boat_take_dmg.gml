@@ -18,6 +18,20 @@ function fnc_boat_take_dmg_pistol(x1,y1,d1,x2,y2,d2)
 		enemy_hp -= 1;
        
     }
+    
+    var cannonhit = instance_place(x,y,obj_player_boat_cannon_projectile);
+    if (cannonhit !=noone) && (hit_cd = 0)
+    {
+         if obj_Player_boat.x < x 
+		{
+			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+		} else instance_create_depth(x+x2,y+y2,d2,obj_sfx_weapon_slash);
+        cannonhit.a = 1;
+        hit_cd = 1;
+		enemy_hp -= 4;
+       
+    }
+    
 }
 
 function fnc_boat_take_dmg_obstacle()
@@ -32,5 +46,17 @@ function fnc_boat_take_dmg_obstacle()
         pistolhit.a = 1;
         hit_cd = 1;
 		enemy_hp -= 1;  
+    }
+    var cannonhit = instance_place(x,y,obj_player_boat_cannon_projectile);
+    if (cannonhit !=noone) && (hit_cd = 0)
+    {
+         if obj_Player_boat.x < x 
+		{
+			instance_create_depth(cannonhit.x,cannonhit.y,cannonhit.depth-1,obj_sfx_weapon_slash);
+		} 
+        cannonhit.a = 1;
+        hit_cd = 1;
+		enemy_hp -= 4;
+       
     }
 }

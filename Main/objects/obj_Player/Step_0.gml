@@ -14,3 +14,6 @@ if state = 1
     fnc_player_state1();
 }
 #endregion
+
+
+

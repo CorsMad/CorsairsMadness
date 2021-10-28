@@ -514,16 +514,30 @@ if dashing_timer > 0
 {
 	dashing_timer ++;
 }	
-if dashing_timer > 20 && key_dashing && dash_counts = 1 && DashEnabled = 1 && isGrounded = 0
+
+/* PREVIUOS
+if key_dashing && dash_counts = 1 && DashEnabled = 1 && isGrounded = 0
 {
     dash_buffer_human = 1;   
 }
+*/
+
+if key_dashing && isGrounded = 0
+{
+    dash_buffer_human = 1;   
+}
+
+
+
+
 if dashing_timer = 30
 {
 	dashing_timer = 0;	
 }
 
-if dash_buffer_human = 1 && dashing_timer = 0
+//if dash_buffer_human = 1 && dashing_timer = 0 PREVIOUS
+
+if dash_buffer_human = 1 && dashing_timer = 0 && dash_pad > 0
 {
     dash_buffer_human = 0;
     fnc_snd_play_over(snd_dash_human);
@@ -665,6 +679,8 @@ if place_meeting(x,y,obj_block_ladder) && isAttacking = 0 && isUsingitem = 0 && 
 	image_speed = 0;
 	sprite_index = spr_player_climb;
 	isClimbing = 1;
+    dash_counts = 1;
+    
 }
 if isClimbing = 1 
 {
@@ -1341,4 +1357,20 @@ if isDead = 1
 	}
 }
 #endregion
+    #region Cutscene
+    if isDead = 2
+    {
+        fnc_player_cutscene_hum();
+    }
+    #endregion
+    #region Stop everythin
+    {
+        if isDead = 3
+        {
+            image_alpha = 0;
+        }   else image_alpha = 1;
+        
+    }
+    
+    #endregion
 }
