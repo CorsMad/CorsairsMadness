@@ -13,7 +13,7 @@ global.secrets = 0;
 
 scr_create_array_objects();
 scr_create_array_gold();
-scr_chest_controller()
+scr_chest_controller();
 
 //ТЕСТ
 
@@ -41,9 +41,9 @@ global.TargetRoom = F1_r1;
 
 
 /*
-global.TargetX = 32
-global.TargetY = 80
-global.TargetRoom = F1_r40
+global.TargetX = 64
+global.TargetY = 128
+global.TargetRoom = F1_r23
 */
 // TESTROOM
 

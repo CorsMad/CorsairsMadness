@@ -3,6 +3,7 @@
 image_speed = 0;
 image_index = 0;
 
+
 if !instance_exists(obj_player_boat_hitbox)
 {
     instance_create_depth(x,y,depth,obj_player_boat_hitbox);
@@ -13,7 +14,6 @@ if !instance_exists(obj_player_boat_wave)
 }
 
 
-
 hp = 4;
 b = 0; // выстрел
 b_mid = 14; // кулдаун выстрелов
@@ -21,7 +21,7 @@ spd = 2;
 spdv = 1.5; //верт скорость
 xspdalgae = 1; // множитель скорости на водорослях
 yspdalgae = 1;
-
+money = global.gold;// Запись монет
 
 rotat = 0;
 yob = 0; // покачивание по y
@@ -37,6 +37,8 @@ t = 0;
 t_mid = 14;
 t_max = 28;
 hit_cd = 0; // получение урона
+ctsc_timer = 0 // катсцена
+death_timer = 0;
 
 // Чем стрелять
 /*

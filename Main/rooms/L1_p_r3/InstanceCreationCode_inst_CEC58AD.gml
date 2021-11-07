@@ -1,3 +1,3 @@
 sprite_index = spr_destruatable_tile_forest_day;
-image_index = 3;
+image_index = 21;
 MyID = 365;

@@ -20,14 +20,20 @@ if state = 1
 
 if place_meeting(x,y,obj_player_boat_hitbox)
 {
+    
     instance_destroy();
-    //obj_Player_boat.state = 1;
-    if obj_Player_boat.fastshoot_count!= 0 
+    if obj_Player_boat.state != 9
     {
-        obj_Player_boat.fastshoot_count = 50;   
-    }   else obj_Player_boat.bonus_gain_fast_pistol = 1;
+        fnc_snd_play_over(snd_ability_gain);
+        global.hp = global.hp_max;
+        //obj_Player_boat.state = 1;
+        if obj_Player_boat.fastshoot_count!= 0 
+        {
+            obj_Player_boat.fastshoot_count = 50;   
+        }   else obj_Player_boat.bonus_gain_fast_pistol = 1;
+    }
     
     //obj_Player_boat.image_index = 0;
 }
 
-fnc_boat_destroyer();
+//fnc_boat_destroyer();

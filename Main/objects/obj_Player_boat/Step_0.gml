@@ -1,7 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 depth = -y;
-player_input();
+
+if instance_exists(obj_sp_boat_level)
+{
+    if obj_sp_boat_level.state != 17   
+    {
+        player_input();
+       
+    } 
+    if obj_sp_boat_level.state = 17 && obj_sp_boat_level.t = 1
+        {
+            t = 0;
+            state = 10
+            image_index = 0;
+        }
+}
 
 #region режимы Стрельбы 
 
@@ -324,23 +338,36 @@ if state = 3
 
 #region Получение урона
 
-if hit_cd > 0 
+if state != 9
 {
-    hit_cd++;
+    if hit_cd > 0 
+    {
+        hit_cd++;
     
-    // Получение урона
-    if hit_cd = 1
-    {
-        hp-=1;
-    }
+        // Получение урона
+        if hit_cd = 1
+        {
+            global.hp-=1;
+        }
+        
+        if hit_cd = 2
+        {
+            fnc_snd_play_onetime(snd_player_take_dmg); 
+            fnc_snd_play_onetime(snd_boss_expl);
+            
+        }
 
-    if hit_cd = 120
-    {
-        hit_cd = 0;   
+        if hit_cd = 120
+        {
+            hit_cd = 0;   
+        }
     }
 }
 
 #endregion
+
+if state < 10
+{
 
 #region Перемещение
 
@@ -362,6 +389,7 @@ if place_meeting(x,y,obj_boat_algae)
         xspdalgae = 1;
     }
 #endregion
+
 
 #region Pixel Perfect Collision
 
@@ -391,5 +419,147 @@ y += vspd;
 
 #endregion
 
+#endregion
+}
 
+#region Смерть
+if global.hp <= 0
+{
+    
+    #region появление взрывов
+    
+        if death_timer < 60
+        {
+            death_timer ++;
+        }
+        
+        switch(death_timer)
+        {
+            case 1: instance_create_depth(x+20,y-20,-1000,obj_sfx_explosion);   
+                    instance_create_depth(x-8,y-24,-1000,obj_sfx_explosion);
+                    instance_create_depth(x+30,y-8,-1000,obj_sfx_explosion);
+                    instance_create_depth(x-32,y-12,-1000,obj_sfx_explosion);
+                    instance_create_depth(x+14,y-20,-1000,obj_sfx_explosion);
+                    break;
+        }
+        
+    #endregion
+    
+    state = 9;
+    b = 0; // выстрел
+    b_mid = 0; // кулдаун выстрелов
+    spd = 0;
+    spdv = 0; //верт скорость
+    xspdalgae = 1; // множитель скорости на водорослях
+    yspdalgae = 1;   
+    global.hp = global.hp_max;
+    global.gold = obj_sp_boat_level.money_saved;
+    
+    
+    #region выключение музыки
+        if instance_exists(obj_music_controller_boat)
+        {
+            instance_destroy(obj_music_controller_boat);   
+        } 
+        audio_stop_sound(msc_Boat_level);
+    #endregion
+    
+    
+    instance_create_depth(x,y,0,obj_Player_boat_death);
+}
+#endregion
+
+#region Cutscene
+{
+    if state = 10
+    {
+        if instance_exists(obj_powerup_indicator_cannon)
+        {
+            instance_destroy(obj_powerup_indicator_cannon)   
+        }
+        
+        if instance_exists(obj_powerup_indicator_fastshoot)
+        {
+            instance_destroy(obj_powerup_indicator_fastshoot)   
+        }
+        
+        
+        
+        b = 0; // выстрел
+        b_mid = 0; // кулдаун выстрелов
+        spd = 0;
+        spdv = 0; //верт скорость
+        xspdalgae = 1; // множитель скорости на водорослях
+        yspdalgae = 1;   
+    }
+    
+    #region С ЗАПАДА
+    
+    if state = 11.1 // WEST COAST
+    {
+        x+=hspd;
+        hspd = lerp(hspd,4,0.02);
+        if x > 600
+        {
+            state = 11.2;
+            hspd = -4;
+            
+        }
+    }
+    
+    if state = 11.2
+    {
+        
+        x+=hspd;
+        if x < -100
+        {
+            hspd = 0;
+            var west = instance_create_depth(-16,96,-1000,obj_ctsc_player_boat_small);
+            west.spd = 0.1;
+            state = 11.3;
+        }
+    }
+    if state = 11.3
+    {
+        /*ctsc_timer ++;
+        if ctsc_timer = 300
+        {
+            instance_create_depth(0,0,-1000000000,obj_room_transition_black_screen_to_L1_p)   
+        }
+        */
+    }
+    
+    
+    #endregion
+    
+    #region С ВОСТОКА
+    
+    if state = 12.1 // EAST COAST
+    {
+        x+=hspd;
+        hspd = lerp(hspd,4,0.02);
+        if x > 600
+        {
+            hspd = 0;
+            var east = instance_create_depth(496,96,-1000,obj_ctsc_player_boat_small);
+            east.spd = -0.1;
+            east.image_xscale = -1;
+            state = 12.2;
+        }
+    }
+    
+    if state = 12.2
+    {
+        /*
+        ctsc_timer ++;
+        if ctsc_timer = 500
+        {
+            instance_create_depth(0,0,-1000000000,obj_room_transition_black_screen_to_L1_b)   
+        } 
+        */
+    }
+    
+    #endregion
+    
+}
 #endregion

@@ -41,7 +41,7 @@ function fnc_boat_take_dmg_obstacle()
     {
          if obj_Player_boat.x < x 
 		{
-			instance_create_depth(pistolhit.x,pistolhit.y,pistolhit.depth-1,obj_sfx_weapon_slash);
+			instance_create_depth(pistolhit.x,pistolhit.y,-1000,obj_sfx_weapon_slash);
 		} 
         pistolhit.a = 1;
         hit_cd = 1;
@@ -52,7 +52,7 @@ function fnc_boat_take_dmg_obstacle()
     {
          if obj_Player_boat.x < x 
 		{
-			instance_create_depth(cannonhit.x,cannonhit.y,cannonhit.depth-1,obj_sfx_weapon_slash);
+			instance_create_depth(cannonhit.x,cannonhit.y,-1000,obj_sfx_weapon_slash);
 		} 
         cannonhit.a = 1;
         hit_cd = 1;

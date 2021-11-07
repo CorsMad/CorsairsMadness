@@ -18,16 +18,16 @@ fnc_boat_destroyer();
 
 fnc_boat_take_dmg_obstacle()
 
-fnc_enemy_no_armor_dmg();
-
+fnc_enemy_no_armor_noblend_dmg();
+/*
 if enemy_hp < 2
 {
     image_blend = c_red;
 }
-
+*/
 if enemy_hp<=0
 {
-    
+    fnc_snd_play_over(snd_item_bomb_explosion);
     instance_create_depth(x+12,y+20,depth,obj_sfx_explosion);
     instance_create_depth(x+12,y+40,depth,obj_sfx_explosion);
     instance_create_depth(x+12,y+60,depth,obj_sfx_explosion);
@@ -44,8 +44,9 @@ if instance_exists(obj_Player_boat)
 {
     if place_meeting(x,y,obj_player_boat_hitbox) && obj_Player_boat.hit_cd = 0
     {
+        fnc_snd_play_over(snd_item_bomb_explosion);
         obj_Player_boat.hit_cd = 1; 
-        obj_Player_boat.hp -=1;
+        global.hp-=1;
         enemy_hp = 0;
     } 
 }

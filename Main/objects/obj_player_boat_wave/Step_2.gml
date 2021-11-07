@@ -2,7 +2,11 @@
 // You can write your code in this editor
 if instance_exists(obj_Player_boat)
 {
-     x = obj_Player_boat.x-20;
+    if obj_Player_boat.state = 11.2
+    {
+        x = obj_Player_boat.x+20;   
+    } else x = obj_Player_boat.x-20;
+     
      y = obj_Player_boat.y+8;
 }
 if instance_exists(obj_Player_boat)

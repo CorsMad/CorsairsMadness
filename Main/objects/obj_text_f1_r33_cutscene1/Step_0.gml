@@ -4,7 +4,7 @@ if isStop != 0
 {
     t++;   
 }
-
+player_input();
 switch(t)
 {
     case 50:text = 1;isStop = 0;break;   
@@ -27,7 +27,7 @@ if isStop = 0
     }
     if t_text > 29
     {
-        if keyboard_check_pressed(ord("K")) || gamepad_button_check(4,gp_face1) || gamepad_button_check(0,gp_face1)
+        if key_jump_pressed
         {
             isStop = 1; 
             t_text = 0;

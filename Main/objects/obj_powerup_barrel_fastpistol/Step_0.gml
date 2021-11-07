@@ -15,6 +15,7 @@ if isDead = 1
     {
         case 1: instance_create_depth(x+4,y-20,depth-1,obj_sfx_dust_expl_big);
                 instance_create_depth(x,y-24,depth-1,obj_boat_power_fastpistol);
+                fnc_snd_play_over(snd_bomb_block_destr);
                 break;
         case 4: instance_create_depth(x+8,y-18,depth-2,obj_sfx_explosion);break;
         case 5: instance_destroy();break;
@@ -39,4 +40,4 @@ if isDead = 1
 #endregion
 
 
-fnc_boat_destroyer();
+//fnc_boat_destroyer();

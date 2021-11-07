@@ -3,3 +3,5 @@
 a = 0;
 spd = 3;
 depth = -1;
+
+fnc_snd_play_boat_cannon();

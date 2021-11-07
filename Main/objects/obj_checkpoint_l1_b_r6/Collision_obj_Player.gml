@@ -4,4 +4,7 @@ global.TargetRoom = L1_b_r6;
 global.TargetX = 240;
 global.TargetY = 128;
 
+global.hp = global.hp_max;
+global.mana = global.mana_max;
+
 instance_destroy();

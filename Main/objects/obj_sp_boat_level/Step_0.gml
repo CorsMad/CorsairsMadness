@@ -1,10 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+#region Счетчик
+
 #region #1 Скелеты по прямой 5 - 6 штук
 if state = 1
 {   
-    t++;   
+    if t < 800
+    {
+        t++;   
+    }
+    
+    if t = 800 && !instance_exists(obj_skeleton_surf_2hp)
+    {
+        state = 2;
+        t = 0;
+    }
     
     switch(t)
     {
@@ -20,10 +31,9 @@ if state = 1
                     instance_create_depth(1392,160,depth,obj_skeleton_surf_2hp);
                     instance_create_depth(1456,144,depth,obj_skeleton_surf_2hp);
                     break;  
-        case 800 :  state = 2;
-                    t = 0;
-                    break;
+
     }
+    
 }
 
 #endregion
@@ -31,7 +41,13 @@ if state = 1
 #region 2 Скелеты закругляющиеся (Быстрая стрельба)
 if state = 2
 {
-    t++;
+    if t < 500
+    {
+        t++;
+    }
+    
+    fnc_boat_barrel(500,obj_boat_power_fastpistol,obj_powerup_barrel_fastpistol,3);
+    
     switch(t)
     {
         case 60 :   instance_create_depth(576,256,depth,obj_skeleton_surf_wave_1hp);break;
@@ -39,11 +55,7 @@ if state = 2
         case 100 :  instance_create_depth(640,272,depth,obj_skeleton_surf_wave_2hp);break;           
         case 120 :  instance_create_depth(656,224,depth,obj_skeleton_surf_wave_2hp);break;               
         case 140 :  instance_create_depth(720,240,depth,obj_skeleton_surf_wave_3hp);break;  
-        case 500 :  instance_create_depth(544,192,depth,obj_powerup_barrel_fastpistol);break;  
-        
-        case 900 :  state = 3;
-                    t = 0;
-                    break;      
+        case 400 :  instance_create_depth(544,192,depth,obj_powerup_barrel_fastpistol);break;
     }
 }
 #endregion
@@ -51,22 +63,28 @@ if state = 2
 #region 3 Мины + много скелетов в игрока
 if state = 3
 {
-    t++;
+    if t < 650
+    {
+        t++;
+    }
+    if t = 650 && !instance_exists(obj_skeleton_surf_pointing_2hp)
+    {
+        state = 4;
+        t = 0;
+    }
+    
     switch(t)
     {
         case 60:    instance_create_depth(528,208,depth,obj_boat_mine);
                     instance_create_depth(656,160,depth,obj_boat_mine);
                     instance_create_depth(784,224,depth,obj_boat_mine);
                     break;
-        case 700:   instance_create_depth(528,176,depth,obj_skeleton_surf_pointing_1hp);break;
-        case 720:   instance_create_depth(528,256,depth,obj_skeleton_surf_pointing_1hp);break;
-        case 740:   instance_create_depth(528,144,depth,obj_skeleton_surf_pointing_1hp);break;
-        case 760:   instance_create_depth(528,208,depth,obj_skeleton_surf_pointing_2hp);break;
-        case 780:   instance_create_depth(528,256,depth,obj_skeleton_surf_pointing_2hp);break;
-        case 800:   instance_create_depth(576,160,depth,obj_skeleton_surf_pointing_2hp);break;
-        case 1000:  state = 4;
-                    t = 0;
-                    break;  
+        case 500:   instance_create_depth(528,176,depth,obj_skeleton_surf_pointing_1hp);break;
+        case 520:   instance_create_depth(528,256,depth,obj_skeleton_surf_pointing_1hp);break;
+        case 540:   instance_create_depth(528,144,depth,obj_skeleton_surf_pointing_1hp);break;
+        case 560:   instance_create_depth(528,208,depth,obj_skeleton_surf_pointing_2hp);break;
+        case 580:   instance_create_depth(528,256,depth,obj_skeleton_surf_pointing_2hp);break;
+        case 600:   instance_create_depth(576,160,depth,obj_skeleton_surf_pointing_2hp);break; 
     }
 }
 #endregion
@@ -74,7 +92,16 @@ if state = 3
 #region 4 Скелет по прямой + Скелет стреляющий издалека 
 if state = 4
 {
-    t++;
+    if t < 1100
+    {
+        t++;   
+    }
+    if t = 1100 && !instance_exists(obj_skeleton_surf_archer_pointing) && !instance_exists(obj_skeleton_surf_3hp) && !instance_exists(obj_skeleton_surf_2hp)
+    {
+        t = 0;
+        state = 5;
+    }
+    
     switch(t)
     {
         case 60:    instance_create_depth(528,144,depth,obj_skeleton_surf_archer_pointing); 
@@ -92,12 +119,7 @@ if state = 4
                     instance_create_depth(624,160,depth,obj_skeleton_surf_2hp);
                     instance_create_depth(736,192,depth,obj_skeleton_surf_3hp);
                     break;
-        case 1050:  instance_create_depth(512,224,depth,obj_skeleton_surf_archer_pointing);break;
-        case 1450:  t = 0;
-                    state = 5;
-                    break;
-                    
-                    
+        case 1050:  instance_create_depth(512,224,depth,obj_skeleton_surf_archer_pointing);break;       
     }
 
 }
@@ -192,7 +214,13 @@ if state = 7
 #region 8 Водоросль (Быстрая стрельба)
 if state = 8
 {
-    t++;
+    if t < 600
+    {
+        t++;
+    }
+    
+    fnc_boat_barrel(600,obj_boat_power_fastpistol,obj_powerup_barrel_fastpistol,9);
+    
     switch(t)
     {
         case 60:    instance_create_depth(480,160,depth,obj_boat_algae_fast)     ;
@@ -216,9 +244,6 @@ if state = 8
                     instance_create_depth(656,208,depth,obj_boat_algae_fast)     ;
                     break;
         case 500:  instance_create_depth(512,208,depth,obj_powerup_barrel_fastpistol);break;
-        case 1200:  t = 0;
-                    state = 9;
-                    break;
     }
 }
 #endregion
@@ -226,7 +251,18 @@ if state = 8
 #region 9 Скелеты направляющиеся в игрока
 if state = 9
 {
-    t++;
+    if t < 400
+    {
+        t++;
+    }
+    
+    if t  = 400 && !instance_exists(obj_boat_mine) && !instance_exists(obj_skeleton_surf_pointing_1hp) && !instance_exists(obj_skeleton_surf_1hp)  
+    {
+            t = 0;
+            state = 10;   
+    }
+    
+    
     switch(t)
     {   case 1:     instance_create_depth(528,144,depth,obj_boat_mine);
                     instance_create_depth(624,272,depth,obj_boat_mine);
@@ -249,9 +285,6 @@ if state = 9
         case 280:    instance_create_depth(512,240,depth,obj_skeleton_surf_pointing_1hp);break;   
         case 310:    instance_create_depth(496,192,depth,obj_skeleton_surf_pointing_1hp);break;   
         case 340:    instance_create_depth(512,160,depth,obj_skeleton_surf_pointing_1hp);break;   
-        case 600:   t = 0;
-                    state = 10;
-                    break;
     }
     
 }
@@ -315,15 +348,27 @@ if state = 10
                 break;
         case 1400:  t = 0;
                     state = 11;
+                    money_saved = global.gold;
+                    global.boatCheckpoint = 1;
                     break;
     }
 }
 #endregion
 
-#region 11 Скелеты волной + скелеты по прямой (быстрая стрельба)
+#region 11 Скелеты волной + скелеты по прямой 
 if state = 11
 {
-    t++;   
+    if t < 200
+    {
+        t++;   
+    }
+    
+    if t = 200 && !instance_exists(obj_skeleton_surf_1hp) && !instance_exists(obj_skeleton_surf_2hp) && !instance_exists(obj_skeleton_surf_wave_1hp) && !instance_exists(obj_skeleton_surf_wave_2hp) && !instance_exists(obj_skeleton_surf_wave_3hp)
+    {
+        t = 0;
+        state = 12;   
+    }
+    
     switch(t)
     {
         case 60:    instance_create_depth(512,208,depth,obj_skeleton_surf_2hp);
@@ -337,10 +382,7 @@ if state = 11
         case 70:    instance_create_depth(512,256,depth,obj_skeleton_surf_wave_1hp);break;
         case 90:    instance_create_depth(576,192,depth,obj_skeleton_surf_wave_2hp);break;
         case 110:   instance_create_depth(624,224,depth,obj_skeleton_surf_wave_1hp);break;
-        case 130:   instance_create_depth(672,208,depth,obj_skeleton_surf_wave_3hp);break;
-        case 800:   t = 0;
-                    state = 12;
-                    break;              
+        case 130:   instance_create_depth(672,208,depth,obj_skeleton_surf_wave_3hp);break;        
     }
 }
 #endregion
@@ -349,7 +391,22 @@ if state = 11
 
 if state = 12
 {
-    t++;
+    if t < 850
+    {
+        t++;
+    }
+    
+    if t = 850 && !instance_exists(obj_skeleton_surf_archer)
+    {
+        t = 900
+        instance_create_depth(512,208,depth,obj_powerup_barrel_cannon);
+    }
+    
+    if t = 900 
+    {
+        fnc_boat_barrel(900,obj_boat_power_cannon,obj_powerup_barrel_cannon,13);
+    }
+    
     switch(t)
     {
         case 60:    instance_create_depth(496,256,depth,obj_skeleton_surf_archer);break;
@@ -360,10 +417,6 @@ if state = 12
         case 400:   instance_create_depth(512,240,depth,obj_skeleton_surf_pointing_1hp);break;
         case 500:   instance_create_depth(496,176,depth,obj_skeleton_surf_archer);break;
         case 550:   instance_create_depth(512,208,depth,obj_skeleton_surf_pointing_3hp);break;
-        case 800:   instance_create_depth(512,208,depth,obj_powerup_barrel_cannon);break;
-        case 1000:  t = 0;
-                    state = 13;
-                    break;
     }
 }
 
@@ -373,7 +426,17 @@ if state = 12
 #region 13 Скелет по прямой + Скелет в игрока + Скелет издалека + мина
 if state = 13
 {
-    t++;
+    if t < 600
+    {
+        t++;
+    }
+    
+    if t = 600 && !instance_exists(obj_boat_mine) && !instance_exists(obj_skeleton_surf_archer) 
+    {
+        state = 14;
+        t = 0;
+    }
+    
     switch(t)
     {
         case 1:     instance_create_depth(704,272,depth,obj_boat_mine);
@@ -404,9 +467,7 @@ if state = 13
         case 400:   instance_create_depth(512,240,depth,obj_skeleton_surf_pointing_3hp);break;
         case 500:   instance_create_depth(496,176,depth,obj_skeleton_surf_archer);break;
         case 550:   instance_create_depth(512,208,depth,obj_skeleton_surf_pointing_3hp);break;
-        case 800:   t = 0;
-                    state = 14;
-                    break;
+
     }
 }
 #endregion
@@ -450,7 +511,23 @@ if state = 14
 #region 15 Водоросль + мина + Скелет в игрока + Скелет Стреляющий вверх вниз ( Пушка-пулемет)
 if state = 15
 {
-    t++;
+    if t < 550
+    {
+        t++;
+    }
+    
+    if t = 550 && !instance_exists(obj_skeleton_surf_archer_pointing)
+    {
+        instance_create_depth(512,208,depth,obj_powerup_barrel_cannon);
+        t = 600;
+    }
+    
+    if t = 600
+    {
+        fnc_boat_barrel(600,obj_boat_power_cannon,obj_powerup_barrel_cannon,16);   
+    }
+    
+    
     
     switch(t)
     {
@@ -481,13 +558,7 @@ if state = 15
                     break;
         case 200:   instance_create_depth(496,176,depth,obj_skeleton_surf_archer_pointing);break;
 
-        case 500:   instance_create_depth(496,144,depth,obj_skeleton_surf_archer_pointing);break;
-        case 600:   instance_create_depth(512,208,depth,obj_powerup_barrel_cannon);break;
-        case 800:   t = 0;
-                    state = 16;
-                    break;
-                    
-                    
+        case 500:   instance_create_depth(496,144,depth,obj_skeleton_surf_archer_pointing);break;                    
     }
     
 }
@@ -497,24 +568,31 @@ if state = 15
 
 if state = 16
 {
-    t++;
+    if t < 2000
+    {
+        t++;
+    }
+    
+    if t = 2000 && !instance_exists(obj_skeleton_surf_archer_pointing) && !instance_exists(obj_skeleton_surf_pointing_2hp) && !instance_exists(obj_skeleton_surf_archer_pointing)
+    {
+         state = 16.5;
+         t = 0;
+    }
+    
     switch(t)
     {
         case 50:    instance_create_depth(528,160,depth,obj_boat_mine);
                     instance_create_depth(704,240,depth,obj_boat_mine);
                     instance_create_depth(880,144,depth,obj_boat_mine);
-                    
-                    instance_create_depth(608,224,depth,obj_skeleton_surf_wave_2hp);
-                    instance_create_depth(784,208,depth,obj_skeleton_surf_wave_3hp);
-                    
-                    instance_create_depth(512,240,depth,obj_skeleton_surf_wave_2hp);
-                    instance_create_depth(704,144,depth,obj_skeleton_surf_wave_2hp);
-                    instance_create_depth(848,224,depth,obj_skeleton_surf_wave_1hp);
-                    instance_create_depth(928,208,depth,obj_skeleton_surf_wave_2hp);
-                    instance_create_depth(1024,144,depth,obj_skeleton_surf_wave_3hp);
-                    instance_create_depth(1072,224,depth,obj_skeleton_surf_wave_1hp);
                     break;
-        
+        case 75:    instance_create_depth(608,224,depth,obj_skeleton_surf_wave_2hp);break;
+        case 100:   instance_create_depth(732,208,depth,obj_skeleton_surf_wave_2hp);break;
+        case 125:   instance_create_depth(870,208,depth,obj_skeleton_surf_wave_3hp);break;       
+        case 150:   instance_create_depth(1050,208,depth,obj_skeleton_surf_wave_3hp);break;  
+        case 175:   instance_create_depth(1160,220,depth,obj_skeleton_surf_wave_3hp);break; 
+        case 200:   instance_create_depth(1400,220,depth,obj_skeleton_surf_wave_3hp);break;
+
+         
         case 500:   instance_create_depth(576,208,depth,obj_boat_stone);
                     instance_create_depth(608,176,depth,obj_boat_stone);        
                     instance_create_depth(640,272,depth,obj_boat_stone);
@@ -550,7 +628,30 @@ if state = 16
                     instance_create_depth(975,192,depth,obj_boat_obstacle_small);
                     break;
                     
-        case 1400:   instance_create_depth(512,208,depth,obj_skeleton_surf_pointing_2hp);
+        case 1400:  instance_create_depth(496,144,depth,obj_boat_algae_fast);
+                    instance_create_depth(512,192,depth,obj_boat_algae_fast);
+       
+                    instance_create_depth(512,256,depth,obj_boat_algae_fast);       
+                    instance_create_depth(528,160,depth,obj_boat_algae_fast);        
+                    instance_create_depth(544,176,depth,obj_boat_algae_fast);        
+                    instance_create_depth(544,208,depth,obj_boat_algae_fast);        
+                    instance_create_depth(592,208,depth,obj_boat_algae_fast);        
+                    instance_create_depth(608,224,depth,obj_boat_algae_fast);        
+                    instance_create_depth(624,192,depth,obj_boat_algae_fast);        
+                    instance_create_depth(624,208,depth,obj_boat_algae_fast);        
+                    instance_create_depth(656,176,depth,obj_boat_algae_fast);        
+                    instance_create_depth(656,240,depth,obj_boat_algae_fast);       
+                    instance_create_depth(688,128,depth,obj_boat_algae_fast);       
+                    instance_create_depth(688,240,depth,obj_boat_algae_fast);       
+                    instance_create_depth(704,256,depth,obj_boat_algae_fast);        
+                    instance_create_depth(720,144,depth,obj_boat_algae_fast);       
+                    instance_create_depth(736,128,depth,obj_boat_algae_fast);       
+                    instance_create_depth(752,144,depth,obj_boat_algae_fast);       
+                    instance_create_depth(768,176,depth,obj_boat_algae_fast);       
+                    instance_create_depth(800,192,depth,obj_boat_algae_fast);       
+        
+        
+                    instance_create_depth(512,208,depth,obj_skeleton_surf_pointing_2hp);
                     instance_create_depth(512,192,depth,obj_skeleton_surf_1hp);
                     instance_create_depth(576,224,depth,obj_skeleton_surf_1hp);
                     instance_create_depth(640,176,depth,obj_skeleton_surf_1hp);
@@ -559,15 +660,71 @@ if state = 16
                     instance_create_depth(832,192,depth,obj_skeleton_surf_1hp);
                     instance_create_depth(896,208,depth,obj_skeleton_surf_1hp);
                     break;
-        case 1450:   instance_create_depth(496,160,depth,obj_skeleton_surf_archer_pointing);break;
+        case 1450:  instance_create_depth(496,160,depth,obj_skeleton_surf_archer_pointing);
+                    instance_create_depth(512,208,depth,obj_skeleton_surf_pointing_2hp);
+                    instance_create_depth(512,192,depth,obj_skeleton_surf_1hp);
+                    instance_create_depth(576,224,depth,obj_skeleton_surf_1hp);
+                    instance_create_depth(640,176,depth,obj_skeleton_surf_1hp);
+        
+        
+                    break;
         case 1550:   instance_create_depth(512,176,depth,obj_skeleton_surf_pointing_2hp);break;
         case 1600:   instance_create_depth(496,224,depth,obj_skeleton_surf_archer);break;
-        case 1700:   instance_create_depth(512,240,depth,obj_skeleton_surf_pointing_1hp);break;
+        case 1700:   instance_create_depth(512,240,depth,obj_skeleton_surf_pointing_2hp);break;
         case 1750:   instance_create_depth(496,176,depth,obj_skeleton_surf_archer_pointing);break;
-        case 1850:   instance_create_depth(512,208,depth,obj_skeleton_surf_pointing_1hp);break;
+        case 1850:   instance_create_depth(512,208,depth,obj_skeleton_surf_pointing_2hp);break;
     }
 }
 
 #endregion
 
-   
+#region 16.5 Перед концом
+
+if state = 16.5
+{
+    t++;
+    if t = 150
+    {
+        t = 0;
+        state = 17;
+    }
+}
+
+
+#endregion
+
+#endregion
+
+#region 17 - Скорость задников
+
+layer_hspeed(l_water,sp_wat);
+layer_hspeed(l_farwater,sp_farwat);
+layer_hspeed(l_toofarwater,sp_toofarwat);
+layer_hspeed(l_Skies,sp_skies);
+
+
+if state = 17
+{
+    if t < 300
+    {
+        t++;
+    }
+    
+    if t > 200
+    {
+        sp_wat = lerp(sp_wat,-0.5,0.02);
+        sp_farwat = lerp(sp_farwat,-0.25,0.02);
+        sp_toofarwat = lerp(sp_toofarwat,-0.1,0.02);
+        sp_skies = lerp(sp_skies,0,0.02);
+    }
+    
+    
+    if t = 299
+    {
+        instance_create_depth(0,0,-1000000,obj_boat_menu);   
+    }
+    
+ 
+}
+
+#endregion

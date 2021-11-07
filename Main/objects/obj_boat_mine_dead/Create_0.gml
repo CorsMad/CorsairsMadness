@@ -4,3 +4,4 @@ b = 0;
 instance_create_depth(x,y-16,depth,obj_money_boat_10);
 image_alpha = 0.5;
 image_speed = 0;
+fnc_snd_play_over(snd_item_bomb_explosion);

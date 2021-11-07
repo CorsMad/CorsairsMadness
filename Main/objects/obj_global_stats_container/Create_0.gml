@@ -32,4 +32,10 @@ if instance_exists(obj_Player)
     {
         instance_create_depth(0,0,0,obj_music_controller_jungle)      
     }
+     /*
+    if obj_Player.state = 3
+    {
+        instance_create_depth(0,0,0,obj_music_controller_temple);  
+    }
+    */
 }

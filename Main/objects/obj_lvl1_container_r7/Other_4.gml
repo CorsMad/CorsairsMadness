@@ -2,8 +2,6 @@
 // You can write your code in this editor
 instance_create_depth(x,y,0,obj_room_transition_black_screen);
 
-instance_create_depth(944,208,0,obj_skeleton_l);
-
 instance_create_depth(240,48,0,obj_blob_creator);
 instance_create_depth(864,32,0,obj_blob_creator); 
 

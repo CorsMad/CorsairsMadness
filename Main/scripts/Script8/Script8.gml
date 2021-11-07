@@ -9,6 +9,23 @@ function fnc_snd_play_coin()
 	}
 }
 
+function fnc_snd_play_boat_pistol()
+{
+    if audio_play_sound(snd_player_boat_pistol,0,0)
+	{
+		audio_stop_sound(snd_player_boat_pistol);
+		audio_play_sound(snd_player_boat_pistol,0,0);
+	}   
+}
+
+function fnc_snd_play_boat_cannon()
+{
+    if audio_play_sound(snd_player_boat_cannon,0,0)
+	{
+		audio_stop_sound(snd_player_boat_cannon);
+		audio_play_sound(snd_player_boat_cannon,0,0);
+	}   
+}
 
 function fnc_snd_play_over(argument0)
 {

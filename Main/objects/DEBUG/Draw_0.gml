@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-if instance_exists(obj_Player_boat)
+if instance_exists(obj_ctscn_trailer_merchant_menu_controller)
 {
-    draw_text(64,32,"state " + string(obj_sp_boat_level.state));
-    draw_text(64,48,"t = " + string(obj_sp_boat_level.t));
+    draw_text(0,32,"T " + string(obj_ctscn_trailer_merchant_menu_controller.a));
+    draw_text(0,64,"state " + string(obj_ctscn_trailer_merchant_menu_controller.state));
+    draw_text(0,96,"delay " + string(obj_ctscn_trailer_merchant_menu_controller.delay));
+
     /*
     draw_text(64,32,"state " + string(obj_Player_boat.state));
     draw_text(64,48,"Bonus lose = " + string(obj_Player_boat.bonus_lose));

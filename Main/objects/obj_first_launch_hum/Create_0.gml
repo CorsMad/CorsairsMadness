@@ -3,7 +3,7 @@
 //Player stats
 
 
-global.controlScheme = 1; //!!!!!!!!!!!!!!!!!!!!!
+//global.controlScheme = 1; //!!!!!!!!!!!!!!!!!!!!!
 
 
 
@@ -37,11 +37,16 @@ global.TargetRoom = L1_r1;
 */
 
 /*
-global.TargetX = 40;
-global.TargetY = 48;
-global.TargetRoom = L1_lastsave;
+global.TargetX = 1328;
+global.TargetY = 160;
+global.TargetRoom = L1_r19;
 */
 
+/*
+global.TargetX = 1312;
+global.TargetY = 160;
+global.TargetRoom = L1_endscreen;
+*/
 
 // TESTROOM
 

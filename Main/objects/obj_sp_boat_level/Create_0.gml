@@ -1,7 +1,20 @@
 /// @description Insert description here
 // You can write your code in this editor
 t = 0; // глобальный таймер
-state = 1;
+
+switch(global.boatCheckpoint)  // Чекпоинт
+{
+    case 0: state = 1;break;
+    case 1: state = 11;break;
+}
+
+
+// Музыка
+instance_create_depth(0,0,0,obj_music_controller_boat);
+// Золото
+money_saved = global.gold;
+
+#region Описание События
 // События
 /*
 1 Скелеты по прямой 5 - 6 штук
@@ -22,8 +35,25 @@ state = 1;
 16 Водоросль + мина + Скелет в игрока + Скелет Стреляющий вверх вниз ( Пушка-пулемет)
 17 Водоросль + мина + Препятствие половина + Скелет в игрока + Скелет по прямой + 
    Скелет издалека
+*/
+#endregion
 
-
-
+/*
+    Скорость ЗАДНИКОВ
 */
 
+sp_wat = -2;
+sp_farwat = -1;
+sp_toofarwat = -0.4;
+sp_skies = -0.1;
+
+l_water = layer_get_id("water");
+l_farwater = layer_get_id("farwater");
+l_toofarwater = layer_get_id("toofarwater");
+l_Skies = layer_get_id("Skies");
+
+
+layer_hspeed(l_water,sp_wat);
+layer_hspeed(l_farwater,sp_farwat);
+layer_hspeed(l_toofarwater,sp_toofarwat);
+layer_hspeed(l_Skies,sp_skies);

@@ -22,7 +22,6 @@
     
 #endregion    
 
-
 if state = 0 || state = 1
 {
     draw_sprite_ext(spr_player_boat,a,x,y+yob,1,1,rotat,col,alpha);   
@@ -32,5 +31,18 @@ if state = 3
     draw_sprite_ext(spr_player_boat_cannon,a,x,y+yob,1,1,0,col,alpha);
 } 
 
+if state = 9
+{
+    draw_sprite_ext(spr_player_boat_deah,a,x,y+yob,1,1,0,c_white,alpha);   
+}
+
+if (state >= 10 && state <= 11.1) || state > 12
+{
+    draw_sprite_ext(spr_ctsc_boat,1,x,y+yob,1,1,rotat,col,1);      
+}
+if  state = 11.2
+{
+    draw_sprite_ext(spr_ctsc_boat,1,x,y+yob,-1,1,rotat,col,1);       
+}
 
 

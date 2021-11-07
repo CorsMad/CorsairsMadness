@@ -22,3 +22,16 @@ function fnc_enemy_no_armor_dmg()
 	}
 		
 }
+
+function fnc_enemy_no_armor_noblend_dmg()
+{
+	 
+	if hit_cd > 0 
+	{
+		hit_cd+=1;	
+	}
+	if hit_cd > 10 
+	{
+		hit_cd = 0;	
+	}		
+}

@@ -313,7 +313,7 @@ if state !=15
 	{
 		hit_cd++;	
 	}
-	if hit_cd = 20
+	if hit_cd = 18//20
 	{
 		hit_cd = 0;	
 	}
