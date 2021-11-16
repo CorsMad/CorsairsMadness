@@ -24,10 +24,12 @@ if state = 1
         {
             obj_ctscn_trailer_merchant_menu_controller.image_index = 1;
             state = 2;
+            fnc_snd_play_over(snd_menu_accept);
         
         }
         if key_dashing
         {
+            fnc_snd_play_over(snd_menu_select);
             state = 2;
         }
     }

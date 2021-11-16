@@ -40,10 +40,12 @@ if state = 0 // ГЛАВНОЕ МЕНЮ \\\\\\\\\\\\\\\\\\\
         #region управление
             if key_down_pressed
             {
+                fnc_snd_play_over(snd_menu_select);
                 a++;   
             }
             if key_up_press
             {
+                fnc_snd_play_over(snd_menu_select);
                 a--;    
             }
             if (a > 1) a = 0;
@@ -54,6 +56,7 @@ if state = 0 // ГЛАВНОЕ МЕНЮ \\\\\\\\\\\\\\\\\\\
     
         if key_jump_pressed 
         {
+            fnc_snd_play_over(snd_menu_accept);
             switch(a)
             {
                 case 0: state = 1;break;                     
@@ -100,11 +103,13 @@ if state = 1 // ПРЕДМЕТЫ КОРСАРА \\\\\\\\\\\\\\\\\\\
         #region управление
             if key_down_pressed
             {
-                a++;   
+                a++;  
+                fnc_snd_play_over(snd_menu_select);
             }
             if key_up_press
             {
-                a--;    
+                a--;   
+                fnc_snd_play_over(snd_menu_select);
             }
             if (a > 3) a = 0;
             if (a < 0) a = 3;
@@ -114,6 +119,7 @@ if state = 1 // ПРЕДМЕТЫ КОРСАРА \\\\\\\\\\\\\\\\\\\
     
         if key_jump_pressed && a = 0 
         {
+            fnc_snd_play_over(snd_menu_accept);
             state = 2;
             a = 0;
             delay = 0;
@@ -125,6 +131,7 @@ if state = 1 // ПРЕДМЕТЫ КОРСАРА \\\\\\\\\\\\\\\\\\\
         
         if key_dashing 
         {
+            fnc_snd_play_over(snd_menu_select);
             state = 0;
             a = 0;
             delay = 0;
@@ -165,10 +172,12 @@ if state = 2 // АПГРЕЙДЫ ТОПОРА \\\\\\\\\\\\\\\\\\\
         #region управление
             if key_down_pressed
             {
+                fnc_snd_play_over(snd_menu_select);
                 a++;   
             }
             if key_up_press
             {
+                fnc_snd_play_over(snd_menu_select);
                 a--;    
             }
             if (a > 3) a = 0;
@@ -185,6 +194,7 @@ if state = 2 // АПГРЕЙДЫ ТОПОРА \\\\\\\\\\\\\\\\\\\
         
         if key_dashing 
         {
+            fnc_snd_play_over(snd_menu_select);
             state = 1;
             a = 0;
             delay = 0;
@@ -225,10 +235,12 @@ if state = 3 // МЕНЮ ЛОДКИ \\\\\\\\\\\\\\\\\\\
         #region управление
             if key_down_pressed
             {
+                fnc_snd_play_over(snd_menu_select);
                 a++;   
             }
             if key_up_press
             {
+                fnc_snd_play_over(snd_menu_select);
                 a--;    
             }
             if (a > 1) a = 0;
@@ -245,6 +257,7 @@ if state = 3 // МЕНЮ ЛОДКИ \\\\\\\\\\\\\\\\\\\
         
         if a = 1 && key_jump_pressed
         {
+            fnc_snd_play_over(snd_menu_accept);
             instance_create_depth(room_width/2,room_height/2,depth-1,obj_ctscn_trailer_merchant_menu_confirm);
             delay = 0;
         }
@@ -275,6 +288,7 @@ if state = 3 // МЕНЮ ЛОДКИ \\\\\\\\\\\\\\\\\\\
         
         if key_dashing 
         {
+            fnc_snd_play_over(snd_menu_select);
             state = 0;
             a = 0;
             delay = 0;

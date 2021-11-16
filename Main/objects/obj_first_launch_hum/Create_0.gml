@@ -7,9 +7,9 @@
 
 
 
-global.hp = 4;
+global.hp = 2;
 global.hp_max = 4;
-global.choosed_item = 2;
+global.choosed_item = 2; // 1- бумер 2 -топ
 global.mana = 3;
 global.mana_max = 3;
 global.gold = 0;
@@ -37,24 +37,132 @@ global.TargetRoom = L1_r1;
 */
 
 /*
-global.TargetX = 1328;
-global.TargetY = 160;
+global.TargetX = 1390;
+global.TargetY = 150;
 global.TargetRoom = L1_r19;
 */
 
-/*
-global.TargetX = 1312;
-global.TargetY = 160;
-global.TargetRoom = L1_endscreen;
-*/
+
+
 
 // TESTROOM
-
+/*
 global.TargetX = 80;
 global.TargetY = 256;
 global.TargetRoom = TESTROOM;
+*/
+
+#region CLIPS
+
+/*
+//Clip4
+global.TargetX = 544;
+global.TargetY = 192;
+global.TargetRoom = Clip1;
+*/
+
+/*
+//Clip4
+global.TargetX = 496;
+global.TargetY = 160;
+global.TargetRoom = Clip2;
+*/
+
+/*
+//Clip4
+global.TargetX = 32;
+global.TargetY = 240;
+global.TargetRoom = Clip3;
+*/
+
+/*
+//Clip4
+global.TargetX = 528;
+global.TargetY = 144;
+global.TargetRoom = Clip4;
+*/
+
+/*
+//Clip8
+global.TargetX = 96;
+global.TargetY = 224;
+global.TargetRoom = Clip8;
+*/
+
+/*
+//Clip9
+global.TargetX = 128;
+global.TargetY = 144;
+global.TargetRoom = Clip9;
+*/
+
+/*
+//Clip10
+global.TargetX = 112;
+global.TargetY = 224;
+global.TargetRoom = Clip10;
+*/
 
 
+//Clip11
+global.TargetX = 80;
+global.TargetY = 192;
+global.TargetRoom = Clip11;
+
+
+/*
+//Clip12
+global.TargetX = 48;
+global.TargetY = 160;
+global.TargetRoom = Clip12;
+*/
+
+/*
+//Clip14
+global.TargetX = 48;
+global.TargetY = 176;
+global.TargetRoom = Clip14;
+*/
+
+/*
+//Clip16
+global.TargetX = 48;
+global.TargetY = 96;
+global.TargetRoom = Clip16;
+*/
+
+/*
+//Clip171
+global.TargetX = 128;
+global.TargetY = 128;
+global.TargetRoom = Clip171;
+*/
+
+/*
+//Clip172
+global.TargetX = 128;
+global.TargetY = 128;
+global.TargetRoom = Clip172;
+*/
+
+/*
+//Clip173
+global.TargetX = 128;
+global.TargetY = 128;
+global.TargetRoom = Clip173;
+*/
+
+/*
+//Clip18
+global.TargetX = 64;
+global.TargetY = 240;
+global.TargetRoom = Clip18;
+*/
+
+
+
+
+#endregion
 
 var i = instance_create_depth(16,16,0,obj_Player);
 i.state = 0;

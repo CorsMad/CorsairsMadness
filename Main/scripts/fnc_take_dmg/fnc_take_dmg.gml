@@ -15,6 +15,7 @@ function fnc_take_dmg_hitbox(x1,y1,d1,x2,y2,d2)
 
 function fnc_take_dmg_axe(x1,y1,d1,x2,y2,d2)
 {
+    #region Топор 1
     var axehit = instance_place(x,y,obj_item_axe);
     if (axehit !=noone) && (hit_cd = 0)
     {
@@ -26,6 +27,37 @@ function fnc_take_dmg_axe(x1,y1,d1,x2,y2,d2)
 		} else instance_create_depth(x+x2,y+y2,d2,obj_sfx_weapon_slash);
         axehit.a = 1;
     }
+    #endregion
+    #region Топор 2
+    var axehit2 = instance_place(x,y,obj_item_axe2);
+    if (axehit2 !=noone) && (hit_cd = 0)
+    {
+        hit_cd = 1;
+		enemy_hp -= 1;
+        if obj_Player.x < x 
+		{
+			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+		} else instance_create_depth(x+x2,y+y2,d2,obj_sfx_weapon_slash);
+        axehit2.a += 1;
+        axehit2.vspd = -2;
+        axehit2.hspd = -axehit2.hspd;
+    }
+    #endregion
+    #region Топор 3
+    var axehit3 = instance_place(x,y,obj_item_axe3);
+    if (axehit3 !=noone) && (hit_cd = 0)
+    {
+        hit_cd = 1;
+		enemy_hp -= 1;
+        if obj_Player.x < x 
+		{
+			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+		} else instance_create_depth(x+x2,y+y2,d2,obj_sfx_weapon_slash);
+    }
+    #endregion
+    
+    
+    #endregion
 }
 
 function fnc_take_dmg_hitbox_down(x1,y1,d1)

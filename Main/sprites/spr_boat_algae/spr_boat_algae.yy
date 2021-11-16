@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Boat level",
-    "path": "folders/Sprites/Level objects/Boat level.yy",
+    "path": "folders/Sprites/Level objects/Levels Stuff/Boat level.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_boat_algae",

@@ -1,0 +1,1 @@
+global.controlScheme = 0;

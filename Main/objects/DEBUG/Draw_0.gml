@@ -1,10 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
-if instance_exists(obj_ctscn_trailer_merchant_menu_controller)
+if instance_exists(obj_item_axe)
 {
-    draw_text(0,32,"T " + string(obj_ctscn_trailer_merchant_menu_controller.a));
-    draw_text(0,64,"state " + string(obj_ctscn_trailer_merchant_menu_controller.state));
-    draw_text(0,96,"delay " + string(obj_ctscn_trailer_merchant_menu_controller.delay));
+    draw_text(0,32,"1");
+    
+}
+if instance_exists(obj_item_axe2)
+{
+    draw_text(0,32,"2");
+    draw_text(0,64,obj_item_axe2.a);
+}
 
     /*
     draw_text(64,32,"state " + string(obj_Player_boat.state));
@@ -21,4 +26,3 @@ if instance_exists(obj_ctscn_trailer_merchant_menu_controller)
     draw_text(64,96,"t_max = " + string(obj_Player_boat.t_max));
 */
     
-}

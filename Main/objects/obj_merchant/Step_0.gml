@@ -50,3 +50,30 @@ if state = 2
     }
 }
 #endregion
+
+#region Дилаог
+if ct_state = 0
+{
+    if place_meeting(x,y,obj_Player)
+    {
+        ct_state = 1;
+        obj_Player.isDead = 2;
+        obj_Player.fspd = 0;
+        obj_Player.hspd = 0;
+        obj_Player.spd = 0;
+        obj_Player.key_left = 0;
+        obj_Player.key_right = 0;
+    }
+}
+
+if ct_state = 1
+{
+    ct_t++;
+    if ct_t = 1
+    {
+        instance_create_depth(0,0,0,obj_text_c1_cutscene); 
+        ct_state = 2;
+    }
+}
+
+#endregion

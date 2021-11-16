@@ -34,17 +34,17 @@ global.secrets_l1_s3 = 1;
 //Global transp
 
 //First Room
-
+/*
 global.TargetX = 32;
 global.TargetY = 112;
 global.TargetRoom = F1_r1;
-
-
-/*
-global.TargetX = 64
-global.TargetY = 128
-global.TargetRoom = F1_r23
 */
+
+
+global.TargetX = 1120;
+global.TargetY = 224;
+global.TargetRoom = F1_r14;
+
 // TESTROOM
 
 /*
@@ -52,6 +52,34 @@ global.TargetX = 48;
 global.TargetY = 256;
 global.TargetRoom = TESTROOM;
 */
+
+
+#region Клипы
+
+/*
+//Clip 19
+global.TargetX = 112;
+global.TargetY = 240;
+global.TargetRoom = Clip19
+*/
+
+/*
+//Clip 20
+global.TargetX = -48;
+global.TargetY = 224;
+global.TargetRoom = Clip20
+*/
+
+/*
+//Clip 21
+global.TargetX = 64;
+global.TargetY = 112;
+global.TargetRoom = Clip21
+*/
+
+
+#endregion
+
 
 var i = instance_create_depth(16,16,0,obj_Player);
 i.state = 1;

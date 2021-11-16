@@ -14,13 +14,14 @@ if !instance_exists(obj_player_boat_wave)
 }
 
 
-hp = 4;
+hp = 4; // 4 
 b = 0; // выстрел
 b_mid = 14; // кулдаун выстрелов
 spd = 2;
 spdv = 1.5; //верт скорость
 xspdalgae = 1; // множитель скорости на водорослях
 yspdalgae = 1;
+
 money = global.gold;// Запись монет
 
 rotat = 0;

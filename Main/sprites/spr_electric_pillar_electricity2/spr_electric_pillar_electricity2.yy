@@ -102,7 +102,7 @@
             {"id":"d09607d6-d61f-4e67-bb0b-398b5cca87b0","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0b9b994a-b747-42d3-838c-9666f08fc402","path":"sprites/spr_electric_pillar_electricity2/spr_electric_pillar_electricity2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"ced2be3a-b788-45ae-b738-32eed1ba8b7a","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3a0f3bb3-927e-4062-b401-a9d2e65b2758","path":"sprites/spr_electric_pillar_electricity2/spr_electric_pillar_electricity2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"79c84ddd-c488-4ed1-94cf-8501a9beaab4","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fdcc340c-42f1-4be5-a83a-2bc234a35da4","path":"sprites/spr_electric_pillar_electricity2/spr_electric_pillar_electricity2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -130,7 +130,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Sand level",
-    "path": "folders/Sprites/Level objects/Sand level.yy",
+    "path": "folders/Sprites/Level objects/Levels Stuff/Sand level.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_electric_pillar_electricity2",

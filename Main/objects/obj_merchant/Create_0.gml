@@ -2,5 +2,7 @@
 // You can write your code in this editor
 
 t = 0;
+ct_t = 0;
 image_speed = 0;
 state = 0;
+ct_state = 0;

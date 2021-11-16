@@ -102,7 +102,7 @@
             {"id":"43909635-41d7-4560-a65e-719180c364b9","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"614d4242-7347-44de-a1c6-c1d2a58fe2d4","path":"sprites/spr_electric_pillar_on/spr_electric_pillar_on.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"84680bc8-aaf6-48c7-9730-7519f431af88","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"33355efd-ddb8-4b37-adb4-aabd1cddad4b","path":"sprites/spr_electric_pillar_on/spr_electric_pillar_on.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"1427db2f-ef88-45b8-bf87-489e68ff4773","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"461d4713-0980-4627-be8e-b2e024b25850","path":"sprites/spr_electric_pillar_on/spr_electric_pillar_on.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -130,7 +130,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Sand level",
-    "path": "folders/Sprites/Level objects/Sand level.yy",
+    "path": "folders/Sprites/Level objects/Levels Stuff/Sand level.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_electric_pillar_on",

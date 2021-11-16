@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Confirmation in the end",
-    "path": "folders/Sprites/Level objects/Boat level/Confirmation in the end.yy",
+    "path": "folders/Sprites/Level objects/Levels Stuff/Boat level/Confirmation in the end.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_boat_confirm",

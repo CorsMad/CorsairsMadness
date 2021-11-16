@@ -5,10 +5,9 @@
 #endregion
 
 #region #takedmg
-	  if (place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_item_axe)) && hit_cd = 0
-		{
-			instance_create_depth(x,y,1,obj_sfx_weapon_slash);
-		}
+	fnc_take_dmg_axe(-10,-16,-1,10,-16,-1);
+    fnc_take_dmg_hitbox(-10,-16,-1,10,-16,-1);
+    fnc_take_dmg_hitbox_down(0,-32,-1);
 	fnc_enemy_no_armor_dmg();
 
 #endregion

@@ -71,14 +71,14 @@ sprkl_timer_dash = 0;
 sprkl_timer_hook = 0;
 dashing_timer = 0;
 hooking_timer = 0;
-
+transform_timer = 0;
 
 #endregion
 
 #region Ограничения
 
-DashEnabled = 0;
-HookEnabled = 0; /////
+DashEnabled = 1;
+HookEnabled = 1; /////
 
 #endregion
 

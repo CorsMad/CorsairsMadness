@@ -737,39 +737,45 @@ if global.choosed_item = 4
 */
 #endregion
 
-	if global.choosed_item = 1
-	{	
-		#region boomerang
-	
-		#region on ground
-	
-	
-			if key_item && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && !instance_exists(obj_item_boomerang_dot) && isTakingdmg = 0
+if global.choosed_item = 1
+{	
+	#region boomerang
+    
+    #region on ground
+        
+			if key_item && isAirUsingitem = 0 && isUsingitem = 0 && isCarry = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && global.mana > 0
 			{
 				image_index = 0;
 				isUsingitem = 1;
 				sprite_index = spr_player_item_use;
 				image_speed = 0.5;
+				
 			}
 			if isUsingitem = 1 && isGrounded = 1
 			{
 				hspd = 0;
+				spd = 0;
 			}	
 			if isUsingitem = 1 && image_index = 5
 			{
 				isUsingitem = 0;	
 			}
-			if isUsingitem = 1 && image_index = 1
+			if isUsingitem = 1 && image_index = 1 && !instance_exists(obj_item_boomerang)
 			{
-				instance_create_depth(x+obj_Player.image_xscale*(150),y-16,1,obj_item_boomerang_dot);
-				instance_create_depth(x,y-16,1,obj_item_boomerang);
+				var itemBoom = instance_create_depth(x,y-16,1,obj_item_boomerang);         
+                itemBoom.acc = 5*sign(image_xscale);
+			           
+			}		
+			if isUsingitem = 1 && !place_meeting(x,y+1,obj_block)
+			{
+				isUsingitem = 0;	 
 			}
-	
 		#endregion
 		#region in air
-	
-			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && !instance_exists(obj_item_boomerang_dot) && isTakingdmg = 0
+		  
+			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 ) || (key_item && key_jump && isGrounded = 1)) && isAirUsingitem = 0 && isCarry = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && global.mana > 0 
 			{
+				
 				image_index = 0;
 				isAirUsingitem = 1;
 				sprite_index = spr_player_item_use;
@@ -816,12 +822,12 @@ if global.choosed_item = 4
 
 			if isAirUsingitem = 1 && jump_timer < 1
 			{
-				hspd = 0;	
+				spd = 0;	
 			}
-			if isAirUsingitem = 1 && image_index = 1
+			if isAirUsingitem = 1 && image_index = 1 && !instance_exists(obj_item_boomerang)
 			{
-				instance_create_depth(x+obj_Player.image_xscale*(150),y-16,1,obj_item_boomerang_dot);
-				instance_create_depth(x,y-16,1,obj_item_boomerang);
+				var itemBoom = instance_create_depth(x,y-16,1,obj_item_boomerang);         
+                itemBoom.acc = 5*sign(image_xscale); 
 			}
 			if isAirUsingitem = 1 && image_index = 5
 			{
@@ -829,10 +835,104 @@ if global.choosed_item = 4
 			}
 	
 		#endregion
-	}
+    
+    
+    
+    
+	/* OLD!~!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	#region on ground
+	
+	
+		if key_item && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && !instance_exists(obj_item_boomerang_dot) && isTakingdmg = 0
+		{
+			image_index = 0;
+			isUsingitem = 1;
+			sprite_index = spr_player_item_use;
+			image_speed = 0.5;
+		}
+		if isUsingitem = 1 && isGrounded = 1
+		{
+			hspd = 0;
+		}	
+		if isUsingitem = 1 && image_index = 5
+		{
+			isUsingitem = 0;	
+		}
+		if isUsingitem = 1 && image_index = 1
+		{
+			instance_create_depth(x+obj_Player.image_xscale*(150),y-16,1,obj_item_boomerang_dot);
+			instance_create_depth(x,y-16,1,obj_item_boomerang);
+		}
+	
+	#endregion
+	#region in air
+	
+		if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && !instance_exists(obj_item_boomerang_dot) && isTakingdmg = 0
+		{
+			image_index = 0;
+			isAirUsingitem = 1;
+			sprite_index = spr_player_item_use;
+			image_speed = 0.5;
+		}
+		if isAirUsingitem = 1 
+		{	
+			if key_left
+			{
+				if spd > 0 
+				{
+					spd = -2;
+				}
+				if spd <= 0 
+				{
+					if spd > -2
+					{
+						spd -=0.5;	
+					}
+				}
+			}
+			if key_right 
+			{
+				if spd < 0 
+			{
+				spd = 2;
+			}
+			if spd >= 0 
+			{
+				if spd < 2
+				{
+					spd += 0.5;	
+				}
+			}
+		
+			}
+			if (!key_left && !key_right) || (key_left && key_right) 
+			{
+				hspd = 0;
+				spd = 0;
+			}
+			vspd += 0.25;	
+		}
+
+		if isAirUsingitem = 1 && jump_timer < 1
+		{
+			hspd = 0;	
+		}
+		if isAirUsingitem = 1 && image_index = 1
+		{
+			instance_create_depth(x+obj_Player.image_xscale*(150),y-16,1,obj_item_boomerang_dot);
+			instance_create_depth(x,y-16,1,obj_item_boomerang);
+		}
+		if isAirUsingitem = 1 && image_index = 5
+		{
+			isAirUsingitem = 0;	
+		}
+	
+	#endregion
+    */    
+}
 #endregion
 	
-	if global.choosed_item = 2
+	if global.choosed_item = 2 // Обычный топор
 	{
 		#region axe
 		
@@ -1379,5 +1479,28 @@ if isDead = 1
         
     }
     
+    #endregion
+    #region Transform
+    if isDead = 4
+    {
+        sprite_index = spr_player_transform;
+        y+=vspd;
+	    vspd = lerp(vspd,0,0.05);   
+        transform_timer ++;
+        switch(transform_timer)
+        {
+            case    50: image_index++ ;break;
+            case    55: image_index++ ;break;
+            case    60: image_index++ ;break;
+            case    65: image_index++ ;break;
+            case    70: image_index++ ;break;
+            case    75: image_index++ ;break;
+            case    80: image_index++ ;break;
+            case    120: image_index++ ;break;           
+        }
+       
+        
+       
+    }
     #endregion
 }
