@@ -80,6 +80,10 @@ if state = 2
 
     fnc_take_dmg_hitbox_down(0,-32,-1);
 
+// Бомба
+
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1);
+
 // Получение урона
 
     fnc_enemy_no_armor_dmg();

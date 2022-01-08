@@ -1,15 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if instance_exists(obj_item_axe)
-{
-    draw_text(0,32,"1");
-    
-}
-if instance_exists(obj_item_axe2)
-{
-    draw_text(0,32,"2");
-    draw_text(0,64,obj_item_axe2.a);
-}
+
 
     /*
     draw_text(64,32,"state " + string(obj_Player_boat.state));
@@ -26,3 +17,7 @@ if instance_exists(obj_item_axe2)
     draw_text(64,96,"t_max = " + string(obj_Player_boat.t_max));
 */
     
+if instance_exists(obj_first_loading_room)
+{
+    draw_text(64,32,"T " + string(obj_first_loading_room.t1));
+}   

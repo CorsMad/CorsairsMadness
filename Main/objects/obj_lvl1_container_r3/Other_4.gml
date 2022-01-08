@@ -17,6 +17,7 @@ instance_create_depth(864,160,100,obj_pad_blue);
 
 instance_create_depth(760,208,100,obj_dove);
 
+
 if instance_exists(obj_Player)
 {
     if obj_Player.tipUseitem = 0

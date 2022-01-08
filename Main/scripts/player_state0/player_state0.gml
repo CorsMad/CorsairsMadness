@@ -597,12 +597,12 @@ if attackingdown_timer > 0
 {
 	attackingdown_timer +=1;	
 }
-if attackingdown_timer = 16
+if attackingdown_timer = 22
 {
 	instance_create_depth(x,y,1,obj_hitbox_down);
 	instance_create_depth(x,y,1,obj_hitbox_destr_down);
 }
-if attackingdown_timer > 15 
+if attackingdown_timer > 21 
 {
 	sprite_index = spr_player_attackingdown;
 	vspd = 8;	
@@ -1063,11 +1063,11 @@ if global.choosed_item = 1
 			}
 			if isUsingitem = 1 && image_index = 1
 			{
-				var itemAxe = instance_create_depth(x,y-32,0,obj_item_bomb);
+				var itemBomb = instance_create_depth(x,y-32,0,obj_item_bomb);
 				if image_xscale = 1 
 				{
-					itemAxe.hspd = 2	
-				} else itemAxe.hspd = -2;
+					itemBomb.hspd = 2	
+				} else itemBomb.hspd = -2;
 			}		
 		#endregion
 		#region in air
@@ -1124,11 +1124,11 @@ if global.choosed_item = 1
 			}
 			if isAirUsingitem = 1 && image_index = 1
 			{
-				var itemAxe = instance_create_depth(x,y-32,0,obj_item_bomb);
+				var itemBomb = instance_create_depth(x,y-32,0,obj_item_bomb3);
 				if image_xscale = 1 
 				{
-					itemAxe.hspd = 2	
-				} else itemAxe.hspd = -2;
+					itemBomb.hspd = 2	
+				} else itemBomb.hspd = -2;
 			}
 			if isAirUsingitem = 1 && image_index = 5
 			{

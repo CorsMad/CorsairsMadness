@@ -7,5 +7,6 @@ global.TargetY = 160;
 global.hp = global.hp_max;
 global.mana = global.mana_max;
 
+global.money_saved = global.gold;
 
 instance_destroy();

@@ -7,7 +7,8 @@ if place_meeting(x,y,obj_hitbox) && !instance_exists(obj_bomb) && obj_Player.isC
     {
         if obj_Player.tipBomb = 0
         {
-            instance_create_depth(64,208,0,obj_popup_trigger_usebomb);       
+            instance_create_depth(64,208,0,obj_popup_trigger_usebomb);  
+            obj_Player.tipBomb = 1;
         }
     }
     

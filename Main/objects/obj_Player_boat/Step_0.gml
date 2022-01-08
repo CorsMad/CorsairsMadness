@@ -383,11 +383,15 @@ if place_meeting(x,y,obj_boat_algae)
 {
     xspdalgae = 0.35;
     yspdalgae = 0.5;
-} else  
+} else if place_meeting(x,y,obj_boat_algae15) 
     {
-        yspdalgae = 1;
-        xspdalgae = 1;
-    }
+        yspdalgae = 0.35;
+        xspdalgae = 0.5;
+    } else 
+        {
+            yspdalgae = 1;
+            xspdalgae = 1;
+        }
 #endregion
 
 

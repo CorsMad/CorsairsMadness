@@ -29,10 +29,9 @@ if to_player = 1
 		{
 			global.hp = global.hp_max;	
 		}
-        if (global.mana > 0)
-		{
-			global.mana = global.mana_max;	
-		}
+        
+		global.mana = global.mana_max;	
+		
 		instance_destroy();	
 	}
 }

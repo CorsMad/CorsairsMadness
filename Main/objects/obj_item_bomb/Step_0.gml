@@ -1,16 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
+Center_X = obj_Player.x; // x of orbital center
+Center_Y = obj_Player.y-16; // y of orbital center
 
-// Orbital motion
-Angle -= Speed;
-if(Angle >= 360) Angle += 360;
 
-// Update position
 
-x = lengthdir_x(Orbit, Angle) + Center_X;
-y = lengthdir_y(Orbit, Angle) + Center_Y;
-
-a+=1;
+//a+=1;
 
 if a = 180 && isDead = 0
 {   

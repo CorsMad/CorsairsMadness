@@ -54,7 +54,7 @@ if t > 700
 if t > 900 
 {
     draw_set_halign(fa_center);
-    draw_text(room_width/2,224,"Press 'Enter' to return to main menu");
+    draw_text(room_width/2,224,"Press 'ENTER' to return to main menu");
 }
 
 

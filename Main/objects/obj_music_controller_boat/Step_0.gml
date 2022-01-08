@@ -7,5 +7,5 @@ if a < 32
 if a = 30
 {
     audio_play_sound(msc_Boat_level,1000,true);   
-    audio_sound_gain(msc_Boat_level,global.MSCvolume_max,0);
+    audio_sound_gain(msc_Boat_level,global.MSCvolume,0);
 }

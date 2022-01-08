@@ -33,8 +33,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "MainMenu",
-    "path": "folders/Objects/MainMenu.yy",
+    "name": "MainMenues",
+    "path": "folders/Objects/MainMenues.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_mainmenu_title",

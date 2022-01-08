@@ -9,6 +9,7 @@ if place_meeting(x,y,obj_Player)
     instance_create_depth(x-12,y+12,depth-1,obj_sfx2);
     instance_create_depth(x+12,y+12,depth-1,obj_sfx2);
     instance_destroy();
+    global.fhook = 1;
 }
 
 y = y + cos(b)/2;

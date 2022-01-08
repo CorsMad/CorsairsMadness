@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Beginning",
-    "path": "folders/Objects/Level Containers (PERS objects)/Lvl1/Beginning.yy",
+    "name": "Checkpoints",
+    "path": "folders/Objects/Level Containers (PERS objects)/Lvl1/Checkpoints.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_lvl1_container_r10",

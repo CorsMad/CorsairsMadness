@@ -113,3 +113,41 @@ if isWait = 0
 }
 
 #endregion
+
+#region TakeDMG
+
+// Атака
+
+    fnc_take_dmg_hitbox(-10,0,-1,10,0,-1);
+    
+// Топор
+
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1);
+    
+// Удар вниз   
+
+    fnc_take_dmg_hitbox_down(0,-16,-1);
+
+// Получение урона
+
+    fnc_enemy_no_armor_dmg();
+    
+// Получение урона от электричества
+
+if (place_meeting(x,y,obj_electric_pillar_electicity1) && obj_electric_pillar_electicity1.isOn = 1) || (place_meeting(x,y,obj_electric_pillar_electicity2) && obj_electric_pillar_electicity2.isOn = 1)
+    
+    {
+        enemy_hp -= 1;   
+    }
+#endregion
+
+#region death
+
+if enemy_hp <= 0 
+{
+    instance_create_depth(x,y,depth-1,obj_diagonal_slime_dead);
+    instance_create_depth(x,y,depth-1,obj_money1);
+    instance_destroy();
+}
+
+#endregion

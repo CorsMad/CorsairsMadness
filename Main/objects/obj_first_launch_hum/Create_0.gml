@@ -7,17 +7,20 @@
 
 
 
-global.hp = 2;
-global.hp_max = 4;
-global.choosed_item = 2; // 1- бумер 2 -топ
+global.hp = 4;           // 4
+global.hp_max = 4;       // 4
+global.choosed_item = 2; // 1- бумер 2 -топ // 3 - бомба
 global.mana = 3;
 global.mana_max = 3;
-global.gold = 0;
-global.secrets = 0;
+global.gold = global.money_saved;          // 0
+
 
 scr_create_array_objects();
 scr_create_array_gold();
 scr_chest_controller();
+
+// Разные чекпоинты
+global.boatCheckpoint = 0;
 
 //ТЕСТ
 
@@ -37,20 +40,21 @@ global.TargetRoom = L1_r1;
 */
 
 /*
-global.TargetX = 1390;
-global.TargetY = 150;
-global.TargetRoom = L1_r19;
+global.TargetX = 54;
+global.TargetY = 221;
+global.TargetRoom = L1_boss_room;
 */
 
-
-
-
-// TESTROOM
 /*
-global.TargetX = 80;
-global.TargetY = 256;
-global.TargetRoom = TESTROOM;
+#region SteamSCR
+
+global.TargetX = 176;
+global.TargetY = 176;
+global.TargetRoom = SteamP1; 
+
+#endregion
 */
+
 
 #region CLIPS
 
@@ -62,11 +66,20 @@ global.TargetRoom = Clip1;
 */
 
 /*
-//Clip4
-global.TargetX = 496;
+//Clip2
+global.TargetX = 1808;
 global.TargetY = 160;
 global.TargetRoom = Clip2;
 */
+
+/*
+//ClipBomb
+global.TargetX = 272;
+global.TargetY = 176;
+global.TargetRoom = ClipBomb;
+*/
+
+
 
 /*
 //Clip4
@@ -103,12 +116,12 @@ global.TargetY = 224;
 global.TargetRoom = Clip10;
 */
 
-
+/*
 //Clip11
 global.TargetX = 80;
 global.TargetY = 192;
 global.TargetRoom = Clip11;
-
+*/
 
 /*
 //Clip12
@@ -159,8 +172,47 @@ global.TargetY = 240;
 global.TargetRoom = Clip18;
 */
 
+/*
+//NewClipSnow1
+global.TargetX = 32;
+global.TargetY = 176;
+global.TargetRoom = New_clip_snow1;
+*/
 
+/*
+//NewClipSnow2
+global.TargetX = 320;
+global.TargetY = 96;
+global.TargetRoom = New_clip_snow2;
+*/
 
+/*
+//NewClipSand1
+global.TargetX = 144;
+global.TargetY = 144;
+global.TargetRoom = New_clip_sand1;
+*/
+
+/*
+//NewClipSand1
+global.TargetX = 32;
+global.TargetY = 192;
+global.TargetRoom = New_clip_sand2;
+*/
+
+/*
+//NewClipCemet1
+global.TargetX = 256;
+global.TargetY = 48;
+global.TargetRoom = New_clip_cemetery1;
+*/
+
+/*
+//NewClipCemet2
+global.TargetX = 448;
+global.TargetY = 192;
+global.TargetRoom = New_clip_cemetery2;
+*/
 
 #endregion
 

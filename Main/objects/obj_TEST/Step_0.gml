@@ -1,32 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-if keyboard_check_pressed(ord("F"))
+/*
+if condition = 0
 {
-    fullscreen = !fullscreen;
-    window_set_fullscreen(fullscreen);
+    if window_get_fullscreen()
+    {
+        window_set_fullscreen(false);               
+    } else window_set_fullscreen(true);   
 }
 
-if fullscreen = false
+switch(condition)
 {
-    if keyboard_check_pressed(ord("G"))
-    {
-        a++; 
-        monitorWidth = display_get_width();
-        monitorHeight = display_get_height();
-        windowWidth = window_get_width();
-        windowHeight = window_get_height();
-        window_set_position(monitorWidth/2-windowWidth/2,monitorHeight/2-windowHeight/2);
-    }
-    switch(a)
-    {   
-        case 0: window_set_size(1600,900);break;
-        case 1: window_set_size(1280,720);break;
-    }
-    
-    if a > 1
-    {
-        a = 0;   
-    }
-} else a = -1;
+    case 1: windowW
+}
 
+window_set_size(windowWidth, windowHeight);
+window_set_position()

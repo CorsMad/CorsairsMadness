@@ -77,8 +77,8 @@ transform_timer = 0;
 
 #region Ограничения
 
-DashEnabled = 1;
-HookEnabled = 1; /////
+DashEnabled = global.dash;
+HookEnabled = global.fhook; /////
 
 #endregion
 

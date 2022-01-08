@@ -3,8 +3,8 @@
 //Player stats
 
 
-global.hp = 4;
-global.hp_max = 4;
+global.hp = 4;          //4
+global.hp_max = 4;      //4
 global.choosed_item = 2;
 global.mana = 3;
 global.mana_max = 3;
@@ -34,16 +34,14 @@ global.secrets_l1_s3 = 1;
 //Global transp
 
 //First Room
+
+
+
 /*
-global.TargetX = 32;
-global.TargetY = 112;
-global.TargetRoom = F1_r1;
+global.TargetX = 64;
+global.TargetY = 128;
+global.TargetRoom = F1_r23;
 */
-
-
-global.TargetX = 1120;
-global.TargetY = 224;
-global.TargetRoom = F1_r14;
 
 // TESTROOM
 

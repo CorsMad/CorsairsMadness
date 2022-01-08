@@ -18,3 +18,9 @@ if isOn = 1
 		image_speed = 1;
 	}	
 }
+
+if isOn = 2
+{
+    sprite_index = spr_checkpoint_4_on;
+    image_speed = 1;
+}

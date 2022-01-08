@@ -1,5 +1,6 @@
 {
-  "compression": 0,
+  "conversionMode": 0,
+  "compression": 2,
   "volume": 1.0,
   "preload": false,
   "bitRate": 128,
@@ -11,7 +12,7 @@
     "path": "audiogroups/MusicVolume",
   },
   "soundFile": "msc_Temple1.mp3",
-  "duration": 130.928879,
+  "duration": 105.639183,
   "parent": {
     "name": "BGR music",
     "path": "folders/Sounds/BGR music.yy",

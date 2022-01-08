@@ -8,11 +8,11 @@ switch(global.boatCheckpoint)  // Чекпоинт
     case 1: state = 11;break;
 }
 
-
 // Музыка
 instance_create_depth(0,0,0,obj_music_controller_boat);
 // Золото
-money_saved = global.gold;
+global.money_saved = global.gold;
+money_saved = global.money_saved;
 
 #region Описание События
 // События

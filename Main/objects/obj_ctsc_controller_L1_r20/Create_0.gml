@@ -7,6 +7,10 @@ if instance_exists(obj_Player)
     obj_Player.isDead = 2;   
 }
 
+global.TargetRoom = L1_r20;
+global.TargetX = 16;
+global.TargetY = 160;
+
 /*
 STATES
 

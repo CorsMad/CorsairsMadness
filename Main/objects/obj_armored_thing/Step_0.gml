@@ -99,7 +99,7 @@ if state = 5
 		image_xscale = -1;
 	} else image_xscale = 1;
 	a++;
-	if a = 1 || a = 20 || a = 40
+	if a = 1 || a = 59
 	{
 		instance_create_depth(x,y-16,1,obj_armored_thing_projectile); 	
 	}

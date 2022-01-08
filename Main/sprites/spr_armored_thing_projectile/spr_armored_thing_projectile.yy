@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 30,
+  "bbox_right": 45,
   "bbox_top": 0,
-  "bbox_bottom": 30,
+  "bbox_bottom": 16,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 32,
-  "height": 32,
+  "width": 46,
+  "height": 17,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,18 +24,30 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"684d9b37-d3e7-4eeb-9c9d-f98caffacf86","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"684d9b37-d3e7-4eeb-9c9d-f98caffacf86","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":{"name":"d650efbf-68b6-4d2d-94cf-8751a6e8c815","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_armored_thing_projectile","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"684d9b37-d3e7-4eeb-9c9d-f98caffacf86","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"11086e15-d6af-4962-b88e-cb8cc6100aa4","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"11086e15-d6af-4962-b88e-cb8cc6100aa4","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":{"name":"d650efbf-68b6-4d2d-94cf-8751a6e8c815","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_armored_thing_projectile","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"11086e15-d6af-4962-b88e-cb8cc6100aa4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ef1539e6-3d0e-406e-8cc9-78a9c4869430","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ef1539e6-3d0e-406e-8cc9-78a9c4869430","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":{"name":"d650efbf-68b6-4d2d-94cf-8751a6e8c815","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_armored_thing_projectile","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"ef1539e6-3d0e-406e-8cc9-78a9c4869430","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fd6b2422-45f2-44e3-9bff-c778fd33e27a","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fd6b2422-45f2-44e3-9bff-c778fd33e27a","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":{"name":"d650efbf-68b6-4d2d-94cf-8751a6e8c815","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_armored_thing_projectile","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"fd6b2422-45f2-44e3-9bff-c778fd33e27a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"07ad5c7e-5118-4ac4-9b97-24db3ca2d28d","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"07ad5c7e-5118-4ac4-9b97-24db3ca2d28d","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":{"name":"2bfe998d-5405-4ffb-aa1b-b1a4af5124e0","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_armored_thing_projectile","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"07ad5c7e-5118-4ac4-9b97-24db3ca2d28d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"095ecbe7-da64-482a-91ad-5cf7aa8141a8","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"095ecbe7-da64-482a-91ad-5cf7aa8141a8","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":{"name":"2bfe998d-5405-4ffb-aa1b-b1a4af5124e0","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_armored_thing_projectile","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"095ecbe7-da64-482a-91ad-5cf7aa8141a8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0f4cb21a-bb51-4f8a-8bcf-24fac1c4dcc3","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0f4cb21a-bb51-4f8a-8bcf-24fac1c4dcc3","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":{"name":"2bfe998d-5405-4ffb-aa1b-b1a4af5124e0","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_armored_thing_projectile","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"0f4cb21a-bb51-4f8a-8bcf-24fac1c4dcc3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6cb307b3-c043-4d23-9454-1d3548dcf79c","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6cb307b3-c043-4d23-9454-1d3548dcf79c","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":{"name":"2bfe998d-5405-4ffb-aa1b-b1a4af5124e0","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_armored_thing_projectile","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"6cb307b3-c043-4d23-9454-1d3548dcf79c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0513ef2d-a53b-42b5-b3fd-dc967fc31c80","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0513ef2d-a53b-42b5-b3fd-dc967fc31c80","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":{"name":"2bfe998d-5405-4ffb-aa1b-b1a4af5124e0","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_armored_thing_projectile","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"0513ef2d-a53b-42b5-b3fd-dc967fc31c80","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f12b9687-8962-45b7-bcbe-8d4db93e00f7","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f12b9687-8962-45b7-bcbe-8d4db93e00f7","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":{"name":"2bfe998d-5405-4ffb-aa1b-b1a4af5124e0","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_armored_thing_projectile","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"f12b9687-8962-45b7-bcbe-8d4db93e00f7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"63b6dbb4-a534-46b6-80d2-b194f44601ef","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"63b6dbb4-a534-46b6-80d2-b194f44601ef","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":{"name":"2bfe998d-5405-4ffb-aa1b-b1a4af5124e0","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_armored_thing_projectile","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"63b6dbb4-a534-46b6-80d2-b194f44601ef","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5671aa64-cebb-4ece-93bd-868c23020e84","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5671aa64-cebb-4ece-93bd-868c23020e84","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"LayerId":{"name":"2bfe998d-5405-4ffb-aa1b-b1a4af5124e0","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_armored_thing_projectile","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","name":"5671aa64-cebb-4ece-93bd-868c23020e84","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_armored_thing_projectile","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},
@@ -45,16 +57,20 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 4.0,
+    "length": 8.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"6bc39b70-c650-495f-8088-efdc7d1e5910","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"684d9b37-d3e7-4eeb-9c9d-f98caffacf86","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"055562db-7614-4a41-a2d1-2a104d31eaf1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"11086e15-d6af-4962-b88e-cb8cc6100aa4","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"1768a0fc-b254-4d60-8507-25f049df7888","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ef1539e6-3d0e-406e-8cc9-78a9c4869430","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"5660c58a-8bc7-4d0b-bf69-e26866fe959e","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fd6b2422-45f2-44e3-9bff-c778fd33e27a","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+            {"id":"4ac2645f-376c-4774-8c23-0f633e12c2ce","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"07ad5c7e-5118-4ac4-9b97-24db3ca2d28d","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"821af337-6888-455a-ba05-d565793d73de","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"095ecbe7-da64-482a-91ad-5cf7aa8141a8","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4c336539-5065-4ef8-baaa-18557f73e4be","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0f4cb21a-bb51-4f8a-8bcf-24fac1c4dcc3","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5f2710e9-0e6d-42a3-adba-70fb6b6ea49a","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6cb307b3-c043-4d23-9454-1d3548dcf79c","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"403e48c1-9d85-4e60-beb5-3278af662a93","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0513ef2d-a53b-42b5-b3fd-dc967fc31c80","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"92ff6486-7a76-4792-aad1-c9e1a6ba0d58","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f12b9687-8962-45b7-bcbe-8d4db93e00f7","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5b92332e-1f6c-4eae-9f87-6de5ded746e8","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"63b6dbb4-a534-46b6-80d2-b194f44601ef","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"70980076-db4e-45d6-891a-f648e6653252","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5671aa64-cebb-4ece-93bd-868c23020e84","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,8 +82,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 16,
-    "yorigin": 16,
+    "xorigin": 23,
+    "yorigin": 8,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_armored_thing_projectile","path":"sprites/spr_armored_thing_projectile/spr_armored_thing_projectile.yy",},
@@ -77,7 +93,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d650efbf-68b6-4d2d-94cf-8751a6e8c815","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2bfe998d-5405-4ffb-aa1b-b1a4af5124e0","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

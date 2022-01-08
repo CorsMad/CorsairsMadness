@@ -6,7 +6,7 @@ if isOn = 1
 	{
 		if round(a/2)*2 = a 
 			{
-				instance_create_depth(x+16*a,y-42,-1,obj_electric_pillar_electicity1);	// СОСАТЬ
+				instance_create_depth(x+16*a,y-42,-1,obj_electric_pillar_electicity1);	
 			} else  instance_create_depth(x+16*a,y-42,-1,obj_electric_pillar_electicity2);	
 		a++
 	}

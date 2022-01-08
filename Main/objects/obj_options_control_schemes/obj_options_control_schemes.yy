@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Options",
-    "path": "folders/Objects/MainMenu/Options.yy",
+    "name": "Options_old",
+    "path": "folders/Objects/MainMenues/Options_old.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_options_control_schemes",

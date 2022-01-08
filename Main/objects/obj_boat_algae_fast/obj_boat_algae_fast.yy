@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_boat_algae",
-    "path": "objects/obj_boat_algae/obj_boat_algae.yy",
+    "name": "obj_boat_algae15",
+    "path": "objects/obj_boat_algae15/obj_boat_algae15.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

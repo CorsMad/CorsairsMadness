@@ -55,10 +55,44 @@ function fnc_take_dmg_axe(x1,y1,d1,x2,y2,d2)
 		} else instance_create_depth(x+x2,y+y2,d2,obj_sfx_weapon_slash);
     }
     #endregion
-    
-    
-    #endregion
 }
+
+function fnc_take_dmg_bomb(x1,y1,d1,x2,y2,d2)
+{
+
+    
+    #region Бомба 3
+    var bombhit = instance_place(x,y,obj_item_bomb3);
+    if (bombhit !=noone) && (hit_cd = 0)
+    {
+        hit_cd = 1;
+		enemy_hp -= 1;
+        if obj_Player.x < x 
+		{
+			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+		} else instance_create_depth(x+x2,y+y2,d2,obj_sfx_weapon_slash);
+        bombhit.isDead = 1;
+        bombhit.a = 190;
+    }
+    #endregion
+    
+    #region Бомба мал
+    var bombsmallhit = instance_place(x,y,obj_item_bomb3_part);
+    if (bombsmallhit !=noone) && (hit_cd = 0)
+    {
+        hit_cd = 1;
+		enemy_hp -= 1;
+        if obj_Player.x < x 
+		{
+			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+		} else instance_create_depth(x+x2,y+y2,d2,obj_sfx_weapon_slash);
+        bombsmallhit.isDead = 1;
+    }
+    #endregion
+    
+
+}
+
 
 function fnc_take_dmg_hitbox_down(x1,y1,d1)
 {

@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+exst++;
+if (exst > 60) instance_destroy();  
 
 
 myTextbox = instance_create_depth(x,y,depth,obj_textbox); 
