@@ -4,7 +4,7 @@ if place_meeting(x,y,obj_Player)
 {
     // dash TIP
     
-    instance_create_depth(192,48,0,obj_popup_creator_usedash);
+    instance_create_depth(240,144,0,obj_popup_trigger_usedash);
     
     fnc_snd_play_over(snd_ability_gain);
     obj_Player.DashEnabled = 1;

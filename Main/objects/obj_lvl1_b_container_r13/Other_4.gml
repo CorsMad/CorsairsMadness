@@ -17,3 +17,5 @@ ec2.obj_cr = obj_bird_horizontal_fast_r;
 
 var e = instance_create_depth(336,240,0,obj_plant);
 e.image_xscale = -1;
+
+instance_create_depth(0,0,0,obj_dc_onl_l1br11);

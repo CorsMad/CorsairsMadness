@@ -13,3 +13,5 @@ o4.y_cr = 112;
 instance_create_depth(176,96,200,obj_silver_key_creator);
 instance_create_depth(528,192,200,obj_silver_key_door3);
 instance_create_depth(528,144,200,obj_plant);
+
+instance_create_depth(0,0,0,obj_dc_onl_l1br9);

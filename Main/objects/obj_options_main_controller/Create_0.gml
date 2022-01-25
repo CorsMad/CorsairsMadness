@@ -4,11 +4,16 @@ instance_create_depth(24,0,-1,obj_options_main_selector);
 instance_create_depth(0,0,-1,obj_options_main_selected);
 instance_create_depth(0,0,-1,obj_options_main_selector_music);
 instance_create_depth(0,0,-1,obj_options_main_selector_sfx);
-instance_create_depth(0,0,-1,obj_options_main_control_scheme);
+
+//instance_create_depth(0,0,-1,obj_options_main_control_scheme);
 //instance_create_depth(0,0,-1,obj_options_main_selector_selected);
+
 page = 0; //  страницы
 select = 0; // значение стрелки
 delay = 0;
+
+input_change = 0 // вход в настройки клав 
+confirm_input_change = 0; // подтверждение ввода
 
 monitorWidth = display_get_width();
 monitorHeight = display_get_height();

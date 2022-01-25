@@ -105,6 +105,13 @@ tipDash = 0;
 tipRedpad = 0;
 #endregion
 
+#region Появление после телепорта
+
+tp_timer = 0;
+
+#endregion
+
+
 image_speed = 1.25;
 
 isMeeting = 0;

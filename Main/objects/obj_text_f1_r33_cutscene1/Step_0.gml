@@ -34,21 +34,3 @@ if isStop = 0
         }    
     }
 }
-    
-/*    
-if isStop = 0 && text = 4
-{
-    if t_text < 30
-    {
-        t_text++;   
-    }
-    if t_text > 29  
-    {
-        if keyboard_check_pressed(ord("K"))
-        {
-            text = 5;
-            instance_destroy();
-        }    
-    }
-}
-  */  

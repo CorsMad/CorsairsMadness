@@ -7,7 +7,7 @@ if instance_exists(obj_options_main_controller)
     {
         image_alpha = 1;   
     } else image_alpha = 0;
-     if obj_options_main_controller.select = 1
+     if obj_options_main_controller.select = 1 && obj_options_main_controller.page = 2
         {
             image_index = 1;   
             if key_right_press && global.SFXvolume < 1

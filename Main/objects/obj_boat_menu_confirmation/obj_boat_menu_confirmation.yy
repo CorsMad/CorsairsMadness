@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_boat_confirm",
-    "path": "sprites/spr_boat_confirm/spr_boat_confirm.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -15,7 +15,7 @@ if isDead = 0
     }
 }
 
-
+kb_gp_input_check();
 if state = 1
 {
     if instance_exists(obj_boat_menu_selector)
@@ -40,6 +40,14 @@ if state = 1
         {
             fnc_snd_play_over(snd_menu_accept);
             state = 2; 
+            instance_create_depth(0,0,-10000000,obj_boat_menu_confirmation);
+            switch(isKeyboard)
+            {
+                case 0: instance_create_depth(194,92,depth-1,obj_popup_creator_boat_confirm_gp);
+                        break;
+                case 1: instance_create_depth(194,92,depth-1,obj_popup_creator_boat_confirm_kb);
+                        break;
+            }
             instance_create_depth(0,0,-10000000,obj_boat_menu_confirmation);   
         }
     }
@@ -57,3 +65,5 @@ if isDead = 1
             instance_destroy();   
          }
 }
+
+

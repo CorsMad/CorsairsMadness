@@ -11,3 +11,4 @@ instance_create_depth(496,192,0,obj_pad_blue);
 instance_create_depth(656,192,0,obj_pad_blue);
 instance_create_depth(816,192,0,obj_pad_blue);
 
+instance_create_depth(0,0,0,obj_dc_onl_l1r13);

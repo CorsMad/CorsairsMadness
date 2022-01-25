@@ -20,5 +20,5 @@ if t > 500
 
 if t > 700 
 {
-         draw_text(room_width/2,224,"Press 'Enter' to return to main menu");
+         draw_text(room_width/2,224,"Press 'ENTER / Start' to return to main menu");
 }

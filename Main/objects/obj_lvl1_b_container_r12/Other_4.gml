@@ -6,3 +6,4 @@ instance_create_depth(112,96,0,obj_bird_horizontal_shooting);
 var i = instance_create_depth(240,96,0,obj_bird_horizontal_shooting);
 i.a = 45;
 
+instance_create_depth(0,0,0,obj_dc_onl_l1br11);

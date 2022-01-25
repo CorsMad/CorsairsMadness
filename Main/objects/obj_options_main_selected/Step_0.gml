@@ -2,16 +2,7 @@
 // You can write your code in this editor
 if instance_exists(obj_options_main_controller)
 {
-    if obj_options_main_controller.page = 3
-    {
-        image_alpha = 1
-        switch(global.controlScheme)
-        {
-            case 0:y = 80;break;
-            case 1:y = 96;break;
-        }
-
-    } else if obj_options_main_controller.page = 1
+    if obj_options_main_controller.page = 1
     {
         image_alpha = 1;  
         switch(global.resolution)

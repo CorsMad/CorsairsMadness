@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "NewOptions",
-    "path": "folders/Objects/MainMenues/NewOptions.yy",
+    "name": "NewPause",
+    "path": "folders/Objects/MainMenues/NewPause.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_pause_main_confirmexit",

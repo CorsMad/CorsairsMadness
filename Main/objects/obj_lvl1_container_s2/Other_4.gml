@@ -9,3 +9,5 @@ o1.t = 99;
 o1.t_max = 100;
 instance_create_depth(736,208,0,obj_platform_3_v_e);
 instance_create_depth(576,208,0,obj_platform_3_v_e);
+
+instance_create_depth(0,0,0,obj_dc_onl_l1r19);

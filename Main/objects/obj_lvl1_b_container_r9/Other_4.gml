@@ -8,3 +8,5 @@ var o1 = instance_create_depth(72,160,0,obj_enemy_creator_behind);
 o1.obj_cr = obj_skeleton_thrower;
 o1.x_cr = 72;
 o1.y_cr = 160;
+
+instance_create_depth(0,0,0,obj_dc_onl_l1br9);

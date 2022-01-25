@@ -15,5 +15,17 @@ if state = 1
 }
 #endregion
 
+#region Появление после тп
+if tp_timer!=0
+{
+    tp_timer++;   
+}
+if tp_timer = 2
+{
+    tp_timer = 0;
+    instance_create_depth(x,y-24,depth-1,obj_sfx_teleport_cretor);
+}
+#endregion
+
 
 

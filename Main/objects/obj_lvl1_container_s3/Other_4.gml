@@ -17,3 +17,5 @@ var o3 = instance_create_depth(792,80,0,obj_trapfire);
 o3.t_max = 80;
 var o4 = instance_create_depth(440,80,0,obj_trapfire);
 o4.t_max = 140;
+
+instance_create_depth(0,0,0,obj_dc_onl_l1br4);

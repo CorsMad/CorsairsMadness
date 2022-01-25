@@ -17,7 +17,9 @@
     draw_text(64,96,"t_max = " + string(obj_Player_boat.t_max));
 */
     
-if instance_exists(obj_first_loading_room)
+if instance_exists(obj_popup_trigger_usebomb)
 {
-    draw_text(64,32,"T " + string(obj_first_loading_room.t1));
-}   
+    draw_text(32,32,"isKeyboard " + string(obj_popup_trigger_usebomb.isKeyboard));
+}
+  
+                        

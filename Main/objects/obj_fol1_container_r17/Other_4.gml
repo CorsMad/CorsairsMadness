@@ -8,3 +8,5 @@ i.image_yscale = 10;
 
 instance_create_depth(656,128,0,obj_flying_molded);
 instance_create_depth(992,128,0,obj_flying_molded);
+
+instance_create_depth(0,0,0,obj_dc_onl_f1r16);

@@ -9,3 +9,5 @@ instance_create_depth(768,208,0,obj_crawling_molded);
 instance_create_depth(1056,176,0,obj_crawling_molded);
 
 instance_create_depth(1488,80,0,obj_fastfly_molded);
+
+instance_create_depth(0,0,0,obj_dc_onl_f1r8);

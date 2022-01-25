@@ -5,7 +5,10 @@ t = 0; // глобальный таймер
 switch(global.boatCheckpoint)  // Чекпоинт
 {
     case 0: state = 1;break;
-    case 1: state = 11;break;
+    case 1: state = 4;break;
+    case 2: state = 6;break;
+    case 3: state = 11;break;
+    case 4: state = 14;break;
 }
 
 // Музыка

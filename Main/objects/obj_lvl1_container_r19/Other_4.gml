@@ -13,3 +13,5 @@ instance_create_depth(800,176,100,obj_trapspikes);
 instance_create_depth(944,128,100,obj_trapspikes);
 instance_create_depth(1088,176,100,obj_trapspikes);
 instance_create_depth(1120,176,100,obj_trapspikes);
+
+instance_create_depth(0,0,0,obj_dc_onl_l1r19);

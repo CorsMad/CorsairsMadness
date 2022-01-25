@@ -6,6 +6,7 @@ if isOn = 0 && place_meeting(x,y,obj_Player)
 	image_speed = 2;
 	isOn = 1;
     fnc_snd_play_over(snd_checkpoint);
+    instance_create_depth(camera_get_view_x(view_camera[0])+24,camera_get_view_y(view_camera[0])+48,-10000000000,obj_icon_save);
 }
 
 if isOn = 1

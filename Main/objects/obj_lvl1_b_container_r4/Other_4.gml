@@ -7,6 +7,11 @@ instance_create_depth(416,192,100,obj_destructable_block_big);
 instance_create_depth(400,144,100,obj_skeleton_l);
 instance_create_depth(384,144,100,obj_skeleton_archer);
 instance_create_depth(320,240,100,obj_skeleton_archer);
+
+instance_create_depth(0,0,0,obj_dc_onl_l1br4);
+
+
+
 /*
 var i = instance_create_depth(224,0,100,obj_enemy_creator);
 i.image_yscale = 16;

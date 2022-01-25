@@ -14,7 +14,6 @@ if instance_exists(obj_pause_main_controller)
             case 4: y = camera_get_view_y(view_camera[0])+160;break;
         }
     }
-    
     //Страница с графикой
     if obj_pause_main_controller.page = 1   
     {
@@ -42,6 +41,7 @@ if instance_exists(obj_pause_main_controller)
     }
     
     //Cтраница с управлением
+    /*
     if obj_pause_main_controller.page = 3   
     {
         switch(obj_pause_main_controller.select)
@@ -51,5 +51,43 @@ if instance_exists(obj_pause_main_controller)
             case 2: y = camera_get_view_y(view_camera[0])+128;break;
         }
     }
+    */
+    if obj_pause_main_controller.page = 3   
+    {
+        if obj_pause_main_controller.input_change = 1
+        {
+            x = camera_get_view_x(view_camera[0])+152; 
+            switch(obj_pause_main_controller.select)
+                {
+                    case 0: y = camera_get_view_y(view_camera[0])+64;break; 
+                    case 1: y = camera_get_view_y(view_camera[0])+80;break;
+                    case 2: y = camera_get_view_y(view_camera[0])+96;break;
+                    case 3: y = camera_get_view_y(view_camera[0])+112;break; 
+                    case 4: y = camera_get_view_y(view_camera[0])+128;break;
+                    case 5: y = camera_get_view_y(view_camera[0])+144;break;
+                    case 6: y = camera_get_view_y(view_camera[0])+160;break;
+                    case 7: y = camera_get_view_y(view_camera[0])+176;break;
+                    case 8: y = camera_get_view_y(view_camera[0])+208;break;
+                }
+        } else 
+            {
+                x = camera_get_view_x(view_camera[0])+24;
+                switch(obj_pause_main_controller.select)
+                {
+                    case 0: y = camera_get_view_y(view_camera[0])+64;break; 
+                    case 1: y = camera_get_view_y(view_camera[0])+80;break;
+                    case 2: y = camera_get_view_y(view_camera[0])+96;break;
+                    case 3: y = camera_get_view_y(view_camera[0])+128;break;
+                }
+            } 
+    } 
     
+}
+
+if instance_exists(obj_pause_main_controller)
+{
+    if  obj_pause_main_controller.confirm_input_change = 1
+    {
+        image_index = 1;   
+    } else image_index = 0;
 }

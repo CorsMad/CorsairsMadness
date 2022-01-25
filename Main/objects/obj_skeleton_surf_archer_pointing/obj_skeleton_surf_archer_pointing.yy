@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_skeleton_surf_archer_move",
-    "path": "sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",
+    "name": "spr_skeleton_surf_archer_move_red",
+    "path": "sprites/spr_skeleton_surf_archer_move_red/spr_skeleton_surf_archer_move_red.yy",
   },
   "solid": false,
   "visible": true,

@@ -10,6 +10,5 @@ charCount = 0;
 sprWidth = sprite_get_width(spr_textbox_popup);
 
 
-
 sprw = 5;
 sprh = 2;

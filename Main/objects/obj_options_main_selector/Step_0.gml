@@ -44,12 +44,39 @@ if instance_exists(obj_options_main_controller)
     //Cтраница с управлением
     if obj_options_main_controller.page = 3   
     {
-        switch(obj_options_main_controller.select)
+        if obj_options_main_controller.input_change = 1
         {
-            case 0: y = 80;break; 
-            case 1: y = 96;break;
-            case 2: y = 128;break;
-        }
-    }
-    
+            x =  152; 
+            switch(obj_options_main_controller.select)
+                {
+                    case 0: y = 64;break; 
+                    case 1: y = 80;break;
+                    case 2: y = 96;break;
+                    case 3: y = 112;break; 
+                    case 4: y = 128;break;
+                    case 5: y = 144;break;
+                    case 6: y = 160;break;
+                    case 7: y = 176;break;
+                    case 8: y = 208;break;
+                }
+        } else 
+            {
+                x = 24;
+                switch(obj_options_main_controller.select)
+                {
+                    case 0: y = 64;break; 
+                    case 1: y = 80;break;
+                    case 2: y = 96;break;
+                    case 3: y = 128;break;
+                }
+            } 
+    }   
+}
+
+if instance_exists(obj_options_main_controller)
+{
+    if  obj_options_main_controller.confirm_input_change = 1
+    {
+        image_index = 1;   
+    } else image_index = 0;
 }

@@ -9,3 +9,5 @@ i.image_yscale = 6;
 var k = instance_create_depth(80,416,0,obj_sp_f1_r28_aoe2);
 k.image_xscale = 19;
 k.image_yscale = 7;
+
+instance_create_depth(0,0,0,obj_dc_onl_f1r27);

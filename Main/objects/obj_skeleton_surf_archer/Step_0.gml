@@ -30,7 +30,7 @@ if state = 1	// Выжидание
 		state = 2;
 		t = 0;
         image_index = 0;
-        sprite_index = spr_skeleton_surf_archer_fire;
+        sprite_index = spr_skeleton_surf_archer_fire_red;
 	}
 }
 
@@ -45,7 +45,7 @@ if state = 2	// Выстрел
     }
     if (image_index > image_number - 1) 
     {
-        sprite_index = spr_skeleton_surf_archer_move;
+        sprite_index = spr_skeleton_surf_archer_move_red;
         image_index = 5;
         state = 3;
     }
@@ -60,7 +60,7 @@ if state = 3    // Выжидание
 		state = 4;
 		t = 0;
         image_index = 0;
-        sprite_index = spr_skeleton_surf_archer_move;
+        sprite_index = spr_skeleton_surf_archer_move_red;
 	}  
 }
 

@@ -2,16 +2,7 @@
 // You can write your code in this editor
 if instance_exists(obj_pause_main_controller)
 {
-    if obj_pause_main_controller.page = 3
-    {
-        image_alpha = 1
-        switch(global.controlScheme)
-        {
-            case 0:y = camera_get_view_y(view_camera[0])+80;break;
-            case 1:y = camera_get_view_y(view_camera[0])+96;break;
-        }
-
-    } else if obj_pause_main_controller.page = 1
+    if obj_pause_main_controller.page = 1
     {
         image_alpha = 1;  
         switch(global.resolution)

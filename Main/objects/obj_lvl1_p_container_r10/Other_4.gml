@@ -9,3 +9,4 @@ instance_create_depth(1184,208,0,obj_destructable_block_big);
 instance_create_depth(1344,112,0,obj_destructable_block_big);
 instance_create_depth(1344,160,0,obj_destructable_block_big);
 
+instance_create_depth(0,0,0,obj_dc_onl_l1pr10);

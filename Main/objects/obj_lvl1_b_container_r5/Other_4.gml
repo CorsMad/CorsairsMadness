@@ -21,3 +21,5 @@ c3.image_yscale = 6;
 c3.x_cr = 496;
 c3.y_cr = 224;
 c3.obj_cr = obj_bird_horizontal_waving_l;
+
+instance_create_depth(0,0,0,obj_dc_onl_l1br4);

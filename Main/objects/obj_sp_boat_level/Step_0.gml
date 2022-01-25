@@ -71,6 +71,10 @@ if state = 3
     {
         state = 4;
         t = 0;
+        global.money_saved = global.gold;
+        global.boatCheckpoint = 1;
+        instance_create_depth(camera_get_view_x(view_camera[0])+24,camera_get_view_y(view_camera[0])+48,-10000000000,obj_icon_save);
+                    
     }
     
     switch(t)
@@ -152,8 +156,11 @@ if state = 5
                     instance_create_depth(1408,192,depth,obj_boat_stone);
                     */
                     break;
-        case 500:  t = 0;
+        case 500:   t = 0;
                     state = 6;
+                    global.money_saved = global.gold;
+                    global.boatCheckpoint = 2;
+                    instance_create_depth(camera_get_view_x(view_camera[0])+24,camera_get_view_y(view_camera[0])+48,-10000000000,obj_icon_save);
                     break;        
    }
 }
@@ -374,7 +381,8 @@ if state = 10
         case 700:  t = 0;
                     state = 11;
                     global.money_saved = global.gold;
-                    global.boatCheckpoint = 1;
+                    global.boatCheckpoint = 3;
+                    instance_create_depth(camera_get_view_x(view_camera[0])+24,camera_get_view_y(view_camera[0])+48,-10000000000,obj_icon_save);
                     break;
     }
 }
@@ -460,6 +468,9 @@ if state = 13
     {
         state = 14;
         t = 0;
+        global.money_saved = global.gold;
+        global.boatCheckpoint = 4;
+        instance_create_depth(camera_get_view_x(view_camera[0])+24,camera_get_view_y(view_camera[0])+48,-10000000000,obj_icon_save);
     }
     
     switch(t)
