@@ -5,15 +5,13 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_molded_firing_mask",
     "path": "sprites/spr_molded_firing_mask/spr_molded_firing_mask.yy",
   },
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_enemy_parent",
-    "path": "objects/obj_enemy_parent/obj_enemy_parent.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

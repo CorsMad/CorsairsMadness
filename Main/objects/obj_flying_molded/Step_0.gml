@@ -114,6 +114,11 @@ if isAlive = 1
                 state = 4;            
                 spd = 0;
                 image_index = 0;
+                
+                // создангик хитбокса
+                var hb = instance_create_depth(x,y,depth,obj_flying_molded_hitbox);
+                hb.oleg = id;
+                
             }
         }
     #endregion
@@ -249,7 +254,7 @@ if isAlive = 1
             {
         		if obj_Player.isGrounded = 0 
         		{
-        			obj_Player.vspd = -3.2;
+        			obj_Player.vspd = -2.5; //3.2
         		}
                 sprite_index = spr_molded_flying_take_dmg;    
                 hit_cd = 1;
@@ -257,7 +262,7 @@ if isAlive = 1
                 state = 9;
                 combo_counter += 1;
                 combo_timer = 1;
-                
+                /*
                 if combo_counter >= 3
                 {
                     if obj_Player.x >= x
@@ -266,7 +271,7 @@ if isAlive = 1
                     } else hspd = 3;
                     combo_counter = 0;
                 }
-                
+                */
                 
                 /*
                 if combo_counter < 3

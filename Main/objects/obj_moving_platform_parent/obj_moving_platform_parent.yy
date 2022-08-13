@@ -24,7 +24,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Moving platforms",
-    "path": "folders/Objects/Moving platforms.yy",
+    "path": "folders/Objects/Blocks/Moving platforms.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_moving_platform_parent",

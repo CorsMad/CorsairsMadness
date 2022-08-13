@@ -15,10 +15,14 @@ function player_input()
     key_jump = keyboard_check_pressed(global.jump_key) || gamepad_button_check_pressed(4,gp_face1) || gamepad_button_check_pressed(0,gp_face1);
     key_jump_release = keyboard_check_released(global.jump_key) || gamepad_button_check_released(4,gp_face1) || gamepad_button_check_released(0,gp_face1);
     key_jump_pressed = keyboard_check_pressed(global.jump_key) || gamepad_button_check_pressed(4,gp_face1) || gamepad_button_check_pressed(0,gp_face1);
+    key_jump_press = keyboard_check(global.jump_key) || gamepad_button_check(4,gp_face1) || gamepad_button_check(0,gp_face1);
     key_attack = keyboard_check_pressed(global.attack_key) || gamepad_button_check_pressed(4,gp_face3) || gamepad_button_check_pressed(0,gp_face3);
     key_dashing = keyboard_check_pressed(global.dash_key) || gamepad_button_check_pressed(4,gp_shoulderrb) || gamepad_button_check_pressed(0,gp_shoulderrb);
     key_attack_press = keyboard_check(global.attack_key) || gamepad_button_check(4,gp_face3) || gamepad_button_check(0,gp_face3);
     key_item = keyboard_check_pressed(global.item_key) || gamepad_button_check_pressed(4,gp_face4) || gamepad_button_check_pressed(4,gp_shoulderlb) || gamepad_button_check_pressed(0,gp_face4) || gamepad_button_check_pressed(0,gp_shoulderlb); 
+    key_item_pressed = keyboard_check(global.item_key);
+    key_item_released = keyboard_check_released(global.item_key);
+    
     key_item_choose = keyboard_check_pressed(ord("W")) || gamepad_button_check_pressed(4,gp_shoulderl);  
     key_back = gamepad_button_check_pressed(4,gp_face2) || gamepad_button_check_pressed(0,gp_face2);
 }

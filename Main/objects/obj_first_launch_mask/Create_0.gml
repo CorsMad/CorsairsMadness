@@ -35,7 +35,9 @@ global.secrets_l1_s3 = 1;
 
 //First Room
 
-
+global.fTargetX = 32;
+global.fTargetY = 112;
+global.fTargetRoom = TESTROOM;   
 
 /*
 global.TargetX = 64;

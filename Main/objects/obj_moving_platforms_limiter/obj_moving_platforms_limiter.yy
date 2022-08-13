@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -25,7 +26,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Moving platforms",
-    "path": "folders/Objects/Moving platforms.yy",
+    "path": "folders/Objects/Blocks/Moving platforms.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_moving_platforms_limiter",

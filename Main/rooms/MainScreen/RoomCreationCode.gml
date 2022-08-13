@@ -1,0 +1,1 @@
+instance_create_depth(480,230,-8,obj_mainmenu_music);

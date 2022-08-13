@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_plant_mask",
     "path": "sprites/spr_plant_mask/spr_plant_mask.yy",

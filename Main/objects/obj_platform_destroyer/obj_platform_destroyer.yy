@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Platform creator destroy",
-    "path": "folders/Objects/Moving platforms/Platform creator destroy.yy",
+    "path": "folders/Objects/Blocks/Moving platforms/Platform creator destroy.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_platform_destroyer",

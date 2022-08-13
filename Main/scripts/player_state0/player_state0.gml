@@ -2,9 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function fnc_player_state0()
 {
-    #region Alive 
-    
-    
+    #region Alive     
 if isDead = 0 
 {
     player_input();
@@ -55,10 +53,16 @@ if fspd < -2
 if key_left && isAirThrowingBomb = 0 && isThrowingBomb = 0 && isUsingitem = 0 && isAirUsingitem = 0 && isAttacking = 0 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0
 {
 	image_xscale = -1;
-	if isCarry = 0
+	if isCarry = 0 && isFlueting = 0
 	{
 		sprite_index = spr_player_run;
-	} else sprite_index = spr_player_run_carry;
+	} else  if  isCarry = 1 
+    {
+        sprite_index = spr_player_run_carry;   
+    } else  if  isFlueting = 1
+    {
+        sprite_index = spr_player_fluet_run;   
+    }
 	image_speed = 1.25;
 	
 	if spd > 0 
@@ -82,10 +86,16 @@ if key_left && isAirThrowingBomb = 0 && isThrowingBomb = 0 && isUsingitem = 0 &&
 if key_right && isAirThrowingBomb = 0 && isThrowingBomb = 0 &&  isUsingitem = 0 && isAttacking = 0 && isAirUsingitem = 0 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0
 { 
 	image_xscale = 1;
-	if isCarry = 0
+	if isCarry = 0 && isFlueting = 0
 	{
 		sprite_index = spr_player_run;
-	} else sprite_index = spr_player_run_carry;
+	} else  if  isCarry = 1 
+    {
+        sprite_index = spr_player_run_carry;   
+    } else  if  isFlueting = 1
+    {
+        sprite_index = spr_player_fluet_run;   
+    }
 	image_speed = 1.25;
 	
 	if spd < 0 
@@ -112,10 +122,16 @@ if ((!key_left && !key_right) || (key_left && key_right) ) && isUsingitem = 0 &&
 	hspd = 0;
 	spd = 0;
 	
-	if isCarry = 0
+	if isCarry = 0 && isFlueting = 0
 	{
 		sprite_index = spr_player_idle;
-	} else sprite_index = spr_player_idle_carry;
+	} else if isCarry = 1
+    {
+        sprite_index = spr_player_idle_carry;
+    } else if isFlueting = 1
+    {
+        sprite_index = spr_player_fluet_idle;   
+    }
 	image_speed = 1.25;
 	
 }
@@ -144,10 +160,16 @@ if place_meeting(x,y+1,obj_block)
         
 if isGrounded = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0 &&  isAirattacking = 0 && isAirUsingitem = 0 &&  isAttackingdown = 0 && isWallclimbing = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0 && isDashing = 0
 {
-	if isCarry = 0 
+	if isCarry = 0 && isFlueting = 0
 	{
 		sprite_index = spr_player_jump;
-	} else sprite_index = spr_player_jump_carry;
+	} else if isCarry = 1 
+    {
+        sprite_index = spr_player_jump_carry;
+    } else if isFlueting = 1
+    {
+        sprite_index = spr_player_fluet_jump;   
+    }
 	image_speed =0;
 	
 		if vspd > 0 
@@ -193,7 +215,7 @@ if !place_meeting(x,y+1,obj_block) && coyote_timer > 0
 #endregion
 #region Attack on ground
 
-if key_attack && isAirThrowingBomb = 0 && isCarry = 0 && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0
+if key_attack && isAirThrowingBomb = 0 && isFlueting = 0 && isCarry = 0 && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0
 {
 	image_index = 0;
 	isAttacking = 1;
@@ -270,7 +292,7 @@ if isAttacking = 1 && key_jump
 #endregion
 #region Attack in air
 
-if ((key_attack && isGrounded = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAttacking = 0 && isAirattacking = 0 && isAirThrowingBomb = 0 && isCarry = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0
+if ((key_attack && isGrounded = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAttacking = 0 && isFlueting = 0 &&  isAirattacking = 0 && isAirThrowingBomb = 0 && isCarry = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0
 {
 	image_index = 0;
 	isAirattacking = 1;
@@ -372,7 +394,7 @@ if isAirattacking = 1
 }
 #endregion
 #region Dashing
-if key_dashing && dashing_timer_count = 0 && DashEnabled = 1 && isCarry = 0 && isUsingitem = 0  && isDashing = 0 && dash_counts > 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0
+if key_dashing && dashing_timer_count = 0 && DashEnabled = 1 && isCarry = 0 && isFlueting = 0 &&  isUsingitem = 0  && isDashing = 0 && dash_counts > 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0
 {
     fnc_snd_play_over(snd_dash_human);
 	dash_counts --;
@@ -573,7 +595,7 @@ if dash_buffer_human = 1 && dashing_timer = 0 && dash_pad > 0
 #endregion
 #region Attacking down
 
-if isGrounded = 0 && key_down && isCarry = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isDashing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0
+if isGrounded = 0 && key_down && isCarry = 0 && isFlueting = 0 &&  isAttackingdown = 0 && isWallclimbing = 0 && isDashing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0
 {
     fnc_snd_play_onetime(snd_player_preattackdown);  
 	isAirattacking = 0;
@@ -771,7 +793,7 @@ if global.choosed_item = 1
 				isUsingitem = 0;	 
 			}
 		#endregion
-		#region in air
+	#region in air
 		  
 			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 ) || (key_item && key_jump && isGrounded = 1)) && isAirUsingitem = 0 && isCarry = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && global.mana > 0 
 			{
@@ -836,103 +858,9 @@ if global.choosed_item = 1
 	
 		#endregion
     
-    
-    
-    
-	/* OLD!~!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-	#region on ground
-	
-	
-		if key_item && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && !instance_exists(obj_item_boomerang_dot) && isTakingdmg = 0
-		{
-			image_index = 0;
-			isUsingitem = 1;
-			sprite_index = spr_player_item_use;
-			image_speed = 0.5;
-		}
-		if isUsingitem = 1 && isGrounded = 1
-		{
-			hspd = 0;
-		}	
-		if isUsingitem = 1 && image_index = 5
-		{
-			isUsingitem = 0;	
-		}
-		if isUsingitem = 1 && image_index = 1
-		{
-			instance_create_depth(x+obj_Player.image_xscale*(150),y-16,1,obj_item_boomerang_dot);
-			instance_create_depth(x,y-16,1,obj_item_boomerang);
-		}
-	
-	#endregion
-	#region in air
-	
-		if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && !instance_exists(obj_item_boomerang_dot) && isTakingdmg = 0
-		{
-			image_index = 0;
-			isAirUsingitem = 1;
-			sprite_index = spr_player_item_use;
-			image_speed = 0.5;
-		}
-		if isAirUsingitem = 1 
-		{	
-			if key_left
-			{
-				if spd > 0 
-				{
-					spd = -2;
-				}
-				if spd <= 0 
-				{
-					if spd > -2
-					{
-						spd -=0.5;	
-					}
-				}
-			}
-			if key_right 
-			{
-				if spd < 0 
-			{
-				spd = 2;
-			}
-			if spd >= 0 
-			{
-				if spd < 2
-				{
-					spd += 0.5;	
-				}
-			}
-		
-			}
-			if (!key_left && !key_right) || (key_left && key_right) 
-			{
-				hspd = 0;
-				spd = 0;
-			}
-			vspd += 0.25;	
-		}
-
-		if isAirUsingitem = 1 && jump_timer < 1
-		{
-			hspd = 0;	
-		}
-		if isAirUsingitem = 1 && image_index = 1
-		{
-			instance_create_depth(x+obj_Player.image_xscale*(150),y-16,1,obj_item_boomerang_dot);
-			instance_create_depth(x,y-16,1,obj_item_boomerang);
-		}
-		if isAirUsingitem = 1 && image_index = 5
-		{
-			isAirUsingitem = 0;	
-		}
-	
-	#endregion
-    */    
+    #endregion
 }
-#endregion
-	
-	if global.choosed_item = 2 // Обычный топор
+if global.choosed_item = 2 // Обычный топор
 	{
 		#region axe
 		
@@ -1041,7 +969,7 @@ if global.choosed_item = 1
 		
 #endregion
 	}
-	if global.choosed_item = 3
+if global.choosed_item = 3
 	{
 		#region bomb
 	
@@ -1139,58 +1067,109 @@ if global.choosed_item = 1
 		
 		#endregion
 	}
+if global.choosed_item = 11 // МагичЛук
+{
+		#region MagicBow
+		
+		
+		#region on ground
+        
+			if key_item && isAirUsingitem = 0 && isUsingitem = 0 && isCarry = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && global.mana > 0
+			{
+				image_index = 0;
+				isUsingitem = 1;
+				sprite_index = spr_player_abiluse;
+				image_speed = 1;
+				
+			}
+			if isUsingitem = 1 && isGrounded = 1
+			{
+				hspd = 0;
+				spd = 0;
+			}	
+			if isUsingitem = 1 && image_index = 4
+			{
+				isUsingitem = 0;	
+			}
+			if isUsingitem = 1 && image_index = 1
+			{
+				
+				var abilMagicBow = instance_create_depth(x,y-24,depth-1,obj_abil_arbalet);
+				abilMagicBow.image_xscale = sign(image_xscale);
+			}		
+			if isUsingitem = 1 && !place_meeting(x,y+1,obj_block)
+			{
+				isUsingitem = 0;	 
+			}
+		#endregion
+		#region in air
+		  
+			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 ) || (key_item && key_jump && isGrounded = 1)) && isAirUsingitem = 0 && isCarry = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && global.mana > 0 
+			{
+				
+				image_index = 0;
+				isAirUsingitem = 1;
+				sprite_index = spr_player_abiluse;
+				image_speed = 1;
+			}
+			if isAirUsingitem = 1 
+			{	
+				if key_left
+				{
+					if spd > 0 
+					{
+						spd = -2;
+					}
+					if spd <= 0 
+					{
+						if spd > -2
+						{
+							spd -=0.5;	
+						}
+					}
+				}
+				if key_right 
+				{
+					if spd < 0 
+				{
+					spd = 2;
+				}
+				if spd >= 0 
+				{
+					if spd < 2
+					{
+						spd += 0.5;	
+					}
+				}
+		
+				}
+				if (!key_left && !key_right) || (key_left && key_right) 
+				{
+					hspd = 0;
+					spd = 0;
+				}
+				vspd += 0.25;	
+			}
+
+			if isAirUsingitem = 1 && jump_timer < 1
+			{
+				spd = 0;	
+			}
+			if isAirUsingitem = 1 && image_index = 1
+			{
+				var abilMagicBow = instance_create_depth(x,y-24,depth-1,obj_abil_arbalet);
+				abilMagicBow.image_xscale = sign(image_xscale);
+			}
+			if isAirUsingitem = 1 && image_index = 4
+			{
+				isAirUsingitem = 0;	
+			}
 	
-/*
-#region hook
-
-if key_item && isHooking = 0 && isAirattacking = 0 && isAttacking = 0 && isClimbing = 0 && isAttackingdown = 0 && isDashing = 0 && isOutjump = 0 && isWallclimbing = 0
-{
-	isHooking = 1;
-	if dir = -1 {
-		var inst_left = instance_create_depth(x, y-16, -1, obj_item_hook);
-		with inst_left 
-		{
-			left = 1;	
-		}
-	}
-	if dir = 1 
-	{
-		var inst_right = instance_create_depth(x, y-16, -1, obj_item_hook);
-		with inst_right 
-		{
-			right = 1;	
-		}
+		#endregion
 		
-	}
-}
-if isHooking = 1
-{
-	sprite_index = spr_player_hooking;
-	hspd = 0;
-	vspd = 0;
-	spd = 0;	
-	if isGravitate = 1 
-	{
-		sprite_index = spr_player_dash;
-		if obj_item_hook_anchor.x > x 
-		{
-			hspd = 10;	
-		}
-		
-		if obj_item_hook_anchor.x < x
-		{
-			hspd = -10;	
-		}
-		if place_meeting(bbox_left+sign(hspd),y,obj_block) || place_meeting(bbox_right+sign(hspd),y,obj_block)
-		{
-			isGravitate = 0;
-			isHooking = 0;
-		}
-	}
-}
-
 #endregion
-*/
+	}
+
 #endregion
 #region Taking dmg
 
@@ -1287,6 +1266,63 @@ if damage_cd = 120
 		}
 	}	
 }
+#endregion
+#region Special Abil
+if SpecAbil = 1
+{
+    
+#region Boots
+if specabilnumber = 1
+{
+    if key_jump && isGrounded = 0 && isAttackingdown = 0 && isDashing = 0 && coyote_timer = 0
+    {
+        instance_create_depth(x,y,depth-1,obj_abil_boots_hitbox);
+    }
+}
+#endregion
+
+#region Flute
+if specabilnumber = 2
+{
+    if key_item_pressed && isAttacking = 0 && isAttackingdown = 0 && isDashing = 0 && isTakingdmg = 0 
+    {
+        isFlueting = 1;
+        #region Таймер
+        fluettimer ++;
+        if (fluettimer mod 20 = 0) && fluettimer < 61
+        {
+            instance_create_depth(x,y-24,depth-1,obj_abil_fluet_particles);
+        }
+        if (fluettimer mod 10 = 0) && fluettimer > 61
+        {
+            instance_create_depth(x,y-24,depth-1,obj_abil_fluet_particles);
+        }
+        #endregion
+        
+        if isTakingdmg = 1
+        {
+            isFlueting = 0;  
+        }
+    } else isFlueting = 0;
+    if isFlueting = 0
+    {
+        fluettimer = 0;   
+    }
+}
+#endregion
+
+#region Arbalet
+#endregion
+
+#region Hook
+#endregion
+
+#region Boomerang
+#endregion
+
+}
+
+
 #endregion
 #region Carry Bomb with teleport
 if isCarry = 1 && (place_meeting(x,y,obj_room_transition_horizontal) || place_meeting(x,y,obj_room_transition_vertical))

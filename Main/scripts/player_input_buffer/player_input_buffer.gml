@@ -53,6 +53,14 @@ function player_input_buffer_item_hook(argument3)
     }
 }
 
+function player_input_buffer_jump(argument4)
+{
+    if key_jump && isGrounded = 1 && image_index > argument4
+    {
+        vspd = -6;
+    }
+}
+
 function player_input_buffer_execute()
 {
     #region attack buffer
@@ -64,7 +72,27 @@ function player_input_buffer_execute()
         hookingbuffer = 0; 
         image_index = 0;
     	isAttacking = 1;
-    	sprite_index = choose(spr_player_masked_attack1,spr_player_masked_attack2);
+        
+        
+    	if comboMeter < 3
+        {
+    	    sprite_index = choose(spr_player_masked_attack1,spr_player_masked_attack2);
+        } else
+        if (dir = 1 && key_right) || (dir = -1 && key_left)
+        {
+            sprite_index = spr_player_masked_attack_finisher_forward;
+        } else  
+        if key_up
+        {
+            sprite_index = spr_player_masked_attack_finisher_up;   
+        } else 
+        if !key_right && !key_left
+        {
+            sprite_index = spr_player_masked_attack_finisher1;  
+        }
+        
+        
+        
     	image_speed = 1;
         if key_left = 1
         {
@@ -100,7 +128,15 @@ function player_input_buffer_execute()
             hookingbuffer = 0;  
             image_index = 0;
         	isAirattacking = 1;
-        	sprite_index = spr_player_masked_attack1;
+        	if comboMeter < 3
+            {
+        	    sprite_index = choose(spr_player_masked_attack1,spr_player_masked_attack2);
+            } else 
+            if key_down
+            {
+                sprite_index = spr_player_masked_attack_finisher_down;
+            } else sprite_index = spr_player_masked_attack_finisher1;
+             
         	image_speed = 1;
             isAfterhook = 0;
             if key_left = 1

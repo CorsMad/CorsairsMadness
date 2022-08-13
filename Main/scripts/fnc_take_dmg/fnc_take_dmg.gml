@@ -93,7 +93,6 @@ function fnc_take_dmg_bomb(x1,y1,d1,x2,y2,d2)
 
 }
 
-
 function fnc_take_dmg_hitbox_down(x1,y1,d1)
 {
     if place_meeting(x,y,obj_hitbox_down) && hit_cd = 0

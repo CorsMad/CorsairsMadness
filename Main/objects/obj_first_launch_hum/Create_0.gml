@@ -9,10 +9,11 @@
 
 global.hp = 4;           // 4
 global.hp_max = 4;       // 4
-global.choosed_item = 2; // 1- бумер 2 -топ // 3 - бомба
+global.choosed_item = 0; // 1- бумер 2 -топ // 3 - бомба // 11 - арбалет
 global.mana = 3;
 global.mana_max = 3;
 global.gold = global.money_saved;          // 0
+
 
 
 scr_create_array_objects();
@@ -38,7 +39,11 @@ global.TargetX = 32;
 global.TargetY = 224;
 global.TargetRoom = L1_r1;
 */
-
+/*
+global.TargetX = 32;
+global.TargetY = 224;
+global.TargetRoom = GlobalMap;
+*/
 /*
 global.TargetX = 54;
 global.TargetY = 221;

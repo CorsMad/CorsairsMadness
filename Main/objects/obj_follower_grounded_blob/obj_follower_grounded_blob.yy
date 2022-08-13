@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_follower_grounded_blob",
-    "path": "sprites/spr_follower_grounded_blob/spr_follower_grounded_blob.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

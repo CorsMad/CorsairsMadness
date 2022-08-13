@@ -4,7 +4,7 @@ hspd = 0;
 vspd = 0;
 spd = 2;
 fspd = 0;
-grav = 0.25;
+grav = 0;//0.25;
 
 oleg = 1;
 dash_buffer_human = 0;
@@ -18,7 +18,7 @@ airattacking_buffer = 0;
 
 #region Состояния 
 
-//state = 1; // 0 - человек, 1 - маск, 2 - катсцена
+//state = 1; // 0 - человек, 1 - маск, 11 - переход в телепорт, 2 - катсцена
 isDead = 0;
 
 isAttacking = 0;
@@ -45,7 +45,7 @@ isAirThrowingBomb = 0;
 isVulnerable = 1;
 isHookiframes = 0;
 isAfterhook = 0;
-
+isFlueting = 0;
 
 attackbuffer = 0;
 airattackbuffer = 0;
@@ -72,6 +72,14 @@ sprkl_timer_hook = 0;
 dashing_timer = 0;
 hooking_timer = 0;
 transform_timer = 0;
+fluettimer = 0;
+comboTimer = 0;
+
+#region special timer
+pos_teleport_turn_timer = 0;
+move_to_cloud = 0;
+teleport_delay_timer = 0;
+#endregion
 
 #endregion
 
@@ -79,6 +87,24 @@ transform_timer = 0;
 
 DashEnabled = global.dash;
 HookEnabled = global.fhook; /////
+
+SpecAbil = 1;
+#region Спец абилки human
+specabilnumber = 2;
+
+/*
+1 - boots
+2 - флейта
+*/
+#endregion
+
+
+#region Спец абилки Possessed
+// 1 - hook, 2 - teleport, 3 - superdash , 4 - doublejump, 5 - clone
+
+SpecAbilMask = 4;
+#endregion
+
 
 #endregion
 
@@ -94,6 +120,8 @@ dash_in_air = 0;
 dash_on_ground = 0;
 dash_count = 0;
 dash_pad = 0;
+comboTimer = 0;
+comboMeter = 0;
 
 #endregion
 
@@ -108,9 +136,26 @@ tipRedpad = 0;
 #region Появление после телепорта
 
 tp_timer = 0;
-
+revive_timer = 0;
+blob_cr = 0;
+movespeed_intp = 0;
 #endregion
 
+#region Супердеш
+superdash_power = 0;
+superdash_timer = 0;
+dash_timer = 0;
+dash_vfx_timer = 0;
+#endregion
+
+#region
+
+turn_in_clone_timer = 0;
+turn_out_clone_timer = 0;
+clone_timer = 0;
+movespeed_inclone = 6;
+
+#endregion
 
 image_speed = 1.25;
 
