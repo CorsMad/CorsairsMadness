@@ -10,5 +10,4 @@ vspd = -2;
 spd = 0;
 to_player = 0;
 val = 0;
-b = 0;
 image_speed = 0;

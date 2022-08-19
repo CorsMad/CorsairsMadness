@@ -5,14 +5,15 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_molded_grounded_mask",
     "path": "sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",
   },
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_grounded_molded",
-    "path": "objects/obj_grounded_molded/obj_grounded_molded.yy",
+    "name": "obj_grounded_molded_new2",
+    "path": "objects/obj_grounded_molded_new2/obj_grounded_molded_new2.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

@@ -22,10 +22,11 @@
     	}
     	y += vspd;
 
-    	if !place_meeting(x,y+vspd, obj_block)
+    	if !place_meeting(x,y+vspd, obj_block) && flip = 0
     	{
     		vspd +=0.2;	
     	}    
+        
     #endregion
         
     dir = image_xscale;
@@ -352,56 +353,233 @@ if state = 7
 }
 #endregion
 
-#region Получение урона на земле
+#region Получение урона от добиваний
+if delay > 0 
+{
+    delay -=0.5;   
+}
+if flip > 0
+{
+    flip -=0.05;   
+}
 
-if place_meeting(x,y,obj_hitbox_mask)  && hit_cd = 0
+#region Анимация
+if state = 10 
+{
+    switch(sprite_index)
+    {
+        case spr_molded_grounded_damageforward: if hspd > 0 {image_index = 1} else image_index = 0;break;
+        case spr_molded_grounded_damageupdown: if vspd > 0 {image_index = 1} else image_index = 0;break;  
+    }
+}
+if t_red!= 0
+
+{
+    image_blend = c_red;
+    t_red -=0.1;   
+}
+if t_red = 0
+{
+    image_blend = c_white;
+}
+#endregion
+
+#region от обычного добивания
+if place_meeting(x,y,obj_hitbox_mask_finisher)  && hit_cd = 0  && state != 11//&& getKicked = 0
+{
+    vspd = -2;
+    hspd = sign(obj_Player.dir)*1;
+    getKicked = 1;
+    delay = 1;  
+    hit_cd = 1;
+    state = 10;
+    t_red = 1;
+    fnc_molded_green_blood_hit();
+}
+if place_meeting(x,y+1,obj_block) && delay = 0 && getKicked = 1
+    {
+        getKicked = 0;
+        hspd = 0;
+        vspd = 0;
+        state = 7;
+        
+    }
+#endregion
+
+#region от выпада 
+if place_meeting(x,y,obj_hitbox_mask_finisher_forward)  && hit_cd = 0 && state != 11//&& getKicked = 0
+{
+    t_red = 1;
+    vspd = -3;
+    fnc_molded_green_blood_forward();
+    hspd = sign(obj_Player.dir)*4;
+    getKicked = 2;
+    delay = 1;   
+    hit_cd = 1;
+    getBounced = 0;
+    state = 10;
+    sprite_index = spr_molded_grounded_damageforward;
+}
+if place_meeting(x-1,y,obj_block)  && getBounced = 0 && getKicked = 2
+{
+    vspd = -2;
+    hspd = 1;
+    getBounced = 1;
+}
+if place_meeting(x+1,y,obj_block)  && getBounced = 0 && getKicked = 2
+{
+    vspd = -2;
+    hspd = -1;
+    getBounced = 1;
+}
+
+if place_meeting(x,y+1,obj_block) && delay = 0 && getKicked = 2
+    {
+        getKicked = 0;
+        hspd = 0;
+        vspd = 0;
+        getBounced = 0;
+        state = 11;
+        sprite_index = spr_molded_grounded_wakeup;
+        image_index = 0;
+    }
+#endregion
+
+#region от подброса
+
+if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0 && state != 11// && getKicked = 0
+{
+    t_red = 1;
+    vspd = -6;
+    getKicked = 3;
+    delay = 1;  
+    getBounced = 1;
+    hit_cd = 1;
+    state = 10;
+    fnc_molded_green_blood_up();
+    sprite_index = spr_molded_grounded_damageupdown;
+}
+
+if place_meeting(x,y+1,obj_block) && delay = 0 && getKicked = 3
+{
+    if getBounced = 1 
+    {
+        getBounced = 0;
+        vspd = -2;
+        delay = 1;
+    } else 
+    {
+        vspd = 0;
+        getBounced = 0;
+        getKicked = 0
+        state = 11;
+        sprite_index = spr_molded_grounded_wakeup;
+        image_index = 0;
+    }
+}
+
+#endregion
+
+#region от удара вниз
+
+if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0 && state != 11//&& getKicked = 0 
+{
+    t_red = 1;
+    vspd = 6;
+    hit_cd = 1;
+    getKicked = 4;
+    delay = 1;  
+    getBounced = 1;
+    state = 10; 
+    fnc_molded_green_blood_down();
+    sprite_index = spr_molded_grounded_damageupdown;
+}
+if place_meeting(x,y+1,obj_block) && delay = 0 && getKicked = 4
+{
+    
+    if getBounced = 1 
+    {
+        getBounced = 0;
+        vspd = -4;
+        getKicked = 4;
+        delay = 1;
+    } else 
+    {
+        vspd = 0;
+        getBounced = 0;
+        getKicked = 0
+        state = 11;
+        sprite_index = spr_molded_grounded_wakeup;
+        image_index = 0;
+    }
+}
+
+#endregion
+
+#region Поднимание
+
+if state = 11
+{
+    image_speed = 0;
+    t++;
+    if t = 20
+    {
+        image_index = 1;   
+    }
+    if t = 30
+    {
+        state = 7;
+        t = 0;
+    }
+}
+
+#endregion
+
+#endregion
+
+#region Получение урона 
+
+if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0 && state != 11
 {
     if !place_meeting(x,y,obj_item_hook_masked)
     {
         if obj_Player.isGrounded = 0 
         {
-            obj_Player.vspd = -3.2;
+            obj_Player.vspd = -1.8;
         }   
         t =0;
         hit_timer = 1;
         hit_cd = 1;
+        t_red =1;
         enemy_hp -= 1;
-        state = 9;
-        combo_counter += 1;
-        combo_timer = 1;
+        //fnc_molded_green_blood_hit();
+        if state != 10
+        {
+            state = 9;
+        }
+        //combo_counter += 1;
+        //combo_timer = 1;
         hspd = 0;
-        vspd = 0;
+        if state = 10
+        {
+            flip = 1;
+            vspd = 0;
+        } 
+       // vspd = 0;
         if obj_Player.x < x 
         		{
         			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
         		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
-        if combo_counter > 2 
-        {
-            combo_counter = 0;
-            if obj_Player.x < x
-            {
-                hspd = 10;   
-            } else hspd = -10;
-        }
-    }   else 
-            {
-                hspd = 0;
-                vspd = 0;
-            }
+    }   
 }
 
-if place_meeting(x,y,obj_hitbox_mask_dash)  && hit_cd = 0
+if place_meeting(x,y,obj_hitbox_mask_dash) // && hit_cd = 0
 {
      
     t =0;
     hit_timer = 1;
-    hit_cd = 1;
     enemy_hp -= 1;
-    state = 9;
-    combo_counter += 1;
-    combo_timer = 1;
-    hspd = 0;
-    vspd = 0;
+    t_red = 1;
     if obj_Player.x < x 
         		{
         			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
@@ -409,15 +587,15 @@ if place_meeting(x,y,obj_hitbox_mask_dash)  && hit_cd = 0
     obj_Player.image_index = 0;
     obj_Player.isRecoil = 1;
     obj_Player.dashing_timer_count = 1;
-    
-    if combo_counter > 2 
-    {
-        combo_counter = 0;
-        if obj_Player.x < x
-        {
-            hspd = 10;   
-        } else hspd = -10;
-    }
+    fnc_molded_green_blood_forward()
+    vspd = -3;
+    hspd = sign(obj_Player.dir)*4;
+    getKicked = 2;
+    delay = 1;   
+    hit_cd = 1;
+    getBounced = 0;
+    state = 10;
+    sprite_index = spr_molded_grounded_damageforward;
 }
 
 if place_meeting(x,y,obj_hitbox_mask_hook)  && hit_cd = 0
@@ -433,15 +611,15 @@ if place_meeting(x,y,obj_hitbox_mask_hook)  && hit_cd = 0
         hit_cd = 1;
         enemy_hp -= 1;
         state = 9;
-        combo_counter += 1;
-        combo_timer = 1;
         hspd = 0;
         vspd = 0;
+        t_red = 1;
+        fnc_molded_green_blood_hit()
         if obj_Player.x < x 
         		{
         			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
         		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
-        combo_counter = 0;
+                
         if obj_Player.x < x
         {
             hspd = 10;   
@@ -458,6 +636,7 @@ if place_meeting(x,y,obj_firing_molded_projectile_reverse)  && hit_cd = 0
 {
     if !place_meeting(x,y,obj_item_hook_masked)
     { 
+        t_red = 1;
         t =0;
         hit_timer = 1;
         hit_cd = 1;
@@ -526,44 +705,34 @@ if state = 9
 
 #endregion
 
-#region Комбометр
-
-if combo_timer!=0
-{
-    combo_timer++;   
-}
-if combo_timer = 40
-{
-    combo_counter = 0;
-    combo_timer = 0;   
-}
-
-#endregion
-
 #region HitCD
     if hit_cd != 0
-        {
-            hit_cd ++;   
-        }
-        if hit_cd = 20
-        {
-            hit_cd = 0;   
-        }
+    {
+        hit_cd ++;   
+    }
+    if hit_cd = 10
+    {
+        hit_cd = 0;   
+    }
+    
 #endregion
 
 #region blob
-
-bl_t++;
-if bl_t = 20
+if  state != 11
 {
-    instance_create_depth(x,y-8,depth+1,obj_grounded_molded_blob);
-    bl_t = 0;
+    bl_t++;
+    if bl_t = 20
+    {
+        instance_create_depth(x,y-8,depth+1,obj_grounded_molded_blob);
+        bl_t = 0;
+    }
 }
 
 #endregion
 
 if enemy_hp <= 0 
 {
+    fnc_molded_dark_essence_none();
     var m = instance_create_depth(x,y,depth,obj_grounded_molded_dead);
     m.image_xscale = image_xscale;
     instance_destroy();       

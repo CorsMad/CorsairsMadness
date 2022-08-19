@@ -86,7 +86,7 @@ teleport_delay_timer = 0;
 #region Ограничения
 
 DashEnabled = global.dash;
-HookEnabled = global.fhook; /////
+HookEnabled = 1//global.fhook; /////
 
 SpecAbil = 1;
 #region Спец абилки human
@@ -102,7 +102,7 @@ specabilnumber = 2;
 #region Спец абилки Possessed
 // 1 - hook, 2 - teleport, 3 - superdash , 4 - doublejump, 5 - clone
 
-SpecAbilMask = 4;
+SpecAbilMask = 1;
 #endregion
 
 

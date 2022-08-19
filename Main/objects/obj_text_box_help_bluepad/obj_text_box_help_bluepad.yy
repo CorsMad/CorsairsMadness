@@ -2,6 +2,7 @@
   "spriteId": null,
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -22,7 +23,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Text box",
-    "path": "folders/Objects/Text/Text box.yy",
+    "path": "folders/Objects/Text/Text_old/Text box.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_text_box_help_bluepad",

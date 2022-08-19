@@ -24,24 +24,44 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e60db8ee-7c54-4a4f-9051-b5a3d0bd33f7","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e60db8ee-7c54-4a4f-9051-b5a3d0bd33f7","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"LayerId":{"name":"5b8bc158-f8c5-499f-be13-ddeb466ff6ef","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_map_snow_island","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","name":"e60db8ee-7c54-4a4f-9051-b5a3d0bd33f7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"dd8d8b6f-a71c-4121-93ab-19cf9100b852","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"dd8d8b6f-a71c-4121-93ab-19cf9100b852","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"LayerId":{"name":"4bcb6b49-9926-40da-9983-301fd2dfda3a","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_map_snow_island","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","name":"dd8d8b6f-a71c-4121-93ab-19cf9100b852","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2a30a014-ca75-47a9-921e-68c349e4ef7b","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2a30a014-ca75-47a9-921e-68c349e4ef7b","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"LayerId":{"name":"4bcb6b49-9926-40da-9983-301fd2dfda3a","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_map_snow_island","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","name":"2a30a014-ca75-47a9-921e-68c349e4ef7b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8c9dfbd8-d852-40d6-b12f-9c250ed5265e","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8c9dfbd8-d852-40d6-b12f-9c250ed5265e","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"LayerId":{"name":"4bcb6b49-9926-40da-9983-301fd2dfda3a","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_map_snow_island","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","name":"8c9dfbd8-d852-40d6-b12f-9c250ed5265e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2c7a1afa-aea7-4bef-b7f5-de6687d73e41","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2c7a1afa-aea7-4bef-b7f5-de6687d73e41","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"LayerId":{"name":"4bcb6b49-9926-40da-9983-301fd2dfda3a","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_map_snow_island","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","name":"2c7a1afa-aea7-4bef-b7f5-de6687d73e41","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"07fecd19-bca1-4936-922a-5e1a0fc877f1","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"07fecd19-bca1-4936-922a-5e1a0fc877f1","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"LayerId":{"name":"4bcb6b49-9926-40da-9983-301fd2dfda3a","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_map_snow_island","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","name":"07fecd19-bca1-4936-922a-5e1a0fc877f1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3cc79b68-9192-40c0-8221-bf0185c6aaa0","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3cc79b68-9192-40c0-8221-bf0185c6aaa0","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"LayerId":{"name":"4bcb6b49-9926-40da-9983-301fd2dfda3a","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_map_snow_island","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","name":"3cc79b68-9192-40c0-8221-bf0185c6aaa0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_map_snow_island","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 10.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 6.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e04763b5-59c0-46d0-a526-33b6fffed398","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e60db8ee-7c54-4a4f-9051-b5a3d0bd33f7","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"bec84d2d-df6a-41fd-a18e-28c1adc88ca9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dd8d8b6f-a71c-4121-93ab-19cf9100b852","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"dea5af85-8ac6-4cf1-bea7-98f173e2143c","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2a30a014-ca75-47a9-921e-68c349e4ef7b","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"7868e2ac-a971-4e51-89ee-7ca5abb5f1d4","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8c9dfbd8-d852-40d6-b12f-9c250ed5265e","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"fb038ecd-0bea-49e0-b188-4bf647706fc9","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2c7a1afa-aea7-4bef-b7f5-de6687d73e41","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"30d2584a-ccdf-46a4-8fdb-41c2ec9b54b3","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"07fecd19-bca1-4936-922a-5e1a0fc877f1","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"2c8192e2-c2cf-4cd4-9ab1-3dc801542c4d","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3cc79b68-9192-40c0-8221-bf0185c6aaa0","path":"sprites/spr_map_snow_island/spr_map_snow_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,12 +85,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5b8bc158-f8c5-499f-be13-ddeb466ff6ef","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4bcb6b49-9926-40da-9983-301fd2dfda3a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "JungleMap",
-    "path": "folders/Sprites/Map/JungleMap.yy",
+    "name": "JIslandMaps",
+    "path": "folders/Sprites/Map/JIslandMaps.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_map_snow_island",

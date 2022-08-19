@@ -24,24 +24,44 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f09df92c-1049-4baf-aa64-248c0a98f3d5","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f09df92c-1049-4baf-aa64-248c0a98f3d5","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"LayerId":{"name":"d4b92388-812f-47e3-9c81-f49196b8c458","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_map_graveyard_island","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","name":"f09df92c-1049-4baf-aa64-248c0a98f3d5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"340040b0-05e4-4ecd-8df7-1f9113a29177","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"340040b0-05e4-4ecd-8df7-1f9113a29177","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"LayerId":{"name":"0e04257e-a422-4c15-a14d-9b7ffe99986b","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_map_graveyard_island","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","name":"340040b0-05e4-4ecd-8df7-1f9113a29177","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2fc1917b-0053-45f8-9939-68c438381fd6","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2fc1917b-0053-45f8-9939-68c438381fd6","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"LayerId":{"name":"0e04257e-a422-4c15-a14d-9b7ffe99986b","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_map_graveyard_island","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","name":"2fc1917b-0053-45f8-9939-68c438381fd6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d7f7ef45-f6f7-448f-8d27-3c5dde650581","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d7f7ef45-f6f7-448f-8d27-3c5dde650581","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"LayerId":{"name":"0e04257e-a422-4c15-a14d-9b7ffe99986b","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_map_graveyard_island","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","name":"d7f7ef45-f6f7-448f-8d27-3c5dde650581","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e2bc8222-b390-43b3-b621-c2092ee09aab","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e2bc8222-b390-43b3-b621-c2092ee09aab","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"LayerId":{"name":"0e04257e-a422-4c15-a14d-9b7ffe99986b","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_map_graveyard_island","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","name":"e2bc8222-b390-43b3-b621-c2092ee09aab","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f90ae009-7826-4575-88b1-ddfca4c71a63","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f90ae009-7826-4575-88b1-ddfca4c71a63","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"LayerId":{"name":"0e04257e-a422-4c15-a14d-9b7ffe99986b","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_map_graveyard_island","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","name":"f90ae009-7826-4575-88b1-ddfca4c71a63","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1e82a7a7-53a5-46aa-abf4-5c546f2671e7","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1e82a7a7-53a5-46aa-abf4-5c546f2671e7","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"LayerId":{"name":"0e04257e-a422-4c15-a14d-9b7ffe99986b","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_map_graveyard_island","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","name":"1e82a7a7-53a5-46aa-abf4-5c546f2671e7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_map_graveyard_island","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 10.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 6.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ea9c89d3-0270-45c3-ae47-285b6cabc555","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f09df92c-1049-4baf-aa64-248c0a98f3d5","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"498bb17d-9883-482b-bf78-a07b16b93b94","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"340040b0-05e4-4ecd-8df7-1f9113a29177","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"73f5286b-eca4-4e6e-b9ee-814ee8d43d1f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2fc1917b-0053-45f8-9939-68c438381fd6","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"f590c8f5-6e5a-4237-b9f2-8f12df8044c3","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d7f7ef45-f6f7-448f-8d27-3c5dde650581","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"db444b62-4b4e-4f97-8b5b-8302f128c12c","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e2bc8222-b390-43b3-b621-c2092ee09aab","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"70f92075-3ff7-4eca-9274-6c51d3ee7ffd","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f90ae009-7826-4575-88b1-ddfca4c71a63","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"8a3b0194-5b1a-4077-b3a3-2543253fff48","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1e82a7a7-53a5-46aa-abf4-5c546f2671e7","path":"sprites/spr_map_graveyard_island/spr_map_graveyard_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,12 +85,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d4b92388-812f-47e3-9c81-f49196b8c458","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0e04257e-a422-4c15-a14d-9b7ffe99986b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "JungleMap",
-    "path": "folders/Sprites/Map/JungleMap.yy",
+    "name": "JIslandMaps",
+    "path": "folders/Sprites/Map/JIslandMaps.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_map_graveyard_island",

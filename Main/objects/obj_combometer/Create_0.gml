@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 sprite_index = -1;
-comboMeter = 5;
+comboMeter = 0;
 t1 = 0;
 t2 = 0;
 t3 = 0;

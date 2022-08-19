@@ -2,6 +2,7 @@
   "spriteId": null,
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -25,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Text",
-    "path": "folders/Objects/Text.yy",
+    "name": "Text_old",
+    "path": "folders/Objects/Text/Text_old.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_text_l1_endgame",

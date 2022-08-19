@@ -24,24 +24,44 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"eeea10b4-cbc6-4ccd-840b-068fc07be456","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"eeea10b4-cbc6-4ccd-840b-068fc07be456","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"LayerId":{"name":"a4740dfb-6ebc-457d-b962-580932a444bc","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_map_jungle_island","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","name":"eeea10b4-cbc6-4ccd-840b-068fc07be456","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"aee304e9-11d8-47e0-af6c-d593bdd83f61","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"aee304e9-11d8-47e0-af6c-d593bdd83f61","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"LayerId":{"name":"e7b5899c-b6e6-4e88-8de4-5f6e59623060","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_map_jungle_island","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","name":"aee304e9-11d8-47e0-af6c-d593bdd83f61","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"dbce7312-1099-45d1-b54f-3f4b8d88ac08","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"dbce7312-1099-45d1-b54f-3f4b8d88ac08","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"LayerId":{"name":"e7b5899c-b6e6-4e88-8de4-5f6e59623060","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_map_jungle_island","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","name":"dbce7312-1099-45d1-b54f-3f4b8d88ac08","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1d6996ef-537d-4cd4-9f58-a3fa4296b741","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1d6996ef-537d-4cd4-9f58-a3fa4296b741","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"LayerId":{"name":"e7b5899c-b6e6-4e88-8de4-5f6e59623060","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_map_jungle_island","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","name":"1d6996ef-537d-4cd4-9f58-a3fa4296b741","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"20fee8ed-3df9-43ba-add5-ee6e195ca564","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"20fee8ed-3df9-43ba-add5-ee6e195ca564","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"LayerId":{"name":"e7b5899c-b6e6-4e88-8de4-5f6e59623060","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_map_jungle_island","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","name":"20fee8ed-3df9-43ba-add5-ee6e195ca564","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e24a88da-1948-4f42-b56b-656fa0463cee","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e24a88da-1948-4f42-b56b-656fa0463cee","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"LayerId":{"name":"e7b5899c-b6e6-4e88-8de4-5f6e59623060","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_map_jungle_island","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","name":"e24a88da-1948-4f42-b56b-656fa0463cee","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"aad8b1a1-a732-4f8e-a8a8-4c48496d0de2","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"aad8b1a1-a732-4f8e-a8a8-4c48496d0de2","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"LayerId":{"name":"e7b5899c-b6e6-4e88-8de4-5f6e59623060","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_map_jungle_island","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","name":"aad8b1a1-a732-4f8e-a8a8-4c48496d0de2","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_map_jungle_island","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 10.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 6.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0f778b75-bc80-496e-be0c-021f60994dee","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eeea10b4-cbc6-4ccd-840b-068fc07be456","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"b097dbf2-e5d4-4fe4-8b0d-34aa42e30c71","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aee304e9-11d8-47e0-af6c-d593bdd83f61","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"6e73d60f-593b-419e-ac2a-aaca0d6a87bf","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dbce7312-1099-45d1-b54f-3f4b8d88ac08","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"9b84abcb-8405-4e0c-826f-9972c7acf810","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1d6996ef-537d-4cd4-9f58-a3fa4296b741","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"778d2d18-5482-4058-a891-449298d38b19","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"20fee8ed-3df9-43ba-add5-ee6e195ca564","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"8258b9b1-51bd-4f01-ac46-49663be4bf9e","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e24a88da-1948-4f42-b56b-656fa0463cee","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"b995c91e-755e-4421-a961-20e1f4ee8e2f","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aad8b1a1-a732-4f8e-a8a8-4c48496d0de2","path":"sprites/spr_map_jungle_island/spr_map_jungle_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,12 +85,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a4740dfb-6ebc-457d-b962-580932a444bc","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e7b5899c-b6e6-4e88-8de4-5f6e59623060","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "JungleMap",
-    "path": "folders/Sprites/Map/JungleMap.yy",
+    "name": "JIslandMaps",
+    "path": "folders/Sprites/Map/JIslandMaps.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_map_jungle_island",

@@ -4,7 +4,7 @@
     "path": "sprites/spr_block_mask/spr_block_mask.yy",
   },
   "solid": true,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

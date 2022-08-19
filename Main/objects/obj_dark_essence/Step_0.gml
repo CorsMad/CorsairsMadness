@@ -44,10 +44,3 @@ if to_player = 1
 		instance_destroy();	
 	}
 }
-
-b++;
-if b = 4
-{
-	instance_create_depth(x,y,1,obj_sfx3);
-	b = 0;
-}

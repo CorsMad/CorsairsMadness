@@ -11,7 +11,10 @@
     "path": "sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",
   },
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_parent_combo",
+    "path": "objects/obj_enemy_parent_combo/obj_enemy_parent_combo.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
