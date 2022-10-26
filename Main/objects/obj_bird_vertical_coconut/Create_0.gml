@@ -9,6 +9,4 @@ if instance_exists(obj_Player) {
     vspeed = lengthdir_y(spd,dir);
 }
 
-
-
 a = 0; // таймер жизни

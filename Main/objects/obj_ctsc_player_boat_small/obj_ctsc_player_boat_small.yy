@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_ctsc_player_boat_small",
   "spriteId": {
     "name": "spr_player_boat_ctscn",
     "path": "sprites/spr_player_boat_ctscn/spr_player_boat_ctscn.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -21,8 +25,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -30,8 +34,4 @@
     "name": "boat lvl",
     "path": "folders/Objects/Cutscenes/L1/boat lvl.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_ctsc_player_boat_small",
-  "tags": [],
-  "resourceType": "GMObject",
 }

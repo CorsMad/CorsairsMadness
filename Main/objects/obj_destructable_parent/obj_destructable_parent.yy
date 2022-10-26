@@ -1,7 +1,11 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_destructable_parent",
   "spriteId": null,
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -27,8 +31,4 @@
     "name": "Destructable blocks",
     "path": "folders/Objects/Blocks/Destructable blocks.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_destructable_parent",
-  "tags": [],
-  "resourceType": "GMObject",
 }

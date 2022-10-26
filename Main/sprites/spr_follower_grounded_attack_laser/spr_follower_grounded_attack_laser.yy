@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_follower_grounded_attack_laser",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 128,
   "height": 96,
   "textureGroupId": {
@@ -24,21 +28,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"5b91d160-b126-411a-b04d-a73264441a0c","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5b91d160-b126-411a-b04d-a73264441a0c","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"LayerId":{"name":"336925f1-e79a-4a36-8702-c1abb21e4e4e","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_follower_grounded_attack_laser","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"resourceVersion":"1.0","name":"5b91d160-b126-411a-b04d-a73264441a0c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"094f7f2b-6729-4837-b624-8b3e65310ac2","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"094f7f2b-6729-4837-b624-8b3e65310ac2","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"LayerId":{"name":"336925f1-e79a-4a36-8702-c1abb21e4e4e","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_follower_grounded_attack_laser","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"resourceVersion":"1.0","name":"094f7f2b-6729-4837-b624-8b3e65310ac2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4c61797c-a8f9-4743-8851-e3eac11cd9c4","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4c61797c-a8f9-4743-8851-e3eac11cd9c4","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"LayerId":{"name":"336925f1-e79a-4a36-8702-c1abb21e4e4e","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_follower_grounded_attack_laser","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"resourceVersion":"1.0","name":"4c61797c-a8f9-4743-8851-e3eac11cd9c4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"218ba66a-43c8-4f07-96dd-defc9d04d535","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"218ba66a-43c8-4f07-96dd-defc9d04d535","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"LayerId":{"name":"336925f1-e79a-4a36-8702-c1abb21e4e4e","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_follower_grounded_attack_laser","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"resourceVersion":"1.0","name":"218ba66a-43c8-4f07-96dd-defc9d04d535","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5b91d160-b126-411a-b04d-a73264441a0c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"094f7f2b-6729-4837-b624-8b3e65310ac2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4c61797c-a8f9-4743-8851-e3eac11cd9c4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"218ba66a-43c8-4f07-96dd-defc9d04d535",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_follower_grounded_attack_laser","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_follower_grounded_attack_laser",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -46,15 +44,15 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 4.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c2c6baef-f0dd-415e-a8fc-8de732f086b0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5b91d160-b126-411a-b04d-a73264441a0c","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"d2784dd9-0188-49bf-9e51-e6c367ef3186","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"094f7f2b-6729-4837-b624-8b3e65310ac2","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"16a44205-8a37-41df-b039-c1a57c07c793","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4c61797c-a8f9-4743-8851-e3eac11cd9c4","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"7bd9e238-d993-499e-b126-5b64c49f8986","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"218ba66a-43c8-4f07-96dd-defc9d04d535","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"c2c6baef-f0dd-415e-a8fc-8de732f086b0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5b91d160-b126-411a-b04d-a73264441a0c","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d2784dd9-0188-49bf-9e51-e6c367ef3186","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"094f7f2b-6729-4837-b624-8b3e65310ac2","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"16a44205-8a37-41df-b039-c1a57c07c793","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4c61797c-a8f9-4743-8851-e3eac11cd9c4","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7bd9e238-d993-499e-b126-5b64c49f8986","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"218ba66a-43c8-4f07-96dd-defc9d04d535","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +68,13 @@
     "yorigin": 96,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_follower_grounded_attack_laser","path":"sprites/spr_follower_grounded_attack_laser/spr_follower_grounded_attack_laser.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_follower_grounded_attack_laser",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"336925f1-e79a-4a36-8702-c1abb21e4e4e","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"336925f1-e79a-4a36-8702-c1abb21e4e4e","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Grounded",
     "path": "folders/Sprites/Enemies/Follower/Grounded.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_follower_grounded_attack_laser",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

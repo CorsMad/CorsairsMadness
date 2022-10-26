@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_boat_selector",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 480,
   "height": 270,
   "textureGroupId": {
@@ -24,15 +28,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"59a12799-6f60-427b-8213-de689543c93c","path":"sprites/spr_boat_selector/spr_boat_selector.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"59a12799-6f60-427b-8213-de689543c93c","path":"sprites/spr_boat_selector/spr_boat_selector.yy",},"LayerId":{"name":"069b68dd-2863-42fb-bd7c-bc76a7fdbbe6","path":"sprites/spr_boat_selector/spr_boat_selector.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_selector","path":"sprites/spr_boat_selector/spr_boat_selector.yy",},"resourceVersion":"1.0","name":"59a12799-6f60-427b-8213-de689543c93c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b951ce27-48b6-4f87-95d4-49a49d93c935","path":"sprites/spr_boat_selector/spr_boat_selector.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b951ce27-48b6-4f87-95d4-49a49d93c935","path":"sprites/spr_boat_selector/spr_boat_selector.yy",},"LayerId":{"name":"069b68dd-2863-42fb-bd7c-bc76a7fdbbe6","path":"sprites/spr_boat_selector/spr_boat_selector.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_selector","path":"sprites/spr_boat_selector/spr_boat_selector.yy",},"resourceVersion":"1.0","name":"b951ce27-48b6-4f87-95d4-49a49d93c935","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"59a12799-6f60-427b-8213-de689543c93c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b951ce27-48b6-4f87-95d4-49a49d93c935",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_boat_selector","path":"sprites/spr_boat_selector/spr_boat_selector.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_boat_selector",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -40,13 +42,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f8bcad9b-8d36-449f-82ec-5be9c481f34f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"59a12799-6f60-427b-8213-de689543c93c","path":"sprites/spr_boat_selector/spr_boat_selector.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"c36e5426-b1ae-4eeb-9913-2d4454e08a3c","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b951ce27-48b6-4f87-95d4-49a49d93c935","path":"sprites/spr_boat_selector/spr_boat_selector.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"f8bcad9b-8d36-449f-82ec-5be9c481f34f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"59a12799-6f60-427b-8213-de689543c93c","path":"sprites/spr_boat_selector/spr_boat_selector.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c36e5426-b1ae-4eeb-9913-2d4454e08a3c","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b951ce27-48b6-4f87-95d4-49a49d93c935","path":"sprites/spr_boat_selector/spr_boat_selector.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +64,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_boat_selector","path":"sprites/spr_boat_selector/spr_boat_selector.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_boat_selector",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"069b68dd-2863-42fb-bd7c-bc76a7fdbbe6","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"069b68dd-2863-42fb-bd7c-bc76a7fdbbe6","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Confirmation in the end",
     "path": "folders/Sprites/Level objects/Levels Stuff/Boat level/Confirmation in the end.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_boat_selector",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

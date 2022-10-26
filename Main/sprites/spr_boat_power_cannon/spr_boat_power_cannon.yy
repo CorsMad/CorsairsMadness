@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_boat_power_cannon",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 28,
   "height": 30,
   "textureGroupId": {
@@ -24,27 +28,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"418539a9-012d-4be2-bfc4-0d199b1b522a","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"418539a9-012d-4be2-bfc4-0d199b1b522a","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"LayerId":{"name":"b8e827da-1f16-4772-9f35-8309f807b793","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_power_cannon","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","name":"418539a9-012d-4be2-bfc4-0d199b1b522a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"013590d5-aee9-4758-a17b-7aab8b43ae53","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"013590d5-aee9-4758-a17b-7aab8b43ae53","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"LayerId":{"name":"b8e827da-1f16-4772-9f35-8309f807b793","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_power_cannon","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","name":"013590d5-aee9-4758-a17b-7aab8b43ae53","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1fa1fdcd-1b5a-4d71-80c5-b52159aa2bc9","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1fa1fdcd-1b5a-4d71-80c5-b52159aa2bc9","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"LayerId":{"name":"b8e827da-1f16-4772-9f35-8309f807b793","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_power_cannon","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","name":"1fa1fdcd-1b5a-4d71-80c5-b52159aa2bc9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"21e806fc-747c-42d9-b11d-b957c5f1f83d","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"21e806fc-747c-42d9-b11d-b957c5f1f83d","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"LayerId":{"name":"b8e827da-1f16-4772-9f35-8309f807b793","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_power_cannon","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","name":"21e806fc-747c-42d9-b11d-b957c5f1f83d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a2218b44-d0e6-4c97-a113-e4e89fd62d39","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a2218b44-d0e6-4c97-a113-e4e89fd62d39","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"LayerId":{"name":"b8e827da-1f16-4772-9f35-8309f807b793","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_power_cannon","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","name":"a2218b44-d0e6-4c97-a113-e4e89fd62d39","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c96a0048-a994-4506-b160-01babf731928","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c96a0048-a994-4506-b160-01babf731928","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"LayerId":{"name":"b8e827da-1f16-4772-9f35-8309f807b793","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_power_cannon","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","name":"c96a0048-a994-4506-b160-01babf731928","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"418539a9-012d-4be2-bfc4-0d199b1b522a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"013590d5-aee9-4758-a17b-7aab8b43ae53",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1fa1fdcd-1b5a-4d71-80c5-b52159aa2bc9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"21e806fc-747c-42d9-b11d-b957c5f1f83d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a2218b44-d0e6-4c97-a113-e4e89fd62d39",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c96a0048-a994-4506-b160-01babf731928",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_boat_power_cannon","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_boat_power_cannon",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -52,17 +46,17 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 6.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4d38c2c6-d49e-41c5-80e6-a5e765c82642","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"418539a9-012d-4be2-bfc4-0d199b1b522a","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"3c8cd878-67c0-4007-85b9-8426589ca06b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"013590d5-aee9-4758-a17b-7aab8b43ae53","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"7e1e4d88-407f-466e-bea4-481e733683c0","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1fa1fdcd-1b5a-4d71-80c5-b52159aa2bc9","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"d53b316b-cadc-41f7-ab58-6d85fd0357fe","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"21e806fc-747c-42d9-b11d-b957c5f1f83d","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"eb2ff71c-9a78-4352-ad7b-efc82491b92b","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a2218b44-d0e6-4c97-a113-e4e89fd62d39","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"fc297b56-5c2d-452a-845e-91eb9fae939f","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c96a0048-a994-4506-b160-01babf731928","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"4d38c2c6-d49e-41c5-80e6-a5e765c82642","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"418539a9-012d-4be2-bfc4-0d199b1b522a","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3c8cd878-67c0-4007-85b9-8426589ca06b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"013590d5-aee9-4758-a17b-7aab8b43ae53","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7e1e4d88-407f-466e-bea4-481e733683c0","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1fa1fdcd-1b5a-4d71-80c5-b52159aa2bc9","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d53b316b-cadc-41f7-ab58-6d85fd0357fe","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"21e806fc-747c-42d9-b11d-b957c5f1f83d","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"eb2ff71c-9a78-4352-ad7b-efc82491b92b","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a2218b44-d0e6-4c97-a113-e4e89fd62d39","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fc297b56-5c2d-452a-845e-91eb9fae939f","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c96a0048-a994-4506-b160-01babf731928","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +72,13 @@
     "yorigin": 15,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_boat_power_cannon","path":"sprites/spr_boat_power_cannon/spr_boat_power_cannon.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_boat_power_cannon",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b8e827da-1f16-4772-9f35-8309f807b793","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b8e827da-1f16-4772-9f35-8309f807b793","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Boat Powerup",
     "path": "folders/Sprites/Boat Powerup.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_boat_power_cannon",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

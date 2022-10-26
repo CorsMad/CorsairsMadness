@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_player_masked_death",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 108,
   "height": 42,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"c705d28c-0bbd-4305-b9e9-2c4d6c984d20","path":"sprites/spr_player_masked_death/spr_player_masked_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c705d28c-0bbd-4305-b9e9-2c4d6c984d20","path":"sprites/spr_player_masked_death/spr_player_masked_death.yy",},"LayerId":{"name":"c7788a87-2ad0-4c4a-8b2a-7857a81e69f3","path":"sprites/spr_player_masked_death/spr_player_masked_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_masked_death","path":"sprites/spr_player_masked_death/spr_player_masked_death.yy",},"resourceVersion":"1.0","name":"c705d28c-0bbd-4305-b9e9-2c4d6c984d20","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c705d28c-0bbd-4305-b9e9-2c4d6c984d20",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_player_masked_death","path":"sprites/spr_player_masked_death/spr_player_masked_death.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_player_masked_death",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +41,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"aa1d22b8-246d-4ba5-8464-a06fb3561a71","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c705d28c-0bbd-4305-b9e9-2c4d6c984d20","path":"sprites/spr_player_masked_death/spr_player_masked_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"aa1d22b8-246d-4ba5-8464-a06fb3561a71","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c705d28c-0bbd-4305-b9e9-2c4d6c984d20","path":"sprites/spr_player_masked_death/spr_player_masked_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 42,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_player_masked_death","path":"sprites/spr_player_masked_death/spr_player_masked_death.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_player_masked_death",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c7788a87-2ad0-4c4a-8b2a-7857a81e69f3","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c7788a87-2ad0-4c4a-8b2a-7857a81e69f3","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Player mask",
     "path": "folders/Sprites/Player/Player mask.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_player_masked_death",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

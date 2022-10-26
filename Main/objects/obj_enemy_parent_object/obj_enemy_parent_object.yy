@@ -1,7 +1,11 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_enemy_parent_object",
   "spriteId": null,
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -27,8 +31,4 @@
     "name": "1.objPARENTING",
     "path": "folders/Objects/Enemies/1.objPARENTING.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_enemy_parent_object",
-  "tags": [],
-  "resourceType": "GMObject",
 }

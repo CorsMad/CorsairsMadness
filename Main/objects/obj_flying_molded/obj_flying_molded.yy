@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_flying_molded",
   "spriteId": {
     "name": "spr_ground_molded_mask",
     "path": "sprites/spr_ground_molded_mask/spr_ground_molded_mask.yy",
@@ -11,7 +14,10 @@
     "path": "sprites/spr_ground_molded_mask/spr_ground_molded_mask.yy",
   },
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_parent_combo",
+    "path": "objects/obj_enemy_parent_combo/obj_enemy_parent_combo.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -25,8 +31,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -34,8 +40,4 @@
     "name": "Flying",
     "path": "folders/Objects/Enemies/Molded enemies/Flying.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_flying_molded",
-  "tags": [],
-  "resourceType": "GMObject",
 }

@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_diagonal_slime_dead",
   "spriteId": {
     "name": "spr_diagonal_slime_dead",
     "path": "sprites/spr_diagonal_slime_dead/spr_diagonal_slime_dead.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_diagonal_slime_mask",
     "path": "sprites/spr_diagonal_slime_mask/spr_diagonal_slime_mask.yy",
@@ -24,17 +28,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Diagonal slime",
-    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Diagonal slime.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Desert/Diagonal slime.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_diagonal_slime_dead",
-  "tags": [],
-  "resourceType": "GMObject",
 }

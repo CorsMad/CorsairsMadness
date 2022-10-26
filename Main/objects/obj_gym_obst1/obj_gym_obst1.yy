@@ -1,7 +1,11 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_gym_obst1",
   "spriteId": null,
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -18,7 +22,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -26,8 +30,4 @@
     "name": "Gym level",
     "path": "folders/Objects/Graphic objects/Gym level.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_gym_obst1",
-  "tags": [],
-  "resourceType": "GMObject",
 }

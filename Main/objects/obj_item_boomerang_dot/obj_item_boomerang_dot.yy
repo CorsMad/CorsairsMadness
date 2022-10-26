@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_item_boomerang_dot",
   "spriteId": {
     "name": "spr_item_boomerang_dot",
     "path": "sprites/spr_item_boomerang_dot/spr_item_boomerang_dot.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Boomerang",
     "path": "folders/Objects/Items/Boomerang.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_item_boomerang_dot",
-  "tags": [],
-  "resourceType": "GMObject",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "msc_Jungle1_boss",
   "conversionMode": 0,
   "compression": 2,
   "volume": 0.27,
@@ -17,8 +20,4 @@
     "name": "BGR music",
     "path": "folders/Sounds/BGR music.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "msc_Jungle1_boss",
-  "tags": [],
-  "resourceType": "GMSound",
 }

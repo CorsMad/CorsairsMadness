@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tls_pier",
   "spriteId": {
     "name": "bgr_boat_shore_pier",
     "path": "sprites/bgr_boat_shore_pier/bgr_boat_shore_pier.yy",
@@ -291,8 +294,4 @@
     "name": "Special tiles",
     "path": "folders/Tile Sets/Special tiles.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tls_pier",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

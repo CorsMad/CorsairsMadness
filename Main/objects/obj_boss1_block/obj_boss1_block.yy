@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_boss1_block",
   "spriteId": {
     "name": "spr_block_climb",
     "path": "sprites/spr_block_climb/spr_block_climb.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Boss1",
     "path": "folders/Objects/Enemies/Bosses/Boss1.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_boss1_block",
-  "tags": [],
-  "resourceType": "GMObject",
 }

@@ -3,8 +3,10 @@
 hspd = 0;
 vspd = 0;
 spd = 2;
+sspd = 0;
 fspd = 0;
 grav = 0;//0.25;
+
 
 oleg = 1;
 dash_buffer_human = 0;
@@ -27,6 +29,9 @@ isAirattacking_timer = 0;
 isGrounded = 0;
 isSkidding = 0;
 isSkidding_timer = 0;
+isSkating = 0;
+isSkatingonrail = 0;
+isSkatingAttack = 0;
 isDashing = 0;
 isAttackingdown = 0;
 isWallclimbing = 0;
@@ -85,12 +90,12 @@ teleport_delay_timer = 0;
 
 #region Ограничения
 
-DashEnabled = global.dash;
-HookEnabled = 1//global.fhook; /////
+DashEnabled = 1; //global.dash;
+HookEnabled = 0;//global.fhook; /////
 
 SpecAbil = 1;
 #region Спец абилки human
-specabilnumber = 2;
+specabilnumber = 0;
 
 /*
 1 - boots
@@ -154,6 +159,7 @@ turn_in_clone_timer = 0;
 turn_out_clone_timer = 0;
 clone_timer = 0;
 movespeed_inclone = 6;
+sk_t = 0;
 
 #endregion
 

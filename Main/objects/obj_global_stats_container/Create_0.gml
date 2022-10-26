@@ -24,6 +24,9 @@ if instance_exists(obj_Player)
 	obj_Player.death_timer = 0;
 	obj_Player.image_alpha = 1;
 	obj_Player.image_blend = c_white;
+    
+    
+    /*  ВАЖНОЕ
     if  obj_Player.state = 1
     {
         instance_create_depth(0,0,0,obj_music_controller_temple);   
@@ -32,6 +35,9 @@ if instance_exists(obj_Player)
     {
         instance_create_depth(0,0,0,obj_music_controller_jungle)      
     }
+    */
+    
+    
      /*
     if obj_Player.state = 3
     {

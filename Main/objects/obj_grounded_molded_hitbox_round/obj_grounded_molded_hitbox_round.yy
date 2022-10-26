@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_grounded_molded_hitbox_round",
   "spriteId": {
     "name": "spr_molded_grounded_hitbox_strfr",
     "path": "sprites/spr_molded_grounded_hitbox_strfr/spr_molded_grounded_hitbox_strfr.yy",
@@ -25,8 +28,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -34,8 +37,4 @@
     "name": "Grounded",
     "path": "folders/Objects/Enemies/Molded enemies/Grounded.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_grounded_molded_hitbox_round",
-  "tags": [],
-  "resourceType": "GMObject",
 }

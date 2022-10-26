@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_snake_bite",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 32,
   "height": 32,
   "textureGroupId": {
@@ -24,27 +28,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"393a137d-19b0-47ba-bfad-8b1684cd740b","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"393a137d-19b0-47ba-bfad-8b1684cd740b","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"LayerId":{"name":"97860334-a260-466c-a4e4-e3d0a7ecc90e","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snake_bite","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","name":"393a137d-19b0-47ba-bfad-8b1684cd740b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"18dcca86-59b1-48c9-884e-dff57b227e69","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"18dcca86-59b1-48c9-884e-dff57b227e69","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"LayerId":{"name":"97860334-a260-466c-a4e4-e3d0a7ecc90e","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snake_bite","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","name":"18dcca86-59b1-48c9-884e-dff57b227e69","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0a849458-88dc-42b9-8982-63e6b8988359","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0a849458-88dc-42b9-8982-63e6b8988359","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"LayerId":{"name":"97860334-a260-466c-a4e4-e3d0a7ecc90e","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snake_bite","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","name":"0a849458-88dc-42b9-8982-63e6b8988359","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"76da577e-4e91-4236-b4e0-5e04f7d7e18d","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"76da577e-4e91-4236-b4e0-5e04f7d7e18d","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"LayerId":{"name":"97860334-a260-466c-a4e4-e3d0a7ecc90e","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snake_bite","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","name":"76da577e-4e91-4236-b4e0-5e04f7d7e18d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4a09e863-f9f7-49b2-ad37-e86ecb5aa88f","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4a09e863-f9f7-49b2-ad37-e86ecb5aa88f","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"LayerId":{"name":"97860334-a260-466c-a4e4-e3d0a7ecc90e","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snake_bite","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","name":"4a09e863-f9f7-49b2-ad37-e86ecb5aa88f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b9b7871d-47f4-47f5-977d-a058b225db23","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b9b7871d-47f4-47f5-977d-a058b225db23","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"LayerId":{"name":"97860334-a260-466c-a4e4-e3d0a7ecc90e","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snake_bite","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","name":"b9b7871d-47f4-47f5-977d-a058b225db23","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"393a137d-19b0-47ba-bfad-8b1684cd740b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"18dcca86-59b1-48c9-884e-dff57b227e69",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0a849458-88dc-42b9-8982-63e6b8988359",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"76da577e-4e91-4236-b4e0-5e04f7d7e18d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4a09e863-f9f7-49b2-ad37-e86ecb5aa88f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b9b7871d-47f4-47f5-977d-a058b225db23",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_snake_bite","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_snake_bite",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -52,17 +46,17 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 6.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0f5ccd59-3e4c-4689-9547-f2a89f911ee9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"393a137d-19b0-47ba-bfad-8b1684cd740b","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"807741b2-d027-4f60-8c90-d3154b4a258a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"18dcca86-59b1-48c9-884e-dff57b227e69","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"ba5a808d-fe5e-4036-b06c-23b71c6d49a6","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0a849458-88dc-42b9-8982-63e6b8988359","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"997b2542-83ed-466f-967d-d0125b3641db","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"76da577e-4e91-4236-b4e0-5e04f7d7e18d","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"fdb2e7fc-a674-46d0-aa32-fda599b5dd92","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4a09e863-f9f7-49b2-ad37-e86ecb5aa88f","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"eca5426a-4765-407a-8baf-4f88d765c28b","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b9b7871d-47f4-47f5-977d-a058b225db23","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"0f5ccd59-3e4c-4689-9547-f2a89f911ee9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"393a137d-19b0-47ba-bfad-8b1684cd740b","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"807741b2-d027-4f60-8c90-d3154b4a258a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"18dcca86-59b1-48c9-884e-dff57b227e69","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ba5a808d-fe5e-4036-b06c-23b71c6d49a6","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0a849458-88dc-42b9-8982-63e6b8988359","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"997b2542-83ed-466f-967d-d0125b3641db","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"76da577e-4e91-4236-b4e0-5e04f7d7e18d","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fdb2e7fc-a674-46d0-aa32-fda599b5dd92","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4a09e863-f9f7-49b2-ad37-e86ecb5aa88f","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"eca5426a-4765-407a-8baf-4f88d765c28b","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b9b7871d-47f4-47f5-977d-a058b225db23","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +72,13 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_snake_bite","path":"sprites/spr_snake_bite/spr_snake_bite.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_snake_bite",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"97860334-a260-466c-a4e4-e3d0a7ecc90e","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"97860334-a260-466c-a4e4-e3d0a7ecc90e","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Snake_usual",
     "path": "folders/Sprites/Enemies/Snake_usual.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_snake_bite",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

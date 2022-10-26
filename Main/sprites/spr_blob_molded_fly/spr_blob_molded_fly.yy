@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_blob_molded_fly",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 64,
   "height": 32,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f34b3afd-62a0-4099-99b1-2fab8b10362d","path":"sprites/spr_blob_molded_fly/spr_blob_molded_fly.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f34b3afd-62a0-4099-99b1-2fab8b10362d","path":"sprites/spr_blob_molded_fly/spr_blob_molded_fly.yy",},"LayerId":{"name":"27475ea8-b348-4db0-a5fe-a2aa9e230f02","path":"sprites/spr_blob_molded_fly/spr_blob_molded_fly.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_blob_molded_fly","path":"sprites/spr_blob_molded_fly/spr_blob_molded_fly.yy",},"resourceVersion":"1.0","name":"f34b3afd-62a0-4099-99b1-2fab8b10362d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f34b3afd-62a0-4099-99b1-2fab8b10362d",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_blob_molded_fly","path":"sprites/spr_blob_molded_fly/spr_blob_molded_fly.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_blob_molded_fly",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +41,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"634e4fd8-5ee4-438a-8d93-aabcfbd1a3bf","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f34b3afd-62a0-4099-99b1-2fab8b10362d","path":"sprites/spr_blob_molded_fly/spr_blob_molded_fly.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"634e4fd8-5ee4-438a-8d93-aabcfbd1a3bf","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f34b3afd-62a0-4099-99b1-2fab8b10362d","path":"sprites/spr_blob_molded_fly/spr_blob_molded_fly.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_blob_molded_fly","path":"sprites/spr_blob_molded_fly/spr_blob_molded_fly.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_blob_molded_fly",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"27475ea8-b348-4db0-a5fe-a2aa9e230f02","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"27475ea8-b348-4db0-a5fe-a2aa9e230f02","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Blob",
     "path": "folders/Sprites/SFX/Blob.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_blob_molded_fly",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

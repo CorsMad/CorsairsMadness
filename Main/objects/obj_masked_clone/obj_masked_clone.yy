@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_masked_clone",
   "spriteId": {
     "name": "spr_masked_clone",
     "path": "sprites/spr_masked_clone/spr_masked_clone.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_player_mask",
     "path": "sprites/spr_player_mask/spr_player_mask.yy",
@@ -30,8 +34,4 @@
     "name": "Clone",
     "path": "folders/Objects/Player objects/Possessed Specials/Clone.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_masked_clone",
-  "tags": [],
-  "resourceType": "GMObject",
 }

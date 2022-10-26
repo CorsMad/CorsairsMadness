@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_block_dust",
   "spriteId": {
     "name": "spr_block_dust",
     "path": "sprites/spr_block_dust/spr_block_dust.yy",
   },
   "solid": true,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_block_mask",
     "path": "sprites/spr_block_mask/spr_block_mask.yy",
@@ -27,8 +31,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -36,8 +40,4 @@
     "name": "Dust  block",
     "path": "folders/Objects/Blocks/Dust  block.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_block_dust",
-  "tags": [],
-  "resourceType": "GMObject",
 }

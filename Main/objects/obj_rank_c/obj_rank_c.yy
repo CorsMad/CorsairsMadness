@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_rank_c",
   "spriteId": {
     "name": "spr_rank_c",
     "path": "sprites/spr_rank_c/spr_rank_c.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Rankings",
     "path": "folders/Objects/Rankings.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_rank_c",
-  "tags": [],
-  "resourceType": "GMObject",
 }

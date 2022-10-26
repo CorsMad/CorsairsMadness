@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_checkpoint_l1_r21",
   "spriteId": {
     "name": "spr_checkpoint_projectile",
     "path": "sprites/spr_checkpoint_projectile/spr_checkpoint_projectile.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -21,7 +25,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -29,8 +33,4 @@
     "name": "L1 checkpoints",
     "path": "folders/Objects/Level objects/Checkpoint/L1 checkpoints.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_checkpoint_l1_r21",
-  "tags": [],
-  "resourceType": "GMObject",
 }

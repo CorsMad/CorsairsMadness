@@ -22,7 +22,7 @@ if instance_exists(obj_Player)
     }
 }
 
-if place_meeting(x,y,obj_spikes) || place_meeting(x,y,obj_enemy_parent)
+if place_meeting(x,y,obj_spikes) //|| place_meeting(x,y,obj_enemy_parent)
 {
     obj_Player.vspd = -7;
     instance_create_depth(x,y+8,depth-1,obj_sfx4);

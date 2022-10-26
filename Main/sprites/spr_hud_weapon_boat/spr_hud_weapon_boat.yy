@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_hud_weapon_boat",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 28,
   "height": 27,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"63d506dd-1762-4e79-8c83-b27e1ac640b0","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"63d506dd-1762-4e79-8c83-b27e1ac640b0","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},"LayerId":{"name":"89eeecca-fd8d-47dd-acac-efe06b767078","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hud_weapon_boat","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},"resourceVersion":"1.0","name":"63d506dd-1762-4e79-8c83-b27e1ac640b0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3ff6d6be-b267-404f-b47a-8a7e093752d7","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3ff6d6be-b267-404f-b47a-8a7e093752d7","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},"LayerId":{"name":"89eeecca-fd8d-47dd-acac-efe06b767078","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hud_weapon_boat","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},"resourceVersion":"1.0","name":"3ff6d6be-b267-404f-b47a-8a7e093752d7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6c6c4f20-f18c-4508-ac3e-ba1b18373a64","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6c6c4f20-f18c-4508-ac3e-ba1b18373a64","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},"LayerId":{"name":"89eeecca-fd8d-47dd-acac-efe06b767078","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hud_weapon_boat","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},"resourceVersion":"1.0","name":"6c6c4f20-f18c-4508-ac3e-ba1b18373a64","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"63d506dd-1762-4e79-8c83-b27e1ac640b0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3ff6d6be-b267-404f-b47a-8a7e093752d7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6c6c4f20-f18c-4508-ac3e-ba1b18373a64",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_hud_weapon_boat","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_hud_weapon_boat",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -43,14 +43,14 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 3.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"349e66fb-a32b-4e58-89b1-8a62b6f702c6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"63d506dd-1762-4e79-8c83-b27e1ac640b0","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"72f73978-0dac-44f5-9885-e333abee15c1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3ff6d6be-b267-404f-b47a-8a7e093752d7","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"c02c2129-61bf-4170-9b35-469dc5668290","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6c6c4f20-f18c-4508-ac3e-ba1b18373a64","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"349e66fb-a32b-4e58-89b1-8a62b6f702c6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"63d506dd-1762-4e79-8c83-b27e1ac640b0","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"72f73978-0dac-44f5-9885-e333abee15c1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3ff6d6be-b267-404f-b47a-8a7e093752d7","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c02c2129-61bf-4170-9b35-469dc5668290","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6c6c4f20-f18c-4508-ac3e-ba1b18373a64","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 13,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_hud_weapon_boat","path":"sprites/spr_hud_weapon_boat/spr_hud_weapon_boat.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_hud_weapon_boat",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"89eeecca-fd8d-47dd-acac-efe06b767078","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"89eeecca-fd8d-47dd-acac-efe06b767078","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "HUD",
     "path": "folders/Sprites/HUD.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_hud_weapon_boat",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

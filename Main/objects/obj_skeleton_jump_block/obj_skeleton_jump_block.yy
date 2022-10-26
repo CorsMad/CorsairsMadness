@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_skeleton_jump_block",
   "spriteId": {
     "name": "spr_skeleton_jump_block",
     "path": "sprites/spr_skeleton_jump_block/spr_skeleton_jump_block.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -25,10 +29,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Skeleton",
-    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Skeletons/Skeleton.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/OVERALL/Skeletons/Skeleton.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_skeleton_jump_block",
-  "tags": [],
-  "resourceType": "GMObject",
 }

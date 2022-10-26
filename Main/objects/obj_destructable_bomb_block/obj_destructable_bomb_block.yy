@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_destructable_bomb_block",
   "spriteId": {
     "name": "spr_destructable_bomb_block",
     "path": "sprites/spr_destructable_bomb_block/spr_destructable_bomb_block.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -24,8 +28,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,8 +37,4 @@
     "name": "Destructable bomb blocks",
     "path": "folders/Objects/Blocks/Destructable bomb blocks.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_destructable_bomb_block",
-  "tags": [],
-  "resourceType": "GMObject",
 }

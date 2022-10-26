@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_molded_firing_death",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 56,
   "height": 56,
   "textureGroupId": {
@@ -24,30 +28,18 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"190c7035-27c7-4e2b-add3-c5226db25f27","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"190c7035-27c7-4e2b-add3-c5226db25f27","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"LayerId":{"name":"f3aca1dd-af99-4a25-b1dd-bc8fb88c71d4","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_firing_death","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","name":"190c7035-27c7-4e2b-add3-c5226db25f27","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c4705a58-88fe-4ed2-99ce-23abfbb83fbf","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c4705a58-88fe-4ed2-99ce-23abfbb83fbf","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"LayerId":{"name":"f3aca1dd-af99-4a25-b1dd-bc8fb88c71d4","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_firing_death","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","name":"c4705a58-88fe-4ed2-99ce-23abfbb83fbf","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"689e8711-c974-40f7-8fe6-96e9159d33f6","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"689e8711-c974-40f7-8fe6-96e9159d33f6","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"LayerId":{"name":"f3aca1dd-af99-4a25-b1dd-bc8fb88c71d4","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_firing_death","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","name":"689e8711-c974-40f7-8fe6-96e9159d33f6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c8924afa-b40b-46b6-ac4d-fba2d1ad232e","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c8924afa-b40b-46b6-ac4d-fba2d1ad232e","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"LayerId":{"name":"f3aca1dd-af99-4a25-b1dd-bc8fb88c71d4","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_firing_death","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","name":"c8924afa-b40b-46b6-ac4d-fba2d1ad232e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c3d82d48-a12d-4467-a7c6-64409cd76e6c","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c3d82d48-a12d-4467-a7c6-64409cd76e6c","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"LayerId":{"name":"f3aca1dd-af99-4a25-b1dd-bc8fb88c71d4","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_firing_death","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","name":"c3d82d48-a12d-4467-a7c6-64409cd76e6c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"92c16ef1-2c94-4df2-86ef-de5d54b4bf72","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"92c16ef1-2c94-4df2-86ef-de5d54b4bf72","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"LayerId":{"name":"f3aca1dd-af99-4a25-b1dd-bc8fb88c71d4","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_firing_death","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","name":"92c16ef1-2c94-4df2-86ef-de5d54b4bf72","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c9e88cc5-ab1a-4955-ad47-005cc036d82a","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c9e88cc5-ab1a-4955-ad47-005cc036d82a","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"LayerId":{"name":"f3aca1dd-af99-4a25-b1dd-bc8fb88c71d4","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_firing_death","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","name":"c9e88cc5-ab1a-4955-ad47-005cc036d82a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"190c7035-27c7-4e2b-add3-c5226db25f27",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c4705a58-88fe-4ed2-99ce-23abfbb83fbf",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"689e8711-c974-40f7-8fe6-96e9159d33f6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c8924afa-b40b-46b6-ac4d-fba2d1ad232e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c3d82d48-a12d-4467-a7c6-64409cd76e6c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"92c16ef1-2c94-4df2-86ef-de5d54b4bf72",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c9e88cc5-ab1a-4955-ad47-005cc036d82a",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_molded_firing_death","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_molded_firing_death",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -55,18 +47,18 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 7.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"93f95191-f28b-45fc-989b-92d5861d2fe7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"190c7035-27c7-4e2b-add3-c5226db25f27","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"cb393c9f-a5bd-401e-ac60-a29f07332436","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c4705a58-88fe-4ed2-99ce-23abfbb83fbf","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"6b3e7c18-ef3c-4501-89a4-bc087794fd80","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"689e8711-c974-40f7-8fe6-96e9159d33f6","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"0d1956bf-23b9-41c6-afb9-128fc3e3e560","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c8924afa-b40b-46b6-ac4d-fba2d1ad232e","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"d6d2aa4b-2c25-47f7-b9ae-d96b88925d4b","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c3d82d48-a12d-4467-a7c6-64409cd76e6c","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"1435e097-65c3-445b-af43-86f0f6d3572f","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"92c16ef1-2c94-4df2-86ef-de5d54b4bf72","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"36b21598-0c99-4e9d-9eb3-c793e0c3eaab","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c9e88cc5-ab1a-4955-ad47-005cc036d82a","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"93f95191-f28b-45fc-989b-92d5861d2fe7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"190c7035-27c7-4e2b-add3-c5226db25f27","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"cb393c9f-a5bd-401e-ac60-a29f07332436","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c4705a58-88fe-4ed2-99ce-23abfbb83fbf","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6b3e7c18-ef3c-4501-89a4-bc087794fd80","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"689e8711-c974-40f7-8fe6-96e9159d33f6","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0d1956bf-23b9-41c6-afb9-128fc3e3e560","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c8924afa-b40b-46b6-ac4d-fba2d1ad232e","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d6d2aa4b-2c25-47f7-b9ae-d96b88925d4b","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c3d82d48-a12d-4467-a7c6-64409cd76e6c","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1435e097-65c3-445b-af43-86f0f6d3572f","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"92c16ef1-2c94-4df2-86ef-de5d54b4bf72","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"36b21598-0c99-4e9d-9eb3-c793e0c3eaab","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c9e88cc5-ab1a-4955-ad47-005cc036d82a","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -82,22 +74,13 @@
     "yorigin": 56,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_molded_firing_death","path":"sprites/spr_molded_firing_death/spr_molded_firing_death.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_molded_firing_death",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f3aca1dd-af99-4a25-b1dd-bc8fb88c71d4","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f3aca1dd-af99-4a25-b1dd-bc8fb88c71d4","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Firing",
     "path": "folders/Sprites/Enemies/Molded/Firing.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_molded_firing_death",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

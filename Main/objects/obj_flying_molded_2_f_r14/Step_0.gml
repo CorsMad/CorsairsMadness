@@ -1,8 +1,28 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+#region Анимации
+if t_red!= 0
+{
+    image_blend = c_red;
+    t_red -=0.1;   
+}
+if t_red = 0
+{
+    image_blend = c_white;
+}
+#endregion
+
 #region живой
 if isAlive = 1
 {
+    #region  Пересечение с блок
+    if place_meeting(x,y,obj_block)
+    {
+           isCrossing = 1;
+    } else isCrossing = 0;
+    #endregion
+    
     #region Патруль
     
         if state = 1 && state != 9 
@@ -114,6 +134,11 @@ if isAlive = 1
                 state = 4;            
                 spd = 0;
                 image_index = 0;
+                
+                // создангик хитбокса
+                var hb = instance_create_depth(x,y,depth,obj_flying_molded_hitbox);
+                hb.oleg = id;
+                
             }
         }
     #endregion
@@ -249,69 +274,50 @@ if isAlive = 1
             {
         		if obj_Player.isGrounded = 0 
         		{
-        			obj_Player.vspd = -3.2;
+        			obj_Player.vspd = -1.8; //3.2
         		}
                 sprite_index = spr_molded_flying_take_dmg;    
                 hit_cd = 1;
                 enemy_hp -= 1;
                 state = 9;
+                /*
                 combo_counter += 1;
                 combo_timer = 1;
-                
-                if combo_counter >= 3
-                {
-                    if obj_Player.x >= x
-                    {
-                        hspd = -3;  
-                    } else hspd = 3;
-                    combo_counter = 0;
-                }
-                
-                
-                /*
-                if combo_counter < 3
-                {
-                    if obj_Player.x >= x
-                    {
-                        hspd = -3;  
-                    } else hspd = 3;
-                } else  {
-                            if obj_Player.x >= x
-                            {
-                                hspd = -5;  
-                            } else hspd = 5;
-                            combo_counter = 0;
-                        }
-                */     
+                */
+                t_red = 1;
+                vspd = 0;
+                hspd = 0;
+                delay = 0;
+                flip = 0;
+                getBounced = 0;
+                getKicked = 0;
                 if obj_Player.x < x 
         		{
         			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
         		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
-                vspd = -1.5;
+                
                 hspeed = 0;
                 vspeed = 0;
             } else  {    
                         hspeed = 0;
                         vspeed = 0;
+                        hspd = 0;
+                        vspd = 0;
                     }
         
         }
     
-        if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0
+        if place_meeting(x,y,obj_hitbox_mask_dash) //&& hit_cd = 0
     	{
             sprite_index = spr_molded_flying_take_dmg;
             hit_cd = 1;
             state = 9;
             enemy_hp -=1;
-            /*
-            if obj_Player.x >= x
-            {
-                hspd = -3;  
-            } else hspd = 3;
-            */
+            t_red = 1;
             vspd = -1.5;
             hspeed = 0;
             vspeed = 0;
+            hspd = sign(obj_Player.dir)*4;
     		obj_Player.image_index = 0;
             obj_Player.isRecoil = 1;
             obj_Player.dashing_timer_count = 1;
@@ -345,6 +351,7 @@ if isAlive = 1
                 vspd = -1.5;
                 hspeed = 0;
                 vspeed = 0;
+                t_red = 1;
             } else  {    
                         hspeed = 0;
                         vspeed = 0;
@@ -379,24 +386,7 @@ if isAlive = 1
                         hspd = -3;  
                     } else hspd = 3;
                     combo_counter = 0;
-                }
-                
-                
-                /*
-                if combo_counter < 3
-                {
-                    if obj_Player.x >= x
-                    {
-                        hspd = -3;  
-                    } else hspd = 3;
-                } else  {
-                            if obj_Player.x >= x
-                            {
-                                hspd = -5;  
-                            } else hspd = 5;
-                            combo_counter = 0;
-                        }
-                */     
+                }   
                         
                 if obj_Player.x < x 
         		{
@@ -456,12 +446,207 @@ if isAlive = 1
                 hit_cd ++;   
             }
            // if hit_cd = 15
-            if hit_cd = 15
+            if hit_cd = 10
             {
                 hit_cd = 0;   
             }
         
         
+    #endregion
+    
+    #region Получение урона от добиваний
+    if delay > 0 
+    {
+        delay -=0.5;   
+    }
+    if flip > 0
+    {
+        flip -=0.05;   
+    }
+
+    #region Анимация
+    if state = 10 
+    {
+        x+=hspd;
+        y+=vspd;
+        if hspd> 0
+        {
+            hspd -= 0.25;
+        }
+        if hspd < 0
+        {
+            hspd += 0.25;   
+        }
+        if vspd> 0
+        {
+            vspd -= 0.25;
+        }
+        if vspd < 0
+        {
+            vspd += 0.25;   
+        }
+        image_speed = 0;
+        
+        if vspd = 0 && hspd = 0
+        {
+            state = 3;
+        }
+    }
+    if t_red!= 0
+
+    {
+        image_blend = c_red;
+        t_red -=0.1;   
+    }
+    if t_red = 0
+    {
+        image_blend = c_white;
+    }
+    #endregion
+
+    #region от обычного добивания
+   
+   if place_meeting(x,y,obj_hitbox_mask_finisher)  && hit_cd = 0  && state != 11//&& getKicked = 0
+    {
+        vspd = -2;
+        hspd = sign(obj_Player.dir)*2;
+        getKicked = 1;
+        delay = 1;  
+        hit_cd = 1;
+        state = 10;
+        t_red = 1;
+        fnc_molded_green_blood_hit();
+    }
+    if place_meeting(x,y+1,obj_block) && delay = 0 && getKicked = 1
+        {
+            getKicked = 0;
+            hspd = 0;
+            vspd = 0;
+            state = 7;
+            fnc_molded_green_blood_hit();
+        }
+    #endregion
+
+    #region от выпада 
+    if place_meeting(x,y,obj_hitbox_mask_finisher_forward)  && hit_cd = 0 && state != 11//&& getKicked = 0
+    {
+        t_red = 1;
+        vspd = 2;
+        hspd = sign(obj_Player.dir)*6;
+        getKicked = 2;
+        delay = 1;   
+        hit_cd = 1;
+        getBounced = 0;
+        state = 10;
+        t_red = 1;
+        fnc_molded_green_blood_forward();
+    }
+    /*
+    if place_meeting(x-1,y,obj_block)  && getBounced = 0 && getKicked = 2 && isCrossing = 0
+    {
+        vspd = -3;
+        hspd = 3;
+        getBounced = 1;
+    }
+    if place_meeting(x+1,y,obj_block)  && getBounced = 0 && getKicked = 2 && isCrossing = 0
+    {
+        vspd = -3;
+        hspd = -3;
+        getBounced = 1;
+    }
+*/
+    
+    #endregion
+
+    #region от подброса
+
+    if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0 && state != 11 // && getKicked = 0
+    {
+        t_red = 1;
+        vspd = -6;
+        getKicked = 3;
+        delay = 1;  
+        getBounced = 1;
+        hit_cd = 1;
+        state = 10;
+        t_red = 1;
+        fnc_molded_green_blood_up();
+        
+    }
+
+    if place_meeting(x,y+1,obj_block) && delay = 0 && getKicked = 3 && isCrossing = 0
+    {
+        if getBounced = 1 
+        {
+            getBounced = 0;
+            vspd = -2;
+            delay = 1;
+        } else 
+        {
+            vspd = 0;
+            getBounced = 0;
+            getKicked = 0
+            state = 11;
+            
+        }
+    }
+
+    #endregion
+
+    #region от удара вниз
+
+    if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0 && state != 11//&& getKicked = 0 
+    {
+        t_red = 1;
+        vspd = 6;
+        hit_cd = 1;
+        getKicked = 4;
+        delay = 1;  
+        getBounced = 1;
+        state = 10; 
+        t_red = 1;
+        fnc_molded_green_blood_down();
+    }
+    if place_meeting(x,y+1,obj_block) && delay = 0 && getKicked = 4 && isCrossing = 0
+    {
+    
+        if getBounced = 1 
+        {
+            getBounced = 0;
+            vspd = -4;
+            getKicked = 4;
+            delay = 1;
+        } else 
+        {
+            vspd = 0;
+            getBounced = 0;
+            getKicked = 0
+            state = 11;
+            
+        }
+    }
+
+    #endregion
+
+    #region Поднимание
+
+    if state = 11
+    {
+        image_speed = 0;
+        t++;
+        if t = 20
+        {
+            image_index = 1;   
+        }
+        if t = 30
+        {
+            state = 7;
+            t = 0;
+        }
+    }
+
+    #endregion
+
     #endregion
     
     #region Комбо таймер
@@ -488,6 +673,7 @@ if isAlive = 1
 
 if isAlive = 0
 {
+    fnc_molded_dark_essence_none();
     var i = instance_create_depth(x,y,depth,obj_flying_molded_dead);
     i.image_xscale = image_xscale;
     instance_destroy();
@@ -498,3 +684,4 @@ if isAlive = 0
 }
 
 #endregion
+

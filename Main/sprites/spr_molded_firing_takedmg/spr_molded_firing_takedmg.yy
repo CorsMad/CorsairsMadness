@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_molded_firing_takedmg",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 56,
   "height": 56,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a7f18421-fdcd-457c-99e6-f59f4498312a","path":"sprites/spr_molded_firing_takedmg/spr_molded_firing_takedmg.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a7f18421-fdcd-457c-99e6-f59f4498312a","path":"sprites/spr_molded_firing_takedmg/spr_molded_firing_takedmg.yy",},"LayerId":{"name":"b0a1d2fb-6c64-4fa8-9db6-9895e3d8e45b","path":"sprites/spr_molded_firing_takedmg/spr_molded_firing_takedmg.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_firing_takedmg","path":"sprites/spr_molded_firing_takedmg/spr_molded_firing_takedmg.yy",},"resourceVersion":"1.0","name":"a7f18421-fdcd-457c-99e6-f59f4498312a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a7f18421-fdcd-457c-99e6-f59f4498312a",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_molded_firing_takedmg","path":"sprites/spr_molded_firing_takedmg/spr_molded_firing_takedmg.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_molded_firing_takedmg",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +41,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"37a5c63c-8b8f-4d90-9051-5ae87a0ab119","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a7f18421-fdcd-457c-99e6-f59f4498312a","path":"sprites/spr_molded_firing_takedmg/spr_molded_firing_takedmg.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"37a5c63c-8b8f-4d90-9051-5ae87a0ab119","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a7f18421-fdcd-457c-99e6-f59f4498312a","path":"sprites/spr_molded_firing_takedmg/spr_molded_firing_takedmg.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 56,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_molded_firing_takedmg","path":"sprites/spr_molded_firing_takedmg/spr_molded_firing_takedmg.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_molded_firing_takedmg",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b0a1d2fb-6c64-4fa8-9db6-9895e3d8e45b","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b0a1d2fb-6c64-4fa8-9db6-9895e3d8e45b","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Firing",
     "path": "folders/Sprites/Enemies/Molded/Firing.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_molded_firing_takedmg",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

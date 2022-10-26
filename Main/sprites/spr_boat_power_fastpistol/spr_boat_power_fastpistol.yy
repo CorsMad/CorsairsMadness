@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_boat_power_fastpistol",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 28,
   "height": 30,
   "textureGroupId": {
@@ -24,27 +28,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"bfbe0d45-90c9-4e03-ac2d-e31e061b3d7b","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bfbe0d45-90c9-4e03-ac2d-e31e061b3d7b","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"LayerId":{"name":"774c84c1-e4ab-46a2-b0db-6701182f1efa","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_power_fastpistol","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","name":"bfbe0d45-90c9-4e03-ac2d-e31e061b3d7b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f061f216-1b97-49d0-8fbe-6c8ecc87a559","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f061f216-1b97-49d0-8fbe-6c8ecc87a559","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"LayerId":{"name":"774c84c1-e4ab-46a2-b0db-6701182f1efa","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_power_fastpistol","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","name":"f061f216-1b97-49d0-8fbe-6c8ecc87a559","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"91d92038-0328-4d3f-aa5c-2d1941f91d82","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"91d92038-0328-4d3f-aa5c-2d1941f91d82","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"LayerId":{"name":"774c84c1-e4ab-46a2-b0db-6701182f1efa","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_power_fastpistol","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","name":"91d92038-0328-4d3f-aa5c-2d1941f91d82","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"90b01d92-2911-46aa-be4b-c07ee51cc9b4","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"90b01d92-2911-46aa-be4b-c07ee51cc9b4","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"LayerId":{"name":"774c84c1-e4ab-46a2-b0db-6701182f1efa","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_power_fastpistol","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","name":"90b01d92-2911-46aa-be4b-c07ee51cc9b4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"406fa51d-2623-43a5-bfc4-6a7b89de9b34","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"406fa51d-2623-43a5-bfc4-6a7b89de9b34","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"LayerId":{"name":"774c84c1-e4ab-46a2-b0db-6701182f1efa","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_power_fastpistol","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","name":"406fa51d-2623-43a5-bfc4-6a7b89de9b34","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"601bd0ff-cb1f-4e57-b0e7-fa933f8cc201","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"601bd0ff-cb1f-4e57-b0e7-fa933f8cc201","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"LayerId":{"name":"774c84c1-e4ab-46a2-b0db-6701182f1efa","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_power_fastpistol","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","name":"601bd0ff-cb1f-4e57-b0e7-fa933f8cc201","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bfbe0d45-90c9-4e03-ac2d-e31e061b3d7b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f061f216-1b97-49d0-8fbe-6c8ecc87a559",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"91d92038-0328-4d3f-aa5c-2d1941f91d82",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"90b01d92-2911-46aa-be4b-c07ee51cc9b4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"406fa51d-2623-43a5-bfc4-6a7b89de9b34",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"601bd0ff-cb1f-4e57-b0e7-fa933f8cc201",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_boat_power_fastpistol","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_boat_power_fastpistol",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -52,17 +46,17 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 6.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e8fa7641-7223-4fd7-9619-b80cc33caa05","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bfbe0d45-90c9-4e03-ac2d-e31e061b3d7b","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"aa1e2e4a-fbcf-4873-b2e3-17c9f4ab5412","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f061f216-1b97-49d0-8fbe-6c8ecc87a559","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"dc427add-e6f6-4542-a40d-d9f1468668c0","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"91d92038-0328-4d3f-aa5c-2d1941f91d82","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"2e9eca3b-c591-45c1-9047-c9668e638914","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"90b01d92-2911-46aa-be4b-c07ee51cc9b4","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"65de3d8f-11a2-472e-a32a-4c7e83557638","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"406fa51d-2623-43a5-bfc4-6a7b89de9b34","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"23e8aae2-fd59-457a-bfcb-9e979f35221a","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"601bd0ff-cb1f-4e57-b0e7-fa933f8cc201","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"e8fa7641-7223-4fd7-9619-b80cc33caa05","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bfbe0d45-90c9-4e03-ac2d-e31e061b3d7b","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"aa1e2e4a-fbcf-4873-b2e3-17c9f4ab5412","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f061f216-1b97-49d0-8fbe-6c8ecc87a559","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"dc427add-e6f6-4542-a40d-d9f1468668c0","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"91d92038-0328-4d3f-aa5c-2d1941f91d82","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2e9eca3b-c591-45c1-9047-c9668e638914","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"90b01d92-2911-46aa-be4b-c07ee51cc9b4","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"65de3d8f-11a2-472e-a32a-4c7e83557638","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"406fa51d-2623-43a5-bfc4-6a7b89de9b34","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"23e8aae2-fd59-457a-bfcb-9e979f35221a","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"601bd0ff-cb1f-4e57-b0e7-fa933f8cc201","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +72,13 @@
     "yorigin": 15,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_boat_power_fastpistol","path":"sprites/spr_boat_power_fastpistol/spr_boat_power_fastpistol.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_boat_power_fastpistol",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"774c84c1-e4ab-46a2-b0db-6701182f1efa","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"774c84c1-e4ab-46a2-b0db-6701182f1efa","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Boat Powerup",
     "path": "folders/Sprites/Boat Powerup.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_boat_power_fastpistol",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

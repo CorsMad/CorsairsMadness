@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_grounded_molded3_f1_r28",
   "spriteId": {
     "name": "spr_molded_grounded_mask",
     "path": "sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",
@@ -28,8 +31,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -37,8 +40,4 @@
     "name": "Enemies",
     "path": "folders/Objects/Level objects SPECIAL/F1_r28/Enemies.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_grounded_molded3_f1_r28",
-  "tags": [],
-  "resourceType": "GMObject",
 }

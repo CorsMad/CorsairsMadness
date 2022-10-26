@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_dove_klev",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 32,
   "height": 24,
   "textureGroupId": {
@@ -24,15 +28,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"8990a8c8-604c-4abe-9a6c-d679f16c31a6","path":"sprites/spr_dove_klev/spr_dove_klev.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8990a8c8-604c-4abe-9a6c-d679f16c31a6","path":"sprites/spr_dove_klev/spr_dove_klev.yy",},"LayerId":{"name":"2b6c2fa6-d4f5-4ef9-b367-c983fd3e1750","path":"sprites/spr_dove_klev/spr_dove_klev.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dove_klev","path":"sprites/spr_dove_klev/spr_dove_klev.yy",},"resourceVersion":"1.0","name":"8990a8c8-604c-4abe-9a6c-d679f16c31a6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f7f3e32e-14a6-4437-b966-c45bd299a15a","path":"sprites/spr_dove_klev/spr_dove_klev.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f7f3e32e-14a6-4437-b966-c45bd299a15a","path":"sprites/spr_dove_klev/spr_dove_klev.yy",},"LayerId":{"name":"2b6c2fa6-d4f5-4ef9-b367-c983fd3e1750","path":"sprites/spr_dove_klev/spr_dove_klev.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dove_klev","path":"sprites/spr_dove_klev/spr_dove_klev.yy",},"resourceVersion":"1.0","name":"f7f3e32e-14a6-4437-b966-c45bd299a15a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8990a8c8-604c-4abe-9a6c-d679f16c31a6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f7f3e32e-14a6-4437-b966-c45bd299a15a",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_dove_klev","path":"sprites/spr_dove_klev/spr_dove_klev.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_dove_klev",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 20.0,
@@ -40,13 +42,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e15b222b-944a-4754-9c69-e3948908e6c9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8990a8c8-604c-4abe-9a6c-d679f16c31a6","path":"sprites/spr_dove_klev/spr_dove_klev.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"3589e9e8-c281-4313-802a-8461016df182","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f7f3e32e-14a6-4437-b966-c45bd299a15a","path":"sprites/spr_dove_klev/spr_dove_klev.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"e15b222b-944a-4754-9c69-e3948908e6c9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8990a8c8-604c-4abe-9a6c-d679f16c31a6","path":"sprites/spr_dove_klev/spr_dove_klev.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3589e9e8-c281-4313-802a-8461016df182","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f7f3e32e-14a6-4437-b966-c45bd299a15a","path":"sprites/spr_dove_klev/spr_dove_klev.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +64,13 @@
     "yorigin": 24,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_dove_klev","path":"sprites/spr_dove_klev/spr_dove_klev.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_dove_klev",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2b6c2fa6-d4f5-4ef9-b367-c983fd3e1750","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2b6c2fa6-d4f5-4ef9-b367-c983fd3e1750","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Dove",
     "path": "folders/Sprites/Level objects/Dove.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_dove_klev",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

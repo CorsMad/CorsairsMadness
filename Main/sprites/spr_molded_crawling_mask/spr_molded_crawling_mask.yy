@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_molded_crawling_mask",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 18,
   "height": 13,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"77472384-c90e-4cfb-9cdc-12b8c9e3936b","path":"sprites/spr_molded_crawling_mask/spr_molded_crawling_mask.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"77472384-c90e-4cfb-9cdc-12b8c9e3936b","path":"sprites/spr_molded_crawling_mask/spr_molded_crawling_mask.yy",},"LayerId":{"name":"922c03cd-483c-4ae3-8c5d-3666df357417","path":"sprites/spr_molded_crawling_mask/spr_molded_crawling_mask.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_crawling_mask","path":"sprites/spr_molded_crawling_mask/spr_molded_crawling_mask.yy",},"resourceVersion":"1.0","name":"77472384-c90e-4cfb-9cdc-12b8c9e3936b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"77472384-c90e-4cfb-9cdc-12b8c9e3936b",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_molded_crawling_mask","path":"sprites/spr_molded_crawling_mask/spr_molded_crawling_mask.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_molded_crawling_mask",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -37,12 +41,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"3be9a70e-a7fa-4dc1-9726-e38d3147e6b0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"77472384-c90e-4cfb-9cdc-12b8c9e3936b","path":"sprites/spr_molded_crawling_mask/spr_molded_crawling_mask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"3be9a70e-a7fa-4dc1-9726-e38d3147e6b0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"77472384-c90e-4cfb-9cdc-12b8c9e3936b","path":"sprites/spr_molded_crawling_mask/spr_molded_crawling_mask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 13,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_molded_crawling_mask","path":"sprites/spr_molded_crawling_mask/spr_molded_crawling_mask.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_molded_crawling_mask",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"922c03cd-483c-4ae3-8c5d-3666df357417","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"922c03cd-483c-4ae3-8c5d-3666df357417","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Crawling",
     "path": "folders/Sprites/Enemies/Molded/Crawling.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_molded_crawling_mask",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

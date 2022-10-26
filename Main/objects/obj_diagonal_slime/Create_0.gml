@@ -7,3 +7,6 @@ hspd = 0;
 vspd = 0;
 enemy_hp = 1;
 hit_cd = 0;
+dizzy_timer = 0;
+rm_hspd = 0;
+rm_vspd = 0;

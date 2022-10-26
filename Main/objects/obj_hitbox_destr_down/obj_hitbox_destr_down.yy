@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_hitbox_destr_down",
   "spriteId": {
     "name": "spr_player_hitbox_destr_down",
     "path": "sprites/spr_player_hitbox_destr_down/spr_player_hitbox_destr_down.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -21,7 +25,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -29,8 +33,4 @@
     "name": "Player objects",
     "path": "folders/Objects/Player objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_hitbox_destr_down",
-  "tags": [],
-  "resourceType": "GMObject",
 }

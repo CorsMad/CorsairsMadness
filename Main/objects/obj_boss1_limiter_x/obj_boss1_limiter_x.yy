@@ -1,7 +1,11 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_boss1_limiter_x",
   "spriteId": null,
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -27,8 +31,4 @@
     "name": "Limiters",
     "path": "folders/Objects/Enemies/Bosses/Boss1/Limiters.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_boss1_limiter_x",
-  "tags": [],
-  "resourceType": "GMObject",
 }

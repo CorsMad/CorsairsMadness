@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_hud_heart",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 14,
   "height": 14,
   "textureGroupId": {
@@ -24,15 +28,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"90108677-a7b7-4d0f-ae4e-462bca5f8f03","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"90108677-a7b7-4d0f-ae4e-462bca5f8f03","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},"LayerId":{"name":"e199a3d1-7212-4723-a23e-50018acc85a7","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hud_heart","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},"resourceVersion":"1.0","name":"90108677-a7b7-4d0f-ae4e-462bca5f8f03","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0873efd5-9e4f-4bc1-8916-dc657a80564c","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0873efd5-9e4f-4bc1-8916-dc657a80564c","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},"LayerId":{"name":"e199a3d1-7212-4723-a23e-50018acc85a7","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hud_heart","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},"resourceVersion":"1.0","name":"0873efd5-9e4f-4bc1-8916-dc657a80564c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"90108677-a7b7-4d0f-ae4e-462bca5f8f03",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0873efd5-9e4f-4bc1-8916-dc657a80564c",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_hud_heart","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_hud_heart",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -40,13 +42,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"da7aab41-3e3b-4876-bfb1-dc5d076360c1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"90108677-a7b7-4d0f-ae4e-462bca5f8f03","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"e28fdc27-b1a4-4642-9ad0-e0c422399c00","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0873efd5-9e4f-4bc1-8916-dc657a80564c","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"da7aab41-3e3b-4876-bfb1-dc5d076360c1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"90108677-a7b7-4d0f-ae4e-462bca5f8f03","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e28fdc27-b1a4-4642-9ad0-e0c422399c00","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0873efd5-9e4f-4bc1-8916-dc657a80564c","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +64,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_hud_heart","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_hud_heart",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e199a3d1-7212-4723-a23e-50018acc85a7","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e199a3d1-7212-4723-a23e-50018acc85a7","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "HUD",
     "path": "folders/Sprites/HUD.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_hud_heart",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

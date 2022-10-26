@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_molded_grounded_mask",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 14,
   "height": 26,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"2b0a83cb-cb0b-4508-a080-0edb4587f17e","path":"sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2b0a83cb-cb0b-4508-a080-0edb4587f17e","path":"sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",},"LayerId":{"name":"aa689802-b3ed-4204-8966-fb94f80f6834","path":"sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_grounded_mask","path":"sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",},"resourceVersion":"1.0","name":"2b0a83cb-cb0b-4508-a080-0edb4587f17e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2b0a83cb-cb0b-4508-a080-0edb4587f17e",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_molded_grounded_mask","path":"sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_molded_grounded_mask",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +41,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"bc3f5d0b-fdf0-42a6-a976-5b4441c2ed99","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2b0a83cb-cb0b-4508-a080-0edb4587f17e","path":"sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"bc3f5d0b-fdf0-42a6-a976-5b4441c2ed99","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2b0a83cb-cb0b-4508-a080-0edb4587f17e","path":"sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 26,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_molded_grounded_mask","path":"sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_molded_grounded_mask",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"aa689802-b3ed-4204-8966-fb94f80f6834","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"aa689802-b3ed-4204-8966-fb94f80f6834","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Grounded",
     "path": "folders/Sprites/Enemies/Molded/Grounded.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_molded_grounded_mask",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

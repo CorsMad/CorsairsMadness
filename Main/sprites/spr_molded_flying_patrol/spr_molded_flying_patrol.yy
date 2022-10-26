@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_molded_flying_patrol",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 96,
   "height": 64,
   "textureGroupId": {
@@ -24,27 +28,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"0035c4fd-6b2f-4b97-8863-c10b3bbc45da","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0035c4fd-6b2f-4b97-8863-c10b3bbc45da","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"LayerId":{"name":"9fb8d248-543d-4ac5-a467-ea313464a0bb","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_flying_patrol","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","name":"0035c4fd-6b2f-4b97-8863-c10b3bbc45da","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"669a20d3-fc07-4783-88b7-410bcc91b4f3","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"669a20d3-fc07-4783-88b7-410bcc91b4f3","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"LayerId":{"name":"9fb8d248-543d-4ac5-a467-ea313464a0bb","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_flying_patrol","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","name":"669a20d3-fc07-4783-88b7-410bcc91b4f3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"461ce416-de5e-4b2e-90dc-4669b65a44e4","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"461ce416-de5e-4b2e-90dc-4669b65a44e4","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"LayerId":{"name":"9fb8d248-543d-4ac5-a467-ea313464a0bb","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_flying_patrol","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","name":"461ce416-de5e-4b2e-90dc-4669b65a44e4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6b13f98b-f8e6-4e08-b884-f6225ade858e","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6b13f98b-f8e6-4e08-b884-f6225ade858e","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"LayerId":{"name":"9fb8d248-543d-4ac5-a467-ea313464a0bb","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_flying_patrol","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","name":"6b13f98b-f8e6-4e08-b884-f6225ade858e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"71e71276-da02-4383-849d-bf3608962776","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"71e71276-da02-4383-849d-bf3608962776","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"LayerId":{"name":"9fb8d248-543d-4ac5-a467-ea313464a0bb","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_flying_patrol","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","name":"71e71276-da02-4383-849d-bf3608962776","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0d2324f2-afcb-4e2c-bbb8-3c73ae11e987","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0d2324f2-afcb-4e2c-bbb8-3c73ae11e987","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"LayerId":{"name":"9fb8d248-543d-4ac5-a467-ea313464a0bb","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_flying_patrol","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","name":"0d2324f2-afcb-4e2c-bbb8-3c73ae11e987","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0035c4fd-6b2f-4b97-8863-c10b3bbc45da",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"669a20d3-fc07-4783-88b7-410bcc91b4f3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"461ce416-de5e-4b2e-90dc-4669b65a44e4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6b13f98b-f8e6-4e08-b884-f6225ade858e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"71e71276-da02-4383-849d-bf3608962776",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0d2324f2-afcb-4e2c-bbb8-3c73ae11e987",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_molded_flying_patrol","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_molded_flying_patrol",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -52,17 +46,17 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 6.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0913076b-61b4-45ef-8b87-d1d51509a451","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0035c4fd-6b2f-4b97-8863-c10b3bbc45da","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"2245551b-6883-449a-b1f4-7b7331dafeca","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"669a20d3-fc07-4783-88b7-410bcc91b4f3","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"aa836f20-887c-4a59-8b1b-4d7663c12856","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"461ce416-de5e-4b2e-90dc-4669b65a44e4","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"130ce958-182f-439f-afab-fcc1fca67f7e","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6b13f98b-f8e6-4e08-b884-f6225ade858e","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"78110208-a5ed-47de-88d8-54f6621dfa7d","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"71e71276-da02-4383-849d-bf3608962776","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"e9394534-d70b-4580-9c4e-c06987b5eb58","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0d2324f2-afcb-4e2c-bbb8-3c73ae11e987","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"0913076b-61b4-45ef-8b87-d1d51509a451","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0035c4fd-6b2f-4b97-8863-c10b3bbc45da","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2245551b-6883-449a-b1f4-7b7331dafeca","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"669a20d3-fc07-4783-88b7-410bcc91b4f3","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"aa836f20-887c-4a59-8b1b-4d7663c12856","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"461ce416-de5e-4b2e-90dc-4669b65a44e4","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"130ce958-182f-439f-afab-fcc1fca67f7e","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6b13f98b-f8e6-4e08-b884-f6225ade858e","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"78110208-a5ed-47de-88d8-54f6621dfa7d","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"71e71276-da02-4383-849d-bf3608962776","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e9394534-d70b-4580-9c4e-c06987b5eb58","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0d2324f2-afcb-4e2c-bbb8-3c73ae11e987","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +72,13 @@
     "yorigin": 48,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_molded_flying_patrol","path":"sprites/spr_molded_flying_patrol/spr_molded_flying_patrol.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_molded_flying_patrol",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9fb8d248-543d-4ac5-a467-ea313464a0bb","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9fb8d248-543d-4ac5-a467-ea313464a0bb","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Flying",
     "path": "folders/Sprites/Enemies/Molded/Flying.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_molded_flying_patrol",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

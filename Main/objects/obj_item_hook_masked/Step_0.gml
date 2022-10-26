@@ -9,9 +9,9 @@ x+=fspd;
 if state = 1 
 {
     instance_create_depth(x,y,depth,obj_item_hook_masked_projectile);
-    spd = dir*(10+abs(obj_Player.fspd));
+    spd = dir*(20+abs(obj_Player.fspd));
     t++;
-    if t = 15
+    if t = 8
     {
         state = 2;   
     }

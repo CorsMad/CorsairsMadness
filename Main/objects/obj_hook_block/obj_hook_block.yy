@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_hook_block",
   "spriteId": {
     "name": "spr_hook_block",
     "path": "sprites/spr_hook_block/spr_hook_block.yy",
@@ -28,8 +31,4 @@
     "name": "Blocks",
     "path": "folders/Objects/Blocks.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_hook_block",
-  "tags": [],
-  "resourceType": "GMObject",
 }

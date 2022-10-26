@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tls_moving_platform",
   "spriteId": {
     "name": "spr_tls_moving_platform",
     "path": "sprites/spr_tls_moving_platform/spr_tls_moving_platform.yy",
@@ -44,8 +47,4 @@
     "name": "Tile Sets",
     "path": "folders/Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tls_moving_platform",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

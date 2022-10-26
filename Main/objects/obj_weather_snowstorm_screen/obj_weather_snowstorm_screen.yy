@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_weather_snowstorm_screen",
   "spriteId": {
     "name": "bgr_test_snowstorm",
     "path": "sprites/bgr_test_snowstorm/bgr_test_snowstorm.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -21,7 +25,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -29,8 +33,4 @@
     "name": "Snowstorm",
     "path": "folders/Objects/Weather/Snowstorm.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_weather_snowstorm_screen",
-  "tags": [],
-  "resourceType": "GMObject",
 }

@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_sfx_boss1_dust",
   "spriteId": {
     "name": "spr_sfx_boss1_dust",
     "path": "sprites/spr_sfx_boss1_dust/spr_sfx_boss1_dust.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -24,7 +28,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -32,8 +36,4 @@
     "name": "Boss1 sfx",
     "path": "folders/Objects/SFX/Boss1 sfx.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_sfx_boss1_dust",
-  "tags": [],
-  "resourceType": "GMObject",
 }

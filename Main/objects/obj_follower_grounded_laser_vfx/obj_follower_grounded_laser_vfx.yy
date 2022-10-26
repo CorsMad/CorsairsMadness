@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_follower_grounded_laser_vfx",
   "spriteId": {
     "name": "spr_follower_grounded_laser_vfx",
     "path": "sprites/spr_follower_grounded_laser_vfx/spr_follower_grounded_laser_vfx.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -21,7 +25,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -29,8 +33,4 @@
     "name": "Laser",
     "path": "folders/Objects/Enemies/Followers/Ground Follower/Laser.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_follower_grounded_laser_vfx",
-  "tags": [],
-  "resourceType": "GMObject",
 }

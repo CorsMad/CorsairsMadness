@@ -1,0 +1,48 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_scarab_vertical",
+  "spriteId": {
+    "name": "spr_bird_mask",
+    "path": "sprites/spr_bird_mask/spr_bird_mask.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "managed": true,
+  "spriteMaskId": {
+    "name": "spr_bird_mask",
+    "path": "sprites/spr_bird_mask/spr_bird_mask.yy",
+  },
+  "persistent": false,
+  "parentObjectId": {
+    "name": "obj_enemy_parent_no_armor",
+    "path": "objects/obj_enemy_parent_no_armor/obj_enemy_parent_no_armor.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_abil_arbalet_proj","path":"objects/obj_abil_arbalet_proj/obj_abil_arbalet_proj.yy",},},
+  ],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"enemy_hp","varType":0,"value":"2","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"hit_cd","varType":0,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"b","varType":0,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+  ],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Scarab",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Desert/Scarab.yy",
+  },
+}

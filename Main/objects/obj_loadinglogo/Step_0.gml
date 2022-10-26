@@ -13,5 +13,5 @@ if t > 100
 
 if image_alpha <= 0 
 {
-    room_goto(MainScreen);   
+    room_goto(MainMenu);   
 }

@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_crawling_molded_f_r17",
   "spriteId": {
     "name": "spr_molded_crawling_death",
     "path": "sprites/spr_molded_crawling_death/spr_molded_crawling_death.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_molded_crawling_mask",
     "path": "sprites/spr_molded_crawling_mask/spr_molded_crawling_mask.yy",
@@ -27,8 +31,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -36,8 +40,4 @@
     "name": "Enemies",
     "path": "folders/Objects/Level objects SPECIAL/F1_r17/Enemies.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_crawling_molded_f_r17",
-  "tags": [],
-  "resourceType": "GMObject",
 }

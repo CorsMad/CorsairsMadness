@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_text_box_help_bluepad",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -25,8 +28,4 @@
     "name": "Text box",
     "path": "folders/Objects/Text/Text_old/Text box.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_text_box_help_bluepad",
-  "tags": [],
-  "resourceType": "GMObject",
 }

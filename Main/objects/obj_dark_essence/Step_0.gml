@@ -41,6 +41,20 @@ if to_player = 1
 			global.hp +=1;
 		}
         */
+        switch(val)
+        {
+            case 5: 
+                global.darkessence+=5;
+                break;
+
+            case 10:
+                global.darkessence+=10;
+                break;
+
+            case 20:
+                global.darkessence+=20;
+                break;
+        }
 		instance_destroy();	
 	}
 }

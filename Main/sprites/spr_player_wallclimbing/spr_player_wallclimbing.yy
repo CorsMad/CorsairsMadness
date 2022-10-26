@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_player_wallclimbing",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 42,
   "height": 42,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"785a6c11-dada-4d25-a7a4-ae44d9312981","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"785a6c11-dada-4d25-a7a4-ae44d9312981","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},"LayerId":{"name":"5c92adc2-0440-4501-ac21-d7d259011ab9","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_wallclimbing","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},"resourceVersion":"1.0","name":"785a6c11-dada-4d25-a7a4-ae44d9312981","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"785a6c11-dada-4d25-a7a4-ae44d9312981",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_player_wallclimbing","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_player_wallclimbing",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +41,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d79b7638-5d1c-4b57-b8d9-c6bd36435a3a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"785a6c11-dada-4d25-a7a4-ae44d9312981","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"d79b7638-5d1c-4b57-b8d9-c6bd36435a3a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"785a6c11-dada-4d25-a7a4-ae44d9312981","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 42,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_player_wallclimbing","path":"sprites/spr_player_wallclimbing/spr_player_wallclimbing.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_player_wallclimbing",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5c92adc2-0440-4501-ac21-d7d259011ab9","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5c92adc2-0440-4501-ac21-d7d259011ab9","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Player normal",
     "path": "folders/Sprites/Player/Player normal.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_player_wallclimbing",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

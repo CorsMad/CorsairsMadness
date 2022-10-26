@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_destructable_block_small_gold",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 16,
   "height": 16,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"eb103aa0-4d59-4ebb-b520-cd549ce553b8","path":"sprites/spr_destructable_block_small_gold/spr_destructable_block_small_gold.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"eb103aa0-4d59-4ebb-b520-cd549ce553b8","path":"sprites/spr_destructable_block_small_gold/spr_destructable_block_small_gold.yy",},"LayerId":{"name":"b517fc4b-197e-4353-bbcd-21c588eb5a26","path":"sprites/spr_destructable_block_small_gold/spr_destructable_block_small_gold.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_destructable_block_small_gold","path":"sprites/spr_destructable_block_small_gold/spr_destructable_block_small_gold.yy",},"resourceVersion":"1.0","name":"eb103aa0-4d59-4ebb-b520-cd549ce553b8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"eb103aa0-4d59-4ebb-b520-cd549ce553b8",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_destructable_block_small_gold","path":"sprites/spr_destructable_block_small_gold/spr_destructable_block_small_gold.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_destructable_block_small_gold",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +41,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c39464db-b956-4957-a8d6-69de49a57833","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eb103aa0-4d59-4ebb-b520-cd549ce553b8","path":"sprites/spr_destructable_block_small_gold/spr_destructable_block_small_gold.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"c39464db-b956-4957-a8d6-69de49a57833","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eb103aa0-4d59-4ebb-b520-cd549ce553b8","path":"sprites/spr_destructable_block_small_gold/spr_destructable_block_small_gold.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_destructable_block_small_gold","path":"sprites/spr_destructable_block_small_gold/spr_destructable_block_small_gold.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_destructable_block_small_gold",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b517fc4b-197e-4353-bbcd-21c588eb5a26","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b517fc4b-197e-4353-bbcd-21c588eb5a26","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Destructable blocks ",
     "path": "folders/Sprites/Solid objects (blocks)/Destructable blocks .yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_destructable_block_small_gold",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

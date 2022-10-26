@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_bird_destroyer",
   "spriteId": {
     "name": "spr_plant_mask",
     "path": "sprites/spr_plant_mask/spr_plant_mask.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -25,10 +29,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Birds",
-    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Birds.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Jungle/Birds.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_bird_destroyer",
-  "tags": [],
-  "resourceType": "GMObject",
 }

@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_player_boat_hitbox",
   "spriteId": {
     "name": "spr_player_boat_hitbox_mask",
     "path": "sprites/spr_player_boat_hitbox_mask/spr_player_boat_hitbox_mask.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -21,7 +25,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -29,8 +33,4 @@
     "name": "Boat",
     "path": "folders/Objects/Player objects/Boat.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_player_boat_hitbox",
-  "tags": [],
-  "resourceType": "GMObject",
 }

@@ -4,7 +4,8 @@
 #region Человек
 if state = 0
 {
-   fnc_player_state0(); 
+   //fnc_player_state0(); 
+   fnc_player_state01()
 }
 #endregion
 

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_map_lava_island",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 480,
   "height": 270,
   "textureGroupId": {
@@ -24,27 +28,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a40d2bce-b680-4960-bdc2-22b85abbcaf8","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a40d2bce-b680-4960-bdc2-22b85abbcaf8","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"LayerId":{"name":"3b60a05f-fe62-454f-9493-9b8b740a13dd","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_map_lava_island","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","name":"a40d2bce-b680-4960-bdc2-22b85abbcaf8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3286e20e-8ccd-4deb-8213-a52cbe1b5674","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3286e20e-8ccd-4deb-8213-a52cbe1b5674","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"LayerId":{"name":"3b60a05f-fe62-454f-9493-9b8b740a13dd","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_map_lava_island","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","name":"3286e20e-8ccd-4deb-8213-a52cbe1b5674","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5638b8cd-3da5-4298-946b-a1641cf038ba","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5638b8cd-3da5-4298-946b-a1641cf038ba","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"LayerId":{"name":"3b60a05f-fe62-454f-9493-9b8b740a13dd","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_map_lava_island","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","name":"5638b8cd-3da5-4298-946b-a1641cf038ba","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e56d11da-1dcd-4198-8448-e218d893de2b","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e56d11da-1dcd-4198-8448-e218d893de2b","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"LayerId":{"name":"3b60a05f-fe62-454f-9493-9b8b740a13dd","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_map_lava_island","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","name":"e56d11da-1dcd-4198-8448-e218d893de2b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0d8812ae-df9d-474f-a6c6-5b07e4f95b12","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0d8812ae-df9d-474f-a6c6-5b07e4f95b12","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"LayerId":{"name":"3b60a05f-fe62-454f-9493-9b8b740a13dd","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_map_lava_island","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","name":"0d8812ae-df9d-474f-a6c6-5b07e4f95b12","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ed0d8f05-a852-4a7d-80bc-44ba4778f36f","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ed0d8f05-a852-4a7d-80bc-44ba4778f36f","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"LayerId":{"name":"3b60a05f-fe62-454f-9493-9b8b740a13dd","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_map_lava_island","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","name":"ed0d8f05-a852-4a7d-80bc-44ba4778f36f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a40d2bce-b680-4960-bdc2-22b85abbcaf8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3286e20e-8ccd-4deb-8213-a52cbe1b5674",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5638b8cd-3da5-4298-946b-a1641cf038ba",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e56d11da-1dcd-4198-8448-e218d893de2b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0d8812ae-df9d-474f-a6c6-5b07e4f95b12",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ed0d8f05-a852-4a7d-80bc-44ba4778f36f",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_map_lava_island","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_map_lava_island",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -52,17 +46,17 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 6.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c766c936-9066-41fb-92e2-3306b82c01e9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a40d2bce-b680-4960-bdc2-22b85abbcaf8","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"ad8efd16-f375-4da5-8a86-23a609fcf8e0","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3286e20e-8ccd-4deb-8213-a52cbe1b5674","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"31cfa07b-3c55-411d-8e9e-79094ac7b43f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5638b8cd-3da5-4298-946b-a1641cf038ba","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"e759752a-e783-4db2-99ea-554148c2f343","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e56d11da-1dcd-4198-8448-e218d893de2b","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"670335ce-8e9a-4123-813e-785804dbcb04","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0d8812ae-df9d-474f-a6c6-5b07e4f95b12","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"d761c179-11ed-4e9f-b5c0-2f700e66a5d3","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ed0d8f05-a852-4a7d-80bc-44ba4778f36f","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"c766c936-9066-41fb-92e2-3306b82c01e9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a40d2bce-b680-4960-bdc2-22b85abbcaf8","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ad8efd16-f375-4da5-8a86-23a609fcf8e0","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3286e20e-8ccd-4deb-8213-a52cbe1b5674","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"31cfa07b-3c55-411d-8e9e-79094ac7b43f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5638b8cd-3da5-4298-946b-a1641cf038ba","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e759752a-e783-4db2-99ea-554148c2f343","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e56d11da-1dcd-4198-8448-e218d893de2b","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"670335ce-8e9a-4123-813e-785804dbcb04","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0d8812ae-df9d-474f-a6c6-5b07e4f95b12","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d761c179-11ed-4e9f-b5c0-2f700e66a5d3","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ed0d8f05-a852-4a7d-80bc-44ba4778f36f","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +72,13 @@
     "yorigin": 135,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_map_lava_island","path":"sprites/spr_map_lava_island/spr_map_lava_island.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_map_lava_island",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3b60a05f-fe62-454f-9493-9b8b740a13dd","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3b60a05f-fe62-454f-9493-9b8b740a13dd","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "JIslandMaps",
     "path": "folders/Sprites/Map/JIslandMaps.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_map_lava_island",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

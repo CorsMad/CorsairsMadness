@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_player_throw_bomb",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 32,
   "height": 56,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e75763bc-9ce4-4fcd-b36e-e097d666eaa0","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e75763bc-9ce4-4fcd-b36e-e097d666eaa0","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},"LayerId":{"name":"b991ef5e-83d3-4663-9224-caf545d9cf5c","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_throw_bomb","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},"resourceVersion":"1.0","name":"e75763bc-9ce4-4fcd-b36e-e097d666eaa0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"209c9f6a-6925-4c70-a45b-0c5e7f533eda","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"209c9f6a-6925-4c70-a45b-0c5e7f533eda","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},"LayerId":{"name":"b991ef5e-83d3-4663-9224-caf545d9cf5c","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_throw_bomb","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},"resourceVersion":"1.0","name":"209c9f6a-6925-4c70-a45b-0c5e7f533eda","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"53f4846e-0374-412d-85ca-0bd18a06d72f","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"53f4846e-0374-412d-85ca-0bd18a06d72f","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},"LayerId":{"name":"b991ef5e-83d3-4663-9224-caf545d9cf5c","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_throw_bomb","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},"resourceVersion":"1.0","name":"53f4846e-0374-412d-85ca-0bd18a06d72f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e75763bc-9ce4-4fcd-b36e-e097d666eaa0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"209c9f6a-6925-4c70-a45b-0c5e7f533eda",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"53f4846e-0374-412d-85ca-0bd18a06d72f",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_player_throw_bomb","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_player_throw_bomb",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -43,14 +43,14 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 3.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ad8da085-534d-4310-b20e-187eea8f8a1b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e75763bc-9ce4-4fcd-b36e-e097d666eaa0","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"cad8f2f1-3059-4dc7-bb70-66ddb8f544a1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"209c9f6a-6925-4c70-a45b-0c5e7f533eda","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"9b5cacb4-35f0-4c9e-9734-9f01b61f1277","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"53f4846e-0374-412d-85ca-0bd18a06d72f","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"ad8da085-534d-4310-b20e-187eea8f8a1b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e75763bc-9ce4-4fcd-b36e-e097d666eaa0","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"cad8f2f1-3059-4dc7-bb70-66ddb8f544a1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"209c9f6a-6925-4c70-a45b-0c5e7f533eda","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9b5cacb4-35f0-4c9e-9734-9f01b61f1277","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"53f4846e-0374-412d-85ca-0bd18a06d72f","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 56,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_player_throw_bomb","path":"sprites/spr_player_throw_bomb/spr_player_throw_bomb.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_player_throw_bomb",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b991ef5e-83d3-4663-9224-caf545d9cf5c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b991ef5e-83d3-4663-9224-caf545d9cf5c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Player normal",
     "path": "folders/Sprites/Player/Player normal.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_player_throw_bomb",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

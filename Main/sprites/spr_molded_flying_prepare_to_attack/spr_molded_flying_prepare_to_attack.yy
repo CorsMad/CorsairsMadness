@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_molded_flying_prepare_to_attack",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 96,
   "height": 64,
   "textureGroupId": {
@@ -24,21 +28,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"84577751-2715-4294-9650-aea98d47a4f0","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"84577751-2715-4294-9650-aea98d47a4f0","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"LayerId":{"name":"b0eadfb1-009b-4f5e-b1f6-00108e3dff37","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_flying_prepare_to_attack","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"resourceVersion":"1.0","name":"84577751-2715-4294-9650-aea98d47a4f0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6d7df953-fe2d-4cbf-af59-ecfaa291ed52","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6d7df953-fe2d-4cbf-af59-ecfaa291ed52","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"LayerId":{"name":"b0eadfb1-009b-4f5e-b1f6-00108e3dff37","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_flying_prepare_to_attack","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"resourceVersion":"1.0","name":"6d7df953-fe2d-4cbf-af59-ecfaa291ed52","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ae2fa6df-cbc2-458f-8826-5646c758c8a1","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ae2fa6df-cbc2-458f-8826-5646c758c8a1","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"LayerId":{"name":"b0eadfb1-009b-4f5e-b1f6-00108e3dff37","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_flying_prepare_to_attack","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"resourceVersion":"1.0","name":"ae2fa6df-cbc2-458f-8826-5646c758c8a1","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"864bef4e-ef78-4b5f-8239-317805bfc6ee","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"864bef4e-ef78-4b5f-8239-317805bfc6ee","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"LayerId":{"name":"b0eadfb1-009b-4f5e-b1f6-00108e3dff37","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_flying_prepare_to_attack","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"resourceVersion":"1.0","name":"864bef4e-ef78-4b5f-8239-317805bfc6ee","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"84577751-2715-4294-9650-aea98d47a4f0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6d7df953-fe2d-4cbf-af59-ecfaa291ed52",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ae2fa6df-cbc2-458f-8826-5646c758c8a1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"864bef4e-ef78-4b5f-8239-317805bfc6ee",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_molded_flying_prepare_to_attack","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_molded_flying_prepare_to_attack",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -46,15 +44,15 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 4.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a78ae8e9-8c6e-4279-8a1b-09e54d23719e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"84577751-2715-4294-9650-aea98d47a4f0","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"2a9ed3f2-79ce-4e62-aeed-eef31df7a357","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6d7df953-fe2d-4cbf-af59-ecfaa291ed52","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"ce75a7d1-bd0e-407f-9547-806335dff1c7","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ae2fa6df-cbc2-458f-8826-5646c758c8a1","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"ebebd0e2-cf9a-4e47-9c46-36c37ff428a0","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"864bef4e-ef78-4b5f-8239-317805bfc6ee","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"a78ae8e9-8c6e-4279-8a1b-09e54d23719e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"84577751-2715-4294-9650-aea98d47a4f0","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2a9ed3f2-79ce-4e62-aeed-eef31df7a357","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6d7df953-fe2d-4cbf-af59-ecfaa291ed52","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ce75a7d1-bd0e-407f-9547-806335dff1c7","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ae2fa6df-cbc2-458f-8826-5646c758c8a1","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ebebd0e2-cf9a-4e47-9c46-36c37ff428a0","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"864bef4e-ef78-4b5f-8239-317805bfc6ee","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +68,13 @@
     "yorigin": 48,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_molded_flying_prepare_to_attack","path":"sprites/spr_molded_flying_prepare_to_attack/spr_molded_flying_prepare_to_attack.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_molded_flying_prepare_to_attack",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b0eadfb1-009b-4f5e-b1f6-00108e3dff37","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b0eadfb1-009b-4f5e-b1f6-00108e3dff37","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Flying",
     "path": "folders/Sprites/Enemies/Molded/Flying.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_molded_flying_prepare_to_attack",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

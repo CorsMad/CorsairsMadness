@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_trapfire_arrow",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 16,
   "height": 16,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"76c0d648-33bd-4a62-b2d2-2d8f7c399862","path":"sprites/spr_trapfire_arrow/spr_trapfire_arrow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"76c0d648-33bd-4a62-b2d2-2d8f7c399862","path":"sprites/spr_trapfire_arrow/spr_trapfire_arrow.yy",},"LayerId":{"name":"e00c05b2-f875-481b-b825-14a6c088e994","path":"sprites/spr_trapfire_arrow/spr_trapfire_arrow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_trapfire_arrow","path":"sprites/spr_trapfire_arrow/spr_trapfire_arrow.yy",},"resourceVersion":"1.0","name":"76c0d648-33bd-4a62-b2d2-2d8f7c399862","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"76c0d648-33bd-4a62-b2d2-2d8f7c399862",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_trapfire_arrow","path":"sprites/spr_trapfire_arrow/spr_trapfire_arrow.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_trapfire_arrow",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -37,12 +41,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b87e0d91-485f-4662-acde-986f2c1ec03c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"76c0d648-33bd-4a62-b2d2-2d8f7c399862","path":"sprites/spr_trapfire_arrow/spr_trapfire_arrow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"b87e0d91-485f-4662-acde-986f2c1ec03c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"76c0d648-33bd-4a62-b2d2-2d8f7c399862","path":"sprites/spr_trapfire_arrow/spr_trapfire_arrow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 8,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_trapfire_arrow","path":"sprites/spr_trapfire_arrow/spr_trapfire_arrow.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_trapfire_arrow",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e00c05b2-f875-481b-b825-14a6c088e994","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e00c05b2-f875-481b-b825-14a6c088e994","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Trapfire",
     "path": "folders/Sprites/Enemies/Trapfire.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_trapfire_arrow",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

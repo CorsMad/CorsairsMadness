@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_abil_magicalbow_target",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 64,
   "height": 64,
   "textureGroupId": {
@@ -24,21 +28,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"620f2c28-74d9-4b7f-9679-c165e0da4b13","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"620f2c28-74d9-4b7f-9679-c165e0da4b13","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"LayerId":{"name":"a15582f0-7c21-4a74-8c2a-19b08b9d80d8","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_abil_magicalbow_target","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"resourceVersion":"1.0","name":"620f2c28-74d9-4b7f-9679-c165e0da4b13","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"dba9fd0c-1bfc-4fd2-86e1-165e55fe8a7d","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dba9fd0c-1bfc-4fd2-86e1-165e55fe8a7d","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"LayerId":{"name":"a15582f0-7c21-4a74-8c2a-19b08b9d80d8","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_abil_magicalbow_target","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"resourceVersion":"1.0","name":"dba9fd0c-1bfc-4fd2-86e1-165e55fe8a7d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"acee730e-6a1d-4187-8b06-56d7c57f92bb","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"acee730e-6a1d-4187-8b06-56d7c57f92bb","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"LayerId":{"name":"a15582f0-7c21-4a74-8c2a-19b08b9d80d8","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_abil_magicalbow_target","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"resourceVersion":"1.0","name":"acee730e-6a1d-4187-8b06-56d7c57f92bb","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"879001b7-2453-4eb0-9aaf-7045c5e66142","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"879001b7-2453-4eb0-9aaf-7045c5e66142","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"LayerId":{"name":"a15582f0-7c21-4a74-8c2a-19b08b9d80d8","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_abil_magicalbow_target","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"resourceVersion":"1.0","name":"879001b7-2453-4eb0-9aaf-7045c5e66142","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"620f2c28-74d9-4b7f-9679-c165e0da4b13",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dba9fd0c-1bfc-4fd2-86e1-165e55fe8a7d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"acee730e-6a1d-4187-8b06-56d7c57f92bb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"879001b7-2453-4eb0-9aaf-7045c5e66142",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_abil_magicalbow_target","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_abil_magicalbow_target",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -46,15 +44,15 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 4.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5e9862a2-d2e6-4c53-b563-67289958038d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"620f2c28-74d9-4b7f-9679-c165e0da4b13","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"20db1292-6eb5-4f3f-8690-0df8b6dd856b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dba9fd0c-1bfc-4fd2-86e1-165e55fe8a7d","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"a38fa71e-dafb-4d01-99b3-8bae465a2906","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"acee730e-6a1d-4187-8b06-56d7c57f92bb","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"8adae7b9-8e14-4ed1-9480-df4222895f6d","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"879001b7-2453-4eb0-9aaf-7045c5e66142","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"5e9862a2-d2e6-4c53-b563-67289958038d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"620f2c28-74d9-4b7f-9679-c165e0da4b13","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"20db1292-6eb5-4f3f-8690-0df8b6dd856b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dba9fd0c-1bfc-4fd2-86e1-165e55fe8a7d","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a38fa71e-dafb-4d01-99b3-8bae465a2906","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"acee730e-6a1d-4187-8b06-56d7c57f92bb","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8adae7b9-8e14-4ed1-9480-df4222895f6d","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"879001b7-2453-4eb0-9aaf-7045c5e66142","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +68,13 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_abil_magicalbow_target","path":"sprites/spr_abil_magicalbow_target/spr_abil_magicalbow_target.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_abil_magicalbow_target",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a15582f0-7c21-4a74-8c2a-19b08b9d80d8","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a15582f0-7c21-4a74-8c2a-19b08b9d80d8","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "MagicBow",
     "path": "folders/Sprites/Player/Player normal/Spical Abilities/MagicBow.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_abil_magicalbow_target",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

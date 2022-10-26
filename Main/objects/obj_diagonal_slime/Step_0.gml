@@ -47,6 +47,8 @@ if isWait = 1
 			{
 				image_angle = 90;	
 			}
+            rm_hspd = hspd;
+            rm_vspd = vspd;
 						
 			
 		}
@@ -62,7 +64,8 @@ if isWait = 1
 			{
 				image_angle = 180;	
 			}
-			
+			rm_hspd = hspd;
+            rm_vspd = vspd;
 		}
 		if place_meeting(x+1,y,obj_block)
 		{
@@ -76,7 +79,8 @@ if isWait = 1
 			{
 				image_angle = 90;	
 			}
-			
+			rm_hspd = hspd;
+            rm_vspd = vspd;
 			
 		}
 		if place_meeting(x-1,y,obj_block)
@@ -91,6 +95,8 @@ if isWait = 1
 			{
 				image_angle = 0;	
 			}
+            rm_hspd = hspd;
+            rm_vspd = vspd;
 		}
 	}
 }
@@ -109,6 +115,8 @@ if isWait = 0
 		hspd = 0;
 		vspd = 0;
 		isWait = 1;
+        rm_hspd = hspd;
+        rm_vspd = vspd;
 	}
 }
 
@@ -149,5 +157,31 @@ if enemy_hp <= 0
     instance_create_depth(x,y,depth-1,obj_money1);
     instance_destroy();
 }
+
+#endregion
+
+#region Bow
+if place_meeting(x,y,obj_abil_arbalet_proj)
+{
+    hspd = 0;
+    vspd = 0;
+    dizzy_timer = 30;
+    isWait = 2;
+    
+}
+if dizzy_timer = 29
+{
+    var el = instance_create_depth(x,y,depth-1,obj_sfx_electricity2_combo);
+    el.image_alpha = 0.7;
+    el.image_speed = 2;
+}
+if dizzy_timer!= 0 dizzy_timer--;
+if isWait = 2 && dizzy_timer = 0
+{
+    isWait = 0;
+    hspd = rm_hspd;
+    vspd = rm_vspd; 
+}
+if isWait = 2 {sprite_index = spr_diagonal_slime_diz;image_speed = 3;}
 
 #endregion

@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_ctscn_trailer_merchant_menu_selector",
   "spriteId": {
     "name": "spr_ctsn_merch_menu_selector",
     "path": "sprites/spr_ctsn_merch_menu_selector/spr_ctsn_merch_menu_selector.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Merchant",
     "path": "folders/Objects/Cutscenes/TRAILER/Merchant.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_ctscn_trailer_merchant_menu_selector",
-  "tags": [],
-  "resourceType": "GMObject",
 }

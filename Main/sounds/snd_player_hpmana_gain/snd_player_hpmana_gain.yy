@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_player_hpmana_gain",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.99,
   "preload": false,
@@ -16,8 +20,4 @@
     "name": "Player sounds",
     "path": "folders/Sounds/Player sounds.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_player_hpmana_gain",
-  "tags": [],
-  "resourceType": "GMSound",
 }

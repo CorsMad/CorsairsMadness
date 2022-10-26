@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_block_jump_big_flw",
   "spriteId": {
     "name": "spr_block_follower_jump_far",
     "path": "sprites/spr_block_follower_jump_far/spr_block_follower_jump_far.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -21,7 +25,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -29,8 +33,4 @@
     "name": "Follower blocks",
     "path": "folders/Objects/Blocks/Follower blocks.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_block_jump_big_flw",
-  "tags": [],
-  "resourceType": "GMObject",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_molded_green_blood",
   "spriteId": {
     "name": "spr_molded_green_blood",
     "path": "sprites/spr_molded_green_blood/spr_molded_green_blood.yy",
@@ -22,8 +25,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -31,8 +34,4 @@
     "name": "Blood",
     "path": "folders/Objects/Enemies/Molded enemies/Blood.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_molded_green_blood",
-  "tags": [],
-  "resourceType": "GMObject",
 }

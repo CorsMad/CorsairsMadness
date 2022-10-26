@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_chest_destruct",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -16,8 +20,4 @@
     "name": "Level sounds",
     "path": "folders/Sounds/Level sounds.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_chest_destruct",
-  "tags": [],
-  "resourceType": "GMSound",
 }

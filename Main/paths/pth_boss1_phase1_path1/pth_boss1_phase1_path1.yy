@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMPath",
+  "resourceVersion": "1.0",
+  "name": "pth_boss1_phase1_path1",
   "kind": 0,
   "closed": true,
   "precision": 4,
@@ -11,8 +14,4 @@
     "name": "Phase 1",
     "path": "folders/Rooms/Paths/Boss1/Phase 1.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "pth_boss1_phase1_path1",
-  "tags": [],
-  "resourceType": "GMPath",
 }

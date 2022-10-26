@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_skeleton_limiter",
   "spriteId": {
     "name": "spr_moving_platforms_limiter",
     "path": "sprites/spr_moving_platforms_limiter/spr_moving_platforms_limiter.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -25,10 +29,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Skeletons",
-    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Skeletons.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/OVERALL/Skeletons.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_skeleton_limiter",
-  "tags": [],
-  "resourceType": "GMObject",
 }

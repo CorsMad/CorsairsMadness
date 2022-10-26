@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_player_boat_cannon",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 102,
   "height": 41,
   "textureGroupId": {
@@ -24,15 +28,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3e87e414-5cc4-4dec-a047-d2e9b3cc27dc","path":"sprites/spr_player_boat_cannon/spr_player_boat_cannon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3e87e414-5cc4-4dec-a047-d2e9b3cc27dc","path":"sprites/spr_player_boat_cannon/spr_player_boat_cannon.yy",},"LayerId":{"name":"be418a9c-7233-4c49-a09b-99cdb95fe623","path":"sprites/spr_player_boat_cannon/spr_player_boat_cannon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_boat_cannon","path":"sprites/spr_player_boat_cannon/spr_player_boat_cannon.yy",},"resourceVersion":"1.0","name":"3e87e414-5cc4-4dec-a047-d2e9b3cc27dc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"77a0ef87-39a3-4c25-b3e3-884bff062b9a","path":"sprites/spr_player_boat_cannon/spr_player_boat_cannon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"77a0ef87-39a3-4c25-b3e3-884bff062b9a","path":"sprites/spr_player_boat_cannon/spr_player_boat_cannon.yy",},"LayerId":{"name":"be418a9c-7233-4c49-a09b-99cdb95fe623","path":"sprites/spr_player_boat_cannon/spr_player_boat_cannon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_boat_cannon","path":"sprites/spr_player_boat_cannon/spr_player_boat_cannon.yy",},"resourceVersion":"1.0","name":"77a0ef87-39a3-4c25-b3e3-884bff062b9a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3e87e414-5cc4-4dec-a047-d2e9b3cc27dc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"77a0ef87-39a3-4c25-b3e3-884bff062b9a",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_player_boat_cannon","path":"sprites/spr_player_boat_cannon/spr_player_boat_cannon.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_player_boat_cannon",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -40,13 +42,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"cae323b1-a82d-441d-bf90-c266e4a50cb1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3e87e414-5cc4-4dec-a047-d2e9b3cc27dc","path":"sprites/spr_player_boat_cannon/spr_player_boat_cannon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"e2ca7973-53d6-4481-8a48-82f0d51146b5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"77a0ef87-39a3-4c25-b3e3-884bff062b9a","path":"sprites/spr_player_boat_cannon/spr_player_boat_cannon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"cae323b1-a82d-441d-bf90-c266e4a50cb1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3e87e414-5cc4-4dec-a047-d2e9b3cc27dc","path":"sprites/spr_player_boat_cannon/spr_player_boat_cannon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e2ca7973-53d6-4481-8a48-82f0d51146b5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"77a0ef87-39a3-4c25-b3e3-884bff062b9a","path":"sprites/spr_player_boat_cannon/spr_player_boat_cannon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +64,13 @@
     "yorigin": 41,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_player_boat_cannon","path":"sprites/spr_player_boat_cannon/spr_player_boat_cannon.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_player_boat_cannon",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"be418a9c-7233-4c49-a09b-99cdb95fe623","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"be418a9c-7233-4c49-a09b-99cdb95fe623","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Player boat",
     "path": "folders/Sprites/Player/Player boat.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_player_boat_cannon",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

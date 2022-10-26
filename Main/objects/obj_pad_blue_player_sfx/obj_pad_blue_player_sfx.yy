@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_pad_blue_player_sfx",
   "spriteId": {
     "name": "spr_pad_blue_player_sfx",
     "path": "sprites/spr_pad_blue_player_sfx/spr_pad_blue_player_sfx.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -24,7 +28,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -32,8 +36,4 @@
     "name": "Blue pad",
     "path": "folders/Objects/Pads Lanterns/Blue pad.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_pad_blue_player_sfx",
-  "tags": [],
-  "resourceType": "GMObject",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_molded_grounded_damageupdown",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 96,
   "height": 64,
   "textureGroupId": {
@@ -24,15 +28,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b03326d9-7710-48ba-ad6a-70156ee2bc02","path":"sprites/spr_molded_grounded_damageupdown/spr_molded_grounded_damageupdown.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b03326d9-7710-48ba-ad6a-70156ee2bc02","path":"sprites/spr_molded_grounded_damageupdown/spr_molded_grounded_damageupdown.yy",},"LayerId":{"name":"d79c0c22-bc95-4f70-a1b9-e0682475e98d","path":"sprites/spr_molded_grounded_damageupdown/spr_molded_grounded_damageupdown.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_grounded_damageupdown","path":"sprites/spr_molded_grounded_damageupdown/spr_molded_grounded_damageupdown.yy",},"resourceVersion":"1.0","name":"b03326d9-7710-48ba-ad6a-70156ee2bc02","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b2e69183-f807-4559-b350-0796fe6f9f7b","path":"sprites/spr_molded_grounded_damageupdown/spr_molded_grounded_damageupdown.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b2e69183-f807-4559-b350-0796fe6f9f7b","path":"sprites/spr_molded_grounded_damageupdown/spr_molded_grounded_damageupdown.yy",},"LayerId":{"name":"d79c0c22-bc95-4f70-a1b9-e0682475e98d","path":"sprites/spr_molded_grounded_damageupdown/spr_molded_grounded_damageupdown.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_grounded_damageupdown","path":"sprites/spr_molded_grounded_damageupdown/spr_molded_grounded_damageupdown.yy",},"resourceVersion":"1.0","name":"b2e69183-f807-4559-b350-0796fe6f9f7b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b03326d9-7710-48ba-ad6a-70156ee2bc02",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b2e69183-f807-4559-b350-0796fe6f9f7b",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_molded_grounded_damageupdown","path":"sprites/spr_molded_grounded_damageupdown/spr_molded_grounded_damageupdown.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_molded_grounded_damageupdown",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -40,13 +42,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"024d650c-155b-4cc7-8e8a-0d0b3710dfee","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b03326d9-7710-48ba-ad6a-70156ee2bc02","path":"sprites/spr_molded_grounded_damageupdown/spr_molded_grounded_damageupdown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"b4962cf3-07fc-4e43-8c0f-178303e96103","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b2e69183-f807-4559-b350-0796fe6f9f7b","path":"sprites/spr_molded_grounded_damageupdown/spr_molded_grounded_damageupdown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"024d650c-155b-4cc7-8e8a-0d0b3710dfee","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b03326d9-7710-48ba-ad6a-70156ee2bc02","path":"sprites/spr_molded_grounded_damageupdown/spr_molded_grounded_damageupdown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b4962cf3-07fc-4e43-8c0f-178303e96103","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b2e69183-f807-4559-b350-0796fe6f9f7b","path":"sprites/spr_molded_grounded_damageupdown/spr_molded_grounded_damageupdown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +64,13 @@
     "yorigin": 48,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_molded_grounded_damageupdown","path":"sprites/spr_molded_grounded_damageupdown/spr_molded_grounded_damageupdown.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_molded_grounded_damageupdown",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d79c0c22-bc95-4f70-a1b9-e0682475e98d","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d79c0c22-bc95-4f70-a1b9-e0682475e98d","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Grounded",
     "path": "folders/Sprites/Enemies/Molded/Grounded.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_molded_grounded_damageupdown",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

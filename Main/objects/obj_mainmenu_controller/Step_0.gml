@@ -42,7 +42,8 @@ key_jump_pressed = keyboard_check_pressed(vk_enter) || gamepad_button_check_pres
     }
     if a = 1 && key_jump_pressed
     {
-        room_goto(FirstRoomMask);   
+        // room_goto(FirstRoomMask);   
+        room_goto(RoomTIP);   
     }
     if a = 2 && key_jump_pressed
     {

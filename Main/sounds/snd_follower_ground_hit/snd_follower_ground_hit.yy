@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_follower_ground_hit",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -16,8 +20,4 @@
     "name": "Follower grounded",
     "path": "folders/Sounds/Enemy sounds/Follower grounded.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_follower_ground_hit",
-  "tags": [],
-  "resourceType": "GMSound",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_axe_boom_bomb_mask",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 20,
   "height": 20,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f90520fc-2a61-4aba-8883-44e7d4fbb40e","path":"sprites/spr_axe_boom_bomb_mask/spr_axe_boom_bomb_mask.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f90520fc-2a61-4aba-8883-44e7d4fbb40e","path":"sprites/spr_axe_boom_bomb_mask/spr_axe_boom_bomb_mask.yy",},"LayerId":{"name":"f4f8007b-75df-4271-9b82-a0fcab3c485f","path":"sprites/spr_axe_boom_bomb_mask/spr_axe_boom_bomb_mask.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_axe_boom_bomb_mask","path":"sprites/spr_axe_boom_bomb_mask/spr_axe_boom_bomb_mask.yy",},"resourceVersion":"1.0","name":"f90520fc-2a61-4aba-8883-44e7d4fbb40e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f90520fc-2a61-4aba-8883-44e7d4fbb40e",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_axe_boom_bomb_mask","path":"sprites/spr_axe_boom_bomb_mask/spr_axe_boom_bomb_mask.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_axe_boom_bomb_mask",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +41,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"73801f28-c891-4a94-9e66-a71876bdf66c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f90520fc-2a61-4aba-8883-44e7d4fbb40e","path":"sprites/spr_axe_boom_bomb_mask/spr_axe_boom_bomb_mask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"73801f28-c891-4a94-9e66-a71876bdf66c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f90520fc-2a61-4aba-8883-44e7d4fbb40e","path":"sprites/spr_axe_boom_bomb_mask/spr_axe_boom_bomb_mask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 10,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_axe_boom_bomb_mask","path":"sprites/spr_axe_boom_bomb_mask/spr_axe_boom_bomb_mask.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_axe_boom_bomb_mask",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f4f8007b-75df-4271-9b82-a0fcab3c485f","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f4f8007b-75df-4271-9b82-a0fcab3c485f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Items",
     "path": "folders/Sprites/Items.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_axe_boom_bomb_mask",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

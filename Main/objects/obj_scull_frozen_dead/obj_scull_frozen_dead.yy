@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_scull_frozen_dead",
   "spriteId": {
     "name": "spr_scull_frozen",
     "path": "sprites/spr_scull_frozen/spr_scull_frozen.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -24,17 +28,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Scull frozen",
-    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Skeletons/Scull frozen.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Snow/Scull frozen.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_scull_frozen_dead",
-  "tags": [],
-  "resourceType": "GMObject",
 }

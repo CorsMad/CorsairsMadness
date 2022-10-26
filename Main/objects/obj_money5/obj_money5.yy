@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_money5",
   "spriteId": {
     "name": "spr_money5",
     "path": "sprites/spr_money5/spr_money5.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -30,8 +34,4 @@
     "name": "Gold main",
     "path": "folders/Objects/Level objects/Collectables/Gold/Gold main.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_money5",
-  "tags": [],
-  "resourceType": "GMObject",
 }

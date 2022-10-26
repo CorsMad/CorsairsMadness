@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_silverkeydoor3parts",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 8,
   "height": 24,
   "textureGroupId": {
@@ -24,21 +28,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"004d8b56-534e-4d65-b50f-1238dd67ac00","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"004d8b56-534e-4d65-b50f-1238dd67ac00","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"LayerId":{"name":"357c3ef0-e185-4391-b214-fca51a945ac4","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_silverkeydoor3parts","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"resourceVersion":"1.0","name":"004d8b56-534e-4d65-b50f-1238dd67ac00","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e89d5062-929b-4278-8443-aded73f6fd1a","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e89d5062-929b-4278-8443-aded73f6fd1a","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"LayerId":{"name":"357c3ef0-e185-4391-b214-fca51a945ac4","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_silverkeydoor3parts","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"resourceVersion":"1.0","name":"e89d5062-929b-4278-8443-aded73f6fd1a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"37ff5f6e-5690-4806-89be-fc9705b7b976","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"37ff5f6e-5690-4806-89be-fc9705b7b976","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"LayerId":{"name":"357c3ef0-e185-4391-b214-fca51a945ac4","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_silverkeydoor3parts","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"resourceVersion":"1.0","name":"37ff5f6e-5690-4806-89be-fc9705b7b976","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"df5170cc-b896-413d-b76e-5506165938e8","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"df5170cc-b896-413d-b76e-5506165938e8","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"LayerId":{"name":"357c3ef0-e185-4391-b214-fca51a945ac4","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_silverkeydoor3parts","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"resourceVersion":"1.0","name":"df5170cc-b896-413d-b76e-5506165938e8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"004d8b56-534e-4d65-b50f-1238dd67ac00",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e89d5062-929b-4278-8443-aded73f6fd1a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"37ff5f6e-5690-4806-89be-fc9705b7b976",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"df5170cc-b896-413d-b76e-5506165938e8",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_silverkeydoor3parts","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_silverkeydoor3parts",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -46,15 +44,15 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 4.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"7ec229f3-a185-4fd6-9233-261142326afe","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"004d8b56-534e-4d65-b50f-1238dd67ac00","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"2bb6ec77-8c7b-4a51-8fc7-523e45848614","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e89d5062-929b-4278-8443-aded73f6fd1a","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"a52f975c-3b5f-4baa-9473-4337fe2d5b57","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"37ff5f6e-5690-4806-89be-fc9705b7b976","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"2774a19a-d403-4d34-929e-eda4dc8f4095","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"df5170cc-b896-413d-b76e-5506165938e8","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"7ec229f3-a185-4fd6-9233-261142326afe","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"004d8b56-534e-4d65-b50f-1238dd67ac00","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2bb6ec77-8c7b-4a51-8fc7-523e45848614","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e89d5062-929b-4278-8443-aded73f6fd1a","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a52f975c-3b5f-4baa-9473-4337fe2d5b57","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"37ff5f6e-5690-4806-89be-fc9705b7b976","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2774a19a-d403-4d34-929e-eda4dc8f4095","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"df5170cc-b896-413d-b76e-5506165938e8","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +68,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_silverkeydoor3parts","path":"sprites/spr_silverkeydoor3parts/spr_silverkeydoor3parts.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_silverkeydoor3parts",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"357c3ef0-e185-4391-b214-fca51a945ac4","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"357c3ef0-e185-4391-b214-fca51a945ac4","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Keys&Doors",
     "path": "folders/Sprites/Level objects/Keys&Doors.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_silverkeydoor3parts",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

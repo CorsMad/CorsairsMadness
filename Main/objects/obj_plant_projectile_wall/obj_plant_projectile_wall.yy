@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_plant_projectile_wall",
   "spriteId": {
     "name": "spr_moving_platforms_limiter",
     "path": "sprites/spr_moving_platforms_limiter/spr_moving_platforms_limiter.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -25,10 +29,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Plant",
-    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Plant.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Jungle/Plant.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_plant_projectile_wall",
-  "tags": [],
-  "resourceType": "GMObject",
 }

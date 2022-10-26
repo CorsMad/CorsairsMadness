@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_rock_falling_follower",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -16,8 +20,4 @@
     "name": "Enemy sounds",
     "path": "folders/Sounds/Enemy sounds.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_rock_falling_follower",
-  "tags": [],
-  "resourceType": "GMSound",
 }

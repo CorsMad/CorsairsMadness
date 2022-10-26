@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_abil_magicalbow_rope",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 32,
   "height": 160,
   "textureGroupId": {
@@ -24,15 +28,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"2379a849-9cf9-4f1b-b7bd-1190880136ad","path":"sprites/spr_abil_magicalbow_rope/spr_abil_magicalbow_rope.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2379a849-9cf9-4f1b-b7bd-1190880136ad","path":"sprites/spr_abil_magicalbow_rope/spr_abil_magicalbow_rope.yy",},"LayerId":{"name":"0009bd7a-965e-435f-80b2-d09b028f7ac9","path":"sprites/spr_abil_magicalbow_rope/spr_abil_magicalbow_rope.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_abil_magicalbow_rope","path":"sprites/spr_abil_magicalbow_rope/spr_abil_magicalbow_rope.yy",},"resourceVersion":"1.0","name":"2379a849-9cf9-4f1b-b7bd-1190880136ad","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3e4b5083-8ba6-4caf-8ab9-ac972f85a49c","path":"sprites/spr_abil_magicalbow_rope/spr_abil_magicalbow_rope.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3e4b5083-8ba6-4caf-8ab9-ac972f85a49c","path":"sprites/spr_abil_magicalbow_rope/spr_abil_magicalbow_rope.yy",},"LayerId":{"name":"0009bd7a-965e-435f-80b2-d09b028f7ac9","path":"sprites/spr_abil_magicalbow_rope/spr_abil_magicalbow_rope.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_abil_magicalbow_rope","path":"sprites/spr_abil_magicalbow_rope/spr_abil_magicalbow_rope.yy",},"resourceVersion":"1.0","name":"3e4b5083-8ba6-4caf-8ab9-ac972f85a49c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2379a849-9cf9-4f1b-b7bd-1190880136ad",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3e4b5083-8ba6-4caf-8ab9-ac972f85a49c",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_abil_magicalbow_rope","path":"sprites/spr_abil_magicalbow_rope/spr_abil_magicalbow_rope.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_abil_magicalbow_rope",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -40,13 +42,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5ac4ee11-0691-445b-bf74-19b8ae3219e1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2379a849-9cf9-4f1b-b7bd-1190880136ad","path":"sprites/spr_abil_magicalbow_rope/spr_abil_magicalbow_rope.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"6efa7978-cd0e-4c12-80cf-9e763b64e050","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3e4b5083-8ba6-4caf-8ab9-ac972f85a49c","path":"sprites/spr_abil_magicalbow_rope/spr_abil_magicalbow_rope.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"5ac4ee11-0691-445b-bf74-19b8ae3219e1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2379a849-9cf9-4f1b-b7bd-1190880136ad","path":"sprites/spr_abil_magicalbow_rope/spr_abil_magicalbow_rope.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6efa7978-cd0e-4c12-80cf-9e763b64e050","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3e4b5083-8ba6-4caf-8ab9-ac972f85a49c","path":"sprites/spr_abil_magicalbow_rope/spr_abil_magicalbow_rope.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +64,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_abil_magicalbow_rope","path":"sprites/spr_abil_magicalbow_rope/spr_abil_magicalbow_rope.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_abil_magicalbow_rope",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0009bd7a-965e-435f-80b2-d09b028f7ac9","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0009bd7a-965e-435f-80b2-d09b028f7ac9","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "MagicBow",
     "path": "folders/Sprites/Player/Player normal/Spical Abilities/MagicBow.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_abil_magicalbow_rope",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -4,7 +4,7 @@ t=0;
 state = 1;
 attack_counter = 0;
 hit_cd = 0;
-enemy_hp = 2;
+enemy_hp = 1;
 
 /* состояния
 

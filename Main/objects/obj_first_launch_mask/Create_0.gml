@@ -5,10 +5,11 @@
 
 global.hp = 4;          //4
 global.hp_max = 4;      //4
-global.choosed_item = 2;
+global.choosed_item = 1;
 global.mana = 3;
 global.mana_max = 3;
 global.gold = 0;
+global.darkessence = 0;
 global.secrets = 0;
 
 scr_create_array_objects();
@@ -35,24 +36,23 @@ global.secrets_l1_s3 = 1;
 
 //First Room
 
-global.fTargetX = 80;
-global.fTargetY = 192;
-global.fTargetRoom = TESTROOMCLIP;   
+global.fTargetX = 48;
+global.fTargetY = 112;
+global.fTargetRoom = F1_r1;   
 
 /*
-global.TargetX = 64;
-global.TargetY = 128;
-global.TargetRoom = F1_r23;
+global.TargetX = 48;
+global.TargetY = 208;
+global.TargetRoom = F1_r17;
 */
 
 // TESTROOM
 
 /*
-global.TargetX = 48;
-global.TargetY = 256;
-global.TargetRoom = TESTROOM;
+global.fTargetX = 48;
+global.fTargetY = 256;
+global.fTargetRoom = TESTROOM;
 */
-
 
 #region Клипы
 

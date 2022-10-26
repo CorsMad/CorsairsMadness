@@ -16,7 +16,7 @@ island = 0;
 3 - зима
 4 - лава
 5 - кладбище
-*/
+*/           
 globalMapCounter = 1;
 islandMapCounter = 0;
 canPress = 1;
@@ -35,6 +35,7 @@ t_p = 0; // таймер указателя
 5 кладбище
 */
 turn = 0;
+turn_t = 0;
 #endregion
 
 #region Альфа,скейл островов. Альфа, позиция облаков
@@ -43,6 +44,8 @@ turn = 0;
 GlobalMapAlpha = 1;
 GlobalMapxScale = 1;
 GlobalMapyScale = 1;
+GlobalMapxPos = 240;
+GlobalMapyPos = 135;
 
 //IslandJungle
 island1JungleAlpha = 0;
@@ -71,6 +74,7 @@ island1LavayScale = 1;
 
 //Clouds
 CloudLAlpha = 0;
+CloudFarAlpha = 0;
 
 CloudLBackX = room_width/2;
 CloudLFrontX = room_width/2;

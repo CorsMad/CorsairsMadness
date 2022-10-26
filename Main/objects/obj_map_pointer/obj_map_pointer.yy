@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_map_pointer",
   "spriteId": {
     "name": "spr_map_pointer",
     "path": "sprites/spr_map_pointer/spr_map_pointer.yy",
@@ -28,8 +31,4 @@
     "name": "Map",
     "path": "folders/Objects/Map.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_map_pointer",
-  "tags": [],
-  "resourceType": "GMObject",
 }

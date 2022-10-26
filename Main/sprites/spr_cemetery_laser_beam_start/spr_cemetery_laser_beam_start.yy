@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_cemetery_laser_beam_start",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 16,
   "height": 32,
   "textureGroupId": {
@@ -24,21 +28,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d7224076-0222-4548-8c47-e757862ffea9","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d7224076-0222-4548-8c47-e757862ffea9","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"LayerId":{"name":"793b6a31-b5ee-4dcb-b707-dc5a2eec9316","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cemetery_laser_beam_start","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"resourceVersion":"1.0","name":"d7224076-0222-4548-8c47-e757862ffea9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"12e172b7-15b5-4d21-8a45-9d7e149ed713","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"12e172b7-15b5-4d21-8a45-9d7e149ed713","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"LayerId":{"name":"793b6a31-b5ee-4dcb-b707-dc5a2eec9316","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cemetery_laser_beam_start","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"resourceVersion":"1.0","name":"12e172b7-15b5-4d21-8a45-9d7e149ed713","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"215a8eb6-80ee-4bd5-8d5b-ace7a698b732","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"215a8eb6-80ee-4bd5-8d5b-ace7a698b732","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"LayerId":{"name":"793b6a31-b5ee-4dcb-b707-dc5a2eec9316","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cemetery_laser_beam_start","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"resourceVersion":"1.0","name":"215a8eb6-80ee-4bd5-8d5b-ace7a698b732","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a1bacc8e-1b10-4a15-8658-b1b4b396af7c","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a1bacc8e-1b10-4a15-8658-b1b4b396af7c","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"LayerId":{"name":"793b6a31-b5ee-4dcb-b707-dc5a2eec9316","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cemetery_laser_beam_start","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"resourceVersion":"1.0","name":"a1bacc8e-1b10-4a15-8658-b1b4b396af7c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d7224076-0222-4548-8c47-e757862ffea9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"12e172b7-15b5-4d21-8a45-9d7e149ed713",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"215a8eb6-80ee-4bd5-8d5b-ace7a698b732",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a1bacc8e-1b10-4a15-8658-b1b4b396af7c",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_cemetery_laser_beam_start","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_cemetery_laser_beam_start",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -46,15 +44,15 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 4.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"6f7f9bf7-50b1-436b-a142-86663ae5e973","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d7224076-0222-4548-8c47-e757862ffea9","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"9e142745-f374-4d10-b6af-7fa7fbd72aa8","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"12e172b7-15b5-4d21-8a45-9d7e149ed713","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"fea2d299-d418-418a-9fa4-4babd34f3611","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"215a8eb6-80ee-4bd5-8d5b-ace7a698b732","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"a6de6e20-804b-4657-b420-eb2f27ddec64","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a1bacc8e-1b10-4a15-8658-b1b4b396af7c","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"6f7f9bf7-50b1-436b-a142-86663ae5e973","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d7224076-0222-4548-8c47-e757862ffea9","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9e142745-f374-4d10-b6af-7fa7fbd72aa8","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"12e172b7-15b5-4d21-8a45-9d7e149ed713","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fea2d299-d418-418a-9fa4-4babd34f3611","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"215a8eb6-80ee-4bd5-8d5b-ace7a698b732","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a6de6e20-804b-4657-b420-eb2f27ddec64","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a1bacc8e-1b10-4a15-8658-b1b4b396af7c","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +68,13 @@
     "yorigin": 16,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_cemetery_laser_beam_start","path":"sprites/spr_cemetery_laser_beam_start/spr_cemetery_laser_beam_start.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_cemetery_laser_beam_start",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"793b6a31-b5ee-4dcb-b707-dc5a2eec9316","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"793b6a31-b5ee-4dcb-b707-dc5a2eec9316","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Cemetery level",
     "path": "folders/Sprites/Level objects/Levels Stuff/Cemetery level.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_cemetery_laser_beam_start",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_saw_horizontal_limiter",
   "spriteId": {
     "name": "spr_saw_horizontal_limiter",
     "path": "sprites/spr_saw_horizontal_limiter/spr_saw_horizontal_limiter.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Saw",
     "path": "folders/Objects/Enemies/Saw.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_saw_horizontal_limiter",
-  "tags": [],
-  "resourceType": "GMObject",
 }

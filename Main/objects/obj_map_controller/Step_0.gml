@@ -106,25 +106,46 @@ if CloudChange = 2
 
 if turn = 1
 {
+    turn_t++;
+    if turn_t > 5
+    {        
+        island1JungleAlpha += 0.05;       
+    }
+    
     GlobalMapAlpha -= 0.05;
-    GlobalMapxScale += 0.01;
-    GlobalMapyScale += 0.01;
+    GlobalMapxScale += 0.05;
+    GlobalMapyScale += 0.05;
     CloudLAlpha += 0.1;
+    CloudFarAlpha += 0.05;
+    
+    GlobalMapxPos += 4;
+    GlobalMapyPos -= 2;
+    
+    CloudGlobalAlpha -= 0.05;
+    CloudGlobalXscale +=0.02;
+    CloudGlobalYscale +=0.02;
+    /*
     island1JungleAlpha += 0.05;
+    
     
     CloudGlobalAlpha -= 0.025;
     CloudGlobalXscale +=0.02;
     CloudGlobalYscale +=0.02;
-
+    */
     
     if GlobalMapAlpha = 0
     {
+        turn_t = 0;
         GlobalMapAlpha = 0;
         CloudLAlpha = 1;
+        CloudFarAlpha = 0.9;
         island1JungleAlpha = 1;
        
         GlobalMapxScale = 1.5;
         GlobalMapyScale = 1.5;
+        GlobalMapxPos = 240;
+        GlobalMapyPos = 135;
+        
         
         CloudGlobalAlpha = 0;
         CloudGlobalXscale = 1;
@@ -137,11 +158,20 @@ if turn = 1
 
 if turn = 2
 {
+    turn_t++;
+    if turn_t > 5
+    {        
+        island1DesertAlpha += 0.05;       
+    }
+    GlobalMapxPos -= 2;
+    GlobalMapyPos -= 4;
+    
     GlobalMapAlpha -= 0.05;
-    GlobalMapxScale += 0.01;
-    GlobalMapyScale += 0.01;  
+    GlobalMapxScale += 0.05;
+    GlobalMapyScale += 0.05;  
     CloudLAlpha += 0.1;
-    island1DesertAlpha += 0.05;
+    CloudFarAlpha +=0.05;
+   
     
     CloudGlobalAlpha -= 0.025;
     CloudGlobalXscale +=0.02;
@@ -149,11 +179,16 @@ if turn = 2
     
     if GlobalMapAlpha = 0
     {
+        turn_t = 0;
         CloudLAlpha = 1;
+        CloudFarAlpha = 0.9;
         GlobalMapAlpha = 0;
         island1DesertAlpha = 1;
         GlobalMapxScale = 1.5;
         GlobalMapyScale = 1.5;
+        
+        GlobalMapxPos = 240;
+        GlobalMapyPos = 135;
         
         CloudGlobalAlpha = 0;
         CloudGlobalXscale = 1;
@@ -166,11 +201,19 @@ if turn = 2
 
 if turn = 3
 {
+    turn_t++;
+    if turn_t > 5
+    {        
+        island1SnowAlpha += 0.05;       
+    }
+    GlobalMapxPos -= 10;
+    GlobalMapyPos -= 2;
+    
     GlobalMapAlpha -= 0.05;
-    GlobalMapxScale += 0.01;
-    GlobalMapyScale += 0.01;  
+    GlobalMapxScale += 0.05;
+    GlobalMapyScale += 0.05;  
     CloudLAlpha += 0.1;
-    island1SnowAlpha += 0.05;
+    CloudFarAlpha += 0.05;
     
     CloudGlobalAlpha -= 0.025;
     CloudGlobalXscale +=0.02;
@@ -178,11 +221,16 @@ if turn = 3
     
     if GlobalMapAlpha = 0
     {
+        turn_t = 0;
         CloudLAlpha = 1;
+        CloudFarAlpha = 0.9;
         GlobalMapAlpha = 0;
         island1SnowAlpha = 1;
         GlobalMapxScale = 1.5;
         GlobalMapyScale = 1.5;
+        
+        GlobalMapxPos = 240;
+        GlobalMapyPos = 135;
         
         CloudGlobalAlpha = 0;
         CloudGlobalXscale = 1;
@@ -195,11 +243,19 @@ if turn = 3
 
 if turn = 4
 {
+    turn_t++;
+    if turn_t > 5
+    {        
+        island1LavaAlpha += 0.05;       
+    }
+    GlobalMapxPos += 2;
+    GlobalMapyPos += 4;
+    
     GlobalMapAlpha -= 0.05;
-    GlobalMapxScale += 0.01;
-    GlobalMapyScale += 0.01;  
+    GlobalMapxScale += 0.05;
+    GlobalMapyScale += 0.05;  
     CloudLAlpha += 0.1;
-    island1LavaAlpha += 0.05;
+    CloudFarAlpha += 0.05;
     
     CloudGlobalAlpha -= 0.025;
     CloudGlobalXscale +=0.02;
@@ -207,11 +263,16 @@ if turn = 4
     
     if GlobalMapAlpha = 0
     {
+        turn_t =0;
         CloudLAlpha = 1;
+        CloudFarAlpha = 0.9;
         GlobalMapAlpha = 0;
         island1LavaAlpha = 1;
         GlobalMapxScale = 1.5;
         GlobalMapyScale = 1.5;
+        
+        GlobalMapxPos = 240;
+        GlobalMapyPos = 135;
         
         CloudGlobalAlpha = 0;
         CloudGlobalXscale = 1;
@@ -224,10 +285,19 @@ if turn = 4
 
 if turn = 5
 {
+    turn_t++;
+    if turn_t > 5
+    {        
+        island1GraveyardAlpha += 0.05;       
+    }
+    GlobalMapxPos -= 6;
+    GlobalMapyPos += 4;
+    
     GlobalMapAlpha -= 0.05;
-    GlobalMapxScale += 0.01;
-    GlobalMapyScale += 0.01;  
+    GlobalMapxScale += 0.05;
+    GlobalMapyScale += 0.05;  
     CloudLAlpha += 0.1;
+    CloudFarAlpha += 0.05;
     island1GraveyardAlpha += 0.05;
     
     CloudGlobalAlpha -= 0.025;
@@ -236,11 +306,17 @@ if turn = 5
     
     if GlobalMapAlpha = 0
     {
+        turn_t = 0;
         CloudLAlpha = 1;
         GlobalMapAlpha = 0;
+        CloudFarAlpha = 0.9;
+        
         island1GraveyardAlpha = 1;
         GlobalMapxScale = 1.5;
         GlobalMapyScale = 1.5;
+        
+        GlobalMapxPos = 240;
+        GlobalMapyPos = 135;
         
         CloudGlobalAlpha = 0;
         CloudGlobalXscale = 1;
@@ -255,7 +331,7 @@ if turn = 6
 {
     GlobalMapAlpha += 0.05;
     CloudLAlpha -= 0.05;
-    
+    CloudFarAlpha -= 0.025;
     CloudGlobalAlpha += 0.025;
 
     //GlobalMapAlpha = 0.5;
@@ -272,6 +348,7 @@ if turn = 6
         CloudChange = 0
         
         CloudLAlpha = 0;
+        CloudFarAlpha = 0;
         CloudLFrontX = 240;
         CloudLBackX = 240;
         CloudRFrontX = 240;

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_fastfly_molded_slowfly",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 32,
   "height": 32,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ae469620-cdce-45bc-82d6-e5a60ff2b160","path":"sprites/spr_fastfly_molded_slowfly/spr_fastfly_molded_slowfly.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ae469620-cdce-45bc-82d6-e5a60ff2b160","path":"sprites/spr_fastfly_molded_slowfly/spr_fastfly_molded_slowfly.yy",},"LayerId":{"name":"b5d883e6-8577-4b89-9d5a-347b28843fb1","path":"sprites/spr_fastfly_molded_slowfly/spr_fastfly_molded_slowfly.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_fastfly_molded_slowfly","path":"sprites/spr_fastfly_molded_slowfly/spr_fastfly_molded_slowfly.yy",},"resourceVersion":"1.0","name":"ae469620-cdce-45bc-82d6-e5a60ff2b160","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ae469620-cdce-45bc-82d6-e5a60ff2b160",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_fastfly_molded_slowfly","path":"sprites/spr_fastfly_molded_slowfly/spr_fastfly_molded_slowfly.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_fastfly_molded_slowfly",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +41,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c020751a-c4e1-4017-92d5-5669e6184d7a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ae469620-cdce-45bc-82d6-e5a60ff2b160","path":"sprites/spr_fastfly_molded_slowfly/spr_fastfly_molded_slowfly.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"c020751a-c4e1-4017-92d5-5669e6184d7a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ae469620-cdce-45bc-82d6-e5a60ff2b160","path":"sprites/spr_fastfly_molded_slowfly/spr_fastfly_molded_slowfly.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 16,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_fastfly_molded_slowfly","path":"sprites/spr_fastfly_molded_slowfly/spr_fastfly_molded_slowfly.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_fastfly_molded_slowfly",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b5d883e6-8577-4b89-9d5a-347b28843fb1","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b5d883e6-8577-4b89-9d5a-347b28843fb1","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "FlyingFast",
     "path": "folders/Sprites/Enemies/Molded/FlyingFast.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_fastfly_molded_slowfly",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

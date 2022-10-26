@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_tls_cemetery_thorns",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 288,
   "height": 32,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3578122b-3a6b-43f8-94c7-cba2fc31bb41","path":"sprites/spr_tls_cemetery_thorns/spr_tls_cemetery_thorns.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3578122b-3a6b-43f8-94c7-cba2fc31bb41","path":"sprites/spr_tls_cemetery_thorns/spr_tls_cemetery_thorns.yy",},"LayerId":{"name":"e1fc9912-70e5-4ec8-bc63-eca066071520","path":"sprites/spr_tls_cemetery_thorns/spr_tls_cemetery_thorns.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_tls_cemetery_thorns","path":"sprites/spr_tls_cemetery_thorns/spr_tls_cemetery_thorns.yy",},"resourceVersion":"1.0","name":"3578122b-3a6b-43f8-94c7-cba2fc31bb41","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3578122b-3a6b-43f8-94c7-cba2fc31bb41",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_tls_cemetery_thorns","path":"sprites/spr_tls_cemetery_thorns/spr_tls_cemetery_thorns.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_tls_cemetery_thorns",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +41,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e954add1-40c0-4b5c-8fe0-2e2004faf5cb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3578122b-3a6b-43f8-94c7-cba2fc31bb41","path":"sprites/spr_tls_cemetery_thorns/spr_tls_cemetery_thorns.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"e954add1-40c0-4b5c-8fe0-2e2004faf5cb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3578122b-3a6b-43f8-94c7-cba2fc31bb41","path":"sprites/spr_tls_cemetery_thorns/spr_tls_cemetery_thorns.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_tls_cemetery_thorns","path":"sprites/spr_tls_cemetery_thorns/spr_tls_cemetery_thorns.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_tls_cemetery_thorns",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e1fc9912-70e5-4ec8-bc63-eca066071520","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e1fc9912-70e5-4ec8-bc63-eca066071520","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Cemetery",
     "path": "folders/Sprites/Tileset and level stuff/Cemetery.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_tls_cemetery_thorns",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_boat_obstacle_small",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 128,
   "height": 160,
   "textureGroupId": {
@@ -24,21 +28,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"cf6c6c7d-dc7e-4dc6-8fbb-551192d38010","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cf6c6c7d-dc7e-4dc6-8fbb-551192d38010","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"LayerId":{"name":"6b9d0e49-a903-401f-8457-b60c83fbd1e1","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_obstacle_small","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"resourceVersion":"1.0","name":"cf6c6c7d-dc7e-4dc6-8fbb-551192d38010","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d8fd6dc2-119c-4a9a-9dcf-3e4bb11cb864","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d8fd6dc2-119c-4a9a-9dcf-3e4bb11cb864","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"LayerId":{"name":"6b9d0e49-a903-401f-8457-b60c83fbd1e1","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_obstacle_small","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"resourceVersion":"1.0","name":"d8fd6dc2-119c-4a9a-9dcf-3e4bb11cb864","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"980a44f6-4e6f-4c6e-91e1-ac0c6525fc69","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"980a44f6-4e6f-4c6e-91e1-ac0c6525fc69","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"LayerId":{"name":"6b9d0e49-a903-401f-8457-b60c83fbd1e1","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_obstacle_small","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"resourceVersion":"1.0","name":"980a44f6-4e6f-4c6e-91e1-ac0c6525fc69","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9d88905c-1b84-44d2-ae49-fdc3efd96e9b","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9d88905c-1b84-44d2-ae49-fdc3efd96e9b","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"LayerId":{"name":"6b9d0e49-a903-401f-8457-b60c83fbd1e1","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_obstacle_small","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"resourceVersion":"1.0","name":"9d88905c-1b84-44d2-ae49-fdc3efd96e9b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cf6c6c7d-dc7e-4dc6-8fbb-551192d38010",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d8fd6dc2-119c-4a9a-9dcf-3e4bb11cb864",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"980a44f6-4e6f-4c6e-91e1-ac0c6525fc69",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9d88905c-1b84-44d2-ae49-fdc3efd96e9b",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_boat_obstacle_small","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_boat_obstacle_small",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -46,15 +44,15 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 4.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"587bba1d-68e2-4cba-97ef-d92ffb914c4c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cf6c6c7d-dc7e-4dc6-8fbb-551192d38010","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"411349ab-ad03-417a-b962-0494baee846a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d8fd6dc2-119c-4a9a-9dcf-3e4bb11cb864","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"6ce091a2-2d44-4383-87d7-edeef790d36f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"980a44f6-4e6f-4c6e-91e1-ac0c6525fc69","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"0059e175-02e8-4638-9e92-a4e61b8dfbcc","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9d88905c-1b84-44d2-ae49-fdc3efd96e9b","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"587bba1d-68e2-4cba-97ef-d92ffb914c4c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cf6c6c7d-dc7e-4dc6-8fbb-551192d38010","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"411349ab-ad03-417a-b962-0494baee846a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d8fd6dc2-119c-4a9a-9dcf-3e4bb11cb864","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6ce091a2-2d44-4383-87d7-edeef790d36f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"980a44f6-4e6f-4c6e-91e1-ac0c6525fc69","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0059e175-02e8-4638-9e92-a4e61b8dfbcc","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9d88905c-1b84-44d2-ae49-fdc3efd96e9b","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +68,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_boat_obstacle_small","path":"sprites/spr_boat_obstacle_small/spr_boat_obstacle_small.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_boat_obstacle_small",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6b9d0e49-a903-401f-8457-b60c83fbd1e1","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6b9d0e49-a903-401f-8457-b60c83fbd1e1","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Obstacle",
     "path": "folders/Sprites/Enemies/Boat level/Obstacle.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_boat_obstacle_small",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

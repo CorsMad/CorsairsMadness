@@ -1,19 +1,20 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_flying_molded_2_f_r14",
   "spriteId": {
     "name": "spr_ground_molded_mask",
     "path": "sprites/spr_ground_molded_mask/spr_ground_molded_mask.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_ground_molded_mask",
     "path": "sprites/spr_ground_molded_mask/spr_ground_molded_mask.yy",
   },
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_flying_molded",
-    "path": "objects/obj_flying_molded/obj_flying_molded.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -27,8 +28,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -36,8 +37,4 @@
     "name": "Enemies",
     "path": "folders/Objects/Level objects SPECIAL/F1_r14/Enemies.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_flying_molded_2_f_r14",
-  "tags": [],
-  "resourceType": "GMObject",
 }

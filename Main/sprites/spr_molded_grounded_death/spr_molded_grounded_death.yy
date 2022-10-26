@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_molded_grounded_death",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 96,
   "height": 64,
   "textureGroupId": {
@@ -24,21 +28,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"585c7dbf-7d0f-44ea-937f-6212210c3677","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"585c7dbf-7d0f-44ea-937f-6212210c3677","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"LayerId":{"name":"3fd13303-c75f-433d-baff-2e73f319476a","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_grounded_death","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"resourceVersion":"1.0","name":"585c7dbf-7d0f-44ea-937f-6212210c3677","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"619efc5c-d1a5-424a-96c4-b2fd3b9b8628","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"619efc5c-d1a5-424a-96c4-b2fd3b9b8628","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"LayerId":{"name":"3fd13303-c75f-433d-baff-2e73f319476a","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_grounded_death","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"resourceVersion":"1.0","name":"619efc5c-d1a5-424a-96c4-b2fd3b9b8628","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4580e2c2-c63b-4c2f-a695-3c0e04fc8c4c","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4580e2c2-c63b-4c2f-a695-3c0e04fc8c4c","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"LayerId":{"name":"3fd13303-c75f-433d-baff-2e73f319476a","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_grounded_death","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"resourceVersion":"1.0","name":"4580e2c2-c63b-4c2f-a695-3c0e04fc8c4c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d0398f7c-7c34-4f78-88f8-342c8947c828","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d0398f7c-7c34-4f78-88f8-342c8947c828","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"LayerId":{"name":"3fd13303-c75f-433d-baff-2e73f319476a","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_grounded_death","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"resourceVersion":"1.0","name":"d0398f7c-7c34-4f78-88f8-342c8947c828","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"585c7dbf-7d0f-44ea-937f-6212210c3677",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"619efc5c-d1a5-424a-96c4-b2fd3b9b8628",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4580e2c2-c63b-4c2f-a695-3c0e04fc8c4c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d0398f7c-7c34-4f78-88f8-342c8947c828",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_molded_grounded_death","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_molded_grounded_death",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -46,15 +44,15 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 4.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f91f8691-1c43-4f0a-98a5-8aee14bb7f14","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"585c7dbf-7d0f-44ea-937f-6212210c3677","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"3d3903c2-6113-4ad0-b953-88f40e30831f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"619efc5c-d1a5-424a-96c4-b2fd3b9b8628","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"91513205-4620-4618-9d3b-cada22fcdda4","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4580e2c2-c63b-4c2f-a695-3c0e04fc8c4c","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"54d62f21-455a-4b08-9350-7ada2001b637","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d0398f7c-7c34-4f78-88f8-342c8947c828","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"f91f8691-1c43-4f0a-98a5-8aee14bb7f14","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"585c7dbf-7d0f-44ea-937f-6212210c3677","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3d3903c2-6113-4ad0-b953-88f40e30831f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"619efc5c-d1a5-424a-96c4-b2fd3b9b8628","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"91513205-4620-4618-9d3b-cada22fcdda4","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4580e2c2-c63b-4c2f-a695-3c0e04fc8c4c","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"54d62f21-455a-4b08-9350-7ada2001b637","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d0398f7c-7c34-4f78-88f8-342c8947c828","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +68,13 @@
     "yorigin": 64,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_molded_grounded_death","path":"sprites/spr_molded_grounded_death/spr_molded_grounded_death.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_molded_grounded_death",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3fd13303-c75f-433d-baff-2e73f319476a","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3fd13303-c75f-433d-baff-2e73f319476a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Grounded",
     "path": "folders/Sprites/Enemies/Molded/Grounded.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_molded_grounded_death",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

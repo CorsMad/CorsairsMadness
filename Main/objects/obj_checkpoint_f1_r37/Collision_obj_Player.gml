@@ -4,4 +4,8 @@ global.fTargetRoom = F1_r37;
 global.fTargetX = 192;
 global.fTargetY = 160;
 
+global.hp = global.hp_max;
+
+global.darkessence_saved = global.darkessence;
+
 instance_destroy();

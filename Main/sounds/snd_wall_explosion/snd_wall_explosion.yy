@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_wall_explosion",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.8,
   "preload": false,
@@ -16,8 +20,4 @@
     "name": "Level sounds",
     "path": "folders/Sounds/Level sounds.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_wall_explosion",
-  "tags": [],
-  "resourceType": "GMSound",
 }

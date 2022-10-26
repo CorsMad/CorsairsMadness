@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_bomb",
   "spriteId": {
     "name": "spr_bomb",
     "path": "sprites/spr_bomb/spr_bomb.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_bomb_mask",
     "path": "sprites/spr_bomb_mask/spr_bomb_mask.yy",
@@ -27,8 +31,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -36,8 +40,4 @@
     "name": "Carry Bomb",
     "path": "folders/Objects/Level objects/Carry Bomb.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_bomb",
-  "tags": [],
-  "resourceType": "GMObject",
 }

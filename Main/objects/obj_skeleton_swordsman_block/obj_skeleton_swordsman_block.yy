@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_skeleton_swordsman_block",
   "spriteId": {
     "name": "spr_skeleton_swordsman_mask",
     "path": "sprites/spr_skeleton_swordsman_mask/spr_skeleton_swordsman_mask.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -25,10 +29,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Skeleton swordsman",
-    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Skeletons/Skeleton swordsman.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/OVERALL/Skeletons/Skeleton swordsman.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_skeleton_swordsman_block",
-  "tags": [],
-  "resourceType": "GMObject",
 }

@@ -1,14 +1,23 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_flying_molded_hitbox",
   "spriteId": {
-    "name": "spr_room_trans",
-    "path": "sprites/spr_room_trans/spr_room_trans.yy",
+    "name": "spr_ground_molded_mask",
+    "path": "sprites/spr_ground_molded_mask/spr_ground_molded_mask.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_ground_molded_mask",
+    "path": "sprites/spr_ground_molded_mask/spr_ground_molded_mask.yy",
+  },
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_parent",
+    "path": "objects/obj_enemy_parent/obj_enemy_parent.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -22,7 +31,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -30,8 +39,4 @@
     "name": "Flying",
     "path": "folders/Objects/Enemies/Molded enemies/Flying.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_flying_molded_hitbox",
-  "tags": [],
-  "resourceType": "GMObject",
 }

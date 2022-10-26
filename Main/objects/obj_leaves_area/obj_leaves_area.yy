@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_leaves_area",
   "spriteId": {
     "name": "spr_leaves_area",
     "path": "sprites/spr_leaves_area/spr_leaves_area.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -21,9 +25,9 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_skeleton_l","path":"objects/obj_skeleton_l/obj_skeleton_l.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_skeleton_l","path":"objects/obj_skeleton_l/obj_skeleton_l.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -31,8 +35,4 @@
     "name": "Forest level",
     "path": "folders/Objects/Level objects/Forest level.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_leaves_area",
-  "tags": [],
-  "resourceType": "GMObject",
 }

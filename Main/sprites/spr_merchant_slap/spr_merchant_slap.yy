@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_merchant_slap",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 60,
   "height": 52,
   "textureGroupId": {
@@ -24,15 +28,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b1f9ec7a-b806-4eee-98c8-4950a44a28a3","path":"sprites/spr_merchant_slap/spr_merchant_slap.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b1f9ec7a-b806-4eee-98c8-4950a44a28a3","path":"sprites/spr_merchant_slap/spr_merchant_slap.yy",},"LayerId":{"name":"da3e1017-e31d-4179-a4fe-4b652a5d729a","path":"sprites/spr_merchant_slap/spr_merchant_slap.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_merchant_slap","path":"sprites/spr_merchant_slap/spr_merchant_slap.yy",},"resourceVersion":"1.0","name":"b1f9ec7a-b806-4eee-98c8-4950a44a28a3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fc118062-95fd-49f1-8b7f-c19a57777fe1","path":"sprites/spr_merchant_slap/spr_merchant_slap.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fc118062-95fd-49f1-8b7f-c19a57777fe1","path":"sprites/spr_merchant_slap/spr_merchant_slap.yy",},"LayerId":{"name":"da3e1017-e31d-4179-a4fe-4b652a5d729a","path":"sprites/spr_merchant_slap/spr_merchant_slap.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_merchant_slap","path":"sprites/spr_merchant_slap/spr_merchant_slap.yy",},"resourceVersion":"1.0","name":"fc118062-95fd-49f1-8b7f-c19a57777fe1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b1f9ec7a-b806-4eee-98c8-4950a44a28a3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fc118062-95fd-49f1-8b7f-c19a57777fe1",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_merchant_slap","path":"sprites/spr_merchant_slap/spr_merchant_slap.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_merchant_slap",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -40,13 +42,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"992123b1-2470-4cf3-a1e2-7ecffdad2116","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b1f9ec7a-b806-4eee-98c8-4950a44a28a3","path":"sprites/spr_merchant_slap/spr_merchant_slap.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"7ecf71f7-5a4e-40fe-a50b-feaa84f2beb1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fc118062-95fd-49f1-8b7f-c19a57777fe1","path":"sprites/spr_merchant_slap/spr_merchant_slap.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"992123b1-2470-4cf3-a1e2-7ecffdad2116","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b1f9ec7a-b806-4eee-98c8-4950a44a28a3","path":"sprites/spr_merchant_slap/spr_merchant_slap.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7ecf71f7-5a4e-40fe-a50b-feaa84f2beb1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fc118062-95fd-49f1-8b7f-c19a57777fe1","path":"sprites/spr_merchant_slap/spr_merchant_slap.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +64,13 @@
     "yorigin": 52,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_merchant_slap","path":"sprites/spr_merchant_slap/spr_merchant_slap.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_merchant_slap",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"da3e1017-e31d-4179-a4fe-4b652a5d729a","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"da3e1017-e31d-4179-a4fe-4b652a5d729a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Merchant",
     "path": "folders/Sprites/Characters/Merchant.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_merchant_slap",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

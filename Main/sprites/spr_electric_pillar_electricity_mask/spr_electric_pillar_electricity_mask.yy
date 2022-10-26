@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_electric_pillar_electricity_mask",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 16,
   "height": 8,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d3cf4c63-0c0f-4652-a10d-2f309cd98f81","path":"sprites/spr_electric_pillar_electricity_mask/spr_electric_pillar_electricity_mask.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d3cf4c63-0c0f-4652-a10d-2f309cd98f81","path":"sprites/spr_electric_pillar_electricity_mask/spr_electric_pillar_electricity_mask.yy",},"LayerId":{"name":"917ca898-19d9-402e-a307-3d975fb50786","path":"sprites/spr_electric_pillar_electricity_mask/spr_electric_pillar_electricity_mask.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_electric_pillar_electricity_mask","path":"sprites/spr_electric_pillar_electricity_mask/spr_electric_pillar_electricity_mask.yy",},"resourceVersion":"1.0","name":"d3cf4c63-0c0f-4652-a10d-2f309cd98f81","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d3cf4c63-0c0f-4652-a10d-2f309cd98f81",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_electric_pillar_electricity_mask","path":"sprites/spr_electric_pillar_electricity_mask/spr_electric_pillar_electricity_mask.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_electric_pillar_electricity_mask",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +41,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5447b56a-b053-4ac2-97b7-015f0a39aa04","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3cf4c63-0c0f-4652-a10d-2f309cd98f81","path":"sprites/spr_electric_pillar_electricity_mask/spr_electric_pillar_electricity_mask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"5447b56a-b053-4ac2-97b7-015f0a39aa04","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3cf4c63-0c0f-4652-a10d-2f309cd98f81","path":"sprites/spr_electric_pillar_electricity_mask/spr_electric_pillar_electricity_mask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 4,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_electric_pillar_electricity_mask","path":"sprites/spr_electric_pillar_electricity_mask/spr_electric_pillar_electricity_mask.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_electric_pillar_electricity_mask",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"917ca898-19d9-402e-a307-3d975fb50786","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"917ca898-19d9-402e-a307-3d975fb50786","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sand level",
     "path": "folders/Sprites/Level objects/Levels Stuff/Sand level.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_electric_pillar_electricity_mask",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

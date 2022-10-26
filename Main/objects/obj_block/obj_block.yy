@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_block",
   "spriteId": {
     "name": "spr_block_mask",
     "path": "sprites/spr_block_mask/spr_block_mask.yy",
@@ -28,8 +31,4 @@
     "name": "Blocks",
     "path": "folders/Objects/Blocks.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_block",
-  "tags": [],
-  "resourceType": "GMObject",
 }

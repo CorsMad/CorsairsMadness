@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_molded_flying_wait_after_attack",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 96,
   "height": 64,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7328f8e3-194f-4df1-82a9-db8c333a479d","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7328f8e3-194f-4df1-82a9-db8c333a479d","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},"LayerId":{"name":"c5d45838-45c4-4505-9e28-2956bb5fad27","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_flying_wait_after_attack","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},"resourceVersion":"1.0","name":"7328f8e3-194f-4df1-82a9-db8c333a479d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c4774a9a-418b-48a3-a14e-7f84eac0ee4b","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c4774a9a-418b-48a3-a14e-7f84eac0ee4b","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},"LayerId":{"name":"c5d45838-45c4-4505-9e28-2956bb5fad27","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_flying_wait_after_attack","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},"resourceVersion":"1.0","name":"c4774a9a-418b-48a3-a14e-7f84eac0ee4b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"50590e1d-625e-4614-8ec9-8cbc91d1e25c","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"50590e1d-625e-4614-8ec9-8cbc91d1e25c","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},"LayerId":{"name":"c5d45838-45c4-4505-9e28-2956bb5fad27","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_molded_flying_wait_after_attack","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},"resourceVersion":"1.0","name":"50590e1d-625e-4614-8ec9-8cbc91d1e25c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7328f8e3-194f-4df1-82a9-db8c333a479d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c4774a9a-418b-48a3-a14e-7f84eac0ee4b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"50590e1d-625e-4614-8ec9-8cbc91d1e25c",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_molded_flying_wait_after_attack","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_molded_flying_wait_after_attack",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -43,14 +43,14 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 3.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"78c084f3-27a3-4d0b-a802-700d0b9ddf17","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7328f8e3-194f-4df1-82a9-db8c333a479d","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"adcae2bf-2763-4810-a0fa-d5d041dba665","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c4774a9a-418b-48a3-a14e-7f84eac0ee4b","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"9037d241-6632-4cd9-b229-e94d9df33957","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"50590e1d-625e-4614-8ec9-8cbc91d1e25c","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"78c084f3-27a3-4d0b-a802-700d0b9ddf17","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7328f8e3-194f-4df1-82a9-db8c333a479d","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"adcae2bf-2763-4810-a0fa-d5d041dba665","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c4774a9a-418b-48a3-a14e-7f84eac0ee4b","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9037d241-6632-4cd9-b229-e94d9df33957","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"50590e1d-625e-4614-8ec9-8cbc91d1e25c","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 48,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_molded_flying_wait_after_attack","path":"sprites/spr_molded_flying_wait_after_attack/spr_molded_flying_wait_after_attack.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_molded_flying_wait_after_attack",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c5d45838-45c4-4505-9e28-2956bb5fad27","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c5d45838-45c4-4505-9e28-2956bb5fad27","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Flying",
     "path": "folders/Sprites/Enemies/Molded/Flying.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_molded_flying_wait_after_attack",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

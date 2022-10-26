@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_bird_horizontal_waving_creator",
   "spriteId": {
     "name": "spr_enemy_creator",
     "path": "sprites/spr_enemy_creator/spr_enemy_creator.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -25,10 +29,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Waving",
-    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Birds/Waving.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Jungle/Birds/Waving.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_bird_horizontal_waving_creator",
-  "tags": [],
-  "resourceType": "GMObject",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_armored_thing_in_shell",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 64,
   "height": 64,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b39f7b97-18df-4f60-bacb-a6ddc22de471","path":"sprites/spr_armored_thing_in_shell/spr_armored_thing_in_shell.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b39f7b97-18df-4f60-bacb-a6ddc22de471","path":"sprites/spr_armored_thing_in_shell/spr_armored_thing_in_shell.yy",},"LayerId":{"name":"4eaaaa46-d413-4335-a59f-0fae3b9ac905","path":"sprites/spr_armored_thing_in_shell/spr_armored_thing_in_shell.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_armored_thing_in_shell","path":"sprites/spr_armored_thing_in_shell/spr_armored_thing_in_shell.yy",},"resourceVersion":"1.0","name":"b39f7b97-18df-4f60-bacb-a6ddc22de471","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b39f7b97-18df-4f60-bacb-a6ddc22de471",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_armored_thing_in_shell","path":"sprites/spr_armored_thing_in_shell/spr_armored_thing_in_shell.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_armored_thing_in_shell",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -37,12 +41,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5ca31495-048a-44a7-9bf5-32ba2c4945e9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b39f7b97-18df-4f60-bacb-a6ddc22de471","path":"sprites/spr_armored_thing_in_shell/spr_armored_thing_in_shell.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"5ca31495-048a-44a7-9bf5-32ba2c4945e9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b39f7b97-18df-4f60-bacb-a6ddc22de471","path":"sprites/spr_armored_thing_in_shell/spr_armored_thing_in_shell.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 64,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_armored_thing_in_shell","path":"sprites/spr_armored_thing_in_shell/spr_armored_thing_in_shell.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_armored_thing_in_shell",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4eaaaa46-d413-4335-a59f-0fae3b9ac905","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4eaaaa46-d413-4335-a59f-0fae3b9ac905","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Armored thing",
     "path": "folders/Sprites/Enemies/Armored thing.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_armored_thing_in_shell",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

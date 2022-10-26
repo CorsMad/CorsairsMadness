@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_map_desert_island",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 480,
   "height": 270,
   "textureGroupId": {
@@ -24,27 +28,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"287b14cb-5d02-4c72-953b-da38aed2c9cf","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"287b14cb-5d02-4c72-953b-da38aed2c9cf","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"LayerId":{"name":"4f5e1ef3-26d9-4ef1-bd9d-b0f8245438ea","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_map_desert_island","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","name":"287b14cb-5d02-4c72-953b-da38aed2c9cf","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"471417ba-25f3-404f-bc63-a0c874572cbb","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"471417ba-25f3-404f-bc63-a0c874572cbb","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"LayerId":{"name":"4f5e1ef3-26d9-4ef1-bd9d-b0f8245438ea","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_map_desert_island","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","name":"471417ba-25f3-404f-bc63-a0c874572cbb","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"dd1fe9f8-4c7a-4a64-9a2b-62504794981a","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dd1fe9f8-4c7a-4a64-9a2b-62504794981a","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"LayerId":{"name":"4f5e1ef3-26d9-4ef1-bd9d-b0f8245438ea","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_map_desert_island","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","name":"dd1fe9f8-4c7a-4a64-9a2b-62504794981a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f484a8b4-3525-4cac-94a6-1cd13bd4a292","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f484a8b4-3525-4cac-94a6-1cd13bd4a292","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"LayerId":{"name":"4f5e1ef3-26d9-4ef1-bd9d-b0f8245438ea","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_map_desert_island","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","name":"f484a8b4-3525-4cac-94a6-1cd13bd4a292","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7d81ad72-3a0d-4008-be9a-059d06218284","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7d81ad72-3a0d-4008-be9a-059d06218284","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"LayerId":{"name":"4f5e1ef3-26d9-4ef1-bd9d-b0f8245438ea","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_map_desert_island","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","name":"7d81ad72-3a0d-4008-be9a-059d06218284","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e874608e-5743-4a8b-8454-a9c73aeabaa4","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e874608e-5743-4a8b-8454-a9c73aeabaa4","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"LayerId":{"name":"4f5e1ef3-26d9-4ef1-bd9d-b0f8245438ea","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_map_desert_island","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","name":"e874608e-5743-4a8b-8454-a9c73aeabaa4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"287b14cb-5d02-4c72-953b-da38aed2c9cf",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"471417ba-25f3-404f-bc63-a0c874572cbb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dd1fe9f8-4c7a-4a64-9a2b-62504794981a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f484a8b4-3525-4cac-94a6-1cd13bd4a292",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7d81ad72-3a0d-4008-be9a-059d06218284",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e874608e-5743-4a8b-8454-a9c73aeabaa4",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_map_desert_island","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_map_desert_island",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -52,17 +46,17 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 6.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"67026b4a-7e1d-4479-b7d9-03531b9e9c95","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"287b14cb-5d02-4c72-953b-da38aed2c9cf","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"666ebbf5-cd8c-4163-9b16-bee2d87d4d40","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"471417ba-25f3-404f-bc63-a0c874572cbb","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"c75b616e-5d82-4c0f-beb1-12ca5fe562eb","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dd1fe9f8-4c7a-4a64-9a2b-62504794981a","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"69ba4779-3013-4096-8cff-4bb6a170112a","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f484a8b4-3525-4cac-94a6-1cd13bd4a292","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"869daaee-34bd-4ec5-ada2-ea283afdb8af","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7d81ad72-3a0d-4008-be9a-059d06218284","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"b5e18a40-3f00-4310-b0ee-bb8d206b0fa0","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e874608e-5743-4a8b-8454-a9c73aeabaa4","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"67026b4a-7e1d-4479-b7d9-03531b9e9c95","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"287b14cb-5d02-4c72-953b-da38aed2c9cf","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"666ebbf5-cd8c-4163-9b16-bee2d87d4d40","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"471417ba-25f3-404f-bc63-a0c874572cbb","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c75b616e-5d82-4c0f-beb1-12ca5fe562eb","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dd1fe9f8-4c7a-4a64-9a2b-62504794981a","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"69ba4779-3013-4096-8cff-4bb6a170112a","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f484a8b4-3525-4cac-94a6-1cd13bd4a292","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"869daaee-34bd-4ec5-ada2-ea283afdb8af","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7d81ad72-3a0d-4008-be9a-059d06218284","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b5e18a40-3f00-4310-b0ee-bb8d206b0fa0","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e874608e-5743-4a8b-8454-a9c73aeabaa4","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +72,13 @@
     "yorigin": 135,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_map_desert_island","path":"sprites/spr_map_desert_island/spr_map_desert_island.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_map_desert_island",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4f5e1ef3-26d9-4ef1-bd9d-b0f8245438ea","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4f5e1ef3-26d9-4ef1-bd9d-b0f8245438ea","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "JIslandMaps",
     "path": "folders/Sprites/Map/JIslandMaps.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_map_desert_island",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

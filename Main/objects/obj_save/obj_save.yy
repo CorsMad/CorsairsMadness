@@ -1,7 +1,11 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_save",
   "spriteId": null,
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -18,7 +22,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":37,"eventType":9,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":37,"eventType":9,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -26,8 +30,4 @@
     "name": "SaveLoad",
     "path": "folders/Objects/SaveLoad.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_save",
-  "tags": [],
-  "resourceType": "GMObject",
 }

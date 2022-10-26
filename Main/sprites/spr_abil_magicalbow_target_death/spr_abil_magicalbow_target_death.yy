@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_abil_magicalbow_target_death",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 64,
   "height": 64,
   "textureGroupId": {
@@ -24,21 +28,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b22ca4b2-8984-493c-a953-43754ad5a21b","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b22ca4b2-8984-493c-a953-43754ad5a21b","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"LayerId":{"name":"2cecca7d-3b15-48af-9067-3be51b33167d","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_abil_magicalbow_target_death","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"resourceVersion":"1.0","name":"b22ca4b2-8984-493c-a953-43754ad5a21b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2d2f35e0-22d3-48dd-8ff9-eacdda14bab9","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2d2f35e0-22d3-48dd-8ff9-eacdda14bab9","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"LayerId":{"name":"2cecca7d-3b15-48af-9067-3be51b33167d","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_abil_magicalbow_target_death","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"resourceVersion":"1.0","name":"2d2f35e0-22d3-48dd-8ff9-eacdda14bab9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9e64fb03-87b5-4f4f-a5af-d4277917dd15","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9e64fb03-87b5-4f4f-a5af-d4277917dd15","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"LayerId":{"name":"2cecca7d-3b15-48af-9067-3be51b33167d","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_abil_magicalbow_target_death","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"resourceVersion":"1.0","name":"9e64fb03-87b5-4f4f-a5af-d4277917dd15","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"68312d1d-8295-41e1-9aa8-2633c60927ee","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"68312d1d-8295-41e1-9aa8-2633c60927ee","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"LayerId":{"name":"2cecca7d-3b15-48af-9067-3be51b33167d","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_abil_magicalbow_target_death","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"resourceVersion":"1.0","name":"68312d1d-8295-41e1-9aa8-2633c60927ee","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b22ca4b2-8984-493c-a953-43754ad5a21b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2d2f35e0-22d3-48dd-8ff9-eacdda14bab9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9e64fb03-87b5-4f4f-a5af-d4277917dd15",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"68312d1d-8295-41e1-9aa8-2633c60927ee",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_abil_magicalbow_target_death","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_abil_magicalbow_target_death",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -46,15 +44,15 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 4.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a4d10d4a-fab9-4138-a928-b1ddccf37443","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b22ca4b2-8984-493c-a953-43754ad5a21b","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"70f8b4f6-b1d5-4adc-876c-d0c055fc20ad","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2d2f35e0-22d3-48dd-8ff9-eacdda14bab9","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"b7949e68-6c81-4699-97f2-36838c53928e","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9e64fb03-87b5-4f4f-a5af-d4277917dd15","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"3078fceb-c75c-45be-a0a7-1b80822f9bd5","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"68312d1d-8295-41e1-9aa8-2633c60927ee","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"a4d10d4a-fab9-4138-a928-b1ddccf37443","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b22ca4b2-8984-493c-a953-43754ad5a21b","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"70f8b4f6-b1d5-4adc-876c-d0c055fc20ad","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2d2f35e0-22d3-48dd-8ff9-eacdda14bab9","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b7949e68-6c81-4699-97f2-36838c53928e","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9e64fb03-87b5-4f4f-a5af-d4277917dd15","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3078fceb-c75c-45be-a0a7-1b80822f9bd5","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"68312d1d-8295-41e1-9aa8-2633c60927ee","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +68,13 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_abil_magicalbow_target_death","path":"sprites/spr_abil_magicalbow_target_death/spr_abil_magicalbow_target_death.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_abil_magicalbow_target_death",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2cecca7d-3b15-48af-9067-3be51b33167d","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2cecca7d-3b15-48af-9067-3be51b33167d","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "MagicBow",
     "path": "folders/Sprites/Player/Player normal/Spical Abilities/MagicBow.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_abil_magicalbow_target_death",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

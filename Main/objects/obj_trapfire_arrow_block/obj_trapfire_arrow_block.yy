@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_trapfire_arrow_block",
   "spriteId": {
     "name": "spr_trapfire_block",
     "path": "sprites/spr_trapfire_block/spr_trapfire_block.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "TrapFire",
     "path": "folders/Objects/Enemies/TrapFire.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_trapfire_arrow_block",
-  "tags": [],
-  "resourceType": "GMObject",
 }

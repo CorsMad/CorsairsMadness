@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_skeleton_surf_archer_move",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 56,
   "height": 56,
   "textureGroupId": {
@@ -24,27 +28,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"07efb28b-f959-41e0-bac9-46fd01e8d584","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"07efb28b-f959-41e0-bac9-46fd01e8d584","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"LayerId":{"name":"c5b44132-2a05-4d42-b750-db62261bcb9b","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_surf_archer_move","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","name":"07efb28b-f959-41e0-bac9-46fd01e8d584","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"787cb66a-9005-4202-94f0-c6b645d5c59b","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"787cb66a-9005-4202-94f0-c6b645d5c59b","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"LayerId":{"name":"c5b44132-2a05-4d42-b750-db62261bcb9b","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_surf_archer_move","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","name":"787cb66a-9005-4202-94f0-c6b645d5c59b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"68e47e1a-7a0d-45d0-864e-2197d6dce327","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"68e47e1a-7a0d-45d0-864e-2197d6dce327","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"LayerId":{"name":"c5b44132-2a05-4d42-b750-db62261bcb9b","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_surf_archer_move","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","name":"68e47e1a-7a0d-45d0-864e-2197d6dce327","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c0e348a9-2805-4d75-8377-861132517d99","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c0e348a9-2805-4d75-8377-861132517d99","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"LayerId":{"name":"c5b44132-2a05-4d42-b750-db62261bcb9b","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_surf_archer_move","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","name":"c0e348a9-2805-4d75-8377-861132517d99","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"db3697e3-8a3a-4ad3-b82d-9cc7c5e75a98","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"db3697e3-8a3a-4ad3-b82d-9cc7c5e75a98","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"LayerId":{"name":"c5b44132-2a05-4d42-b750-db62261bcb9b","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_surf_archer_move","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","name":"db3697e3-8a3a-4ad3-b82d-9cc7c5e75a98","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1f1b2eb7-29f6-4953-aa21-e8400d8705b4","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1f1b2eb7-29f6-4953-aa21-e8400d8705b4","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"LayerId":{"name":"c5b44132-2a05-4d42-b750-db62261bcb9b","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_surf_archer_move","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","name":"1f1b2eb7-29f6-4953-aa21-e8400d8705b4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"07efb28b-f959-41e0-bac9-46fd01e8d584",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"787cb66a-9005-4202-94f0-c6b645d5c59b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"68e47e1a-7a0d-45d0-864e-2197d6dce327",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c0e348a9-2805-4d75-8377-861132517d99",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"db3697e3-8a3a-4ad3-b82d-9cc7c5e75a98",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1f1b2eb7-29f6-4953-aa21-e8400d8705b4",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_skeleton_surf_archer_move","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_skeleton_surf_archer_move",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -52,17 +46,17 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 6.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"44c286a9-0a4f-4b08-9622-2a9f9a750705","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"07efb28b-f959-41e0-bac9-46fd01e8d584","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"36c62c46-428e-4e7b-9411-f91fa4f56964","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"787cb66a-9005-4202-94f0-c6b645d5c59b","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"dd15be02-d4d2-465e-9ef7-855a49be4c9f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"68e47e1a-7a0d-45d0-864e-2197d6dce327","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"4374a986-bfc9-4817-972d-a5bb3344a927","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c0e348a9-2805-4d75-8377-861132517d99","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"474b33c5-ba71-4f44-87af-f5cee86d8861","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"db3697e3-8a3a-4ad3-b82d-9cc7c5e75a98","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"f1a685dc-3f0b-4085-a788-988b2060d2cf","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1f1b2eb7-29f6-4953-aa21-e8400d8705b4","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"44c286a9-0a4f-4b08-9622-2a9f9a750705","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"07efb28b-f959-41e0-bac9-46fd01e8d584","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"36c62c46-428e-4e7b-9411-f91fa4f56964","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"787cb66a-9005-4202-94f0-c6b645d5c59b","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"dd15be02-d4d2-465e-9ef7-855a49be4c9f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"68e47e1a-7a0d-45d0-864e-2197d6dce327","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4374a986-bfc9-4817-972d-a5bb3344a927","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c0e348a9-2805-4d75-8377-861132517d99","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"474b33c5-ba71-4f44-87af-f5cee86d8861","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"db3697e3-8a3a-4ad3-b82d-9cc7c5e75a98","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f1a685dc-3f0b-4085-a788-988b2060d2cf","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1f1b2eb7-29f6-4953-aa21-e8400d8705b4","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +72,13 @@
     "yorigin": 56,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_skeleton_surf_archer_move","path":"sprites/spr_skeleton_surf_archer_move/spr_skeleton_surf_archer_move.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_skeleton_surf_archer_move",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c5b44132-2a05-4d42-b750-db62261bcb9b","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c5b44132-2a05-4d42-b750-db62261bcb9b","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Skeleton surf archer",
     "path": "folders/Sprites/Enemies/Skeletons/Skeleton surf/Skeleton surf archer.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_skeleton_surf_archer_move",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

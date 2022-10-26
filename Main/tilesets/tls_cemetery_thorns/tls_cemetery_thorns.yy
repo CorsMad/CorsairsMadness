@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tls_cemetery_thorns",
   "spriteId": {
     "name": "spr_tls_cemetery_thorns",
     "path": "sprites/spr_tls_cemetery_thorns/spr_tls_cemetery_thorns.yy",
@@ -71,8 +74,4 @@
     "name": "Cemetery",
     "path": "folders/Tile Sets/Cemetery.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tls_cemetery_thorns",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

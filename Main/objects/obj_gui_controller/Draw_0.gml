@@ -68,6 +68,13 @@ if instance_exists(obj_Player)
     	draw_set_font(fnt_pixel);
         draw_text_colour(camera_get_view_x(view_camera[0])+406,camera_get_view_y(view_camera[0])+18,string(global.gold),c_white,c_white,c_white,c_white,1);
     }
+    if obj_Player.state = 1
+    {
+        draw_sprite_ext(spr_dark_essence,2,(camera_get_view_x(view_camera[0]))+360,camera_get_view_y(view_camera[0])+16,1,1,0, c_white,1);
+    	draw_set_font(fnt_pixel);
+        draw_text_colour(camera_get_view_x(view_camera[0])+378,camera_get_view_y(view_camera[0])+10.5,string(global.darkessence),c_white,c_white,c_white,c_white,1);
+           
+    }
 }
 #endregion
 
@@ -121,17 +128,9 @@ if instance_exists(obj_Player)
 }
 #endregion
 
-#region draw_room_name
-    /*
-	draw_set_font(fnt_pixel);
-    draw_text_colour(camera_get_view_x(view_camera[0])+420,camera_get_view_y(view_camera[0])+8,room_get_name(room),c_white,c_white,c_white,c_white,1);
-    /*
-    if instance_exists(obj_Player)
-    {
-        draw_text(32,32,obj_Player.DashEnabled);
-        draw_text(32,48,obj_Player.dash_counts);
-    }
-    */
+#region TEST
+    
+//    draw_text((camera_get_view_x(view_camera[0]))+240,camera_get_view_y(view_camera[0])+64,string(global.darkessence_saved));
       
 #endregion
 

@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_block_jump_small_flw",
   "spriteId": {
     "name": "spr_block_follower_jump_small",
     "path": "sprites/spr_block_follower_jump_small/spr_block_follower_jump_small.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Follower blocks",
     "path": "folders/Objects/Blocks/Follower blocks.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_block_jump_small_flw",
-  "tags": [],
-  "resourceType": "GMObject",
 }

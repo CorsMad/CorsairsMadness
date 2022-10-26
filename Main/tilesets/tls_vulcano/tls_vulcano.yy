@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tls_vulcano",
   "spriteId": {
     "name": "spr_tls_vulcano",
     "path": "sprites/spr_tls_vulcano/spr_tls_vulcano.yy",
@@ -104,8 +107,4 @@
     "name": "Tile Sets",
     "path": "folders/Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tls_vulcano",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

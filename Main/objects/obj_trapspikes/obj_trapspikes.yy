@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_trapspikes",
   "spriteId": {
     "name": "spr_trapspikes",
     "path": "sprites/spr_trapspikes/spr_trapspikes.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_trapspikes_mask_off",
     "path": "sprites/spr_trapspikes_mask_off/spr_trapspikes_mask_off.yy",
@@ -27,8 +31,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -36,8 +40,4 @@
     "name": "TrapSpikes",
     "path": "folders/Objects/Enemies/TrapSpikes.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_trapspikes",
-  "tags": [],
-  "resourceType": "GMObject",
 }

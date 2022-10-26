@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_block_clone",
   "spriteId": {
     "name": "spr_block_mask",
     "path": "sprites/spr_block_mask/spr_block_mask.yy",
   },
   "solid": true,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Blocks",
     "path": "folders/Objects/Blocks.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_block_clone",
-  "tags": [],
-  "resourceType": "GMObject",
 }

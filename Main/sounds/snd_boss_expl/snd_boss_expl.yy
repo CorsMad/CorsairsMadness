@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_boss_expl",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -16,8 +20,4 @@
     "name": "Boss1",
     "path": "folders/Sounds/Enemy sounds/Boss1.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_boss_expl",
-  "tags": [],
-  "resourceType": "GMSound",
 }

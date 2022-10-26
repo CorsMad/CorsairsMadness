@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_objects_delete",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -25,8 +28,4 @@
     "name": "Main",
     "path": "folders/Objects/Level Containers (PERS objects)/Main.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_objects_delete",
-  "tags": [],
-  "resourceType": "GMObject",
 }

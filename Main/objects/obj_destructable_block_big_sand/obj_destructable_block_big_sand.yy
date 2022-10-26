@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_destructable_block_big_sand",
   "spriteId": {
     "name": "spr_destructable_block_big",
     "path": "sprites/spr_destructable_block_big/spr_destructable_block_big.yy",
   },
   "solid": true,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -24,8 +28,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,8 +37,4 @@
     "name": "Destructable blocks sand",
     "path": "folders/Objects/Blocks/Destructable blocks sand.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_destructable_block_big_sand",
-  "tags": [],
-  "resourceType": "GMObject",
 }

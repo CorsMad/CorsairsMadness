@@ -14,6 +14,6 @@ if audio_group_is_loaded(MusicVolume) && audio_group_is_loaded(SFXvolume)
 {
     if keyboard_check_pressed(vk_anykey)
     {
-        room_goto(MainScreen);   
+        room_goto(MainMenu);   
     }
 }

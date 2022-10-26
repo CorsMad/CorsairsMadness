@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_skeleton_swordsman_prepare",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 36,
   "height": 36,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"26a05c9a-af76-4915-8cc3-92c04d8a7ed7","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"26a05c9a-af76-4915-8cc3-92c04d8a7ed7","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},"LayerId":{"name":"3dc9312a-0bc8-4c43-a355-c69236c572e3","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_swordsman_prepare","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},"resourceVersion":"1.0","name":"26a05c9a-af76-4915-8cc3-92c04d8a7ed7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3a3a1b21-afb5-4d07-8b3e-082788d8db83","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3a3a1b21-afb5-4d07-8b3e-082788d8db83","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},"LayerId":{"name":"3dc9312a-0bc8-4c43-a355-c69236c572e3","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_swordsman_prepare","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},"resourceVersion":"1.0","name":"3a3a1b21-afb5-4d07-8b3e-082788d8db83","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7cf5dd37-1227-477d-9d16-5ee07a356d7b","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7cf5dd37-1227-477d-9d16-5ee07a356d7b","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},"LayerId":{"name":"3dc9312a-0bc8-4c43-a355-c69236c572e3","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_swordsman_prepare","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},"resourceVersion":"1.0","name":"7cf5dd37-1227-477d-9d16-5ee07a356d7b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"26a05c9a-af76-4915-8cc3-92c04d8a7ed7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3a3a1b21-afb5-4d07-8b3e-082788d8db83",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7cf5dd37-1227-477d-9d16-5ee07a356d7b",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_skeleton_swordsman_prepare","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_skeleton_swordsman_prepare",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -43,14 +43,14 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 3.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ae742ce2-95ff-4569-8e10-9c824c1a68dc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"26a05c9a-af76-4915-8cc3-92c04d8a7ed7","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"b03d6da0-7796-40e0-8795-bc979f0cc1c5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3a3a1b21-afb5-4d07-8b3e-082788d8db83","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"89257db6-68e8-4382-a4d5-8c363bf24a39","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7cf5dd37-1227-477d-9d16-5ee07a356d7b","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"ae742ce2-95ff-4569-8e10-9c824c1a68dc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"26a05c9a-af76-4915-8cc3-92c04d8a7ed7","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b03d6da0-7796-40e0-8795-bc979f0cc1c5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3a3a1b21-afb5-4d07-8b3e-082788d8db83","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"89257db6-68e8-4382-a4d5-8c363bf24a39","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7cf5dd37-1227-477d-9d16-5ee07a356d7b","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 36,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_skeleton_swordsman_prepare","path":"sprites/spr_skeleton_swordsman_prepare/spr_skeleton_swordsman_prepare.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_skeleton_swordsman_prepare",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3dc9312a-0bc8-4c43-a355-c69236c572e3","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3dc9312a-0bc8-4c43-a355-c69236c572e3","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Skeleton swordsman",
     "path": "folders/Sprites/Enemies/Skeletons/Skeleton swordsman.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_skeleton_swordsman_prepare",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

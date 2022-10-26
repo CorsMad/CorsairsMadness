@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_abil_magicalbow_rope_break",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 32,
   "height": 160,
   "textureGroupId": {
@@ -24,21 +28,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f4d4b669-238b-423d-a90b-f8985bbac5c9","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f4d4b669-238b-423d-a90b-f8985bbac5c9","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"LayerId":{"name":"05d5940a-bce4-46c3-92ae-023564cee901","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_abil_magicalbow_rope_break","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"resourceVersion":"1.0","name":"f4d4b669-238b-423d-a90b-f8985bbac5c9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"95382dff-3309-4a9d-932c-af1a91974530","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"95382dff-3309-4a9d-932c-af1a91974530","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"LayerId":{"name":"05d5940a-bce4-46c3-92ae-023564cee901","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_abil_magicalbow_rope_break","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"resourceVersion":"1.0","name":"95382dff-3309-4a9d-932c-af1a91974530","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f0d00208-22f8-40ff-8e9e-6c08e22143fe","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f0d00208-22f8-40ff-8e9e-6c08e22143fe","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"LayerId":{"name":"05d5940a-bce4-46c3-92ae-023564cee901","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_abil_magicalbow_rope_break","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"resourceVersion":"1.0","name":"f0d00208-22f8-40ff-8e9e-6c08e22143fe","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"087cf5d7-c9c4-4f90-a540-c1dc09835fbd","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"087cf5d7-c9c4-4f90-a540-c1dc09835fbd","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"LayerId":{"name":"05d5940a-bce4-46c3-92ae-023564cee901","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_abil_magicalbow_rope_break","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"resourceVersion":"1.0","name":"087cf5d7-c9c4-4f90-a540-c1dc09835fbd","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f4d4b669-238b-423d-a90b-f8985bbac5c9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"95382dff-3309-4a9d-932c-af1a91974530",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f0d00208-22f8-40ff-8e9e-6c08e22143fe",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"087cf5d7-c9c4-4f90-a540-c1dc09835fbd",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_abil_magicalbow_rope_break","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_abil_magicalbow_rope_break",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -46,15 +44,15 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 4.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"32b7f5a4-4eba-41b3-9aba-eab629d23ada","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f4d4b669-238b-423d-a90b-f8985bbac5c9","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"b4737c67-0dc3-4d50-aa17-e84548c8cc06","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"95382dff-3309-4a9d-932c-af1a91974530","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"aa3fe2dc-e5c3-45ca-a97e-1a3636d78ae6","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f0d00208-22f8-40ff-8e9e-6c08e22143fe","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"c7abfd94-1b01-4339-acea-cece90653819","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"087cf5d7-c9c4-4f90-a540-c1dc09835fbd","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"32b7f5a4-4eba-41b3-9aba-eab629d23ada","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f4d4b669-238b-423d-a90b-f8985bbac5c9","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b4737c67-0dc3-4d50-aa17-e84548c8cc06","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"95382dff-3309-4a9d-932c-af1a91974530","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"aa3fe2dc-e5c3-45ca-a97e-1a3636d78ae6","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f0d00208-22f8-40ff-8e9e-6c08e22143fe","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c7abfd94-1b01-4339-acea-cece90653819","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"087cf5d7-c9c4-4f90-a540-c1dc09835fbd","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +68,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_abil_magicalbow_rope_break","path":"sprites/spr_abil_magicalbow_rope_break/spr_abil_magicalbow_rope_break.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_abil_magicalbow_rope_break",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"05d5940a-bce4-46c3-92ae-023564cee901","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"05d5940a-bce4-46c3-92ae-023564cee901","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "MagicBow",
     "path": "folders/Sprites/Player/Player normal/Spical Abilities/MagicBow.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_abil_magicalbow_rope_break",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

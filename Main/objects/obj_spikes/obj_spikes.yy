@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_spikes",
   "spriteId": {
     "name": "spr_spikes",
     "path": "sprites/spr_spikes/spr_spikes.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_spikes_mask",
     "path": "sprites/spr_spikes_mask/spr_spikes_mask.yy",
@@ -27,7 +31,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -35,8 +39,4 @@
     "name": "Spikes",
     "path": "folders/Objects/Enemies/Spikes.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_spikes",
-  "tags": [],
-  "resourceType": "GMObject",
 }

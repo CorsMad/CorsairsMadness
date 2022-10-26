@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_boat_algae",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 30,
   "height": 15,
   "textureGroupId": {
@@ -24,15 +28,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d2f1e936-e8ea-40a0-8cf2-c0f49cafc752","path":"sprites/spr_boat_algae/spr_boat_algae.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d2f1e936-e8ea-40a0-8cf2-c0f49cafc752","path":"sprites/spr_boat_algae/spr_boat_algae.yy",},"LayerId":{"name":"2cebfeaf-1dcd-4b82-a0fd-90f1b0df57fa","path":"sprites/spr_boat_algae/spr_boat_algae.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_algae","path":"sprites/spr_boat_algae/spr_boat_algae.yy",},"resourceVersion":"1.0","name":"d2f1e936-e8ea-40a0-8cf2-c0f49cafc752","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"398c201f-6625-4dbd-8616-d9e77ef1772b","path":"sprites/spr_boat_algae/spr_boat_algae.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"398c201f-6625-4dbd-8616-d9e77ef1772b","path":"sprites/spr_boat_algae/spr_boat_algae.yy",},"LayerId":{"name":"2cebfeaf-1dcd-4b82-a0fd-90f1b0df57fa","path":"sprites/spr_boat_algae/spr_boat_algae.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_algae","path":"sprites/spr_boat_algae/spr_boat_algae.yy",},"resourceVersion":"1.0","name":"398c201f-6625-4dbd-8616-d9e77ef1772b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d2f1e936-e8ea-40a0-8cf2-c0f49cafc752",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"398c201f-6625-4dbd-8616-d9e77ef1772b",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_boat_algae","path":"sprites/spr_boat_algae/spr_boat_algae.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_boat_algae",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -40,13 +42,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"95fb8784-8d18-48f7-9676-f760e7be8844","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d2f1e936-e8ea-40a0-8cf2-c0f49cafc752","path":"sprites/spr_boat_algae/spr_boat_algae.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"2ef7358c-f3bd-461f-925f-79f6fa58c1b7","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"398c201f-6625-4dbd-8616-d9e77ef1772b","path":"sprites/spr_boat_algae/spr_boat_algae.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"95fb8784-8d18-48f7-9676-f760e7be8844","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d2f1e936-e8ea-40a0-8cf2-c0f49cafc752","path":"sprites/spr_boat_algae/spr_boat_algae.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2ef7358c-f3bd-461f-925f-79f6fa58c1b7","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"398c201f-6625-4dbd-8616-d9e77ef1772b","path":"sprites/spr_boat_algae/spr_boat_algae.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +64,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_boat_algae","path":"sprites/spr_boat_algae/spr_boat_algae.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_boat_algae",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2cebfeaf-1dcd-4b82-a0fd-90f1b0df57fa","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2cebfeaf-1dcd-4b82-a0fd-90f1b0df57fa","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Boat level",
     "path": "folders/Sprites/Level objects/Levels Stuff/Boat level.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_boat_algae",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

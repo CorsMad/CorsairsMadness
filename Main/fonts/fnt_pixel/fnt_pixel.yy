@@ -1,8 +1,12 @@
 {
+  "resourceType": "GMFont",
+  "resourceVersion": "1.0",
+  "name": "fnt_pixel",
   "hinting": 0,
   "glyphOperations": 0,
   "interpreter": 0,
   "pointRounding": 0,
+  "applyKerning": 0,
   "fontName": "Pixel NES",
   "styleName": "Regular",
   "size": 8.0,
@@ -20,6 +24,7 @@
     "path": "texturegroups/Default",
   },
   "ascenderOffset": 1,
+  "ascender": 0,
   "glyphs": {
     "32": {"x":2,"y":2,"w":8,"h":14,"character":32,"shift":8,"offset":0,},
     "33": {"x":76,"y":66,"w":6,"h":14,"character":33,"shift":7,"offset":0,},
@@ -130,8 +135,4 @@
     "name": "Fonts",
     "path": "folders/Fonts.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "fnt_pixel",
-  "tags": [],
-  "resourceType": "GMFont",
 }

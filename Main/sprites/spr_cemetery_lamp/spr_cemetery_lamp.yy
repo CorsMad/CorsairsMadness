@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_cemetery_lamp",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 12,
   "height": 40,
   "textureGroupId": {
@@ -24,15 +28,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"66f4c371-8e98-4252-b1b2-4d1339b4619f","path":"sprites/spr_cemetery_lamp/spr_cemetery_lamp.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"66f4c371-8e98-4252-b1b2-4d1339b4619f","path":"sprites/spr_cemetery_lamp/spr_cemetery_lamp.yy",},"LayerId":{"name":"6a65b919-540d-497b-b51a-6c19125b449f","path":"sprites/spr_cemetery_lamp/spr_cemetery_lamp.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cemetery_lamp","path":"sprites/spr_cemetery_lamp/spr_cemetery_lamp.yy",},"resourceVersion":"1.0","name":"66f4c371-8e98-4252-b1b2-4d1339b4619f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fcb6eedf-a7ea-4854-9a66-eff332da7cba","path":"sprites/spr_cemetery_lamp/spr_cemetery_lamp.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fcb6eedf-a7ea-4854-9a66-eff332da7cba","path":"sprites/spr_cemetery_lamp/spr_cemetery_lamp.yy",},"LayerId":{"name":"6a65b919-540d-497b-b51a-6c19125b449f","path":"sprites/spr_cemetery_lamp/spr_cemetery_lamp.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cemetery_lamp","path":"sprites/spr_cemetery_lamp/spr_cemetery_lamp.yy",},"resourceVersion":"1.0","name":"fcb6eedf-a7ea-4854-9a66-eff332da7cba","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"66f4c371-8e98-4252-b1b2-4d1339b4619f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fcb6eedf-a7ea-4854-9a66-eff332da7cba",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_cemetery_lamp","path":"sprites/spr_cemetery_lamp/spr_cemetery_lamp.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_cemetery_lamp",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -40,13 +42,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ea565bc1-7549-40f4-a0c4-d69da8ee29a6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"66f4c371-8e98-4252-b1b2-4d1339b4619f","path":"sprites/spr_cemetery_lamp/spr_cemetery_lamp.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"a714cfb7-9cbf-4c9c-a680-ec76f2e2d346","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fcb6eedf-a7ea-4854-9a66-eff332da7cba","path":"sprites/spr_cemetery_lamp/spr_cemetery_lamp.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"ea565bc1-7549-40f4-a0c4-d69da8ee29a6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"66f4c371-8e98-4252-b1b2-4d1339b4619f","path":"sprites/spr_cemetery_lamp/spr_cemetery_lamp.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a714cfb7-9cbf-4c9c-a680-ec76f2e2d346","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fcb6eedf-a7ea-4854-9a66-eff332da7cba","path":"sprites/spr_cemetery_lamp/spr_cemetery_lamp.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +64,13 @@
     "yorigin": 40,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_cemetery_lamp","path":"sprites/spr_cemetery_lamp/spr_cemetery_lamp.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_cemetery_lamp",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6a65b919-540d-497b-b51a-6c19125b449f","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6a65b919-540d-497b-b51a-6c19125b449f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Cemetery level",
     "path": "folders/Sprites/Level objects/Levels Stuff/Cemetery level.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_cemetery_lamp",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

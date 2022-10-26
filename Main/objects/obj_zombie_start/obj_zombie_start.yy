@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_zombie_start",
   "spriteId": {
     "name": "spr_zombie_start",
     "path": "sprites/spr_zombie_start/spr_zombie_start.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -21,16 +25,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Zombies",
-    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Zombies.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Graveyard/Zombies.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_zombie_start",
-  "tags": [],
-  "resourceType": "GMObject",
 }

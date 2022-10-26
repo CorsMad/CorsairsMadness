@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_item_hook_anchor",
   "spriteId": {
     "name": "spr_item_hook_anchor",
     "path": "sprites/spr_item_hook_anchor/spr_item_hook_anchor.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_item_hook_anchor_mask",
     "path": "sprites/spr_item_hook_anchor_mask/spr_item_hook_anchor_mask.yy",
@@ -30,8 +34,4 @@
     "name": "Hook",
     "path": "folders/Objects/Items/Hook.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_item_hook_anchor",
-  "tags": [],
-  "resourceType": "GMObject",
 }

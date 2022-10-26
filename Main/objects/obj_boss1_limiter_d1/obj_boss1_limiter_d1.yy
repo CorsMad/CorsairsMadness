@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_boss1_limiter_d1",
   "spriteId": {
     "name": "spr_boss1_limiter_d1",
     "path": "sprites/spr_boss1_limiter_d1/spr_boss1_limiter_d1.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Boss1",
     "path": "folders/Objects/Enemies/Bosses/Boss1.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_boss1_limiter_d1",
-  "tags": [],
-  "resourceType": "GMObject",
 }

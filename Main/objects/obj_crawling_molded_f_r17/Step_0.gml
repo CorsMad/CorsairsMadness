@@ -218,6 +218,26 @@ if isGrounded = 0
 
 if enemy_hp <= 0
 {
+    var den5_1 = instance_create_depth(x,y,depth+1,obj_dark_essence);
+    var den5_2 = instance_create_depth(x,y,depth+1,obj_dark_essence);
+    var den5_3 = instance_create_depth(x,y,depth+1,obj_dark_essence);
+    var den5_4 = instance_create_depth(x,y,depth+1,obj_dark_essence);
+    den5_1.hspd = -4;
+    den5_1.vspd = -1;
+    den5_1.val = 5;
+    
+    den5_2.hspd = 4;
+    den5_2.vspd = -1;
+    den5_2.val = 5;
+    
+    den5_3.hspd = -2;
+    den5_3.vspd = 2;
+    den5_3.val = 5;
+    
+    den5_4.hspd = 2;
+    den5_4.vspd = 2;
+    den5_4.val = 5;
+    
     instance_destroy();
     var i = instance_create_depth(x,y,depth,obj_crawling_molded_dead);
     i.hspd = fspd;

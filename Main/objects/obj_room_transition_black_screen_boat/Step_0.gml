@@ -5,6 +5,5 @@ if a > 2
     if alpha >= 1  
     {
         room_restart();
-
     }	
 }

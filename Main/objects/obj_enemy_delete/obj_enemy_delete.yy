@@ -1,7 +1,11 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_enemy_delete",
   "spriteId": null,
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -24,8 +28,4 @@
     "name": "Main",
     "path": "folders/Objects/Level Containers (PERS objects)/Main.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_enemy_delete",
-  "tags": [],
-  "resourceType": "GMObject",
 }

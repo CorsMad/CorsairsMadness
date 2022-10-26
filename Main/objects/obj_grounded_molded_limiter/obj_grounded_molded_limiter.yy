@@ -1,7 +1,11 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_grounded_molded_limiter",
   "spriteId": null,
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -24,8 +28,4 @@
     "name": "Grounded",
     "path": "folders/Objects/Enemies/Molded enemies/Grounded.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_grounded_molded_limiter",
-  "tags": [],
-  "resourceType": "GMObject",
 }

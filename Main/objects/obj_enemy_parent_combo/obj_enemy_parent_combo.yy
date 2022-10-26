@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_enemy_parent_combo",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -25,8 +28,4 @@
     "name": "1.objPARENTING",
     "path": "folders/Objects/Enemies/1.objPARENTING.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_enemy_parent_combo",
-  "tags": [],
-  "resourceType": "GMObject",
 }

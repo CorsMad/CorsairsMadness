@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "msc_Temple1",
   "conversionMode": 0,
   "compression": 2,
   "volume": 1.0,
@@ -12,13 +15,9 @@
     "path": "audiogroups/MusicVolume",
   },
   "soundFile": "msc_Temple1.mp3",
-  "duration": 105.639183,
+  "duration": 105.63918,
   "parent": {
     "name": "BGR music",
     "path": "folders/Sounds/BGR music.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "msc_Temple1",
-  "tags": [],
-  "resourceType": "GMSound",
 }

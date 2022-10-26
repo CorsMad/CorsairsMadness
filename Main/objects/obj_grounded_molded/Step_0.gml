@@ -373,7 +373,6 @@ if state = 10
     }
 }
 if t_red!= 0
-
 {
     image_blend = c_red;
     t_red -=0.1;   
@@ -387,14 +386,23 @@ if t_red = 0
 #region от обычного добивания
 if place_meeting(x,y,obj_hitbox_mask_finisher)  && hit_cd = 0  && state != 11//&& getKicked = 0
 {
-    vspd = -2;
-    hspd = sign(obj_Player.dir)*1;
-    getKicked = 1;
-    delay = 1;  
-    hit_cd = 1;
-    state = 10;
-    t_red = 1;
-    fnc_molded_green_blood_hit();
+    if !place_meeting(x,y,obj_item_hook_masked)
+    {
+        vspd = -2;
+        hspd = sign(obj_Player.dir)*1;
+        getKicked = 1;
+        delay = 1;  
+        hit_cd = 1;
+        state = 10;
+        t_red = 1;
+        fnc_molded_green_blood_hit();   
+    } else 
+    {
+        vspd = 0;
+        hspd = 0;
+        getKicked = 0;
+    }
+    
 }
 if place_meeting(x,y+1,obj_block) && delay = 0 && getKicked = 1
     {
@@ -449,15 +457,23 @@ if place_meeting(x,y+1,obj_block) && delay = 0 && getKicked = 2
 
 if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0 && state != 11// && getKicked = 0
 {
-    t_red = 1;
-    vspd = -6;
-    getKicked = 3;
-    delay = 1;  
-    getBounced = 1;
-    hit_cd = 1;
-    state = 10;
-    fnc_molded_green_blood_up();
-    sprite_index = spr_molded_grounded_damageupdown;
+    if !place_meeting(x,y,obj_item_hook_masked)
+    {
+        t_red = 1;
+        vspd = -6;
+        getKicked = 3;
+        delay = 1;  
+        getBounced = 1;
+        hit_cd = 1;
+        state = 10;
+        fnc_molded_green_blood_up();
+        sprite_index = spr_molded_grounded_damageupdown;
+    }   else 
+    {
+        vspd = 0;
+        hspd = 0;
+        getKicked = 0;
+    }
 }
 
 if place_meeting(x,y+1,obj_block) && delay = 0 && getKicked = 3
@@ -606,14 +622,19 @@ if place_meeting(x,y,obj_hitbox_mask_hook)  && hit_cd = 0
         {
             obj_Player.vspd = -3.2;
         }   
+        fnc_molded_green_blood_forward();
         t =0;
         hit_timer = 1;
         hit_cd = 1;
         enemy_hp -= 1;
-        state = 9;
-        hspd = 0;
-        vspd = 0;
+        state = 10;//9
+        //hspd = sign(obj_Player.dir)*2;
+        vspd = -2;
         t_red = 1;
+        getKicked = 2;
+        getBounced = 0;
+        delay = 1;
+        sprite_index = spr_molded_grounded_damageforward;
         fnc_molded_green_blood_hit()
         if obj_Player.x < x 
         		{
@@ -622,8 +643,8 @@ if place_meeting(x,y,obj_hitbox_mask_hook)  && hit_cd = 0
                 
         if obj_Player.x < x
         {
-            hspd = 10;   
-        } else hspd = -10;
+            hspd = 4;   
+        } else hspd = -4;
         
     }   else 
             {
@@ -672,6 +693,9 @@ if place_meeting(x,y,obj_firing_molded_projectile_reverse)  && hit_cd = 0
                 vspd = 0;
             }
 }
+
+
+
 
 
 
@@ -737,3 +761,14 @@ if enemy_hp <= 0
     m.image_xscale = image_xscale;
     instance_destroy();       
 }
+
+
+#region TEST
+
+if place_meeting(x,y,obj_item_hook_masked) && sprite_index!= spr_molded_grounded_wakeup
+{
+    hspd = 0;
+    vspd = 0;
+}
+
+#endregion

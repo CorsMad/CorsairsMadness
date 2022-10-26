@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-sprite_index = -1;
+spr_subim = 0;
+sprite = spr_blank;
+//sprite_index = -1;
 comboMeter = 0;
 t1 = 0;
 t2 = 0;

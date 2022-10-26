@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_bird_creator",
   "spriteId": {
     "name": "spr_enemy_creator",
     "path": "sprites/spr_enemy_creator/spr_enemy_creator.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -25,10 +29,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Horizontal fast",
-    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Birds/Horizontal fast.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Jungle/Birds/Horizontal fast.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_bird_creator",
-  "tags": [],
-  "resourceType": "GMObject",
 }

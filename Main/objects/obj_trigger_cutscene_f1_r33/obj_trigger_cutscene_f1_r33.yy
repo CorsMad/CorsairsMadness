@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_trigger_cutscene_f1_r33",
   "spriteId": {
     "name": "spr_follower_grounded_creator",
     "path": "sprites/spr_follower_grounded_creator/spr_follower_grounded_creator.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -21,7 +25,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -29,8 +33,4 @@
     "name": "Trigger Objects",
     "path": "folders/Objects/Trigger Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_trigger_cutscene_f1_r33",
-  "tags": [],
-  "resourceType": "GMObject",
 }

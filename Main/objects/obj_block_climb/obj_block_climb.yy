@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_block_climb",
   "spriteId": {
     "name": "spr_block_climb",
     "path": "sprites/spr_block_climb/spr_block_climb.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Blocks",
     "path": "folders/Objects/Blocks.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_block_climb",
-  "tags": [],
-  "resourceType": "GMObject",
 }

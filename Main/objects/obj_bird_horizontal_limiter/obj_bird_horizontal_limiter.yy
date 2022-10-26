@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_bird_horizontal_limiter",
   "spriteId": {
     "name": "spr_bird_coconut_limiter",
     "path": "sprites/spr_bird_coconut_limiter/spr_bird_coconut_limiter.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -25,10 +29,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Horizontal shooting",
-    "path": "folders/Objects/Enemies/!CORSAIR GROUP/Birds/Horizontal shooting.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Jungle/Birds/Horizontal shooting.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_bird_horizontal_limiter",
-  "tags": [],
-  "resourceType": "GMObject",
 }

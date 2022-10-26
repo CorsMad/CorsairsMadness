@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_platform_destroyer",
   "spriteId": {
     "name": "spr_room_trans",
     "path": "sprites/spr_room_trans/spr_room_trans.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Platform creator destroy",
     "path": "folders/Objects/Blocks/Moving platforms/Platform creator destroy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_platform_destroyer",
-  "tags": [],
-  "resourceType": "GMObject",
 }

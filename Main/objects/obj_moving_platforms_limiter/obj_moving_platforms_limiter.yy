@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_moving_platforms_limiter",
   "spriteId": {
     "name": "spr_moving_platforms_limiter",
     "path": "sprites/spr_moving_platforms_limiter/spr_moving_platforms_limiter.yy",
@@ -28,8 +31,4 @@
     "name": "Moving platforms",
     "path": "folders/Objects/Blocks/Moving platforms.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_moving_platforms_limiter",
-  "tags": [],
-  "resourceType": "GMObject",
 }

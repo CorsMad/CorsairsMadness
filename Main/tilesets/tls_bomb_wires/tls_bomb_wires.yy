@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tls_bomb_wires",
   "spriteId": {
     "name": "spr_tls_bomb_wires",
     "path": "sprites/spr_tls_bomb_wires/spr_tls_bomb_wires.yy",
@@ -43,8 +46,4 @@
     "name": "Special tiles",
     "path": "folders/Tile Sets/Special tiles.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tls_bomb_wires",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

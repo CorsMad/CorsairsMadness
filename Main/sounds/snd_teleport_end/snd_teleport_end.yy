@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_teleport_end",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -17,8 +20,4 @@
     "name": "Level sounds",
     "path": "folders/Sounds/Level sounds.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_teleport_end",
-  "tags": [],
-  "resourceType": "GMSound",
 }

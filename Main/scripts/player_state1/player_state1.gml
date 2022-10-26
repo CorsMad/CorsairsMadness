@@ -403,11 +403,19 @@ if isAirattacking = 1
 		hspd = 0;
 		spd = 0;
 	}
+    
+    /*
     if vspd < 6 && comboMeter < 4
 	{
 		vspd +=0.25;//0.25;
 	} else vspd = 0;
-	//vspd += 0.25;	
+	*/
+    
+    if vspd < 6 && comboMeter < 4
+	{
+		vspd +=0.25;//0.25;
+	} else if comboMeter >=4 vspd = 0;
+    
 }
 
 if isAirattacking = 1 && jump_timer < 1
@@ -1254,13 +1262,15 @@ if isDead = 1
 	death_timer++;
 	switch(death_timer)
 	{
-		case 1: instance_create_depth(x,y-24,-1,obj_sfx_player_dead_emitter);
-                audio_play_sound(snd_player_death,0,false);
-				sprite_index = spr_player_masked_hurt;
-				break;
-		case 55:sprite_index = spr_player_masked_death;break;
-		case 80: image_alpha = 0;break;
-		case 200: instance_create_depth(x,y-24,-1,obj_room_transition_to_loading);break;
+    	case 1:     instance_create_depth(x,y-24,-1,obj_sfx_player_dead_emitter);
+                    audio_play_sound(snd_player_death,0,false);
+    				sprite_index = spr_player_masked_hurt;
+    				break;
+		case 55:    sprite_index = spr_player_masked_death;break;
+		case 80:    image_alpha = 0;break;
+		case 200:   instance_create_depth(x,y-24,-1,obj_room_transition_to_loading);
+                    global.gold = global.money_saved;
+                    global.darkessence = global.darkessence_saved;break;
 	}
 }
 #endregion

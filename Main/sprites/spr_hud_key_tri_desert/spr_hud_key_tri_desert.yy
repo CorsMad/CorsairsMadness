@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_hud_key_tri_desert",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 18,
   "height": 18,
   "textureGroupId": {
@@ -24,15 +28,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1c9c7ff5-6770-4e49-b5c5-7ccde18327d2","path":"sprites/spr_hud_key_tri_desert/spr_hud_key_tri_desert.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1c9c7ff5-6770-4e49-b5c5-7ccde18327d2","path":"sprites/spr_hud_key_tri_desert/spr_hud_key_tri_desert.yy",},"LayerId":{"name":"ef1358eb-a32c-4e65-ab2b-7fc7d3b7fc01","path":"sprites/spr_hud_key_tri_desert/spr_hud_key_tri_desert.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hud_key_tri_desert","path":"sprites/spr_hud_key_tri_desert/spr_hud_key_tri_desert.yy",},"resourceVersion":"1.0","name":"1c9c7ff5-6770-4e49-b5c5-7ccde18327d2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"90327156-5c81-451f-937f-731ff531727a","path":"sprites/spr_hud_key_tri_desert/spr_hud_key_tri_desert.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"90327156-5c81-451f-937f-731ff531727a","path":"sprites/spr_hud_key_tri_desert/spr_hud_key_tri_desert.yy",},"LayerId":{"name":"ef1358eb-a32c-4e65-ab2b-7fc7d3b7fc01","path":"sprites/spr_hud_key_tri_desert/spr_hud_key_tri_desert.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hud_key_tri_desert","path":"sprites/spr_hud_key_tri_desert/spr_hud_key_tri_desert.yy",},"resourceVersion":"1.0","name":"90327156-5c81-451f-937f-731ff531727a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1c9c7ff5-6770-4e49-b5c5-7ccde18327d2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"90327156-5c81-451f-937f-731ff531727a",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_hud_key_tri_desert","path":"sprites/spr_hud_key_tri_desert/spr_hud_key_tri_desert.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_hud_key_tri_desert",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -40,13 +42,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ba918652-bfa9-44ae-a6d3-e52ff3b9c84d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1c9c7ff5-6770-4e49-b5c5-7ccde18327d2","path":"sprites/spr_hud_key_tri_desert/spr_hud_key_tri_desert.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"e1dd46f3-ea19-4db1-8864-1905bfcf9132","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"90327156-5c81-451f-937f-731ff531727a","path":"sprites/spr_hud_key_tri_desert/spr_hud_key_tri_desert.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"ba918652-bfa9-44ae-a6d3-e52ff3b9c84d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1c9c7ff5-6770-4e49-b5c5-7ccde18327d2","path":"sprites/spr_hud_key_tri_desert/spr_hud_key_tri_desert.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e1dd46f3-ea19-4db1-8864-1905bfcf9132","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"90327156-5c81-451f-937f-731ff531727a","path":"sprites/spr_hud_key_tri_desert/spr_hud_key_tri_desert.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +64,13 @@
     "yorigin": 9,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_hud_key_tri_desert","path":"sprites/spr_hud_key_tri_desert/spr_hud_key_tri_desert.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_hud_key_tri_desert",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ef1358eb-a32c-4e65-ab2b-7fc7d3b7fc01","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ef1358eb-a32c-4e65-ab2b-7fc7d3b7fc01","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Keys",
     "path": "folders/Sprites/HUD/Keys.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_hud_key_tri_desert",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

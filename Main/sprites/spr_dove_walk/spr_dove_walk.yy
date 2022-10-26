@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_dove_walk",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 32,
   "height": 24,
   "textureGroupId": {
@@ -24,15 +28,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"886c911d-4f10-4098-97bf-120283f3f139","path":"sprites/spr_dove_walk/spr_dove_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"886c911d-4f10-4098-97bf-120283f3f139","path":"sprites/spr_dove_walk/spr_dove_walk.yy",},"LayerId":{"name":"6f8e1cb1-018e-4416-a524-74303aea4a3a","path":"sprites/spr_dove_walk/spr_dove_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dove_walk","path":"sprites/spr_dove_walk/spr_dove_walk.yy",},"resourceVersion":"1.0","name":"886c911d-4f10-4098-97bf-120283f3f139","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8bdb8771-d4ac-4f49-a603-56d05213a3ad","path":"sprites/spr_dove_walk/spr_dove_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8bdb8771-d4ac-4f49-a603-56d05213a3ad","path":"sprites/spr_dove_walk/spr_dove_walk.yy",},"LayerId":{"name":"6f8e1cb1-018e-4416-a524-74303aea4a3a","path":"sprites/spr_dove_walk/spr_dove_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dove_walk","path":"sprites/spr_dove_walk/spr_dove_walk.yy",},"resourceVersion":"1.0","name":"8bdb8771-d4ac-4f49-a603-56d05213a3ad","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"886c911d-4f10-4098-97bf-120283f3f139",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8bdb8771-d4ac-4f49-a603-56d05213a3ad",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_dove_walk","path":"sprites/spr_dove_walk/spr_dove_walk.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_dove_walk",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -40,13 +42,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"28309247-045a-4f1e-9953-f2529257d73b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"886c911d-4f10-4098-97bf-120283f3f139","path":"sprites/spr_dove_walk/spr_dove_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"c69eb850-9715-482e-bb21-da766835f287","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8bdb8771-d4ac-4f49-a603-56d05213a3ad","path":"sprites/spr_dove_walk/spr_dove_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"28309247-045a-4f1e-9953-f2529257d73b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"886c911d-4f10-4098-97bf-120283f3f139","path":"sprites/spr_dove_walk/spr_dove_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c69eb850-9715-482e-bb21-da766835f287","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8bdb8771-d4ac-4f49-a603-56d05213a3ad","path":"sprites/spr_dove_walk/spr_dove_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +64,13 @@
     "yorigin": 24,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_dove_walk","path":"sprites/spr_dove_walk/spr_dove_walk.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_dove_walk",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6f8e1cb1-018e-4416-a524-74303aea4a3a","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6f8e1cb1-018e-4416-a524-74303aea4a3a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Dove",
     "path": "folders/Sprites/Level objects/Dove.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_dove_walk",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

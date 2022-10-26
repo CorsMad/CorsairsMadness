@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_tls_bomb_wires",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 32,
   "height": 16,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"8a5c6798-0dd5-4acd-be2a-cfd2d0811711","path":"sprites/spr_tls_bomb_wires/spr_tls_bomb_wires.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8a5c6798-0dd5-4acd-be2a-cfd2d0811711","path":"sprites/spr_tls_bomb_wires/spr_tls_bomb_wires.yy",},"LayerId":{"name":"e79c382e-f0b1-43d7-be17-d3e2e8dc4ba8","path":"sprites/spr_tls_bomb_wires/spr_tls_bomb_wires.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_tls_bomb_wires","path":"sprites/spr_tls_bomb_wires/spr_tls_bomb_wires.yy",},"resourceVersion":"1.0","name":"8a5c6798-0dd5-4acd-be2a-cfd2d0811711","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8a5c6798-0dd5-4acd-be2a-cfd2d0811711",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_tls_bomb_wires","path":"sprites/spr_tls_bomb_wires/spr_tls_bomb_wires.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_tls_bomb_wires",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +41,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"9521a08e-25df-490b-a13c-48e6d7adfc23","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8a5c6798-0dd5-4acd-be2a-cfd2d0811711","path":"sprites/spr_tls_bomb_wires/spr_tls_bomb_wires.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"9521a08e-25df-490b-a13c-48e6d7adfc23","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8a5c6798-0dd5-4acd-be2a-cfd2d0811711","path":"sprites/spr_tls_bomb_wires/spr_tls_bomb_wires.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_tls_bomb_wires","path":"sprites/spr_tls_bomb_wires/spr_tls_bomb_wires.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_tls_bomb_wires",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e79c382e-f0b1-43d7-be17-d3e2e8dc4ba8","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e79c382e-f0b1-43d7-be17-d3e2e8dc4ba8","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Special tiles",
     "path": "folders/Sprites/Tileset and level stuff/Special tiles.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_tls_bomb_wires",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

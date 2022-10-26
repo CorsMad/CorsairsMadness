@@ -1,12 +1,11 @@
 {
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "scr_boss1_phase1_paths",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
     "name": "Boss1",
     "path": "folders/Scripts/Bosses/Boss1.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_boss1_phase1_paths",
-  "tags": [],
-  "resourceType": "GMScript",
 }

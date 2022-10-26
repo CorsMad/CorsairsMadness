@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_pause_on",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -16,8 +20,4 @@
     "name": "Menu_sound",
     "path": "folders/Sounds/Menu_sound.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_pause_on",
-  "tags": [],
-  "resourceType": "GMSound",
 }
