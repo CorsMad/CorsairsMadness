@@ -33,6 +33,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Firing",
-    "path": "folders/Objects/Enemies/Molded enemies/Firing.yy",
+    "path": "folders/Objects/Enemies/@MOLDED GROUP/Firing.yy",
   },
 }

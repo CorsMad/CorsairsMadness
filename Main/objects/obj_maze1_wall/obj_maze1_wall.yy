@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_maze1_wall",
   "spriteId": {
-    "name": "spr_silverkeydoor3",
-    "path": "sprites/spr_silverkeydoor3/spr_silverkeydoor3.yy",
+    "name": "spr_maze1_wall",
+    "path": "sprites/spr_maze1_wall/spr_maze1_wall.yy",
   },
   "solid": true,
   "visible": true,

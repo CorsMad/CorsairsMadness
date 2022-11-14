@@ -221,6 +221,7 @@ if place_meeting(x,y,obj_firing_molded_projectile_reverse) && hit_cd = 0
 
 if enemy_hp <= 0 
 {
+    /*
     var den5_1 = instance_create_depth(x,y,depth+1,obj_dark_essence);
     var den5_2 = instance_create_depth(x,y,depth+1,obj_dark_essence);
     var den5_3 = instance_create_depth(x,y,depth+1,obj_dark_essence);
@@ -240,7 +241,7 @@ if enemy_hp <= 0
     den5_4.hspd = 2;
     den5_4.vspd = 2;
     den5_4.val = 5;
-    
+    */
     instance_destroy();
     instance_destroy(mask);
     var i = instance_create_depth(x,y,depth,obj_fastfly_molded_dead);

@@ -39,6 +39,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Phases",
-    "path": "folders/Objects/Enemies/Bosses/Boss1/Phases.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Jungle/Boss/Boss1/Phases.yy",
   },
 }

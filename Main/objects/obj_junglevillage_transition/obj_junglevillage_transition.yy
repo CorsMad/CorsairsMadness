@@ -30,6 +30,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Teleports",
-    "path": "folders/Objects/Level objects/!MASTER/JungeVillage/Teleports.yy",
+    "path": "folders/Objects/Level objects/!MASTER/!Jungle/JungeVillage/Teleports.yy",
   },
 }

@@ -9,6 +9,5 @@ if a > 2
             instance_create_depth(obj_Player.x,obj_Player.y-24,-1,obj_room_transition_to_loading);   
             
         }
-    	instance_destroy();	
     }	
 }

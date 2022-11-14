@@ -1279,6 +1279,15 @@ if isDead = 1
     {
         fnc_player_cutscene();
     }
+    if isDead = 2.1 // После разгновора
+    {
+        t_dia ++;
+        if t_dia = 5
+        {
+            t_dia = 0;
+            isDead = 0;
+        }
+    }
     #endregion
     #region применение телепорта
     if isDead = 11

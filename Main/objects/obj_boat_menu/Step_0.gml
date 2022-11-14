@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 player_input();
+kb_gp_input_check();
 
 if isDead = 0
 {
@@ -15,7 +16,7 @@ if isDead = 0
     }
 }
 
-kb_gp_input_check();
+
 if state = 1
 {
     if instance_exists(obj_boat_menu_selector)

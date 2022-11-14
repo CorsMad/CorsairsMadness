@@ -3,6 +3,7 @@
 image_speed = 0;
 image_index = 0;
 
+canControl = 1;
 
 if !instance_exists(obj_player_boat_hitbox)
 {
@@ -21,6 +22,18 @@ spd = 2;
 spdv = 1.5; //верт скорость
 xspdalgae = 1; // множитель скорости на водорослях
 yspdalgae = 1;
+
+upgrade = 0;
+
+#region Кулдауны выстрелов
+
+#region обычный пистолет
+cd_1 = 2;
+cd_2 = 20;
+cd_max = 30;
+#endregion
+
+#endregion
 
 money = global.gold;// Запись монет
 
@@ -41,15 +54,26 @@ hit_cd = 0; // получение урона
 ctsc_timer = 0 // катсцена
 death_timer = 0;
 
+#region ВЫБОР ОРУЖИЯ
 // Чем стрелять
 /*
 0 - обычный пистоллет
-1 - меньше кулдаун
+0.1 - двойной пистолет
 2 - пушка
 3 - пушка автомат
 */
 
-state = 0; 
+switch(global.choosed_itemboat)
+{
+    case 0:
+        state = 0;
+        break;
+    case 2:
+        state = 0.1;
+        break;
+}
+
+#endregion
 
 //bonus
 
@@ -63,3 +87,6 @@ bonus_cd_max = 120;
 
 fastshoot_count = 0;
 cannonshoot_count = 0;
+
+
+TargetRoom = 0;// МЕСТО ПЕРЕМЕЩЕНИЯ

@@ -29,7 +29,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Stats",
-    "path": "folders/Objects/Stats.yy",
+    "name": "Jungle",
+    "path": "folders/Objects/Stats/Jungle.yy",
   },
 }

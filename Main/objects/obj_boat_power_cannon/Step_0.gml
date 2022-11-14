@@ -26,11 +26,12 @@ if place_meeting(x,y,obj_player_boat_hitbox)
     {
         fnc_snd_play_over(snd_ability_gain);
         global.hp = global.hp_max;
-        //obj_Player_boat.state = 1;
-        if obj_Player_boat.cannonshoot_count!= 0 
-        {
-            obj_Player_boat.cannonshoot_count = 50;   
-        }   else obj_Player_boat.bonus_gain_cannon = 1;
+        obj_Player_boat.image_index = 0;
+        obj_Player_boat.fastshoot_count = 0;
+        obj_Player_boat.cannonshoot_count= 20 
+        obj_Player_boat.t = 0;
+        obj_Player_boat.state = 3;
+        
     }
     //obj_Player_boat.image_index = 0;
 }

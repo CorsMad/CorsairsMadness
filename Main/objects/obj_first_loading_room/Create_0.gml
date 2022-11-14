@@ -1,9 +1,49 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+fnc_globals_load();
+
+/*
+#region ТЕСТ
+
+global.dia_jungleChief = 0; 
+global.dia_jungleMerch = 0; 
+
+#endregion
+
+#region ТЕСТ Магазин
+
+global.shop_axe_can_upgrade1 = 0;
+global.shop_axe_can_upgrade2 = 0;
+
+global.shop_dualpistols_can_upgrade1 = 0;
+global.shop_dualpistols_can_upgrade2 = 0;
+
+#region Покупки человека
+
+//якорь
+global.purch_anch1 = 0;
+global.purch_anch2 = 0;
+global.purch_anch3 = 0;
+
+#endregion
+
+#region Покупки Лодки
+
+//якорь
+global.purch_dualpistols1 = 0;
+global.purch_dualpistols2 = 0;
+global.purch_dualpistols3 = 0;
+
+#endregion
+
+
+#endregion
+
 #region Игрок
-global.hp = 3;           // 4
-global.hp_max = 3;       // 4
+global.hp = 5;           // 4
+global.hp_max = 5;       // 4
 global.choosed_item = 0; // 1- бумер 2 -топ // 3 - бомба // 11 - арбалет
 global.mana = 3;
 global.mana_max = 3;

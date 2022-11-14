@@ -25,8 +25,8 @@ if submenu = 4
     draw_sprite(spr_slider_vfx_music,0,100,21.5);
     draw_sprite(spr_slider_vfx_music,0,100,37.5);
     
-    if index = 0 draw_sprite(spr_slider_vfx_music_selector,1,116+16*(music*10),21.5); else draw_sprite(spr_slider_vfx_music_selector,0,116+16*(music*10),21.5); 
-    if index = 1 draw_sprite(spr_slider_vfx_music_selector,1,116+16*(sfx*10),37.5);  else draw_sprite(spr_slider_vfx_music_selector,0,116+16*(sfx*10),37.5); 
+    if index = 0 draw_sprite(spr_slider_vfx_music_selector,1,116+16*(global.MSCvolume*10),21.5); else draw_sprite(spr_slider_vfx_music_selector,0,116+16*(global.MSCvolume*10),21.5); 
+    if index = 1 draw_sprite(spr_slider_vfx_music_selector,1,116+16*(global.SFXvolume*10),37.5);  else draw_sprite(spr_slider_vfx_music_selector,0,116+16*(global.SFXvolume*10),37.5); 
     
 }
 

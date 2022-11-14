@@ -33,6 +33,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Boss1",
-    "path": "folders/Objects/Enemies/Bosses/Boss1.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Jungle/Boss/Boss1.yy",
   },
 }

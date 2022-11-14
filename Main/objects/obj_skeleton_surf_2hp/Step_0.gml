@@ -39,7 +39,9 @@ fnc_enemy_no_armor_dmg();
 if enemy_hp<=0
 {
     instance_create_depth(x,y,depth,obj_skeleton_surf_dead);
-    instance_create_depth(x,y-16,depth,obj_money_boat_5);
+    if drop1 = 1 instance_create_depth(x,y-16,depth,obj_money_boat_1);
+    if drop5 = 1 instance_create_depth(x,y-16,depth,obj_money_boat_5);
+    if drop10 = 1 instance_create_depth(x,y-16,depth,obj_money_boat_10);
     instance_destroy();   
 }
 

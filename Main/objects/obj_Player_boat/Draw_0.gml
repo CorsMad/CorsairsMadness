@@ -26,6 +26,12 @@ if state = 0 || state = 1
 {
     draw_sprite_ext(spr_player_boat,a,x,y+yob,1,1,rotat,col,alpha);   
 }
+if state = 0.1
+{
+    draw_sprite_ext(spr_player_boat_dualpistols,a,x,y+yob,1,1,rotat,col,alpha);   
+}
+
+
 if state = 3
 {
     draw_sprite_ext(spr_player_boat_cannon,a,x,y+yob,1,1,0,col,alpha);

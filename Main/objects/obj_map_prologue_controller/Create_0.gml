@@ -1,6 +1,6 @@
 /// @description 
 // You can write your code in this editor
-
+global.PlayerOnIsland = 0;
 /*
 ///////////////////////////////////////////////////////////////////////
 Добавить переменные ключей в draw

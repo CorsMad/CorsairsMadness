@@ -7,7 +7,7 @@ if instance_exists(obj_Player) && isOn = 0
         global.dc_onl_f1_10 += 1;   
         isOn = 1;
     
-        if global.dc_onl_f1_10 >= 2
+        if global.dc_onl_f1_10 >= 1
         {
             instance_create_depth(obj_Player.x,obj_Player.y-64,obj_Player.depth-1,obj_tp_1pr_green);   
         }

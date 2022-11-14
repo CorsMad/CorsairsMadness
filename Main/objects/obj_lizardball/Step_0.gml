@@ -40,11 +40,12 @@ if state = 0
     {
         hspd = -hspd;   
     }
+    /*
     if !position_meeting(bbox_left-1, bbox_bottom+1, obj_block) || !position_meeting(bbox_right+1, bbox_bottom+1, obj_block)
 	{
 		hspd = -hspd;
 	}
-    
+    */
     // Встреча с игроком
     
     var dis = point_distance(x,y,obj_Player.x,obj_Player.y);
@@ -74,7 +75,7 @@ if state = 1
     // Анимация разворачивания
     t++;
     image_speed = 1;
-    if t = 100
+    if t = 11
     {
         
         t = 0;
@@ -185,7 +186,7 @@ if state = 8
     {
     	hit_cd+=1;	
     }
-    if hit_cd > 15 
+    if hit_cd > 11 
     {
     	hit_cd = 0;	
     }
@@ -197,8 +198,12 @@ if t_red >= 8 {image_blend = c_white;t_red = 0;}
 
     if place_meeting(x,y,obj_abil_boots_hitbox)
     {
-        obj_Player.vspd = -5;
+        obj_Player.vspd = -6;
+        obj_Player.sbootsbuffer = 1;
         if place_meeting(x,y+1,obj_block) vspd = -3;
+        obj_Player.dash_counts = 1;
+        instance_create_depth(obj_abil_boots_hitbox.x,obj_abil_boots_hitbox.y+20,obj_abil_boots_hitbox.depth-1,obj_sfx4);
+        instance_destroy(obj_abil_boots_hitbox);
         state = 9;
         t = 0;
     }
@@ -216,10 +221,10 @@ if t_red >= 8 {image_blend = c_white;t_red = 0;}
             {
                 if obj_Player.x >= x
                 {
-                    hspd = -4;
-                } else hspd = 4;
+                    hspd = -3;
+                } else hspd = 3;
             }
-            vspd = -5;
+            vspd = -3;
             enemy_hp -= 1;
             if obj_Player.x < x 
     		{
@@ -231,8 +236,8 @@ if t_red >= 8 {image_blend = c_white;t_red = 0;}
             {
                 if obj_Player.x >= x
                 { 
-                    hspd = -4;
-                } else hspd = 4;
+                    hspd = -3;
+                } else hspd = 3;
             }
             state = 7;
             

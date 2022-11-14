@@ -147,7 +147,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Moving platforms",
-    "path": "folders/Sprites/Moving platforms.yy",
+    "name": "Platforms moving",
+    "path": "folders/Sprites/Platforms moving.yy",
   },
 }

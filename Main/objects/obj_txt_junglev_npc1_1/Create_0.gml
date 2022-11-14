@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+t = 0;
 
 text[0,0] = "Wow newcomer";
 text[0,1] = "You should talk to our chief"

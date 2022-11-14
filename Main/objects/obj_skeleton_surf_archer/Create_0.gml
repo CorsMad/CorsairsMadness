@@ -9,6 +9,12 @@ enemy_hp = 3;
 t = 0;
 
 state = 0;
+
+
+drop1 = 0;
+drop5 = 0;
+drop10 = 0;
+
 // states 
 /*
 0 - подход

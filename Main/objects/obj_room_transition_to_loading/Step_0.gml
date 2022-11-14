@@ -8,4 +8,5 @@ room_goto(LoadingRoom);
 obj_Player.x = 97;
 obj_Player.y = 121;
  
+ if instance_exists(obj_room_transition_black_screen_death) instance_destroy(obj_room_transition_black_screen_death);
 }

@@ -128,21 +128,29 @@ if instance_exists(obj_Player)
         sprite_index = spr_sh_run;
         image_speed = 0;
         image_index = 4;
-        obj_Player.vspd = -7;
+        obj_Player.vspd = -6;
         instance_create_depth(x,y,depth-1,obj_spikehedge_shell);
-        with(obj_abil_boots_hitbox)
+        obj_Player.dash_counts = 1;
+        if instance_exists(obj_abil_boots_hitbox)
         {
-            instance_create_depth(x,y+8,depth-1,obj_sfx4);
-            instance_destroy(); 
+            with(obj_abil_boots_hitbox)
+            {
+                instance_create_depth(x,y+20,depth-1,obj_sfx4);
+                instance_destroy(); 
+            }
         }
     }
     if place_meeting(x,y,obj_abil_boots_hitbox) && armored = 0
     {
         obj_Player.vspd = -7;
-        with(obj_abil_boots_hitbox)
+        obj_Player.dash_counts = 1;
+        if instance_exists(obj_abil_boots_hitbox)
         {
-            instance_create_depth(x,y+8,depth-1,obj_sfx4);
-            instance_destroy(); 
+            with(obj_abil_boots_hitbox)
+            {
+                instance_create_depth(x,y+20,depth-1,obj_sfx4);
+                instance_destroy(); 
+            }
         }
     }
 }

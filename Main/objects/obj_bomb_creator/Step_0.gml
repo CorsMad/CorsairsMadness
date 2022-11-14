@@ -2,6 +2,7 @@
 // You can write your code in this editor
 if place_meeting(x,y,obj_hitbox) && !instance_exists(obj_bomb) && obj_Player.isCarry = 0 && isOn = 0
 {
+    /*
     // Создание TIP
     if instance_exists(obj_Player)
     {
@@ -11,7 +12,7 @@ if place_meeting(x,y,obj_hitbox) && !instance_exists(obj_bomb) && obj_Player.isC
             obj_Player.tipBomb = 1;
         }
     }
-    
+    */
     
     
     fnc_snd_play_onetime(snd_bomb_selektor);

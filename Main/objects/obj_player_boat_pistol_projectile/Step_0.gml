@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-x+=5;
+x+=4;
 depth = -1000;
 
 if a = 1

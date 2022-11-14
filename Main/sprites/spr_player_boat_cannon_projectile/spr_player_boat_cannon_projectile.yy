@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Player boat",
-    "path": "folders/Sprites/Player/Player boat.yy",
+    "name": "Bullets",
+    "path": "folders/Sprites/Player/Player boat/Bullets.yy",
   },
 }

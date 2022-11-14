@@ -7,7 +7,7 @@
     "path": "sprites/spr_abil_boot_hitbox/spr_abil_boot_hitbox.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

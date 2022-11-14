@@ -37,6 +37,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_17AAE271","properties":[],"isDnd":false,"objectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-64.0,"y":48.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6E50835E","properties":[],"isDnd":false,"objectId":{"name":"obj_room_transition","path":"objects/obj_room_transition/obj_room_transition.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":2.6,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-16.0,"y":48.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_29D18B9E","properties":[],"isDnd":false,"objectId":{"name":"obj_checkpoint_tutor2_r35","path":"objects/obj_checkpoint_tutor2_r35/obj_checkpoint_tutor2_r35.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":2.6744187,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":288.0,"y":256.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_13E0FE1D","properties":[],"isDnd":false,"objectId":{"name":"obj_blob_molded_creator","path":"objects/obj_blob_molded_creator/obj_blob_molded_creator.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":48.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","tilesetId":{"name":"tls_fol1_level1","path":"tilesets/tls_fol1_level1/tls_fol1_level1.yy",},"x":8,"y":8,"tiles":{"TileDataFormat":1,"SerialiseWidth":30,"SerialiseHeight":17,"TileCompressedData":[
 12,35,-2147483648,37,38,-2147483648,35,-2147483648,-2147483648,34,35,34,35,-18,-2147483648,12,34,35,-2147483648,35,-2147483648,34,35,-2147483648,34,35,37,38,-33,-2147483648,
@@ -104,6 +105,7 @@
     {"name":"inst_17AAE271","path":"rooms/T2_r35/T2_r35.yy",},
     {"name":"inst_6E50835E","path":"rooms/T2_r35/T2_r35.yy",},
     {"name":"inst_29D18B9E","path":"rooms/T2_r35/T2_r35.yy",},
+    {"name":"inst_13E0FE1D","path":"rooms/T2_r35/T2_r35.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

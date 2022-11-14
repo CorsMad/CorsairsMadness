@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Boat",
-    "path": "folders/Objects/Player objects/Boat.yy",
+    "name": "Bullets",
+    "path": "folders/Objects/Player objects/Boat/Bullets.yy",
   },
 }

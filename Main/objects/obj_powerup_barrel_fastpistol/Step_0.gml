@@ -31,6 +31,27 @@ if isDead = 1
         pistolhit.a = 1;
         isDead = 1;  
     }    
+    var dpistolhit1 = instance_place(x,y,obj_player_boat_dpistol_t1);
+    if (dpistolhit1 !=noone)
+    {
+        
+        dpistolhit1.a = 1;
+        isDead = 1;  
+    } 
+    var dpistolhit2 = instance_place(x,y,obj_player_boat_dpistol_t2);
+    if (dpistolhit2 !=noone)
+    {
+        
+        dpistolhit2.a = 1;
+        isDead = 1;  
+    } 
+    var dpistolhit3 = instance_place(x,y,obj_player_boat_dpistol_t3);
+    if (dpistolhit3 !=noone)
+    {
+        
+        dpistolhit3.a = 1;
+        isDead = 1;  
+    } 
     var cannonhit = instance_place(x,y,obj_player_boat_cannon_projectile);
     if (cannonhit !=noone)
     {

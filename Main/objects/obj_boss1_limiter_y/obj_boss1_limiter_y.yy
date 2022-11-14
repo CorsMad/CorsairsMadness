@@ -29,6 +29,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Limiters",
-    "path": "folders/Objects/Enemies/Bosses/Boss1/Limiters.yy",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Jungle/Boss/Boss1/Limiters.yy",
   },
 }

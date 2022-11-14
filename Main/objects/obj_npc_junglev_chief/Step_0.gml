@@ -19,8 +19,8 @@ if instance_exists(obj_Player)
         obj_Player.key_up = 0;
         obj_Player.key_up_press = 0;
         obj_Player.key_item = 0;
-        talk_cr_t = 1;
-    }
+        talk_cr_t = 1;  
+    } 
 }
 
 if talk_cr_t!= 0 
@@ -35,4 +35,14 @@ if talk_cr_t!= 0
 
     }
 }
+#endregion
+
+
+#region Иконка
+
+if place_meeting(x,y,obj_Player) && obj_Player.isDead != 2
+{
+    pointer.on = 1;   
+} else pointer.on = 0;
+
 #endregion

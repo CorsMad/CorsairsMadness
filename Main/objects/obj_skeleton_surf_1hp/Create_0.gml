@@ -6,3 +6,7 @@ hspd = 0;
 vspd = 0;
 hit_cd = 0;
 enemy_hp = 1;
+
+drop1 = 0;
+drop5 = 0;
+drop10 = 0;

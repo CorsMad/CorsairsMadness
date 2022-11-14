@@ -67,3 +67,16 @@ if place_meeting(x,y,obj_boss1_limiter_d2)
 	obj_boss1_controller.state = 3;
 	instance_destroy();
 }
+
+#region взаимодействие с пружинами
+
+if place_meeting(x,y,obj_abil_boots_hitbox)
+{
+    obj_Player.sbootsbuffer = 1;
+    obj_Player.vspd = -5;
+    obj_Player.dash_counts = 1;
+    instance_create_depth(obj_abil_boots_hitbox.x,obj_abil_boots_hitbox.y+20,obj_abil_boots_hitbox.depth-1,obj_sfx4);
+    instance_destroy(obj_abil_boots_hitbox);
+}
+    
+#endregion

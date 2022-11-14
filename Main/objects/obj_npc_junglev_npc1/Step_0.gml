@@ -14,6 +14,8 @@ if talk = 0
 {
     if state = 0
     {
+        image_xscale = 1;
+        sprite_index = spr_village_npc1_walk;
         prest = 0;
         spd = -0.5;
         t++;
@@ -21,22 +23,26 @@ if talk = 0
         {
             state = 1;
             t = 0;
+            image_index = 0;
         }
     }
 
     if state = 1
     {
+        sprite_index = spr_village_npc1_idle;
         spd = 0;
         t++;
         if t = 200
         {
             t = 0;
-            if prest = 0 state = 2; else state = 0;
+            if prest = 0 {state = 2;image_index = 0;} else {state = 0;image_index = 0;}
         }
     }
 
     if state = 2
     {
+        image_xscale = -1;
+        sprite_index = spr_village_npc1_walk;
         prest = 2;
         spd = 0.5;
         t++;
@@ -50,7 +56,8 @@ if talk = 0
 
 if talk = 1
 {
-    spd = 0;   
+    spd = 0; 
+    sprite_index = spr_village_npc1_idle;
 }
 
 #region Talk start
@@ -83,4 +90,17 @@ if talk_cr_t!= 0
         
     }
 }
+#endregion
+
+#region Иконка
+
+if place_meeting(x,y,obj_Player) && obj_Player.isDead != 2
+{
+    pointer.on = 1;   
+} else pointer.on = 0;
+
+#endregion
+
+#region Anim
+
 #endregion

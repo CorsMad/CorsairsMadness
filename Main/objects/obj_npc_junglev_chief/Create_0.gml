@@ -8,3 +8,6 @@ spd = 0;
 talk = 0;
 
 talk_cr_t = 0;
+image_speed = 0.5;
+
+pointer = instance_create_depth(x,y-64,depth-1,obj_icon_talk_npc);

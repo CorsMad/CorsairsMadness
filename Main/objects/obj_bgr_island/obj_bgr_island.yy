@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_bgr_island",
   "spriteId": {
-    "name": "bgr_boat_island",
-    "path": "sprites/bgr_boat_island/bgr_boat_island.yy",
+    "name": "bgr_boat_island_jungle",
+    "path": "sprites/bgr_boat_island_jungle/bgr_boat_island_jungle.yy",
   },
   "solid": false,
   "visible": true,
@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Boat level",
-    "path": "folders/Objects/Graphic objects/Boat level.yy",
+    "name": "To Jungle",
+    "path": "folders/Objects/Graphic objects/Boat level/To Jungle.yy",
   },
 }

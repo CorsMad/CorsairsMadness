@@ -57,6 +57,27 @@ airattackbuffer = 0;
 dashingbuffer = 0;
 hookingbuffer = 0;
 jumpbuffer = 0;
+sbootsbuffer = 0;
+
+#endregion
+
+#region Предметы
+
+switch(global.choosed_item)
+{
+    case 2:
+        switch(global.choosed_item_tier)
+        {
+            case 1: item_tier = obj_item_axe;
+                    break;
+            case 2: item_tier = obj_item_axe2;
+                    break;
+            case 3: item_tier = obj_item_axe3;
+                    break;
+                
+        }
+    break;
+}
 
 #endregion
 
@@ -79,6 +100,7 @@ hooking_timer = 0;
 transform_timer = 0;
 fluettimer = 0;
 comboTimer = 0;
+t_dia = 0;
 
 #region special timer
 pos_teleport_turn_timer = 0;

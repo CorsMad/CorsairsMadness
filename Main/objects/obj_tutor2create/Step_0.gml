@@ -4,10 +4,10 @@
 t++;
 if t = 200 
 {
-    var i = instance_create_depth(16,16,101,obj_Player);
+    var i = instance_create_depth(-16,-16,0,obj_Player);
     i.state = 1;
     i.DashEnabled = 0;
-    instance_create_depth(16,16,101,obj_room_transition_to_loading); 
+    instance_create_depth(-16,-16,0,obj_room_transition_to_loading); 
     
     #region Вазы
     

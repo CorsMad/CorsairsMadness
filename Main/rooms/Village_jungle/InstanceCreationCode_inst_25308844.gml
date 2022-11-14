@@ -1,3 +1,3 @@
 TargetRoom = Village_jungle_hall;
-TargetX = 32;
+TargetX = 73;
 TargetY = 240;

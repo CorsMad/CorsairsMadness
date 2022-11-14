@@ -46,16 +46,9 @@ menu[31, 9] = "default 1";
 menu[31, 10] = "default 2";
 menu[31, 11] = "\nback";
 
-menu[32, 0] = "up";
-menu[32, 1] = "down";
-menu[32, 2] = "left";
-menu[32, 3] = "right";
-menu[32, 4] = "jump";
-menu[32, 5] = "attack";
-menu[32, 6] = "dash";
-menu[32, 7] = "item";
-menu[32, 8] = "spec ability";
-menu[32, 9] = "\nback";
+menu[32, 0] = "Type A";
+menu[32, 1] = "Type B";
+menu[32, 2] = "\nback";
 
 #endregion
 

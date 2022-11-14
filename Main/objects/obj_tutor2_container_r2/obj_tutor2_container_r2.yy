@@ -29,6 +29,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Tutorial2",
-    "path": "folders/Objects/Level Containers (PERS objects)/Tutorial2.yy",
+    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/Tutorial2.yy",
   },
 }

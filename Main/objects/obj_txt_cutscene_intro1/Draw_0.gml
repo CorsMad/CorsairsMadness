@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 draw_rectangle_color(0,0,480,31,c_black,c_black,c_black,c_black,false);
-draw_sprite(spr_text_icon_merchant,0,6,2);
+draw_sprite(spr_text_icons,0,6,2);
 
 
 

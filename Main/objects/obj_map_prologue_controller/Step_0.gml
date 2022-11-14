@@ -21,16 +21,18 @@ if !instance_exists(obj_map_confirm)
 {
     if canPress = 1
     {
+        player_input();
+        /*
         left = keyboard_check_pressed(vk_left);
         up = keyboard_check_pressed(vk_up);
         right = keyboard_check_pressed(vk_right);
         down = keyboard_check_pressed(vk_down);
         press = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter);
         back = keyboard_check_pressed(vk_escape);
-    
+        */
     }
 
-    if press && island = 0
+    if (key_jump || key_attack) && island = 0
     {   
         if global.PlayerOnIsland = 1 // Если игрок на острове
         {
@@ -55,7 +57,7 @@ if !instance_exists(obj_map_confirm)
         }
     }
 
-    if back && island != 0
+    if key_back && island != 0
     {
         switch(island)
         {
@@ -394,24 +396,24 @@ if !instance_exists(obj_map_confirm)
         case 0: // Главная
             switch (globalMapCounter)
             {
-                case 1: if up {globalMapCounter = 4;t_o = 31;}
-                        if down {globalMapCounter = 2;t_o = 31;}
-                        if right {globalMapCounter = 3;t_o = 31;}
+                case 1: if key_up_press {globalMapCounter = 4;t_o = 31;}
+                        if key_down_pressed {globalMapCounter = 2;t_o = 31;}
+                        if key_right_press {globalMapCounter = 3;t_o = 31;}
                     
                         break;
-                case 2: if left  {globalMapCounter = 1;t_o = 31;}
-                        if right {globalMapCounter = 3;t_o = 31;}
-                        if up {globalMapCounter = 4;t_o = 31;}
+                case 2: if key_left_press  {globalMapCounter = 1;t_o = 31;}
+                        if key_right_press {globalMapCounter = 3;t_o = 31;}
+                        if key_up_press {globalMapCounter = 4;t_o = 31;}
                         break;
-                case 3: if up {globalMapCounter = 5;t_o = 31;}
-                        if left {globalMapCounter = 1;t_o = 31;}
-                        if down {globalMapCounter = 2;t_o = 31;}
+                case 3: if key_up_press {globalMapCounter = 5;t_o = 31;}
+                        if key_left_press {globalMapCounter = 1;t_o = 31;}
+                        if key_down_pressed {globalMapCounter = 2;t_o = 31;}
                         break;
-                case 4: if (down || left) {globalMapCounter = 1;t_o = 31;}
-                        if right {globalMapCounter = 5;t_o = 31;}
+                case 4: if (key_down_pressed || key_left_press) {globalMapCounter = 1;t_o = 31;}
+                        if key_right_press {globalMapCounter = 5;t_o = 31;}
                         break;
-                case 5: if left {globalMapCounter = 4;t_o = 31;};
-                        if (down || right) {globalMapCounter = 3;t_o = 31;}
+                case 5: if key_left_press {globalMapCounter = 4;t_o = 31;};
+                        if (key_down_pressed || key_right_press) {globalMapCounter = 3;t_o = 31;}
                         break;
             }
             break;

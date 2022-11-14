@@ -1,35 +1,45 @@
 /// @description Insert description here
 // You can write your code in this editor
+
 player_input();
-
-if isStop != 0
+if key_jump || key_attack 
 {
-    t++;   
-}
-
-switch(t)
-{
-    case 50:text = 1;isStop = 0;break;   
-    case 100:text = 2;isStop = 0;break;
-    case 150:text = 3;isStop = 0;break;
-    case 200:text = 4;isStop = 0;break;
-    case 250:text = 5;isStop = 0;break;
-    case 300:text = 6;isStop = 0;break;
-    case 350:isStop = 0;break;
-}
-
-if isStop = 0
-{
-    if t_text < 30
+    var _len = string_length(text[0,text_current]);
+    if (char_current < _len)
     {
-        t_text++;   
+    char_current = _len;
     }
-    if t_text > 29
+    else
     {
-        if key_jump_pressed
+    text_current += 1;
+    if (text_current > text_last)
         {
-            isStop = 1; 
-            t_text = 0;
-        }    
-    }
+        obj_follower_grounded_cutscene.state = 7;
+        if instance_exists(obj_cutscene_f1_r33_1)
+        {
+            instance_destroy(obj_cutscene_f1_r33_1);   
+        }
+        if instance_exists(obj_Player)
+        {
+            obj_Player.isDead = 0;   
+        }
+        if instance_exists(obj_wall_trigger_close1_f1_r33)
+        {
+            obj_wall_trigger_close1_f1_r33.state = 2;
+            obj_wall_trigger_close1_f1_r33.t = 0;
+        }
+        instance_destroy();
+        }
+    else
+        {
+        text[0,text_current] = string_wrap(text[0,text_current], text_width);
+        char_current = 0;
+        }
+    }   
+}
+
+if t !=0 t++;
+if t = 2
+{
+       
 }

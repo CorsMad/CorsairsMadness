@@ -1,16 +1,20 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+player_input();
+/*
 var key_down = keyboard_check_pressed(vk_down);
 var key_up = keyboard_check_pressed(vk_up);
 var key_left = keyboard_check_pressed(vk_left);
 var key_right = keyboard_check_pressed(vk_right);
 var key_press = keyboard_check_pressed(vk_enter) ||keyboard_check_pressed(vk_space);
+*/
+audio_group_set_gain(MusicVolume,global.SFXvolume,0);
+audio_group_set_gain(MusicVolume,global.MSCvolume,0);
 
-var move = key_down - key_up;
+var move = key_down_pressed - key_up_press;
 
-if move!= 0 && KBControlChange = 0
+if move!= 0 && KBControlChange = 0 && GPControlChange = 0
 {
     index+=move;
     
@@ -19,7 +23,7 @@ if move!= 0 && KBControlChange = 0
     else if index >=size  index = 0;
 }
 
-if key_press && KBControlChange = 0 // accept
+if (key_attack || key_jump) && KBControlChange = 0 // accept
 {
     switch(submenu)
     {
@@ -30,6 +34,7 @@ if key_press && KBControlChange = 0 // accept
                     break;
                 case 1: 
                     room_goto(Cutscene_intro);
+                    scr_secrets_chest_maze();
                     break;
                 case 2: 
                     submenu = 1;
@@ -197,7 +202,7 @@ if key_press && KBControlChange = 0 // accept
                     break;  
             }
             break;
-        case 32: // Keyboard control submenu
+        case 32: // Gamepad control submenu
             switch(index)
             {
                 case 0:
@@ -205,20 +210,6 @@ if key_press && KBControlChange = 0 // accept
                 case 1:
                     break;
                 case 2:
-                    break;
-                case 3:
-                    break;
-                case 4:
-                    break;
-                case 5:
-                    break;
-                case 6:
-                    break;
-                case 7:
-                    break;
-                case 8:
-                    break;
-                case 9:
                     submenu = 3;
                     index = 1;
                     break;   
@@ -246,13 +237,13 @@ if submenu = 4
 {
     if index = 0 
     {
-        if key_left && music > 0 music -= 0.1;
-        if key_right && music < 1 music += 0.1;   
+        if key_left_press && global.MSCvolume > 0 {global.MSCvolume -= 0.1;fnc_snd_play_over(snd_menu_select);}
+        if key_right_press && global.MSCvolume < 1 {global.MSCvolume += 0.1;fnc_snd_play_over(snd_menu_select);}   
     }
     if index = 1 
     {
-        if key_left && sfx > 0 sfx-= 0.1;
-        if key_right && sfx < 1 sfx+= 0.1;   
+        if key_left_press && global.SFXvolume > 0 {global.SFXvolume-= 0.1;audio_group_set_gain(MusicVolume,global.SFXvolume,0);fnc_snd_play_over(snd_menu_select);}
+        if key_right_press && global.SFXvolume < 1 {global.SFXvolume+= 0.1;audio_group_set_gain(MusicVolume,global.SFXvolume,0);fnc_snd_play_over(snd_menu_select);}   
     }
 }
 

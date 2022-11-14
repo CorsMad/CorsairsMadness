@@ -72,7 +72,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "MenuNew",
-    "path": "folders/Sprites/MenuNew.yy",
+    "name": "Shop",
+    "path": "folders/Sprites/Shop.yy",
   },
 }

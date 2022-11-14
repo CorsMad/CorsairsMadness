@@ -2,7 +2,7 @@
 // You can write your code in this editor
 draw_rectangle(camera_get_view_x(view_camera[0]),0,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+30,false);
 draw_rectangle_color(camera_get_view_x(view_camera[0]),0,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+31,c_black,c_black,c_black,c_black,false);
-draw_sprite(spr_text_icon_merchant,0,camera_get_view_x(view_camera[0])+6,camera_get_view_y(view_camera[0])+2);
+draw_sprite(spr_text_icons,3,camera_get_view_x(view_camera[0])+6,camera_get_view_y(view_camera[0])+2);
 
 
 

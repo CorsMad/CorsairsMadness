@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Molded enemies",
-    "path": "folders/Objects/Enemies/Molded enemies.yy",
+    "name": "@MOLDED GROUP",
+    "path": "folders/Objects/Enemies/@MOLDED GROUP.yy",
   },
 }

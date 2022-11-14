@@ -12,8 +12,29 @@ if t1 = 10 room_goto(TutorFirstLoading);
 
 if t1 = 10
 {
+    /*
+    room_goto(GlobalMapPrologueJungle);
+    */
+    
     var i = instance_create_depth(16,16,0,obj_Player);
     i.state = 0;
+    i.specabilnumber = 1;
+    i.HookEnabled = 1;
     instance_create_depth(16,16,101,obj_room_transition_to_loading); 
+    /*
+    #region Загрузка ворот
+    global.dc_onl_f1_8 = 0;
+    global.dc_onl_f1_10 = 0;
+    global.dc_onl_f1_14 = 0;
+    global.dc_onl_f1_16 = 0;
+    global.dc_onl_f1_21 = 0;
+    global.dc_onl_f1_23 = 0;
+    global.dc_onl_f1_27 = 0;
+    global.dc_onl_f1_29 = 0;
+    global.dc_onl_f1_34 = 0;
+    global.dc_onl_f1_36 = 0;
+    global.dc_onl_f1_40 = 0;
+    #endregion
+    */
 }
 

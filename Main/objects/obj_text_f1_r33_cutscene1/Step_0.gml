@@ -1,36 +1,32 @@
 /// @description Insert description here
 // You can write your code in this editor
-if isStop != 0
-{
-    t++;   
-}
+
 player_input();
-switch(t)
+if key_jump || key_attack 
 {
-    case 50:text = 1;isStop = 0;break;   
-    case 100:text = 2;isStop = 0;break;
-    case 150:text = 3;isStop = 0;break;
-    case 200:text = 4;isStop = 0;break;
-    case 250:text = 5;isStop = 0;break;
-    case 300:text = 6;isStop = 0;break;
-    case 350:text = 7;isStop = 0;break;
-    case 400:text = 8;isStop = 0;break;  
-    case 450:text = 9;isStop = 0;break;
-    case 500:isStop = 0;break;
+    var _len = string_length(text[0,text_current]);
+    if (char_current < _len)
+    {
+    char_current = _len;
+    }
+    else
+    {
+    text_current += 1;
+    if (text_current > text_last)
+        {
+        obj_Player.isDead = 2.1;
+        instance_destroy();
+        }
+    else
+        {
+        text[0,text_current] = string_wrap(text[0,text_current], text_width);
+        char_current = 0;
+        }
+    }   
 }
 
-if isStop = 0
+if t !=0 t++;
+if t = 2
 {
-    if t_text < 30
-    {
-        t_text++;   
-    }
-    if t_text > 29
-    {
-        if key_jump_pressed
-        {
-            isStop = 1; 
-            t_text = 0;
-        }    
-    }
+       
 }

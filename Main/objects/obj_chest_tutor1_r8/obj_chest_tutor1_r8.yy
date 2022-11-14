@@ -32,6 +32,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Tutor",
-    "path": "folders/Objects/Level objects/!MASTER/Tutor.yy",
+    "path": "folders/Objects/Level objects/!MASTER/!Jungle/Tutor.yy",
   },
 }

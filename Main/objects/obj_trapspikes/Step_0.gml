@@ -17,6 +17,10 @@ if isOn = 0
 
 if isOn = 1 
 {
+    
+    
+    
+    
 	a++;
 	switch(a)
 	{

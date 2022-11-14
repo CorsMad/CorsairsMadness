@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_merchant",
   "spriteId": {
-    "name": "spr_merchant_slap",
-    "path": "sprites/spr_merchant_slap/spr_merchant_slap.yy",
+    "name": "spr_merchant",
+    "path": "sprites/spr_merchant/spr_merchant.yy",
   },
   "solid": false,
   "visible": true,

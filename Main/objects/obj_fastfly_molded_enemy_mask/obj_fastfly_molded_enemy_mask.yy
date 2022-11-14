@@ -34,6 +34,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "FastFly",
-    "path": "folders/Objects/Enemies/Molded enemies/FastFly.yy",
+    "path": "folders/Objects/Enemies/@MOLDED GROUP/FastFly.yy",
   },
 }

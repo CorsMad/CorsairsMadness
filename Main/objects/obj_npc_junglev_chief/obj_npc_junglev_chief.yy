@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_npc_junglev_chief",
   "spriteId": {
-    "name": "spr_skeleton_mask",
-    "path": "sprites/spr_skeleton_mask/spr_skeleton_mask.yy",
+    "name": "spr_chief_village",
+    "path": "sprites/spr_chief_village/spr_chief_village.yy",
   },
   "solid": false,
   "visible": true,
