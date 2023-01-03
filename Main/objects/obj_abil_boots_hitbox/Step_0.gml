@@ -24,7 +24,7 @@ if instance_exists(obj_Player)
     {
         instance_destroy();   
     }
-    if obj_Player.isAttackingdown || obj_Player.isAttacking || obj_Player.isAirattacking
+    if obj_Player.isAttackingdown || obj_Player.isAttacking || obj_Player.isAirattacking || obj_Player.isClimbing
     {
         instance_destroy();   
     }
@@ -32,6 +32,7 @@ if instance_exists(obj_Player)
 
 if place_meeting(x,y,obj_spikes) //|| place_meeting(x,y,obj_enemy_parent)
 {
+    fnc_snd_play_onetime(snd_player_springboots);
     obj_Player.vspd = -7;
     obj_Player.sbootsbuffer = 1;
     obj_Player.dash_counts = 1;
@@ -43,6 +44,7 @@ if place_meeting(x,y,obj_spikes) //|| place_meeting(x,y,obj_enemy_parent)
 
 if place_meeting(x,y,obj_boss2j_mastermask)
 {
+    fnc_snd_play_onetime(snd_player_springboots);
     obj_Player.sbootsbuffer = 1;
     obj_Player.vspd = -7;
     obj_Player.dash_counts = 1;
@@ -55,6 +57,7 @@ if place_meeting(x,y,obj_boss2j_death_mask)
     obj_Player.sbootsbuffer = 1;
     obj_Player.vspd = -7;
     obj_Player.dash_counts = 1;
+    fnc_snd_play_onetime(snd_player_springboots);
     instance_create_depth(x,y+20,depth-1,obj_sfx4);
     instance_destroy();  
 }

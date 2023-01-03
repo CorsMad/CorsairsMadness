@@ -16,7 +16,7 @@ if t_red = 0
 #region живой
 if isAlive = 1
 {
-    #region  Пересечение с блок
+    #region Пересечение с блок
     if place_meeting(x,y,obj_block)
     {
            isCrossing = 1;
@@ -146,8 +146,7 @@ if isAlive = 1
     #region Полет в игрока
         if state = 4 && state != 9 
         {
-            fnc_image_xscale_to_player(); 
-        
+            fnc_image_xscale_to_player();         
         
             if instance_exists(obj_Player) 
             {
@@ -340,6 +339,7 @@ if isAlive = 1
                 hit_cd = 1;
                 enemy_hp -= 1;
                 state = 9;
+                
                 if obj_Player.x >= x
                 {
                     hspd = -3;  
@@ -493,7 +493,6 @@ if isAlive = 1
         }
     }
     if t_red!= 0
-
     {
         image_blend = c_red;
         t_red -=0.1;   
@@ -506,7 +505,7 @@ if isAlive = 1
 
     #region от обычного добивания
    
-   if place_meeting(x,y,obj_hitbox_mask_finisher)  && hit_cd = 0  && state != 11//&& getKicked = 0
+    if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0  && state != 11 // && getKicked = 0
     {
         vspd = -2;
         hspd = sign(obj_Player.dir)*2;
@@ -518,13 +517,13 @@ if isAlive = 1
         fnc_molded_green_blood_hit();
     }
     if place_meeting(x,y+1,obj_block) && delay = 0 && getKicked = 1
-        {
-            getKicked = 0;
-            hspd = 0;
-            vspd = 0;
-            state = 7;
-            fnc_molded_green_blood_hit();
-        }
+    {
+        getKicked = 0;
+        hspd = 0;
+        vspd = 0;
+        state = 7;
+        fnc_molded_green_blood_hit();
+    }
     #endregion
 
     #region от выпада 
@@ -540,21 +539,7 @@ if isAlive = 1
         state = 10;
         t_red = 1;
         fnc_molded_green_blood_forward();
-    }
-    /*
-    if place_meeting(x-1,y,obj_block)  && getBounced = 0 && getKicked = 2 && isCrossing = 0
-    {
-        vspd = -3;
-        hspd = 3;
-        getBounced = 1;
-    }
-    if place_meeting(x+1,y,obj_block)  && getBounced = 0 && getKicked = 2 && isCrossing = 0
-    {
-        vspd = -3;
-        hspd = -3;
-        getBounced = 1;
-    }
-*/
+    }    
     
     #endregion
 

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-player_input();
+menu_input_new();
 /*
 var key_down = keyboard_check_pressed(vk_down);
 var key_up = keyboard_check_pressed(vk_up);
@@ -26,6 +26,7 @@ if move!= 0 && KBControlChange = 0
 
 if (key_attack || key_jump) && KBControlChange = 0 // accept
 {
+    fnc_snd_play_over(snd_menu_accept);
     switch(submenu)
     {
         case 0: // main menu
@@ -66,8 +67,9 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     index = 0;
                     break;
                 case 3:
+                    scr_save_settings();
                     submenu = 0;
-                    index = 2;
+                    index = 0;
                     break;   
             }
             break;
@@ -123,7 +125,10 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
         case 10:
             switch(index)
             {
-                case 0:
+                case 0:   
+                    instance_activate_object(obj_music_controller);
+                    fnc_msc_stop_play();
+                    global.gold = global.gold_prelevel;    
                     instance_destroy(obj_Player);
                     room_goto(GlobalMapPrologueJungle);
                     break;
@@ -137,6 +142,8 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
         switch(index)
             {
                 case 0:
+                    instance_activate_object(obj_music_controller);
+                    fnc_msc_stop_play();
                     instance_destroy(obj_Player);
                     room_goto(MainMenu);
                     break;
@@ -238,22 +245,8 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                 case 0:
                     break;
                 case 1:
-                    break;
+                    break;          
                 case 2:
-                    break;
-                case 3:
-                    break;
-                case 4:
-                    break;
-                case 5:
-                    break;
-                case 6:
-                    break;
-                case 7:
-                    break;
-                case 8:
-                    break;
-                case 9:
                     submenu = 3;
                     index = 1;
                     break;   
@@ -281,12 +274,12 @@ if submenu = 4
 {
     if index = 0 
     {
-        if key_left_press && global.MSCvolume > 0 {global.MSCvolume -= 0.1;fnc_snd_play_over(snd_menu_select);}
-        if key_right_press && global.MSCvolume < 1 {global.MSCvolume += 0.1;fnc_snd_play_over(snd_menu_select);}   
+        if key_left_press && global.MSCvolume > 0  {global.MSCvolume -= 0.1;global.MSCvolume_max = global.MSCvolume;fnc_snd_play_over(snd_menu_select);}
+        if key_right_press && global.MSCvolume < 1 {global.MSCvolume += 0.1;global.MSCvolume_max = global.MSCvolume;fnc_snd_play_over(snd_menu_select);}   
     }
     if index = 1 
     {
-        if key_left_press && global.SFXvolume > 0 {global.SFXvolume-= 0.1;fnc_snd_play_over(snd_menu_select);}
+        if key_left_press && global.SFXvolume > 0  {global.SFXvolume-= 0.1;fnc_snd_play_over(snd_menu_select);}
         if key_right_press && global.SFXvolume < 1 {global.SFXvolume+= 0.1;fnc_snd_play_over(snd_menu_select);}   
     }
     audio_group_set_gain(MusicVolume,global.MSCvolume,0);

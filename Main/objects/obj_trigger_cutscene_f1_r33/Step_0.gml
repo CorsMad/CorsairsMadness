@@ -3,6 +3,7 @@
 
 if place_meeting(x,y,obj_Player)
 {
+    
     global.Cutscene_f1_r33 = 0;
     instance_create_depth(0,0,0,obj_cutscene_f1_r33_1);
     if instance_exists(obj_wall_trigger_close1_f1_r33)

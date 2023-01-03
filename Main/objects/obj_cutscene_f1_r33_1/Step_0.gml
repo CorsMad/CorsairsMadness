@@ -5,6 +5,7 @@ if state = 1
     t++;
     if t = 120
     {
+        fnc_msc_start_checkpoint(msc_jp1_c_jp2_c);
         instance_create_depth(144,336,0,obj_follower_grounded_cutscene);   
     }
     if t = 190 

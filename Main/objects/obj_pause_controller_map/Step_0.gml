@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if  isPaused = 0 && (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4,gp_start) || gamepad_button_check_pressed(0,gp_start)) && (obj_Player.isDead = 0 || obj_Player.isDead = 3)
+if  isPaused = 0 && (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4,gp_start) || gamepad_button_check_pressed(0,gp_start))
 {
     fnc_snd_play_over(snd_pause_on);
     instance_deactivate_all(1);

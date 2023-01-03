@@ -76,6 +76,7 @@ if pjump = 2
     t++;
     if t = 50
     {
+        fnc_snd_play_onetime(snd_cannon_fire);
         instance_create_depth(x,y,depth+1,obj_cannon_level_smoke);
         image_speed = 1;
         obj_Player.vspeed = -6;

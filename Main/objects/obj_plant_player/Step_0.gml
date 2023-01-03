@@ -102,7 +102,9 @@ if state = 5
 	b++;
 	switch(b)
 	{
-		case 1: instance_create_depth(x,y-16,-1,obj_sfx_explosion);break;
+		case 1: instance_create_depth(x,y-16,-1,obj_sfx_explosion);
+                fnc_drop_mana_gold_after_death(30,45);
+                break;
 		case 5: instance_destroy();break;
 	}
 }

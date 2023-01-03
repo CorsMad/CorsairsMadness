@@ -2,378 +2,223 @@
 // You can write your code in this editor
 
 /*
-1. Вылетает справа в центр
+1. Вылетает справа
 2. ждет
-3.1 Стреляет по кругу справа налево
-3.2 стреляет по кругу слева направо
+3. Полет вниз + стрельба по прямой
 4. Ждет
-5. Летит в игрока и останавливается
-6. Летит в игрока и останавливается
-7. Летит в игрока и останавливается
-8. Ждет
-9. Летит в центр
-10. Отдых
-11. 2 и заново
+5. Полет вверх + стрельба в игрока
+6. ждет и 3
+7. Подрыв от бомбы + DIZZY
+8. Очухивание и полет вверх
 */
 
 x+=hspd;
 y+=vspd;
 
-#region Вылет справа
+#region Вылет слева
 
 if state = 1
 {
-    
     sprite_index = spr_bossj2_idle;
+    image_xscale = 1;
     hspd = -2;
-    if x <= 240  
+    if x <= 440  
     {
+        x = 440;
         hspd = 0;
-        state = 1.1;
-        image_index = 0;
-        
-    }
-}
-
-if state = 1.1 //Поворот
-{
-    t++;
-    sprite_index = spr_bossj2_turn_right;
-    if t = 20
-    {
-        t = 0;
-        sprite_index = spr_bossj2_idle_on_place;
-        image_index = 0;
         state = 2;
+        
     }
 }
 
 #endregion
 
-#region ожидание 1
+#region  Ожидание 1
+
 if state = 2
 {
-    hspd = 0;
-    vspd = 0;
-    t++; 
-    if t = 50
-    {
-        
-        if obj_Player.x < room_width/2 
-        {
-            state = 3.2 
-            t = 90;
-            sprite_index = spr_bossj2_attack_on_place;
-            image_index = 0;
-            image_speed =0;
-
-
-
-        }else 
-        {
-            state = 3.1;
-            t = 270;
-            sprite_index = spr_bossj2_attack_on_place;
-            image_index = 0;
-            image_speed = 0;
-        }
-        
-    }
-}
-#endregion
-
-#region Стрельба по кругу справа налево 
-
-if state = 3.1
-{
-    t_anim++;
-    switch(t_anim)
-        {
-            case 2: image_index = 1;break;
-            case 6: image_index = 2;break;
-            case 8: image_index = 3;break;
-            case 10: image_index = 0;break;
-            case 11: t_anim = 2;break;
-        }
-    
-        
     t++;
-    if t = 270+359 
+    if t = 60
     {
-        t = 0;
-        state = 4;
-        sprite_index = spr_bossj2_idle_on_place;
         image_index = 0;
-        image_speed = 1;
-        t_anim = 0;
+        sprite_index = spr_bossj2_prepare_attack;   
     }
-    if t mod 10 = 0 && t!=0
-    {   
-        var b = instance_create_depth(x,y+14,depth-1,obj_boss2_bomb2)   
-        b.direction = -1*t;
-    }
-    
-}
-
-if state = 3.2 
-{
-    
-    t_anim++;
-    switch(t_anim)
-        {
-            case 2: image_index = 1;break;
-            case 6: image_index = 2;break;
-            case 8: image_index = 3;break;
-            case 10: image_index = 0;break;
-            case 11: t_anim = 2;break;
-        }
-        
-    t++;
-    if t = 90+359 
+    if t = 240
     {
+        state = 3;
         t = 0;
-        state = 4;
-        sprite_index = spr_bossj2_idle_on_place;
         image_index = 0;
-        image_speed = 1;
-        t_anim = 0;
-
-    }
-    if t mod 10 = 0 && t!=0
-    {   
-        var b = instance_create_depth(x,y,depth-1,obj_boss2_bomb2)   
-        b.direction = t;
+        image_speed = 0;
     }
 }
 
 #endregion
 
-#region ожидание 2
-if state = 4
+#region  Полет вниз + стрельба по прямой
+
+if state = 3
 {
-    t++; 
-    if t = 50
+    image_speed = 0;
+    sprite_index = spr_bossj2_fire_attack
+    vspd = 0.5;
+    t++;
+    t_anim++;
+    
+    switch(t_anim)
+        {
+            case 2:  image_index = 0;break;
+            case 6:  image_index = 1;break;
+            case 10: image_index = 2;break;
+            case 14: image_index = 3;break;
+            case 20: image_index = 4;
+                     instance_create_depth(x-sign(image_xscale)*42,y+10,depth-1,obj_boss2_bomb_left);  
+                     break;
+            case 22: image_index = 5;break;
+            case 24: image_index = 6;break;
+            case 39: t_anim = 2;break;
+        }
+        /*
+        if t mod 20 = 0
+        {
+            instance_create_depth(x-sign(image_xscale)*42,y+10,depth-1,obj_boss2_bomb_left);            
+        }
+    */
+    if y >= 222 
+    {
+        y = 222;
+        t = 0;
+        t_anim = 0;
+        image_index = 0;
+        state = 4;
+        vspd = 0;
+        sprite_index = spr_bossj2_idle;
+        image_speed = 1;
+    }    
+}
+
+#endregion
+
+#region  Ожидание 2
+
+if state = 4 
+{
+    t++;
+    if t = 60
+    {
+        image_index = 0;
+        sprite_index = spr_bossj2_prepare_attack;   
+    }
+    if t = 240
     {
         state = 5;
-        t = 0;    
-    }
+        t = 0;
+        image_index = 0;
+        image_speed = 0;
+    } 
 }
+
 #endregion
 
-#region Полет в игрока + остановка 1
-
+#region  Полет вверх + стрельба в игрока
 
 if state = 5
 {
-    spd = 4;
-    t++;
-    if t = 10
-    {
-        sprite_index = spr_bossj2_flyattack;
-        image_index = 0;
-    }
-    if t = 20
-    {
-        plx = obj_Player.x;
-        ply = obj_Player.y-32;
-    }
-    
-    if t > 30
-    {
-        if obj_Player.x > x image_xscale = -1 else image_xscale = 1;
-        image_speed = 0;
-        image_index = 3;
-        
-        if distance_to_point(plx,ply) > spd
-        {
-            move_towards_point(plx,ply,spd)
-        } else {state = 5.1;t=0;}
-    }
-}
-
-if state = 5.1 
-{
-    image_speed =0 ;
+    image_speed = 0;
+    sprite_index = spr_bossj2_fire_attack
     t_anim++;
-        switch(t_anim)
-        {
-            case 5: image_index = 2;break;
-            case 10: image_index = 1;break;
-            case 15: image_index = 0;break;
-        }
-    speed -=0.1;
-    if speed <=0
+    switch(t_anim)
     {
-        speed = 0;
-        state = 6;
-        t = 0;
-        image_index = 0;
-        t_anim = 0;
-    }
-}
-
-#endregion
-
-#region Полет в игрока + остановка 2
-
-
-if state = 6
-{
-    spd = 5;
-    t++;
-    if t = 10
-    {
-        sprite_index = spr_bossj2_flyattack;
-        image_index = 0;
-    }
-    if t = 20
-    {
-        plx = obj_Player.x;
-        ply = obj_Player.y-32;
+        case 2:  image_index = 0;break;
+        case 6:  image_index = 1;break;
+        case 10: image_index = 2;break;
+        case 14: image_index = 3;break;
+        case 20: image_index = 4;
+                 instance_create_depth(x-sign(image_xscale)*42,y+10,depth-1,obj_boss2_bomb_point);  
+                 break;
+        case 22: image_index = 5;break;
+        case 24: image_index = 6;break;
+        case 39: t_anim = 2;break;
     }
     
-    if t > 30
+    vspd = -0.5;
+    if y <= 64
     {
-        if obj_Player.x > x image_xscale = -1 else image_xscale = 1;
-        image_speed = 0;
-        image_index = 3;
-        
-        if distance_to_point(plx,ply) > spd
-        {
-            move_towards_point(plx,ply,spd)
-        } else {state = 6.1;t=0;}
-    }
-}
-
-if state = 6.1 
-{
-    speed -=0.1;
-    t_anim++;
-        switch(t_anim)
-        {
-            case 5: image_index = 2;break;
-            case 10: image_index = 1;break;
-            case 15: image_index = 0;break;
-        }
-    if speed <=0
-    {
-        speed = 0;
-        state = 7;
+        y = 64;
         t = 0;
-        image_index = 0;
-
         t_anim = 0;
-    }
-}
-
-#endregion
-
-#region Полет в игрока + остановка 3
-
-
-if state = 7
-{
-    spd = 6;
-    t++;
-    if t = 10
-    {
-        image_speed = 1;
-        sprite_index = spr_bossj2_flyattack;
         image_index = 0;
-    }
-    if t = 20
-    {
-        plx = obj_Player.x;
-        ply = obj_Player.y-32;
-    }
-    
-    if t > 30
-    {
-        if obj_Player.x > x image_xscale = -1 else image_xscale = 1;
-        image_speed = 0;
-        image_index = 3;
-        
-        if distance_to_point(plx,ply) > spd
-        {
-            move_towards_point(plx,ply,spd)
-        } else {state = 7.1;t=0;}
-    }
-}
-
-if state = 7.1 
-{
-    speed -=0.2;
-    t_anim++;
-        switch(t_anim)
-        {
-            case 5: image_index = 2;break;
-            case 10: image_index = 1;break;
-            case 15: image_index = 0;break;
-        }
-    if speed <=0
-    {
-        speed = 0;
-        state = 8;
-        t = 0;
-        image_index = 0;
-        image_speed = 1;
-        t_anim = 0;
-    }
-}
-
-#endregion
-
-#region ожидание 
-if state = 8
-{
-    sprite_index = spr_bossj2_idle;
-    t++; 
-    if t = 10
-    {
-        state = 9;
-        t = 0;
-    }
-}
-#endregion
-
-#region Полет назад в центр
-
-if state = 9
-{
-    spd = 1;
-    t++;
-    if t > 50 
-    {
-
-            if distance_to_point(240,128) > spd
-            {
-                move_towards_point(240,128,spd)
-            } else {speed = 0;t = 0;state = 10;x = 240;y = 128;}     
-    }   
-}
-
-
-#endregion
-
-#region ожидание 
-if state = 10
-{
-    t++; 
-    
-    if t = 30
-    {
-        image_index = 0;
-        sprite_index = spr_bossj2_turn_right;
-    }
-    if t = 50
-    {
-        image_index = 0;
-        sprite_index = spr_bossj2_idle_on_place;
         state = 2;
+        vspd = 0;
+        sprite_index = spr_bossj2_idle;
+        image_speed = 1;
+    }
+    
+}
+
+#endregion
+
+#region  Ожидание 3
+
+#endregion
+
+#region  Подрыв от бомбы + DIZZY
+
+if state = 7 
+{
+    if instance_exists(obj_bossj2e_phase3_mask)
+    {
+        obj_bossj2e_phase3_mask.canhit = 1;
+    } 
+    vspd = 0;
+    t++;
+    t_anim = 0;
+    image_speed = 1;
+    sprite_index = spr_bossj2_faint;
+    if t = 200
+    {
         t = 0;
+        state = 8;
+        if instance_exists(obj_bossj2e_phase3_mask)
+        {
+            obj_bossj2e_phase3_mask.canhit = 0;
+        } 
+        sprite_index = spr_bossj2_idle;
+    }
+    
+}
+
+#endregion
+
+#region  Очухивание и полет вверх
+
+if state = 8 
+{
+    t++;
+    if t > 50
+    {
+        if y > room_height/2 vspd = 2; 
+        if y <= room_height/2 vspd = -2
+        
+        if vspd > 0 && y >= 222 
+        {
+            y = 222;
+            t = 0;
+            vspd = 0;
+            state = 4;
+        }
+        
+        if vspd < 0  && y <= 64
+        {
+            y = 64;
+            t = 0;
+            vspd = 0;
+            state = 2;
+        }              
     }
 }
+
 #endregion
+
 
 #region ПОПАДАНИЕ
 

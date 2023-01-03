@@ -9,6 +9,7 @@ if state = 1
 	t++;
 	if t=180 
 	{
+        fnc_msc_play(msc_boss_fight);
 		instance_create_depth(532,0,0,obj_boss1_phase1);	
 		t = 0;
 		state = 0;

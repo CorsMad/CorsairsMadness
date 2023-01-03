@@ -16,6 +16,7 @@ var movelr = key_right_press - key_left_press;
 
 if move!= 0 
 {
+    fnc_snd_play_over(snd_menu_select);
     index+=move;
     var size = array_length_2d(menu, submenu);
     if index < 0 index = size - 1;
@@ -24,6 +25,7 @@ if move!= 0
 
 if movelr!= 0 
     {
+        fnc_snd_play_over(snd_menu_select);
         dindex += movelr;
         if dindex < 0 dindex = 2;
         else if dindex >= 3 dindex = 0;
@@ -32,6 +34,7 @@ if movelr!= 0
 
 if key_attack || key_jump_pressed // accept
 {
+    
     switch(submenu)
     {
         case 0: // main menu
@@ -41,12 +44,15 @@ if key_attack || key_jump_pressed // accept
                     switch(dindex)
                     {
                         case 0:
+                            fnc_snd_play_over(snd_menu_accept);
                             if global.purch_anch1 = 1 ChoosedItem = 11;
                             break;
                         case 1:
+                            fnc_snd_play_over(snd_menu_accept);
                             if global.purch_anch2 = 1 ChoosedItem = 12;
                             break;
                         case 2:
+                            fnc_snd_play_over(snd_menu_accept);
                             if global.purch_anch3 = 1 ChoosedItem = 13;
                             break;
                     }
@@ -58,19 +64,24 @@ if key_attack || key_jump_pressed // accept
                         switch(ChoosedItem)
                         {
                             case 11: 
+
                                 global.choosed_item = 2;   
                                 global.choosed_item_tier = 1;   
                                 break;
                             case 12: 
+
                                 global.choosed_item = 2;   
                                 global.choosed_item_tier = 2;   
                                 break;
                             case 13: 
+
                                 global.choosed_item = 2;   
                                 global.choosed_item_tier = 3;   
                                 break;
                         }
                     #endregion
+                        fnc_snd_play_over(snd_menu_accept);
+                        fnc_msc_stop_play();
                         global.TargetX = 48;
                         global.TargetY = 240;
                         global.TargetRoom = EnduranceJungle;
@@ -79,13 +90,13 @@ if key_attack || key_jump_pressed // accept
                         
                         
                 case 5: 
+                    fnc_snd_play_over(snd_menu_accept);
                     global.choosed_item = 0;   
                     global.choosed_item_tier = 0;  
                     instance_destroy();
                     break;
             }
-            break;
-        
+            break;   
     }
 }
 

@@ -22,15 +22,15 @@ if place_meeting(x,y,obj_player_boat_hitbox)
 {
     
     instance_destroy();
-    if obj_Player_boat.state != 9
-    {
-        fnc_snd_play_over(snd_ability_gain);
-        global.hp = global.hp_max;
-
-        obj_Player_boat.fastshoot_count = 50; 
+    if obj_Player_boat.state != 9 && obj_Player_boat.cannonshoot_count = 0
+    {        
+        obj_Player_boat.image_index = 0;
+        obj_Player_boat.fastshoot_count = 40; 
         obj_Player_boat.t = 0; 
         obj_Player_boat.image_index = 0;
     }
+    fnc_snd_play_over(snd_ability_gain);
+    global.hp = global.hp_max;
     
     //obj_Player_boat.image_index = 0;
 }

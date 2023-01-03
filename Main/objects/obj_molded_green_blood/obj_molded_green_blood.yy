@@ -32,6 +32,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Blood",
-    "path": "folders/Objects/Enemies/@MOLDED GROUP/Blood.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/Blood.yy",
   },
 }

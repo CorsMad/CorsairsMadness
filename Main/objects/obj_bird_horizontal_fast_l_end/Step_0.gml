@@ -46,6 +46,10 @@ if state = 2
 	if b = 1
 	{
 		instance_create_depth(x,y,-1,obj_sfx_explosion);
+        if !place_meeting(x,y,obj_block)
+        {
+            fnc_drop_mana_gold_after_death(30,45);
+        }   
 		instance_destroy()	
 	}
 }
@@ -56,6 +60,7 @@ if state = 2
 
 if place_meeting(x,y,obj_abil_boots_hitbox)
 {
+    fnc_snd_play_onetime(snd_player_springboots);
     obj_Player.sbootsbuffer = 1;
     obj_Player.vspd = -5;
     obj_Player.dash_counts = 1;

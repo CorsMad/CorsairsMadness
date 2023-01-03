@@ -3,13 +3,16 @@
   "resourceVersion": "1.0",
   "name": "obj_bossj2_phase3_mask",
   "spriteId": {
+    "name": "spr_bossj2_aura",
+    "path": "sprites/spr_bossj2_aura/spr_bossj2_aura.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "managed": true,
+  "spriteMaskId": {
     "name": "spr_boss2j_mask",
     "path": "sprites/spr_boss2j_mask/spr_boss2j_mask.yy",
   },
-  "solid": false,
-  "visible": false,
-  "managed": true,
-  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
     "name": "obj_boss2j_mastermask",

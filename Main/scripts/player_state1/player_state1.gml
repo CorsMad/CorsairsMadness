@@ -1226,6 +1226,7 @@ if hooking_timer_count = 0 && HookEnabled = 1
 
 if isDead = 1
 {	
+    fnc_msc_stop_play();
 	isAttacking = 0;
 	isAirattacking = 0;
 	isAirattacking_timer = 0;

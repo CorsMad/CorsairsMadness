@@ -75,7 +75,7 @@ if state = 3
     t++;
     if t = 100
     {
-        instance_create_depth(-100,64,0,obj_bossj2e_phase2);  
+        instance_create_depth(576,128,0,obj_bossj2e_phase2);  
         t = 0;
         state = 4;
     }
@@ -141,12 +141,16 @@ if state = 5.3
 if state = 6
 {
     t++;
+    if t = 50
+    {
+        instance_create_depth(64,288,500,obj_boss2_end_switch)   
+    }
     if t = 100 
     {
         //призыв 3 фазы   
         t = 0;
         state = 7;
-        instance_create_depth(576,128,0,obj_bossj2e_phase3);
+        instance_create_depth(576,64,0,obj_bossj2e_phase3);
     }
 }
 

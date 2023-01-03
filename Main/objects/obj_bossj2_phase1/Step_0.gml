@@ -38,6 +38,7 @@ if state = 1
 #endregion
 
 #region ожидание 1
+
 if state = 2
 {
     image_speed = 1;
@@ -49,7 +50,7 @@ if state = 2
         image_index = 0;
         sprite_index = spr_bossj2_prepare_attack;   
     }
-    if t = 100
+    if t = 240
     {
         state = 3;
         t = 0;
@@ -71,8 +72,8 @@ if state = 3
     {
         switch(t_anim)
         {
-            case 2: image_index = 0;break;
-            case 6: image_index = 1;break;
+            case 2:  image_index = 0;break;
+            case 6:  image_index = 1;break;
             case 10: image_index = 2;break;
             case 14: image_index = 3;break;
             case 20: image_index = 4;break;
@@ -86,41 +87,49 @@ if state = 3
     switch(t)
     {   
         case 20:
+            fnc_snd_play_over(snd_boss2_fire);
             var b1 = instance_create_depth(x-sign(image_xscale)*42,y+10,depth-1,obj_boss2_bomb1);
                 if x < room_width/2 b1.hspd = -1.5; else b1.hspd = 1.5;
                 b1.vspd = -1;
                 break;
         case 40:
+            fnc_snd_play_over(snd_boss2_fire);
             var b1 = instance_create_depth(x-sign(image_xscale)*42,y+10,depth-1,obj_boss2_bomb1);
                 if x < room_width/2 b1.hspd = 0; else b1.hspd = 0;
                 b1.vspd = -1;
             break
         case 60:
+            fnc_snd_play_over(snd_boss2_fire);
             var b1 = instance_create_depth(x-sign(image_xscale)*42,y+10,depth-1,obj_boss2_bomb1);
                 if x < room_width/2 b1.hspd = 1; else b1.hspd = -1;
                 b1.vspd = -1.5;
             break
         case 80:
+            fnc_snd_play_over(snd_boss2_fire);
             var b1 = instance_create_depth(x-sign(image_xscale)*42,y+10,depth-1,obj_boss2_bomb1);
                 if x < room_width/2 b1.hspd = 2; else b1.hspd = -2;
                 b1.vspd = -2;
             break
         case 100:
+            fnc_snd_play_over(snd_boss2_fire);
             var b1 = instance_create_depth(x-sign(image_xscale)*42,y+10,depth-1,obj_boss2_bomb1);
                 if x < room_width/2 b1.hspd = 3; else b1.hspd = -3;
                 b1.vspd = -2.5;
             break
         case 120:
+            fnc_snd_play_over(snd_boss2_fire);
             var b1 = instance_create_depth(x-sign(image_xscale)*42,y+10,depth-1,obj_boss2_bomb1);
                 if x < room_width/2 b1.hspd = 4; else b1.hspd = -4;
                 b1.vspd = -3;
             break
         case 140:
+            fnc_snd_play_over(snd_boss2_fire);
             var b1 = instance_create_depth(x-sign(image_xscale)*42,y+10,depth-1,obj_boss2_bomb1);
                 if x < room_width/2 b1.hspd = 5; else b1.hspd = -5;
                 b1.vspd = -3.5;
             break
         case 160:
+            fnc_snd_play_over(snd_boss2_fire);
             var b1 = instance_create_depth(x-sign(image_xscale)*42,y+10,depth-1,obj_boss2_bomb1);
                 if x < room_width/2 b1.hspd = 6; else b1.hspd = -6;
                 b1.vspd = -4;
@@ -144,13 +153,15 @@ if state = 4
     
     t++;
      
-    if t = 100
+    if t = 30
+    {
+        instance_create_depth(x,y+48,depth,obj_boss2_excl_mark);   
+    }
+    if t = 140
     {
         t = 0;
         state = 5;
-
-    }
-    
+    }    
 }
 
 #endregion
@@ -205,6 +216,7 @@ if state = 5.1
         sprite_index = spr_bossj2_idle;
         image_index = 0;
         image_speed = 1;
+        
         t_anim = 0;
     }
 }
@@ -270,7 +282,6 @@ if state = 7
     }
 }
 #endregion
-
 
 #region ПОПАДАНИЕ
 

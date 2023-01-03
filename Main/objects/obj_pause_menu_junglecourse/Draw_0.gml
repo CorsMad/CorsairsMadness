@@ -1,0 +1,90 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+#region Отриосвка черн
+
+draw_set_colour(c_black);
+
+draw_rectangle(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+270,-9999999);
+
+draw_set_alpha(1);
+
+#endregion
+
+#region Отрисовка текстов
+draw_set_color(c_white);
+draw_set_halign(fa_center);
+draw_set_font(fnt_pixel);
+if submenu = 10 draw_text(camera_get_view_x(view_camera[0])+240,camera_get_view_y(view_camera[0])+64,confirm1); 
+if submenu = 11 draw_text(camera_get_view_x(view_camera[0])+240,camera_get_view_y(view_camera[0])+64,confirm2); 
+var gap = 16;
+
+for (var i = 0; i < array_length_2d(menu, submenu); ++i) {
+    draw_set_color(c_white);
+    if i == index 
+    {
+        draw_set_color(c_red);
+    }
+    if submenu = 31
+    {
+        draw_set_halign(fa_left)   
+    } else draw_set_halign(fa_center);
+    
+    if submenu = 31
+    {
+        draw_text(camera_get_view_x(view_camera[0])+120,camera_get_view_y(view_camera[0])+32+gap*i, menu[submenu, i])   
+    } else draw_text(camera_get_view_x(view_camera[0])+240,camera_get_view_y(view_camera[0])+64+gap*i, menu[submenu, i]);
+    
+    
+}
+
+#endregion
+
+draw_set_halign(fa_center);
+
+#region отрисовка ползунков музыки и эффектов
+
+if submenu = 4
+{
+    draw_sprite(spr_slider_vfx_music,0,camera_get_view_x(view_camera[0])+144,camera_get_view_y(view_camera[0])+86.5);
+    draw_sprite(spr_slider_vfx_music,0,camera_get_view_x(view_camera[0])+144,camera_get_view_y(view_camera[0])+130.5);
+    
+    if index = 0 draw_sprite(spr_slider_vfx_music_selector,1,camera_get_view_x(view_camera[0])+(160+16*(global.MSCvolume*10)),camera_get_view_y(view_camera[0])+86.5); else draw_sprite(spr_slider_vfx_music_selector,0,camera_get_view_x(view_camera[0])+(160+16*(global.MSCvolume*10)),camera_get_view_y(view_camera[0])+86.5); 
+    if index = 1 draw_sprite(spr_slider_vfx_music_selector,1,camera_get_view_x(view_camera[0])+(160+16*(global.SFXvolume*10)),camera_get_view_y(view_camera[0])+130.5); else draw_sprite(spr_slider_vfx_music_selector,0,camera_get_view_x(view_camera[0])+(160+16*(global.SFXvolume*10)),camera_get_view_y(view_camera[0])+130.5); 
+    
+
+}
+
+#endregion
+
+#region отрисовка текстов в меню управления
+
+if submenu = 31
+{
+    for (var k = 0; k < 9; ++k) {
+        if submenu = 31 && KBControlChange = 1
+        {
+            if index == k draw_line_color(camera_get_view_x(view_camera[0])+280,camera_get_view_y(view_camera[0])+(44+16*k),camera_get_view_x(view_camera[0])+320,camera_get_view_y(view_camera[0])+(44+16*k),c_red,c_red) else draw_line_color(camera_get_view_x(view_camera[0])+280,camera_get_view_y(view_camera[0])+(44+16*k),camera_get_view_x(view_camera[0])+320,camera_get_view_y(view_camera[0])+(44+16*k),c_white,c_white)          
+        }   else draw_line_color(camera_get_view_x(view_camera[0])+280,camera_get_view_y(view_camera[0])+(44+16*k),camera_get_view_x(view_camera[0])+320,camera_get_view_y(view_camera[0])+(44+16*k),c_white,c_white)         
+    }
+    
+    draw_set_color(c_white);
+    draw_set_halign(fa_center);
+
+    if (index = 0 && KBControlChange = 1) draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*0),"<...>",c_red,c_red,c_red,c_red,1); else draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*0),string(pk_up),c_white,c_white,c_white,c_white,1);
+    if (index = 1 && KBControlChange = 1) draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*1),"<...>",c_red,c_red,c_red,c_red,1); else draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*1),string(pk_down),c_white,c_white,c_white,c_white,1);
+    if (index = 2 && KBControlChange = 1) draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*2),"<...>",c_red,c_red,c_red,c_red,1); else draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*2),string(pk_left),c_white,c_white,c_white,c_white,1);
+    if (index = 3 && KBControlChange = 1) draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*3),"<...>",c_red,c_red,c_red,c_red,1); else draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*3),string(pk_right),c_white,c_white,c_white,c_white,1);
+    if (index = 4 && KBControlChange = 1) draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*4),"<...>",c_red,c_red,c_red,c_red,1); else draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*4),string(pk_jump),c_white,c_white,c_white,c_white,1);
+    if (index = 5 && KBControlChange = 1) draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*5),"<...>",c_red,c_red,c_red,c_red,1); else draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*5),string(pk_attack),c_white,c_white,c_white,c_white,1);
+    if (index = 6 && KBControlChange = 1) draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*6),"<...>",c_red,c_red,c_red,c_red,1); else draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*6),string(pk_dash),c_white,c_white,c_white,c_white,1);
+    if (index = 7 && KBControlChange = 1) draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*7),"<...>",c_red,c_red,c_red,c_red,1); else draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*7),string(pk_use_item),c_white,c_white,c_white,c_white,1);
+    if (index = 8 && KBControlChange = 1) draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*8),"<...>",c_red,c_red,c_red,c_red,1); else draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*8),string(pk_use_abil),c_white,c_white,c_white,c_white,1);
+}
+
+
+#region название клавиш
+
+#endregion
+
+#endregion

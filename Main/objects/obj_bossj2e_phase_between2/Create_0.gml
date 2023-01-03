@@ -9,3 +9,6 @@ w.image_speed = 1.5;
 
 m = instance_create_depth(x,y,depth,obj_boss2j_death_mask);
 m.fol = id;
+
+var em = instance_create_depth(x,y,depth,obj_boss2j_enemy_mask);
+em.fol_obj = id;

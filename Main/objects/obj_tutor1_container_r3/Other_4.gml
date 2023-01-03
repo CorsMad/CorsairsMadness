@@ -6,6 +6,6 @@ if instance_exists(obj_Player)
 {
     if obj_Player.DashEnabled = 0
     {
-        instance_create_depth(304,208,0,obj_ability_dash);  
+        instance_create_depth(368,144,0,obj_ability_dash);  
     }
 }

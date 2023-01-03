@@ -46,6 +46,7 @@ if state = 0
 
 if state = 1
 {
+    fnc_msc_stop_play();
     fspd = 0;
     vspd = lerp(vspd,0,0.05); 
     t++;

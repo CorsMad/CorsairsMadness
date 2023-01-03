@@ -22,5 +22,10 @@ if t = 1
     global.secretpass_j2b_r3 = 1;
     #endregion
 
+    #region Сохранение золота
+    
+    global.gold_prelevel = global.gold;
+    
+    #endregion
 }
 

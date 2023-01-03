@@ -34,6 +34,7 @@ if !instance_exists(obj_map_confirm)
 
     if (key_jump || key_attack) && island = 0
     {   
+        
         if global.PlayerOnIsland = 1 // Если игрок на острове
         {
             CloudChange = 1;
@@ -48,10 +49,13 @@ if !instance_exists(obj_map_confirm)
         }
         else // Если игрок НЕ на острове
         {
+            
             CloudChange = 1;
             switch(globalMapCounter)
             {
-                case 1: instance_create_depth(0,0,depth-1,obj_map_confirm_to_jungle);break;
+                case 1: 
+                    if !instance_exists(obj_map_confirm_to_jungle) fnc_snd_play_over(snd_menu_accept);
+                    instance_create_depth(0,0,depth-1,obj_map_confirm_to_jungle);break;
             }
             
         }

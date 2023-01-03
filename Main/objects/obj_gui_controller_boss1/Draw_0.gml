@@ -2,6 +2,7 @@
 #region draw rectangle
 	draw_set_colour(c_black);
 	draw_rectangle(camera_get_view_x(view_camera[0]),0,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+30,false);
+    draw_rectangle_color(camera_get_view_x(view_camera[0]),29,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+31,c_grey,c_grey,c_grey,c_grey,false);
 #endregion
 
 #region draw hp
@@ -39,11 +40,18 @@ draw_sprite_ext(spr_hud_weaponselect_border,0,(camera_get_view_x(view_camera[0])
 if instance_exists(obj_Player)
 {
 	switch(global.choosed_item)
-	{
-		case 1: draw_sprite_ext(spr_hud_weapon_boomerang ,0,(camera_get_view_x(view_camera[0]))+240,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1);break;	
-		case 2: draw_sprite_ext(spr_hud_weapon_axe ,0,(camera_get_view_x(view_camera[0]))+240,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1);	break;
-		case 3: draw_sprite_ext(spr_hud_weapon_bomb ,0,(camera_get_view_x(view_camera[0]))+240,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1); break;
-	}
+    	{
+    		case 1: draw_sprite_ext(spr_hud_weapon_boomerang ,0,(camera_get_view_x(view_camera[0]))+240,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1);break;	
+    		case 2:  // выбор якорей
+                switch(global.choosed_item_tier)
+                {
+                    case 1: draw_sprite_ext(spr_icons_itemshud ,1,(camera_get_view_x(view_camera[0]))+240,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1);	break;
+                    case 2: draw_sprite_ext(spr_icons_itemshud ,2,(camera_get_view_x(view_camera[0]))+240,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1);	break;
+                    case 3: draw_sprite_ext(spr_icons_itemshud ,3,(camera_get_view_x(view_camera[0]))+240,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1);	break;
+                }
+                break;
+    		case 3: draw_sprite_ext(spr_hud_weapon_bomb ,0,(camera_get_view_x(view_camera[0]))+240,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1); break;
+    	}
 }
 #endregion
 

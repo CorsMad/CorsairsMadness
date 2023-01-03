@@ -5,3 +5,4 @@ t = 0
 var w = instance_create_depth(x,y,depth+1,obj_boss2_wings);
 w.fol = id;
 image_speed = 0;
+fnc_snd_play_onetime(snd_boss2_scream);

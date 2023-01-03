@@ -3,6 +3,6 @@
 
 canhit = 0;
 
-enemy_hp = 5;
+enemy_hp = 15;
 hit_cd = 0;
 

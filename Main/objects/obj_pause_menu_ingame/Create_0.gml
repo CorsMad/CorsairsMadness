@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+depth = -1111111111111111111111111;
 #region mainmenu
 menu[0, 0] = "options";
 menu[0, 1] = "\nresume";
@@ -47,16 +47,9 @@ menu[31, 9] = "default 1";
 menu[31, 10] = "default 2";
 menu[31, 11] = "\nback";
 
-menu[32, 0] = "up";
-menu[32, 1] = "down";
-menu[32, 2] = "left";
-menu[32, 3] = "right";
-menu[32, 4] = "jump";
-menu[32, 5] = "attack";
-menu[32, 6] = "dash";
-menu[32, 7] = "item";
-menu[32, 8] = "spec ability";
-menu[32, 9] = "\nback";
+menu[32, 0] = "Type A";
+menu[32, 1] = "Type B";
+menu[32, 2] = "\nback";
 
 #endregion
 
@@ -64,15 +57,15 @@ menu[32, 9] = "\nback";
 
 #region sound
 menu[4, 0] = "music";
-menu[4, 1] = "sfx";
-menu[4, 2] = "\nback";
+menu[4, 1] = "\n\nsfx";
+menu[4, 2] = "\n\n\n\nback";
 #endregion
 
 #region ПОдтверждения
 
 #region Подтверждения выхода на карту
-menu[10,0] = "\n\n\nyes";
-menu[10,1] = "\n\n\nno";
+menu[10,0] = "\n\n\n\n\nyes";
+menu[10,1] = "\n\n\n\n\nno";
 
 #endregion
 
@@ -82,7 +75,13 @@ menu[11,1] = "\n\n\nno";
 
 #endregion
 
-confirm = "Are you sure?";
+confirm1 = @"Are you sure? 
+You'll lose all the gold you've collected
+on the level, but you'll keep the secrets 
+you've found";
+
+confirm2 = @"are you sure?
+All progress will be lost";
 #endregion
 
 /*

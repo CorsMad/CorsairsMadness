@@ -24,7 +24,10 @@ if state = 1
         y = lerp(y,272,0.02);
         
     }
-    
+    if x = 500
+    {
+        fnc_msc_stop_play_slow();   
+    }
     if x > 600 
     {
         room_goto(J2_r9_to_boat);

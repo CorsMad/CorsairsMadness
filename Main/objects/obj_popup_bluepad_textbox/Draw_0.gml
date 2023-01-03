@@ -6,7 +6,7 @@ draw_sprite_ext(spr_textbox_popup,0,x,y,sprw,sprh,0,c_white,1);//(spr_textbox_po
 boxWidth = sprite_get_width(spr_textbox_popup);
 
 draw_set_color(c_white);
-draw_set_font(fnt_pixel_small);
+draw_set_font(fnt_pixel);
 
 
 

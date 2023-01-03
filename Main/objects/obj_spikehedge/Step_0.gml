@@ -115,6 +115,7 @@ if instance_exists(obj_Player)
 {
     if place_meeting(x,y,obj_abil_boots_hitbox) && armored = 1//obj_Player.bbox_bottom > bbox_top && armored = 1
     {
+        fnc_snd_play_onetime(snd_player_springboots);
         var s5 = instance_create_depth(x,y-20,depth,obj_spikehedge_spike);
         s5.hspd = -3;
         s5.vspd = 0;
@@ -142,6 +143,7 @@ if instance_exists(obj_Player)
     }
     if place_meeting(x,y,obj_abil_boots_hitbox) && armored = 0
     {
+        fnc_snd_play_onetime(snd_player_springboots);
         obj_Player.vspd = -7;
         obj_Player.dash_counts = 1;
         if instance_exists(obj_abil_boots_hitbox)
@@ -230,6 +232,7 @@ if armored = 0
 
 if enemy_hp <= 0
 {
+    fnc_drop_mana_gold_after_death(30,45);
     instance_destroy();   
     instance_create_depth(x,y,depth,obj_spikehedge_death);
 }

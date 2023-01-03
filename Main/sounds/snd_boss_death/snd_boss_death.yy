@@ -18,6 +18,6 @@
   "duration": 1.375782,
   "parent": {
     "name": "Boss1",
-    "path": "folders/Sounds/Enemy sounds/Boss1.yy",
+    "path": "folders/Sounds/Enemy sounds/Jungle/Boss1.yy",
   },
 }

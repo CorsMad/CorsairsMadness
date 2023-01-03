@@ -191,13 +191,11 @@ if state = 8
     	hit_cd = 0;	
     }
 
-if t_red != 0 {image_blend = c_red;t_red++;}
-if t_red >= 8 {image_blend = c_white;t_red = 0;}
-
 // Атака
 
     if place_meeting(x,y,obj_abil_boots_hitbox)
     {
+        fnc_snd_play_onetime(snd_player_springboots);
         obj_Player.vspd = -6;
         obj_Player.sbootsbuffer = 1;
         if place_meeting(x,y+1,obj_block) vspd = -3;
@@ -293,6 +291,9 @@ if t_red >= 8 {image_blend = c_white;t_red = 0;}
 #region Смерть
 if enemy_hp <= 0
 {
+
+    fnc_drop_mana_gold_after_death(30,45);
+  
     instance_destroy();
     var d = instance_create_depth(x,y,depth,obj_llizardball_death);
     d.vspd = -3;

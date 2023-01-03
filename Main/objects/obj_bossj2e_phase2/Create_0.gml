@@ -16,6 +16,8 @@ hit = 0;
 instance_create_depth(x,y,depth-1,obj_bossj2e_phase2_mask);
 var w = instance_create_depth(x,y,depth+1,obj_boss2_wings);
 w.fol = id;
+instance_create_depth(0,0,0,obj_b2e_p2_reddot);
+
 /*
 ////////////states
 1. Вылетает справа
@@ -29,3 +31,5 @@ w.fol = id;
 8. 3 и заново
 */
 
+var em = instance_create_depth(x,y,depth,obj_boss2j_enemy_mask);
+em.fol_obj = id;

@@ -2777,6 +2777,7 @@ if (place_meeting(x,y,obj_enemy_parent) || place_meeting(x,y,obj_enemy_parent_ob
 	isAttacking = 0;
 	isAirattacking = 0;
 	isAirattacking_timer = 0;
+    isAirThrowingBomb = 0;
 	isGrounded = 0;
     isSkating = 0;
     isSkatingAttack = 0;
@@ -2906,7 +2907,7 @@ if SpecAbil = 1
 #region Boots
 if specabilnumber = 1
 {
-    if key_jump && isGrounded = 0 && isAttackingdown = 0 && isDashing = 0 && coyote_timer = 0 && !instance_exists(obj_hitbox_down) && isCarry = 0
+    if key_jump && isGrounded = 0 && !place_meeting(x,y,obj_block_ladder) && isAttackingdown = 0 && isDashing = 0 && coyote_timer = 0 && !instance_exists(obj_hitbox_down) && isCarry = 0
     {
         var padblue = instance_place(x,y,obj_pad_blue);
         if padblue != noone
@@ -3174,6 +3175,7 @@ if global.hp <= 0
 
 if isDead = 1
 {	
+    fnc_msc_stop_play();
     sbootsbuffer = 0;  
 	isAttacking = 0;
 	isAirattacking = 0;

@@ -33,6 +33,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Specific spawners",
-    "path": "folders/Objects/Enemies/@MOLDED GROUP/Specific spawners.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/Specific spawners.yy",
   },
 }

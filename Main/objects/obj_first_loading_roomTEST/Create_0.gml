@@ -1,7 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-    #region Завершеннсоть уровней
+instance_create_depth(0,0,0,obj_music_controller);
+
+
+
+#region Завершеннсоть уровней
     
     global.completed_JF1 = 0;
     global.completed_JF2 = 0;
@@ -10,8 +14,9 @@
     
 #region ТЕСТ
 
-global.dia_jungleChief = 0; 
-global.dia_jungleMerch = 0; 
+    global.dia_jungleChief = 1; 
+    global.dia_jungleMerch = 0; 
+    global.dia_jungleComt = 2; 
 
 #endregion
 
@@ -62,9 +67,10 @@ global.choosed_item = 0; // 1- бумер 2 -топ // 3 - бомба // 11 - а
 global.choosed_item_tier = 0; // ТИР предмета
 global.choosed_itemboat = 0; // 1 - ? 2 - 2пистолета 
 global.choosed_itemboat_tier = 0; // ТИП предмета для лодки
-global.mana = 3;
+global.mana = 2;
 global.mana_max = 3;
 global.gold = 6000 //global.money_saved;          // 0
+global.gold_prelevel = 0;
 global.darkessence = 0//global.darkessence_saved;
 
 #region Объявление переменных
@@ -80,15 +86,19 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX = 160;
-global.TargetY = 176;
-global.TargetRoom = J2_r1;
+global.TargetX      = 323;
+global.TargetY      = 144;
+global.TargetRoom   = J1_r13;
 
+global.fTargetX     = 32;
+global.fTargetY     = 256;
+global.fTargetRoom  = F1_r20;
 
-global.fTargetX = 48;
-global.fTargetY = 80;
-global.fTargetRoom = F1_r40;
-
+/*
+    global.fTargetX = 80;
+    global.fTargetY = 80;
+    global.fTargetRoom = F1_r40;
+*/
 
 #endregion
 

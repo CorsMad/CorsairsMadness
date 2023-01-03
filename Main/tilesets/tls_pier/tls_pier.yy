@@ -292,6 +292,6 @@
   },
   "parent": {
     "name": "Special tiles",
-    "path": "folders/Tile Sets/Special tiles.yy",
+    "path": "folders/Tile Sets/Temple/Special tiles.yy",
   },
 }

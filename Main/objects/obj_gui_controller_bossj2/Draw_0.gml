@@ -2,6 +2,7 @@
 #region draw rectangle
 	draw_set_colour(c_black);
 	draw_rectangle(camera_get_view_x(view_camera[0]),0,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+30,false);
+    draw_rectangle_color(camera_get_view_x(view_camera[0]),29,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+31,c_grey,c_grey,c_grey,c_grey,false);
 #endregion
 
 #region draw hp
@@ -69,6 +70,7 @@ if instance_exists(obj_Player)
 			draw_sprite_ext(spr_hud_boss_hp,1,(camera_get_view_x(view_camera[0])+460)-i*9,camera_get_view_y(view_camera[0])+16,1,1,0, c_white,1);
 		}
 	}
+
 	if instance_exists(obj_bossj2_phase3_mask)
 	{
 		for (var i=1; i-1<obj_bossj2_phase3_mask.enemy_hp; i++) 
@@ -76,6 +78,7 @@ if instance_exists(obj_Player)
 			draw_sprite_ext(spr_hud_boss_hp,1,(camera_get_view_x(view_camera[0])+460)-i*9,camera_get_view_y(view_camera[0])+16,1,1,0, c_white,1);
 		}
 	}
+
 	draw_set_font(fnt_pixel);
     draw_text_colour(camera_get_view_x(view_camera[0])+403,camera_get_view_y(view_camera[0])+4,"boss hp",c_white,c_white,c_white,c_white,1);
 	

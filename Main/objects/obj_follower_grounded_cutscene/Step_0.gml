@@ -125,6 +125,7 @@ if state = 7
     t++;
     if t = 1
     {
+        fnc_msc_stop_play_slow();
         sprite_index = spr_follower_grounded_jump;
         hspd = -4;
     	vspd = -6;  
@@ -268,6 +269,7 @@ if state = 7
     sprite_index = spr_follower_grounded_jump;  
     if instance_exists(obj_Player)
     {
+        
         obj_Player.isDead = 0;   
     }
 }

@@ -340,6 +340,7 @@ if state = 23
 #endregion
 
 #region Прыжок
+
         if place_meeting(x,y, obj_block_jump_small_flw) && state = 1 && isGrounded = 1 && state !=21 && state !=22 && state !=23 && state !=3 && state !=4
     	{
             hspd = sign(hspd)*2.5;
@@ -357,6 +358,15 @@ if state = 23
             hspd = sign(hspd)*1.75;;
             vspd = -6;
         }
-        
-        
+ 
+#endregion
+
+#region исчезновение
+
+if y > room_height+200
+{
+    instance_destroy();
+    fnc_msc_stop_play_slow();
+}
+
 #endregion

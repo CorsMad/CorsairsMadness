@@ -26,6 +26,7 @@ if to_player = 1
 	{
         fnc_snd_play_over(snd_player_hpmana_gain);
 	    global.secrets_j2_endurance = 1;
+        global.secrets +=1;
         instance_create_depth(0,0,0,obj_room_transition_black_screen_j1_stats);
 		instance_destroy();	     
 	}

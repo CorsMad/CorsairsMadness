@@ -5,5 +5,5 @@ isOff = 0;
 a = 0;
 b = 0; // Положение
 
-image_angle = choose(0,90,180,270);
+image_angle = choose(90,180,270);
 depth = 210;

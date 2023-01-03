@@ -1,6 +1,8 @@
 
 #region draw rectangle
 	draw_set_colour(c_black);
+	draw_rectangle_color(camera_get_view_x(view_camera[0]),0,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+30,c_black,c_black,c_black,c_black,false);
+	draw_rectangle_color(camera_get_view_x(view_camera[0]),29,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+31,c_grey,c_grey,c_grey,c_grey,false);
 	draw_rectangle(camera_get_view_x(view_camera[0]),0,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+30,false);
 #endregion
 
@@ -66,12 +68,14 @@ if instance_exists(obj_Player)
     {
     	draw_sprite_ext(spr_hud_gold,0,(camera_get_view_x(view_camera[0]))+360,camera_get_view_y(view_camera[0])+16,1,1,0, c_white,1);
     	draw_set_font(fnt_pixel);
+        draw_set_halign(fa_left)
         draw_text_colour(camera_get_view_x(view_camera[0])+406,camera_get_view_y(view_camera[0])+18,string(global.gold),c_white,c_white,c_white,c_white,1);
     }
     if obj_Player.state = 1
     {
         draw_sprite_ext(spr_dark_essence,2,(camera_get_view_x(view_camera[0]))+360,camera_get_view_y(view_camera[0])+16,1,1,0, c_white,1);
     	draw_set_font(fnt_pixel);
+        draw_set_halign(fa_left)
         draw_text_colour(camera_get_view_x(view_camera[0])+378,camera_get_view_y(view_camera[0])+10.5,string(global.darkessence),c_white,c_white,c_white,c_white,1);
            
     }

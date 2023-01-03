@@ -187,5 +187,11 @@ if state = 1
 
 if obj_Player.isTakingdmg = 1
 {
+    isHooked = 0;
     instance_destroy();   
+    
+    obj_Player.isHooking = 0;
+
+    obj_Player.hookspd = 0;   
+    obj_Player.hookspd = 0;   
 }

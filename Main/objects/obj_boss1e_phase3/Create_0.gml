@@ -43,4 +43,4 @@ hspd = 0;
 vspd = 0;
 state = 1;
 hit_cd = 0;
-enemy_hp = 2;
+enemy_hp = 15;

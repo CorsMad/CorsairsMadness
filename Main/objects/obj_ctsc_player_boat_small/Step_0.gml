@@ -4,9 +4,9 @@ x+=spd;
 t ++;
 if t = 400
 {
-    instance_create_depth(0,0,0,obj_sound_controller_boat);   
+    fnc_msc_stop_play_slow();
 }
-if transfer = true 
+if t = 450
 {
-    room_goto(TargetRoom); 
+    room_goto(TargetRoom);    
 }

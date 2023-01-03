@@ -11,12 +11,13 @@ function fnc_globals_load()
     global.choosed_itemboat_tier = 0; // ТИП предмета для лодки
     global.mana = 3;
     global.mana_max = 3;
-    global.gold = 6000 //global.money_saved;          // 0
+    global.gold = 0; //global.money_saved;          // 0
+    global.gold_prelevel = 0; //global.money_saved;          // 0
     global.darkessence = 0//global.darkessence_saved;
 
     #endregion
     
-    #region Объявление переменных
+    #region Объявление переменных // УТОЧНИТЬ
     scr_create_array_objects();
     scr_create_array_gold();
     scr_chest_controller();
@@ -26,7 +27,8 @@ function fnc_globals_load()
 
     global.dia_jungleChief = 0; 
     global.dia_jungleMerch = 0; 
-
+    global.dia_jungleComt = 2; 
+    
     #endregion
 
     #region Разрешение на пушку 
@@ -85,19 +87,6 @@ function fnc_globals_load()
     audio_group_load(MusicVolume);
     audio_group_load(SFXvolume);
 
-    // Установка разрешения
-
-    global.resolution = 0;
-    global.windowWidth = 1920;
-    global.windowHeight = 1080;
-
-    // Установка громкости звука
-    global.MSCvolume = 0.5; //0,5
-    global.MSCvolume_max = global.MSCvolume;
-    global.SFXvolume = 0.5; //0,5
-
-    audio_group_set_gain(MusicVolume,global.MSCvolume,0);
-
     // Управление
     global.controlScheme = 0;
 
@@ -124,20 +113,9 @@ function fnc_globals_load()
     // Положение на карте
 
     global.PlayerOnIsland = 0;
-        
-    #region Управление default
-
-    global.left_key = vk_left;
-    global.right_key = vk_right;
-    global.up_key = vk_up;
-    global.down_key = vk_down;
-    global.jump_key = ord("Z");
-    global.attack_key = ord("X");
-    global.dash_key = ord("C");
-    global.item_key = ord("S");
-    global.abil_key = ord("A");
-
-    #endregion
+     
+     
+    
 
     #endregion
 
@@ -154,4 +132,36 @@ function fnc_globals_load()
     
     t1 = 0;
     t2 = 0;
+}
+
+function fnc_settings_load()
+{
+    #region Управление default
+
+    global.left_key = vk_left;
+    global.right_key = vk_right;
+    global.up_key = vk_up;
+    global.down_key = vk_down;
+    global.jump_key = ord("Z");
+    global.attack_key = ord("X");
+    global.dash_key = ord("C");
+    global.item_key = ord("S");
+    global.abil_key = ord("A");
+
+    #endregion  
+    
+    // Установка разрешения
+
+    global.resolution = 0;
+    global.windowWidth = 1920;
+    global.windowHeight = 1080;
+    
+    // Установка громкости звука
+    global.MSCvolume = 0.5; //0,5
+    global.MSCvolume_max = global.MSCvolume;
+    global.SFXvolume = 0.5; //0,5
+    
+    audio_group_set_gain(MusicVolume,global.MSCvolume,0);
+    audio_group_set_gain(SFXvolume,global.SFXvolume,0);
+    
 }

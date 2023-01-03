@@ -6,3 +6,5 @@ fspd = 0;
 vspd = 0;
 
 t = 0;
+
+grounded = 1;

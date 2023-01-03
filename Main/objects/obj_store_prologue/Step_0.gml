@@ -10,6 +10,7 @@ if !buy_confirm
     
 if move!= 0 
 {
+    fnc_snd_play_over(snd_menu_select);
     index+=move;
     var size = array_length_2d(menu, submenu);
     if index < 0 index = size - 1;
@@ -18,6 +19,7 @@ if move!= 0
 
 if movelr!= 0 && (submenu = 1 || submenu = 3)
     {
+        fnc_snd_play_over(snd_menu_select);
         dindex += movelr;
         if dindex < 0 dindex = 2;
         else if dindex >= 3 dindex = 0;
@@ -31,6 +33,7 @@ if key_jump_pressed || key_attack // accept
             switch(index)
             {
                 case 0: 
+                    fnc_snd_play_over(snd_menu_accept);
                     submenu = 1;
                     index = 0;
                     break;
@@ -40,15 +43,19 @@ if key_jump_pressed || key_attack // accept
                     index = 0;
                     */
                     break;
-                case 2: 
+                case 2:
+                    fnc_snd_play_over(snd_menu_accept);
                     submenu = 3;
                     index = 0;
                     break;
-                case 3: 
+                case 3:     
+                    fnc_snd_play_over(snd_menu_accept);
                     submenu = 4;
                     index = 0;
                     break;
                 case 4: 
+                    fnc_snd_play_over(snd_menu_accept);
+                    scr_save_progress();
                     instance_destroy();
                     instance_create_depth(x,y,-100000,obj_npc_junglev_merch_choose);
                     break;
@@ -63,18 +70,19 @@ if key_jump_pressed || key_attack // accept
                     switch(dindex)
                     {
                         case 0: // 1-й якорь   
-                            if (global.purch_anch1 = 0 && global.gold >= 250) {buy_confirm = 1;delay = 1;}
+                            if (global.purch_anch1 = 0 && global.gold >= 250) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
                             break;
                         case 1: // 2-й якорь   
-                            if (global.purch_anch2 = 0 && global.shop_axe_can_upgrade1 = 1 && global.gold >= 300) {buy_confirm = 1;delay = 1;}
+                            if (global.purch_anch2 = 0 && global.shop_axe_can_upgrade1 = 1 && global.gold >= 300) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
                             break;
                         case 2: // 3-й якорь   
-                            if (global.purch_anch3 = 0 && global.shop_axe_can_upgrade2 = 1 && global.gold >= 450) {buy_confirm = 1;delay = 1;}
+                            if (global.purch_anch3 = 0 && global.shop_axe_can_upgrade2 = 1 && global.gold >= 450) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
                             break;
                     }
                     break;
                     
                 case 4:
+                    fnc_snd_play_over(snd_menu_accept);
                     submenu = 0;
                     index = 0;
                     dindex = 0;
@@ -85,6 +93,7 @@ if key_jump_pressed || key_attack // accept
             switch(index)
             {
                 case 4:
+                    fnc_snd_play_over(snd_menu_accept);
                     submenu = 0;
                     index = 1;
                     dindex = 0;
@@ -98,19 +107,20 @@ if key_jump_pressed || key_attack // accept
                     switch(dindex)
                     {
                         case 0: // 1-й якорь   
-                            if (global.purch_dualpistols1 = 0 && global.gold >= 250) {buy_confirm = 1;delay = 1;}
+                            if (global.purch_dualpistols1 = 0 && global.gold >= 250) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
                             break;
                         case 1: // 2-й якорь   
-                            if (global.purch_dualpistols2 = 0 && global.shop_dualpistols_can_upgrade1 = 1 && global.gold >= 300) {buy_confirm = 1;delay = 1;}
+                            if (global.purch_dualpistols2 = 0 && global.shop_dualpistols_can_upgrade1 = 1 && global.gold >= 300) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
                             break;
                         case 2: // 3-й якорь   
-                            if (global.purch_dualpistols3 = 0 && global.shop_dualpistols_can_upgrade2 = 1 && global.gold >= 450) {buy_confirm = 1;delay = 1;}
+                            if (global.purch_dualpistols3 = 0 && global.shop_dualpistols_can_upgrade2 = 1 && global.gold >= 450) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
                             break;
                     }
                     break;
                     
                     
                 case 4:
+                    fnc_snd_play_over(snd_menu_accept);
                     submenu = 0;
                     index = 2;
                     dindex = 0;
@@ -121,12 +131,13 @@ if key_jump_pressed || key_attack // accept
             switch(index)
             {
                 case 0:
-                    if global.secrets >= 3 {buy_confirm = 1;delay = 1;}
+                    if global.secrets >= 3 {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
                     break;
                 case 1:
-                    if global.secrets >= 3 {buy_confirm = 1;delay = 1;}
+                    if global.secrets >= 3 {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
                     break;
                 case 2:
+                    fnc_snd_play_over(snd_menu_accept);
                     submenu = 0;
                     index = 3;
                     dindex = 0;
@@ -141,8 +152,8 @@ if delay!= 0 delay -= 0.1;
 
 if buy_confirm
 {
-    if key_left_press buy_confirm_yesno = 0;
-    if key_right_press buy_confirm_yesno = 1;
+    if key_left_press {fnc_snd_play_over(snd_menu_select);buy_confirm_yesno = 0;}
+    if key_right_press {fnc_snd_play_over(snd_menu_select);buy_confirm_yesno = 1;}
     
     if (key_jump || key_attack_press) && delay = 0
     {
@@ -157,6 +168,7 @@ if buy_confirm
                             case 0: // Покупка якорь 1 ур
                                 if global.purch_anch1 = 0 && global.gold >= 250
                                 {
+                                    fnc_snd_play_over(snd_menu_accept);
                                     buy_confirm = 0;
                                     global.purch_anch1 = 1;
                                     global.shop_axe_can_upgrade1 = 1;
@@ -166,6 +178,7 @@ if buy_confirm
                             case 1: // Покупка якорь 2 ур
                                 if global.purch_anch2 = 0 && global.gold >= 300 && global.shop_axe_can_upgrade1 = 1
                                 {
+                                    fnc_snd_play_over(snd_menu_accept);
                                     buy_confirm = 0;
                                     global.purch_anch2 = 1;
                                     global.shop_axe_can_upgrade2 = 1;
@@ -175,6 +188,7 @@ if buy_confirm
                             case 2: // Покупка якорь 3 ур
                                 if global.purch_anch3 = 0 && global.gold >= 450 && global.shop_axe_can_upgrade2 = 1
                                 {
+                                    fnc_snd_play_over(snd_menu_accept);
                                     buy_confirm = 0;
                                     global.purch_anch3 = 1;
                                     global.gold -= 450;
@@ -189,6 +203,7 @@ if buy_confirm
                             case 0: // Покупка дуал пистолеты 1 ур
                                 if global.purch_dualpistols1 = 0 && global.gold >= 250
                                 {
+                                    fnc_snd_play_over(snd_menu_accept);
                                     buy_confirm = 0;
                                     global.purch_dualpistols1 = 1;
                                     global.shop_dualpistols_can_upgrade1 = 1;
@@ -198,6 +213,7 @@ if buy_confirm
                             case 1: // Покупка дуал пистолеты 2 ур
                                 if global.purch_dualpistols2 = 0 && global.gold >= 300 && global.shop_dualpistols_can_upgrade1 = 1
                                 {
+                                    fnc_snd_play_over(snd_menu_accept);
                                     buy_confirm = 0;
                                     global.purch_dualpistols2 = 1;
                                     global.shop_dualpistols_can_upgrade2 = 1;
@@ -207,6 +223,7 @@ if buy_confirm
                             case 2: // Покупка дуал пистолетыь 3 ур
                                 if global.purch_dualpistols3 = 0 && global.gold >= 450 && global.shop_dualpistols_can_upgrade2 = 1
                                 {
+                                    fnc_snd_play_over(snd_menu_accept);
                                     buy_confirm = 0;
                                     global.purch_dualpistols3 = 1;
                                     global.gold -= 450;
@@ -221,6 +238,7 @@ if buy_confirm
                             case 0: // Обмен монет на ХП
                                 if global.secrets >=3 
                                 {
+                                    fnc_snd_play_over(snd_menu_accept);
                                     buy_confirm = 0;
                                     global.secrets -= 3;
                                     global.hp_max +=1;
@@ -230,6 +248,7 @@ if buy_confirm
                             case 1: // Обмен моент на ману
                                 if global.secrets >=3 
                                 {
+                                    fnc_snd_play_over(snd_menu_accept);
                                     buy_confirm = 0;
                                     global.secrets -= 3;
                                     global.mana_max +=1;
@@ -243,6 +262,7 @@ if buy_confirm
                 
                 break;
             case 1:
+                fnc_snd_play_over(snd_menu_accept);
                 buy_confirm_yesno = 0;
                 buy_confirm = 0;
                 break;

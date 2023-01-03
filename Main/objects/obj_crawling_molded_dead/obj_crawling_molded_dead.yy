@@ -33,6 +33,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Crawling",
-    "path": "folders/Objects/Enemies/@MOLDED GROUP/Crawling.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/Crawling.yy",
   },
 }

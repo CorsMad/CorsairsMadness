@@ -27,6 +27,7 @@ if state = 0
     image_speed = 0;
     if place_meeting(x,y+1,obj_block)
     {
+        fnc_snd_play_onetime(snd_player_landing);
         state = 1; 
         image_speed = 1;
     }
@@ -97,27 +98,29 @@ if state = 5
         case 50:
             image_index = 1;
             break;
-        case 52:
+        case 100:
             image_index = 2;
             break;
-        case 54:
+        case 110:
             image_index = 3;
             break;
-        case 56:
+        case 120:
             image_index = 4;
             break;
-        case 58:
+        case 130:
             image_index = 5;
             break;
-        case 60:
-            image_index = 6;
-            instance_create_depth(0,0,-100000,obj_cutscene_t1_end_blackscreen);
+        case 140:
+            image_index = 6;            
             break;
-        case 62:
+        case 150:
             image_index = 7;
             break;
-        case 64:
+        case 160:
             image_index = 8;
+            break;
+        case 210:
+            instance_create_depth(0,0,-100000,obj_cutscene_t1_end_blackscreen);
             break;
     }
     if t = 200

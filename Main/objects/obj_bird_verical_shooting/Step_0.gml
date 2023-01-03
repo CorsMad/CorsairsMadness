@@ -13,21 +13,25 @@ if state = 1
 	{
 		image_xscale = -1;	
 	} else image_xscale = 1;
-	var dis = point_distance(x,y,obj_Player.x,obj_Player.y);
     
-	    if dis<360 
-		{
-	        a++;
-	    } else a = 0;
-	if a = 155
+	a++; 
+	if a = 140
 	{
-		instance_create_depth(x,y+8,-2,obj_sfx1);	
+        sprite_index = spr_bird_red_fire;
+        image_index = 0;
+		
 	}
-	if a = 160
-	{
-		instance_create_depth(x,y,1,obj_bird_vertical_coconut);
-		a = 0;
-	}
+    if a = 240
+    {
+        instance_create_depth(x,y+22,depth-1,obj_bird_vertical_coconut);		
+    }   
+    
+    if a = 279
+    {
+        a = 0;
+        sprite_index = spr_bird_red;
+        image_index = 0;
+    }
 }
 #endregion
 
@@ -66,6 +70,10 @@ if enemy_hp < 1
 if state = 2
 {
 	instance_create_depth(x,y,-1,obj_sfx_explosion);
+    if !place_meeting(x,y,obj_block)
+    {
+        fnc_drop_mana_gold_after_death(30,45);
+    }   
 	instance_destroy();
 }
 
@@ -75,6 +83,7 @@ if state = 2
 
 if place_meeting(x,y,obj_abil_boots_hitbox)
 {
+    fnc_snd_play_onetime(snd_player_springboots);
     obj_Player.sbootsbuffer = 1;
     obj_Player.vspd = -5;
     obj_Player.dash_counts = 1;

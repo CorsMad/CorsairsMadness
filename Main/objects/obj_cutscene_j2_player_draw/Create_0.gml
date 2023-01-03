@@ -4,4 +4,4 @@
 fspd = 2;
 vspd = -5;
 
-
+grounded = 1;

@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_mainmenu_controller",
-  "spriteId": {
-    "name": "spr_mainmenu_opt",
-    "path": "sprites/spr_mainmenu_opt/spr_mainmenu_opt.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -31,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "MainMenues",
-    "path": "folders/Objects/MainMenues.yy",
+    "name": "!NEWMainMenu",
+    "path": "folders/Objects/MainMenues/!NEWMainMenu.yy",
   },
 }

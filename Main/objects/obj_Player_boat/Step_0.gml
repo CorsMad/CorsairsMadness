@@ -321,7 +321,7 @@ y += vspd;
 #region Смерть
 if global.hp <= 0
 {
-    
+    fnc_msc_stop_play();
     #region появление взрывов
     
         if death_timer < 60
@@ -351,7 +351,7 @@ if global.hp <= 0
     global.hp = global.hp_max;
     global.gold = obj_sp_boat_level.money_saved;
     
-    
+    /*
     #region выключение музыки
         if instance_exists(obj_music_controller_boat)
         {
@@ -359,7 +359,7 @@ if global.hp <= 0
         } 
         audio_stop_sound(msc_Boat_level);
     #endregion
-    
+    */
     
     instance_create_depth(x,y,0,obj_Player_boat_death);
 }
@@ -463,6 +463,8 @@ if global.hp <= 0
     
     if state = 101
     {
+        
+        
         if instance_exists(obj_powerup_indicator_cannon)
         {
             instance_destroy(obj_powerup_indicator_cannon)   
@@ -480,8 +482,10 @@ if global.hp <= 0
         yspdalgae = 1;  
         x+=hspd;
         hspd = lerp(hspd,4,0.02);
+        
         if x > 600
         {
+            
             var roomtr = instance_create_depth(0,0,depth-10000000000000,obj_room_transition_black_screen_boat_to_next);
             roomtr.TargetRoom = JungleVillageArrive;
             

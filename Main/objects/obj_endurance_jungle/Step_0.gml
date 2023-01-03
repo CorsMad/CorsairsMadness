@@ -187,16 +187,10 @@ if state = 1.3 // Вертикальные стреляющие. Волновы�
             }
             
             break;
-            
-        case 200:          
-            fnc_endurance_j_spwn_bird_wave_far();
-            break;
         case 260: 
             fnc_endurance_j_spwn_bird_wave_far();
             break;
-        case 320: 
-            fnc_endurance_j_spwn_bird_wave_far();
-            break;
+
         case 380: 
             fnc_endurance_j_spwn_bird_wave_far();
             break;       
@@ -259,21 +253,6 @@ if state = 1.4 // Волновые птицы, 2 растения, 2 ежа, 1 �
         case 200:
             fnc_endurance_j_spwn_bird_wave_far();
             break;
-        case 400:
-            if  obj_Player.x < room_width/2 
-            {
-                var liz1 = instance_create_depth(432,240,0,obj_big_spawner_j1_r17);
-                liz1.x_cr = 0;
-                liz1.y_cr = 0;
-                liz1.obj_cr = obj_spikehedge;
-            } else
-            {
-                var liz1 = instance_create_depth(48,240,0,obj_big_spawner_j1_r17);
-                liz1.x_cr = 0;
-                liz1.y_cr = 0;
-                liz1.obj_cr = obj_spikehedge;   
-            }
-            break;
         case 450:
             fnc_endurance_j_spwn_bird_wave_far();
             if  obj_Player.x < room_width/2 
@@ -304,11 +283,7 @@ if state = 1.4 // Волновые птицы, 2 растения, 2 ежа, 1 �
                 liz1.y_cr = 0;
                 liz1.obj_cr = obj_spikehedge;   
             }
-            break;
-        case 650: 
-            fnc_endurance_j_spwn_bird_wave_far();
-            break;
-            
+            break;            
     }   
     if t > 660 && !instance_exists(obj_lizardball)
     && !instance_exists(obj_spikehedge)
@@ -384,6 +359,7 @@ if state = 2.2
 if state = 2.3 // Ожидание перед 2 боссом
 {
     t++
+    
     if t = 100
     {
         state = 3.1;

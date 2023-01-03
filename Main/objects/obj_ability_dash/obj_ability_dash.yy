@@ -7,7 +7,7 @@
     "path": "sprites/spr_ability_dash/spr_ability_dash.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Abilities objects",
-    "path": "folders/Objects/Abilities objects.yy",
+    "name": "Dash",
+    "path": "folders/Objects/TESTGROUP/HELP TEXT/!NEW/Dash.yy",
   },
 }

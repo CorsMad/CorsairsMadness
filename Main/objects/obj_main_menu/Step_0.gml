@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-player_input();
+menu_input_new();
 /*
 var key_down = keyboard_check_pressed(vk_down);
 var key_up = keyboard_check_pressed(vk_up);
@@ -12,12 +12,43 @@ var key_press = keyboard_check_pressed(vk_enter) ||keyboard_check_pressed(vk_spa
 audio_group_set_gain(MusicVolume,global.SFXvolume,0);
 audio_group_set_gain(MusicVolume,global.MSCvolume,0);
 
+
+
+if submenu = 0
+{
+    t_sfx++;
+    switch(t_sfx)
+    {
+        case 200:  
+            instance_create_depth(130,84,depth-111,obj_sfx3); 
+            break;
+        case 400:  
+            instance_create_depth(334,86,depth-111,obj_sfx3); 
+            break;
+        case 600:  
+            instance_create_depth(284,112,depth-111,obj_sfx3); 
+            break;
+        case 700:  
+            instance_create_depth(348,38,depth-111,obj_sfx3); 
+            break;
+        case 900:  
+            instance_create_depth(96,116,depth-111,obj_sfx3); 
+            break;
+        case 1000:  
+            instance_create_depth(274,36,depth-111,obj_sfx3); 
+            t_sfx = 0;
+            break;
+    }
+    
+}
+
+
 var move = key_down_pressed - key_up_press;
 
-if move!= 0 && KBControlChange = 0 && GPControlChange = 0
+if move!= 0 && KBControlChange = 0
 {
     index+=move;
-    
+    fnc_snd_play_over(snd_menu_select);
     var size = array_length_2d(menu, submenu);
     if index < 0 index = size - 1;
     else if index >=size  index = 0;
@@ -25,23 +56,37 @@ if move!= 0 && KBControlChange = 0 && GPControlChange = 0
 
 if (key_attack || key_jump) && KBControlChange = 0 // accept
 {
+    fnc_snd_play_over(snd_menu_accept);
     switch(submenu)
     {
         case 0: // main menu
             switch(index)
             {
-                case 0: 
+                case 0:
+                    if file_exists("save1.save")                    
+                    {
+                        room_goto(RoomContinue);
+                        fnc_msc_stop_play();
+                    }
                     break;
                 case 1: 
-                    room_goto(Cutscene_intro);
-                    scr_secrets_chest_maze();
+                    if file_exists("save1.save") 
+                    {
+                        submenu = 5;
+                        index = 1;                        
+                    } else
+                    {
+                        scr_secrets_chest_maze();
+                        fnc_msc_stop_play();
+                        room_goto(Cutscene_intro);   
+                    }
                     break;
                 case 2: 
                     submenu = 1;
                     index = 0;
                     break;
                 case 3:
-                    game_restart();
+                    game_end();
                     break;
         
             }
@@ -62,6 +107,7 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     index = 0;
                     break;
                 case 3:
+                    scr_save_settings();
                     submenu = 0;
                     index = 2;
                     break;   
@@ -71,27 +117,45 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
             switch(index)
             {
                 case 0: 
-                    window_set_fullscreen(true); 
+                    window_set_fullscreen(true);
+                    global.resolution = 0;
+                    global.windowWidth = 1920;
+                    global.windowHeight = 1080;
                     break;
                 case 1: 
                     window_set_fullscreen(false);  
-                    window_set_size(1920, 1080);                    
+                    window_set_size(1920, 1080);  
+                    global.resolution = 1;
+                    global.windowWidth = 1920;
+                    global.windowHeight = 1080;
                     break;
                 case 2: 
                     window_set_fullscreen(false);
-                    window_set_size(1600, 900);     
+                    window_set_size(1600, 900);
+                    global.resolution = 2;
+                    global.windowWidth = 1600;
+                    global.windowHeight = 900;
                     break;
                 case 3:
                     window_set_fullscreen(false);
-                    window_set_size(1366, 768);  
+                    window_set_size(1366, 768); 
+                    global.resolution = 3;
+                    global.windowWidth = 1366;
+                    global.windowHeight = 768;
                     break;
                 case 4: 
                     window_set_fullscreen(false);
                     window_set_size(1280, 720);
+                    global.resolution = 4;
+                    global.windowWidth = 1280;
+                    global.windowHeight = 720;
                     break;
                 case 5: 
                     window_set_fullscreen(false);
                     window_set_size(800, 600);
+                    global.resolution = 5;
+                    global.windowWidth = 800;
+                    global.windowHeight = 600;
                     break;
                 case 6:
                     submenu = 1;
@@ -206,13 +270,9 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
             switch(index)
             {
                 case 0:
-                    break;
-                case 1:
-                    break;
-                case 2:
                     submenu = 3;
                     index = 1;
-                    break;   
+                    break; 
             }
             break;
         case 4: // sound
@@ -228,6 +288,21 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     break;
             }
             break;
+        case 5: // Confirm
+            switch(index)
+            {
+                case 0: 
+                    file_delete("save1.save");
+                    scr_secrets_chest_maze();
+                    fnc_msc_stop_play();
+                    room_goto(Cutscene_intro);
+                    break;
+                case 1:
+                    submenu = 0;
+                    index = 1;
+                    break;
+            }
+            break;
     }
 } else
 
@@ -237,14 +312,16 @@ if submenu = 4
 {
     if index = 0 
     {
-        if key_left_press && global.MSCvolume > 0 {global.MSCvolume -= 0.1;fnc_snd_play_over(snd_menu_select);}
-        if key_right_press && global.MSCvolume < 1 {global.MSCvolume += 0.1;fnc_snd_play_over(snd_menu_select);}   
+        if key_left_press && global.MSCvolume > 0  {global.MSCvolume -= 0.1;global.MSCvolume_max = global.MSCvolume;fnc_snd_play_over(snd_menu_select);}
+        if key_right_press && global.MSCvolume < 1 {global.MSCvolume += 0.1;global.MSCvolume_max = global.MSCvolume;fnc_snd_play_over(snd_menu_select);}   
     }
     if index = 1 
     {
-        if key_left_press && global.SFXvolume > 0 {global.SFXvolume-= 0.1;audio_group_set_gain(MusicVolume,global.SFXvolume,0);fnc_snd_play_over(snd_menu_select);}
-        if key_right_press && global.SFXvolume < 1 {global.SFXvolume+= 0.1;audio_group_set_gain(MusicVolume,global.SFXvolume,0);fnc_snd_play_over(snd_menu_select);}   
+        if key_left_press && global.SFXvolume > 0 {global.SFXvolume-= 0.1;fnc_snd_play_over(snd_menu_select);}
+        if key_right_press && global.SFXvolume < 1 {global.SFXvolume+= 0.1;fnc_snd_play_over(snd_menu_select);}   
     }
+    audio_group_set_gain(MusicVolume,global.MSCvolume,0);
+    audio_group_set_gain(SFXvolume,global.SFXvolume,0);
 }
 
 #endregion
@@ -303,6 +380,19 @@ if KBControlChange = 1 && delay >= 4 &&
     
     KBControlChange = 0;
     delay = 0;
+}
+
+#endregion
+
+#region Альфа тайтла
+
+if submenu = 0 || submenu = 5
+{
+    if title_alpha < 1 title_alpha += 0.1;   
+}
+if submenu > 0 && submenu < 5 
+{
+    if title_alpha > 0 title_alpha -= 0.1;
 }
 
 #endregion

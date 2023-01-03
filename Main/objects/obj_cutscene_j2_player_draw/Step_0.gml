@@ -29,6 +29,15 @@ if !place_meeting(x,y+1,obj_block)
 
 #endregion
 
+if place_meeting(x,y+1,obj_block)
+{
+    grounded = 1;    
+}else grounded = 0;
+if grounded = 0 && place_meeting(x,y+vspd,obj_block)
+{
+    fnc_snd_play_onetime(snd_player_landing);
+}
+
 if place_meeting(x,y,obj_ctsc_j2_r9_boat)
 {
     instance_destroy(); 

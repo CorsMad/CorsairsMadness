@@ -31,6 +31,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "F1_checkpoints",
-    "path": "folders/Objects/Level objects/Checkpoint/F1_checkpoints.yy",
+    "path": "folders/Objects/Level objects/Checkpoint/!MASTER/Jungle/F1_checkpoints.yy",
   },
 }

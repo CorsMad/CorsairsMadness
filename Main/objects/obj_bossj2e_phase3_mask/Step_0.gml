@@ -12,6 +12,35 @@ if canhit = 0
 		instance_create_depth(obj_hitbox_down.x,obj_hitbox_down.y+18,depth-1,obj_sfx_weapon_slash);
 	}
 	#endregion   
+    
+    var b1_hit = instance_place(x,y,obj_bomb);
+    if b1_hit!= noone
+    {
+        if b1_hit.hspd != 0
+        {
+            canhit = 1;
+            obj_bossj2e_phase3.state = 7;
+            obj_bossj2e_phase3.t = 0;
+            
+            with(b1_hit)
+            {
+                fnc_snd_play_over(snd_item_bomb_explosion);
+            	instance_create_depth(x,y+7,depth-1,obj_bomb_explosion); 
+                instance_destroy(pointer);	
+            	instance_destroy();	
+            }
+        }
+    }
+    
+    var e1_hit = instance_place(x,y,obj_bomb_explosion);
+    if e1_hit!= noone
+    {
+        canhit = 1;
+        obj_bossj2e_phase3.state = 7;
+        obj_bossj2e_phase3.t = 0;
+        fnc_snd_play_over(snd_item_bomb_explosion);
+
+    }
 }
 
 if canhit = 1
@@ -19,6 +48,7 @@ if canhit = 1
     #region Атака
 	if place_meeting(x,y,obj_hitbox) && hit_cd = 0
 	{
+        obj_bossj2e_phase3.hit = 1;
 		hit_cd = 1;
 		enemy_hp -=1;
 		if obj_Player.dir = 1
@@ -32,6 +62,7 @@ if canhit = 1
     var axehit = instance_place(x,y,obj_item_axe);
     if (axehit !=noone) && (hit_cd = 0)
     {
+        obj_bossj2e_phase3.hit = 1;
         hit_cd = 1;
 		enemy_hp -= 2;
         instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-1,obj_sfx_weapon_slash);
@@ -42,6 +73,7 @@ if canhit = 1
     var axehit2 = instance_place(x,y,obj_item_axe2);
     if (axehit2 !=noone) && (hit_cd = 0)
     {
+        obj_bossj2e_phase3.hit = 1;
         hit_cd = 1;
 		enemy_hp -= 2;
         instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-1,obj_sfx_weapon_slash);
@@ -54,6 +86,7 @@ if canhit = 1
     var axehit3 = instance_place(x,y,obj_item_axe3);
     if (axehit3 !=noone) && (hit_cd = 0)
     {
+        obj_bossj2e_phase3.hit = 1;
         hit_cd = 1;
 		enemy_hp -= 2;
         instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-1,obj_sfx_weapon_slash);
@@ -63,6 +96,7 @@ if canhit = 1
     #region Удар вниз
 	if place_meeting(x,y,obj_hitbox_down) && hit_cd = 0
 	{
+        obj_bossj2e_phase3.hit = 1;
 		hit_cd = 1;
 		enemy_hp -=1;
         obj_Player.isAttackingdown = 0;
@@ -71,7 +105,24 @@ if canhit = 1
 		instance_create_depth(obj_hitbox_down.x,obj_hitbox_down.y+18,depth-1,obj_sfx_weapon_slash);
 	}
 	#endregion
-    
+    // БОМБА
+    var b2_hit = instance_place(x,y,obj_bomb);
+    if b2_hit!= noone
+    {
+        if b2_hit.hspd != 0
+        {
+            obj_bossj2e_phase3.hit = 1;
+            hit_cd = 1;
+    		enemy_hp -= 4;
+            with(b2_hit)
+            {
+                fnc_snd_play_over(snd_item_bomb_explosion);
+            	instance_create_depth(x,y+7,depth-1,obj_bomb_explosion); 
+                instance_destroy(pointer);	
+            	instance_destroy();	
+            }
+        }
+    }
     
     
     #region моргание
@@ -83,10 +134,7 @@ if canhit = 1
 	{
 		hit_cd = 0;	
 	}
-	if hit_cd > 1 
-	{
-		image_blend = make_color_hsv(245,255,255);
-	} else image_blend = c_white;
+	
     #endregion
 }
 
@@ -102,11 +150,25 @@ if enemy_hp <= 0
 
     if place_meeting(x,y,obj_abil_boots_hitbox)
     {
+        fnc_snd_play_onetime(snd_player_springboots);
         obj_Player.sbootsbuffer = 1;
         obj_Player.vspd = -5;
         obj_Player.dash_counts = 1;
         instance_create_depth(obj_abil_boots_hitbox.x,obj_abil_boots_hitbox.y+20,obj_abil_boots_hitbox.depth-1,obj_sfx4);
         instance_destroy(obj_abil_boots_hitbox);
+    }
+    
+    #endregion
+  
+  #region alpha
+    
+    if canhit = 0 
+    {
+       if image_alpha < 0.7 image_alpha +=0.1;   
+    }
+    if canhit = 1
+    {
+        if image_alpha > 0 image_alpha -=0.1;   
     }
     
     #endregion

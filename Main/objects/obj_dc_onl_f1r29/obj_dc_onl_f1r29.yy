@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "F1",
-    "path": "folders/Objects/Level objects/Teleports/TPVariables/F1.yy",
+    "name": "JP1",
+    "path": "folders/Objects/Level objects/Teleports/TPVariables/JP1.yy",
   },
 }

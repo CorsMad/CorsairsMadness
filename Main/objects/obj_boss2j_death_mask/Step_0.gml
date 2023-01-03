@@ -18,6 +18,13 @@
         obj_Player.sbootsbuffer = 1;
         obj_Player.vspd = -5;
         obj_Player.dash_counts = 1;
+        
+        if instance_exists(obj_bossj2_phase_between) || instance_exists(obj_bossj2_phase_between2) ||
+        instance_exists(obj_bossj2e_phase_between) || instance_exists(obj_bossj2e_phase_between2)         
+        {
+            instance_create_depth(x,y,depth-1,obj_money1);   
+        }
+                
         instance_create_depth(obj_abil_boots_hitbox.x,obj_abil_boots_hitbox.y+20,obj_abil_boots_hitbox.depth-1,obj_sfx4);
         instance_destroy(obj_abil_boots_hitbox);
     }

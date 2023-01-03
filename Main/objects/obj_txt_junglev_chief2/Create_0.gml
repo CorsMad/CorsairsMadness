@@ -1,8 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-text[0,0] = "Best of luck to you, mister";
+#region 
 
+eng1 = choose("[fnt_pixel]Good luck with finding your team!","[fnt_pixel]Don't forget to visit the merchant more often.");
+
+#endregion
+
+scr_text_starter(0,0.5);
+
+
+
+
+text[0,0] = choose("Good luck with finding your team!","Don't forget to visit the merchant more often.");
 
 
 text_current = 0;

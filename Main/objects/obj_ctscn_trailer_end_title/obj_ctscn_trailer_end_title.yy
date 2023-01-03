@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_ctscn_trailer_end_title",
   "spriteId": {
-    "name": "spr_trailer_end_title",
-    "path": "sprites/spr_trailer_end_title/spr_trailer_end_title.yy",
+    "name": "spr_trailer_end_title_prologue",
+    "path": "sprites/spr_trailer_end_title_prologue/spr_trailer_end_title_prologue.yy",
   },
   "solid": false,
   "visible": true,

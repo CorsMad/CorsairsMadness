@@ -4,6 +4,7 @@ fnc_Collision(obj_block);
 if isOn = 0 && place_meeting(x,y+1,obj_block) && place_meeting(x,y,obj_Player) && obj_Player.key_down && obj_Player.isAttacking = 0 && obj_Player.isUsingitem = 0 && obj_Player.isCarry = 0 && obj_Player.isDead = 0 && obj_Player.isTakingdmg = 0 && obj_Player.isDashing = 0 && obj_Player.isAttackingdown = 0 && obj_Player.isAirattacking = 0 && obj_Player.isThrowingBomb = 0 && obj_Player.isAirThrowingBomb = 0 && obj_Player.isGrounded = 1
 {
 	obj_Player.isPickup = 1;
+    instance_destroy(pointer);
 	instance_destroy();
 }
 
@@ -29,5 +30,11 @@ if timer = 115
 }
 if timer = 120 
 {
+	instance_destroy(pointer);	
 	instance_destroy();	
 }
+
+if isOn = 0 && place_meeting(x,y+1,obj_block) && place_meeting(x,y,obj_Player) && instance_exists(pointer)
+{
+    pointer.on = 1;   
+} else if instance_exists(pointer) pointer.on = 0;

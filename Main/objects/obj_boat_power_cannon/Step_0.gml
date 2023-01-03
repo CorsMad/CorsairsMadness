@@ -28,7 +28,7 @@ if place_meeting(x,y,obj_player_boat_hitbox)
         global.hp = global.hp_max;
         obj_Player_boat.image_index = 0;
         obj_Player_boat.fastshoot_count = 0;
-        obj_Player_boat.cannonshoot_count= 20 
+        obj_Player_boat.cannonshoot_count= 25 
         obj_Player_boat.t = 0;
         obj_Player_boat.state = 3;
         

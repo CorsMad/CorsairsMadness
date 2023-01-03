@@ -35,6 +35,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Grounded",
-    "path": "folders/Objects/Enemies/@MOLDED GROUP/Grounded.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/Grounded.yy",
   },
 }

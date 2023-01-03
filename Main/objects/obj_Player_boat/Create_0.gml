@@ -90,3 +90,7 @@ cannonshoot_count = 0;
 
 
 TargetRoom = 0;// МЕСТО ПЕРЕМЕЩЕНИЯ
+
+/* Создание индикатора */
+instance_create_depth(x,y,depth-1,obj_powerup_counter);
+

@@ -1,0 +1,43 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_boss_jp_dash_mask",
+  "spriteId": {
+    "name": "spr_follower_grounded_dash_mask",
+    "path": "sprites/spr_follower_grounded_dash_mask/spr_follower_grounded_dash_mask.yy",
+  },
+  "solid": false,
+  "visible": false,
+  "managed": true,
+  "spriteMaskId": {
+    "name": "spr_follower_grounded_mask",
+    "path": "sprites/spr_follower_grounded_mask/spr_follower_grounded_mask.yy",
+  },
+  "persistent": false,
+  "parentObjectId": {
+    "name": "obj_enemy_parent_object",
+    "path": "objects/obj_enemy_parent_object/obj_enemy_parent_object.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+  ],
+  "properties": [],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Boss3",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Jungle/Boss/Boss3.yy",
+  },
+}

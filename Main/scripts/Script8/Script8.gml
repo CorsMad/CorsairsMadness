@@ -43,3 +43,43 @@ function fnc_snd_play_onetime(argument1)
         audio_play_sound(argument1,0,0);   
     }
 }
+
+function fnc_msc_play(argument1)
+{
+    if instance_exists(obj_music_controller)
+    {
+        obj_music_controller.musicId = argument1;
+        obj_music_controller.t = 0;
+    }   
+}
+
+function fnc_msc_stop_play()
+{
+    if instance_exists(obj_music_controller)
+    {
+        audio_stop_sound(obj_music_controller.musicId);
+        obj_music_controller.musicId = noone;
+        obj_music_controller.t = 33;
+    }   
+}
+
+function fnc_msc_stop_play_slow()
+{
+    if instance_exists(obj_music_controller)   
+    {
+        obj_music_controller.stop_music = 1;
+        obj_music_controller.sm_t = 0;
+    }
+}
+
+function fnc_msc_start_checkpoint(argument1)
+{
+    if instance_exists(obj_music_controller)   
+    {
+        if obj_music_controller.musicId != argument1
+        {
+            obj_music_controller.musicId = argument1;
+            obj_music_controller.t = 0;
+        }
+    }
+}

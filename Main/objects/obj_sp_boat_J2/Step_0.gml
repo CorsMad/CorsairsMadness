@@ -240,7 +240,7 @@ if state = 6
                     instance_create_depth(576,192,depth,obj_skeleton_surf_wave_2hp);
                     var a7 = instance_create_depth(624,224,depth,obj_skeleton_surf_wave_1hp);
                     a7.drop1 =1 ;
-                    var c1 instance_create_depth(672,208,depth,obj_skeleton_surf_wave_3hp);
+                    var c1 = instance_create_depth(672,208,depth,obj_skeleton_surf_wave_3hp);
                     c1.drop10 = 1;
                     
                     var b3 = instance_create_depth(544,272,depth,obj_skeleton_surf_2hp);
@@ -393,7 +393,7 @@ if state = 9
         case 250:   var a10 = instance_create_depth(512,176,depth,obj_skeleton_surf_pointing_1hp);
                     a10.drop1 = 1;
                     break;
-        case 350:   var c11 instance_create_depth(496,224,depth,obj_skeleton_surf_archer);
+        case 350:   var c11 = instance_create_depth(496,224,depth,obj_skeleton_surf_archer);
                     c11.drop10 = 1;
                     break;
         case 400:   instance_create_depth(512,240,depth,obj_skeleton_surf_pointing_1hp);break;
@@ -433,7 +433,7 @@ if state = 10
         case 150:   var c15 = instance_create_depth(1050,208,depth,obj_skeleton_surf_wave_3hp);
                     c15.drop10 = 1;
                     break;  
-        case 175:   var c16 instance_create_depth(1160,220,depth,obj_skeleton_surf_wave_3hp);
+        case 175:   var c16 = instance_create_depth(1160,220,depth,obj_skeleton_surf_wave_3hp);
                     c16.drop10 = 1;
                     break; 
         case 200:   var c17 = instance_create_depth(1400,220,depth,obj_skeleton_surf_wave_3hp);

@@ -1,30 +1,158 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-t++;
+player_input();
 
-if t > 60 && t < 100
-{
-    if alpha < 1 alpha+=0.1;
-}
-
-if t > 250 
-{
-    if alpha > 0 alpha -=0.1;   
-}
-
-if t > 250 && alpha <=0 && page < 3
-{
-    if page < 3 page++;
-    t = 0;
-}
-
-if page > 2 
+#region Начало
+if page = 0
 {
     t++;
-    if t > 500
-    {
-        room_goto(GlobalMapPrologue); 
+    if t = 50 {t = 0;page = 1;}
+}
+#endregion
 
+#region Страница1
+if page = 1
+{
+    text = page1;
+    t++;
+    switch(t)
+    {
+        case 175: alpha = 0.5;break;
+        case 200: alpha = 1;break;
+        case 1000: alpha = 0.5;break;
+        case 1025: alpha = 0;break;
+        case 1050: 
+            t = 0;
+            page = 2;
+            break;
+            
     }
 }
+
+#endregion
+
+#region Страница2
+if page = 2
+{
+    text = page2;
+    t++;
+    switch(t)
+    {
+        case 75: alpha = 0.5;break;
+        case 100: alpha = 1;break;
+        case 500: alpha = 0.5;break;
+        case 525: alpha = 0;break;
+        case 550: 
+            t = 0;
+            page = 3;
+            break;
+    }
+}
+#endregion
+
+#region Страница3
+if page = 3
+{
+    text = page3;
+    t++;
+    switch(t)
+    {
+        case 50: alpha = 0.5;break;
+        case 80: alpha = 1;break;
+        case 200: alpha = 0.5;break;
+        case 230: alpha = 0;break;
+        case 250: 
+            t = 0;
+            page = 4;
+            break;
+    }
+}
+#endregion
+
+#region Страница4
+if page = 4
+{
+    text = page4;
+    t++;
+    switch(t)
+    {
+        case 50: alpha = 0.5;break;
+        case 80: alpha = 1;break;
+        case 200: alpha = 0.5;break;
+        case 230: alpha = 0;break;
+        case 250: 
+            t = 0;
+            page = 5;
+            break;
+    }
+}
+#endregion
+
+#region Страница5
+if page = 5
+{
+    text = page5;
+    t++;
+    switch(t)
+    {
+        case 50: alpha = 0.5;break;
+        case 80: alpha = 1;break;
+        case 200: alpha = 0.5;break;
+        case 230: alpha = 0;break;
+        case 250: 
+            t = 0;
+            page = 6;
+            break;
+    }
+}
+#endregion
+
+#region Страница6
+if page = 6
+{
+    text = page6;
+    t++;
+    switch(t)
+    {
+        case 50: alpha = 0.5;break;
+        case 80: alpha = 1;break;
+        case 200: alpha = 0.5;break;
+        case 230: alpha = 0;break;
+        case 250: 
+            room_goto(GlobalMapPrologue); 
+            break;
+    }
+}
+#endregion
+
+#region  Skip
+
+if (key_attack || key_jump) && skip = 0
+{
+    skip = 1;
+}
+
+if skip = 1
+{
+    skip_t++;
+    if skip_t >=10
+    {
+        skip_t = 0;
+        skip = 2;
+    }   
+}
+
+if skip = 2
+{
+    skip_t++;
+    if skip_t >= 150 
+    {
+        skip_t = 0;
+        skip = 0;
+    }
+    
+    if (key_attack || key_jump) room_goto(GlobalMapPrologue);   
+}
+
+#endregion

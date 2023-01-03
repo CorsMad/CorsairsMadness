@@ -12,8 +12,15 @@ if t1 = 10
 
 if audio_group_is_loaded(MusicVolume) && audio_group_is_loaded(SFXvolume)
 {
-    if keyboard_check_pressed(vk_anykey)
+    if keyboard_check_pressed(vk_anykey) || gamepad_button_check_pressed(0,gp_face1) ||
+    gamepad_button_check_pressed(0,gp_face2) || gamepad_button_check_pressed(0,gp_face3) ||
+    gamepad_button_check_pressed(0,gp_face4) || gamepad_button_check_pressed(0,gp_start) ||
+    gamepad_button_check_pressed(0,gp_select) 
+    
+    
+    
     {
-        room_goto(MainMenu);   
+        room_goto(PreMainMenu);
+        //room_goto(MainMenu);   
     }
 }

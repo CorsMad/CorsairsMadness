@@ -1,11 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
+fnc_msc_play(msc_main_menu);
+
+#region Разное
+
+confirm_eng = @"do you want to start new game ?
+all previous progress will be lost";
+
+#endregion
 
 #region mainmenu
-menu[0, 0] = "continue";
-menu[0, 1] = "new game";
-menu[0, 2] = "options";
-menu[0, 3] = "\nexit";
+
+    menu[0, 0] = "continue";
+    menu[0, 1] = "new game";
+    menu[0, 2] = "options";
+    menu[0, 3] = "\nexit";   
+
 #endregion
 
 #region options
@@ -46,9 +56,8 @@ menu[31, 9] = "default 1";
 menu[31, 10] = "default 2";
 menu[31, 11] = "\nback";
 
-menu[32, 0] = "Type A";
-menu[32, 1] = "Type B";
-menu[32, 2] = "\nback";
+menu[32, 0] = "\n\n\n\n\n\n\nback";
+
 
 #endregion
 
@@ -56,8 +65,15 @@ menu[32, 2] = "\nback";
 
 #region sound
 menu[4, 0] = "music";
-menu[4, 1] = "sfx";
-menu[4, 2] = "\nback";
+menu[4, 1] = "\n\nsfx";
+menu[4, 2] = "\n\n\n\nback";
+#endregion
+
+#region Confirm
+
+menu[5, 0] = "\n\n\n\n\n\n\n\n\n\n\n\nyes";
+menu[5, 1] = "\n\n\n\n\n\n\n\n\n\n\n\nno";
+
 #endregion
 
 #region Ползунки музыки и эффектов
@@ -72,8 +88,8 @@ KBControlChange = 0;
 
 index = 1;
 submenu = 0;
-
-
+title_alpha = 1;
+t_sfx = 0;
 #region TEST
 
 pk_up = fnc_keyboard_key_change(global.up_key);

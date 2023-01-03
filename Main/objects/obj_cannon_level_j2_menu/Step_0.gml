@@ -1,11 +1,12 @@
 player_input();
 
-if key_right_press state = 1
-if key_left_press state = 0;
-if key_down_pressed state = 2;
+if key_right_press {fnc_snd_play_over(snd_menu_select);state = 1}
+if key_left_press {fnc_snd_play_over(snd_menu_select);state = 0;}
+if key_down_pressed {fnc_snd_play_over(snd_menu_select);state = 2;}
 
 if key_attack || key_jump
 {
+    fnc_snd_play_over(snd_menu_accept);
     switch(state)
     {
         case 0:

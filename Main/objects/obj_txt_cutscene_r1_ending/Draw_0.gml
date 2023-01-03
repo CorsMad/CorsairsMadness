@@ -1,12 +1,27 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-draw_rectangle_color(0,0,480,31,c_black,c_black,c_black,c_black,false);
-draw_sprite(spr_text_icons,0,6,2);
+scr_text_graphics();
+draw_sprite(spr_text_icons,0,6,9);
+if typist.get_state() = 1 draw_sprite(spr_text_icon_button_k,iconspd,camera_get_view_x(view_camera[0])+480-12,camera_get_view_y(view_camera[0])+64-10)
 
+var scribble_text = scribble(text)
+scribble_text.draw(text_x,text_y,typist);
+scribble_text.wrap(text_width);
 
+switch(scr_t)
+{
+    case 0: text = eng1;
+            fnc_msc_stop_play_slow();break;            
+    case 1: text = eng2;break;          
+    case 2: text = eng3;
+            
+            break;          
+    case 3: text = eng4;break;                    
+}
 
-draw_set_font(fnt_pixel_small);
+/*
+draw_set_font(fnt_pixel);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_white);

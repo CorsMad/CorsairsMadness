@@ -203,11 +203,12 @@ if state = 4
 
 #region Смерть
 if enemy_hp <= 0
-{
+{/*
     var den5_1 = instance_create_depth(x,y,depth+1,obj_dark_essence);
     var den5_2 = instance_create_depth(x,y,depth+1,obj_dark_essence);
     var den5_3 = instance_create_depth(x,y,depth+1,obj_dark_essence);
     var den5_4 = instance_create_depth(x,y,depth+1,obj_dark_essence);
+    
     den5_1.hspd = -4;
     den5_1.vspd = -1;
     den5_1.val = 5;
@@ -223,7 +224,7 @@ if enemy_hp <= 0
     den5_4.hspd = 2;
     den5_4.vspd = 2;
     den5_4.val = 5;
-    
+    */
     var i = instance_create_depth(x,y,depth,obj_firing_molded_dead);
     i.image_xscale = image_xscale;
     instance_destroy();

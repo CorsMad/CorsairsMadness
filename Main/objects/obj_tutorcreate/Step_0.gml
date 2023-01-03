@@ -13,5 +13,11 @@ if t = 200
     global.chest_tutor_r7 = 1;
     global.chest_tutor_r8 = 1;
     #endregion
+    
+    #region музыка
+    
+    fnc_msc_play(msc_tutor1);
+    
+    #endregion
 }
 

@@ -34,6 +34,7 @@ if canhit = 1
     var axehit = instance_place(x,y,obj_item_axe);
     if (axehit !=noone) && (hit_cd = 0)
     {
+        obj_bossj2_phase1.hit = 1;
         hit_cd = 1;
 		enemy_hp -= 2;
         instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-1,obj_sfx_weapon_slash);
@@ -44,6 +45,7 @@ if canhit = 1
     var axehit2 = instance_place(x,y,obj_item_axe2);
     if (axehit2 !=noone) && (hit_cd = 0)
     {
+        obj_bossj2_phase1.hit = 1;
         hit_cd = 1;
 		enemy_hp -= 2;
         instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-1,obj_sfx_weapon_slash);
@@ -56,6 +58,7 @@ if canhit = 1
     var axehit3 = instance_place(x,y,obj_item_axe3);
     if (axehit3 !=noone) && (hit_cd = 0)
     {
+        obj_bossj2_phase1.hit = 1;
         hit_cd = 1;
 		enemy_hp -= 2;
         instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-1,obj_sfx_weapon_slash);
@@ -65,6 +68,7 @@ if canhit = 1
     #region Удар вниз
 	if place_meeting(x,y,obj_hitbox_down) && hit_cd = 0
 	{
+        
         obj_bossj2_phase1.hit = 1;
 		hit_cd = 1;
 		enemy_hp -=1;
@@ -110,6 +114,7 @@ if enemy_hp <= 0
 
     if place_meeting(x,y,obj_abil_boots_hitbox)
     {
+        fnc_snd_play_onetime(snd_player_springboots);
         obj_Player.sbootsbuffer = 1;
         obj_Player.vspd = -5;
         obj_Player.dash_counts = 1;

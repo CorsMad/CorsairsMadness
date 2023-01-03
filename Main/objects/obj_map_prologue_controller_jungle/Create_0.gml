@@ -1,6 +1,8 @@
 /// @description 
 // You can write your code in this editor
 
+scr_save_progress();
+
 if (global.key_green1 = 1 && global.key_green2 = 1) Opened = 1 else Opened = 0;
 
 /*
