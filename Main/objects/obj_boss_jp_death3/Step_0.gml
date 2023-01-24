@@ -16,6 +16,7 @@ if t_blood >= 80 && t_blood < 260
 {
     if t mod 10 = 0
     {
+        fnc_snd_play_onetime(snd_follower_blood);
         var gbh1 = instance_create_depth(x-8*sign(image_xscale),y-32,depth+choose(-1,1),obj_molded_dark_blood);
         var gbh2 = instance_create_depth(x-8*sign(image_xscale),y-32,depth+choose(-1,1),obj_molded_dark_blood);
         var gbh3 = instance_create_depth(x-8*sign(image_xscale),y-32,depth+choose(-1,1),obj_molded_dark_blood);
@@ -80,6 +81,8 @@ switch(t)
     case 280:
         sprite_index = spr_follower_grounded_transform_2;
         image_index = 0;
+        fnc_snd_play_onetime(snd_transform);
+        break;
     case 285:
         image_index = 1;
         break;
@@ -94,6 +97,7 @@ switch(t)
         break;
     case 305:
         image_index = 5;
+        fnc_msc_play(msc_jp1_c_jp2_c);
         break;
     case 360:
         instance_destroy();

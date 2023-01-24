@@ -1,0 +1,1 @@
+sprite_index = spr_destructable_block_medium_black;

@@ -1,11 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
+fnc_lng_jnpc2_2();
+/*
 #region eng
 
 eng1 = choose("[fnt_pixel]We created a special cannon! Check it after getting one of the keys.","[fnt_pixel]Check the walls carefully, some of them are fragile. There may be something hiding behind them.");
 
 #endregion
-
+*/
 scr_text_starter(0,0.5);
 
 /*

@@ -6,11 +6,16 @@
 draw_sprite(spr_confirm_loadout,0,240,135);
 
 #endregion
+if global.language = 1 draw_set_font(fnt_pixel_ru) else draw_set_font(fnt_pixel);
 
+draw_set_halign(fa_center)
+{
+    draw_text(240,16,title);   
+}
 #region Отрисовка текстов
 
 draw_set_halign(fa_left);
-draw_set_font(fnt_pixel);
+
 var gap = 14;
 
 for (var i = 0; i < array_length_2d(menu, submenu); ++i) {
@@ -144,25 +149,25 @@ switch(submenu)
         {
             case 0:
                 draw_set_halign(fa_center);
-                draw_text(272,58,"anchor");   
+                draw_text(272,58,nameh_anchor);   
                 draw_set_halign(fa_left);
                 draw_text(342,58,"lvl " + string(dindex+1));   
                 break;
             case 1:
                 draw_set_halign(fa_center);
-                draw_text(272,58,"grenade");   
+                draw_text(272,58,nameh_grenade);   
                 draw_set_halign(fa_left);
                 draw_text(342,58,"lvl " + string(dindex+1));   
                 break;
             case 2:
                 draw_set_halign(fa_center);
-                draw_text(272,58,"shockball");   
+                draw_text(272,58,nameh_shockball);   
                 draw_set_halign(fa_left);
                 draw_text(342,58,"lvl " + string(dindex+1));   
                 break;
             case 3:
                 draw_set_halign(fa_center);
-                draw_text(272,58,"parrot");   
+                draw_text(272,58,nameh_parrot);   
                 draw_set_halign(fa_left);
                 draw_text(342,58,"lvl " + string(dindex+1));   
                 break;
@@ -234,8 +239,8 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_left);
 switch(submenu)
 {
-    case 1:  
-        if index != 4 draw_text(218,70,dHMenu[index,dindex]);
+    case 0:  
+        if index < 4 draw_text(218,70,dHMenu[index,dindex]);
         break; 
     case 2:
         if index != 4 draw_text(218,70,dPMenu[index,0]);

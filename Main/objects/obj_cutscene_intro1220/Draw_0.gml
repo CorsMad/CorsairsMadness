@@ -88,7 +88,7 @@ switch(page)
 if skip != 0
 {
     draw_set_halign(fa_right);
-    draw_set_font(fnt_pixel);
+    if global.language = 1 draw_set_font(fnt_pixel_ru) else draw_set_font(fnt_pixel);
     draw_set_color(c_white);
     draw_set_alpha(1);
     draw_text(448,238,skip_txt);

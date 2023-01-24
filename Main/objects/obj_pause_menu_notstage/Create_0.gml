@@ -12,7 +12,8 @@ menu[0, 2] = "\nexit to main menu";
 menu[1, 0] = "Graphics";
 menu[1, 1] = "Controls";
 menu[1, 2] = "Sound";
-menu[1, 3] = "\nback";
+menu[1, 3] = "language";
+menu[1, 4] = "\nback";
 #endregion
 
 #region graphics
@@ -46,10 +47,7 @@ menu[31, 9] = "default 1";
 menu[31, 10] = "default 2";
 menu[31, 11] = "\nback";
 
-menu[32, 0] = "Type A";
-menu[32, 1] = "Type B";
-menu[32, 2] = "\nback";
-
+menu[32, 0] = "\n\n\n\n\n\n\nback";
 #endregion
 
 #endregion
@@ -58,6 +56,23 @@ menu[32, 2] = "\nback";
 menu[4, 0] = "music";
 menu[4, 1] = "\n\nsfx";
 menu[4, 2] = "\n\n\n\nback";
+#endregion
+
+#region Language
+
+menu[41, 0]  = "english";
+menu[41, 1]  = "РУССКИЙ";
+menu[41, 2]  = "Español";
+menu[41, 3]  = "中国";
+menu[41, 4]  = "Português";
+menu[41, 5]  = "Português (brasileiro)";
+menu[41, 6]  = "Polska ";
+menu[41, 7]  = "Türkçe ";
+menu[41, 8]  = "日本語";
+menu[41, 9]  = "Deutsch";
+menu[41, 10] = "Français";
+menu[41, 11] = "\nback";
+
 #endregion
 
 #region ПОдтверждения
@@ -69,7 +84,7 @@ menu[10,1] = "\n\n\nno";
 #endregion
 
 confirm2 = @"are you sure?
-All progress will be lost";
+All unsaved progress will be lost";
 #endregion
 
 

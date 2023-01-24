@@ -10,6 +10,7 @@ if state = 0
     
     if t = 70
     {
+        fnc_msc_play(msc_main_menu);
         instance_create_depth(0,0,-1,obj_mainmenu_graph_fvx);   
     }
 }

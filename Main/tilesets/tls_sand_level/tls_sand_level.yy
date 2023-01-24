@@ -131,7 +131,7 @@
     ],
   },
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Desert",
+    "path": "folders/Tile Sets/Levels/Desert.yy",
   },
 }

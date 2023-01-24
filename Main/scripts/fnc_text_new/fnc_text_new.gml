@@ -190,6 +190,6 @@ function scr_text_graphics(){
     draw_rectangle_color(camera_get_view_x(view_camera[0]),0,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+64,c_black,c_black,c_black,c_black,false);    
     for(var kl = 0;kl < 500 ;kl += 8)
     {
-        draw_sprite(spr_text_bord,camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0])+kl,65);   
+        draw_sprite(spr_text_bord,0,camera_get_view_x(view_camera[0])+kl,camera_get_view_y(view_camera[0])+65);   
     }
 }

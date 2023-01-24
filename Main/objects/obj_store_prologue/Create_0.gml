@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+fnc_lng_store();
+
 index = 0;
 submenu = 0;
 dindex = 0;
@@ -10,6 +12,32 @@ delay = 0;
 
 buy_confirm = 0;
 buy_confirm_yesno = 0;
+/*
+
+store = "store";
+
+confirm = "confirm";
+confirmy = "yes";
+confirmn = "no";
+
+
+nameh_anchor    =  "anchor";
+nameh_grenade   =  "grenade";
+nameh_shockball =  "shockball";
+nameh_parrot    =  "parrot";
+
+namep_double_strike     = "double strike";
+namep_lunge             = "lunge";
+namep_toss_up           = "toss-up";
+namep_top_down          = "top-down strike"
+
+nameb_qhands        = "Quick Hands";
+nameb_dpistol       = "Double pistol";
+nameb_blunderbuss   = "blunderbuss";
+nameb_parrotc       = "parrot cage";
+
+name_use = "use:";
+name_or = "or";
 
 #region mainmenu
 menu[0, 0] = "Human";
@@ -105,12 +133,18 @@ dBMenu[2,2] = "";
 dBMenu[3,0] = "";
 dBMenu[3,1] = "";
 dBMenu[3,2] = "";
-/*
+
 dBMenu[4,0] = "Bounces back at solid objects \n2 times";
 dBMenu[4,1] = "Bounces back at solid objects \n4 times";
 dBMenu[4,2] = "Bounces back at solid objects \n6 times";
-*/
+
 #endregion
 
+
+#endregion
+*/
+#region Использование
+isKeyboard = 0;
+kb_gp_input_check();
 
 #endregion

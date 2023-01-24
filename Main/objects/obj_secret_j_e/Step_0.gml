@@ -24,6 +24,7 @@ if to_player = 1
     vspeed = lengthdir_y(spd,dir);
 	if place_meeting(x,y,obj_Player)
 	{
+        fnc_snd_play_onetime(msc_level_end);
         fnc_snd_play_over(snd_player_hpmana_gain);
 	    global.secrets_j2_endurance = 1;
         global.secrets +=1;

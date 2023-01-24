@@ -1,12 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+fnc_lng_jnpc1_1();
+/*
 #region eng
 
 eng1 = choose("[fnt_pixel]A stranger, talk to the Chief.","[fnt_pixel]It is our tradition that you must first be introduced to the Chief.");
 
 #endregion
-
+*/
 scr_text_starter(0,0.5);
 /*
 t = 0;

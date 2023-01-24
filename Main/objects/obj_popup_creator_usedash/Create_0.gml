@@ -9,4 +9,3 @@ isOn = 1;
 isKeyboard = 0;
 kb_gp_input_check();
 
-player_input()

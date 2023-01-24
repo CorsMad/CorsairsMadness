@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+fnc_lng_pause_junglecourse();
 menu_input_new();
 /*
 var key_down = keyboard_check_pressed(vk_down);
@@ -66,7 +66,11 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     submenu = 4;
                     index = 0;
                     break;
-                case 3:
+                case 3: 
+                    submenu = 41;
+                    index = 0;
+                    break;
+                case 4:
                     scr_save_settings();
                     submenu = 0;
                     index = 0;
@@ -248,10 +252,6 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
             switch(index)
             {
                 case 0:
-                    break;
-                case 1:
-                    break;          
-                case 2:
                     submenu = 3;
                     index = 1;
                     break;   
@@ -267,6 +267,27 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                 case 2:
                     submenu = 1;
                     index = 2;
+                    break;
+            }
+            break;
+        case 41: // Language
+            switch(index)
+            {
+                case 0:     global.language = 0;break;
+                case 1:     global.language = 1;break;
+                case 2:     global.language = 2;break;
+                case 3:     global.language = 3;break;
+                case 4:     global.language = 4;break;
+                case 5:     global.language = 5;break;
+                case 6:     global.language = 6;break;
+                case 7:     global.language = 7;break;
+                case 8:     global.language = 8;break;
+                case 9:     global.language = 9;break;
+                case 10:    global.language = 10;break;                   
+                case 11:    global.language = 11;break;
+                case 12:
+                    submenu = 1;
+                    index = 3;
                     break;
             }
             break;

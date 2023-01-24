@@ -1,8 +1,8 @@
 
 #region draw rectangle
 	draw_set_colour(c_black);
-	draw_rectangle(camera_get_view_x(view_camera[0]),0,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+30,false);
-    draw_rectangle_color(camera_get_view_x(view_camera[0]),29,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+31,c_grey,c_grey,c_grey,c_grey,false);
+	draw_rectangle_color(camera_get_view_x(view_camera[0]),0,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+30,c_black,c_black,c_black,c_black,false);
+	draw_rectangle_color(camera_get_view_x(view_camera[0]),31,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+31,c_black,c_black,c_grey,c_grey,false);
 #endregion
 
 #region draw hp

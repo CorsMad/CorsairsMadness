@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+fnc_lng_merch2();
+/*
 #region eng
 
 eng1 = "[fnt_pixel]Well, I'm glad you got here safely. I knew you were the one for me. Heh heh...";
@@ -11,7 +12,7 @@ eng5 = "[fnt_pixel]Later on I will be able to exchange it for your training.";
 eng6 = "[fnt_pixel]At this point, I bid you farewell. My dear friend, captain, I'm sure you'll manage to save your crew and come back safe and sound. Good luck on your journey!";
 eng7 = "[fnt_pixel]In the meantime, here's a memo to help you figure out your battles.";
 #endregion
-
+*/
 scr_text_starter(6,0.5);
 
 /*

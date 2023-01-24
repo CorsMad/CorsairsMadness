@@ -8,5 +8,5 @@ if shocked = 0
     shocked = 1;
     attack_timer = 0;
     spd = 0;
-    instance_destroy(other);   
+    other.isDead = 1;  
 }

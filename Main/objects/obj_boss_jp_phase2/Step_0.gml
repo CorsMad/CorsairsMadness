@@ -632,150 +632,151 @@ if state = 4
     switch(t)
     {
         case 100:
+            fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*0;
             i.vspeed = 3;
             break;
                     
-        case 110:
+        case 110:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*0.25;
             i.vspeed = 2.75;
             break;
                    
-        case 120:
+        case 120:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*0.5;
             i.vspeed = 2.5;
             break;
                    
-        case 130:
+        case 130:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*0.75;
             i.vspeed = 2.25;
             break;
             
-        case 140:
+        case 140:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*1;
             i.vspeed = 2;
             break;
             
-        case 150:
+        case 150:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*1.25;
             i.vspeed = 1.75;
             break;
                     
-        case 160:
+        case 160:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*1.5;
             i.vspeed = 1.5;
             break;
                    
-        case 170:
+        case 170:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*1.75;
             i.vspeed = 1.25;
             break;
                    
-        case 180:
+        case 180:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*2;
             i.vspeed = 1;
             break;
             
-        case 190:
+        case 190:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*2.25;
             i.vspeed = 0.75;
             break;
             
-        case 200:
+        case 200:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*2.5;
             i.vspeed = 0.5;
             break;
                    
-        case 210:
+        case 210:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*2.75;
             i.vspeed = 0.25;
             break;
             
-        case 220:
+        case 220:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*3;
             i.vspeed = 0;
             break;
             
-        case 230:
+        case 230:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*2.75;
             i.vspeed = -0.25;
             break;
             
-        case 240:
+        case 240:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*2.5;
             i.vspeed = -0.5;
             break;
             
-        case 250:
+        case 250:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*2.25;
             i.vspeed = -0.75;
             break;
             
-        case 260:
+        case 260:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*2;
             i.vspeed = -1;
             break;
             
-        case 270:
+        case 270:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*1.75;
             i.vspeed = -1.25;
             break;
             
-        case 280:
+        case 280:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*1.5;
             i.vspeed = -1.5;
             break;
             
-        case 290:
+        case 290:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*1.25;
             i.vspeed = -1.75;
             break;
             
-        case 300:
+        case 300:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*1;
             i.vspeed = -2;
             break;
             
-        case 310:
+        case 310:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*0.75;
             i.vspeed = -2.25;
             break;
             
-        case 320:
+        case 320:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*0.5;
             i.vspeed = -2.5;
             break;
             
-        case 330:
+        case 330:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*0.25;
             i.vspeed = -2.75;
             break;
             
-        case 340:
+        case 340:fnc_snd_play_over(snd_follower_laser);
             var i = instance_create_depth(x+image_xscale*32,y-50,depth-1,obj_boss_jp_proj);
             i.hspeed = image_xscale*0;
             i.vspeed = -3;
@@ -803,7 +804,7 @@ if state = 4
 if place_meeting(x,y,obj_boss_jp_light) && light_cd = 0
 {
     
-    
+    fnc_snd_play_onetime(snd_follower_getlight);
     #region отключение света
     if obj_boss_jp_light_block_l.state != 0 {obj_boss_jp_light_block_l.state = 3;obj_boss_jp_light_block_l.t = 0; }
     if obj_boss_jp_light_block_r.state != 0 {obj_boss_jp_light_block_r.state = 3;obj_boss_jp_light_block_r.t = 0; }

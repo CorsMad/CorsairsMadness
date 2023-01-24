@@ -1,6 +1,18 @@
 /// @description 
 // You can write your code in this editor
 global.PlayerOnIsland = 0;
+
+#region eng
+ 
+iJungle = "-Jungle island-";
+iDesert = "-Desert island-";
+iSnow = "-Snow island-";
+iLava = "-Lava island-";
+iShadow = "-Shadow island-";
+#endregion
+
+
+
 /*
 ///////////////////////////////////////////////////////////////////////
 Добавить переменные ключей в draw

@@ -11,6 +11,7 @@ if a = 77
     {
         if place_meeting(x,y,obj_abil_boots_hitbox)
         {
+            fnc_snd_play_onetime(snd_player_springboots);
             obj_Player.vspd = -7;
             instance_create_depth(obj_abil_boots_hitbox.x,obj_abil_boots_hitbox.y+8,obj_abil_boots_hitbox.depth-1,obj_sfx4);
             instance_destroy(obj_abil_boots_hitbox);  

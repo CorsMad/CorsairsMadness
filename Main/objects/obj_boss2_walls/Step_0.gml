@@ -7,6 +7,7 @@ if state = 1
     t++;
     if t mod 30 = 0
     {
+        fnc_snd_play_onetime(snd_j2_boss_walls);
         var d1 = instance_create_depth(0,248,0,obj_sfx_dust_expl_big);
         d1.image_angle = random(360);
         var d2 = instance_create_depth(480,248,0,obj_sfx_dust_expl_big);

@@ -209,3 +209,12 @@ if enemy_hp < 1
     d.image_xscale = image_xscale;
 }
 #endregion
+
+#region СТрела
+
+var def = instance_place(x,y,obj_abil_arbalet_proj)
+if def!= noone && (state = 0 || state = 4 || state = 5)
+{
+    def.isDead = 1;
+}
+#endregion

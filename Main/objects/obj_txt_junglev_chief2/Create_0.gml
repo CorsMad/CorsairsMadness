@@ -1,12 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+fnc_lng_jchief2();
+/*
 #region 
 
 eng1 = choose("[fnt_pixel]Good luck with finding your team!","[fnt_pixel]Don't forget to visit the merchant more often.");
 
 #endregion
-
+*/
 scr_text_starter(0,0.5);
 
 

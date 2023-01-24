@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+fnc_lng_globalmap();
+
+
 #region анимация 
  t++;
  //карты
@@ -400,24 +404,24 @@ if !instance_exists(obj_map_confirm)
         case 0: // Главная
             switch (globalMapCounter)
             {
-                case 1: if key_up_press {globalMapCounter = 4;t_o = 31;}
-                        if key_down_pressed {globalMapCounter = 2;t_o = 31;}
-                        if key_right_press {globalMapCounter = 3;t_o = 31;}
+                case 1: if key_up_press     {globalMapCounter = 4;t_o = 31;fnc_snd_play_over(snd_menu_select)}
+                        if key_down_pressed {globalMapCounter = 2;t_o = 31;fnc_snd_play_over(snd_menu_select)}
+                        if key_right_press  {globalMapCounter = 3;t_o = 31;fnc_snd_play_over(snd_menu_select)}
                     
                         break;
-                case 2: if key_left_press  {globalMapCounter = 1;t_o = 31;}
-                        if key_right_press {globalMapCounter = 3;t_o = 31;}
-                        if key_up_press {globalMapCounter = 4;t_o = 31;}
+                case 2: if key_left_press   {globalMapCounter = 1;t_o = 31;fnc_snd_play_over(snd_menu_select)}
+                        if key_right_press  {globalMapCounter = 3;t_o = 31;fnc_snd_play_over(snd_menu_select)}
+                        if key_up_press     {globalMapCounter = 4;t_o = 31;fnc_snd_play_over(snd_menu_select)}
                         break;
-                case 3: if key_up_press {globalMapCounter = 5;t_o = 31;}
-                        if key_left_press {globalMapCounter = 1;t_o = 31;}
-                        if key_down_pressed {globalMapCounter = 2;t_o = 31;}
+                case 3: if key_up_press     {globalMapCounter = 5;t_o = 31;fnc_snd_play_over(snd_menu_select)}
+                        if key_left_press   {globalMapCounter = 1;t_o = 31;fnc_snd_play_over(snd_menu_select)}
+                        if key_down_pressed {globalMapCounter = 2;t_o = 31;fnc_snd_play_over(snd_menu_select)}
                         break;
-                case 4: if (key_down_pressed || key_left_press) {globalMapCounter = 1;t_o = 31;}
-                        if key_right_press {globalMapCounter = 5;t_o = 31;}
+                case 4: if (key_down_pressed || key_left_press)     {globalMapCounter = 1;t_o = 31;fnc_snd_play_over(snd_menu_select)}
+                        if key_right_press  {globalMapCounter = 5;t_o = 31;fnc_snd_play_over(snd_menu_select)}
                         break;
-                case 5: if key_left_press {globalMapCounter = 4;t_o = 31;};
-                        if (key_down_pressed || key_right_press) {globalMapCounter = 3;t_o = 31;}
+                case 5: if key_left_press   {globalMapCounter = 4;t_o = 31;fnc_snd_play_over(snd_menu_select)};
+                        if (key_down_pressed || key_right_press)    {globalMapCounter = 3;t_o = 31;fnc_snd_play_over(snd_menu_select)}
                         break;
             }
             break;

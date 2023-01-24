@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+fnc_lng_jchief1();
+/*
 #region eng
 
 eng1 =  "[fnt_pixel]Greetings, stranger! I am the chief of this settlement of natives. I know you're tired and hungry, but there's no time to rest. You want to save your crew, don't you?";
@@ -10,7 +11,7 @@ eng4 =  "[fnt_pixel]He's waiting for you outside. Be sure to talk to him.";
 eng5 =  "[fnt_pixel]I hope you find your team in good health. Be sure to check out the trinket store, maybe you'll find something for yourself there.";
 
 #endregion
-
+*/
 scr_text_starter(4,0.5);
 
 

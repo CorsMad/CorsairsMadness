@@ -71,6 +71,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Scarab",
-    "path": "folders/Sprites/Enemies/!desert/Scarab.yy",
+    "path": "folders/Sprites/Enemies/!Desert/Scarab.yy",
   },
 }

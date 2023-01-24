@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-fnc_msc_play(msc_main_menu);
+fnc_msc_start_checkpoint(msc_main_menu);
 
 #region Разное
 
@@ -11,10 +11,11 @@ all previous progress will be lost";
 
 #region mainmenu
 
-    menu[0, 0] = "continue";
-    menu[0, 1] = "new game";
-    menu[0, 2] = "options";
-    menu[0, 3] = "\nexit";   
+menu[0, 0] = "continue";
+menu[0, 1] = "new game";
+menu[0, 2] = "options";
+menu[0, 3] = "credits";
+menu[0, 4] = "exit";   
 
 #endregion
 
@@ -22,7 +23,8 @@ all previous progress will be lost";
 menu[1, 0] = "Graphics";
 menu[1, 1] = "Controls";
 menu[1, 2] = "Sound";
-menu[1, 3] = "\nback";
+menu[1, 3] = "language";
+menu[1, 4] = "\nback";
 #endregion
 
 #region graphics
@@ -63,6 +65,24 @@ menu[32, 0] = "\n\n\n\n\n\n\nback";
 
 #endregion
 
+#region Language
+
+menu[41, 0]  = "english";
+menu[41, 1]  = "РУССКИЙ";
+menu[41, 2]  = "Español";
+menu[41, 3]  = "中国";
+menu[41, 4]  = "Português";
+menu[41, 5]  = "Português (brasileiro)";
+menu[41, 6]  = "Polska";
+menu[41, 7]  = "Türkçe";
+menu[41, 8]  = "日本語";
+menu[41, 9]  = "Deutsch";
+menu[41, 10] = "Français";
+menu[41, 11] = "\nback";
+
+#endregion
+
+
 #region sound
 menu[4, 0] = "music";
 menu[4, 1] = "\n\nsfx";
@@ -75,6 +95,13 @@ menu[5, 0] = "\n\n\n\n\n\n\n\n\n\n\n\nyes";
 menu[5, 1] = "\n\n\n\n\n\n\n\n\n\n\n\nno";
 
 #endregion
+
+#region Credits
+
+menu[6,0] = "\n\n\n\n\n\n\n\n\n\nback";
+musiccred = "thanks for awesome music"
+#endregion
+
 
 #region Ползунки музыки и эффектов
 sfx = global.SFXvolume;

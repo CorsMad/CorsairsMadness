@@ -21,6 +21,7 @@ if state = 1
     vspeed = lengthdir_y(spd,dir);
 	if place_meeting(x,y,obj_Player)
 	{
+        fnc_snd_play_onetime(msc_level_end);
         fnc_snd_play_over(snd_player_hpmana_gain);
 		global.key_green1 = 1;
         instance_create_depth(0,0,0,obj_room_transition_black_screen_j1_stats);

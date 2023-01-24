@@ -16,6 +16,8 @@ if t mod 10 = 0 && t > 10 && t < 100 && place_meeting(x,y+1,obj_block)
 
 if (t mod 10 = 0) && t < 100
 {
+        fnc_snd_play_onetime(snd_follower_blood);
+    
         var gbh1 = instance_create_depth(x-8*sign(image_xscale),y-32,depth+1,obj_molded_dark_blood);
         var gbh2 = instance_create_depth(x-8*sign(image_xscale),y-32,depth+1,obj_molded_dark_blood);
         var gbh3 = instance_create_depth(x-8*sign(image_xscale),y-32,depth+1,obj_molded_dark_blood);

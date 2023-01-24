@@ -3,12 +3,12 @@
 
 instance_create_depth(0,0,0,obj_music_controller);
 
-
+global.language = 1;
 
 #region Завершеннсоть уровней
     
-    global.completed_JF1 = 0;
-    global.completed_JF2 = 0;
+    global.completed_JF1 = 1;
+    global.completed_JF2 = 1;
     
     #endregion
     
@@ -27,8 +27,8 @@ global.cannon_j2_r1 = 1;
 #endregion
 
 #region Зеленые ключи
-global.key_green1 = 0;
-global.key_green2 = 0;
+global.key_green1 = 1;
+global.key_green2 = 1;
 #endregion
 
 #region ТЕСТ Магазин
@@ -63,7 +63,7 @@ global.purch_dualpistols3 = 0;
 #region Игрок
 global.hp = 5;           // 4
 global.hp_max = 5;       // 4
-global.choosed_item = 0; // 1- бумер 2 -топ // 3 - бомба // 11 - арбалет
+global.choosed_item = 11; // 1- бумер 2 -топ // 3 - бомба // 11 - арбалет
 global.choosed_item_tier = 0; // ТИР предмета
 global.choosed_itemboat = 0; // 1 - ? 2 - 2пистолета 
 global.choosed_itemboat_tier = 0; // ТИП предмета для лодки
@@ -86,13 +86,13 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 323;
-global.TargetY      = 144;
-global.TargetRoom   = J1_r13;
+global.TargetX      = 96;
+global.TargetY      = 224;
+global.TargetRoom   = TESTROOM;
 
-global.fTargetX     = 32;
+global.fTargetX     = 432;
 global.fTargetY     = 256;
-global.fTargetRoom  = F1_r20;
+global.fTargetRoom  = JP2_r14;
 
 /*
     global.fTargetX = 80;
@@ -226,7 +226,31 @@ t2 = 0;
     #region  Монета
     global.secrets_j2_endurance = 0;
     #endregion
+
+#region Desert
+
+ /* 1 УРОВЕНЬ */
+    #region Сундуки
+    global.chest_d1_r2 = 1;
+    global.chest_d1_r6 = 1;
+    global.chest_d1_r10 = 1;
+    global.chest_d1_r15 = 1;
+    #endregion
     
+    #region Монеты
+    global.secrets_d1_s1 = 0;
+    global.secrets_d1_s2 = 0;
+    global.secrets_d1_s3 = 0;
+    #endregion
+    
+    #region Головоломка
+    
+    #endregion
+
+#endregion
+
+
+
 /*  CUTSCENES  */    
     #region Важные катсцены F1
     global.Cutscene_f1_r33 = 1;

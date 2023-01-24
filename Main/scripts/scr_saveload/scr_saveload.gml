@@ -321,6 +321,12 @@ function scr_save_settings(){
         abil_key   : global.abil_key   ,
         
         #endregion
+        
+        #region language
+        
+        language :  global.language ,
+        
+        #endregion
     }
     
 // turn data into json 
@@ -372,6 +378,12 @@ if file_exists("CMsettings.save")
         global.dash_key   =  _loadStorageSet.dash_key   ;
         global.item_key   =  _loadStorageSet.item_key   ;
         global.abil_key   =  _loadStorageSet.abil_key   ;
+        
+        #endregion
+        
+        #region Language
+        
+        global.language = _loadStorageSet.language ;
         
         #endregion
         

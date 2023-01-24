@@ -24,7 +24,7 @@ if state = 1
         y = lerp(y,272,0.02);
         
     }
-    if x = 500
+    if x > 500
     {
         fnc_msc_stop_play_slow();   
     }

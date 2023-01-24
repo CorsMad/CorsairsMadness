@@ -1759,10 +1759,13 @@ if isGrounded = 0 && isSkating = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 
         {
             sbootsbuffer = 0;   
         }
+        
+        
 		if key_jump_release && vspd < -4 
 		{
 			vspd = -3;
 		}
+        
 		if vspd < 6 
 			{
 				vspd +=0.25;//0.25;
@@ -3204,6 +3207,8 @@ if isDead = 1
 	damage_cd = 0;
     attacking_buffer = 0;
     airattackbuffer = 0;
+    pickup_timer = 0;
+	isCarry = 0;
 	
 	
 	if instance_exists(obj_music_controller_jungle)

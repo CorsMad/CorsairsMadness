@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+fnc_lng_t1_end();
+/*
 #region eng
 
 eng1 = "[fnt_pixel]I wonder where I ended up. It's damp in here.";
@@ -9,7 +10,7 @@ eng3 = "[fnt_pixel]This thing must be worth a lot of [c_yellow]gold[/c_yellow]."
 eng4 = "[fnt_pixel]Wait a minute, what's happening?"
 
 #endregion
-
+*/
 scr_text_starter(3,0.5);
 
 /*

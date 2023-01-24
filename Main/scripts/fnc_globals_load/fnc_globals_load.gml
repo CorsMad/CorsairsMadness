@@ -164,4 +164,6 @@ function fnc_settings_load()
     audio_group_set_gain(MusicVolume,global.MSCvolume,0);
     audio_group_set_gain(SFXvolume,global.SFXvolume,0);
     
+    // Язык
+    global.language = 0;
 }

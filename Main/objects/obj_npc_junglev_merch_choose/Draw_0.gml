@@ -10,19 +10,30 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_white);
 
-draw_text(60,10,"talk");
-draw_text(120,10,"trade");
-draw_text(188,10,"exit");
+if global.language = 1 draw_set_font(fnt_pixel_ru) else draw_set_font(fnt_pixel);
+draw_set_halign(fa_center);
+draw_text(89,18,eng1);
+draw_text(199,18,eng2);
+draw_text(309,18,eng3);
 
+draw_set_color(c_grey);
+draw_rectangle(camera_get_view_x(view_camera[0])+39,camera_get_view_y(view_camera[0])+11,camera_get_view_x(view_camera[0])+139,camera_get_view_y(view_camera[0])+33,1);   
+draw_rectangle(camera_get_view_x(view_camera[0])+149,camera_get_view_y(view_camera[0])+11,camera_get_view_x(view_camera[0])+249,camera_get_view_y(view_camera[0])+33,1);   
+draw_rectangle(camera_get_view_x(view_camera[0])+259,camera_get_view_y(view_camera[0])+11,camera_get_view_x(view_camera[0])+359,camera_get_view_y(view_camera[0])+33,1);   
+
+draw_set_color(c_red);
 switch(select)
 {
     case 0: 
-        draw_rectangle(58,10,90,20,1);   
+        draw_rectangle(camera_get_view_x(view_camera[0])+38,camera_get_view_y(view_camera[0])+10,camera_get_view_x(view_camera[0])+140,camera_get_view_y(view_camera[0])+34,1);   
+        draw_rectangle(camera_get_view_x(view_camera[0])+39,camera_get_view_y(view_camera[0])+11,camera_get_view_x(view_camera[0])+139,camera_get_view_y(view_camera[0])+33,1);           
         break;
     case 1: 
-        draw_rectangle(118,10,158,20,1);   
+        draw_rectangle(camera_get_view_x(view_camera[0])+148,camera_get_view_y(view_camera[0])+10,camera_get_view_x(view_camera[0])+250,camera_get_view_y(view_camera[0])+34,1);   
+        draw_rectangle(camera_get_view_x(view_camera[0])+149,camera_get_view_y(view_camera[0])+11,camera_get_view_x(view_camera[0])+249,camera_get_view_y(view_camera[0])+33,1);           
         break;
     case 2: 
-        draw_rectangle(186,10,217,20,1);    
+        draw_rectangle(camera_get_view_x(view_camera[0])+258,camera_get_view_y(view_camera[0])+10,camera_get_view_x(view_camera[0])+360,camera_get_view_y(view_camera[0])+34,1);   
+        draw_rectangle(camera_get_view_x(view_camera[0])+259,camera_get_view_y(view_camera[0])+11,camera_get_view_x(view_camera[0])+359,camera_get_view_y(view_camera[0])+33,1);     
         break;
 }

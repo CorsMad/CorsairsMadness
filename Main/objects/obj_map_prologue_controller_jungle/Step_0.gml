@@ -1,5 +1,5 @@
 if island1JungleAlpha < 1 island1JungleAlpha+=0.05;
-
+fnc_lng_jmap();
 #region Указатель
 //указатель
  t_p++;

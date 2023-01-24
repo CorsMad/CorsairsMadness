@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-t = 0;
+
+fnc_lng_fgroundedf_2_r15_1();
+
+scr_text_starter(3,0.5);
+
+/*
 
 text[0,0] = "Well, well, here's the captain.";
 text[0,1] = "It's time to see whose powers are greater."

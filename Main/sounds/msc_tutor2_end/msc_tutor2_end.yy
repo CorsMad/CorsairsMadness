@@ -14,8 +14,8 @@
     "name": "MusicVolume",
     "path": "audiogroups/MusicVolume",
   },
-  "soundFile": "msc_tutor2_end.mp3",
-  "duration": 179.33061,
+  "soundFile": "msc_tutor2_end.wav",
+  "duration": 117.2034,
   "parent": {
     "name": "Tutorial",
     "path": "folders/Sounds/BGR music/Tutorial.yy",

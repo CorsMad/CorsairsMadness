@@ -99,6 +99,7 @@ if state = 5
             image_index = 1;
             break;
         case 100:
+            fnc_snd_play_onetime(snd_transform);
             image_index = 2;
             break;
         case 110:

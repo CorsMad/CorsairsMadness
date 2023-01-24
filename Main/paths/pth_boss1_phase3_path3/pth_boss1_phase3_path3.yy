@@ -12,6 +12,6 @@
   ],
   "parent": {
     "name": "Phase 3",
-    "path": "folders/Rooms/Paths/Boss1/Phase 3.yy",
+    "path": "folders/Rooms/Paths/JungleBoss/Boss1/Phase 3.yy",
   },
 }

@@ -1,12 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+fnc_lng_merch3();
+/*
 #region eng
 
 eng1 = choose("[fnt_pixel]Well, what are you waiting for? Just go. I said good luck on your journey!","[fnt_pixel]Tick-tock, the clock is ticking. Go save the team. Good luck!");
 
 #endregion
-
+*/
 scr_text_starter(0,0.5);
 
 /*

@@ -2,8 +2,10 @@
 // You can write your code in this editor
 if isOn = 1
 {
-    if place_meeting(x,y,obj_abil_arbalet_proj)
+    var def = instance_place(x,y,obj_abil_arbalet_proj)
+    if def!= noone
     {
+        def.isDead = 1;
         isOn = 0;
         sprite_index = spr_abil_magicalbow_target_death;
         image_index = 0;
@@ -11,11 +13,7 @@ if isOn = 1
         if instance_exists(obj_platform_3_h_e_target)
         {
             obj_platform_3_h_e_target.isEnabled = 1;
-        }
-        if instance_exists(obj_abil_arbalet_proj)
-        {
-            instance_destroy(obj_abil_arbalet_proj);   
-        }
+        }       
     }
 }
 

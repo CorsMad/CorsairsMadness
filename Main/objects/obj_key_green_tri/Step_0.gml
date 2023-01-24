@@ -20,6 +20,7 @@ if state = 1
     vspeed = lengthdir_y(spd,dir);
 	if place_meeting(x,y,obj_Player)
 	{
+        fnc_snd_play_onetime(msc_level_end);
         global.cannon_j2_r1 = 1;
         fnc_snd_play_over(snd_player_hpmana_gain);
 		global.key_green2 = 1;

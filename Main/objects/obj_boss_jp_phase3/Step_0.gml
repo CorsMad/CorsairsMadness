@@ -451,7 +451,7 @@ if state = 4
 if place_meeting(x,y,obj_boss_jp_light) && light_cd = 0
 {
     
-    
+    fnc_snd_play_onetime(snd_follower_getlight);
     #region отключение света
     if obj_boss_jp_light_block_l.state != 0 {obj_boss_jp_light_block_l.state = 3;obj_boss_jp_light_block_l.t = 0; }
     if obj_boss_jp_light_block_r.state != 0 {obj_boss_jp_light_block_r.state = 3;obj_boss_jp_light_block_r.t = 0; }

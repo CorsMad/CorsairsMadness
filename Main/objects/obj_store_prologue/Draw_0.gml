@@ -7,12 +7,26 @@ draw_sprite(spr_shop_prologue,submenu,240,135);
 
 #endregion
 
+if global.language = 1 draw_set_font(fnt_pixel_ru) else draw_set_font(fnt_pixel);
 
+
+#region Отрисовка описаний
+
+
+#region название магазина
+draw_set_halign(fa_center);
+draw_set_color(c_white);
+draw_text(room_width/2,16,store);
+
+#endregion
 
 #region Отрисовка текстов
 
 draw_set_halign(fa_left);
-draw_set_font(fnt_pixel);
+//draw_set_font(fnt_pixel);
+
+
+
 var gap = 14;
 
 for (var i = 0; i < array_length_2d(menu, submenu); ++i) {
@@ -101,7 +115,7 @@ switch(submenu)
 
 #endregion
 
-#region Отрисовка описаний
+
 
 #region Описание человек
 
@@ -118,25 +132,25 @@ switch(submenu)
         {
             case 0:
                 draw_set_halign(fa_center);
-                draw_text(272,58,"anchor");   
+                draw_text(272,58,nameh_anchor);   
                 draw_set_halign(fa_left);
                 draw_text(342,58,"lvl " + string(dindex+1));   
                 break;
             case 1:
                 draw_set_halign(fa_center);
-                draw_text(272,58,"grenade");   
+                draw_text(272,58,nameh_grenade);   
                 draw_set_halign(fa_left);
                 draw_text(342,58,"lvl " + string(dindex+1));   
                 break;
             case 2:
                 draw_set_halign(fa_center);
-                draw_text(272,58,"shockball");   
+                draw_text(272,58,nameh_shockball);   
                 draw_set_halign(fa_left);
                 draw_text(342,58,"lvl " + string(dindex+1));   
                 break;
             case 3:
                 draw_set_halign(fa_center);
-                draw_text(272,58,"parrot");   
+                draw_text(272,58,nameh_parrot);   
                 draw_set_halign(fa_left);
                 draw_text(342,58,"lvl " + string(dindex+1));   
                 break;
@@ -150,16 +164,16 @@ switch(submenu)
         switch(index)
         {
             case 0:
-                draw_text(296,58,"double strike");   
+                draw_text(296,58,namep_double_strike);   
                 break;
             case 1:
-                draw_text(296,58,"lunge"); 
+                draw_text(296,58,namep_lunge); 
                 break;
             case 2:
-                draw_text(296,58,"toss-up"); 
+                draw_text(296,58,namep_toss_up); 
                 break;
             case 3:
-                draw_text(296,58,"top-down strike"); 
+                draw_text(296,58,namep_top_down); 
                 break;
         }
         break;
@@ -168,25 +182,25 @@ switch(submenu)
         {
             case 0:
                 draw_set_halign(fa_center);
-                draw_text(272,58,"Quick Hands");   
+                draw_text(272,58,nameb_qhands);   
                 draw_set_halign(fa_left);
                 draw_text(342,58,"lvl " + string(dindex+1));   
                 break;
             case 1:
                 draw_set_halign(fa_center);
-                draw_text(272,58,"Double pistol");   
+                draw_text(272,58,nameb_dpistol);   
                 draw_set_halign(fa_left);
                 draw_text(342,58,"lvl " + string(dindex+1));   
                 break;
             case 2:
                 draw_set_halign(fa_center);
-                draw_text(272,58,"blunderbuss");   
+                draw_text(272,58,nameb_blunderbuss);   
                 draw_set_halign(fa_left);
                 draw_text(342,58,"lvl " + string(dindex+1));   
                 break;
             case 3:
                 draw_set_halign(fa_center);
-                draw_text(272,58,"parrot cage");   
+                draw_text(272,58,nameb_parrotc);   
                 draw_set_halign(fa_left);
                 draw_text(342,58,"lvl " + string(dindex+1));   
                 break;   
@@ -209,7 +223,28 @@ draw_set_valign(fa_left);
 switch(submenu)
 {
     case 1:  
-        if index != 4 draw_text(218,70,dHMenu[index,dindex]);
+        if index != 4 
+        {
+            draw_text(218,70,dHMenu[index,dindex]);
+            
+            if index = 0 // Использование предмета
+            {
+                switch(isKeyboard)
+                {
+                    case 0: 
+                        draw_text(218,130,name_use);
+                        draw_sprite_ext(spr_gp_icon,3,250,135,1,1,0,c_white,1);                    
+                        draw_text(272,130,name_or);
+                        draw_sprite_ext(spr_gp_icon,9,292,135,1,1,0,c_white,1);                    
+                        break;
+                    case 1: 
+                        draw_text(218,130,name_use);
+                        draw_sprite_ext(spr_key_icon,scr_key_sprite(global.dash_key),250,135,1,1,0,c_white,1); 
+                        break;
+                }
+            }
+            
+        }
         break; 
     case 2:
         if index != 4 draw_text(218,70,dPMenu[index,0]);
@@ -225,7 +260,7 @@ switch(submenu)
 #region отрисовка стоимости
 
 draw_set_halign(fa_center);
-draw_set_font(fnt_pixel);
+//draw_set_font(fnt_pixel);
 draw_set_color(c_white);
 
 if global.gold < itemprice draw_set_color(c_red) else draw_set_color(c_white)
@@ -260,7 +295,7 @@ switch(submenu)
 #region Отрисовка золота, эссенции и зеленых 
 
 draw_set_halign(fa_left);
-draw_set_font(fnt_pixel);
+//draw_set_font(fnt_pixel);
 draw_set_color(c_white);
 draw_text(236,159.5,string(global.gold)); //золото
 draw_text(236,183.5,string(global.secrets)); //зеленые
@@ -270,6 +305,15 @@ draw_text(236,207.5,string(global.darkessence)); //эссенция
 
 #region Отрисовка подтверждения
 
-if buy_confirm = 1 draw_sprite(spr_shop_purchaseconfirm,buy_confirm_yesno,240,135);
+if buy_confirm = 1 
+{
+    draw_sprite(spr_shop_purchaseconfirm,buy_confirm_yesno,240,135);
+    draw_set_halign(fa_center);
+    if global.language = 1 draw_set_font(fnt_pixel_ru) else draw_set_font(fnt_pixel);
+    draw_text(240,116,confirm);
+    draw_text(240-37,142,confirmy);
+    draw_text(240+37,142,confirmn);
+    
+}
 
 #endregion

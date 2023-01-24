@@ -1,12 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+fnc_lng_jnpc2_1();
+/*
 #region eng
 
 eng1 = choose("[fnt_pixel]Don't keep the Chief waiting","[fnt_pixel]Why are you still here? The Chief's house is over there.");
 
 #endregion
-
+*/
 scr_text_starter(0,0.5);
 /*
 text[0,0] = choose("Don't keep the Chief waiting","Why are you still here? The Chief's house is over there.");

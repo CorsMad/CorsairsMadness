@@ -41,6 +41,7 @@ if state = 1
 
 #region Взаимодействие со стрелой
 
+
 if shocked = 1
 {
     t++;

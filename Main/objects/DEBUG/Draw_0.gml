@@ -1,16 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_rectangle_color(camera_get_view_x(view_camera[0]),0,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+64,c_black,c_black,c_black,c_black,false);
-draw_sprite(spr_text_icons,6,camera_get_view_x(view_camera[0])+6,camera_get_view_y(view_camera[0])+9);
-if typist.get_state() = 1 draw_sprite(spr_text_icon_button_k,iconspd,camera_get_view_x(view_camera[0])+480-12,camera_get_view_y(view_camera[0])+64-10)
 
-var scribble_text = scribble(text)
-scribble_text.draw(text_x,text_y,typist);
-scribble_text.wrap(text_width);
-
-switch(scr_t)
+if instance_exists(obj_boss_d1_1)
 {
-    case 0: text = eng1;break;                
-    case 1: text = eng2;break;                
-    case 2: text = eng3;break;                
+    draw_text(32,48,string(obj_boss_d1_1.state)) ;
+    draw_text(32,64,string(obj_boss_d1_1.t));
 }

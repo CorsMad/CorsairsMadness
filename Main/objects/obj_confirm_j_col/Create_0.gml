@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+fnc_lng_level_endurance_confirm();
 
 index = 0;
 submenu = 0;
@@ -13,6 +14,7 @@ ChoosedItem = 0;
 
 #endregion
 
+/*
 #region humanload
 menu[0, 0] = "";
 menu[0, 1] = "";
@@ -78,7 +80,7 @@ dHMenu[3,2] = "Flies to the nearest \nenemy, explodes on \ncontact \nwithin a la
 dHMenu[4,0] = "Bounces back at solid objects \n2 times";
 dHMenu[4,1] = "Bounces back at solid objects \n4 times";
 dHMenu[4,2] = "Bounces back at solid objects \n6 times";
-*/
+
 
 #endregion
 
@@ -112,8 +114,9 @@ dBMenu[3,2] = "Parrots explode on \nimpact, damaging \nnearby enemies";
 dBMenu[4,0] = "Bounces back at solid objects \n2 times";
 dBMenu[4,1] = "Bounces back at solid objects \n4 times";
 dBMenu[4,2] = "Bounces back at solid objects \n6 times";
+
+#endregion
+
+
+#endregion
 */
-#endregion
-
-
-#endregion

@@ -22,7 +22,9 @@ if state = 0
     if t = 50 
     {
         instance_create_depth(0,256,400,obj_boss2_walls);
+        fnc_msc_play(msc_j2_boss);
     }
+    
     t++;
     if t = 200 
     {

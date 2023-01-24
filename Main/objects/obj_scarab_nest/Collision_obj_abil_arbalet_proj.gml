@@ -7,5 +7,5 @@ if state = 0
     t_attack = 0;
     t = 0;
     state = 1;
-    instance_destroy(other);
+    other.isDead = 1;
 }

@@ -25,6 +25,19 @@ if isWait = 1
 		image_angle = 270;	
 	}
 	
+    #region если разбили
+    
+    if !place_meeting(x,y+1,obj_block) && !place_meeting(x,y-1,obj_block) && !place_meeting(x-1,y,obj_block) && !place_meeting(x+1,y,obj_block)
+    {
+        instance_create_depth(x,y,depth-1,obj_diagonal_slime_dead);
+        instance_create_depth(x,y,depth-1,obj_money1);
+        instance_destroy();
+    }
+    
+    #endregion
+    
+    
+    
 	
 	hspd = 0;
 	vspd = 0;
@@ -161,8 +174,10 @@ if enemy_hp <= 0
 #endregion
 
 #region Bow
-if place_meeting(x,y,obj_abil_arbalet_proj)
+var def = instance_place(x,y,obj_abil_arbalet_proj)
+if def!= noone
 {
+    def.isDead = 1;
     hspd = 0;
     vspd = 0;
     dizzy_timer = 30;

@@ -14,8 +14,8 @@
     "name": "MusicVolume",
     "path": "audiogroups/MusicVolume",
   },
-  "soundFile": "msc_jitem_course.mp3",
-  "duration": 162.4555,
+  "soundFile": "msc_jitem_course.wav",
+  "duration": 118.147934,
   "parent": {
     "name": "Jungle",
     "path": "folders/Sounds/BGR music/Jungle.yy",

@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+fnc_lng_tutor1_ctscn_start();
 dialogue_input();
 scr_skip_texticon_blink();
 

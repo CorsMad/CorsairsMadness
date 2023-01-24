@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Tileset and level stuff",
-    "path": "folders/Sprites/Tileset and level stuff.yy",
+    "name": "Desert",
+    "path": "folders/Sprites/Tileset and level stuff/Levels/Desert.yy",
   },
 }

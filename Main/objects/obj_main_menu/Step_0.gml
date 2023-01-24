@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+fnc_lng_main_menu();
 menu_input_new();
 /*
 var key_down = keyboard_check_pressed(vk_down);
@@ -50,6 +50,13 @@ if move!= 0 && KBControlChange = 0
     index+=move;
     fnc_snd_play_over(snd_menu_select);
     var size = array_length_2d(menu, submenu);
+    
+    if !file_exists("save1.save") && submenu = 0
+    {
+        if index < 1 index = size - 1;
+        else if index >=size  index = 1;   
+    } else
+    
     if index < 0 index = size - 1;
     else if index >=size  index = 0;
 }
@@ -86,6 +93,10 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     index = 0;
                     break;
                 case 3:
+                    submenu = 6;
+                    index = 0;
+                    break;
+                case 4:
                     game_end();
                     break;
         
@@ -107,6 +118,10 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     index = 0;
                     break;
                 case 3:
+                    submenu = 41;
+                    index = 0;
+                    break;
+                case 4:
                     scr_save_settings();
                     submenu = 0;
                     index = 2;
@@ -288,6 +303,27 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     break;
             }
             break;
+        case 41: // Language
+            switch(index)
+            {
+                case 0:     global.language = 0;break;
+                case 1:     global.language = 1;break;
+                case 2:     global.language = 2;break;
+                case 3:     global.language = 3;break;
+                case 4:     global.language = 4;break;
+                case 5:     global.language = 5;break;
+                case 6:     global.language = 6;break;
+                case 7:     global.language = 7;break;
+                case 8:     global.language = 8;break;
+                case 9:     global.language = 9;break;
+                case 10:    global.language = 10;break;                   
+                case 11:    global.language = 11;break;
+                case 12:
+                    submenu = 1;
+                    index = 3;
+                    break;
+            }
+            break;
         case 5: // Confirm
             switch(index)
             {
@@ -303,6 +339,14 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     break;
             }
             break;
+        case 6: //Credits
+            switch(index)
+            {
+                case 0: 
+                    submenu = 0;
+                    index = 3;
+                    break;
+            }
     }
 } else
 
@@ -390,7 +434,7 @@ if submenu = 0 || submenu = 5
 {
     if title_alpha < 1 title_alpha += 0.1;   
 }
-if submenu > 0 && submenu < 5 
+if (submenu > 0 && submenu < 5) || submenu = 6
 {
     if title_alpha > 0 title_alpha -= 0.1;
 }

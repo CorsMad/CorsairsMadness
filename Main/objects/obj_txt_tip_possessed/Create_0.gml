@@ -4,6 +4,8 @@ image_speed = 0.2;
 alpha = 0;
 t=0;
 depth = -100;
+fnc_lng_tip_possessed();
+/*
 text1 = @"Every fourth successful strike against an enemy 
 other than a red one will be special.";
 text2 = @"Combine different strikes to improve your rating.";
@@ -12,7 +14,7 @@ essence will be dropped from defeated enemies.";
 
 textair = "in the air";
 textground = "on the ground";
-
+*/
 canSkip = 0;
 
 t = 0;

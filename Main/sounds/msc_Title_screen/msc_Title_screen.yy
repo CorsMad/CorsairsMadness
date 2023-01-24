@@ -4,7 +4,7 @@
   "name": "msc_Title_screen",
   "conversionMode": 0,
   "compression": 2,
-  "volume": 0.1,
+  "volume": 0.97,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,

@@ -6,7 +6,7 @@ player_input();
 if key_left_press {fnc_snd_play_over(snd_menu_select);select = 0;}
 if key_right_press {fnc_snd_play_over(snd_menu_select);select = 1;}
 
-if key_jump || key_attack
+if key_jump || key_attack 
 {
     fnc_snd_play_over(snd_menu_accept);
     switch(select)

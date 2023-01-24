@@ -12,10 +12,10 @@ scribble_text.wrap(text_width);
 switch(scr_t)
 {
     case 0: text = eng1;
-            fnc_msc_stop_play_slow();break;            
+            break;            
     case 1: text = eng2;break;          
     case 2: text = eng3;
-            
+            fnc_msc_stop_play()
             break;          
     case 3: text = eng4;break;                    
 }

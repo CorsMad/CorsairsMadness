@@ -43,6 +43,7 @@ if state = 0
     if place_meeting(x,y,obj_block_climb) 
     {
         fnc_msc_stop_play_slow();
+        fnc_snd_play_onetime(snd_transform);
         state = 1;
         vspd = -1;
         image_index = 9;

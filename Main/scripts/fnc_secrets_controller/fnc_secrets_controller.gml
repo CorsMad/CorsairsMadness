@@ -1,6 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_secrets_chest_maze(){
+    
+#region Jungle
+
     /* 1 УРОВЕНЬ */
     #region Сундуки
     global.chest_j1_r3 = 1;
@@ -50,5 +53,29 @@ function scr_secrets_chest_maze(){
     #region  Монета
     global.secrets_j2_endurance = 0;
     #endregion
+
+#endregion
+
+#region Desert
+
+ /* 1 УРОВЕНЬ */
+    #region Сундуки
+    global.chest_d1_r2 = 1;
+    global.chest_d1_r6 = 1;
+    global.chest_d1_r10 = 1;
+    global.chest_d1_r15 = 1;
+    #endregion
+    
+    #region Монеты
+    global.secrets_d1_s1 = 0;
+    global.secrets_d1_s2 = 0;
+    global.secrets_d1_s3 = 0;
+    #endregion
+    
+    #region Головоломка
+    
+    #endregion
+
+#endregion
 
 }

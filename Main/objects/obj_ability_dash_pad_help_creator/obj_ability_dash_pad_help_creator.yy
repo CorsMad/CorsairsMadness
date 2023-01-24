@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "group1",
-    "path": "folders/Objects/TESTGROUP/HELP TEXT/!NEW/group1.yy",
+    "name": "Redped",
+    "path": "folders/Objects/TESTGROUP/HELP TEXT/!NEW/Redped.yy",
   },
 }

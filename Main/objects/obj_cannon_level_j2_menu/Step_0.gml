@@ -1,5 +1,5 @@
 player_input();
-
+fnc_lng_cannon_choose()
 if key_right_press {fnc_snd_play_over(snd_menu_select);state = 1}
 if key_left_press {fnc_snd_play_over(snd_menu_select);state = 0;}
 if key_down_pressed {fnc_snd_play_over(snd_menu_select);state = 2;}

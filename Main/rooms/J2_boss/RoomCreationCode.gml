@@ -1,0 +1,1 @@
+fnc_msc_stop_play();

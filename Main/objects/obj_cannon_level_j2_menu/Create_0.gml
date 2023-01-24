@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+fnc_lng_cannon_choose()
 state = 0;
 
 #region text

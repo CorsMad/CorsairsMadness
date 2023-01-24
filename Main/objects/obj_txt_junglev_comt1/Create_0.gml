@@ -1,8 +1,8 @@
 
+fnc_lng_jv_cmt1();
 
 
-
-
+/*
 #region  ENG text
 eng1 = "[fnt_pixel][wave]Greetings![/wave] how happy I am to see new faces in this village!";
 eng2 = "[fnt_pixel]I'm a local inventor-enthusiast. I invent, build and test all sorts of devices. There's not much to do on the island after all.";
@@ -11,6 +11,7 @@ eng4 = "[fnt_pixel]This is a new invention I've been working on a lot lately - s
 eng5 = "[fnt_pixel]By the way, I've built a proving ground not far from here, specifically for these boots. Would you like to go there? You'll get a nice little surprise at the end.";
 
 #endregion
+*/
 scr_text_starter(4,0.5);
 
 /*

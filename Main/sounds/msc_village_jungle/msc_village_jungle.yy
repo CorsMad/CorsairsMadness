@@ -14,8 +14,8 @@
     "name": "MusicVolume",
     "path": "audiogroups/MusicVolume",
   },
-  "soundFile": "msc_village_jungle.mp3",
-  "duration": 154.30525,
+  "soundFile": "msc_village_jungle.wav",
+  "duration": 51.891907,
   "parent": {
     "name": "Jungle",
     "path": "folders/Sounds/BGR music/Jungle.yy",

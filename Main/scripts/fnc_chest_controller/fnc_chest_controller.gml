@@ -17,4 +17,5 @@ function scr_chest_controller()
     global.chest_controller_b_9 = 1;
     global.chest_controller_b_13 = 1;
     
+    
 }

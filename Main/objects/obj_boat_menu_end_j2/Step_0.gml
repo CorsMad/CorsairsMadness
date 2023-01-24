@@ -2,6 +2,9 @@
 // You can write your code in this editor
 player_input();
 
+fnc_lng_boat_choose();
+
+
 if key_right_press {fnc_snd_play_over(snd_menu_select);state = 1}
 if key_left_press {fnc_snd_play_over(snd_menu_select);state = 0;}
 

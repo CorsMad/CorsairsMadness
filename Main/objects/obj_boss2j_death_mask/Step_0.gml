@@ -15,6 +15,7 @@
 
     if place_meeting(x,y,obj_abil_boots_hitbox)
     {
+        fnc_snd_play_onetime(snd_player_springboots);
         obj_Player.sbootsbuffer = 1;
         obj_Player.vspd = -5;
         obj_Player.dash_counts = 1;

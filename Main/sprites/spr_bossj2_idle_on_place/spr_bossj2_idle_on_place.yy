@@ -83,6 +83,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Graphics",
-    "path": "folders/Sprites/Enemies/Boss/Boss2/Graphics.yy",
+    "path": "folders/Sprites/Enemies/!Jungle/Boss2/Graphics.yy",
   },
 }

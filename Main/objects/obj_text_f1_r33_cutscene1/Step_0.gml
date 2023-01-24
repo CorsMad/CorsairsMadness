@@ -2,6 +2,7 @@
 // You can write your code in this editor
 dialogue_input();
 scr_skip_texticon_blink();
+fnc_lng_fgroundedf_1_r33_1();
 
 #region skip
 

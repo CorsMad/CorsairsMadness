@@ -1,6 +1,6 @@
 /// @description 226
 // You can write your code in this editor
 
+instance_create_depth(0,0,0,obj_pause_menu_notstage);
 
-fnc_msc_stop_play_slow();
 

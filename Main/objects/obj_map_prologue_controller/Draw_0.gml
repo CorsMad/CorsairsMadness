@@ -186,11 +186,11 @@ draw_rectangle_color(4,4,128,64,c_black,c_black,c_black,c_black,false);
         case 0: 
             switch(globalMapCounter)
             {
-                case 1: islandName = "-Jungle island-";break;
-                case 2: islandName = "-Desert island-";break;
-                case 3: islandName = "-Snow island-";break;
-                case 4: islandName = "-Lava island-";break;
-                case 5: islandName = "-Shadow island-";break;
+                case 1: islandName = iJungle;break;
+                case 2: islandName = iDesert;break;
+                case 3: islandName = iSnow;break;
+                case 4: islandName = iLava;break;
+                case 5: islandName = iShadow;break;
             }
             break;
     }
@@ -202,6 +202,7 @@ draw_set_halign(fa_center)
 #region Название острова на глобальной карте
     if island = 0 
     {
+        if global.language = 1 draw_set_font(fnt_pixel_ru) else draw_set_font(fnt_pixel);
         draw_text(67,6,string(islandName));
         switch(globalMapCounter)
         {

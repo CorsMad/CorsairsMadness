@@ -58,7 +58,8 @@ dashingbuffer = 0;
 hookingbuffer = 0;
 jumpbuffer = 0;
 sbootsbuffer = 0;
-
+lanhit = 0;
+lanplace = 0;
 #endregion
 
 #region Предметы

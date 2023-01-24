@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-wait_timer = 0;
+wait_timer = irandom(100);
 move_timer = 0;
 isWait = 1;
 hspd = 0;

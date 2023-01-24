@@ -10,7 +10,17 @@ if isOn = 1 && place_meeting(x,y,obj_hitbox_mask) && obj_Player.isAttackingdown 
     {
         obj_popup_creator_usegreenlantern.isOn = 0;   
     }
-	obj_Player.vspd = -6;
+	
+    obj_Player.lanhit = 1;
+    obj_Player.lanplace = y ;
+    
+    #region положение игрока    
+ 
+    obj_Player.vspd = -5;
+    
+    #endregion
+    
+    
 	isOn = 0;
     if obj_Player.x > x 
     {   var im = instance_create_depth(x,y,depth-1,obj_lantern_green_sfx);

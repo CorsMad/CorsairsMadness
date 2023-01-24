@@ -2,30 +2,31 @@ draw_sprite_ext(spr_map_jungle_island,anim,240,135,1,1,0,c_white,island1JungleAl
  
 #region Информация
 
+if global.language = 1 draw_set_font(fnt_pixel_ru) else draw_set_font(fnt_pixel);
+
 draw_rectangle_color(1,1,131,67,c_grey,c_grey,c_grey,c_grey,false);
 draw_rectangle_color(4,4,128,64,c_black,c_black,c_black,c_black,false);
-draw_set_font(fnt_pixel);
 draw_set_color(c_white);
 draw_set_halign(fa_center)
 switch(globalMapCounter)
 {
     case 0:
-        draw_text(67,6,"Jungle Village");
+        draw_text(67,6,village);
         break;
     case 1:
-        draw_text(67,6,"endurance test");
+        draw_text(67,6,endurance);
         break;
     case 2:
-        draw_text(67,6,"1st level");
+        draw_text(67,6,lvl1);
         break;
     case 3:
-        draw_text(67,6,"2nd level");
+        draw_text(67,6,lvl2);
         break;
     case 4:
-        draw_text(67,6,"Jungle Temple");
+        draw_text(67,6,temple);
         break;    
     case 5:
-        draw_text(67,6,"Temple Lair");
+        draw_text(67,6,lair);
         break;    
 }
 
@@ -87,7 +88,7 @@ switch(globalMapCounter) // Секреты
 #endregion
 
 // Деревня
-    draw_sprite(spr_map_pointer,0,124,180); // Деревня
+    draw_sprite(spr_map_pointer,2,124,180); // Деревня
     if Opened = 1 draw_sprite(spr_map_pointer,global.secrets_j2_endurance,240,196); // Колизей                  
     draw_sprite(spr_map_pointer,global.key_green1,218,80); // 1 уровень
     draw_sprite(spr_map_pointer,global.key_green2,350,140); // 2 уровень

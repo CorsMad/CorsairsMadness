@@ -179,14 +179,28 @@ if isGrounded = 0 && isRecoil = 0 && isAfterhook = 0 && isAirThrowingBomb = 0 &&
             	}    
     }
 			
-		
+		//TEST
+        
+        if key_jump_release && vspd < -4 && lanhit = 0
+		{
+			vspd = -3;
+		}        
+        
+        /*
 		if key_jump_release && superdash_timer = 0 && vspd < -4 
 		{
 			vspd = -3;
 		}
+        */
 		if vspd < 6 && superdash_timer = 0  
 		{
-            vspd+=0.25;
+            
+            
+            //vspd+=0.25;
+            
+            if lanhit = 0 vspd+=0.25;
+            
+            
             /*
             if comboMeter < 4 
             {
@@ -195,8 +209,11 @@ if isGrounded = 0 && isRecoil = 0 && isAfterhook = 0 && isAirThrowingBomb = 0 &&
             */
 		}
 }
+if (y <= lanplace && lanhit = 1) lanhit = 0;
+
 if isGrounded  = 1
 {
+    lanhit = 0;
 	jump_counts = 1;	
 	coyote_timer = 1;
 }
@@ -413,7 +430,7 @@ if isAirattacking = 1
     
     if vspd < 6 && comboMeter < 4
 	{
-		vspd +=0.25;//0.25;
+		if lanhit = 0 vspd +=0.25;//0.25;
 	} else if comboMeter >=4 vspd = 0;
     
 }
@@ -463,7 +480,7 @@ if isAirattacking = 1 && image_index = 5 && comboMeter >= 4
 
 if isAirattacking = 1
 {
-    if key_jump_release && vspd < -4 
+    if key_jump_release && vspd < -4 && lanhit = 0
 		{
 			vspd = -3;
 		}
@@ -494,6 +511,7 @@ if key_dashing && dashing_timer_count = 0 && isCarry = 0 && isAfterhook = 0 && !
     image_index = 0;
 	isDashing = 1;
 	vspd = 0;
+    lanhit = 0;
 	isAirattacking = 0;
 	isAirThrowingBomb = 0;
 	isAirUsingitem = 0;
@@ -612,6 +630,7 @@ if dashing_timer_count  = 1
 #region Recoil
 if isRecoil = 1
 {
+    lanhit = 0;
     //recoil_timer++;
     sprite_index = spr_player_masked_recoil;
     image_speed = 0.75;
@@ -682,6 +701,7 @@ if isRecoil = 1
     #region Hooking
         if HookEnabled = 1 && SpecAbilMask = 1 && key_item && hooking_timer_count = 0 && !instance_exists(obj_item_hook_masked) && isAfterhook = 0 && isAttacking = 0 && isAirattacking = 0 && isDashing = 0 && isRecoil = 0 && isTakingdmg = 0 && (hook_iframes_timer > 15 || hook_iframes_timer = 0)
         {
+            lanhit = 0;
             instance_create_depth(x+dir*4,y-16,depth,obj_item_hook_masked);
             hooking_timer_count = 1;
         }

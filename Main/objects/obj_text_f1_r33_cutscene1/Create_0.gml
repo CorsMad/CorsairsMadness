@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+fnc_lng_fgroundedf_1_r33_1();
+/*
 #region eng
 
 eng1 =  "[fnt_pixel]Just look at the big fish caught in my nets.";
@@ -13,6 +15,8 @@ eng7 =  "[fnt_pixel]Let's have some fun"
 eng8 =  "[fnt_pixel]Show me what you are capable of."
 
 #endregion
+
+*/
 scr_text_starter(7,0.5);
 
 /*
