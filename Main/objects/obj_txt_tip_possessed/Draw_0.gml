@@ -19,10 +19,10 @@ draw_set_halign(fa_middle);
 draw_set_color(c_white);
 
 // 1
-draw_text(room_width/2,32,text1);
+draw_text(room_width/2,16,text1);
 
 // 2
-draw_text(room_width/2,72,text2);
+draw_text(room_width/2,56,text2);
 
 // на земле слева
 draw_text(room_width/4-16,176,textground);

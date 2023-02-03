@@ -1,0 +1,11 @@
+{
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "script_lng_store_confirm",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Language",
+    "path": "folders/Scripts/Language.yy",
+  },
+}

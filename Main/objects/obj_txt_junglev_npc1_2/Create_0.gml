@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-fnc_lng_jnpc2_2();
+fnc_lng_jnpc1_2();
 /*
 #region eng
 

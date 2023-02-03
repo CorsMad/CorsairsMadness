@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-fnc_lng_level_endurance_confirm();
+fnc_lng_level_confirm1();
 
 index = 0;
 submenu = 0;

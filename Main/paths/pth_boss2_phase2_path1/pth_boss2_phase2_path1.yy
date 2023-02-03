@@ -2,9 +2,12 @@
   "resourceType": "GMPath",
   "resourceVersion": "1.0",
   "name": "pth_boss2_phase2_path1",
-  "kind": 1,
   "closed": false,
-  "precision": 4,
+  "kind": 1,
+  "parent": {
+    "name": "Boss2",
+    "path": "folders/Rooms/Paths/JungleBoss/Boss2.yy",
+  },
   "points": [
     {"speed":100.0,"x":48.0,"y":64.0,},
     {"speed":100.0,"x":285.27448,"y":41.0961,},
@@ -40,8 +43,5 @@
     {"speed":100.0,"x":48.0,"y":64.0,},
     {"speed":100.0,"x":48.0,"y":64.0,},
   ],
-  "parent": {
-    "name": "Boss2",
-    "path": "folders/Rooms/Paths/JungleBoss/Boss2.yy",
-  },
+  "precision": 4,
 }

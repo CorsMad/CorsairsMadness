@@ -15,8 +15,7 @@ switch(global.language)
         eng5 = "[fnt_pixel]It is said that the curse itself finds the ships of those worthy to set foot on its soil.[delay,5000] \nOnly the bravest trailblazers will be able to unravel all the secrets of this mysterious land.";
         eng6 = "[fnt_pixel]<Oh, it seems another guest has come ashore. I hope we'll get along.>";
         skip_txt = "press any key to skip";
-        #endregion
-        
+        #endregion        
         break;
     case 1: //russian
         #region
@@ -30,6 +29,15 @@ switch(global.language)
         #endregion
         break;
     case 2: //spanish
+        #region
+        eng1 = "[fnt_pixel]Cualquiera que haya bebido en una taberna portuaria maloliente conoce la leyenda. Cómo surgió, ni siquiera los curtidos lobos de mar lo recuerdan."
+        eng2 = "[fnt_pixel]Sin embargo, eso no les impide asustar a los jóvenes marineros."
+        eng3 = "[fnt_pixel]Dicen que en el océano infinito hay un archipiélago maldito lleno de secretos y peligros. Quien consiga romper la maldición será recompensado con riquezas y gloria incalculables.";
+        eng4 = "[fnt_pixel]Muchos creyeron la historia y partieron en busca de aventuras.";
+        eng5 = "[fnt_pixel]Se dice que la propia maldición encuentra los barcos de aquellos dignos de pisar su suelo.[delay,5000] \nSólo los pioneros más valientes podrán desenmascarar todos los secretos de esta tierra misteriosa.";
+        eng6 = "[fnt_pixel]<Oh, parece que otro invitado ha desembarcado. Espero que nos llevemos bien.>";
+        skip_txt = "pulsa cualquier tecla para saltar";
+        #endregion
         break;
     case 3: //chinese
         #region
@@ -43,20 +51,72 @@ switch(global.language)
         #endregion
         break;
     case 4: //portug
+        #region
+        eng1 = "[fnt_pixel]Qualquer um que tenha bebido num bar de porto fedorento conhece a lenda. Como ela surgiu, nem mesmo os duros lobos do mar não se lembram."
+        eng2 = "[fnt_pixel]No entanto, isso não os impede de assustar jovens marinheiros."
+        eng3 = "[fnt_pixel]Dizem que no imenso oceano há um arquipélago amaldiçoado, cheio de segredos e perigos. Quem conseguir quebrar a maldição será recompensado com riquezas e glória incalculáveis.";
+        eng4 = "[fnt_pixel]Muitos acreditaram na história e foram à procura da aventura.";
+        eng5 = "[fnt_pixel]Diz-se que a maldição em si encontra os navios daqueles dignos de pisar o seu solo.[delay,5000] \nSó os mais corajosos pioneiros serão capazes de desvendar todos os segredos desta misteriosa terra.";
+        eng6 = "[fnt_pixel]<Parece que outro convidado chegou à costa. Espero que nos demos bem.>";
+        skip_txt = "prima qualquer tecla para saltar";
+        #endregion
         break;
     case 5: //brazil
+        #region
+        eng1 = "[fnt_pixel]Quem já bebeu em um bar fedorento do porto conhece a lenda. Como ela surgiu, nem mesmo os velhos lobos do mar se lembram."
+        eng2 = "[fnt_pixel]No entanto, isso não os impede de assustar os jovens marinheiros"
+        eng3 = "[fnt_pixel]Dizem que no imenso oceano existe um arquipélago amaldiçoado, cheio de segredos e perigos. Quem conseguir quebrar a maldição será recompensado com riquezas e glória incalculáveis.";
+        eng4 = "[fnt_pixel]Muitos acreditaram na história e foram em busca da aventura.";
+        eng5 = "[fnt_pixel]Dizem que a própria maldição encontra os navios das pessoas dignas de pisar em seu solo.[delay,5000] \nApenas os pioneiros mais corajosos serão capazes de desvendar todos os segredos desta terra misteriosa.";
+        eng6 = "[fnt_pixel]<Oh, parece que outro convidado desembarcou. Espero dar-nos bem com eles.>";
+        skip_txt = "pressione qualquer tecla para pular";
+        #endregion
         break;
     case 6: //polish
+        #region
+        eng1 = "[fnt_pixel]Każdy, kto pił w śmierdzącym portowym pubie, zna tę legendę. Jak do niej doszło, nie pamiętają nawet zatwardziałe wilki morskie."
+        eng2 = "[fnt_pixel]Nie przeszkadza im to jednak w straszeniu młodych żeglarzy"
+        eng3 = "[fnt_pixel]Mówią, że na bezkresnym oceanie znajduje się przeklęty archipelag pełen tajemnic i niebezpieczeństw. Kto zdoła złamać klątwę, zostanie nagrodzony niewyobrażalnym bogactwem i chwałą.";
+        eng4 = "[fnt_pixel]Wielu śmiałków uwierzyło w tę historię i wyruszyło na poszukiwanie przygód.";
+        eng5 = "[fnt_pixel]Mówi się, że klątwa sama znajduje statki tych, którzy są godni postawić stopę na tej ziemi.[delay,5000] \nTylko najodważniejsi tropiciele będą w stanie odkryć wszystkie sekrety tej tajemniczej krainy.";
+        eng6 = "[fnt_pixel]<Wygląda na to, że na brzegu pojawił się kolejny gość. Mam nadzieję, że się dogadamy.>";
+        skip_txt = "Naciśnij dowolny klawisz aby pominąć";
+        #endregion
         break;
-    case 7: //turkey
+    case 7: //japanese
+        #region
+        eng1 = "[fnt_pixel]臭い港のパブで飲んだことのある人なら誰でも知っている伝説だ。その由来は、経験豊富なシーウルフでさえも覚えていない。"
+        eng2 = "[fnt_pixel]そうであっても、若い船員を怖がらせることに変わりはない"
+        eng3 = "[fnt_pixel]果てしなく広がる大海原には、秘密と危険に満ちた呪われた群島があるそうだ。その呪いを解くことができた者は、莫大な富と栄光を手に入れることができるという。";
+        eng4 = "[fnt_pixel]多くの人がその話を信じ、冒険を求め旅立った。";
+        eng5 = "[fnt_pixel]呪いそのものが、その地に足を踏み入れるにふさわしい者の船を見つけると言われている。[delay,5000] \n勇敢な先駆者だけが、この神秘的な土地のすべての秘密を解き明かすことができる。";
+        eng6 = "[fnt_pixel]<おっと、また一人お客が来たみたいだ。馬が合うといい。>";
+        skip_txt = "いずれかのキーを押してスキップ";
+        #endregion
         break;
-    case 8: //japanese
+    case 8: //deutch
+        #region
+        eng1 = "[fnt_pixel]Jeder, der schon einmal in einer stinkenden Hafenkneipe getrunken hat, kennt diese Legende. Wie sie entstanden ist, wissen selbst die hartgesottenen Seewölfe nicht mehr."
+        eng2 = "[fnt_pixel]Das hält sie aber nicht davon ab, junge Seeleute zu erschrecken"
+        eng3 = "[fnt_pixel]Es heißt, dass es im grenzenlosen Ozean eine verfluchte Inselgruppe voller Geheimnisse und Gefahren gibt. Wer den Fluch brechen kann, wird mit unermesslichem Reichtum und Ruhm belohnt.";
+        eng4 = "[fnt_pixel]Viele glaubten an die Geschichte und machten sich auf den Weg, um ein Abenteuer zu suchen.";
+        eng5 = "[fnt_pixel]Es heißt, dass der Fluch selbst die Schiffe derjenigen findet, die würdig sind, ihren Fuß auf den Boden zu setzen.[delay,5000] \nNur die mutigsten Wegbereiter werden in der Lage sein, alle Geheimnisse dieses mysteriösen Eilands zu enträtseln.";
+        eng6 = "[fnt_pixel]<Oh, es scheint, als sei ein weiterer Gast an Land gekommen. Ich hoffe, wir werden uns gut verstehen.>";
+        skip_txt = "Drücke eine beliebige Taste zum Überspringen";
+        #endregion
         break;
-    case 9: //deutch
+    case 9: //french
+        #region
+        eng1 = "[fnt_pixel]Quiconque a pris un verre dans un pub portuaire puant connaît la légende. Comment elle est née, même les loups de mer les plus endurcis ne s'en souviennent pas."
+        eng2 = "[fnt_pixel]Mais cela ne les empêche pas d'effrayer les jeunes marins."
+        eng3 = "[fnt_pixel]On dit que dans l'océan infini se trouve un archipel maudit plein de secrets et de dangers. Celui qui parviendra à briser la malédiction sera récompensé par des richesses et une gloire inouïes.";
+        eng4 = "[fnt_pixel]Beaucoup ont cru à cette histoire et sont partis à la recherche de l'aventure.";
+        eng5 = "[fnt_pixel]On dit que la malédiction elle-même trouve les navires de ceux qui sont dignes de poser le pied sur son sol.[delay,5000] \nSeuls les pionniers les plus courageux seront en mesure de percer tous les secrets de cette terre mystérieuse.";
+        eng6 = "[fnt_pixel]<Oh, il semble qu'un autre invité ait débarqué. J'espère que nous allons nous entendre.>";
+        skip_txt = "appuyez sur n'importe quelle touche pour passer";
+        #endregion
         break;
-    case 10: //french
-        break;
-    case 11: //Italian
+    case 10: //Italian
         #region
         eng1 = "[fnt_pixel]Chiunque visiti il puzzolente pub del porto conosce la leggenda. Anche i lupi di mare induriti non ricordano come tutto è iniziato."
         eng2 = "[fnt_pixel]Tuttavia, ciò non impedisce loro di spaventare i giovani marinai."
@@ -94,6 +154,13 @@ function fnc_lng_tutor1_ctscn_start()
     #endregion
         break;
     case 2: //spanish
+        #region
+        eng1 = "[fnt_pixel]¡No, no, no, no! ¡Mi barco!"
+        eng2 = "[fnt_pixel]¿Qué ha pasado? No recuerdo nada. Debo haber tomado demasiado ron a bordo."
+        eng3 = "[fnt_pixel]¡¡¡PEW !!! ¡¡¡¡JOHNNY !!!!"
+        eng4 = "[fnt_pixel]Hmm, nadie responde. Maldita sea, espero que todavía estén vivos."
+        eng5 = "[fnt_pixel]Es hora de echar un vistazo alrededor."
+    #endregion
         break;
     case 3: //chinese
         #region
@@ -105,20 +172,60 @@ function fnc_lng_tutor1_ctscn_start()
         #endregion
         break;
     case 4: //portug
+        #region
+        eng1 = "[fnt_pixel]Nãão! Meu navio!"
+        eng2 = "[fnt_pixel]O que aconteceu? Não me lembro de nada. Devo ter tomado muito rum a bordo."
+        eng3 = "[fnt_pixel]PEW!!! JOHNNY !!!!"
+        eng4 = "[fnt_pixel]Ninguém responde. Raios, espero que ainda estejam vivos."
+        eng5 = "[fnt_pixel]É hora de dar uma olhada por aí."
+    #endregion
         break;
     case 5: //brazil
+        #region
+        eng1 = "[fnt_pixel]Nãão! Meu navio!"
+        eng2 = "[fnt_pixel]O que aconteceu? Eu não me lembro de nada. Acho que levei rum demais a bordo."
+        eng3 = "[fnt_pixel]PEW!!! JOHNNY !!!!"
+        eng4 = "[fnt_pixel]Hmm, a ninguém responde. Droga, espero que ainda estejam vivos."
+        eng5 = "[fnt_pixel]É hora de dar uma olhada ao redor."
+    #endregion
         break;
     case 6: //polish
+        #region
+        eng1 = "[fnt_pixel]O nie, nie nie! Mój statek!"
+        eng2 = "[fnt_pixel]Co się stało? Nic nie pamiętam. Musiałem wziąć za dużo rumu na pokład."
+        eng3 = "[fnt_pixel]PEW !!! JOHNNY !!!!"
+        eng4 = "[fnt_pixel]Hmm, nikt nie odpowiada. Cholera jasna, mam nadzieję, że jeszcze żyją."
+        eng5 = "[fnt_pixel]Pora aby rozejrzeć się tu dookoła."
+    #endregion
         break;
-    case 7: //turkey
+    case 7: //japanese
+        #region
+        eng1 = "[fnt_pixel]ダメダメダメ！私の船が！"
+        eng2 = "[fnt_pixel]何があった？何も覚えてない。ラム酒を飲みすぎたに違いない。"
+        eng3 = "[fnt_pixel]ふー！！！ジョニー！！！"
+        eng4 = "[fnt_pixel]誰も答えてくれない。ちくしょう、まだ生きてるといいが。"
+        eng5 = "[fnt_pixel]そろそろ周りを見てみるか。"
+    #endregion
         break;
-    case 8: //japanese
+    case 8: //deutch
+        #region
+        eng1 = "[fnt_pixel]Nein, nein, nein, nein! Mein Schiff!"
+        eng2 = "[fnt_pixel]Was ist passiert? Ich kann mich an nichts erinnern. Ich hatte wohl zu viel Rum an Bord."
+        eng3 = "[fnt_pixel]PEW !!! JOHNNY !!!!"
+        eng4 = "[fnt_pixel]Hmm, niemand antwortet. Verdammt noch mal, ich hoffe, sie leben noch."
+        eng5 = "[fnt_pixel]Es wird Zeit, sich umzusehen."
+    #endregion
         break;
-    case 9: //deutch
-        break;
-    case 10: //french
+    case 9: //french
+        #region
+        eng1 = "[fnt_pixel]Non non non non ! Mon bateau !"
+        eng2 = "[fnt_pixel]Que s'est-il passé ? Je ne me souviens de rien. J'ai dû prendre trop de rhum à bord."
+        eng3 = "[fnt_pixel]PEW !!! JOHNNY !!!!"
+        eng4 = "[fnt_pixel]Hmm, personne ne répond. Bon sang, j'espère qu'ils sont encore en vie."
+        eng5 = "[fnt_pixel]Il est temps de jeter un coup d'oeil aux alentours."
+    #endregion
         break;  
-    case 11: // Italian
+    case 10: // Italian
     #region
         eng1 = "[fnt_pixel]No, no, no, no! Il mio vascello!"
         eng2 = "[fnt_pixel]Quello che è successo? Non ricordo niente. Devo aver preso troppo rum a bordo."
@@ -155,6 +262,14 @@ function fnc_lng_t1_end()
             #endregion
             break;
         case 2: //spanish
+            #region eng
+
+            eng1 = "[fnt_pixel]Me pregunto dónde he acabado. Hay humedad aquí.";
+            eng2 = "[fnt_pixel]Hmm, ¿qué es eso? No parece sospechoso en absoluto.";
+            eng3 = "[fnt_pixel]Esta cosa debe valer mucho [c_yellow]oro[/c_yellow].";
+            eng4 = "[fnt_pixel]Espera un minuto, ¿qué está pasando?";
+
+            #endregion
             break;
         case 3: //chinese
             #region eng
@@ -167,20 +282,66 @@ function fnc_lng_t1_end()
             #endregion
             break;
         case 4: //portug
+            #region eng
+
+            eng1 = "[fnt_pixel]Pergunto-me onde é que eu acabei. Está húmido aqui.";
+            eng2 = "[fnt_pixel]O que é aquilo? Não parece nada suspeito.";
+            eng3 = "[fnt_pixel]Esta coisa deve valer muito [c_yellow]ouro[/c_yellow].";
+            eng4 = "[fnt_pixel]Espera aí, o que está a acontecer?";
+
+            #endregion
             break;
         case 5: //brazil
+            #region eng
+
+            eng1 = "[fnt_pixel]Eu me pergunto onde parei. Está úmido aqui.";
+            eng2 = "[fnt_pixel]Hum, o que é isso? Não parece nada suspeito.";
+            eng3 = "[fnt_pixel]Esta coisa deve valer muito [c_yellow]ouro[/c_yellow].";
+            eng4 = "[fnt_pixel]Espere um minuto, o que está acontecendo?";
+
+            #endregion
             break;
         case 6: //polish
+            #region eng
+
+            eng1 = "[fnt_pixel]Zastanawiam się, gdzie skończyłem. Tu jest wilgotno";
+            eng2 = "[fnt_pixel]Co to jest, hmm? Wcale nie wygląda podejrzanie.";
+            eng3 = "[fnt_pixel]To musi być warte wiele [c_yellow]złota[/c_yellow].";
+            eng4 = "[fnt_pixel]Chwileczkę, co się dzieje?";
+
+            #endregion
             break;
-        case 7: //turkey
+        case 7: //japanese
+            #region eng
+
+            eng1 = "[fnt_pixel]どこまで来たんだ。ここは湿気が多いな。";
+            eng2 = "[fnt_pixel]ん、なんだこれ？全然怪しくない。";
+            eng3 = "[fnt_pixel]これは相当[c_yellow]な金[/c]目のものに違いない。";
+            eng4 = "[fnt_pixel]ちょっと待てよ、一体なんだ？";
+
+            #endregion
             break;
-        case 8: //japanese
+        case 8: //deutch
+            #region eng
+
+            eng1 = "[fnt_pixel]Ich frage mich, wo ich hier gelandet bin. Es ist feucht hier drin.";
+            eng2 = "[fnt_pixel]Hmm, was ist das? Sieht überhaupt nicht verdächtig aus.";
+            eng3 = "[fnt_pixel]Dieses Ding muss eine Menge [c_yellow]Gold[/c] wert sein.";
+            eng4 = "[fnt_pixel]Moment mal, was ist hier los?";
+
+            #endregion
             break;
-        case 9: //deutch
+        case 9: //french
+            #region eng
+
+            eng1 = "[fnt_pixel]Je me demande où j'ai atterri. C'est humide ici.";
+            eng2 = "[fnt_pixel]Hmm, qu'est-ce que c'est ? Ça n'a pas l'air suspect du tout.";
+            eng3 = "[fnt_pixel]Cette chose doit valoir beaucoup [c_yellow]d'or[/c].";
+            eng4 = "[fnt_pixel]Attends une minute, qu'est-ce qui se passe ?";
+
+            #endregion
             break;
-        case 10: //french
-            break;
-        case 11: //Italian
+        case 10: //Italian
             #region eng
 
             eng1 = "[fnt_pixel]Mi chiedo dove sono arrivato. È umido qui.";
@@ -218,6 +379,14 @@ function fnc_lng_t2_start()
             #endregion
             break;
         case 2: //spanish
+            #region eng
+
+            eng1 = "[fnt_pixel]¿Dónde... dónde estoy?";
+            eng2 = "[fnt_pixel]¿Qué está pasando conmigo?";
+            eng3 = "[fnt_pixel]Siento un extraño poder en mi cuerpo...";
+            eng4 = "[fnt_pixel]Creo que necesito salir de aquí.";
+
+            #endregion
             break;
         case 3: //chinese
             #region eng
@@ -230,20 +399,66 @@ function fnc_lng_t2_start()
             #endregion
             break;
         case 4: //portug
+            #region eng
+
+            eng1 = "[fnt_pixel]Onde... Onde estou?";
+            eng2 = "[fnt_pixel]O que se passa comigo?";
+            eng3 = "[fnt_pixel]Sinto um poder estranho no meu corpo...";
+            eng4 = "[fnt_pixel]Acho que tenho de sair daqui.";
+
+            #endregion
             break;
         case 5: //brazil
+            #region eng
+
+            eng1 = "[fnt_pixel]Onde... onde estou?";
+            eng2 = "[fnt_pixel]O que está acontecendo comigo?";
+            eng3 = "[fnt_pixel]Sinto um poder estranho em meu corpo...";
+            eng4 = "[fnt_pixel]Acho que preciso sair daqui.";
+
+            #endregion
             break;
         case 6: //polish
+            #region eng
+
+            eng1 = "[fnt_pixel]Gdzie... gdzie ja jestem?";
+            eng2 = "[fnt_pixel]Co się ze mną dzieje?";
+            eng3 = "[fnt_pixel]Czuję jakąś dziwną moc w moim ciele…";
+            eng4 = "[fnt_pixel]Chyba muszę się stąd wydostać.";
+
+            #endregion
             break;
-        case 7: //turkey
+        case 7: //japanese
+            #region eng
+
+            eng1 = "[fnt_pixel]ここは...どこだ？";
+            eng2 = "[fnt_pixel]何が起こってる？";
+            eng3 = "[fnt_pixel]体に変な力が...";
+            eng4 = "[fnt_pixel]ここから出ないと。";
+
+            #endregion
             break;
-        case 8: //japanese
+        case 8: //deutch
+            #region eng
+
+            eng1 = "[fnt_pixel]Wo... wo bin ich?";
+            eng2 = "[fnt_pixel]Was geschieht mit mir?";
+            eng3 = "[fnt_pixel]Ich spüre eine seltsame Kraft in meinem Körper...";
+            eng4 = "[fnt_pixel]Ich glaube, ich muss hier raus.";
+
+            #endregion
             break;
-        case 9: //deutch
+        case 9: //french
+            #region eng
+
+            eng1 = "[fnt_pixel]Où... où suis-je ?";
+            eng2 = "[fnt_pixel]Qu'est-ce qui se passe avec moi ?";
+            eng3 = "[fnt_pixel]Je sens une étrange puissance dans mon corps...";
+            eng4 = "[fnt_pixel]Je crois qu'il faut que je sorte d'ici.";
+
+            #endregion
             break;
-        case 10: //french
-            break;
-        case 11: // Italian
+        case 10: // Italian
             #region eng
 
             eng1 = "[fnt_pixel]Do… Dove sono?";
@@ -276,6 +491,12 @@ function fnc_lng_t2_end1(){
             #endregion
             break;
         case 2: //spanish
+            #region eng
+
+            eng1 = "[fnt_pixel]Hmm... Es algo a lo que te puedes acostumbrar. ¿Qué demonios está pasando en este templo?";
+            eng2 = "[fnt_pixel]Y aún no he encontrado ni un solo miembro para mi equipo. ¿Qué debo hacer ahora?";
+
+            #endregion
             break;
         case 3: //chinese
             #region eng
@@ -286,20 +507,54 @@ function fnc_lng_t2_end1(){
             #endregion
             break;
         case 4: //portug
+            #region eng
+
+            eng1 = "[fnt_pixel]Hmm... Isso é algo a que te podes habituar. Mas que raio se está a passar neste templo?";
+            eng2 = "[fnt_pixel]E ainda não encontrei um único membro para a minha equipa. O que devo fazer a seguir?";
+
+            #endregion
             break;
         case 5: //brazil
+            #region eng
+
+            eng1 = "[fnt_pixel]hmm... Isso é algo com o qual você pode se acostumar. Mas o que diabos está acontecendo neste templo?";
+            eng2 = "[fnt_pixel]E ainda não encontrei nenhum membro para minha equipe. O que eu devo fazer agora?";
+
+            #endregion
             break;
         case 6: //polish
+            #region eng
+
+            eng1 = "[fnt_pixel]hmm ... Do tego można się przyzwyczaić. Ale co do cholery dzieje się w tej świątyni?";
+            eng2 = "[fnt_pixel]Wciąż nie znalazłem ani jednego członka do mojej drużyny. Co mam robić dalej?";
+
+            #endregion
             break;
-        case 7: //turkey
+        case 7: //japanese
+            #region eng
+
+            eng1 = "[fnt_pixel]うーん... それは慣れるしかない。この寺は一体どうなってる？";
+            eng2 = "[fnt_pixel]それにまだチームのメンバーが一人もいない。どうすればいい？";
+
+            #endregion
             break;
-        case 8: //japanese
+        case 8: //deutch
+            #region eng
+
+            eng1 = "[fnt_pixel]hmm ... Daran kann man sich gewöhnen. Aber was zum Teufel ist in diesem Tempel los?";
+            eng2 = "[fnt_pixel]Und ich habe immer noch kein einziges Mitglied für meine Mannschaft gefunden. Was soll ich als Nächstes tun?";
+
+            #endregion
             break;
-        case 9: //deutch
+        case 9: //french
+            #region eng
+
+            eng1 = "[fnt_pixel]hmm ... C'est une chose à laquelle on peut s'habituer. Mais que diable se passe-t-il dans ce temple ?";
+            eng2 = "[fnt_pixel]Et je n'ai toujours pas trouvé un seul membre pour mon équipe. Que dois-je faire ensuite ?";
+
+            #endregion
             break;
-        case 10: //french
-            break;
-        case 11: //Italian
+        case 10: //Italian
             #region eng
 
             eng1 = "[fnt_pixel]Questo è qualcosa a cui puoi abituarti. Ma cosa diavolo sta succedendo in questo tempio?";
@@ -319,8 +574,8 @@ function fnc_lng_t2_end2(){
             eng1 =  "[fnt_pixel]I can help you with that!";
             eng2 =  "[fnt_pixel]Hello! You must have a lot of questions, like, Who was that strange man jumping out of the bush at me?";
             eng3 =  "[fnt_pixel]Whoa, put the rapier away, Captain, I'm not dangerous at all. He he.";
-            eng4 =  "[fnt_pixel]Let me introduce myself, Captain, my name is... it doesn't matter what my name is, I'm just a humble owner of a trinket store."
-            eng5 =  "[fnt_pixel]I'm sure you have a lot of questions. But not all at once, captain. The hen takes it one day at a time. First, I'll tell you what to do next.";;
+            eng4 =  "[fnt_pixel]Let me introduce myself, Captain. I'm just a humble owner of a trinket store doing his job and minding no one's business."
+            eng5 =  "[fnt_pixel]I'm sure you have a lot of questions, but not all at once, Captain. The hen takes it one day at a time. First, I'll tell you what to do next.";
             eng6 =  "[fnt_pixel]Maybe you can still find your crew. I don't know exactly what happened to them, but that's just the job for you, right?";
             eng7 =  "[fnt_pixel]My friend, captain, to continue your search, you need to get to the next island. I do not recommend that you cross the sea by swimming, it might not be wise.";
             eng8 =  "[fnt_pixel]I can help you with that, captain. We are friends now, aren't we? I give you this boat. You may sail to the next island without too much trouble.";
@@ -344,6 +599,19 @@ function fnc_lng_t2_end2(){
             #endregion
             break;
         case 2: //spanish
+            #region rus
+
+            eng1 =  "[fnt_pixel]¡Puedo ayudarte con eso!";
+            eng2 =  "[fnt_pixel]¡Hola! Debes tener montones de preguntas, como, ¿quién era ese hombre extraño que saltaba del arbusto?";
+            eng3 =  "[fnt_pixel]Ahórrate el estoque, Capitán, no soy peligroso en absoluto. Je je.";
+            eng4 =  "[fnt_pixel]Déjame presentarme, Capitán. Mi nombre es... No importa cómo me llame, sólo soy el humilde propietario de una tienda de baratijas."
+            eng5 =  "[fnt_pixel]Seguro que tienes muchas preguntas, pero no todas a la vez, Capitán. La gallina lo toma un día a la vez. Primero, le diré qué hacer a continuación.";
+            eng6 =  "[fnt_pixel]Quizás aún puedas encontrar a tu tripulación. No sé exactamente lo que les pasó, pero ese es el trabajo para ti, ¿verdad?";
+            eng7 =  "[fnt_pixel]Mi capitán, para continuar tu búsqueda necesitas llegar a la siguiente isla. No te recomiendo que cruces el mar a nado, puede no ser lo más prudente.";
+            eng8 =  "[fnt_pixel]Puedo ayudarte con eso, Capitán. Ahora somos amigos, ¿no? Te doy este barco. Puedes navegar hasta la siguiente isla sin demasiados problemas.";
+            eng9 =  "[fnt_pixel]¡Buena suerte en tu travesía! Nos volveremos a ver, y no olvides pasar por mi tienda.";
+
+            #endregion
             break;
         case 3: //chinese
             #region eng
@@ -351,7 +619,7 @@ function fnc_lng_t2_end2(){
             eng1 =  "[fnt_pixel]我可以帮你!";
             eng2 =  "[fnt_pixel]你好! 你一定有很多问题. 例如, 那个从灌木丛中向我扑来的陌生人是谁? at me?";
             eng3 =  "[fnt_pixel]喂, 收起细剑, 舰长! 我一点都不危险. 哈哈";
-            eng4 =  "[fnt_pixel]我想自我介绍一下, 船长. 我叫… 其实我叫什么并不重要. 我只是一个不起眼的小饰品店老板.";
+            eng4 =  "[fnt_pixel]让我自我介绍一下, 船长. 我只是一家小饰品店的谦虚老板, 做着我的工作, 安静地坐着.";
             eng5 =  "[fnt_pixel]我相信你有很多问题, 但我们不应该着急, 船长. 首先, 我会告诉你下一步是什么.";
             eng6 =  "[fnt_pixel]也许你还能找到你的船员. 我不知道他们究竟发生了什么, 但这听起来对你来说是一份完美的工作, 对吧?";
             eng7 =  "[fnt_pixel]船长, 你需要前往附近的岛屿继续搜索. 如果你决定渡海游泳是不明智的.";
@@ -361,26 +629,102 @@ function fnc_lng_t2_end2(){
             #endregion
             break;
         case 4: //portug
+            #region rus
+
+            eng1 =  "[fnt_pixel]Posso ajudá-lo nisso!";
+            eng2 =  "[fnt_pixel]Olá! Deves ter muitas perguntas, tipo, quem era aquele homem estranho a saltar-me do mato?";
+            eng3 =  "[fnt_pixel]Guarda a rapieira, Capitão, não sou nada perigoso. He he.";
+            eng4 =  "[fnt_pixel]Deixe-me apresentar-me, Capitão. O meu nome é... Não importa qual é o meu nome, sou apenas um humilde dono de uma loja de bugigangas."
+            eng5 =  "[fnt_pixel]Tenho a certeza que tens muitas perguntas, mas não todas de uma vez, Capitão. A galinha choca ovo uma vez por dia. Primeiro, digo-te o que fazer a seguir.";
+            eng6 =  "[fnt_pixel]Talvez ainda possa encontrar a tua tripulação. Não sei exatamente o que lhes aconteceu, mas é um trabalho para ti, certo?";
+            eng7 =  "[fnt_pixel]Meu capitão, para continuar a tua busca, precisas chegar à próxima ilha. Não recomendo que atravesses o mar a nado, talvez não seja sensato.";
+            eng8 =  "[fnt_pixel]Posso ajudar-te com isso, Capitão. Agora somos amigos, não somos? Eu te dou este barco. Podes navegar para a próxima ilha sem muitos problemas.";
+            eng9 =  "[fnt_pixel]Boa sorte na sua viagem! Vamos encontrar-nos outra vez, e não te esqueças de passar na minha loja.";
+
+            #endregion
             break;
         case 5: //brazil
+            #region rus
+
+            eng1 =  "[fnt_pixel]Eu posso ajudar com isso!";
+            eng2 =  "[fnt_pixel]Olá! Você deve ter muitas perguntas, como, quem era aquele homem estranho pulando em mim do meio do mato?";
+            eng3 =  "[fnt_pixel]Opa, guarde o florete, capitão, não sou nada perigoso. kkkk.";
+            eng4 =  "[fnt_pixel]Deixe-me apresentar, capitão. Meu nome é... Não importa o meu nome, sou apenas um humilde dono de uma loja de bugigangas."
+            eng5 =  "[fnt_pixel]Tenho certeza que você tem muitas perguntas, mas não todas de uma vez, capitão. A galinha bota ovo uma vez por dia. Primeiro, vou dizer o que fazer a seguir.";
+            eng6 =  "[fnt_pixel]Talvez você ainda consiga encontrar sua tripulação. Não sei exatamente o que aconteceu com eles, mas esse é o trabalho para você, certo?";
+            eng7 =  "[fnt_pixel]Meu capitão, para continuar sua busca, você precisa chegar à próxima ilha. Eu não recomendo que você atravesse o mar nadando, não parece ser sensato.";
+            eng8 =  "[fnt_pixel]Posso ajudar com isso, capitão. Somos amigos agora, não somos? Eu te dou este barco. Você pode navegar até a próxima ilha sem muitos problemas.";
+            eng9 =  "[fnt_pixel]Boa sorte na sua jornada! Com certeza nos encontraremos novamente e não se esqueça de passar na minha loja.";
+
+            #endregion
             break;
         case 6: //polish
+            #region rus
+
+            eng1 =  "[fnt_pixel]Mogę ci pomóc!";
+            eng2 =  "[fnt_pixel]Witam! Pewnie masz mnóstwo pytań, na przykład, kim był ten dziwny człowiek wyskakujący z krzaków?";
+            eng3 =  "[fnt_pixel]Ło, odłóż to, kapitanie. Ja wcale nie jestem groźny. He he.";
+            eng4 =  "[fnt_pixel]Pozwól, że się przedstawię, kapitanie. Nazywam się... Nieważne jak się nazywam, jestem tylko skromnym właścicielem sklepu z drobiazgami."
+            eng5 =  "[fnt_pixel]Na pewno masz wiele pytań, ale nie wszystkie naraz, kapitanie. Najpierw powiem, co powinieneś zrobić dalej.";
+            eng6 =  "[fnt_pixel]Może uda ci się jeszcze odnaleźć swoją załogę. Nie wiem dokładnie, co się z nimi stało, ale to zadanie akurat, jest dla ciebie, prawda?";
+            eng7 =  "[fnt_pixel]Mój kapitanie, aby kontynuować poszukiwania musisz dostać się na następną wyspę. Nie polecam jednak, przeprawiać się przez morze wpływ.";
+            eng8 =  "[fnt_pixel]Mogę ci w tym pomóc, kapitanie. Jesteśmy teraz przyjaciółmi, prawda? Daję ci tę łódź. Możecie nią dopłynąć do następnej wyspy bez większych problemów.";
+            eng9 =  "[fnt_pixel]Powodzenia w podróży! Na pewno się jeszcze spotkamy i nie zapomnij odwiedzić mojego sklepu.";
+
+            #endregion
             break;
-        case 7: //turkey
+        case 7: //japanese
+            #region rus
+
+            eng1 =  "[fnt_pixel]私が手伝ってあげよう！";
+            eng2 =  "[fnt_pixel]やあ！聞きたいことがたくさんあるだろう、例えば、茂みから飛び出してきた変な男は誰か？";
+            eng3 =  "[fnt_pixel]おっと、レイピアをしまえ、船長、私は全く危険ではない。はは。";
+            eng4 =  "[fnt_pixel]自己紹介させてくれ、船長。私の名前は... 名前なんてどうでもいい。ただの小間物屋の店主だ。"
+            eng5 =  "[fnt_pixel]聞きたいことは山ほどあるだろうが、一つづつだ、船長。雌鳥は一日一日を大切にする。まず、次にすることを教えてあげよう。";
+            eng6 =  "[fnt_pixel]まだクルーが見つかるかもしれない。彼らに何が起こったか正確にはわからないが、君の仕事だろう？";
+            eng7 =  "[fnt_pixel]船長、捜索を続けるには次の島へ行く必要がある。泳いで海を渡るのはお勧めしない、賢くはない。";
+            eng8 =  "[fnt_pixel]私がお手伝いしよう、船長。もう友達でしょう？この船を君にあげる。次の島まで、それほど苦労せずに航海できるだろう。";
+            eng9 =  "[fnt_pixel]旅の幸運を祈る！また必ず会おう。そして、私の店に立ち寄るのを忘れないでくれ。";
+
+            #endregion
             break;
-        case 8: //japanese
+        case 8: //deutch
+            #region rus
+
+            eng1 =  "[fnt_pixel]Da kann ich dir helfen!";
+            eng2 =  "[fnt_pixel]Hallo! Du hast bestimmt eine Menge Fragen, zum Beispiel: Wer war der seltsame Mann, der mich aus dem Busch ansprang?";
+            eng3 =  "[fnt_pixel]Leg den Degen weg, Kapitän, ich bin überhaupt nicht gefährlich. He he.";
+            eng4 =  "[fnt_pixel]Darf ich mich vorstellen, Hauptmann? Mein Name ist... Ach egal, wie ich heiße, ich bin nur ein bescheidener Besitzer eines Schmuckladens."
+            eng5 =  "[fnt_pixel]Ich bin sicher, du hast viele Fragen, aber nicht alle auf einmal, Kapitän. Die Henne geht einen Tag nach dem anderen an. Zuerst werde ich dir sagen, was du als Nächstes tun sollst.";
+            eng6 =  "[fnt_pixel]Vielleicht kannst du deine Mannschaft noch finden. Ich weiß nicht genau, was mit ihnen passiert ist, aber das ist doch deine Aufgabe, oder?";
+            eng7 =  "[fnt_pixel]Kapitän, um deine Suche fortzusetzen, musst du zur nächsten Insel gelangen. Ich empfehle dir, das Meer nicht schwimmend zu überqueren, das wäre vielleicht nicht so klug.";
+            eng8 =  "[fnt_pixel]Ich kann dir dabei helfen, Kapitän. Wir sind doch jetzt Freunde, nicht wahr? Ich gebe dir dieses Boot. So kannst du ohne große Probleme zur nächsten Insel fahren.";
+            eng9 =  "[fnt_pixel]Viel Glück auf deiner Reise! Wir werden uns bestimmt wiedersehen, und vergiss nicht, in meinem Laden vorbeizuschauen.";
+
+            #endregion
             break;
-        case 9: //deutch
+        case 9: //french
+            #region rus
+
+            eng1 =  "[fnt_pixel]Je peux vous aider à le faire !";
+            eng2 =  "[fnt_pixel]Bonjour ! Vous devez avoir beaucoup de questions, comme, qui était cet homme étrange qui m'a sauté dessus depuis le buisson ?";
+            eng3 =  "[fnt_pixel]Whoa, rangez votre rapière, Capitaine, je ne suis pas du tout dangereux. He he.";
+            eng4 =  "[fnt_pixel]Laissez-moi me présenter, capitaine. Mon nom est... Peu importe mon nom, je suis juste l'humble propriétaire d'un magasin de bibelots."
+            eng5 =  "[fnt_pixel]Je suis sûr que vous avez beaucoup de questions, mais pas toutes en même temps, capitaine. La poule prend les choses un jour après l'autre. D'abord, je vais vous dire ce qu'il faut faire ensuite.";
+            eng6 =  "[fnt_pixel]Peut-être que vous pouvez encore trouver votre équipage. Je ne sais pas exactement ce qui leur est arrivé, mais c'est un travail pour vous, non ?";
+            eng7 =  "[fnt_pixel]Mon capitaine, pour continuer vos recherches, vous devez vous rendre sur la prochaine île. Je ne vous recommande pas de traverser la mer à la nage, ce n'est peut-être pas prudent.";
+            eng8 =  "[fnt_pixel]Je peux vous aider, Capitaine. Nous sommes amis maintenant, n'est-ce pas ? Je vous donne ce bateau. Vous pourrez naviguer jusqu'à la prochaine île sans trop de problèmes.";
+            eng9 =  "[fnt_pixel]Bonne chance dans votre voyage ! Nous nous reverrons certainement, et n'oubliez pas de vous arrêter dans ma boutique.";
+
+            #endregion
             break;
-        case 10: //french
-            break;
-        case 11: //Italian
+        case 10: //Italian
             #region eng
 
             eng1 =  "[fnt_pixel]Ti posso aiutare con quello!";
             eng2 =  "[fnt_pixel]Ciao! Devi avere molte domande; per esempio: chi era quello strano uomo che saltava fuori dal cespuglio verso di me?";
             eng3 =  "[fnt_pixel]Ehi, metti via lo stocco, Capitano! Non sono affatto pericoloso. Ah ah";
-            eng4 =  "[fnt_pixel]Vorrei presentarmi, Capitano. Mi chiamo... Non importa come mi chiamo. Sono solo un umile proprietario di un negozio di ninnoli."
+            eng4 =  "[fnt_pixel]Mi presento, Capitano. Sono solo un umile proprietario di un negozio di ninnoli che fa il suo lavoro e non si fa gli affari di nessuno."
             eng5 =  "[fnt_pixel]Sono sicuro che hai molte domande, ma non tutte in una volta, Capitano. Per prima cosa, ti dirò quali sono i tuoi prossimi passi.";
             eng6 =  "[fnt_pixel]Forse riesci ancora a trovare i tuoi compagni. Non so esattamente cosa sia successo loro, ma questo sembra un lavoro perfetto per te, vero?";
             eng7 =  "[fnt_pixel]Mio capitano, per continuare la tua ricerca devi raggiungere l'isola successiva. Non ti consiglio di attraversare il mare a nuoto: potrebbe non essere saggio.";
@@ -410,6 +754,11 @@ function fnc_lng_jnpc1_1(){
             #endregion
             break;
         case 2: //spanish
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Si eres un forastero, habla con el Jefe.","[fnt_pixel]Es nuestra tradición que primero te presenten al Jefe.");
+
+            #endregion
             break;
         case 3: //chinese
             #region eng
@@ -419,20 +768,48 @@ function fnc_lng_jnpc1_1(){
             #endregion
             break;
         case 4: //portug
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Um estranho, fala com o Chefe.","[fnt_pixel]É nossa tradição que primeiro deves ser apresentado ao Chefe.");
+
+            #endregion
             break;
         case 5: //brazil
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Um estranho, fale com o Chefe.","[fnt_pixel]É tradição nossa que primeiro você seja apresentado ao Chefe.");
+
+            #endregion
             break;
         case 6: //polish
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Nieznajomy, porozmawiaj z szefem.","[fnt_pixel]Zgodnie z naszą tradycją, najpierw należy przedstawić się Wodzowi.");
+
+            #endregion
             break;
-        case 7: //turkey
+        case 7: //japanese
+            #region eng
+
+            eng1 = choose("[fnt_pixel]見知らぬ人、チーフと話すんだ。","[fnt_pixel]チーフに紹介するのが我々の伝統だ。");
+
+            #endregion
             break;
-        case 8: //japanese
+        case 8: //deutch
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Ein Fremder, sprich mit dem Häupling","[fnt_pixel]Es ist unsere Tradition, dass du zuerst dem Häupling vorgestellt werden musst.");
+
+            #endregion
             break;
-        case 9: //deutch
+        case 9: //french
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Un étranger, parlez au Chef.","[fnt_pixel]Notre tradition veut que vous soyez d'abord présenté au Chef.");
+
+            #endregion
             break;
-        case 10: //french
-            break;
-        case 11: //Italian
+        case 10: //Italian
             #region eng
 
             eng1 = choose("[fnt_pixel]Uno sconosciuto, parla con il Capo.","[fnt_pixel]È nostra tradizione che tu debba prima essere presentato al Capo.");
@@ -460,6 +837,11 @@ function fnc_lng_jnpc1_2(){
             #endregion
             break;
         case 2: //spanish
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Hemos creado un cañón especial. Revísalo después de hacerte con una de las llaves.","[fnt_pixel]Revisa las paredes con cuidado, algunas son frágiles. Puede haber algo escondido tras ellas.");
+
+            #endregion
             break;
         case 3: //chinese
             #region eng
@@ -469,20 +851,48 @@ function fnc_lng_jnpc1_2(){
             #endregion
             break;
         case 4: //portug
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Criámos um canhão especial! Verifica depois de teres recebido uma das chaves.","[fnt_pixel]Verifica cuidadosamente as paredes, algumas são frágeis. Pode haver algo escondido atrás delas.");
+
+            #endregion
             break;
         case 5: //brazil
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Criamos um canhão especial! Confira depois de obter uma das chaves.","[fnt_pixel]Verifique as paredes com cuidado, algumas delas são frágeis. Pode haver algo escondido atrás.");
+
+            #endregion
             break;
         case 6: //polish
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Stworzyliśmy specjalne działo! Sprawdź ją po zdobyciu jednego z kluczy. ","[fnt_pixel]Sprawdź dokładnie ściany, niektóre z nich są kruche. Może się za nimi coś kryć.");
+
+            #endregion
             break;
-        case 7: //turkey
+        case 7: //japanese
+            #region eng
+
+            eng1 = choose("[fnt_pixel]特別な大砲を作った！鍵の1つを手に入れたら、確認してみるんだ。","[fnt_pixel]壁をよく見て、中には壊れやすいものも。何か隠れているかもしれない。");
+
+            #endregion
             break;
-        case 8: //japanese
+        case 8: //deutch
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Wir haben eine besondere Kanone gebaut! Überprüfe sie, nachdem du einen der Schlüssel erhalten hast.","[fnt_pixel]Sieh dir die Wände genau an, einige von ihnen sind brüchig. Es könnte sich etwas dahinter verstecken.");
+
+            #endregion
             break;
-        case 9: //deutch
+        case 9: //french
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Nous avons créé un canon spécial ! Vérifiez-le après avoir obtenu une des clés.","[fnt_pixel]Vérifiez attentivement les murs, certains d'entre eux sont fragiles. Il y a peut-être quelque chose qui se cache derrière.");
+
+            #endregion
             break;
-        case 10: //french
-            break;
-        case 11: // Italian
+        case 10: // Italian
             #region eng
 
             eng1 = choose("[fnt_pixel]Abbiamo creato un cannone unico! Fai un tentativo dopo aver ottenuto una delle chiavi.","[fnt_pixel]Controlla attentamente le pareti: alcune sono fragili. Potrebbe esserci qualcosa che si nasconde dietro di loro.");
@@ -510,6 +920,11 @@ function fnc_lng_jnpc2_1(){
             #endregion
             break;
         case 2: //spanish
+            #region eng
+
+            eng1 = choose("[fnt_pixel]No hagas esperar al Jefe.","[fnt_pixel]¿Por qué sigues aquí? La casa del Jefe está por allí.");
+
+            #endregion
             break;
         case 3: //chinese
             #region eng
@@ -519,20 +934,48 @@ function fnc_lng_jnpc2_1(){
             #endregion
             break;
         case 4: //portug
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Não deixes o chefe a esperar.","[fnt_pixel]Por que ainda estás aqui? A casa do chefe é ali.");
+
+            #endregion
             break;
         case 5: //brazil
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Não deixe o chefe esperando.","[fnt_pixel]Por que você ainda esta aqui? A casa do chefe é ali.");
+
+            #endregion
             break;
         case 6: //polish
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Nie każ szefowi czekać.","[fnt_pixel]Dlaczego wciąż tu jesteś? Dom szefa jest tam.");
+
+            #endregion
             break;
-        case 7: //turkey
+        case 7: //japanese
+            #region eng
+
+            eng1 = choose("[fnt_pixel]チーフを待たせたらだめだ。","[fnt_pixel]なんでまだここに？酋チーフの家はあそこだ。");
+
+            #endregion
             break;
-        case 8: //japanese
+        case 8: //deutch
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Lass den Häupling nicht warten.","[fnt_pixel]Warum bist du noch hier? Das Haus des Häuplings ist da drüben..");
+
+            #endregion
             break;
-        case 9: //deutch
+        case 9: //french
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Ne faites pas attendre le chef.","[fnt_pixel]Pourquoi êtes-vous encore là ? La maison du chef est là-bas.");
+
+            #endregion
             break;
-        case 10: //french
-            break;
-        case 11: // Italian
+        case 10: // Italian
             #region eng
 
             eng1 = choose("[fnt_pixel]Non far aspettare il Capo.","[fnt_pixel]Cosa ci fai ancora qui? La casa del capo è lì.");
@@ -617,6 +1060,15 @@ function fnc_lng_jchief1(){
             #endregion
             break;
         case 2: //spanish
+            #region eng
+
+            eng1 =  "[fnt_pixel]¡Saludos, forastero! Soy el jefe de este asentamiento de nativos. Sé que estás cansado y hambriento, pero no hay tiempo para descansar. Quieres salvar a tu tripulación, ¿verdad?";
+            eng2 =  "[fnt_pixel]No será fácil, pero si dejas a un lado el miedo y la codicia, podrás hacerlo. Los miembros de tu equipo están encerrados en templos malditos, pero no es fácil entrar.";
+            eng3 =  "[fnt_pixel]Necesitarás llaves para abrir las puertas de estos templos. Nuestro inventor local tiene un regalo para ti que te ayudará a encontrar las llaves.";
+            eng4 =  "[fnt_pixel]Te está esperando fuera. Asegúrate de hablar con él.";
+            eng5 =  "[fnt_pixel]Espero que encuentres a tu equipo con buena salud. No dejes de visitar la tienda de baratijas, tal vez encuentres algo para ti allí.";
+
+            #endregion
             break;
         case 3: //chinese
             #region eng
@@ -630,20 +1082,72 @@ function fnc_lng_jchief1(){
             #endregion
             break;
         case 4: //portug
+            #region eng
+
+            eng1 =  "[fnt_pixel]Saudações, estranho! Sou o chefe deste povoado de nativos. Sei que estás cansado e com fome, mas não há tempo para descansar. Queres salvar a tua tripulação, não quer?";
+            eng2 =  "[fnt_pixel]Não vai ser fácil, mas se venceres o medo e a ganância, podes conseguir. Os membros da tua equipa estão presos em templos amaldiçoados, mas não é fácil entrar.";
+            eng3 =  "[fnt_pixel]Vais precisar de chaves para abrir as portas destes templos. O nosso inventor local tem um dom para te ajudar a encontrar as chaves.";
+            eng4 =  "[fnt_pixel]Ele está à tua espera lá fora. Não te esqueças de falar com ele.";
+            eng5 =  "[fnt_pixel]Espero que encontre a sua equipa de boa saúde. Certifica-te de verificar a loja de bugigangas, talvez encontre algo para ti mesmo.";
+
+            #endregion
             break;
         case 5: //brazil
+            #region eng
+
+            eng1 =  "[fnt_pixel]Saudações, estranho! Eu sou o chefe deste assentamento de nativos. Eu sei que você está cansado e com fome, mas não há tempo para descansar. Você quer salvar sua tripulação, não é?";
+            eng2 =  "[fnt_pixel]Não será fácil, mas se você deixar de lado o medo e a ganância, vai conseguir. Os membros de sua equipe estão trancados em templos amaldiçoados, mas não é fácil entrar.";
+            eng3 =  "[fnt_pixel]Você vai precisar de chaves para destrancar as portas desses templos. Nosso inventor local tem um presente para te ajudar a encontrar as chaves.";
+            eng4 =  "[fnt_pixel]Ele está esperando por você lá fora. Certifique-se de falar com ele.";
+            eng5 =  "[fnt_pixel]Espero que você encontre sua equipe e que todos estejam bem. Certifique-se de verificar a loja de bugigangas, talvez você encontre algo para você lá.";
+
+            #endregion
             break;
         case 6: //polish
+            #region eng
+
+            eng1 =  "[fnt_pixel]Witaj, nieznajomy! Jestem wodzem tej osady. Wiem, że jesteś zmęczony i głodny, ale to nie czas na odpoczynek. Chcesz uratować swoją załogę, prawda?";
+            eng2 =  "[fnt_pixel]Członkowie twojej drużyny są zamknięci w przeklętych świątyniach, ciężko się tam dostać. Jeśli jednak wyzbędziesz się strachu i chciwości, to naprawdę możesz to zrobić.";
+            eng3 =  "[fnt_pixel]Będziesz potrzebował kluczy, aby odblokować drzwi tych świątyń. Nasz lokalny wynalazca ma dla ciebie prezent, który pomoże ci znaleźć klucze.";
+            eng4 =  "[fnt_pixel]On czeka na Ciebie na zewnątrz. Koniecznie porozmawiajcie z nim.";
+            eng5 =  "[fnt_pixel]Mam nadzieję, że znajdziecie swoją drużynę całą i zdrową. Koniecznie zajrzyj do sklepu z drobiazgami, może znajdziesz tam coś dla siebie.";
+
+            #endregion
             break;
-        case 7: //turkey
+        case 7: //japanese
+            #region eng
+
+            eng1 =  "[fnt_pixel]やあ、見知らぬ者よ！私はこの原住民の集落の長だ。疲れと空腹は分かるが、休んでいる暇はない。仲間を救いたいんだろう？";
+            eng2 =  "[fnt_pixel]簡単にはいかないが、恐怖と欲を捨てれば、できるはずだ。メンバーは呪われた神殿に閉じ込められているが、そこに入るのは簡単ではない。";
+            eng3 =  "[fnt_pixel]この寺院の扉を開けるには鍵が必要だ。その鍵を見つけるために、地元の発明家が君に贈り物を持っている。";
+            eng4 =  "[fnt_pixel]彼は外で君を待っている。必ず彼に話しかけるんだ。";
+            eng5 =  "[fnt_pixel]君のチームが元気であることを祈っている。小物屋さんも覗いてみるんだ、何か見つかるかもしれない。";
+
+            #endregion
             break;
-        case 8: //japanese
+        case 8: //deutch
+            #region eng
+
+            eng1 =  "[fnt_pixel]Sei gegrüßt, Fremder! Ich bin der Häuptling dieser Siedlung von Eingeborenen. Ich weiß, dass du müde und hungrig bist, aber es ist keine Zeit zum Ausruhen. Du willst deine Mannschaft retten, stimmt's?";
+            eng2 =  "[fnt_pixel]Das wird nicht leicht sein, aber wenn du Angst und Gier beiseite lässt, kannst du es schaffen. Die Mitglieder deiner Mannschaft sind in verfluchten Tempeln eingesperrt, aber es ist nicht leicht, hineinzukommen.";
+            eng3 =  "[fnt_pixel]Du brauchst Schlüssel, um die Türen zu diesen Tempeln aufzuschließen. Unser örtlicher Tüftler hat ein Geschenk für dich, das dir helfen wird, die Schlüssel zu finden.";
+            eng4 =  "[fnt_pixel]Er wartet draußen auf dich. Rede unbedingt mit ihm.";
+            eng5 =  "[fnt_pixel]Ich hoffe, du findest deine Mannschaft bei guter Gesundheit vor. Schau auf jeden Fall im Kramladen vorbei, vielleicht findest du dort etwas für dich.";
+
+            #endregion
             break;
-        case 9: //deutch
+        case 9: //french
+            #region eng
+
+            eng1 =  "[fnt_pixel]Salutations, étranger ! Je suis le chef de cette colonie d'indigènes. Je sais que vous êtes fatigué et affamé, mais vous n'avez pas le temps de vous reposer. Vous voulez sauver votre équipage, n'est-ce pas ?";
+            eng2 =  "[fnt_pixel]Ce ne sera pas facile, mais si vous mettez de côté la peur et l'avidité, vous pouvez le faire. Les membres de votre équipe sont enfermés dans des temples maudits, mais il n'est pas facile d'y entrer.";
+            eng3 =  "[fnt_pixel]Vous aurez besoin de clés pour déverrouiller les portes de ces temples. Notre inventeur local a un cadeau pour vous qui vous aidera à trouver les clés.";
+            eng4 =  "[fnt_pixel]Il vous attend dehors. N'oubliez pas de lui parler.";
+            eng5 =  "[fnt_pixel]J'espère que vous trouverez votre équipe en bonne santé. N'oubliez pas de faire un tour au magasin de babioles, vous y trouverez peut-être quelque chose pour vous.";
+
+            #endregion
             break;
-        case 10: //french
-            break;
-        case 11: // Italian
+        case 10: // Italian
             #region eng
 
             eng1 =  "[fnt_pixel]Saluti, straniero! Sono il capo di questo insediamento di indigeni. So che devi essere affamato ed esausto, ma non c'è tempo per riposare. Vuoi salvare il tuo equipaggio, vero?";
@@ -674,6 +1178,11 @@ function fnc_lng_jchief2(){
             #endregion
             break;
         case 2: //spanish
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Buena suerte en la búsqueda de tu equipo.","[fnt_pixel]No olvides visitar al mercader más a menudo.");
+
+            #endregion
             break;
         case 3: //chinese
             #region eng
@@ -683,20 +1192,48 @@ function fnc_lng_jchief2(){
             #endregion
             break;
         case 4: //portug
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Boa sorte em encontrar a tua equipa!","[fnt_pixel]Não te esqueças de visitar o comerciante mais vezes.");
+
+            #endregion
             break;
         case 5: //brazil
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Boa sorte em encontrar sua equipe!!","[fnt_pixel]Não se esqueça de visitar o comerciante com mais frequência.");
+
+            #endregion
             break;
         case 6: //polish
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Powodzenia w poszukiwaniu swojej drużyny!","[fnt_pixel]Nie zapomnijcie, aby częściej odwiedzać kupca.");
+
+            #endregion
             break;
-        case 7: //turkey
+        case 7: //japanese
+            #region eng
+
+            eng1 = choose("[fnt_pixel]チーム探しに幸運を！","[fnt_pixel]また、商人に会いに来てね。");
+
+            #endregion
             break;
-        case 8: //japanese
+        case 8: //deutch
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Viel Glück bei der Suche nach deiner Mannschaft!","[fnt_pixel]Vergiss nicht, öfter den Händler aufzusuchen.");
+
+            #endregion
             break;
-        case 9: //deutch
+        case 9: //french
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Bonne chance pour trouver votre équipe !","[fnt_pixel]N'oubliez pas de visiter le marchand plus souvent.");
+
+            #endregion
             break;
-        case 10: //french
-            break;
-        case 11: // Italian
+        case 10: // Italian
             #region eng
 
             eng1 = choose("[fnt_pixel]Buona fortuna con la ricerca del tuo equipaggio!","[fnt_pixel]Non dimenticare di visitare il commerciante più spesso.");
@@ -715,7 +1252,7 @@ function fnc_lng_jv_cmt1(){
             eng2 = "[fnt_pixel]I'm a local inventor-enthusiast. I invent, build and test all sorts of devices. There's not much to do on the island after all.";
             eng3 = "[fnt_pixel]In fact, I'm the man who makes his dreams come true. That's why they call me - Com Trues.";
             eng4 = "[fnt_pixel]This is a new invention I've been working on a lot lately - [wave]spring boots[/wave]. It hasn't been tested yet, so I'll let you try it out temporarily.";
-            eng5 = "[fnt_pixel]By the way, I've built a proving ground not far from here, specifically for these boots. Would you like to go there? You'll get a nice little surprise at the end.";
+            eng5 = "[fnt_pixel]By the way, I've built a testing ground not far from here, specifically for these boots. Would you like to go there? You'll get a nice little surprise at the end.";
 
             #endregion
             break;
@@ -733,6 +1270,14 @@ function fnc_lng_jv_cmt1(){
             #endregion
             break;
         case 2: //spanish
+            #region  ENG text
+            eng1 = "[fnt_pixel][wave]¡Hola![/wave]¡Cuánto me alegra ver caras nuevas en este pueblo!";
+            eng2 = "[fnt_pixel]Soy un inventor-entusiasta local. Invento, construyo y pruebo todo tipo de artefactos. Después de todo, no hay mucho que hacer en la isla.";
+            eng3 = "[fnt_pixel]De hecho, soy el hombre que hace realidad sus sueños. Por eso me llaman - Com Trues.";
+            eng4 = "[fnt_pixel]Este es un nuevo invento en el que he estado trabajando mucho últimamente - [wave]botas de primavera[/wave]. Aún no ha sido probado, así que te dejaré probarlo temporalmente.";
+            eng5 = "[fnt_pixel]Por cierto, he construido un campo de pruebas no muy lejos de aquí, especialmente para estas botas. ¿Te gustaría ir allí? Te llevarás una agradable sorpresa al final.";
+
+            #endregion
             break;
         case 3: //chinese
             #region  СN text
@@ -745,20 +1290,66 @@ function fnc_lng_jv_cmt1(){
             #endregion
             break;
         case 4: //portug
+            #region  ENG text
+            eng1 = "[fnt_pixel][wave]Saudações![/wave] Como estou feliz por ver caras novas nesta aldeia!";
+            eng2 = "[fnt_pixel]Sou um inventor local entusiasta. Invento, construo e testei todo o tipo de dispositivos. Afinal, não há muito o que fazer na ilha.";
+            eng3 = "[fnt_pixel]Na verdade, sou o homem que transforma sonhos em realidade. É por isso que me chamam Reali Dadis.";
+            eng4 = "[fnt_pixel]Esta é uma nova invenção em que tenho trabalhado muito ultimamente - [wave]sd botas de mola[/wave]. Ainda não foram testadas, por isso vou deixar-te experimentar temporariamente.";
+            eng5 = "[fnt_pixel]A propósito, construí um campo de provas não muito longe daqui, especificamente para estas botas. Gostarias de ir lá? Vais ter uma bela surpresa no final.";
+
+            #endregion
             break;
         case 5: //brazil
+            #region  ENG text
+            eng1 = "[fnt_pixel][wave]Saudações![/wave] Fico muito feliz em ver caras novas nesta aldeia!";
+            eng2 = "[fnt_pixel]Sou um inventor-entusiasta daqui. Eu invento, construo e testo todos os tipos de dispositivos. Afinal de contas, não há muito o que fazer na ilha.";
+            eng3 = "[fnt_pixel]Na verdade, sou o homem que transforma sonhos em realidade. É por isso que me chamam - Reali Dadis.";
+            eng4 = "[fnt_pixel]Esta é uma nova invenção na qual tenho trabalhado muito ultimamente - [wave]botas de mola[/wave]. Ainda não foram testadas, então vou deixar você experimentá-las temporariamente.";
+            eng5 = "[fnt_pixel]A propósito, construí um campo de testes não muito longe daqui, especialmente para essas botas. Você gostaria de ir para lá? Vai ter uma pequena surpresa no final.";
+
+            #endregion
             break;
         case 6: //polish
+            #region  ENG text
+            eng1 = "[fnt_pixel][wave]Witaj![/wave] Jakże się cieszę, że widzę nowe twarze w tej wiosce!";
+            eng2 = "[fnt_pixel]Jestem miejscowym wynalazcą- pasjonatem. Wymyślam, tworzę i testuję wszelkiego rodzaju urządzenia. W końcu na wyspie nie ma zbyt wiele do roboty.";
+            eng3 = "[fnt_pixel]W rzeczywistości jestem człowiekiem, który spełnia swoje marzenia. Dlatego też nazywają mnie - Com Trues.";
+            eng4 = "[fnt_pixel]To nowy wynalazek, nad którym ostatnio dużo pracuję - [wave]buty sprężynowe[/wave]. Nie zostały jeszcze sprawdzane, więc pozwolę Wam je tymczasowo przetestować.";
+            eng5 = "[fnt_pixel]Przy okazji, niedaleko stąd zbudowałem poligon, stworzony tylko dla tych butów. Chciałbyś się tam wybrać? Na koniec czeka cię miła niespodzianka.";
+
+            #endregion
             break;
-        case 7: //turkey
+        case 7: //japanese
+            #region  ENG text
+            eng1 = "[fnt_pixel][wave]こんにちは![/wave] この村に新しい出会いがあって、とても嬉しい！";
+            eng2 = "[fnt_pixel]私はこの村の発明家。いろいろな装置を作ってはテストしている。そもそも、この島ですることはあまりない。";
+            eng3 = "[fnt_pixel]実は、夢を叶える男なんだ。だから、みんなは私のことを「カム・トゥルー」と呼ぶ。";
+            eng4 = "[fnt_pixel]これは最近取り掛かっている新発明、 [wave]スプリングブーツだ[/wave]。 まだテストしていないから、一時的に試してもらうことにする。";
+            eng5 = "[fnt_pixel]ちなみに、このブーツの実験場を、ここからそう遠くないところに作った。行ってみたい？最後にちょっとしたサプライズがある。";
+
+            #endregion
             break;
-        case 8: //japanese
+        case 8: //deutch
+            #region  ENG text
+            eng1 = "[fnt_pixel][wave]Sei gegrüßt![/wave] Ich freue mich, neue Gesichter in diesem Dorf zu sehen!";
+            eng2 = "[fnt_pixel]Ich bin ein lokaler Tüftler. Ich erfinde, baue und teste alle Arten von Geräten. Es gibt schließlich nicht viel zu tun auf der Insel.";
+            eng3 = "[fnt_pixel]Eigentlich bin ich der Mann, der seine Träume wahr werden lässt. Deshalb nennen sie mich - Wird War.";
+            eng4 = "[fnt_pixel]Das ist eine neue Erfindung, an der ich in letzter Zeit viel gearbeitet habe - [wave]Springstiefel[/wave]. Sie wurde noch nicht getestet, also lasse ich dich sie vorübergehend ausprobieren.";
+            eng5 = "[fnt_pixel]Übrigens habe ich nicht weit von hier ein Testgelände gebaut, das speziell für diese Stiefel gedacht ist. Hast du Lust, dorthin zu gehen? Am Ende wirst du eine nette kleine Überraschung erleben.";
+
+            #endregion
             break;
-        case 9: //deutch
+        case 9: //french
+            #region  ENG text
+            eng1 = "[fnt_pixel][wave]Salutations ![/wave] Comme je suis heureux de voir de nouveaux visages dans ce village !";
+            eng2 = "[fnt_pixel]Je suis un inventeur-enthousiaste local. J'invente, je construis et je teste toutes sortes d'appareils. Il n'y a pas grand-chose à faire sur l'île, après tout.";
+            eng3 = "[fnt_pixel]En fait, je suis l'homme qui fait de ses rêves une réalité. C'est pourquoi on m'appelle - Réa Lité.";
+            eng4 = "[fnt_pixel]C'est une nouvelle invention sur laquelle j'ai beaucoup travaillé ces derniers temps - [wave]les bottes à ressort[/wave].Elle n'a pas encore été testée, alors je vous laisse l'essayer temporairement.";
+            eng5 = "[fnt_pixel]D'ailleurs, j'ai construit un terrain d'essai pas loin d'ici, spécialement pour ces bottes. Vous aimeriez y aller ? Vous aurez une belle petite surprise à la fin.";
+
+            #endregion
             break;
-        case 10: //french
-            break;
-        case 11: // Italian
+        case 10: // Italian
             #region  ENG text
             eng1 = "[fnt_pixel][wave]Ben arrivato![/wave] Quanto sono felice di vedere facce nuove in questo villaggio!";
             eng2 = "[fnt_pixel]Sono un appassionato di inventori locali. Invento, costruisco e collaudo tutti i tipi di dispositivi. Beh... non c'è molto da fare sull'isola.";
@@ -788,6 +1379,10 @@ function fnc_lng_jv_cmt2(){
             #endregion
             break;
         case 2: //spanish
+            #region  ENG text
+            eng1 = "[fnt_pixel]¿Vamos al campo de pruebas?";
+
+            #endregion
             break;
         case 3: //chinese
             #region  ENG text
@@ -796,20 +1391,41 @@ function fnc_lng_jv_cmt2(){
             #endregion
             break;
         case 4: //portug
+            #region  ENG text
+            eng1 = "[fnt_pixel]Vamos para o campo de provas?";
+
+            #endregion
             break;
         case 5: //brazil
+            #region  ENG text
+            eng1 = "[fnt_pixel]Vamos para o campo de testes?";
+
+            #endregion
             break;
         case 6: //polish
+            #region  ENG text
+            eng1 = "[fnt_pixel]Zatem, idziemy na poligon?";
+            #endregion          
             break;
-        case 7: //turkey
+        case 7: //japanese
+            #region  ENG text
+            eng1 = "[fnt_pixel]実験場へ行く？";
+
+            #endregion
             break;
-        case 8: //japanese
+        case 8: //deutch
+            #region  ENG text
+            eng1 = "[fnt_pixel]Gehen wir zum Testgelände?";
+
+            #endregion
             break;
-        case 9: //deutch
+        case 9: //french
+            #region  ENG text
+            eng1 = "[fnt_pixel]Si on allait sur le terrain d'essai ?";
+
+            #endregion
             break;
-        case 10: //french
-            break;
-        case 11: //Italian
+        case 10: //Italian
             #region  ENG text
             eng1 = "[fnt_pixel]Andiamo al campo di prova?";
 
@@ -836,6 +1452,10 @@ function fnc_lng_jv_cmt3(){
             #endregion
             break;
         case 2: //spanish
+            #region  ENG text
+            eng1 = "[fnt_pixel]¡Estás haciendo un gran trabajo! Espero que te haya gustado el regalito que has recibido al final de la tarea.";
+            eng2 = "[fnt_pixel]Que esas botas te ayuden en tu exploración. Y no olvides devolverlas cuando abandones la isla. Es una pieza única.";
+            #endregion
             break;
         case 3: //chinese
             #region  ENG text
@@ -844,20 +1464,42 @@ function fnc_lng_jv_cmt3(){
             #endregion
             break;
         case 4: //portug
+            #region  ENG text
+            eng1 = "[fnt_pixel]Está a fazer um excelente trabalho! Espero que tenhas gostado do pequeno presente que recebeste no final da tarefa.";
+            eng2 = "[fnt_pixel]Deixa que essas botas te ajudem com a tua exploração. E não te esqueças de devolvê-las quando sair da ilha. É uma peça única";
+            #endregion
             break;
         case 5: //brazil
+            #region  ENG text
+            eng1 = "[fnt_pixel]Você está fazendo um ótimo trabalho! Espero que tenha gostado do presentinho que recebeu no final da tarefa.";
+            eng2 = "[fnt_pixel]Deixe essas botas te ajudarem na sua exploração. E não se esqueça de devolvê-las quando sair da ilha. É uma peça única";
+            #endregion
             break;
         case 6: //polish
+            #region  ENG text
+            eng1 = "[fnt_pixel]Robisz świetną robotę! Mam nadzieję, że spodobał Ci się prezent, który otrzymałeś na zakończenie zadania?";
+            eng2 = "[fnt_pixel]Niech te buty pomogą Ci w eksploracji Archipelagu. Nie zapomnij zwrócić ich po opuszczeniu wyspy. To jedyna rzecz w swoim rodzaju.";
+            #endregion
             break;
-        case 7: //turkey
+        case 7: //japanese
+            #region  ENG text
+            eng1 = "[fnt_pixel]素晴らしい！タスクの最後のプレゼントは喜んでもらえた？";
+            eng2 = "[fnt_pixel]そのブーツで探検は大助かり。島を出るときには忘れずに返済んだ。世界にひとつしかないものだから。";
+            #endregion
             break;
-        case 8: //japanese
+        case 8: //deutch
+            #region  ENG text
+            eng1 = "[fnt_pixel]Du machst das toll Ich hoffe, das kleine Geschenk, das du am Ende der Aufgabe erhalten hast, hat dir gefallen?";
+            eng2 = "[fnt_pixel]Diese Stiefel sollen dir bei deiner Erkundung helfen. Und vergiss nicht, sie zurückzugeben, wenn du die Insel verlässt. Sie sind ein Unikat.";
+            #endregion
             break;
-        case 9: //deutch
+        case 9: //french
+            #region  ENG text
+            eng1 = "[fnt_pixel]Vous faites un bon travail ! J'espère que vous avez apprécié le petit cadeau que vous avez reçu à la fin de la mission ?task ?";
+            eng2 = "[fnt_pixel]Laissez ces bottes vous aider dans votre exploration. Et n’oubliez pas de les rendre quand vous partirez de l'île. C'est une pièce unique.";
+            #endregion
             break;
-        case 10: //french
-            break;
-        case 11: //Italian
+        case 10: //Italian
             #region  ENG text
             eng1 = "[fnt_pixel]Stai facendo un ottimo lavoro! Spero ti sia piaciuto il piccolo regalo che hai ricevuto alla fine del compito?";
             eng2 = "[fnt_pixel]Lascia che quegli stivali ti aiutino nella tua esplorazione. E non dimenticare di restituirli quando lasci l'isola. È un pezzo unico";
@@ -884,6 +1526,11 @@ function fnc_lng_jcv_cmt_1(){
             #endregion           
             break;
         case 2: //spanish
+            #region  кг text
+            eng1 = "[fnt_pixel]Un pequeño consejo. [c_blue]Pulsa el botón de salto mientras estás en el aire y activarás las botas.";
+            eng2 = "[fnt_pixel]Puedes usarlas para saltar sobre algunos enemigos ¡e incluso sobre pinchos! Lo importante es que recuerdes que al impulsarte con éxito con las botas se recarga tu impulso.";
+            eng3 = "[fnt_pixel]Espero encontrarte al final de este recorrido. ¡Suerte!";
+            #endregion  
             break;
         case 3: //chinese
             #region  ENG text
@@ -893,20 +1540,48 @@ function fnc_lng_jcv_cmt_1(){
             #endregion
             break;
         case 4: //portug
+            #region  кг text
+            eng1 = "[fnt_pixel]Um pequeno briefing. [c_blue]Prima o botão de salto enquanto estiveres no ar e ativa as botas.";
+            eng2 = "[fnt_pixel]Podes usá-las para saltar por cima de alguns inimigos e até de picos! O importante a lembrar é que ao ser bem sucedido ao soltar-se com as botas recarregas o seu dash";
+            eng3 = "[fnt_pixel]Espero encontrar-te no final deste curso. Boa sorte!";
+            #endregion  
             break;
         case 5: //brazil
+            #region  кг text
+            eng1 = "[fnt_pixel]Uma pequena observação. [c_blue]Pressione o botão de salto enquanto estiver no ar e ative as botas.";
+            eng2 = "[fnt_pixel]Você pode usá-las para pular sobre alguns inimigos e até picos! Importante lembrar que ao ser bem sucedido ao soltar-se com as botas recarrega o seu dash";
+            eng3 = "[fnt_pixel]Espero te encontrar no final deste curso. Boa sorte!";
+            #endregion  
             break;
         case 6: //polish
+            #region  ENG text
+            eng1 = "[fnt_pixel]Mała odprawa. [c_blue]Naciśnij przycisk skoku, gdy jesteś w powietrzu, a aktywujesz buty.";
+            eng2 = "[fnt_pixel]Możesz ich użyć, aby przeskoczyć nad niektórymi wrogami i kolcami! Ważna rzecz! Twoja moc ładuje się z każdym udanym odepchnięciem butami.";
+            eng3 = "[fnt_pixel]Mam nadzieję, że spotkamy się na końcu tego kursu. Powodzenia !!!";
+            #endregion
             break;
-        case 7: //turkey
+        case 7: //japanese
+            #region  кг text
+            eng1 = "[fnt_pixel]簡単なブリーフィング。[c_blue]空中にいるときにジャンプボタンを押すと、ブーツが起動する。";
+            eng2 = "[fnt_pixel]これを使うと、一部の敵やトゲを飛び越えることができる。ブーツで飛び出すと、ダッシュ力がチャージされるのがポイントだ。";
+            eng3 = "[fnt_pixel]では、コースの最後で会おう。幸運を！";
+            #endregion  
             break;
-        case 8: //japanese
+        case 8: //deutch
+            #region  кг text
+            eng1 = "[fnt_pixel]Eine kleine Einweisung. [c_blue]Drücke die Sprungtaste, während du in der Luft bist, und du aktivierst die Stiefel.";
+            eng2 = "[fnt_pixel]Mit ihnen kannst du über einige Gegner und sogar über Stacheln springen! Wichtig ist, dass du dich mit den Stiefeln erfolgreich abstoßen kannst, um deinen Dash wieder aufzuladen.";
+            eng3 = "[fnt_pixel]Ich hoffe, wir sehen uns am Ende dieses Kurses. Viel Glück!";
+            #endregion  
             break;
-        case 9: //deutch
+        case 9: //french
+            #region  кг text
+            eng1 = "[fnt_pixel]Un petit briefing. [c_blue]Appuyez sur le bouton de saut lorsque vous êtes en l'air et vous activez les bottes.";
+            eng2 = "[fnt_pixel]Vous pouvez les utiliser pour sauter par-dessus certains ennemis et même des piques ! Ce qu'il faut retenir, c'est que si vous réussissez à sauter avec les bottes, vous pourrez recharger votre dash.";
+            eng3 = "[fnt_pixel]J'espère vous rencontrer à la fin de ce cours. Bonne chance !";
+            #endregion  
             break;
-        case 10: //french
-            break;
-        case 11: //Italian
+        case 10: //Italian
             #region  ENG text
             eng1 = "[fnt_pixel]Un piccolo briefing: [c_blue]premi il tasto di saltare mentre sei in aria per attivare gli stivali.";
             eng2 = "[fnt_pixel]Puoi usarli per saltare alcuni nemici e persino punte! La cosa importante da ricordare è che spingere con successo con gli stivali ricarica la tua corsa";
@@ -932,6 +1607,10 @@ function fnc_lng_jcv_cmt_2(){
             #endregion           
             break;
         case 2: //spanish
+            #region  ENG text
+            eng1 = "[fnt_pixel]Pulsa el botón de salto mientras estás en el aire y activarás las botas.";
+            eng2 = "[fnt_pixel]Salta sobre enemigos o pinchos. Saltar con éxito con las botas recarga tu dash. ¡Buena suerte!";
+            #endregion
             break;
         case 3: //chinese
             #region  ENG text
@@ -940,20 +1619,42 @@ function fnc_lng_jcv_cmt_2(){
             #endregion
             break;
         case 4: //portug
+            #region  ENG text
+            eng1 = "[fnt_pixel]Prima o botão de salto enquanto estiveres no ar e ativa as botas.";
+            eng2 = "[fnt_pixel]Salta sobre inimigos ou picos. Ao ser bem sucedido ao soltar-se com as botas recarregas o seu dash. Boa sorte!";
+            #endregion
             break;
         case 5: //brazil
+            #region  ENG text
+            eng1 = "[fnt_pixel]Pressione o botão de salto enquanto estiver no ar e ative as botas.";
+            eng2 = "[fnt_pixel]Salte sobre inimigos ou picos. Ao ser bem sucedido ao soltar-se com as botas recarrega o seu dash. Boa sorte!";
+            #endregion
             break;
         case 6: //polish
+            #region  ENG text
+            eng1 = "[fnt_pixel]Naciśnij przycisk skoku, gdy jesteś w powietrzu, aby aktywować buty.";
+            eng2 = "[fnt_pixel]Przeskocz nad niektórymi wrogami i kolcami! Ważna rzecz! Twoja moc ładuje się z każdym udanym odepchnięciem butami.";
+            #endregion
             break;
-        case 7: //turkey
+        case 7: //japanese
+            #region  ENG text
+            eng1 = "[fnt_pixel]空中にいるときにジャンプボタンを押すと、ブーツが起動する。";
+            eng2 = "[fnt_pixel]敵やトゲを飛び越える。ブーツで押し切ることに成功すると、ダッシュ力がチャージされる。幸運を！";
+            #endregion
             break;
-        case 8: //japanese
+        case 8: //deutch
+            #region  ENG text
+            eng1 = "[fnt_pixel]Drücke die Sprungtaste, während du in der Luft bist, und du aktivierst die Stiefel.";
+            eng2 = "[fnt_pixel]Springe über Feinde oder Stacheln. Wenn du dich erfolgreich mit deinen Stiefeln abstößt, wird dein Dash wieder aufgeladen. Viel Glück!";
+            #endregion
             break;
-        case 9: //deutch
+        case 9: //french
+            #region  ENG text
+            eng1 = "[fnt_pixel]Appuyez sur le bouton de saut lorsque vous êtes en l'air et vous activez les bottes.";
+            eng2 = "[fnt_pixel]Sautez par-dessus les ennemis ou les pointes. Si vous réussissez à sauter avec vos bottes, vous rechargez votre dash. Bonne chance !";
+            #endregion
             break;
-        case 10: //french
-            break;
-        case 11: //Italian
+        case 10: //Italian
             #region  ENG text
             eng1 = "[fnt_pixel]Premi il tasto di saltare mentre sei in aria per attivare gli stivali.";
             eng2 = "[fnt_pixel]Salta sui nemici o sugli spuntoni. Spingere con successo con gli stivali ricarica la tua corsa. In bocca al lupo!";
@@ -976,6 +1677,9 @@ function fnc_lng_jcv_cmt_11(){
             #endregion           
             break;
         case 2: //spanish
+            #region  ENG text
+            eng1 = "[fnt_pixel]Uf, ha sido genial. ¿Ves qué fáciles son de usar? Es hora de volver al pueblo.";
+            #endregion
             break;
         case 3: //chinese
             #region  ENG text
@@ -983,20 +1687,36 @@ function fnc_lng_jcv_cmt_11(){
             #endregion
             break;
         case 4: //portug
+            #region  ENG text
+            eng1 = "[fnt_pixel]Isso foi fantástico. Vês como são fáceis de usar? Hora de voltar para a aldeia.";
+            #endregion
             break;
         case 5: //brazil
+            #region  ENG text
+            eng1 = "[fnt_pixel]Ufa, isso foi ótimo. Viu como são fáceis de usar? Hora de voltar para a aldeia.";
+            #endregion
             break;
         case 6: //polish
+            #region  ENG text
+            eng1 = "[fnt_pixel]Phew, to było świetne. Widzisz, jak łatwo jest ich używać? Czas wrócić do wioski.";
+            #endregion
             break;
-        case 7: //turkey
+        case 7: //japanese
+            #region  ENG text
+            eng1 = "[fnt_pixel]ふー、すごい。使い方は簡単だろ？そろそろ村に戻ろう。";
+            #endregion
             break;
-        case 8: //japanese
+        case 8: //deutch
+            #region  ENG text
+            eng1 = "[fnt_pixel]Puh, das war toll. Siehst du, wie einfach sie zu benutzen sind? Zeit, zurück ins Dorf zu gehen.";
+            #endregion
             break;
-        case 9: //deutch
+        case 9: //french
+            #region  ENG text
+            eng1 = "[fnt_pixel]Ouf, c'était génial. Vous voyez comme ils sont faciles à utiliser ? Il est temps de retourner au village.";
+            #endregion
             break;
-        case 10: //french
-            break;
-        case 11: //Italian
+        case 10: //Italian
             #region  ENG text
             eng1 = "[fnt_pixel]Uff, è stato grandioso. Vedi quanto sono facili da usare? È ora di tornare al villaggio.";
             #endregion
@@ -1018,6 +1738,9 @@ function fnc_lng_merch1(){
             #endregion           
             break;
         case 2: //spanish
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]¿Tal vez habla con el jefe primero?","[fnt_pixel]Te aconsejo que vayas con el jefe.");
+            #endregion
             break;
         case 3: //chinese
             #region  ENG text
@@ -1025,20 +1748,36 @@ function fnc_lng_merch1(){
             #endregion
             break;
         case 4: //portug
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]Talvez fala com um chefe primeiro?","[fnt_pixel]Aconselho-te a ir falar com o chefe.");
+            #endregion
             break;
         case 5: //brazil
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]Talvez fale com um chefe primeiro?","[fnt_pixel]Eu te aconselho a ir ver o chefe.");
+            #endregion
             break;
         case 6: //polish
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]Może pierwsze porozmawiaj z szefem?","[fnt_pixel]Radzę ci iść do szefa.");
+            #endregion
             break;
-        case 7: //turkey
+        case 7: //japanese
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]先にチーフと話したら？","[fnt_pixel]チーフのところへ行くことをお勧めする。");
+            #endregion
             break;
-        case 8: //japanese
+        case 8: //deutch
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]Vielleicht solltest du zuerst mit dem Häupling sprechen?","[fnt_pixel]Ich rate dir, zum Häupling zu gehen.");
+            #endregion
             break;
-        case 9: //deutch
+        case 9: //french
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]Peut-être parler à un chef d'abord ? ","[fnt_pixel]Je vous conseille d'aller voir le chef.");
+            #endregion
             break;
-        case 10: //french
-            break;
-        case 11: //Italian
+        case 10: //Italian
             #region  ENG text
             eng1 = choose("[fnt_pixel]Perché non parli prima con un capo?","[fnt_pixel]Ti consiglio di andare dal capo.");
             #endregion
@@ -1055,7 +1794,7 @@ function fnc_lng_merch2()
             eng1 = "[fnt_pixel]Well, I'm glad you got here safely. I knew you were the one for me. Heh heh...";
             eng2 = "[fnt_pixel]As you can see, there's a lot of interesting things in my shop. I'd sell you anything for the right price. Speaking of money.";
             eng3 = "[fnt_pixel]You might find some green coins along the way, be sure to collect them-they're very valuable, you know. For example, you can give them to me, and I'll make you stronger";
-            eng4 = "[fnt_pixel]Also, I saw you in action in that underground temple. Some enemies will drop dark essence. Depending on your actions, your style rating will go up and more essence will drop out!";
+            eng4 = "[fnt_pixel]Also, I saw you in action in that underground temple. You'll be able to drop dark essence from some of your enemies. Depending on your actions, your style rating will go up and more essence will drop out!";
             eng5 = "[fnt_pixel]Later on I will be able to exchange it for your training.";
             eng6 = "[fnt_pixel]At this point, I bid you farewell. My dear friend, captain, I'm sure you'll manage to save your crew and come back safe and sound. Good luck on your journey!";
             eng7 = "[fnt_pixel]In the meantime, here's a memo to help you figure out your battles.";
@@ -1073,38 +1812,99 @@ function fnc_lng_merch2()
             #endregion           
             break;
         case 2: //spanish
+            #region  ENG text
+            eng1 = "[fnt_pixel]Me alegro de que hayas llegado bien. Sabía que eras el indicado para mí. Je je...";
+            eng2 = "[fnt_pixel]Como puedes ver, hay muchas cosas interesantes en mi tienda. Te vendería cualquier cosa por un precio justo. Hablando de dinero.";
+            eng3 = "[fnt_pixel]Puede que encuentres algunas monedas verdes por el camino, asegúrate de recogerlas; son muy valiosas, ya sabes. Por ejemplo, puedes dármelas y te haré más fuerte.";
+            eng4 = "[fnt_pixel]Además, te vi en acción en ese templo subterráneo. Algunos enemigos sueltan esencia oscura de algunos de ellos. ¡Dependiendo de tus acciones, tu puntuación de estilo subirá y caerá más esencia!";
+            eng5 = "[fnt_pixel]Más adelante podré canjearla por tu entrenamiento.";
+            eng6 = "[fnt_pixel]En este punto, me despido de ti. Mi querido amigo, capitán, estoy seguro de que lograrás salvar a tu tripulación y volver sano y salvo. ¡Buena suerte en tu travesía!";
+            eng7 = "[fnt_pixel]Mientras tanto, aquí tienes un memorándum para ayudarte a resolver tus batallas.";
+            #endregion
             break;
         case 3: //chinese
             #region  ENG text
             eng1 = "[fnt_pixel]好吧, 我很高兴你安全到达这里. 我知道我可以指望你. 哈哈…";
             eng2 = "[fnt_pixel]如您所见, 我的店里有很多有趣的东西. 我会以合适的价格卖给你任何东西. 但是说到钱...";
             eng3 = "[fnt_pixel]沿途你会发现一些绿色硬币. 一定要收集它们——它们非常有价值. 比如你可以给我, 我会让你变得更强.";
-            eng4 = "[fnt_pixel]另外，我看到你在那个地下寺庙里的行动。一些敌人会掉落黑暗精华。根据你的行动，你的风格等级会上升，更多的精华会掉落出来!";
+            eng4 = "[fnt_pixel]我在那个地下神殿里看到了你的行动. 你可以从你的一些敌人身上掉落黑暗精华.  根据你的风格, 你的评分会上升, 更多的精华会掉落!";
             eng5 = "[fnt_pixel]以后可以用来换取你的修炼.";
             eng6 = "[fnt_pixel]在这一点上, 我向你致敬. 我亲爱的朋友, 船长, 我相信你一定能够拯救你的船员并安全返回. 祝你好运!";
             eng7 = "[fnt_pixel]与此同时, 这里有一份备忘录可以帮助你了解你的战斗. ";
             #endregion
             break;
         case 4: //portug
+            #region  ENG text
+            eng1 = "[fnt_pixel]Fico feliz que tenhas chegado em segurança. Sabia que eras a pessoa certa para mim. Heh heh...";
+            eng2 = "[fnt_pixel]Como podes ver, há muitas coisas interessantes na minha loja. Eu vendia-te qualquer coisa pelo preço certo. Por falar em dinheiro.";
+            eng3 = "[fnt_pixel]Podes encontrar algumas moedas verdes pelo caminho, recolha-as, são muito valiosas. Por exemplo, podes dá-las a mim, e eu vou tornar-te mais forte.";
+            eng4 = "[fnt_pixel]Além disso, vi-te em ação naquele templo subterrâneo. Alguns inimigos vão deixar cair a essência negra de alguns deles. Dependendo das tuas ações, a tua classificação de estilo vai subir e mais essência vai cair!";
+            eng5 = "[fnt_pixel]Mais tarde, poderei trocar pelo teu treino.";
+            eng6 = "[fnt_pixel]Neste momento, despeço-me. Meu caro amigo, capitão, tenho a certeza que conseguirás salvar a tua tripulação e voltar são e salvo. Boa sorte na viagem!";
+            eng7 = "[fnt_pixel]Entretanto, aqui está um memorando para te ajudar a resolver as tuas batalhas.";
+            #endregion
             break;
         case 5: //brazil
+            #region  ENG text
+            eng1 = "[fnt_pixel]Bem, estou feliz que você chegou aqui com segurança. Eu sabia que você era a pessoa certa para mim. heh heh...";
+            eng2 = "[fnt_pixel]Como você pode ver, há muitas coisas interessantes na minha loja. Eu te venderia qualquer coisa pelo preço certo. Falando em dinheiro.";
+            eng3 = "[fnt_pixel]Você pode encontrar algumas moedas verdes ao longo do caminho, colete-as - elas são muito valiosas, você sabe. Por exemplo, você pode dá-las para mim, e eu vou te tornar mais forte";
+            eng4 = "[fnt_pixel]Além disso, eu vi você em ação naquele templo subterrâneo. Alguns inimigos soltarão uma essência negra de alguns deles. Dependendo de suas ações, sua classificação de estilo aumentará e mais essência vai cair!";
+            eng5 = "[fnt_pixel]Mais tarde poderei trocar por seu treinamento.";
+            eng6 = "[fnt_pixel]Neste ponto, vou me despedindo. Meu caro amigo, capitão, tenho certeza que você conseguirá salvar sua tripulação e voltar são e salvo. Boa sorte na sua jornada!";
+            eng7 = "[fnt_pixel]Enquanto isso, aqui está um memorando para te ajudar a descobrir suas batalhas.";
+            #endregion
             break;
         case 6: //polish
+            #region  ENG text
+            eng1 = "[fnt_pixel]Cieszę się, że dotarłeś bezpiecznie. Wiedziałem, że to ty. Heh heh…";
+            eng2 = "[fnt_pixel]Jak widzisz, w moim sklepie jest wiele ciekawych rzeczy. Mogę sprzedać Ci wszystko, ale za odpowiednią cenę. Jeśli rozmawiamy o pieniądzach...";
+            eng3 = "[fnt_pixel]Po drodze możesz znaleźć kilka zielonych monet, pamiętaj, aby je zbierać - są bardzo cenne. Możesz na przykład dać je mnie, a ja uczynię cię silniejszym.";
+            eng4 = "[fnt_pixel]Ponadto, widziałem cię w akcji w tej podziemnej świątyni. Będziesz mógł upuścić mroczną esencję z niektórych wrogów. W zależności od twoich działań, twoja ocena stylu pójdzie w górę i będzie spadać więcej esencji!";
+            eng5 = "[fnt_pixel]Później będę mógł wymienić go na twój trening.";
+            eng6 = "[fnt_pixel]Teraz żegnam cię. Mój drogi przyjacielu, jestem pewien, że uda Ci się uratować swoją załogę i wrócisz cały i zdrowy. Powodzenia w dalszej podróży!";
+            eng7 = "[fnt_pixel]Oto notka, która pomoże ci w rozgryzieniu twoich bitew.";
+            #endregion
             break;
-        case 7: //turkey
+        case 7: //japanese
+            #region  ENG text
+            eng1 = "[fnt_pixel]無事に到着してよかった。やっぱり、君は僕の運命の人だ。へっへっへ...";
+            eng2 = "[fnt_pixel]見ての通り、私の店には面白いものがたくさんある。適正な価格で何でも売るよ。お金といえば。";
+            eng3 = "[fnt_pixel]道中、緑のコインを見つけることがあるかもしれない。ぜひ集めてくれ、とても貴重なものだ。例えば、それを私に渡してくれれば、もっと強くしてあげよう。";
+            eng4 = "[fnt_pixel]あと、地下神殿で君の活躍を見た。一部の敵はダークエッセンスをドロップする。君の行動次第で、スタイル評価が上がり、より多くのエッセンスがドロップするようになる！";
+            eng5 = "[fnt_pixel]後日、君の修行と引き換えにさせてもらうよ。";
+            eng6 = "[fnt_pixel]この辺で、お別れだ。親愛なる友人である船長、なんとかクルーを救って無事に帰ってきてくれ。旅路の幸運を祈る！";
+            eng7 = "[fnt_pixel]とりあえず、戦況を把握するためのメモだ。";
+            #endregion
             break;
-        case 8: //japanese
+        case 8: //deutch    
+            #region  ENG text
+            eng1 = "[fnt_pixel]Nun, ich bin froh, dass du gut angekommen bist. Ich wusste, dass du der Richtige für mich bist. Heh heh...";
+            eng2 = "[fnt_pixel]Wie du siehst, gibt es eine Menge interessanter Dinge in meinem Laden. Für den richtigen Preis würde ich dir alles verkaufen. Apropos Geld.";
+            eng3 = "[fnt_pixel]Vielleicht findest du unterwegs ein paar grüne Münzen, die du unbedingt sammeln solltest - sie sind sehr wertvoll, weißt du? Du kannst sie zum Beispiel mir geben, und ich mache dich dadurch stärker.";
+            eng4 = "[fnt_pixel]Außerdem habe ich dich in dem unterirdischen Tempel in Aktion gesehen. Manche Feinde verlieren eine dunkle Essenz. Je nachdem, was du tust, steigt deine Stilbewertung und du erhältst mehr Essenz!";
+            eng5 = "[fnt_pixel]Später kann ich es dann gegen deine Ausbildung eintauschen.";
+            eng6 = "[fnt_pixel]An dieser Stelle verabschiede ich mich von dir. Mein lieber Freund, Kapitän, ich bin mir sicher, dass du es schaffen wirst, deine Mannschaft zu retten und heil zurückzukommen. Viel Glück auf deiner Reise!";
+            eng7 = "[fnt_pixel]In der Zwischenzeit findest du hier ein Memo, das dir hilft, deine Schlachten zu planen.";
+            #endregion
             break;
-        case 9: //deutch
+        case 9: //french
+            #region  ENG text
+            eng1 = "[fnt_pixel]Je suis content que vous soyez bien arrivé. Je savais que vous étiez le bon pour moi. Heh heh...";
+            eng2 = "[fnt_pixel]Comme vous pouvez le voir, il y a beaucoup de choses intéressantes dans ma boutique. Je vous vendrais n'importe quoi pour un bon prix. En parlant d'argent.";
+            eng3 = "[fnt_pixel]Vous trouverez peut-être des pièces vertes en chemin, n'hésitez pas à les collectionner, elles ont beaucoup de valeur, vous savez. Par exemple, vous pouvez me les donner et je vous rendrai plus fort.";
+            eng4 = "[fnt_pixel]Aussi, je vous ai vu en action dans ce temple souterrain. Certains ennemis vont laisser tomber de l'essence noire. En fonction de vos actions, votre note de style augmentera et plus d'essence tombera !";
+            eng5 = "[fnt_pixel]Plus tard, je pourrai l'échanger contre votre formation.";
+            eng6 = "[fnt_pixel]A ce stade, je vous fais mes adieux. Mon cher ami, capitaine, je suis sûr que vous parviendrez à sauver votre équipage et à revenir sain et sauf. Bonne chance pour votre voyage !";
+            eng7 = "[fnt_pixel]En attendant, voici un mémo pour vous aider à déterminer vos batailles.";
+            #endregion
             break;
-        case 10: //french
-            break;
-        case 11: //Italian
+        case 10: //Italian
             #region  ENG text
             eng1 = "[fnt_pixel]Danque, sono contento che tu sia arrivato qui sano e salvo. Sapevo di poter contare su di te. Ah ah...";
             eng2 = "[fnt_pixel]Come puoi vedere, ci sono molte cose interessanti nel mio negozio. Ti venderei qualsiasi cosa al giusto prezzo. Ma parlando di soldi...";
             eng3 = "[fnt_pixel]Troverai alcune monete verdi lungo la strada. Assicurati di collezionarli: sono molto preziosi. Ad esempio, puoi darmeli e io ti renderò più forte";
-            eng4 = "[fnt_pixel]Inoltre, ti ho visto in azione in quel tempio sotterraneo. Alcuni nemici lasceranno cadere l'essenza oscura. A seconda delle tue azioni, il tuo punteggio di stile aumenterà e cadrà più essenza!";
+            eng4 = "[fnt_pixel]Inoltre, ti ho visto in azione in quel tempio sotterraneo. Puoi far cadere l'essenza oscura da alcuni dei tuoi nemici. A seconda del tuo stile, la tua valutazione aumenterà e più essenza cadrà!";
             eng5 = "[fnt_pixel]Più tardi potrò scambiarlo con la tua formazione.";
             eng6 = "[fnt_pixel]A questo punto, ti saluto. Mio caro amico, capitano, sono sicuro che riuscirai a salvare il tuo equipaggio e a tornare sano e salvo. Buona fortuna per il tuo viaggio!";
             eng7 = "[fnt_pixel]Nel frattempo, ecco un promemoria per aiutarti a capire le tue battaglie.";
@@ -1128,6 +1928,9 @@ function fnc_lng_merch3()
             #endregion           
             break;
         case 2: //spanish
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]Bueno, ¿a qué estás esperando? Vete. ¡Dije buena suerte en tu travesía!","[fnt_pixel]Tic-tac, el reloj está corriendo. Ve a salvar al equipo. ¡Buena suerte!");
+            #endregion
             break;
         case 3: //chinese   
             #region  ENG text
@@ -1135,20 +1938,36 @@ function fnc_lng_merch3()
             #endregion
             break;
         case 4: //portug
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]Bem, do que está à espera? Vai e pronto. Eu disse boa sorte na viagem!","[fnt_pixel]Tique-taque, o tempo está a passar. Vai salvar a equipa. Boa sorte!");
+            #endregion
             break;
         case 5: //brazil
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]Bem, o que você está esperando? Vá. Eu disse boa sorte na sua jornada!","[fnt_pixel]Tique-taque, o tempo está passando. Vá salvar o time. Boa sorte!");
+            #endregion
             break;
         case 6: //polish
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]Na co czekasz? Po prostu idź. Przecież powiedziałem: powodzenia w dalszej podróży!","[fnt_pixel]Tik-tak, zegar tyka. Idź ratować drużynę. Powodzenia!");
+            #endregion
             break;
-        case 7: //turkey
+        case 7: //japanese
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]何を待ってる？早く行け。旅路の幸運を祈る！","[fnt_pixel]時計の針がチクタク。チームを救いに行け。幸運を！");
+            #endregion
             break;
-        case 8: //japanese
+        case 8: //deutch
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]Also, worauf wartest du noch? Fang einfach an. Ich wünsche dir Viel Glück für deine Reise!","[fnt_pixel]Tick-tack, die Uhr tickt. Geh und rette die Mannschaft. Viel Glück!");
+            #endregion
             break;
-        case 9: //deutch
+        case 9: //french
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]Eh bien, qu'est-ce que vous attendez ? Allez-y. J'ai dit bonne chance pour votre voyage !","[fnt_pixel]Tic-tac, l'horloge fait tic-tac. Allez sauver l'équipe. Bonne chance !");
+            #endregion
             break;
-        case 10: //french
-            break;
-        case 11: //Italian
+        case 10: //Italian
             #region  ENG text
             eng1 = choose("[fnt_pixel]Allora, cosa stai aspettando? Vai. Ancora una volta, buona fortuna per il tuo viaggio!","[fnt_pixel]Tic tac, il tempo stringe. Vai a salvare il tuo equipaggio. In bocca al lupo!");
             #endregion
@@ -1181,6 +2000,14 @@ function fnc_lng_fgroundedf_1_r33_1(){
             eng8 =  "[fnt_pixel_ru]Покажи мне, на что ты способен."
             break;
         case 2: //spanish
+            eng1 =  "[fnt_pixel]Mira qué peces más grandes he atrapado en mis redes.";
+            eng2 =  "[fnt_pixel]Bueno, hola Capitán, he estado esperándote"
+            eng3 =  "[fnt_pixel]Y has cambiado un poco"
+            eng4 =  "[fnt_pixel]¿Qué? ¿El templo te ha bendecido con poder?"
+            eng5 =  "[fnt_pixel]Fabuloso"
+            eng6 =  "[fnt_pixel]Bueno, Capitán, no te contengas."
+            eng7 =  "[fnt_pixel]Vamos a divertirnos."
+            eng8 =  "[fnt_pixel]Muéstrame de lo que eres capaz."
             break;
         case 3: //chinese
             eng1 =  "[fnt_pixel]看看我网里钓到的大鱼.";
@@ -1193,20 +2020,66 @@ function fnc_lng_fgroundedf_1_r33_1(){
             eng8 =  "[fnt_pixel]让我看看你能做什么."
             break;
         case 4: //portug
+            eng1 =  "[fnt_pixel]Simplesmente olha para os peixes grandes capturados nas minhas redes.";
+            eng2 =  "[fnt_pixel]Olá Capitão, tenho estado à tua espera."
+            eng3 =  "[fnt_pixel]E mudaste um pouco."
+            eng4 =  "[fnt_pixel]O que? O templo abençoou-te com poder"
+            eng5 =  "[fnt_pixel]Fabuloso!"
+            eng6 =  "[fnt_pixel]Bem, capitão - não te retraias"
+            eng7 =  "[fnt_pixel]Vamos divertir-nos."
+            eng8 =  "[fnt_pixel]Mostrem-me do que são capazes."
             break;
-        case 5: //brazil
+        case 5: //brazil    
+            eng1 =  "[fnt_pixel]Simplesmente olhe para os peixes grandes capturados em minhas redes.";
+            eng2 =  "[fnt_pixel]Bem, olá capitão, estava esperando por você"
+            eng3 =  "[fnt_pixel]E você mudou um poucole."
+            eng4 =  "[fnt_pixel]Que? O templo te abençoou com poder"
+            eng5 =  "[fnt_pixel]Fabuloso!"
+            eng6 =  "[fnt_pixel]Bem, capitão - não se retraia"
+            eng7 =  "[fnt_pixel]Vamos nos divertir"
+            eng8 =  "[fnt_pixel]Mostre-me do que você é capaz."
             break;
         case 6: //polish
+            eng1 =  "[fnt_pixel]Spójrzcie tylko na te duże ryby złapane w moje sieci.";
+            eng2 =  "[fnt_pixel]Witaj kapitanie, czekałem na ciebie."
+            eng3 =  "[fnt_pixel]I trochę się zmieniłeś."
+            eng4 =  "[fnt_pixel]Co? Czy świątynia pobłogosławiła cię mocą?"
+            eng5 =  "[fnt_pixel]Bajeczne!"
+            eng6 =  "[fnt_pixel]Cóż, kapitanie - nie powstrzymuj się."
+            eng7 =  "[fnt_pixel]Zabawmy się trochę"
+            eng8 =  "[fnt_pixel]Pokaż mi, do czego jesteś zdolny."
             break;
-        case 7: //turkey
+        case 7: //japanese
+            eng1 =  "[fnt_pixel]私の網にかかった大きな魚を見て。";
+            eng2 =  "[fnt_pixel]やあ船長、待ってたよ。"
+            eng3 =  "[fnt_pixel]少し変わったね"
+            eng4 =  "[fnt_pixel]なに？寺院から力を授かった？"
+            eng5 =  "[fnt_pixel]素晴らしい!"
+            eng6 =  "[fnt_pixel]さあ、船長 - 自分を抑え込まないで。"
+            eng7 =  "[fnt_pixel]楽しもう"
+            eng8 =  "[fnt_pixel]あなたの実力を見せてください。"
             break;
-        case 8: //japanese
+        case 8: //deutch
+            eng1 =  "[fnt_pixel]Sieh dir nur die großen Fische an, die sich in meinen Netzen verfangen haben.";
+            eng2 =  "[fnt_pixel]Hallo Kapitän, ich habe auf dich gewartet"
+            eng3 =  "[fnt_pixel]Und du hast dich ein wenig verändert"
+            eng4 =  "[fnt_pixel]Was? Hat der Tempel dir Kraft verliehen"
+            eng5 =  "[fnt_pixel]Fabelhaft!"
+            eng6 =  "[fnt_pixel]Nun, Kapitän - halte dich nicht zurück"
+            eng7 =  "[fnt_pixel]Lass uns etwas Spaß haben"
+            eng8 =  "[fnt_pixel]Zeigen Sie mir, wozu Sie fähig sind."
             break;
-        case 9: //deutch
+        case 9: //french
+            eng1 =  "[fnt_pixel]Regardez les gros poissons pris dans mes filets.";
+            eng2 =  "[fnt_pixel]Eh bien, bonjour Capitaine, je vous ai attendu."
+            eng3 =  "[fnt_pixel]Et vous avez un peu changé"
+            eng4 =  "[fnt_pixel]Quoi ? Est-ce que le temple vous a béni avec un pouvoir ?"
+            eng5 =  "[fnt_pixel]Fabuleux!"
+            eng6 =  "[fnt_pixel]Eh bien, Capitaine - ne vous retenez pas."
+            eng7 =  "[fnt_pixel]Amusons-nous un peu."
+            eng8 =  "[fnt_pixel]Montre-moi ce dont tu es capable."
             break;
-        case 10: //french
-            break;
-        case 11: //Italian
+        case 10: //Italian
             eng1 =  "[fnt_pixel]Guarda i pesci grossi catturati nelle mie reti.";
             eng2 =  "[fnt_pixel]Dunque! Ciao Capitano! Ti stavo aspettando"
             eng3 =  "[fnt_pixel]E tu sei cambiato un po'"
@@ -1238,6 +2111,11 @@ function fnc_lng_fgroundedf_1_r33_2(){
             eng5 = "[fnt_pixel_ru]Не разочаровывай меня, Кэп, давай повеселимся!";
             break;
         case 2: //spanish
+            eng1 = "[fnt_pixel]Absolutamente inservible.";
+            eng2 = "[fnt_pixel]Pero por favor, ¡no desesperes!";
+            eng3 = "[fnt_pixel]No ha terminado para ti ... todavía.";
+            eng4 = "[fnt_pixel]Te daré la oportunidad de escapar.";
+            eng5 = "[fnt_pixel]No me decepcione Capitán, ¡vamos a divertirnos!";
             break;
         case 3: //chinese
             eng1 = "[fnt_pixel]绝对没用.";
@@ -1247,20 +2125,48 @@ function fnc_lng_fgroundedf_1_r33_2(){
             eng5 = "[fnt_pixel]不要让我失望船长, 让我们玩得开心!";
             break;
         case 4: //portug
+            eng1 = "[fnt_pixel]Absolutamente inútil.";
+            eng2 = "[fnt_pixel]Mas, por favor, não te desesperes!";
+            eng3 = "[fnt_pixel]Ainda não acabou para ti... Ainda.";
+            eng4 = "[fnt_pixel]Vou dar-te a oportunidade de escapar.";
+            eng5 = "[fnt_pixel]Não me desapontes, Capitão, vamos divertir-nos!";
             break;
         case 5: //brazil
+            eng1 = "[fnt_pixel]Absolutamente inútil.";
+            eng2 = "[fnt_pixel]Mas, por favor, não se desespere!";
+            eng3 = "[fnt_pixel]Não acabou para você... ainda.";
+            eng4 = "[fnt_pixel]Eu vou te dar a oportunidade de escapar.";
+            eng5 = "[fnt_pixel]Não me decepcione Capitão, vamos nos divertir!";
             break;
         case 6: //polish
+            eng1 = "[fnt_pixel]Absolutnie bezużyteczne.";
+            eng2 = "[fnt_pixel]Ale proszę, nie rozpaczaj!";
+            eng3 = "[fnt_pixel]To jeszcze nie koniec dla ciebie... jeszcze.";
+            eng4 = "[fnt_pixel]Dam ci szansę na ucieczkę.";
+            eng5 = "[fnt_pixel]Nie zawiedź mnie kapitanie. Zabawmy się trochę!";
             break;
-        case 7: //turkey
+        case 7: //japanese
+            eng1 = "[fnt_pixel]まったくダメだ。";
+            eng2 = "[fnt_pixel]でも、どうか絶望しないで！";
+            eng3 = "[fnt_pixel]まだ終わりではない...まだ。";
+            eng4 = "[fnt_pixel]逃げる機会を与えてやる。";
+            eng5 = "[fnt_pixel]私を失望させないでくレ、船長、楽しもう！";
             break;
-        case 8: //japanese
+        case 8: //deutch
+            eng1 = "[fnt_pixel]Absolut nutzlos.";
+            eng2 = "[fnt_pixel]Aber bitte, verzweifle nicht!";
+            eng3 = "[fnt_pixel]Es ist noch nicht vorbei für dich ... noch nicht.";
+            eng4 = "[fnt_pixel]Ich werde dir die Möglichkeit geben, zu entkommen.";
+            eng5 = "[fnt_pixel]Enttäusche mich nicht, Kapitän, lass uns ein bisschen Spaß haben!";
             break;
-        case 9: //deutch
+        case 9: //french
+            eng1 = "[fnt_pixel]Absolument inutile.";
+            eng2 = "[fnt_pixel]Mais s'il vous plaît, ne désespérez";
+            eng3 = "[fnt_pixel]Ce n'est pas fini pour vous ... encore.";
+            eng4 = "[fnt_pixel]Je vous donnerai l'occasion de vous échapper.";
+            eng5 = "[fnt_pixel]Ne me décevez pas Capitaine, amusons-nous un peu !";
             break;
-        case 10: //french
-            break;
-        case 11: //Italian
+        case 10: //Italian
             eng1 = "[fnt_pixel]Assolutamente inutile.";
             eng2 = "[fnt_pixel]Ma per favore, non disperare!";
             eng3 = "[fnt_pixel]Non è finita per te… ancora.";
@@ -1287,6 +2193,10 @@ function fnc_lng_fgroundedf_2_r15_1(){
             eng4 = "[fnt_pixel_ru]Ну, давайте сделаем это!";            
             break;
         case 2: //spanish
+            eng1 = "[fnt_pixel]Bueno, bueno, aquí está el capitán.";
+            eng2 = "[fnt_pixel]Es hora de ver qué poderes son mayores";
+            eng3 = "[fnt_pixel]Y no me tires la zarpa, no funcionará contra mí.";
+            eng4 = "[fnt_pixel]Bueno, ¡hagámoslo!";  
             break;
         case 3: //chinese
             eng1 = "[fnt_pixel]好吧, 好吧, 船长来了.";
@@ -1295,20 +2205,42 @@ function fnc_lng_fgroundedf_2_r15_1(){
             eng4 = "[fnt_pixel]好吧, 让我们开始吧!";
             break;
         case 4: //portug
+            eng1 = "[fnt_pixel]Bem, bem, aqui está o capitão.";
+            eng2 = "[fnt_pixel]É hora de ver de quem são os poderes maiores";
+            eng3 = "[fnt_pixel]E não me atires a pata, não vai funcionar contra mim.";
+            eng4 = "[fnt_pixel]Bem, vamos lá!!";   
             break;
         case 5: //brazil
+            eng1 = "[fnt_pixel]Bem, bem, aqui está o capitão.";
+            eng2 = "[fnt_pixel]É hora de ver quais poderes são maiores";
+            eng3 = "[fnt_pixel]E não jogue sua pata em mim, não vai funcionar contra mim.";
+            eng4 = "[fnt_pixel]Bem, vamos lá!";   
             break;
         case 6: //polish
+            eng1 = "[fnt_pixel]Proszę, proszę, a oto i kapitan.";
+            eng2 = "[fnt_pixel]Czas zobaczyć, czyje moce są potężniejsze.";
+            eng3 = "[fnt_pixel]I nie rzucaj na mnie łapą, to nie zadziała przeciwko mnie.";
+            eng4 = "[fnt_pixel]No to do dzieła!";
             break;
-        case 7: //turkey
+        case 7: //japanese
+            eng1 = "[fnt_pixel]さて、さて、船長の登場だ。";
+            eng2 = "[fnt_pixel]誰の力が大きいか見る時だ";
+            eng3 = "[fnt_pixel]前脚を投げつけても無駄だ。";
+            eng4 = "[fnt_pixel]さあ、やるぞ！";   
             break;
-        case 8: //japanese
+        case 8: //deutch
+            eng1 = "[fnt_pixel]So, so, hier ist der Kapitän.";
+            eng2 = "[fnt_pixel]Es ist an der Zeit zu sehen, wessen Kräfte größer sind";
+            eng3 = "[fnt_pixel]Und wirf deine Kralle nicht nach mir, sie wird nicht gegen mich wirken.";
+            eng4 = "[fnt_pixel]Also, los geht's!";   
             break;
-        case 9: //deutch
+        case 9: //french
+            eng1 = "[fnt_pixel]Bien, bien, voici le capitaine.";
+            eng2 = "[fnt_pixel]Il est temps de voir qui a les plus grands pouvoirs...";
+            eng3 = "[fnt_pixel]Et ne me lancez pas votre patte, ça ne marchera pas contre moi.";
+            eng4 = "[fnt_pixel]Eh bien, allons-y !";   
             break;
-        case 10: //french
-            break;
-        case 11: //Italian
+        case 10: //Italian
             eng1 = "[fnt_pixel]Bene, bene, ecco il capitano.";
             eng2 = "[fnt_pixel]È tempo di vedere quali poteri sono maggiori";
             eng3 = "[fnt_pixel]E non tirarmi la zampa, non funzionerà contro di me.";
@@ -1340,6 +2272,13 @@ function fnc_lng_fgroundedf_2_r15_2(){
             eng7 = "[fnt_pixel_ru]Пожалуйста, остановите это."          
             break;
         case 2: //spanish
+            eng1 = "[fnt_pixel]Capitán.... Capitán, ¿eres tú?";
+            eng2 = "[fnt_pixel]¿Qué me ha pasado? ¿Dónde está nuestro equipo?"
+            eng3 = "[fnt_pixel]¿Yo... te ataqué? La cagué de nuevo, Capitán."
+            eng4 = "[fnt_pixel]Perdí el control por culpa de esa maldita máscara."
+            eng5 = "[fnt_pixel]No me deja ir, Capitán. No puedo controlarla.."
+            eng6 = "[fnt_pixel]Por favor, ayuda....."
+            eng7 = "[fnt_pixel]Por favor .... párala."
             break;
         case 3: //chinese
             eng1 = "[fnt_pixel]舰长...舰长, 是你吗?";
@@ -1351,20 +2290,60 @@ function fnc_lng_fgroundedf_2_r15_2(){
             eng7 = "[fnt_pixel]请...让它停止."
             break;
         case 4: //portug
+            eng1 = "[fnt_pixel]Capitão... Capitão, és tu?";
+            eng2 = "[fnt_pixel]O que me aconteceu? Onde está a nossa equipa?"
+            eng3 = "[fnt_pixel]Eu... Ataquei a ti? Estraguei tudo outra vez, Capitão."
+            eng4 = "[fnt_pixel]Perdi o controlo por causa daquela maldita máscara."
+            eng5 = "[fnt_pixel]Não me deixa ir, Capitão. Não consigo controlar isto."
+            eng6 = "[fnt_pixel]Ajuda-me..... Por favor."
+            eng7 = "[fnt_pixel]Por favor... faz isso parar."
             break;
         case 5: //brazil
+            eng1 = "[fnt_pixel]Capitão... Capitão, é você?";
+            eng2 = "[fnt_pixel]O que aconteceu comigo? Onde está nossa equipe?"
+            eng3 = "[fnt_pixel]Eu... te ataquei? Eu estraguei tudo de novo, capitão."
+            eng4 = "[fnt_pixel]Perdi o controle por causa daquela maldita máscara."
+            eng5 = "[fnt_pixel]Não me deixe ir, capitão. Eu não posso controlar isso."
+            eng6 = "[fnt_pixel]Me ajude, por favor."
+            eng7 = "[fnt_pixel]Por favor... faça isso parar."
             break;
         case 6: //polish
+            eng1 = "[fnt_pixel]Kapitan.... Kapitanie, czy to ty?";
+            eng2 = "[fnt_pixel]Co się ze mną stało? Gdzie jest nasza drużyna?"
+            eng3 = "[fnt_pixel]Czy ja... Zaatakowałem Cię? Znowu spieprzyłem, kapitanie."
+            eng4 = "[fnt_pixel]Straciłem kontrolę przez tę cholerną maskę. "
+            eng5 = "[fnt_pixel]Nie pozwala mi odejść, kapitanie. Nie mogę tego kontrolować."
+            eng6 = "[fnt_pixel]Pomóż mi… proszę"
+            eng7 = "[fnt_pixel]Proszę.... spraw, żeby to się skończyło."
             break;
-        case 7: //turkey
+        case 7: //japanese
+            eng1 = "[fnt_pixel]船長... 船長、あなたですか？";
+            eng2 = "[fnt_pixel]私は一体？チームはどこ？"
+            eng3 = "[fnt_pixel]私は...君を攻撃した？また失敗したんだ、船長！"
+            eng4 = "[fnt_pixel]あのマスクのせいでコントロールを失った"
+            eng5 = "[fnt_pixel]あれが私を解放してくれない、船長。制御できない。"
+            eng6 = "[fnt_pixel]助けてくれ......頼む。"
+            eng7 = "[fnt_pixel]お願いだ...止めさせてくれ。"
             break;
-        case 8: //japanese
+        case 8: //deutch
+            eng1 = "[fnt_pixel]Kapitän.... Kapitän, bist du das?";
+            eng2 = "[fnt_pixel]Was ist mit mir passiert? Wo ist unsere Mannschaft?"
+            eng3 = "[fnt_pixel]Habe ich dich... angegriffen? Ich habe es wieder vermasselt, Kapitän."
+            eng4 = "[fnt_pixel]Ich habe wegen dieser verdammten Maske die Kontrolle verloren."
+            eng5 = "[fnt_pixel]Es lässt mich nicht los, Kapitän. Ich kann es nicht kontrollieren."
+            eng6 = "[fnt_pixel]Hilf mir..... bitte."
+            eng7 = "[fnt_pixel]Bitte.... mach, dass es aufhört."
             break;
-        case 9: //deutch
+        case 9: //french
+            eng1 = "[fnt_pixel]Capitaine.... Capitaine, c'est vous ?";
+            eng2 = "[fnt_pixel]Qu'est-ce qui m'est arrivé ? Où est notre équipe ?"
+            eng3 = "[fnt_pixel]Je vous ai... attaqué ? J'ai encore merdé, Capitaine."
+            eng4 = "[fnt_pixel]J'ai perdu le contrôle à cause de ce fichu masque."
+            eng5 = "[fnt_pixel]Il ne veut pas me laisser partir, capitaine. Je ne peux pas le contrôler."
+            eng6 = "[fnt_pixel]Aidez-moi..... s'il vous plaît."
+            eng7 = "[fnt_pixel]S'il vous plaît, faites que ça s'arrête."
             break;
-        case 10: //french
-            break;
-        case 11: //Italian
+        case 10: //Italian
             eng1 = "[fnt_pixel]Capitano.... Capitano, sei tu?";
             eng2 = "[fnt_pixel]Cosa mi è successo? Dov'è sparito il nostro equipaggio?"
             eng3 = "[fnt_pixel]Ti ho... attaccato? Ho sbagliato di nuovo, Capitano."
@@ -1405,6 +2384,16 @@ don't forget to add it to your wishlist!";
             text7= "выход"; 
             break;
         case 2: //spanish
+            text1= "¡Enhorabuena!";
+            text2= @"Has hecho un gran trabajo 
+y has completado con éxito el prólogo";
+            text3= "Esperamos que lo hayas disfrutado.";
+            text4= @"¡No olvides visitar la página de Steam 
+del juego completo y añadirlo a tu lista de deseos!";
+            text5= "¡Gracias por jugar!";
+
+            text6= "haz una encuesta"
+            text7= "salir";
             break;
         case 3: //chinese
             text1= "祝贺你!";
@@ -1418,22 +2407,81 @@ don't forget to add it to your wishlist!";
             text7= "退到主菜單";
 
             break;
-            break;
         case 4: //portug
+            text1= "Parabéns!";
+            text2= @"Fizeste um grande trabalho 
+e completaste o prólogo com sucesso.";
+            text3= "Esperamos que tenhas gostado.";
+            text4= @"Certifica-te de conferir a página Steam
+do jogo completo e não te esqueças 
+de adicioná-lo à tua lista de desejos!";
+            text5= "Obrigado por jogar!";
+
+            text6= "participar da enquete"
+            text7= "sair";
             break;
         case 5: //brazil
+            text1= "Parabéns!";
+            text2= @"Você fez um ótimo trabalho 
+e concluiu o prólogo com sucesso";
+            text3= "Esperamos que você tenha se divertido";
+            text4= @"Cheque a página Steam do jogo
+completo e não se esqueça de adicioná-lo
+à sua lista de desejos!";
+            text5= "Obrigado por jogar!";
+
+            text6= "tparticipar da enquete"
+            text7= "sair";
             break;
         case 6: //polish
+            text1= "Gratulacje!";
+            text2= @"Świetną robota. 
+Pomyślnie ukończyłeś demo!";
+            text3= "Mamy nadzieję, że ci się podobało.";
+            text4= @"Koniecznie sprawdź pełną stronę gry na steamie 
+i nie zapomnij dodać jej do swojej listy życzeń!";
+            text5= "Dziękujęmy za grę";
+
+            text6= "Wypełnij ankietę."
+            text7= "Wyjście";
             break;
-        case 7: //turkey
+        case 7: //japanese
+            text1= "おめでとうございます！";
+            text2= @"プロローグをクリアした";
+            text3= "楽しんでいただけたら幸いです";
+            text4= @"ゲーム本編のSteamページをぜひチェックして、
+ウィッシュリストに追加するのをお忘れなく！";
+            text5= "プレイしていただきありがとうございました！";
+
+            text6= "アンケートに答える"
+            text7= "終了";
             break;
-        case 8: //japanese
+        case 8: //deutch
+            text1= "Herzlichen Glückwunsch!";
+            text2= @"Du hast einen tollen Job gemacht und 
+den Prolog erfolgreich abgeschlossen";
+            text3= "Wir hoffen, es hat dir gefallen";
+            text4= @"Schau dir unbedingt die Steam-Seite 
+des vollständigen Spiels an und vergiss nicht, 
+es auf deine Wunschliste zu setzen!";
+            text5= "Danke fürs Spielen!";
+
+            text6= "Mach eine Umfrage"
+            text7= "beenden";
             break;
-        case 9: //deutch
+        case 9: //french
+            text1= "Félicitations !";
+            text2= @"Vous avez fait du bon travail
+et terminé le prologue avec succès.";
+            text3= "Nous espérons que vous l'avez apprécié.";
+            text4= @"N'oubliez pas de consulter la page Steam 
+du jeu complet et de l'ajouter à votre liste de souhaits !";
+            text5= "Merci d'avoir joué !";
+
+            text6= "répondre à un sondage"
+            text7= "quitter";
             break;
-        case 10: //french
-            break;
-        case 11: // Italian
+        case 10: // Italian
             text1= "Congratulazioni!";
             text2= @"Hai fatto un ottimo lavoro e hai completato
 con successo il prologo!";

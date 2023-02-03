@@ -7,17 +7,7 @@ draw_set_colour(c_black);
 
 draw_rectangle(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+270,-9999999);
 
-#region Отрисовка геймпада
-if submenu = 32
-{
-    draw_set_halign(fa_left);
-    draw_set_color(c_white);
-    draw_text(camera_get_view_x(view_camera[0])+240+36,camera_get_view_y(view_camera[0])+59,menu[31, 7]);
-    draw_text(camera_get_view_x(view_camera[0])+240+36,camera_get_view_y(view_camera[0])+75,menu[31, 6]);
-    draw_text(camera_get_view_x(view_camera[0])+240+36,camera_get_view_y(view_camera[0])+91,menu[31, 4]);
-    draw_text(camera_get_view_x(view_camera[0])+240+36,camera_get_view_y(view_camera[0])+107,menu[31, 5]);
-}
-#endregion
+
 
 draw_set_alpha(1);
 
@@ -60,6 +50,18 @@ for (var i = 0; i < array_length_2d(menu, submenu); ++i) {
     
 }
 
+#endregion
+
+#region Отрисовка геймпада
+if submenu = 32
+{
+    draw_set_halign(fa_left);
+    draw_set_color(c_white);
+    draw_text(camera_get_view_x(view_camera[0])+240+36,camera_get_view_y(view_camera[0])+59,menu[31, 7]);
+    draw_text(camera_get_view_x(view_camera[0])+240+36,camera_get_view_y(view_camera[0])+75,menu[31, 6]);
+    draw_text(camera_get_view_x(view_camera[0])+240+36,camera_get_view_y(view_camera[0])+91,menu[31, 4]);
+    draw_text(camera_get_view_x(view_camera[0])+240+36,camera_get_view_y(view_camera[0])+107,menu[31, 5]);
+}
 #endregion
 
 draw_set_halign(fa_center);

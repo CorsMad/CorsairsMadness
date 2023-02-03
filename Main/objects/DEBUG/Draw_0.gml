@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+/*
 if instance_exists(obj_boss_d1_1)
 {
     draw_text(32,48,string(obj_boss_d1_1.state)) ;

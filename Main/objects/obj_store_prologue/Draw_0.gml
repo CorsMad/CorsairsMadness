@@ -233,13 +233,13 @@ switch(submenu)
                 {
                     case 0: 
                         draw_text(218,130,name_use);
-                        draw_sprite_ext(spr_gp_icon,3,250,135,1,1,0,c_white,1);                    
-                        draw_text(272,130,name_or);
-                        draw_sprite_ext(spr_gp_icon,9,292,135,1,1,0,c_white,1);                    
+                        draw_sprite_ext(spr_gp_icon,3,300,135,1,1,0,c_white,1);                    
+                        draw_text(322,130,"/");
+                        draw_sprite_ext(spr_gp_icon,9,335,135,1,1,0,c_white,1);                    
                         break;
                     case 1: 
                         draw_text(218,130,name_use);
-                        draw_sprite_ext(spr_key_icon,scr_key_sprite(global.dash_key),250,135,1,1,0,c_white,1); 
+                        draw_sprite_ext(spr_key_icon,scr_key_sprite(global.item_key),300,135,1,1,0,c_white,1); 
                         break;
                 }
             }

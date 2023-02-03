@@ -317,11 +317,10 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                 case 8:     global.language = 8;break;
                 case 9:     global.language = 9;break;
                 case 10:    global.language = 10;break;                   
-                case 11:    global.language = 11;break;
-                case 12:
+                case 11:   
                     submenu = 1;
                     index = 3;
-                    break;
+                    break;                    
             }
             break;
         case 5: // Confirm

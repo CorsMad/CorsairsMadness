@@ -74,11 +74,10 @@ menu[41, 3]  = "中国";
 menu[41, 4]  = "Português";
 menu[41, 5]  = "Português (brasileiro)";
 menu[41, 6]  = "Polska";
-menu[41, 7]  = "Türkçe";
-menu[41, 8]  = "日本語";
-menu[41, 9]  = "Deutsch";
-menu[41, 10] = "Français";
-menu[41, 11] = "\nback";
+menu[41, 7]  = "日本語";
+menu[41, 8]  = "Deutsch";
+menu[41, 9] = "Français";
+menu[41, 10] = "\nback";
 
 #endregion
 

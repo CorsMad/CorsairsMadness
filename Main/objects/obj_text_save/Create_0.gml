@@ -1,8 +1,4 @@
-
-
-#region eng
-eng1 = "game saved"
-#endregion
+fnc_lng_save_game();
 
 alpha = 0;
 t = 0;

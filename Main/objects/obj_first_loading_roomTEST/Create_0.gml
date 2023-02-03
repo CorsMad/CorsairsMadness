@@ -3,20 +3,20 @@
 
 instance_create_depth(0,0,0,obj_music_controller);
 
-global.language = 1;
+global.language = 6;
 
 #region Завершеннсоть уровней
     
     global.completed_JF1 = 1;
-    global.completed_JF2 = 1;
+    global.completed_JF2 = 0;
     
     #endregion
     
 #region ТЕСТ
-
+    display_reset(0, false);
     global.dia_jungleChief = 1; 
     global.dia_jungleMerch = 0; 
-    global.dia_jungleComt = 2; 
+    global.dia_jungleComt = 0; 
 
 #endregion
 
@@ -86,13 +86,13 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 96;
-global.TargetY      = 224;
-global.TargetRoom   = TESTROOM;
+global.TargetX      = 176;
+global.TargetY      = 240;
+global.TargetRoom   = Village_jungle_merchant;
 
-global.fTargetX     = 432;
-global.fTargetY     = 256;
-global.fTargetRoom  = JP2_r14;
+global.fTargetX     = 208;
+global.fTargetY     = 560;
+global.fTargetRoom  = T2_r3;
 
 /*
     global.fTargetX = 80;

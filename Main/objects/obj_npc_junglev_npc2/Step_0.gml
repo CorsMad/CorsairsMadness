@@ -86,7 +86,7 @@ if talk_cr_t!= 0
     {
         talk_cr_t = 0;
         if global.dia_jungleChief = 0 instance_create_depth(x,y,-100000,obj_txt_junglev_npc2_1);
-        if global.dia_jungleChief = 1 instance_create_depth(x,y,-100000,obj_txt_junglev_npc2_2);
+        if global.dia_jungleChief = 1 instance_create_depth(x,y,-100000,obj_txt_junglev_npc1_2);
     }
 }
 #endregion

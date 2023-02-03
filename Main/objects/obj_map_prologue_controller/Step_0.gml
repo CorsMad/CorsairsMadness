@@ -36,7 +36,7 @@ if !instance_exists(obj_map_confirm)
         */
     }
 
-    if (key_jump || key_attack) && island = 0
+    if (key_jump || key_attack || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)) && island = 0
     {   
         
         if global.PlayerOnIsland = 1 // Если игрок на острове

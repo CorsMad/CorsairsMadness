@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+fnc_lng_save_game();
 t++;
 if t = 50 isOn = 1;
 

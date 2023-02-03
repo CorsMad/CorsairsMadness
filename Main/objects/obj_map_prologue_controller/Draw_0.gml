@@ -177,8 +177,8 @@ if GlobalMapAlpha = 1
 #endregion
 
 #region отрисовка информации
-draw_rectangle_color(1,1,131,67,c_grey,c_grey,c_grey,c_grey,false);
-draw_rectangle_color(4,4,128,64,c_black,c_black,c_black,c_black,false);
+draw_rectangle_color(1,1,170,67,c_grey,c_grey,c_grey,c_grey,false);
+draw_rectangle_color(4,4,167,64,c_black,c_black,c_black,c_black,false);
 //Название острова
 
     switch(island)
@@ -203,7 +203,7 @@ draw_set_halign(fa_center)
     if island = 0 
     {
         if global.language = 1 draw_set_font(fnt_pixel_ru) else draw_set_font(fnt_pixel);
-        draw_text(67,6,string(islandName));
+        draw_text(85,6,string(islandName));
         switch(globalMapCounter)
         {
             case 1:draw_sprite(spr_map_global_follower_jngl,0,22,51);break;
