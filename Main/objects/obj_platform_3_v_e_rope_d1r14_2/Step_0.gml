@@ -7,12 +7,12 @@ if instance_exists(obj_Player)
 		mask_index = -1;	
 	} else mask_index = spr_moving_platform2_mask;
 }
-
+/*
 if isEnabled = 0 && place_meeting(x,y-1,obj_Player)
 {
 	isEnabled = 1;	
 }
-
+*/
 if isEnabled = 1
 {
 	y+=spd;

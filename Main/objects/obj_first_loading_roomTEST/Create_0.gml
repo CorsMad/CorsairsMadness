@@ -86,9 +86,9 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 176;
-global.TargetY      = 240;
-global.TargetRoom   = Village_jungle_merchant;
+global.TargetX      = 32;
+global.TargetY      = 96;
+global.TargetRoom   = D2_r6;
 
 global.fTargetX     = 208;
 global.fTargetY     = 560;
