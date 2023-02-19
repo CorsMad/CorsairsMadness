@@ -1,18 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_weather_sandstorm_screen",
+  "name": "obj_enemy_creator_d2_r6_3",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Sandstorm",
-    "path": "folders/Objects/Weather/Sandstorm.yy",
+    "name": "D2_r6",
+    "path": "folders/Objects/Level objects/!MASTER/!Desert/D2/D2_r6.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_objects_delete",
+    "path": "objects/obj_objects_delete/obj_objects_delete.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,9 +32,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "bgr_test_sandstorm",
-    "path": "sprites/bgr_test_sandstorm/bgr_test_sandstorm.yy",
+    "name": "spr_enemy_creator",
+    "path": "sprites/spr_enemy_creator/spr_enemy_creator.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
