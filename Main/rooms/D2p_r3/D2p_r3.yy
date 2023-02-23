@@ -86,6 +86,7 @@
     {"name":"inst_785EA6A8","path":"rooms/D2p_r3/D2p_r3.yy",},
     {"name":"inst_7569A82A","path":"rooms/D2p_r3/D2p_r3.yy",},
     {"name":"inst_71205E50","path":"rooms/D2p_r3/D2p_r3.yy",},
+    {"name":"inst_6E6B461C","path":"rooms/D2p_r3/D2p_r3.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -171,6 +172,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_488D4AEC","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy_creator","path":"objects/obj_enemy_creator/obj_enemy_creator.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":2.0,"x":640.0,"y":64.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_785EA6A8","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy_creator","path":"objects/obj_enemy_creator/obj_enemy_creator.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":7.0,"x":496.0,"y":-48.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_71205E50","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy_creator","path":"objects/obj_enemy_creator/obj_enemy_creator.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":18.0,"x":1184.0,"y":-96.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6E6B461C","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_room_transition_vertical","path":"objects/obj_room_transition_vertical/obj_room_transition_vertical.yy",},"properties":[],"rotation":0.0,"scaleX":3.4,"scaleY":1.0,"x":40.0,"y":288.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_4","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":79,"TileCompressedData":[
 -6,7,1,8,-72,-2147483648,-6,7,1,8,-72,-2147483648,-6,7,1,8,-72,-2147483648,1,19,-5,10,1,11,-72,-2147483648,1,8,-78,-2147483648,1,8,-78,-2147483648,1,8,-78,-2147483648,1,8,-78,-2147483648,1,8,-78,-2147483648,1,8,-3,-2147483648,1,3,-4,4,1,5,-57,-2147483648,1,3,-3,4,1,5,-7,-2147483648,1,8,-3,-2147483648,1,6,-4,7,1,8,-57,-2147483648,1,
