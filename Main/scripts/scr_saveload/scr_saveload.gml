@@ -32,12 +32,24 @@ var _saveStorage =
     
     // Пушки
     
-    cannon_j2_r1 : global.cannon_j2_r1,
+    cannon_j2_r1  : global.cannon_j2_r1,
+    cannon_d2_r1  : global.cannon_d2_r1,
+    cannon_sn2_r1 : global.cannon_sn2_r1,
+    cannon_l2_r1  : global.cannon_l2_r1,
+    cannon_sh2_r1 : global.cannon_sh2_r1,
     
     //Ключи
     
-    key_green1 : global.key_green1,
-    key_green2 : global.key_green2,
+    key_green1  : global.key_green1,
+    key_green2  : global.key_green2,
+    key_yellow1 : global.key_yellow1,
+    key_yellow2 : global.key_yellow2,
+    key_red1    : global.key_red1,
+    key_red2    : global.key_red2,
+    key_blue1   : global.key_blue1,
+    key_blue2   : global.key_blue2,
+    key_purple1 : global.key_purple1,
+    key_purple2 : global.key_purple2,
     
     //АПГРЕЙДЫ
     
@@ -71,6 +83,8 @@ var _saveStorage =
     // Важные Катсцены
     
     Cutscene_f1_r33 : global.Cutscene_f1_r33,
+    
+    #region Jungle
     
     #region 1 уровень
     
@@ -128,7 +142,7 @@ var _saveStorage =
     
     #endregion
     
-    
+    #endregion
     
     
 }
@@ -183,13 +197,28 @@ function scr_load_progress(){
             
             // Пушки на уровнях с лодкой
             
-            global.cannon_j2_r1 = _loadStorage.cannon_j2_r1;
+            global.cannon_j2_r1     = _loadStorage.cannon_j2_r1;
+            global.cannon_d2_r      = _loadStorage.cannon_d2_r;
+            global.cannon_sn2_r1    = _loadStorage.cannon_sn2_r1;
+            global.cannon_l2_r1     = _loadStorage.cannon_l2_r1;
+            global.cannon_sh2_r1    = _loadStorage.cannon_sh2_r1;
+            
+            //Ключи
+            
             
             // Ключи
             
-            global.key_green1 = _loadStorage.key_green1;
-            global.key_green2 = _loadStorage.key_green2;
-    
+            global.key_green1   = _loadStorage.key_green1;
+            global.key_green2   = _loadStorage.key_green2;
+            global.key_yellow1  = _loadStorage.key_yellow1;
+            global.key_yellow2  = _loadStorage.key_yellow2;
+            global.key_red1     = _loadStorage.key_red1;   
+            global.key_red2     = _loadStorage.key_red2;  
+            global.key_blue1    = _loadStorage.key_blue1;  
+            global.key_blue2    = _loadStorage.key_blue2; 
+            global.key_purple1  = _loadStorage.key_purple1;
+            global.key_purple2  = _loadStorage.key_purple2;
+            
             // апгрейды человек
             
             // Возможность апгрейда якоря
@@ -224,6 +253,8 @@ function scr_load_progress(){
             // Катсцены
             
             global.Cutscene_f1_r33 = _loadStorage.Cutscene_f1_r33;
+        
+            #region Jungle
         
             #region 1 уровень
     
@@ -281,6 +312,7 @@ function scr_load_progress(){
     
             #endregion
         
+            #endregion
 
         show_debug_message("game loaded!" + _string);
     }
