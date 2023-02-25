@@ -391,6 +391,7 @@
     {"name":"Fol1Level1","order":1,"path":"folders/Rooms/!MASTER/!Jungle/P1/Fol1Level1.yy",},
     {"name":"P2","order":5,"path":"folders/Rooms/!MASTER/!Jungle/P2.yy",},
     {"name":"Village","order":1,"path":"folders/Rooms/!MASTER/!Jungle/Village.yy",},
+    {"name":"!lava","order":10,"path":"folders/Rooms/!MASTER/!lava.yy",},
     {"name":"!TestLoad","order":5,"path":"folders/Rooms/!MASTER/!TestLoad.yy",},
     {"name":"!Tutor","order":1,"path":"folders/Rooms/!MASTER/!Tutor.yy",},
     {"name":"tutor1","order":1,"path":"folders/Rooms/!MASTER/!Tutor/tutor1.yy",},
@@ -653,6 +654,7 @@
     {"name":"Temple","order":13,"path":"folders/Tile Sets/Temple.yy",},
     {"name":"Special tiles","order":5,"path":"folders/Tile Sets/Temple/Special tiles.yy",},
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
+    {"name":"L1","order":1,"path":"folders/Rooms/!MASTER/!lava/L1.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_saw_horizontal_mask","order":8,"path":"sprites/spr_saw_horizontal_mask/spr_saw_horizontal_mask.yy",},
@@ -1565,6 +1567,7 @@
     {"name":"obj_molded_small_spawner","order":4,"path":"objects/obj_molded_small_spawner/obj_molded_small_spawner.yy",},
     {"name":"obj_jngl_lvl2_container_b_r3","order":7,"path":"objects/obj_jngl_lvl2_container_b_r3/obj_jngl_lvl2_container_b_r3.yy",},
     {"name":"spr_hoo_block_jp","order":1,"path":"sprites/spr_hoo_block_jp/spr_hoo_block_jp.yy",},
+    {"name":"Lv1_r1","order":1,"path":"rooms/Lv1_r1/Lv1_r1.yy",},
     {"name":"obj_fol1_container_r35","order":34,"path":"objects/obj_fol1_container_r35/obj_fol1_container_r35.yy",},
     {"name":"obj_block_jump_big_flw","order":3,"path":"objects/obj_block_jump_big_flw/obj_block_jump_big_flw.yy",},
     {"name":"obj_room_transition","order":2,"path":"objects/obj_room_transition/obj_room_transition.yy",},
