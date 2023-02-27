@@ -11,7 +11,7 @@ if state = 2
         var d = instance_create_depth(x,y,depth,obj_snakefast_death);
         if instance_exists(obj_Player)
         {
-            if obj_Player.x < x d.hspd = 3;
+            if obj_Player.x <= x d.hspd = 3;
             if obj_Player.x > x d.hspd = -3;
         
         }

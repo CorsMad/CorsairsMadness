@@ -1,8 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-x+=hspd;
-if place_meeting(x,y,obj_bird_limiter) hspd = -hspd
 
 
 

@@ -49,11 +49,11 @@ if state = 3
     hspeed = 0;
     vspeed = 0;
     t++;
-    if t = 10
+    if t = 20
     {
         t = 0;
         state = 1;
-        spd = 2;
+        spd = 1;
         boomer = 0;
     }
 }

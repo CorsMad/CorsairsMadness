@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Camera",
-    "path": "folders/Objects/Camera.yy",
+    "name": "Main",
+    "path": "Main.yyp",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -30,5 +30,5 @@
   "solid": false,
   "spriteId": null,
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

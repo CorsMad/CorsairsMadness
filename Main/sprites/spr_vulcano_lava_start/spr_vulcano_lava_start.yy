@@ -25,7 +25,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b0ba8969-8468-4c19-8f62-911914c900b6","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 1,
+  "origin": 7,
   "parent": {
     "name": "Vulcano level",
     "path": "folders/Sprites/Level objects/Levels Stuff/Vulcano level.yy",
@@ -64,7 +64,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 10,
-    "yorigin": 0,
+    "yorigin": 12,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
