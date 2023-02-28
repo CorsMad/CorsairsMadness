@@ -7,7 +7,7 @@ if state = 0
 {
     if instance_exists(obj_Player)
     {
-        if abs(obj_Player.x - x) < 200 
+        if abs(obj_Player.x - x) < range 
         {
             state = 1;   
         }
@@ -38,10 +38,12 @@ if state = 1
             var dir = point_direction(x,y,obj_Player.x,obj_Player.y-16);
             hspeed = lengthdir_x(spd,dir);
             vspeed = lengthdir_y(spd,dir);
+			if hspeed > 0 image_xscale = -1 else image_xscale = 1;
         }
         image_index = 0;
         sprite_index = spr_lavaster_attack;
         image_speed = 1;
+		
      }
 }
 

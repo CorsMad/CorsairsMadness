@@ -1,0 +1,2 @@
+range = 100;
+image_xscale = -1;

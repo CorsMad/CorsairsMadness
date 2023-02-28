@@ -15,7 +15,7 @@ if state = 0 //Внизу
     {
         state = 1;
         t = 0;
-        vspd = -1;
+        vspd = -spd;
     }
 }
 
@@ -39,7 +39,7 @@ if state = 2 //оставание
     {
         t = 0;
         state = 3;
-        vspd = 1;
+        vspd = spd;
     }
 }
 

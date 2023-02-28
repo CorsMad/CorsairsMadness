@@ -86,9 +86,9 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 144;
-global.TargetY      = 784;
-global.TargetRoom   = L1_r7;
+global.TargetX      = 106;
+global.TargetY      = 128;
+global.TargetRoom   = L1_r15;
 
 global.fTargetX     = 208;
 global.fTargetY     = 560;
