@@ -36,5 +36,5 @@
     "path": "sprites/spr_skates_mask/spr_skates_mask.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

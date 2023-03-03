@@ -2998,6 +2998,18 @@ if isSkating = 1
         image_xscale = -1;
     }
 
+    if place_meeting(x,y+1,obj_block_slope_r_f)
+    {
+        image_xscale = 1;
+        sspd = 3;
+    }
+    if place_meeting(x,y+1,obj_block_slope_l_f)
+    {
+        sspd = -3;
+        image_xscale = -1;
+    }
+    
+
     if (place_meeting(x,y+1,obj_block_skate) && key_jump) {vspd = -5;isSkatingonrail = 0;}  
     
     if (!place_meeting(x,y+2,obj_block_slope) && !instance_exists(obj_skates_mask)) {instance_create_depth(x,y,depth,obj_skates_mask);isSkatingonrail = 0; }

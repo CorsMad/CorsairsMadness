@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_tls_snow_level2",
-  "bbox_bottom": 332,
+  "bbox_bottom": 351,
   "bbox_left": 0,
   "bbox_right": 79,
   "bbox_top": 16,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d8d73c8e-0ea2-4b98-b94e-b77e2909d9fb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8e6f52ef-f782-497b-9b29-c49892dd0b55",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 336,
+  "height": 352,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ddd437df-7ed9-457b-a899-887b7765037e","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"62a4a5ed-fa43-4298-a81b-2813d896c4a9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d8d73c8e-0ea2-4b98-b94e-b77e2909d9fb","path":"sprites/spr_tls_snow_level2/spr_tls_snow_level2.yy",},},},"Disabled":false,"id":"1e8536c2-c811-42dd-9fe4-735d72c2ef59","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8e6f52ef-f782-497b-9b29-c49892dd0b55","path":"sprites/spr_tls_snow_level2/spr_tls_snow_level2.yy",},},},"Disabled":false,"id":"612c4e21-133c-47b1-b860-d225abcdb0c2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

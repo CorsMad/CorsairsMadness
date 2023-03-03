@@ -5,7 +5,7 @@ switch(state)
 {
     case 0: if instance_exists(obj_Player)
             {
-                if x - obj_Player.x < 96 
+                if (abs(x - obj_Player.x) < range) && (obj_Player.y > y)
                 {
                     state = 1;
                     

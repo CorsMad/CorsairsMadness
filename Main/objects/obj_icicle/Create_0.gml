@@ -5,3 +5,5 @@ t =0;
 vspd = 0;
 image_speed = 0;
 t_max = 30;
+
+range = 96;
