@@ -25,7 +25,7 @@ if fluetOn = 1
     }
 }
 
-if place_meeting(x,bbox_top-1,obj_Player)
+if place_meeting(x,bbox_top-1,obj_Player) && fluetOn = 1
 {
 	obj_Player.carryspd = spd;
 }

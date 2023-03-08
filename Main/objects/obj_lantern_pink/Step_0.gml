@@ -7,6 +7,7 @@ if isOn = 1 && place_meeting(x,y,obj_hitbox_mask_dash) && obj_Player.isRecoil = 
         instance_create_depth(obj_hitbox_mask_dash.x,obj_hitbox_mask_dash.y-20,obj_hitbox_mask_dash.depth-1,obj_sfx_weapon_slash);
     }
 	obj_Player.isRecoil = 1;
+    obj_Player.vspd = -2;
     obj_Player.image_index = 0;
     obj_Player.dashing_timer = 0;
     obj_Player.dashing_timer_count = 0;

@@ -26,12 +26,13 @@ if isGrounded = 1
 #endregion
 
 #region Collision check
-
+fnc_Collision_player(obj_block);
+    /*
 	if clone_timer= 0
     {
         fnc_Collision_player(obj_block);
     } else fnc_Collision_player(obj_block_clone);
-	
+	*/
 #endregion	
 
 #region Movement
@@ -40,7 +41,7 @@ if isGrounded = 1
 
 
 hspd = spd;
-fspd = hspd + carryspd + afterhookspd + attackspd;
+fspd = hspd + carryspd + afterhookspd + attackspd + doublejumpspd;
 carryspd = 0;
 
 #region afterhookspd
@@ -144,6 +145,9 @@ if ((!key_left && !key_right) || (key_left && key_right) ) && superdash_timer = 
 if place_meeting(x,y+1,obj_block) 
 {
 	isGrounded = 1;	
+    superdash_timer_count = 0;
+    canDoubleJump = 1;
+    doublejumpspd = 0;
     if oleg = 1 
             {
                 if isDashing = 0
@@ -160,25 +164,27 @@ if place_meeting(x,y+1,obj_block)
 
 if isGrounded = 0 && isRecoil = 0 && isAfterhook = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0 &&  isAirattacking = 0 && isAirUsingitem = 0 && isWallclimbing = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0
 {
-    if isDashing = 0
-    {
-    if instance_exists(obj_item_hook_masked)
-	{
-		sprite_index = spr_player_masked_hooking_jump;
-	} else  {
-                sprite_index = spr_player_masked_jump;
-            }
-        image_speed =0;
-                if vspd > 0 
-            	{
-            		image_index = 1;
-            	}
-            	if vspd <= 0 
-            	{
-            		image_index = 2;	
-            	}    
+    if superdash_timer = 0
+    { 
+        if isDashing = 0
+        {
+            if instance_exists(obj_item_hook_masked)
+    	{
+    		sprite_index = spr_player_masked_hooking_jump;
+    	} else  {
+                    sprite_index = spr_player_masked_jump;
+                }
+            image_speed =0;
+                    if vspd > 0 
+                	{
+                		image_index = 1;
+                	}
+                	if vspd <= 0 
+                	{
+                		image_index = 2;	
+                	}    
+        }
     }
-			
 		//TEST
         
         if key_jump_release && vspd < -4 && lanhit = 0
@@ -510,6 +516,7 @@ if key_dashing && dashing_timer_count = 0 && isCarry = 0 && isAfterhook = 0 && !
     sprite_index = spr_player_masked_dash;
     image_index = 0;
 	isDashing = 1;
+    doublejumpspd = 0;
 	vspd = 0;
     lanhit = 0;
 	isAirattacking = 0;
@@ -545,7 +552,12 @@ if isDashing = 1
 {  
     player_input_buffer_attack(1);
     player_input_buffer_airattack(1);
-    player_input_buffer_item_hook(1);    
+    switch(SpecAbilMask)
+    {
+        case 1: player_input_buffer_item_hook(1);break;
+        case 2: break;
+    }
+        
 }
 #endregion
 #region помощь при углах
@@ -630,13 +642,14 @@ if dashing_timer_count  = 1
 #region Recoil
 if isRecoil = 1
 {
+    doublejumpspd = 0;
     lanhit = 0;
     //recoil_timer++;
     sprite_index = spr_player_masked_recoil;
     image_speed = 0.75;
     isDashing = 0;
     isAirattacking = 0;
-    vspd = -1;
+    //vspd = -1;
     #region movement
     if key_left
     {
@@ -823,30 +836,59 @@ if isRecoil = 1
 
 #region Teleport Cloud
 
-if key_item_pressed && !instance_exists(obj_teleport_cloud) && SpecAbilMask = 2
+if key_item && spectp_timer_count = 0 && !instance_exists(obj_teleport_cloud) && SpecAbilMask = 2 && isTakingdmg = 0 && (damage_cd > 30 || damage_cd = 0) && isDashing = 0
 {
     var tp_cr = instance_create_depth(x,y,depth-1,obj_teleport_cloud);
     tp_cr.spd = 2*sign(image_xscale);  
     tp_cr.image_xscale = sign(image_xscale);
+    spectp_timer_count = 1;
 }
 
-if key_item_pressed && instance_exists(obj_teleport_cloud) && obj_teleport_cloud.moving = 1 && obj_teleport_cloud.teleport_delay_timer > 10 && obj_teleport_cloud.pressed = 0
+if  instance_exists(obj_teleport_cloud) && obj_teleport_cloud.moving = 1 && obj_teleport_cloud.teleport_delay_timer > 10 && obj_teleport_cloud.pressed = 0
 {
-    obj_teleport_cloud.pressed = 1;
-    
+    if key_item_pressed cloud_exist_timer++;
+    if cloud_exist_timer = 50 
+        {
+            obj_teleport_cloud.isDead = 1;
+            spectp_timer = 70;     
+        }
+    else if key_item_released {obj_teleport_cloud.pressed = 1;cloud_exist_timer= 0} 
 }
+
+if !instance_exists(obj_teleport_cloud) cloud_exist_timer = 0;
+
+
+
+#region Clone Timer
+    if spectp_timer_count  = 1
+    {
+        if !instance_exists(obj_teleport_cloud) spectp_timer++;
+        if spectp_timer = 90
+        {
+            instance_create_depth(x,y-24,depth+1,obj_sfx_hook_sparkle);
+            spectp_timer = 0;
+            spectp_timer_count = 0;
+        }
+    } 
+    
+    #endregion
 #endregion
 
 #region Superdash
 
-if key_item_pressed && SpecAbilMask = 3
+if isRecoil = 0 && key_item_pressed && SpecAbilMask = 3 && superdash_timer_count = 0 && isTakingdmg = 0 && (damage_cd > 30 || damage_cd = 0)
 {
+    isDashing = 0;
+    isAttacking = 0;
+    isAirattacking = 0;
+    doublejumpspd = 0;
+    
     #region Анимация
     
     
     #endregion
     
-    if superdash_timer < 82 
+    if superdash_timer < 62 
     {
         superdash_timer++; 
     }
@@ -871,11 +913,12 @@ if key_item_pressed && SpecAbilMask = 3
     switch(superdash_timer) 
     {
         case 1:  sprite_index = spr_player_masked_presuperdash1;break;
-        case 40: sprite_index = spr_player_masked_presuperdash2;superdash_power = 1;break;   
-        case 80: sprite_index = spr_player_masked_presuperdash3;superdash_power = 2;break;
+        case 30: sprite_index = spr_player_masked_presuperdash2;superdash_power = 1;break;   
+        case 60: sprite_index = spr_player_masked_presuperdash3;superdash_power = 2;break;
     }
     if superdash_timer!= 0 
     {
+        image_speed = 1;
         fspd = 0;
         attackspd = 0;
         hspd = 0;
@@ -889,26 +932,66 @@ if key_item_pressed && SpecAbilMask = 3
     }
     
 }
- if (key_item_released && superdash_timer!=0) 
+ if (key_item_released) 
     {
-        superdash_timer = 0;
-        isDead = 12;
-        var superdash_vfx = instance_create_depth(x,y,depth-1,obj_superdash_stream);
-        switch(superdash_power)
+        if superdash_timer>=60
         {
-            case 0: superdash_vfx.sprite_index = spr_superdash_stream1;break;
-            case 1: superdash_vfx.sprite_index = spr_superdash_stream2;break;
-            case 2: superdash_vfx.sprite_index = spr_superdash_stream3;break;
+            superdash_timer = 0;
+            isDead = 12;
+            instance_create_depth(x,y,depth,obj_hitbox_mask_superdash);
+            superdash_timer_count = 1;
+            var superdash_vfx = instance_create_depth(x,y,depth-1,obj_superdash_stream);
+            switch(superdash_power)
+            {
+                case 0: superdash_vfx.sprite_index = spr_superdash_stream1;break;
+                case 1: superdash_vfx.sprite_index = spr_superdash_stream2;break;
+                case 2: superdash_vfx.sprite_index = spr_superdash_stream3;break;
+            }
+        } else 
+        {
+            superdash_timer = 0;
+            superdash_timer_count = 1;
+            dash_vfx_timer = 0;
+            superdash_power = 0;
         }
     }
+    
+
 #endregion
 
 #region DoubleJump
-if isGrounded = 0 && key_jump_pressed && !instance_exists(obj_doublejump) && SpecAbilMask = 4
+if isGrounded = 0 && key_jump_pressed && !instance_exists(obj_doublejump) && !instance_exists(obj_doublejump_wings) && SpecAbilMask = 4 
 {
+    var DJumpHoriz = instance_place(x,y,obj_doublejump_forward)
+    var DJumpUp = instance_place(x,y,obj_doublejump_up)
+    
+    if DJumpHoriz != noone
+    {
+        doublejumpspd = DJumpHoriz.hspd;   
+        vspd = DJumpHoriz.vspd;   
+        instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+        instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
+    } else 
+    if DJumpUp != noone
+    {
+        vspd = DJumpUp.vspd; 
+        instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+        instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
+    } else
+    if canDoubleJump = 1
+    {
+        instance_create_depth(x,y,depth,obj_doublejump);
+        instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+        instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
+        canDoubleJump = 0;   
+    }
+    
+    /*
     instance_create_depth(x,y,depth,obj_doublejump);
     instance_create_depth(x,y,depth+1,obj_doublejump_wings);
     instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
+    canDoubleJump = 0;
+    */
 }
 #endregion
 
@@ -943,6 +1026,7 @@ if (place_meeting(x,y,obj_enemy_parent) || place_meeting(x,y,obj_enemy_parent_ob
 {
     fnc_snd_play_onetime(snd_player_take_dmg);  
 	global.hp -= 1;
+    doublejumpspd = 0;
 	hspd = 0;
 	vspd = -2;
 	isTakingdmg = 1;
@@ -1220,7 +1304,7 @@ if dashing_timer_count = 0
         sprkl_timer_dash = 0;
     }
 }
-if hooking_timer_count = 0 && HookEnabled = 1
+if hooking_timer_count = 0 && HookEnabled = 1 && SpecAbilMask = 1
 {
     sprkl_timer_hook++;
 
@@ -1231,6 +1315,18 @@ if hooking_timer_count = 0 && HookEnabled = 1
         sprkl_timer_hook = 0;
     }
 
+}
+
+if spectp_timer_count = 0 && SpectpEnabled = 1 && SpecAbilMask = 2
+{
+    sprkl_timer_hook++;
+
+    if  sprkl_timer_hook = 15
+    {
+    	instance_create_depth(x,y+random_range(-16,-8),depth+1,obj_sfx_sparkle_hook);
+        
+        sprkl_timer_hook = 0;
+    }   
 }
 
 

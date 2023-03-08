@@ -13,6 +13,7 @@ if  place_meeting(x,y,obj_hitbox_mask_dash)
 {
     obj_Player.image_index = 0;
     obj_Player.isRecoil = 1;
+    obj_Player.vspd = -2;
     obj_Player.dashing_timer_count = 1;
             
     if obj_Player.x < x 

@@ -5,6 +5,7 @@ vspd = 0;
 spd = 2;
 sspd = 0;
 fspd = 0;
+doublejumpspd = 0;
 grav = 0;//0.25;
 
 
@@ -98,6 +99,8 @@ sprkl_timer_dash = 0;
 sprkl_timer_hook = 0;
 dashing_timer = 0;
 hooking_timer = 0;
+spectp_timer = 0;
+superdash_spec_timer = 0;
 transform_timer = 0;
 fluettimer = 0;
 comboTimer = 0;
@@ -107,6 +110,7 @@ t_dia = 0;
 pos_teleport_turn_timer = 0;
 move_to_cloud = 0;
 teleport_delay_timer = 0;
+cloud_exist_timer = 0;
 #endregion
 
 #endregion
@@ -114,7 +118,8 @@ teleport_delay_timer = 0;
 #region Ограничения
 
 DashEnabled = 1; //global.dash;
-HookEnabled = 0;//global.fhook; /////
+HookEnabled = 0; //global.fhook; /////
+SpectpEnabled = 1;// TP
 
 SpecAbil = 1;
 #region Спец абилки human
@@ -130,7 +135,7 @@ specabilnumber = 0;
 #region Спец абилки Possessed
 // 1 - hook, 2 - teleport, 3 - superdash , 4 - doublejump, 5 - clone
 
-SpecAbilMask = 1;
+SpecAbilMask = 5;
 #endregion
 
 
@@ -142,6 +147,8 @@ dash_counts = 0;
 jump_counts = 0;
 dashing_timer_count = 0;
 hooking_timer_count = 0;
+superdash_timer_count = 0;
+spectp_timer_count = 0;
 dashing_timer_count_timer = 0;
 silverkey_counts = 0;
 dash_in_air = 0;
@@ -150,7 +157,8 @@ dash_count = 0;
 dash_pad = 0;
 comboTimer = 0;
 comboMeter = 0;
-
+canDoubleJump = 1;
+canSuperDash = 1;
 #endregion
 
 #region TIPS

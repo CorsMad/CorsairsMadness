@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4657be58-e6ba-45a3-beab-56ee073b64db","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 7,
   "parent": {
     "name": "Snake_fast",
     "path": "folders/Sprites/Enemies/Snake_fast.yy",
@@ -60,7 +60,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 24,
-    "yorigin": 16,
+    "yorigin": 32,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

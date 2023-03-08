@@ -408,6 +408,7 @@ if place_meeting(x,y,obj_hitbox_mask_dash)  && hit_cd = 0
         		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
     obj_Player.image_index = 0;
     obj_Player.isRecoil = 1;
+    obj_Player.vspd = -2;
     obj_Player.dashing_timer_count = 1;
     
     if combo_counter > 2 

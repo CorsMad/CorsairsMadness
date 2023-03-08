@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
-x+=spd;
+
+if (spd > 0 && !place_meeting(x+spd,y,obj_block)) || (spd < 0 && !place_meeting(x-spd,y,obj_block))
+{
+    x+=spd;   
+}
+
+
 t++;
 if t > 25 && t < 60
 {

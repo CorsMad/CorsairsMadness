@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (280<t && t<300) || (320<t && t<340) || (360<t && t<380)  
+if (t_max-120<t && t<t_max-100) || (t_max-80<t && t<t_max-60) || (t_max-40<t && t<t_max-20)  
 {
     alph = 0.5;   
 } else alph = 1;

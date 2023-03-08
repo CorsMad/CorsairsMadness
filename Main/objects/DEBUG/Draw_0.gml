@@ -8,8 +8,7 @@ if instance_exists(obj_boss_d1_1)
 }
 */
 
-if instance_exists(obj_lava_torrent)
+if instance_exists(obj_Player)
 {
-    draw_text(32,48,string(obj_lava_torrent.state)) ;
-    draw_text(32,64,string(obj_lava_torrent.t));   
+    draw_text(32,48,string(obj_Player.cloud_exist_timer)) ;  
 }

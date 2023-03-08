@@ -63,7 +63,7 @@ global.purch_dualpistols3 = 0;
 #region Игрок
 global.hp = 5;           // 4
 global.hp_max = 5;       // 4
-global.choosed_item = 1; // 1- бумер 2 -топ // 3 - бомба // 11 - арбалет
+global.choosed_item = 0; // 1- бумер 2 -топ // 3 - бомба // 11 - арбалет
 global.choosed_item_tier = 0; // ТИР предмета
 global.choosed_itemboat = 0; // 1 - ? 2 - 2пистолета 
 global.choosed_itemboat_tier = 0; // ТИП предмета для лодки
@@ -86,13 +86,13 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 48;
-global.TargetY      = 48;
-global.TargetRoom   = S2p_s;
+global.TargetX      = 384;
+global.TargetY      = 592;
+global.TargetRoom   = G2p_r6;
 
-global.fTargetX     = 208;
-global.fTargetY     = 560;
-global.fTargetRoom  = T2_r3;
+global.fTargetX     = 240;
+global.fTargetY     = 256;
+global.fTargetRoom  = TESTROOM;
 
 /*
     global.fTargetX = 80;

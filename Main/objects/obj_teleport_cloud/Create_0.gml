@@ -7,3 +7,7 @@ can_teleport = 0;
 pressed = 0;
 image_speed =1;
 blob_cr_timer = 0;
+
+isDead = 0;
+
+vspd = 0;

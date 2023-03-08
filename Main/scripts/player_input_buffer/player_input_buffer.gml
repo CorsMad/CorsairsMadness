@@ -184,7 +184,7 @@ function player_input_buffer_execute()
     #endregion
     
     #region hooking
-    if hookingbuffer = 1 && HookEnabled = 1 && hooking_timer_count = 0 && !instance_exists(obj_item_hook_masked)
+    if  SpecAbilMask = 1 && hookingbuffer = 1 && HookEnabled = 1 && hooking_timer_count = 0 && !instance_exists(obj_item_hook_masked)
     {
         attackbuffer = 0;
         airattackbuffer = 0;

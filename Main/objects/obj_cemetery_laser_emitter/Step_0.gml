@@ -23,6 +23,7 @@ if state = 1 // Создание луча
     {
         var l = instance_create_depth(x,y,depth,obj_cemetery_laser_beam); 
         l.angle = image_angle;
+        l.a_max = length;
         t = 0;
         state = 2;
     }
@@ -36,7 +37,7 @@ if state = 2 // Изменение анимации
         image_speed = 1.5;
         sprite_index = spr_cemetery_laser_emitter_fire;       
     }
-    if t = 200
+    if t = 200//200
     {
         image_speed = 0;
         sprite_index = spr_cemetery_laser_emitter;

@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+image_angle = angle;
 if state = 0
 {
     sprite_index = spr_cemetery_laser_beam_start;   

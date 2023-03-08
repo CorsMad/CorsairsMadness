@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "bgr_cemetery_1",
-  "bbox_bottom": 269,
+  "bbox_bottom": 399,
   "bbox_left": 0,
   "bbox_right": 511,
   "bbox_top": 71,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 270,
+  "height": 400,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"61984814-a7a9-4484-ad77-a90b769816ed","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
