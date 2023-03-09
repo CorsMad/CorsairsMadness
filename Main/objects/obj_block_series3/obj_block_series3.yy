@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_hitbox",
+  "name": "obj_block_series3",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Player objects",
-    "path": "folders/Objects/Player objects.yy",
+    "name": "BLock Series",
+    "path": "folders/Objects/Blocks/Possessed/Clone/BLock Series.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_hitbox",
-    "path": "sprites/spr_player_hitbox/spr_player_hitbox.yy",
+    "name": "spr_gp_icon",
+    "path": "sprites/spr_gp_icon/spr_gp_icon.yy",
   },
   "spriteMaskId": null,
   "visible": true,

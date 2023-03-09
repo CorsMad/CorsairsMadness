@@ -1010,7 +1010,7 @@ if clone_timer!=0
     clone_timer++;   
 }
 
-if clone_timer = 150
+if clone_timer = 300
 {
     clone_timer = 0;
     isDead = 132;

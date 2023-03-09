@@ -10,5 +10,5 @@ if instance_exists(obj_boss_d1_1)
 
 if instance_exists(obj_Player)
 {
-    draw_text(32,48,string(obj_Player.cloud_exist_timer)) ;  
+    draw_text(32,48,string(obj_Player.clone_timer)) ;  
 }
