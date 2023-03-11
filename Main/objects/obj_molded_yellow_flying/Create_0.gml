@@ -1,0 +1,16 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+t = 0;
+state = 1;
+vulnerable = 1;
+appear = 0; // 0 left, 1 right
+t_recover = 0;
+
+hspd = 0;
+vspd = 0;
+
+hit_cd = 0;
+hit_timer = 0;
+
+overlap = 0;

@@ -592,7 +592,7 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0 && state != 11
 if place_meeting(x,y,obj_hitbox_mask_dash) // && hit_cd = 0
 {
      
-    t =0;
+    t = 0;
     hit_timer = 1;
     enemy_hp -= 1;
     t_red = 1;

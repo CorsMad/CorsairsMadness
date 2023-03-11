@@ -90,7 +90,7 @@ global.TargetX      = 384;
 global.TargetY      = 592;
 global.TargetRoom   = G2p_r6;
 
-global.fTargetX     = 240;
+global.fTargetX     = 112;
 global.fTargetY     = 256;
 global.fTargetRoom  = TESTROOM;
 
