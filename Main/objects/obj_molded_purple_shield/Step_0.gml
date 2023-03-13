@@ -126,6 +126,10 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
 if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0 
 {
 	hit_cd = 1;
+	if instance_exists(obj_masked_clone)
+	{
+		hit_stored++;
+	}
 	obj_Player.image_index = 0;
     obj_Player.isRecoil = 1;
     obj_Player.vspd = -1;
