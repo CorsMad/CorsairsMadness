@@ -1,17 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_molded_yellow_projectile",
+  "name": "obj_molded_sand_berserker",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "obj_molded_yellow_flying",
-    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Lava/obj_molded_yellow_flying.yy",
+    "name": "obj_molded_sand_berserker",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Sand/obj_molded_sand_berserker.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_parent_combo",
+    "path": "objects/obj_enemy_parent_combo/obj_enemy_parent_combo.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_explosion",
-    "path": "sprites/spr_explosion/spr_explosion.yy",
+    "name": "spr_molded_grounded_mask",
+    "path": "sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",
   },
   "spriteMaskId": null,
   "visible": true,

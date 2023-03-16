@@ -34,7 +34,7 @@ if state !=5
 /*
 0 - патруль
 1 - передвижение
-2 - выстрел
+2 - УДАР
 3 - ожидание
 4 - прыжок от dash
 5 - несение от Dash
@@ -54,20 +54,24 @@ if state = 0 //патруль
 
 if state = 1 // передвижение
 {
-	t++;
-	hspd = fspd;
-	if place_meeting(x,y+1,obj_block)
+    hspd = fspd;
+	if instance_exists(obj_Player)
 	{
-		fspd = choose(-4,-3,-2,2,3,4);
-		vspd = choose(-4,-5,-6);
-	}
-	if t > 200 && place_meeting(x,y+1,obj_block)
-	{
-		t = 0;
-		state = 2;
-		fspd = 0;
-		vspd = 0;
-		hspd = 0;
+		if place_meeting(x,y+1,obj_block)
+		{
+			if obj_Player.x < x && abs(obj_Player.x - x) > 32
+			{
+				fspd = -2;
+			}
+		
+			if obj_Player.x > x  && abs(obj_Player.x - x) > 32
+			{
+				fspd = 2;
+			}	
+			if collision_line(x,y-16,x+fspd*12,y-16,obj_block,false,false) vspd = -5;
+			
+			if ((abs(obj_Player.x - x) < 64) && (abs(obj_Player.y - y) < 8)) {state = 2;hspd=0;fspd = 0;vspd = 0;}
+		}		
 	}
 }
 
@@ -76,11 +80,9 @@ if state = 2 // выстрел
 	if t < 120 t++;
 	if t = 50 
 	{
-		var i = instance_create_depth(x,y,depth-1,obj_molded_sand_boomer_projectile);
-		i.origin = id;
-		grab = 0;
+
 	}
-	if t >= 100 && grab = 1
+	if t >= 100 
 	{
 		t = 0;
 		state = 1;
@@ -147,7 +149,7 @@ if state = 5
 	{
 		state = 10;
 		if obj_Player.dir = 1 hspd = -2 else hspd = 2;
-		vspd = -5;		
+		vspd = -4;		
 	}
 }
 
@@ -163,7 +165,8 @@ if state = 10 // подстан
 		vspd = -4;
 	}
 	if place_meeting(x,y+1,obj_block)
-	{		
+	{
+		
 		hspd = 0;
 		fspd = 0;
 		t++;

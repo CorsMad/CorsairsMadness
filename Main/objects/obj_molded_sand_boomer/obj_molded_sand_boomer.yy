@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "obj_molded_sand_boomer",
-    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Sand/obj_molded_sand_boomer.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Sand/obj_molded_sand_boomer.yy",
   },
   "parentObjectId": {
     "name": "obj_enemy_parent_combo",

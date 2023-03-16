@@ -1,75 +1,44 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-if place = 0.5
+if place = 0
 {
-    t++;
-    x = -100;
-    y = -100;
-    if t= 100 {place +=0.5;t = 0}
-}
-
-if place = 1 {
-    x = x1;
-    y = y1;
-    t++;
-    if t = 100{
-        t = 0;
-        if place = place_max place=0.5; else place+=0.5;
+    if abs(obj_Player.x-x) <96 && abs(obj_Player.y-y) < 96
+    {
+        isAttacking = 1;  
     }
 }
 
-if place = 1.5
+
+if isAttacking = 1
 {
     t++;
-    x = -100;
-    y = -100;
-    if t= 100 {place +=0.5;t = 0}
-}
-
-if place = 2 {
-    x = x2;
-    y = y2;
-    t++;
-    if t = 100{
+    if t = 100 {} // выстрел
+    if t = 200 
+    {
         t = 0;
-        if place = place_max place=0.5; else place+=0.5;
+        isAttacking = 0;
+        place = 1
+        place_goto = irandom(3);
+        mask_index = -1;
     }
 }
 
-if place = 2.5
+
+if place = 1 // переход
 {
     t++;
-    x = -100;
-    y = -100;
-    if t= 100 {place +=0.5;t = 0}
-}
-
-if place = 3 {
-    x = x3;
-    y = y3;
-    t++;
-    if t = 100{
+    if t = 100 
+    {
         t = 0;
-        if place = place_max place=0.5; else place+=0.5;
-    }
-}
-
-if place = 3.5
-{
-    t++;
-    x = -100;
-    y = -100;
-    if t= 100 {place +=0.5;t = 0}
-}
-
-if place = 4 {
-    x = x4;
-    y = y4;
-    t++;
-    if t = 100{
-        t = 0;
-        if place = place_max place=0.5; else place+=0.5;
+        switch(place_goto)
+        {
+            case 0: x = pg0x; y = pg0y;break;
+            case 1: x = pg1x; y = pg1y;break;
+            case 2: x = pg2x; y = pg2y;break;
+            case 3: x = pg3x; y = pg4y;break;
+        }
+        place = 0;
+        mask_index = 1;
     }
 }

@@ -4,17 +4,23 @@
 state = 0;
 t = 0;
 can_hit = 0;
-place = 0.5;
-
+place = 0;
+isAttacking = 0;
 place_max = 0;
+place_goto = 0;
 
+#region места передвижения
 
-x1 = 0;
-y1 = 0;
-x2 = 0;
-y2 = 0;
-x3 = 0;
-y3 = 0;
-x4 = 0;
-y4 = 0;
+pg0x = 64
+pg0y = 64
 
+pg1x = 64
+pg1y = 128
+
+pg2x = 128
+pg2y = 128
+
+pg3x = 128
+pg3y = 64
+
+#endregion

@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "obj_molded_purple_archer",
-    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Shadow/obj_molded_purple_archer.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Shadow/obj_molded_purple_archer.yy",
   },
   "parentObjectId": {
     "name": "obj_enemy_parent_object",

@@ -34,5 +34,5 @@
     "path": "sprites/spr_doublejump/spr_doublejump.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

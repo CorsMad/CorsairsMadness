@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "obj_molded_yellow_flying",
-    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Lava/obj_molded_yellow_flying.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Lava/obj_molded_yellow_flying.yy",
   },
   "parentObjectId": {
     "name": "obj_enemy_parent_combo",

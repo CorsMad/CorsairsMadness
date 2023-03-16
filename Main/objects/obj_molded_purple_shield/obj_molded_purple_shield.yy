@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "obj_molded_purple_shield",
-    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Shadow/obj_molded_purple_shield.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Shadow/obj_molded_purple_shield.yy",
   },
   "parentObjectId": {
     "name": "obj_enemy_parent_combo",
