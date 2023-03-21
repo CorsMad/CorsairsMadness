@@ -154,6 +154,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Skeleton","folderPath":"folders/Objects/Enemies/!CORSAIR GROUP/OVERALL/Skeletons/Skeleton.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Snake","folderPath":"folders/Objects/Enemies/!CORSAIR GROUP/OVERALL/Snake.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"!MOLDED GROUP","folderPath":"folders/Objects/Enemies/!MOLDED GROUP.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"!Master","folderPath":"folders/Objects/Enemies/!MOLDED GROUP/!Master.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"!Lava","folderPath":"folders/Objects/Enemies/!MOLDED GROUP/!Master/!Lava.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"obj_molded_yellow_flying","folderPath":"folders/Objects/Enemies/!MOLDED GROUP/!Master/!Lava/obj_molded_yellow_flying.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"obj_molded_yellow_run","folderPath":"folders/Objects/Enemies/!MOLDED GROUP/!Master/!Lava/obj_molded_yellow_run.yy",},
@@ -165,6 +166,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"obj_molded_purple_shield","folderPath":"folders/Objects/Enemies/!MOLDED GROUP/!Master/!Shadow/obj_molded_purple_shield.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"!Snow","folderPath":"folders/Objects/Enemies/!MOLDED GROUP/!Master/!Snow.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"obj_molded_snow_flying","folderPath":"folders/Objects/Enemies/!MOLDED GROUP/!Master/!Snow/obj_molded_snow_flying.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"obj_molded_snow_lanc","folderPath":"folders/Objects/Enemies/!MOLDED GROUP/!Master/!Snow/obj_molded_snow_lanc.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Blood","folderPath":"folders/Objects/Enemies/!MOLDED GROUP/Blood.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Crawling","folderPath":"folders/Objects/Enemies/!MOLDED GROUP/Crawling.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"FastFly","folderPath":"folders/Objects/Enemies/!MOLDED GROUP/FastFly.yy",},
@@ -752,8 +754,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Temple","folderPath":"folders/Tile Sets/Temple.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Special tiles","folderPath":"folders/Tile Sets/Temple/Special tiles.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"obj_molded_snow_lanc","folderPath":"folders/Objects/Enemies/!MOLDED GROUP/!Master/!Snow/obj_molded_snow_lanc.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"!Master","folderPath":"folders/Objects/Enemies/!MOLDED GROUP/!Master.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Steamworks_Extension_Documentation.html","CopyToMask":0,"filePath":"datafiles",},
@@ -761,7 +761,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.0.71",
+    "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"spr_saw_horizontal_mask","path":"sprites/spr_saw_horizontal_mask/spr_saw_horizontal_mask.yy",},},
