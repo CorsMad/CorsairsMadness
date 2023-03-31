@@ -9,7 +9,8 @@ if instance_exists(obj_boss_d1_1)
 */
 
 
-    draw_text(32,48, string(obj_maze5_controller.score_count));  
+    draw_text(32,48, string(obj_molded_yellow_run.state));  
+    draw_text(32,64, string(obj_molded_yellow_run.get_kicked));  
     //draw_text(32,64, string(obj_maze4_controller.phase));  
     //draw_text(32,96, string(obj_maze4_controller.step)); 
     //draw_text(30,128,string(obj_maze4_controller.b1)); 

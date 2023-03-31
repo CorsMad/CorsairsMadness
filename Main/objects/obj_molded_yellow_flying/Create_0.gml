@@ -14,3 +14,5 @@ hit_cd = 0;
 hit_timer = 0;
 
 overlap = 0;
+
+image_speed = 0;
