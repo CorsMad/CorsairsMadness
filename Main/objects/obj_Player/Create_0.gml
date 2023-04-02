@@ -135,7 +135,7 @@ specabilnumber = 0;
 #region Спец абилки Possessed
 // 1 - hook, 2 - teleport, 3 - superdash , 4 - doublejump, 5 - clone
 
-SpecAbilMask = 2;
+SpecAbilMask = 5;
 #endregion
 
 

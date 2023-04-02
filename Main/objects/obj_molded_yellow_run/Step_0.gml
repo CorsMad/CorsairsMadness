@@ -64,12 +64,23 @@ if state = 1 // бег к игроку
         if vspd > -0.1 image_index = 2 
     } else 
     {
-        
         image_speed = 1.25;
-        sprite_index = spr_molded_yellow_run;
+		//sprite_index = spr_molded_yellow_run
+		if hspd!= 0 
+		{
+			sprite_index = spr_molded_yellow_run;
+			image_speed = 1;
+			         
+		} else
+			{
+				sprite_index = spr_molded_yellow_takedmg;
+				image_index = 3;
+				image_speed = 0;
+			}
     }
     if hspd > 0 image_xscale = -1 
     if hspd < 0 image_xscale=1;
+	
 	if instance_exists(obj_Player)
 	{
 		if place_meeting(x,y+1,obj_block)
@@ -319,9 +330,7 @@ if state = 3 // после урона в воздухе
             if place_meeting(x-1,y,obj_block) {hspd = 1;get_kicked = 0;}   
         }
     }
-    
-    
-    
+       
     sprite_index = spr_molded_yellow_takedmg;
 	if place_meeting(x,y+1,obj_block)
 	{
@@ -400,7 +409,30 @@ if state = 5
 	vspd = 0;
 	clouded = 1;
 	cloud_timer ++;
-	if cloud_timer = 100 {cloud_timer = 0;clouded = 0;state = 1}
+	if cloud_timer = 100 
+	{
+		cloud_timer = 0;clouded = 0;state = 5.5;t=0;
+	}
+}
+
+if state = 5.5
+{
+	t++;
+	if !place_meeting(x,y+1,obj_block) 
+	{
+		sprite_index = spr_molded_yellow_jump;
+		image_speed = 0;
+		image_index = 2;
+	} else 
+	{
+		sprite_index = spr_molded_yellow_idle;
+		image_speed = 1;
+	}
+	if t = 50
+	{
+		t=0;
+		state = 1;	
+	}
 }
 
 if state = 5 cloud_cr.on = 1 else cloud_cr.on = 0;

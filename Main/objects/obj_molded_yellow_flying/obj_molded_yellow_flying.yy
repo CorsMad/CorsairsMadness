@@ -35,6 +35,9 @@
     "name": "spr_molded_yellow_flying_idle",
     "path": "sprites/spr_molded_yellow_flying_idle/spr_molded_yellow_flying_idle.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_molded_grounded_mask",
+    "path": "sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",
+  },
   "visible": true,
 }

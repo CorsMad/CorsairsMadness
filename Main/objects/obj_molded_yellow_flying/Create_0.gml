@@ -16,3 +16,6 @@ hit_timer = 0;
 overlap = 0;
 
 image_speed = 0;
+
+cloud_cr = instance_create_depth(x,y,depth-1,obj_molded_yellow_cloud_flying);
+cloud_cr.obj_cr = id;

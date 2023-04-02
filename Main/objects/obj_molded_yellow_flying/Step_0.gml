@@ -353,6 +353,7 @@ if place_meeting(x,y,obj_teleport_cloud) && hit_cd = 0 && vulnerable = 1
 	hspd = 0;
 	vspd = 0;
 }
+
 if state = 10
 {
     sprite_index = spr_molded_yellow_flying_stuntp;
@@ -363,5 +364,7 @@ if state = 10
 		t = 0;
 	}
 }
+
+if state = 10 cloud_cr.on = 1 else cloud_cr.on = 0;
 #endregion
 #endregion
