@@ -44,6 +44,47 @@ if state != 0
 }   
 #endregion
 
+#region Animation
+
+if state = 0
+{
+    sprite_index = spr_werewolf_idle;
+    image_speed = 1;
+}
+
+if state = 1
+{
+    if hspd > 0 image_xscale = -1;
+    if hspd < 0 image_xscale = 1;
+    if grounded = 0 
+    {
+        sprite_index = spr_werewolf_jump;   
+    } else 
+    {
+        sprite_index = spr_werewolf_run;
+        if abs(hspd) = 2
+        {
+            image_speed = 1;
+        } else image_speed = 1.25;
+    }
+}
+
+if state = 2
+{
+    sprite_index = spr_werewolf_mad;
+    image_speed = 0;
+    image_index = 0;
+}
+
+if state = 3 
+{
+    sprite_index = spr_werewolf_mad;
+    image_speed = 0.5;
+}
+
+
+#endregion
+
 #region на месте
 if state = 0
 {
@@ -59,6 +100,7 @@ if state = 0
         }
     }
 }
+
 #endregion
 
 #region преследует
@@ -97,7 +139,7 @@ if state = 3
     hspd = lerp(hspd,0,0.05);
     if t_madness = 0
     {  
-        hspd = choose(-2,2);
+        hspd = choose(-3,3);
         madness = 0;
         state = 1;
     }
@@ -117,7 +159,7 @@ if state = 2
         {
             t = 0;
             state = 1;   
-            hspd = choose(-3,3);
+            hspd = choose(-2,2);
         }
     }
 }
@@ -137,7 +179,7 @@ if hit_cd = 1
 }
 
 
-if state = 1 || (state = 2 && t > 10) || state = 3
+if state = 1 || (state = 2 && t > 5) || state = 3
 {
     
     // Атака

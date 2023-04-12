@@ -14,7 +14,7 @@ if t1 = 10
 {   
     var i = instance_create_depth(16,16,0,obj_Player);
     i.DashEnabled = 1;
-    i.state = 1;
+    i.state = 0;
     i.HookEnabled = 1;
     i.specabilnumber = 2;       
     instance_create_depth(16,16,101,obj_room_transition_to_loading);  

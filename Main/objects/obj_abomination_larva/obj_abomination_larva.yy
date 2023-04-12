@@ -32,6 +32,9 @@
     "name": "spr_snake_fast_mask",
     "path": "sprites/spr_snake_fast_mask/spr_snake_fast_mask.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_abomination_worm_mask",
+    "path": "sprites/spr_abomination_worm_mask/spr_abomination_worm_mask.yy",
+  },
   "visible": true,
 }

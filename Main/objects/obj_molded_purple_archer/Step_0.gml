@@ -42,22 +42,112 @@
 
 */
 
+#region anim
+
+if state!=0
+{
+    if state = 1 // на земле ждет прыжка
+    {   
+        if obj_Player.x < x image_xscale = 1 else image_xscale = -1;
+        
+        if t < 60
+        {
+            image_speed = 1;
+            sprite_index = spr_molded_purple_lancethrower_idle;
+        }
+        if t >=60
+        {
+            image_speed = 0;
+            sprite_index = spr_molded_purple_lancethrower_jump;
+            switch(t)
+            {
+                case 61: image_index = 0; break;  
+                case 65: image_index = 1; break;  
+                case 70: image_index = 2; break;  
+            }
+        }
+    } else 
+    {
+          
+        if t_attack!=0 // начинает атаку
+        {
+            image_speed = 0; 
+            if place_meeting(x,y+1,obj_block) sprite_index = spr_molded_purple_lancethrower_throwonground;
+            if !place_meeting(x,y+1,obj_block) 
+            {
+                
+                if hspd < 0 
+                {
+                    image_xscale = 1; 
+                    if obj_Player.x < x sprite_index = spr_molded_purple_lancethrower_throwairleft;
+                    else sprite_index = spr_molded_purple_lancethrower_throwairright;
+                }
+                if hspd > 0 
+                {
+                    image_xscale = -1; 
+                    if obj_Player.x < x sprite_index = spr_molded_purple_lancethrower_throwairright;
+                    else sprite_index = spr_molded_purple_lancethrower_throwairleft;
+                }
+                
+                
+            }
+            switch(t_attack)
+            {
+                case 1: image_index = 0;break;   
+                case 5: image_index = 1;break;   
+                case 10:image_index = 2;break;   
+                case 40:image_index = 3;break;   
+                case 45:image_index = 4;break;   
+                case 50:image_index = 5;break;   
+                case 55:image_index = 6;break;   
+            }
+        } else
+        {
+            if !place_meeting(x,y+1,obj_block) 
+            {
+                image_speed = 0;
+                sprite_index = spr_molded_purple_lancethrower_jump;
+                image_index = 3;
+                
+            }
+            if place_meeting(x,y+1,obj_block)
+            {
+                if obj_Player.x < x image_xscale = 1 else image_xscale = -1;
+                sprite_index = spr_molded_purple_lancethrower_idle;
+                image_speed = 1;
+            }
+        }
+    }
+    
+}
+
+#endregion
+
+
+
 if t_attack!= 0 t_attack++;
-if t_attack >= 80 {t_attack=0;instance_create_depth(x,y,depth-1,obj_molded_purple_archer_projectile)} //выстрел
+//if t_attack = 40 {instance_create_depth(x,y,depth-1,obj_molded_purple_archer_projectile)} //выстрел}
+if t_attack >= 80 t_attack=0;
 
 if state = 0
 {
-	
+	sprite_index = spr_molded_purple_lancethrower_idle;
+    image_speed = 1;
+	if abs(obj_Player.x - x) < 200 
+    {
+        image_index = 0;
+        state = 1;	
+    }
 }
 
 if state = 1 // ожидание1
 {
 	t++;
-	if t = 50
+	if t = 100
 	{		
 		t_attack = 1;
 		t = 0;
-		vspd = choose(-3,-4,-5);
+		vspd = choose(-4,-5);
 		y-=1;
 		if collision_line(x,y-16,x+128,y-16,obj_block,false,false) hspd = choose(-2,-3,-1); else
 		if collision_line(x,y-16,x-128,y-16,obj_block,false,false) hspd = choose(1,2,3); else

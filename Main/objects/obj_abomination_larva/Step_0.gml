@@ -32,11 +32,20 @@
   
 #endregion
 
+#region Anim
+
+if !place_meeting(x,y+1,obj_block) 
+{
+    sprite_index = spr_abomination_worm_jump;   
+} else sprite_index = spr_abomination_worm_walk;
+
+#endregion
+
 #region Перемещение
 t++;
 if t = 60
 {
-    vspd = -2;
+    vspd = choose(-5,-4,-3,-2);
     t = 0;
 }
 

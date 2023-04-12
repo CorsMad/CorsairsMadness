@@ -24,8 +24,19 @@ if isAttacking = 1
     }
 }
 
+if place = 1 
+{
+    t++;
+    if t = 100
+    {
+        t = 0;
+        place = 2;
+    }
+    //invis   
+}
 
-if place = 1 // переход
+
+if place = 2 // переход
 {
     t++;
     if t = 100 

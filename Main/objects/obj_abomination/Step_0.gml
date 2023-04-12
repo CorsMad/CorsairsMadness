@@ -34,12 +34,48 @@ if state != 0
 }   
 #endregion
 
+#region Abomination
+
+if state = 0
+{
+    sprite_index = spr_abomination_idle;
+    image_speed = 1;
+}
+
+if state = 1
+{
+    if grounded = 1
+    {
+        image_speed = 1;
+        sprite_index = spr_abomination_idle;
+    } else 
+    {
+        image_speed = 0;
+        sprite_index = spr_abomination_jump;
+        if vspd <= -0.5 image_index = 0 else image_index = 1;
+        
+        if hspd<0 image_xscale = 1;
+        if hspd>0 image_xscale = -1;
+    }
+}
+
+if state = 3
+{
+    image_speed = 1;
+    sprite_index = spr_abomination_poss;
+}
+
+
+
+#endregion
+
+
 #region на месте
 if state = 0
 {
     if instance_exists(obj_Player)
     {
-        if abs(obj_Player.x - x) < 150 state = 1;t = 229;
+        if abs(obj_Player.x - x) < 150 state = 1;t = 298;
     }
 }
 #endregion
@@ -60,10 +96,10 @@ if state = 1
     }
     if grounded = 0 larva_cr = 1;
       
-    if t = 230 
+    if t = 300 
     {
         hspd = random_range(-2,2)
-        vspd = -3;
+        vspd = choose(-5,-6);
         t = 0
     }  
 }
@@ -74,17 +110,31 @@ if state = 1
 
 if instance_exists(obj_abil_flute_aoe)
 {
-    if (place_meeting(x,y,obj_abil_flute_aoe) && obj_abil_flute_aoe.image_alpha = 1 ) t_flueted++; 
+    if (place_meeting(x,y,obj_abil_flute_aoe) && obj_abil_flute_aoe.image_alpha = 1 ) 
+    {
+        if t_flueted < 180 t_flueted++; 
+    }
 }
 if (!place_meeting(x,y,obj_abil_flute_aoe) && t_flueted > 0) t_flueted--;
 
-if t_flueted  > 180 flueted = 1
+if t_flueted  > 100 flueted = 1
 
 if flueted = 1 
 {   
-    instance_destroy();
-    instance_create_depth(x,y,depth,obj_werewolf_mad);   
+    state = 3;  
 }
+
+if state = 3 
+{
+    if t_flueted = 0 
+    {
+        flueted = 0; 
+        state = 1;
+        t = 0;
+    }
+}
+
+
 
 #endregion
 

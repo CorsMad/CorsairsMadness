@@ -9,9 +9,9 @@ if instance_exists(obj_boss_d1_1)
 */
 
 
-    draw_text(32,48, string(obj_molded_purple_archer.state));  
-    draw_text(32,64, string(obj_molded_purple_archer.t_attack));  
-    //draw_text(32,64, string(obj_maze4_controller.phase));  
+    //draw_text(32,48, string(obj_frozen_mage.place));  
+    //draw_text(32,64, string(obj_frozen_mage.isAttacking));  
+    //draw_text(32,64, string(obj_frozen_mage.t));  
     //draw_text(32,96, string(obj_maze4_controller.step)); 
     //draw_text(30,128,string(obj_maze4_controller.b1)); 
     //draw_text(40,128,string(obj_maze4_controller.b2)); 

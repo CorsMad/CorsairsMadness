@@ -35,6 +35,9 @@
     "name": "spr_ground_molded_mask",
     "path": "sprites/spr_ground_molded_mask/spr_ground_molded_mask.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_molded_grounded_mask",
+    "path": "sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",
+  },
   "visible": true,
 }

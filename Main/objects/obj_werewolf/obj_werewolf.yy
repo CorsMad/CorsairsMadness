@@ -29,9 +29,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
+    "name": "spr_werewolf_idle",
+    "path": "sprites/spr_werewolf_idle/spr_werewolf_idle.yy",
+  },
+  "spriteMaskId": {
     "name": "spr_skeleton_mask",
     "path": "sprites/spr_skeleton_mask/spr_skeleton_mask.yy",
   },
-  "spriteMaskId": null,
   "visible": true,
 }

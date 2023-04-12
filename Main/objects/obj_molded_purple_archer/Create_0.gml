@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-state = 1;
+state = 0;
 t = 0;
 t_attack = 0;
 flip = 0;

@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_room_trans",
-    "path": "sprites/spr_room_trans/spr_room_trans.yy",
+    "name": "spr_evilsprout_idle",
+    "path": "sprites/spr_evilsprout_idle/spr_evilsprout_idle.yy",
   },
   "spriteMaskId": null,
   "visible": true,
