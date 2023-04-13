@@ -610,7 +610,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sander","folderPath":"folders/Sprites/Enemies/!Desert/Sander.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Scarab","folderPath":"folders/Sprites/Enemies/!Desert/Scarab.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"!Graveyard","folderPath":"folders/Sprites/Enemies/!Graveyard.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Abomination","folderPath":"folders/Sprites/Enemies/!Graveyard/Abomination.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"EvilSprout","folderPath":"folders/Sprites/Enemies/!Graveyard/EvilSprout.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Werewolf","folderPath":"folders/Sprites/Enemies/!Graveyard/Werewolf.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"!Jungle","folderPath":"folders/Sprites/Enemies/!Jungle.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Boss1","folderPath":"folders/Sprites/Enemies/!Jungle/Boss1.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Boss2","folderPath":"folders/Sprites/Enemies/!Jungle/Boss2.yy",},
@@ -799,8 +801,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Temple","folderPath":"folders/Tile Sets/Temple.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Special tiles","folderPath":"folders/Tile Sets/Temple/Special tiles.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Werewolf","folderPath":"folders/Sprites/Enemies/!Graveyard/Werewolf.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Abomination","folderPath":"folders/Sprites/Enemies/!Graveyard/Abomination.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Steamworks_Extension_Documentation.html","CopyToMask":0,"filePath":"datafiles",},

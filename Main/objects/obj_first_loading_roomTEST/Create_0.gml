@@ -91,8 +91,8 @@ global.TargetY      = 96;
 global.TargetRoom   = TESTROOM;
 
 global.fTargetX     = 32;
-global.fTargetY     = 240;
-global.fTargetRoom  = PD1_r2;
+global.fTargetY     = 96;
+global.fTargetRoom  = TESTROOM;
 
 /*
     global.fTargetX = 80;

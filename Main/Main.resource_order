@@ -559,7 +559,9 @@
     {"name":"Sander","order":3,"path":"folders/Sprites/Enemies/!Desert/Sander.yy",},
     {"name":"Scarab","order":1,"path":"folders/Sprites/Enemies/!Desert/Scarab.yy",},
     {"name":"!Graveyard","order":30,"path":"folders/Sprites/Enemies/!Graveyard.yy",},
+    {"name":"Abomination","order":3,"path":"folders/Sprites/Enemies/!Graveyard/Abomination.yy",},
     {"name":"EvilSprout","order":1,"path":"folders/Sprites/Enemies/!Graveyard/EvilSprout.yy",},
+    {"name":"Werewolf","order":2,"path":"folders/Sprites/Enemies/!Graveyard/Werewolf.yy",},
     {"name":"!Jungle","order":26,"path":"folders/Sprites/Enemies/!Jungle.yy",},
     {"name":"Boss1","order":2,"path":"folders/Sprites/Enemies/!Jungle/Boss1.yy",},
     {"name":"Boss2","order":3,"path":"folders/Sprites/Enemies/!Jungle/Boss2.yy",},
@@ -740,8 +742,6 @@
     {"name":"Temple","order":13,"path":"folders/Tile Sets/Temple.yy",},
     {"name":"Special tiles","order":5,"path":"folders/Tile Sets/Temple/Special tiles.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Werewolf","order":2,"path":"folders/Sprites/Enemies/!Graveyard/Werewolf.yy",},
-    {"name":"Abomination","order":3,"path":"folders/Sprites/Enemies/!Graveyard/Abomination.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_saw_horizontal_mask","order":8,"path":"sprites/spr_saw_horizontal_mask/spr_saw_horizontal_mask.yy",},
