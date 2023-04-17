@@ -86,13 +86,13 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 80;
+global.TargetX      = 16;
 global.TargetY      = 96;
 global.TargetRoom   = TESTROOM;
 
 global.fTargetX     = 32;
-global.fTargetY     = 96;
-global.fTargetRoom  = TESTROOM;
+global.fTargetY     = 752;
+global.fTargetRoom  = PD1_r19;
 
 /*
     global.fTargetX = 80;

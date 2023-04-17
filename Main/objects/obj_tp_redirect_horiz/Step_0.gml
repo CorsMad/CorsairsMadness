@@ -1,5 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
+switch(dir)
+{
+    case 0:image_angle = 180;break;   
+    case 1:image_angle = 0;break;   
+}
+
 
 /*
 
