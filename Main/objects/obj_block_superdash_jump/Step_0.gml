@@ -10,7 +10,7 @@ if place_meeting(x,y,obj_Player)
         obj_Player.superdash_power = 0;
         obj_Player.isRecoil = 1;
         obj_Player.superdash_timer_count = 0;
-        obj_Player.vspd = -5;
+        obj_Player.vspd = boost;
         instance_destroy();
         
     }
