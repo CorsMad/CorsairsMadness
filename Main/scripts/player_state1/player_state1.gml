@@ -980,6 +980,7 @@ if isGrounded = 0 && key_jump_pressed && !instance_exists(obj_doublejump) && !in
     } else
     if canDoubleJump = 1
     {
+        doublejumpspd = 0;
         instance_create_depth(x,y,depth,obj_doublejump);
         instance_create_depth(x,y,depth+1,obj_doublejump_wings);
         instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
