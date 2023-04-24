@@ -29,9 +29,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_sh_hide",
-    "path": "sprites/spr_sh_hide/spr_sh_hide.yy",
+    "name": "spr_frozenmage_mask",
+    "path": "sprites/spr_frozenmage_mask/spr_frozenmage_mask.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_frozenmage_mask",
+    "path": "sprites/spr_frozenmage_mask/spr_frozenmage_mask.yy",
+  },
   "visible": true,
 }

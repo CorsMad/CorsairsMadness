@@ -6,6 +6,7 @@ if isOn = 1
     if def!= noone
     {
         def.isDead = 1;
+		isOn = 0;
         sprite_index = spr_abil_magicalbow_rope_break;
         image_index = 0;
         if instance_exists(obj_platform_3_v_e_rope_d1r14_2)

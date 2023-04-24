@@ -90,11 +90,35 @@
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tls2","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -510,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_lava_pos","path":"tilesets/tls_lava_pos/tls_lava_pos.yy",},"userdefinedDepth":false,"visible":true,"x":8,"y":8,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"MainTls","depth":300,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
--510,0,],"TileDataFormat":1,},"tilesetId":{"name":"tls_lava_pos","path":"tilesets/tls_lava_pos/tls_lava_pos.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+-5,22,8,23,24,15,16,18,19,20,21,-14,22,3,23,24,15,-5,27,8,28,29,15,16,18,19,25,26,-14,27,
+3,28,29,15,-7,0,4,15,16,18,19,-18,0,1,15,-7,0,4,15,16,18,19,-18,0,1,15,-7,0,4,15,
+16,18,19,-18,0,1,15,-7,0,4,15,16,18,19,-18,0,1,15,-7,0,4,15,16,18,19,-10,0,1,34,-7,
+0,3,15,8,9,-5,0,4,15,16,18,19,-10,0,1,39,-7,0,3,15,13,14,-5,0,4,20,21,23,24,-10,
+0,1,39,-7,0,3,15,18,19,-5,0,8,25,26,28,29,35,36,36,37,-6,0,1,39,-7,0,3,15,18,19,
+-19,0,1,39,-7,0,3,20,18,19,-19,0,1,39,-3,0,7,35,36,36,37,25,18,19,-19,0,1,39,-8,0,
+2,18,19,-19,0,1,39,-8,0,2,18,19,-19,0,1,39,-8,0,4,18,19,5,6,-15,7,5,8,9,39,5,
+6,-6,7,4,18,19,10,11,-15,12,5,13,14,39,10,11,-6,12,],"TileDataFormat":1,},"tilesetId":{"name":"tls_lava_pos","path":"tilesets/tls_lava_pos/tls_lava_pos.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR2","depth":400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -510,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_lava_pos_bgr","path":"tilesets/tls_lava_pos_bgr/tls_lava_pos_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
--26,0,-4,-2147483648,-26,0,-4,-2147483648,-26,0,-4,-2147483648,-26,0,-4,-2147483648,-267,0,-3,-2147483648,-120,0,],"TileDataFormat":1,},"tilesetId":{"name":"tls_lava_pos_bgr","path":"tilesets/tls_lava_pos_bgr/tls_lava_pos_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileSerialiseData":[
+1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,
+1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,
+1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,
+560,561,562,563,564,745,746,553,554,555,556,557,558,559,560,561,562,563,564,745,746,553,554,555,556,557,558,559,560,561,
+716,717,718,719,720,901,902,709,710,711,712,713,714,715,716,717,718,719,720,901,902,709,710,711,712,713,714,715,716,717,
+872,873,874,875,876,1057,1058,865,866,867,868,869,870,871,872,873,874,875,876,1057,1058,865,866,867,868,869,870,871,872,873,
+1191,1192,1193,1095,1096,1213,1214,1095,1096,1195,1196,1197,1198,1199,1200,1201,1202,1095,1096,1213,1214,1095,1096,1177,1178,1179,1180,1181,1182,1183,
+1347,1348,1349,1251,1252,1369,1370,1251,1252,1351,1352,1353,1354,1355,1356,1357,1358,1251,1252,1369,1370,1251,1252,1333,1334,1335,1336,1337,1338,1339,
+1503,1504,1505,1407,1408,1525,1526,1407,1408,1507,1508,1509,1510,1511,1512,1513,1514,1407,1408,1525,1526,1407,1408,1489,1490,1491,1492,1493,1494,1495,
+1659,1660,1661,1563,1564,1681,1682,1563,1564,1663,1664,1665,1666,1667,1668,1669,1670,1563,1564,1681,1682,1563,1564,1645,1646,1647,1648,1649,1650,1651,
+1815,1816,1817,1719,1720,1837,1838,1719,1720,1819,1820,1821,1822,1823,1824,1825,1826,1719,1720,1837,1838,1719,1720,1801,1802,1803,1804,1805,1806,1807,
+1971,1972,1973,1875,1876,1993,1994,1875,1876,1975,1976,1977,1978,1979,1980,1981,1982,1875,1876,1993,1994,1875,1876,1957,1958,1959,1960,1961,1962,1963,
+2127,2128,2129,2031,2032,2149,2150,2031,2032,2131,2132,2133,2134,2135,2136,2137,2138,2031,2032,2149,2150,2031,2032,2113,2114,2115,2116,2117,2118,2119,
+2283,2284,2285,2187,2188,2305,2306,2187,2188,2287,2288,2289,2290,2291,2292,2293,2294,2187,2188,2305,2306,2187,2188,2269,2270,2271,2272,2273,2274,2275,
+2586,2587,2588,2581,2582,2583,2584,2585,2586,2587,2588,2581,2582,2583,2584,2585,2586,2587,2588,2581,2582,2583,2584,2585,2586,2587,2588,2581,2582,2583,
+1095,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,
+1251,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,
+],},"tilesetId":{"name":"tls_lava_pos_bgr","path":"tilesets/tls_lava_pos_bgr/tls_lava_pos_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4289901234,"depth":600,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":5.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":64,"y":0,},
   ],
   "parent": {

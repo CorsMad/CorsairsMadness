@@ -1,12 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
+var oleg = instance_create_depth(x,y,depth-1,obj_frozen_mage_eyes);
+oleg.fol = id;
+
 
 state = 0;
 t = 0;
 can_hit = 0;
 place = 0;
 isAttacking = 0;
-place_max = 0;
+place_max = 3;
 place_goto = 0;
 
 #region места передвижения

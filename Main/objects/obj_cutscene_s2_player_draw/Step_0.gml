@@ -1,0 +1,45 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+/*
+states
+0 - Прыжок
+1 - бег
+*/
+
+fnc_Collision_player(obj_block)
+
+
+if !place_meeting(x,y+1,obj_block)
+{
+    vspd+=0.2;
+    
+} else vspd = 0;
+
+fspd = 2;
+
+
+#region граф
+
+if !place_meeting(x,y+1,obj_block)
+{
+    sprite_index = spr_player_jump;   
+    if vspd < 0 image_index = 0 else image_index = 1;
+} else sprite_index = spr_player_run;image_speed = 1.25;
+
+#endregion
+
+if place_meeting(x,y+1,obj_block)
+{
+    grounded = 1;    
+}else grounded = 0;
+if grounded = 0 && place_meeting(x,y+vspd,obj_block)
+{
+    fnc_snd_play_onetime(snd_player_landing);
+}
+
+if place_meeting(x,y,obj_ctsc_s2_r8_boat)
+{
+    instance_destroy(); 
+    obj_ctsc_s2_r8_boat.state = 1;
+}

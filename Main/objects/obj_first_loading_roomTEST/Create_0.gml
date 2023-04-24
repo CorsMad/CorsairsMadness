@@ -63,7 +63,7 @@ global.purch_dualpistols3 = 0;
 #region Игрок
 global.hp = 5;           // 4
 global.hp_max = 5;       // 4
-global.choosed_item = 0; // 1- бумер 2 -топ // 3 - бомба // 11 - арбалет
+global.choosed_item = 1; // 1- бумер 2 -топ // 3 - бомба // 11 - арбалет
 global.choosed_item_tier = 0; // ТИР предмета
 global.choosed_itemboat = 0; // 1 - ? 2 - 2пистолета 
 global.choosed_itemboat_tier = 0; // ТИП предмета для лодки
@@ -86,13 +86,15 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 16;
-global.TargetY      = 96;
-global.TargetRoom   = TESTROOM;
+global.TargetX      = 320;
+global.TargetY      = 240;
+global.TargetRoom   = L1_r4;
 
 global.fTargetX     = 272;
 global.fTargetY     = 224;
 global.fTargetRoom  = PS1_r4;
+
+
 
 /*
     global.fTargetX = 80;
@@ -230,6 +232,8 @@ t2 = 0;
 #region Desert
 
  /* 1 УРОВЕНЬ */
+ global.cannon_d2_r1 = 1;
+ 
     #region Сундуки
     global.chest_d1_r2 = 1;
     global.chest_d1_r6 = 1;
@@ -247,11 +251,70 @@ t2 = 0;
     
     #endregion
 
+
+ /* 2 УРОВЕНЬ */
+#region Сундуки
+	global.chest_d2_r3 = 1;
+	global.chest_d2_r7 = 1;
+	global.chest_d2b_r5 = 1;
+	global.chest_d2p_r3 = 1;
 #endregion
-
-
+ 
+ #region Монеты
+	global.secrets_d2_r5 = 0;
+	global.secrets_d2b_s1 = 0;
+	global.secrets_d2p_r4 = 0;
+ #endregion
+ 
+#endregion
 
 /*  CUTSCENES  */    
     #region Важные катсцены F1
     global.Cutscene_f1_r33 = 1;
     #endregion
+
+
+
+
+
+/*  ТЕСТ  */
+#region S1
+
+	global.chest_s1_r3 = 1;
+	global.chest_s1_r6 = 1
+	global.chest_s1_r11 = 1;
+	global.chest_s1_r16 = 1;
+
+	global.secrets_s1_r7 = 0;
+	global.secrets_s1_r13 = 0;
+	global.secrets_s1_s1 = 0 
+
+#endregion
+
+#region S2
+
+global.cannon_s2_r1 = 1;
+
+global.chest_s2_r2 = 1;
+global.chest_s2_r7 = 1;
+global.chest_s2b_r3 = 1;
+global.chest_s2p_r3 = 1;
+
+global.secrets_s2_s1 = 0;
+global.secrets_s2b_r5 = 0;
+global.secrets_s2p_s = 0 
+
+#endregion
+
+#region LAVA
+
+#region сундуки
+global.chest_l1_r3 = 1;
+global.chest_l1_r5 = 1;
+#endregion
+
+#region секреты
+global.secrets_l1_r3 = 0;
+#endregion
+
+#endregion

@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "!Desert",
-    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/!Desert.yy",
+    "name": "D1",
+    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/!Desert/D1.yy",
   },
   "parentObjectId": null,
   "persistent": false,
