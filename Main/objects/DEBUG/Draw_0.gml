@@ -7,11 +7,9 @@ if instance_exists(obj_boss_d1_1)
     draw_text(32,64,string(obj_boss_d1_1.t));
 }
 */
-
-
-    //draw_text(32,48, string(obj_frozen_mage.place));  
-    //draw_text(32,64, string(obj_frozen_mage.place_goto));  
-    //draw_text(32,96, string(obj_frozen_mage.x)); 
+    //draw_text(32,48, string(obj_evilsprout.t_flute_rise));  
+    //draw_text(32,64, string(obj_evilsprout.flute_rise));  
+    //draw_text(32,96, string(obj_evilsprout.t_flute)); 
     //draw_text(30,128,string(obj_frozen_mage.b1)); 
     //draw_text(40,128,string(obj_frozen_mage.b2)); 
     //draw_text(50,128,string(obj_maze4_controller.b3)); 

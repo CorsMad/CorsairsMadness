@@ -287,7 +287,7 @@
   ],
   "parent": {
     "name": "PG1",
-    "path": "folders/Rooms/!MASTER/!GraveyardShadow/PG1.yy",
+    "path": "folders/Rooms/!MASTER/!GraveyardShadowLevels/PG1.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

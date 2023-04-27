@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "G1",
-    "path": "folders/Objects/Level objects/!MASTER/!Graveyard/G1.yy",
+    "name": "G2",
+    "path": "folders/Objects/Level objects/!MASTER/!Graveyard/G2.yy",
   },
   "parentObjectId": null,
   "persistent": false,

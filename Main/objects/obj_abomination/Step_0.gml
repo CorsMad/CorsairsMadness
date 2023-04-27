@@ -69,6 +69,7 @@ if state = 3
 
 #endregion
 
+if grounded = 1 air_hit = 0;
 
 #region на месте
 if state = 0
@@ -102,6 +103,21 @@ if state = 1
         vspd = choose(-5,-6);
         t = 0
     }  
+    
+    if grounded = 0 
+    {
+        if instance_exists(obj_Player)   
+        {
+            if air_hit = 0 && place_meeting(x,y,obj_hitbox)
+            {
+                air_hit = 1;
+                if obj_Player.x < x
+                {
+                    hspd = abs(hspd);
+                } else hspd = -abs(hspd);
+            }            
+        }
+    }
 }
 
 #endregion

@@ -32,6 +32,9 @@
     "name": "spr_evilsprout_idle",
     "path": "sprites/spr_evilsprout_idle/spr_evilsprout_idle.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_evilsprout_mask",
+    "path": "sprites/spr_evilsprout_mask/spr_evilsprout_mask.yy",
+  },
   "visible": true,
 }

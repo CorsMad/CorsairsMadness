@@ -11,6 +11,7 @@ states
 4 - смерть
 
 */
+air_hit = 0;
 
 state = 0;
 enemy_hp = 5;

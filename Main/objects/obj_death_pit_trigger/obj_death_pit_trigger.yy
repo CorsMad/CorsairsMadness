@@ -32,5 +32,5 @@
     "path": "sprites/spr_pad_blue_mask/spr_pad_blue_mask.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

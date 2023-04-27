@@ -39,6 +39,10 @@
     {"name":"inst_7B5C663A","path":"rooms/G1_r14/G1_r14.yy",},
     {"name":"inst_3E1EEF46","path":"rooms/G1_r14/G1_r14.yy",},
     {"name":"inst_14B3F273","path":"rooms/G1_r14/G1_r14.yy",},
+    {"name":"inst_3D4F2A38","path":"rooms/G1_r14/G1_r14.yy",},
+    {"name":"inst_696678B2","path":"rooms/G1_r14/G1_r14.yy",},
+    {"name":"inst_4CA4D54C","path":"rooms/G1_r14/G1_r14.yy",},
+    {"name":"inst_22AA61A","path":"rooms/G1_r14/G1_r14.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -75,6 +79,10 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7B5C663A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":2.0,"x":128.0,"y":144.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3E1EEF46","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":2.0,"x":240.0,"y":144.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_14B3F273","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"properties":[],"rotation":0.0,"scaleX":7.0,"scaleY":1.0,"x":256.0,"y":176.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3D4F2A38","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_room_transition_horizontal","path":"objects/obj_room_transition_horizontal/obj_room_transition_horizontal.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":11.4,"x":-16.0,"y":-64.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_696678B2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_shadow_lvl1_container_r14","path":"objects/obj_shadow_lvl1_container_r14/obj_shadow_lvl1_container_r14.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4CA4D54C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_checkpoint_g1_r14","path":"objects/obj_checkpoint_g1_r14/obj_checkpoint_g1_r14.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":240.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_22AA61A","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_room_transition_vertical","path":"objects/obj_room_transition_vertical/obj_room_transition_vertical.yy",},"properties":[],"rotation":0.0,"scaleX":4.2,"scaleY":1.0,"x":48.0,"y":288.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"main_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -20,-2147483648,-4,0,6,24,-2147483648,24,27,24,26,-20,-2147483648,-4,0,4,26,24,25,25,-22,-2147483648,-4,0,6,25,-2147483648,25,-2147483648,25,
@@ -115,7 +123,7 @@
   ],
   "parent": {
     "name": "G1",
-    "path": "folders/Rooms/!MASTER/!GraveyardShadow/G1.yy",
+    "path": "folders/Rooms/!MASTER/!GraveyardShadowLevels/G1.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

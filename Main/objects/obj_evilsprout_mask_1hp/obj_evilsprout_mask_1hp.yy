@@ -30,9 +30,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_room_trans",
-    "path": "sprites/spr_room_trans/spr_room_trans.yy",
+    "name": "spr_evilsprout_mask",
+    "path": "sprites/spr_evilsprout_mask/spr_evilsprout_mask.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

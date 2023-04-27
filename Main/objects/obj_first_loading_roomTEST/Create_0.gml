@@ -63,7 +63,7 @@ global.purch_dualpistols3 = 0;
 #region Игрок
 global.hp = 5;           // 4
 global.hp_max = 5;       // 4
-global.choosed_item = 1; // 1- бумер 2 -топ // 3 - бомба // 11 - арбалет
+global.choosed_item = 0; // 1- бумер 2 -топ // 3 - бомба // 11 - арбалет
 global.choosed_item_tier = 0; // ТИР предмета
 global.choosed_itemboat = 0; // 1 - ? 2 - 2пистолета 
 global.choosed_itemboat_tier = 0; // ТИП предмета для лодки
@@ -86,9 +86,9 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 320;
-global.TargetY      = 240;
-global.TargetRoom   = L1_r4;
+global.TargetX      = 416;
+global.TargetY      = 208;
+global.TargetRoom   = G2b_r4;
 
 global.fTargetX     = 272;
 global.fTargetY     = 224;
@@ -308,13 +308,53 @@ global.secrets_s2p_s = 0
 
 #region LAVA
 
+global.cannon_l2_r1 = 0;
+
 #region сундуки
 global.chest_l1_r3 = 1;
 global.chest_l1_r5 = 1;
+global.chest_l1_r10 = 1;
+global.chest_l1_r15 = 1;
+
+global.chest_l2_r2 = 1;
+global.chest_l2_r7 = 1;
+global.chest_l2b_r3 = 1;
+global.chest_l2p_r4 = 1;
 #endregion
 
 #region секреты
 global.secrets_l1_r3 = 0;
+global.secrets_lava1_s1 = 0;
+global.secrets_lava1_s2 = 0;
+
+global.secrets_l2_r3 = 0;
+global.secrets_l2b_r5 = 0;
+global.secrets_l2p_s = 0;
+
+#endregion
+
+#endregion
+
+#region SHADOW
+
+#region Сундуки
+global.chest_g1_r3 = 1;
+global.chest_g1_r7 = 1;
+global.chest_g1_r11 = 1;
+global.chest_g1_r16 = 1;
+
+global.chest_g2_r4 = 1;
+global.chest_g2_r7 = 1;
+global.chest_g2b_r3 = 1;
+#endregion
+
+#region Секреты
+global.secrets_g1_s1 = 0;
+global.secrets_g1_r12 = 0;
+global.secrets_g1_s2 = 0;
+
+global.secrets_g2_r6 = 0;
+global.secrets_g2b_s = 0;
 #endregion
 
 #endregion

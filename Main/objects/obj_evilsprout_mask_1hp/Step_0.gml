@@ -1,5 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
+if instance_exists(own)
+{
+    if own.state = 0 instance_destroy();
+    if enemy_hp < 1 {own.enemy_hp -=6;instance_destroy();}
+} else instance_destroy();
+
+
 
 #region если свернулся
 

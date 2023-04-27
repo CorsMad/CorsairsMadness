@@ -35,7 +35,10 @@
     {"name":"inst_3962BE8A","path":"rooms/G1_r7/G1_r7.yy",},
     {"name":"inst_13745315","path":"rooms/G1_r7/G1_r7.yy",},
     {"name":"inst_5397E9C3","path":"rooms/G1_r7/G1_r7.yy",},
-    {"name":"inst_5232405A","path":"rooms/G1_r7/G1_r7.yy",},
+    {"name":"inst_7267F077","path":"rooms/G1_r7/G1_r7.yy",},
+    {"name":"inst_C3B45D2","path":"rooms/G1_r7/G1_r7.yy",},
+    {"name":"inst_46676670","path":"rooms/G1_r7/G1_r7.yy",},
+    {"name":"inst_336F6E8","path":"rooms/G1_r7/G1_r7.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -68,7 +71,10 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3962BE8A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"properties":[],"rotation":0.0,"scaleX":13.0,"scaleY":1.0,"x":368.0,"y":-96.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_13745315","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":14.0,"x":560.0,"y":-80.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5397E9C3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_ow_platform_2","path":"objects/obj_ow_platform_2/obj_ow_platform_2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":432.0,"y":256.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5232405A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_graveyard_fight_controller_g1_r7","path":"objects/obj_graveyard_fight_controller_g1_r7/obj_graveyard_fight_controller_g1_r7.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":32.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7267F077","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_room_transition_dynamic","path":"objects/obj_room_transition_dynamic/obj_room_transition_dynamic.yy",},"properties":[],"rotation":0.0,"scaleX":4.2,"scaleY":1.0,"x":432.0,"y":288.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_C3B45D2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_shadow_lvl1_container_r7","path":"objects/obj_shadow_lvl1_container_r7/obj_shadow_lvl1_container_r7.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_46676670","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_graveyard_special_g1_r7","path":"objects/obj_graveyard_special_g1_r7/obj_graveyard_special_g1_r7.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":20.0,"x":272.0,"y":-80.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_336F6E8","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_room_transition_horizontal","path":"objects/obj_room_transition_horizontal/obj_room_transition_horizontal.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":12.2,"x":496.0,"y":-80.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"main","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -4,7,1,8,-16,-2147483648,2,6,8,-7,-2147483648,-4,7,1,8,-16,-2147483648,2,6,8,-7,-2147483648,-4,7,1,8,-16,-2147483648,2,9,
@@ -76,7 +82,7 @@
 -2147483648,2,7,8,-9,-2147483648,-3,0,-2,-2147483648,-5,0,2,6,8,-6,0,3,-2147483648,7,8,-19,0,2,6,8,-7,0,2,7,
 8,-19,0,3,6,8,12,-4,13,4,14,3,7,8,-19,0,2,6,8,-6,0,4,6,7,8,-2147483648,-18,0,2,9,
 11,-6,0,3,6,7,8,-26,0,4,-2147483648,6,7,8,-27,0,3,6,7,8,-27,0,3,6,7,19,-22,4,1,5,
--4,0,1,6,-24,7,1,8,-5,0,],"TileDataFormat":1,},"tilesetId":{"name":"tls_cemetery","path":"tilesets/tls_cemetery/tls_cemetery.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+-4,0,1,6,-24,7,1,8,-4,0,1,6,],"TileDataFormat":1,},"tilesetId":{"name":"tls_cemetery","path":"tilesets/tls_cemetery/tls_cemetery.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"main_1","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -11,0,-19,-2147483648,-11,0,-19,-2147483648,-4,0,2,31,39,-5,0,-19,-2147483648,-5,34,3,42,31,39,-3,0,-19,-2147483648,-7,34,3,
 42,31,39,-20,-2147483648,-9,34,4,42,31,31,39,-17,-2147483648,-12,34,1,42,-3,31,1,39,-13,-2147483648,-16,34,3,42,31,39,
@@ -106,7 +112,7 @@
   ],
   "parent": {
     "name": "G1",
-    "path": "folders/Rooms/!MASTER/!GraveyardShadow/G1.yy",
+    "path": "folders/Rooms/!MASTER/!GraveyardShadowLevels/G1.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

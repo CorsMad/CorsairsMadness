@@ -34,7 +34,7 @@ if state = 1
 
 if state = 1.5
 {
-    if !instance_exists(obj_zombie) && !instance_exists(obj_evilsprout)
+    if !instance_exists(obj_zombie) && !instance_exists(obj_evilsprout) && !instance_exists(obj_zombie_start)
     {
         state = 2;   
     }

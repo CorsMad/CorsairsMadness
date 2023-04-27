@@ -349,7 +349,7 @@
   ],
   "parent": {
     "name": "Platform",
-    "path": "folders/Rooms/!MASTER/!GraveyardShadow/G2/Platform.yy",
+    "path": "folders/Rooms/!MASTER/!GraveyardShadowLevels/G2/Platform.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

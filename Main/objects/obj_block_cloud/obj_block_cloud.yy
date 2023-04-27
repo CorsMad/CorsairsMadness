@@ -29,9 +29,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
+    "name": "spr_block_cloud",
+    "path": "sprites/spr_block_cloud/spr_block_cloud.yy",
+  },
+  "spriteMaskId": {
     "name": "spr_block_cloud_mask",
     "path": "sprites/spr_block_cloud_mask/spr_block_cloud_mask.yy",
   },
-  "spriteMaskId": null,
   "visible": true,
 }

@@ -1,11 +1,22 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if place_meeting(x,y,obj_abil_flute_aoe)
+{
+   flute_rise = 1; 
+} 
+
+if !place_meeting(x,y,obj_abil_flute_aoe)
+{
+    flute_rise = -1;   
+}
+
 //ANIM
 #region
 
 if state = 0
 {
+    image_speed = 1;
     if trigger_attack = 0
     {
         sprite_index = spr_evilsprout_idle;
@@ -31,9 +42,38 @@ if state = 0
 
 if state = 1
 {
-    //switch(t_flute)
+    sprite_index = spr_evilsprout_open;
+    image_speed = 0;
+    if flute_rise = 1
     {
-           
+        if t_flute_rise < 10 t_flute_rise ++; 
+        switch(t_flute_rise)
+        {
+            case 1: image_index = 0;break;   
+            case 4: image_index = 1;break;   
+            case 6: image_index = 2;break;   
+            case 8: image_index = 3;break;   
+            case 10: image_index = 3;break;   
+        }
+    }
+    
+    if flute_rise = -1
+    {
+        if t_flute < 30
+        {
+                 
+            if t_flute_rise > -10 t_flute_rise --; 
+            
+
+            switch(t_flute_rise)
+            {
+                case -1: image_index = 3;break;   
+                case -4: image_index = 2;break;   
+                case -6: image_index = 1;break; 
+                case -8: image_index = 0;break;   
+                case -10:image_index = 0;break;   
+            }
+        }
     }
 }
 
@@ -45,6 +85,7 @@ if state = 1
 #region под землей
 if state = 0
 {
+    t_flute_rise = 0;
     var dis = point_distance(x,y,obj_Player.x,obj_Player.y);
     if dis < 200 && trigger_attack = 0
     {
@@ -97,7 +138,8 @@ if (!place_meeting(x,y,obj_abil_flute_aoe) && t_flute > 0) t_flute--;
 
 if t_flute = 60 
 {  
-    instance_create_depth(x,y,depth,obj_evilsprout_mask_1hp);
+    var mask1 = instance_create_depth(x,y,depth,obj_evilsprout_mask_1hp);
+    mask1.own = id;
     state = 1; 
     
     t = 0;
@@ -112,7 +154,7 @@ if t_flute = 0
 
 #region #takedmg
 
-if state!= 1
+if state != 1
 {
     // Атака
 
@@ -136,7 +178,10 @@ if state!= 1
 #region смерть
 if enemy_hp < 1
 {
-    instance_destroy();   
+    instance_destroy();  
+    var d = instance_create_depth(x,y,depth,obj_evilsprout_death);
+    d.sprite_index = sprite_index;
+    d.image_index = image_index;
 }
 
 #endregion

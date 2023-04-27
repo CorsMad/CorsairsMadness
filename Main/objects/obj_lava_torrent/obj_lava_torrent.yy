@@ -29,9 +29,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_lavatorrent_small",
-    "path": "sprites/spr_lavatorrent_small/spr_lavatorrent_small.yy",
+    "name": "spr_lavatorrent",
+    "path": "sprites/spr_lavatorrent/spr_lavatorrent.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_lavatorrent_small_mask",
+    "path": "sprites/spr_lavatorrent_small_mask/spr_lavatorrent_small_mask.yy",
+  },
   "visible": true,
 }

@@ -16,7 +16,7 @@ if t1 = 10
     i.DashEnabled = 1;
     i.state = 0;
     i.HookEnabled = 1;
-    i.specabilnumber = 11;       
+    i.specabilnumber = 2;       
     instance_create_depth(16,16,101,obj_room_transition_to_loading);  
 
 }
