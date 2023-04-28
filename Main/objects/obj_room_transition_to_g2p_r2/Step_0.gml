@@ -9,9 +9,9 @@ if place_meeting(x,y,obj_cutscene_JVArrive_player_draw)
     i.state = 0;
    
     instance_create_depth(-16,-16,101,obj_room_transition_to_loading); 
-    global.TargetRoom = J2p_r2;
-    global.TargetX = 16;
-    global.TargetY = 128;
+    global.TargetRoom = G2p_r2;
+    global.TargetX = 448;
+    global.TargetY = 208;
     
     
 }

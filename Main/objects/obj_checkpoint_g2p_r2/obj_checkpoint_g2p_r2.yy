@@ -1,16 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_shadow_lvl2_container_CHECKPOINT",
+  "name": "obj_checkpoint_g2p_r2",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":5,"eventType":7,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "G2",
-    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/!GraveyardShadowContainers/G2.yy",
+    "name": "ShadowCheckpoints",
+    "path": "folders/Objects/Level objects/Checkpoint/!MASTER/ShadowCheckpoints.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,7 +27,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_checkpoint_projectile",
+    "path": "sprites/spr_checkpoint_projectile/spr_checkpoint_projectile.yy",
+  },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

@@ -86,9 +86,9 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 416;
-global.TargetY      = 208;
-global.TargetRoom   = G2b_r4;
+global.TargetX      = 64;
+global.TargetY      = 224;
+global.TargetRoom   = G2_r1;
 
 global.fTargetX     = 272;
 global.fTargetY     = 224;
@@ -280,14 +280,14 @@ t2 = 0;
 /*  ТЕСТ  */
 #region S1
 
-	global.chest_s1_r3 = 1;
-	global.chest_s1_r6 = 1
-	global.chest_s1_r11 = 1;
-	global.chest_s1_r16 = 1;
+global.chest_s1_r3 = 1;
+global.chest_s1_r6 = 1
+global.chest_s1_r11 = 1;
+global.chest_s1_r16 = 1;
 
-	global.secrets_s1_r7 = 0;
-	global.secrets_s1_r13 = 0;
-	global.secrets_s1_s1 = 0 
+global.secrets_s1_r7 = 0;
+global.secrets_s1_r13 = 0;
+global.secrets_s1_s1 = 0 
 
 #endregion
 
@@ -337,6 +337,8 @@ global.secrets_l2p_s = 0;
 
 #region SHADOW
 
+global.cannon_g2_r1 = 1;
+
 #region Сундуки
 global.chest_g1_r3 = 1;
 global.chest_g1_r7 = 1;
@@ -346,6 +348,8 @@ global.chest_g1_r16 = 1;
 global.chest_g2_r4 = 1;
 global.chest_g2_r7 = 1;
 global.chest_g2b_r3 = 1;
+global.chest_g2p_r4 = 1;
+
 #endregion
 
 #region Секреты
@@ -355,6 +359,7 @@ global.secrets_g1_s2 = 0;
 
 global.secrets_g2_r6 = 0;
 global.secrets_g2b_s = 0;
+global.secrets_g2p_r6 = 0;
 #endregion
 
 #endregion
