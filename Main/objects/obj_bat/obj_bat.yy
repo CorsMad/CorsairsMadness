@@ -30,9 +30,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_room_trans",
-    "path": "sprites/spr_room_trans/spr_room_trans.yy",
+    "name": "spr_bat_vis",
+    "path": "sprites/spr_bat_vis/spr_bat_vis.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_bat_mask",
+    "path": "sprites/spr_bat_mask/spr_bat_mask.yy",
+  },
   "visible": true,
 }

@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Phases",
-    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Desert/Boss/Boss1/Phases.yy",
+    "name": "Phase1",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Desert/Boss/Boss1/Phases/Phase1.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boss1",
-    "path": "sprites/spr_boss1/spr_boss1.yy",
+    "name": "spr_boss1_d1_sq",
+    "path": "sprites/spr_boss1_d1_sq/spr_boss1_d1_sq.yy",
   },
   "spriteMaskId": null,
   "visible": true,

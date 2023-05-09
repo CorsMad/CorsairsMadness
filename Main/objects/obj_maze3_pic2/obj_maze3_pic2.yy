@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Maze3",
-    "path": "folders/Objects/Level objects/Mazes/Maze3.yy",
+    "name": "!Desert",
+    "path": "folders/Objects/Level objects/Mazes/!Desert.yy",
   },
   "parentObjectId": null,
   "persistent": false,

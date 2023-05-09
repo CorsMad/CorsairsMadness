@@ -3,3 +3,4 @@
 isOn = 0;
 Working = 0;
 image_speed = 0;
+image_index = 2;

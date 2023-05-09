@@ -3,10 +3,12 @@
 y+=vspd;
 if place_meeting(x,y,obj_hitbox)
 {
-	if instance_exists(obj_maze5_controller)
+	if instance_exists(obj_maze5_counter_controller)
 	{
-		obj_maze5_controller.score_count-=20;
+        instance_create_depth(x,y,depth-1,obj_sfx_weapon_slash);
+		obj_maze5_counter_controller.CurrentScore-=20;
 		instance_destroy();
+        instance_create_depth(x,y-10,depth-1,obj_maze5_graph_coinm20);
 	}
 }
 

@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_sander_attack",
-    "path": "sprites/spr_sander_attack/spr_sander_attack.yy",
+    "name": "spr_boss1_d1_sander",
+    "path": "sprites/spr_boss1_d1_sander/spr_boss1_d1_sander.yy",
   },
   "spriteMaskId": null,
   "visible": true,

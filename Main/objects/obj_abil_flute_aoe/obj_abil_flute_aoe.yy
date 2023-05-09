@@ -6,6 +6,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -33,6 +34,9 @@
     "name": "spr_abil_flute_aoe",
     "path": "sprites/spr_abil_flute_aoe/spr_abil_flute_aoe.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_abil_flute_aoe_mask",
+    "path": "sprites/spr_abil_flute_aoe_mask/spr_abil_flute_aoe_mask.yy",
+  },
   "visible": true,
 }

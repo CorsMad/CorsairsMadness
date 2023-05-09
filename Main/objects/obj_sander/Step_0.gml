@@ -52,7 +52,7 @@ if state = 0
     var dis = point_distance(x,y,obj_Player.x,obj_Player.y);
 	if dis<80 
 	{    
-        state = 1;
+        state = 0.5;
         t = 0;
         mov = 0;
         spd = 0;
@@ -71,6 +71,21 @@ if state = 0
     #endregion
 }
 
+#endregion
+
+#region ОЖидание
+if state = 0.5
+{
+    t++;
+    //ожидание
+    sprite_index = spr_sander_idle;
+    if t = 60
+    {
+        state = 1;
+        t = 0;
+        image_index = 0;
+    }     
+}
 #endregion
 
 #region спрятаться
@@ -175,8 +190,7 @@ if state = 5
     {
         state = 0;
         t = 0;
-    }
-    
+    }  
 }
 #endregion
 

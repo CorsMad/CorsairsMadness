@@ -77,6 +77,11 @@ if t = 60
 
 #region Смерть
 
-if enemy_hp < 1 instance_destroy();
+if enemy_hp < 1 
+{
+    instance_create_depth(x,y,depth-1,obj_sfx_weapon_slash);
+    instance_destroy();
+    
+}
 
 #endregion

@@ -17,3 +17,5 @@ a - таймер
 hit_cd = 0;
 isVulnerable = 0;
 state = 1;
+enemy_hp = 2;
+hit_cd_sp = 0;

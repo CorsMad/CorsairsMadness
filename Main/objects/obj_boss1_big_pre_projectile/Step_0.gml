@@ -32,7 +32,12 @@ if instance_exists(obj_boss1e_phase3)
 
 if instance_exists(obj_boss_d1_1)
 {
-	x = obj_boss_d1_1.x;
+    x = obj_boss_d1_1.x;
 	y = obj_boss_d1_1.y+7;
 }
 
+if instance_exists(obj_boss_l1_1)
+{
+	x = obj_boss_l1_1.x;
+	y = obj_boss_l1_1.y+7;
+}

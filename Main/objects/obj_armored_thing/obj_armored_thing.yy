@@ -13,8 +13,8 @@
     "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Snow/Armored thing.yy",
   },
   "parentObjectId": {
-    "name": "obj_enemy_parent_armor_full",
-    "path": "objects/obj_enemy_parent_armor_full/obj_enemy_parent_armor_full.yy",
+    "name": "obj_enemy_parent_no_armor",
+    "path": "objects/obj_enemy_parent_no_armor/obj_enemy_parent_no_armor.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

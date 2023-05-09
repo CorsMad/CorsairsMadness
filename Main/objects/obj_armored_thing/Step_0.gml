@@ -162,13 +162,49 @@ if state = 7
 #endregion
 
 #region takedmg
+           
+        if state!=7 && state!=3
+        {
+            // Атака
 
-	fnc_enemy_full_armor_dmg();
-		
-		if place_meeting(x,y,obj_hitbox) && hit_cd = 0 && state != 7
+                fnc_take_dmg_hitbox(-10,-16,-1,10,-16,-1);
+    
+            // Топор
+
+                fnc_take_dmg_axe(-10,-16,-1,10,-16,-1);
+    
+            // Бомба
+
+                fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1);
+
+            // Удар вниз   
+
+                fnc_take_dmg_hitbox_down(0,-32,-1);    
+
+            // Получение урона
+            fnc_enemy_no_armor_dmg();  
+                
+        }
+                    
+		if hit_cd_sp = 0 && state != 7 && state = 3
 		{
-			instance_create_depth(x,y-16,-1,obj_sfx_weapon_slash);
+            if place_meeting(x,y,obj_hitbox) 
+            {
+    			instance_create_depth(x,y-16,-1,obj_sfx_weapon_slash);
+                hit_cd_sp = 1;
+            }
+            if place_meeting(x,y,obj_hitbox_down)
+            {
+                instance_create_depth(x,y-20,-1,obj_sfx_weapon_slash);
+                hit_cd_sp = 1;   
+                obj_Player.isAttackingdown = 0;
+        		obj_Player.attackingdown_timer = 0;
+        		obj_Player.vspd = -5;  
+            }
+          
 		}
+        if hit_cd_sp!=0 hit_cd_sp++;
+        if hit_cd_sp = 10 hit_cd_sp = 0;
 		
 #endregion
 

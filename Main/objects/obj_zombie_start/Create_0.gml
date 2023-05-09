@@ -20,3 +20,6 @@ i4.vspd = choose(-2,-1.75,-1.5,-1.25,-1);
 
 image_speed = 0;
 t = 0;
+
+enemy_hp = 0;
+hit_cd = 0;

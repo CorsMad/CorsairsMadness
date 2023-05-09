@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Maze2",
-    "path": "folders/Objects/Level objects/Mazes/Maze2.yy",
+    "name": "!Lava",
+    "path": "folders/Objects/Level objects/Mazes/!Lava.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_maze2_main",
+    "path": "sprites/spr_maze2_main/spr_maze2_main.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

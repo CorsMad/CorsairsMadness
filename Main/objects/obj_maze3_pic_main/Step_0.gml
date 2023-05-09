@@ -54,7 +54,15 @@ if state = 0
 if state = 1
 {
     t++;
-    if t = 50 {instance_create_depth(x,y,depth,obj_silver_key_projectile);t = 0;state = 2;}
+    if t = 50 
+    {        
+        if instance_exists(obj_maze3_chest)
+        {
+            obj_maze3_chest.isOn = 1;   
+        }
+        t = 0;state = 2;
+    }
+    
     
 }
 

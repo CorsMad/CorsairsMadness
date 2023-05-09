@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-global.TargetRoom = S1_r18;
+global.TargetRoom = S1_r19;
 global.TargetX = 336;
 global.TargetY = 240;
 

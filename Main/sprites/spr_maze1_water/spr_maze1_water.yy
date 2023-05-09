@@ -40,8 +40,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Maze1",
-    "path": "folders/Sprites/Level objects/Mazes/Maze1.yy",
+    "name": "!Jungle",
+    "path": "folders/Sprites/Level objects/Mazes/!Jungle.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

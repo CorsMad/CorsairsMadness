@@ -22,12 +22,20 @@ y += vspd;
 
 if state = 0
 {
+    t1++;
+    if t1 mod 40 == 0 
+	{
+		var st1 = instance_create_depth(x,y,depth-1,obj_sfx_desert_boss1_steam);
+        st1.fol = id;
+	}
+        
     hspd =- 1;
     if x <= 416 
     {
         x = 416;
         hspd = 0;
         state = 1;
+        t1 = 0;
     }
 }
 #endregion
@@ -37,8 +45,12 @@ if state = 0
 if state = 1
 {
     t++;
-    
-    if t = 50
+    if t = 10
+    {
+        var exm = instance_create_depth(x,y-64,depth-1,obj_desert_boss1_excl_mark)   ;
+        exm.fol = id;
+    }
+    if t = 100
     {
         t = 0;
         state = 2;
@@ -51,6 +63,14 @@ if state = 1
 
 if state = 2
 {
+    t1++;
+    if t1 mod 40 == 0 
+	{
+		var st1 = instance_create_depth(x,y,depth-1,obj_sfx_desert_boss1_steam);
+        st1.fol = id;
+	}
+    
+    
     t++;
     if (((t mod 70 = 0) && t < 270 ) || t = 1 ) instance_create_depth(x,y,depth-1,obj_boss1_big_projectile_creator);
     
@@ -58,6 +78,7 @@ if state = 2
     {
         t = 0;
         state = 3;
+        t1 = 0;
     }
 }
 #endregion
@@ -67,7 +88,12 @@ if state = 2
 if state = 3
 {
     t++;
-    if t = 50
+    if t = 10
+    {
+        var exm = instance_create_depth(x,y-64,depth-1,obj_desert_boss1_excl_mark)   ;
+        exm.fol = id;
+    }
+    if t = 100
     {
         t = 0;
         state = 4;
@@ -80,12 +106,20 @@ if state = 3
 
 if state = 4
 {
+    t1++;
+    if t1 mod 40 == 0 
+	{
+		var st1 = instance_create_depth(x,y,depth-1,obj_sfx_desert_boss1_steam);
+        st1.fol = id;
+	}
+    
     t++;
     if (((t mod 70 = 0) && t < 270 ) || t = 1 ) instance_create_depth(x,y,depth-1,obj_boss1_big_projectile_creator);
     if t = 280
     {
         t = 0;
         state = 5;
+        t1 =0 ;
     }
 }
 
@@ -96,7 +130,12 @@ if state = 4
 if state = 5
 {
     t++;
-    if t = 50
+    if t = 10
+    {
+        var exm = instance_create_depth(x,y-64,depth-1,obj_desert_boss1_excl_mark)   ;
+        exm.fol = id;
+    }
+    if t = 100
     {
         t = 0;
         state = 6;
@@ -123,11 +162,18 @@ if state = 6
 
 if state = 7
 {
+    t1++;
+    if t1 mod 20 = 0
+    {
+        instance_create_depth(x+random_range(-16,16),y+random_range(0,-16),depth-1,obj_sfx_boss1_stars);   
+    }    
+     
     t++;
     if t = 50
     {
         state = 8;
         t = 0;
+        t1 =0 ;
     }
 }
 
@@ -137,12 +183,21 @@ if state = 7
 
 if state = 8
 {
+    t1++;
+    if t1 mod 20 = 0 instance_create_depth(x+random_range(-16,16),y+random_range(0,-16),depth-1,obj_sfx_boss1_stars);  
+    if t1 mod 40 == 0 
+	{
+		var st1 = instance_create_depth(x,y,depth-1,obj_sfx_desert_boss1_steam);
+        st1.fol = id;
+	}
+    
     hspd=1;
     if x >= 416
     {
         x = 416;
         hspd = 0;
         state = 9;
+        t1 = 0;
     }
 }
 
@@ -153,6 +208,11 @@ if state = 8
 if state = 9
 {
     t++;
+    if t = 10
+    {
+        var exm = instance_create_depth(x,y-64,depth-1,obj_desert_boss1_excl_mark)   ;
+        exm.fol = id;
+    }
     if t = 100
     {
         t = 0;
@@ -161,6 +221,38 @@ if state = 9
 }
 #endregion
 
+#region Переход на след фазу
 
+if enemy_hp <= 0 
+{
+    instance_destroy();
+    instance_create_depth(x,y,depth,obj_boss_d1_1_death);    
+}
+
+#endregion
+
+#region Песок
+
+t_sand++;
+if t_sand = 5
+{
+    instance_create_depth(x+random_range(-30,30),y+random_range(0,24),depth+1,obj_boss1_d1_sand);
+    t_sand = 0;
+}
+
+#endregion
+
+
+#region red
+if red !=0
+{
+    image_blend = c_red;
+    red++;
+    if red = 5
+    {
+        red = 0;   
+    }
+} else image_blend = c_white
+#endregion
 
 

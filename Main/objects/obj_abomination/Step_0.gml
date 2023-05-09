@@ -182,7 +182,7 @@ if state = 3
 
 if enemy_hp < 1 
 {
-    if werewolf = 1 instance_create_depth(x,y,depth,obj_werewolf_mad);
+    instance_create_depth(x,y,depth,obj_abomination_death);
     instance_destroy();
 }
 

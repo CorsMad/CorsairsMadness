@@ -1,14 +1,25 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (state = 3) {
+    image_speed = 0;
+} else image_speed = 1;
+
+if instance_exists(obj_Player)
+{
+    if obj_Player.x < x image_xscale = -1 else image_xscale = 1;    
+}
 
 #region ожидание
 if state = 0
 {
     var dis = point_distance(x,y,obj_Player.x,obj_Player.y);
-    if dis < 160 state = 1;      
+    if dis < 160 {state = 1;sprite_index = spr_bat_fly;  }    
 }
 #endregion
+
+
+
 
 #region полет в игрока
 if state = 1

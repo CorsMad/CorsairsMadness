@@ -36,5 +36,5 @@
     "path": "sprites/spr_enemy_creator/spr_enemy_creator.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

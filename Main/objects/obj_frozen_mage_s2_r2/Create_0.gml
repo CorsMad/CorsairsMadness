@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-var oleg = instance_create_depth(x,y,depth-1,obj_frozen_mage_eyes);
+oleg = instance_create_depth(x,y,depth-1,obj_frozen_mage_eyes);
 oleg.fol = id;
 
 
@@ -27,3 +27,6 @@ pg3x = 128
 pg3y = 64
 
 #endregion
+
+enemy_hp = 2;
+hit_cd = 0;

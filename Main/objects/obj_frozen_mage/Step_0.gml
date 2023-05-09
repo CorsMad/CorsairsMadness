@@ -33,7 +33,6 @@ if place = 0
 	}
 }
 
-
 if place = 1 
 {
 	sprite_index = spr_frozenmage_idle;
@@ -47,7 +46,6 @@ if place = 1
     } 
     //invis   
 }
-
 
 if place = 2 // переход
 {
@@ -78,3 +76,36 @@ if place = 3 // появление
 		image_index = 0;
 	}
 }
+
+
+
+#region #takedmg
+
+// Атака
+
+    fnc_take_dmg_hitbox(-10,0,-1,10,0,-1);
+    
+// Топор
+
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1);
+    
+// Удар вниз   
+
+    fnc_take_dmg_hitbox_down(0,-16,-1);
+
+// Получение урона
+
+    fnc_enemy_no_armor_dmg();
+
+#endregion
+
+#region death
+if enemy_hp<=0
+{
+    var death = instance_create_depth(x,y,depth,obj_frozen_mage_death)   ;
+    death.sprite_index = sprite_index;
+    death.image_index = image_index;
+    instance_destroy(oleg);
+    instance_destroy();
+}
+#endregion

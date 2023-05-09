@@ -113,9 +113,9 @@
 -2147483648,-8,13,9,31,19,19,20,0,0,18,19,30,-3,13,2,21,26,-4,16,-2,0,-2,-2147483648,-5,13,4,31,19,19,
 20,-7,0,2,18,30,-3,13,3,21,22,26,-3,16,3,0,55,-2147483648,-3,13,3,31,19,20,-11,0,1,12,-5,13,
 4,21,22,26,16,-3,0,6,13,31,19,20,-2147483648,-2147483648,-11,0,2,18,30,-8,13,-3,0,2,13,14,-4,-2147483648,-12,0,
-1,12,-9,13,-2,0,-8,-2147483648,-11,0,-5,13,3,0,13,13,-3,0,-12,-2147483648,-9,0,-6,13,-3,0,-12,-2147483648,-10,0,
-5,18,30,13,13,14,-3,0,-13,-2147483648,-10,0,4,18,30,13,14,-3,0,-17,-2147483648,-7,0,3,12,13,14,-3,0,-17,
--2147483648,-7,0,6,12,13,25,8,0,0,-18,-2147483648,-12,0,],"TileDataFormat":1,},"tilesetId":{"name":"tls_sand_underground","path":"tilesets/tls_sand_underground/tls_sand_underground.yy",},"userdefinedDepth":false,"visible":true,"x":8,"y":8,},
+1,12,-9,13,-2,0,-8,-2147483648,-11,0,-8,13,-3,0,-12,-2147483648,-9,0,-6,13,-3,0,-12,-2147483648,-10,0,5,18,30,13,
+13,14,-3,0,-13,-2147483648,-10,0,4,18,30,13,14,-3,0,-17,-2147483648,-7,0,3,12,13,14,-3,0,-17,-2147483648,-7,0,6,
+12,13,25,8,0,0,-18,-2147483648,-12,0,],"TileDataFormat":1,},"tilesetId":{"name":"tls_sand_underground","path":"tilesets/tls_sand_underground/tls_sand_underground.yy",},"userdefinedDepth":false,"visible":true,"x":8,"y":8,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4278190080,"depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {

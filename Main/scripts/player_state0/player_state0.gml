@@ -2934,7 +2934,10 @@ if specabilnumber = 2
 {
     if key_item_pressed && isAttacking = 0 && isAttackingdown = 0 && isDashing = 0 && isTakingdmg = 0 
     {
-        instance_create_depth(x,y,depth+1,obj_abil_flute_aoe);
+        if !instance_exists(obj_abil_flute_aoe)
+        {
+            instance_create_depth(x,y,depth+1,obj_abil_flute_aoe);
+        }
         isFlueting = 1;
         #region Таймер
         fluettimer ++;

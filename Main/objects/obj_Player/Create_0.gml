@@ -123,7 +123,7 @@ SpectpEnabled = 1;// TP
 
 SpecAbil = 1;
 #region Спец абилки human
-specabilnumber = 0;
+specabilnumber = 2;
 
 /*
 1 - boots

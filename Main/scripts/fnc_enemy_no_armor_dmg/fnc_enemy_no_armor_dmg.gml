@@ -7,7 +7,7 @@ function fnc_enemy_no_armor_dmg()
 	{
 		hit_cd+=1;	
 	}
-	if hit_cd > 10
+	if hit_cd > 10 //10
 	{
 		hit_cd = 0;	
 	}

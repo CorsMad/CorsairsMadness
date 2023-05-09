@@ -13,25 +13,34 @@ if  instance_exists(obj_maze2_but1) &&
     instance_exists(obj_maze2_but3) &&
     instance_exists(obj_maze2_but4) 
 {
-    if key_jump
+    if key_jump || key_attack
     {
         switch(choosed)
         {
             case 0:
+                obj_maze2_button1.pressed = 1;
+                obj_maze2_button1.t = 0;
+
                 obj_maze2_but1.sw+=1;
                 obj_maze2_but2.sw+=1;
                 break;
             case 1:
+                obj_maze2_button2.pressed = 1;
+                obj_maze2_button2.t = 0;
                 obj_maze2_but1.sw+=1;
                 obj_maze2_but2.sw+=1;
                 obj_maze2_but3.sw+=1;
                 break;
             case 2:
+                obj_maze2_button3.pressed = 1;
+                obj_maze2_button3.t = 0;
                 obj_maze2_but2.sw+=1;
                 obj_maze2_but3.sw+=1;
                 obj_maze2_but4.sw+=1;
                 break;
             case 3:
+                obj_maze2_button4.pressed = 1;
+                obj_maze2_button4.t = 0;
                 obj_maze2_but3.sw+=1;
                 obj_maze2_but4.sw+=1;
                 break;

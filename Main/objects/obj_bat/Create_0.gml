@@ -15,3 +15,4 @@ spd = 1;
 state = 0;
 boomer = 0;
 t = 0;
+image_speed =0;

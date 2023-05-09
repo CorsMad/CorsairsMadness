@@ -1,0 +1,9 @@
+/// @description Insert description here
+// You can write your code in this editor
+state = 1;
+t = 0;
+mov = 0;
+depth = 101;
+
+red = 0;
+hit_cd = 0; 

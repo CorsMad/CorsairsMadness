@@ -3,7 +3,7 @@
 
 instance_create_depth(0,0,0,obj_music_controller);
 
-global.language = 6;
+global.language = 0;
 
 #region Завершеннсоть уровней
     
@@ -63,7 +63,7 @@ global.purch_dualpistols3 = 0;
 #region Игрок
 global.hp = 5;           // 4
 global.hp_max = 5;       // 4
-global.choosed_item = 0; // 1- бумер 2 -топ // 3 - бомба // 11 - арбалет
+global.choosed_item = 1; // 1- бумер 2 -топ // 3 - бомба // 11 - арбалет
 global.choosed_item_tier = 0; // ТИР предмета
 global.choosed_itemboat = 0; // 1 - ? 2 - 2пистолета 
 global.choosed_itemboat_tier = 0; // ТИП предмета для лодки
@@ -86,9 +86,9 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 64;
+global.TargetX      = 240;
 global.TargetY      = 224;
-global.TargetRoom   = G2_r1;
+global.TargetRoom   = TESTROOM;
 
 global.fTargetX     = 272;
 global.fTargetY     = 224;
@@ -107,6 +107,7 @@ global.fTargetRoom  = PS1_r4;
 #region Загрузки
 
 // Загрузка музыки
+
 audio_group_load(MusicVolume);
 audio_group_load(SFXvolume);
 
@@ -120,9 +121,9 @@ global.windowHeight = 1080;
 // Установка громкости звука
 
 
-global.MSCvolume = 0.5; //0,5
+global.MSCvolume = 0; //0.5
 global.MSCvolume_max = global.MSCvolume;
-global.SFXvolume = 0.5; //0,5
+global.SFXvolume = 0; //0.5
 
 audio_group_set_gain(MusicVolume,global.MSCvolume,0);
 audio_group_set_gain(SFXvolume,global.SFXvolume,0);
