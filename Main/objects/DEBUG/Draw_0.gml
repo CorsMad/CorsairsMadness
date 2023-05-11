@@ -8,10 +8,10 @@ if instance_exists(obj_boss_d1_1)
 }
 */
 
-    if instance_exists(obj_boss_l2_phase2)
+    if instance_exists(obj_boss_l2_phase3)
     {
-        draw_text(32,48,string(obj_boss_l2_phase2.state)) ;        
-        draw_text(32,64,string(obj_boss_l2_phase2.t)) ;        
+        draw_text(32,48,string(obj_boss_l2_phase3.state)) ;        
+        draw_text(32,64,string(obj_boss_l2_phase3.t)) ;        
     }
     
     //if instance_exists(obj_boss_d2_phase2)

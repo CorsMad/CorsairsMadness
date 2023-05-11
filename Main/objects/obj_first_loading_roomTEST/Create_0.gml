@@ -86,9 +86,9 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 240;
-global.TargetY      = 224;
-global.TargetRoom   = TESTROOM;
+global.TargetX      = 128;
+global.TargetY      = 256;
+global.TargetRoom   = L2_boss;
 
 global.fTargetX     = 272;
 global.fTargetY     = 224;

@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boss_l1_1_falling_obj",
-    "path": "sprites/spr_boss_l1_1_falling_obj/spr_boss_l1_1_falling_obj.yy",
+    "name": "spr_boss_l2_skeleton_bombbig",
+    "path": "sprites/spr_boss_l2_skeleton_bombbig/spr_boss_l2_skeleton_bombbig.yy",
   },
   "spriteMaskId": {
     "name": "spr_boss_l1_1_falling_obj_mask",

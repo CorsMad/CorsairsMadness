@@ -3,9 +3,9 @@
 x+=hspd;
 y+=vspd;
 
-if vspd < 2 vspd+=0.2;
+if vspd < 4 vspd+=0.2;
 
-hspd = lerp(hspd,0,0.01);
+hspd = lerp(hspd,0,0.02);
 
 if place_meeting(x,y+vspd,obj_block)
 {

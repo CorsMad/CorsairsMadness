@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Projectiles",
-    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Lava/Bosses/Boss2/Phases/Projectiles.yy",
+    "name": "Tower",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Lava/Bosses/Boss2/Phases/Phase3/Tower.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,12 +29,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boss_l2_rock",
-    "path": "sprites/spr_boss_l2_rock/spr_boss_l2_rock.yy",
+    "name": "spr_boss_l2_tower_phase1_rock",
+    "path": "sprites/spr_boss_l2_tower_phase1_rock/spr_boss_l2_tower_phase1_rock.yy",
   },
   "spriteMaskId": {
-    "name": "spr_boss_l2_rock",
-    "path": "sprites/spr_boss_l2_rock/spr_boss_l2_rock.yy",
+    "name": "spr_boss_l2_tower_phase1_rock_mask",
+    "path": "sprites/spr_boss_l2_tower_phase1_rock_mask/spr_boss_l2_tower_phase1_rock_mask.yy",
   },
   "visible": true,
 }

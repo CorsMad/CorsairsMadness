@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bomb",
-    "path": "sprites/spr_bomb/spr_bomb.yy",
+    "name": "spr_boss_l2_skeleton_bombsmall",
+    "path": "sprites/spr_boss_l2_skeleton_bombsmall/spr_boss_l2_skeleton_bombsmall.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_skeleton_mask",
-    "path": "sprites/spr_skeleton_mask/spr_skeleton_mask.yy",
+    "name": "spr_boss_l2_skeleton_throw_pre3",
+    "path": "sprites/spr_boss_l2_skeleton_throw_pre3/spr_boss_l2_skeleton_throw_pre3.yy",
   },
   "spriteMaskId": {
     "name": "spr_skeleton_mask",

@@ -13,10 +13,11 @@ if t = 2
 if y >= 256 
 {
 	instance_create_depth(x,y,depth-1,obj_sfx_weapon_slash);
-    instance_create_depth(x-18,y-18,depth-1,obj_sfx_explosion_bomb);
-    instance_create_depth(x-18,y+18,depth-1,obj_sfx_explosion_bomb);
-    instance_create_depth(x+18,y-18,depth-1,obj_sfx_explosion_bomb);
-    instance_create_depth(x+18,y+18,depth-1,obj_sfx_explosion_bomb);
+    instance_create_depth(x-18,y-18-18,depth-1,obj_sfx_explosion_bomb);
+    instance_create_depth(x-18,y+18-18,depth-1,obj_sfx_explosion_bomb);
+    instance_create_depth(x+18,y-18-18,depth-1,obj_sfx_explosion_bomb);
+    instance_create_depth(x+18,y+18-18,depth-1,obj_sfx_explosion_bomb);
+    instance_create_depth(x,y,depth-1,obj_sfx_explosion_bomb);
 	var l = instance_create_depth(x,256,depth,obj_boss_l2_bomb_small_fire);
 	var r = instance_create_depth(x,256,depth,obj_boss_l2_bomb_small_fire);
 	l.hspd = -2;
@@ -35,6 +36,8 @@ if state = 0
         instance_create_depth(x-18,y+18,depth-1,obj_sfx_explosion_bomb);
         instance_create_depth(x+18,y-18,depth-1,obj_sfx_explosion_bomb);
         instance_create_depth(x+18,y+18,depth-1,obj_sfx_explosion_bomb);
+            instance_create_depth(x,y,depth-1,obj_sfx_explosion_bomb);
+
         instance_destroy();   
     }
     
@@ -74,6 +77,10 @@ if state = 2
             // Нанести урон
             obj_boss_l2_phase2.bomb_hit += 1;
 			instance_create_depth(x,y,depth-1,obj_sfx_explosion_bomb);
+            instance_create_depth(x-18,y-18,depth-1,obj_sfx_explosion_bomb);
+            instance_create_depth(x-18,y+18,depth-1,obj_sfx_explosion_bomb);
+            instance_create_depth(x+18,y-18,depth-1,obj_sfx_explosion_bomb);
+            instance_create_depth(x+18,y+18,depth-1,obj_sfx_explosion_bomb);
             instance_destroy();   
         }
    

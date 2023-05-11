@@ -11,7 +11,9 @@ if state = 0
 	{
 		state = 1;
 	}
+    
 }
+
 
 if state = 1
 {
