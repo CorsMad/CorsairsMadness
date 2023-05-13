@@ -10,8 +10,7 @@ if state = 0
 	if hspd< 0 && place_meeting(x-hspd,y,obj_block)
 	{
 		state = 1;
-	}
-    
+	}   
 }
 
 

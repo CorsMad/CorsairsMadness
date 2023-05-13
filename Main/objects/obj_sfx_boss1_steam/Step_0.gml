@@ -51,3 +51,6 @@ if instance_exists(obj_boss1e_phase_death2)
 	x = obj_boss1e_phase_death2.x;
 	y = obj_boss1e_phase_death2.y;
 }
+
+
+

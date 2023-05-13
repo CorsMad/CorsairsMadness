@@ -34,6 +34,7 @@
     {"name":"inst_22AA0FEE","path":"rooms/G1_r18/G1_r18.yy",},
     {"name":"inst_13554F31","path":"rooms/G1_r18/G1_r18.yy",},
     {"name":"inst_2FEE8D0A","path":"rooms/G1_r18/G1_r18.yy",},
+    {"name":"inst_41202AE2","path":"rooms/G1_r18/G1_r18.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -58,6 +59,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2BE7C817","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_room_transition_horizontal","path":"objects/obj_room_transition_horizontal/obj_room_transition_horizontal.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":2.6,"x":-16.0,"y":96.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5A0288D8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_maze4_controller","path":"objects/obj_maze4_controller/obj_maze4_controller.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":256.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_29A426D4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_silver_key_door3","path":"objects/obj_silver_key_door3/obj_silver_key_door3.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":208.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_41202AE2","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_room_transition_horizontal","path":"objects/obj_room_transition_horizontal/obj_room_transition_horizontal.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":2.6,"x":496.0,"y":208.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_63D68C14","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_maze4_button4","path":"objects/obj_maze4_button4/obj_maze4_button4.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":200.0,},
