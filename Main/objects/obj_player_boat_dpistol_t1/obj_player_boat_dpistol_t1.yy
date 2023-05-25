@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Bullets",
-    "path": "folders/Objects/Player objects/Boat/Bullets.yy",
+    "name": "DualPistols",
+    "path": "folders/Objects/Player objects/Boat/Bullets/DualPistols.yy",
   },
   "parentObjectId": null,
   "persistent": false,

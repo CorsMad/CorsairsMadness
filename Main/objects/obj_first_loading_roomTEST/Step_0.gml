@@ -7,7 +7,7 @@ if t1 < 12
 }
 
 
-//if t1 = 10 room_goto(TESTROOMCText);
+//if t1 = 10 room_goto(TESTROOMBoat);
 
 
 if t1 = 10

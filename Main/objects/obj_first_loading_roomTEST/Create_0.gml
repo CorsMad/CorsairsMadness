@@ -65,9 +65,9 @@ global.hp = 5;           // 4
 global.hp_max = 5;       // 4
 global.choosed_item = 0; // 1- бумер 2 -топ // 3 - бомба // 11 - арбалет
 global.choosed_item_tier = 0; // ТИР предмета
-global.choosed_itemboat = 0; // 1 - ? 2 - 2пистолета 
-global.choosed_itemboat_tier = 0; // ТИП предмета для лодки
-global.mana = 2;
+global.choosed_itemboat = 1; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
+global.choosed_itemboat_tier = 3; // ТИП предмета для лодки
+global.mana = 3;
 global.mana_max = 3;
 global.gold = 6000 //global.money_saved;          // 0
 global.gold_prelevel = 0;
@@ -86,9 +86,9 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 128;
-global.TargetY      = 256;
-global.TargetRoom   = TESTROOM ;
+global.TargetX      = 528;
+global.TargetY      = 128;
+global.TargetRoom   = J1_r2 ;
 
 global.fTargetX     = 272;
 global.fTargetY     = 224;

@@ -35,5 +35,5 @@ if (state = 0) {
 
 if (state = 2) {
     t1++;
-	if t1= 50 instance_destroy();
+	if t1= 10 instance_destroy();
 }

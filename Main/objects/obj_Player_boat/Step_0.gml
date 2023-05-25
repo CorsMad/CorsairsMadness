@@ -112,6 +112,206 @@ if state = 0.1
 
 #endregion
 
+#region Мушкетон
+if state = 0.2
+{
+    a = image_index;
+    if key_attack_press && t = 0
+    {        
+        t=1;
+        
+        switch(global.choosed_itemboat_tier)
+        {
+            case 1:
+                instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
+                var i1 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
+                var i2 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);                
+                i1.vspd = -0.5;
+                i2.vspd = 0.5;
+                break;
+            case 2:
+
+                var i1 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
+                var i2 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
+                var i3 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
+                var i4 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
+                i1.vspd = -0.6;
+                i2.vspd = -0.2;
+                i3.vspd = 0.2;
+                i4.vspd = 0.6;
+
+                break;
+            case 3:
+                instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
+                var i1 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
+                var i2 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
+                var i3 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
+                var i4 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
+                i1.vspd = -0.7;
+                i2.vspd = -0.3;
+                i3.vspd = 0.3;
+                i4.vspd = 0.7;
+                break;
+        }
+        
+        
+        instance_create_depth(x,y-36,-1,obj_Player_boat_used_pistol);        
+        instance_create_depth(x-8,y-36,-1,obj_Player_boat_used_pistol);
+        
+        if image_index = 0
+        {
+            instance_create_depth(x+18,y-30,-1,obj_sfx1)
+            instance_create_depth(x+18,y-22,-1,obj_sfx1)
+            instance_create_depth(x+18,y-30,-1,obj_sfx3)
+            instance_create_depth(x+18,y-22,-1,obj_sfx3)
+        }
+
+        if fastshoot_count > 0 fastshoot_count--;
+    }
+    if t !=0 t++;
+    if t = cd_max 
+    {
+        t = 0;
+        if image_index = 2 image_index = 0
+        
+    }
+    switch(t)
+    {
+        case cd_1: image_index+=1;break;    
+        case cd_2: image_index+=1;break;    
+    }  
+}
+#endregion
+
+#region Попугай
+if state = 0.3
+{
+    a = image_index;
+    if key_attack_press && t = 0
+    {        
+        t=1;
+        
+        switch(global.choosed_itemboat_tier)
+        {
+            case 1:
+                instance_create_depth(x+18,y-34,-1,obj_player_boat_parrotcage_t1);               
+                break;
+            case 2:
+                instance_create_depth(x+18,y-34,-1,obj_player_boat_parrotcage_t2);
+                break;
+            case 3:
+                instance_create_depth(x+18,y-34,-1,obj_player_boat_parrotcage_t3);
+                break;
+        }
+        
+        
+        instance_create_depth(x,y-36,-1,obj_Player_boat_used_pistol);        
+        instance_create_depth(x-8,y-36,-1,obj_Player_boat_used_pistol);
+        
+        if image_index = 0
+        {
+            instance_create_depth(x+18,y-30,-1,obj_sfx1)
+            instance_create_depth(x+18,y-22,-1,obj_sfx1)
+            instance_create_depth(x+18,y-30,-1,obj_sfx3)
+            instance_create_depth(x+18,y-22,-1,obj_sfx3)
+        }
+
+        if fastshoot_count > 0 fastshoot_count--;
+    }
+    if t !=0 t++;
+    if t = cd_max 
+    {
+        t = 0;
+        if image_index = 2 image_index = 0
+        
+    }
+    switch(t)
+    {
+        case cd_1: image_index+=1;break;    
+        case cd_2: image_index+=1;break;    
+    }  
+}
+#endregion
+
+#region Быстровыстрел
+if state = 0.4
+{
+    a = image_index;
+    if key_attack_press && t = 0
+    {        
+        t=1;
+        
+        switch(global.choosed_itemboat_tier)
+        {
+            case 1:
+                instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                break;
+            case 2:
+                instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                break;
+            case 3:
+                instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                break;
+        }
+        
+        
+        instance_create_depth(x,y-36,-1,obj_Player_boat_used_pistol);        
+        instance_create_depth(x-8,y-36,-1,obj_Player_boat_used_pistol);
+        
+        if image_index = 0
+        {
+            instance_create_depth(x+18,y-30,-1,obj_sfx1)
+            instance_create_depth(x+18,y-22,-1,obj_sfx1)
+            instance_create_depth(x+18,y-30,-1,obj_sfx3)
+            instance_create_depth(x+18,y-22,-1,obj_sfx3)
+        }
+
+        if fastshoot_count > 0 fastshoot_count--;
+    }
+    
+    if (t = 5) { // второй выстрел
+        switch(global.choosed_itemboat_tier)
+        {
+            case 1:
+                instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                break;
+            case 2:
+                instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                break;
+            case 3:
+                instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                break;
+        }
+    }
+    
+    if (t = 9) { // третий выстрел
+        switch(global.choosed_itemboat_tier)
+        {
+            case 2:
+                instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                break;
+            case 3:
+                instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t2);
+                break;
+        }
+    }    
+    
+    
+    if t !=0 t++;
+    if t = cd_max 
+    {
+        t = 0;
+        if image_index = 2 image_index = 0
+        
+    }
+    switch(t)
+    {
+        case cd_1: image_index+=1;break;    
+        case cd_2: image_index+=1;break;    
+    }     
+}
+#endregion
+
 #region Пушка
 
 if state = 3
@@ -177,6 +377,21 @@ if fastshoot_count != 0
                 cd_2 = 18;
                 cd_max = 22;
                 break;
+        case 0.2: // мушкетон
+                cd_1 = 2;
+                cd_2 = 20;
+                cd_max = 24;
+                break;
+        case 0.3: // попугай
+                cd_1 = 2;
+                cd_2 = 20;
+                cd_max = 24;
+                break;
+        case 0.4: // быстровыстрел
+                cd_1 = 2;
+                cd_2 = 20;
+                cd_max = 24;
+                break;
     }
 }
 
@@ -193,6 +408,11 @@ if fastshoot_count = 0
                 cd_1 = 2;
                 cd_2 = 25;
                 cd_max = 35;
+                break;
+        case 0.2: // мушкетон
+                cd_1 = 2;
+                cd_2 = 27;
+                cd_max = 37;
                 break;
     }   
 }

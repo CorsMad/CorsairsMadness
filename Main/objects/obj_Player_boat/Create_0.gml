@@ -68,8 +68,17 @@ switch(global.choosed_itemboat)
     case 0:
         state = 0;
         break;
+    case 1:
+        state = 0.4; // быстровыстрел
+        break;
     case 2:
-        state = 0.1;
+        state = 0.1; // двойной пистол
+        break;
+    case 3:
+        state = 0.2; // мушкетон
+        break;
+    case 4:
+        state = 0.3; // попугай
         break;
 }
 
