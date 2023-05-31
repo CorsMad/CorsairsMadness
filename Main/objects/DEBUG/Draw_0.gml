@@ -10,10 +10,10 @@ if instance_exists(obj_boss_d1_1)
 
     
 	
-    if instance_exists(obj_boat_boss_desert)
+    if instance_exists(obj_boat_boss_desert_phase3)
     {
-		draw_text(32,48,string(obj_boat_boss_desert.state));        
-        draw_text(32,64,string(obj_boat_boss_desert.t)) ;             
+		draw_text(32,48,string(obj_boat_boss_desert_phase3.state));        
+        draw_text(32,64,string(obj_boat_boss_desert_phase3.t)) ;                        
     }
    
 	

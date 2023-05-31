@@ -139,3 +139,72 @@ function fnc_boat_take_dmg_obstacle()
        
     }
 }
+
+function fnc_boat_take_dmg_parrotcage(x1,y1,d1)
+{    
+    #region Tier1    
+        var parrothit = instance_place(x,y,obj_player_boat_parrotcage_t1);
+        if (parrothit !=noone) && (hit_cd = 0)
+        {
+    		instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+            parrothit.a = 1;
+            //hit_cd = 1;
+    		enemy_hp -= 1;       
+        }     
+    #endregion
+    #region Tier2    
+        var parrothit = instance_place(x,y,obj_player_boat_parrotcage_t2);
+        if (parrothit !=noone) && (hit_cd = 0)
+        {
+    		instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+            parrothit.a = 1;
+            //hit_cd = 1;
+    		enemy_hp -= 1;       
+        }     
+    #endregion
+    #region Tier3    
+        var parrothit = instance_place(x,y,obj_player_boat_parrotcage_t3);
+        if (parrothit !=noone) && (hit_cd = 0)
+        {
+    		instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+            parrothit.a = 1;
+            //hit_cd = 1;
+    		enemy_hp -= 1;       
+        }     
+    #endregion
+}
+
+function fnc_boat_take_dmg_blunderbuss(x1,y1,d1)
+{    
+
+    var blunderbusshit = instance_place(x,y,obj_player_boat_bbus_t1_1);
+    if (blunderbusshit !=noone) && (hit_cd = 0)
+    {
+    	instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+        blunderbusshit.a = 1;
+        //hit_cd = 1;
+    	enemy_hp -= 1;       
+    }        
+}
+
+function fnc_boat_take_dmg_fastshot(x1,y1,d1)
+{    
+
+    var fastshothit1 = instance_place(x,y,obj_player_boat_fastshot_t1);
+    if (fastshothit1 !=noone) && (hit_cd = 0)
+    {
+    	instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+        fastshothit1.a = 1;
+        //hit_cd = 1;
+    	enemy_hp -= 1;       
+    }        
+
+    var fastshotit2 = instance_place(x,y,obj_player_boat_fastshot_t2);
+    if (fastshotit2 !=noone) && (hit_cd = 0)
+    {
+    	instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+        fastshotit2.a = 1;
+        //hit_cd = 1;
+    	enemy_hp -= 2;       
+    }        
+}

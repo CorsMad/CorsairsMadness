@@ -33,8 +33,8 @@
     "path": "sprites/spr_boat_boss_desert_proj_ph2_st3/spr_boat_boss_desert_proj_ph2_st3.yy",
   },
   "spriteMaskId": {
-    "name": "spr_boat_boss_desert_proj_ph2_st3",
-    "path": "sprites/spr_boat_boss_desert_proj_ph2_st3/spr_boat_boss_desert_proj_ph2_st3.yy",
+    "name": "spr_boat_boss_desert_proj_ph2_st3_mask",
+    "path": "sprites/spr_boat_boss_desert_proj_ph2_st3_mask/spr_boat_boss_desert_proj_ph2_st3_mask.yy",
   },
   "visible": true,
 }

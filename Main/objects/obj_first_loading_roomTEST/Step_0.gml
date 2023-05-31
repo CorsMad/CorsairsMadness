@@ -7,9 +7,9 @@ if t1 < 12
 }
 
 
-//if t1 = 10 room_goto(TESTROOMBoat);
+if t1 = 10 room_goto(TESTROOMBoat);
 
-
+/*
 if t1 = 10
 {   
     var i = instance_create_depth(16,16,0,obj_Player);

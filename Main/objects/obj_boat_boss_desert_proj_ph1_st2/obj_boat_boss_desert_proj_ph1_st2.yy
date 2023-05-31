@@ -5,6 +5,8 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -32,6 +34,9 @@
     "name": "spr_boat_boss_desert_proj_ph1_st2",
     "path": "sprites/spr_boat_boss_desert_proj_ph1_st2/spr_boat_boss_desert_proj_ph1_st2.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_boat_boss_desert_proj_ph1_st2_m2",
+    "path": "sprites/spr_boat_boss_desert_proj_ph1_st2_m2/spr_boat_boss_desert_proj_ph1_st2_m2.yy",
+  },
   "visible": true,
 }

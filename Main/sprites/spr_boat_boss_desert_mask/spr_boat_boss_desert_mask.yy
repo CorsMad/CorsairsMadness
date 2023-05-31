@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Desert",
-    "path": "folders/Sprites/Enemies/Boat level/Bosses/Desert.yy",
+    "path": "folders/Sprites/Enemies/!Boat level/Bosses/Desert.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

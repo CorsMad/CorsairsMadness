@@ -194,7 +194,7 @@ if state = 0.3
         switch(global.choosed_itemboat_tier)
         {
             case 1:
-                instance_create_depth(x+18,y-34,-1,obj_player_boat_parrotcage_t1);               
+                instance_create_depth(x+4,y-27,-1,obj_player_boat_parrotcage_t1);               
                 break;
             case 2:
                 instance_create_depth(x+18,y-34,-1,obj_player_boat_parrotcage_t2);
@@ -202,11 +202,7 @@ if state = 0.3
             case 3:
                 instance_create_depth(x+18,y-34,-1,obj_player_boat_parrotcage_t3);
                 break;
-        }
-        
-        
-        instance_create_depth(x,y-36,-1,obj_Player_boat_used_pistol);        
-        instance_create_depth(x-8,y-36,-1,obj_Player_boat_used_pistol);
+        }        
         
         if image_index = 0
         {

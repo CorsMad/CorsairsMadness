@@ -29,7 +29,7 @@
   "origin": 9,
   "parent": {
     "name": "Stone",
-    "path": "folders/Sprites/Enemies/Boat level/Stone.yy",
+    "path": "folders/Sprites/Enemies/!Boat level/Stone.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

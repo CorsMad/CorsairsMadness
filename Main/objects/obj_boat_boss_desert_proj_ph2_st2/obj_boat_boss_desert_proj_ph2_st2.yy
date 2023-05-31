@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boat_boss_desert_proj_ph1_st2",
-    "path": "sprites/spr_boat_boss_desert_proj_ph1_st2/spr_boat_boss_desert_proj_ph1_st2.yy",
+    "name": "spr_boat_boss_desert_proj_ph2_2",
+    "path": "sprites/spr_boat_boss_desert_proj_ph2_2/spr_boat_boss_desert_proj_ph2_2.yy",
   },
   "spriteMaskId": null,
   "visible": true,

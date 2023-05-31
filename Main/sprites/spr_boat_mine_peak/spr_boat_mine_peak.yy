@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Mine",
-    "path": "folders/Sprites/Enemies/Boat level/Mine.yy",
+    "path": "folders/Sprites/Enemies/!Boat level/Mine.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
