@@ -1,17 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_boat_boss_shadow_underwater_big_bubble",
+  "name": "obj_boat_boss_shadow_dtent",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Projectiles",
-    "path": "folders/Objects/Enemies/!BOAT GROUP/Bosses/Shadow/Projectiles.yy",
+    "name": "Shadow",
+    "path": "folders/Objects/Enemies/!BOAT GROUP/Bosses/Shadow.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_boat_boss_shadow_bubble_big",
-    "path": "sprites/spr_boat_boss_shadow_bubble_big/spr_boat_boss_shadow_bubble_big.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

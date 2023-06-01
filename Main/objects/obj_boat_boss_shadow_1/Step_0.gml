@@ -25,13 +25,13 @@ switch(phase)
         #endregion
         break;
     case 2:
-    #region Большой пузырь
+		#region Большой пузырь
         t++;
         if t = 50
         {
             instance_create_depth(x,y,depth-1,obj_boat_boss_shadow_underwater_big_bubble);
         }
-        if t = 100
+        if t = 100 // ожидание после атаки
         {   
             t = 0;
             phase = 1;
