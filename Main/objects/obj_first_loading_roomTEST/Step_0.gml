@@ -7,7 +7,7 @@ if t1 < 12
 }
 
 
-if t1 = 10 room_goto(D2_r9_boat);
+if t1 = 10 room_goto(TESTROOMBoat);
 
 /*
 if t1 = 10

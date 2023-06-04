@@ -12,7 +12,10 @@
     "name": "Shadow",
     "path": "folders/Objects/Enemies/!BOAT GROUP/Bosses/Shadow.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_test",
+    "path": "objects/obj_enemy_test/obj_enemy_test.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,7 +31,13 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
-  "spriteMaskId": null,
+  "spriteId": {
+    "name": "spr_boat_boss_shadow_tent",
+    "path": "sprites/spr_boat_boss_shadow_tent/spr_boat_boss_shadow_tent.yy",
+  },
+  "spriteMaskId": {
+    "name": "spr_boat_boss_shadow_tent",
+    "path": "sprites/spr_boat_boss_shadow_tent/spr_boat_boss_shadow_tent.yy",
+  },
   "visible": true,
 }

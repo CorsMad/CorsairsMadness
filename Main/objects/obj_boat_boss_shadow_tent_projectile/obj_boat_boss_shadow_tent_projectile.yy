@@ -1,0 +1,43 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_boat_boss_shadow_tent_projectile",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
+  "managed": true,
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Projectiles",
+    "path": "folders/Objects/Enemies/!BOAT GROUP/Bosses/Shadow/Projectiles.yy",
+  },
+  "parentObjectId": {
+    "name": "obj_enemy_parent_object",
+    "path": "objects/obj_enemy_parent_object/obj_enemy_parent_object.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [],
+  "solid": false,
+  "spriteId": {
+    "name": "spr_bird_coconut",
+    "path": "sprites/spr_bird_coconut/spr_bird_coconut.yy",
+  },
+  "spriteMaskId": {
+    "name": "spr_bird_coconut_mask",
+    "path": "sprites/spr_bird_coconut_mask/spr_bird_coconut_mask.yy",
+  },
+  "visible": true,
+}

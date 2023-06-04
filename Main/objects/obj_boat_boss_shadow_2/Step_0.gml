@@ -13,7 +13,7 @@ switch(phase)
         if (state = 0) { // призыв щупальца
             t++;
             if t = 50 {
-                instance_create_depth(x,y,depth,obj_boat_boss_shadow_underwater_tent);
+                instance_create_depth(368,y,depth,obj_boat_boss_shadow_tent_forward);
                 t = 0;
                 state = 1;
             }
@@ -28,12 +28,12 @@ switch(phase)
     #region Мелкие пузыри
         t++;
         
-        if t > 100 && t < 200
+        if t > 100 && t < 500
         {
-            if t mod 10 = 0 instance_create_depth(x,y,depth-1,obj_boat_boss_shadow_underwater_small_bubble);
+            if t mod 30 = 0 instance_create_depth(x,y,depth-1,obj_boat_boss_shadow_underwater_small_bubble);
         }
 
-        if t = 250
+        if t = 800
         {   
             t = 0;
             phase = 1;

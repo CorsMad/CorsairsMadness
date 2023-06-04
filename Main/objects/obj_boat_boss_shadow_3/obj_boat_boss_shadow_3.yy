@@ -28,7 +28,13 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
-  "spriteMaskId": null,
+  "spriteId": {
+    "name": "spr_boat_boss_graveyard_mask",
+    "path": "sprites/spr_boat_boss_graveyard_mask/spr_boat_boss_graveyard_mask.yy",
+  },
+  "spriteMaskId": {
+    "name": "spr_boat_boss_graveyard_mask",
+    "path": "sprites/spr_boat_boss_graveyard_mask/spr_boat_boss_graveyard_mask.yy",
+  },
   "visible": true,
 }

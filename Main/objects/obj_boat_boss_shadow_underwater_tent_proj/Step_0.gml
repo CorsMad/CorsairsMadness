@@ -7,6 +7,10 @@ if t = 100
     {
         obj_boat_boss_shadow_underwater_tent.state+=1;   
     }
+    if instance_exists(obj_boat_boss_shadow_underwater_tent3)
+    {
+        obj_boat_boss_shadow_underwater_tent3.state+=1;   
+    }
     instance_destroy();
     
 }
