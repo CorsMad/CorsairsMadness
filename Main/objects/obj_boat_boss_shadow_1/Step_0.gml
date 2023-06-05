@@ -29,7 +29,7 @@ switch(phase)
         t++;
         if t = 50
         {
-            instance_create_depth(352,192,depth,obj_boat_boss_shadow_underwater_big_bubble_create);
+            instance_create_depth(352,192+40,depth,obj_boat_boss_shadow_underwater_big_bubble_create);
         }
         if t = 100 // ожидание после атаки
         {   

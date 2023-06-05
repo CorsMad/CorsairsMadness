@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boat_boss_graveyard_mask",
-    "path": "sprites/spr_boat_boss_graveyard_mask/spr_boat_boss_graveyard_mask.yy",
+    "name": "spr_boat_boss_shadow_idle",
+    "path": "sprites/spr_boat_boss_shadow_idle/spr_boat_boss_shadow_idle.yy",
   },
   "spriteMaskId": {
     "name": "spr_boat_boss_graveyard_mask",
