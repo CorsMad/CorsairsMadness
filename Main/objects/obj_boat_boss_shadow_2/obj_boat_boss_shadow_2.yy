@@ -12,7 +12,10 @@
     "name": "Shadow",
     "path": "folders/Objects/Enemies/!BOAT GROUP/Bosses/Shadow.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_test",
+    "path": "objects/obj_enemy_test/obj_enemy_test.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boat_boss_graveyard_mask",
-    "path": "sprites/spr_boat_boss_graveyard_mask/spr_boat_boss_graveyard_mask.yy",
+    "name": "spr_boat_boss_shadow_idle",
+    "path": "sprites/spr_boat_boss_shadow_idle/spr_boat_boss_shadow_idle.yy",
   },
   "spriteMaskId": {
     "name": "spr_boat_boss_graveyard_mask",

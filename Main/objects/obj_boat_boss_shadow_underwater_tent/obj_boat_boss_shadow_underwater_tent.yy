@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boat_boss_shadow_underwater_tent",
-    "path": "sprites/spr_boat_boss_shadow_underwater_tent/spr_boat_boss_shadow_underwater_tent.yy",
+    "name": "spr_boat_boss_shadow_tent_below",
+    "path": "sprites/spr_boat_boss_shadow_tent_below/spr_boat_boss_shadow_tent_below.yy",
   },
   "spriteMaskId": null,
   "visible": true,

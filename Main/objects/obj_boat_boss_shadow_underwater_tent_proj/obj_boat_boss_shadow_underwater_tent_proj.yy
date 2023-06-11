@@ -33,5 +33,5 @@
     "path": "sprites/spr_boat_boss_shadow_underwater_tent_proj/spr_boat_boss_shadow_underwater_tent_proj.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

@@ -5,6 +5,7 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -29,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boat_boss_graveyard_mask",
-    "path": "sprites/spr_boat_boss_graveyard_mask/spr_boat_boss_graveyard_mask.yy",
+    "name": "spr_boat_boss_shadow_arrival",
+    "path": "sprites/spr_boat_boss_shadow_arrival/spr_boat_boss_shadow_arrival.yy",
   },
   "spriteMaskId": {
     "name": "spr_boat_boss_graveyard_mask",

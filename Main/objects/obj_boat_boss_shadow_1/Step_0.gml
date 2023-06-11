@@ -5,7 +5,7 @@
    1 - Подводная атака
    2 - Большой пузырь
 */
-
+depth = -y;
 switch(phase)
 {
     case 1:
@@ -13,7 +13,7 @@ switch(phase)
         if (state = 0) { // призыв подземн тектакли
             t++;
             if t = 50 {
-                instance_create_depth(x,y,depth,obj_boat_boss_shadow_underwater_tent);
+                instance_create_depth(352,192,depth,obj_boat_boss_shadow_underwater_tent);
                 t = 0;
                 state = 1;
             }
@@ -40,3 +40,22 @@ switch(phase)
     #endregion
         break;
 }
+
+#region Попадание
+
+fnc_boat_take_dmg_pistol(random_range(-16,8),random_range(-16,16),depth-1000,random_range(-16,8),random_range(-16,16),depth-1000)
+fnc_boat_take_dmg_parrotcage(random_range(-16,8),random_range(-16,16),depth-1000);
+fnc_boat_take_dmg_blunderbuss(random_range(-16,8),random_range(-16,16),depth-1000);
+fnc_boat_take_dmg_fastshot(random_range(-16,8),random_range(-16,16),depth-1000);
+
+if enemy_hp <=0
+{
+    
+
+    var d = instance_create_depth(x,y,depth,obj_boat_boss_shadow_1_death);
+    d.sprite_index = sprite_index;
+    d.image_index = image_index;
+    instance_destroy();
+}
+
+#endregion   

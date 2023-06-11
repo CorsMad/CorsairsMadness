@@ -34,8 +34,8 @@
     "path": "sprites/spr_boat_boss_shadow_tent_forward/spr_boat_boss_shadow_tent_forward.yy",
   },
   "spriteMaskId": {
-    "name": "spr_boat_boss_shadow_tent_forward",
-    "path": "sprites/spr_boat_boss_shadow_tent_forward/spr_boat_boss_shadow_tent_forward.yy",
+    "name": "spr_boat_boss_shadow_tent_forward_mask",
+    "path": "sprites/spr_boat_boss_shadow_tent_forward_mask/spr_boat_boss_shadow_tent_forward_mask.yy",
   },
   "visible": true,
 }
