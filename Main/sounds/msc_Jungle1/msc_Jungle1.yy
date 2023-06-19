@@ -13,7 +13,7 @@
   "duration": 165.98204,
   "parent": {
     "name": "BGR music",
-    "path": "folders/Sounds/BGR music.yy",
+    "path": "folders/Scripts/Sounds/BGR music.yy",
   },
   "preload": false,
   "sampleRate": 44100,

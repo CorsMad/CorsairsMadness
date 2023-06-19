@@ -13,7 +13,7 @@
   "duration": 0.679909,
   "parent": {
     "name": "Level sounds",
-    "path": "folders/Sounds/Level sounds.yy",
+    "path": "folders/Scripts/Sounds/Level sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,

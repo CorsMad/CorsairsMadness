@@ -22,47 +22,26 @@ if isDead = 1
     }
 }
 
-
-
-#region Vystrel
-    var pistolhit = instance_place(x,y,obj_player_boat_pistol_projectile);
-    if (pistolhit !=noone)
-    {
-        
-        pistolhit.a = 1;
-        isDead = 1;  
-    } 
-    var dpistolhit1 = instance_place(x,y,obj_player_boat_dpistol_t1);
-    if (dpistolhit1 !=noone)
-    {
-        
-        dpistolhit1.a = 1;
-        isDead = 1;  
-    } 
-    var dpistolhit2 = instance_place(x,y,obj_player_boat_dpistol_t2);
-    if (dpistolhit2 !=noone)
-    {
-        
-        dpistolhit2.a = 1;
-        isDead = 1;  
-    } 
-    var dpistolhit3 = instance_place(x,y,obj_player_boat_dpistol_t3);
-    if (dpistolhit3 !=noone)
-    {
-        
-        dpistolhit3.a = 1;
-        isDead = 1;  
-    } 
-    var cannonhit = instance_place(x,y,obj_player_boat_cannon_projectile);
-    if (cannonhit !=noone)
-    {
-        cannonhit.a = 1;
-        isDead = 1;  
-    } 
-    
-    
-    
+#region  Death
+if enemy_hp<=0 
+{
+	instance_create_depth(x+4,y-20,depth-1,obj_sfx_dust_expl_big);
+	instance_create_depth(x,y-24,depth-1,obj_boat_power_cannon);
+	fnc_snd_play_over(snd_bomb_block_destr);
+	instance_create_depth(x+8,y-18,depth-2,obj_sfx_explosion);
+	instance_destroy();
+}
 #endregion
 
 
-//fnc_boat_destroyer();
+fnc_boat_take_dmg_pistol(1)
+
+fnc_boat_take_dmg_dual_pistol(1,1,1) 
+
+fnc_boat_take_dmg_cannon(1) 
+
+fnc_boat_take_dmg_parrotcage(1,1,1,1)
+
+fnc_boat_take_dmg_blunderbuss(1)
+
+fnc_boat_take_dmg_fastshot(1,1)

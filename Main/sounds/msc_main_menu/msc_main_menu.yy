@@ -13,7 +13,7 @@
   "duration": 34.909046,
   "parent": {
     "name": "MainMenuIntro",
-    "path": "folders/Sounds/BGR music/MainMenuIntro.yy",
+    "path": "folders/Scripts/Sounds/BGR music/MainMenuIntro.yy",
   },
   "preload": false,
   "sampleRate": 44100,

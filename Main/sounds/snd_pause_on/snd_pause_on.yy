@@ -13,7 +13,7 @@
   "duration": 0.273197,
   "parent": {
     "name": "Menu_sound",
-    "path": "folders/Sounds/Menu_sound.yy",
+    "path": "folders/Scripts/Sounds/Menu_sound.yy",
   },
   "preload": false,
   "sampleRate": 44100,
