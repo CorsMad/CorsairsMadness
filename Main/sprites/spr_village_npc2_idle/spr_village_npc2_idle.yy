@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "Village",
-    "path": "folders/Sprites/Characters/NPC/Village.yy",
+    "name": "Jungle",
+    "path": "folders/Sprites/Characters/NPC/Village/Jungle.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

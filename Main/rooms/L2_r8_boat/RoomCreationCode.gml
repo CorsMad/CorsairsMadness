@@ -1,1 +1,3 @@
-fnc_msc_start_checkpoint(msc_Boat_level);
+audio_group_load(MusicVolume);
+audio_group_load(SFXvolume);
+

@@ -28,7 +28,13 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
-  "spriteMaskId": null,
+  "spriteId": {
+    "name": "spr_boat_boss_vulcano_proj_1_2",
+    "path": "sprites/spr_boat_boss_vulcano_proj_1_2/spr_boat_boss_vulcano_proj_1_2.yy",
+  },
+  "spriteMaskId": {
+    "name": "spr_boat_boss_vulcano_proj_2_2",
+    "path": "sprites/spr_boat_boss_vulcano_proj_2_2/spr_boat_boss_vulcano_proj_2_2.yy",
+  },
   "visible": true,
 }

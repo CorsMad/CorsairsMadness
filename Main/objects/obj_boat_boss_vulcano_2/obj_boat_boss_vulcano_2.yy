@@ -12,7 +12,10 @@
     "name": "Vulcano",
     "path": "folders/Objects/Enemies/!BOAT GROUP/Bosses/Vulcano.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_test",
+    "path": "objects/obj_enemy_test/obj_enemy_test.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,9 +32,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
+    "name": "spr_boat_boss_vulcano_idle",
+    "path": "sprites/spr_boat_boss_vulcano_idle/spr_boat_boss_vulcano_idle.yy",
+  },
+  "spriteMaskId": {
     "name": "spr_boat_boss_vulcano_mask",
     "path": "sprites/spr_boat_boss_vulcano_mask/spr_boat_boss_vulcano_mask.yy",
   },
-  "spriteMaskId": null,
   "visible": true,
 }

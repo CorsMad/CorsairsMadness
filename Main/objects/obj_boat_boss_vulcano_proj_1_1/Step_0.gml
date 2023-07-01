@@ -7,6 +7,13 @@ switch(state)
 		if y < -32 {
 			vspd = 0;			
 			state = 1;
+            var shadow = instance_create_depth(x,dest_point,depth,obj_boat_boss_vulcano_shadow);
+            shadow.fol = id;
+            if instance_exists(obj_Player_boat)
+            {
+                y=obj_Player_boat.y-272;
+                x=obj_Player_boat.x;
+            }
 		}
 		break;
 	case 1:
@@ -16,9 +23,11 @@ switch(state)
 			dest_point = y+272;
 			vspd = 4;
 			state = 2;
+            
 		}
 		break;
 	case 2:
+        
 		y+=vspd;
 		if y >= dest_point {
 			instance_create_depth(x,y,depth-1,obj_boat_boss_vulcano_proj_1_1_expl);

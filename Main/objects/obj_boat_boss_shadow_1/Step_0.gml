@@ -43,19 +43,16 @@ switch(phase)
 
 #region Попадание
 
-fnc_boat_take_dmg_pistol(random_range(-16,8),random_range(-16,16),depth-1000,random_range(-16,8),random_range(-16,16),depth-1000)
-fnc_boat_take_dmg_parrotcage(random_range(-16,8),random_range(-16,16),depth-1000);
-fnc_boat_take_dmg_blunderbuss(random_range(-16,8),random_range(-16,16),depth-1000);
-fnc_boat_take_dmg_fastshot(random_range(-16,8),random_range(-16,16),depth-1000);
+fnc_boat_take_dmg_pistol(1)
 
-if enemy_hp <=0
-{
-    
+fnc_boat_take_dmg_dual_pistol(0.4,0.6,0.8) 
 
-    var d = instance_create_depth(x,y,depth,obj_boat_boss_shadow_1_death);
-    d.sprite_index = sprite_index;
-    d.image_index = image_index;
-    instance_destroy();
-}
+fnc_boat_take_dmg_cannon(10) 
+
+fnc_boat_take_dmg_parrotcage(1,1.4,1.8,2)
+
+fnc_boat_take_dmg_blunderbuss(0.5)
+
+fnc_boat_take_dmg_fastshot(0.5,1)
 
 #endregion   

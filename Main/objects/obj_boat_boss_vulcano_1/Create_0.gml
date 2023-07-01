@@ -6,4 +6,9 @@ t = 0;
 enemy_hp = 10;
 hit_cd = 0;
 
+laser_x = 0;
+laser_y = 0;
+
 wall = 0;
+
+

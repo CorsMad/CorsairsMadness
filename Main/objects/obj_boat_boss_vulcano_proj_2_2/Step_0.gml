@@ -5,5 +5,6 @@ y+=vspd;
 t++;
 if t= 100
 {
+    instance_create_depth(x,y,depth-1,obj_sfx3)
 	instance_destroy();	
 }

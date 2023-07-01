@@ -6,3 +6,4 @@ t = 0;
 
 hit_cd = 0;
 enemy_hp = 40;
+

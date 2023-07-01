@@ -29,9 +29,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boat_boss_vulcano_proj_1_1",
-    "path": "sprites/spr_boat_boss_vulcano_proj_1_1/spr_boat_boss_vulcano_proj_1_1.yy",
+    "name": "spr_boat_boss_vulcano_proj_1_2",
+    "path": "sprites/spr_boat_boss_vulcano_proj_1_2/spr_boat_boss_vulcano_proj_1_2.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_boat_boss_vulcano_mask",
+    "path": "sprites/spr_boat_boss_vulcano_mask/spr_boat_boss_vulcano_mask.yy",
+  },
   "visible": true,
 }
