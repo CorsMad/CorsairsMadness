@@ -18,6 +18,8 @@ global.language = 0;
     global.dia_jungleMerch = 0; 
     global.dia_jungleComt = 0; 
     global.dia_lavaChief = 0;
+    global.dia_snowChief = 0;
+	global.dia_desertChief = 0;
 
 #endregion
 
@@ -87,9 +89,9 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 144;
+global.TargetX      = 64;
 global.TargetY      = 240;
-global.TargetRoom   = Village_lava ;
+global.TargetRoom   = Village_snow ;
 
 global.fTargetX     = 272;
 global.fTargetY     = 224;

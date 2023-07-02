@@ -16,6 +16,7 @@ if instance_exists(obj_Player)
         trans.TargetRoom = TargetRoom;
         trans.TargetX = TargetX;
         trans.TargetY = TargetY;
+		
     }
 }
 
