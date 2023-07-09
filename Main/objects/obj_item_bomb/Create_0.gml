@@ -10,14 +10,14 @@ Center_Y = obj_Player.y-16; // y of orbital center
 isDead = 0;
 a = 0;
 
-// Current orbital angle
+
 if obj_Player.image_xscale = 1 
 {
-	Angle = 180; 
-	instance_create_depth(x-60,y,-1,obj_sfx1);
+	angle = 180; 
+	instance_create_depth(x-48,y,-1,obj_sfx1);
 } else  {
-			Angle = 0;
-			instance_create_depth(x+60,y,-1,obj_sfx1);
+			angle = 0;
+			instance_create_depth(x+48,y,-1,obj_sfx1);
 		}
 
 image_xscale = 1.25;

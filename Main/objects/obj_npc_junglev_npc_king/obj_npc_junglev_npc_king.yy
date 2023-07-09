@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Jungle Village",
-    "path": "folders/Objects/NPC/Jungle Village.yy",
+    "path": "folders/Objects/NPC/Jungle/Jungle Village.yy",
   },
   "parentObjectId": null,
   "persistent": false,

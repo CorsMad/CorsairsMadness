@@ -8,7 +8,21 @@ global.language = 0;
 #region Завершеннсоть уровней
     
     global.completed_JF1 = 1;
-    global.completed_JF2 = 0;
+    global.completed_JF2 = 1;
+    
+    global.completed_PD1 = 1;
+    global.completed_PD2 = 1;
+    
+    global.completed_PS1 = 1;
+    global.completed_PS2 = 1;
+    
+    global.completed_PG1 = 1;
+    global.completed_PG2 = 1;
+    
+    global.completed_PL1 = 1;
+    global.completed_PL2 = 1;
+    
+    
     
     #endregion
     
@@ -17,9 +31,19 @@ global.language = 0;
     global.dia_jungleChief = 1; 
     global.dia_jungleMerch = 0; 
     global.dia_jungleComt = 0; 
+    
     global.dia_lavaChief = 0;
     global.dia_snowChief = 0;
 	global.dia_desertChief = 0;
+    global.dia_shadowChief = 0;
+    
+    global.saved_jungle = 1;
+    global.saved_desert = 1;
+    global.saved_snow = 1;
+    global.saved_shadow = 1;
+    global.saved_vulcano = 1;
+    
+    global.dia_jungleMerch_f_talk = 0;
 
 #endregion
 
@@ -66,8 +90,9 @@ global.purch_dualpistols3 = 0;
 #region Игрок
 global.hp = 5;           // 4
 global.hp_max = 5;       // 4
-global.choosed_item = 0; // 1- бумер 2 -топ // 3 - бомба // 11 - арбалет
-global.choosed_item_tier = 0; // ТИР предмета
+global.choosed_item_special = 0;
+global.choosed_item = 2; // 1- бумер 2 -топ // 3 - бомба // 4 - eball // 5 - parrot // 11 - арбалет
+global.choosed_item_tier = 1; // ТИР предмета
 global.choosed_itemboat = 3; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
 global.choosed_itemboat_tier = 2; // ТИП предмета для лодки
 global.mana = 3;
@@ -89,9 +114,9 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 64;
+global.TargetX      = 400;
 global.TargetY      = 240;
-global.TargetRoom   = Village_snow ;
+global.TargetRoom   = Village_jungle ;
 
 global.fTargetX     = 272;
 global.fTargetY     = 224;

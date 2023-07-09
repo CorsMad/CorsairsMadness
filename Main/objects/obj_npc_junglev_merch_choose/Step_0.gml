@@ -15,7 +15,25 @@ if key_jump || key_attack
     {
         case 0:
             instance_destroy();
-            instance_create_depth(x,y,-100000,obj_txt_junglev_merch3);
+            switch(global.dia_jungleMerch_f_talk)
+            {
+                case 0:
+                    instance_create_depth(x,y,-100000,obj_txt_junglev_merch3)
+                    break;
+                case 1:
+                    switch(global.saved_jungle)
+                    {
+                        case 0:
+                            instance_create_depth(x,y,-100000,obj_txt_junglev_merch_f2)
+                            break;
+                        case 1:
+                            instance_create_depth(x,y,-100000,obj_txt_junglev_merch_f3)
+                            break;
+                    }
+                    
+                    break;
+            }
+            
             break;
         case 1:
             instance_destroy();

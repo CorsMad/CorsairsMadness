@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "NPC1",
-    "path": "folders/Objects/NPC/Jungle Village/NPC1.yy",
+    "path": "folders/Objects/NPC/Jungle/Jungle Village/NPC1.yy",
   },
   "parentObjectId": null,
   "persistent": false,

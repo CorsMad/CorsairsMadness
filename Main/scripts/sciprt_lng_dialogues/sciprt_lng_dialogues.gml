@@ -1975,6 +1975,102 @@ function fnc_lng_merch3()
     }    
 }    
 
+function fnc_lng_merch_j_f1()
+{
+    switch(global.language)
+    {
+        case 0:
+            #region English
+            eng1 = "[fnt_pixel] DELO SDELANO, HOCHESH MONETY ILI PLIVI";
+            #endregion            
+            break;
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        case 5:
+            break;
+        case 6:
+            break;
+        case 7:
+            break;
+        case 8:
+            break;
+        case 9:
+            break;
+        case 10:
+            break;
+    }
+}
+
+function fnc_lng_merch_j_f2()
+{
+    switch(global.language)
+    {
+        case 0:
+            #region English
+            eng1 = "[fnt_pixel] POEHALI BEZ SPASENIYA ?";
+            #endregion            
+            break;
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        case 5:
+            break;
+        case 6:
+            break;
+        case 7:
+            break;
+        case 8:
+            break;
+        case 9:
+            break;
+        case 10:
+            break;
+    }
+}
+
+function fnc_lng_merch_j_f3()
+{
+    switch(global.language)
+    {
+        case 0:
+            #region English
+            eng1 = "[fnt_pixel] SPAS, POEHALI  ?";
+            #endregion            
+            break;
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        case 5:
+            break;
+        case 6:
+            break;
+        case 7:
+            break;
+        case 8:
+            break;
+        case 9:
+            break;
+        case 10:
+            break;
+    }
+}
+
 function fnc_lng_fgroundedf_1_r33_1(){
     switch(global.language)
     {
@@ -2496,3 +2592,149 @@ tua lista dei desideri!";
             break;
     } 
 }
+    
+    
+function fnc_lng_jjake1(){
+   switch(global.language)
+    {
+        case 0: //English  
+            #region eng
+
+            eng1 = "[fnt_pixel]SPASIBO CHTO SPAS";
+
+            #endregion
+            break;
+        case 1: //russian
+            #region eng
+
+            eng1 = choose("[fnt_pixel_ru]Не заставляйте вождя ждать.","[fnt_pixel_ru]Почему вы все еще здесь? Дом вождя дальше по дороге.");
+
+            #endregion
+            break;
+        case 2: //spanish
+            #region eng
+
+            eng1 = choose("[fnt_pixel]No hagas esperar al Jefe.","[fnt_pixel]¿Por qué sigues aquí? La casa del Jefe está por allí.");
+
+            #endregion
+            break;
+        case 3: //chinese
+            #region eng
+
+            eng1 = choose("[fnt_pixel]别让酋长久等了.","[fnt_pixel]你还在这里做什么? 酋长的房子就在那里.");
+
+            #endregion
+            break;
+        case 4: //portug
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Não deixes o chefe a esperar.","[fnt_pixel]Por que ainda estás aqui? A casa do chefe é ali.");
+
+            #endregion
+            break;
+        case 5: //brazil
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Não deixe o chefe esperando.","[fnt_pixel]Por que você ainda esta aqui? A casa do chefe é ali.");
+
+            #endregion
+            break;
+        case 6: //polish
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Nie każ szefowi czekać.","[fnt_pixel]Dlaczego wciąż tu jesteś? Dom szefa jest tam.");
+
+            #endregion
+            break;
+        case 7: //japanese
+            #region eng
+
+            eng1 = choose("[fnt_pixel]チーフを待たせたらだめだ。","[fnt_pixel]なんでまだここに？酋チーフの家はあそこだ。");
+
+            #endregion
+            break;
+        case 8: //deutch
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Lass den Häupling nicht warten.","[fnt_pixel]Warum bist du noch hier? Das Haus des Häuplings ist da drüben..");
+
+            #endregion
+            break;
+        case 9: //french
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Ne faites pas attendre le chef.","[fnt_pixel]Pourquoi êtes-vous encore là ? La maison du chef est là-bas.");
+
+            #endregion
+            break;
+        case 10: // Italian
+            #region eng
+
+            eng1 = choose("[fnt_pixel]Non far aspettare il Capo.","[fnt_pixel]Cosa ci fai ancora qui? La casa del capo è lì.");
+
+            #endregion
+            break;
+    }    
+}     
+    
+function fnc_lng_jmerch_to_map(){
+   switch(global.language)
+    {
+        case 0: //English  
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]Maybe talk to a chief first?","[fnt_pixel]I advise you to go to the chief.");
+            #endregion
+            break;
+        case 1: //russian
+            #region  кг text
+            eng1 = choose("[fnt_pixel_ru]Может, сначала поговорить с вождем?","[fnt_pixel_ru]Я советую вам обратиться к вождю.");
+            #endregion           
+            break;
+        case 2: //spanish
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]¿Tal vez habla con el jefe primero?","[fnt_pixel]Te aconsejo que vayas con el jefe.");
+            #endregion
+            break;
+        case 3: //chinese
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]你为什么不先和酋长谈谈？","[fnt_pixel]我劝你去见酋长.");
+            #endregion
+            break;
+        case 4: //portug
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]Talvez fala com um chefe primeiro?","[fnt_pixel]Aconselho-te a ir falar com o chefe.");
+            #endregion
+            break;
+        case 5: //brazil
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]Talvez fale com um chefe primeiro?","[fnt_pixel]Eu te aconselho a ir ver o chefe.");
+            #endregion
+            break;
+        case 6: //polish
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]Może pierwsze porozmawiaj z szefem?","[fnt_pixel]Radzę ci iść do szefa.");
+            #endregion
+            break;
+        case 7: //japanese
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]先にチーフと話したら？","[fnt_pixel]チーフのところへ行くことをお勧めする。");
+            #endregion
+            break;
+        case 8: //deutch
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]Vielleicht solltest du zuerst mit dem Häupling sprechen?","[fnt_pixel]Ich rate dir, zum Häupling zu gehen.");
+            #endregion
+            break;
+        case 9: //french
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]Peut-être parler à un chef d'abord ? ","[fnt_pixel]Je vous conseille d'aller voir le chef.");
+            #endregion
+            break;
+        case 10: //Italian
+            #region  ENG text
+            eng1 = choose("[fnt_pixel]Perché non parli prima con un capo?","[fnt_pixel]Ti consiglio di andare dal capo.");
+            #endregion
+            break;
+    }    
+}  
+    

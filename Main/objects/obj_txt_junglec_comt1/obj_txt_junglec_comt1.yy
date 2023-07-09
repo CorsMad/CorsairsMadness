@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Com Trues jcourse",
-    "path": "folders/Objects/NPC/Jungle Village/Com Trues jcourse.yy",
+    "path": "folders/Objects/NPC/Jungle/Jungle Village/Com Trues jcourse.yy",
   },
   "parentObjectId": null,
   "persistent": false,

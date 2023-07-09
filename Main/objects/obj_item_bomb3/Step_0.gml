@@ -1,18 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// Orbital motion
-Angle -= Speed;
-if(Angle >= 360) Angle += 360;
-
-// Update position
-
-x = lengthdir_x(Orbit, Angle) + Center_X;
-y = lengthdir_y(Orbit, Angle) + Center_Y;
 
 a+=1;
 
-if a = 180 && isDead = 0
+if a = a_max && isDead = 0
 {   
 	isDead = 1;
     mask_index = spr_blank;
@@ -22,7 +14,7 @@ if a = 180 && isDead = 0
 
 if place_meeting(x,y,obj_destructable_parent) && isDead = 0
 {
-	a = 180;
+	a = a_max;
 	isDead = 1;
     mask_index = spr_blank;
 	Speed = 0;
@@ -40,8 +32,3 @@ if isDead = 1
     i2.spd = 1;
 }
 
-
-if a = 190
-{
-	instance_destroy();	
-}

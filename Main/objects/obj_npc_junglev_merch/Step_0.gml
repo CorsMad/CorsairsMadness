@@ -28,10 +28,27 @@ if talk_cr_t!= 0
     {
         talk_cr_t = 0;
         
+        switch(global.completed_JF2)
+        {
+            case 0:
+                if (global.dia_jungleChief = 0 && global.dia_jungleMerch = 0) instance_create_depth(x,y,-100000,obj_txt_junglev_merch1); // Отправить к вождю
+                if (global.dia_jungleChief = 1 && global.dia_jungleMerch = 0) instance_create_depth(x,y,-100000,obj_txt_junglev_merch2); // Первый разговор
+                if (global.dia_jungleMerch = 1 && global.dia_jungleChief = 1) instance_create_depth(x,y,-100000,obj_npc_junglev_merch_choose); // Последующие разговоры
+                break;
+            case 1:
+                switch(global.dia_jungleMerch_f_talk)
+                {
+                    case 0:
+                        instance_create_depth(x,y,-100000,obj_txt_junglev_merch_f1);
+                        break;
+                    case 1:
+                        instance_create_depth(x,y,-100000,obj_npc_junglev_merch_choose);
+                        break;
+                }
+                break;
+        }
         
-        if (global.dia_jungleChief = 0 && global.dia_jungleMerch = 0) instance_create_depth(x,y,-100000,obj_txt_junglev_merch1); // Отправить к вождю
-        if (global.dia_jungleChief = 1 && global.dia_jungleMerch = 0) instance_create_depth(x,y,-100000,obj_txt_junglev_merch2); // Первый разговор
-        if (global.dia_jungleMerch = 1 && global.dia_jungleChief = 1) instance_create_depth(x,y,-100000,obj_npc_junglev_merch_choose); // Последующие разговоры
+        
         
     }
 }

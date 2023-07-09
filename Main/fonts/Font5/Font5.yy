@@ -212,6 +212,7 @@
   "italic": false,
   "kerningPairs": [],
   "last": 0,
+  "lineHeight": 0,
   "maintainGms1Font": false,
   "parent": {
     "name": "Fonts",
@@ -224,6 +225,7 @@
   ],
   "regenerateBitmap": false,
   "sampleText": "abcdef ABCDEF\n0123456789 .,<>\"'&!?\nthe quick brown fox jumps over the lazy dog\nTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\nDefault character: ▯ (9647) DojbfsaDFjsbfnajывафдо\r\nфывалштфаылафлыыт\r\n¿Cómo estás?\r\n\r\nComo vai você?你好，我叫安德烈，你还好吗？",
+  "sdfSpread": 8,
   "size": 8.0,
   "styleName": "Bold",
   "textureGroupId": {
@@ -231,4 +233,5 @@
     "path": "texturegroups/Default",
   },
   "TTFName": "",
+  "usesSDF": false,
 }

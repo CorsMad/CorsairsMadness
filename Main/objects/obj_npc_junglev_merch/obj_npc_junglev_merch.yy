@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Merchant",
-    "path": "folders/Objects/NPC/Jungle Village/Merchant.yy",
+    "path": "folders/Objects/NPC/Jungle/Jungle Village/Merchant.yy",
   },
   "parentObjectId": null,
   "persistent": false,

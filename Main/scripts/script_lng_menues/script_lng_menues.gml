@@ -392,8 +392,9 @@ function fnc_lng_jmerch_c(){
         case 0: //English  
             #region  ENG text
             eng1 = "talk";
-            eng2 = "trade"
-            eng3 = "exit"
+            eng2 = "trade";
+            eng3 = "exit";
+            eng4 = "set sail";
             #endregion
             break;
         case 1: //russian
@@ -468,6 +469,88 @@ function fnc_lng_jmerch_c(){
             break;
     }    
 }        
+   
+function fnc_lng_jmerch_coin_exch(){
+   switch(global.language)
+    {
+        case 0: //English  
+            #region  ENG text
+            eng1 = "7";
+            eng2 = "exit";
+            #endregion
+            break;
+        case 1: //russian
+            #region  кг text
+            eng1 = "говорить";
+            eng2 = "магазин"
+            eng3 = "назад"
+            #endregion           
+            break;
+        case 2: //spanish
+            #region  ENG text
+            eng1 = "hablar";
+            eng2 = "comercio"
+            eng3 = "salir"
+            #endregion
+            break;
+        case 3: //chinese
+            #region  ENG text
+            eng1 = "说出来";
+            eng2 = "营业"
+            eng3 = "退出"
+            #endregion
+            break;
+        case 4: //portug
+            #region  ENG text
+            eng1 = "falar";
+            eng2 = "negociar"
+            eng3 = "salir"
+            #endregion
+            break;
+        case 5: //brazil
+            #region  ENG text
+            eng1 = "falar";
+            eng2 = "negociar"
+            eng3 = "salir"
+            #endregion
+            break;
+        case 6: //polish
+            #region  ENG text
+            eng1 = "porozmawiaj";
+            eng2 = "handel"
+            eng3 = "Wyjście"
+            #endregion
+            break;
+        case 7: //japanese
+            #region  ENG text
+            eng1 = "話す";
+            eng2 = "交換"
+            eng3 = "終了"
+            #endregion
+            break;
+        case 8: //deutch
+            #region  ENG text
+            eng1 = "rede mit";
+            eng2 = "Handel"
+            eng3 = "beenden"
+            #endregion
+            break;
+        case 9: //french
+            #region  ENG text
+            eng1 = "parler";
+            eng2 = "commerce"
+            eng3 = "quitter"
+            #endregion
+            break;
+        case 10: // Italian
+            #region  ENG text
+            eng1 = "parla";
+            eng2 = "negozia"
+            eng3 = "Exit"
+            #endregion
+            break;
+    }    
+}           
     
 function fnc_lng_jmap()
 {

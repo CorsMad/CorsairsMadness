@@ -46,6 +46,7 @@ if talk_cr_t!= 0
     if talk_cr_t = 10
     {
         talk_cr_t = 0;
+        global.finished_island_jungle = 1;
         instance_create_depth(x,y,-999999,obj_text_f2_r15_end_cutscene);        
     }
 }

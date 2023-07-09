@@ -18,3 +18,8 @@ if global.dia_jungleChief = 1
 {
     instance_create_depth(496,240,1,obj_npc_junglev_comt);   
 }
+
+if global.saved_jungle = 1 
+{
+    instance_create_depth(304,240,1,obj_npc_jake_jvillage);        
+}

@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_map_confirm_to_jungle",
-    "path": "sprites/spr_map_confirm_to_jungle/spr_map_confirm_to_jungle.yy",
+    "name": "spr_map_confirm",
+    "path": "sprites/spr_map_confirm/spr_map_confirm.yy",
   },
   "spriteMaskId": null,
   "visible": true,

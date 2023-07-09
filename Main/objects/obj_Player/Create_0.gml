@@ -40,7 +40,9 @@ isOutjump = 0;
 isClimbing = 0;
 isRecoil = 0;
 isUsingitem = 0;
+isUsingabil = 0;
 isAirUsingitem = 0;
+isAirUsingabil = 0;
 isHooking = 0;
 isGravitate = 0;
 isTakingdmg = 0;
@@ -67,7 +69,7 @@ lanplace = 0;
 
 switch(global.choosed_item)
 {
-    case 2:
+    case 2: // ТОПОР
         switch(global.choosed_item_tier)
         {
             case 1: item_tier = obj_item_axe;
@@ -75,8 +77,40 @@ switch(global.choosed_item)
             case 2: item_tier = obj_item_axe2;
                     break;
             case 3: item_tier = obj_item_axe3;
+                    break;         
+        }
+    break;
+    case 3: // БОМБА
+        switch(global.choosed_item_tier)
+        {
+            case 1: item_tier = obj_item_bomb;
                     break;
-                
+            case 2: item_tier = obj_item_bomb2;
+                    break;
+            case 3: item_tier = obj_item_bomb3;
+                    break;       
+        }
+    break;
+    case 4: // Eball
+        switch(global.choosed_item_tier)
+        {
+            case 1: item_tier = obj_item_eball;
+                    break;
+            case 2: item_tier = obj_item_eball2;
+                    break;
+            case 3: item_tier = obj_item_eball3;
+                    break;       
+        }
+    break;
+    case 5: // Parrot
+        switch(global.choosed_item_tier)
+        {
+            case 1: item_tier = obj_item_parrot_proj1;
+                    break;
+            case 2: item_tier = obj_item_parrot_proj2;
+                    break;
+            case 3: item_tier = obj_item_parrot_proj3;
+                    break;       
         }
     break;
 }
@@ -123,11 +157,13 @@ SpectpEnabled = 1;// TP
 
 SpecAbil = 1;
 #region Спец абилки human
-specabilnumber = 2;
+specabilnumber = 4;
 
 /*
 1 - boots
 2 - флейта
+3 - бумеранг
+4 - арбалет
 */
 #endregion
 
