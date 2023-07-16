@@ -32,7 +32,7 @@ if state = 0.1 // 2 пистолета
 }
 if state = 0.2 // бландербасс
 {
-    draw_sprite_ext(spr_player_boat_dualpistols,a,x,y+yob,1,1,rotat,col,alpha);   
+    draw_sprite_ext(spr_player_boat_blunderbuss,a,x,y+yob,1,1,rotat,col,alpha);   
 }
 if state = 0.3 // Клетка
 {
@@ -40,7 +40,7 @@ if state = 0.3 // Клетка
 }
 if state = 0.4 // Быстровыстрел
 {
-    draw_sprite_ext(spr_player_boat_dualpistols,a,x,y+yob,1,1,rotat,col,alpha);   
+    draw_sprite_ext(spr_player_boat_tripleshot,a,x,y+yob,1,1,rotat,col,alpha);   
 }
 
 

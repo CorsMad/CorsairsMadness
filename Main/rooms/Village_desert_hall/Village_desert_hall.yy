@@ -11,14 +11,14 @@
     {"name":"inst_E4B408A_20_1_2_1","path":"rooms/Village_desert_hall/Village_desert_hall.yy",},
     {"name":"inst_79BBC8E4_17_1_2_1","path":"rooms/Village_desert_hall/Village_desert_hall.yy",},
     {"name":"inst_7D0F031D_2_1","path":"rooms/Village_desert_hall/Village_desert_hall.yy",},
-    {"name":"inst_3915C967_2_1","path":"rooms/Village_desert_hall/Village_desert_hall.yy",},
     {"name":"inst_428DAE52_2_1","path":"rooms/Village_desert_hall/Village_desert_hall.yy",},
     {"name":"inst_1D68D5A6_2_1","path":"rooms/Village_desert_hall/Village_desert_hall.yy",},
+    {"name":"inst_BEC7951_2_1","path":"rooms/Village_desert_hall/Village_desert_hall.yy",},
+    {"name":"inst_7EC26C71_2_1","path":"rooms/Village_desert_hall/Village_desert_hall.yy",},
+    {"name":"inst_62E23108","path":"rooms/Village_desert_hall/Village_desert_hall.yy",},
     {"name":"inst_39959670_2_1","path":"rooms/Village_desert_hall/Village_desert_hall.yy",},
     {"name":"inst_1975B344_2_1","path":"rooms/Village_desert_hall/Village_desert_hall.yy",},
-    {"name":"inst_BEC7951_2_1","path":"rooms/Village_desert_hall/Village_desert_hall.yy",},
-    {"name":"inst_2240B3AE_1_1","path":"rooms/Village_desert_hall/Village_desert_hall.yy",},
-    {"name":"inst_7EC26C71_2_1","path":"rooms/Village_desert_hall/Village_desert_hall.yy",},
+    {"name":"inst_3915C967_2_1","path":"rooms/Village_desert_hall/Village_desert_hall.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -36,7 +36,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7EC26C71_2_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pause_controller_map","path":"objects/obj_pause_controller_map/obj_pause_controller_map.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":48.0,"y":0.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2240B3AE_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_junglev_chief","path":"objects/obj_npc_junglev_chief/obj_npc_junglev_chief.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":228.0,"y":240.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_62E23108","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_desertv_chief","path":"objects/obj_npc_desertv_chief/obj_npc_desertv_chief.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":205.0,"y":240.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"1",},

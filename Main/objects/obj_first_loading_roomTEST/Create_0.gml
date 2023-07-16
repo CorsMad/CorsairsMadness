@@ -11,16 +11,16 @@ global.language = 0;
     global.completed_JF2 = 1;
     
     global.completed_PD1 = 1;
-    global.completed_PD2 = 1;
+    global.completed_PD2 = 0;
     
     global.completed_PS1 = 1;
-    global.completed_PS2 = 1;
+    global.completed_PS2 = 0;
     
     global.completed_PG1 = 1;
-    global.completed_PG2 = 1;
+    global.completed_PG2 = 0;
     
     global.completed_PL1 = 1;
-    global.completed_PL2 = 1;
+    global.completed_PL2 = 0;
     
     
     
@@ -29,13 +29,25 @@ global.language = 0;
 #region ТЕСТ
     display_reset(0, false);
     global.dia_jungleChief = 1; 
-    global.dia_jungleMerch = 0; 
-    global.dia_jungleComt = 0; 
-    
     global.dia_lavaChief = 0;
     global.dia_snowChief = 0;
 	global.dia_desertChief = 0;
     global.dia_shadowChief = 0;
+    
+    
+    global.dia_jungleMerch = 0; 
+    global.dia_lavaMerch = 0; 
+    global.dia_snowMerch = 0; 
+    global.dia_desertMerch = 0; 
+    global.dia_shadowMerch = 0; 
+    
+    
+    global.dia_jungleComt = 2; 
+    global.dia_lavaComt = 2; 
+    global.dia_snowComt = 2; 
+    global.dia_desertComt = 2; 
+    global.dia_shadowComt = 2; 
+     
     
     global.saved_jungle = 1;
     global.saved_desert = 1;
@@ -44,6 +56,10 @@ global.language = 0;
     global.saved_vulcano = 1;
     
     global.dia_jungleMerch_f_talk = 0;
+    global.dia_desertMerch_f_talk = 0;
+    global.dia_snowMerch_f_talk = 0;
+    global.dia_shadowMerch_f_talk = 0;
+    global.dia_vulcanoMerch_f_talk = 0;
 
 #endregion
 
@@ -114,9 +130,9 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 400;
-global.TargetY      = 240;
-global.TargetRoom   = Village_jungle ;
+global.TargetX      = 32;
+global.TargetY      = 208;
+global.TargetRoom   = Village_lava ;
 
 global.fTargetX     = 272;
 global.fTargetY     = 224;

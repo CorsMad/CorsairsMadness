@@ -6,7 +6,8 @@ if (instance_exists(obj_Player) || instance_exists(obj_Player_boat)) && isPaused
     fnc_snd_play_over(snd_pause_on);
     instance_deactivate_all(1);
     isPaused = 1;
-    instance_create_depth(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),-1000,obj_pause_menu_junglecourse);
+    var p = instance_create_depth(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),-1000,obj_pause_menu_junglecourse);
+    p.transitionPlace = transitionPlace;
     
 }
 

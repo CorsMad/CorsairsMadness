@@ -97,12 +97,7 @@ confirm2 = @"are you sure?
 All unsaved progress will be lost";
 #endregion
 
-/*
-#region Ползунки музыки и эффектов
-sfx = global.SFXvolume;
-music = global.MSCvolume;
-#endregion
-*/
+
 
 #region Настройка управления
 KBControlChange = 0;
@@ -127,4 +122,16 @@ pk_use_abil = fnc_keyboard_key_change(global.abil_key);
 
 
 delay = 0;
+#endregion
+
+#region Transition
+/*
+    0 - джунгли
+    1 - пустыня
+    2 - снег
+    3 - тень
+    4 - вулкан
+    
+*/
+transitionPlace = 0;
 #endregion

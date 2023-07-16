@@ -17,8 +17,8 @@
     {"name":"inst_39959670_2","path":"rooms/Village_snow_hall/Village_snow_hall.yy",},
     {"name":"inst_1975B344_2","path":"rooms/Village_snow_hall/Village_snow_hall.yy",},
     {"name":"inst_BEC7951_2","path":"rooms/Village_snow_hall/Village_snow_hall.yy",},
-    {"name":"inst_2240B3AE_1","path":"rooms/Village_snow_hall/Village_snow_hall.yy",},
     {"name":"inst_7EC26C71_2","path":"rooms/Village_snow_hall/Village_snow_hall.yy",},
+    {"name":"inst_6994B28B","path":"rooms/Village_snow_hall/Village_snow_hall.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -36,7 +36,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7EC26C71_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pause_controller_map","path":"objects/obj_pause_controller_map/obj_pause_controller_map.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":48.0,"y":0.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2240B3AE_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_junglev_chief","path":"objects/obj_npc_junglev_chief/obj_npc_junglev_chief.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":228.0,"y":240.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6994B28B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_snowv_chief","path":"objects/obj_npc_snowv_chief/obj_npc_snowv_chief.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":176.0,"y":240.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":10.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"1",},

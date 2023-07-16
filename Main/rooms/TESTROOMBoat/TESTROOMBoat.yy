@@ -19,7 +19,6 @@
     {"name":"inst_5498902E_1","path":"rooms/TESTROOMBoat/TESTROOMBoat.yy",},
     {"name":"inst_D291FD6","path":"rooms/TESTROOMBoat/TESTROOMBoat.yy",},
     {"name":"inst_2DF91D6F","path":"rooms/TESTROOMBoat/TESTROOMBoat.yy",},
-    {"name":"inst_703596E9","path":"rooms/TESTROOMBoat/TESTROOMBoat.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -36,7 +35,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5498902E_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_trigger_boat_level_global_destroyer","path":"objects/obj_trigger_boat_level_global_destroyer/obj_trigger_boat_level_global_destroyer.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":46.6,"x":-80.0,"y":-272.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_D291FD6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_boat_boss_desert_proj_limiter","path":"objects/obj_boat_boss_desert_proj_limiter/obj_boat_boss_desert_proj_limiter.yy",},"properties":[],"rotation":0.0,"scaleX":30.0,"scaleY":1.0,"x":-70.0,"y":80.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2DF91D6F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_boat_boss_desert_proj_limiter","path":"objects/obj_boat_boss_desert_proj_limiter/obj_boat_boss_desert_proj_limiter.yy",},"properties":[],"rotation":0.0,"scaleX":30.0,"scaleY":1.0,"x":-70.0,"y":272.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_703596E9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_boat_boss_snow_2","path":"objects/obj_boat_boss_snow_2/obj_boat_boss_snow_2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":400.0,"y":192.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4289901234,"depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":5.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":64,"y":0,},
   ],

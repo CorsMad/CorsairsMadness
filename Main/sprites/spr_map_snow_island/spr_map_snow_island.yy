@@ -30,8 +30,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "JIslandMaps",
-    "path": "folders/Sprites/Map/JIslandMaps.yy",
+    "name": "IslandMaps",
+    "path": "folders/Sprites/Map/IslandMaps.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

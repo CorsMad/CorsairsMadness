@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Map",
-    "path": "folders/Objects/Map.yy",
+    "name": "Controllers",
+    "path": "folders/Objects/Map/Controllers.yy",
   },
   "parentObjectId": null,
   "persistent": false,

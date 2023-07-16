@@ -132,11 +132,41 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                 case 0:
                     instance_activate_object(obj_music_controller);
                     fnc_msc_stop_play();
-                    global.gold = global.gold_prelevel;    
-                    global.TargetX = 448;
-                    global.TargetY = 240;
-                    global.TargetRoom = Village_jungle;  
-                    room_goto(VillageJunlgeFirstLoading); 
+                    switch(transitionPlace)
+                    {
+                        case 0://джунгли
+                            global.TargetX = 448;
+                            global.TargetY = 240;
+                            global.TargetRoom = Village_jungle;  
+                            room_goto(VillageJunlgeFirstLoading); 
+
+                            break;
+                        case 1://пустыня
+                            global.TargetX = 464;
+                            global.TargetY = 240;
+                            global.TargetRoom = Village_desert;  
+                            room_goto(VillageDesertFirstLoading); 
+                            break;
+                        case 2://снег
+                            global.TargetX = 368;
+                            global.TargetY = 240;
+                            global.TargetRoom = Village_snow;  
+                            room_goto(VillageSnowFirstLoading); 
+                            break;
+                        case 3://кладбищ
+                            global.TargetX = 512;
+                            global.TargetY = 240;
+                            global.TargetRoom = Village_shadow;  
+                            room_goto(VillageSnowFirstLoading); 
+                            break;
+                        case 4://лава
+                            global.TargetX = 160;
+                            global.TargetY = 240;
+                            global.TargetRoom = Village_lava;  
+                            room_goto(VillageLavaFirstLoading); 
+                            break;
+                    }
+                    global.gold = global.gold_prelevel;                        
                     instance_destroy();       
                     instance_destroy(obj_Player);
                     
@@ -148,7 +178,7 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
             }
             break;
         case 11:
-        switch(index)
+            switch(index)
             {
                 case 0:
                     instance_activate_object(obj_music_controller);

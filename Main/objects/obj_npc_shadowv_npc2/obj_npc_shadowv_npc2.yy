@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_shadow_npc1_walk",
-    "path": "sprites/spr_shadow_npc1_walk/spr_shadow_npc1_walk.yy",
+    "name": "spr_shadow_npc1_idle",
+    "path": "sprites/spr_shadow_npc1_idle/spr_shadow_npc1_idle.yy",
   },
   "spriteMaskId": {
     "name": "spr_skeleton_mask",

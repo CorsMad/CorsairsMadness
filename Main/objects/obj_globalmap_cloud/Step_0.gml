@@ -17,12 +17,5 @@ if start = 0
     x_sc+=sc_spd;  
     y_sc+=sc_spd; 
     if image_alpha < 1 image_alpha +=0.005;  
-    if image_alpha = 1
-    {
-        t++;
-        if t= 100
-        {
-            room_goto(DesertVillageArrive) ;  
-        }
-    }
+
 }

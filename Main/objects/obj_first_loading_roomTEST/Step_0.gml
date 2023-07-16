@@ -8,13 +8,13 @@ if t1 < 12
 
 if t1 = 10
 {   
-    room_goto(GlobalMap);
+    room_goto(TESTROOMBoat);
     /*
     var i = instance_create_depth(16,16,0,obj_Player);
     i.DashEnabled = 1;
     i.state = 0;
     i.HookEnabled = 1;
-    i.specabilnumber = 4;       
+    i.specabilnumber = 3;       
     instance_create_depth(16,16,101,obj_room_transition_to_loading);  
 */
 }

@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "Cemetery level",
-    "path": "folders/Sprites/Level objects/Levels Stuff/Cemetery level.yy",
+    "name": "Main",
+    "path": "Main.yyp",
   },
   "preMultiplyAlpha": false,
   "sequence": {

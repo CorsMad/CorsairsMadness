@@ -50,16 +50,16 @@ if key_jump || key_attack
         case 0:        
             break;
         case 1:
-            if global.completed_PD2 instance_create_depth(room_width/2,room_height/2,depth-1,obj_global_map_confirm);           
+            if global.completed_PD2 = 0 instance_create_depth(room_width/2,room_height/2,depth-1,obj_global_map_confirm);           
             break;
         case 2:
-            if global.completed_PS2 instance_create_depth(room_width/2,room_height/2,depth-1,obj_global_map_confirm);            
+            if global.completed_PS2 = 0 instance_create_depth(room_width/2,room_height/2,depth-1,obj_global_map_confirm);            
             break;
         case 3:
-            if global.completed_PG2 instance_create_depth(room_width/2,room_height/2,depth-1,obj_global_map_confirm);            
+            if global.completed_PG2 = 0 instance_create_depth(room_width/2,room_height/2,depth-1,obj_global_map_confirm);            
             break;
         case 4:
-            if global.completed_PL2 instance_create_depth(room_width/2,room_height/2,depth-1,obj_global_map_confirm);            
+            if global.completed_PL2 = 0 instance_create_depth(room_width/2,room_height/2,depth-1,obj_global_map_confirm);            
             break;
     }
 }

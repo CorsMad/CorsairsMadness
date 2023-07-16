@@ -123,18 +123,18 @@ if state = 0.2
         switch(global.choosed_itemboat_tier)
         {
             case 1:
-                instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
-                var i1 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
-                var i2 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);                
+                instance_create_depth(x+14,y-24,-1,obj_player_boat_bbus_t1_1);
+                var i1 = instance_create_depth(x+14,y-24,-1,obj_player_boat_bbus_t1_1);
+                var i2 = instance_create_depth(x+14,y-24,-1,obj_player_boat_bbus_t1_1);                
                 i1.vspd = -0.5;
                 i2.vspd = 0.5;
                 break;
             case 2:
 
-                var i1 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
-                var i2 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
-                var i3 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
-                var i4 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
+                var i1 = instance_create_depth(x+14,y-24,-1,obj_player_boat_bbus_t1_1);
+                var i2 = instance_create_depth(x+14,y-24,-1,obj_player_boat_bbus_t1_1);
+                var i3 = instance_create_depth(x+14,y-24,-1,obj_player_boat_bbus_t1_1);
+                var i4 = instance_create_depth(x+14,y-24,-1,obj_player_boat_bbus_t1_1);
                 i1.vspd = -0.6;
                 i2.vspd = -0.2;
                 i3.vspd = 0.2;
@@ -142,11 +142,11 @@ if state = 0.2
 
                 break;
             case 3:
-                instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
-                var i1 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
-                var i2 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
-                var i3 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
-                var i4 = instance_create_depth(x+18,y-34,-1,obj_player_boat_bbus_t1_1);
+                instance_create_depth(x+14,y-24,-1,obj_player_boat_bbus_t1_1);
+                var i1 = instance_create_depth(x+14,y-24,-1,obj_player_boat_bbus_t1_1);
+                var i2 = instance_create_depth(x+14,y-24,-1,obj_player_boat_bbus_t1_1);
+                var i3 = instance_create_depth(x+14,y-24,-1,obj_player_boat_bbus_t1_1);
+                var i4 = instance_create_depth(x+14,y-24,-1,obj_player_boat_bbus_t1_1);
                 i1.vspd = -0.7;
                 i2.vspd = -0.3;
                 i3.vspd = 0.3;
@@ -155,15 +155,14 @@ if state = 0.2
         }
         
         
-        instance_create_depth(x,y-36,-1,obj_Player_boat_used_pistol);        
-        instance_create_depth(x-8,y-36,-1,obj_Player_boat_used_pistol);
-        
         if image_index = 0
         {
-            instance_create_depth(x+18,y-30,-1,obj_sfx1)
-            instance_create_depth(x+18,y-22,-1,obj_sfx1)
-            instance_create_depth(x+18,y-30,-1,obj_sfx3)
-            instance_create_depth(x+18,y-22,-1,obj_sfx3)
+            var sfx1 = instance_create_depth(x+14,y-24,depth-1,obj_sfx1);
+            var sfx2 = instance_create_depth(x+14,y-24,depth-1,obj_sfx3)
+            sfx1.image_xscale = 1.5;
+            sfx1.image_yscale = 1.5;
+            sfx2.image_xscale = 1.5;
+            sfx2.image_yscale = 1.5;
         }
 
         if fastshoot_count > 0 fastshoot_count--;
@@ -241,26 +240,21 @@ if state = 0.4
         {
             case 1:
                 instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                instance_create_depth(x+14,y-24,depth-1,obj_sfx1);
+                instance_create_depth(x+14,y-24,depth-1,obj_sfx3);
                 break;
             case 2:
                 instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                instance_create_depth(x+14,y-24,depth-1,obj_sfx1);
+                instance_create_depth(x+14,y-24,depth-1,obj_sfx3);
                 break;
             case 3:
                 instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                instance_create_depth(x+14,y-24,depth-1,obj_sfx1);
+                instance_create_depth(x+14,y-24,depth-1,obj_sfx3);
                 break;
         }
-        
-        
-        instance_create_depth(x,y-36,-1,obj_Player_boat_used_pistol);        
-        instance_create_depth(x-8,y-36,-1,obj_Player_boat_used_pistol);
-        
-        if image_index = 0
-        {
-            instance_create_depth(x+18,y-30,-1,obj_sfx1)
-            instance_create_depth(x+18,y-22,-1,obj_sfx1)
-            instance_create_depth(x+18,y-30,-1,obj_sfx3)
-            instance_create_depth(x+18,y-22,-1,obj_sfx3)
-        }
+                                   
 
         if fastshoot_count > 0 fastshoot_count--;
     }
@@ -270,12 +264,18 @@ if state = 0.4
         {
             case 1:
                 instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                instance_create_depth(x+14,y-24,depth-1,obj_sfx1);
+                instance_create_depth(x+14,y-24,depth-1,obj_sfx3)
                 break;
             case 2:
                 instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                instance_create_depth(x+14,y-24,depth-1,obj_sfx1);
+                instance_create_depth(x+14,y-24,depth-1,obj_sfx3)
                 break;
             case 3:
                 instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                instance_create_depth(x+14,y-24,depth-1,obj_sfx1);
+                instance_create_depth(x+14,y-24,depth-1,obj_sfx3)    
                 break;
         }
     }
@@ -285,9 +285,13 @@ if state = 0.4
         {
             case 2:
                 instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                instance_create_depth(x+14,y-24,depth-1,obj_sfx1);
+                instance_create_depth(x+14,y-24,depth-1,obj_sfx3)
                 break;
             case 3:
                 instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t2);
+                instance_create_depth(x+14,y-24,depth-1,obj_sfx1);
+                instance_create_depth(x+14,y-24,depth-1,obj_sfx3)
                 break;
         }
     }    
@@ -297,14 +301,59 @@ if state = 0.4
     if t = cd_max 
     {
         t = 0;
-        if image_index = 2 image_index = 0
+        //if image_index = 4 image_index = 0
         
     }
-    switch(t)
+    
+    switch(global.choosed_itemboat_tier)
     {
-        case cd_1: image_index+=1;break;    
-        case cd_2: image_index+=1;break;    
-    }     
+        case 1:
+            switch(t)
+            {
+                case 2: image_index=2;break;    
+                case 5: image_index=3;break;    
+                case 9: instance_create_depth(x,y-36,-1,obj_Player_boat_used_pistol3);  break;    
+                case 16:
+                    image_index=4;
+                    break;
+                case 26:             
+                    image_index=0;
+                    break;  
+                //case (cd_max): image_index=0;break;      
+            }     
+            break;
+        case 2:
+            switch(t)
+            {
+                case 2: image_index=1;break;    
+                case 5: image_index=2;break;    
+                case 9: image_index=3;break;    
+                case 12:             
+                    instance_create_depth(x,y-36,-1,obj_Player_boat_used_pistol3);  
+                    break;  
+                case 19:
+                    image_index=4;
+                    break;
+                case 29: image_index=0;break;      
+            }     
+            break;
+        case 3:
+            switch(t)
+            {
+                case 2: image_index=1;break;    
+                case 5: image_index=2;break;    
+                case 9: image_index=3;break;    
+                case 12:             
+                    instance_create_depth(x,y-36,-1,obj_Player_boat_used_pistol3);  
+                    break;  
+                case 19:
+                    image_index=4;
+                    break;
+                case 29: image_index=0;break;      
+            }     
+            break;
+    }
+    
 }
 #endregion
 
@@ -395,8 +444,9 @@ if fastshoot_count != 0
         case 0.4: // быстровыстрел
                 cd_1 = 2;
                 cd_2 = 20;
-                cd_max = 24;
+                cd_max = 32;
                 break;
+
     }
 }
 
@@ -418,6 +468,16 @@ if fastshoot_count = 0
                 cd_1 = 2;
                 cd_2 = 27;
                 cd_max = 37;
+                break;
+        case 0.3: // попугай
+                cd_1 = 2;
+                cd_2 = 20;
+                cd_max = 24;
+                break;
+        case 0.4: // быстровыстрел
+                cd_1 = 2;
+                cd_2 = 20;
+                cd_max = 40;
                 break;
     }   
 }

@@ -1,3 +1,3 @@
-TargetRoom = Village_desert_hall;
-TargetX = 72;
+TargetRoom = Village_shadow_hall;
+TargetX = 96;
 TargetY = 240;

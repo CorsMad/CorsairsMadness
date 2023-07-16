@@ -8,3 +8,5 @@ t = 0;
 sc_spd = 0;
 x_sc = 1.5;
 y_sc = 1.5;
+
+travel_island = 0;

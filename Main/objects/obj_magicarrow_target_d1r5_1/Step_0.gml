@@ -10,9 +10,9 @@ if isOn = 1
         sprite_index = spr_abil_magicalbow_target_death;
         image_index = 0;
         instance_create_depth(x,y,depth-1,obj_sfx2);
-        if instance_exists(obj_platform_3_h_e_target_d1r5_1)
+        if instance_exists(obj_platform_3_v_e)
         {
-            obj_platform_3_h_e_target_d1r5_1.isEnabled = 1;
+            obj_platform_3_v_e.isEnabled = 1;
         }
     }
 }

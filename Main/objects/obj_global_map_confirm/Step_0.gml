@@ -22,17 +22,42 @@ if t > 5
                     case 1:
                         obj_global_map_cloud_far.start = 1;
                         obj_global_map_cloud_close.start = 1;
-                        obj_transition_on_map.on = 1;                        
+                        obj_transition_on_map.on = 1;   
+                        obj_transition_on_map.travel_island = 1;
                         obj_global_map_map.start = 1;
                         obj_globalmap_cloud.start = 0;
                         instance_destroy(obj_globalmap_contoller);
                         instance_destroy();
                         break;
                     case 2:
+                        obj_global_map_cloud_far.start = 1;
+                        obj_global_map_cloud_close.start = 1;
+                        obj_transition_on_map.on = 1; 
+                        obj_transition_on_map.travel_island = 2;
+                        obj_global_map_map.start = 1;
+                        obj_globalmap_cloud.start = 0;
+                        instance_destroy(obj_globalmap_contoller);
+                        instance_destroy();
                         break;
                     case 3:
+                        obj_global_map_cloud_far.start = 1;
+                        obj_global_map_cloud_close.start = 1;
+                        obj_transition_on_map.on = 1; 
+                        obj_transition_on_map.travel_island = 3;
+                        obj_global_map_map.start = 1;
+                        obj_globalmap_cloud.start = 0;
+                        instance_destroy(obj_globalmap_contoller);
+                        instance_destroy();
                         break;
                     case 4:
+                        obj_global_map_cloud_far.start = 1;
+                        obj_global_map_cloud_close.start = 1;
+                        obj_transition_on_map.on = 1;                        
+                        obj_global_map_map.start = 1;
+                        obj_transition_on_map.travel_island = 4;
+                        obj_globalmap_cloud.start = 0;
+                        instance_destroy(obj_globalmap_contoller);
+                        instance_destroy();
                         break;
                 }
                 break;

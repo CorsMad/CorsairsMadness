@@ -1,3 +1,3 @@
 TargetRoom = Village_lava;
-TargetX = 408;
+TargetX = 282;
 TargetY = 240;

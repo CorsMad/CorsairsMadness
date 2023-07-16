@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 state = 1;
-t = 0;
+t = 90;
 prest = 0;
 spd = 0;
 talk = 0;

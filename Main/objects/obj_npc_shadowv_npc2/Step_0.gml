@@ -10,54 +10,8 @@ states
 2 - вправо
 */
 
-if talk = 0
-{
-    if state = 0
-    {
-        image_xscale = 1;
-        sprite_index = spr_shadow_npc1_walk;
-        prest = 0;
-        spd = -0.5;
-        t++;
-        if t = 120
-        {
-            state = 1;
-            t = 0;
-            image_index = 0;
-        }
-    }
-
-    if state = 1
-    {
-        sprite_index = spr_shadow_npc1_idle;
-        spd = 0;
-        t++;
-        if t = 200
-        {
-            t = 0;
-            if prest = 0 {state = 2;image_index = 0;} else {state = 0;image_index = 0;}
-        }
-    }
-
-    if state = 2
-    {
-        image_xscale = -1;
-        sprite_index = spr_shadow_npc1_walk;
-        prest = 2;
-        spd = 0.5;
-        t++;
-        if t = 120
-        {
-            state = 1;
-            t = 0;
-        }
-    }
-}
-
-if talk = 1
-{
-    spd = 0; 
-    sprite_index = spr_shadow_npc1_idle;
+if instance_exists(obj_Player){
+    if obj_Player.x > x image_xscale = -1 else image_xscale = 1;   
 }
 
 #region Talk start

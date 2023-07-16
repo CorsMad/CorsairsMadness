@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "ShadowGraveyard",
-    "path": "folders/Objects/!SpecialObjects/ShadowGraveyard.yy",
+    "name": "Spec",
+    "path": "folders/Objects/!SpecialObjects/ShadowGraveyard/Spec.yy",
   },
   "parentObjectId": null,
   "persistent": false,

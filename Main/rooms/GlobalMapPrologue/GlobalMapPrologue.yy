@@ -20,8 +20,8 @@
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
   ],
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Maps",
+    "path": "folders/Rooms/Maps.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

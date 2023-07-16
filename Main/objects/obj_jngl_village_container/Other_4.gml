@@ -2,7 +2,7 @@
 // You can write your code in this editor
 instance_create_depth(x,y,0,obj_room_transition_black_screen);
 
-if global.dia_jungleMerch = 0 || global.dia_jungleChief = 0 
+if global.dia_jungleMerch = 0 || global.dia_jungleChief = 0 || global.dia_jungleComt > 0
 {
     var block = instance_create_depth(-8,16,0,obj_block_jungle_village);
     block.image_yscale = 20;
