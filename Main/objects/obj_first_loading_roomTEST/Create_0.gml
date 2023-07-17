@@ -69,9 +69,21 @@ global.cannon_j2_r1 = 1;
 
 #endregion
 
-#region Зеленые ключи
+#region  ключи
 global.key_green1 = 1;
 global.key_green2 = 1;
+
+global.key_yellow1 = 1;
+global.key_yellow2 = 1;
+
+global.key_purple1 = 0;
+global.key_purple2 = 0;
+
+global.key_blue1 = 0;
+global.key_blue2 = 0;
+
+global.key_red1 = 0;
+global.key_red2 = 0;
 #endregion
 
 #region ТЕСТ Магазин
@@ -290,6 +302,7 @@ t2 = 0;
     global.secrets_d1_s1 = 0;
     global.secrets_d1_s2 = 0;
     global.secrets_d1_s3 = 0;
+    global.secrets_d_endurance = 0;
     #endregion
     
     #region Головоломка

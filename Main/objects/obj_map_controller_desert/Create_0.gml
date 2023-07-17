@@ -2,23 +2,17 @@
 // You can write your code in this editor
 fnc_lng_jmap();
 
-
+// ОБЯЗАТЕЛЬНО ВКЛЮЧИТЬ НАЗАД
+/*
 scr_save_progress();
 if !instance_exists(obj_text_save) instance_create_depth(0,0,depth-1,obj_text_save);
+*/
+
 
 
 if (global.key_yellow1 = 1 && global.key_yellow2 = 1) Opened = 1 else Opened = 0;
 
-/*
-///////////////////////////////////////////////////////////////////////
-Добавить переменные ключей в draw
-Добавить переменные злодея в draw
-*/
 
-/*
-0 - нигде
-1 - джунгли
-*/
 
 island = 0;
 /*
