@@ -104,6 +104,7 @@
     {"name":"inst_1B080566","path":"rooms/D_itemtutor/D_itemtutor.yy",},
     {"name":"inst_183BA59E","path":"rooms/D_itemtutor/D_itemtutor.yy",},
     {"name":"inst_3BA7BA72","path":"rooms/D_itemtutor/D_itemtutor.yy",},
+    {"name":"inst_6CA0F89C","path":"rooms/D_itemtutor/D_itemtutor.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -205,6 +206,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1B080566","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_magicarrow_destr","path":"objects/obj_magicarrow_destr/obj_magicarrow_destr.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1312.0,"y":128.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_183BA59E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_parallax","path":"objects/obj_parallax/obj_parallax.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":48.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3BA7BA72","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pause_controller_junglecourse","path":"objects/obj_pause_controller_junglecourse/obj_pause_controller_junglecourse.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":80.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6CA0F89C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_desertc_comt2","path":"objects/obj_npc_desertc_comt2/obj_npc_desertc_comt2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1536.0,"y":240.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":99,"TileCompressedData":[
 -39,-2147483648,1,6,-20,7,1,8,-36,-2147483648,2,6,17,-39,-2147483648,1,6,-20,7,1,8,-36,-2147483648,2,6,7,-39,-2147483648,1,9,-9,10,1,20,-7,7,4,17,7,7,8,-36,-2147483648,2,6,7,-49,-2147483648,3,6,7,17,-8,7,1,8,-36,-2147483648,2,6,7,-49,-2147483648,1,6,-3,7,1,17,-6,7,1,8,-36,-2147483648,2,6,7,-49,-2147483648,12,6,7,17,7,7,17,7,17,7,17,7,8,-19,-2147483648,1,3,-3,4,

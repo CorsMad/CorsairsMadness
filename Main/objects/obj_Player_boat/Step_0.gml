@@ -239,17 +239,17 @@ if state = 0.4
         switch(global.choosed_itemboat_tier)
         {
             case 1:
-                instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                instance_create_depth(x+14,y-24,-1,obj_player_boat_fastshot_t1);
                 instance_create_depth(x+14,y-24,depth-1,obj_sfx1);
                 instance_create_depth(x+14,y-24,depth-1,obj_sfx3);
                 break;
             case 2:
-                instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                instance_create_depth(x+14,y-24,-1,obj_player_boat_fastshot_t1);
                 instance_create_depth(x+14,y-24,depth-1,obj_sfx1);
                 instance_create_depth(x+14,y-24,depth-1,obj_sfx3);
                 break;
             case 3:
-                instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                instance_create_depth(x+14,y-24,-1,obj_player_boat_fastshot_t1);
                 instance_create_depth(x+14,y-24,depth-1,obj_sfx1);
                 instance_create_depth(x+14,y-24,depth-1,obj_sfx3);
                 break;
@@ -263,17 +263,17 @@ if state = 0.4
         switch(global.choosed_itemboat_tier)
         {
             case 1:
-                instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                instance_create_depth(x+14,y-24,-1,obj_player_boat_fastshot_t1);
                 instance_create_depth(x+14,y-24,depth-1,obj_sfx1);
                 instance_create_depth(x+14,y-24,depth-1,obj_sfx3)
                 break;
             case 2:
-                instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                instance_create_depth(x+14,y-24,-1,obj_player_boat_fastshot_t1);
                 instance_create_depth(x+14,y-24,depth-1,obj_sfx1);
                 instance_create_depth(x+14,y-24,depth-1,obj_sfx3)
                 break;
             case 3:
-                instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                instance_create_depth(x+14,y-24,-1,obj_player_boat_fastshot_t1);
                 instance_create_depth(x+14,y-24,depth-1,obj_sfx1);
                 instance_create_depth(x+14,y-24,depth-1,obj_sfx3)    
                 break;
@@ -284,12 +284,12 @@ if state = 0.4
         switch(global.choosed_itemboat_tier)
         {
             case 2:
-                instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t1);
+                instance_create_depth(x+14,y-24,-1,obj_player_boat_fastshot_t1);
                 instance_create_depth(x+14,y-24,depth-1,obj_sfx1);
                 instance_create_depth(x+14,y-24,depth-1,obj_sfx3)
                 break;
             case 3:
-                instance_create_depth(x+18,y-34,-1,obj_player_boat_fastshot_t2);
+                instance_create_depth(x+14,y-24,-1,obj_player_boat_fastshot_t2);
                 instance_create_depth(x+14,y-24,depth-1,obj_sfx1);
                 instance_create_depth(x+14,y-24,depth-1,obj_sfx3)
                 break;

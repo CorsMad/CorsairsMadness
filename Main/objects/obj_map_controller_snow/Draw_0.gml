@@ -1,4 +1,4 @@
-draw_sprite_ext(spr_map_desert_island,anim,240,135,1,1,0,c_white,island1JungleAlpha);
+draw_sprite_ext(spr_map_snow_island,anim,240,135,1,1,0,c_white,island1JungleAlpha);
  
 #region Информация
 
@@ -31,8 +31,8 @@ switch(globalMapCounter)
 }
 
 /////////КЛЮЧИ/////////
-if global.key_yellow1 = 0 draw_sprite(spr_hud_key_sq_jngl,0,22,51) else draw_sprite(spr_hud_key_sq_jngl,1,22,51);
-if global.key_yellow2 = 0 draw_sprite(spr_hud_key_tri_jngl,0,46,51) else draw_sprite(spr_hud_key_tri_jngl,1,46,51);
+if global.key_blue1 = 0 draw_sprite(spr_hud_key_sq_jngl,0,22,51) else draw_sprite(spr_hud_key_sq_jngl,1,22,51);
+if global.key_blue2 = 0 draw_sprite(spr_hud_key_tri_jngl,0,46,51) else draw_sprite(spr_hud_key_tri_jngl,1,46,51);
 
 
 draw_set_halign(fa_left)
@@ -43,21 +43,21 @@ switch(globalMapCounter) // Секреты
                 break;   
             case 1: // Колизей
                 draw_sprite(spr_hud_secret_big,0,22,29);
-                draw_text(40,24,string(global.secrets_j2_endurance) + "/1");
+                draw_text(40,24,string(global.secrets_sn_endurance) + "/1");
                 break;  
             case 2: // 1 уровень
                 draw_sprite(spr_hud_secret_big,0,22,29);
-                draw_text(40,24,string(global.secrets_j1_r16 + global.secrets_j1_r5 + global.secrets_j1_s1) + "/3");
+                draw_text(40,24,string(global.secrets_s1_r7 + global.secrets_s1_r13 + global.secrets_s1_s1) + "/3");
                 break;  
             case 3: // 2 уровень
                 draw_sprite(spr_hud_secret_big,0,22,29);
-                draw_text(40,24,string(global.secrets_j2_s1 + global.secrets_j2p_r4 + global.secrets_J2b_s1) + "/3");
+                draw_text(40,24,string(global.secrets_s2_s1 + global.secrets_s2b_r5 + global.secrets_s2p_s) + "/3");
                 break;  
             case 4: // 
                 
                 break;                  
             case 5: // 
-                draw_sprite(spr_map_global_follower_jngl,global.completed_JF2,70,51);
+                draw_sprite(spr_map_global_follower_jngl,global.completed_PS2,70,51);
                 break;   
         }    
 
@@ -67,30 +67,30 @@ switch(globalMapCounter) // Секреты
     switch(globalMapCounter)
     {
         case 0:
-            draw_sprite_ext(spr_map_border,PointerFrame,124,180,1,1,0,c_white,1);
+            draw_sprite_ext(spr_map_border,PointerFrame,136,202,1,1,0,c_white,1);
             break;
         case 1:
-            draw_sprite_ext(spr_map_border,PointerFrame,240,196,1,1,0,c_white,1);
+            draw_sprite_ext(spr_map_border,PointerFrame,218,202,1,1,0,c_white,1);
             break;
         case 2:
-            draw_sprite_ext(spr_map_border,PointerFrame,218,80,1,1,0,c_white,1);                    
+            draw_sprite_ext(spr_map_border,PointerFrame,375,217,1,1,0,c_white,1);                    
             break;
         case 3:
-            draw_sprite_ext(spr_map_border,PointerFrame,350,140,1,1,0,c_white,1);                    
+            draw_sprite_ext(spr_map_border,PointerFrame,354,107,1,1,0,c_white,1);                    
             break;
         case 4:
-            draw_sprite_ext(spr_map_border,PointerFrame,310,80,1,1,0,c_white,1);                    
+            draw_sprite_ext(spr_map_border,PointerFrame,171,88,1,1,0,c_white,1);                    
             break;        
         case 5:
-            draw_sprite_ext(spr_map_border,PointerFrame,310,38,1,1,0,c_white,1);                    
+            draw_sprite_ext(spr_map_border,PointerFrame,171,29,1,1,0,c_white,1);                    
             break;    
     }
 #endregion
 
 // Деревня
-    draw_sprite(spr_map_pointer,2,124,180); // Деревня
-    if Opened = 1 draw_sprite(spr_map_pointer,global.secrets_j2_endurance,240,196); // Колизей                  
-    draw_sprite(spr_map_pointer,global.key_yellow1,218,80); // 1 уровень
-    draw_sprite(spr_map_pointer,global.key_yellow2,350,140); // 2 уровень
-    if Opened = 1 draw_sprite(spr_map_pointer,global.completed_JF1,310,80); // Одержимый
-    if global.completed_JF1 = 1 draw_sprite(spr_map_pointer,global.completed_JF2,310,38); // Одержимый
+    draw_sprite(spr_map_pointer,2,136,202); // Деревня
+    if Opened = 1 draw_sprite(spr_map_pointer,global.secrets_sn_endurance,218,202); // Колизей                  
+    draw_sprite(spr_map_pointer,global.key_blue1,375,217); // 1 уровень
+    draw_sprite(spr_map_pointer,global.key_blue2,354,107); // 2 уровень
+    if Opened = 1 draw_sprite(spr_map_pointer,global.completed_PS1,171,88); // Одержимый
+    if global.completed_PS1 = 1 draw_sprite(spr_map_pointer,global.completed_PS2,171,29); // Одержимый

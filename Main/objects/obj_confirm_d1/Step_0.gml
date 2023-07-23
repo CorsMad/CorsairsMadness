@@ -78,10 +78,10 @@ if key_attack || key_jump_pressed // accept
                         }
                     #endregion
                         fnc_msc_stop_play();
-                        global.TargetX = 48;
-                        global.TargetY = 160;
-                        global.TargetRoom = J1_r1;
-                        room_goto(J1FirstLoading);
+                        global.TargetX = 32;
+                        global.TargetY = 208;
+                        global.TargetRoom = D1_r1;
+                        room_goto(D1FirstLoading);
                         break;
                         
                         

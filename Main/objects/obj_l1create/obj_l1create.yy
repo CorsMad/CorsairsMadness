@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Graveyard",
-    "path": "folders/Objects/!SpecialObjects/Graveyard.yy",
+    "name": "Lava",
+    "path": "folders/Objects/!SpecialObjects/Lava.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -10,16 +10,16 @@ global.language = 0;
     global.completed_JF1 = 1;
     global.completed_JF2 = 1;
     
-    global.completed_PD1 = 1;
+    global.completed_PD1 = 0;
     global.completed_PD2 = 0;
     
-    global.completed_PS1 = 1;
+    global.completed_PS1 = 0;
     global.completed_PS2 = 0;
     
-    global.completed_PG1 = 1;
+    global.completed_PG1 = 0;
     global.completed_PG2 = 0;
     
-    global.completed_PL1 = 1;
+    global.completed_PL1 = 0;
     global.completed_PL2 = 0;
     
     
@@ -73,8 +73,8 @@ global.cannon_j2_r1 = 1;
 global.key_green1 = 1;
 global.key_green2 = 1;
 
-global.key_yellow1 = 1;
-global.key_yellow2 = 1;
+global.key_yellow1 = 0;
+global.key_yellow2 = 0;
 
 global.key_purple1 = 0;
 global.key_purple2 = 0;
@@ -82,8 +82,8 @@ global.key_purple2 = 0;
 global.key_blue1 = 0;
 global.key_blue2 = 0;
 
-global.key_red1 = 0;
-global.key_red2 = 0;
+global.key_red1 = 1;
+global.key_red2 = 1;
 #endregion
 
 #region ТЕСТ Магазин
@@ -122,7 +122,7 @@ global.choosed_item_special = 0;
 global.choosed_item = 2; // 1- бумер 2 -топ // 3 - бомба // 4 - eball // 5 - parrot // 11 - арбалет
 global.choosed_item_tier = 1; // ТИР предмета
 global.choosed_itemboat = 3; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
-global.choosed_itemboat_tier = 2; // ТИП предмета для лодки
+global.choosed_itemboat_tier = 3; // ТИП предмета для лодки
 global.mana = 3;
 global.mana_max = 3;
 global.gold = 6000 //global.money_saved;          // 0
@@ -142,13 +142,13 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 32;
-global.TargetY      = 208;
-global.TargetRoom   = Village_lava ;
+global.TargetX      = 192;
+global.TargetY      = 160;
+global.TargetRoom   = L1_r4 ;
 
-global.fTargetX     = 272;
-global.fTargetY     = 224;
-global.fTargetRoom  = PS1_r4;
+global.fTargetX     = 32;
+global.fTargetY     = 560;
+global.fTargetRoom  = PS2_r12;
 
 
 
@@ -324,6 +324,9 @@ t2 = 0;
 	global.secrets_d2p_r4 = 0;
  #endregion
  
+ 
+
+    
 #endregion
 
 /*  CUTSCENES  */    
@@ -349,9 +352,11 @@ global.secrets_s1_s1 = 0
 
 #endregion
 
+       global.secrets_sn_endurance = 0;
+
 #region S2
 
-global.cannon_s2_r1 = 1;
+global.cannon_sn2_r1 = 1;
 
 global.chest_s2_r2 = 1;
 global.chest_s2_r7 = 1;
@@ -381,6 +386,10 @@ global.chest_l2p_r4 = 1;
 #endregion
 
 #region секреты
+
+global.secrets_l_endurance = 0;
+
+
 global.secrets_l1_r3 = 0;
 global.secrets_lava1_s1 = 0;
 global.secrets_lava1_s2 = 0;
@@ -395,7 +404,7 @@ global.secrets_l2p_s = 0;
 
 #region SHADOW
 
-global.cannon_g2_r1 = 1;
+global.cannon_sh2_r1 = 1;
 
 #region Сундуки
 global.chest_g1_r3 = 1;
@@ -411,6 +420,8 @@ global.chest_g2p_r4 = 1;
 #endregion
 
 #region Секреты
+global.secrets_g_endurance = 0;
+
 global.secrets_g1_s1 = 0;
 global.secrets_g1_r12 = 0;
 global.secrets_g1_s2 = 0;

@@ -15,7 +15,7 @@ switch(teleport)
         if global.dia_desertChief = 1 
         {
             fnc_msc_stop_play();
-            room_goto(GlobalMapDesert);
+            room_goto(GlobalMapPrologueDesert);
             instance_destroy(obj_Player);
         }
         break;

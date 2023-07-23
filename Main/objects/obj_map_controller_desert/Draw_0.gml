@@ -43,21 +43,21 @@ switch(globalMapCounter) // Секреты
                 break;   
             case 1: // Колизей
                 draw_sprite(spr_hud_secret_big,0,22,29);
-                draw_text(40,24,string(global.secrets_j2_endurance) + "/1");
+                draw_text(40,24,string(global.secrets_d_endurance) + "/1");
                 break;  
             case 2: // 1 уровень
                 draw_sprite(spr_hud_secret_big,0,22,29);
-                draw_text(40,24,string(global.secrets_j1_r16 + global.secrets_j1_r5 + global.secrets_j1_s1) + "/3");
+                draw_text(40,24,string(global.secrets_d1_s1 + global.secrets_d1_s2 + global.secrets_d1_s3) + "/3");
                 break;  
             case 3: // 2 уровень
                 draw_sprite(spr_hud_secret_big,0,22,29);
-                draw_text(40,24,string(global.secrets_j2_s1 + global.secrets_j2p_r4 + global.secrets_J2b_s1) + "/3");
+                draw_text(40,24,string(global.secrets_d2_r5 + global.secrets_d2b_s1 + global.secrets_d2p_r4) + "/3");
                 break;  
             case 4: // 
                 
                 break;                  
             case 5: // 
-                draw_sprite(spr_map_global_follower_jngl,global.completed_JF2,70,51);
+                draw_sprite(spr_map_global_follower_jngl,global.completed_PD2,70,51);
                 break;   
         }    
 

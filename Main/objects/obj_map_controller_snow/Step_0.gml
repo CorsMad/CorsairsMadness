@@ -14,7 +14,7 @@ if anim >= 5.9 anim = 0;
 
 player_input();
 
-if !instance_exists(obj_confirm_j1) && !instance_exists(obj_confirm_j2) && !instance_exists(obj_confirm_j_col)
+if !instance_exists(obj_confirm_sn1) && !instance_exists(obj_confirm_sn2) && !instance_exists(obj_confirm_sn_col)
 {
     
     #region Перемещение
@@ -23,67 +23,63 @@ if !instance_exists(obj_confirm_j1) && !instance_exists(obj_confirm_j2) && !inst
     {
         switch(globalMapCounter)
         {
-            case 0: if key_up_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 2};
-                    if key_right_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 3};
+            case 0: if key_up_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 3};
+                    if key_right_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 2};
                     break;
-            case 2: if key_down {fnc_snd_play_over(snd_menu_select)globalMapCounter = 0};
-                    if key_right_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 3};
+            case 2: 
+                    if key_up_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 3};
                     if key_left_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 0};
                     break;
-            case 3: if key_up_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 2};
+            case 3: 
                     if key_left_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 0};
-                    if key_down {fnc_snd_play_over(snd_menu_select)globalMapCounter = 0};
+                    if key_down {fnc_snd_play_over(snd_menu_select)globalMapCounter = 2};
                     break;
         }
     }
 
-    if Opened = 1 && global.completed_JF1 = 0
+    if Opened = 1 && global.completed_PS1 = 0
     {
         switch(globalMapCounter)
         {
-            case 0: if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+            case 0: if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 4};
                     if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
                     break;
             case 1: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
-                    if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
-                    if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
-                    break;
-            case 2: if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 4};
-                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
-                    if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
-                    break;
-            case 3: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
                     if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 4};
-                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
                     break;
-            case 4: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
-                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+            case 2: if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
+                    if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    break;
+            case 3: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 4};
+                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+                    break;
+            case 4: 
+                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
                     if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
                     break;
         }
     }
     
-    if Opened = 1 && global.completed_JF1 = 1
+    if Opened = 1 && global.completed_PS1 = 1
     {
         switch(globalMapCounter)
         {
-            case 0: if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+            case 0: if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 5};
                     if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
                     break;
             case 1: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
-                    if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
-                    if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
-                    break;
-            case 2: if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 5};
-                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
-                    if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
-                    break;
-            case 3: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
                     if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 5};
-                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
                     break;
-            case 5: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
-                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+            case 2: 
+                    if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
+                    if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    break;
+            case 3: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 5};
+                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+                    break;
+            case 5: if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
                     if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
                     break;
         }
@@ -103,44 +99,38 @@ if !instance_exists(obj_confirm_j1) && !instance_exists(obj_confirm_j2) && !inst
         {
             case 0:
                 fnc_msc_stop_play();
-                
-                global.TargetX = 32;
+                global.TargetX = 864;
                 global.TargetY = 240;
-                global.TargetRoom = Village_jungle;
-                room_goto(VillageJunlgeFirstLoading);
-                /*
-                var i = instance_create_depth(16,16,0,obj_Player);
-                i.state = 0;
-                instance_create_depth(16,16,101,obj_room_transition_to_loading); 
-                */
+                global.TargetRoom = Village_snow;
+                room_goto(VillageSnowFirstLoading);
                 break;
             case 1: // колизей
-                instance_create_depth(240,135,depth-1,obj_confirm_j_col);;
+                instance_create_depth(240,135,depth-1,obj_confirm_sn_col);;
                 break;
             case 2: // 1 уровень
-                instance_create_depth(240,135,depth-1,obj_confirm_j1);
+                instance_create_depth(240,135,depth-1,obj_confirm_sn1);
                 break;
             case 3: // 2 уровень
-                instance_create_depth(240,135,depth-1,obj_confirm_j2);
+                instance_create_depth(240,135,depth-1,obj_confirm_sn2);
                 break;
             case 4: // храм1
-                if global.completed_JF1 = 0
+                if global.completed_PS1 = 0
                 {
                     fnc_msc_stop_play();
-                    global.fTargetX = 48;
-                    global.fTargetY = 112;
-                    global.fTargetRoom = F1_r1;
-                    room_goto(JP1FirstLoading);
+                    global.fTargetX = 64;
+                    global.fTargetY = 32;
+                    global.fTargetRoom = PS1_r1;
+                    room_goto(PS1FirstLoading);
                 }
                 break;
             case 5: //  храм2
-                if global.completed_JF2 = 0
+                if global.completed_PS2 = 0
                 {
                     fnc_msc_stop_play();
                     global.fTargetX = 48;
                     global.fTargetY = 0;
-                    global.fTargetRoom = JP2_r1;
-                    room_goto(JP2FirstLoading);
+                    global.fTargetRoom = PS2_r1;
+                    room_goto(PS2FirstLoading);
                 }
                 break;
         }

@@ -24,5 +24,7 @@ switch(t)
     case 250: image_index = 5;break; 
     case 300: image_index = 6;image_blend = c_red;break; 
     case 350: 
-        instance_destroy();
+                if global.key_yellow1 = 0 instance_create_depth(x,y,depth,obj_key_yellow_sq);
+                else instance_create_depth(x,y,0,obj_room_transition_black_screen_j1_stats);
+                instance_destroy();
 }

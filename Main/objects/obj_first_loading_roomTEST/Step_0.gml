@@ -8,14 +8,16 @@ if t1 < 12
 
 if t1 = 10
 {   
-    room_goto(GlobalMapPrologueDesert);
-	
+
+    //room_goto(GlobalMapPrologueDesert)
+   room_goto(DesertVillageArrive)
     /*
     var i = instance_create_depth(16,16,0,obj_Player);
     i.DashEnabled = 1;
     i.state = 0;
-    i.HookEnabled = 1;
-    i.specabilnumber = 3;       
+    i.specabilnumber = 3;
+    i.HookEnabled = 0;
+    i.SpecAbilMask = 4;       
     instance_create_depth(16,16,101,obj_room_transition_to_loading);  
 */
 }
