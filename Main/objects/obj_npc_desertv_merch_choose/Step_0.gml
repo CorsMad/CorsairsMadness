@@ -35,14 +35,14 @@ if key_jump || key_attack
             }
             
             break;
-        case 1:
-            instance_destroy();
+        case 1:            
             instance_create_depth(x,y,-100000,obj_store_prologue);
+			instance_destroy();
             break;
-        case 2:
-            instance_destroy();
+        case 2:            
             obj_npc_desertv_merch.talk = 0;
             obj_Player.isDead = 0;
+			instance_destroy();
             break;
     }
 }

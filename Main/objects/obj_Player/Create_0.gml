@@ -79,7 +79,7 @@ switch(global.choosed_item)
             case 3: item_tier = obj_item_axe3;
                     break;         
         }
-    break;
+	break;
     case 3: // БОМБА
         switch(global.choosed_item_tier)
         {

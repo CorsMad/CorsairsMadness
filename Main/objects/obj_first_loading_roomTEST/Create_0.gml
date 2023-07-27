@@ -31,21 +31,21 @@ global.language = 0;
     global.dia_jungleChief = 1; 
     global.dia_lavaChief = 0;
     global.dia_snowChief = 0;
-	global.dia_desertChief = 0;
+	global.dia_desertChief = 1;
     global.dia_shadowChief = 0;
     
     
     global.dia_jungleMerch = 0; 
     global.dia_lavaMerch = 0; 
     global.dia_snowMerch = 0; 
-    global.dia_desertMerch = 0; 
+    global.dia_desertMerch = 1; 
     global.dia_shadowMerch = 0; 
     
     
     global.dia_jungleComt = 2; 
     global.dia_lavaComt = 2; 
     global.dia_snowComt = 2; 
-    global.dia_desertComt = 2; 
+    global.dia_desertComt = 0; //2
     global.dia_shadowComt = 2; 
      
     
@@ -90,9 +90,21 @@ global.key_red2 = 1;
 
 global.shop_axe_can_upgrade1 = 0;
 global.shop_axe_can_upgrade2 = 0;
+global.shop_bomb_can_upgrade1 = 0;
+global.shop_bomb_can_upgrade2 = 0;
+global.shop_sparkle_can_upgrade1 = 0;
+global.shop_sparkle_can_upgrade2 = 0;
+global.shop_eparrot_can_upgrade1 = 0;
+global.shop_eparrot_can_upgrade2 = 0;
 
+global.shop_rapidfire_can_upgrade1 = 0;
+global.shop_rapidfire_can_upgrade2 = 0;
 global.shop_dualpistols_can_upgrade1 = 0;
 global.shop_dualpistols_can_upgrade2 = 0;
+global.shop_blunderbuss_can_upgrade1 = 0;
+global.shop_blunderbuss_can_upgrade2 = 0;
+global.shop_parrotcage_can_upgrade1 = 0;
+global.shop_parrotcage_can_upgrade2 = 0;
 
 #region Покупки человека
 
@@ -100,6 +112,18 @@ global.shop_dualpistols_can_upgrade2 = 0;
 global.purch_anch1 = 0;
 global.purch_anch2 = 0;
 global.purch_anch3 = 0;
+// Бомба
+global.purch_bomb1 = 0;
+global.purch_bomb2 = 0;
+global.purch_bomb3 = 0;
+// Sparkle
+global.purch_sparkle1 = 0;
+global.purch_sparkle2 = 0;
+global.purch_sparkle3 = 0;
+// Eparrot
+global.purch_eparrot1 = 0;
+global.purch_eparrot2 = 0;
+global.purch_eparrot3 = 0;
 
 #endregion
 
@@ -142,9 +166,9 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 192;
-global.TargetY      = 160;
-global.TargetRoom   = L1_r4 ;
+global.TargetX      = 112;
+global.TargetY      = 240;
+global.TargetRoom   = Village_desert_store;
 
 global.fTargetX     = 32;
 global.fTargetY     = 560;

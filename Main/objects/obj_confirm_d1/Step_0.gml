@@ -56,7 +56,12 @@ if key_attack || key_jump_pressed // accept
                             break;
                     }
                     break;
-                    
+                case 1: // Бомбы
+					break;
+				case 2: // sparkle
+					break;
+				case 3: // eparrot
+					break;
                     
                 case 4: // подтверждение
                     fnc_snd_play_over(snd_menu_accept);

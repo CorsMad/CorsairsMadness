@@ -57,7 +57,11 @@ if key_jump_pressed || key_attack // accept
                     fnc_snd_play_over(snd_menu_accept);
                     scr_save_progress();
                     instance_destroy();
-                    instance_create_depth(x,y,-100000,obj_npc_junglev_merch_choose);
+					if instance_exists(obj_npc_junglev_merch)  instance_create_depth(x,y,-100000,obj_npc_junglev_merch_choose);
+					if instance_exists(obj_npc_desertv_merch)  instance_create_depth(x,y,-100000,obj_npc_desertv_merch_choose);
+					if instance_exists(obj_npc_shadowv_merch)  instance_create_depth(x,y,-100000,obj_npc_shadowv_merch_choose);
+					if instance_exists(obj_npc_lavav_merch)    instance_create_depth(x,y,-100000,obj_npc_lavav_merch_choose);
+					if instance_exists(obj_npc_snowv_merch)    instance_create_depth(x,y,-100000,obj_npc_snowv_merch_choose);
                     break;
                     
             }
@@ -80,7 +84,49 @@ if key_jump_pressed || key_attack // accept
                             break;
                     }
                     break;
-                    
+                case 1: // Покупка Бомб
+                    switch(dindex)
+                    {
+                        case 0: // 1-й якорь   
+                            if (global.purch_bomb1 = 0 && global.gold >= 250) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                            break;
+                        case 1: // 2-й якорь   
+                            if (global.purch_bomb2 = 0 && global.shop_bomb_can_upgrade1 = 1 && global.gold >= 300) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                            break;
+                        case 2: // 3-й якорь   
+                            if (global.purch_bomb3 = 0 && global.shop_bomb_can_upgrade2 = 1 && global.gold >= 450) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                            break;
+                    }
+                    break;
+                case 2: // Покупка sparkle
+                    switch(dindex)
+                    {
+                        case 0: // 1-й якорь   
+                            if (global.purch_sparkle1 = 0 && global.gold >= 250) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                            break;
+                        case 1: // 2-й якорь   
+                            if (global.purch_sparkle2 = 0 && global.shop_sparkle_can_upgrade1 = 1 && global.gold >= 300) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                            break;
+                        case 2: // 3-й якорь   
+                            if (global.purch_sparkle3 = 0 && global.shop_sparkle_can_upgrade2 = 1 && global.gold >= 450) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                            break;
+                    }
+                    break;
+                case 3: // Покупка попугая
+                    switch(dindex)
+                    {
+                        case 0: // 1-й якорь   
+                            if (global.purch_eparrot1 = 0 && global.gold >= 250) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                            break;
+                        case 1: // 2-й якорь   
+                            if (global.purch_eparrot2 = 0 && global.shop_eparrot_can_upgrade1 = 1 && global.gold >= 300) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                            break;
+                        case 2: // 3-й якорь   
+                            if (global.purch_eparrot3 = 0 && global.shop_eparrot_can_upgrade2 = 1 && global.gold >= 450) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                            break;
+                    }
+                    break;
+                
                 case 4:
                     fnc_snd_play_over(snd_menu_accept);
                     submenu = 0;
@@ -163,38 +209,147 @@ if buy_confirm
                 switch(submenu)
                 {
                     case 1: 
-                        switch(dindex)
-                        {
-                            case 0: // Покупка якорь 1 ур
-                                if global.purch_anch1 = 0 && global.gold >= 250
-                                {
-                                    fnc_snd_play_over(snd_menu_accept);
-                                    buy_confirm = 0;
-                                    global.purch_anch1 = 1;
-                                    global.shop_axe_can_upgrade1 = 1;
-                                    global.gold -= 250;
-                                }
-                                break;
-                            case 1: // Покупка якорь 2 ур
-                                if global.purch_anch2 = 0 && global.gold >= 300 && global.shop_axe_can_upgrade1 = 1
-                                {
-                                    fnc_snd_play_over(snd_menu_accept);
-                                    buy_confirm = 0;
-                                    global.purch_anch2 = 1;
-                                    global.shop_axe_can_upgrade2 = 1;
-                                    global.gold -= 300;
-                                }
-                                break;
-                            case 2: // Покупка якорь 3 ур
-                                if global.purch_anch3 = 0 && global.gold >= 450 && global.shop_axe_can_upgrade2 = 1
-                                {
-                                    fnc_snd_play_over(snd_menu_accept);
-                                    buy_confirm = 0;
-                                    global.purch_anch3 = 1;
-                                    global.gold -= 450;
-                                }
-                                break;
-                        }
+					switch(index)
+					{
+						case 0: // ЯКОРЬ
+							switch(dindex)
+	                        {
+	                            case 0: // Покупка якорь 1 ур
+	                                if global.purch_anch1 = 0 && global.gold >= 250
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_anch1 = 1;
+	                                    global.shop_axe_can_upgrade1 = 1;
+	                                    global.gold -= 250;
+	                                }
+	                                break;
+	                            case 1: // Покупка якорь 2 ур
+	                                if global.purch_anch2 = 0 && global.gold >= 300 && global.shop_axe_can_upgrade1 = 1
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_anch2 = 1;
+	                                    global.shop_axe_can_upgrade2 = 1;
+	                                    global.gold -= 300;
+	                                }
+	                                break;
+	                            case 2: // Покупка якорь 3 ур
+	                                if global.purch_anch3 = 0 && global.gold >= 450 && global.shop_axe_can_upgrade2 = 1
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_anch3 = 1;
+	                                    global.gold -= 450;
+	                                }
+	                                break;
+	                        }
+							break;
+						case 1: // bomb
+							switch(dindex)
+	                        {
+	                            case 0: // Покупка Бомбы 1 ур
+	                                if global.purch_bomb1 = 0 && global.gold >= 250
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_bomb1 = 1;
+	                                    global.shop_bomb_can_upgrade1 = 1;
+	                                    global.gold -= 250;
+	                                }
+	                                break;
+	                            case 1: // Покупка Бомбы 2 ур
+	                                if global.purch_bomb2 = 0 && global.gold >= 300 && global.shop_bomb_can_upgrade1 = 1
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_bomb2 = 1;
+	                                    global.shop_bomb_can_upgrade2 = 1;
+	                                    global.gold -= 300;
+	                                }
+	                                break;
+	                            case 2: // Покупка Бомбы 3 ур
+	                                if global.purch_bomb3 = 0 && global.gold >= 450 && global.shop_bomb_can_upgrade2 = 1
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_bomb3 = 1;
+	                                    global.gold -= 450;
+	                                }
+	                                break;
+	                        }
+							break;
+						case 2: // sparkle
+							switch(dindex)
+	                        {
+	                            case 0: // Покупка sparkle 1 ур
+	                                if global.purch_sparkle1 = 0 && global.gold >= 250
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_sparkle1 = 1;
+	                                    global.shop_sparkle_can_upgrade1 = 1;
+	                                    global.gold -= 250;
+	                                }
+	                                break;
+	                            case 1: // Покупка sparkle 2 ур
+	                                if global.purch_sparkle2 = 0 && global.gold >= 300 && global.shop_sparkle_can_upgrade1 = 1
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_sparkle2 = 1;
+	                                    global.shop_sparkle_can_upgrade2 = 1;
+	                                    global.gold -= 300;
+	                                }
+	                                break;
+	                            case 2: // Покупка sparkle 3 ур
+	                                if global.purch_sparkle3 = 0 && global.gold >= 450 && global.shop_sparkle_can_upgrade2 = 1
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_sparkle3 = 1;
+	                                    global.gold -= 450;
+	                                }
+	                                break;
+	                        }
+							break;
+						case 3: // EPARROT
+							switch(dindex)
+	                        {
+	                            case 0: // Покупка EPARROT 1 ур
+	                                if global.purch_eparrot1 = 0 && global.gold >= 250
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_eparrot1 = 1;
+	                                    global.shop_eparrot_can_upgrade1 = 1;
+	                                    global.gold -= 250;
+	                                }
+	                                break;
+	                            case 1: // Покупка EPARROT 2 ур
+	                                if global.purch_eparrot2 = 0 && global.gold >= 300 && global.shop_eparrot_can_upgrade1 = 1
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_eparrot2 = 1;
+	                                    global.shop_eparrot_can_upgrade2 = 1;
+	                                    global.gold -= 300;
+	                                }
+	                                break;
+	                            case 2: // Покупка EPARROT 3 ур
+	                                if global.purch_eparrot3 = 0 && global.gold >= 450 && global.shop_eparrot_can_upgrade2 = 1
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_eparrot3 = 1;
+	                                    global.gold -= 450;
+	                                }
+	                                break;
+	                        }
+							break;
+							
+					}
+                        
                     break;  
                     
                     case 3: 

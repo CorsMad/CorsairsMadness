@@ -67,18 +67,6 @@ if key_jump || key_attack
 
 }
 
-#region Переход
-/*
-if Transition = 1
-{
-    Scale_spd+=0.00001;
-    Scale+=Scale_spd;
-    var bgr1 = layer_background_get_id("GlobalMap");
-    layer_background_xscale(bgr1,Scale)
-    layer_background_yscale(bgr1,Scale)
-}
-*/
-#endregion
 
 #region  аутлайнер
 OutlinerAlpha_t +=1 
