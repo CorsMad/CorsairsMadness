@@ -149,6 +149,20 @@ if key_jump_pressed || key_attack // accept
         case 3: // Лодка
             switch(index)
             {
+                case 0:
+                    switch(dindex)
+                    {
+                        case 0: // 1-й якорь   
+                            if (global.purch_rapidfire1 = 0 && global.gold >= 250) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                            break;
+                        case 1: // 2-й якорь   
+                            if (global.purch_rapidfire2 = 0 && global.shop_rapidfire_can_upgrade1 = 1 && global.gold >= 300) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                            break;
+                        case 2: // 3-й якорь   
+                            if (global.purch_rapidfire3 = 0 && global.shop_rapidfire_can_upgrade2 = 1 && global.gold >= 450) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                            break;
+                    }
+                    break;
                 case 1:
                     switch(dindex)
                     {
@@ -163,8 +177,34 @@ if key_jump_pressed || key_attack // accept
                             break;
                     }
                     break;
-                    
-                    
+                case 2:
+                    switch(dindex)
+                    {
+                        case 0: // 1-й якорь   
+                            if (global.purch_blunderbuss1 = 0 && global.gold >= 250) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                            break;
+                        case 1: // 2-й якорь   
+                            if (global.purch_blunderbuss2 = 0 && global.shop_blunderbuss_can_upgrade1 = 1 && global.gold >= 300) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                            break;
+                        case 2: // 3-й якорь   
+                            if (global.purch_blunderbuss3 = 0 && global.shop_blunderbuss_can_upgrade2 = 1 && global.gold >= 450) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                            break;
+                    }
+                    break;    
+                case 3:
+                    switch(dindex)
+                    {
+                        case 0: // 1-й якорь   
+                            if (global.purch_parrotcage1 = 0 && global.gold >= 250) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                            break;
+                        case 1: // 2-й якорь   
+                            if (global.purch_parrotcage2 = 0 && global.shop_parrotcage_can_upgrade1 = 1 && global.gold >= 300) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                            break;
+                        case 2: // 3-й якорь   
+                            if (global.purch_parrotcage3 = 0 && global.shop_parrotcage_can_upgrade2 = 1 && global.gold >= 450) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                            break;
+                    }
+                    break;    
                 case 4:
                     fnc_snd_play_over(snd_menu_accept);
                     submenu = 0;
@@ -353,38 +393,145 @@ if buy_confirm
                     break;  
                     
                     case 3: 
-                        switch(dindex)
-                        {
-                            case 0: // Покупка дуал пистолеты 1 ур
-                                if global.purch_dualpistols1 = 0 && global.gold >= 250
-                                {
-                                    fnc_snd_play_over(snd_menu_accept);
-                                    buy_confirm = 0;
-                                    global.purch_dualpistols1 = 1;
-                                    global.shop_dualpistols_can_upgrade1 = 1;
-                                    global.gold -= 250;
-                                }
-                                break;
-                            case 1: // Покупка дуал пистолеты 2 ур
-                                if global.purch_dualpistols2 = 0 && global.gold >= 300 && global.shop_dualpistols_can_upgrade1 = 1
-                                {
-                                    fnc_snd_play_over(snd_menu_accept);
-                                    buy_confirm = 0;
-                                    global.purch_dualpistols2 = 1;
-                                    global.shop_dualpistols_can_upgrade2 = 1;
-                                    global.gold -= 300;
-                                }
-                                break;
-                            case 2: // Покупка дуал пистолетыь 3 ур
-                                if global.purch_dualpistols3 = 0 && global.gold >= 450 && global.shop_dualpistols_can_upgrade2 = 1
-                                {
-                                    fnc_snd_play_over(snd_menu_accept);
-                                    buy_confirm = 0;
-                                    global.purch_dualpistols3 = 1;
-                                    global.gold -= 450;
-                                }
-                                break;
-                        }
+                    switch(index)
+                    {
+                        case 0: // Rapidfire
+                            switch(dindex)
+                            {
+                                case 0:
+	                                if global.purch_rapidfire1 = 0 && global.gold >= 250
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_rapidfire1 = 1;
+	                                    global.shop_rapidfire_can_upgrade1 = 1;
+	                                    global.gold -= 250;
+	                                }
+                                    break;
+	                            case 1: // Покупка якорь 2 ур
+	                                if global.purch_rapidfire2 = 0 && global.gold >= 300 && global.shop_rapidfire_can_upgrade1 = 1
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_rapidfire2 = 1;
+	                                    global.shop_rapidfire_can_upgrade2 = 1;
+	                                    global.gold -= 300;
+	                                }
+	                                break;
+	                            case 2: // Покупка якорь 3 ур
+	                                if global.purch_rapidfire3 = 0 && global.gold >= 450 && global.shop_rapidfire_can_upgrade2 = 1
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_rapidfire3 = 1;
+	                                    global.gold -= 450;
+	                                }
+	                                break;
+                            }
+                            break;
+                        case 1: // Doublepistol
+                            switch(dindex)
+                            {
+                                case 0:
+	                                if global.purch_dualpistols1 = 0 && global.gold >= 250
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_dualpistols1 = 1;
+	                                    global.shop_dualpistols_can_upgrade1 = 1;
+	                                    global.gold -= 250;
+	                                }
+                                    break;
+	                            case 1: // Покупка якорь 2 ур
+	                                if global.purch_dualpistols2 = 0 && global.gold >= 300 && global.shop_dualpistols_can_upgrade1 = 1
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_dualpistols2 = 1;
+	                                    global.shop_dualpistols_can_upgrade2 = 1;
+	                                    global.gold -= 300;
+	                                }
+	                                break;
+	                            case 2: // Покупка якорь 3 ур
+	                                if global.purch_dualpistols3 = 0 && global.gold >= 450 && global.shop_dualpistols_can_upgrade2 = 1
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_dualpistols3 = 1;
+	                                    global.gold -= 450;
+	                                }
+	                                break;
+                            }
+                            break;
+                        case 2: // blunderbuss
+                            switch(dindex)
+                            {
+                                case 0:
+	                                if global.purch_blunderbuss1 = 0 && global.gold >= 250
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_blunderbuss1 = 1;
+	                                    global.shop_blunderbuss_can_upgrade1 = 1;
+	                                    global.gold -= 250;
+	                                }
+                                    break;
+	                            case 1: // Покупка якорь 2 ур
+	                                if global.purch_blunderbuss2 = 0 && global.gold >= 300 && global.shop_blunderbuss_can_upgrade1 = 1
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_blunderbuss2 = 1;
+	                                    global.shop_blunderbuss_can_upgrade2 = 1;
+	                                    global.gold -= 300;
+	                                }
+	                                break;
+	                            case 2: // Покупка якорь 3 ур
+	                                if global.purch_blunderbuss3 = 0 && global.gold >= 450 && global.shop_blunderbuss_can_upgrade2 = 1
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_blunderbuss3 = 1;
+	                                    global.gold -= 450;
+	                                }
+	                                break;
+                            }
+                            break;
+                        case 3: // parrotcage
+                            switch(dindex)
+                            {
+                                case 0:
+	                                if global.purch_parrotcage1 = 0 && global.gold >= 250
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_parrotcage1 = 1;
+	                                    global.shop_parrotcage_can_upgrade1 = 1;
+	                                    global.gold -= 250;
+	                                }
+                                    break;
+	                            case 1: // Покупка якорь 2 ур
+	                                if global.purch_parrotcage2 = 0 && global.gold >= 300 && global.shop_parrotcage_can_upgrade1 = 1
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_parrotcage2 = 1;
+	                                    global.shop_parrotcage_can_upgrade2 = 1;
+	                                    global.gold -= 300;
+	                                }
+	                                break;
+	                            case 2: // Покупка якорь 3 ур
+	                                if global.purch_parrotcage3 = 0 && global.gold >= 450 && global.shop_parrotcage_can_upgrade2 = 1
+	                                {
+	                                    fnc_snd_play_over(snd_menu_accept);
+	                                    buy_confirm = 0;
+	                                    global.purch_parrotcage3 = 1;
+	                                    global.gold -= 450;
+	                                }
+	                                break;
+                            }
+                            break;
+                    }
                     break;
                     
                     case 4: 

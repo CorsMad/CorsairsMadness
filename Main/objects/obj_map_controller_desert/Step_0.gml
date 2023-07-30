@@ -14,7 +14,7 @@ if anim >= 5.9 anim = 0;
 
 player_input();
 
-if !instance_exists(obj_confirm_d1) && !instance_exists(obj_confirm_d2) && !instance_exists(obj_confirm_d_col)
+if !instance_exists(obj_confirm_1) && !instance_exists(obj_confirm_2) && delay <= 0
 {
     
     #region Перемещение
@@ -25,8 +25,7 @@ if !instance_exists(obj_confirm_d1) && !instance_exists(obj_confirm_d2) && !inst
         {
             case 0: if key_left_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 2};                    
                     break;
-            case 2: 
-                    if key_right_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 0};
+            case 2: if key_right_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 0};
                     if key_left_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 3};
                     break;
             case 3: if key_right_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 2};
@@ -41,8 +40,8 @@ if !instance_exists(obj_confirm_d1) && !instance_exists(obj_confirm_d2) && !inst
             case 0: if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
                     if key_left_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 2};  
                     break;
-            case 1: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 4};
-                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+            case 1: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+                    if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 4};
                     if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
                     break;
             case 2: if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
@@ -59,7 +58,7 @@ if !instance_exists(obj_confirm_d1) && !instance_exists(obj_confirm_d2) && !inst
         }
     }
     
-    if Opened = 1 && global.completed_PD1 = 1
+    if Opened = 1 && global.completed_PD1 = 1 && global.completed_PD2 = 0
     {
         switch(globalMapCounter)
         {
@@ -85,6 +84,26 @@ if !instance_exists(obj_confirm_d1) && !instance_exists(obj_confirm_d2) && !inst
         }
     }
     
+    if Opened = 1 && global.completed_PD1 = 1 && global.completed_PD2 = 1
+    {
+        switch(globalMapCounter)
+        {
+            case 0: if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    if key_left_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 2};  
+                    break;
+            case 1: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+                    if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
+                    break;
+            case 2: if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
+                    if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
+                    if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    break;
+            case 3: if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+                    break;
+        }
+    }
+    
     #endregion
 
     #region Подтверждение
@@ -102,13 +121,16 @@ if !instance_exists(obj_confirm_d1) && !instance_exists(obj_confirm_d2) && !inst
                 room_goto(VillageDesertFirstLoading);
                 break;
             case 1: // колизей
-                instance_create_depth(240,135,depth-1,obj_confirm_d_col);;
+                var le = instance_create_depth(240,135,depth-1,obj_confirm_1);
+                le.dest = 91;
                 break;
             case 2: // 1 уровень
-                instance_create_depth(240,135,depth-1,obj_confirm_d1);
+                var l1 = instance_create_depth(240,135,depth-1,obj_confirm_1);
+                l1.dest = 1;
                 break;
             case 3: // 2 уровень
-                instance_create_depth(240,135,depth-1,obj_confirm_d2);
+                var l2 = instance_create_depth(240,135,depth-1,obj_confirm_2);
+                l2.dest = 1;
                 break;
             case 4: // храм1
                 if global.completed_PD1 = 0
@@ -136,3 +158,5 @@ if !instance_exists(obj_confirm_d1) && !instance_exists(obj_confirm_d2) && !inst
     #endregion
 
 }
+
+if delay>0{delay-=0.1}

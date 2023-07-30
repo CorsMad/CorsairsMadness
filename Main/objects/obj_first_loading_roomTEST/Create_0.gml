@@ -7,8 +7,8 @@ global.language = 0;
 
 #region Завершеннсоть уровней
     
-    global.completed_JF1 = 1;
-    global.completed_JF2 = 1;
+    global.completed_JF1 = 0;
+    global.completed_JF2 = 0;
     
     global.completed_PD1 = 0;
     global.completed_PD2 = 0;
@@ -21,39 +21,37 @@ global.language = 0;
     
     global.completed_PL1 = 0;
     global.completed_PL2 = 0;
-    
-    
-    
+        
     #endregion
     
 #region ТЕСТ
     display_reset(0, false);
-    global.dia_jungleChief = 1; 
+    global.dia_jungleChief = 0; 
     global.dia_lavaChief = 0;
     global.dia_snowChief = 0;
-	global.dia_desertChief = 1;
+	global.dia_desertChief = 0;
     global.dia_shadowChief = 0;
     
     
     global.dia_jungleMerch = 0; 
     global.dia_lavaMerch = 0; 
     global.dia_snowMerch = 0; 
-    global.dia_desertMerch = 1; 
+    global.dia_desertMerch = 0; 
     global.dia_shadowMerch = 0; 
     
     
     global.dia_jungleComt = 2; 
     global.dia_lavaComt = 2; 
     global.dia_snowComt = 2; 
-    global.dia_desertComt = 0; //2
+    global.dia_desertComt = 2; //2
     global.dia_shadowComt = 2; 
      
     
-    global.saved_jungle = 1;
-    global.saved_desert = 1;
-    global.saved_snow = 1;
-    global.saved_shadow = 1;
-    global.saved_vulcano = 1;
+    global.saved_jungle = 0;
+    global.saved_desert = 0;
+    global.saved_snow = 0;
+    global.saved_shadow = 0;
+    global.saved_vulcano = 0;
     
     global.dia_jungleMerch_f_talk = 0;
     global.dia_desertMerch_f_talk = 0;
@@ -65,25 +63,25 @@ global.language = 0;
 
 #region Разрешение на пушку 
 
-global.cannon_j2_r1 = 1;
+global.cannon_j2_r1 = 0;
 
 #endregion
 
 #region  ключи
-global.key_green1 = 1;
-global.key_green2 = 1;
+global.key_green1 = 0;
+global.key_green2 = 0;
 
 global.key_yellow1 = 0;
 global.key_yellow2 = 0;
 
-global.key_purple1 = 0;
-global.key_purple2 = 0;
-
 global.key_blue1 = 0;
 global.key_blue2 = 0;
 
-global.key_red1 = 1;
-global.key_red2 = 1;
+global.key_purple1 = 0;
+global.key_purple2 = 0;
+
+global.key_red1 = 0;
+global.key_red2 = 0;
 #endregion
 
 #region ТЕСТ Магазин
@@ -113,8 +111,8 @@ global.purch_anch1 = 0;
 global.purch_anch2 = 0;
 global.purch_anch3 = 0;
 // Бомба
-global.purch_bomb1 = 0;
-global.purch_bomb2 = 0;
+global.purch_bomb1 = 1;
+global.purch_bomb2 = 1;
 global.purch_bomb3 = 0;
 // Sparkle
 global.purch_sparkle1 = 0;
@@ -122,17 +120,31 @@ global.purch_sparkle2 = 0;
 global.purch_sparkle3 = 0;
 // Eparrot
 global.purch_eparrot1 = 0;
-global.purch_eparrot2 = 0;
-global.purch_eparrot3 = 0;
+global.purch_eparrot2 = 1;
+global.purch_eparrot3 = 1;
 
 #endregion
 
 #region Покупки Лодки
+// Быстровыстр
+global.purch_rapidfire1 = 1;
+global.purch_rapidfire2 = 1;
+global.purch_rapidfire3 = 0;
 
-//якорь
-global.purch_dualpistols1 = 0;
-global.purch_dualpistols2 = 0;
+//двойные пистолеты
+global.purch_dualpistols1 = 1;
+global.purch_dualpistols2 = 1;
 global.purch_dualpistols3 = 0;
+
+// blunderbuss
+global.purch_blunderbuss1 = 1;
+global.purch_blunderbuss2 = 1;
+global.purch_blunderbuss3 = 0;
+
+// parrot cage
+global.purch_parrotcage1 = 1;
+global.purch_parrotcage2 = 1;
+global.purch_parrotcage3 = 1;
 
 #endregion
 
@@ -149,7 +161,7 @@ global.choosed_itemboat = 3; // 1 - быстровыстрел 2 - 2пистол
 global.choosed_itemboat_tier = 3; // ТИП предмета для лодки
 global.mana = 3;
 global.mana_max = 3;
-global.gold = 6000 //global.money_saved;          // 0
+global.gold = 10000 //global.money_saved;          // 0
 global.gold_prelevel = 0;
 global.darkessence = 0//global.darkessence_saved;
 
@@ -168,7 +180,7 @@ global.TargetRoom = J1_r1;
 
 global.TargetX      = 112;
 global.TargetY      = 240;
-global.TargetRoom   = Village_desert_store;
+global.TargetRoom   = Village_desert;
 
 global.fTargetX     = 32;
 global.fTargetY     = 560;
@@ -313,7 +325,7 @@ t2 = 0;
 #region Desert
 
  /* 1 УРОВЕНЬ */
- global.cannon_d2_r1 = 1;
+ global.cannon_d2_r1 = 0;
  
     #region Сундуки
     global.chest_d1_r2 = 1;
@@ -380,7 +392,7 @@ global.secrets_s1_s1 = 0
 
 #region S2
 
-global.cannon_sn2_r1 = 1;
+global.cannon_sn2_r1 = 0;
 
 global.chest_s2_r2 = 1;
 global.chest_s2_r7 = 1;
@@ -428,7 +440,7 @@ global.secrets_l2p_s = 0;
 
 #region SHADOW
 
-global.cannon_sh2_r1 = 1;
+global.cannon_sh2_r1 = 0;
 
 #region Сундуки
 global.chest_g1_r3 = 1;

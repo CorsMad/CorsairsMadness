@@ -272,47 +272,179 @@ if itemprice != 0 draw_text(344,159.5,string(itemprice)) else draw_text(344,159.
 
 switch(submenu)
 {
-    case 1: // Якорь
+    case 1: // Человек
 		#region Якорь
-			if global.purch_anch1 = 1 draw_sprite(spr_shop_solditem,0,120,72);    
+			
+            if global.purch_anch1 = 0 draw_sprite(spr_shop_icons_anchor,1,120,72) 
+            else {
+                draw_sprite(spr_icons_confirm,1,120,72)    
+            }
+	        if global.shop_axe_can_upgrade1 = 0 draw_sprite(spr_icons_confirm,0,152,72); 
+            else {
+                    if global.purch_anch2 = 0 draw_sprite(spr_shop_icons_anchor,2,152,72)
+                    else draw_sprite(spr_icons_confirm,2,152,72);      
+                }
+            
+	        if global.shop_axe_can_upgrade2 = 0 draw_sprite(spr_icons_confirm,0,184,72); 
+            else {
+                    if global.purch_anch3 = 0 draw_sprite(spr_shop_icons_anchor,3,184,72);
+                    else draw_sprite(spr_icons_confirm,3,184,72);
+            }
+            if global.purch_anch1 = 1 draw_sprite(spr_shop_solditem,0,120,72);    
 	        if global.purch_anch2 = 1 draw_sprite(spr_shop_solditem,0,152,72);    
 	        if global.purch_anch3 = 1 draw_sprite(spr_shop_solditem,0,184,72);    
-        
-	        if global.shop_axe_can_upgrade1 = 0 draw_sprite(spr_shop_icons_anchor,0,152,72);
-	        if global.shop_axe_can_upgrade2 = 0 draw_sprite(spr_shop_icons_anchor,1,184,72);
+            
 		#endregion
 		#region Бомба
-			if global.purch_bomb1 = 1 draw_sprite(spr_shop_solditem,0,120,104);    
+            if global.purch_bomb1 = 0 draw_sprite(spr_shop_icons_anchor,4,120,104) 
+            else {
+                draw_sprite(spr_icons_confirm,4,120,104)    
+            }
+	        if global.shop_bomb_can_upgrade1 = 0 draw_sprite(spr_icons_confirm,0,152,104); 
+            else {
+                    if global.purch_bomb2 = 0 draw_sprite(spr_shop_icons_anchor,5,152,104)
+                    else draw_sprite(spr_icons_confirm,5,152,104);      
+                }
+            
+	        if global.shop_bomb_can_upgrade2 = 0 draw_sprite(spr_icons_confirm,0,184,104); 
+            else {
+                    if global.purch_bomb3 = 0 draw_sprite(spr_shop_icons_anchor,6,184,104);
+                    else draw_sprite(spr_icons_confirm,6,184,104);
+            }
+            if global.purch_bomb1 = 1 draw_sprite(spr_shop_solditem,0,120,104);    
 	        if global.purch_bomb2 = 1 draw_sprite(spr_shop_solditem,0,152,104);    
-	        if global.purch_bomb3 = 1 draw_sprite(spr_shop_solditem,0,184,104);    
-        
-	        if global.shop_bomb_can_upgrade1 = 0 draw_sprite(spr_shop_icons_bomb,0,152,104);
-	        if global.shop_bomb_can_upgrade2 = 0 draw_sprite(spr_shop_icons_bomb,1,184,104);
+	        if global.purch_bomb3 = 1 draw_sprite(spr_shop_solditem,0,184,104); 
+         
 		#endregion
 		#region esparkle
-			if global.purch_sparkle1 = 1 draw_sprite(spr_shop_solditem,0,120,136);    
+            if global.purch_sparkle1 = 0 draw_sprite(spr_shop_icons_anchor,7,120,136) 
+            else {
+                draw_sprite(spr_icons_confirm,7,120,136)    
+            }
+	        if global.shop_sparkle_can_upgrade1 = 0 draw_sprite(spr_icons_confirm,0,152,136); 
+            else {
+                    if global.purch_sparkle2 = 0 draw_sprite(spr_shop_icons_anchor,8,152,136)
+                    else draw_sprite(spr_icons_confirm,8,152,136);      
+                }
+            
+	        if global.shop_sparkle_can_upgrade2 = 0 draw_sprite(spr_icons_confirm,0,184,136); 
+            else {
+                    if global.purch_sparkle3 = 0 draw_sprite(spr_shop_icons_anchor,9,184,136);
+                    else draw_sprite(spr_icons_confirm,9,184,136);
+            }
+            if global.purch_sparkle1 = 1 draw_sprite(spr_shop_solditem,0,120,136);    
 	        if global.purch_sparkle2 = 1 draw_sprite(spr_shop_solditem,0,152,136);    
-	        if global.purch_sparkle3 = 1 draw_sprite(spr_shop_solditem,0,184,136);    
-        
-	        if global.shop_sparkle_can_upgrade1 = 0 draw_sprite(spr_shop_icons_sparkle,0,152,136);
-	        if global.shop_sparkle_can_upgrade2 = 0 draw_sprite(spr_shop_icons_sparkle,1,184,136);
+	        if global.purch_sparkle3 = 1 draw_sprite(spr_shop_solditem,0,184,136); 
+
 		#endregion
 		#region eparrot
-			if global.purch_eparrot1 = 1 draw_sprite(spr_shop_solditem,0,120,168);    
+            if global.purch_eparrot1 = 0 draw_sprite(spr_shop_icons_anchor,10,120,168) 
+            else {
+                draw_sprite(spr_icons_confirm,10,120,168)    
+            }
+	        if global.shop_eparrot_can_upgrade1 = 0 draw_sprite(spr_icons_confirm,0,152,168); 
+            else {
+                    if global.purch_eparrot2 = 0 draw_sprite(spr_shop_icons_anchor,11,152,168)
+                    else draw_sprite(spr_icons_confirm,11,152,168);      
+                }
+            
+	        if global.shop_eparrot_can_upgrade2 = 0 draw_sprite(spr_icons_confirm,0,184,168); 
+            else {
+                    if global.purch_eparrot3 = 0 draw_sprite(spr_shop_icons_anchor,12,184,168);
+                    else draw_sprite(spr_icons_confirm,12,184,168);
+            }
+            if global.purch_eparrot1 = 1 draw_sprite(spr_shop_solditem,0,120,168);    
 	        if global.purch_eparrot2 = 1 draw_sprite(spr_shop_solditem,0,152,168);    
-	        if global.purch_eparrot3 = 1 draw_sprite(spr_shop_solditem,0,184,168);    
-        
-	        if global.shop_eparrot_can_upgrade1 = 0 draw_sprite(spr_shop_icons_eparrot,0,152,168);
-	        if global.shop_eparrot_can_upgrade2 = 0 draw_sprite(spr_shop_icons_eparrot,1,184,168);
+	        if global.purch_eparrot3 = 1 draw_sprite(spr_shop_solditem,0,184,168); 
+
 		#endregion        
         break;
     case 3: // Якорь
-        if global.purch_dualpistols1 = 1 draw_sprite(spr_shop_solditem,0,120,104);    
-        if global.purch_dualpistols2 = 1 draw_sprite(spr_shop_solditem,0,152,104);    
-        if global.purch_dualpistols3 = 1 draw_sprite(spr_shop_solditem,0,184,104);    
-        
-        if global.shop_dualpistols_can_upgrade1 = 0 draw_sprite(spr_shop_icons_dualpistols,0,152,104);
-        if global.shop_dualpistols_can_upgrade2 = 0 draw_sprite(spr_shop_icons_dualpistols,1,184,104);
+        #region rapidfire
+			
+            if global.purch_rapidfire1 = 0 draw_sprite(spr_shop_icons_anchor,14,120,72) 
+            else {
+                draw_sprite(spr_icons_confirm,14,120,72)    
+            }
+	        if global.shop_rapidfire_can_upgrade1 = 0 draw_sprite(spr_icons_confirm,0,152,72); 
+            else {
+                    if global.purch_rapidfire2 = 0 draw_sprite(spr_shop_icons_anchor,15,152,72)
+                    else draw_sprite(spr_icons_confirm,14,152,72);      
+                }
+            
+	        if global.shop_rapidfire_can_upgrade2 = 0 draw_sprite(spr_icons_confirm,0,184,72); 
+            else {
+                    if global.purch_rapidfire3 = 0 draw_sprite(spr_shop_icons_anchor,16,184,72);
+                    else draw_sprite(spr_icons_confirm,14,184,72);
+            }
+            if global.purch_rapidfire1 = 1 draw_sprite(spr_shop_solditem,0,120,72);    
+	        if global.purch_rapidfire2 = 1 draw_sprite(spr_shop_solditem,0,152,72);    
+	        if global.purch_rapidfire3 = 1 draw_sprite(spr_shop_solditem,0,184,72);    
+            
+		#endregion
+		#region dualpist
+            if global.purch_dualpistols1 = 0 draw_sprite(spr_shop_icons_anchor,16,120,104) 
+            else {
+                draw_sprite(spr_icons_confirm,16,120,104)    
+            }
+	        if global.shop_dualpistols_can_upgrade1 = 0 draw_sprite(spr_icons_confirm,0,152,104); 
+            else {
+                    if global.purch_dualpistols2 = 0 draw_sprite(spr_shop_icons_anchor,17,152,104)
+                    else draw_sprite(spr_icons_confirm,17,152,104);      
+                }
+            
+	        if global.shop_dualpistols_can_upgrade2 = 0 draw_sprite(spr_icons_confirm,0,184,104); 
+            else {
+                    if global.purch_dualpistols3 = 0 draw_sprite(spr_shop_icons_anchor,18,184,104);
+                    else draw_sprite(spr_icons_confirm,18,184,104);
+            }
+            if global.purch_dualpistols1 = 1 draw_sprite(spr_shop_solditem,0,120,104);    
+	        if global.purch_dualpistols2 = 1 draw_sprite(spr_shop_solditem,0,152,104);    
+	        if global.purch_dualpistols3 = 1 draw_sprite(spr_shop_solditem,0,184,104); 
+         
+		#endregion
+		#region blunderbuss
+            if global.purch_blunderbuss1 = 0 draw_sprite(spr_shop_icons_anchor,19,120,136) 
+            else {
+                draw_sprite(spr_icons_confirm,19,120,136)    
+            }
+	        if global.shop_blunderbuss_can_upgrade1 = 0 draw_sprite(spr_icons_confirm,0,152,136); 
+            else {
+                    if global.purch_blunderbuss2 = 0 draw_sprite(spr_shop_icons_anchor,20,152,136)
+                    else draw_sprite(spr_icons_confirm,20,152,136);      
+                }
+            
+	        if global.shop_blunderbuss_can_upgrade2 = 0 draw_sprite(spr_icons_confirm,0,184,136); 
+            else {
+                    if global.purch_blunderbuss3 = 0 draw_sprite(spr_shop_icons_anchor,21,184,136);
+                    else draw_sprite(spr_icons_confirm,21,184,136);
+            }
+            if global.purch_blunderbuss1 = 1 draw_sprite(spr_shop_solditem,0,120,136);    
+	        if global.purch_blunderbuss2 = 1 draw_sprite(spr_shop_solditem,0,152,136);    
+	        if global.purch_blunderbuss3 = 1 draw_sprite(spr_shop_solditem,0,184,136); 
+
+		#endregion
+		#region parrotcage
+            if global.purch_parrotcage1 = 0 draw_sprite(spr_shop_icons_anchor,22,120,168) 
+            else {
+                draw_sprite(spr_icons_confirm,22,120,168)    
+            }
+	        if global.shop_parrotcage_can_upgrade1 = 0 draw_sprite(spr_icons_confirm,0,152,168); 
+            else {
+                    if global.purch_parrotcage2 = 0 draw_sprite(spr_shop_icons_anchor,23,152,168)
+                    else draw_sprite(spr_icons_confirm,23,152,168);      
+                }
+            
+	        if global.shop_parrotcage_can_upgrade2 = 0 draw_sprite(spr_icons_confirm,0,184,168); 
+            else {
+                    if global.purch_parrotcage3 = 0 draw_sprite(spr_shop_icons_anchor,24,184,168);
+                    else draw_sprite(spr_icons_confirm,24,184,168);
+            }
+            if global.purch_parrotcage1 = 1 draw_sprite(spr_shop_solditem,0,120,168);    
+	        if global.purch_parrotcage2 = 1 draw_sprite(spr_shop_solditem,0,152,168);    
+	        if global.purch_parrotcage3 = 1 draw_sprite(spr_shop_solditem,0,184,168); 
+
+		#endregion        
         break;
 }
 

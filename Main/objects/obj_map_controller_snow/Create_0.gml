@@ -49,7 +49,7 @@ t_p = 0; // таймер указателя
 turn = 0;
 turn_t = 0;
 #endregion
-
+delay = 0;
 #region Альфа,скейл островов. Альфа, позиция облаков
 
 //GlobalMap

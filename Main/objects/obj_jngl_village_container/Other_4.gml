@@ -23,3 +23,22 @@ if global.saved_jungle = 1
 {
     instance_create_depth(304,240,1,obj_npc_jake_jvillage);        
 }
+
+
+#region указатель
+
+if global.dia_jungleChief = 0 
+{
+    instance_create_depth(816,160,10,obj_npc_village_pointer);
+}
+
+if global.dia_jungleChief != 0 && global.dia_jungleMerch = 0 
+{
+    instance_create_depth(404,160,10,obj_npc_village_pointer);
+}
+
+if instance_exists(obj_npc_junglev_comt) && global.dia_jungleComt > 0 
+{
+    instance_create_depth(528,192,10,obj_npc_village_pointer)   ;
+}
+#endregion

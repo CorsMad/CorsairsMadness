@@ -14,15 +14,7 @@ if (global.key_yellow1 = 1 && global.key_yellow2 = 1) Opened = 1 else Opened = 0
 
 
 
-island = 0;
-/*
-0 - Глобальная карта
-1 - джунгли
-2 - пустыня
-3 - зима
-4 - лава
-5 - кладбище
-*/           
+island = 0;          
 globalMapCounter = 0;
 islandMapCounter = 0;
 canPress = 1;
@@ -32,17 +24,12 @@ t = 0;
 t_o = 0; // таймер аутлайнера
 t_p = 0; // таймер указателя
 #region 
-/*
-0 на главный
-1 джунгли
-2 пустыня
-3 зима
-4 лава
-5 кладбище
-*/
+
 turn = 0;
 turn_t = 0;
 #endregion
+
+delay = 0;
 
 #region Альфа,скейл островов. Альфа, позиция облаков
 

@@ -14,7 +14,7 @@ if anim >= 5.9 anim = 0;
 
 player_input();
 
-if !instance_exists(obj_confirm_sn1) && !instance_exists(obj_confirm_sn2) && !instance_exists(obj_confirm_sn_col)
+if !instance_exists(obj_confirm_1) && !instance_exists(obj_confirm_2) && delay <= 0
 {
     
     #region Перемещение
@@ -61,7 +61,7 @@ if !instance_exists(obj_confirm_sn1) && !instance_exists(obj_confirm_sn2) && !in
         }
     }
     
-    if Opened = 1 && global.completed_PS1 = 1
+    if Opened = 1 && global.completed_PS1 = 1 && global.completed_PS2 = 0
     {
         switch(globalMapCounter)
         {
@@ -85,9 +85,28 @@ if !instance_exists(obj_confirm_sn1) && !instance_exists(obj_confirm_sn2) && !in
         }
     }
     
+    if Opened = 1 && global.completed_PS1 = 1 && global.completed_PS2 = 1
+    {
+        switch(globalMapCounter)
+        {
+            case 0: 
+                    if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    break;
+            case 1: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
+                    if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
+                    if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+                    break;
+            case 2: 
+                    if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
+                    if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    break;
+            case 3: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+                    break;
+        }
+    }
     
-    
-    
+  
     #endregion
 
     #region Подтверждение
@@ -105,13 +124,16 @@ if !instance_exists(obj_confirm_sn1) && !instance_exists(obj_confirm_sn2) && !in
                 room_goto(VillageSnowFirstLoading);
                 break;
             case 1: // колизей
-                instance_create_depth(240,135,depth-1,obj_confirm_sn_col);;
+                var le = instance_create_depth(240,135,depth-1,obj_confirm_1);;
+                le.dest = 92;
                 break;
             case 2: // 1 уровень
-                instance_create_depth(240,135,depth-1,obj_confirm_sn1);
+                var l1 = instance_create_depth(240,135,depth-1,obj_confirm_1);
+                l1.dest = 2;
                 break;
             case 3: // 2 уровень
-                instance_create_depth(240,135,depth-1,obj_confirm_sn2);
+                var l2 = instance_create_depth(240,135,depth-1,obj_confirm_2);
+                l2.dest = 2;
                 break;
             case 4: // храм1
                 if global.completed_PS1 = 0
@@ -139,3 +161,5 @@ if !instance_exists(obj_confirm_sn1) && !instance_exists(obj_confirm_sn2) && !in
     #endregion
 
 }
+
+if delay > 0 delay-=0.1;

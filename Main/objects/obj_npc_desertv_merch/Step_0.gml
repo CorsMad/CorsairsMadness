@@ -60,8 +60,8 @@ if talk_cr_t!= 0
 t_anim++;
 switch(t_anim)
 {
-    case 0:   image_index = 0;break; 
-    case 20:  image_index = 1;break; 
+    case 0:  image_index = 0;break; 
+    case 20: image_index = 1;break; 
     case 40: image_index = 0;break; 
     case 60: image_index = 1;break; 
     case 80: image_index = 0;break; 

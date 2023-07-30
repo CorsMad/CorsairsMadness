@@ -22,3 +22,11 @@ switch(finished)
         break;
 }
 
+#region указатель
+if global.dia_jungleChief != 0 && global.dia_jungleMerch = 0
+{
+    var p = instance_create_depth(184,151,0,obj_npc_village_pointer)   ;
+    p.village = 1;
+    p.position = 2;
+}
+#endregion

@@ -18,3 +18,21 @@ if global.dia_desertChief = 1
 {
     instance_create_depth(496,240,1,obj_npc_desertv_comt);   
 }
+
+#region указатель
+
+if global.dia_desertChief = 0 
+{
+    instance_create_depth(152,175,10,obj_npc_village_pointer);
+}
+
+if global.dia_desertChief != 0 && global.dia_desertMerch = 0 
+{
+    instance_create_depth(736,160,10,obj_npc_village_pointer);
+}
+
+if instance_exists(obj_npc_desertv_comt) && global.dia_desertComt > 0 
+{
+    instance_create_depth(528,192,10,obj_npc_village_pointer)   ;
+}
+#endregion

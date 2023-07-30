@@ -2,13 +2,6 @@
 // You can write your code in this editor
 fnc_lng_level_confirm1();
 player_input();
-/*
-var key_down = keyboard_check_pressed(vk_down);
-var key_up = keyboard_check_pressed(vk_up);
-var key_left = keyboard_check_pressed(vk_left);
-var key_right = keyboard_check_pressed(vk_right);
-var key_press = keyboard_check_pressed(vk_enter) ||keyboard_check_pressed(vk_space);
-*/
 
 var move = key_down_pressed - key_up_press;
 var movelr = key_right_press - key_left_press;
@@ -57,7 +50,7 @@ if key_attack || key_jump_pressed // accept
                     }
                     break;
                     
-                    
+                   
                 case 4: // подтверждение
                     fnc_snd_play_over(snd_menu_accept);
                     #region Выбор топоров
@@ -83,8 +76,7 @@ if key_attack || key_jump_pressed // accept
                         global.TargetRoom = J1_r1;
                         room_goto(J1FirstLoading);
                         break;
-                        
-                        
+                                               
                 case 5: 
                     fnc_snd_play_over(snd_menu_accept);
                     global.choosed_item = 0;   
