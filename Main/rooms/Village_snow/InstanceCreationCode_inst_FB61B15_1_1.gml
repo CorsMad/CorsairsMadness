@@ -1,1 +1,1 @@
-teleport =2 ;
+teleport = 2 ;

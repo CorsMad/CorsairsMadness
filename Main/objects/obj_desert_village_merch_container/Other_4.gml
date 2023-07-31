@@ -22,3 +22,11 @@ switch(finished)
         break;
 }
 
+#region указатель
+if global.dia_desertChief != 0 && global.dia_desertMerch = 0
+{
+    var p = instance_create_depth(184,151,0,obj_npc_village_pointer)   ;
+    p.village = 2;
+    p.position = 2;
+}
+#endregion

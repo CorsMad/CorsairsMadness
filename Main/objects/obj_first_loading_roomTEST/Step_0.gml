@@ -9,7 +9,7 @@ if t1 < 12
 if t1 = 10
 {   
 
-   //room_goto(GlobalMap)
+  //room_goto(GlobalMapPrologueDesert)
    // room_goto(GlobalMap)
 
     var i = instance_create_depth(16,16,0,obj_Player);

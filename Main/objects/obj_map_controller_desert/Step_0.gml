@@ -43,9 +43,10 @@ if !instance_exists(obj_confirm_1) && !instance_exists(obj_confirm_2) && delay <
             case 1: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
                     if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 4};
                     if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
+					if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
                     break;
             case 2: if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
-                    if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 4};
+                    if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
                     if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
                     break;
             case 3: if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
@@ -71,7 +72,7 @@ if !instance_exists(obj_confirm_1) && !instance_exists(obj_confirm_2) && delay <
                     if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 5};
                     break;
             case 2: if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
-                    if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 5};
+                    if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
                     if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
                     break;
             case 3: if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};

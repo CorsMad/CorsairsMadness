@@ -22,3 +22,20 @@ switch(finished)
         break;
 }
 
+#region указатель
+if global.dia_lavaChief = 0 
+{
+    var p = instance_create_depth(64,128,0,obj_npc_village_pointer)   ;
+    p.village = 5;
+    p.position = 1;
+}
+
+if global.dia_lavaChief != 0 && global.dia_lavaMerch = 0
+{
+    var p = instance_create_depth(336,128,0,obj_npc_village_pointer)   ;
+    p.village = 5;
+    p.position = 2;
+}
+
+
+#endregion

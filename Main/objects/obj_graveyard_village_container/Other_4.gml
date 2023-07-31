@@ -27,3 +27,21 @@ if global.dia_shadowChief = 1
     fl.image_xscale = -1;
     instance_create_depth(567,240,0,obj_npc_shadowv_comt_fl1);
 }
+
+#region указатель
+
+if global.dia_shadowChief = 0 
+{
+    instance_create_depth(266,159,10,obj_npc_village_pointer);
+}
+
+if global.dia_shadowChief != 0 && global.dia_shadowMerch = 0 
+{
+    instance_create_depth(693,160,10,obj_npc_village_pointer);
+}
+
+if instance_exists(obj_npc_shadowv_comt) && global.dia_shadowComt > 0 
+{
+    instance_create_depth(536,160,10,obj_npc_village_pointer)   ;
+}
+#endregion

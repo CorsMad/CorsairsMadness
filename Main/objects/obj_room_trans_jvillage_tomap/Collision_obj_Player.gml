@@ -23,7 +23,7 @@ switch(teleport)
         if global.dia_snowChief = 1 
         {
             fnc_msc_stop_play();
-            room_goto(GlobalMapSnow);
+            room_goto(GlobalMapPrologueSnow);
             instance_destroy(obj_Player);
         }
         break;
@@ -31,7 +31,7 @@ switch(teleport)
         if global.dia_shadowChief = 1 
         {
             fnc_msc_stop_play();
-            room_goto(GlobalMapShadow);
+            room_goto(GlobalMapPrologueShadow);
             instance_destroy(obj_Player);
         }
         break;
@@ -39,7 +39,7 @@ switch(teleport)
         if global.dia_lavaChief = 1 
         {
             fnc_msc_stop_play();
-            room_goto(GlobalMapLava);
+            room_goto(GlobalMapPrologueLava);
             instance_destroy(obj_Player);
         }
         break;

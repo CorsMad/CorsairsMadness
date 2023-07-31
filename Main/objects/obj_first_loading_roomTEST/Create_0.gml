@@ -10,8 +10,8 @@ global.language = 0;
     global.completed_JF1 = 0;
     global.completed_JF2 = 0;
     
-    global.completed_PD1 = 0;
-    global.completed_PD2 = 0;
+    global.completed_PD1 = 1;
+    global.completed_PD2 = 1;
     
     global.completed_PS1 = 0;
     global.completed_PS2 = 0;
@@ -71,8 +71,8 @@ global.cannon_j2_r1 = 0;
 global.key_green1 = 0;
 global.key_green2 = 0;
 
-global.key_yellow1 = 0;
-global.key_yellow2 = 0;
+global.key_yellow1 = 1;
+global.key_yellow2 = 1;
 
 global.key_blue1 = 0;
 global.key_blue2 = 0;
@@ -111,8 +111,8 @@ global.purch_anch1 = 0;
 global.purch_anch2 = 0;
 global.purch_anch3 = 0;
 // Бомба
-global.purch_bomb1 = 1;
-global.purch_bomb2 = 1;
+global.purch_bomb1 = 0;
+global.purch_bomb2 = 0;
 global.purch_bomb3 = 0;
 // Sparkle
 global.purch_sparkle1 = 0;
@@ -120,31 +120,31 @@ global.purch_sparkle2 = 0;
 global.purch_sparkle3 = 0;
 // Eparrot
 global.purch_eparrot1 = 0;
-global.purch_eparrot2 = 1;
-global.purch_eparrot3 = 1;
+global.purch_eparrot2 = 0;
+global.purch_eparrot3 = 0;
 
 #endregion
 
 #region Покупки Лодки
 // Быстровыстр
-global.purch_rapidfire1 = 1;
-global.purch_rapidfire2 = 1;
+global.purch_rapidfire1 = 0;
+global.purch_rapidfire2 = 0;
 global.purch_rapidfire3 = 0;
 
 //двойные пистолеты
-global.purch_dualpistols1 = 1;
-global.purch_dualpistols2 = 1;
+global.purch_dualpistols1 = 0;
+global.purch_dualpistols2 = 0;
 global.purch_dualpistols3 = 0;
 
 // blunderbuss
-global.purch_blunderbuss1 = 1;
-global.purch_blunderbuss2 = 1;
+global.purch_blunderbuss1 = 0;
+global.purch_blunderbuss2 = 0;
 global.purch_blunderbuss3 = 0;
 
 // parrot cage
-global.purch_parrotcage1 = 1;
-global.purch_parrotcage2 = 1;
-global.purch_parrotcage3 = 1;
+global.purch_parrotcage1 = 0;
+global.purch_parrotcage2 = 0;
+global.purch_parrotcage3 = 0;
 
 #endregion
 

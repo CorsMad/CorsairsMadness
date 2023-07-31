@@ -12,7 +12,7 @@ switch(finished)
         i.TargetY = 240;
         break;
     case 1:
-        if global.dia_desertMerch_f_talk = 1
+        if global.dia_snowMerch_f_talk = 1
         {
             var i = instance_create_depth(119,240,depth,obj_teleport_junglevillage);
                 i.TargetRoom = Village_snow;
@@ -22,3 +22,11 @@ switch(finished)
         break;
 }
 
+#region указатель
+if global.dia_snowChief != 0 && global.dia_snowMerch = 0
+{
+    var p = instance_create_depth(184,151,0,obj_npc_village_pointer)   ;
+    p.village = 3;
+    p.position = 2;
+}
+#endregion

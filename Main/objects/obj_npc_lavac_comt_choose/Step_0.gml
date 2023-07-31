@@ -13,7 +13,7 @@ if key_jump || key_attack
     {
         case 0:
             fnc_msc_stop_play_slow();
-            global.dia_shadowComt = 0;                                  
+            global.dia_lavaComt = 0;                                  
             global.TargetX = 368;
             global.TargetY = 240;
             global.TargetRoom = Village_lava;  

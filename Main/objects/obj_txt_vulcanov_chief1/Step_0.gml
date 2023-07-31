@@ -14,7 +14,10 @@ if key_skip
     {
         obj_npc_vulcanov_chief.talk = 0;
         obj_Player.isDead = 2.1;
-        global.dia_lavaChief = 1;            
+        global.dia_lavaChief = 1;    
+		var p = instance_create_depth(336,128,0,obj_npc_village_pointer)   ;
+	    p.village = 5;
+	    p.position = 2;
         instance_destroy();   
     } 
 }

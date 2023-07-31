@@ -18,3 +18,22 @@ if global.dia_snowChief = 1
 {
     instance_create_depth(398,240,1,obj_npc_snowv_comt);   
 }
+
+
+#region указатель
+
+if global.dia_snowChief = 0 
+{
+    instance_create_depth(277,161,10,obj_npc_village_pointer);
+}
+
+if global.dia_snowChief != 0 && global.dia_snowMerch = 0 
+{
+    instance_create_depth(520,160,10,obj_npc_village_pointer);
+}
+
+if instance_exists(obj_npc_snowv_comt) && global.dia_snowComt > 0 
+{
+    instance_create_depth(400,144,10,obj_npc_village_pointer)   ;
+}
+#endregion

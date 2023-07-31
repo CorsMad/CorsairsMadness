@@ -18,3 +18,21 @@ if global.dia_lavaChief = 1
 {
     instance_create_depth(192,240,1,obj_npc_lavav_comt);   
 }
+
+#region указатель
+
+if global.dia_lavaChief = 0 
+{
+    instance_create_depth(284,160,10,obj_npc_village_pointer);
+}
+
+if global.dia_lavaChief != 0 && global.dia_lavaMerch = 0 
+{
+    instance_create_depth(368,160,10,obj_npc_village_pointer);
+}
+
+if instance_exists(obj_npc_lavav_comt) && global.dia_lavaComt > 0 
+{
+    instance_create_depth(160,176,10,obj_npc_village_pointer)   ;
+}
+#endregion

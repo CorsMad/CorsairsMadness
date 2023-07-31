@@ -17,12 +17,48 @@ switch(village)
             }
             break;
         case 2:
+			switch(position)
+            {
+                case 1: // внутри вождь
+                    if global.dia_desertChief = 1 on = 0;
+                    break;
+                case 2: // внутри торговец
+                    if global.dia_desertMerch != 0 on = 0;
+                    break;
+            }
             break;
         case 3:
+			switch(position)
+            {
+                case 1: // внутри вождь
+                    if global.dia_snowChief = 1 on = 0;
+                    break;
+                case 2: // внутри торговец
+                    if global.dia_snowMerch != 0 on = 0;
+                    break;
+            }
             break;
         case 4:
+			switch(position)
+            {
+                case 1: // внутри вождь
+                    if global.dia_shadowChief = 1 on = 0;
+                    break;
+                case 2: // внутри торговец
+                    if global.dia_shadowMerch != 0 on = 0;
+                    break;
+            }
             break;
         case 5:
+			switch(position)
+            {
+                case 1: // внутри вождь
+                    if global.dia_lavaChief = 1 on = 0;
+                    break;
+                case 2: // внутри торговец
+                    if global.dia_lavaMerch != 0 on = 0;
+                    break;
+            }
             break;
     }
 }
