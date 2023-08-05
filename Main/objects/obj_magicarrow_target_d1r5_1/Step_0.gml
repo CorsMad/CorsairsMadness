@@ -14,6 +14,11 @@ if isOn = 1
         {
             obj_platform_3_v_e.isEnabled = 1;
         }
+        if instance_exists(obj_platform_3_h_e_target_d1r5_1)
+        {
+            obj_platform_3_h_e_target_d1r5_1.isEnabled = 1;
+        }
+        
     }
 }
 

@@ -10,8 +10,8 @@ global.language = 0;
     global.completed_JF1 = 0;
     global.completed_JF2 = 0;
     
-    global.completed_PD1 = 1;
-    global.completed_PD2 = 1;
+    global.completed_PD1 = 0;
+    global.completed_PD2 = 0;
     
     global.completed_PS1 = 0;
     global.completed_PS2 = 0;
@@ -26,33 +26,35 @@ global.language = 0;
     
 #region ТЕСТ
     display_reset(0, false);
+    //0
     global.dia_jungleChief = 0; 
-    global.dia_lavaChief = 0;
+    global.dia_desertChief = 0;
     global.dia_snowChief = 0;
-	global.dia_desertChief = 0;
     global.dia_shadowChief = 0;
+    global.dia_lavaChief = 0;
     
-    
+    //0
     global.dia_jungleMerch = 0; 
-    global.dia_lavaMerch = 0; 
-    global.dia_snowMerch = 0; 
     global.dia_desertMerch = 0; 
+    global.dia_snowMerch = 0;     
     global.dia_shadowMerch = 0; 
+    global.dia_lavaMerch = 0; 
     
-    
+    //2
     global.dia_jungleComt = 2; 
-    global.dia_lavaComt = 2; 
+    global.dia_desertComt = 2;  
     global.dia_snowComt = 2; 
-    global.dia_desertComt = 2; //2
     global.dia_shadowComt = 2; 
+    global.dia_lavaComt = 2;
      
-    
+    //0 
     global.saved_jungle = 0;
     global.saved_desert = 0;
     global.saved_snow = 0;
     global.saved_shadow = 0;
     global.saved_vulcano = 0;
     
+    //0
     global.dia_jungleMerch_f_talk = 0;
     global.dia_desertMerch_f_talk = 0;
     global.dia_snowMerch_f_talk = 0;
@@ -71,8 +73,8 @@ global.cannon_j2_r1 = 0;
 global.key_green1 = 0;
 global.key_green2 = 0;
 
-global.key_yellow1 = 1;
-global.key_yellow2 = 1;
+global.key_yellow1 = 0;
+global.key_yellow2 = 0;
 
 global.key_blue1 = 0;
 global.key_blue2 = 0;
@@ -178,13 +180,13 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 112;
-global.TargetY      = 240;
-global.TargetRoom   = Village_desert;
+global.TargetX      = 288;
+global.TargetY      = 192;
+global.TargetRoom   = S1_r5;
 
-global.fTargetX     = 32;
-global.fTargetY     = 560;
-global.fTargetRoom  = PS2_r12;
+global.fTargetX     = 96;
+global.fTargetY     = 256;
+global.fTargetRoom  = PD1_r17;
 
 
 
@@ -242,6 +244,7 @@ global.secrets = 0;
 
 global.dash = 0;
 global.fhook = 0; //0
+global.ftp = 0; //0
 
 // Положение на карте
 
@@ -366,8 +369,10 @@ t2 = 0;
 #endregion
 
 /*  CUTSCENES  */    
-    #region Важные катсцены F1
+    #region Важные катсцены 
     global.Cutscene_f1_r33 = 1;
+    
+    global.Cutscene_dp1_r16 = 1
     #endregion
 
 

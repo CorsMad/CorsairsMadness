@@ -80,25 +80,25 @@ if state = 1 // бег к игроку
     }
     if hspd > 0 image_xscale = -1 
     if hspd < 0 image_xscale=1;
-	
+	hspd = fspd;
 	if instance_exists(obj_Player)
 	{
 		if place_meeting(x,y+1,obj_block)
 		{
 			if obj_Player.x < x && abs(obj_Player.x - x) > 32
 			{
-				hspd = -3;
+				fspd = -3;
 			}
 		
 			if obj_Player.x > x  && abs(obj_Player.x - x) > 32
 			{
-				hspd = 3;
+				fspd = 3;
 			}	
 			if collision_line(x,y-16,x+hspd*24,y-16,obj_block,false,false) vspd = -5;
 			
 			if ((abs(obj_Player.x - x) < 64) && (abs(obj_Player.y - y) < 8)) 
             {
-                state = 2;hspd = 0;vspd = 0;
+                state = 2;hspd = 0;vspd = 0;fspd = 0;
                 t = 0;
                 //image_speed = 1;
                 //image_index = 0;
@@ -185,6 +185,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0 && vulnerable = 1
 	cloud_timer = 0;
 	hit_cd = 1;
 	vspd = -2;
+    enemy_hp-=1;
 	y-=1;
     hspd = sign(obj_Player.dir)*2;
 	state = 6;
@@ -201,6 +202,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0 && vulnerab
 	hit_cd = 1;
 	hit_cd = 1;
 	vspd = -3;
+    enemy_hp-=1;
 	y-=1;
     hspd = sign(obj_Player.dir)*5;
 	state = 6;
@@ -216,6 +218,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0 && vulnerable = 
 	cloud_timer = 0;
 	hit_cd = 1;
 	vspd = -6;
+    enemy_hp-=1;
 	y-=1;
     hspd = 0;
 	state = 6;
@@ -233,6 +236,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0 && vulnerable 
 	}
     get_bounced = 1;
 	clouded = 0;
+    enemy_hp-=1;
 	cloud_timer = 0;
 	hit_cd = 1;
     hspd = 0;
@@ -307,6 +311,7 @@ if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0 && vulnerable = 1
 	cloud_timer = 0;
 	hit_cd = 1;
     get_kicked = 1;
+    enemy_hp -=1;
 	obj_Player.image_index = 0;
     obj_Player.isRecoil = 1;
     obj_Player.vspd = -2;
@@ -379,6 +384,7 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0 && vulnerable = 1 && state !
 	clouded = 0;
 	cloud_timer = 0;
 	hit_cd = 1;
+    enemy_hp-=1;
 	if obj_Player.isGrounded = 0 
         {
             obj_Player.vspd = -1.8;
@@ -438,6 +444,15 @@ if state = 5.5
 if state = 5 cloud_cr.on = 1 else cloud_cr.on = 0;
 
 
+#endregion
+
+#region death
+if enemy_hp <= 0
+{
+    var d = instance_create_depth(x,y,depth,obj_molded_yellow_run_death);  
+    d.image_xscale = image_xscale;
+    instance_destroy();
+}
 #endregion
 
 

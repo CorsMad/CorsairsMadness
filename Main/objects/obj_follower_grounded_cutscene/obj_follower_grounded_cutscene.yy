@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Ground Follower",
-    "path": "folders/Objects/Enemies/Followers/Ground Follower.yy",
+    "name": "Jungle",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Followers/Jungle.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -836,30 +836,28 @@ if isRecoil = 1
 
 #region Teleport Cloud
 
-if key_item && spectp_timer_count = 0 && !instance_exists(obj_teleport_cloud) && SpecAbilMask = 2 && isTakingdmg = 0 && (damage_cd > 30 || damage_cd = 0) && isDashing = 0
-{
-    var tp_cr = instance_create_depth(x,y,depth-1,obj_teleport_cloud);
-    tp_cr.spd = 2*sign(image_xscale);  
-    tp_cr.image_xscale = sign(image_xscale);
-    spectp_timer_count = 1;
-}
+    if key_item && spectp_timer_count = 0 && !instance_exists(obj_teleport_cloud) && SpecAbilMask = 2 && isTakingdmg = 0 && (damage_cd > 30 || damage_cd = 0) && isDashing = 0
+    {
+        var tp_cr = instance_create_depth(x,y,depth-1,obj_teleport_cloud);
+        tp_cr.spd = 2*sign(image_xscale);  
+        tp_cr.image_xscale = sign(image_xscale);
+        spectp_timer_count = 1;
+    }
 
-if  instance_exists(obj_teleport_cloud) && obj_teleport_cloud.moving = 1 && obj_teleport_cloud.teleport_delay_timer > 10 && obj_teleport_cloud.pressed = 0
-{
-    if key_item_pressed cloud_exist_timer++;
-    if cloud_exist_timer = 50 
-        {
-            obj_teleport_cloud.isDead = 1;
-            spectp_timer = 70;     
-        }
-    else if key_item_released {obj_teleport_cloud.pressed = 1;cloud_exist_timer= 0} 
-}
+    if  instance_exists(obj_teleport_cloud) && obj_teleport_cloud.moving = 1 && obj_teleport_cloud.teleport_delay_timer > 10 && obj_teleport_cloud.pressed = 0
+    {
+        if key_item_pressed cloud_exist_timer++;
+        if cloud_exist_timer = 50 
+            {
+                obj_teleport_cloud.isDead = 1;
+                spectp_timer = 70;     
+            }
+        else if key_item_released {obj_teleport_cloud.pressed = 1;cloud_exist_timer= 0} 
+    }
 
-if !instance_exists(obj_teleport_cloud) cloud_exist_timer = 0;
+    if !instance_exists(obj_teleport_cloud) cloud_exist_timer = 0;
 
-
-
-#region Clone Timer
+    #region Clone Timer
     if spectp_timer_count  = 1
     {
         if !instance_exists(obj_teleport_cloud) spectp_timer++;
@@ -872,6 +870,7 @@ if !instance_exists(obj_teleport_cloud) cloud_exist_timer = 0;
     } 
     
     #endregion
+
 #endregion
 
 #region Superdash

@@ -233,3 +233,5 @@ sk_t = 0;
 image_speed = 1.25;
 
 isMeeting = 0;
+
+tp = 0;

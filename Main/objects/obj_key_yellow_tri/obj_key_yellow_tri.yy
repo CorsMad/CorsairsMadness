@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_key_green_tri",
-    "path": "sprites/spr_key_green_tri/spr_key_green_tri.yy",
+    "name": "spr_key_yellow_tri",
+    "path": "sprites/spr_key_yellow_tri/spr_key_yellow_tri.yy",
   },
   "spriteMaskId": null,
   "visible": true,

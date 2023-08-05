@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Laser",
-    "path": "folders/Objects/Enemies/Followers/Ground Follower/Laser.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Followers/Jungle/Laser.yy",
   },
   "parentObjectId": null,
   "persistent": false,

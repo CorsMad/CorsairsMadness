@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Ground slam",
-    "path": "folders/Objects/Enemies/Followers/Ground Follower/Ground slam.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Followers/Jungle/Ground slam.yy",
   },
   "parentObjectId": null,
   "persistent": false,

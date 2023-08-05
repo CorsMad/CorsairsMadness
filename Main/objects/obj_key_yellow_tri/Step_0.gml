@@ -24,7 +24,7 @@ if state = 1
         global.cannon_d2_r1 = 1;
         fnc_snd_play_over(snd_player_hpmana_gain);
 		global.key_yellow2 = 1;
-        instance_create_depth(0,0,0,obj_room_transition_black_screen_j1_stats);
+        instance_create_depth(0,0,0,obj_room_transition_black_screen_d1_stats);
 		instance_destroy();	
 	}
 }   

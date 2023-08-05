@@ -32,9 +32,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
+    "name": "spr_molded_desert_berserker_idle",
+    "path": "sprites/spr_molded_desert_berserker_idle/spr_molded_desert_berserker_idle.yy",
+  },
+  "spriteMaskId": {
     "name": "spr_molded_grounded_mask",
     "path": "sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",
   },
-  "spriteMaskId": null,
   "visible": true,
 }

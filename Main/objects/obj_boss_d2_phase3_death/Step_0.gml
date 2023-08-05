@@ -21,7 +21,7 @@ switch(t)
      case 120:      image_blend = c_red;break;
      case 150:      
             if global.key_yellow2 = 0 instance_create_depth(x,y,depth,obj_key_yellow_tri);
-            else instance_create_depth(x,y,0,obj_room_transition_black_screen_j1_stats);
+            else instance_create_depth(x,y,0,obj_room_transition_black_screen_d1_stats);
             instance_destroy();
             break;
      

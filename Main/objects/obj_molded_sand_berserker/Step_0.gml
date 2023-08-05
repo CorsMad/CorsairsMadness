@@ -49,11 +49,43 @@ if place_meeting(x,y+1,obj_block) isGrounded = 1 else isGrounded = 0;
 
 if state = 0 //патруль
 {
-	
+    if instance_exists(obj_Player)
+    {
+        if abs(obj_Player.x - x) < 128 
+        {
+            state = 1;   
+        }
+    }
+	sprite_index = spr_molded_desert_berserker_idle;
+    image_speed = 1;
 }
 
 if state = 1 // передвижение
 {
+    #region anim
+    if hspd !=0 image_xscale = -sign(hspd);
+    
+    if place_meeting(x,y+1,obj_block)
+    {
+        if collision_line(x,y-16,x+fspd*18,y-16,obj_block,false,false) 
+        {
+            sprite_index = spr_molded_desert_berserker_jump
+            image_speed = 0;
+            image_index = 0;
+        } else
+        {
+            sprite_index = spr_molded_desert_berserker_run;  
+            image_speed = 1;
+        }
+        
+    } else 
+    {
+        sprite_index = spr_molded_desert_berserker_jump;
+        image_speed = 0;
+        if vspd < 0 image_index = 1 else image_index = 2;
+    }
+    #endregion
+    
     hspd = fspd;
 	if instance_exists(obj_Player)
 	{
@@ -70,19 +102,36 @@ if state = 1 // передвижение
 			}	
 			if collision_line(x,y-16,x+fspd*12,y-16,obj_block,false,false) vspd = -5;
 			
-			if ((abs(obj_Player.x - x) < 64) && (abs(obj_Player.y - y) < 8)) {state = 2;hspd=0;fspd = 0;vspd = 0;}
+			if ((abs(obj_Player.x - x) < 64) && (abs(obj_Player.y - y) < 8)) {state = 2;hspd=0;fspd = 0;vspd = 0;
+                sprite_index= spr_molded_desert_berserker_attack;image_speed = 0;image_index = 0;}
 		}		
 	}
 }
 
 if state = 2 // выстрел
 {
-	if t < 120 t++;
+    #region anim
+    switch(t)
+    {
+        case 5:image_index = 1;break;   
+        case 10:image_index = 2;break;
+        case 45:image_index = 3;break;
+        case 105:image_index = 5;break;
+    }
+    if t > 50 && t < 100
+    {
+        if t mod 5 = 0
+        {
+            if image_index = 4 image_index = 3 else image_index = 4;   
+        }
+    }   
+    #endregion
+    t++;
 	if t = 50 
 	{
 
 	}
-	if t >= 100 
+	if t >= 125 
 	{
 		t = 0;
 		state = 1;

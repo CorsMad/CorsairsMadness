@@ -37,7 +37,7 @@ if state = 3
             obj_wall_trigger.state = 2;
             obj_wall_trigger.t = 0;
         }
-    instance_destroy();  
+    
     }
 }
 

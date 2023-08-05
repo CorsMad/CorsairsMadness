@@ -5,13 +5,13 @@ if moving = 1
     x+=spd;  
     y+=vspd;
 }
+
 if teleport_delay_timer < 11 {teleport_delay_timer++;}
 
 if pressed = 1
 {
     if !place_meeting(x,y,obj_block)
-    {
-        
+    {     
         obj_Player.isAirattacking = 0;
         obj_Player.isAttacking = 0;
         obj_Player.isDashing = 0;
@@ -40,6 +40,19 @@ if pressed = 1
     }
 }
 
+if moving = 0
+{
+    if place_meeting(x,y,obj_block)
+    {
+        if instance_exists(obj_Player)
+        {
+            if x > obj_Player.x  do x-=1 until !place_meeting(x,y,obj_block)  
+            if x <= obj_Player.x  do x+=1 until !place_meeting(x,y,obj_block)  
+        }  
+    }
+}
+
+
 if image_index = 6
 {
     image_index = 2;   
@@ -48,8 +61,26 @@ blob_cr_timer++;
 if blob_cr_timer mod 10 = 0 {instance_create_depth(x,y,depth+1,obj_teleport_cloud_blob);}
 if blob_cr_timer = 11 {blob_cr_timer=0;}
 
+if instance_exists(obj_Player) && obj_Player.isDead != 12 && obj_Player.isDead != 11
+{
+    if x < camera_get_view_x(view_camera[0]) || x > camera_get_view_x(view_camera[0])+480
+    {
+        isDead = 1;   
+    }
+}
+
 if isDead = 1
 {
     instance_destroy();
     instance_create_depth(x,y,depth,obj_teleport_cloud_destroy);
+}
+
+if !place_meeting(x,y,obj_block)
+{
+    image_blend = c_white;
+} else image_blend = c_grey;
+
+if (place_meeting(x,y,obj_teleport_cloud_block_destr) || place_meeting(x,y,obj_wall_trigger_tp)) && moving = 1
+{
+    isDead = 1;   
 }

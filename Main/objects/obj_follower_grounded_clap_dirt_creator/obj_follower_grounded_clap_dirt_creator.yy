@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Clap",
-    "path": "folders/Objects/Enemies/Followers/Ground Follower/Clap.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Followers/Jungle/Clap.yy",
   },
   "parentObjectId": null,
   "persistent": false,

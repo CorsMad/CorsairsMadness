@@ -20,7 +20,7 @@ if state = 0
 		instance_create_depth(x+random_range(-28,28),y+random_range(-12,+12),depth-1,obj_sfx2);
 	}
     if t = 100
-    {
+    {        
         instance_destroy();
     }
 }
