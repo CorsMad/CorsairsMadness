@@ -180,13 +180,13 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 288;
-global.TargetY      = 192;
-global.TargetRoom   = S1_r5;
+global.TargetX      = 64;
+global.TargetY      = 208;
+global.TargetRoom   = D1_r1;
 
-global.fTargetX     = 96;
-global.fTargetY     = 256;
-global.fTargetRoom  = PD1_r17;
+global.fTargetX     = 48;
+global.fTargetY     = 112;
+global.fTargetRoom  = PD1_r21;
 
 
 

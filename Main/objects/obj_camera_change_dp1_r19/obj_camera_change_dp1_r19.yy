@@ -1,20 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_parallax",
+  "name": "obj_camera_change_dp1_r19",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Camera",
-    "path": "folders/Objects/Camera.yy",
+    "name": "DP1",
+    "path": "folders/Objects/Level objects/!MASTER/!Desert/DP1.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_objects_delete",
+    "path": "objects/obj_objects_delete/obj_objects_delete.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,7 +31,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_enemy_creator",
+    "path": "sprites/spr_enemy_creator/spr_enemy_creator.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
