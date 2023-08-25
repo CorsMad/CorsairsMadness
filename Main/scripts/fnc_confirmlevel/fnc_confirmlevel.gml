@@ -886,7 +886,7 @@ if key_attack || key_jump_pressed // accept
                             global.TargetRoom = L2_r1;
                             break;
                     }
-                    room_goto(D2FirstLoading);
+                    room_goto(L2FirstLoading);
                     break;
                 case 5: 
                     fnc_snd_play_over(snd_menu_accept);

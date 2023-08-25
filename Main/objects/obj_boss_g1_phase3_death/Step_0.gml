@@ -104,8 +104,8 @@ switch(t)
 	case 215:   instance_create_depth(x,y,depth-1,obj_sfx_explosion_bomb);
                 fnc_snd_play_over(snd_boss_death);
 				break;
-	case 220:	if global.key_green1 = 0 instance_create_depth(x,y,depth,obj_key_green_sq);
-                else instance_create_depth(x,y,0,obj_room_transition_black_screen_j1_stats);
+	case 220:	if global.key_purple1 = 0 instance_create_depth(x,y,depth,obj_key_purple_sq);
+                else instance_create_depth(x,y,0,obj_room_transition_black_screen_g1_stats);
                 
                 instance_destroy();
                 break;

@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_block_cloud",
-    "path": "sprites/spr_block_cloud/spr_block_cloud.yy",
+    "name": "Sprite1043",
+    "path": "sprites/Sprite1043/Sprite1043.yy",
   },
   "spriteMaskId": {
     "name": "spr_block_cloud_mask",

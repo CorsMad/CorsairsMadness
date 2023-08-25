@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_ability_dash_hook_maskes",
-    "path": "sprites/spr_ability_dash_hook_maskes/spr_ability_dash_hook_maskes.yy",
+    "name": "spr_ability_tp_masked",
+    "path": "sprites/spr_ability_tp_masked/spr_ability_tp_masked.yy",
   },
   "spriteMaskId": null,
   "visible": true,

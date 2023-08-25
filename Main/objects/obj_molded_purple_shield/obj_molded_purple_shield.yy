@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "obj_molded_purple_shield",
-    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Shadow/obj_molded_purple_shield.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Snow/obj_molded_purple_shield.yy",
   },
   "parentObjectId": {
     "name": "obj_enemy_parent_combo",
@@ -35,6 +35,9 @@
     "name": "spr_ground_molded_mask",
     "path": "sprites/spr_ground_molded_mask/spr_ground_molded_mask.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_molded_purple_shielder_mask",
+    "path": "sprites/spr_molded_purple_shielder_mask/spr_molded_purple_shielder_mask.yy",
+  },
   "visible": true,
 }

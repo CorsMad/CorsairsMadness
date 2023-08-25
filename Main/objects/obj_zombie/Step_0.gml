@@ -1,18 +1,42 @@
 /// @description Insert description here
 // You can write your code in this editor
+#region коллиз
+        
+		
+    	if place_meeting(x+hspd, y, obj_block)
+    	{
+        	while (!place_meeting(x+sign(hspd), y, obj_block )) 
+        	{
+        		x+= sign(hspd);
+        	}
+            hspd = 0;   
+    	}
+    	x += hspd;
 
-if (spd > 0 && !place_meeting(x+spd,y,obj_block)) || (spd < 0 && !place_meeting(x-spd,y,obj_block))
-{
-    x+=spd;   
-}
+    	if place_meeting(x, y+vspd, obj_block) 
+    	{
+    	    while (!place_meeting(x,y+sign(vspd), obj_block )) 
+    		{
+    	        y+= sign(vspd);
+    	    }
+    	    vspd = 0;
+    	}
+    	y += vspd;
+
+    	if !place_meeting(x,y+vspd, obj_block) 
+    	{
+    		vspd +=0.1;	
+    	}    
+		
+    #endregion
 
 
 t++;
 if t > 25 && t < 60
 {
     image_speed = 1;
-    spd = 1*sign(image_xscale);
-} else spd = 0;
+    hspd = 1*sign(image_xscale);
+} else hspd = 0;
 
 
 #region Takedmg

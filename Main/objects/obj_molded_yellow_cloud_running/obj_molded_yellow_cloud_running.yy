@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Cloud",
-    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Lava/Cloud.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Sand/Cloud.yy",
   },
   "parentObjectId": null,
   "persistent": false,

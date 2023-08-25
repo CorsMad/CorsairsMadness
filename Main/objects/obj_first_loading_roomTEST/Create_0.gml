@@ -1,6 +1,26 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+global.TargetX      = 48;
+global.TargetY      = 208;
+global.TargetRoom   = D1_r1;
+
+global.fTargetX     = 48;
+global.fTargetY     = 208;
+global.fTargetRoom  = PL1_r12;
+
+
+
+
+
+
+
+
+
+
+
+
+
 instance_create_depth(0,0,0,obj_music_controller);
 
 global.language = 0;
@@ -180,13 +200,7 @@ global.TargetY = 160;
 global.TargetRoom = J1_r1;
 */
 
-global.TargetX      = 64;
-global.TargetY      = 208;
-global.TargetRoom   = D1_r1;
 
-global.fTargetX     = 48;
-global.fTargetY     = 112;
-global.fTargetRoom  = PD1_r21;
 
 
 
@@ -370,9 +384,19 @@ t2 = 0;
 
 /*  CUTSCENES  */    
     #region Важные катсцены 
-    global.Cutscene_f1_r33 = 1;
+    global.Cutscene_f1_r33 = 1;    
+    global.Cutscene_dp1_r16 = 1;
+    global.Cutscene_sp1_r14 = 1;
+    global.Cutscene_pg1_r17 = 1;
+    global.Cutscene_pl1_r15 = 1;
     
-    global.Cutscene_dp1_r16 = 1
+     
+    global.Cutscene_jp2_r15 = 1;
+    global.Cutscene_pd2_r15 = 1;
+    global.Cutscene_sp2_r14 = 0;
+    global.Cutscene_gp2_r14 = 1;
+    global.Cutscene_lp2_r14 = 1;
+    
     #endregion
 
 

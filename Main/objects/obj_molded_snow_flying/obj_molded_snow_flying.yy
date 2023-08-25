@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "obj_molded_snow_flying",
-    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Snow/obj_molded_snow_flying.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Shadow/obj_molded_snow_flying.yy",
   },
   "parentObjectId": {
     "name": "obj_enemy_parent_combo",

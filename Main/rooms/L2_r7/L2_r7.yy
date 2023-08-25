@@ -76,6 +76,8 @@
     {"name":"inst_3AD8655A","path":"rooms/L2_r7/L2_r7.yy",},
     {"name":"inst_5A79EDAD","path":"rooms/L2_r7/L2_r7.yy",},
     {"name":"inst_4DE294E6","path":"rooms/L2_r7/L2_r7.yy",},
+    {"name":"inst_4154F1B6","path":"rooms/L2_r7/L2_r7.yy",},
+    {"name":"inst_102A3AF2","path":"rooms/L2_r7/L2_r7.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -149,6 +151,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3AD8655A","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_room_transition_dynamic","path":"objects/obj_room_transition_dynamic/obj_room_transition_dynamic.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":3.3999999,"x":-16.0,"y":720.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5A79EDAD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_room_transition_l2_r7","path":"objects/obj_room_transition_l2_r7/obj_room_transition_l2_r7.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":3.4,"x":496.0,"y":32.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4DE294E6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lava_lvl2_container_r7","path":"objects/obj_lava_lvl2_container_r7/obj_lava_lvl2_container_r7.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4154F1B6","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lava_rising","path":"objects/obj_lava_rising/obj_lava_rising.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":784.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_102A3AF2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lava_rising_trigger","path":"objects/obj_lava_rising_trigger/obj_lava_rising_trigger.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":5.0,"x":288.0,"y":560.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_4","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":51,"SerialiseWidth":30,"TileCompressedData":[
 -3,16,3,17,7,8,-24,-2147483648,-3,16,3,17,7,8,-24,-2147483648,-3,16,3,17,7,8,-24,-2147483648,-3,16,3,17,7,8,

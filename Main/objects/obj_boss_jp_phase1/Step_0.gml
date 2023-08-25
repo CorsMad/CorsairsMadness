@@ -695,7 +695,7 @@ if place_meeting(x,y,obj_hitbox_mask_hook) && hit_cd = 0
 
 #endregion
 
-#region  от добиваний
+#region от добиваний
 if delay > 0 
 {
     delay -=0.5;   

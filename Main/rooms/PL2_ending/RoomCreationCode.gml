@@ -1,0 +1,1 @@
+fnc_msc_play(msc_ending);

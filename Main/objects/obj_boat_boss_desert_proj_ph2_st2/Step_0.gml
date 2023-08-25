@@ -27,3 +27,11 @@ if place_meeting(x, y+vspd, obj_boat_boss_desert_proj_limiter)
 	    vspd = 0;
 	}
 	y += vspd;
+    
+    
+    if place_meeting(x,y,obj_player_boat_hitbox) && obj_Player_boat.hit_cd = 0
+    {
+        obj_Player_boat.hit_cd = 1; 
+        global.hp-=1;
+        enemy_hp = 0;
+    } 

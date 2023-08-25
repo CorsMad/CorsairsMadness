@@ -16,6 +16,7 @@ if key_jump || key_attack
         case 0:
             if global.secrets >=7
             {
+                global.saved_desert = 1;
                 global.secrets -=7; 
                 // заставка
                 instance_destroy();

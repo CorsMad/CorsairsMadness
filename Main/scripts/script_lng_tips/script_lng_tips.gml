@@ -604,6 +604,68 @@ function fnc_lng_tip_hook_hand()
     }   
 }    
 
+function fnc_lng_tip_tp()
+{
+    switch(global.language)
+    {
+        case 0: //English    
+            text1 = "now you can use cloud to go through walls";
+            text = "You can hold down the ability button to cancel the cloud.";
+
+            break;
+        case 1: //russian
+            text1 = "нажмите";
+            text = "чтобы использовать рукохват";
+            text2 = "You can hold down the same button to cancel the cloud."
+            break;
+        case 2: //spanish
+            text1 = "pulsa";
+            text = "para usar tu mano-gancho";
+            text2 = "You can hold down the same button to cancel the cloud."
+            break;
+        case 3: //chinese
+            text1 = "按";
+            text = "使用你的钩手";
+            text2 = "You can hold down the same button to cancel the cloud."
+            break;
+        case 4: //portug
+            text1 = "prima";
+            text = "para usar a sua mão de gancho";
+            text2 = "You can hold down the same button to cancel the cloud."
+            break;
+        case 5: //brazil
+            text1 = "pressione";
+            text = "para usar sua mão de gancho";
+            text2 = "You can hold down the same button to cancel the cloud."
+            break;
+        case 6: //polish
+            text1 = "naciśnij";
+            text = "aby użyć ręki z hakiem";
+            text2 = "You can hold down the same button to cancel the cloud."
+            break;
+        case 7: //japanese
+            text1 = "";
+            text = "を押すとフックハンドが使えます";
+            text2 = "You can hold down the same button to cancel the cloud."
+            break;
+        case 8: //deutch
+            text1 = "Drücke";
+            text = "um deine Hakenhand zu benutzen";
+            text2 = "You can hold down the same button to cancel the cloud."
+            break;
+        case 9: //french
+            text1 = "appuyez sur";
+            text = "pour utiliser votre main crochet";
+            text2 = "You can hold down the same button to cancel the cloud."
+            break;
+        case 10: // Italian
+            text1 = "premi";
+            text = "per usare la mano uncinata";
+            text2 = "You can hold down the same button to cancel the cloud."
+            break;
+    }   
+}    
+
 function fnc_lng_save_game(){
 switch(global.language)
 {

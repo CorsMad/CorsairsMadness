@@ -1,0 +1,43 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_boss_sp_npc",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
+  "managed": true,
+  "overriddenProperties": [],
+  "parent": {
+    "name": "SullySnow",
+    "path": "folders/Objects/NPC/Crew/SullySnow.yy",
+  },
+  "parentObjectId": {
+    "name": "obj_enemy_parent_combo",
+    "path": "objects/obj_enemy_parent_combo/obj_enemy_parent_combo.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [],
+  "solid": false,
+  "spriteId": {
+    "name": "spr_boss_sp_idle",
+    "path": "sprites/spr_boss_sp_idle/spr_boss_sp_idle.yy",
+  },
+  "spriteMaskId": {
+    "name": "spr_follower_grounded_mask",
+    "path": "sprites/spr_follower_grounded_mask/spr_follower_grounded_mask.yy",
+  },
+  "visible": true,
+}

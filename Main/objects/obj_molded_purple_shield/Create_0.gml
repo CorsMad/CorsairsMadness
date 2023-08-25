@@ -6,5 +6,10 @@ hspd = 0;
 vspd = 0;
 t = 0;
 flip = 0;
-
+state = 0;
 hit_cd = 0;
+
+t_red = 0;
+enemy_hp = 17;
+jump = 0;
+

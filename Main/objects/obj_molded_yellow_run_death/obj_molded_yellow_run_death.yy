@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "obj_molded_yellow_run",
-    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Lava/obj_molded_yellow_run.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Sand/obj_molded_yellow_run.yy",
   },
   "parentObjectId": null,
   "persistent": false,

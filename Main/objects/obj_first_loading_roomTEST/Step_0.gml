@@ -7,17 +7,29 @@ if t1 < 12
 }
 
 if t1 = 10
-{   
+{  
+/*
+1 - boots
+2 - флейта
+3 - бумеранг
+4 - арбалет
+5 - коньки
+*/
 
-  //room_goto(GlobalMapPrologueDesert)
+// 1 - hook, 2 - teleport, 3 - superdash , 4 - doublejump, 5 - clone
+
+
+
+    //room_goto(GlobalMapPrologueLava)
    // room_goto(GlobalMap)
+    //room_goto(J2_r9_boat)
 
     var i = instance_create_depth(16,16,0,obj_Player);
     i.DashEnabled = 1;
-    i.state = 1;
+    i.state = 0;
     i.specabilnumber = 4;
     i.HookEnabled = 0;
-    i.SpecAbilMask = 2;       
+    i.SpecAbilMask = 4;       
     instance_create_depth(16,16,101,obj_room_transition_to_loading);  
 
 }

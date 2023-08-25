@@ -1290,8 +1290,6 @@ if isTakingdmg = 1
 	}
 }
 
-
-
 #region TEST
 if isDead !=1
 {
@@ -1320,34 +1318,6 @@ if damage_cd > 30
 
     }
 
-
-
-
-
-/*
-    if damage_cd > 30 
-    {
-    	isTakingdmg = 0;
-    	image_blend = c_white;
-    }
-
-    if damage_cd > 0 		
-    {
-    	damage_cd ++;
-    	if round(damage_cd/5)*5 = damage_cd
-    	{
-    		if image_alpha = 1
-    		{
-    			image_alpha = 0.4;	
-    		} else image_alpha = 1;
-    	}
-
-    }
-    if damage_cd = 120 
-    {
-    	damage_cd = 0;
-    	image_alpha = 1;
-    */
 }
 #endregion
 
@@ -1541,7 +1511,7 @@ if specabilnumber = 4
 
 #region Slide
 
-if key_jump && isGrounded = 0 && !instance_exists(obj_skates_mask) && isSkating = 0 
+if key_jump && isGrounded = 0 && !instance_exists(obj_skates_mask) && isSkating = 0 && specabilnumber = 5
 {
     instance_create_depth(x,y,depth,obj_skates_mask);   
 }
@@ -1597,11 +1567,11 @@ if isSkating = 1
         isSkatingonrail = 0;
     }
 
-   if isSkatingAttack
+    if isSkatingAttack
    {
         sprite_index = spr_player_slide_attack;   
-   } else if !place_meeting(x,y+1,obj_block_skate) sprite_index = spr_player_slide_jump;   
-   else sprite_index = spr_player_slide;
+    } else if !place_meeting(x,y+1,obj_block_skate) sprite_index = spr_player_slide_jump;   
+    else sprite_index = spr_player_slide;
    
     if !isSkatingonrail vspd+=0.2;
 
@@ -2000,6 +1970,45 @@ if isDead = 1
        
         
        
+    }
+    #endregion
+    #region SnowTP
+    if isDead = 30
+    {
+        sbootsbuffer = 0;  
+    	isAttacking = 0;
+    	isAirattacking = 0;
+        isSkating = 0;
+        isSkatingAttack = 0;
+    	isAirattacking_timer = 0;
+    	isGrounded = 0;
+    	isSkidding = 0;
+    	isSkidding_timer = 0;
+    	isDashing = 0;
+    	isAttackingdown = 0;
+    	isWallclimbing = 0;
+    	isOutjump = 0;
+    	isClimbing = 0;
+    	isUsingitem = 0;
+        isUsingabil = 0;
+    	isAirUsingitem = 0;
+        isAirUsingabil = 0;
+    	isHooking = 0;
+    	isGravitate = 0;
+    	isTakingdmg = 0;
+    	dashing_timer = 0;
+    	jump_timer = 0;
+    	attackingdown_timer = 0;
+    	wallclimb_timer = 0;
+    	climbing_timer = 0;
+    	coyote_timer = 0;
+    	damage_cd = 0;
+        attacking_buffer = 0;
+        airattackbuffer = 0;
+        pickup_timer = 0;
+    	isCarry = 0;   
+        vspd = 0;
+        sprite_index = spr_player_propfly;
     }
     #endregion
 }

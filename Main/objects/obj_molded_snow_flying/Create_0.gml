@@ -9,3 +9,7 @@ t = 0;
 hspd = 0;
 vspd = 0;
 hit_cd = 0;
+magnet = 0;
+
+enemy_hp = 10;
+t_red = 0;

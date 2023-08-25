@@ -479,10 +479,11 @@ if (phase = 1) { // Фаза1
     
 #region Попадание
 
-fnc_boat_take_dmg_pistol(random_range(-16,8),random_range(-16,16),depth-1000,random_range(-16,8),random_range(-16,16),depth-1000)
-fnc_boat_take_dmg_parrotcage(random_range(-16,8),random_range(-16,16),depth-1000);
-fnc_boat_take_dmg_blunderbuss(random_range(-16,8),random_range(-16,16),depth-1000);
-fnc_boat_take_dmg_fastshot(random_range(-16,8),random_range(-16,16),depth-1000);
+fnc_boat_take_dmg_pistol(1)
+fnc_boat_take_dmg_fastshot(1,2)
+fnc_boat_take_dmg_dual_pistol(0.75,1,1.5) 
+fnc_boat_take_dmg_blunderbuss(0.5)
+fnc_boat_take_dmg_parrotcage(1,1.5,2,2)
 
 if enemy_hp <=0
 {

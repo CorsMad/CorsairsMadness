@@ -166,7 +166,12 @@ if (phase = 1) { // Фаза1
                 }
                 if (hspd < 0 && x <= 6) hspd = 6;
                 if (hspd > 0 && x >= 432) { hspd = 0; }
-                
+                if place_meeting(x,y,obj_player_boat_hitbox) && obj_Player_boat.hit_cd = 0
+                {
+                    obj_Player_boat.hit_cd = 1; 
+                    global.hp-=1;
+                } 
+            
             #endregion
             break;
     }
@@ -174,11 +179,21 @@ if (phase = 1) { // Фаза1
     
     
 #region Попадание
-
+/*
 fnc_boat_take_dmg_pistol(random_range(-16,8),random_range(-16,16),depth-1000,random_range(-16,8),random_range(-16,16),depth-1000)
 fnc_boat_take_dmg_parrotcage(random_range(-16,8),random_range(-16,16),depth-1000);
 fnc_boat_take_dmg_blunderbuss(random_range(-16,8),random_range(-16,16),depth-1000);
 fnc_boat_take_dmg_fastshot(random_range(-16,8),random_range(-16,16),depth-1000);
+*/
+
+fnc_boat_take_dmg_pistol(1)
+fnc_boat_take_dmg_fastshot(1,2)
+fnc_boat_take_dmg_dual_pistol(0.75,1,1.5) 
+fnc_boat_take_dmg_blunderbuss(0.5)
+fnc_boat_take_dmg_parrotcage(1,1.5,2,2)
+
+fnc_boat_take_dmg_cannon(4) 
+
 
 if enemy_hp <=0
 {

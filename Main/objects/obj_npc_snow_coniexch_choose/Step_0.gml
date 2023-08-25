@@ -17,6 +17,7 @@ if key_jump || key_attack
             if global.secrets >=7
             {
                 global.secrets -=7; 
+                global.saved_snow = 1;
                 // заставка
                 instance_destroy();
             }       

@@ -14,9 +14,10 @@ if key_jump || key_attack
     switch(select)
     {
         case 0:
-            if global.secrets >=7
+            if global.secrets >=7 && global.saved_jungle = 0
             {
                 global.secrets -=7; 
+                global.saved_jungle = 1;
                 // заставка
                 instance_destroy();
             }       

@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_skeleton_mask",
-    "path": "sprites/spr_skeleton_mask/spr_skeleton_mask.yy",
+    "name": "spr_bigskel_t2idle",
+    "path": "sprites/spr_bigskel_t2idle/spr_bigskel_t2idle.yy",
   },
   "spriteMaskId": {
     "name": "spr_skeleton_mask",

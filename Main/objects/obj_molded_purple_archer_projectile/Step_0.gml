@@ -1,5 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+image_alpha = 1;
+#region anim
+if hspeed < 0 image_xscale = 1 else image_xscale = -1;
+if vspeed > 0 image_yscale = -1; else image_yscale = 1;
+#endregion
+
 if  place_meeting(x,y,obj_hitbox_mask)
 {
     var i = instance_create_depth(x,y,depth,obj_firing_molded_projectile_reverse)

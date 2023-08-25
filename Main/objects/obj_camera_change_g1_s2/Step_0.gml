@@ -1,21 +1,15 @@
-/// @description Insert description here
-
-/* Указать следующие параметры
-
-x_cr = 
-y_cr =
-obj_cr = 
-
-*/
-
-// You can write your code in this editor
-
-
 if place_meeting(x,y,obj_Player)
 {
-	 if instance_exists(obj_camera_vert_g1_s2)
-     {
-        obj_camera_vert_g1_s2.state = 1;   
-     }
-	instance_destroy();	
+    switch(state)
+    {
+        case 0:
+            obj_camera_vert_g1_s2.state = 0;            
+            break;
+        case 1:
+            obj_camera_vert_g1_s2.state = 1;
+            break;
+        case 2:
+            obj_camera_vert_ps2_r11.state = 2;
+            break;
+    }
 }

@@ -15,9 +15,9 @@
     {"name":"inst_765ED673_2_1","path":"rooms/J2_r9_boat/J2_r9_boat.yy",},
     {"name":"inst_76827BC0_1_1","path":"rooms/J2_r9_boat/J2_r9_boat.yy",},
     {"name":"inst_59FCC366_2_1","path":"rooms/J2_r9_boat/J2_r9_boat.yy",},
-    {"name":"inst_6065A0CA","path":"rooms/J2_r9_boat/J2_r9_boat.yy",},
     {"name":"inst_16CE009B","path":"rooms/J2_r9_boat/J2_r9_boat.yy",},
     {"name":"inst_51742D63","path":"rooms/J2_r9_boat/J2_r9_boat.yy",},
+    {"name":"inst_6065A0CA","path":"rooms/J2_r9_boat/J2_r9_boat.yy",},
   ],
   "isDnd": false,
   "layers": [

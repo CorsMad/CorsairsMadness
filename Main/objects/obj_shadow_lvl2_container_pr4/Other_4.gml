@@ -5,5 +5,5 @@ instance_create_depth(x,y,0,obj_room_transition_black_screen);
 
 if global.chest_g2p_r4 = 1
 {
-    instance_create_depth(1112,240,200,obj_chest_g2p_r4);
+    instance_create_depth(144,416,200,obj_chest_g2p_r4);
 }

@@ -35,8 +35,9 @@ if state = 1
 	        obj_camera_vert_dp1_r19.state = 0;   
 			obj_camera_vert_dp1_r19.conf = 0;
 	     }
-		var c1 = instance_create_depth(304,528,depth,obj_camera_change_dp1_r19)
-		c1.image_yscale = 8;
+		var c1 = instance_create_depth(304,384,depth,obj_camera_change_dp1_r19)
+		c1.image_yscale = 16;
+		c1.image_xscale = 10;
 		c1.state = 0;
 		instance_destroy();	
 	}		

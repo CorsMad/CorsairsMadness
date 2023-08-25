@@ -19,6 +19,10 @@ if global.dia_snowChief = 1
     instance_create_depth(398,240,1,obj_npc_snowv_comt);   
 }
 
+if global.saved_snow = 1 
+{
+    instance_create_depth(832,240,1,obj_npc_sully_village);        
+}
 
 #region указатель
 

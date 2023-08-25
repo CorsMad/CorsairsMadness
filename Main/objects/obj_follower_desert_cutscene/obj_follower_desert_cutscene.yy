@@ -29,9 +29,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
+    "name": "spr_boss_dp_appear",
+    "path": "sprites/spr_boss_dp_appear/spr_boss_dp_appear.yy",
+  },
+  "spriteMaskId": {
     "name": "spr_desert_follower_mask",
     "path": "sprites/spr_desert_follower_mask/spr_desert_follower_mask.yy",
   },
-  "spriteMaskId": null,
   "visible": true,
 }

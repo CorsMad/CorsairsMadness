@@ -15,5 +15,4 @@ fnc_boat_take_dmg_blunderbuss(0.5)
 
 fnc_boat_take_dmg_fastshot(0.5,1)
 
-
 #endregion

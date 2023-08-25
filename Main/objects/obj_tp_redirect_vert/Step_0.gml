@@ -3,8 +3,8 @@
 
 switch(dir)
 {
-    case 0:image_angle = 90;break;   
-    case 1:image_angle = 270;break;   
+    case 0:sprite_index = spr_block_pos_tp_u;break;
+    case 1:sprite_index = spr_block_pos_tp_d;break;
 }
 
 /*

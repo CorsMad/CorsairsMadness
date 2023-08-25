@@ -269,5 +269,12 @@ if (state = 11) {
     fnc_enemy_no_armor_dmg();
 #endregion    
     
-    
+#region смерть
+if enemy_hp<=0
+{
+    instance_create_depth(x,y,depth,obj_boss_l1_3_death);
+    instance_destroy();   
+}
+#endregion
+ 
 #endregion

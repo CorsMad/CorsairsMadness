@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_destructable_bomb_block_red",
-    "path": "sprites/spr_destructable_bomb_block_red/spr_destructable_bomb_block_red.yy",
+    "name": "spr_evilsprout_missle",
+    "path": "sprites/spr_evilsprout_missle/spr_evilsprout_missle.yy",
   },
   "spriteMaskId": null,
   "visible": true,

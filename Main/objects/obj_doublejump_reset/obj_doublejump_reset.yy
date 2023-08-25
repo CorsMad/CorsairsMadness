@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_block_cloud_mask",
-    "path": "sprites/spr_block_cloud_mask/spr_block_cloud_mask.yy",
+    "name": "spr_doublejump_block_inf",
+    "path": "sprites/spr_doublejump_block_inf/spr_doublejump_block_inf.yy",
   },
   "spriteMaskId": null,
   "visible": true,

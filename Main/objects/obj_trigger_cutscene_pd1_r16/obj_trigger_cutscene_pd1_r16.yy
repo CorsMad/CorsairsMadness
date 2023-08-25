@@ -32,5 +32,5 @@
     "path": "sprites/spr_follower_grounded_creator/spr_follower_grounded_creator.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

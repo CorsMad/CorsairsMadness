@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if global.dia_vulcanoMerch_f_talk =1 
+if global.dia_vulcanoMerch_f_talk =1 && global.saved_vulcano = 0
 {
 
 

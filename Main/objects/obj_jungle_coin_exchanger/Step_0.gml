@@ -1,8 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-if global.dia_jungleMerch_f_talk =1 
+if global.dia_jungleMerch_f_talk =1 && global.saved_jungle = 0
 {
-
 
 if instance_exists(obj_Player)
 {

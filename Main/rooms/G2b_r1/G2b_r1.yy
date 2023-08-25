@@ -17,7 +17,7 @@
     {"name":"inst_44B24CEC","path":"rooms/G2b_r1/G2b_r1.yy",},
     {"name":"inst_1BCCF7F4","path":"rooms/G2b_r1/G2b_r1.yy",},
     {"name":"inst_50208CAF","path":"rooms/G2b_r1/G2b_r1.yy",},
-    {"name":"inst_7A5A0D2F","path":"rooms/G2b_r1/G2b_r1.yy",},
+    {"name":"inst_D9FA391","path":"rooms/G2b_r1/G2b_r1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -32,7 +32,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_44B24CEC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"properties":[],"rotation":0.0,"scaleX":22.0,"scaleY":1.0,"x":320.0,"y":176.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1BCCF7F4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_ctsc_JV_arrive_boat","path":"objects/obj_ctsc_JV_arrive_boat/obj_ctsc_JV_arrive_boat.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":271.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_50208CAF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_block_climb","path":"objects/obj_block_climb/obj_block_climb.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":191.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7A5A0D2F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_room_transition_to_g2b_r2","path":"objects/obj_room_transition_to_g2b_r2/obj_room_transition_to_g2b_r2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":14.6,"x":496.0,"y":-112.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_D9FA391","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_room_transition_from_sea","path":"objects/obj_room_transition_from_sea/obj_room_transition_from_sea.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":12.2,"x":496.0,"y":-64.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"main_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -221,-2147483648,-3,0,-2,-2147483648,-13,0,-3,-2147483648,-28,0,-2,-2147483648,-28,0,-2,-2147483648,-30,0,1,-2147483648,-50,0,1,24,-4,26,2,24,

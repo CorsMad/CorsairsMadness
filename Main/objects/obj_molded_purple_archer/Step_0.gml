@@ -44,7 +44,53 @@
 
 #region anim
 
-if state!=0
+if hit_cd != 0
+{
+    if state!=6 && state!=6.5
+    {
+        if place_meeting(x,y+1,obj_block) 
+        {
+            image_speed = 0;
+            image_index = 0;
+            sprite_index = spr_molded_purple_lancethrower_dmgground;
+        } else 
+        {
+            image_speed = 0;
+            image_index = 0 
+            sprite_index = spr_molded_purple_lancethrower_dmgair;
+        }   
+    } else 
+    {
+        if state = 6
+        {
+            if hspd!=0 
+            {
+                sprite_index = spr_molded_purple_lancethrower_dmgthrowhoriz ;
+                if vspd < 0 image_index = 0 else image_index = 1;
+            } else 
+            {
+                sprite_index = spr_molded_purple_lancethrower_dmgthrowvert  
+                if !place_meeting(x,y+1,obj_block)
+                {
+                    if vspd < 0 image_index = 2 else image_index = 0;   
+                } else image_index = 1;
+            }
+            image_speed = 0;
+    
+        }
+        if state = 6.5
+    {
+        if t < 35 
+        {
+            sprite_index = spr_molded_purple_lancethrower_dmgthrowvert  
+            image_index = 1; image_speed = 0;
+        } else {image_speed = 1;sprite_index = spr_molded_purple_lancethrower_getup ;}   
+    }   
+    }
+} else 
+{
+
+if state!=0 && state!=6 && state!=6.5 && state!=7
 {
     if state = 1 // на земле ждет прыжка
     {   
@@ -72,7 +118,12 @@ if state!=0
         if t_attack!=0 // начинает атаку
         {
             image_speed = 0; 
-            if place_meeting(x,y+1,obj_block) sprite_index = spr_molded_purple_lancethrower_throwonground;
+            if place_meeting(x,y+1,obj_block) {
+                sprite_index = spr_molded_purple_lancethrower_throwonground;
+                if instance_exists(obj_Player){                
+                    if obj_Player.x < x image_xscale = 1 else image_xscale = -1;
+                }
+            }
             if !place_meeting(x,y+1,obj_block) 
             {
                 
@@ -119,20 +170,51 @@ if state!=0
         }
     }
     
-}
+    } else {
+        sprite_index = spr_molded_purple_lancethrower_idle;
+        image_speed = 1;   
+    }
 
+if state = 6
+{
+    if hspd!=0 
+    {
+        sprite_index = spr_molded_purple_lancethrower_dmgthrowhoriz ;
+        if vspd < 0 image_index = 0 else image_index = 1;
+    } else 
+    {
+        sprite_index = spr_molded_purple_lancethrower_dmgthrowvert  
+        if !place_meeting(x,y+1,obj_block)
+        {
+            if vspd < 0 image_index = 2 else image_index = 0;   
+        } else image_index = 1;
+    }
+    image_speed = 0;
+    
+}
+if state = 6.5
+{
+    if t < 35 
+    {
+        sprite_index = spr_molded_purple_lancethrower_dmgthrowvert  
+        image_index = 1; image_speed = 0;
+    } else {image_speed = 1;sprite_index = spr_molded_purple_lancethrower_getup ;}   
+}
+if state = 7
+{
+    sprite_index = spr_molded_purple_lancethrower_death;
+    image_speed = 0;
+    image_index = 0;
+}
+}
 #endregion
 
-
-
 if t_attack!= 0 t_attack++;
-//if t_attack = 40 {instance_create_depth(x,y,depth-1,obj_molded_purple_archer_projectile)} //выстрел}
+    if t_attack = 40 {instance_create_depth(x,y-24,depth-1,obj_molded_purple_archer_projectile)} //выстрел}
 if t_attack >= 80 t_attack=0;
 
 if state = 0
 {
-	sprite_index = spr_molded_purple_lancethrower_idle;
-    image_speed = 1;
 	if abs(obj_Player.x - x) < 200 
     {
         image_index = 0;
@@ -143,6 +225,7 @@ if state = 0
 if state = 1 // ожидание1
 {
 	t++;
+    
 	if t = 100
 	{		
 		t_attack = 1;
@@ -200,15 +283,26 @@ if hit_cd = 10 hit_cd = 0;
 if flip!=0 flip++;
 if flip = 10 flip = 0;
 
+if t_red!=0 {t_red++;image_blend = c_red;}
+if t_red = 5 {t_red = 0;image_blend =c_white;}
+
 #region от Дэша
 
 if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd=0
 {
+    if place_meeting(x,y+1,obj_block) t_attack = 0;
 	if instance_exists(obj_masked_clone) hit_stored++;
 	hit_cd = 1;
 	state = 6
 	t = 0;
 	t_attack = 0;
+    enemy_hp-=1;
+    t_red = 1;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+    fnc_molded_blood_forward(2);
 	obj_Player.image_index = 0;
     obj_Player.isRecoil = 1;
     obj_Player.vspd = -1;
@@ -224,6 +318,7 @@ if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd=0
 
 if state = 6
 {
+    if place_meeting(x,y+1,obj_block) t_attack = 0;
 	if place_meeting(x+hspd,y,obj_block)
 	{
 		hspd = -sign(hspd);	
@@ -262,6 +357,13 @@ if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0
 	if place_meeting(x,y+1,obj_block) y-=1;
 	//bounce = 1;
 	state = 6;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+    fnc_molded_blood_hit(2);
+    enemy_hp-=1;
+    t_red = 1;
 }
 if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0
 {
@@ -272,6 +374,13 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0
 	if place_meeting(x,y+1,obj_block) y-=1;
 	//bounce = 1;
 	state = 6;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+    fnc_molded_blood_forward(2);
+    enemy_hp-=1;
+    t_red = 1;
 }
 if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0
 {
@@ -282,6 +391,13 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0
 	if place_meeting(x,y+1,obj_block) y-=1;
 	bounce = 1;
 	state = 6;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+    fnc_molded_blood_up(2);
+    enemy_hp-=1;
+    t_red = 1;
 }
 if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0
 {
@@ -292,7 +408,13 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0
 	{
 		vspd = 6;bounce =1;
 	} else vspd = -2;
-	
+	if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+    fnc_molded_blood_down(2);
+    enemy_hp-=1;
+    t_red = 1;
 	bounce = 1;
 	state = 6;
 }
@@ -302,8 +424,15 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0
 #region обычная атака
 if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
 {
+    if place_meeting(x,y+1,obj_block) t_attack = 0;
 	if instance_exists(obj_masked_clone) hit_stored++;
 	hit_cd = 1;
+    enemy_hp-=1;
+    t_red = 1;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
 	if obj_Player.isGrounded = 0 
     {
         obj_Player.vspd = -1.2;
@@ -325,12 +454,15 @@ if obj_Player.isDead = 132
 		hit_stored = 0;
 		t = 0;
 		t_attack = 0;
+        enemy_hp-=10
+        t_red = 1;
 	} else hit_stored = 0
 }
 
 if state = 7
 {
 	t++;
+    if t mod 20 = 0 instance_create_depth(x+random_range(-10,10),y-random_range(20,28),depth-1,obj_sfx_boss1_stars);
 	if t >= 200 && place_meeting(x,y+1,obj_block)
 	{
 		t = 0;	
@@ -341,6 +473,14 @@ if state = 7
 
 #endregion
 
+#region смерть
+if enemy_hp <=0 || y > room_height+32
+{
+    var death = instance_create_depth(x,y,depth,obj_molded_purple_archer_death)   ;
+    death.image_xscale = image_xscale;
+    instance_destroy();
+}
+#endregion
 
 
 

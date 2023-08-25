@@ -14,7 +14,7 @@ states
 air_hit = 0;
 
 state = 0;
-enemy_hp = 5;
+enemy_hp = 3;
 hit_cd = 0;
 t = 0;
 hspd = 0;

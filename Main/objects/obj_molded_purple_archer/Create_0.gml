@@ -10,3 +10,6 @@ bounce = 0;
 
 hit_cd = 0;
 hit_stored = 0;
+
+enemy_hp = 15;
+t_red =0 ;

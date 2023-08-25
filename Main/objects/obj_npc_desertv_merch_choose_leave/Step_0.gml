@@ -15,7 +15,7 @@ if key_jump || key_attack
     {
         case 0: // 
             instance_destroy();
-            instance_create_depth(x,y,-100000,obj_txt_junglev_merch_tomap)
+            instance_create_depth(x,y,-100000,obj_txt_desertv_merch_tomap)
             
             break;
         case 1:

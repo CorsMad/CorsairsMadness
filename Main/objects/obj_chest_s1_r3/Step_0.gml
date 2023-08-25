@@ -5,7 +5,7 @@ if isOn = 0 && (place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_item_boom
 {
 	isOn = 1;
 	image_speed = 1;
-    global.chest_j1_r3 = 0;
+    global.chest_s1_r3 = 0;
 }
 if (image_index > image_number - 1) && isOn = 1
 {

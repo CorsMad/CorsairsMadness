@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "!Desert",
-    "path": "folders/Sprites/Enemies/!Molded/!Desert.yy",
+    "name": "Berserker",
+    "path": "folders/Sprites/Enemies/!Molded/!Desert/Berserker.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -30,10 +30,8 @@ if key_jump || key_attack
                             instance_create_depth(x,y,-100000,obj_txt_lavav_merch_f3)
                             break;
                     }
-                    
                     break;
-            }
-            
+            }   
             break;
         case 1:
             instance_destroy();

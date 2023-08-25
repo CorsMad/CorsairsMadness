@@ -763,7 +763,6 @@ if enemy_hp <= 0
     instance_destroy();       
 }
 
-
 #region TEST
 
 if place_meeting(x,y,obj_item_hook_masked) && sprite_index!= spr_molded_grounded_wakeup

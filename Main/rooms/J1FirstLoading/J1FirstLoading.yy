@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "J1FirstLoading",
-  "creationCodeFile": "${project_dir}/rooms/J1FirstLoading/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/J1FirstLoading/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

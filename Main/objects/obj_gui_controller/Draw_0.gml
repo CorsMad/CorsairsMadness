@@ -128,9 +128,26 @@ if instance_exists(obj_Player)
     if obj_Player.state = 1
     {
         draw_sprite_ext(spr_hud_weaponselect_border,0,(camera_get_view_x(view_camera[0]))+256,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1);   
+        /*
         if obj_Player.HookEnabled = 1
         {
             draw_sprite_ext(spr_hud_hook_masked,0,(camera_get_view_x(view_camera[0]))+256,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1);
+        }
+        */
+        switch(obj_Player.SpecAbilMask)
+        {
+            case 1://hook
+                draw_sprite_ext(spr_hud_hook_masked,0,(camera_get_view_x(view_camera[0]))+256,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1);
+            break;
+            case 2://tp
+                draw_sprite_ext(spr_hud_tp_masked,0,(camera_get_view_x(view_camera[0]))+256,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1);
+            break;
+            case 3://superdash
+            break;
+            case 4://doublejump
+            break;
+            case 5://clone
+            break;
         }
         draw_sprite_ext(spr_hud_weaponselect_border,0,(camera_get_view_x(view_camera[0]))+224,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1);       
         draw_sprite_ext(spr_hud_dash,0,(camera_get_view_x(view_camera[0]))+224,camera_get_view_y(view_camera[0])+15,1,1,0, c_white,1);

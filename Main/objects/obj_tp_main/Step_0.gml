@@ -12,7 +12,7 @@
 #region Телепорт игрока
 if isOn = 1
 {
-    if instance_exists(obj_Player) && place_meeting(x,y,obj_Player) && obj_Player.isGrounded = 1 && obj_Player.isDashing = 0 && obj_Player.isAttacking = 0 && obj_Player.isAirattacking = 0 && obj_Player.isAttackingdown = 0
+    if instance_exists(obj_Player) && place_meeting(x,y,obj_Player) && obj_Player.isGrounded = 1 && obj_Player.isDashing = 0 && obj_Player.isAttacking = 0 && obj_Player.isAirattacking = 0 && obj_Player.isAttackingdown = 0 && obj_Player.isDead = 0 && obj_Player.superdash_timer = 0
     {
         if obj_Player.key_up
         {

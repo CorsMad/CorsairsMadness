@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_destructable_bomb_block",
-    "path": "sprites/spr_destructable_bomb_block/spr_destructable_bomb_block.yy",
+    "name": "spr_evilsprout_missle",
+    "path": "sprites/spr_evilsprout_missle/spr_evilsprout_missle.yy",
   },
   "spriteMaskId": null,
   "visible": true,

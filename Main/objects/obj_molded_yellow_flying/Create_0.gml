@@ -19,3 +19,5 @@ image_speed = 0;
 
 cloud_cr = instance_create_depth(x,y,depth-1,obj_molded_yellow_cloud_flying);
 cloud_cr.obj_cr = id;
+enemy_hp = 10;
+t_red = 0;

@@ -2,8 +2,7 @@
 // You can write your code in this editor
 
 #region коллиз
-if state != 0
-{
+
     if place_meeting(x+hspd, y, obj_skeleton_limiter)
 	{
 		hspd = -hspd;	
@@ -41,7 +40,7 @@ if state != 0
 		vspd = -4;	
 	}   
     if place_meeting(x,y+1,obj_block) grounded = 1 else grounded = 0
-}   
+  
 #endregion
 
 #region Animation
@@ -58,7 +57,9 @@ if state = 1
     if hspd < 0 image_xscale = 1;
     if grounded = 0 
     {
-        sprite_index = spr_werewolf_jump;   
+        sprite_index = spr_werewolf_jump;  
+        if vspd > 0 image_index = 1; else image_index = 0;
+        image_speed = 0;
     } else 
     {
         sprite_index = spr_werewolf_run;
@@ -92,11 +93,13 @@ if state = 0
     {
         if abs(obj_Player.x - x) < 200 
         {
-            if place_meeting(x+1,y,obj_block)
-            {
-                hspd= -2;
-            } else hspd = 2;
-            state = 1;
+            turn = 1;            
+        }
+        if turn=1 turn_t++;
+        if turn_t = 50
+        {
+            if obj_Player.x < x hspd= -2; else hspd = 2;
+            state = 1;   
         }
     }
 }
@@ -179,7 +182,7 @@ if hit_cd = 1
 }
 
 
-if state = 1 || (state = 2 && t > 5) || state = 3
+if state = 0 || state = 1 || (state = 2 && t > 5) || state = 3
 {
     
     // Атака
@@ -219,9 +222,13 @@ if state = 1 || (state = 2 && t > 5) || state = 3
 
 #region Смерть
 
-if enemy_hp <1 
+if enemy_hp <=0 
 {
+    var d = instance_create_depth(x,y,depth,obj_werewolf_death);
+    d.image_xscale = image_xscale;
     instance_destroy();   
 }
+
+if y > room_height+32 instance_destroy();
 #endregion
 

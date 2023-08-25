@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Jake",
-    "path": "folders/Objects/NPC/Crew/Jake.yy",
+    "name": "JakeJungle",
+    "path": "folders/Objects/NPC/Crew/JakeJungle.yy",
   },
   "parentObjectId": null,
   "persistent": false,

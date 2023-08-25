@@ -131,7 +131,11 @@ if state = 2 //3 атаки
         case 10: image_index = 2;break;
         case 15: image_index = 3;break;
         case 20: image_index = 4;break;
-        case 25: image_index = 5;break;
+        case 25: 
+        image_index = 5;
+        var hb1 = instance_create_depth(x,y,depth,obj_molded_yellow_run_hb1);
+        hb1.image_xscale = image_xscale;
+        break;
         case 30: image_index = 6;break;
         case 35: image_index = 7;break;
         case 40: image_index = 8;break;
@@ -140,7 +144,11 @@ if state = 2 //3 атаки
         case 55: image_index = 11;break;
         case 60: image_index = 12;break; 
         case 65: image_index = 13;break;
-        case 70: image_index = 14;break;
+        case 70: 
+        image_index = 14;
+        var hb2 = instance_create_depth(x,y,depth,obj_molded_yellow_run_hb2);
+        hb2.image_xscale = image_xscale;
+        break;
         case 75: image_index = 15;break;
         case 80: image_index = 16;break;
         case 85: image_index = 17;break; 
@@ -172,9 +180,6 @@ if state = 6
         }
 }
 
-
-
-
 #region от добиваний
 
 #region от обычного
@@ -187,9 +192,15 @@ if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0 && vulnerable = 1
 	vspd = -2;
     enemy_hp-=1;
 	y-=1;
+    t_red = 1;
+    fnc_molded_blood_hit(1);
     hspd = sign(obj_Player.dir)*2;
 	state = 6;
 	t_recover = 1;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
 }
 
 #endregion
@@ -200,14 +211,20 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0 && vulnerab
 	clouded = 0;
 	cloud_timer = 0;
 	hit_cd = 1;
+    t_red = 1;
 	hit_cd = 1;
 	vspd = -3;
     enemy_hp-=1;
 	y-=1;
+    fnc_molded_blood_forward(1);
     hspd = sign(obj_Player.dir)*5;
 	state = 6;
 	t_recover = 1;
     get_kicked = 1;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
 }
 #endregion
 
@@ -218,11 +235,17 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0 && vulnerable = 
 	cloud_timer = 0;
 	hit_cd = 1;
 	vspd = -6;
+    t_red = 1;
     enemy_hp-=1;
 	y-=1;
     hspd = 0;
+    fnc_molded_blood_up(1);
 	state = 6;
 	t_recover = 1;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
 }
 #endregion
 
@@ -237,11 +260,17 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0 && vulnerable 
     get_bounced = 1;
 	clouded = 0;
     enemy_hp-=1;
+    t_red = 1;
 	cloud_timer = 0;
 	hit_cd = 1;
     hspd = 0;
+    fnc_molded_blood_down(1);
 	state = 6;
 	t_recover = 1;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
 }
 #endregion
 
@@ -272,6 +301,10 @@ if state = 6
         {
             obj_Player.vspd = -1.8;
         }   
+        if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
 	}
     
 	if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0 && vulnerable = 1
@@ -282,13 +315,17 @@ if state = 6
         obj_Player.vspd = -2;
         obj_Player.dashing_timer_count = 1;
         get_kicked = 1;
-        fnc_molded_green_blood_forward()
+        fnc_molded_blood_forward(1)
         vspd = -3;
     	y-=1;
         hspd = sign(obj_Player.dir)*3;
     	state = 3;
         t = 0;
     	t_recover = 1;
+        if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
     }
 		
 	if place_meeting(x,y+1,obj_block) 
@@ -312,16 +349,21 @@ if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0 && vulnerable = 1
 	hit_cd = 1;
     get_kicked = 1;
     enemy_hp -=1;
+    t_red = 1;
+    fnc_molded_blood_forward(1);
 	obj_Player.image_index = 0;
     obj_Player.isRecoil = 1;
     obj_Player.vspd = -2;
     obj_Player.dashing_timer_count = 1;
-    fnc_molded_green_blood_forward()
     vspd = -3;
 	if place_meeting(x,y+1,obj_block) y-=1;
     hspd = sign(obj_Player.dir)*3;
 	state = 3;
 	t_recover = 1;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
 }
 #endregion
 
@@ -384,7 +426,12 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0 && vulnerable = 1 && state !
 	clouded = 0;
 	cloud_timer = 0;
 	hit_cd = 1;
+    t_red = 1;
     enemy_hp-=1;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
 	if obj_Player.isGrounded = 0 
         {
             obj_Player.vspd = -1.8;
@@ -449,10 +496,19 @@ if state = 5 cloud_cr.on = 1 else cloud_cr.on = 0;
 #region death
 if enemy_hp <= 0
 {
+    fnc_molded_dark_essence_none();
     var d = instance_create_depth(x,y,depth,obj_molded_yellow_run_death);  
     d.image_xscale = image_xscale;
     instance_destroy();
 }
 #endregion
 
-
+#region red
+if t_red!=0
+{
+    t_red-=0.1;  
+    image_blend = c_red;
+}
+if t_red<=0 t_red = 0;
+if t_red = 0 image_blend = c_white;
+#endregion

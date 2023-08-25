@@ -7,3 +7,4 @@ if instance_exists(obj_Player)
 		mask_index = -1;	
 	} else mask_index = spr_moving_platform2_mask;
 }
+

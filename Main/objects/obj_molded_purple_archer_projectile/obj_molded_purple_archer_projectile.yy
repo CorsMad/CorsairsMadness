@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "obj_molded_purple_archer",
-    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Shadow/obj_molded_purple_archer.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Snow/obj_molded_purple_archer.yy",
   },
   "parentObjectId": {
     "name": "obj_enemy_parent_object",
@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boss1_big_projectile",
-    "path": "sprites/spr_boss1_big_projectile/spr_boss1_big_projectile.yy",
+    "name": "spr_molded_purple_lancethrower_lance",
+    "path": "sprites/spr_molded_purple_lancethrower_lance/spr_molded_purple_lancethrower_lance.yy",
   },
   "spriteMaskId": null,
   "visible": true,

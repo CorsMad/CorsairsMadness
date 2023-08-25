@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Endurance",
-    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/Endurance.yy",
+    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/!Jungle/Endurance.yy",
   },
   "parentObjectId": null,
   "persistent": false,

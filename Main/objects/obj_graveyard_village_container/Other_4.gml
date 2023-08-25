@@ -28,6 +28,11 @@ if global.dia_shadowChief = 1
     instance_create_depth(567,240,0,obj_npc_shadowv_comt_fl1);
 }
 
+if global.saved_shadow = 1 
+{
+    instance_create_depth(800,240,1,obj_npc_petro_village);        
+}
+
 #region указатель
 
 if global.dia_shadowChief = 0 

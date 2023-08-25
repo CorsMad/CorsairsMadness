@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "obj_molded_snow_lanc",
-    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Snow/obj_molded_snow_lanc.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Shadow/obj_molded_snow_lanc.yy",
   },
   "parentObjectId": {
     "name": "obj_enemy_parent_combo",
@@ -35,6 +35,9 @@
     "name": "spr_molded_grounded_mask",
     "path": "sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_molded_grounded_mask",
+    "path": "sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",
+  },
   "visible": true,
 }

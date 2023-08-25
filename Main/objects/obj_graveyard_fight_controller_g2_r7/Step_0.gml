@@ -29,7 +29,20 @@ if state = 1
     switch(t)
     {
         case 50: 
-            if obj_Player.x < room_width/2 instance_create_depth(352,256,0,obj_abomination) else instance_create_depth(80,256,0,obj_abomination)
+            if instance_exists(obj_Player)
+            {
+                if obj_Player.x > 192
+                {
+                    var e1 = instance_create_depth(80,240,0,obj_molded_big_spawner_n);
+                    e1.y_cr = 16;
+                    e1.obj_cr = obj_abomination;    
+                } else 
+                {
+                    var e1 = instance_create_depth(352,240,0,obj_molded_big_spawner_n);
+                    e1.y_cr = 16;
+                    e1.obj_cr = obj_abomination;      
+                }
+            }
             break;
         case 100: t = 0;state = 1.5;break;
     }
@@ -49,12 +62,38 @@ if state = 2
     switch(t)
     {
         case 50:    
-            if obj_Player.x < room_width/2 instance_create_depth(352,256,0,obj_abomination) else instance_create_depth(80,256,0,obj_abomination)
+            if instance_exists(obj_Player)
+            {
+                if obj_Player.x > 192
+                {
+                    var e1 = instance_create_depth(80,240,0,obj_molded_big_spawner_n);
+                    e1.y_cr = 16;
+                    e1.obj_cr = obj_abomination;    
+                } else 
+                {
+                    var e1 = instance_create_depth(352,240,0,obj_molded_big_spawner_n);
+                    e1.y_cr = 16;
+                    e1.obj_cr = obj_abomination;      
+                }
+            }
             break;
         case 100:
-            if obj_Player.x < room_width/2 instance_create_depth(352,256,0,obj_werewolf) else instance_create_depth(80,256,0,obj_werewolf)
+            if instance_exists(obj_Player)
+            {
+                if obj_Player.x > 192
+                {
+                    var e1 = instance_create_depth(80,240,0,obj_molded_big_spawner_n);
+                    e1.y_cr = 16;
+                    e1.obj_cr = obj_werewolf;    
+                } else 
+                {
+                    var e1 = instance_create_depth(352,240,0,obj_molded_big_spawner_n);
+                    e1.y_cr = 16;
+                    e1.obj_cr = obj_werewolf;      
+                }
+            }
             break;
-        case 150:
+        case 200:
             t = 0;state = 2.5;break;
     }       
     

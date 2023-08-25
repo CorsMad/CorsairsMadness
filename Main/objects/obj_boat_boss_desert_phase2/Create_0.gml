@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+global.boatCheckpoint = 1;
 phase = 2;
 state = 1;
 t = 600//0;
@@ -17,5 +17,5 @@ image_speed = 0;
 var water = instance_create_depth(x,y,depth+1,obj_boat_boss_desert_water);
 water.fol = id;
 
-enemy_hp = 30;
+enemy_hp = 1//30;
 hit_cd = 0;

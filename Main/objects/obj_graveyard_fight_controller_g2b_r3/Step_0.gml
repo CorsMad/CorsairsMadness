@@ -1,18 +1,44 @@
 /// @description Insert description here
 // You can write your code in this editor
-if state = 0
+if state = 0 // 2 оборотня
 {
      t++;
      if t = 50
      {
-        if obj_Player.y <= 132 instance_create_depth(240,224,0,obj_werewolf) else instance_create_depth(240,128,0,obj_werewolf)
+        if instance_exists(obj_Player)
+        {
+            if obj_Player.y > 144
+            {
+                var e1 = instance_create_depth(240,112,0,obj_molded_big_spawner_n);
+                e1.y_cr = 16;
+                e1.obj_cr = obj_werewolf;    
+            } else 
+            {
+                var e1 = instance_create_depth(240,208,0,obj_molded_big_spawner_n);
+                e1.y_cr = 16;
+                e1.obj_cr = obj_werewolf;      
+            }
+        }         
      }
      
      if (t = 100) {
-        if obj_Player.x > room_width/2 instance_create_depth(128,224,0,obj_evilsprout) else instance_create_depth(368,224,0,obj_evilsprout) 
+        if instance_exists(obj_Player)
+        {
+            if obj_Player.x > room_width/2
+            {
+                var e1 = instance_create_depth(144,208,0,obj_molded_big_spawner_n);
+                e1.y_cr = 16;
+                e1.obj_cr = obj_evilsprout;    
+            } else 
+            {
+                var e1 = instance_create_depth(352,208,0,obj_molded_big_spawner_n);
+                e1.y_cr = 16;
+                e1.obj_cr = obj_evilsprout;      
+            }
+        }        
      }
      
-     if t =150 
+     if t =200 
      {
         state = 0.5;
         t = 0;
@@ -33,15 +59,54 @@ if state = 1
     switch(t)
     {
         case 50: 
-            if obj_Player.x < room_width/2 instance_create_depth(368,224,0,obj_evilsprout) else instance_create_depth(128,224,0,obj_evilsprout)
+            if instance_exists(obj_Player)
+            {
+                if obj_Player.x > room_width/2
+                {
+                    var e1 = instance_create_depth(144,208,0,obj_molded_big_spawner_n);
+                    e1.y_cr = 16;
+                    e1.obj_cr = obj_evilsprout;    
+                } else 
+                {
+                    var e1 = instance_create_depth(352,208,0,obj_molded_big_spawner_n);
+                    e1.y_cr = 16;
+                    e1.obj_cr = obj_evilsprout;      
+                }
+            } 
             break;
         case 100: 
-            if obj_Player.y <= 132 instance_create_depth(240,224,0,obj_werewolf) else instance_create_depth(240,128,0,obj_werewolf)
+            if instance_exists(obj_Player)
+            {
+                if obj_Player.y > 144
+                {
+                    var e1 = instance_create_depth(240,112,0,obj_molded_big_spawner_n);
+                    e1.y_cr = 16;
+                    e1.obj_cr = obj_werewolf;    
+                } else 
+                {
+                    var e1 = instance_create_depth(240,208,0,obj_molded_big_spawner_n);
+                    e1.y_cr = 16;
+                    e1.obj_cr = obj_werewolf;      
+                }
+            } 
             break;
         case 300: 
-            if obj_Player.y <= 132 instance_create_depth(240,224,0,obj_werewolf) else instance_create_depth(240,128,0,obj_werewolf)
+            if instance_exists(obj_Player)
+            {
+                if obj_Player.y > 132
+                {
+                    var e1 = instance_create_depth(240,112,0,obj_molded_big_spawner_n);
+                    e1.y_cr = 16;
+                    e1.obj_cr = obj_werewolf;    
+                } else 
+                {
+                    var e1 = instance_create_depth(240,208,0,obj_molded_big_spawner_n);
+                    e1.y_cr = 16;
+                    e1.obj_cr = obj_werewolf;      
+                }
+            } 
             break;
-        case 350: t = 0;state = 1.5;break;
+        case 400: t = 0;state = 1.5;break;
     }
 }
 

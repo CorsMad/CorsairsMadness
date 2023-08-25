@@ -28,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_boss_g2_phase1_mask",
-    "path": "sprites/spr_boss_g2_phase1_mask/spr_boss_g2_phase1_mask.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": {
     "name": "spr_boss_g2_phase1_mask",
     "path": "sprites/spr_boss_g2_phase1_mask/spr_boss_g2_phase1_mask.yy",

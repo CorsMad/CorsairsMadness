@@ -3,5 +3,11 @@
 
 if place_meeting(x,y,obj_hitbox_mask_superdash)
 {
+    if instance_exists(obj_Player)
+    {
+        obj_Player.y = y+40   
+    }
     instance_destroy();   
 }
+
+

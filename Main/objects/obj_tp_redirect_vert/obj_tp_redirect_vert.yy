@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_block_pos_tp",
-    "path": "sprites/spr_block_pos_tp/spr_block_pos_tp.yy",
+    "name": "spr_block_pos_tp_u",
+    "path": "sprites/spr_block_pos_tp_u/spr_block_pos_tp_u.yy",
   },
   "spriteMaskId": {
     "name": "spr_block_cloud_mask",

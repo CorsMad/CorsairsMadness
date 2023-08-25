@@ -11,6 +11,7 @@ if place_meeting(x,y,obj_Player)
     instance_create_depth(x+12,y-12,depth-1,obj_sfx2);
     instance_create_depth(x-12,y+12,depth-1,obj_sfx2);
     instance_create_depth(x+12,y+12,depth-1,obj_sfx2);
+    instance_create_depth(336,128,0,obj_popup_creator_usetp);
     instance_destroy();    
 }
 

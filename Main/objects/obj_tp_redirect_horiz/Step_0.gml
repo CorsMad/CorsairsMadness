@@ -2,8 +2,8 @@
 // You can write your code in this editor
 switch(dir)
 {
-    case 0:image_angle = 180;break;   
-    case 1:image_angle = 0;break;   
+    case 0:sprite_index = spr_block_pos_tp_l;break;   
+    case 1:sprite_index = spr_block_pos_tp_r;break;   
 }
 
 

@@ -9,9 +9,12 @@
   "overriddenProperties": [],
   "parent": {
     "name": "obj_molded_yellow_flying",
-    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Lava/obj_molded_yellow_flying.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/!Sand/obj_molded_yellow_flying.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_parent_object",
+    "path": "objects/obj_enemy_parent_object/obj_enemy_parent_object.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_explosion",
-    "path": "sprites/spr_explosion/spr_explosion.yy",
+    "name": "spr_molded_yellow_flying_proj",
+    "path": "sprites/spr_molded_yellow_flying_proj/spr_molded_yellow_flying_proj.yy",
   },
   "spriteMaskId": null,
   "visible": true,

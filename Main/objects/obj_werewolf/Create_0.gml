@@ -9,9 +9,10 @@ states
 2 - получение урона/отскок
 3 - бешенство
 */
-
+turn_t = 0;
+turn = 0;
 state = 0;
-enemy_hp = 3;
+enemy_hp = 2;
 hit_cd = 0;
 t = 0;
 hspd = 0;

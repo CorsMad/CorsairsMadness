@@ -6,5 +6,5 @@ t++;
 if t = 50
 {
     global.boatCheckpoint = 0;
-    room_goto(G2_r9_boat); 
+    room_goto(J2_r9_boat); 
 }

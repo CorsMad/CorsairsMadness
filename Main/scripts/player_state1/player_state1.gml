@@ -959,40 +959,148 @@ if isRecoil = 0 && key_item_pressed && SpecAbilMask = 3 && superdash_timer_count
 #endregion
 
 #region DoubleJump
-if isGrounded = 0 && key_jump_pressed && !instance_exists(obj_doublejump) && !instance_exists(obj_doublejump_wings) && SpecAbilMask = 4 
-{
-    var DJumpHoriz = instance_place(x,y,obj_doublejump_forward)
-    var DJumpUp = instance_place(x,y,obj_doublejump_up)
+
+if isGrounded = 0 && key_jump_pressed && !instance_exists(obj_doublejump) && SpecAbilMask = 4 && isDashing = 0
+{  
+        if place_meeting(x,y,obj_doublejump_reset) || place_meeting(x,y,obj_doublejump_aoe_reset)         
+        {
+            instance_destroy(obj_doublejump_wings);
+            doublejumpspd = 0;
+            instance_create_depth(x,y,depth,obj_doublejump);
+            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
+            canDoubleJump = 0; 
+        }   
     
-    if DJumpHoriz != noone
-    {
-        doublejumpspd = DJumpHoriz.hspd;   
-        vspd = DJumpHoriz.vspd;   
-        instance_create_depth(x,y,depth+1,obj_doublejump_wings);
-        instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
-    } else 
-    if DJumpUp != noone
-    {
-        vspd = DJumpUp.vspd; 
-        instance_create_depth(x,y,depth+1,obj_doublejump_wings);
-        instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
-    } else
-    if canDoubleJump = 1
-    {
-        doublejumpspd = 0;
-        instance_create_depth(x,y,depth,obj_doublejump);
-        instance_create_depth(x,y,depth+1,obj_doublejump_wings);
-        instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
-        canDoubleJump = 0;   
-    }
+        var DJumpHoriz = instance_place(x,y,obj_doublejump_forward)
+        var DJumpUp = instance_place(x,y,obj_doublejump_up)
+    
+        if DJumpHoriz != noone
+        {
+            doublejumpspd = DJumpHoriz.hspd;   
+            vspd = DJumpHoriz.vspd;  
+            x = DJumpHoriz.x;
+            y = DJumpHoriz.y;
+            canDoubleJump = 0; 
+            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
+        } else 
+        if DJumpUp != noone
+        {
+            x = DJumpUp.x;
+            y = DJumpUp.y;
+            canDoubleJump = 0; 
+            vspd = DJumpUp.vspd; 
+            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
+        } else
+        {
+            if canDoubleJump = 1
+            {
+                doublejumpspd = 0;
+                instance_create_depth(x,y,depth,obj_doublejump);
+                instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+                instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
+                canDoubleJump = 0;   
+            } 
+        }
+    
     
     /*
-    instance_create_depth(x,y,depth,obj_doublejump);
-    instance_create_depth(x,y,depth+1,obj_doublejump_wings);
-    instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
-    canDoubleJump = 0;
+    if instance_exists(obj_doublejump_wings)
+    {
+        if place_meeting(x,y,obj_doublejump_reset) || place_meeting(x,y,obj_doublejump_aoe_reset)         
+        {
+            instance_destroy(obj_doublejump_wings);
+            doublejumpspd = 0;
+            instance_create_depth(x,y,depth,obj_doublejump);
+            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
+            canDoubleJump = 0; 
+        }   
+    
+        var DJumpHoriz = instance_place(x,y,obj_doublejump_forward)
+        var DJumpUp = instance_place(x,y,obj_doublejump_up)
+    
+        if DJumpHoriz != noone
+        {
+            doublejumpspd = DJumpHoriz.hspd;   
+            vspd = DJumpHoriz.vspd;  
+            x = DJumpHoriz.x;
+            y = DJumpHoriz.y;
+            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
+        } else 
+        if DJumpUp != noone
+        {
+            x = DJumpUp.x;
+            y = DJumpUp.y;
+            vspd = DJumpUp.vspd; 
+            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
+        }                
+    } else
+        if canDoubleJump = 1
+        {
+            doublejumpspd = 0;
+            instance_create_depth(x,y,depth,obj_doublejump);
+            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
+            canDoubleJump = 0;   
+        }   
+    
     */
-}
+    
+} 
+
+/*
+if isGrounded = 0 && key_jump_pressed && !instance_exists(obj_doublejump) && SpecAbilMask = 4 && isDashing = 0
+{
+    if instance_exists(obj_doublejump_wings)
+    {
+        if place_meeting(x,y,obj_doublejump_reset) || place_meeting(x,y,obj_doublejump_aoe_reset)
+        {
+           instance_destroy(obj_doublejump_wings);
+            doublejumpspd = 0;
+            instance_create_depth(x,y,depth,obj_doublejump);
+            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
+            canDoubleJump = 0; 
+        }   
+    } else {
+        var DJumpHoriz = instance_place(x,y,obj_doublejump_forward)
+        var DJumpUp = instance_place(x,y,obj_doublejump_up)
+    
+        if DJumpHoriz != noone
+        {
+            doublejumpspd = DJumpHoriz.hspd;   
+            vspd = DJumpHoriz.vspd;  
+            x = DJumpHoriz.x;
+            y = DJumpHoriz.y;
+            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
+        } else 
+        if DJumpUp != noone
+        {
+            x = DJumpUp.x;
+            y = DJumpUp.y;
+            vspd = DJumpUp.vspd; 
+            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
+        } else
+        if canDoubleJump = 1
+        {
+            doublejumpspd = 0;
+            instance_create_depth(x,y,depth,obj_doublejump);
+            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
+            canDoubleJump = 0;   
+        }   
+    }      
+} 
+
+*/
+
 #endregion
 
 #region Clone
@@ -1007,7 +1115,15 @@ if key_item && SpecAbilMask = 5 && !instance_exists(obj_masked_clone)
 
 if clone_timer!=0
 {
-    clone_timer++;   
+    clone_timer++;  
+    if key_item && SpecAbilMask = 5
+    {
+        clone_timer = 0;
+        isDead = 132;
+        sprite_index = spr_player_masked_clone_use;
+        image_index = 4;   
+    }
+    
 }
 
 if clone_timer = 300
@@ -1484,6 +1600,7 @@ if isDead = 1
     #region применение супердеша
     if isDead = 12
     {
+        vspd =0 ;
         sprite_index = spr_player_masked_superdash;
         image_speed = 1;
         fnc_Collision_player(obj_block);

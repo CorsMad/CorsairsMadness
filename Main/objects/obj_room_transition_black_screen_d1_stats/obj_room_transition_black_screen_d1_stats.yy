@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Boss",
-    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/!Jungle/Lvl1/Boss.yy",
+    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/!Desert/Boss.yy",
   },
   "parentObjectId": null,
   "persistent": false,

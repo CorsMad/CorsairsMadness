@@ -29,9 +29,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boss1",
-    "path": "sprites/spr_boss1/spr_boss1.yy",
+    "name": "spr_boss_g2_p3_appear",
+    "path": "sprites/spr_boss_g2_p3_appear/spr_boss_g2_p3_appear.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_boss_g2_phase1_mask",
+    "path": "sprites/spr_boss_g2_phase1_mask/spr_boss_g2_phase1_mask.yy",
+  },
   "visible": true,
 }

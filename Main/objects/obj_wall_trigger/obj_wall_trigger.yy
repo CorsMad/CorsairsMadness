@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "r1",
-    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/P2/r1.yy",
+    "name": "Closed",
+    "path": "folders/Objects/Blocks/Wall trigger/Closed.yy",
   },
   "parentObjectId": {
     "name": "obj_block",

@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_teleport_cloud",
-    "path": "sprites/spr_teleport_cloud/spr_teleport_cloud.yy",
+    "name": "spr_teleport_cloud_d",
+    "path": "sprites/spr_teleport_cloud_d/spr_teleport_cloud_d.yy",
   },
   "spriteMaskId": {
     "name": "spr_teleport_hitbox",

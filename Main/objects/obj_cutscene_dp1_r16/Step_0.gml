@@ -8,7 +8,7 @@ if state = 0
         fnc_msc_start_checkpoint(msc_jp1_c_jp2_c);
         instance_create_depth(176,144,-10,obj_follower_desert_cutscene);   
     }
-    if t = 190 
+    if t = 150 
     {
         if instance_exists(obj_Player)
         {

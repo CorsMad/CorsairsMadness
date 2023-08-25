@@ -6,11 +6,9 @@ if place_meeting(x,y,obj_cutscene_JVArrive_player_draw)
     instance_destroy();
     var i = instance_create_depth(-16,-16,0,obj_Player);
     i.state = 0;
-    i.specabilnumber = 1;
+    i.specabilnumber = 2;
     instance_create_depth(-16,-16,101,obj_room_transition_to_loading); 
     global.TargetRoom = G2b_r2;
     global.TargetX = 16;
-    global.TargetY = 176;
-    
-    
+    global.TargetY = 176;       
 }

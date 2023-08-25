@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_gp_icon",
-    "path": "sprites/spr_gp_icon/spr_gp_icon.yy",
+    "name": "spr_block_series_4",
+    "path": "sprites/spr_block_series_4/spr_block_series_4.yy",
   },
   "spriteMaskId": null,
   "visible": true,

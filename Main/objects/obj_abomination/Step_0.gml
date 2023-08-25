@@ -76,7 +76,7 @@ if state = 0
 {
     if instance_exists(obj_Player)
     {
-        if abs(obj_Player.x - x) < 150 state = 1;t = 298;
+        if abs(obj_Player.x - x) < 150 state = 1;t = 148;
     }
 }
 #endregion
@@ -85,6 +85,7 @@ if state = 0
 
 if state = 1
 {
+    
     t++;
     if place_meeting(x,y+1,obj_block) 
     {
@@ -97,9 +98,12 @@ if state = 1
     }
     if grounded = 0 larva_cr = 1;
       
-    if t = 300 
+    if t = 150 
     {
-        hspd = random_range(-2,2)
+        if instance_exists(obj_Player)
+        {
+            if obj_Player.x <x hspd = 2 else hspd = -2;   
+        }
         vspd = choose(-5,-6);
         t = 0
     }  
@@ -180,10 +184,18 @@ if state = 3
 
 #region смерть
 
-if enemy_hp < 1 
+if enemy_hp < 1 || place_meeting(x,y,obj_death_pit_trigger)
 {
-    instance_create_depth(x,y,depth,obj_abomination_death);
+    var d = instance_create_depth(x,y,depth,obj_abomination_death);
+    d.image_xscale = image_xscale;
     instance_destroy();
+}
+
+if y > room_height+32
+{
+    var d = instance_create_depth(x,y,depth,obj_abomination_death);
+    d.image_xscale = image_xscale;
+    instance_destroy();   
 }
 
 #endregion

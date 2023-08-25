@@ -1,2 +1,3 @@
 hspd = 6;
-vspd = -7;
+vspd = -5;
+depth = 200;

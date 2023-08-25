@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+if image_alpha<1 image_alpha+=0.5;
 
 
 if isOn = 1 && place_meeting(x,y,obj_Player) && obj_Player.key_jump_pressed && obj_Player.isAirattacking = 0 && obj_Player.isAttackingdown = 0 && obj_Player.isDashing = 0 && obj_Player.isClimbing = 0 && obj_Player.isHooking = 0 && obj_Player.isOutjump = 0 && obj_Player.isTakingdmg = 0

@@ -16,7 +16,10 @@
 10 - стан от телепорта
 */
 
-
+if instance_exists(obj_Player)
+{
+    if obj_Player.x < x image_xscale = 1 else image_xscale = -1;   
+}
 
 if state = 1 //Патрулирование
 {
@@ -108,22 +111,65 @@ if state = 3 //появляется рядом
 if state = 4 //немного парит рядом с игроком
 {        
 	t++;
+    y = lerp(y,obj_Player.y-16,0.03);
 	if instance_exists(obj_Player)
 	{
+        if x >= obj_Player.x
+        {
+            if x < camera_get_view_x(view_camera[0])+480-32
+            {
+                x = lerp(x,obj_Player.x+64,0.04); 
+            } else 
+            {
+                if abs(obj_Player.x-x) < 64 
+                {
+                    x = lerp(x,camera_get_view_x(view_camera[0])+480-32,0.04);   
+                } else 
+                {
+                    x = lerp(x,obj_Player.x+64,0.04);    
+                }
+            }
+        }
+        
+        if x < obj_Player.x
+        {
+            if x > camera_get_view_x(view_camera[0])+32
+            {
+                x = lerp(x,obj_Player.x-64,0.04); 
+            } else 
+            {
+                if abs(obj_Player.x-x) < 64 
+                {
+                    x = lerp(x,camera_get_view_x(view_camera[0])+32,0.04);   
+                } else 
+                {
+                    x = lerp(x,obj_Player.x-64,0.04);    
+                }
+            }
+        }
+        /*
 		if x >= obj_Player.x 
 		{
-			if x < camera_get_view_x(view_camera[0])+480-64
-			{x = lerp(x,obj_Player.x+100,0.03);}
+			if (( x < camera_get_view_x(view_camera[0])+480) && (abs(obj_Player.x-x) < 32))
+			{
+                x = lerp(x,obj_Player.x+100,0.03);
+            } else x = lerp(x,camera_get_view_x(view_camera[0])+480-64,0.03);
 			y = lerp(y,obj_Player.y-16,0.03);	
-		} else 
+		} 
+        
+        else 
 		{
-			if x > camera_get_view_x(view_camera[0])+64
-			{x = lerp(x,obj_Player.x-100,0.03);} else x = lerp(x,camera_get_view_x(view_camera[0])+32,0.03);
+			if ((x > camera_get_view_x(view_camera[0])+64) && (abs(obj_Player.x-x) < 64))
+			{
+                x = lerp(x,obj_Player.x-100,0.03);
+            } else x = lerp(x,camera_get_view_x(view_camera[0])+32,0.03);
+            
 			y = lerp(y,obj_Player.y-16,0.03);	
 		}
+        */
 	}
 	
-	if t = 200
+	if t = 60//200
 	{
 		t = 10;
 		state = 5;
@@ -170,7 +216,10 @@ if state = 6 //делает выстрел
     }
     
 	t++;
-	if t = 50 instance_create_depth(x,y,depth,obj_molded_yellow_projectile);
+	if t = 50 
+    {
+        var proj = instance_create_depth(x-24*image_xscale,y-32,depth,obj_molded_yellow_projectile);
+    }
 	if t = 100
 	{
 		t = 0;
@@ -207,7 +256,7 @@ if t_recover !=0
 {
 	t_recover++;	
 }
-if t_recover = 50
+if t_recover = 50//50
 {
 	t_recover = 0;
 	hit_cd = 0;
@@ -229,7 +278,28 @@ if hit_cd!= 0
 	}	
 }
 
+#region От дэша
 
+if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0 && vulnerable = 1
+{
+	state = 8;
+	hit_cd = 1;
+	t_recover = 1;
+	hspd = 0;
+    t_red = 1;
+    enemy_hp-=1;
+	vspd = 0;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+    fnc_molded_blood_forward(1);
+    obj_Player.image_index = 0;
+    obj_Player.isRecoil = 1;
+    obj_Player.vspd = -4;
+    obj_Player.dashing_timer_count = 1;
+}
+#endregion
 
 #region от добивания
 if state = 9
@@ -241,6 +311,9 @@ if state = 9
 	vspd = lerp(vspd,0,0.03);
 	if abs(hspd) < 0.5 && abs(vspd) < 0.5
 	{
+        sprite_index = spr_molded_yellow_flying_teleport;
+        image_index = 0;
+        image_speed = 0;
 		state = 2;
 		hspd = 0;
 		vspd = 0;
@@ -255,7 +328,14 @@ if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0 && vulnerable = 1
     
 	state = 9;
 	t = 0;
+    t_red = 1;
+    enemy_hp-=1;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
 	hit_cd = 1;
+    fnc_molded_blood_hit(1);
 	if instance_exists(obj_Player)
 	{
 		if obj_Player.x >=x hspd = -2; else hspd = 4;
@@ -268,8 +348,15 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0 && vulnerable 
 {
 	state = 9;
 	t = 0;
+    t_red = 1;
+    enemy_hp-=1;
 	hit_cd = 1;
 	vspd = 4;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+    fnc_molded_blood_down(1);
 }
 #endregion
 #region вперед
@@ -280,7 +367,14 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0
 		if obj_Player.x >=x hspd = -3; else hspd = 3;
 	} 
 	state = 9;
+    t_red = 1;
 	t = 0;
+    enemy_hp-=1;
+    fnc_molded_blood_forward(1);
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
 	hit_cd = 1;
 }
 #endregion
@@ -289,12 +383,18 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0
 {
 	t = 0;
 	state = 9;
+    t_red = 1;
+    enemy_hp-=1;
 	hit_cd = 1;
 	vspd = -4;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+    fnc_molded_blood_up(1);
 	if !place_meeting(x,y,obj_block) overlap = 0; else overlap = 1;
 }
 #endregion
-
 
 #endregion
 
@@ -307,9 +407,15 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0 && vulnerable = 1
     }   
 	state = 8
 	hit_cd = 1;
+    t_red = 1;
+    enemy_hp-=1;
 	t_recover = 1;
 	hspd = 0;
 	vspd = 0;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
 }	
 
 
@@ -320,26 +426,10 @@ if state = 8
     if t_recover <5
     {
         sprite_index = spr_molded_yellow_flying_takedmg;
-    	image_blend = c_red;
-    } else {image_blend = c_white;sprite_index = spr_molded_yellow_flying_idle;};
+    	
+    } else {sprite_index = spr_molded_yellow_flying_idle;};
 } else 
 
-#endregion
-
-#region От дэша
-
-if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0 && vulnerable = 1
-{
-	state = 8;
-	hit_cd = 1;
-	t_recover = 1;
-	hspd = 0;
-	vspd = 0;
-    obj_Player.image_index = 0;
-    obj_Player.isRecoil = 1;
-    obj_Player.vspd = -4;
-    obj_Player.dashing_timer_count = 1;
-}
 #endregion
 
 #region от облака стан
@@ -367,4 +457,23 @@ if state = 10
 
 if state = 10 cloud_cr.on = 1 else cloud_cr.on = 0;
 #endregion
+
+#region Red
+if t_red!=0
+{
+    t_red-=0.1;   
+}
+if t_red = 0 image_blend = c_white else image_blend = c_red;
+#endregion
+
+#endregion
+
+#region death
+if enemy_hp <=0
+{
+    fnc_molded_dark_essence_none();
+    var death = instance_create_depth(x,y,depth,obj_molded_yellow_flying_death)   ;
+    death.image_xscale = image_xscale;
+    instance_destroy();
+}
 #endregion

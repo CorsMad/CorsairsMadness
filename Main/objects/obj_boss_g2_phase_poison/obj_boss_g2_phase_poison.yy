@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boss_g2_poison_ground",
-    "path": "sprites/spr_boss_g2_poison_ground/spr_boss_g2_poison_ground.yy",
+    "name": "spr_boss_g2_poison",
+    "path": "sprites/spr_boss_g2_poison/spr_boss_g2_poison.yy",
   },
   "spriteMaskId": {
     "name": "spr_boss_g2_poison_ground",

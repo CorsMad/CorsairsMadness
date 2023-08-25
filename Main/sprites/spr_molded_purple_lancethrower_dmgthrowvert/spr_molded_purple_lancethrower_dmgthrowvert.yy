@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Graveyard",
-    "path": "folders/Sprites/Enemies/!Molded/Graveyard.yy",
+    "name": "Lancethrower",
+    "path": "folders/Sprites/Enemies/!Molded/!Snow/Lancethrower.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

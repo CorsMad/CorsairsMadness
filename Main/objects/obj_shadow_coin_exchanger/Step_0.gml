@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if global.dia_shadowMerch_f_talk =1 
+if global.dia_vulcanoMerch_f_talk =1 && global.saved_vulcano = 0
 {
 
 
@@ -27,7 +27,7 @@ if talk_cr_t!= 0
     if talk_cr_t = 10
     {
         talk_cr_t = 0;
-        instance_create_depth(x,y,-100000,obj_npc_shadow_coniexch_choose);
+        instance_create_depth(x,y,-100000,obj_npc_lava_coniexch_choose);
     }
     
 }

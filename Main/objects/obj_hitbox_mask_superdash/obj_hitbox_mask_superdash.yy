@@ -14,7 +14,7 @@
     "path": "folders/Objects/Player objects.yy",
   },
   "parentObjectId": null,
-  "persistent": false,
+  "persistent": true,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,
@@ -34,5 +34,5 @@
     "path": "sprites/spr_player_hitbox_masked/spr_player_hitbox_masked.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

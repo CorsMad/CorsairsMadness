@@ -21,7 +21,7 @@ if key_jump || key_attack
                     instance_create_depth(x,y,-100000,obj_txt_shadowv_merch3)
                     break;
                 case 1:
-                    switch(global.saved_snow)
+                    switch(global.saved_shadow)
                     {
                         case 0:
                             instance_create_depth(x,y,-100000,obj_txt_shadowv_merch_f2)

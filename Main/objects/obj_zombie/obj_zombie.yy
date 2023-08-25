@@ -13,7 +13,10 @@
     "name": "Zombies",
     "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Graveyard/Zombies.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_parent_no_armor",
+    "path": "objects/obj_enemy_parent_no_armor/obj_enemy_parent_no_armor.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -33,6 +36,9 @@
     "name": "spr_zombie",
     "path": "sprites/spr_zombie/spr_zombie.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_zombie_mask",
+    "path": "sprites/spr_zombie_mask/spr_zombie_mask.yy",
+  },
   "visible": true,
 }

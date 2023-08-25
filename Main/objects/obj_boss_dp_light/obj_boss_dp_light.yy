@@ -1,0 +1,42 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_boss_dp_light",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
+  "managed": true,
+  "overriddenProperties": [],
+  "parent": {
+    "name": "misc",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Desert/Boss/Boss3/misc.yy",
+  },
+  "parentObjectId": {
+    "name": "obj_boss_jp_light",
+    "path": "objects/obj_boss_jp_light/obj_boss_jp_light.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [],
+  "solid": false,
+  "spriteId": {
+    "name": "spr_follower_grounded_light",
+    "path": "sprites/spr_follower_grounded_light/spr_follower_grounded_light.yy",
+  },
+  "spriteMaskId": {
+    "name": "spr_follower_grounded_light_mask_n",
+    "path": "sprites/spr_follower_grounded_light_mask_n/spr_follower_grounded_light_mask_n.yy",
+  },
+  "visible": true,
+}

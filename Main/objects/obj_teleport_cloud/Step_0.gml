@@ -10,7 +10,7 @@ if teleport_delay_timer < 11 {teleport_delay_timer++;}
 
 if pressed = 1
 {
-    if !place_meeting(x,y,obj_block)
+    if !place_meeting(x,y,obj_block) && (obj_Player.damage_cd > 30 || obj_Player.damage_cd = 0)
     {     
         obj_Player.isAirattacking = 0;
         obj_Player.isAttacking = 0;
@@ -26,6 +26,7 @@ if pressed = 1
 	    obj_Player.isOutjump = 0;
 	    obj_Player.isClimbing = 0;
 	    obj_Player.isUsingitem = 0;
+        obj_Player.isTakingdmg = 0;
 	    obj_Player.isAirUsingitem = 0;
 	    obj_Player.isHooking = 0;
 	    obj_Player.isGravitate = 0;
@@ -53,9 +54,9 @@ if moving = 0
 }
 
 
-if image_index = 6
+if image_index = 12
 {
-    image_index = 2;   
+    image_index = 4;   
 }
 blob_cr_timer++;
 if blob_cr_timer mod 10 = 0 {instance_create_depth(x,y,depth+1,obj_teleport_cloud_blob);}

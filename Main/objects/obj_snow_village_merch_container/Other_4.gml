@@ -3,7 +3,7 @@
 instance_create_depth(x,y,0,obj_room_transition_black_screen);
 instance_create_depth(186,240,100,obj_npc_snowv_merch)   
 
-switch(finished)
+switch(global.completed_PS2)
 {
     case 0:
         var i = instance_create_depth(119,240,depth,obj_teleport_junglevillage);
@@ -12,6 +12,8 @@ switch(finished)
         i.TargetY = 240;
         break;
     case 1:
+        instance_create_depth(48,208,1,obj_snow_coin_exchanger);
+    
         if global.dia_snowMerch_f_talk = 1
         {
             var i = instance_create_depth(119,240,depth,obj_teleport_junglevillage);
