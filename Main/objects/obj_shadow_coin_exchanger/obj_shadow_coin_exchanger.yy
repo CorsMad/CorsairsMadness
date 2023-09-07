@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_merch_coin_exchanger",
-    "path": "sprites/spr_merch_coin_exchanger/spr_merch_coin_exchanger.yy",
+    "name": "spr_coin_exchanger",
+    "path": "sprites/spr_coin_exchanger/spr_coin_exchanger.yy",
   },
   "spriteMaskId": null,
   "visible": true,

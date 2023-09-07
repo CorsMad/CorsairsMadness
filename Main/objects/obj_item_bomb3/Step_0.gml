@@ -7,7 +7,7 @@ a+=1;
 if a = a_max && isDead = 0
 {   
 	isDead = 1;
-    mask_index = spr_blank;
+    mask_index = noone;
 	Speed = 0;
 	instance_create_depth(x,y,-1,obj_sfx_explosion_bomb);
 }
@@ -16,7 +16,7 @@ if place_meeting(x,y,obj_destructable_parent) && isDead = 0
 {
 	a = a_max;
 	isDead = 1;
-    mask_index = spr_blank;
+    mask_index = noone;
 	Speed = 0;
 	instance_create_depth(x,y,-1,obj_sfx_explosion_bomb);
 	

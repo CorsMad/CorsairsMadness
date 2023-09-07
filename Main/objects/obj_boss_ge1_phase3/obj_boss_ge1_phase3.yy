@@ -1,0 +1,43 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_boss_ge1_phase3",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
+  "managed": true,
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Phase3",
+    "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Graveyard/Endurance/Boss2/Phase3.yy",
+  },
+  "parentObjectId": {
+    "name": "obj_enemy_parent_no_armor",
+    "path": "objects/obj_enemy_parent_no_armor/obj_enemy_parent_no_armor.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [],
+  "solid": false,
+  "spriteId": {
+    "name": "spr_boss_g1",
+    "path": "sprites/spr_boss_g1/spr_boss_g1.yy",
+  },
+  "spriteMaskId": {
+    "name": "spr_boss1_mask",
+    "path": "sprites/spr_boss1_mask/spr_boss1_mask.yy",
+  },
+  "visible": true,
+}

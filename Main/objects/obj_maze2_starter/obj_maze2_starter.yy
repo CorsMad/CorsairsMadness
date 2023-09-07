@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_cannon_level",
-    "path": "sprites/spr_cannon_level/spr_cannon_level.yy",
+    "name": "spr_maze_lava",
+    "path": "sprites/spr_maze_lava/spr_maze_lava.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -6,7 +6,7 @@ if y < 256
 {
     y+=vspd;
     vspd+=0.2;   
-} else {y = 256;vspd = 0;isGrounded = 1;image_index = 1; }
+} else {y = 256;vspd = 0;isGrounded = 1;sprite_index = spr_npc_sully_sit; }
 
 
 if instance_exists(obj_Player)

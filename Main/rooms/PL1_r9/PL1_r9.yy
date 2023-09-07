@@ -82,10 +82,10 @@
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"MainTls","depth":300,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":37,"TileCompressedData":[
 5,17,18,19,15,16,-26,17,4,18,19,15,16,-3,17,4,18,19,20,21,-26,22,4,23,24,15,16,-3,17,4,18,19,25,26,-26,27,4,
 28,29,15,16,-3,17,2,18,19,-27,0,-3,-2147483648,7,15,16,17,17,22,23,24,-27,0,-3,-2147483648,7,15,16,17,17,27,28,29,-27,0,-3,-2147483648,
-4,15,16,17,17,-30,0,-3,-2147483648,4,15,16,17,17,-30,0,-3,-2147483648,4,20,21,22,22,-30,0,-3,-2147483648,7,25,26,27,27,7,8,9,-27,0,
--7,-2147483648,-2,49,1,14,-27,0,-7,-2147483648,3,13,49,19,-27,0,-7,-2147483648,3,18,49,19,-27,0,-3,-2147483648,7,5,6,7,7,18,49,19,-27,0,-3,
--2147483648,1,10,-3,49,3,18,49,19,-27,0,-3,-2147483648,1,15,-3,49,5,18,49,19,5,6,-26,7,3,8,9,10,-3,49,4,18,49,19,10,-28,
-49,2,14,10,-3,49,],"TileDataFormat":1,},"tilesetId":{"name":"tls_lava_pos","path":"tilesets/tls_lava_pos/tls_lava_pos.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+4,15,16,17,17,-30,0,-3,-2147483648,4,15,16,17,17,-30,0,-3,-2147483648,4,20,21,22,22,-8,0,4,35,36,36,37,-18,0,-3,-2147483648,7,25,26,
+27,27,7,8,9,-27,0,-7,-2147483648,-2,49,1,14,-27,0,-7,-2147483648,3,13,49,19,-17,0,1,35,-3,36,1,37,-5,0,-7,-2147483648,3,18,49,19,
+-27,0,-3,-2147483648,7,5,6,7,7,18,49,19,-27,0,-3,-2147483648,1,10,-3,49,3,18,49,19,-27,0,-3,-2147483648,1,15,-3,49,5,18,49,19,5,
+6,-26,7,3,8,9,10,-3,49,4,18,49,19,10,-28,49,2,14,10,-3,49,],"TileDataFormat":1,},"tilesetId":{"name":"tls_lava_pos","path":"tilesets/tls_lava_pos/tls_lava_pos.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR2","depth":400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":37,"TileCompressedData":[
 -629,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_lava_pos_bgr","path":"tilesets/tls_lava_pos_bgr/tls_lava_pos_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":37,"TileSerialiseData":[

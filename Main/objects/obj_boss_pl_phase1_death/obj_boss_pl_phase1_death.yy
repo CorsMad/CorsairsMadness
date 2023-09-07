@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_lava_follower_mask",
-    "path": "sprites/spr_lava_follower_mask/spr_lava_follower_mask.yy",
+    "name": "spr_boss_lp_stun",
+    "path": "sprites/spr_boss_lp_stun/spr_boss_lp_stun.yy",
   },
   "spriteMaskId": {
     "name": "spr_follower_grounded_mask",

@@ -12,7 +12,7 @@ playerpoint_y = 0;//координаты игрока
 light_cd = 0;
 can_hit_light = 0;
 
-enemy_hp = 1//70;
+enemy_hp = 70;
 hit_cd = 0;
 delay = 0;
 var mold = instance_create_depth(0,0,0,obj_boss_dp_mold_create);

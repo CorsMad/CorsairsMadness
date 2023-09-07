@@ -12,6 +12,17 @@ if instance_exists(obj_boss_l1_3)
         x = obj_boss_l1_3.x+46;
         y = obj_boss_l1_3.y-24;
     }
+} else if instance_exists(obj_boss_le1_3){
+	if pos = -1
+    {
+        x = obj_boss_le1_3.x-46;
+        y = obj_boss_le1_3.y-24;
+    }
+    if pos = 1
+    {
+        x = obj_boss_le1_3.x+46;
+        y = obj_boss_le1_3.y-24;
+    }
 } else
 {
     state = 2;    

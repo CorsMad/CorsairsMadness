@@ -14,11 +14,12 @@ if key_jump || key_attack
     switch(select)
     {
         case 0:
-            if global.secrets >=7
+            if global.secrets >=7 && global.saved_shadow = 0 
             {
                 global.saved_shadow = 1;
                 global.secrets -=7; 
-                // заставка
+                var cutsc = instance_create_depth(0,0,0,obj_coin_cutscene);
+				cutsc.target = obj_shadow_coin_exchanger;
                 instance_destroy();
             }       
             break;

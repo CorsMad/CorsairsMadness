@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_ability_tp_masked",
-    "path": "sprites/spr_ability_tp_masked/spr_ability_tp_masked.yy",
+    "name": "spr_ability_clone",
+    "path": "sprites/spr_ability_clone/spr_ability_clone.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -14,7 +14,8 @@ if state = 1
 }   
 if y >270+32
 {
-    obj_boss_d2_phase2_controller.state+=0.5;
+    if instance_exists(obj_boss_d2_phase2_controller) obj_boss_d2_phase2_controller.state+=0.5;
+    if instance_exists(obj_boss_de_phase2_controller) obj_boss_de_phase2_controller.state+=0.5;
     instance_destroy();    
 }
 

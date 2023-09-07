@@ -4,6 +4,8 @@
   "name": "obj_boss_pg_phase1_laser_rev",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -28,12 +30,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boss_pg_phase1_laser",
-    "path": "sprites/spr_boss_pg_phase1_laser/spr_boss_pg_phase1_laser.yy",
+    "name": "spr_follower_grounded_laser_projectile",
+    "path": "sprites/spr_follower_grounded_laser_projectile/spr_follower_grounded_laser_projectile.yy",
   },
   "spriteMaskId": {
-    "name": "spr_boss_pg_phase1_laser",
-    "path": "sprites/spr_boss_pg_phase1_laser/spr_boss_pg_phase1_laser.yy",
+    "name": "spr_follower_grounded_laser_projectile",
+    "path": "sprites/spr_follower_grounded_laser_projectile/spr_follower_grounded_laser_projectile.yy",
   },
   "visible": true,
 }

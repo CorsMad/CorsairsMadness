@@ -10,3 +10,10 @@ if isDead = 1
 {
     instance_destroy();   
 }
+
+t_create++;
+if t_create mod 50 = 0{
+	var eball1_aoe = instance_create_depth(x,y,depth,obj_item_eball_aoe1);
+	eball1_aoe.own = id;
+}
+

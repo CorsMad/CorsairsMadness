@@ -6,7 +6,7 @@ if y < 480
 {
     y+=vspd;
     vspd+=0.2;   
-} else {y = 480;vspd = 0;isGrounded = 1;image_index = 1; }
+} else {y = 480;vspd = 0;isGrounded = 1;sprite_index = spr_npc_petro_sit; }
 
 
 if instance_exists(obj_Player)

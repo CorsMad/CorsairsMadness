@@ -9,7 +9,7 @@ Center_Y = obj_Player.y-16; // y of orbital center
 
 isDead = 0;
 a = 0;
-
+a_max = 250;
 
 if obj_Player.image_xscale = 1 
 {

@@ -9,10 +9,9 @@ instance_destroy(obj_follower_grounded_laser_vfx);
 instance_destroy(obj_fastfly_molded);
 instance_destroy(obj_molded_small_fastfly);
 
-if place_meeting(x,y+1,obj_block)
-{
+if !place_meeting(x,y-1,obj_block) y-=1;
     vspd = -3;   
-} else vspd = 0;
+
 
 if instance_exists(obj_follower_grounded_laser_vfx) instance_destroy(obj_follower_grounded_laser_vfx);
 

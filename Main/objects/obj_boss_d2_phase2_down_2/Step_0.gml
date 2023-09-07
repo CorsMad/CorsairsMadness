@@ -74,7 +74,8 @@ if state = 4 // закапывание
     
     if y> 270+32
     {
-        obj_boss_d2_phase2_controller.state  = 1;
+        if instance_exists(obj_boss_d2_phase2_controller) obj_boss_d2_phase2_controller.state  = 1;
+        if instance_exists(obj_boss_de_phase2_controller) obj_boss_de_phase2_controller.state  = 1;
         instance_destroy();  
     }   
 }

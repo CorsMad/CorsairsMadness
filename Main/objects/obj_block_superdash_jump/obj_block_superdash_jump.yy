@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_destructable_block_big",
-    "path": "sprites/spr_destructable_block_big/spr_destructable_block_big.yy",
+    "name": "spr_block_superdash_mask",
+    "path": "sprites/spr_block_superdash_mask/spr_block_superdash_mask.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -8,7 +8,7 @@ if isOn = 1
     {
         if place_meeting(x,y,obj_Player) pointer.on = 1 else pointer.on = 0;
         pointer.sprite_index = spr_hud_pointer_up;
-        sprite_index = spr_cannon_level;
+        
     } else  pointer.on = 0;
     
     #region Start

@@ -31,21 +31,69 @@ switch(state)
     case 0: // перемещение + выстрелы
         if spd < 1 spd+=0.05;
         if (hit_stored > 15 && t < 200 ) {state = 1;t=0;}  
+		
+		#region Anim
+		if pos = 0 image_xscale = -1;
+		if pos = 1 image_xscale = 1;
+		if pos = 2 image_xscale = 1;
+		if pos = 3 image_xscale = -1;
+		switch(t){
+			case 1: sprite_index = spr_boss_gp_fly;image_index = 0;image_speed = 1;break;
+			case 200: sprite_index = spr_boss_gp_phase1shot;image_index = 0;image_speed = 0;break;
+			case 205: image_index = 1;break;
+			case 210: image_index = 2;break;
+			case 215: image_index = 3;break;
+			case 220: image_index = 4;break;
+			case 225: image_index = 5;break;
+			case 250:image_index = 6;break;
+			case 255:image_index = 5;break;
+			case 260:image_index = 6;break;
+			case 265:image_index = 5;break;
+			case 270:image_index = 6;break;
+			case 275:image_index = 8;break;
+		}
+		#endregion
+		
         #region атака
         t++;
         if t = 250 || t = 260 || t = 270
         {
-            instance_create_depth(x,y-32,depth-1,obj_boss_pg_phase1_laser);
+            instance_create_depth(x+16*image_xscale,y-40,depth-1,obj_boss_pg_phase1_laser);
         }
-        if t = 300 t = 0;
+        if t = 280 t = 0;
         #endregion
         break;
     case 1: // остановка для удара вокруг себя
         if spd > 0 spd-=0.05;
         t++;
+		#region anim
+		switch(t)
+		{
+			case 10:	sprite_index = spr_boss_gp_phase1aoeattack;image_speed = 0;image_index = 0;break;
+			case 15: image_index = 1;break;
+			case 20: image_index = 2;break;
+			case 25: image_index = 3;break;
+			case 30: image_index = 4;break;
+			case 35: image_index = 4;break;
+			case 40: image_index = 5;break;
+			case 45: image_index = 6;break;
+			case 50: image_index = 7;break;
+			case 95: image_index = 8;break;
+			case 100: image_index = 9;break;
+			case 130: image_index = 3;break;
+			case 135: image_index = 2;break;
+			case 140: image_index = 1;break;
+			case 145: image_index = 0;break;
+		}
+		#endregion
         if t = 100 
         {
-            instance_create_depth(x,y,depth-1,obj_boss_pg_phase1_aoe)   
+			if turn_light < 2 turn_light+=1 
+			if turn_light >=2{
+				var ph = instance_create_depth(x,y-48,depth-1,obj_boss_pg_phase1_aoe) 
+				ph.turn_switch = 1;
+			} else instance_create_depth(x,y-48,depth-1,obj_boss_pg_phase1_aoe)
+              
         }
         if t = 150
         {
@@ -55,7 +103,8 @@ switch(state)
         }
         break;
     case 2: //подпал под свет 
-        t = 0;
+		sprite_index = spr_boss_gp_phase3_stun;
+		image_speed = 1;
         if spd > 0 spd-=0.05;
         t++;
         if t = 300
@@ -66,6 +115,20 @@ switch(state)
         break;
 }
 
+#endregion
+
+#region под свет
+if instance_exists(obj_boss_pg_light) && instance_exists(obj_boss_pg_light_block)
+{
+	if place_meeting(x,y,obj_boss_pg_light) && obj_boss_pg_light.image_index = 5
+	{
+		state = 2;
+		t = 0;
+		obj_boss_pg_light_block.state = 3;
+		obj_boss_pg_light_block.t = 0;
+		obj_boss_pg_light_block.image_index = 4;
+	}
+}
 #endregion
 
 #region Получение урона

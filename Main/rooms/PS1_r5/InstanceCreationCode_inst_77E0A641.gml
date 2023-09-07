@@ -1,2 +1,2 @@
 TargetRoom = PS1_r4;
-TargetX = 544-16;
+TargetX = 480-16;

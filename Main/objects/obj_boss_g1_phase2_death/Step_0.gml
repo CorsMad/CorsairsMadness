@@ -43,7 +43,7 @@ if state = 2
 	}
 	if point_distance(x, y, 48, 64) > 4
 	{
-	    move_towards_point(46, 64, 4);
+	    move_towards_point(48, 64, 4);
 	}
 	else 
 	{

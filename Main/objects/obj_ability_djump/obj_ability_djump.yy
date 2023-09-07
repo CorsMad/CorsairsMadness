@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_ability_tp_masked",
-    "path": "sprites/spr_ability_tp_masked/spr_ability_tp_masked.yy",
+    "name": "spr_ability_djump",
+    "path": "sprites/spr_ability_djump/spr_ability_djump.yy",
   },
   "spriteMaskId": null,
   "visible": true,

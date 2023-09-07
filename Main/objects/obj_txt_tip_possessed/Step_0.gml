@@ -2,14 +2,16 @@
 // You can write your code in this editor
 player_input();
 
-if t < 101 t++;
+if t < 102 t++;
 switch(t)
 {
     case 50: alpha = 0.5;break;   
     case 100: 
         alpha = 1;
-        canSkip = 1;
         break;   
+	case 101:
+		canSkip = 1;
+		break;
 }
 
 if canSkip = 1 && (key_attack || key_jump)

@@ -60,5 +60,18 @@ if state = 2
             instance_destroy();   
         }
    
-    } else instance_destroy();
+    } else if instance_exists(obj_boss_le1_3) 
+	{
+		if point_distance(x,y,obj_boss_le1_3.x, obj_boss_le1_3.y) > 12
+        {
+            move_towards_point(obj_boss_le1_3.x, obj_boss_le1_3.y, 8);
+        }
+        else 
+        {
+            // Нанести урон
+            obj_boss_le1_3.item_hit += 1;
+            instance_destroy();   
+        }
+	} else instance_destroy();
+	
 }

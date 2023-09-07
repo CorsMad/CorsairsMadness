@@ -1,13 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.TargetX      = 48;
-global.TargetY      = 208;
-global.TargetRoom   = D1_r1;
+global.TargetX      = 128;
+global.TargetY      = 240;
+global.TargetRoom   = TESTROOM;
 
-global.fTargetX     = 48;
-global.fTargetY     = 208;
-global.fTargetRoom  = PL1_r12;
+global.fTargetX     = 432;
+global.fTargetY     = 240;
+global.fTargetRoom  = PL2_r13;
+
+
+
 
 
 
@@ -86,6 +89,10 @@ global.language = 0;
 #region Разрешение на пушку 
 
 global.cannon_j2_r1 = 0;
+global.cannon_d2_r1 = 0;
+global.cannon_sn2_r1 = 0;
+global.cannon_l2_r1 = 0;
+global.cannon_sh2_r1 = 0;
 
 #endregion
 
@@ -177,9 +184,9 @@ global.purch_parrotcage3 = 0;
 global.hp = 5;           // 4
 global.hp_max = 5;       // 4
 global.choosed_item_special = 0;
-global.choosed_item = 2; // 1- бумер 2 -топ // 3 - бомба // 4 - eball // 5 - parrot // 11 - арбалет
-global.choosed_item_tier = 1; // ТИР предмета
-global.choosed_itemboat = 3; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
+global.choosed_item = 4; // 1- бумер 2 -топ // 3 - бомба // 4 - eball // 5 - parrot // 11 - арбалет
+global.choosed_item_tier = 3; // ТИР предмета
+global.choosed_itemboat = 2; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
 global.choosed_itemboat_tier = 3; // ТИП предмета для лодки
 global.mana = 3;
 global.mana_max = 3;
@@ -252,7 +259,7 @@ global.darkessence_saved = 0;
 
 // Установка секретов
 
-global.secrets = 0;
+global.secrets = 10;
 
 // Установка ограничений игрока
 
@@ -342,7 +349,7 @@ t2 = 0;
 #region Desert
 
  /* 1 УРОВЕНЬ */
- global.cannon_d2_r1 = 0;
+
  
     #region Сундуки
     global.chest_d1_r2 = 1;
@@ -393,9 +400,9 @@ t2 = 0;
      
     global.Cutscene_jp2_r15 = 1;
     global.Cutscene_pd2_r15 = 1;
-    global.Cutscene_sp2_r14 = 0;
+    global.Cutscene_sp2_r14 = 1;
     global.Cutscene_gp2_r14 = 1;
-    global.Cutscene_lp2_r14 = 1;
+    global.Cutscene_lp2_r16 = 1;
     
     #endregion
 
@@ -421,7 +428,7 @@ global.secrets_s1_s1 = 0
 
 #region S2
 
-global.cannon_sn2_r1 = 0;
+
 
 global.chest_s2_r2 = 1;
 global.chest_s2_r7 = 1;
@@ -436,7 +443,7 @@ global.secrets_s2p_s = 0
 
 #region LAVA
 
-global.cannon_l2_r1 = 0;
+
 
 #region сундуки
 global.chest_l1_r3 = 1;
@@ -469,7 +476,7 @@ global.secrets_l2p_s = 0;
 
 #region SHADOW
 
-global.cannon_sh2_r1 = 0;
+
 
 #region Сундуки
 global.chest_g1_r3 = 1;

@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1d590530-1a0f-4d5a-98c7-fffe388c4322",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7ebd621f-6066-4cb0-b50d-a93c883b9cd0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0a7756b7-b6df-431e-b855-ef4dcdc6e1e9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c53ca835-1a97-4658-b10d-ef4d74b81470",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 96,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"992e9a73-acf6-4a87-a4d6-3e9e02084e2b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"14ae4beb-affe-418d-8e8d-4fa14e95f26d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1d590530-1a0f-4d5a-98c7-fffe388c4322","path":"sprites/spr_werewolf_jump/spr_werewolf_jump.yy",},},},"Disabled":false,"id":"8bb54bf1-f872-478d-bd5b-c69f30287581","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7ebd621f-6066-4cb0-b50d-a93c883b9cd0","path":"sprites/spr_werewolf_jump/spr_werewolf_jump.yy",},},},"Disabled":false,"id":"96f0aba6-14be-4171-9a5c-3ea75d47a9b2","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0a7756b7-b6df-431e-b855-ef4dcdc6e1e9","path":"sprites/spr_werewolf_jump/spr_werewolf_jump.yy",},},},"Disabled":false,"id":"7e602ff4-5def-4b59-81ee-01c22ea8a1d1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c53ca835-1a97-4658-b10d-ef4d74b81470","path":"sprites/spr_werewolf_jump/spr_werewolf_jump.yy",},},},"Disabled":false,"id":"a58ba3d5-c84d-4f9c-a2ad-fe12d902eb27","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

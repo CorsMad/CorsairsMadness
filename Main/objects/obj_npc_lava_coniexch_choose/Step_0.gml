@@ -14,11 +14,12 @@ if key_jump || key_attack
     switch(select)
     {
         case 0:
-            if global.secrets >=7
+            if global.secrets >=7 && global.saved_vulcano = 0 
             {
                 global.secrets -=7; 
                 global.saved_vulcano = 1;
-                // заставка
+                var cutsc = instance_create_depth(0,0,0,obj_coin_cutscene);
+				cutsc.target = obj_lava_coin_exchanger;
                 instance_destroy();
             }       
             break;

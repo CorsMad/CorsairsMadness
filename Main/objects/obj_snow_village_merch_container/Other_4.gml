@@ -12,7 +12,7 @@ switch(global.completed_PS2)
         i.TargetY = 240;
         break;
     case 1:
-        instance_create_depth(48,208,1,obj_snow_coin_exchanger);
+        instance_create_depth(58,240,1,obj_snow_coin_exchanger);
     
         if global.dia_snowMerch_f_talk = 1
         {

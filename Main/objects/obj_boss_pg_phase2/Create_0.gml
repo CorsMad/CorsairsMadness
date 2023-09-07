@@ -23,3 +23,6 @@ if instance_exists(obj_Player)
 hit_cd = 0;
 enemy_hp = 70;
 t_red =0;
+
+turn_light = 0;
+t_anim = 0;

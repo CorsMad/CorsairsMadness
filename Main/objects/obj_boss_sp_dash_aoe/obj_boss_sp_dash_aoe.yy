@@ -36,5 +36,5 @@
     "path": "sprites/spr_boss_sp_dashhitbox/spr_boss_sp_dashhitbox.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

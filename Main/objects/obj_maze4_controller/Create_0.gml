@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-phase = 0;
+phase = -1;
 t = 0;
 show_example = 0;
 step = 0;

@@ -32,9 +32,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
+    "name": "spr_boss_lp_idle",
+    "path": "sprites/spr_boss_lp_idle/spr_boss_lp_idle.yy",
+  },
+  "spriteMaskId": {
     "name": "spr_lava_follower_mask",
     "path": "sprites/spr_lava_follower_mask/spr_lava_follower_mask.yy",
   },
-  "spriteMaskId": null,
   "visible": true,
 }

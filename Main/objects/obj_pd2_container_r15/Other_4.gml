@@ -30,7 +30,8 @@ if global.Cutscene_pd2_r15 = 1
     instance_create_depth(240,160,0,obj_boss_dp_npc);
 } else
 {
-    var i = instance_create_depth(400,176,0,obj_boss_dp_phase1);
+    //var i = instance_create_depth(400,176,0,obj_boss_dp_phase1);
+    var i = instance_create_depth(400,176,0,obj_boss_dp_phase3);
     i.image_xscale = -1;
  
 }

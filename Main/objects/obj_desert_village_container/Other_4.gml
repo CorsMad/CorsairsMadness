@@ -21,7 +21,7 @@ if global.dia_desertChief = 1
 
 if global.saved_desert = 1 
 {
-    instance_create_depth(384,240,1,obj_npc_pew_village);        
+    instance_create_depth(832,240,1,obj_npc_pew_village);        
 }
 
 #region указатель

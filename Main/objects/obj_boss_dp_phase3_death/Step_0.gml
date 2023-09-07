@@ -11,7 +11,7 @@ else speed = 0;
 
 if t > 80 && t < 240 && t mod 10 = 0
 {
-    if image_index = 3 image_index = 4 else image_index = 3;   
+    if image_index = 1 image_index = 2 else image_index = 1;   
 }
 
 t_blood++;
@@ -76,35 +76,27 @@ if t_blood >= 80 && t_blood < 260
 switch(t)
 {
     case 50:
-        image_index = 2;
+        image_index = 1;
         break;
     case 250: 
-        image_index = 5;
+        image_index = 3;
         break;
     case 280:
-        sprite_index = spr_follower_grounded_transform_2;
-        image_index = 0;
+        image_index = 4;
         fnc_snd_play_onetime(snd_transform);
         break;
     case 285:
-        image_index = 1;
+        image_index = 5;
         break;
     case 290:
-        image_index = 2;
+        image_index = 6;
         break;
     case 295:
-        image_index = 3;
+        image_index = 7;
         break;
     case 300:
-        image_index = 4;
-        break;
-    case 305:
-        image_index = 5;
-        fnc_msc_play(msc_jp1_c_jp2_c);
-        break;
-    case 360:
         instance_destroy();
-        var j = instance_create_depth(x-18*sign(image_xscale),y-18,depth,obj_npc_pew_temple);
+        var j = instance_create_depth(x,y,depth,obj_npc_pew_temple);
         j.image_xscale = image_xscale;
-    
+        break;   
 }

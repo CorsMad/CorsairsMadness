@@ -44,3 +44,18 @@ if place_meeting(x,y,obj_Player) && obj_Player.isDead != 2
 
 }
 
+#region Графика
+
+if global.saved_vulcano = 0 {
+	t_anim++;
+	if t_anim = 20 {
+		var s = instance_create_depth(x+random_range(-16,16),y+random_range(-2,8),depth+choose(-1,1),obj_coin_souls);	
+		s.image_xscale = choose(-s_scale,s_scale);
+		s.image_yscale = s_scale;
+		s.image_alpha = random_range(0.7,1);
+		s_scale = choose(1,1.1,1.2,1.3,1.4,1.5);
+		t_anim=0;
+	}
+}
+
+#endregion

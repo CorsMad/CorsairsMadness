@@ -12,10 +12,7 @@
     "name": "Phase1",
     "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Graveyard/Bosses/Boss3/Phase1.yy",
   },
-  "parentObjectId": {
-    "name": "obj_enemy_parent_object",
-    "path": "objects/obj_enemy_parent_object/obj_enemy_parent_object.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -32,9 +29,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boss_pg_phase1_aoe",
-    "path": "sprites/spr_boss_pg_phase1_aoe/spr_boss_pg_phase1_aoe.yy",
+    "name": "spr_boss_gp_aoe_proj",
+    "path": "sprites/spr_boss_gp_aoe_proj/spr_boss_gp_aoe_proj.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_boss_gp_aoe_proj_mask",
+    "path": "sprites/spr_boss_gp_aoe_proj_mask/spr_boss_gp_aoe_proj_mask.yy",
+  },
   "visible": true,
 }

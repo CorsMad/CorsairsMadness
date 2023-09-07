@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boss_sp_stun",
-    "path": "sprites/spr_boss_sp_stun/spr_boss_sp_stun.yy",
+    "name": "spr_npc_sully_transform",
+    "path": "sprites/spr_npc_sully_transform/spr_npc_sully_transform.yy",
   },
   "spriteMaskId": {
     "name": "spr_follower_grounded_mask",

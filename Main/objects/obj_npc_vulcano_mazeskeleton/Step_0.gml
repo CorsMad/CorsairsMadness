@@ -2,6 +2,11 @@
 // You can write your code in this editor
 
 
+if instance_exists(obj_Player)
+{
+	if obj_Player.x > x image_xscale = -1 else image_xscale = 1;	
+}
+
 
 /* 
 states 

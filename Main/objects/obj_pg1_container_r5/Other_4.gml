@@ -6,6 +6,6 @@ if instance_exists(obj_Player)
 {
     if obj_Player.SpecAbilMask !=4  
     {
-        instance_create_depth(248,176,0,obj_ability_djump)   ;
+        instance_create_depth(336,240,0,obj_ability_djump)   ;
     }
 }

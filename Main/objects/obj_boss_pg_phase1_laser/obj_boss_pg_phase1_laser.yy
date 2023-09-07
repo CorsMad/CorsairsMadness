@@ -13,7 +13,10 @@
     "name": "Phase1",
     "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Graveyard/Bosses/Boss3/Phase1.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_parent_object",
+    "path": "objects/obj_enemy_parent_object/obj_enemy_parent_object.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,12 +33,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boss_pg_phase1_laser",
-    "path": "sprites/spr_boss_pg_phase1_laser/spr_boss_pg_phase1_laser.yy",
+    "name": "spr_follower_grounded_laser_projectile",
+    "path": "sprites/spr_follower_grounded_laser_projectile/spr_follower_grounded_laser_projectile.yy",
   },
   "spriteMaskId": {
-    "name": "spr_boss_pg_phase1_laser",
-    "path": "sprites/spr_boss_pg_phase1_laser/spr_boss_pg_phase1_laser.yy",
+    "name": "spr_follower_grounded_laser_projectile",
+    "path": "sprites/spr_follower_grounded_laser_projectile/spr_follower_grounded_laser_projectile.yy",
   },
   "visible": true,
 }

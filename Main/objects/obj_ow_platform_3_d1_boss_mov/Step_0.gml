@@ -2,10 +2,10 @@
 // You can write your code in this editor
 if instance_exists(obj_Player)
 {
-    if isOn = 1
+    if isOn = 1 
     {
         if t < 14 t++;
-        switch(t)
+        switch(t)								
         {
             case 1: subimg = 1;break;   
             case 3: subimg = 2;break;   
@@ -30,7 +30,21 @@ if instance_exists(obj_Player)
         mask_index = -1;   
     }
     
-    
+    if deactivate = 1 && isOn = 0
+	{
+			t++;
+			switch(t)
+			{
+				case 1: subimg = 7;instance_destroy(obj_platform_3_v_e_d1_boss_mov);break;	
+				case 3: subimg = 6;break;	
+				case 5: subimg = 5;break;	
+				case 7: subimg = 4;break;	
+				case 9: subimg = 3;break;	
+				case 11: subimg = 2;break;	
+				case 13: subimg = 1;break;	
+				case 15: subimg = 0;deactivate = 0;break;	
+			}
+	}
     
     
     

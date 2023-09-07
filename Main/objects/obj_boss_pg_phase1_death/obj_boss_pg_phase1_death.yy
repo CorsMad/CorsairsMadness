@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_follower_grounded_mask",
-    "path": "sprites/spr_follower_grounded_mask/spr_follower_grounded_mask.yy",
+    "name": "spr_boss_gp_phase3_stun",
+    "path": "sprites/spr_boss_gp_phase3_stun/spr_boss_gp_phase3_stun.yy",
   },
   "spriteMaskId": {
     "name": "spr_follower_grounded_mask",

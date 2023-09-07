@@ -20,3 +20,4 @@ function fnc_endurance_j_spwn_bird_wave_close(){
     if obj_Player.x < room_width/2 instance_create_depth(480+32,obj_Player.y+32,0,obj_bird_horizontal_waving_l);
 
 }
+

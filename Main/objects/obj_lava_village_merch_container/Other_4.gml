@@ -12,7 +12,7 @@ switch(global.completed_PL2)
         i.TargetY = 240;
         break;
     case 1:
-        instance_create_depth(320,208,1,obj_shadow_coin_exchanger);
+        instance_create_depth(320,240,1,obj_lava_coin_exchanger);
         if global.dia_vulcanoMerch_f_talk = 1
         {
             var i = instance_create_depth(238,240,depth,obj_teleport_junglevillage);

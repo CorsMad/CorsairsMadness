@@ -1,12 +1,17 @@
 /// @description Insert description here
 // You can write your code in this editor
+fnc_Collision(obj_block)
 
+vspd+=0.2;
+if place_meeting(x,y+1,obj_block) {
+	sprite_index = spr_npc_bonnie_sit;
+	if !instance_exists(obj_boss_pl_graph_ghost_creator)
+	{
+		instance_create_depth(x,y-96,depth,obj_boss_pl_graph_ghost_creator);	
+	}
+	
+}
 
-if y < 480
-{
-    y+=vspd;
-    vspd+=0.2;   
-} else {y = 480;vspd = 0;isGrounded = 1;image_index = 1; }
 
 
 if instance_exists(obj_Player)

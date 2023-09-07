@@ -7,12 +7,12 @@ if instance_exists(obj_Player)
         case -1:
             orient = -1;
             x = lerp(x,obj_Player.x+32,0.1);
-            y = lerp(y,obj_Player.y-48,0.1);            
+            y = lerp(y,obj_Player.y-24,0.1);            
             break;
         case 1:
             orient = 1;
             x = lerp(x,obj_Player.x-32,0.1);
-            y = lerp(y,obj_Player.y-48,0.1);
+            y = lerp(y,obj_Player.y-24,0.1);
             break;        
     }
 } else instance_destroy();

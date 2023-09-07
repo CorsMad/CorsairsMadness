@@ -12,7 +12,7 @@ switch(global.completed_PD2)
         i.TargetY = 240;
         break;
     case 1:
-        instance_create_depth(48,208,1,obj_desert_coin_exchanger);
+        instance_create_depth(58,240,1,obj_desert_coin_exchanger);
         
         if global.dia_desertMerch_f_talk = 1
         {

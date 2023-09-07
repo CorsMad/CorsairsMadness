@@ -7,7 +7,7 @@ sspd = 0;
 fspd = 0;
 doublejumpspd = 0;
 grav = 0;//0.25;
-
+superdash_y = obj_Player.y;
 
 oleg = 1;
 dash_buffer_human = 0;

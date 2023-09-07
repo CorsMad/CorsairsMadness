@@ -7,8 +7,6 @@ draw_sprite(spr_shop,submenu,240,135);
 
 #endregion
 
-
-
 #region Отрисовка текстов
 
 draw_set_halign(fa_left);
@@ -48,7 +46,6 @@ switch(submenu)
                     break;            
             }      
             break;
-
         case 2:
             switch(index)
             {

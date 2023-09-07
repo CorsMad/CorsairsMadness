@@ -906,8 +906,9 @@ if global.choosed_item = 3 // Бомба
 		#region bomb
 	
 		#region on ground
-			if key_item && isFlueting = 0 && isUsingabil = 0 && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
+			if key_item && global.mana > 0 && isFlueting = 0 && isUsingabil = 0 && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 			{
+				global.mana -=1;
                 sbootsbuffer = 0;  
 				image_index = 0;
 				isUsingitem = 1;
@@ -934,8 +935,9 @@ if global.choosed_item = 3 // Бомба
 		#endregion
 		#region in air
 	
-			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirUsingabil = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && isFlueting = 0 && isAirUsingabil = 0 && isAirUsingabil = 0 && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
+			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirUsingabil = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && global.mana > 0 && isFlueting = 0 && isAirUsingabil = 0 && isAirUsingabil = 0 && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 			{
+				global.mana -=1;
 				image_index = 0;
 				isAirUsingitem = 1;
 				sprite_index = spr_player_item_use;
@@ -1007,8 +1009,11 @@ if global.choosed_item = 4 // Eball
 		#region eball
 	
 		#region on ground
-			if key_item && isFlueting = 0 && isUsingabil = 0 && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
+			if key_item && isFlueting = 0 && global.mana > 2 && isUsingabil = 0 && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 			{
+				global.mana-=2
+				
+				
                 sbootsbuffer = 0;  
 				image_index = 0;
 				isUsingitem = 1;
@@ -1035,8 +1040,9 @@ if global.choosed_item = 4 // Eball
 		#endregion
 		#region in air
 	
-			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0 && isAirUsingabil = 0 ) || (key_attack && key_jump && isGrounded = 1)) && isFlueting = 0 && isAirUsingabil = 0 && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
+			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0 && isAirUsingabil = 0 ) || (key_attack && key_jump && isGrounded = 1)) && global.mana > 2 && isFlueting = 0 && isAirUsingabil = 0 && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 			{
+				global.mana-=2;
 				image_index = 0;
 				isAirUsingitem = 1;
 				sprite_index = spr_player_item_use;
@@ -1105,128 +1111,29 @@ if global.choosed_item = 4 // Eball
 	}
 if global.choosed_item = 5 // Попугай
 {
-    if key_item && instance_exists(obj_item_parrot) {
+	if !instance_exists(obj_item_parrot) {
+		instance_create_depth(x,y-48,depth+1,obj_item_parrot);	
+	}
+    if key_item && instance_exists(obj_item_parrot) && global.mana> 0 {
+		global.mana-=1;
         switch(global.choosed_item_tier)
         {
             case 1:
-                var parrot_proj = instance_create_depth(obj_item_parrot.x,obj_item_parrot.y,0,item_tier);
-                parrot_proj.hspd = image_xscale*5;      
+                var parrot_proj = instance_create_depth(obj_item_parrot.x,obj_item_parrot.y,-10,item_tier);
+                parrot_proj.hspd = image_xscale*4;      
                 break;
             case 2:
-                var parrot_proj = instance_create_depth(obj_item_parrot.x,obj_item_parrot.y,0,item_tier);
-                parrot_proj.hspd = image_xscale*5; 
+                var parrot_proj = instance_create_depth(obj_item_parrot.x,obj_item_parrot.y,-10,item_tier);
+                parrot_proj.hspd = image_xscale*4; 
                 break;
             case 3:
-                var parrot_proj = instance_create_depth(obj_item_parrot.x,obj_item_parrot.y,0,item_tier);
-                parrot_proj.hspd = image_xscale*5; 
+                var parrot_proj = instance_create_depth(obj_item_parrot.x,obj_item_parrot.y,-10,item_tier);
+                parrot_proj.hspd = image_xscale*4; 
                 break;
         }
     }
 }
-if global.choosed_item = 11 // МагичЛук
-{
-    /*
-		#region MagicBow
-			
-		#region on ground
-        
-			if key_item && isAirUsingitem = 0 && isAirUsingabil = 0 && isUsingitem = 0 && isCarry = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 
-			{
-                sbootsbuffer = 0;  
-				image_index = 0;
-				isUsingitem = 1;
-				sprite_index = spr_player_abiluse;
-				image_speed = 1;
-				
-			}
-			if isUsingitem = 1 && isGrounded = 1
-			{
-				hspd = 0;
-				spd = 0;
-			}	
-			if isUsingitem = 1 && image_index = 4
-			{
-				isUsingitem = 0;	
-			}
-			if isUsingitem = 1 && image_index = 1
-			{
-				
-				var abilMagicBow = instance_create_depth(x,y-24,depth-1,obj_abil_arbalet);
-				abilMagicBow.image_xscale = sign(image_xscale);
-			}		
-			if isUsingitem = 1 && !place_meeting(x,y+1,obj_block)
-			{
-				isUsingitem = 0;	 
-			}
-		#endregion
-		#region in air
-		  
-			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirUsingabil = 0) || (key_item && key_jump && isGrounded = 1)) && isAirUsingitem = 0 && isAirUsingabil = 0 && isCarry = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
-			{
-				
-				image_index = 0;
-				isAirUsingitem = 1;
-				sprite_index = spr_player_abiluse;
-				image_speed = 1;
-			}
-			if isAirUsingitem = 1 
-			{	
-				if key_left
-				{
-					if spd > 0 
-					{
-						spd = -2;
-					}
-					if spd <= 0 
-					{
-						if spd > -2
-						{
-							spd -=0.5;	
-						}
-					}
-				}
-				if key_right 
-				{
-					if spd < 0 
-				{
-					spd = 2;
-				}
-				if spd >= 0 
-				{
-					if spd < 2
-					{
-						spd += 0.5;	
-					}
-				}
-		
-				}
-				if (!key_left && !key_right) || (key_left && key_right) 
-				{
-					hspd = 0;
-					spd = 0;
-				}
-				vspd += 0.25;	
-			}
 
-			if isAirUsingitem = 1 && jump_timer < 1
-			{
-				spd = 0;	
-			}
-			if isAirUsingitem = 1 && image_index = 1
-			{
-				var abilMagicBow = instance_create_depth(x,y-24,depth-1,obj_abil_arbalet);
-				abilMagicBow.image_xscale = sign(image_xscale);
-			}
-			if isAirUsingitem = 1 && image_index = 4
-			{
-				isAirUsingitem = 0;	
-			}
-	
-		#endregion
-		
-#endregion
-        */
-	}
 
 #endregion
 #region Taking dmg

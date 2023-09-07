@@ -6,12 +6,14 @@ t = 0;
 hspd = 0;
 vspd = 0;
 
-
+image_speed = 0;
 player_near = 0;
 player_near_timer = 0;
 
 
 hit_cd = 0;
-enemy_hp = 30
+enemy_hp = 40
 
-pos = 0; 
+pos = 0; // 0 слеванаправо
+
+if x < room_width/2 image_xscale = 1 else image_xscale = -1;

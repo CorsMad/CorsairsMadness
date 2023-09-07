@@ -29,9 +29,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
+    "name": "spr_follower_lp_appear",
+    "path": "sprites/spr_follower_lp_appear/spr_follower_lp_appear.yy",
+  },
+  "spriteMaskId": {
     "name": "spr_desert_follower_mask",
     "path": "sprites/spr_desert_follower_mask/spr_desert_follower_mask.yy",
   },
-  "spriteMaskId": null,
   "visible": true,
 }

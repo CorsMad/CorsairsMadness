@@ -6,7 +6,10 @@ if point_distance(x, y, 450, 186) > 6
 }
 else 
 {
-
-        instance_create_depth(0,0,0,obj_boss_d1_2_appear)   ;
+	if string(room_get_name(room)) == "EnduranceDesert"
+	{
+		instance_create_depth(0,0,0,obj_boss_de_2_appear)   ;		
+	} else instance_create_depth(0,0,0,obj_boss_d1_2_appear)   ;
+    
     instance_destroy();   
 }

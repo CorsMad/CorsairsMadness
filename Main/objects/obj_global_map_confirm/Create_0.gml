@@ -7,3 +7,4 @@ select = 1;
 t =0 ;
 
 
+script_lng_conf();

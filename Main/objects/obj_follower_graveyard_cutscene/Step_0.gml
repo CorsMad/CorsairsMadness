@@ -21,9 +21,10 @@ switch(state)
         }
         break;
     case 1:
-        
+        sprite_index = spr_boss_gp_idle;
         break;
     case 2:
+		sprite_index = spr_boss_gp_fly;
         y-=3;
         if y <= -32 instance_destroy();
         break;

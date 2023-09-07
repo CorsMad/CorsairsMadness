@@ -1,2 +1,2 @@
-TargetRoom = PG1_r5;
+TargetRoom = PG1_r45;
 TargetY = 16;

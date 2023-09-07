@@ -4,6 +4,6 @@
 
 state = 0;
 
-
+sprite_index = spr_boss_gp_idle;
 
 

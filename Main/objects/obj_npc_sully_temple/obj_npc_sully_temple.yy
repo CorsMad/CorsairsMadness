@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_npc_jake_onknees",
-    "path": "sprites/spr_npc_jake_onknees/spr_npc_jake_onknees.yy",
+    "name": "spr_npc_sully_fall",
+    "path": "sprites/spr_npc_sully_fall/spr_npc_sully_fall.yy",
   },
   "spriteMaskId": {
     "name": "spr_player_mask",

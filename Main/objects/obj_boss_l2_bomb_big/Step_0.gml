@@ -84,5 +84,24 @@ if state = 2
             instance_destroy();   
         }
    
-    } else instance_destroy();
+    } else if instance_exists(obj_boss_le2_phase2)
+	{
+		if point_distance(x,y,obj_boss_le2_phase2.x, obj_boss_le2_phase2.y) > 12
+        {
+            move_towards_point(obj_boss_le2_phase2.x, obj_boss_le2_phase2.y, 8);
+        }
+        else 
+        {
+            // Нанести урон
+            obj_boss_le2_phase2.bomb_hit += 1;
+			instance_create_depth(x,y,depth-1,obj_sfx_explosion_bomb);
+            instance_create_depth(x-18,y-18,depth-1,obj_sfx_explosion_bomb);
+            instance_create_depth(x-18,y+18,depth-1,obj_sfx_explosion_bomb);
+            instance_create_depth(x+18,y-18,depth-1,obj_sfx_explosion_bomb);
+            instance_create_depth(x+18,y+18,depth-1,obj_sfx_explosion_bomb);
+            instance_destroy();   
+        }
+	} else instance_destroy();	
+	
+	
 }

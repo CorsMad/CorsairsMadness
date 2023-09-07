@@ -4,6 +4,7 @@
   "name": "obj_block_superdash_destr",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -31,9 +32,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_destructable_block_big",
-    "path": "sprites/spr_destructable_block_big/spr_destructable_block_big.yy",
+    "name": "spr_block_superdash_mask",
+    "path": "sprites/spr_block_superdash_mask/spr_block_superdash_mask.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_block_superdash_mask",
+    "path": "sprites/spr_block_superdash_mask/spr_block_superdash_mask.yy",
+  },
   "visible": true,
 }

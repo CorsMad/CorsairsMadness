@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_follower_grounded_transform1",
-    "path": "sprites/spr_follower_grounded_transform1/spr_follower_grounded_transform1.yy",
+    "name": "spr_npc_bonnie_transform",
+    "path": "sprites/spr_npc_bonnie_transform/spr_npc_bonnie_transform.yy",
   },
   "spriteMaskId": {
     "name": "spr_follower_grounded_mask",

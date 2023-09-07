@@ -11,3 +11,5 @@ if on = 0 && image_alpha > 0
 {
     image_alpha-=0.1;   
 }
+
+if !instance_exists(own) instance_destroy();

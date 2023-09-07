@@ -7,5 +7,5 @@ a_max = 220;
 
 start = y;
 
-var aoe = instance_create_depth(x,y,depth+1,obj_item_eball_aoe);
-aoe.fol = id;
+t_create = 0;
+image_angle = choose(0,90,180,270);

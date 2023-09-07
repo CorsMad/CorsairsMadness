@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_item_parrot_proj1",
-    "path": "sprites/spr_item_parrot_proj1/spr_item_parrot_proj1.yy",
+    "name": "spr_item_parrot_proj3",
+    "path": "sprites/spr_item_parrot_proj3/spr_item_parrot_proj3.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -29,6 +29,7 @@
     {"name":"inst_565509F4","path":"rooms/S1_r17/S1_r17.yy",},
     {"name":"inst_5F2C84EA","path":"rooms/S1_r17/S1_r17.yy",},
     {"name":"inst_736DF28D","path":"rooms/S1_r17/S1_r17.yy",},
+    {"name":"inst_659DAFE9","path":"rooms/S1_r17/S1_r17.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -55,6 +56,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_565509F4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_maze5_trigger","path":"objects/obj_maze5_trigger/obj_maze5_trigger.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":112.0,"y":256.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5F2C84EA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_silver_key_door3","path":"objects/obj_silver_key_door3/obj_silver_key_door3.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":208.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_736DF28D","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_room_transition_horizontal","path":"objects/obj_room_transition_horizontal/obj_room_transition_horizontal.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":2.6,"x":-16.0,"y":208.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_659DAFE9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_snow_lvl1_container_s17","path":"objects/obj_snow_lvl1_container_s17/obj_snow_lvl1_container_s17.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":-32.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_4","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 6,9,14,14,19,-2147483648,14,-4,24,14,19,24,24,9,9,-2147483648,24,-2147483648,24,-2147483648,19,14,9,14,-6,-2147483648,-2,24,8,9,

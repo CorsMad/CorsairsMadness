@@ -13,7 +13,7 @@ if image_xscale = 1
 {
 	dir = 1;	
 } else dir = -1;
-
+superdash_y = obj_Player.y;
 if isGrounded = 0 
 {
 	jump_timer += 1;	
@@ -282,7 +282,10 @@ if key_attack && isRecoil = 0 && isAfterhook = 0 && isAirThrowingBomb = 0 && isC
 {
 	image_index = 0;
 	isAttacking = 1;
-    
+    superdash_timer = 0;
+            superdash_timer_count = 1;
+            dash_vfx_timer = 0;
+            superdash_power = 0;
     sprite_index = choose(spr_player_masked_attack1,spr_player_masked_attack2);
     
 	image_speed = 1;
@@ -384,6 +387,10 @@ if ((key_attack && isGrounded = 0 && isAirattacking = 0) || (key_attack && key_j
 	sprite_index = spr_player_masked_attack1;
 	image_speed = 1;
     isAfterhook = 0;
+	superdash_timer = 0;
+            superdash_timer_count = 1;
+            dash_vfx_timer = 0;
+            superdash_power = 0;
     
 }
 if isAirattacking = 1 
@@ -534,6 +541,10 @@ if key_dashing && dashing_timer_count = 0 && isCarry = 0 && isAfterhook = 0 && !
         image_xscale = -1;
         dir = -1;   
     }
+	superdash_timer = 0;
+            superdash_timer_count = 1;
+            dash_vfx_timer = 0;
+            superdash_power = 0;
 }
 if isDashing = 1
 {
@@ -875,7 +886,7 @@ if isRecoil = 1
 
 #region Superdash
 
-if isRecoil = 0 && key_item_pressed && SpecAbilMask = 3 && superdash_timer_count = 0 && isTakingdmg = 0 && (damage_cd > 30 || damage_cd = 0)
+if isRecoil = 0 && key_item_pressed && SpecAbilMask = 3 && superdash_timer_count = 0 && isTakingdmg = 0 && (damage_cd > 30 || damage_cd = 0) && isAttacking = 0
 {
     isDashing = 0;
     isAttacking = 0;
@@ -1600,6 +1611,10 @@ if isDead = 1
     #region применение супердеша
     if isDead = 12
     {
+		
+		
+		y = lerp(y,superdash_y,1);
+		
         vspd =0 ;
         sprite_index = spr_player_masked_superdash;
         image_speed = 1;

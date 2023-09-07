@@ -80,6 +80,11 @@ if state = 3
         d3.vspd = -2;
     }
 }
+
+if state > 1 {
+	if y > room_height+64 instance_destroy();	
+	if y < -64 instance_destroy();	
+}
 #endregion
 
 #region #takedmg

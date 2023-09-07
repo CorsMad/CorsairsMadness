@@ -21,6 +21,10 @@ fnc_Collision(obj_block);
 switch(state)
 {
     case 0:
+	#region anim
+	if x > room_width/2 image_xscale = -1 else image_xscale = 1;
+	sprite_index = spr_boss_lp_idle;
+	#endregion
     #region ожидание
     t++;
     if t = 50
@@ -28,62 +32,133 @@ switch(state)
         t = 0;
         if player_near_timer > 200
         {
-            state = 5;
+            state = 3;
             t = 0;
             player_near_timer = 0;
             player_near = 0;
         } else 
         {
-            if abs(obj_Player.x-x) > 256 {state = 1;t=0};  
-            if abs(obj_Player.x-x) <= 256 && abs(obj_Player.x-x) > 80 {t=0;state = 2; } 
+            if abs(obj_Player.x-x) > 256 state = 1;  
+            if abs(obj_Player.x-x) <= 256 && abs(obj_Player.x-x) > 80 {t=0;state = 2;} 
             if abs(obj_Player.x-x) <= 80 {t=0;state = 4;}  
         }
     }
     #endregion
-    break;
+		break;
     case 1:
-    #region выстрел из винтовки
-    t++;
-    if t = 150
-    {
-        //выстрел   
-    }
-    t = 200
-    {
-        t = 0;
-        state = 0;   
-    }
-    #endregion
-    break;
+	t++;
+	#region anim
+	switch(t)
+	{
+		case 5:sprite_index = spr_boss_lp_shot_rifle;image_index = 0;image_speed = 0;break;
+		case 10:image_index = 1;break;
+		case 15:image_index = 2;break;
+		case 20:image_index = 3;
+			var target = instance_create_depth(obj_Player.x,obj_Player.y-24,obj_Player.depth-1,obj_boss_pl_phase1_target);		
+			target.boss_phase = obj_boss_pl_phase1;
+			break;
+		case 150:image_index =4;
+			
+			var bullet = instance_create_depth(x,y-12,depth-1,obj_follower_lava_bullet);
+			bullet.x_dest = obj_boss_pl_phase1_target.x;
+			bullet.y_dest = obj_boss_pl_phase1_target.y;
+			instance_create_depth(x+42*image_xscale,y-12,depth-1,obj_follower_lava_steam)
+		case 151: instance_destroy(obj_boss_pl_phase1_target);break;
+		case 160: image_index = 2;break;
+		case 165: image_index = 1;break;
+		case 170: image_index = 0;break;
+		case 175: sprite_index = spr_boss_lp_idle;image_speed = 1;break;
+		case 200:
+			state = 0;
+			t = 0;
+			break;
+	}
+	#endregion
+		break;
     case 2:
     #region серия выстрелов из пистолета в игрока
+	#region anim
+	switch(t)
+	{
+		case 1:sprite_index = spr_boss_lp_shot_pistol;image_index = 0;image_speed = 0;break;
+		case 5:image_index = 1;break;
+		case 10:image_index = 2;break;
+		case 15:image_index = 3;break;
+		case 25:image_index = 4;
+			instance_create_depth(x,y-16,depth-2,obj_follower_lava_steam)
+			instance_create_depth(x,y-16,depth-1,obj_boss_pl_phase1_pistol_bullet);
+			break;
+		case 30:image_index = 3;break;
+		case 35:image_index = 4;
+			instance_create_depth(x,y-16,depth-2,obj_follower_lava_steam)
+			instance_create_depth(x,y-16,depth-1,obj_boss_pl_phase1_pistol_bullet);
+			break;
+		case 40:image_index = 3;break;
+		case 45:image_index = 4;
+			instance_create_depth(x,y-16,depth-2,obj_follower_lava_steam)
+			instance_create_depth(x,y-16,depth-1,obj_boss_pl_phase1_pistol_bullet);
+			break;
+		case 60:image_index = 2;break;
+		case 65:image_index = 1;break;
+		case 70:image_index = 0;break;
+		case 75:sprite_index = spr_boss_lp_idle;image_speed = 1;break;
+	}
+	#endregion	
     t++;
-    if t = 50 || 75 || 100
-    {
-        // выстрел из пистолета   
-    }
     if t = 150
     {
         t = 0;state = 0;   
     }
     #endregion
-    break;
+		break;
     case 3:
     #region выстрел рикошетом
     t++;
-    if t = 50
-    {   
-        //выстрел рикошетом
-    }
+	#region anim
+	switch(t)
+	{
+		case 1: sprite_index = spr_boss_lp_shot_blaster;image_index = 0;image_speed = 0;break;
+		case 5:	image_index = 1;break;
+		case 10:	image_index = 2;break;
+		case 15:	image_index = 3;break;
+		case 20:	image_index = 4;break;
+		case 50:
+			image_index = 5;
+			var ricochet = instance_create_depth(x+24*image_xscale,y-32,depth-1,obj_boss_pl_phase1_pistol_bullet_ricochet);
+			if x > room_width/2 ricochet.dir = -1 else ricochet.dir = 1;	
+			instance_create_depth(x+24*image_xscale,y-32,depth-1,obj_follower_lava_steam)
+			break;
+	}
+	#endregion
+
     if t=  100
     {
         t = 0;
-        state = 0;
+        state = 5;
     }
     #endregion
-    break;
+		break;
     case 4:
     #region удар винтовкой вблизи
+	#region anim
+	
+	if t > 35 && t < 85 {
+		if t mod 10 = 0 instance_create_depth(x+16*image_xscale,y-32,depth-1,obj_boss_pl_phase1_rigle_aoe);
+		if image_index = 6 image_index = 2;
+	}
+	
+	switch(t)
+	{
+		case 1:sprite_index = spr_boss_lp_kick_rifle;
+			image_index = 0;image_speed = 0;
+			break;
+		case 5:image_index = 1;break;
+		case 35: image_speed = 2;break;
+		case 85:image_speed = 0;image_index = 1;break;	
+		case 90:image_index = 0;break;
+		
+	}
+	#endregion
     t++;
     if t = 50
     {
@@ -95,10 +170,18 @@ switch(state)
         state = 0;
     }
     #endregion
-    break;
+		break;
     case 5:
     #region перепрыг
     t++;
+	#region anim
+	switch(t)
+	{
+		case 30:sprite_index = spr_boss_lp_jump;image_speed = 0;image_index = 0;break;	
+		case 50:image_index = 1;break;
+	}
+	if t> 50 && vspd > 0 image_index = 2;
+	#endregion
     if t = 50
     {
          if x > room_width/2 hspd = -9.5; else hspd = 9.5;
@@ -113,15 +196,35 @@ switch(state)
         state = 0;
     }
     #endregion
-    break;
+		break;
     case 6:
     #region стан от свет
     hspd = 0;
     vspd+=0.2;
+	#region anim
+	if t < 150 {
+		sprite_index = spr_boss_lp_stun;
+		image_speed = 2;
+	}
+	if t>=150 && t < 180 {
+		sprite_index = spr_boss_lp_idle;
+		image_speed = 1;
+	}
+	if t > 180 
+	{
+		sprite_index = spr_boss_lp_jump;
+		image_speed = 0;
+		image_index = 0;
+		if obj_Player.x > room_width/2 image_xscale = -1 else image_xscale = 1;
+	}
+	#endregion
+	
+	instance_destroy(obj_boss_pl_phase1_target);
     if place_meeting(x,y+1,obj_block) t++;
     if t = 200
     {
         t = 0;
+		obj_boss_pl_light_trigger.isOn = 0;
         if instance_exists(obj_Player)
         {
             if obj_Player.x > room_width/2  hspd = -7 else hspd = 7;
@@ -131,17 +234,34 @@ switch(state)
     }
     
     #endregion
-    break;
+		break;
     case 7:
     #region отпрыг от середины
     vspd+=0.1;
+	#region anim
+	if vspd < 0 image_index = 1; else image_index = 2;
+	#endregion
     if place_meeting(x,y+1,obj_block)
     {
         state = 0;   
     }
     #endregion
-    break;
+		break;
 }
+
+#region под свет
+if instance_exists(obj_boss_pl_light) && instance_exists(obj_boss_pl_light_block)
+{
+	if place_meeting(x,y,obj_boss_pl_light) && obj_boss_pl_light.image_index = 5
+	{
+		state = 6;
+		t = 0;
+		obj_boss_pl_light_block.state = 3;
+		obj_boss_pl_light_block.t = 0;
+		obj_boss_pl_light_block.image_index = 4;
+	}
+}
+#endregion
 
 #region взаимодействие с супердэш
 if place_meeting(x,y,obj_Player)
@@ -294,6 +414,16 @@ if enemy_hp <= 0
 {    
     var d = instance_create_depth(x,y,depth,obj_boss_pl_phase1_death);
     d.image_xscale = image_xscale;
+	obj_boss_pl_light_trigger.isOn = 0;
+	instance_destroy(obj_boss_pl_phase1_pistol_bullet_ricochet);
+	if obj_boss_pl_light_block.state != 0{
+		obj_boss_pl_light_block.state = 3;
+		obj_boss_pl_light_block.t = 0;
+	}
+	
+	
+	instance_destroy(obj_boss_pl_phase1_target);
     instance_destroy();
 }
+
 #endregion

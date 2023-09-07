@@ -188,7 +188,8 @@ if state = 4 // Сверт
     }
     if y> 270+32
     {
-        obj_boss_d2_phase3_controller.state = 0;
+        if instance_exists(obj_boss_d2_phase3_controller) obj_boss_d2_phase3_controller.state = 0;
+        if instance_exists(obj_boss_de_phase3_controller) obj_boss_de_phase3_controller.state = 0;
         instance_destroy();        
     }
 }

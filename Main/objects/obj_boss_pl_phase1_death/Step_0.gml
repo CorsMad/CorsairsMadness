@@ -33,20 +33,30 @@ if (t mod 10 = 0) && t < 100
 
 switch(t)
 {
-    case 105:
-        image_index = 1;
+	case 120:
+		sprite_index = spr_boss_lp_idle;
+		image_speed = 1;
+		break;
+    case 150:
+        sprite_index = spr_boss_lp_appear;
+		image_index = 7
+		image_speed = 0;
         break;
-    case 110:
-        image_index = 0;
-        break;
-    case 115:
+	case 155: image_index = 6; break;
+	case 160: image_index = 5; break;
+	case 165: image_index = 4; break;
+	case 170: image_index = 3; break;
+	case 175: image_index = 2; break;
+	case 180: image_index = 1; break;
+	case 185: image_index = 0; break;
+    case 190:
         instance_destroy();
         if obj_Player.x > room_width/2
         {
-            var d = instance_create_depth(112,208,depth,obj_boss_pl_phase2); 
+            var d = instance_create_depth(144,208,depth,obj_boss_pl_phase3); 
             d.image_xscale = image_xscale;   
         } else {
-            var d = instance_create_depth(848,208,depth,obj_boss_pl_phase2); 
+            var d = instance_create_depth(816,208,depth,obj_boss_pl_phase3); 
             d.image_xscale = image_xscale;
         }
         

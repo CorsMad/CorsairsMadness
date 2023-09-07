@@ -3,55 +3,47 @@
 
 #region Информация
     draw_sprite_ext(spr_map_info,0,16,16,1,1,0,c_white,1);
+	draw_set_color(c_white);
     draw_set_font(fnt_pixel);
     draw_set_halign(fa_center)
     
     switch(island)
     {
-        case 0:
-            draw_text(16+81,32,i0);
+        case 0:    
             switch(global.completed_JF2)
             {
                 case 0:
-                    draw_sprite(spr_map_global_follower_jngl,0,16+81,64);break;
+                    draw_sprite(spr_text_icons,13,81+2,48);break;
                     break;
                 case 1:
-                    switch(global.saved_jungle)
-                    {
-                        case 0: draw_sprite(spr_map_global_follower_jngl,0,16+81,64);break;
-                        case 1: draw_sprite(spr_text_icons,7,16+81-14,64-13.5);break;                
-                    }
+					draw_sprite(spr_text_icons,18,81+2,48)
+					draw_sprite(spr_text_icons,global.saved_jungle+24,81+2,48) 
                     break;
-            }            
+            }     
+			draw_text(16+81,32,i0);
             break;
         case 1: // ПУСТЫНЯ
-            switch(global.completed_PD2)
+			switch(global.completed_PD2)
             {
                 case 0:
-                    draw_sprite(spr_map_global_follower_jngl,0,16+81,64);break;
+                    draw_sprite(spr_text_icons,14,81+2,48);break;
                     break;
                 case 1:
-                    switch(global.saved_desert)
-                    {
-                        case 0: draw_sprite(spr_map_global_follower_jngl,0,16+81,64);break;
-                        case 1: draw_sprite(spr_text_icons,7,16+81-14,64-13.5);break;                
-                    }
+					draw_sprite(spr_text_icons,19,81+2,48)
+					draw_sprite(spr_text_icons,global.saved_desert+24,81+2,48) 
                     break;
-            } 
+            }  
             draw_text(16+81,32,i1);
             break;
         case 2: // SNOW
             switch(global.completed_PS2)
             {
                 case 0:
-                    draw_sprite(spr_map_global_follower_jngl,0,16+81,64);break;
+                    draw_sprite(spr_text_icons,15,81+2,48);break;
                     break;
                 case 1:
-                    switch(global.saved_snow)
-                    {
-                        case 0: draw_sprite(spr_map_global_follower_jngl,0,16+81,64);break;
-                        case 1: draw_sprite(spr_text_icons,7,16+81-14,64-13.5);break;                
-                    }
+					draw_sprite(spr_text_icons,20,81+2,48)
+					draw_sprite(spr_text_icons,global.saved_snow+24,81+2,48) 
                     break;
             } 
             draw_text(16+81,32,i2);
@@ -60,14 +52,11 @@
             switch(global.completed_PG2)
             {
                 case 0:
-                    draw_sprite(spr_map_global_follower_jngl,0,16+81,64);break;
+                    draw_sprite(spr_text_icons,16,81+2,48);break;
                     break;
                 case 1:
-                    switch(global.saved_shadow)
-                    {
-                        case 0: draw_sprite(spr_map_global_follower_jngl,0,16+81,64);break;
-                        case 1: draw_sprite(spr_text_icons,7,16+81-14,64-13.5);break;                
-                    }
+					draw_sprite(spr_text_icons,21,81+2,48)
+					draw_sprite(spr_text_icons,global.saved_shadow+24,81+2,48) 
                     break;
             } 
             draw_text(16+81,32,i3);
@@ -76,14 +65,11 @@
             switch(global.completed_PL2)
             {
                 case 0:
-                    draw_sprite(spr_map_global_follower_jngl,0,16+81,64);break;
+                    draw_sprite(spr_text_icons,17,81+2,48);break;
                     break;
                 case 1:
-                    switch(global.saved_vulcano)
-                    {
-                        case 0: draw_sprite(spr_map_global_follower_jngl,0,16+81,64);break;
-                        case 1: draw_sprite(spr_text_icons,7,16+81-14,64-13.5);break;                
-                    }
+					draw_sprite(spr_text_icons,22,81+2,48)
+					draw_sprite(spr_text_icons,global.saved_vulcano+24,81+2,48) 
                     break;
             } 
             draw_text(16+81,32,i4);

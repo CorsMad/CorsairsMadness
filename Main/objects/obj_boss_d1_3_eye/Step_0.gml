@@ -12,8 +12,17 @@ if instance_exists(fol)
             def.isDead = 1;
             instance_create_depth(x,y,depth-1,obj_sfx2);
             isOn = 0;
-            obj_boss_d1_3.state = 2;
-            obj_boss_d1_3.t = 0;
+			if instance_exists(obj_boss_d1_3)
+			{
+				obj_boss_d1_3.state = 2;
+				obj_boss_d1_3.t = 0;	
+			}	
+			if instance_exists(obj_boss_de_3)
+			{
+				obj_boss_de_3.state = 2;
+				obj_boss_de_3.t = 0;				
+			}
+            
             fol.image_index = 0;
             fol.sprite_index = spr_boss1_d1_weakspot_relocate;
         }

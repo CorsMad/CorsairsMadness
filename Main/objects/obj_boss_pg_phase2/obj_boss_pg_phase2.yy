@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_follower_grounded_mask",
-    "path": "sprites/spr_follower_grounded_mask/spr_follower_grounded_mask.yy",
+    "name": "spr_boss_gp_idle",
+    "path": "sprites/spr_boss_gp_idle/spr_boss_gp_idle.yy",
   },
   "spriteMaskId": {
     "name": "spr_follower_grounded_mask",

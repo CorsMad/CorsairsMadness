@@ -59,7 +59,33 @@ function fnc_take_dmg_axe(x1,y1,d1,x2,y2,d2)
 
 function fnc_take_dmg_bomb(x1,y1,d1,x2,y2,d2)
 {
-
+	#region Бомба 1
+	var bombhit = instance_place(x,y,obj_item_bomb);
+    if (bombhit !=noone) && (hit_cd = 0)
+    {
+        hit_cd = 1;
+		enemy_hp -= 1;
+        if obj_Player.x < x 
+		{
+			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+		} else instance_create_depth(x+x2,y+y2,d2,obj_sfx_weapon_slash);
+        bombhit.isDead = 1;
+    }
+	#endregion
+	
+	#region Бомба 2
+	var bombhit = instance_place(x,y,obj_item_bomb2);
+    if (bombhit !=noone) && (hit_cd = 0)
+    {
+        hit_cd = 1;
+		enemy_hp -= 1;
+        if obj_Player.x < x 
+		{
+			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+		} else instance_create_depth(x+x2,y+y2,d2,obj_sfx_weapon_slash);
+        bombhit.isDead = 1;
+    }
+	#endregion
     
     #region Бомба 3
     var bombhit = instance_place(x,y,obj_item_bomb3);
@@ -91,6 +117,87 @@ function fnc_take_dmg_bomb(x1,y1,d1,x2,y2,d2)
     #endregion
     
 
+}
+
+function fnc_take_dmg_eball(x1,y1,d1)
+{
+	#region eball1
+		var bombhit = instance_place(x,y,obj_item_eball_aoe1);
+	    if (bombhit !=noone) && (hit_cd = 0)
+	    {
+	        hit_cd = 1;
+			enemy_hp -= 1;
+			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+	    }
+	#endregion	
+	
+	#region eball2
+		var bombhit = instance_place(x,y,obj_item_eball_aoe2);
+	    if (bombhit !=noone) && (hit_cd = 0)
+	    {
+	        hit_cd = 1;
+			enemy_hp -= 1;
+				instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+	    }
+	#endregion	
+	
+	#region eball3
+		var bombhit = instance_place(x,y,obj_item_eball_aoe3);
+	    if (bombhit !=noone) && (hit_cd = 0)
+	    {
+	        hit_cd = 1;
+			enemy_hp -= 1;
+				instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+	    }
+	#endregion	
+	
+}
+
+function fnc_take_dmg_parrot_laser(x1,y1,d1)
+{
+	#region eball1
+		var bombhit = instance_place(x,y,obj_item_parrot_proj1);
+	    if (bombhit !=noone) && (hit_cd = 0)
+	    {
+	        hit_cd = 1;
+			enemy_hp -= 1;
+			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+			bombhit.isDead = 1;
+	    }
+	#endregion		
+	
+	#region eball2
+		var bombhit = instance_place(x,y,obj_item_parrot_proj2);
+	    if (bombhit !=noone) && (hit_cd = 0)
+	    {
+	        hit_cd = 1;
+			enemy_hp -= 1;
+			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+			bombhit.isDead = 1;
+	    }
+	#endregion	
+	
+	#region eball3
+		var bombhit = instance_place(x,y,obj_item_parrot_proj3);
+	    if (bombhit !=noone) && (hit_cd = 0)
+	    {
+	        hit_cd = 1;
+			enemy_hp -= 1;
+			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+			bombhit.isDead = 1;
+	    }
+	#endregion	
+	
+	#region eballexpl
+		var bombhit = instance_place(x,y,obj_item_parrot_proj3_expl);
+	    if (bombhit !=noone) && (hit_cd = 0)
+	    {
+	        hit_cd = 1;
+			enemy_hp -= 1;
+			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
+	    }
+	#endregion	
+	
 }
 
 function fnc_take_dmg_hitbox_down(x1,y1,d1)

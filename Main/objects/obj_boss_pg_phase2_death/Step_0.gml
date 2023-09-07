@@ -4,10 +4,6 @@ fnc_Collision(obj_block);
 
 t++;
 
-if t mod 10 = 0 && t > 10 && t < 100 && place_meeting(x,y+1,obj_block)
-{
-    if image_index = 2 image_index = 3 else image_index = 2;
-}
 
 if (t mod 10 = 0) && t < 100
 {
@@ -30,12 +26,6 @@ if (t mod 10 = 0) && t < 100
 
 switch(t)
 {
-    case 105:
-        image_index = 1;
-        break;
-    case 110:
-        image_index = 0;
-        break;
     case 115:
         instance_destroy();
         var d = instance_create_depth(x,y,depth,obj_boss_pg_phase3);

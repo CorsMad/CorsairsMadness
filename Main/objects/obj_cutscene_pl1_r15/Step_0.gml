@@ -6,7 +6,7 @@ if state = 0
     if t = 120
     {
         fnc_msc_start_checkpoint(msc_jp1_c_jp2_c);
-        instance_create_depth(1040,144,-10,obj_follower_lava_cutscene);   
+        instance_create_depth(1040,160,-10,obj_follower_lava_cutscene);   
     }
     if t = 190 
     {

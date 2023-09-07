@@ -1,12 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if enabled = 0
+if _enabled = 0
 {
     image_index = 0;   
 }
 
-if enabled = 1
+if _enabled = 1
 {
     if (isActive = 0) {
         image_index = 0;

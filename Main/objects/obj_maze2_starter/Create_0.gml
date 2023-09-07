@@ -15,5 +15,5 @@ TargetX = 0;
 TargetY = 0;
 
 
-pointer = instance_create_depth(x-0.5,y-64,depth-1,obj_cannon_pointer);
+pointer = instance_create_depth(x,y-32,depth-1,obj_cannon_pointer);
 

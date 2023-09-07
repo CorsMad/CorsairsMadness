@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_skeleton_thrower_walk",
-    "path": "sprites/spr_skeleton_thrower_walk/spr_skeleton_thrower_walk.yy",
+    "name": "spr_npc_vulcano_mazeskeleton",
+    "path": "sprites/spr_npc_vulcano_mazeskeleton/spr_npc_vulcano_mazeskeleton.yy",
   },
   "spriteMaskId": {
     "name": "spr_skeleton_mask",

@@ -167,7 +167,6 @@ if (place_meeting(x,y,obj_electric_pillar_electicity1) && obj_electric_pillar_el
 if enemy_hp <= 0 
 {
     instance_create_depth(x,y,depth-1,obj_diagonal_slime_dead);
-    instance_create_depth(x,y,depth-1,obj_money1);
     instance_destroy();
 }
 

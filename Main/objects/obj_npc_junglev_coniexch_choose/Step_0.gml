@@ -18,7 +18,8 @@ if key_jump || key_attack
             {
                 global.secrets -=7; 
                 global.saved_jungle = 1;
-                // заставка
+                var cutsc = instance_create_depth(0,0,0,obj_coin_cutscene);
+				cutsc.target = obj_jungle_coin_exchanger;
                 instance_destroy();
             }       
             break;

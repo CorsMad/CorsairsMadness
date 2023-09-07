@@ -7,3 +7,4 @@ t = 0;
 
 spd = -1;
 isEnabled = 0;
+deactivate = 0;

@@ -3,3 +3,4 @@
 
 image_speed = 0;
 isOn = 0;
+depth = 90;

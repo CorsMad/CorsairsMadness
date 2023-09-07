@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+
+
 if phase = 0 && place_meeting(x,y,obj_hitbox)
 {
 	phase = 1;
@@ -512,11 +515,11 @@ if (image_index = 1) {
     t_anim++;
     if t_anim = 1
     {
-        instance_create_depth(x,y-42,depth-1,obj_sfx_electricity1);   
+        instance_create_depth(x,y-12,depth-1,obj_sfx_electricity1);   
     }
     if t_anim = 150
     {
-        instance_create_depth(x,y-42,depth-1,obj_sfx_electricity2);           
+        instance_create_depth(x,y-12,depth-1,obj_sfx_electricity2);           
     }
     if t_anim = 300
     {

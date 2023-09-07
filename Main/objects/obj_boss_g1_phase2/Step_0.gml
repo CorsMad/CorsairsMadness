@@ -253,7 +253,7 @@ if (state = 8) { // Ожидание
 
 if enemy_hp <= 0
 {
-	instance_create_depth(x,y,depth,obj_boss_g1_phase2_death)	;
+	instance_create_depth(x,y,depth,obj_boss_ge1_phase2_death)	;
 	instance_destroy();
 }
 #endregion	
