@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_boat_mobstacle_appear",
+    "path": "sprites/spr_boat_mobstacle_appear/spr_boat_mobstacle_appear.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

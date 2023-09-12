@@ -32,7 +32,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_sander_mask_on",
+    "path": "sprites/spr_sander_mask_on/spr_sander_mask_on.yy",
+  },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

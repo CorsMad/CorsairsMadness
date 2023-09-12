@@ -112,10 +112,22 @@ switch(state)
         if t > 160 && !instance_exists(obj_boat_boss_vulcano_skeleton_approach) && !instance_exists(obj_skeleton_surf_pointing_2hp)
         {
             t = 0;
-            state = 0;
+            state = 2;
         }
         
 		#endregion
+		break;
+	case 2:
+		t++;
+		if t = 10{
+		if instance_exists(obj_boat_boss_vulcano_1_wall){
+			obj_boat_boss_vulcano_1_wall.isOn = 1;	
+		}
+		}
+		if t = 50{
+			t = 0 ;
+			state = 0;
+		}
 		break;
 }	
 

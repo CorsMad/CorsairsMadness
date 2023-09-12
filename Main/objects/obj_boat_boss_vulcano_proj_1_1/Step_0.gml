@@ -28,6 +28,16 @@ switch(state)
 		break;
 	case 2:
         
+		if abs(y-dest_point)<24 {
+			if place_meeting(x,y,obj_player_boat_hitbox) && obj_Player_boat.hit_cd = 0
+		    {
+		        obj_Player_boat.hit_cd = 1; 
+		        global.hp-=1;
+		    }	
+		}
+		
+		
+		
 		y+=vspd;
 		if y >= dest_point {
 			instance_create_depth(x,y,depth-1,obj_boat_boss_vulcano_proj_1_1_expl);

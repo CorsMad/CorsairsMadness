@@ -22,6 +22,7 @@ if instance_exists(obj_Player)
 
 hit_cd = 0;
 enemy_hp = 70;
+enemy_hp_max = 70;
 t_red =0;
 
 turn_light = 0;

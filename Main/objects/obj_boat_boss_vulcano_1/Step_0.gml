@@ -176,7 +176,7 @@ switch(state)
 				obj_boat_boss_vulcano_1_wall.isOn = 1;	
 			}
 		}
-		if t = 200
+		if t = 50
 		{
 			t = 0;
 			state = 0;
@@ -200,7 +200,7 @@ fnc_boat_take_dmg_pistol(1)
 
 fnc_boat_take_dmg_dual_pistol(0.4,0.6,0.8) 
 
-fnc_boat_take_dmg_cannon(10) 
+fnc_boat_take_dmg_cannon(3) 
 
 fnc_boat_take_dmg_parrotcage(1,1.4,1.8,2)
 

@@ -17,5 +17,6 @@ image_speed = 0;
 var water = instance_create_depth(x,y,depth+1,obj_boat_boss_desert_water);
 water.fol = id;
 
-enemy_hp = 1//30;
+enemy_hp = 50;
+enemy_hp_max = 50;
 hit_cd = 0;

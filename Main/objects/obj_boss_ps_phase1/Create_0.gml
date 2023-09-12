@@ -9,6 +9,7 @@ hspd = 0;
 vspd = 0;
 
 enemy_hp = 70;
+enemy_hp_max = 70;
 dmg_multiplier = 1;
 t_red = 0;
 hit_cd = 0;

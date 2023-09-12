@@ -62,6 +62,7 @@
     {"name":"inst_17A078D7","path":"rooms/G_itemtutor/G_itemtutor.yy",},
     {"name":"inst_371E713D","path":"rooms/G_itemtutor/G_itemtutor.yy",},
     {"name":"inst_38EFB89D","path":"rooms/G_itemtutor/G_itemtutor.yy",},
+    {"name":"inst_6385A213","path":"rooms/G_itemtutor/G_itemtutor.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -121,6 +122,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_17A078D7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_shadowv_comt_fl2","path":"objects/obj_npc_shadowv_comt_fl2/obj_npc_shadowv_comt_fl2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1016.0,"y":256.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_371E713D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_shadowv_comt_fl2","path":"objects/obj_npc_shadowv_comt_fl2/obj_npc_shadowv_comt_fl2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1000.0,"y":256.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_38EFB89D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_shadowv_comt_fl2","path":"objects/obj_npc_shadowv_comt_fl2/obj_npc_shadowv_comt_fl2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1053.0,"y":256.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6385A213","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_chest_jitem_t","path":"objects/obj_chest_jitem_t/obj_chest_jitem_t.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":848.0,"y":256.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":67,"TileCompressedData":[
 -18,-2147483648,-4,0,-2,27,-5,0,-56,-2147483648,-4,0,-2,-2147483648,-5,0,-56,-2147483648,-4,0,-2,26,1,25,-4,0,-56,-2147483648,-4,0,3,24,27,24,-4,0,-56,-2147483648,-4,0,-2,25,1,26,-3,0,-56,-2147483648,-5,0,3,25,-2147483648,26,-3,0,-7,-2147483648,-4,0,-10,-2147483648,-4,0,-31,-2147483648,-5,

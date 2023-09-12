@@ -29,4 +29,5 @@ if isOn = 1
     }
 }
 
+image_index = isOn;
 

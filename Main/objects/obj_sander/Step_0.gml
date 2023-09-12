@@ -195,24 +195,7 @@ if state = 5
 #endregion
 
 #region #takedmg
-if hide = 0
-{
-// Атака
 
-    fnc_take_dmg_hitbox(-10,0,-1,10,0,-1);
-    
-// Топор
-
-    fnc_take_dmg_axe(-10,0,-1,10,0,-1);
-    
-// Удар вниз   
-
-    fnc_take_dmg_hitbox_down(0,-16,-1);
-
-// Получение урона
-
-    fnc_enemy_no_armor_dmg();
-}
 #endregion
 
 #region Смерть

@@ -35,5 +35,5 @@
     "path": "sprites/spr_boss2_snow_attack_round_mask/spr_boss2_snow_attack_round_mask.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

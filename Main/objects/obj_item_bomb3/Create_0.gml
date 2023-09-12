@@ -12,17 +12,19 @@ a_max = 200
 // Current orbital angle
 if obj_Player.image_xscale = 1 
 {
+	dir = 1;
 	angle = 180; 
 	instance_create_depth(x-60,y,-1,obj_sfx1);
 } else  {
+			dir = -1;
 			angle = 0;
 			instance_create_depth(x+60,y,-1,obj_sfx1);
 		}
-
-//image_speed = 0.2*obj_Player.image_xscale;
-//image_alpha = 0;
 
 
 
 image_xscale = 1.25;
 image_yscale = 1.25;
+
+t_anim = 0;
+t_anim_max = 3;

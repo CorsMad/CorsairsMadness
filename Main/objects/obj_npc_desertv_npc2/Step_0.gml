@@ -85,7 +85,15 @@ if talk_cr_t!= 0
     if talk_cr_t = 10
     {
         talk_cr_t = 0;
-        if global.dia_desertChief = 0 instance_create_depth(x,y,-100000,obj_txt_desertv_npc2_1);
+        if global.dia_desertChief = 0 {
+			switch(talk_time){
+				case 0 : instance_create_depth(x,y,-100000,obj_txt_desertv_npc2_11);
+					talk_time = 1;
+					break;
+				case 1 : instance_create_depth(x,y,-100000,obj_txt_desertv_npc2_12);
+					break;
+			}
+		}
         if global.dia_desertChief = 1 instance_create_depth(x,y,-100000,obj_txt_desertv_npc2_2);
         
     }

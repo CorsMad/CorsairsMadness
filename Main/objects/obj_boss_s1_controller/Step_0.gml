@@ -20,6 +20,7 @@ if state = 2
     if instance_exists(obj_boss_s1_phase2_1_death) && instance_exists(obj_boss_s1_phase2_2_death) {
         obj_boss_s1_phase2_1_death.state = 3;
         obj_boss_s1_phase2_2_death.state = 3;
+		instance_create_depth(obj_boss_s1_phase2_1_death.x,obj_boss_s1_phase2_1_death.y,obj_boss_s1_phase2_1_death.depth-1,obj_hpmax_some_mana_gain_gift);
         state = 2.1;
     }
 }

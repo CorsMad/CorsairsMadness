@@ -218,8 +218,8 @@ to get ready for the superdash";
 and you'll fly forward at high speed.";
 		text4 = @"To cancel the preparation
 press the attack button.";
-		text5 = @"Some blocks can only be destroyed
-with a superdash";
+		text5 = @"Some objects can only be 
+destroyed with a superdash";
 		text6 = "You are invulnerable during flight";
     #endregion
         break;

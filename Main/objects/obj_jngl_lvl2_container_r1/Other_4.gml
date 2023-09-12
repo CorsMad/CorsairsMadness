@@ -9,7 +9,7 @@ if global.chest_j2_r1 = 1
 
 
 var can = instance_create_depth(272,240,0,obj_cannon_level_j2);
-can.isOn = global.cannon_j2_r1;
+can.isOn = global.key_green2;
 
 
 

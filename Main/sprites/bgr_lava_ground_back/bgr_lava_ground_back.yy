@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1fff7d53-4681-4516-ae7c-726fa7dd4d87","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 0,
+  "origin": 9,
   "parent": {
     "name": "Hum",
     "path": "folders/Sprites/Backgrounds/Levels/Lava/Hum.yy",
@@ -60,7 +60,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 0,
-    "yorigin": 0,
+    "yorigin": -32,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

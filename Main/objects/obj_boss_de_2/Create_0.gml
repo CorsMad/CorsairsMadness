@@ -3,9 +3,8 @@
 
 state = 0;
 t = 0;
-enemy_hp = 10;
-wsp = instance_create_depth(431,242,depth-1,obj_boss_d1_2_weakspot1);
-wsp.fol = id;
+enemy_hp = 15;
+
 
 deye = instance_create_depth(408,112,depth-1,obj_boss_d1_2_eye1);
 deye.fol = id;

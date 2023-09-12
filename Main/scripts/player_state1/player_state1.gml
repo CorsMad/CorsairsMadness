@@ -1462,6 +1462,146 @@ if spectp_timer_count = 0 && SpectpEnabled = 1 && SpecAbilMask = 2
 }
 #endregion
 
+#region superattack
+
+if superattack>superattack_max superattack = superattack_max;
+
+if superattack >= superattack_max{
+	#region horizontal t1
+	if  global.superattack1 = 1 && key_abil && (key_right || key_left){
+		superattack_timer = 0;
+		superattack = 0;
+		isDead = 401;
+		
+		isAttacking = 0;
+		isAirattacking = 0;
+		isAirattacking_timer = 0;
+		isGrounded = 0;
+		isSkidding = 0;
+		isSkidding_timer = 0;
+		isDashing = 0;
+		isWallclimbing = 0;
+		isOutjump = 0;
+		isClimbing = 0;
+		isUsingitem = 0;
+		isAirUsingitem = 0;
+		isHooking = 0;
+		isGravitate = 0;
+		isTakingdmg = 0;
+		jump_timer = 0;
+		attackingdown_timer = 0;
+		wallclimb_timer = 0;
+		climbing_timer = 0;
+		coyote_timer = 0;
+		damage_cd = 0;
+	    isVulnerable = 1;
+		turn_out_clone_timer = 0;
+		clone_timer= 0;
+	}
+	#endregion	
+	
+	#region horizontal t2
+	if  global.superattack2 = 1 && key_abil && (key_right || key_left){
+		superattack_timer = 0;
+		superattack = 0;
+		isDead = 402;
+		
+		isAttacking = 0;
+		isAirattacking = 0;
+		isAirattacking_timer = 0;
+		isGrounded = 0;
+		isSkidding = 0;
+		isSkidding_timer = 0;
+		isDashing = 0;
+		isWallclimbing = 0;
+		isOutjump = 0;
+		isClimbing = 0;
+		isUsingitem = 0;
+		isAirUsingitem = 0;
+		isHooking = 0;
+		isGravitate = 0;
+		isTakingdmg = 0;
+		jump_timer = 0;
+		attackingdown_timer = 0;
+		wallclimb_timer = 0;
+		climbing_timer = 0;
+		coyote_timer = 0;
+		damage_cd = 0;
+	    isVulnerable = 1;
+		turn_out_clone_timer = 0;
+		clone_timer= 0;
+	}
+	#endregion	
+	
+	#region AOE t
+	if  global.superattack3 = 1 && key_abil && key_down {
+		superattack_timer = 0;
+		superattack = 0;
+		isDead = 403;
+		
+		isAttacking = 0;
+		isAirattacking = 0;
+		isAirattacking_timer = 0;
+		isGrounded = 0;
+		isSkidding = 0;
+		isSkidding_timer = 0;
+		isDashing = 0;
+		isWallclimbing = 0;
+		isOutjump = 0;
+		isClimbing = 0;
+		isUsingitem = 0;
+		isAirUsingitem = 0;
+		isHooking = 0;
+		isGravitate = 0;
+		isTakingdmg = 0;
+		jump_timer = 0;
+		attackingdown_timer = 0;
+		wallclimb_timer = 0;
+		climbing_timer = 0;
+		coyote_timer = 0;
+		damage_cd = 0;
+	    isVulnerable = 1;
+		turn_out_clone_timer = 0;
+		clone_timer= 0;
+	}
+	#endregion	
+	
+	#region homing
+	if  global.superattack4 = 1 && key_abil && key_up {
+		superattack_timer = 0;
+		superattack = 0;
+		isDead = 404;
+		
+		isAttacking = 0;
+		isAirattacking = 0;
+		isAirattacking_timer = 0;
+		isGrounded = 0;
+		isSkidding = 0;
+		isSkidding_timer = 0;
+		isDashing = 0;
+		isWallclimbing = 0;
+		isOutjump = 0;
+		isClimbing = 0;
+		isUsingitem = 0;
+		isAirUsingitem = 0;
+		isHooking = 0;
+		isGravitate = 0;
+		isTakingdmg = 0;
+		jump_timer = 0;
+		attackingdown_timer = 0;
+		wallclimb_timer = 0;
+		climbing_timer = 0;
+		coyote_timer = 0;
+		damage_cd = 0;
+	    isVulnerable = 1;
+		turn_out_clone_timer = 0;
+		clone_timer= 0;
+	}
+	#endregion	
+}
+
+#endregion
+
 #endregion
 
 
@@ -1492,6 +1632,8 @@ if isDead = 1
 	coyote_timer = 0;
 	damage_cd = 0;
     isVulnerable = 1;
+	turn_out_clone_timer = 0;
+	clone_timer= 0;
     
     #region Остановка музыки
     if instance_exists(obj_music_controller_temple)
@@ -1691,8 +1833,55 @@ if isDead = 1
                 isDead = 0;
                 vspd = 0;
                 fspd = 0;
+				isDashing = 0;
+				dashing_timer = 0;
+				dashing_timer_count = 0;
+				dashing_timer_count_timer = 0;
             }
         }
     }
     #endregion
+	
+	#region СУПЕРАТАКИ
+	#region horizontal t1
+	if isDead = 401{
+		superattack_timer++;
+		if superattack_timer = 100 {
+			superattack_timer = 0;
+			isDead = 0;
+			damage_cd = 1;
+		}
+	}
+	#endregion
+	#region horizontal t2
+	if isDead = 402{
+		superattack_timer++;
+		if superattack_timer = 100 {
+			superattack_timer = 0;
+			isDead = 0;
+			damage_cd = 1;
+		}
+	}
+	#endregion
+	#region AOE
+	if isDead = 403{
+		superattack_timer++;
+		if superattack_timer = 100 {
+			superattack_timer = 0;
+			isDead = 0;
+			damage_cd = 1;
+		}
+	}
+	#endregion
+	#region Homing
+	if isDead = 404{
+		superattack_timer++;
+		if superattack_timer = 100 {
+			superattack_timer = 0;
+			isDead = 0;
+			damage_cd = 1;
+		}
+	}
+	#endregion
+	#endregion
 }

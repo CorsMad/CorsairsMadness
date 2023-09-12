@@ -11,14 +11,15 @@ states
 5 - ожидание
 
 */
-
+enemy_hp = 2;
 var mask = instance_create_depth(x,y,depth,obj_sander_mask);
 mask.owner = id;
+mask.enemy_hp = enemy_hp;
 
 state = 0;
 mov = 1
 t = 0;
 spd = 0.25;
 hide = 0; // спрятался или нет
-enemy_hp = 2;
+
 hit_cd = 0;

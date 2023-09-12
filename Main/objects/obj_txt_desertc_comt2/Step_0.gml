@@ -9,7 +9,6 @@ if key_skip
     
     if scr_t > scr_t_max 
     {                
-        talked = 1;
         instance_create_depth(x,y,-100000,obj_npc_desertc_comt_choose);         
         instance_destroy();   
     } 

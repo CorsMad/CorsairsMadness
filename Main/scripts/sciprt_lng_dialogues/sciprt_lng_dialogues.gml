@@ -2013,7 +2013,7 @@ function fnc_lng_merch_j_f2()
     {
         case 0:
             #region English
-            eng1 = "[fnt_pixel] POEHALI BEZ SPASENIYA ?";
+            eng1 = "[fnt_pixel]Are we leaving already??";
             #endregion            
             break;
         case 1:
@@ -2045,7 +2045,7 @@ function fnc_lng_merch_j_f3()
     {
         case 0:
             #region English
-            eng1 = "[fnt_pixel] SPAS, POEHALI  ?";
+            eng1 = "[fnt_pixel] Oh, you saved old Pew. Great job. Now are you ready to move on?";
             #endregion            
             break;
         case 1:

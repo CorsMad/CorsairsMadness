@@ -21,11 +21,11 @@ if stop_music = 0
         }
     }
     
-    if t = 30
-    {
-        audio_play_sound(musicId,1000,true);   
-        audio_sound_gain(musicId,global.MSCvolume,0);
-    }
+   if t = 30
+   {
+       audio_play_sound(musicId,1000,true);   
+       audio_sound_gain(musicId,global.MSCvolume,0);
+   }
 }
 
 /*

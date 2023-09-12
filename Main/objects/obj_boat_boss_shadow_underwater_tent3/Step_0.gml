@@ -146,3 +146,16 @@ switch(state)
         }
         break;
 }
+
+#region Взамиодействие с игроком
+
+if instance_exists(obj_Player_boat) && (image_index>1 && image_index<10)
+{
+    if place_meeting(x,y,obj_player_boat_hitbox) && obj_Player_boat.hit_cd = 0
+    {
+        obj_Player_boat.hit_cd = 1;
+		global.hp-=1;
+    }  
+}
+
+#endregion

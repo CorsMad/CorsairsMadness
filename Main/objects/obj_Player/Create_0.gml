@@ -63,6 +63,8 @@ jumpbuffer = 0;
 sbootsbuffer = 0;
 lanhit = 0;
 lanplace = 0;
+
+
 #endregion
 
 #region Предметы
@@ -139,7 +141,7 @@ transform_timer = 0;
 fluettimer = 0;
 comboTimer = 0;
 t_dia = 0;
-
+superattack_timer = 0;
 #region special timer
 pos_teleport_turn_timer = 0;
 move_to_cloud = 0;
@@ -231,6 +233,11 @@ sk_t = 0;
 
 #endregion
 
+#region Суперудары
+//Полоска
+superattack = 50//0;
+superattack_max = 50;
+#endregion
 image_speed = 1.25;
 
 isMeeting = 0;

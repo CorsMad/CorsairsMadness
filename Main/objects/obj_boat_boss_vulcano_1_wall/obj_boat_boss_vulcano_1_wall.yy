@@ -29,9 +29,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
+    "name": "spr_boat_mobstacle_appear",
+    "path": "sprites/spr_boat_mobstacle_appear/spr_boat_mobstacle_appear.yy",
+  },
+  "spriteMaskId": {
     "name": "spr_boat_boss_vulcano_wall",
     "path": "sprites/spr_boat_boss_vulcano_wall/spr_boat_boss_vulcano_wall.yy",
   },
-  "spriteMaskId": null,
   "visible": true,
 }

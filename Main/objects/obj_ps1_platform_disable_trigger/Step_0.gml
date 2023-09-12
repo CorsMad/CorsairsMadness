@@ -11,5 +11,6 @@ if place_meeting(x,y,obj_hitbox_mask) && isOn = 0
     }
 }
 
+image_index = isOn;
 
 

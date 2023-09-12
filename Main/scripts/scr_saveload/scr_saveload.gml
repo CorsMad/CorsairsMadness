@@ -30,13 +30,7 @@ var _saveStorage =
     dia_jungleMerch : global.dia_jungleMerch, 
     dia_jungleComt  : global.dia_jungleComt, 
     
-    // Пушки
-    
-    cannon_j2_r1  : global.cannon_j2_r1,
-    cannon_d2_r1  : global.cannon_d2_r1,
-    cannon_sn2_r1 : global.cannon_sn2_r1,
-    cannon_l2_r1  : global.cannon_l2_r1,
-    cannon_sh2_r1 : global.cannon_sh2_r1,
+
     
     //Ключи
     
@@ -195,13 +189,6 @@ function scr_load_progress(){
             global.dia_jungleMerch  =   _loadStorage.dia_jungleMerch;
             global.dia_jungleComt   =   _loadStorage.dia_jungleComt;
             
-            // Пушки на уровнях с лодкой
-            
-            global.cannon_j2_r1     = _loadStorage.cannon_j2_r1;
-            global.cannon_d2_r      = _loadStorage.cannon_d2_r;
-            global.cannon_sn2_r1    = _loadStorage.cannon_sn2_r1;
-            global.cannon_l2_r1     = _loadStorage.cannon_l2_r1;
-            global.cannon_sh2_r1    = _loadStorage.cannon_sh2_r1;
             
             //Ключи
             

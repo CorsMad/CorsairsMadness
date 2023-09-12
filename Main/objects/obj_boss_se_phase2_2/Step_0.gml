@@ -117,6 +117,44 @@ if place_meeting(x,y,obj_hitbox) && hit_cd = 0
     t_red = 1;
 }
 
+if place_meeting(x,y,obj_hitbox_down) && hit_cd = 0
+{
+    if enemy_hp > 7
+    {
+        if obj_Player.x < x     {hspd = 2  ;vspd = 2;} 
+        if obj_Player.x >= x    {hspd = -2 ;vspd = 2;}  
+    }
+    if enemy_hp <= 7 && enemy_hp >=4
+    {
+        if obj_Player.x < x     {hspd = 3 ; vspd = 3;} 
+        if obj_Player.x >= x    {hspd = -3 ;vspd = 3;}  
+    }
+    if enemy_hp < 4
+    {
+        if obj_Player.x < x     {hspd = 4 ; vspd = 4;} 
+        if obj_Player.x >= x    {hspd = -4 ;vspd = 4;}  
+    }
+    enemy_hp -=1;
+    hit_cd = 1;
+    t_red = 1;
+}
+
+// Топор
+
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
+
+// Бомба
+
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+
+// Eball
+
+	fnc_take_dmg_eball(0,-16,-1,1);
+
+// Parrot
+
+	fnc_take_dmg_parrot_laser(0,-16,-1,1)
+
 
 
 #endregion

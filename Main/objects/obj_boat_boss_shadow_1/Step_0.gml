@@ -41,6 +41,13 @@ switch(phase)
         break;
 }
 
+#region смерть
+if enemy_hp <= 0 {
+	instance_destroy();
+	instance_create_depth(x,y,depth,obj_boat_boss_shadow_1_death);
+}
+#endregion
+
 #region Попадание
 
 fnc_boat_take_dmg_pistol(1)

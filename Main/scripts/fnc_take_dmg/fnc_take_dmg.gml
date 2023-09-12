@@ -13,14 +13,15 @@ function fnc_take_dmg_hitbox(x1,y1,d1,x2,y2,d2)
 	}
 }
 
-function fnc_take_dmg_axe(x1,y1,d1,x2,y2,d2)
+function fnc_take_dmg_axe(x1,y1,d1,x2,y2,d2,dmg)
 {
+	if is_undefined(dmg) dmg = 0;
     #region Топор 1
     var axehit = instance_place(x,y,obj_item_axe);
     if (axehit !=noone) && (hit_cd = 0)
     {
         hit_cd = 1;
-		enemy_hp -= 1;
+		enemy_hp -= 1+dmg;
         if obj_Player.x < x 
 		{
 			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
@@ -33,7 +34,7 @@ function fnc_take_dmg_axe(x1,y1,d1,x2,y2,d2)
     if (axehit2 !=noone) && (hit_cd = 0)
     {
         hit_cd = 1;
-		enemy_hp -= 1;
+		enemy_hp -= 1+dmg;
         if obj_Player.x < x 
 		{
 			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
@@ -48,7 +49,7 @@ function fnc_take_dmg_axe(x1,y1,d1,x2,y2,d2)
     if (axehit3 !=noone) && (hit_cd = 0)
     {
         hit_cd = 1;
-		enemy_hp -= 1;
+		enemy_hp -= 1+dmg;
         if obj_Player.x < x 
 		{
 			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
@@ -57,14 +58,15 @@ function fnc_take_dmg_axe(x1,y1,d1,x2,y2,d2)
     #endregion
 }
 
-function fnc_take_dmg_bomb(x1,y1,d1,x2,y2,d2)
+function fnc_take_dmg_bomb(x1,y1,d1,x2,y2,d2,dmg)
 {
+	if is_undefined(dmg) dmg = 0;
 	#region Бомба 1
 	var bombhit = instance_place(x,y,obj_item_bomb);
     if (bombhit !=noone) && (hit_cd = 0)
     {
         hit_cd = 1;
-		enemy_hp -= 1;
+		enemy_hp -= 1+dmg;
         if obj_Player.x < x 
 		{
 			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
@@ -78,7 +80,7 @@ function fnc_take_dmg_bomb(x1,y1,d1,x2,y2,d2)
     if (bombhit !=noone) && (hit_cd = 0)
     {
         hit_cd = 1;
-		enemy_hp -= 1;
+		enemy_hp -= 1+dmg;
         if obj_Player.x < x 
 		{
 			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
@@ -92,7 +94,7 @@ function fnc_take_dmg_bomb(x1,y1,d1,x2,y2,d2)
     if (bombhit !=noone) && (hit_cd = 0)
     {
         hit_cd = 1;
-		enemy_hp -= 1;
+		enemy_hp -= 1+dmg;
         if obj_Player.x < x 
 		{
 			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
@@ -107,7 +109,7 @@ function fnc_take_dmg_bomb(x1,y1,d1,x2,y2,d2)
     if (bombsmallhit !=noone) && (hit_cd = 0)
     {
         hit_cd = 1;
-		enemy_hp -= 1;
+		enemy_hp -= 1+dmg;
         if obj_Player.x < x 
 		{
 			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
@@ -119,14 +121,15 @@ function fnc_take_dmg_bomb(x1,y1,d1,x2,y2,d2)
 
 }
 
-function fnc_take_dmg_eball(x1,y1,d1)
+function fnc_take_dmg_eball(x1,y1,d1,dmg)
 {
+	if is_undefined(dmg) dmg = 0;
 	#region eball1
 		var bombhit = instance_place(x,y,obj_item_eball_aoe1);
 	    if (bombhit !=noone) && (hit_cd = 0)
 	    {
 	        hit_cd = 1;
-			enemy_hp -= 1;
+			enemy_hp -= 1+dmg;
 			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
 	    }
 	#endregion	
@@ -136,7 +139,7 @@ function fnc_take_dmg_eball(x1,y1,d1)
 	    if (bombhit !=noone) && (hit_cd = 0)
 	    {
 	        hit_cd = 1;
-			enemy_hp -= 1;
+			enemy_hp -= 1+dmg;
 				instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
 	    }
 	#endregion	
@@ -146,21 +149,22 @@ function fnc_take_dmg_eball(x1,y1,d1)
 	    if (bombhit !=noone) && (hit_cd = 0)
 	    {
 	        hit_cd = 1;
-			enemy_hp -= 1;
+			enemy_hp -= 1+dmg;
 				instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
 	    }
 	#endregion	
 	
 }
 
-function fnc_take_dmg_parrot_laser(x1,y1,d1)
+function fnc_take_dmg_parrot_laser(x1,y1,d1,dmg)
 {
+	if is_undefined(dmg) dmg = 0;
 	#region eball1
 		var bombhit = instance_place(x,y,obj_item_parrot_proj1);
 	    if (bombhit !=noone) && (hit_cd = 0)
 	    {
 	        hit_cd = 1;
-			enemy_hp -= 1;
+			enemy_hp -= 1+dmg;
 			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
 			bombhit.isDead = 1;
 	    }
@@ -171,7 +175,7 @@ function fnc_take_dmg_parrot_laser(x1,y1,d1)
 	    if (bombhit !=noone) && (hit_cd = 0)
 	    {
 	        hit_cd = 1;
-			enemy_hp -= 1;
+			enemy_hp -= 1+dmg;
 			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
 			bombhit.isDead = 1;
 	    }
@@ -182,7 +186,7 @@ function fnc_take_dmg_parrot_laser(x1,y1,d1)
 	    if (bombhit !=noone) && (hit_cd = 0)
 	    {
 	        hit_cd = 1;
-			enemy_hp -= 1;
+			enemy_hp -= 1+dmg;
 			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
 			bombhit.isDead = 1;
 	    }
@@ -193,7 +197,7 @@ function fnc_take_dmg_parrot_laser(x1,y1,d1)
 	    if (bombhit !=noone) && (hit_cd = 0)
 	    {
 	        hit_cd = 1;
-			enemy_hp -= 1;
+			enemy_hp -= 1+dmg;
 			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
 	    }
 	#endregion	

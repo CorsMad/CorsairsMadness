@@ -273,63 +273,29 @@ if state = 15
 
 if state !=15
 {
-    #region Атака
-	if place_meeting(x,y,obj_hitbox) && hit_cd = 0
-	{
-		hit_cd = 1;
-		enemy_hp -=1;
-		if obj_Player.dir = 1
-		{
-			instance_create_depth(obj_hitbox.x+8,obj_hitbox.y-20,depth-1,obj_sfx_weapon_slash);
-		} else instance_create_depth(obj_hitbox.x-8,obj_hitbox.y-20,depth-1,obj_sfx_weapon_slash);
+     // Атака
 
-	}
-    #endregion
+    fnc_take_dmg_hitbox(-10,0,-1,10,0,-1);
     
-    #region Топор
-    var axehit = instance_place(x,y,obj_item_axe);
-    if (axehit !=noone) && (hit_cd = 0)
-    {
-        hit_cd = 1;
-		enemy_hp -= 2;
-        instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-1,obj_sfx_weapon_slash);
-        axehit.a = 1;
-    }
-	#endregion
-    #region Топор 2
-    var axehit2 = instance_place(x,y,obj_item_axe2);
-    if (axehit2 !=noone) && (hit_cd = 0)
-    {
-        hit_cd = 1;
-		enemy_hp -= 2;
-        instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-1,obj_sfx_weapon_slash);
-        axehit2.a += 1;
-        axehit2.vspd = -2;
-        axehit2.hspd = -axehit2.hspd;
-    }
-	#endregion
-    #region Топор 3
-    var axehit3 = instance_place(x,y,obj_item_axe3);
-    if (axehit3 !=noone) && (hit_cd = 0)
-    {
-        hit_cd = 1;
-		enemy_hp -= 2;
-        instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-1,obj_sfx_weapon_slash);
+// Топор
 
-    }
-	#endregion
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
     
-    #region Удар вниз
-	if place_meeting(x,y,obj_hitbox_down) && hit_cd = 0
-	{
-		hit_cd = 1;
-		enemy_hp -=1;
-        obj_Player.isAttackingdown = 0;
-    	obj_Player.attackingdown_timer = 0;
-    	obj_Player.vspd = -5;   
-		instance_create_depth(obj_hitbox_down.x,obj_hitbox_down.y+18,depth-1,obj_sfx_weapon_slash);
-	}
-	#endregion
+// Удар вниз   
+
+    fnc_take_dmg_hitbox_down(0,-16,-1);
+
+// Бомба
+
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+
+// Eball
+
+	fnc_take_dmg_eball(0,-16,-1,1);
+
+// Parrot
+
+	fnc_take_dmg_parrot_laser(0,-16,-1,1)
     
 	if hit_cd !=0 
 	{

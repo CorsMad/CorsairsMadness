@@ -4,21 +4,29 @@ if instance_exists(fol)
 {
     // получение урона
     	 
-// Атака
+     // Атака
 
-    fnc_take_dmg_hitbox_fol(-10,-16,-1,10,-16,-1);
+    fnc_take_dmg_hitbox(-10,0,-1,10,0,-1);
     
 // Топор
 
-    fnc_take_dmg_axe_fol(-10,-16,-1,10,-16,-1);
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
     
-// Бомба
-
-    fnc_take_dmg_bomb_fol(-10,-16,-1,10,-16,-1);
-
 // Удар вниз   
 
-    fnc_take_dmg_hitbox_down_fol(0,-32,-1);
+    fnc_take_dmg_hitbox_down(0,-16,-1);
+
+// Бомба
+
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+
+// Eball
+
+	fnc_take_dmg_eball(0,-16,-1,1);
+
+// Parrot
+
+	fnc_take_dmg_parrot_laser(0,-16,-1,1)
     
 
 // Получение урона

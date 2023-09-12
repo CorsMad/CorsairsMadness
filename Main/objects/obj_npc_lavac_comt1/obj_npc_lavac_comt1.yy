@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_ct_shadow",
-    "path": "sprites/spr_ct_shadow/spr_ct_shadow.yy",
+    "name": "spr_ct_lava",
+    "path": "sprites/spr_ct_lava/spr_ct_lava.yy",
   },
   "spriteMaskId": null,
   "visible": true,

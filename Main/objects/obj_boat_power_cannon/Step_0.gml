@@ -2,7 +2,7 @@
 // You can write your code in this editor
 x += hspd;
 y += vspd;
-
+if place_meeting(x,y,obj_trigger_boat_level_global_destroyer) instance_destroy();
 if state = 0
 {
     vspd+=0.05;

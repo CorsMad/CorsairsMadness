@@ -9,9 +9,9 @@ if instance_exists(obj_Player_boat)
 
 switch(global.boatCheckpoint)  // Чекпоинт
 {
-    case 0: state = 1;break;
-    case 1: state = 4;break;
-    case 2: state = 10;break;
+    case 0: state = 0;break;
+    case 1: state = 2;break;
+    case 2: state = 4;break;
 }
 
 

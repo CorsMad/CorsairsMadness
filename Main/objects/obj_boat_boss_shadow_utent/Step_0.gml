@@ -5,6 +5,7 @@ switch(state)
 {
 	case 0:    
         sprite_index = spr_boat_boss_shadow_tent;
+		image_speed = 1;
 		#region выстрелы
 		t++;
 		if (t = t_max) {
@@ -15,24 +16,47 @@ switch(state)
 		#endregion
 		break;		
 	case 1:
-        sprite_index = spr_boat_boss_shadow_tent_attack;
-        t++;        
-        if t = 60
-        {
-            image_index = 0;
-            t = 0;
-            state = 0;
-        }
-
+        
+        t++;  
+		
+		switch(t){
+			case 5:sprite_index = spr_boat_boss_shadow_tent_attack;image_index = 0;image_speed = 0;break;	
+			case 10:image_index = 1;break;
+			case 15:image_index = 2;break;
+			case 20:image_index = 3;break;
+			case 25:image_index = 4;break;
+			case 30:image_index = 5;break;
+			case 35:image_index = 6;
+			instance_create_depth(x-24,y-24,depth-1,obj_boat_boss_shadow_tent_projectile);
+			break;
+			case 40:image_index = 7;break;
+			case 45:image_index = 8;break;
+			case 50:image_index = 9;break;
+			case 55:image_index = 10;break;
+			case 60:
+				image_index = 0;
+				t = 0;
+				state = 0;
+			break;
+			
+			
+		}
 		break;
 }
 
 #region Попадание
 
-fnc_boat_take_dmg_pistol(random_range(-16,8),random_range(-16,16),depth-1000,random_range(-16,8),random_range(-16,16),depth-1000)
-fnc_boat_take_dmg_parrotcage(random_range(-16,8),random_range(-16,16),depth-1000);
-fnc_boat_take_dmg_blunderbuss(random_range(-16,8),random_range(-16,16),depth-1000);
-fnc_boat_take_dmg_fastshot(random_range(-16,8),random_range(-16,16),depth-1000);
+fnc_boat_take_dmg_pistol(1)
+
+fnc_boat_take_dmg_dual_pistol(0.4,0.6,0.8) 
+
+fnc_boat_take_dmg_cannon(10) 
+
+fnc_boat_take_dmg_parrotcage(1,1.4,1.8,2)
+
+fnc_boat_take_dmg_blunderbuss(0.5)
+
+fnc_boat_take_dmg_fastshot(0.5,1)
 
 if enemy_hp <=0
 {

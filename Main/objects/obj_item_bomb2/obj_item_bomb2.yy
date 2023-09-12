@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_item_bomb",
-    "path": "sprites/spr_item_bomb/spr_item_bomb.yy",
+    "name": "spr_item_bomb2",
+    "path": "sprites/spr_item_bomb2/spr_item_bomb2.yy",
   },
   "spriteMaskId": null,
   "visible": true,

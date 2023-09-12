@@ -22,6 +22,25 @@ if place_meeting(x,y,obj_enemy_parent_no_armor) && a = 0 //&& obj_enemy_parent_n
 }
 */
 
+
+
+if a = 2 
+{
+	mask_index = spr_blank;	
+	instance_destroy();
+}
+
+if a !=0 
+{
+	a++;
+}
+
+if y > room_height+16
+{
+	instance_destroy();	
+}
+
+/*
 #region boss1hit
     if place_meeting(x,y,obj_boss1_phase1) && a = 0 //&& obj_boss1_phase1.enemy_hp > 0
     {
@@ -42,19 +61,3 @@ if place_meeting(x,y,obj_enemy_parent_no_armor) && a = 0 //&& obj_enemy_parent_n
     	b.image_angle = random(360);
     }
 #endregion
-
-if a = 2 
-{
-	mask_index = spr_blank;	
-	instance_destroy();
-}
-
-if a !=0 
-{
-	a++;
-}
-
-if y > room_height+16
-{
-	instance_destroy();	
-}

@@ -16,12 +16,12 @@ if global.dia_lavaMerch = 0 || global.dia_lavaChief = 0 || global.dia_lavaComt >
 
 if global.saved_vulcano = 1 
 {
-    instance_create_depth(480,240,1,obj_npc_bonnie_village);        
+    instance_create_depth(448,240,1,obj_npc_bonnie_village);        
 }
 
 if global.dia_lavaChief = 1
 {
-    instance_create_depth(192,240,1,obj_npc_lavav_comt);   
+    instance_create_depth(544,240,1,obj_npc_lavav_comt);   
 }
 
 #region указатель

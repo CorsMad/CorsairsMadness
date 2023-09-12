@@ -14,7 +14,12 @@ if a mod 19 == 0
 
 if a = 100 
 {
+	if instance_exists(obj_gui_controller){
     instance_create_depth(x,-128,obj_gui_controller.depth+1,obj_follower_grounded_clap_block);   
+	}
+	if instance_exists(obj_gui_controller_finalboss){
+    instance_create_depth(x,-128,obj_gui_controller_finalboss.depth+1,obj_follower_grounded_clap_block);   
+	}
 }
 if a = 119 
 {

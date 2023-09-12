@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 t = 0;
-musicId = noone;
+musicId = 0;//msc_j1//noone;
 stop_music = 0;
 sm_t = 0;
 depth = -1900000000000000000000000000000000000;

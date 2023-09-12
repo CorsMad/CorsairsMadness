@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_item_bomb",
-    "path": "sprites/spr_item_bomb/spr_item_bomb.yy",
+    "name": "spr_item_bomb3",
+    "path": "sprites/spr_item_bomb3/spr_item_bomb3.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -187,6 +187,7 @@ if state = 4
 {
 	if !instance_exists(obj_armor_skel)
 	{
+		instance_create_depth(x,y,depth-1,obj_hpmax_some_mana_gain_gift);
 		instance_create_depth(240,96,depth,obj_boss_l2_phase3_pre);
 		instance_destroy()
 	}

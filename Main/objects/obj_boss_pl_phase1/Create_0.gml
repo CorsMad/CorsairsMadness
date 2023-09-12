@@ -12,4 +12,5 @@ player_near_timer = 0;
 
 
 hit_cd = 0;
-enemy_hp = 40
+enemy_hp = 60
+enemy_hp_max = 60

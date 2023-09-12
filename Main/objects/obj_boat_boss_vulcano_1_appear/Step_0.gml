@@ -1,7 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 t++;
-if t = 20
-{
-    instance_create_depth(352,96,0,obj_boat_boss_vulcano_1_wall)   ;
+
+if image_index = 2{
+	var w = instance_create_depth(x-8,y+12,depth+1,obj_boat_boss_shadow_water_main)
+	w.image_xscale = 1;
+	w.image_yscale = 1;
+
 }

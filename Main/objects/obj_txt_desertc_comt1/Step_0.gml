@@ -9,7 +9,6 @@ if key_skip
     
     if scr_t > scr_t_max 
     {                
-        obj_npc_desertc_comt1.talked = 1;
         obj_Player.isDead = 2.1;          
         instance_destroy();   
     } 

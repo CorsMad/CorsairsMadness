@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_boat_boss_vulcano_idle",
+    "path": "sprites/spr_boat_boss_vulcano_idle/spr_boat_boss_vulcano_idle.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

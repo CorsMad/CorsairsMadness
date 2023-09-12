@@ -5,6 +5,7 @@
 image_speed = 0;
 image_index = 2;
 state = 1;
+instance_create_depth(x,y,depth-1,obj_hpmax_some_mana_gain_gift);
 t = 0;
 var i1 = instance_create_depth(x-16,y-39,depth-1,obj_boss_g1_particle);
 i1.hspd = -0.5;

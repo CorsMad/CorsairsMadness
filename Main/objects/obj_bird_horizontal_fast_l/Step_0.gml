@@ -25,6 +25,18 @@ if state = 1
 // Получение урона
 
     fnc_enemy_no_armor_dmg();
+
+// Бомба
+
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1);
+
+// Eball
+
+	fnc_take_dmg_eball(0,-16,-1);
+
+// Parrot
+
+	fnc_take_dmg_parrot_laser(0,-16,-1)
     
 #endregion
 

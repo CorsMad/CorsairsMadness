@@ -1,4 +1,4 @@
-x -= 1.5;
+x += spd;
 depth = -y;
 fnc_boat_destroyer();
 

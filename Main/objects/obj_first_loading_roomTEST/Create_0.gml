@@ -1,13 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.TargetX      = 128;
-global.TargetY      = 240;
+global.TargetX      = 224;
+global.TargetY      = 224;
 global.TargetRoom   = TESTROOM;
 
-global.fTargetX     = 432;
-global.fTargetY     = 240;
-global.fTargetRoom  = PL2_r13;
+global.fTargetX     = 224;
+global.fTargetY     = 224;
+global.fTargetRoom  = TESTROOM;
 
 
 
@@ -33,8 +33,8 @@ global.language = 0;
     global.completed_JF1 = 0;
     global.completed_JF2 = 0;
     
-    global.completed_PD1 = 0;
-    global.completed_PD2 = 0;
+    global.completed_PD1 = 1;
+    global.completed_PD2 = 1;
     
     global.completed_PS1 = 0;
     global.completed_PS2 = 0;
@@ -64,11 +64,11 @@ global.language = 0;
     global.dia_lavaMerch = 0; 
     
     //2
-    global.dia_jungleComt = 2; 
-    global.dia_desertComt = 2;  
-    global.dia_snowComt = 2; 
-    global.dia_shadowComt = 2; 
-    global.dia_lavaComt = 2;
+    global.dia_jungleComt = 0; 
+    global.dia_desertComt = 0;  
+    global.dia_snowComt = 0; 
+    global.dia_shadowComt = 0; 
+    global.dia_lavaComt = 0;
      
     //0 
     global.saved_jungle = 0;
@@ -86,15 +86,6 @@ global.language = 0;
 
 #endregion
 
-#region Разрешение на пушку 
-
-global.cannon_j2_r1 = 0;
-global.cannon_d2_r1 = 0;
-global.cannon_sn2_r1 = 0;
-global.cannon_l2_r1 = 0;
-global.cannon_sh2_r1 = 0;
-
-#endregion
 
 #region  ключи
 global.key_green1 = 0;
@@ -184,11 +175,15 @@ global.purch_parrotcage3 = 0;
 global.hp = 5;           // 4
 global.hp_max = 5;       // 4
 global.choosed_item_special = 0;
-global.choosed_item = 4; // 1- бумер 2 -топ // 3 - бомба // 4 - eball // 5 - parrot // 11 - арбалет
+global.choosed_item = 3; // 1- бумер 2 -топ // 3 - бомба // 4 - eball // 5 - parrot // 11 - арбалет
 global.choosed_item_tier = 3; // ТИР предмета
 global.choosed_itemboat = 2; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
 global.choosed_itemboat_tier = 3; // ТИП предмета для лодки
-global.mana = 3;
+global.superattack1 = 0;// Суператаки
+global.superattack2 = 0;// Суператаки
+global.superattack3 = 0;// Суператаки
+global.superattack4 = 0;// Суператаки
+global.mana = 6000000//3;
 global.mana_max = 3;
 global.gold = 10000 //global.money_saved;          // 0
 global.gold_prelevel = 0;

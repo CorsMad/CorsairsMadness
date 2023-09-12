@@ -206,80 +206,29 @@ if state = 8
         t = 0;
     }
 
-    if place_meeting(x,y,obj_hitbox) && hit_cd = 0 
-    {
-        if obj_Player.x < x 
-		{
-			instance_create_depth(x+4,y+8,depth,obj_sfx_weapon_slash);
-		} else instance_create_depth(x-4,y-8,depth,obj_sfx_weapon_slash);
-        if state != 8 
-        {
-            state = 6;
-            if instance_exists(obj_Player)
-            {
-                if obj_Player.x >= x
-                {
-                    hspd = -3;
-                } else hspd = 3;
-            }
-            vspd = -3;
-            enemy_hp -= 1;
-            if obj_Player.x < x 
-    		{
-    			instance_create_depth(x+4,y+8,depth,obj_sfx_weapon_slash);
-    		} else instance_create_depth(x-4,y-8,depth,obj_sfx_weapon_slash);
-        }
-        else {
-            if instance_exists(obj_Player)
-            {
-                if obj_Player.x >= x
-                { 
-                    hspd = -3;
-                } else hspd = 3;
-            }
-            state = 7;
-            
-            enemy_hp -= 2;}
-        t = 0;
-        t_red = 1;
-        hit_cd = 1;
-        
-    }
-    
+         // Атака
+
+    fnc_take_dmg_hitbox(-10,0,-1,10,0,-1);
     
 // Топор
 
-    fnc_take_dmg_axe(-10,-16,-1,10,-16,-1);
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
     
 // Удар вниз   
-    if place_meeting(x,y,obj_hitbox_down) && hit_cd = 0 
-    {
-        if state != 8 
-        {
-            state = 6;
-            if instance_exists(obj_Player)
-            {
-                if obj_Player.x >= x
-                {
-                    hspd = -4;
-                } else hspd = 4;
-            }
-            vspd = -4;
-            enemy_hp -= 1;
-        }
-        else {state = 7;hspd = 4;vspd = 0;enemy_hp -= 4;}
-        t = 0;
-        t_red = 1;
-        hit_cd = 1;
-        obj_Player.isAttackingdown = 0;
-    	obj_Player.attackingdown_timer = 0;
-    	obj_Player.vspd = -5;    
-        if obj_Player.x < x 
-		{
-			instance_create_depth(x+4,y+8,depth,obj_sfx_weapon_slash);
-		} else instance_create_depth(x-4,y-8,depth,obj_sfx_weapon_slash);
-        
-    }
+
+    fnc_take_dmg_hitbox_down(0,-16,-1);
+
+// Бомба
+
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+
+// Eball
+
+	fnc_take_dmg_eball(0,-16,-1,1);
+
+// Parrot
+
+	fnc_take_dmg_parrot_laser(0,-16,-1,1)
     
 
 // Получение урона

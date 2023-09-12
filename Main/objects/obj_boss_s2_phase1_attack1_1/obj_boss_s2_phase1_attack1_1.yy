@@ -38,5 +38,5 @@
     "name": "spr_boss2_snow_attack_forward_mask",
     "path": "sprites/spr_boss2_snow_attack_forward_mask/spr_boss2_snow_attack_forward_mask.yy",
   },
-  "visible": true,
+  "visible": false,
 }

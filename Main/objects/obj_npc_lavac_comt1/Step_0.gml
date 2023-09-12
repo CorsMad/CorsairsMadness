@@ -1,6 +1,49 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+#region Anim
+switch(t_state)
+{
+    case 0:
+        t_anim++;
+        switch(t_anim)
+        {
+            case 1:     
+                image_index = 0;
+                image_xscale = choose(-1,1);
+                break;
+            case 100:   image_index = 1;break;
+            case 105:   image_index = 2;break;
+            case 150:   
+                if image_xscale = 1 {
+                    var boom = instance_create_depth(x,y-16,depth,obj_npc_lavac_comt1_boom);
+                    boom.hspd = -4;
+                } 
+                if image_xscale = -1
+                {
+                    var boom = instance_create_depth(x,y-16,depth,obj_npc_lavac_comt1_boom);
+                    boom.hspd = 4;   
+                }
+                
+                image_index = 3;
+                t_anim = 0;
+                t_state = 1;
+                break;                                
+        }
+        break;
+    case 1:  
+        t_anim = 0;        
+        break;
+    case 2:
+        t_anim++;
+        if t_anim = 10 {t_anim = 0;t_state = 0;}
+        image_index = 4;
+        break;
+}
+#endregion
+
+
+
 #region Talk start
 
 if instance_exists(obj_Player)

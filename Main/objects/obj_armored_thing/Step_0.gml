@@ -147,16 +147,7 @@ if state = 6
 
 if state = 7 
 {
-	a++;
-	if a = 10
-	{
-		instance_create_depth(x,y-16,1,obj_sfx_sparkle_creator);	
-	}
-	image_alpha = 0.5;
-	if a = 60 
-	{
-		instance_destroy();	
-	}
+	
 }
 
 #endregion
@@ -167,19 +158,27 @@ if state = 7
         {
             // Атака
 
-                fnc_take_dmg_hitbox(-10,-16,-1,10,-16,-1);
-    
-            // Топор
+    fnc_take_dmg_hitbox(-10,0,-1,10,0,-1);
 
-                fnc_take_dmg_axe(-10,-16,-1,10,-16,-1);
-    
-            // Бомба
+// Удар вниз   
 
-                fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1);
+    fnc_take_dmg_hitbox_down(0,-32,-1);
+	
+// Топор
 
-            // Удар вниз   
+    fnc_take_dmg_axe(-10,-16,-1,10,-16,-1,1);
 
-                fnc_take_dmg_hitbox_down(0,-32,-1);    
+// Бомба
+
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+
+// Eball
+
+	fnc_take_dmg_eball(0,-16,-1,1);
+
+// Parrot
+
+	fnc_take_dmg_parrot_laser(0,-16,-1,1)
 
             // Получение урона
             fnc_enemy_no_armor_dmg();  
@@ -201,6 +200,23 @@ if state = 7
         		obj_Player.attackingdown_timer = 0;
         		obj_Player.vspd = -5;  
             }
+			
+	
+// Топор
+
+    fnc_take_dmg_axe(-10,-16,-1,10,-16,-1,1);
+
+// Бомба
+
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+
+// Eball
+
+	fnc_take_dmg_eball(0,-16,-1,1);
+
+// Parrot
+
+	fnc_take_dmg_parrot_laser(0,-16,-1,1)
           
 		}
         if hit_cd_sp!=0 hit_cd_sp++;
@@ -221,11 +237,11 @@ if state != 7 && enemy_hp < 1
 	a = 0;	
 }
 
-if enemy_hp < 1
+if enemy_hp <=0
 {
-	state = 7;
-	sprite_index = spr_armored_thing_death;
-	mask_index = spr_blank;
+	var death = instance_create_depth(x,y,depth,obj_armored_thing_death);
+	death.image_xscale = image_xscale;
+	instance_destroy();
 }
 
 #endregion

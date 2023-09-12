@@ -90,10 +90,10 @@ if (state = 2)
     t++;
     if t = 2
     {
-        if instance_exists(obj_boss_d1_2_weakspot1)
-        {
-            obj_boss_d1_2_weakspot1.isOn = 1;
-        }
+        wsp = instance_create_depth(431,242,depth-1,obj_boss_d1_2_weakspot1);
+		wsp.fol = id;
+		wsp.isOn = 1;
+		wsp.enemy_hp = enemy_hp;
     }    
     
     if t = 350
@@ -102,6 +102,7 @@ if (state = 2)
         state = 0;
         sprite_index = spr_boss1_d1_idle;
         image_index = 0;
+		instance_destroy(wsp);
         t_sander = 0;
     }
 }

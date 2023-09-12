@@ -79,7 +79,22 @@ if hit_cd=11 hit_cd = 0;
 if t_red!=0 {t_red++;image_blend = c_red;}
 if t_red=5 {t_red=0;image_blend = c_white;}
 
+// Топор
 
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
+
+// Бомба
+
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+
+// Eball
+
+	fnc_take_dmg_eball(0,-16,-1,1);
+
+// Parrot
+
+	fnc_take_dmg_parrot_laser(0,-16,-1,1)
+	
 #endregion
 
 #region смерть

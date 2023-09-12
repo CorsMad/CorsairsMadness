@@ -20,13 +20,73 @@ switch(isOn)
 				// выстрел из середины
 				break;
 			case 190:
-				instance_create_depth(x,y,depth,obj_powerup_barrel_cannon);
+				instance_create_depth(x,y+80,depth,obj_powerup_barrel_cannon_vulcano_Creator);
 				t = 0;
 				isOn = 0;
 				break;
 		}
 		break;
 }
+
+
+#region anim
+switch(animstate){
+	case 0:
+		t_anim++;
+		switch(t_anim){
+			case 5:image_index = 1;break;	
+			case 10:image_index = 2;break;	
+			case 15:image_index = 3;break;	
+			case 20: animstate = 1;t_anim = 0;break;
+		}
+		break;
+	case 1:
+		sprite_index = spr_boat_mobstacle;
+		image_speed = 1;
+		break;
+}
+
+if enemy_hp < 40 {
+	t1++;
+	if t1 = 40 {
+		t1=0;
+		var s1 = instance_create_depth(x+random_range(2,16),y+random_range(4,158),depth-1,obj_sfx_sparkle_1_player);	
+		s1.image_xscale = 1;
+		s1.image_yscale = 1;
+		var s2 = instance_create_depth(x+random_range(2,16),y+random_range(4,158),depth-1,obj_sfx_sparkle_1_player);	
+		s2.image_xscale = 1;
+		s2.image_yscale = 1;
+	}
+}
+
+if enemy_hp <=25 && enemy_hp > 10 {
+	t2++;
+	if t2 = 25 {
+		t2=0;
+		var s3 = instance_create_depth(x+random_range(2,16),y+random_range(4,158),depth-1,obj_sfx_sparkle_1_player);	
+		s3.image_xscale = 1;
+		s3.image_yscale = 1;
+		var s4 = instance_create_depth(x+random_range(2,16),y+random_range(4,158),depth-1,obj_sfx_sparkle_1_player);	
+		s4.image_xscale = 1;
+		s4.image_yscale = 1;
+	}	
+}
+
+if enemy_hp < 10 {
+	t3++;
+	if t3 = 10 {
+		t3=0;
+		var s5 = instance_create_depth(x+random_range(2,16),y+random_range(4,158),depth-1,obj_sfx_sparkle_1_player);	
+		s5.image_xscale = 1;
+		s5.image_yscale = 1;
+		var s6 = instance_create_depth(x+random_range(2,16),y+random_range(4,158),depth-1,obj_sfx_sparkle_1_player);	
+		s6.image_xscale = 1;
+		s6.image_yscale = 1;
+	}	
+}
+
+#endregion
+
 
 
 #region Разруш
@@ -37,16 +97,16 @@ if enemy_hp<=0 {
 #endregion
 #region получение урона
 
-fnc_boat_take_dmg_pistol(0)
+fnc_boat_take_dmg_pistol(1)
 
-fnc_boat_take_dmg_dual_pistol(0,0,0) 
+fnc_boat_take_dmg_dual_pistol(0.4,0.6,0.8) 
 
-fnc_boat_take_dmg_cannon(1) 
+fnc_boat_take_dmg_cannon(5) 
 
-fnc_boat_take_dmg_parrotcage(0,0,0,0)
+fnc_boat_take_dmg_parrotcage(1,1.4,1.8,2)
 
-fnc_boat_take_dmg_blunderbuss(0)
+fnc_boat_take_dmg_blunderbuss(0.5)
 
-fnc_boat_take_dmg_fastshot(0,0)
+fnc_boat_take_dmg_fastshot(0.5,1)
 
 #endregion

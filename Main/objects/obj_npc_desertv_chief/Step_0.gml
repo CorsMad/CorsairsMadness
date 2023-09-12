@@ -29,9 +29,11 @@ if talk_cr_t!= 0
     if talk_cr_t = 10
     {
         talk_cr_t = 0;
+        if global.completed_PD2 = 0{
+			if global.dia_desertChief = 0 instance_create_depth(x,y,-100000,obj_txt_desertv_chief1);
+			if global.dia_desertChief = 1 instance_create_depth(x,y,-100000,obj_txt_desertv_chief2);	
+		} else instance_create_depth(x,y,-100000,obj_txt_desertv_chief3);	
         
-        if global.dia_desertChief = 0 instance_create_depth(x,y,-100000,obj_txt_desertv_chief1);
-        if global.dia_desertChief = 1 instance_create_depth(x,y,-100000,obj_txt_desertv_chief2);
 
     }
 }

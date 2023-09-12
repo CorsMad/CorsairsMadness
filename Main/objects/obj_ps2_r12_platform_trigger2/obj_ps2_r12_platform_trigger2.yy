@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_block_trigger_trigger",
-    "path": "sprites/spr_block_trigger_trigger/spr_block_trigger_trigger.yy",
+    "name": "spr_block_trigger_pos",
+    "path": "sprites/spr_block_trigger_pos/spr_block_trigger_pos.yy",
   },
   "spriteMaskId": null,
   "visible": true,

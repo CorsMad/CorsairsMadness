@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 depth = -y;
+if place_meeting(x,y,obj_trigger_boat_level_global_destroyer) instance_destroy();
 if isDead = 0
 {
     y = y + cos(a)/5;

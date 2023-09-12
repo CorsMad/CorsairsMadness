@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "bgr_boat_island_desert_mid",
-    "path": "sprites/bgr_boat_island_desert_mid/bgr_boat_island_desert_mid.yy",
+    "name": "bgr_boat_island_snow",
+    "path": "sprites/bgr_boat_island_snow/bgr_boat_island_snow.yy",
   },
   "spriteMaskId": null,
   "visible": true,

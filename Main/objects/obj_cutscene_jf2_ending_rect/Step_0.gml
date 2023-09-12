@@ -6,7 +6,7 @@ if a > 100
     alpha += 0.01;
     if alpha >= 1 
     {
-        room_goto(PrologeEnding);
+        room_goto(JP2_ending);
         instance_destroy(obj_Player);
         instance_destroy();	
     }	

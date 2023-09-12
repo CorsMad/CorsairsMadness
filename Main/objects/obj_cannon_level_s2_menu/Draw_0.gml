@@ -11,9 +11,9 @@ draw_set_halign(fa_center);
 draw_set_color(c_white);
 
 draw_text(128+896-480,80,text_l_g);
-draw_text(128+896-480,108,text_l);
+draw_text(128+896-480,108,text_r);
 
 draw_text(352+896-480,80,text_r_g);
-draw_text(352+896-480,108,text_r);
+draw_text(352+896-480,108,text_l);
 
 draw_text(240+896-480,160,text_b);

@@ -13,7 +13,10 @@
     "name": "Phase1",
     "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Desert/Boss/Boss1/Phases/Phase1.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_parent",
+    "path": "objects/obj_enemy_parent/obj_enemy_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -33,6 +36,9 @@
     "name": "spr_boss1_d1_sq",
     "path": "sprites/spr_boss1_d1_sq/spr_boss1_d1_sq.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_boss_desert_1_mask",
+    "path": "sprites/spr_boss_desert_1_mask/spr_boss_desert_1_mask.yy",
+  },
   "visible": true,
 }

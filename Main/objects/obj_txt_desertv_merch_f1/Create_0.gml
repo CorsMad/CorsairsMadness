@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-fnc_lng_merch_j_f1();
+scr_txt_desert_merch4();
 
-scr_text_starter(0,0.5);
+scr_text_starter(2,0.5);
 

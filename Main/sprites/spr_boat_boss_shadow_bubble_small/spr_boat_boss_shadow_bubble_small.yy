@@ -26,7 +26,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"919f7132-45fc-4b2a-b452-133f87dc60ba","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 9,
+  "origin": 4,
   "parent": {
     "name": "Projectiles",
     "path": "folders/Sprites/Enemies/!Boat level/Bosses/Graveyard/Projectiles.yy",
@@ -66,7 +66,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 40,
-    "yorigin": 48,
+    "yorigin": 40,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

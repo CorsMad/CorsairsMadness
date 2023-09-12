@@ -522,10 +522,7 @@ if state != 9
         hit_cd++;
     
         // Получение урона
-        if hit_cd = 1
-        {
-            global.hp-=1;
-        }
+        
         
         if hit_cd = 2
         {

@@ -15,6 +15,7 @@ light_cd = 0;
 can_hit_light = 0;
 
 enemy_hp = 70;
+enemy_hp_max = 70;
 hit_cd = 0;
 delay = 0;
 

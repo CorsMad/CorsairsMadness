@@ -57,17 +57,8 @@ if talk_cr_t!= 0
     talk_cr_t++;
     if talk_cr_t = 10
     {
-        talk_cr_t = 0;
-        if talked = 0
-        {
-               
-            instance_create_depth(x,y,-100000,obj_txt_desertc_comt2); //3 разговор 
-        }
-        if talked = 1
-        {
-            instance_create_depth(x,y,-100000,obj_npc_desertc_comt_choose);     
-        }
-               
+        talk_cr_t = 0;       
+        instance_create_depth(x,y,-100000,obj_txt_desertc_comt2); //3 разговор           
     }
 }
 

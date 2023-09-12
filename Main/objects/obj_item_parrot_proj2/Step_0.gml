@@ -9,7 +9,7 @@ if en!=noone
         haveTarget = 1;  
 		if point_distance(x, y, en_x, en_y) > 6
 	    {
-	        move_towards_point(en_x, en_y, 6);
+	        move_towards_point(en_x, en_y, 5);
 	    }
 } else 
 {

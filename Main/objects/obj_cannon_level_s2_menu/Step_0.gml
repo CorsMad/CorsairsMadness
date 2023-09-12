@@ -11,17 +11,17 @@ if key_attack || key_jump
     {
         case 0:
             obj_cannon_level_s2.pjump = 1;
-            obj_cannon_level_s2.TargetRoom = S2b_r2;
-            obj_cannon_level_s2.TargetX = 320;
+            obj_cannon_level_s2.TargetRoom = S2p_r2;
+			obj_cannon_level_s2.TargetX = 320;
             obj_cannon_level_s2.TargetY = 0;
-
+		
 
             instance_destroy();
             break;
         case 1:
             obj_cannon_level_s2.pjump = 1;
-            obj_cannon_level_s2.TargetRoom = S2p_r2;
-            obj_cannon_level_s2.TargetX = 128;
+            obj_cannon_level_s2.TargetRoom = S2b_r2;
+            obj_cannon_level_s2.TargetX = 272;
             obj_cannon_level_s2.TargetY = 0;
             instance_destroy();
             break;

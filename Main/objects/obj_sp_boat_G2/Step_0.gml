@@ -3,18 +3,48 @@
 
 #region Счетчик
 
-#region 1 - волновые и в игрока
+#region states
 
-if state = 1
-{
-    t++;
-    if t = 50 
-    {
-        instance_create_depth(416,176,depth,obj_boat_boss_shadow_arrival)
-        t = 0;
-        state = 2;
-    }
+switch(state){
+	case 0:
+		t++;
+	    if t = 50 
+	    {
+	        var b1 = instance_create_depth(416,176,depth,obj_boat_boss_shadow_arrival)
+			b1.boss_phase = obj_boat_boss_shadow_1;
+	        t = 0;
+	        state = 1;
+	    }
+		break;
+	case 2:
+		t++;
+	    if t = 50 
+	    {
+	        var b1 = instance_create_depth(416,176,depth,obj_boat_boss_shadow_arrival)
+			b1.boss_phase = obj_boat_boss_shadow_2;
+	        t = 0;
+	        state = 3;
+	    }
+		break;
+	case 3:
+		global.boatCheckpoint = 1;
+		break;
+	case 4:
+		t++;
+	    if t = 50 
+	    {
+	        var b1 = instance_create_depth(416,176,depth,obj_boat_boss_shadow_arrival)
+			b1.boss_phase = obj_boat_boss_shadow_3;
+	        t = 0;
+	        state = 5;
+	    }
+		break;
+	case 5:
+		global.boatCheckpoint = 2;
+		break;
 }
+
+
 
 
 #endregion
@@ -65,7 +95,7 @@ if state = 17
     
     if t = 299
     {
-        instance_create_depth(0,0,-1000000,obj_boat_menu_end_j2);   
+        instance_create_depth(0,0,-1000000,obj_boat_menu_end_l2);   
     }
     
  

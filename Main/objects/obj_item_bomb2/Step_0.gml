@@ -12,4 +12,11 @@ if isDead = 1{
 }
 
 
-
+#region anim
+t_anim++;
+if t_anim = t_anim_max{
+	t_anim = 0;
+	if dir = 1 image_angle-=45;
+	if dir = -1 image_angle+=45;	
+}
+#endregion

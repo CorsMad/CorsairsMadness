@@ -36,6 +36,9 @@
     "name": "spr_boss1_d1_sq",
     "path": "sprites/spr_boss1_d1_sq/spr_boss1_d1_sq.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_boss_desert_1_mask",
+    "path": "sprites/spr_boss_desert_1_mask/spr_boss_desert_1_mask.yy",
+  },
   "visible": true,
 }
