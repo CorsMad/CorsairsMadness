@@ -2,7 +2,15 @@
 // You can write your code in this editor
 //draw_rectangle(camera_get_view_x(view_camera[0]),0,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+30,false);
 scr_text_graphics();
-draw_sprite(spr_text_icons,8,camera_get_view_x(view_camera[0])+6,camera_get_view_y(view_camera[0])+9);
+#region иконка
+if text = text1 || text = text3 {
+    draw_sprite(spr_text_icons,8,camera_get_view_x(view_camera[0])+6,camera_get_view_y(view_camera[0])+9);    
+    if obj_Player.x > obj_npc_vulcanov_chief.x obj_Player.image_xscale = -1 else image_xscale = 1
+} else {
+    draw_sprite(spr_text_icons,2,camera_get_view_x(view_camera[0])+6,camera_get_view_y(view_camera[0])+9);    
+    if obj_Player.x > obj_npc_lavav_merch.x obj_Player.image_xscale = -1 else image_xscale = 1
+}
+#endregion
 if typist.get_state() = 1 draw_sprite(spr_text_icon_button_k,iconspd,camera_get_view_x(view_camera[0])+480-12,camera_get_view_y(view_camera[0])+64-10)
 
 var scribble_text = scribble(text)
@@ -11,11 +19,13 @@ scribble_text.wrap(text_width);
 
 switch(scr_t)
 {
-    case 0: text = eng1;break;            
-    case 1: text = eng2;break;                           
-    case 2: text = eng3;break;            
-    case 3: text = eng4;break;               
-    case 4: text = eng5;break;               
+    case 0: text = text1;break;            
+    case 1: text = text2;break;                           
+    case 2: text = text3;break;            
+    case 3: text = text4;break;               
+    case 4: text = text5;break;
+    case 5: text = text6;break;
+    case 6: text = text7;break;
 }
 
 

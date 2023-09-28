@@ -13,7 +13,10 @@
     "name": "Bat",
     "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Lava/Bat.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_parent_no_armor",
+    "path": "objects/obj_enemy_parent_no_armor/obj_enemy_parent_no_armor.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

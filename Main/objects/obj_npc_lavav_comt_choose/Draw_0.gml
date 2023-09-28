@@ -3,7 +3,7 @@
 
 //draw_rectangle(camera_get_view_x(view_camera[0]),0,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+30,false);
 draw_rectangle_color(camera_get_view_x(view_camera[0]),0,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+64,c_black,c_black,c_black,c_black,false);
-draw_sprite(spr_text_icons,6,camera_get_view_x(view_camera[0])+6,camera_get_view_y(view_camera[0])+9);
+draw_sprite(spr_text_icons,3,camera_get_view_x(view_camera[0])+6,camera_get_view_y(view_camera[0])+9);
 
 draw_set_font(fnt_pixel);
 draw_set_halign(fa_left);

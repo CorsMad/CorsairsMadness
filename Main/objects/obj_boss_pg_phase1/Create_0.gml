@@ -12,7 +12,7 @@ hit_stored = 0;
 attack_aoe = 0;
 attack_laser = 0;
 
-
+hits_cd=0;
 hit_cd = 0;
 enemy_hp = 70;
 enemy_hp_max = 70;

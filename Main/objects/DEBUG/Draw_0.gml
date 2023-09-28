@@ -5,10 +5,9 @@
 draw_set_color(c_white);
     	
 	
-    if instance_exists(obj_boss_d1_2)
+    if instance_exists(obj_molded_snow_flying)
     {
-		draw_text(camera_get_view_x(view_camera[0])+32,camera_get_view_y(view_camera[0])+48,string(obj_boss_d1_2.enemy_hp));
-
+		draw_text(camera_get_view_x(view_camera[0])+32,camera_get_view_y(view_camera[0])+48,string(obj_molded_snow_flying.enemy_hp));
     }
    
 	

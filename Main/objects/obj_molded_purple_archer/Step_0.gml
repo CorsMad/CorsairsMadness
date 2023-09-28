@@ -280,6 +280,9 @@ if state = 4 // выстрел на месте
 if hit_cd!=0 hit_cd ++;
 if hit_cd = 10 hit_cd = 0;
 
+if hits_cd!=0 hits_cd ++;
+if hits_cd = 10 hits_cd = 0;
+
 if flip!=0 flip++;
 if flip = 10 flip = 0;
 
@@ -294,6 +297,7 @@ if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd=0
 	if instance_exists(obj_masked_clone) hit_stored++;
 	hit_cd = 1;
 	state = 6
+    fnc_superattack_gain_attack_dash();
 	t = 0;
 	t_attack = 0;
     enemy_hp-=1;
@@ -352,8 +356,10 @@ if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0
 {
 	if instance_exists(obj_masked_clone) hit_stored+=4;
 	hit_cd = 1;
+    t_attack = 0;
 	hspd = sign(obj_Player.dir)*2;
 	vspd = -2;
+    fnc_superattack_gain_specattack();
 	if place_meeting(x,y+1,obj_block) y-=1;
 	//bounce = 1;
 	state = 6;
@@ -369,6 +375,8 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0
 {
 	if instance_exists(obj_masked_clone) hit_stored+=4;
 	hit_cd = 1;
+    t_attack = 0;
+    fnc_superattack_gain_specattack();
 	hspd = sign(obj_Player.dir)*4;
 	vspd = -1;
 	if place_meeting(x,y+1,obj_block) y-=1;
@@ -386,11 +394,13 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0
 {
 	if instance_exists(obj_masked_clone) hit_stored+=4;
 	hit_cd = 1;
+    fnc_superattack_gain_specattack();
 	//hspd = sign(obj_Player.dir)=2;
 	vspd = -4;
 	if place_meeting(x,y+1,obj_block) y-=1;
 	bounce = 1;
 	state = 6;
+    t_attack = 0;
     if obj_Player.x < x 
         		{
         			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
@@ -403,6 +413,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0
 {
 	if instance_exists(obj_masked_clone) hit_stored+=4;
 	hit_cd = 1;
+    fnc_superattack_gain_specattack();
 	//hspd = sign(obj_Player.dir)=2;
 	if !place_meeting(x,y+1,obj_block)
 	{
@@ -416,8 +427,45 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0
     enemy_hp-=1;
     t_red = 1;
 	bounce = 1;
+    t_attack = 0;
 	state = 6;
 }
+    
+#endregion
+
+#region от Суперов
+
+if hits_cd = 0 && (place_meeting(x,y,obj_hitbox_mask_superattack_h1) || place_meeting(x,y,obj_hitbox_mask_superattack_h2) ||
+place_meeting(x,y,obj_hitbox_mask_superattack_aoe)) {
+    if instance_exists(obj_masked_clone) hit_stored+=4;
+	hit_cd = 1;
+    t_attack = 0;
+    hits_cd = 1;
+    fnc_superattack_gain_specattack();
+	hspd = sign(obj_Player.dir)*4;
+	vspd = -1;
+	if place_meeting(x,y+1,obj_block) y-=1;
+	//bounce = 1;
+	state = 6;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+    fnc_molded_blood_forward(2);
+    fnc_molded_blood_forward(2);
+    fnc_molded_blood_up(2);
+    fnc_molded_blood_up(2);
+    enemy_hp-=10;
+    t_red = 1;  
+}
+
+var supermissle = instance_place(x,y,obj_hitbox_mask_superattack_missle) 
+    if supermissle!=noone{
+        supermissle.state = 1;
+        fnc_molded_blood_forward(2);
+        fnc_molded_blood_up(2);
+        enemy_hp-=5;
+    }
 
 #endregion
 
@@ -427,6 +475,7 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
     if place_meeting(x,y+1,obj_block) t_attack = 0;
 	if instance_exists(obj_masked_clone) hit_stored++;
 	hit_cd = 1;
+    fnc_superattack_gain_attack_dash();
     enemy_hp-=1;
     t_red = 1;
     if obj_Player.x < x 

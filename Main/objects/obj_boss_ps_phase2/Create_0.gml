@@ -14,6 +14,8 @@ enemy_hp = 70;
 enemy_hp_max = 70;
 dmg_multiplier = 1;
 t_red = 0;
+
+hits_cd = 0;
 hit_cd = 0;
 hit_stored = 0;
 armor = 2;

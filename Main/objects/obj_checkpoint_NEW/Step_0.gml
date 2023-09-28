@@ -5,6 +5,10 @@
 
 if isOn = 0 && place_meeting(x,y,obj_Player)
 {
+    global.TargetRoom = TargetRoom;
+    global.TargetX = x;
+    global.TargetY = y;
+    
     global.fTargetRoom = TargetRoom;
     global.fTargetX = x;
     global.fTargetY = y;

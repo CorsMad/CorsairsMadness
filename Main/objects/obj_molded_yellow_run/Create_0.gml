@@ -8,6 +8,7 @@ flip = 0;
 t = 0;
 t_hit = 0;
 hit_cd = 0;
+hits_cd = 0;
 t_recover = 0;
 vulnerable = 1;
 clouded = 0;

@@ -1015,102 +1015,10 @@ if isGrounded = 0 && key_jump_pressed && !instance_exists(obj_doublejump) && Spe
                 canDoubleJump = 0;   
             } 
         }
-    
-    
-    /*
-    if instance_exists(obj_doublejump_wings)
-    {
-        if place_meeting(x,y,obj_doublejump_reset) || place_meeting(x,y,obj_doublejump_aoe_reset)         
-        {
-            instance_destroy(obj_doublejump_wings);
-            doublejumpspd = 0;
-            instance_create_depth(x,y,depth,obj_doublejump);
-            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
-            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
-            canDoubleJump = 0; 
-        }   
-    
-        var DJumpHoriz = instance_place(x,y,obj_doublejump_forward)
-        var DJumpUp = instance_place(x,y,obj_doublejump_up)
-    
-        if DJumpHoriz != noone
-        {
-            doublejumpspd = DJumpHoriz.hspd;   
-            vspd = DJumpHoriz.vspd;  
-            x = DJumpHoriz.x;
-            y = DJumpHoriz.y;
-            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
-            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
-        } else 
-        if DJumpUp != noone
-        {
-            x = DJumpUp.x;
-            y = DJumpUp.y;
-            vspd = DJumpUp.vspd; 
-            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
-            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
-        }                
-    } else
-        if canDoubleJump = 1
-        {
-            doublejumpspd = 0;
-            instance_create_depth(x,y,depth,obj_doublejump);
-            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
-            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
-            canDoubleJump = 0;   
-        }   
-    
-    */
+
     
 } 
 
-/*
-if isGrounded = 0 && key_jump_pressed && !instance_exists(obj_doublejump) && SpecAbilMask = 4 && isDashing = 0
-{
-    if instance_exists(obj_doublejump_wings)
-    {
-        if place_meeting(x,y,obj_doublejump_reset) || place_meeting(x,y,obj_doublejump_aoe_reset)
-        {
-           instance_destroy(obj_doublejump_wings);
-            doublejumpspd = 0;
-            instance_create_depth(x,y,depth,obj_doublejump);
-            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
-            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
-            canDoubleJump = 0; 
-        }   
-    } else {
-        var DJumpHoriz = instance_place(x,y,obj_doublejump_forward)
-        var DJumpUp = instance_place(x,y,obj_doublejump_up)
-    
-        if DJumpHoriz != noone
-        {
-            doublejumpspd = DJumpHoriz.hspd;   
-            vspd = DJumpHoriz.vspd;  
-            x = DJumpHoriz.x;
-            y = DJumpHoriz.y;
-            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
-            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
-        } else 
-        if DJumpUp != noone
-        {
-            x = DJumpUp.x;
-            y = DJumpUp.y;
-            vspd = DJumpUp.vspd; 
-            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
-            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
-        } else
-        if canDoubleJump = 1
-        {
-            doublejumpspd = 0;
-            instance_create_depth(x,y,depth,obj_doublejump);
-            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
-            instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
-            canDoubleJump = 0;   
-        }   
-    }      
-} 
-
-*/
 
 #endregion
 
@@ -1126,6 +1034,8 @@ if key_item && SpecAbilMask = 5 && !instance_exists(obj_masked_clone)
 
 if clone_timer!=0
 {
+    
+    
     clone_timer++;  
     if key_item && SpecAbilMask = 5
     {
@@ -1137,7 +1047,7 @@ if clone_timer!=0
     
 }
 
-if clone_timer = 300
+if clone_timer = 300//300
 {
     clone_timer = 0;
     isDead = 132;
@@ -1466,9 +1376,18 @@ if spectp_timer_count = 0 && SpectpEnabled = 1 && SpecAbilMask = 2
 
 if superattack>superattack_max superattack = superattack_max;
 
+
+
 if superattack >= superattack_max{
 	#region horizontal t1
 	if  global.superattack1 = 1 && key_abil && (key_right || key_left){
+        hooking_timer = 0;
+        hooking_timer_count = 0;
+        isRecoil = 0;
+        instance_destroy(obj_item_hook_iframes);
+        instance_destroy(obj_item_hook_masked);
+        instance_destroy(obj_item_hook_masked_projectile);
+        
 		superattack_timer = 0;
 		superattack = 0;
 		isDead = 401;
@@ -1497,11 +1416,30 @@ if superattack >= superattack_max{
 	    isVulnerable = 1;
 		turn_out_clone_timer = 0;
 		clone_timer= 0;
+        
 	}
 	#endregion	
 	
 	#region horizontal t2
-	if  global.superattack2 = 1 && key_abil && (key_right || key_left){
+	if  global.superattack1 = 2 && key_abil && (key_right || key_left)  {// && !instance_exists(obj_teleport_cloud) {
+        
+        
+        hooking_timer = 0;
+        hooking_timer_count = 0;
+        isRecoil = 0;
+        instance_destroy(obj_item_hook_iframes);
+        instance_destroy(obj_item_hook_masked);
+        instance_destroy(obj_item_hook_masked_projectile);
+        
+        instance_destroy(obj_teleport_cloud);
+        superdash_timer = 0;
+        superdash_power = 0;
+        
+        instance_destroy(obj_doublejump_wings);
+        vspd = 0;
+        
+         
+        
 		superattack_timer = 0;
 		superattack = 0;
 		isDead = 402;
@@ -1529,12 +1467,20 @@ if superattack >= superattack_max{
 		damage_cd = 0;
 	    isVulnerable = 1;
 		turn_out_clone_timer = 0;
-		clone_timer= 0;
+        
+		
+        
 	}
 	#endregion	
 	
 	#region AOE t
-	if  global.superattack3 = 1 && key_abil && key_down {
+	if  global.superattack2 = 1 && key_abil && key_down {
+        hooking_timer = 0;
+        hooking_timer_count = 0;
+        isRecoil = 0;
+        instance_destroy(obj_item_hook_iframes);
+        instance_destroy(obj_item_hook_masked);
+        instance_destroy(obj_item_hook_masked_projectile);
 		superattack_timer = 0;
 		superattack = 0;
 		isDead = 403;
@@ -1561,13 +1507,18 @@ if superattack >= superattack_max{
 		coyote_timer = 0;
 		damage_cd = 0;
 	    isVulnerable = 1;
-		turn_out_clone_timer = 0;
-		clone_timer= 0;
+
 	}
 	#endregion	
 	
 	#region homing
-	if  global.superattack4 = 1 && key_abil && key_up {
+	if  global.superattack3 = 1 && key_abil && key_up {
+        hooking_timer = 0;
+        hooking_timer_count = 0;
+        isRecoil = 0;
+        instance_destroy(obj_item_hook_iframes);
+        instance_destroy(obj_item_hook_masked);
+        instance_destroy(obj_item_hook_masked_projectile);
 		superattack_timer = 0;
 		superattack = 0;
 		isDead = 404;
@@ -1846,42 +1797,206 @@ if isDead = 1
 	#region horizontal t1
 	if isDead = 401{
 		superattack_timer++;
-		if superattack_timer = 100 {
-			superattack_timer = 0;
+        switch(superattack_timer){
+            case 1:
+                sprite_index = spr_player_masked_superattack_h1;
+                image_index = 0;
+                image_speed = 0;
+                instance_create_depth(x,y,depth+2,obj_superdash_screen);
+                break;
+            case 3:  image_index = 1;break;
+            case 5:  image_index = 2;break;
+            case 7:  image_index = 3;break;
+            case 9:  image_index = 4;break;
+            case 11: image_index = 5;break;      
+            case 13: image_index = 6;break;
+            case 15: image_index = 7;break;
+            case 17: image_index = 8;break;
+            case 30: image_index = 9;break;
+            case 34: image_index = 10;
+                var hb = instance_create_depth(x,y,depth,obj_hitbox_mask_superattack_h1);
+                hb.image_xscale = image_xscale;
+                instance_destroy(obj_superdash_screen);
+                break;
+            case 38: image_index = 11;break;
+            case 42: image_index = 12;break;
+            case 46: image_index = 13;break;
+            case 50: image_index = 14;break;
+            case 54: image_index = 15;break;
+            case 58: image_index = 16;break;
+            case 62: 
+            superattack_timer = 0;
 			isDead = 0;
-			damage_cd = 1;
-		}
+			damage_cd = 1;  
+            vspd = 0;
+            break;        
+        }
 	}
 	#endregion
 	#region horizontal t2
 	if isDead = 402{
 		superattack_timer++;
-		if superattack_timer = 100 {
-			superattack_timer = 0;
-			isDead = 0;
-			damage_cd = 1;
-		}
+        switch(superattack_timer){
+            case 1:
+                sprite_index = spr_player_masked_superattack_h2;
+                image_index = 0;
+                image_speed = 0;
+                instance_create_depth(x,y,depth+2,obj_superdash_screen);
+                break;
+            case 3: image_index = 1;break;
+            case 5: image_index = 2;break;
+            case 7: image_index = 3;break;
+            case 9: image_index = 4;break;
+            case 11: image_index = 5;break;
+            case 13: image_index = 6;break;
+            case 15: image_index = 7;break;
+            case 17: image_index = 8;break;
+            case 30: image_index = 9;break;
+            case 34: image_index = 10;
+                var hb = instance_create_depth(x,y,depth,obj_hitbox_mask_superattack_h2);
+                hb.image_xscale = image_xscale;
+                instance_destroy(obj_superdash_screen);
+                break;   
+            case 38: image_index = 11;break;
+            case 42: image_index = 12;break;
+            case 46: image_index = 13;break;
+            case 50: image_index = 14;break;
+            case 54:
+                superattack_timer = 0;
+    			isDead = 0;
+    			damage_cd = 1;
+                vspd = 0;
+                break;
+        }
 	}
 	#endregion
 	#region AOE
 	if isDead = 403{
 		superattack_timer++;
-		if superattack_timer = 100 {
-			superattack_timer = 0;
-			isDead = 0;
-			damage_cd = 1;
-		}
+		switch(superattack_timer){
+            case 1:
+                sprite_index = spr_player_masked_superattack_aoe;
+                image_index = 0;
+                image_speed = 0;
+                instance_create_depth(x,y,depth+2,obj_superdash_screen);
+                break;
+            case 3: image_index = 1;break;
+            case 5: image_index = 2;break;
+            case 7: image_index = 3;break;
+            case 9: image_index = 4;break;
+            case 11: image_index = 5;break;
+            case 13: image_index = 6;break;
+            case 15: image_index = 7;break;
+            case 17: image_index = 8;break;
+            case 30: image_index = 9;break;
+            case 34: image_index = 10;
+                var hb = instance_create_depth(x,y,depth,obj_hitbox_mask_superattack_aoe);
+                hb.image_xscale = image_xscale;
+                instance_destroy(obj_superdash_screen);
+                break;   
+            case 38: image_index = 11;break;
+            case 42: image_index = 12;break;
+            case 46: image_index = 13;break;
+            case 50: image_index = 14;break;
+            case 54:
+                superattack_timer = 0;
+    			isDead = 0;
+    			damage_cd = 1;
+                vspd = 0;
+                break;
+        }
 	}
 	#endregion
 	#region Homing
 	if isDead = 404{
 		superattack_timer++;
-		if superattack_timer = 100 {
-			superattack_timer = 0;
-			isDead = 0;
-			damage_cd = 1;
-		}
+		switch(superattack_timer){
+            case 1:
+                sprite_index = spr_player_masked_superattack_missle_attack;
+                image_index = 0;
+                image_speed = 0;
+                instance_create_depth(x,y,depth+2,obj_superdash_screen);
+                break;
+            case 3: image_index = 1;break;
+            case 5: image_index = 2;break;
+            case 7: image_index = 3;break;
+            case 9: image_index = 4;break;
+            case 11: image_index = 5;break;
+            case 13: image_index = 6;break;
+            case 15: image_index = 7;break;
+            case 17: image_index = 8;break;
+            case 19: image_index = 9;break;
+            case 21: image_index = 10;break;
+            case 23: image_index = 11;break;
+            case 25: image_index = 12;break;
+            case 27: image_index = 13;break;
+            case 29: image_index = 14;break;
+            case 31: image_index = 15;break;
+            case 50: image_index = 16;
+                instance_create_depth(x-24,y+8,depth,obj_hitbox_mask_superattack_missle);
+                instance_destroy(obj_superdash_screen);
+                break;   
+            case 54: image_index = 17;break;
+            case 65: image_index = 18;
+                instance_create_depth(x+24,y+8,depth,obj_hitbox_mask_superattack_missle);
+            break;
+            case 69: image_index = 19;break;
+            case 80: image_index = 20;
+                instance_create_depth(x,y-56,depth,obj_hitbox_mask_superattack_missle);
+            break;
+            case 84: image_index = 21;
+            case 87:
+                superattack_timer = 0;
+    			isDead = 0;
+    			damage_cd = 1;
+                vspd = 0;
+                break;
+    
+        }
 	}
 	#endregion
 	#endregion
+    
+    #region ПОСЛКАТСЦ
+    if isDead = 800 {
+        y-=7;
+        cutscene_timer++;
+        if cutscene_timer > 50 && cutscene_timer <= 100 {
+            if cutscene_timer mod 30 = 0 fnc_molded_dark_blood_player();   
+        }
+        
+        if cutscene_timer > 100 && cutscene_timer <= 150 {
+            if cutscene_timer mod 15 = 0 {
+                fnc_molded_dark_blood_player();  
+            }
+            if cutscene_timer mod 25 = 0 {  
+                instance_create_depth(x,y-8,depth-1,obj_sfx_player_dead_big_chase);
+            }
+            
+        }
+        
+        if cutscene_timer > 150 && cutscene_timer < 200 {
+            if cutscene_timer mod 5 = 0 {
+                fnc_molded_dark_blood_player();   
+            }
+            if cutscene_timer mod 15 = 0 {
+                instance_create_depth(x,y-8,depth-1,obj_sfx_player_dead_big_chase);
+            }
+        }
+        
+        
+        switch(cutscene_timer){
+            case 1:
+                sprite_index = spr_player_masked_superdash_ctscn;
+                image_speed = 1;
+                break;
+            case 200:
+                sprite_index = spr_player_cannon_shot;
+                image_speed = 0;
+                image_index = 2;
+                break;
+                
+        }
+    }
+    #endregion
 }

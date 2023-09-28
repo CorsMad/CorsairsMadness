@@ -36,5 +36,5 @@
     "path": "sprites/spr_molded_yellow_attack_hb2/spr_molded_yellow_attack_hb2.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

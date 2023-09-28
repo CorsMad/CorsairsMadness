@@ -26,16 +26,7 @@ if talk_cr_t!= 0
     if talk_cr_t = 10
     {
         talk_cr_t = 0;
-        if talked = 0 
-        {
-            instance_create_depth(x,y,-100000,obj_txt_snowc_comt1); //3 разговор  //3 разговор    
-            
-        }
-        if talked = 1
-        {
-            instance_create_depth(x,y,-100000,obj_txt_snowc_comt11); //3 разговор    
-        }
-               
+        instance_create_depth(x,y,-100000,obj_txt_snowc_comt1);          
     }
 }
 

@@ -1261,12 +1261,12 @@ if specabilnumber = 1
             if padblue.isOn = 0
             {
                 sbootsbuffer = 0;  
-                instance_create_depth(x,y,depth-1,obj_abil_boots_hitbox);   
+                if !instance_exists(obj_abil_boots_hitbox) instance_create_depth(x,y,depth-1,obj_abil_boots_hitbox);                   
             }
         }   else 
             {
                 sbootsbuffer = 0;  
-                instance_create_depth(x,y,depth-1,obj_abil_boots_hitbox);     
+                if !instance_exists(obj_abil_boots_hitbox) instance_create_depth(x,y,depth-1,obj_abil_boots_hitbox);   
             }
     }
 }

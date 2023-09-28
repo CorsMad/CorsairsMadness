@@ -167,6 +167,11 @@ if state = 1 //преследование
 
 if state = 2 //удар вперед
 {
+    if t < 45 {
+        if instance_exists(obj_Player)   {
+            if x > obj_Player.x image_xscale = 1 else image_xscale = -1;  
+        }
+    }
     t++;
     if t = 50 
     {
@@ -213,6 +218,10 @@ if place_meeting(x,y,obj_doublejump)
 if hit_cd!=0 hit_cd++;
 if hit_cd=10 hit_cd=0;
 
+if hits_cd!=0 hits_cd++;
+if hits_cd=10 hits_cd=0;
+
+
 if flip!=0 flip++;
 if flip=10 flip=0;
 
@@ -235,6 +244,7 @@ if state = 5
 
 if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0
 {
+    fnc_superattack_gain_specattack();
 	hit_cd = 1;
     state = 5;
     enemy_hp-=1;
@@ -248,6 +258,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0
 
 if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0
 {
+    fnc_superattack_gain_specattack();
 	hit_cd = 1;
 	state = 5;
     t = 0;
@@ -261,6 +272,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0
 
 if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0
 {
+    fnc_superattack_gain_specattack();
 	hit_cd = 1;
 	state = 5;
     t = 0;
@@ -274,6 +286,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0
 
 if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0
 {
+    fnc_superattack_gain_specattack();
 	hit_cd = 1;
     state = 5;
     t = 0;
@@ -285,11 +298,40 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0
 
 #endregion
 
+#region от Суперов
 
+if hits_cd = 0 && (place_meeting(x,y,obj_hitbox_mask_superattack_h1) ||
+place_meeting(x,y,obj_hitbox_mask_superattack_h2) || place_meeting(x,y,obj_hitbox_mask_superattack_aoe))
+{
+    hits_cd = 1;
+	hit_cd = 1;
+	state = 5;
+    t = 0;
+	hspd = sign(obj_Player.dir)*4;
+    if!place_meeting(x,y-1,obj_block) y-=1;
+    vspd = -3;
+    enemy_hp-=10;
+    t_red = 1;
+    fnc_molded_blood_forward(3);
+    fnc_molded_blood_forward(3);
+    fnc_molded_blood_up(3);
+    fnc_molded_blood_up(3);
+}
+
+var supermissle = instance_place(x,y,obj_hitbox_mask_superattack_missle) 
+    if supermissle!=noone{
+        supermissle.state = 1;
+        fnc_molded_blood_forward(3);
+        fnc_molded_blood_up(3);
+        enemy_hp-=5;
+    }
+    
+#endregion
 
 if place_meeting(x,y,obj_hitbox_mask) && hit_cd=0
 {
     hit_cd=1;
+    fnc_superattack_gain_attack_dash();
     enemy_hp-=1;
     t_red = 1;
     if obj_Player.isGrounded = 0 
@@ -302,6 +344,7 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd=0
 if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd=0
 {
     enemy_hp-=1;
+    fnc_superattack_gain_attack_dash();
     t_red = 1;
     fnc_molded_blood_forward(3);
     if!place_meeting(x,y-1,obj_block) y-=1;

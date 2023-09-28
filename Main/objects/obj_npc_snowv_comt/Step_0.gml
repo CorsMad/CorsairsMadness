@@ -30,7 +30,7 @@ if talk_cr_t!= 0
         {
             case 0: instance_create_depth(x,y,-100000,obj_txt_snowv_comt3); //3 разговор
                 break;
-            case 1: instance_create_depth(x,y,-100000,obj_txt_snowv_comt2); //2 разговор
+            case 1: instance_create_depth(x,y,-100000,obj_npc_snowv_comt_choose); //2 разговор
                 break;
             case 2: instance_create_depth(x,y,-100000,obj_txt_snowv_comt1); //1 разговор
                 break;

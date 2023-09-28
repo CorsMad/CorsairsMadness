@@ -13,7 +13,7 @@
   "duration": 0.377143,
   "parent": {
     "name": "Enemy sounds",
-    "path": "folders/Scripts/Sounds/Enemy sounds.yy",
+    "path": "folders/Sounds/Enemy sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,

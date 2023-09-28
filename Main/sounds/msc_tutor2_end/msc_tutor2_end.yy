@@ -13,7 +13,7 @@
   "duration": 117.2034,
   "parent": {
     "name": "Tutorial",
-    "path": "folders/Scripts/Sounds/BGR music/Tutorial.yy",
+    "path": "folders/Sounds/BGR music/Tutorial.yy",
   },
   "preload": false,
   "sampleRate": 44100,

@@ -64,7 +64,8 @@ if blob_cr_timer = 11 {blob_cr_timer=0;}
 
 if instance_exists(obj_Player) && obj_Player.isDead != 12 && obj_Player.isDead != 11
 {
-    if x < camera_get_view_x(view_camera[0]) || x > camera_get_view_x(view_camera[0])+480
+    if x < camera_get_view_x(view_camera[0]) || x > camera_get_view_x(view_camera[0])+480 ||
+    y < camera_get_view_y(view_camera[0])-32 || y > camera_get_view_y(view_camera[0]) + 270+32
     {
         isDead = 1;   
     }

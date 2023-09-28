@@ -202,8 +202,10 @@ if instance_exists(obj_Player)
 
 #endregion
 
+if instance_exists(obj_Player){
+    if obj_Player.state = 1 draw_sprite_ext(spr_hud_superattack_border,0,(camera_get_view_x(view_camera[0]))+12,camera_get_view_y(view_camera[0])+16,1,1,0, c_white,1);
+}
 
-draw_sprite_ext(spr_hud_superattack_border,0,(camera_get_view_x(view_camera[0]))+12,camera_get_view_y(view_camera[0])+16,1,1,0, c_white,1);
 
 
 

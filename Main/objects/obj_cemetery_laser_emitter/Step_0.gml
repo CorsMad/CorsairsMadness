@@ -37,7 +37,7 @@ if state = 2 // Изменение анимации
         image_speed = 1.5;
         sprite_index = spr_cemetery_laser_emitter_fire;       
     }
-    if t = 200//200
+    if t = t_max//200
     {
         image_speed = 0;
         sprite_index = spr_cemetery_laser_emitter;

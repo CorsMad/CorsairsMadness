@@ -142,6 +142,7 @@ fluettimer = 0;
 comboTimer = 0;
 t_dia = 0;
 superattack_timer = 0;
+cutscene_timer = 0;
 #region special timer
 pos_teleport_turn_timer = 0;
 move_to_cloud = 0;
@@ -235,8 +236,8 @@ sk_t = 0;
 
 #region Суперудары
 //Полоска
-superattack = 50//0;
-superattack_max = 50;
+superattack = 75//0;
+superattack_max = 75;
 #endregion
 image_speed = 1.25;
 

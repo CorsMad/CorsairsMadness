@@ -31,9 +31,8 @@ if talk_cr_t!= 0
         switch(global.completed_PL2)
         {
             case 0:
-                if (global.dia_lavaChief = 0 && global.dia_lavaMerch = 0) instance_create_depth(x,y,-100000,obj_txt_lavav_merch1); // Отправить к вождю
-                if (global.dia_lavaChief = 1 && global.dia_lavaMerch = 0) instance_create_depth(x,y,-100000,obj_txt_lavav_merch2); // Первый разговор
-                if (global.dia_lavaMerch = 1 && global.dia_lavaChief = 1) instance_create_depth(x,y,-100000,obj_npc_lavav_merch_choose); // Последующие разговоры
+                if global.dia_lavaChief = 0 instance_create_depth(x,y,-100000,obj_txt_lavav_merch1); // 1 разговорр вождь и торговец
+                if global.dia_lavaChief = 1 instance_create_depth(x,y,-100000,obj_npc_lavav_merch_choose); // Последующие разговоры
                 break;
             case 1:
                 switch(global.dia_vulcanoMerch_f_talk)

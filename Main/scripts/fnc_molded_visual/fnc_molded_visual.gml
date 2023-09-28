@@ -341,6 +341,31 @@ function fnc_molded_dark_blood_down(){
     gbd4.grav = choose(0.13,0.15);
 
 }
+    
+function fnc_molded_dark_blood_player(){
+    var gbu1 = instance_create_depth(x,y-20,-10,obj_molded_dark_blood);
+    var gbu2 = instance_create_depth(x,y-4,-10,obj_molded_dark_blood);
+    var gbu3 = instance_create_depth(x,y-20,-10,obj_molded_dark_blood);
+    var gbu4 = instance_create_depth(x,y-4,-10,obj_molded_dark_blood);
+
+
+    
+    gbu1.hspd = choose(0.1,0.25,-0.1,-0.25);
+    gbu1.vspd = choose(-6,-5.9);
+    gbu1.grav = choose(0.11,0.12);
+    
+    gbu2.hspd = choose(0.35,0.45,-0.35,-0.45);
+    gbu2.vspd = -5.8;
+    gbu2.grav = choose(0.13,0.15);
+    
+    gbu3.hspd = choose(0.1,0.25,-0.1,-0.25);
+    gbu3.vspd = choose(-6,-5.9);
+    gbu3.grav = choose(0.11,0.12);
+    
+    gbu4.hspd = choose(0.35,0.45,-0.35,-0.45);
+    gbu4.vspd = -5.8;
+    gbu4.grav = choose(0.13,0.15);
+}    
 
 #endregion
 

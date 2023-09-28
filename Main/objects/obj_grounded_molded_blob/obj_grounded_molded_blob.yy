@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Grounded",
-    "path": "folders/Objects/Enemies/!MOLDED GROUP/Grounded.yy",
+    "path": "folders/Objects/Enemies/!MOLDED GROUP/!Master/Jungle/Grounded.yy",
   },
   "parentObjectId": {
     "name": "obj_sfx_delete",

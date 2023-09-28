@@ -13,7 +13,7 @@
   "duration": 116.29154,
   "parent": {
     "name": "Jungle",
-    "path": "folders/Scripts/Sounds/BGR music/Jungle.yy",
+    "path": "folders/Sounds/BGR music/Jungle.yy",
   },
   "preload": false,
   "sampleRate": 44100,

@@ -195,13 +195,115 @@ if state = 3 // круговая атака
 if hit_cd!= 0 hit_cd++;
 if hit_cd = 10 hit_cd = 0;
 
+if hits_cd!= 0 hits_cd++;
+if hits_cd = 10 hits_cd = 0;
+
 if t_red!=0 {t_red++;image_blend = c_red;}
 if t_red = 5 {t_red = 0;image_blend =c_white;}
+
+
+
+#region урон от добиваний
+
+if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0
+{
+    hit_cd = 1;
+    fnc_superattack_gain_specattack();
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+    fnc_molded_blood_hit(2);
+    enemy_hp-=1;
+    t_red = 1;
+	if instance_exists(obj_masked_clone)
+	{
+		hit_stored+=4;
+	}   
+}
+if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0
+{
+    hit_cd = 1;
+    fnc_superattack_gain_specattack();
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+    fnc_molded_blood_down(2);
+    enemy_hp-=1;
+    t_red = 1;
+	if instance_exists(obj_masked_clone)
+	{
+		hit_stored+=4;
+	}   
+}
+if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0
+{
+    hit_cd = 1;
+    fnc_superattack_gain_specattack();
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+    fnc_molded_blood_forward(2);
+    enemy_hp-=1;
+    t_red = 1;
+	if instance_exists(obj_masked_clone)
+	{
+		hit_stored+=4;
+	}   
+}
+if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0
+{
+    hit_cd = 1;
+    fnc_superattack_gain_specattack();
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+    fnc_molded_blood_up(2);
+    enemy_hp-=1;
+    t_red = 1;
+	if instance_exists(obj_masked_clone)
+	{
+		hit_stored+=4;
+	}   
+}
+
+
+#endregion
+
+#region урон от суперов
+
+if hits_cd = 0 && (place_meeting(x,y,obj_hitbox_mask_superattack_h1) ||
+place_meeting(x,y,obj_hitbox_mask_superattack_h2) || place_meeting(x,y,obj_hitbox_mask_superattack_aoe)){
+    hit_stored = 0;
+	hit_cd = 1;
+    hits_cd = 1;
+    t =0 ;
+	state = 5;
+    fnc_molded_blood_forward(2);
+    fnc_molded_blood_up(2);
+    fnc_molded_blood_forward(2);
+    fnc_molded_blood_up(2);
+    enemy_hp-=10;   
+}
+
+var supermissle = instance_place(x,y,obj_hitbox_mask_superattack_missle) 
+    if supermissle!=noone{
+        supermissle.state = 1;
+        fnc_molded_blood_forward(2);
+        fnc_molded_blood_up(2);
+        enemy_hp-=5;
+    }
+
+#endregion
 
 #region от дэша
 if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0 
 {
 	hit_cd = 1;
+    fnc_superattack_gain_attack_dash();
 	if instance_exists(obj_masked_clone)
 	{
 		hit_stored++;
@@ -221,77 +323,12 @@ if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0
 }
 #endregion
 
-#region урон от добиваний
-
-if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0
-{
-    hit_cd = 1;
-    if obj_Player.x < x 
-        		{
-        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
-        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
-    fnc_molded_blood_hit(2);
-    enemy_hp-=1;
-    t_red = 1;
-	if instance_exists(obj_masked_clone)
-	{
-		hit_stored+=4;
-	}   
-}
-if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0
-{
-    hit_cd = 1;
-    if obj_Player.x < x 
-        		{
-        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
-        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
-    fnc_molded_blood_down(2);
-    enemy_hp-=1;
-    t_red = 1;
-	if instance_exists(obj_masked_clone)
-	{
-		hit_stored+=4;
-	}   
-}
-if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0
-{
-    hit_cd = 1;
-    if obj_Player.x < x 
-        		{
-        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
-        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
-    fnc_molded_blood_forward(2);
-    enemy_hp-=1;
-    t_red = 1;
-	if instance_exists(obj_masked_clone)
-	{
-		hit_stored+=4;
-	}   
-}
-if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0
-{
-    hit_cd = 1;
-    if obj_Player.x < x 
-        		{
-        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
-        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
-    fnc_molded_blood_up(2);
-    enemy_hp-=1;
-    t_red = 1;
-	if instance_exists(obj_masked_clone)
-	{
-		hit_stored+=4;
-	}   
-}
-
-
-#endregion
-
 #region от атаки
 
 if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
 {
 	hit_cd = 1;
+    fnc_superattack_gain_attack_dash();
 	if obj_Player.isGrounded = 0 
     {
         obj_Player.vspd = -1.8;

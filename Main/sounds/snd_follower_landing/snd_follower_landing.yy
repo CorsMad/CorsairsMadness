@@ -13,7 +13,7 @@
   "duration": 0.488549,
   "parent": {
     "name": "Follower grounded",
-    "path": "folders/Scripts/Sounds/Enemy sounds/Follower grounded.yy",
+    "path": "folders/Sounds/Enemy sounds/Follower grounded.yy",
   },
   "preload": false,
   "sampleRate": 44100,

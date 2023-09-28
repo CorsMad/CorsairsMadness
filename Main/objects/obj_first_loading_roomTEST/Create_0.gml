@@ -1,13 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.TargetX      = 224;
-global.TargetY      = 224;
+global.TargetX      = 144;
+global.TargetY      = 256;
 global.TargetRoom   = TESTROOM;
 
-global.fTargetX     = 224;
-global.fTargetY     = 224;
-global.fTargetRoom  = TESTROOM;
+global.fTargetX     = 560;
+global.fTargetY     = 240;
+global.fTargetRoom  = DI_p_r10;
 
 
 
@@ -33,8 +33,8 @@ global.language = 0;
     global.completed_JF1 = 0;
     global.completed_JF2 = 0;
     
-    global.completed_PD1 = 1;
-    global.completed_PD2 = 1;
+    global.completed_PD1 = 0;
+    global.completed_PD2 = 0;
     
     global.completed_PS1 = 0;
     global.completed_PS2 = 0;
@@ -50,32 +50,32 @@ global.language = 0;
 #region ТЕСТ
     display_reset(0, false);
     //0
-    global.dia_jungleChief = 0; 
+    global.dia_jungleChief = 1; 
     global.dia_desertChief = 0;
     global.dia_snowChief = 0;
     global.dia_shadowChief = 0;
     global.dia_lavaChief = 0;
     
     //0
-    global.dia_jungleMerch = 0; 
+    global.dia_jungleMerch = 1; 
     global.dia_desertMerch = 0; 
     global.dia_snowMerch = 0;     
     global.dia_shadowMerch = 0; 
     global.dia_lavaMerch = 0; 
     
     //2
-    global.dia_jungleComt = 0; 
-    global.dia_desertComt = 0;  
-    global.dia_snowComt = 0; 
-    global.dia_shadowComt = 0; 
-    global.dia_lavaComt = 0;
+    global.dia_jungleComt = 2; 
+    global.dia_desertComt = 2;  
+    global.dia_snowComt = 2; 
+    global.dia_shadowComt = 2; 
+    global.dia_lavaComt = 2;
      
     //0 
     global.saved_jungle = 0;
     global.saved_desert = 0;
     global.saved_snow = 0;
     global.saved_shadow = 0;
-    global.saved_vulcano = 0;
+    global.saved_vulcano = 1;
     
     //0
     global.dia_jungleMerch_f_talk = 0;
@@ -179,15 +179,15 @@ global.choosed_item = 3; // 1- бумер 2 -топ // 3 - бомба // 4 - eba
 global.choosed_item_tier = 3; // ТИР предмета
 global.choosed_itemboat = 2; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
 global.choosed_itemboat_tier = 3; // ТИП предмета для лодки
-global.superattack1 = 0;// Суператаки
-global.superattack2 = 0;// Суператаки
-global.superattack3 = 0;// Суператаки
-global.superattack4 = 0;// Суператаки
+global.superattack1 = 2;// Суператаки  max 2
+global.superattack2 = 1;// Суператаки  max 1
+global.superattack3 = 1;// Суператаки  max 1
+
 global.mana = 6000000//3;
 global.mana_max = 3;
 global.gold = 10000 //global.money_saved;          // 0
 global.gold_prelevel = 0;
-global.darkessence = 0//global.darkessence_saved;
+global.darkessence = 5000//global.darkessence_saved;
 
 #region Объявление переменных
     scr_create_array_objects();
@@ -231,9 +231,9 @@ global.windowHeight = 1080;
 // Установка громкости звука
 
 
-global.MSCvolume = 0; //0.5
+global.MSCvolume = 0.5; //0.5
 global.MSCvolume_max = global.MSCvolume;
-global.SFXvolume = 0; //0.5
+global.SFXvolume = 0.5; //0.5
 
 audio_group_set_gain(MusicVolume,global.MSCvolume,0);
 audio_group_set_gain(SFXvolume,global.SFXvolume,0);

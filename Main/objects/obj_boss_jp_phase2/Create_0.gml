@@ -17,7 +17,7 @@ t_anim = 0; // таймер анимации
 image_xscale = -1;
 
 
-
+hits_cd = 0;
 hit_cd = 0;
 enemy_hp = 70;
 enemy_hp_max = 70;

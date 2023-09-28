@@ -4,9 +4,6 @@ draw_sprite_ext(spr_map_jungle_island,anim,240,135,1,1,0,c_white,island1JungleAl
 
 if global.language = 1 draw_set_font(fnt_pixel_ru) else draw_set_font(fnt_pixel);
 
-//draw_rectangle_color(1,1,131,67,c_grey,c_grey,c_grey,c_grey,false);
-//draw_rectangle_color(4,4,128,64,c_black,c_black,c_black,c_black,false);
-
 draw_sprite(spr_map_info_big,0,1,1);
 
 

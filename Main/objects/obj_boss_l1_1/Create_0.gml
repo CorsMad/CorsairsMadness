@@ -10,8 +10,8 @@ image_speed =0 ;
 
 t1 =0 ;
 
-en_mask = instance_create_depth(x,y,depth-1,obj_boss_l1_1_mask);
-en_mask.fol = id;
+//en_mask = instance_create_depth(x,y,depth-1,obj_boss_l1_1_mask);
+//en_mask.fol = id;
 
 enemy_hp = 10; //10
 

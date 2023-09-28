@@ -24,9 +24,9 @@ hspd = 0.5;
 vspd = 0;
 attacks = 0;
 t = 0;
-enemy_hp = 10; //15
+enemy_hp = 15//10; //15
 hit_cd = 0;
-
+hits_cd = 0;
 bl_t = 0;
 hit_timer = 0;
 combo_counter = 0;

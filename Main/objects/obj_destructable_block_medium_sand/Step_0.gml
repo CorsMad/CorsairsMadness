@@ -29,7 +29,7 @@ if place_meeting(x,y,obj_hitbox_destr_down) && timer = 0
 	mask_index = spr_blank;	
 	if !instance_exists(obj_sfx_weapon_slash)
 	{
-		instance_create_depth(obj_hitbox_down.x+7,obj_hitbox_down.y+16,-1,obj_sfx_weapon_slash);
+		instance_create_depth(obj_Player.x,obj_Player.y+8,-1,obj_sfx_weapon_slash);
 	}
 }
 if place_meeting(x,y,obj_bomb_explosion_mask) && timer = 0

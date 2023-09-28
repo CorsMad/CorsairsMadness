@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "Village_jungle",
-  "creationCodeFile": "${project_dir}/rooms/Village_jungle/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/Village_jungle/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

@@ -15,38 +15,16 @@ if key_skip
         obj_npc_vulcanov_chief.talk = 0;
         obj_Player.isDead = 2.1;
         global.dia_lavaChief = 1;    
-		var p = instance_create_depth(336,128,0,obj_npc_village_pointer)   ;
-	    p.village = 5;
-	    p.position = 2;
         instance_destroy();   
     } 
 }
 
 #endregion
 
-/*
-player_input();
-if key_jump || key_attack
-{
-      var _len = string_length(text[0,text_current]);
-if (char_current < _len)
-    {
-    char_current = _len;
-    }
-    else
-    {
-    text_current += 1;
-    if (text_current > text_last)
-        {
-        obj_npc_junglev_chief.talk = 0;
-        obj_Player.isDead = 2.1;
-        global.dia_jungleChief = 1;
-        instance_destroy();
-        }
-    else
-        {
-        text[0,text_current] = string_wrap(text[0,text_current], text_width);
-        char_current = 0;
-        }
-    } 
+#region иконка
+if text = text1 || text = text3 { 
+    if obj_Player.x > obj_npc_vulcanov_chief.x obj_Player.image_xscale = -1 else obj_Player.image_xscale = 1
+} else {  
+    if obj_Player.x > obj_npc_lavav_merch.x obj_Player.image_xscale = -1 else obj_Player.image_xscale = 1
 }
+#endregion

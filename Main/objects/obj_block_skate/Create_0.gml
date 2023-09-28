@@ -15,3 +15,7 @@ if place_meeting(x,y-1,obj_block_slope_l)
     sprite_index = spr_snowsl_l_mid;
  
 } //else sprite_index = spr_snowsl_l_start
+
+if place_meeting(x,y-1,obj_block_slope_r_f){
+    sprite_index =  spr_snowsl_r_mid;  
+}

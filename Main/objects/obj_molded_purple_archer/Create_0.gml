@@ -8,6 +8,7 @@ hspd = 0;
 vspd = 0;
 bounce = 0;
 
+hits_cd = 0;
 hit_cd = 0;
 hit_stored = 0;
 

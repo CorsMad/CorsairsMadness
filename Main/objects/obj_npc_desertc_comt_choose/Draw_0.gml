@@ -3,7 +3,7 @@
 
 //draw_rectangle(camv_x,0,camv_x+480,camv_y+30,false);
 draw_rectangle_color(camv_x,0,camv_x+480,camv_y+64,c_black,c_black,c_black,c_black,false);
-draw_sprite(spr_text_icons,6,camv_x+6,camv_y+9);
+draw_sprite(spr_text_icons,3,camv_x+6,camv_y+9);
 
 draw_set_font(fnt_pixel);
 draw_set_halign(fa_left);

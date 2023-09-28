@@ -29,9 +29,10 @@ if talk_cr_t!= 0
     if talk_cr_t = 10
     {
         talk_cr_t = 0;
-        
+        if global.completed_PG2 = 0{
         if global.dia_shadowChief = 0 instance_create_depth(x,y,-100000,obj_txt_shadowv_chief1);
         if global.dia_shadowChief = 1 instance_create_depth(x,y,-100000,obj_txt_shadowv_chief2);
+        } else instance_create_depth(x,y,-100000,obj_txt_shadowv_chief3);
 
     }
 }

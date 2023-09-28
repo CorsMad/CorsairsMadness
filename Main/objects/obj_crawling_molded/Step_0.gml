@@ -98,6 +98,9 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
                 hit_cd = 1;
                 enemy_hp -= 1;
                 state = 4;
+                #region name here
+                fnc_superattack_gain_attack_dash();
+                #endregion
                 if obj_Player.x < x 
         		{
         			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
@@ -112,6 +115,7 @@ if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0
             state = 4;
             enemy_hp -=1;
             vspd = -1.5;
+            fnc_superattack_gain_attack_dash();
     		obj_Player.image_index = 0;
             obj_Player.isDashing = 0;
             obj_Player.vspd = -1;
@@ -136,6 +140,7 @@ if place_meeting(x,y,obj_hitbox_mask_hook) && hit_cd = 0
                 hit_cd = 1;
                 enemy_hp -= 1;
                 state = 4;
+                fnc_superattack_gain_attack_dash();
                 if obj_Player.x < x 
         		{
         			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
@@ -182,6 +187,12 @@ if place_meeting(x,y,obj_firing_molded_projectile_reverse) && hit_cd = 0
             }   image_speed = 0;    
         }
 
+if place_meeting(x,y,obj_hitbox_mask_superattack_h1) ||
+place_meeting(x,y,obj_hitbox_mask_superattack_h2) ||
+place_meeting(x,y,obj_hitbox_mask_superattack_aoe) ||
+place_meeting(x,y,obj_hitbox_mask_superattack_missle){
+    enemy_hp = 0;   
+}
 
 #region hit_cd 
 

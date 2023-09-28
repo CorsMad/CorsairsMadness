@@ -14,6 +14,7 @@ hook_choose = choose(0,1);
 t_hook = 0; // таймер появления
 t_anim = 0;
 
+hits_cd = 0;
 hit_cd = 0;
 enemy_hp = 70;
 enemy_hp_max = 70;

@@ -1,0 +1,51 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+switch(pos)
+{
+    case 0:
+        if  s1.state = 1 pos = 1;
+        if  s2.state = 1 || s3.state = 1 
+        {
+            s1.state = 2;   
+            s2.state = 2;   
+            s3.state = 2;   
+            pos = 0;
+        }
+        break;
+    case 1:
+        if s2.state = 1 pos = 2;
+        if s3.state = 1 
+        {
+            s1.state = 2;   
+            s2.state = 2;   
+            s3.state = 2;   
+            pos = 0;
+        }
+        break;
+    case 2:
+        if s3.state = 1        
+        {
+            pos = 3;
+            s1.state = 3;   
+            s2.state = 3;   
+            s3.state = 3;    
+        }
+        break;
+    case 3:
+        t++;
+        if t = 50
+        {
+            b1.isOn = 0;
+            b2.isOn = 0;
+            b3.isOn = 0;
+            b4.isOn = 0;
+            b5.isOn = 0;
+            b6.isOn = 0;
+            instance_destroy();
+        }
+        break;
+}
+
+
+

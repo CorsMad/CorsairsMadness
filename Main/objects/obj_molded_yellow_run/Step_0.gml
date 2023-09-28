@@ -158,8 +158,13 @@ if state = 2 //3 атаки
 
 #region получение урона#
 
-if hit_cd!= 0 hit_cd++;
+if hit_cd!= 0  hit_cd++;
 if hit_cd = 10 hit_cd = 0;
+
+if hits_cd!= 0  hits_cd++;
+if hits_cd = 10 hits_cd = 0;
+
+
 
 if state!=3 && hit_cd > 0 && state!=6
 {
@@ -186,6 +191,7 @@ if state = 6
 
 if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0 && vulnerable = 1
 {
+    fnc_superattack_gain_specattack();
 	clouded = 0;
 	cloud_timer = 0;
 	hit_cd = 1;
@@ -208,6 +214,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0 && vulnerable = 1
 #region вперед
 if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0 && vulnerable = 1
 {
+    fnc_superattack_gain_specattack();
 	clouded = 0;
 	cloud_timer = 0;
 	hit_cd = 1;
@@ -231,6 +238,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0 && vulnerab
 #region вверх
 if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0 && vulnerable = 1
 {
+    fnc_superattack_gain_specattack();
 	clouded = 0;
 	cloud_timer = 0;
 	hit_cd = 1;
@@ -257,6 +265,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0 && vulnerable 
 		vspd = -3;
 		y-=1;
 	}
+    fnc_superattack_gain_specattack();
     get_bounced = 1;
 	clouded = 0;
     enemy_hp-=1;
@@ -341,9 +350,45 @@ if state = 6
 
 #endregion
 
+#region от суперов
+
+if hits_cd = 0 && (place_meeting(x,y,obj_hitbox_mask_superattack_h1) ||
+place_meeting(x,y,obj_hitbox_mask_superattack_h2) || place_meeting(x,y,obj_hitbox_mask_superattack_aoe)){
+    hits_cd = 1;
+	clouded = 0;
+	cloud_timer = 0;
+	hit_cd = 1;
+	vspd = -4;
+    t_red = 1;
+    enemy_hp-=10;
+	y-=1;
+    hspd = sign(obj_Player.dir)*4;
+    fnc_molded_blood_up(1);
+    fnc_molded_blood_up(1);
+    fnc_molded_blood_forward(1);
+    fnc_molded_blood_forward(1);
+	state = 6;
+	t_recover = 1;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash); 
+}
+
+
+var supermissle = instance_place(x,y,obj_hitbox_mask_superattack_missle) 
+    if supermissle!=noone{
+        supermissle.state = 1;
+        fnc_molded_blood_forward(3);
+        fnc_molded_blood_up(3);
+        enemy_hp-=5;
+    }
+#endregion
+
 #region от дэша
 if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0 && vulnerable = 1
 {
+    fnc_superattack_gain_attack_dash();
 	clouded = 0;
 	cloud_timer = 0;
 	hit_cd = 1;
@@ -426,6 +471,7 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0 && vulnerable = 1 && state !
 	clouded = 0;
 	cloud_timer = 0;
 	hit_cd = 1;
+    fnc_superattack_gain_attack_dash();
     t_red = 1;
     enemy_hp-=1;
     if obj_Player.x < x 

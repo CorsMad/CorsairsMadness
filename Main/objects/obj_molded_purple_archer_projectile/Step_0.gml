@@ -4,16 +4,17 @@
 image_alpha = 1;
 #region anim
 if hspeed < 0 image_xscale = 1 else image_xscale = -1;
-if vspeed > 0 image_yscale = -1; else image_yscale = 1;
+
 #endregion
 
 if  place_meeting(x,y,obj_hitbox_mask)
 {
-    var i = instance_create_depth(x,y,depth,obj_firing_molded_projectile_reverse)
-    if obj_Player.dir = 1
-	{
-		i.hspeed = 8;
-	} else i.hspeed = -8;
+    if obj_Player.x < x 
+    {
+    	instance_create_depth(x-10,y,-1,obj_sfx_weapon_slash);
+    } else instance_create_depth(x+10,y,-1,obj_sfx_weapon_slash);
+    var i = instance_create_depth(x,y,depth,obj_molded_purple_archer_projectile_d)
+    i.image_xscale = image_xscale;
 	instance_destroy();
 }
 if  place_meeting(x,y,obj_hitbox_mask_dash)
@@ -28,11 +29,8 @@ if  place_meeting(x,y,obj_hitbox_mask_dash)
     	instance_create_depth(x-10,y,-1,obj_sfx_weapon_slash);
     } else instance_create_depth(x+10,y,-1,obj_sfx_weapon_slash);
             
-    var i = instance_create_depth(x,y,depth,obj_firing_molded_projectile_reverse)
-    if obj_Player.dir = 1
-	{
-		i.hspeed = 8;
-	} else i.hspeed = -8;
+    var i = instance_create_depth(x,y,depth,obj_molded_purple_archer_projectile_d)
+    i.image_xscale = image_xscale;
     
 	instance_destroy();
 }

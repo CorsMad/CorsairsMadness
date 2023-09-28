@@ -58,8 +58,8 @@
 -592,-2147483648,2,40,39,-52,-2147483648,6,40,31,43,42,31,39,-48,-2147483648,3,40,31,43,-4,34,3,42,31,39,-44,-2147483648,3,40,31,43,-8,34,3,42,31,39,-41,-2147483648,2,40,43,-12,34,2,42,39,-40,-2147483648,3,43,-2147483648,34,-9,-2147483648,
 -2,34,2,-2147483648,42,-71,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_cemetery","path":"tilesets/tls_cemetery/tls_cemetery.yy",},"userdefinedDepth":false,"visible":true,"x":8,"y":8,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Backgroundmain","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":500,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
-        {"name":"g_ContrastIntensity","type":0,"value":"1",},
-        {"name":"g_ContrastBrightness","type":0,"value":"1",},
+        {"name":"g_ContrastIntensity","type":0,"value":"0.7",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.7",},
       ],"spriteId":{"name":"bgr_graveyard_village","path":"sprites/bgr_graveyard_village/bgr_graveyard_village.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":-16,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":56,"TileCompressedData":[
 -414,-2147483648,-11,0,-34,-2147483648,-4,0,-2,-2147483648,-16,0,-27,-2147483648,-29,0,-23,-2147483648,-37,0,-19,-2147483648,-6,0,1,40,-4,31,1,39,-8,0,1,40,-12,31,1,39,-25,0,4,40,31,31,43,-4,34,3,42,31,39,-3,0,4,40,31,

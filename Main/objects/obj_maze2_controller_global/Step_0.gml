@@ -276,7 +276,7 @@ if  instance_exists(obj_maze2_but1) &&
 }
 #endregion
 
-#region Выход
+#region Выход с решением
 
 if (Working = 2) {
     t++;
@@ -313,4 +313,8 @@ if (Working = 2) {
               
     }
 }
+#endregion
+
+#region Выход
+
 #endregion

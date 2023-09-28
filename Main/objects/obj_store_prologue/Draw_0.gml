@@ -35,8 +35,8 @@ for (var i = 0; i < array_length_2d(menu, submenu); ++i) {
     
     if i == index 
     {
-        if index = 1 draw_set_color(c_grey) else draw_set_color(c_red);
-
+        //if index = 1 draw_set_color(c_grey) else draw_set_color(c_red);
+        draw_set_color(c_red);
     }
     
     draw_text(105,52 + gap*i, menu[submenu, i]);
@@ -76,10 +76,10 @@ switch(submenu)
                     break;
                 case 2:   
                     draw_sprite(spr_shop_selector,0,120+32,136);
-                    break;
+                    break;   
                 case 3:   
                     draw_sprite(spr_shop_selector,0,120+32,168);
-                    break;   
+                    break;  
             }
             break;
             
@@ -358,6 +358,44 @@ switch(submenu)
 	        if global.purch_eparrot3 = 1 draw_sprite(spr_shop_solditem,0,184,168); 
 
 		#endregion        
+        break;
+    case 2: // Одержимый spr_icons_shop_pos
+        if global.superattack1 = 0{
+            draw_sprite(spr_icons_shop_pos,0,152,72); 
+            draw_sprite(spr_icons_shop_pos,1,152,104); 
+        } else if global.superattack1 = 1 {
+            draw_sprite(spr_icons_shop_pos,4,152,72); 
+            draw_sprite(spr_icons_shop_pos,1,152,104);    
+        } else if global.superattack1 = 2
+        {
+            draw_sprite(spr_icons_shop_pos,4,152,72); 
+            draw_sprite(spr_icons_shop_pos,5,152,104);     
+        }
+        
+        if global.superattack2 = 0{
+            draw_sprite(spr_icons_shop_pos,2,152,136); 
+        } else draw_sprite(spr_icons_shop_pos,6,152,136); 
+        
+        if global.superattack3 = 0{
+            draw_sprite(spr_icons_shop_pos,3,152,168); 
+        } else draw_sprite(spr_icons_shop_pos,7,152,168); 
+        
+        
+        // Подтвержденные покупки
+        if global.superattack1 = 1 {
+            draw_sprite(spr_shop_solditem,0,152,72);
+            }
+        if global.superattack1 = 2 {
+            draw_sprite(spr_shop_solditem,0,152,72);
+            draw_sprite(spr_shop_solditem,0,152,104);
+            }
+            
+        
+	    if global.superattack2 = 1 draw_sprite(spr_shop_solditem,0,152,136);    
+	    if global.superattack3 = 1 draw_sprite(spr_shop_solditem,0,152,168); 
+        
+        
+        
         break;
     case 3: // Якорь
         #region rapidfire

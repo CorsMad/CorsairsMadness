@@ -269,19 +269,17 @@ if t_recover = 50//50
 	vspd = 0;
 }
 
-if hit_cd!= 0 
-{
-	hit_cd++;	
-	if hit_cd = 10
-	{
-		hit_cd = 0;
-	}	
-}
+if hit_cd!=0 hit_cd++;
+if hit_cd=10 hit_cd=0;
+
+if hits_cd!=0 hits_cd++;
+if hits_cd=10 hits_cd=0;
 
 #region От дэша
 
 if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0 && vulnerable = 1
 {
+    fnc_superattack_gain_attack_dash();
 	state = 8;
 	hit_cd = 1;
 	t_recover = 1;
@@ -325,7 +323,7 @@ if state = 9
 #region обычное
 if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0 && vulnerable = 1
 {
-    
+    fnc_superattack_gain_specattack();
 	state = 9;
 	t = 0;
     t_red = 1;
@@ -346,6 +344,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0 && vulnerable = 1
 #region вниз
 if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0 && vulnerable = 1
 {
+    fnc_superattack_gain_specattack();
 	state = 9;
 	t = 0;
     t_red = 1;
@@ -367,6 +366,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0
 		if obj_Player.x >=x hspd = -3; else hspd = 3;
 	} 
 	state = 9;
+    fnc_superattack_gain_specattack();
     t_red = 1;
 	t = 0;
     enemy_hp-=1;
@@ -382,6 +382,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0
 if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0
 {
 	t = 0;
+    fnc_superattack_gain_specattack();
 	state = 9;
     t_red = 1;
     enemy_hp-=1;
@@ -398,6 +399,42 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0
 
 #endregion
 
+#region от суперов
+
+if hits_cd = 0 && (place_meeting(x,y,obj_hitbox_mask_superattack_h1) ||
+place_meeting(x,y,obj_hitbox_mask_superattack_h2) || place_meeting(x,y,obj_hitbox_mask_superattack_aoe)){
+    if instance_exists(obj_Player)
+	{
+		if obj_Player.x >=x hspd = -3; else hspd = 3;
+	} 
+	state = 9;
+    t_red = 1;
+	t = 0;
+    enemy_hp-=10;
+    fnc_molded_blood_forward(1);
+    fnc_molded_blood_forward(1);
+    fnc_molded_blood_up(1);
+    fnc_molded_blood_up(1);
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+	hit_cd = 1;  
+    hits_cd = 1;
+}
+
+var supermissle = instance_place(x,y,obj_hitbox_mask_superattack_missle) 
+    if supermissle!=noone{
+        supermissle.state = 1;
+        fnc_molded_blood_forward(1);
+        fnc_molded_blood_up(1);
+        enemy_hp-=5;
+    }
+    
+
+#endregion
+
+
 #region От автоатаки
 if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0 && vulnerable = 1
 {
@@ -406,6 +443,7 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0 && vulnerable = 1
         obj_Player.vspd = -1.8;
     }   
 	state = 8
+    fnc_superattack_gain_attack_dash();
 	hit_cd = 1;
     t_red = 1;
     enemy_hp-=1;
@@ -431,6 +469,8 @@ if state = 8
 } else 
 
 #endregion
+
+
 
 #region от облака стан
 

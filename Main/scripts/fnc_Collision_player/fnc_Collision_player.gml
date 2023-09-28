@@ -17,7 +17,7 @@ if place_meeting(x,y+vspd,col_obj)
 	
 	while(!place_meeting(x,y+sign(vspd),col_obj)) 
 	{
-		y += sign(vspd); // *sign(vspd); //sign(vspd);
+		y += sign(vspd)*0.01; // *sign(vspd); //sign(vspd);
 	}
 	
 	vspd = 0;

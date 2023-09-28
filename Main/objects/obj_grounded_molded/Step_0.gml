@@ -395,6 +395,8 @@ if place_meeting(x,y,obj_hitbox_mask_finisher)  && hit_cd = 0  && state != 11//&
         hit_cd = 1;
         state = 10;
         t_red = 1;
+        enemy_hp-=1;
+        fnc_superattack_gain_specattack();
         fnc_molded_green_blood_hit();   
     } else 
     {
@@ -424,8 +426,10 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_forward)  && hit_cd = 0 && state !
     getKicked = 2;
     delay = 1;   
     hit_cd = 1;
+    enemy_hp-=1;
     getBounced = 0;
     state = 10;
+    fnc_superattack_gain_specattack();
     sprite_index = spr_molded_grounded_damageforward;
 }
 if place_meeting(x-1,y,obj_block)  && getBounced = 0 && getKicked = 2
@@ -459,10 +463,12 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0 && state != 11//
 {
     if !place_meeting(x,y,obj_item_hook_masked)
     {
+        enemy_hp-=1;
         t_red = 1;
         vspd = -6;
         getKicked = 3;
         delay = 1;  
+        fnc_superattack_gain_specattack();
         getBounced = 1;
         hit_cd = 1;
         state = 10;
@@ -500,8 +506,10 @@ if place_meeting(x,y+1,obj_block) && delay = 0 && getKicked = 3
 
 if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0 && state != 11//&& getKicked = 0 
 {
+    enemy_hp-=1;
     t_red = 1;
     vspd = 6;
+    fnc_superattack_gain_specattack();
     hit_cd = 1;
     getKicked = 4;
     delay = 1;  
@@ -551,6 +559,78 @@ if state = 11
 
 #endregion
 
+#region от суперадара
+if place_meeting(x,y,obj_hitbox_mask_superattack_h1)&& hits_cd = 0{
+    t_red = 1;
+    vspd = -3;
+    fnc_molded_green_blood_forward();
+    fnc_molded_green_blood_forward();
+    fnc_molded_green_blood_forward();
+    fnc_molded_green_blood_up();
+    fnc_molded_green_blood_up();
+    fnc_molded_green_blood_up();
+    hspd = sign(obj_Player.dir)*4;
+    getKicked = 2;
+    delay = 1;   
+    hits_cd = 1;
+    hit_cd = 1;
+    getBounced = 0;
+    state = 10;
+    enemy_hp -=10;
+    sprite_index = spr_molded_grounded_damageforward;
+}
+
+if place_meeting(x,y,obj_hitbox_mask_superattack_h2) && hits_cd = 0{
+    t_red = 1;
+    vspd = -3;
+    hits_cd = 1;
+    fnc_molded_green_blood_forward();
+    fnc_molded_green_blood_forward();
+    fnc_molded_green_blood_forward();
+    fnc_molded_green_blood_up();
+    fnc_molded_green_blood_up();
+    fnc_molded_green_blood_up();
+    hspd = sign(obj_Player.dir)*4;
+    getKicked = 2;
+    delay = 1;   
+    hit_cd = 1;
+    getBounced = 0;
+    state = 10;
+    enemy_hp -=10;
+    sprite_index = spr_molded_grounded_damageforward;      
+}
+  
+if place_meeting(x,y,obj_hitbox_mask_superattack_aoe)&& hits_cd = 0{
+    t_red = 1;
+    vspd = -3;
+    fnc_molded_green_blood_forward();
+    fnc_molded_green_blood_forward();
+    fnc_molded_green_blood_forward();
+    fnc_molded_green_blood_up();
+    fnc_molded_green_blood_up();
+    fnc_molded_green_blood_up();
+    hspd = sign(obj_Player.dir)*4;
+    getKicked = 2;
+    delay = 1;   
+    hits_cd = 1;
+    hit_cd = 1;
+    getBounced = 0;
+    state = 10;
+    enemy_hp -=10;
+    sprite_index = spr_molded_grounded_damageforward;      
+}  
+  
+var supermissle = instance_place(x,y,obj_hitbox_mask_superattack_missle) 
+if supermissle!=noone{
+       supermissle.state = 1;
+       fnc_molded_green_blood_forward();
+       fnc_molded_green_blood_up();
+       enemy_hp-=5;
+}
+
+#endregion
+
+
 #endregion
 
 #region Получение урона 
@@ -568,6 +648,8 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0 && state != 11
         hit_cd = 1;
         t_red =1;
         enemy_hp -= 1;
+        
+        fnc_superattack_gain_attack_dash();
         //fnc_molded_green_blood_hit();
         if state != 10
         {
@@ -610,6 +692,7 @@ if place_meeting(x,y,obj_hitbox_mask_dash) // && hit_cd = 0
     getKicked = 2;
     delay = 1;   
     hit_cd = 1;
+    fnc_superattack_gain_attack_dash();
     getBounced = 0;
     state = 10;
     sprite_index = spr_molded_grounded_damageforward;
@@ -632,6 +715,7 @@ if place_meeting(x,y,obj_hitbox_mask_hook)  && hit_cd = 0
         //hspd = sign(obj_Player.dir)*2;
         vspd = -2;
         t_red = 1;
+        fnc_superattack_gain_attack_dash();
         getKicked = 2;
         getBounced = 0;
         delay = 1;
@@ -739,6 +823,9 @@ if state = 9
     {
         hit_cd = 0;   
     }
+    
+    if hits_cd!=0 hits_cd++;
+    if hits_cd=10 hits_cd=0;
     
 #endregion
 

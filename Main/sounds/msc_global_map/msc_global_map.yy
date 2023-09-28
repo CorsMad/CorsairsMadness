@@ -13,7 +13,7 @@
   "duration": 47.70177,
   "parent": {
     "name": "map",
-    "path": "folders/Scripts/Sounds/BGR music/map.yy",
+    "path": "folders/Sounds/BGR music/map.yy",
   },
   "preload": false,
   "sampleRate": 44100,

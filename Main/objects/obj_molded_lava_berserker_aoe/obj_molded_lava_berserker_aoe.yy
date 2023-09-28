@@ -36,5 +36,5 @@
     "path": "sprites/spr_molded_desert_berserker_attack_aoe/spr_molded_desert_berserker_attack_aoe.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

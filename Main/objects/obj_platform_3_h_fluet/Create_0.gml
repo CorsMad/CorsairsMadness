@@ -4,3 +4,6 @@ sprite_index = noone;
 spd = 1;
 
 fluetOn = 0;
+
+t_anim = 0;
+index = 0;

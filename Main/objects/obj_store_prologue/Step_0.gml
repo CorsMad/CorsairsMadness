@@ -17,7 +17,7 @@ if move!= 0
     else if index >=size  index = 0;
 }
 
-if movelr!= 0 && (submenu = 1 || submenu = 3)
+if movelr!= 0 && (submenu = 1 || submenu = 2 || submenu = 3)
     {
         fnc_snd_play_over(snd_menu_select);
         dindex += movelr;
@@ -37,11 +37,9 @@ if key_jump_pressed || key_attack // accept
                     submenu = 1;
                     index = 0;
                     break;
-                case 1: 
-                    /*
+                case 1:   
                     submenu = 2;
                     index = 0;
-                    */
                     break;
                 case 2:
                     fnc_snd_play_over(snd_menu_accept);
@@ -138,6 +136,18 @@ if key_jump_pressed || key_attack // accept
         case 2: // Одержимый
             switch(index)
             {
+                case 0: // horizontal1
+                    if (global.superattack1 = 0 && global.darkessence >= 500) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                    break;
+                case 1: // horizontal2
+                    if (global.superattack1 = 1 && global.darkessence >= 500) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                    break;
+                case 2: // aoe
+                    if (global.superattack2 = 0 && global.darkessence >= 500) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                    break;
+                case 3: // missle
+                    if (global.superattack3 = 0 && global.darkessence >= 500) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                    break;
                 case 4:
                     fnc_snd_play_over(snd_menu_accept);
                     submenu = 0;
@@ -391,7 +401,46 @@ if buy_confirm
 					}
                         
                     break;  
-                    
+                    case 2:
+                    switch(index){
+                        case 0: // Покупка супер гориз1
+                            if global.superattack1 = 0 && global.darkessence >=500
+                            {
+                                fnc_snd_play_over(snd_menu_accept);
+    	                        buy_confirm = 0;
+    	                        global.superattack1 = 1;
+    	                        global.darkessence -= 500;
+                            }
+                            break;
+                        case 1: // Покупка супер гориз2
+                            if global.superattack1 = 1 && global.darkessence >=500
+                            {
+                                fnc_snd_play_over(snd_menu_accept);
+    	                        buy_confirm = 0;
+    	                        global.superattack1 = 2;
+    	                        global.darkessence -= 500;
+                            }
+                            break;
+                        case 2: // Покупка супер aoe
+                            if global.superattack2 = 0 && global.darkessence >=500
+                            {
+                                fnc_snd_play_over(snd_menu_accept);
+    	                        buy_confirm = 0;
+    	                        global.superattack2 = 1;
+    	                        global.darkessence -= 500;
+                            }
+                            break;
+                        case 3: // Покупка супер ракеты
+                            if global.superattack3 = 0 && global.darkessence >=500
+                            {
+                                fnc_snd_play_over(snd_menu_accept);
+    	                        buy_confirm = 0;
+    	                        global.superattack3 = 1;
+    	                        global.darkessence -= 500;
+                            }
+                            break;
+                    }
+                    break;
                     case 3: 
                     switch(index)
                     {
@@ -574,7 +623,6 @@ if buy_confirm
 
 
 #region ЦЕНЫ
-
 
 switch(submenu)
 {

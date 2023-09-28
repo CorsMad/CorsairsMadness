@@ -180,7 +180,12 @@ if place_meeting(x,y,obj_firing_molded_projectile_reverse) && hit_cd = 0
             }   image_speed = 0;    
         }
 
-
+if place_meeting(x,y,obj_hitbox_mask_superattack_h1) ||
+place_meeting(x,y,obj_hitbox_mask_superattack_h2) ||
+place_meeting(x,y,obj_hitbox_mask_superattack_aoe) ||
+place_meeting(x,y,obj_hitbox_mask_superattack_missle){
+    enemy_hp = 0;   
+}
 #region hit_cd 
 
 if hit_cd != 0

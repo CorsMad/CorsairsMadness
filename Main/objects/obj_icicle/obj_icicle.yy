@@ -13,7 +13,10 @@
     "name": "Icicle",
     "path": "folders/Objects/Enemies/Icicle.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_parent_object",
+    "path": "objects/obj_enemy_parent_object/obj_enemy_parent_object.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -33,6 +36,9 @@
     "name": "spr_icicle_start",
     "path": "sprites/spr_icicle_start/spr_icicle_start.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_icicle_start_mask",
+    "path": "sprites/spr_icicle_start_mask/spr_icicle_start_mask.yy",
+  },
   "visible": true,
 }

@@ -439,6 +439,7 @@ if place_meeting(x,y,obj_Player)
 if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0
 {
     hit_cd = 1;
+    fnc_superattack_gain_specattack();
     if obj_Player.x < x 
         		{
         			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
@@ -449,6 +450,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0
 }
 if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0
 {
+    fnc_superattack_gain_specattack();
     hit_cd = 1;
     if obj_Player.x < x 
         		{
@@ -460,6 +462,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0
 }
 if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0
 {
+    fnc_superattack_gain_specattack();
     hit_cd = 1;
     if obj_Player.x < x 
         		{
@@ -471,6 +474,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0
 }
 if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0
 {
+    fnc_superattack_gain_specattack();
     hit_cd = 1;
     if obj_Player.x < x 
         		{
@@ -486,6 +490,7 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
 {
     if !place_meeting(x,y,obj_item_hook_masked)
     {
+        fnc_superattack_gain_attack_dash();
         if obj_Player.isGrounded = 0 
         {
             obj_Player.vspd = -1.8;
@@ -503,6 +508,7 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
 if place_meeting(x,y,obj_hitbox_mask_dash) // && hit_cd = 0
 {   
     hit_timer = 1;
+    fnc_superattack_gain_attack_dash();
     enemy_hp -= dmg_multiplier;
     if obj_Player.x < x 
         		{
@@ -520,6 +526,7 @@ if place_meeting(x,y,obj_hitbox_mask_hook) && hit_cd = 0
 {
     if !place_meeting(x,y,obj_item_hook_masked)
     {
+        fnc_superattack_gain_attack_dash();
         if obj_Player.isGrounded = 0 
         {
             obj_Player.vspd = -3.2;
@@ -537,6 +544,33 @@ if place_meeting(x,y,obj_hitbox_mask_hook) && hit_cd = 0
 
 #endregion
 
+#region от суперов
+if hits_cd=0 && (place_meeting(x,y,obj_hitbox_mask_superattack_h1) ||
+place_meeting(x,y,obj_hitbox_mask_superattack_h2) || place_meeting(x,y,obj_hitbox_mask_superattack_aoe)){
+    hits_cd = 1;
+    enemy_hp-=10;
+    hit_cd = 1;
+    fnc_molded_dark_blood_forward()
+    fnc_molded_dark_blood_forward()
+    fnc_molded_dark_blood_forward()
+    fnc_molded_dark_blood_up()
+    fnc_molded_dark_blood_up()
+    if obj_Player.x < x 
+    {
+    	instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+    } else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);  
+}
+
+var supermissle = instance_place(x,y,obj_hitbox_mask_superattack_missle) 
+    if supermissle!=noone{
+        supermissle.state = 1;
+        fnc_molded_dark_blood_forward();
+        fnc_molded_dark_blood_up();
+        enemy_hp-=5;
+    }
+    
+#endregion
+
 #region множитель урона
 if state = 6
 {
@@ -545,14 +579,11 @@ if state = 6
 #endregion
 
 #region HitCD
-    if hit_cd != 0
-    {
-        hit_cd ++;   
-    }
-    if hit_cd = 10
-    {
-        hit_cd = 0;   
-    }    
+if hit_cd!=0 hit_cd++;
+if hit_cd=10 hit_cd=0;
+    
+if hits_cd!=0 hits_cd++;
+if hits_cd=10 hits_cd=0;  
 #endregion
 
 #endregion 

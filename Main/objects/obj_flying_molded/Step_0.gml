@@ -266,11 +266,130 @@ if isAlive = 1
         }
     #endregion
 
+    #region от обычного добивания
+   
+    if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0  && state != 11 // && getKicked = 0
+    {
+        vspd = -2;
+        fnc_superattack_gain_specattack();
+        hspd = sign(obj_Player.dir)*2;
+        getKicked = 1;
+        delay = 1;  
+        hit_cd = 1;
+        state = 10;
+        t_red = 1;
+        enemy_hp-=1;
+        fnc_molded_green_blood_hit();
+    }
+    if place_meeting(x,y+1,obj_block) && delay = 0 && getKicked = 1
+    {
+        getKicked = 0;
+        hspd = 0;
+        vspd = 0;
+        state = 7;
+        fnc_molded_green_blood_hit();
+    }
+    #endregion
+
+    #region от выпада 
+    if place_meeting(x,y,obj_hitbox_mask_finisher_forward)  && hit_cd = 0 && state != 11//&& getKicked = 0
+    {
+        fnc_superattack_gain_specattack();
+        t_red = 1;
+        vspd = 2;
+        hspd = sign(obj_Player.dir)*6;
+        getKicked = 2;
+        delay = 1;   
+        enemy_hp-=1;
+        hit_cd = 1;
+        getBounced = 0;
+        state = 10;
+        t_red = 1;
+        fnc_molded_green_blood_forward();
+    }    
+    
+    #endregion
+
+    #region от подброса
+
+    if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0 && state != 11 // && getKicked = 0
+    {
+        fnc_superattack_gain_specattack();
+        t_red = 1;
+        vspd = -6;
+        enemy_hp-=1;
+        getKicked = 3;
+        delay = 1;  
+        getBounced = 1;
+        hit_cd = 1;
+        state = 10;
+        t_red = 1;
+        fnc_molded_green_blood_up();
+        
+    }
+
+    if place_meeting(x,y+1,obj_block) && delay = 0 && getKicked = 3 && isCrossing = 0
+    {
+        if getBounced = 1 
+        {
+            getBounced = 0;
+            vspd = -2;
+            delay = 1;
+        } else 
+        {
+            vspd = 0;
+            getBounced = 0;
+            getKicked = 0
+            state = 11;
+            
+        }
+    }
+
+    #endregion
+
+    #region от удара вниз
+
+    if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0 && state != 11//&& getKicked = 0 
+    {
+        fnc_superattack_gain_specattack();
+        t_red = 1;
+        vspd = 6;
+        hit_cd = 1;
+        getKicked = 4;
+        delay = 1;  
+        getBounced = 1;
+        enemy_hp-=1;
+        state = 10; 
+        t_red = 1;
+        fnc_molded_green_blood_down();
+    }
+    if place_meeting(x,y+1,obj_block) && delay = 0 && getKicked = 4 && isCrossing = 0
+    {
+    
+        if getBounced = 1 
+        {
+            getBounced = 0;
+            vspd = -4;
+            getKicked = 4;
+            delay = 1;
+        } else 
+        {
+            vspd = 0;
+            getBounced = 0;
+            getKicked = 0
+            state = 11;
+            
+        }
+    }
+
+    #endregion
+
     #region Получение урона и отлет назад
         if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
         {
             if !place_meeting(x,y,obj_item_hook_masked)
             {
+                
         		if obj_Player.isGrounded = 0 
         		{
         			obj_Player.vspd = -1.8; //3.2
@@ -283,6 +402,7 @@ if isAlive = 1
                 combo_counter += 1;
                 combo_timer = 1;
                 */
+                fnc_superattack_gain_attack_dash();
                 t_red = 1;
                 vspd = 0;
                 hspd = 0;
@@ -313,6 +433,7 @@ if isAlive = 1
             state = 9;
             enemy_hp -=1;
             t_red = 1;
+            fnc_superattack_gain_attack_dash();
             vspd = -1.5;
             hspeed = 0;
             vspeed = 0;
@@ -339,6 +460,7 @@ if isAlive = 1
                 sprite_index = spr_molded_flying_take_dmg;    
                 hit_cd = 1;
                 enemy_hp -= 1;
+                fnc_superattack_gain_attack_dash();
                 state = 9;
                 
                 if obj_Player.x >= x
@@ -464,7 +586,8 @@ if isAlive = 1
     {
         flip -=0.05;   
     }
-
+    if hits_cd!=0 hits_cd++;
+    if hits_cd=10 hits_cd=0;
     #region Анимация
     if state = 10 
     {
@@ -504,115 +627,7 @@ if isAlive = 1
     }
     #endregion
 
-    #region от обычного добивания
-   
-    if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0  && state != 11 // && getKicked = 0
-    {
-        vspd = -2;
-        hspd = sign(obj_Player.dir)*2;
-        getKicked = 1;
-        delay = 1;  
-        hit_cd = 1;
-        state = 10;
-        t_red = 1;
-        fnc_molded_green_blood_hit();
-    }
-    if place_meeting(x,y+1,obj_block) && delay = 0 && getKicked = 1
-    {
-        getKicked = 0;
-        hspd = 0;
-        vspd = 0;
-        state = 7;
-        fnc_molded_green_blood_hit();
-    }
-    #endregion
 
-    #region от выпада 
-    if place_meeting(x,y,obj_hitbox_mask_finisher_forward)  && hit_cd = 0 && state != 11//&& getKicked = 0
-    {
-        t_red = 1;
-        vspd = 2;
-        hspd = sign(obj_Player.dir)*6;
-        getKicked = 2;
-        delay = 1;   
-        hit_cd = 1;
-        getBounced = 0;
-        state = 10;
-        t_red = 1;
-        fnc_molded_green_blood_forward();
-    }    
-    
-    #endregion
-
-    #region от подброса
-
-    if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0 && state != 11 // && getKicked = 0
-    {
-        t_red = 1;
-        vspd = -6;
-        getKicked = 3;
-        delay = 1;  
-        getBounced = 1;
-        hit_cd = 1;
-        state = 10;
-        t_red = 1;
-        fnc_molded_green_blood_up();
-        
-    }
-
-    if place_meeting(x,y+1,obj_block) && delay = 0 && getKicked = 3 && isCrossing = 0
-    {
-        if getBounced = 1 
-        {
-            getBounced = 0;
-            vspd = -2;
-            delay = 1;
-        } else 
-        {
-            vspd = 0;
-            getBounced = 0;
-            getKicked = 0
-            state = 11;
-            
-        }
-    }
-
-    #endregion
-
-    #region от удара вниз
-
-    if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0 && state != 11//&& getKicked = 0 
-    {
-        t_red = 1;
-        vspd = 6;
-        hit_cd = 1;
-        getKicked = 4;
-        delay = 1;  
-        getBounced = 1;
-        state = 10; 
-        t_red = 1;
-        fnc_molded_green_blood_down();
-    }
-    if place_meeting(x,y+1,obj_block) && delay = 0 && getKicked = 4 && isCrossing = 0
-    {
-    
-        if getBounced = 1 
-        {
-            getBounced = 0;
-            vspd = -4;
-            getKicked = 4;
-            delay = 1;
-        } else 
-        {
-            vspd = 0;
-            getBounced = 0;
-            getKicked = 0
-            state = 11;
-            
-        }
-    }
-
-    #endregion
 
     #region Поднимание
 
@@ -633,6 +648,37 @@ if isAlive = 1
 
     #endregion
 
+    #endregion
+    
+    #region Получение урона от суперов
+    if (place_meeting(x,y,obj_hitbox_mask_superattack_h1) || place_meeting(x,y,obj_hitbox_mask_superattack_h2)
+    || place_meeting(x,y,obj_hitbox_mask_superattack_aoe)) && hits_cd = 0{
+        t_red = 1;
+        vspd = 2;
+        hspd = sign(obj_Player.dir)*6;
+        getKicked = 2;
+        delay = 1;   
+        hit_cd = 1;
+        hits_cd = 1;
+        getBounced = 0;
+        state = 10;
+        t_red = 1;
+        enemy_hp-=10;
+        fnc_molded_green_blood_forward();
+        fnc_molded_green_blood_forward();
+        fnc_molded_green_blood_forward();
+        fnc_molded_green_blood_up();
+        fnc_molded_green_blood_up();
+        fnc_molded_green_blood_up();
+    }
+    
+    var supermissle = instance_place(x,y,obj_hitbox_mask_superattack_missle) 
+    if supermissle!=noone{
+           supermissle.state = 1;
+           fnc_molded_green_blood_forward();
+           fnc_molded_green_blood_up();
+           enemy_hp-=5;
+    }
     #endregion
     
     #region Комбо таймер

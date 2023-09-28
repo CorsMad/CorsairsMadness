@@ -197,6 +197,9 @@ if state = 6
 if hit_cd!=0 hit_cd++;
 if hit_cd=10 hit_cd=0;
 
+if hits_cd!=0 hits_cd++;
+if hits_cd=10 hits_cd=0;
+
 if t_red!=0 {t_red++;image_blend = c_yellow;}
 if t_red = 5 {t_red = 0;image_blend =c_white;}
 
@@ -211,6 +214,7 @@ if abs(vspd)<0.3 vspd = 0;
 if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0
 {
 	hit_cd = 1;	
+    fnc_superattack_gain_specattack();
     hspd = sign(obj_Player.dir)*2
     t = 0;
     state = 6;
@@ -222,6 +226,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0
 
 if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0
 {
+    fnc_superattack_gain_specattack();
 	hit_cd = 1;
 	state = 6;
     t = 0;
@@ -233,6 +238,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0
 
 if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0
 {
+    fnc_superattack_gain_specattack();
 	hit_cd = 1;
 	state = 6;
     t = 0;
@@ -244,6 +250,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0
 
 if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0
 {
+    fnc_superattack_gain_specattack();
 	hit_cd = 1;
 	state = 6;
     t = 0;
@@ -255,9 +262,37 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0
 }
 
 #endregion
+
+#region от суперов
+
+if hits_cd = 0 && (place_meeting(x,y,obj_hitbox_mask_superattack_h1) ||
+place_meeting(x,y,obj_hitbox_mask_superattack_h2) || place_meeting(x,y,obj_hitbox_mask_superattack_aoe)) {
+    hit_cd = 1;
+    fnc_molded_blood_hit(3);
+    fnc_molded_blood_hit(3);
+    fnc_molded_blood_up(3);
+    fnc_molded_blood_up(3);
+    hits_cd = 1;
+	state = 6;
+    t = 0;
+    t_red = 1;
+	hspd = sign(obj_Player.dir)*4;
+    enemy_hp-=10;
+}
+
+var supermissle = instance_place(x,y,obj_hitbox_mask_superattack_missle) 
+    if supermissle!=noone{
+        supermissle.state = 1;
+        fnc_molded_blood_forward(3);
+        fnc_molded_blood_up(3);
+        enemy_hp-=5;
+    }
+
+#endregion
 //Атака
 if hit_cd = 0 && place_meeting(x,y,obj_hitbox_mask)
 {
+    fnc_superattack_gain_attack_dash();
     hit_cd = 1;
     if obj_Player.isGrounded = 0 
     {
@@ -270,6 +305,7 @@ if hit_cd = 0 && place_meeting(x,y,obj_hitbox_mask)
 if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0
 {
 	hit_cd = 1;
+    fnc_superattack_gain_attack_dash();
 	obj_Player.image_index = 0;
     obj_Player.isRecoil = 1;
     obj_Player.vspd = -1;

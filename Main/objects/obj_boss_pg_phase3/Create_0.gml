@@ -19,7 +19,7 @@ if instance_exists(obj_Player)
 {
     if obj_Player.x > x side =-1; else side = 1;   
 }
-
+hits_cd=0;
 hit_cd = 0;
 enemy_hp = 70;
 enemy_hp_max = 70;

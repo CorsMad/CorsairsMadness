@@ -6,18 +6,18 @@ instance_create_depth(416,240,100,obj_npc_lavav_merch)
 switch(global.completed_PL2)
 {
     case 0:
-        var i = instance_create_depth(238,240,depth,obj_teleport_junglevillage);
+        var i = instance_create_depth(214,240,depth,obj_teleport_junglevillage);
         i.TargetRoom = Village_lava;
-        i.TargetX = 368;
+        i.TargetX = 320;
         i.TargetY = 240;
         break;
     case 1:
         instance_create_depth(320,240,1,obj_lava_coin_exchanger);
         if global.dia_vulcanoMerch_f_talk = 1
         {
-            var i = instance_create_depth(238,240,depth,obj_teleport_junglevillage);
+            var i = instance_create_depth(214,240,depth,obj_teleport_junglevillage);
                 i.TargetRoom = Village_lava;
-                i.TargetX = 368;
+                i.TargetX = 320;
                 i.TargetY = 240;   
         }
         break;
@@ -26,17 +26,14 @@ switch(global.completed_PL2)
 #region указатель
 if global.dia_lavaChief = 0 
 {
-    var p = instance_create_depth(64,128,0,obj_npc_village_pointer)   ;
-    p.village = 5;
-    p.position = 1;
+    var p1 = instance_create_depth(64,144,0,obj_npc_village_pointer)   ;
+    p1.village = 5;
+    p1.position = 1;
+    var p2 = instance_create_depth(416,144,0,obj_npc_village_pointer)   ;
+    p2.village = 5;
+    p2.position = 1;
 }
 
-if global.dia_lavaChief != 0 && global.dia_lavaMerch = 0
-{
-    var p = instance_create_depth(336,128,0,obj_npc_village_pointer)   ;
-    p.village = 5;
-    p.position = 2;
-}
 
 
 #endregion

@@ -1,1 +1,1 @@
-fnc_msc_start_checkpoint(msc_village_jungle);
+fnc_msc_start_checkpoint(msc_village_desert);

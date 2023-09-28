@@ -30,8 +30,10 @@ if talk_cr_t!= 0
     {
         talk_cr_t = 0;
         
-        if global.dia_snowChief = 0 instance_create_depth(x,y,-100000,obj_txt_snowv_chief1);
-        if global.dia_snowChief = 1 instance_create_depth(x,y,-100000,obj_txt_snowv_chief2);
+        if global.completed_PS2 = 0 {
+            if global.dia_snowChief = 0 instance_create_depth(x,y,-100000,obj_txt_snowv_chief1);
+            if global.dia_snowChief = 1 instance_create_depth(x,y,-100000,obj_txt_snowv_chief2);
+        } else instance_create_depth(x,y,-100000,obj_txt_snowv_chief3);
 
     }
 }

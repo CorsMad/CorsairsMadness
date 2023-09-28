@@ -29,10 +29,13 @@ if talk_cr_t!= 0
     if talk_cr_t = 10
     {
         talk_cr_t = 0;
-        
-        if global.dia_lavaChief = 0 instance_create_depth(x,y,-100000,obj_txt_vulcanov_chief1);
-        if global.dia_lavaChief = 1 instance_create_depth(x,y,-100000,obj_txt_vulcanov_chief2);
-
+        if global.completed_PL2 = 0{
+            if global.dia_lavaChief = 0 instance_create_depth(x,y,-100000,obj_txt_vulcanov_chief1); // 1 разговорр вождь и торговец
+            if global.dia_lavaChief = 1 instance_create_depth(x,y,-100000,obj_txt_vulcanov_chief2);
+        }
+        if global.completed_PL2 = 1{
+             instance_create_depth(x,y,-100000,obj_txt_vulcanov_chief3);  
+        }
     }
 }
 #endregion

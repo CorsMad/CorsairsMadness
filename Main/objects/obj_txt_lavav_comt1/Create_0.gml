@@ -1,5 +1,5 @@
 
-fnc_lng_jv_cmt1();
+scr_txt_vulcano_inventor1();
 
-scr_text_starter(4,0.5);
+scr_text_starter(5,0.5);
 

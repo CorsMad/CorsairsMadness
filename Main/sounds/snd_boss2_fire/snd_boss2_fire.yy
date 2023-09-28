@@ -13,7 +13,7 @@
   "duration": 0.28034,
   "parent": {
     "name": "Boss2",
-    "path": "folders/Scripts/Sounds/Enemy sounds/Jungle/Boss2.yy",
+    "path": "folders/Sounds/Enemy sounds/Jungle/Boss2.yy",
   },
   "preload": false,
   "sampleRate": 44100,
