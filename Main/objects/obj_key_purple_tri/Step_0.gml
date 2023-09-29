@@ -21,7 +21,6 @@ if state = 1
 	if place_meeting(x,y,obj_Player)
 	{        
         fnc_snd_play_onetime(msc_level_end);
-        global.cannon_sh2_r1 = 1;
         fnc_snd_play_over(snd_player_hpmana_gain);
 		global.key_purple2 = 1;
         instance_create_depth(0,0,0,obj_room_transition_black_screen_g1_stats);

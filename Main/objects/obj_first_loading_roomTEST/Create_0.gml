@@ -1,13 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.TargetX      = 144;
-global.TargetY      = 256;
-global.TargetRoom   = TESTROOM;
+global.TargetX      = 300;
+global.TargetY      = 784;
+global.TargetRoom   = DI_Boss;
 
-global.fTargetX     = 560;
-global.fTargetY     = 240;
-global.fTargetRoom  = DI_p_r10;
+global.fTargetX     = 976;
+global.fTargetY     = 133;
+global.fTargetRoom  = DI_p_r8;
 
 
 
@@ -50,14 +50,14 @@ global.language = 0;
 #region ТЕСТ
     display_reset(0, false);
     //0
-    global.dia_jungleChief = 1; 
+    global.dia_jungleChief = 0; 
     global.dia_desertChief = 0;
     global.dia_snowChief = 0;
     global.dia_shadowChief = 0;
     global.dia_lavaChief = 0;
     
     //0
-    global.dia_jungleMerch = 1; 
+    global.dia_jungleMerch = 0; 
     global.dia_desertMerch = 0; 
     global.dia_snowMerch = 0;     
     global.dia_shadowMerch = 0; 
@@ -75,7 +75,7 @@ global.language = 0;
     global.saved_desert = 0;
     global.saved_snow = 0;
     global.saved_shadow = 0;
-    global.saved_vulcano = 1;
+    global.saved_vulcano = 0;
     
     //0
     global.dia_jungleMerch_f_talk = 0;

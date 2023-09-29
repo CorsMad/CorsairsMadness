@@ -12,7 +12,7 @@ switch(state){
         break;
     case 2:t++;
         if t = 100{
-            instance_create_depth(352,208,-1,obj_ctscDI_comt1)
+            instance_create_depth(394,167,-1,obj_ctscDI_comt1)
         }
         if t = 200{
             t= 0;

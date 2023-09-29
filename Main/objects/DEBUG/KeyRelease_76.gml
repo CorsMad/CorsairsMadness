@@ -7,3 +7,4 @@ if instance_exists(obj_enemy_test)
 }
 
 */
+obj_camera_lastboss.state = 1;

@@ -21,7 +21,6 @@ if t1 = 10
     //room_goto(GlobalMapPrologueDesert)
     //room_goto(GlobalMapLast)
    // room_goto(DI_intro)
-//
 
     var i = instance_create_depth(16,16,0,obj_Player);
     i.DashEnabled = 1;

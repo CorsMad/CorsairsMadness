@@ -3,6 +3,7 @@
 
 state = 0;
 t = 0;
+image_speed = 0;
 
 
 

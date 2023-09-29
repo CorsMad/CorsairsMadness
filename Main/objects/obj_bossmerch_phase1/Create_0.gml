@@ -1,0 +1,7 @@
+/// @description Insert description here
+// You can write your code in this editor
+state = 0;
+t = 0;
+
+rand_n1 = 0;
+rand_n2 = 0;

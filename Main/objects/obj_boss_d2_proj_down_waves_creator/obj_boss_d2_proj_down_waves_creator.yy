@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boss_l1_1_projectile_down_wave_creator",
-    "path": "sprites/spr_boss_l1_1_projectile_down_wave_creator/spr_boss_l1_1_projectile_down_wave_creator.yy",
+    "name": "spr_boss_l1_phase2_proj",
+    "path": "sprites/spr_boss_l1_phase2_proj/spr_boss_l1_phase2_proj.yy",
   },
   "spriteMaskId": null,
   "visible": true,

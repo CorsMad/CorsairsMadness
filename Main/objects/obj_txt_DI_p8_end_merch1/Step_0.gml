@@ -14,7 +14,7 @@ if key_skip
     {
         if global.saved_shadow = 1 obj_ctscDI_merch8.state = 2 else {
             obj_ctscDI_merch8.state = 10; 
-            instance_create_depth(288,144,301,obj_ctscDI_merch1_boomer);
+            instance_create_depth(282,135,-1,obj_ctscDI_ct_p8end);
         }
         instance_destroy();   
     } 

@@ -7,7 +7,7 @@ switch(state) {
 
         if !place_meeting(x,y+1,obj_block){
             vspd+=0.2;   
-        }
+        } else hspd = 0;
         break;
     case 1:
         x+=hspd;

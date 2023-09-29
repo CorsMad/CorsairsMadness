@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_ct_lava",
-    "path": "sprites/spr_ct_lava/spr_ct_lava.yy",
+    "name": "spr_ct_di_appear",
+    "path": "sprites/spr_ct_di_appear/spr_ct_di_appear.yy",
   },
   "spriteMaskId": null,
   "visible": true,

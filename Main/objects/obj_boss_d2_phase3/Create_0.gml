@@ -5,7 +5,7 @@ t = 0;
 mov = 0;
 mov_up = 1;
 vspd = 0;
-damaged = 0;
+//damaged = 0;
 
 red = 0;
 hit_cd = 0; 

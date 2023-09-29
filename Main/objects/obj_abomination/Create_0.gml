@@ -23,4 +23,3 @@ grounded = 1;
 larva_cr = 0;
 flueted = 0;
 t_flueted =0;
-werewolf = choose(0,1); // превращение в оборпотная после смерти

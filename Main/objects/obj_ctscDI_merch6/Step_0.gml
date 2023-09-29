@@ -33,14 +33,13 @@ switch(state){
         t++;
         if t = 30{
             t = 0;
-            instance_create_depth(288,144,301,obj_ctscDI_merch1_flute);
+            instance_create_depth(330,87,-1,obj_ctscDI_ct_p6end);
             state = 10;
         }
         break;
     case 10: // уход
         x+=2;
         if x > room_width+32 {
-            obj_cutscene_DI_player_p_r6_end.state = 4;
             instance_destroy()   
         }
         break;

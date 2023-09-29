@@ -14,7 +14,7 @@ if key_skip
     {
         if global.saved_jungle = 1 obj_ctscDI_merch2.state = 2 else {
             obj_ctscDI_merch2.state = 10; 
-            instance_create_depth(272,190,301,obj_ctscDI_merch1_ring);
+            instance_create_depth(330,119,0,obj_ctscDI_ct_p2end);
         }
         instance_destroy();   
     } 

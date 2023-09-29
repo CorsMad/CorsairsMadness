@@ -218,7 +218,7 @@ if state = 6 //делает выстрел
 	t++;
 	if t = 50 
     {
-        var proj = instance_create_depth(x-24*image_xscale,y-32,depth,obj_molded_yellow_projectile);
+        instance_create_depth(x-24*image_xscale,y-32,depth,obj_molded_yellow_projectile);
     }
 	if t = 100
 	{

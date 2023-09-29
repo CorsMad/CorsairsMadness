@@ -12,7 +12,7 @@ if key_skip
     
     if scr_t > scr_t_max 
     {
-        obj_ctscDI_merch4.state = 6;
+		obj_ctscDI_merch4.state = 6;
         instance_destroy();   
     } 
 }
