@@ -54,32 +54,32 @@ switch(state){
 			for (var i = 0; i < 14; i += 1)
 			{
 			    if i!= rand_n1 && i!= rand_n2 {
-			    instance_create_depth(32+32*i,64,0,obj_bossmerch_phase1_proj1_2);}
+			    instance_create_depth(32+32*i,592,0,obj_bossmerch_phase1_proj1_2);}
 			} 
 			break;
-		case 249:
+		case 199:
 			rand_n1 = irandom(15);
 			rand_n2 = irandom(15);
 			break;
-		case 250:
+		case 200:
 			for (var i = 0; i < 14; i += 1)
 			{
 			    if i!= rand_n1 && i!= rand_n2 {
-			    instance_create_depth(32+32*i,64,0,obj_bossmerch_phase1_proj1_2);}
+			    instance_create_depth(32+32*i,592,0,obj_bossmerch_phase1_proj1_2);}
 			} 
 			break;
-		case 449:
+		case 349:
 			rand_n1 = irandom(15);
 			rand_n2 = irandom(15);
 			break;
-		case 450:
+		case 350:
 			for (var i = 0; i < 14; i += 1)
 			{
 			    if i!= rand_n1 && i!= rand_n2 {
-			    instance_create_depth(32+32*i,64,0,obj_bossmerch_phase1_proj1_2);}
+			    instance_create_depth(32+32*i,592,0,obj_bossmerch_phase1_proj1_2);}
 			} 
 			break;
-		case 650:
+		case 500:
 			state = 4;
 			t = 0;
 			break;
@@ -121,32 +121,32 @@ switch(state){
 			for (var i = 0; i < 14; i += 1)
 			{
 				if i!= rand_n1 && i!= rand_n2{
-			    instance_create_depth(32+32*i,64,0,obj_bossmerch_phase1_proj1_2);}
+			    instance_create_depth(32+32*i,592,0,obj_bossmerch_phase1_proj1_2);}
 			} 
 			break;
-		case 249:
+		case 199:
 			rand_n1 = irandom(15);
 			rand_n2 = irandom(15);
 			break;
-		case 250:
+		case 200:
 			for (var i = 0; i < 14; i += 1)
 			{
 			    if i!= rand_n1 && i!= rand_n2{
-			    instance_create_depth(32+32*i,64,0,obj_bossmerch_phase1_proj1_2);}
+			    instance_create_depth(32+32*i,592,0,obj_bossmerch_phase1_proj1_2);}
 			} 
 			break;
-		case 449:
+		case 349:
 			rand_n1 = irandom(15);
 			rand_n2 = irandom(15);
 			break;
-		case 450:
+		case 350:
 			for (var i = 0; i < 14; i += 1)
 			{
 			    if i!= rand_n1 && i!= rand_n2{
-			    instance_create_depth(32+32*i,64,0,obj_bossmerch_phase1_proj1_2);}
+			    instance_create_depth(32+32*i,592,0,obj_bossmerch_phase1_proj1_2);}
 			} 
 			break;
-		case 650:
+		case 500:
 			state = 9;
 			t = 0;
 			break;
@@ -160,3 +160,42 @@ switch(state){
 		}
 		break;
 }
+	
+
+#region получение урона
+ // Атака
+
+    fnc_take_dmg_hitbox(-10,0,-1,10,0,-1);
+    
+// Топор
+
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
+    
+// Удар вниз   
+
+    fnc_take_dmg_hitbox_down(0,-16,-1);
+
+// Бомба
+
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+
+// Eball
+
+	fnc_take_dmg_eball(0,-16,-1,1);
+
+// Parrot
+
+	fnc_take_dmg_parrot_laser(0,-16,-1,1)
+    
+
+// Получение урона
+
+    fnc_enemy_no_armor_dmg();
+#endregion
+
+#region Death
+if enemy_hp<=0{
+	instance_destroy();
+	instance_create_depth(x,y,depth,obj_bossmerch_phase1_death);
+}
+#endregion

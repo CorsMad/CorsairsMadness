@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_bossmerch_phase1",
+    "path": "sprites/spr_bossmerch_phase1/spr_bossmerch_phase1.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

@@ -66,5 +66,9 @@ switch(state){
 			}
 		}
 		break;
+	case 5:
+		instance_destroy();
+		instance_create_depth(x,y,depth,obj_bossmerch_phase2_death);
+		break;
 	
 }

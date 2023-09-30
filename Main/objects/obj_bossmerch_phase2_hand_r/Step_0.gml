@@ -76,8 +76,8 @@ switch(state){
 		break;
 	case 6:
 		y-=4;
-		if y<= 112 {
-			y = 112;
+		if y<= 640 {
+			y = 640;
 			state = 7;
 		}
 		break;
@@ -94,3 +94,43 @@ switch(state){
 		}
 		break;
 }
+
+#region получение урона
+ // Атака
+
+    fnc_take_dmg_hitbox(-10,0,-1,10,0,-1);
+    
+// Топор
+
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
+    
+// Удар вниз   
+
+    fnc_take_dmg_hitbox_down(0,-16,-1);
+
+// Бомба
+
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+
+// Eball
+
+	fnc_take_dmg_eball(0,-16,-1,1);
+
+// Parrot
+
+	fnc_take_dmg_parrot_laser(0,-16,-1,1)
+    
+
+// Получение урона
+
+    fnc_enemy_no_armor_dmg();
+#endregion
+
+#region смерть
+if enemy_hp<=0{
+	obj_bossmerch_phase2.state = 1;
+	obj_bossmerch_phase2.t = 0;
+	instance_destroy();
+	instance_create_depth(x,y,depth,obj_bossmerch_phase2_hand_r_d);
+}
+#endregion

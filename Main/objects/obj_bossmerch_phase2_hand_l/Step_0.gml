@@ -67,15 +67,21 @@ switch(state){
 		break;
 	case 3:
 		y+=vspd;
-		if y <= 112{
-			y = 112;
+		if y <= 640{
+			y = 640;
 			vspd = 0;
 			state = 4;
 		}
 		break;
 	case 4:
 		t++;
-		if t < 100 x = lerp(x,obj_Player.x,0.1);
+		if t < 100 {
+			if abs(obj_Player.x-x) > 10{
+				if obj_Player.x>x x+=2 else x-=2;	
+			} 
+		}
+		
+		//if t < 100 x = lerp(x,obj_Player.x,0.1);
 		switch(t){
 			case 5:
 				sprite_index = spr_bossmerch_phase2_hand_small;
@@ -84,7 +90,7 @@ switch(state){
 			case 120:
 				t = 0;
 				state = 5;
-				vspd = 4;
+				vspd = 7;
 				break;	
 		}
 		break;
@@ -93,13 +99,13 @@ switch(state){
 		if y >= room_height-32 {
 			state = 6;	
 			t = 0;
-			vspd = -4;
+			vspd = -7;
 		}
 		break;
 	case 6:
 		y+=vspd;
-		if y <= 112 {
-			y = 112;
+		if y <= 640 {
+			y = 640;
 			state = 7;	
 			t = 0;
 			vspd = 0;
@@ -107,12 +113,17 @@ switch(state){
 		break;
 	case 7:
 		t++;
-		if t < 100 x = lerp(x,obj_Player.x,0.1);
+		if t < 100 {
+			if abs(obj_Player.x-x) > 10{
+				if obj_Player.x>x x+=2 else x-=2;	
+			} 
+		}
+		//if t < 100 x = lerp(x,obj_Player.x,0.1);
 		switch(t){
 			case 120:
 				t = 0;
 				state = 8;
-				vspd = 4;
+				vspd = 7;
 				break;	
 		}
 		break;
@@ -121,13 +132,13 @@ switch(state){
 		if y >= room_height-32 {
 			state = 9;	
 			t = 0;
-			vspd = -4;
+			vspd = -7;
 		}
 		break;
 	case 9:
 		y+=vspd;
-		if y <= 112 {
-			y = 112;
+		if y <= 640 {
+			y = 640;
 			state = 10;	
 			t = 0;
 			vspd = 0;
@@ -135,12 +146,17 @@ switch(state){
 		break;
 	case 10:
 		t++;
-		if t < 100 x = lerp(x,obj_Player.x,0.1);
+		if t < 100 {
+			if abs(obj_Player.x-x) > 10{
+				if obj_Player.x>x x+=2 else x-=2;	
+			} 
+		}
+		//if t < 100 x = lerp(x,obj_Player.x,0.1);
 		switch(t){
 			case 120:
 				t = 0;
 				state = 11;
-				vspd = 4;
+				vspd = 7;
 				break;	
 		}
 		break;
@@ -162,8 +178,8 @@ switch(state){
 		break;
 	case 13:
 		y+=vspd;
-		if y <= 112 {
-			y = 112;
+		if y <= 640 {
+			y = 640;
 			state = 14;	
 			t = 0;
 			vspd = 0;
@@ -183,6 +199,41 @@ switch(state){
 
 
 #region получение урона
+ // Атака
 
-// если уничтожен то глав - стейт 0
+    fnc_take_dmg_hitbox(-10,0,-1,10,0,-1);
+    
+// Топор
+
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
+    
+// Удар вниз   
+
+    fnc_take_dmg_hitbox_down(0,-16,-1);
+
+// Бомба
+
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+
+// Eball
+
+	fnc_take_dmg_eball(0,-16,-1,1);
+
+// Parrot
+
+	fnc_take_dmg_parrot_laser(0,-16,-1,1)
+    
+
+// Получение урона
+
+    fnc_enemy_no_armor_dmg();
+#endregion
+
+#region смерть
+if enemy_hp<=0{
+	instance_destroy();
+	obj_bossmerch_phase2.state = 1;
+	obj_bossmerch_phase2.t = 0;
+	instance_create_depth(x,y,depth,obj_bossmerch_phase2_hand_l_d);
+}
 #endregion

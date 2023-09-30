@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.TargetX      = 300;
-global.TargetY      = 784;
-global.TargetRoom   = DI_Boss;
+global.TargetX      = 176;
+global.TargetY      = 256;
+global.TargetRoom   = TESTROOM;
 
 global.fTargetX     = 976;
 global.fTargetY     = 133;
@@ -175,13 +175,13 @@ global.purch_parrotcage3 = 0;
 global.hp = 5;           // 4
 global.hp_max = 5;       // 4
 global.choosed_item_special = 0;
-global.choosed_item = 3; // 1- бумер 2 -топ // 3 - бомба // 4 - eball // 5 - parrot // 11 - арбалет
+global.choosed_item = 5; // 1- бумер 2 -топ // 3 - бомба // 4 - eball // 5 - parrot // 11 - арбалет
 global.choosed_item_tier = 3; // ТИР предмета
 global.choosed_itemboat = 2; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
 global.choosed_itemboat_tier = 3; // ТИП предмета для лодки
-global.superattack1 = 2;// Суператаки  max 2
-global.superattack2 = 1;// Суператаки  max 1
-global.superattack3 = 1;// Суператаки  max 1
+global.superattack1 = 2;// Суператаки  max 2  default - 0
+global.superattack2 = 1;// Суператаки  max 1  default - 0
+global.superattack3 = 1;// Суператаки  max 1  default - 0
 
 global.mana = 6000000//3;
 global.mana_max = 3;
@@ -386,6 +386,7 @@ t2 = 0;
 
 /*  CUTSCENES  */    
     #region Важные катсцены 
+	//1
     global.Cutscene_f1_r33 = 1;    
     global.Cutscene_dp1_r16 = 1;
     global.Cutscene_sp1_r14 = 1;
@@ -399,6 +400,8 @@ t2 = 0;
     global.Cutscene_gp2_r14 = 1;
     global.Cutscene_lp2_r16 = 1;
     
+	
+	global.Cutscene_di_lastboss = 0; //1
     #endregion
 
 

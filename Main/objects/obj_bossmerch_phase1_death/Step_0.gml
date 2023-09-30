@@ -21,7 +21,8 @@ switch(state){
 	case 2:
 		t++;
 		if t = 50 {
-			instance_create_depth(room_width/2,270,0,)	
+			instance_create_depth(room_width/2,640,0,obj_bossmerch_phase2)	
+			instance_destroy();
 		}
 		break;
 		
