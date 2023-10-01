@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.TargetX      = 176;
-global.TargetY      = 256;
-global.TargetRoom   = TESTROOM;
+global.TargetX      = 400;
+global.TargetY      = 786;
+global.TargetRoom   = DI_Boss;
 
 global.fTargetX     = 976;
 global.fTargetY     = 133;

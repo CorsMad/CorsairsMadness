@@ -9,3 +9,5 @@ rand_n2 = 0;
 enemy_hp = 10;
 t_red = 0;
 hit_cd = 0;
+
+image_xscale = -1;
