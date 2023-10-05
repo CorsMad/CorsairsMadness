@@ -25,7 +25,7 @@ if state = 1
             instance_create_depth(x-32,y-32,depth-1,obj_sfx_dust_expl_big);
             instance_create_depth(x+32,y-32,depth-1,obj_sfx_dust_expl_big);        
             image_index++;
-            instance_create_depth(x-16,y-48,100,obj_bomb_creator);
+            instance_create_depth(128,240,100,obj_bomb_creator);
             break;
     }
     if t = 100 state = 2;

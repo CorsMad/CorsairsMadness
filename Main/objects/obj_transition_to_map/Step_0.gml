@@ -12,6 +12,9 @@ if t > 50
 
 if t >=200
 {
-    room_goto(GlobalMap);
+    if global.completed_JF2= 1 && global.completed_PD2= 1 && global.completed_PG2= 1 && global.completed_PL2= 1 && global.completed_PS2= 1{
+        room_goto(GlobalMapLast); 
+    } else room_goto(GlobalMap);
+    
     instance_destroy(obj_Player);
 }

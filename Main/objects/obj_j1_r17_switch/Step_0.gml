@@ -2,6 +2,7 @@
 // You can write your code in this editor
 if place_meeting(x,y,obj_hitbox) && isOn = 0
 {    
+    fnc_snd_play_over(snd_secrets_gain);
     fnc_snd_play_onetime(snd_bomb_selektor);
 	image_index = 1;
 	isOn = 1;  

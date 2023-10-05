@@ -9,5 +9,5 @@ hit_cd = 0;
 enemy_hp = 1;
 
 
-mask = instance_create_depth(x,y,depth,obj_crawling_molded_enemy_mask);
+mask = instance_create_depth(x,y,depth-1,obj_crawling_molded_enemy_mask);
 mask.inst = self;

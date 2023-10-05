@@ -10,7 +10,8 @@ if isOn = 1 && place_meeting(x,y,obj_hitbox_mask_dash) && obj_Player.isRecoil = 
     {
         obj_popup_creator_usepinklantern.isOn = 0;   
     }
-    
+    obj_Player.isDashing = 0;
+    obj_Player.vspd = -1;
 	obj_Player.isRecoil = 1;
     obj_Player.image_index = 0;
     obj_Player.dashing_timer = 0;

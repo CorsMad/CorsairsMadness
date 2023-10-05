@@ -13,18 +13,47 @@
 
 
 switch(state){
+     case -1:
+        if image_alpha < 1 image_alpha+=0.05;
+        x = lerp(x,384,0.1);
+        if image_alpha >=1 {
+            image_alpha = 1;
+            x = 384;
+            state = 0;
+        }
+        break;
 	case 1:
 		t++;
 		switch(t){
+            case 5:sprite_index = spr_bossmerch_phase2_hand_attackr;image_index = 1;image_speed = 0;break;
 			case 50:
-				instance_create_depth(x,y,depth,obj_bossmerch_phase1_proj1_1);
+                instance_create_depth(x,y,depth-1,obj_sfx3,{
+                    image_xscale : 2,
+                    image_yscale : 2
+                });
+                image_index = 2;
+				instance_create_depth(x,y,depth-1,obj_bossmerch_phase1_proj1_1);
 				break;
+            case 70:image_index = 1;break;
 			case 100:
-				instance_create_depth(x,y,depth,obj_bossmerch_phase1_proj1_1);
+                instance_create_depth(x,y,depth-1,obj_sfx3,{
+                    image_xscale : 2,
+                    image_yscale : 2
+                });
+                image_index = 2;
+				instance_create_depth(x,y,depth-1,obj_bossmerch_phase1_proj1_1);
 				break;
+            case 120: image_index = 1;break;
 			case 150:
-				instance_create_depth(x,y,depth,obj_bossmerch_phase1_proj1_1);
+                instance_create_depth(x,y,depth-1,obj_sfx3,{
+                    image_xscale : 2,
+                    image_yscale : 2
+                });
+                image_index = 2;
+				instance_create_depth(x,y,depth-1,obj_bossmerch_phase1_proj1_1);
 				break;
+            case 175:image_index = 0;break;
+            case 180:image_index = 3;break;
 			case 200:
 				t = 0;
 				state = 2;
@@ -34,9 +63,12 @@ switch(state){
 	case 2:
 		vspd=4;
 		y+=vspd;
-		if y>= room_height-32{
+		if y>= room_height-48{
 			vspd = 0;
-			y =  room_height-32;
+            instance_create_depth(x,784,depth-2,obj_sfx4);
+            instance_create_depth(x-8,784,depth-1,obj_sfx_dust_expl_small);
+            instance_create_depth(x+8,784,depth-1,obj_sfx_dust_expl_small);
+			y =  room_height-48;
 			state = 3;
 			t = 0;
 		}
@@ -47,10 +79,14 @@ switch(state){
 			if hspd > -8 hspd-=0.2;	
 		}
 		x+=hspd;
-		if x <= 32{
-			x = 32;
+		if x <= 40{
+			x = 40;
 			hspd = 0;
 			state = 4;
+            instance_create_depth(16,y+8,depth-2,obj_sfx4,{image_angle : 270});
+            instance_create_depth(16,y-8,depth-1,obj_sfx_dust_expl_small);
+            instance_create_depth(16,y+12,depth-1,obj_sfx_dust_expl_small);
+            
 			t = 0;
 		}
 		break;
@@ -60,25 +96,48 @@ switch(state){
 			if hspd < 8 hspd+=0.2;	
 		}
 		x+=hspd;
-		if x >=448{
-			x = 448;
+		if x >=448-8{
+			x = 448-8;
 			hspd = 0;
 			state = 5;
 			t = 0;
+            instance_create_depth(464,y+8,depth-2,obj_sfx4,{image_angle : 90});
+            instance_create_depth(464,y-8,depth-1,obj_sfx_dust_expl_small);
+            instance_create_depth(464,y+12,depth-1,obj_sfx_dust_expl_small);
+            
 		}
 		break;
 	case 5:
 		t++;
+        if t > 100 && t < 150 {
+            if t mod 15 = 0 {
+                if image_index = 3 image_index = 4 else image_index = 3;  
+            }
+        }
+        if t >=150 {
+            if t mod 5 = 0 {
+                if image_index = 3 image_index = 4 else image_index = 3;  
+            }   
+        }
+        
 		if t = 200{
 			t = 0;
 			state = 6;	
 		}
 		break;
 	case 6:
+        t++;
+        if t = 10 {
+            sprite_index = spr_bossmerch_phase2_hand_attackL;image_index = 1;break;
+        }
+        if t = 15 {
+            sprite_index = spr_bossmerch_phase2_hand_idle;image_speed = 1;
+        }
 		y-=4;
 		if y<= 640 {
 			y = 640;
 			state = 7;
+            t = 0;
 		}
 		break;
 	case 7:
@@ -131,6 +190,8 @@ if enemy_hp<=0{
 	obj_bossmerch_phase2.state = 1;
 	obj_bossmerch_phase2.t = 0;
 	instance_destroy();
-	instance_create_depth(x,y,depth,obj_bossmerch_phase2_hand_r_d);
+	var death =  instance_create_depth(x,y,depth,obj_bossmerch_phase2_hand_r_d);
+    death.sprite_index = sprite_index;
+    if x < room_width/2 death.hspd = -2 else death.hspd = 2;
 }
 #endregion

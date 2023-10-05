@@ -12,7 +12,7 @@ if keyboard_check_released(vk_space)
 }
 
 */
-
+/*
 if keyboard_check_pressed(ord("1")) {
 	global.choosed_item = 2;
 	global.choosed_item_tier = 1;

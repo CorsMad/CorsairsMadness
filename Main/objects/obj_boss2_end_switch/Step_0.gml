@@ -14,7 +14,7 @@ if state = 1
     {
         y = 248;
         state = 2;
-        instance_create_depth(x-16,y-48,100,obj_bomb_creator);
+        instance_create_depth(x,y-16,100,obj_bomb_creator);
         image_index = 1;
     }
 }

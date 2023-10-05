@@ -622,22 +622,24 @@ if dash_buffer_human = 1 && dashing_timer = 0 && dash_pad > 0
 
 if isGrounded = 0 && isSkating = 0 && key_down && isCarry = 0 && isFlueting = 0 &&  isAttackingdown = 0 && isWallclimbing = 0 && isDashing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0
 {
-    sbootsbuffer = 0;  
-    sbootsbuffer = 0;  
-    fnc_snd_play_onetime(snd_player_preattackdown);  
-	isAirattacking = 0;
-	isAttacking = 0;
-    isAirUsingitem = 0;
-    isAirUsingabil = 0;
-	isAirThrowingBomb = 0;
-	isThrowingBomb = 0
-    isUsingitem = 0;
-    isUsingabil = 0;
-	fspd = 0;
-	isAttackingdown = 1;	
-	vspd = -0.5;
-	attackingdown_timer = 1;
-    sprite_index = spr_preattackingdown;
+    if key_attack {
+        sbootsbuffer = 0;  
+        sbootsbuffer = 0;  
+        fnc_snd_play_onetime(snd_player_preattackdown);  
+    	isAirattacking = 0;
+    	isAttacking = 0;
+        isAirUsingitem = 0;
+        isAirUsingabil = 0;
+    	isAirThrowingBomb = 0;
+    	isThrowingBomb = 0
+        isUsingitem = 0;
+        isUsingabil = 0;
+    	fspd = 0;
+    	isAttackingdown = 1;	
+    	vspd = 0;
+    	attackingdown_timer = 1;
+        sprite_index = spr_preattackingdown;
+    }
 }
 
 if isAttackingdown = 1 
@@ -648,12 +650,12 @@ if attackingdown_timer > 0
 {
 	attackingdown_timer +=1;	
 }
-if attackingdown_timer = 22
+if attackingdown_timer = 12
 {
 	instance_create_depth(x,y,1,obj_hitbox_down);
 	instance_create_depth(x,y,1,obj_hitbox_destr_down);
 }
-if attackingdown_timer > 21 
+if attackingdown_timer > 11 
 {
 	sprite_index = spr_player_attackingdown;
 	vspd = 8;	

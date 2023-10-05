@@ -160,7 +160,7 @@ SpectpEnabled = 1;// TP
 
 SpecAbil = 1;
 #region Спец абилки human
-specabilnumber = 4;
+specabilnumber = 0;
 
 /*
 1 - boots
@@ -175,7 +175,7 @@ specabilnumber = 4;
 #region Спец абилки Possessed
 // 1 - hook, 2 - teleport, 3 - superdash , 4 - doublejump, 5 - clone
 
-SpecAbilMask = 1;
+SpecAbilMask = 0;
 #endregion
 
 

@@ -6,6 +6,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -33,12 +34,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bird_coconut",
-    "path": "sprites/spr_bird_coconut/spr_bird_coconut.yy",
+    "name": "spr_bossmerch_phase2_proj_big",
+    "path": "sprites/spr_bossmerch_phase2_proj_big/spr_bossmerch_phase2_proj_big.yy",
   },
   "spriteMaskId": {
-    "name": "spr_bird_coconut_mask",
-    "path": "sprites/spr_bird_coconut_mask/spr_bird_coconut_mask.yy",
+    "name": "spr_bossmerch_phase2_proj_big",
+    "path": "sprites/spr_bossmerch_phase2_proj_big/spr_bossmerch_phase2_proj_big.yy",
   },
   "visible": true,
 }

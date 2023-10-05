@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bossmerch_phase3_tp",
-    "path": "sprites/spr_bossmerch_phase3_tp/spr_bossmerch_phase3_tp.yy",
+    "name": "spr_bossmerch_phase3_trace",
+    "path": "sprites/spr_bossmerch_phase3_trace/spr_bossmerch_phase3_trace.yy",
   },
   "spriteMaskId": null,
   "visible": true,

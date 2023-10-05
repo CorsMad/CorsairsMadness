@@ -6,4 +6,4 @@ image_xscale = 1.5;
 image_yscale = 1.5;
 */
 state = 0;
-spd = 0.5;
+spd = 1;

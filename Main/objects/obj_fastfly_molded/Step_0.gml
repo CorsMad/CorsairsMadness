@@ -48,6 +48,8 @@ if state = 2
 
 if state = 3
 {
+    mask.mask = 1; 
+    
     if instance_exists(obj_Player) 
     {
         var dir = point_direction(x,y,obj_Player.x,obj_Player.y-16);
@@ -91,6 +93,7 @@ if state = 4
     }
     if abs(hspeed) < 0.1 && abs(vspeed) < 0.1 && t > 30
     {
+        mask.mask = 0; 
         hspeed = 0;
         vspeed = 0;
         t = 0;

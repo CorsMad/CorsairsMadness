@@ -134,7 +134,14 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     fnc_msc_stop_play();
                     global.gold = global.gold_prelevel;    
                     instance_destroy(obj_Player);
-                    room_goto(GlobalMapPrologueJungle);
+                    switch(dest) {
+                        case 0: room_goto(GlobalMapPrologueJungle);break;
+                        case 1: room_goto(GlobalMapPrologueDesert);break;
+                        case 2: room_goto(GlobalMapPrologueSnow);break;
+                        case 3: room_goto(GlobalMapPrologueShadow);break;
+                        case 4: room_goto(GlobalMapPrologueLava);break;     
+                    }
+                    
                     break;
                 case 1:
                     submenu = 0;

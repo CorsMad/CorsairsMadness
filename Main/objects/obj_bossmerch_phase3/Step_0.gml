@@ -13,6 +13,18 @@
 	
 	посередине 240 64
 */
+#region anim
+t_sparkle++;
+if instance_exists(obj_bossmerch_phase3_mask) && image_alpha > 0 image_alpha -=0.2; 
+if !instance_exists(obj_bossmerch_phase3_mask) && image_alpha < 1 image_alpha +=0.2; 
+
+if t_sparkle = 10 {
+    t_sparkle = 0;
+    instance_create_depth(x,y,depth+1,obj_sfx_sparkle_lastboss,{image_alpha : image_alpha});
+}
+#endregion
+
+
 switch(place_rand){
 	case 0:
 		target_x = 96;

@@ -6,7 +6,7 @@ if t = 200
 {
     var i = instance_create_depth(16,16,101,obj_Player);
     i.state = 0;
-    i.DashEnabled = 0;
+    i.DashEnabled = 1;
     instance_create_depth(16,16,101,obj_room_transition_to_loading); 
     
     #region Сундуки

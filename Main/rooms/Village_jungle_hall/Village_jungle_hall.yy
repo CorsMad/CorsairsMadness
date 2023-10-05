@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "Village_jungle_hall",
-  "creationCodeFile": "",
+  "creationCodeFile": "rooms/Village_jungle_hall/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
@@ -18,8 +18,8 @@
     {"name":"inst_1975B344","path":"rooms/Village_jungle_hall/Village_jungle_hall.yy",},
     {"name":"inst_BEC7951","path":"rooms/Village_jungle_hall/Village_jungle_hall.yy",},
     {"name":"inst_2240B3AE","path":"rooms/Village_jungle_hall/Village_jungle_hall.yy",},
-    {"name":"inst_7EC26C71","path":"rooms/Village_jungle_hall/Village_jungle_hall.yy",},
     {"name":"inst_DDB499E","path":"rooms/Village_jungle_hall/Village_jungle_hall.yy",},
+    {"name":"inst_362439A7","path":"rooms/Village_jungle_hall/Village_jungle_hall.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -34,8 +34,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_39959670","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":10.0,"x":0.0,"y":80.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1975B344","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"properties":[],"rotation":0.0,"scaleX":19.0,"scaleY":1.0,"x":16.0,"y":112.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_BEC7951","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_teleport_junglevillage","path":"objects/obj_teleport_junglevillage/obj_teleport_junglevillage.yy",},"properties":[],"rotation":0.0,"scaleX":1.9166666,"scaleY":1.0,"x":73.0,"y":240.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7EC26C71","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pause_controller_map","path":"objects/obj_pause_controller_map/obj_pause_controller_map.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":48.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_DDB499E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_jngl_village_hall_container","path":"objects/obj_jngl_village_hall_container/obj_jngl_village_hall_container.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_362439A7","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pause_controller","path":"objects/obj_pause_controller/obj_pause_controller.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":80.0,"y":-80.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2240B3AE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_junglev_chief","path":"objects/obj_npc_junglev_chief/obj_npc_junglev_chief.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":228.0,"y":240.0,},

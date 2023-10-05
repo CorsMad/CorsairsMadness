@@ -13,8 +13,8 @@
     "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Death/Phase3.yy",
   },
   "parentObjectId": {
-    "name": "obj_enemy_parent",
-    "path": "objects/obj_enemy_parent/obj_enemy_parent.yy",
+    "name": "obj_last_boss_parent",
+    "path": "objects/obj_last_boss_parent/obj_last_boss_parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -32,9 +32,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bossmerch_phase2",
-    "path": "sprites/spr_bossmerch_phase2/spr_bossmerch_phase2.yy",
+    "name": "spr_bossmerch_phase3_appear",
+    "path": "sprites/spr_bossmerch_phase3_appear/spr_bossmerch_phase3_appear.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_bossmerch_phase3_mask",
+    "path": "sprites/spr_bossmerch_phase3_mask/spr_bossmerch_phase3_mask.yy",
+  },
   "visible": true,
 }

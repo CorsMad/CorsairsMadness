@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_village_npc2_idle",
-    "path": "sprites/spr_village_npc2_idle/spr_village_npc2_idle.yy",
+    "name": "spr_village_npc1_idle",
+    "path": "sprites/spr_village_npc1_idle/spr_village_npc1_idle.yy",
   },
   "spriteMaskId": {
     "name": "spr_skeleton_mask",

@@ -5,3 +5,5 @@ if instance_exists(obj_Player)
 {
 	depth = obj_Player.depth+1;	
 }
+imal = 0;
+t = 0;

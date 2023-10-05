@@ -29,7 +29,8 @@ draw_set_halign(fa_left);
 
 var gap = 14;
 
-for (var i = 0; i < array_length_2d(menu, submenu); ++i) {
+//for (var i = 0; i < array_length_2d(menu, submenu); ++i) {
+for (var i = 0; i < array_length(menu); ++i) {
 
     draw_set_color(c_white);
     
@@ -39,6 +40,7 @@ for (var i = 0; i < array_length_2d(menu, submenu); ++i) {
         draw_set_color(c_red);
     }
     
+    //draw_text(105,52 + gap*i, menu[i]);
     draw_text(105,52 + gap*i, menu[submenu, i]);
 }
 #endregion
@@ -108,6 +110,12 @@ switch(submenu)
                     break;
                 case 1:
                     draw_sprite(spr_shop_selector_wide,0,152,104);
+                    break;
+                case 2:
+                    draw_sprite(spr_shop_selector_wide,0,152,136);
+                    break;
+                case 3:
+                    draw_sprite(spr_shop_selector_wide,0,152,168);
                     break;
             }
             
@@ -213,6 +221,7 @@ switch(submenu)
         for (var n = 0; n < global.mana_max; ++n) {  // MAX MANA
                     draw_sprite(spr_hud_mana,0,216+16*n,97)
                 }
+        break;
 }
 
 #region ранг

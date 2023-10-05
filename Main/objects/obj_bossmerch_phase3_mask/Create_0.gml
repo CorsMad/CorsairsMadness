@@ -7,3 +7,5 @@ enemy_hp = 0;
 hit_cd = 0;
 next_state = 0;
 turn = -1;
+
+image_speed = 0;

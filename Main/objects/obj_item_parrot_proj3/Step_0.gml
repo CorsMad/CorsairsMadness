@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 var en = instance_nearest(x,y,obj_enemy_parent)
+var lb = instance_nearest(x,y,obj_last_boss_parent);
 if en!=noone
     {
 		en_x = en.x
@@ -11,10 +12,19 @@ if en!=noone
 	    {
 	        move_towards_point(en_x, en_y, 6);
 	    }
-} else 
-{
-    haveTarget = 0;
-}
+}  else if lb!=noone
+    {
+		en_x = lb.x
+		en_y = lb.y-sprite_get_yoffset(lb.sprite_index) + lb.sprite_height / 2;
+        haveTarget = 1;  
+		if point_distance(x, y, en_x, en_y) > 6
+	    {
+	        move_towards_point(en_x, en_y, 5);
+	    }
+    } else
+        {
+            haveTarget = 0;
+        }
 
 if haveTarget = 0
 {

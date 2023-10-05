@@ -19,5 +19,6 @@ enemy_hp = 1;
 hit_cd = 0;
 image_speed = 0;
 
-mask = instance_create_depth(x,y,depth,obj_fastfly_molded_enemy_mask);
+
+mask = instance_create_depth(x,y,depth-1,obj_fastfly_molded_enemy_mask);
 mask.inst = self;

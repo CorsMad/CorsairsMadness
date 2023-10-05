@@ -82,7 +82,9 @@ switch(state){
 			for (var i = 0; i < 14; i += 1)
 			{
 				if i!= rand_n1 && i!= rand_n2{
-			    instance_create_depth(32+32*i,592,0,obj_bossmerch_phase1_proj1_2);}
+			    instance_create_depth(32+32*i,592,depth-1,obj_bossmerch_phase1_proj1_2,{
+                    image_angle : 270   
+                });}
 			} 
 			break;
 		case 95:image_index = 4;break;
@@ -100,7 +102,9 @@ switch(state){
 			for (var i = 0; i < 14; i += 1)
 			{
 			    if i!= rand_n1 && i!= rand_n2{
-			    instance_create_depth(32+32*i,592,0,obj_bossmerch_phase1_proj1_2);}
+			    instance_create_depth(32+32*i,592,depth-1,obj_bossmerch_phase1_proj1_2,{
+                    image_angle : 270   
+                });}
 			} 
 			break;
 		case 245:image_index = 4;break;
@@ -118,7 +122,9 @@ switch(state){
 			for (var i = 0; i < 14; i += 1)
 			{
 			    if i!= rand_n1 && i!= rand_n2{
-			    instance_create_depth(32+32*i,592,0,obj_bossmerch_phase1_proj1_2);}
+			    instance_create_depth(32+32*i,592,depth-1,obj_bossmerch_phase1_proj1_2,{
+                    image_angle : 270   
+                });}
 			} 
 			break;
 		case 395:image_index = 4;break;
@@ -199,7 +205,7 @@ switch(state){
 			for (var i = 0; i < 14; i += 1)
 			{
 				if i!= rand_n1 && i!= rand_n2{
-			    instance_create_depth(32+32*i,592,0,obj_bossmerch_phase1_proj1_2);}
+			    instance_create_depth(32+32*i,592,depth-1,obj_bossmerch_phase1_proj1_2);}
 			} 
 			break;
 		case 95:image_index = 4;break;
@@ -217,7 +223,7 @@ switch(state){
 			for (var i = 0; i < 14; i += 1)
 			{
 			    if i!= rand_n1 && i!= rand_n2{
-			    instance_create_depth(32+32*i,592,0,obj_bossmerch_phase1_proj1_2);}
+			    instance_create_depth(32+32*i,592,depth-1,obj_bossmerch_phase1_proj1_2);}
 			} 
 			break;
 		case 245:image_index = 4;break;
@@ -235,7 +241,7 @@ switch(state){
 			for (var i = 0; i < 14; i += 1)
 			{
 			    if i!= rand_n1 && i!= rand_n2{
-			    instance_create_depth(32+32*i,592,0,obj_bossmerch_phase1_proj1_2);}
+			    instance_create_depth(32+32*i,592,depth-1,obj_bossmerch_phase1_proj1_2);}
 			} 
 			break;
 		case 395:image_index = 4;break;

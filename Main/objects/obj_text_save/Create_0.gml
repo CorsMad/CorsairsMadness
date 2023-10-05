@@ -6,3 +6,5 @@ isOn = 0;
 
 text_x = 400
 text_y = 250
+
+

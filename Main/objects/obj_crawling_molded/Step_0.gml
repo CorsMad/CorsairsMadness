@@ -67,22 +67,34 @@ if isGrounded = 1
 #region Прыжок
 
     if (abs(obj_Player.x-x) < 128) && isGrounded = 1 && t = 0
-    {
-        t = 1;
+    { 
         if (fspd < 0 && obj_Player.x < x) || (fspd > 0 && obj_Player.x > x )
         {
+            if !place_meeting(x,y-2,obj_block)
+            {
+                y-=1;   
+            }
             vspd = -4;   
+            t = 1;
+            mask.mask = 1; 
         }
     }
+    
+    
+    if place_meeting(x,y+1,obj_block) mask.mask = 0;   
+    
+    
+
 
     if t!= 0
     {
         t++; 
     }
-    if t = 100
+    if t = 50
     {
         t = 0;   
     }
+
 #endregion
 
 #region Получение урона

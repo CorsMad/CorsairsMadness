@@ -20,6 +20,17 @@
 */
 
 switch(state){
+    
+    case -1:
+        if image_alpha < 1 image_alpha+=0.05;
+        x = lerp(x,96,0.1);
+        if image_alpha >=1 {
+            image_alpha = 1;
+            state = 0;
+            x = 96;
+        }
+        break;
+    
 	case 0:
 		if instance_exists(obj_Player){
 			if obj_Player.x > room_width/2{
@@ -29,37 +40,42 @@ switch(state){
 		break;
 	case 1:
 		t++;
-		if side = 0{
-			x = lerp(x,136,0.1);
-			if t = 40 {
-				t = 0;
-				state = 2;
-				x = 136;
-			}	
-		}
-		if side = 1{
-			x = lerp(x,344,0.1);
-			if t = 60 {
-				t = 0;
-				state = 2;
-				x = 344;
-			}	
-		}
+        
+        if abs(obj_Player.x-x) > 10 {
+				if obj_Player.x>x x+=2 else x-=2;	
+			} 
+        if t = 50{
+            state = 2;   
+            t = 0;
+        }
+
 		break;
 	case 2:
 		t++;
 		switch(t){
 			case 50:
-				sprite_index = spr_bossmerch_phase2_hand_big;
+				sprite_index = spr_bossmerch_phase2_hand_attackL;
 				mask_index = spr_bossmerch_phase2_hand_big;
+                image_index = 4;
+                image_speed = 0;
 				break;
-			case 100:
-				vspd = 4;
-				
+            case 55:    image_index = 5;break;
+			case 75:
+				vspd = 0.1;
 				break;
 		}
+        if vspd!=0 && vspd < 7 vspd+=0.5;
 		y+=vspd;
 		if y >= room_height-32 {
+            instance_create_depth(x,784,depth-2,obj_sfx4);
+            instance_create_depth(x-24,784,depth-2,obj_sfx4);
+            instance_create_depth(x-48,784,depth-2,obj_sfx4);
+            instance_create_depth(x+24,784,depth-2,obj_sfx4);
+            instance_create_depth(x+48,784,depth-2,obj_sfx4);
+            instance_create_depth(x-8,784,depth-1,obj_sfx_dust_expl_small);
+            instance_create_depth(x+8,784,depth-1,obj_sfx_dust_expl_small);
+            instance_create_depth(x-16,784,depth-1,obj_sfx_dust_expl_small);
+            instance_create_depth(x+16,784,depth-1,obj_sfx_dust_expl_small);
 			state = 3;	
 			t = 0;
 			vspd = -4;
@@ -75,19 +91,20 @@ switch(state){
 		break;
 	case 4:
 		t++;
-		if t < 100 {
+		if t < 75 {
 			if abs(obj_Player.x-x) > 10{
 				if obj_Player.x>x x+=2 else x-=2;	
 			} 
 		}
 		
-		//if t < 100 x = lerp(x,obj_Player.x,0.1);
 		switch(t){
 			case 5:
-				sprite_index = spr_bossmerch_phase2_hand_small;
+                image_index = 4;
 				mask_index = spr_bossmerch_phase2_hand_small;
 				break;
-			case 120:
+            case 10:image_index = 1;break;
+            case 15:image_index = 2;break;
+			case 80:
 				t = 0;
 				state = 5;
 				vspd = 7;
@@ -96,7 +113,10 @@ switch(state){
 		break;
 	case 5:
 		y+=vspd;
-		if y >= room_height-32 {
+		if y >= room_height-48 {
+            instance_create_depth(x,784,depth-2,obj_sfx4);
+            instance_create_depth(x-8,784,depth-1,obj_sfx_dust_expl_small);
+            instance_create_depth(x+8,784,depth-1,obj_sfx_dust_expl_small);
 			state = 6;	
 			t = 0;
 			vspd = -7;
@@ -113,14 +133,14 @@ switch(state){
 		break;
 	case 7:
 		t++;
-		if t < 100 {
+		if t < 75 {
 			if abs(obj_Player.x-x) > 10{
 				if obj_Player.x>x x+=2 else x-=2;	
 			} 
 		}
 		//if t < 100 x = lerp(x,obj_Player.x,0.1);
 		switch(t){
-			case 120:
+			case 80:
 				t = 0;
 				state = 8;
 				vspd = 7;
@@ -129,7 +149,10 @@ switch(state){
 		break;
 	case 8:
 		y+=vspd;
-		if y >= room_height-32 {
+		if y >= room_height-48 {
+            instance_create_depth(x,784,depth-2,obj_sfx4);
+            instance_create_depth(x-8,784,depth-1,obj_sfx_dust_expl_small);
+            instance_create_depth(x+8,784,depth-1,obj_sfx_dust_expl_small);
 			state = 9;	
 			t = 0;
 			vspd = -7;
@@ -146,14 +169,18 @@ switch(state){
 		break;
 	case 10:
 		t++;
-		if t < 100 {
+		if t < 75 {
 			if abs(obj_Player.x-x) > 10{
 				if obj_Player.x>x x+=2 else x-=2;	
 			} 
 		}
 		//if t < 100 x = lerp(x,obj_Player.x,0.1);
 		switch(t){
-			case 120:
+            case 50:image_index = 1;break;
+            case 55:image_index = 7;break;
+            case 60:image_index = 8;break;
+            case 79:image_index = 9;break;
+			case 80:
 				t = 0;
 				state = 11;
 				vspd = 7;
@@ -162,7 +189,10 @@ switch(state){
 		break;
 	case 11:
 		y+=vspd;
-		if y >= room_height-32 {
+		if y >= room_height-48 {
+            instance_create_depth(x,784,depth-2,obj_sfx4);
+            instance_create_depth(x-8,784,depth-1,obj_sfx_dust_expl_small);
+            instance_create_depth(x+8,784,depth-1,obj_sfx_dust_expl_small);
 			state = 12;	
 			t = 0;
 			vspd = 0;
@@ -170,6 +200,18 @@ switch(state){
 		break;
 	case 12:
 		t++;
+        
+        if t > 100 && t < 150 {
+            if t mod 15 = 0 {
+                if image_index = 9 image_index = 10 else image_index = 9;  
+            }
+        }
+        if t >= 150  {
+            if t mod 5 = 0 {
+                if image_index = 9 image_index = 10 else image_index = 9;  
+            }
+        }
+        
 		if t = 200{
 			t = 0;
 			state = 13;
@@ -186,6 +228,8 @@ switch(state){
 		}
 		break;
 	case 14:
+    sprite_index = spr_bossmerch_phase2_hand_idle;
+    image_speed = 1;
 		x = lerp(x,96,0.1);
 		if abs(x-96) < 1 {
 			x = 96;
@@ -227,6 +271,7 @@ switch(state){
 // Получение урона
 
     fnc_enemy_no_armor_dmg();
+    
 #endregion
 
 #region смерть
@@ -234,6 +279,9 @@ if enemy_hp<=0{
 	instance_destroy();
 	obj_bossmerch_phase2.state = 1;
 	obj_bossmerch_phase2.t = 0;
-	instance_create_depth(x,y,depth,obj_bossmerch_phase2_hand_l_d);
+	var death =  instance_create_depth(x,y,depth,obj_bossmerch_phase2_hand_l_d);
+    death.sprite_index = sprite_index;
+    if x < room_width/2 death.hspd = -2 else death.hspd = 2;
+    
 }
 #endregion

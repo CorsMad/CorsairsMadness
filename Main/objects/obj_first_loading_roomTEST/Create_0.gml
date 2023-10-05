@@ -1,13 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.TargetX      = 400;
-global.TargetY      = 786;
-global.TargetRoom   = DI_Boss;
+global.TargetX      = 236;
+//global.TargetY      = 784;
+global.TargetY      = 240;
+global.TargetRoom   = D2_boss;
 
-global.fTargetX     = 976;
-global.fTargetY     = 133;
-global.fTargetRoom  = DI_p_r8;
+
+global.fTargetX     = 64;
+global.fTargetY     = 240;
+global.fTargetRoom  = TESTROOM;
 
 
 
@@ -174,15 +176,14 @@ global.purch_parrotcage3 = 0;
 #region Игрок
 global.hp = 5;           // 4
 global.hp_max = 5;       // 4
-global.choosed_item_special = 0;
 global.choosed_item = 5; // 1- бумер 2 -топ // 3 - бомба // 4 - eball // 5 - parrot // 11 - арбалет
-global.choosed_item_tier = 3; // ТИР предмета
-global.choosed_itemboat = 2; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
-global.choosed_itemboat_tier = 3; // ТИП предмета для лодки
+global.choosed_item_tier = 2; // ТИР предмета
+global.choosed_itemboat = 0; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
+global.choosed_itemboat_tier = 0; // ТИП предмета для лодки
 global.superattack1 = 2;// Суператаки  max 2  default - 0
 global.superattack2 = 1;// Суператаки  max 1  default - 0
 global.superattack3 = 1;// Суператаки  max 1  default - 0
-
+global.PlayerTransition = 0;
 global.mana = 6000000//3;
 global.mana_max = 3;
 global.gold = 10000 //global.money_saved;          // 0
@@ -359,11 +360,6 @@ t2 = 0;
     global.secrets_d1_s3 = 0;
     global.secrets_d_endurance = 0;
     #endregion
-    
-    #region Головоломка
-    
-    #endregion
-
 
  /* 2 УРОВЕНЬ */
 #region Сундуки
@@ -401,7 +397,7 @@ t2 = 0;
     global.Cutscene_lp2_r16 = 1;
     
 	
-	global.Cutscene_di_lastboss = 0; //1
+	global.Cutscene_di_lastboss = 1; //1
     #endregion
 
 
@@ -422,10 +418,9 @@ global.secrets_s1_s1 = 0
 
 #endregion
 
-       global.secrets_sn_endurance = 0;
+global.secrets_sn_endurance = 0;
 
 #region S2
-
 
 
 global.chest_s2_r2 = 1;

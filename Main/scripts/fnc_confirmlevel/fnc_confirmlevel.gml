@@ -864,29 +864,34 @@ if key_attack || key_jump_pressed // accept
                             global.TargetX = 48;
                             global.TargetY = 112;
                             global.TargetRoom = J2_r1;
+                            room_goto(J1FirstLoading);
                             break;
                         case 1: //пустыня
                             global.TargetX = 32;
                             global.TargetY = 160;
                             global.TargetRoom = D2_r1;
+                            room_goto(D1FirstLoading);
                             break;
                         case 2: //снег
                             global.TargetX = 32;
                             global.TargetY = 144;
                             global.TargetRoom = S2_r1;
+                            room_goto(SN1FirstLoading);
                             break;
                         case 3: //тень
                             global.TargetX = 32;
                             global.TargetY = 224;
                             global.TargetRoom = G2_r1;
+                            room_goto(G1FirstLoading);
                             break;
                         case 4: //лава
                             global.TargetX = 32;
                             global.TargetY = 224;
                             global.TargetRoom = L2_r1;
+                            room_goto(L2FirstLoading);
                             break;
                     }
-                    room_goto(L2FirstLoading);
+                    
                     break;
                 case 5: 
                     fnc_snd_play_over(snd_menu_accept);

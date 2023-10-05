@@ -5,7 +5,7 @@ fnc_lng_jmap();
 // ОБЯЗАТЕЛЬНО ВКЛЮЧИТЬ НАЗАД
 /*
 scr_save_progress();
-if !instance_exists(obj_text_save) instance_create_depth(0,0,depth-1,obj_text_save);
+if !instance_exists(obj_text_save) instance_create_depth(0,0,-1000,obj_text_save);
 */
 
 

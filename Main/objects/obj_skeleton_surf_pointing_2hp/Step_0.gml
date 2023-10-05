@@ -70,7 +70,7 @@ if state = 2	// перемещение
 				vspd =1;
 			} 
 			
-			if  obj_Player_boat.y-8 > y > obj_Player_boat+8
+			if  obj_Player_boat.y-8 > y > obj_Player_boat.y+8
 			{
 				vspd = 0;
 			}	

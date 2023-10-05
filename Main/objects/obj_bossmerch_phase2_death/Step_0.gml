@@ -22,9 +22,9 @@ switch(state){
 			instance_create_depth(192,640,depth+1,obj_ow_boss_merch_platoform_creator);
 			instance_create_depth(336,624,depth+1,obj_ow_boss_merch_platoform_creator);
 			instance_create_depth(384,576,depth+1,obj_ow_boss_merch_platoform_creator);
-			var d = instance_create_depth(128,608,0,obj_bossmerch_death_creator);
-			d.image_xscale = 7;
-			d.image_yscale = 6;
+			var d = instance_create_depth(16,656,0,obj_bossmerch_death_creator);
+			d.image_xscale = 28;
+			d.image_yscale = 1;
 	
 			instance_destroy();			
 		}

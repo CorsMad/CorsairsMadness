@@ -28,7 +28,7 @@ if y > room_height+32
 }
 
 
-
+/*
 var sprite_bbox_top = sprite_get_bbox_top(mask_index) - sprite_get_yoffset(mask_index);
 var sprite_bbox_bottom = sprite_get_bbox_bottom(mask_index) - sprite_get_yoffset(mask_index);
 if place_meeting(x,y+sign(vspd),obj_block) {

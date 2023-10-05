@@ -9,3 +9,7 @@ hspd= 0;
 enemy_hp = 1;
 hit_cd = 0;
 t_red = 0;
+
+
+image_alpha = 0;
+image_xscale = -1;

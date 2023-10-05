@@ -11,7 +11,7 @@ if global.secrets_j2_s1 = 0
 
 
 instance_create_depth(144,128,0,obj_pad_blue);
-instance_create_depth(192,224,0,obj_bomb_creator);
+instance_create_depth(208,256,0,obj_bomb_creator);
 instance_create_depth(256,160,0,obj_bomb_emitter);
 instance_create_depth(400,240,0,obj_platform_2_v);
 var o1 = instance_create_depth(560,184,0,obj_trapfire);

@@ -12,7 +12,10 @@
     "name": "Firing",
     "path": "folders/Objects/Enemies/!MOLDED GROUP/Firing.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_parent_combo",
+    "path": "objects/obj_enemy_parent_combo/obj_enemy_parent_combo.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

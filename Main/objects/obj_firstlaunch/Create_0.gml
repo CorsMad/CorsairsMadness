@@ -7,18 +7,22 @@
 
 
 
-    global.hp = 4;           // 4
-    global.hp_max = 4;       // 4
-    global.choosed_item = 0; // 1- бумер 2 -топ // 3 - бомба // 11 - арбалет
-    global.choosed_item_tier = 0; // ТИР предмета
-    global.choosed_itemboat = 0; // 1 - ? 2 - 2пистолета 
-    global.choosed_itemboat_tier = 0; // ТИП предмета для лодки
+    global.hp = 5;           
+    global.hp_max = 5;       
+    global.choosed_item = 0; 
+    global.choosed_item_tier = 0; 
+    global.choosed_itemboat = 0; 
+    global.choosed_itemboat_tier = 0; 
     global.mana = 3;
     global.mana_max = 3;
-    global.gold = 0; //global.money_saved;          // 0
-    global.gold_prelevel = 0; //global.money_saved;          // 0
-    global.darkessence = 0//global.darkessence_saved;
-
+    global.gold = 0;
+    global.gold_prelevel = 0; 
+    global.darkessence = 0;
+    global.superattack1 = 0;
+    global.superattack2 = 0;
+    global.superattack3 = 0;
+    global.ftp = 0; 
+    global.PlayerTransition = 0;
 #region Объявление переменных
     scr_create_array_objects();
     scr_create_array_gold();
@@ -28,30 +32,79 @@
 
     #region Диалоги
 
+    //0
     global.dia_jungleChief = 0; 
+    global.dia_desertChief = 0;
+    global.dia_snowChief = 0;
+    global.dia_shadowChief = 0;
+    global.dia_lavaChief = 0;
+    
+    //0
     global.dia_jungleMerch = 0; 
+    global.dia_desertMerch = 0; 
+    global.dia_snowMerch = 0;     
+    global.dia_shadowMerch = 0; 
+    global.dia_lavaMerch = 0; 
+    
+    //2
     global.dia_jungleComt = 2; 
+    global.dia_desertComt = 2;  
+    global.dia_snowComt = 2; 
+    global.dia_shadowComt = 2; 
+    global.dia_lavaComt = 2;
+     
+    //0 
+    global.saved_jungle = 0;
+    global.saved_desert = 0;
+    global.saved_snow = 0;
+    global.saved_shadow = 0;
+    global.saved_vulcano = 0;
+    
+    //0
+    global.dia_jungleMerch_f_talk = 0;
+    global.dia_desertMerch_f_talk = 0;
+    global.dia_snowMerch_f_talk = 0;
+    global.dia_shadowMerch_f_talk = 0;
+    global.dia_vulcanoMerch_f_talk = 0;
     
     #endregion
 
-    #region Разрешение на пушку 
-
-    global.cannon_j2_r1 = 0;
-
-    #endregion
-
-    #region Зеленые ключи
+    #region ключи
     global.key_green1 = 0;
     global.key_green2 = 0;
+    
+    global.key_yellow1 = 0;
+    global.key_yellow2 = 0;
+    
+    global.key_blue1 = 0;
+    global.key_blue2 = 0;
+    
+    global.key_purple1 = 0;
+    global.key_purple2 = 0;
+    
+    global.key_red1 = 0;
+    global.key_red2 = 0;
     #endregion
 
     #region ТЕСТ Магазин
 
     global.shop_axe_can_upgrade1 = 0;
     global.shop_axe_can_upgrade2 = 0;
-
+    global.shop_bomb_can_upgrade1 = 0;
+    global.shop_bomb_can_upgrade2 = 0;
+    global.shop_sparkle_can_upgrade1 = 0;
+    global.shop_sparkle_can_upgrade2 = 0;
+    global.shop_eparrot_can_upgrade1 = 0;
+    global.shop_eparrot_can_upgrade2 = 0;
+    
+    global.shop_rapidfire_can_upgrade1 = 0;
+    global.shop_rapidfire_can_upgrade2 = 0;
     global.shop_dualpistols_can_upgrade1 = 0;
     global.shop_dualpistols_can_upgrade2 = 0;
+    global.shop_blunderbuss_can_upgrade1 = 0;
+    global.shop_blunderbuss_can_upgrade2 = 0;
+    global.shop_parrotcage_can_upgrade1 = 0;
+    global.shop_parrotcage_can_upgrade2 = 0;
 
     #region Покупки человека
 
@@ -59,15 +112,43 @@
     global.purch_anch1 = 0;
     global.purch_anch2 = 0;
     global.purch_anch3 = 0;
+    // Бомба
+    global.purch_bomb1 = 0;
+    global.purch_bomb2 = 0;
+    global.purch_bomb3 = 0;
+    // Sparkle
+    global.purch_sparkle1 = 0;
+    global.purch_sparkle2 = 0;
+    global.purch_sparkle3 = 0;
+    // Eparrot
+    global.purch_eparrot1 = 0;
+    global.purch_eparrot2 = 0;
+    global.purch_eparrot3 = 0;
 
     #endregion
 
     #region Покупки Лодки
 
-    //якорь
+
+    // Быстровыстр
+    global.purch_rapidfire1 = 0;
+    global.purch_rapidfire2 = 0;
+    global.purch_rapidfire3 = 0;
+    
+    //двойные пистолеты
     global.purch_dualpistols1 = 0;
     global.purch_dualpistols2 = 0;
     global.purch_dualpistols3 = 0;
+    
+    // blunderbuss
+    global.purch_blunderbuss1 = 0;
+    global.purch_blunderbuss2 = 0;
+    global.purch_blunderbuss3 = 0;
+    
+    // parrot cage
+    global.purch_parrotcage1 = 0;
+    global.purch_parrotcage2 = 0;
+    global.purch_parrotcage3 = 0;
 
     #endregion
 
@@ -103,13 +184,228 @@
     global.completed_JF1 = 0;
     global.completed_JF2 = 0;
     
+    global.completed_PD1 = 0;
+    global.completed_PD2 = 0;
+    
+    global.completed_PS1 = 0;
+    global.completed_PS2 = 0;
+    
+    global.completed_PG1 = 0;
+    global.completed_PG2 = 0;
+    
+    global.completed_PL1 = 0;
+    global.completed_PL2 = 0;
+    
     #endregion
     
     #region Важные катсцены 
-    global.Cutscene_f1_r33 = 1;
+    global.Cutscene_f1_r33 = 1;    
+    global.Cutscene_dp1_r16 = 1;
+    global.Cutscene_sp1_r14 = 1;
+    global.Cutscene_pg1_r17 = 1;
+    global.Cutscene_pl1_r15 = 1;
+    
+     
+    global.Cutscene_jp2_r15 = 1;
+    global.Cutscene_pd2_r15 = 1;
+    global.Cutscene_sp2_r14 = 1;
+    global.Cutscene_gp2_r14 = 1;
+    global.Cutscene_lp2_r16 = 1;
+    
+	
+	global.Cutscene_di_lastboss = 1; //1
     #endregion
 
+    #region  ВСЕ ПО УРОВНЯМ
+    
+    #region Jungle
+    /* 1 УРОВЕНЬ */
+    #region Сундуки
+    global.chest_j1_r3 = 1;
+    global.chest_j1_r7 = 1;
+    global.chest_j1_r9 = 1;
+    global.chest_j1_r14 = 1;
+    #endregion
+    
+    #region Монеты
+    global.secrets_j1_r5 = 0;
+    global.secrets_j1_s1 = 0;
+    global.secrets_j1_r16 = 0;
+    #endregion
+    
+    #region Головоломка
+    global.maze_trigger1_j1_r13 = 0;
+    global.maze_trigger2_j1_r13 = 0;
+    global.maze_trigger3_j1_r13 = 0;
+    global.maze_trigger4_j1_r13 = 0;
+    
+    #endregion
 
+/* 2 УРОВЕНЬ */
+
+    #region Сундуки
+    global.chest_j2_r1 = 1;
+    global.chest_j2_r3 = 1;
+    global.chest_j2b_r4 = 1;
+    global.chest_J2p_r3 = 1;
+    #endregion
+    
+    #region Монеты
+    global.secrets_j2_s1 = 0;
+    global.secrets_j2p_r4 = 0;
+    global.secrets_J2b_s1 = 0;
+    #endregion
+    
+    #region Проходы
+    global.secretpass_j2_r4 = 1;
+    global.secretpass_j2b_r3 = 1;
+    
+    #endregion
+    
+    
+/*  ENDURANCE JUNGLE */
+
+    #region  Монета
+    global.secrets_j2_endurance = 0;
+    #endregion
+    #endregion
+    
+    #region Desert
+
+ /* 1 УРОВЕНЬ */
+
+ 
+    #region Сундуки
+    global.chest_d1_r2 = 1;
+    global.chest_d1_r6 = 1;
+    global.chest_d1_r10 = 1;
+    global.chest_d1_r15 = 1;
+    #endregion
+    
+    #region Монеты
+    global.secrets_d1_s1 = 0;
+    global.secrets_d1_s2 = 0;
+    global.secrets_d1_s3 = 0;
+    global.secrets_d_endurance = 0;
+    #endregion
+
+ /* 2 УРОВЕНЬ */
+#region Сундуки
+	global.chest_d2_r3 = 1;
+	global.chest_d2_r7 = 1;
+	global.chest_d2b_r5 = 1;
+	global.chest_d2p_r3 = 1;
+#endregion
+ 
+ #region Монеты
+	global.secrets_d2_r5 = 0;
+	global.secrets_d2b_s1 = 0;
+	global.secrets_d2p_r4 = 0;
+ #endregion
+ 
+ 
+
+    
+#endregion
+    
+    #region Snow
+    
+    #region S1
+
+global.chest_s1_r3 = 1;
+global.chest_s1_r6 = 1
+global.chest_s1_r11 = 1;
+global.chest_s1_r16 = 1;
+
+global.secrets_s1_r7 = 0;
+global.secrets_s1_r13 = 0;
+global.secrets_s1_s1 = 0 
+
+#endregion
+
+global.secrets_sn_endurance = 0;
+
+#region S2
+
+
+global.chest_s2_r2 = 1;
+global.chest_s2_r7 = 1;
+global.chest_s2b_r3 = 1;
+global.chest_s2p_r3 = 1;
+
+global.secrets_s2_s1 = 0;
+global.secrets_s2b_r5 = 0;
+global.secrets_s2p_s = 0 
+
+#endregion
+    
+    #endregion
+    
+    #region LAVA
+
+
+
+#region сундуки
+global.chest_l1_r3 = 1;
+global.chest_l1_r5 = 1;
+global.chest_l1_r10 = 1;
+global.chest_l1_r15 = 1;
+
+global.chest_l2_r2 = 1;
+global.chest_l2_r7 = 1;
+global.chest_l2b_r3 = 1;
+global.chest_l2p_r4 = 1;
+#endregion
+
+#region секреты
+
+global.secrets_l_endurance = 0;
+
+
+global.secrets_l1_r3 = 0;
+global.secrets_lava1_s1 = 0;
+global.secrets_lava1_s2 = 0;
+
+global.secrets_l2_r3 = 0;
+global.secrets_l2b_r5 = 0;
+global.secrets_l2p_s = 0;
+
+#endregion
+
+#endregion
+    
+    #region SHADOW
+
+
+
+#region Сундуки
+global.chest_g1_r3 = 1;
+global.chest_g1_r7 = 1;
+global.chest_g1_r11 = 1;
+global.chest_g1_r16 = 1;
+
+global.chest_g2_r4 = 1;
+global.chest_g2_r7 = 1;
+global.chest_g2b_r3 = 1;
+global.chest_g2p_r4 = 1;
+
+#endregion
+
+#region Секреты
+global.secrets_g_endurance = 0;
+
+global.secrets_g1_s1 = 0;
+global.secrets_g1_r12 = 0;
+global.secrets_g1_s2 = 0;
+
+global.secrets_g2_r6 = 0;
+global.secrets_g2b_s = 0;
+global.secrets_g2p_r6 = 0;
+#endregion
+
+#endregion
+    
+    #endregion
 
 global.TargetX = 64;
 global.TargetY = 224;

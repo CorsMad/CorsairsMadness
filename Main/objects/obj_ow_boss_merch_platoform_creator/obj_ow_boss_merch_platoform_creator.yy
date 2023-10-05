@@ -33,5 +33,5 @@
     "path": "sprites/spr_moving_platform3_mask/spr_moving_platform3_mask.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

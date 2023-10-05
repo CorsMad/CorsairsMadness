@@ -64,7 +64,9 @@ function fnc_lng_store(){
             #region Jade coins
                 menu[4, 0] = "";//"Rapid fire";
                 menu[4, 1] = "";//"Double fire";
-                menu[4, 2] = "\n\n\n\n\n\n\n\n\nBACK";//"blunderbuss";
+                menu[4, 2] = "";//"Double fire";
+                menu[4, 3] = "";//"Double fire";
+                menu[4, 4] = "\n\n\n\n\n\n\nBACK";//"blunderbuss";
                 #endregion
 
             #region Описания 

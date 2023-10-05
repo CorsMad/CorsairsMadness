@@ -131,3 +131,5 @@ pk_use_abil = fnc_keyboard_key_change(global.abil_key);
 
 delay = 0;
 #endregion
+
+dest = 0;

@@ -12,12 +12,13 @@ if move!= 0
 {
     fnc_snd_play_over(snd_menu_select);
     index+=move;
-    var size = array_length_2d(menu, submenu);
+    var size = array_length(menu);
+    //var size = array_length_2d(menu, submenu);
     if index < 0 index = size - 1;
     else if index >=size  index = 0;
 }
 
-if movelr!= 0 && (submenu = 1 || submenu = 2 || submenu = 3)
+if movelr!= 0 && (submenu = 1 || submenu = 2 || submenu = 3 || submenu = 4)
     {
         fnc_snd_play_over(snd_menu_select);
         dindex += movelr;
@@ -53,13 +54,24 @@ if key_jump_pressed || key_attack // accept
                     break;
                 case 4: 
                     fnc_snd_play_over(snd_menu_accept);
+                    
+                    
+                    if instance_exists(obj_npc_junglev_merch) global.PlayerTransition = 0;
+                    if instance_exists(obj_npc_desertv_merch) global.PlayerTransition = 1;
+                    if instance_exists(obj_npc_snowv_merch)   global.PlayerTransition = 2;
+                    if instance_exists(obj_npc_shadowv_merch) global.PlayerTransition = 3;
+                    if instance_exists(obj_npc_lavav_merch)   global.PlayerTransition = 4;
+                    
                     scr_save_progress();
-                    instance_destroy();
+                    
 					if instance_exists(obj_npc_junglev_merch)  instance_create_depth(x,y,-100000,obj_npc_junglev_merch_choose);
 					if instance_exists(obj_npc_desertv_merch)  instance_create_depth(x,y,-100000,obj_npc_desertv_merch_choose);
 					if instance_exists(obj_npc_shadowv_merch)  instance_create_depth(x,y,-100000,obj_npc_shadowv_merch_choose);
 					if instance_exists(obj_npc_lavav_merch)    instance_create_depth(x,y,-100000,obj_npc_lavav_merch_choose);
 					if instance_exists(obj_npc_snowv_merch)    instance_create_depth(x,y,-100000,obj_npc_snowv_merch_choose);
+                    
+                    instance_destroy();
+                    
                     break;
                     
             }
@@ -227,12 +239,18 @@ if key_jump_pressed || key_attack // accept
             switch(index)
             {
                 case 0:
-                    if global.secrets >= 3 {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                    if global.secrets >= 4 {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
                     break;
                 case 1:
                     if global.secrets >= 3 {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
                     break;
                 case 2:
+                    if global.hp_max > 5 {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                    break;
+                case 3:
+                    if global.mana_max > 3 {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                    break;
+                case 4:
                     fnc_snd_play_over(snd_menu_accept);
                     submenu = 0;
                     index = 3;
@@ -587,11 +605,11 @@ if buy_confirm
                         switch(index)
                         {
                             case 0: // Обмен монет на ХП
-                                if global.secrets >=3 
+                                if global.secrets >=4 
                                 {
                                     fnc_snd_play_over(snd_menu_accept);
                                     buy_confirm = 0;
-                                    global.secrets -= 3;
+                                    global.secrets -= 4;
                                     global.hp_max +=1;
                                     global.hp = global.hp_max;
                                 }
@@ -603,6 +621,26 @@ if buy_confirm
                                     buy_confirm = 0;
                                     global.secrets -= 3;
                                     global.mana_max +=1;
+                                    global.mana = global.mana_max;
+                                }
+                                break;
+                            case 2: // Обмен моент на ману
+                                if global.hp_max > 5 
+                                {
+                                    fnc_snd_play_over(snd_menu_accept);
+                                    buy_confirm = 0;
+                                    global.secrets += 4;
+                                    global.hp_max -=1;
+                                    global.hp = global.hp_max;
+                                }
+                                break;
+                            case 3: // Обмен моент на ману
+                                if global.mana_max > 3 
+                                {
+                                    fnc_snd_play_over(snd_menu_accept);
+                                    buy_confirm = 0;
+                                    global.secrets += 3;
+                                    global.mana_max -=1;
                                     global.mana = global.mana_max;
                                 }
                                 break;

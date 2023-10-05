@@ -10,9 +10,9 @@ if start = 1
         if alpha >= 1
         {
             // Положение на карте
-            
+            fnc_msc_stop_play();
             global.PlayerOnIsland = 0;
-            room_goto(GlobalMapPrologue);
+            room_goto(Tutor_1_transition_to_boat);
         	instance_destroy();	
         }	
     }

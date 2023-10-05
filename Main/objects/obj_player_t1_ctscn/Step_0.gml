@@ -40,7 +40,7 @@ if state = 1
 {
     sprite_index = spr_player_idle;
     t++;
-    if t = 150
+    if t = 80
     {
         t = 0;
         state = 2;
