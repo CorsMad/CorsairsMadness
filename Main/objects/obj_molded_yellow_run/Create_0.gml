@@ -20,6 +20,6 @@ get_kicked = 0;
 cloud_cr = instance_create_depth(x,y,depth-1,obj_molded_yellow_cloud_running);
 cloud_cr.obj_cr = id;
 
-enemy_hp = 15;
+enemy_hp = 10;
 
 t_red = 0;

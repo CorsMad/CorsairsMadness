@@ -6,6 +6,13 @@ function scr_save_progress(){
 
 var _saveStorage = 
 {
+	TargetRoom                  : global.TargetRoom	   ,
+	TargetX                     : global.TargetX	   ,
+	TargetY                     : global.TargetY	   ,
+	fTargetRoom                 : global.fTargetRoom   ,
+	fTargetX                    : global.fTargetX	   ,
+	fTargetY                    : global.fTargetY	   ,
+	
     hp_max                      : global.hp_max, // max HP
     mana_max                    : global.mana_max,
     gold                        : global.gold,
@@ -360,7 +367,13 @@ function scr_load_progress(){
         
         var _loadStorage = json_parse(_string);
         
-        
+			global.TargetRoom	  =  _loadStorage.TargetRoom
+			global.TargetX   	  =  _loadStorage.TargetX   
+			global.TargetY   	  =  _loadStorage.TargetY   
+			global.fTargetRoom	  =  _loadStorage.fTargetRoom
+			global.fTargetX  	  =  _loadStorage.fTargetX  
+			global.fTargetY  	  =  _loadStorage.fTargetY  
+			
             global.hp_max                   =   _loadStorage.hp_max                 ; // max HP
             global.mana_max                 =   _loadStorage.mana_max               ;  
             global.gold                     =   _loadStorage.gold                   ;

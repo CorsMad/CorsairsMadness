@@ -10,3 +10,4 @@ hit_cd = 0;
 vspd = -6;
 hspd = 6;
 image_speed = 0;
+obj_Player.depth = -1;

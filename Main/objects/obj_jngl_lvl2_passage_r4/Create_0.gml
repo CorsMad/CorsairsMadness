@@ -3,10 +3,10 @@
 
 var i1 = instance_create_depth(440,24,50,obj_destrutable_chain_block_simple)
 i1.sprite_index = spr_destructable_tile_jungle 
-i1.image_index = 25;
+i1.image_index = 10;
 var i2 = instance_create_depth(440,40,50,obj_destrutable_chain_block_simple)
 i2.sprite_index = spr_destructable_tile_jungle 
-i2.image_index = 10;
+i2.image_index = 25;
 var i3 = instance_create_depth(456,24,50,obj_destrutable_chain_block_simple)
 i3.sprite_index = spr_destructable_tile_jungle 
 i3.image_index = 28;

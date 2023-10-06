@@ -10,3 +10,6 @@ i.xoffset = 6;
 i.yoffset = 4;
 b = 0;
 isDead = 0;
+
+enemy_hp = 0.1;
+hit_cd = 0;

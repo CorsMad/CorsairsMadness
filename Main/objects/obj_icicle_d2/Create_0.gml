@@ -6,3 +6,6 @@ image_speed = 0;
 hspd = 0;
 vspd = 0;
 image_index = 1;
+
+t=0;
+image_alpha = choose(0.4,0.7);

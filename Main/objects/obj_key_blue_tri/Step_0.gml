@@ -8,6 +8,8 @@ if state = 0
     {
         state = 1;   
     }
+	y+=vspd;
+	vspd = lerp(vspd,0,0.1);
 }
 
 

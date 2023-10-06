@@ -37,7 +37,7 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     index = 0;
                     break;
                 case 1: 
-                    if instance_exists(obj_pause_controller_map) obj_pause_controller_map.isPaused = 0;
+                    if instance_exists(obj_pause_controller) obj_pause_controller.isPaused = 0;
                     instance_activate_all();
                     instance_destroy();
                     break;

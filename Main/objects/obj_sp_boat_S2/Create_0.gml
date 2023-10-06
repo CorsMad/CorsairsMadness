@@ -7,16 +7,14 @@ if instance_exists(obj_Player_boat)
     obj_Player_boat.obj_sp_boat_level = obj_sp_boat_S2; 
 }
 
-state = 10;
 
-/*
 switch(global.boatCheckpoint)  // Чекпоинт
 {
     case 0: state = 0;break;
     case 1: state = 4;break;
     case 2: state = 8;break;
 }
-*/
+
 
 // Музыка
 //instance_create_depth(0,0,0,obj_music_controller_boat);

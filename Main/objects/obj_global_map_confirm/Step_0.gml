@@ -1,7 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-menu_input();
+player_input();
+var sl = keyboard_check_pressed(vk_left)
+var sr = keyboard_check_pressed(vk_right)
+var su = keyboard_check_pressed(vk_up)
+var sd = keyboard_check_pressed(vk_down)
+var saccept = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)
 image_index = select;
 
 
@@ -9,10 +14,10 @@ if t < 10 t++;
 
 if t > 5
 {
-    if key_left select = 0;
-    if key_right select = 1;
+    if (key_left  || sl)  select = 0;
+    if (key_right || sr)  select = 1;
     
-    if key_jump || key_attack
+    if key_jump || key_attack || saccept
     {
         switch(select)
         {

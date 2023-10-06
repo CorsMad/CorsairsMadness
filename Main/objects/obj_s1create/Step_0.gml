@@ -4,7 +4,7 @@
 t++;
 if t = 100 
 {
-    var i = instance_create_depth(-16,-16,0,obj_Player);
+    var i = instance_create_depth(-16,-16,-1,obj_Player);
     i.state = 0;
     i.specabilnumber = 5;
     instance_create_depth(-16,-16,0,obj_room_transition_to_loading); 

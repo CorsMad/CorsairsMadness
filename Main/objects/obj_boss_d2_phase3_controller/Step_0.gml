@@ -33,11 +33,13 @@ if state = 0
         {
             case -1: 
                 var i = instance_create_depth(32,240,0,obj_boss_d2_phase3);
+				i.enemy_hp = enemy_hp;
                 i.mov = 1; 
                 i.fol = id;
                 break;
             case 1: 
                 var i = instance_create_depth(448,240,0,obj_boss_d2_phase3);
+				i.enemy_hp = enemy_hp;
                 i.mov = -1; 
                 i.fol = id;
                 break;

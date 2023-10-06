@@ -12,7 +12,10 @@
     "name": "S2_r2",
     "path": "folders/Objects/Level objects SPECIAL/S2_r2.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_parent_no_armor",
+    "path": "objects/obj_enemy_parent_no_armor/obj_enemy_parent_no_armor.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

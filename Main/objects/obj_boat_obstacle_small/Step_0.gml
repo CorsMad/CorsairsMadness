@@ -18,7 +18,19 @@ fnc_boat_destroyer();
 
 fnc_boat_take_dmg_obstacle()
 
-fnc_enemy_no_armor_noblend_dmg();
+fnc_boat_take_dmg_pistol(1)
+
+fnc_boat_take_dmg_dual_pistol(0.4,0.6,0.8) 
+
+fnc_boat_take_dmg_cannon(10) 
+
+fnc_boat_take_dmg_parrotcage(1,1.4,1.8,2)
+
+fnc_boat_take_dmg_blunderbuss(0.5)
+
+fnc_boat_take_dmg_fastshot(0.5,1)
+
+fnc_enemy_no_armor_dmg();
 /*
 if enemy_hp < 2
 {

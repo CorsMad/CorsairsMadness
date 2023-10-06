@@ -1781,12 +1781,6 @@ if isDead = 1
 	isCarry = 0;
 	
 	
-	if instance_exists(obj_music_controller_jungle)
-    {
-        instance_destroy(obj_music_controller_jungle);   
-    } 
-    audio_stop_sound(msc_Jungle1);
-    audio_stop_sound(msc_Jungle1_boss);
     
 	y+=vspd;
 	vspd = lerp(vspd,0,0.05);

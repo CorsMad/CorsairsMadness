@@ -13,7 +13,7 @@ if place_meeting(x,y,obj_Player)
 {
     fnc_snd_play_over(snd_secrets_gain);
 	instance_create_depth(x,y,depth-1,obj_sfx2);
-	global.secrets_d1_s2 = 1;
+	global.secrets_d2p_r4 = 1;
 	global.secrets +=1;
 	instance_destroy();
 }

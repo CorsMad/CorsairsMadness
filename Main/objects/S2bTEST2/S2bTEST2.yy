@@ -36,5 +36,5 @@
     "name": "spr_skeleton_mask",
     "path": "sprites/spr_skeleton_mask/spr_skeleton_mask.yy",
   },
-  "visible": true,
+  "visible": false,
 }

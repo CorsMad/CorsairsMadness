@@ -12,7 +12,10 @@
     "name": "Mine",
     "path": "folders/Objects/Enemies/!BOAT GROUP/Mine.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_test",
+    "path": "objects/obj_enemy_test/obj_enemy_test.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

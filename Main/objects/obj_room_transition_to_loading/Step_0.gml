@@ -2,6 +2,11 @@
 // You can write your code in this editor
 if place_meeting(x,y,obj_Player) 
 {
+if instance_exists(obj_weather_sandstorm){
+	with(obj_weather_sandstorm){
+		part_particles_clear(partWind_sys);	
+	}
+}
 
 room_goto(LoadingRoom);
 

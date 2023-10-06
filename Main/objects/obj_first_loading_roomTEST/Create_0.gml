@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.TargetX      = 236;
+global.TargetX      = 80;
 //global.TargetY      = 784;
-global.TargetY      = 240;
-global.TargetRoom   = D2_boss;
+global.TargetY      = 208;
+global.TargetRoom   = S2_boss;
 
 
 global.fTargetX     = 64;
@@ -177,9 +177,9 @@ global.purch_parrotcage3 = 0;
 global.hp = 5;           // 4
 global.hp_max = 5;       // 4
 global.choosed_item = 5; // 1- бумер 2 -топ // 3 - бомба // 4 - eball // 5 - parrot // 11 - арбалет
-global.choosed_item_tier = 2; // ТИР предмета
-global.choosed_itemboat = 0; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
-global.choosed_itemboat_tier = 0; // ТИП предмета для лодки
+global.choosed_item_tier = 3; // ТИР предмета
+global.choosed_itemboat = 4; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
+global.choosed_itemboat_tier = 3; // ТИП предмета для лодки
 global.superattack1 = 2;// Суператаки  max 2  default - 0
 global.superattack2 = 1;// Суператаки  max 1  default - 0
 global.superattack3 = 1;// Суператаки  max 1  default - 0

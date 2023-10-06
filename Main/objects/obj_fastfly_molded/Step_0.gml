@@ -34,7 +34,7 @@ if state = 2
         case 40:image_index = 5;break;
         case 50:image_index = 6;break;
     }
-    if t = 60
+    if t = 90
     {
         spd = 3;
         t = 0;

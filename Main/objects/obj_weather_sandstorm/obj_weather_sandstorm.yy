@@ -12,7 +12,10 @@
     "name": "Sandstorm",
     "path": "folders/Objects/Weather/Sandstorm.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_weather_main",
+    "path": "objects/obj_weather_main/obj_weather_main.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

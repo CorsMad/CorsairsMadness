@@ -12,7 +12,10 @@
     "name": "Surf archer",
     "path": "folders/Objects/Enemies/!BOAT GROUP/Skeleton Surf/Surf archer.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_test",
+    "path": "objects/obj_enemy_test/obj_enemy_test.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
