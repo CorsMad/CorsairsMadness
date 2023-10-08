@@ -13,5 +13,5 @@ hit_cd = 0;
 vulnerable = 0;
 bounce = 0;
 t_red = 0;
-enemy_hp = 15;
+enemy_hp = 10;
 hits_cd = 0;

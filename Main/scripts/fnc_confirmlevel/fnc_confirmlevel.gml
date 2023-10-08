@@ -5,9 +5,16 @@ function fnc_confirmlevel1(argument0){
 // You can write your code in this editor
 fnc_lng_level_confirm1();
 player_input();
+var sl = keyboard_check_pressed(vk_left)
+var sr = keyboard_check_pressed(vk_right)
+var su = keyboard_check_pressed(vk_up)
+var sd = keyboard_check_pressed(vk_down)
+var saccept = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)
 
-var move = key_down_pressed - key_up_press;
-var movelr = key_right_press - key_left_press;
+var move = (key_down_pressed - key_up_press) ;
+var movelr = (key_right_press - key_left_press) ;
+var move2 = (sd - su) ;
+var movelr2 = (sr - sl) ;
 
 
 if move!= 0 
@@ -27,8 +34,25 @@ if movelr!= 0
     else if dindex >= 3 dindex = 0;
 }
 
+if move2!= 0 
+{
+    fnc_snd_play_over(snd_menu_select);
+    index+=move2;
+    var size = array_length_2d(menu, submenu);
+    if index < 0 index = size - 1;
+    else if index >=size  index = 0;
+}
 
-if key_attack || key_jump_pressed // accept
+if movelr2!= 0 
+{
+    fnc_snd_play_over(snd_menu_select);
+    dindex += movelr2;
+    if dindex < 0 dindex = 2;
+    else if dindex >= 3 dindex = 0;
+}
+
+
+if key_attack || key_jump_pressed || saccept // accept
 {
     switch(submenu)
     {
@@ -217,7 +241,7 @@ if key_attack || key_jump_pressed // accept
                                 break;
                             case 94: // колиз лава
                                 global.TargetX = 48;
-                                global.TargetY = 240;
+                                global.TargetY = 224;
                                 global.TargetRoom = EnduranceLava;
                                 room_goto(L1FirstEndurance);
                                 break;
@@ -548,9 +572,17 @@ function fnc_confirmlevel2(argument0){
 // You can write your code in this editor
 fnc_lng_level_confirm2();
 player_input();
+var sl = keyboard_check_pressed(vk_left)
+var sr = keyboard_check_pressed(vk_right)
+var su = keyboard_check_pressed(vk_up)
+var sd = keyboard_check_pressed(vk_down)
+var saccept = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)
 
-var move = key_down_pressed - key_up_press;
-var movelr = key_right_press - key_left_press;
+var move = (key_down_pressed - key_up_press) ;
+var movelr = (key_right_press - key_left_press) ;
+var move2 = (sd - su) ;
+var movelr2 = (sr - sl) ;
+
 
 if move!= 0 
 {
@@ -569,8 +601,25 @@ if movelr!= 0
     else if dindex >= 3 dindex = 0;
 }
 
+if move2!= 0 
+{
+    fnc_snd_play_over(snd_menu_select);
+    index+=move2;
+    var size = array_length_2d(menu, submenu);
+    if index < 0 index = size - 1;
+    else if index >=size  index = 0;
+}
 
-if key_attack || key_jump_pressed // accept
+if movelr2!= 0 
+{
+    fnc_snd_play_over(snd_menu_select);
+    dindex += movelr2;
+    if dindex < 0 dindex = 2;
+    else if dindex >= 3 dindex = 0;
+}
+
+
+if key_attack || key_jump_pressed || saccept // accept
 {
     switch(submenu)
     {

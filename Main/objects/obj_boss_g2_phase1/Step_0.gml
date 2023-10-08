@@ -29,7 +29,8 @@ if (state = 0) {
             image_index =0 ;
             image_speed =0;
 		}
-	}		
+	}	
+    if instance_exists(obj_boss_g2_phase1_mask) instance_destroy(obj_boss_g2_phase1_mask)
 }
 
 if (state = 1.2) { // вверху слева
@@ -41,7 +42,11 @@ if (state = 1.2) { // вверху слева
         case 10: image_index = 2;break;
         case 15: image_index = 3;break;
         case 20: image_index = 4;break;
-        case 25: sprite_index = spr_boss_g2_p1_idle;image_speed = 1;break;        
+        case 25: sprite_index = spr_boss_g2_p1_idle;image_speed = 1;
+           var m =  instance_create_depth(x,y,depth,obj_boss_g2_phase1_mask);
+           m.fol = id;
+           m.enemy_hp = enemy_hp;
+            break;        
         case 100: image_index = 0;sprite_index = spr_boss_g2_p1_attack;image_speed = 0;break;
         case 140: image_index = 1;break;
         case 145: image_index = 2;break;
@@ -85,7 +90,11 @@ if (state = 1.4) { // вверху справа
         case 10: image_index = 2;break;
         case 15: image_index = 3;break;
         case 20: image_index = 4;break;
-        case 25: sprite_index = spr_boss_g2_p1_idle;image_speed = 1;break;        
+        case 25: sprite_index = spr_boss_g2_p1_idle;image_speed = 1;
+        var m =  instance_create_depth(x,y,depth,obj_boss_g2_phase1_mask);
+           m.fol = id;
+           m.enemy_hp = enemy_hp;
+        break;        
         case 100: image_index = 0;sprite_index = spr_boss_g2_p1_attack;image_speed = 0;break;
         case 140: image_index = 1;break;
         case 145: image_index = 2;break;
@@ -127,7 +136,11 @@ if (state = 1.6) { // внизу слева
         case 10: image_index = 2;break;
         case 15: image_index = 3;break;
         case 20: image_index = 4;break;
-        case 25: sprite_index = spr_boss_g2_p1_idle;image_speed = 1;break;        
+        case 25: sprite_index = spr_boss_g2_p1_idle;image_speed = 1;
+        var m =  instance_create_depth(x,y,depth,obj_boss_g2_phase1_mask);
+           m.fol = id;
+           m.enemy_hp = enemy_hp;
+        break;        
         case 100: image_index = 0;sprite_index = spr_boss_g2_p1_attack;image_speed = 0;break;
         case 140: image_index = 1;break;
         case 145: image_index = 2;break;
@@ -167,7 +180,11 @@ if (state = 1.8) { // вверху справа
         case 10: image_index = 2;break;
         case 15: image_index = 3;break;
         case 20: image_index = 4;break;
-        case 25: sprite_index = spr_boss_g2_p1_idle;image_speed = 1;break;        
+        case 25: sprite_index = spr_boss_g2_p1_idle;image_speed = 1;
+        var m =  instance_create_depth(x,y,depth,obj_boss_g2_phase1_mask);
+           m.fol = id;
+           m.enemy_hp = enemy_hp;
+        break;        
         case 100: image_index = 0;sprite_index = spr_boss_g2_p1_attack;image_speed = 0;break;
         case 140: image_index = 1;break;
         case 145: image_index = 2;break;
@@ -206,38 +223,11 @@ if (state = 1.8) { // вверху справа
 
 if state = 0 mask_index = noone else mask_index = spr_boss_g2_phase1_mask;
 
-if state!=0
-{
-         // Атака
-
-    fnc_take_dmg_hitbox(-10,0,-1,10,0,-1);
-    
-// Топор
-
-    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
-    
-// Удар вниз   
-
-    fnc_take_dmg_hitbox_down(0,-16,-1);
-
-// Бомба
-
-    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
-
-// Eball
-
-	fnc_take_dmg_eball(0,-16,-1,1);
-
-// Parrot
-
-	fnc_take_dmg_parrot_laser(0,-16,-1,1)
-    fnc_enemy_no_armor_dmg();
-}
-
 if enemy_hp <= 0
 {
     var d = instance_create_depth(x,y,depth,obj_boss_g2_phase1_death)
     d.image_xscale = image_xscale;
+    if instance_exists(obj_boss_g2_phase1_mask) instance_destroy(obj_boss_g2_phase1_mask)
     instance_destroy();
 }
 

@@ -6,7 +6,7 @@ switch(t)
     {
         case 100:   image_index = 1;break;   
         case 105:   image_index = 2;
-		instance_create_depth(x,y+32,depth+1,obj_boat_boss_shadow_water_main)
+		instance_create_depth(x,y+36,depth+1,obj_boat_boss_shadow_water_main)
 		break;   
         case 110:   image_index = 3;break;   
         case 115:   image_index = 4;break;   

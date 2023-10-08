@@ -53,10 +53,10 @@ switch(t)
         instance_destroy();
         if obj_Player.x > room_width/2
         {
-            var d = instance_create_depth(144,208,depth,obj_boss_pl_phase3); 
+            var d = instance_create_depth(144,208,depth,obj_boss_pl_phase2); 
             d.image_xscale = image_xscale;   
         } else {
-            var d = instance_create_depth(816,208,depth,obj_boss_pl_phase3); 
+            var d = instance_create_depth(816,208,depth,obj_boss_pl_phase2); 
             d.image_xscale = image_xscale;
         }
         

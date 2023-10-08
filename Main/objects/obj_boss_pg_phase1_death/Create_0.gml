@@ -9,3 +9,11 @@ fnc_snd_play_over(snd_follower_takedmg);
 instance_create_depth(x,y-64,depth-1,obj_hp_full_gain_gift_mold);
 
 
+if instance_exists(obj_boss_pg_light_block){
+    if obj_boss_pg_light_block.state !=0 {
+        obj_boss_pg_light_block.state = 3;
+	    obj_boss_pg_light_block.t = 0;
+	    obj_boss_pg_light_block.image_index = 4;
+    }
+}
+

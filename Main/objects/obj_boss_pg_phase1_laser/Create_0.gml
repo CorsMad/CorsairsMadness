@@ -10,5 +10,5 @@ if instance_exists(obj_Player) {
 }
 
 image_speed = 2;
-
+image_angle = direction;
 

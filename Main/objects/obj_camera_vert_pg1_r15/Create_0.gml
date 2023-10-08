@@ -11,3 +11,4 @@ if instance_exists(obj_Player)
 }
 
 conf = 0;
+instance_create_depth(x,y,depth,obj_combometer) ;

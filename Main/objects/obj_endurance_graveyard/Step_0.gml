@@ -183,9 +183,9 @@ if state = 1.4 // 2 зомби + абоминация Оборотень + сп�
 	switch(t)
 	{
 		case 50:
-			instance_create_depth(96,256,1,spr_zombie_start);
-			instance_create_depth(224,256,1,spr_zombie_start);
-			instance_create_depth(368,256,1,spr_zombie_start);
+			instance_create_depth(96,256,1,obj_zombie_start);
+			instance_create_depth(224,256,1,obj_zombie_start);
+			instance_create_depth(368,256,1,obj_zombie_start);
 			if obj_Player.x > room_width/2{
 				var e1 = instance_create_depth(112,240,0,obj_molded_big_spawner_n);
 				e1.obj_cr = obj_abomination;
@@ -214,8 +214,8 @@ if state = 1.4 // 2 зомби + абоминация Оборотень + сп�
 			}
 			break;
 		case 650:
-			instance_create_depth(96,256,1,spr_zombie_start);			
-			instance_create_depth(368,256,1,spr_zombie_start);
+			instance_create_depth(96,256,1,obj_zombie_start);			
+			instance_create_depth(368,256,1,obj_zombie_start);
 			if obj_Player.x > room_width/2{
 				var e1 = instance_create_depth(112,240,0,obj_molded_big_spawner_n);
 				e1.obj_cr = obj_werewolf;
@@ -244,7 +244,7 @@ if state = 1.4 // 2 зомби + абоминация Оборотень + сп�
 if state = 1.5 // получение сундука
 {
     if t < 22 t++;
-    if t = 20 instance_create_depth(48,240,1,obj_chest_ge_1);
+    if t = 20 instance_create_depth(48,256,1,obj_chest_ge_1);
 }
 
 if state = 1.51 // Разбивка сундук

@@ -1,23 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.TargetX      = 80;
+global.TargetX      = 112;
 //global.TargetY      = 784;
-global.TargetY      = 208;
-global.TargetRoom   = S2_boss;
+global.TargetY      = 240;
+global.TargetRoom   = Village_desert;
 
 
-global.fTargetX     = 64;
-global.fTargetY     = 240;
-global.fTargetRoom  = TESTROOM;
-
-
-
-
-
-
-
-
+global.fTargetX     = 128;
+global.fTargetY     = 480;
+global.fTargetRoom  = PG2_boss;
 
 
 
@@ -90,8 +82,8 @@ global.language = 0;
 
 
 #region  ключи
-global.key_green1 = 0;
-global.key_green2 = 0;
+global.key_green1 = 1;
+global.key_green2 = 1;
 
 global.key_yellow1 = 0;
 global.key_yellow2 = 0;
@@ -269,15 +261,24 @@ global.PlayerOnIsland = 0;
         
 #region Управление default
 
-global.left_key = vk_left;
-global.right_key = vk_right;
-global.up_key = vk_up;
-global.down_key = vk_down;
-global.jump_key = ord("Z");
-global.attack_key = ord("X");
-global.dash_key = ord("C");
-global.item_key = ord("S");
-global.abil_key = ord("A");
+//global.left_key = vk_left;
+//global.right_key = vk_right;
+//global.up_key = vk_up;
+//global.down_key = vk_down;
+//global.jump_key = ord("Z");
+//global.attack_key = ord("X");
+//global.dash_key = ord("C");
+//global.item_key = ord("S");
+//global.abil_key = ord("A");
+global.left_key   = ord("A")
+global.right_key  = ord("D")
+global.up_key     = ord("W")
+global.down_key   = ord("S")
+global.jump_key   = ord("K")
+global.attack_key = ord("J");
+global.dash_key   = ord("L");
+global.item_key   = ord("I");
+global.abil_key   = ord("U");
 
 #endregion
 

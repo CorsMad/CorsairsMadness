@@ -65,7 +65,7 @@ if state = 0
         break; 
         case 272:   
             
-            instance_create_depth(x,y,depth,obj_boss_l2_phase3);
+            instance_create_depth(x,y,depth,obj_boss_le2_phase3);
             instance_create_depth(0,0,0,obj_boss_l2_tower_phase3);
             instance_destroy(obj_boss_l2_tower_floor_left);       
             instance_destroy(obj_boss_l2_tower_floor_right);       

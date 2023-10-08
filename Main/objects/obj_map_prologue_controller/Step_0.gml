@@ -26,14 +26,11 @@ if !instance_exists(obj_map_confirm)
     if canPress = 1
     {
         player_input();
-        /*
-        left = keyboard_check_pressed(vk_left);
-        up = keyboard_check_pressed(vk_up);
-        right = keyboard_check_pressed(vk_right);
-        down = keyboard_check_pressed(vk_down);
-        press = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter);
-        back = keyboard_check_pressed(vk_escape);
-        */
+        var sl = keyboard_check_pressed(vk_left)
+        var sr = keyboard_check_pressed(vk_right)
+        var su = keyboard_check_pressed(vk_up)
+        var sd = keyboard_check_pressed(vk_down)
+        var saccept = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)
     }
 
     if (key_jump || key_attack || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)) && island = 0

@@ -168,6 +168,7 @@ if state = 1.5
     && !instance_exists(obj_fastfly_molded) && !instance_exists(obj_molded_lava_boomer)
     {
         state = 2;   
+        t = 0;
     }
 }
 

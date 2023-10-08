@@ -120,7 +120,7 @@ switch(state)
 #region под свет
 if instance_exists(obj_boss_pg_light) && instance_exists(obj_boss_pg_light_block)
 {
-	if place_meeting(x,y,obj_boss_pg_light) && obj_boss_pg_light.image_index = 5
+	if place_meeting(x,y,obj_boss_pg_light_block) && obj_boss_pg_light_block.image_index = 5
 	{
 		state = 2;
 		t = 0;
@@ -200,6 +200,7 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
             obj_Player.vspd = -1.8;
         }   
         hit_stored+=1;
+        t_red =1 ;
         hit_timer = 1;
         hit_cd = 1;
         enemy_hp -= dmg_multiplier;
@@ -222,6 +223,7 @@ if place_meeting(x,y,obj_hitbox_mask_dash) // && hit_cd = 0
     obj_Player.image_index = 0;
     obj_Player.isRecoil = 1;
     obj_Player.vspd = -2;
+    t_red = 1;
     obj_Player.dashing_timer_count = 1;
     fnc_superattack_gain_attack_dash();
     fnc_molded_dark_blood_forward()
@@ -271,7 +273,7 @@ if hit_cd=10 hit_cd=0;
 if hits_cd!=0 hits_cd++;
 if hits_cd=10 hits_cd=0; 
    if t_red !=0 {t_red++;image_blend = c_red};
-   if t_red = 5 {t_red=0;image_blenc = c_white};
+   if t_red = 5 {t_red=0;image_blend = c_white};
     
 #endregion
 #endregion

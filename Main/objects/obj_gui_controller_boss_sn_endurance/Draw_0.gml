@@ -144,9 +144,9 @@ if instance_exists(obj_Player)
 	}
 	if instance_exists(obj_boss_se_phase2_2)
 	{
-		for (var i=1; i-1<obj_boss_s1_phase2_2.enemy_hp; i++) 
+		for (var i=1; i-1<obj_boss_se_phase2_2.enemy_hp; i++) 
 		{
-			draw_sprite_ext(spr_hud_bossobj_boss_se_phase2_2_hp_small,1,(camera_get_view_x(view_camera[0])+460)-i*6,camera_get_view_y(view_camera[0])+20,1,1,0, c_white,1);
+			draw_sprite_ext(spr_hud_boss_hp_small,1,(camera_get_view_x(view_camera[0])+460)-i*6,camera_get_view_y(view_camera[0])+20,1,1,0, c_white,1);
 		}
 	}
 	#endregion
@@ -200,7 +200,15 @@ if instance_exists(obj_Player)
 
 
 	draw_set_font(fnt_pixel);
-    draw_text_colour(camera_get_view_x(view_camera[0])+403,camera_get_view_y(view_camera[0])+4,"boss hp",c_white,c_white,c_white,c_white,1);
+    
+    if instance_exists(obj_endurance_snow){
+        if obj_endurance_snow.state > 2 && obj_endurance_snow.state < 3 {
+            draw_text_colour(camera_get_view_x(view_camera[0])+280,camera_get_view_y(view_camera[0])+8,"boss hp",c_white,c_white,c_white,c_white,1);   
+        } if obj_endurance_snow.state > 3 {
+            draw_text_colour(camera_get_view_x(view_camera[0])+403,camera_get_view_y(view_camera[0])+4,"boss hp",c_white,c_white,c_white,c_white,1);
+        }
+    }
+     
 	
 #endregion
 

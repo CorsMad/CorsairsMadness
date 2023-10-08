@@ -7,6 +7,7 @@ if t mod 5 = 0
 }
 switch(t){
 	case 100:
+        sprite_index = spr_boat_boss_shadow_arrival;
 		image_speed = 0;
 		image_index = 6;
 		break;

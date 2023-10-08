@@ -11,7 +11,7 @@ if isDead = 1 {
 
 
 if x < camera_get_view_x(view_camera[0])-64 instance_destroy()
-if x > camera_get_view_x(view_camera[0])+480_64 instance_destroy()
+if x > camera_get_view_x(view_camera[0])+480-64 instance_destroy()
 if y < camera_get_view_y(view_camera[0])-64 instance_destroy()
 if y > camera_get_view_y(view_camera[0])+272+64 instance_destroy()
 

@@ -35,3 +35,11 @@ if instance_exists(obj_boss_jp_light_block_r)
 {
     if obj_boss_jp_light_block_r.state != 0 obj_boss_jp_light_block_r.state = 3;
 }
+
+if instance_exists(obj_boss_pg_light_block){
+    if obj_boss_pg_light_block.state !=0 {
+       obj_boss_pg_light_block.state = 3;
+	    obj_boss_pg_light_block.t = 0;
+	    obj_boss_pg_light_block.image_index = 4;
+    }
+}

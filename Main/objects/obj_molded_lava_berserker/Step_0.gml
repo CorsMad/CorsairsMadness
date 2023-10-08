@@ -385,6 +385,12 @@ if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0
     fnc_superattack_gain_attack_dash();
     enemy_hp-=1;
 	hit_cd = 1;
+    fspd = 0;
+	hspd = sign(obj_Player.dir)*4;
+	vspd = -1;
+	bounce = 1;
+    t = 0;
+    if state!=10 state = 10;
 	obj_Player.image_index = 0;
     obj_Player.isRecoil = 1;
     obj_Player.vspd = -1;

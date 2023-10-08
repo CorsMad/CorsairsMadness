@@ -595,6 +595,7 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
 {
     if !place_meeting(x,y,obj_item_hook_masked)
     {
+        fnc_superattack_gain_attack_dash();
         if obj_Player.isGrounded = 0 
         {
             obj_Player.vspd = -1.8;
@@ -622,6 +623,7 @@ if place_meeting(x,y,obj_hitbox_mask_dash) // && hit_cd = 0
     obj_Player.vspd = -2;
     obj_Player.dashing_timer_count = 1;
     fnc_molded_dark_blood_forward()
+    fnc_superattack_gain_attack_dash();
     hit_cd = 1;
 }
 
@@ -629,6 +631,7 @@ if place_meeting(x,y,obj_hitbox_mask_hook) && hit_cd = 0
 {
     if !place_meeting(x,y,obj_item_hook_masked)
     {
+        fnc_superattack_gain_attack_dash();
         if obj_Player.isGrounded = 0 
         {
             obj_Player.vspd = -3.2;

@@ -12,6 +12,7 @@ shoot_time = 0;
 t_a1 = 150;
 t_a2 = 200;
 
-hit_cd =0;
+hit_cd = 0;
 t_red = 0;
 enemy_hp = 10
+

@@ -3,4 +3,4 @@
 t = 0;
 image_speed = 0;
 image_index = 3;
-instance_create_depth(x,y,depth-1,obj_hpmax_some_mana_gain_gift);
+instance_create_depth(x+480-32,y+270-48,depth-1,obj_hpmax_some_mana_gain_gift);

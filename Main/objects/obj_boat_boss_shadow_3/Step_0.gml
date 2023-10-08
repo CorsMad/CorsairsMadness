@@ -88,15 +88,10 @@ fnc_boat_take_dmg_blunderbuss(0.5)
 
 fnc_boat_take_dmg_fastshot(0.5,1)
 
-if enemy_hp <=0 {
-		
-}
-
 if enemy_hp <=0
 {   
-    var d = instance_create_depth(x,y,depth,obj_boat_boss_shadow_3_death);
-    d.sprite_index = sprite_index;
-    d.image_index = image_index;
+    instance_create_depth(x,y,depth,obj_boat_boss_shadow_3_death);
+
     instance_destroy();
 }
 

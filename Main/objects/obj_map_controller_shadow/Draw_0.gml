@@ -31,8 +31,8 @@ switch(globalMapCounter)
 }
 
 /////////КЛЮЧИ/////////
-if global.key_purple1 = 0 draw_sprite(spr_hud_key_sq,7,22,54) else draw_sprite(spr_hud_key_sq,8,22,54);
-if global.key_purple2 = 0 draw_sprite(spr_hud_key_tri,7,46,54) else draw_sprite(spr_hud_key_tri,8,46,54);
+if global.key_purple1 = 0 draw_sprite(spr_hud_key_sq,6,22,54) else draw_sprite(spr_hud_key_sq,7,22,54);
+if global.key_purple2 = 0 draw_sprite(spr_hud_key_tri,6,46,54) else draw_sprite(spr_hud_key_tri,7,46,54);
 
 
 draw_set_halign(fa_left)

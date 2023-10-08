@@ -12,5 +12,5 @@ hit_cd = 0;
 hits_cd = 0;
 magnet = 0;
 
-enemy_hp = 15;
+enemy_hp = 10;
 t_red = 0;

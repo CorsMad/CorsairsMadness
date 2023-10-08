@@ -15,70 +15,110 @@ if t mod 5 == 0
 switch(t)
 {
 	case 30:	image_index = 4;
-				var i1 = instance_create_depth(x-16,y-39,depth-1,obj_boss1_particle);
+				var i1 = instance_create_depth(x-16,y-39,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i1.hspd = -0.5;
 				i1.vspd = -2;
-				var i2 = instance_create_depth(x-28,y+16,depth-1,obj_boss1_particle);
+				var i2 = instance_create_depth(x-28,y+16,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i2.hspd = -1.5;
 				i2.vspd = -1;
-				var i3 = instance_create_depth(x,y-32,depth-1,obj_boss1_particle);
+				var i3 = instance_create_depth(x,y-32,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i3.hspd = 0.1;
 				i3.vspd = -1;
-				var i4 = instance_create_depth(x+28,y-21,depth-1,obj_boss1_particle);
+				var i4 = instance_create_depth(x+28,y-21,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i4.hspd = 1.5;
 				i4.vspd = -1;
-				var i5 = instance_create_depth(x+26,y+12,depth-1,obj_boss1_particle);
+				var i5 = instance_create_depth(x+26,y+12,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i5.hspd = 1;
 				i5.vspd = -2;
 				break;
 	case 60:	image_index = 5;
-				var i1 = instance_create_depth(x-20,y-34,depth-1,obj_boss1_particle);
+				var i1 = instance_create_depth(x-20,y-34,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i1.hspd = -0.5;
 				i1.vspd = -2;
-				var i2 = instance_create_depth(x-24,y+16,depth-1,obj_boss1_particle);
+				var i2 = instance_create_depth(x-24,y+16,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i2.hspd = -1.5;
 				i2.vspd = -1;
-				var i3 = instance_create_depth(x+8,y-32,depth-1,obj_boss1_particle);
+				var i3 = instance_create_depth(x+8,y-32,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i3.hspd = 0.1;
 				i3.vspd = -1;
-				var i4 = instance_create_depth(x+26,y-18,depth-1,obj_boss1_particle);
+				var i4 = instance_create_depth(x+26,y-18,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i4.hspd = 1.5;
 				i4.vspd = -1;
-				var i5 = instance_create_depth(x+29,y+13,depth-1,obj_boss1_particle);
+				var i5 = instance_create_depth(x+29,y+13,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i5.hspd = 1;
 				i5.vspd = -2;
 				break;
 	case 90:	image_index = 6;
-				var i1 = instance_create_depth(x-16,y-39,depth-1,obj_boss1_particle);
+				var i1 = instance_create_depth(x-16,y-39,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i1.hspd = -0.5;
 				i1.vspd = -2;
-				var i2 = instance_create_depth(x-28,y+16,depth-1,obj_boss1_particle);
+				var i2 = instance_create_depth(x-28,y+16,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i2.hspd = -1.5;
 				i2.vspd = -1;
-				var i3 = instance_create_depth(x,y-32,depth-1,obj_boss1_particle);
+				var i3 = instance_create_depth(x,y-32,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i3.hspd = 0.1;
 				i3.vspd = -1;
-				var i4 = instance_create_depth(x+28,y-21,depth-1,obj_boss1_particle);
+				var i4 = instance_create_depth(x+28,y-21,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i4.hspd = 1.5;
 				i4.vspd = -1;
-				var i5 = instance_create_depth(x+26,y+12,depth-1,obj_boss1_particle);
+				var i5 = instance_create_depth(x+26,y+12,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i5.hspd = 1;
 				i5.vspd = -2;
 				break;
 	case 120:	image_index = 7;                
-				var i1 = instance_create_depth(x-20,y-34,depth-1,obj_boss1_particle);
+				var i1 = instance_create_depth(x-20,y-34,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i1.hspd = -0.5;
 				i1.vspd = -2;
-				var i2 = instance_create_depth(x-24,y+16,depth-1,obj_boss1_particle);
+				var i2 = instance_create_depth(x-24,y+16,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i2.hspd = -1.5;
 				i2.vspd = -1;
-				var i3 = instance_create_depth(x+8,y-32,depth-1,obj_boss1_particle);
+				var i3 = instance_create_depth(x+8,y-32,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i3.hspd = 0.1;
 				i3.vspd = -1;
-				var i4 = instance_create_depth(x+26,y-18,depth-1,obj_boss1_particle);
+				var i4 = instance_create_depth(x+26,y-18,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i4.hspd = 1.5;
 				i4.vspd = -1;
-				var i5 = instance_create_depth(x+29,y+13,depth-1,obj_boss1_particle);
+				var i5 = instance_create_depth(x+29,y+13,depth-1,obj_boss1_particle,{
+    image_index : 1   
+});
 				i5.hspd = 1;
 				i5.vspd = -2;
 				break;

@@ -4,3 +4,5 @@
 isOn = 0;
 vspd = 0;
 max_height = 224;
+
+t = 0;

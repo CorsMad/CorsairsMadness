@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bullet_boat_dpistol_t2",
-    "path": "sprites/spr_bullet_boat_dpistol_t2/spr_bullet_boat_dpistol_t2.yy",
+    "name": "spr_item_boat_parrot_3",
+    "path": "sprites/spr_item_boat_parrot_3/spr_item_boat_parrot_3.yy",
   },
   "spriteMaskId": null,
   "visible": true,

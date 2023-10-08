@@ -1,1 +1,1 @@
-max_height = 400;
+max_height = 224;

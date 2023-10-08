@@ -12,7 +12,10 @@
     "name": "Projectiles",
     "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Graveyard/Bosses/Boss2/Phases/Projectiles.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_parent_object",
+    "path": "objects/obj_enemy_parent_object/obj_enemy_parent_object.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

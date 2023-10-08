@@ -388,9 +388,9 @@ if ((key_attack && isGrounded = 0 && isAirattacking = 0) || (key_attack && key_j
 	image_speed = 1;
     isAfterhook = 0;
 	superdash_timer = 0;
-            superdash_timer_count = 1;
-            dash_vfx_timer = 0;
-            superdash_power = 0;
+    //superdash_timer_count = 1;
+    dash_vfx_timer = 0;
+    superdash_power = 0;
     
 }
 if isAirattacking = 1 
@@ -542,7 +542,7 @@ if key_dashing && dashing_timer_count = 0 && isCarry = 0 && isAfterhook = 0 && !
         dir = -1;   
     }
 	superdash_timer = 0;
-            superdash_timer_count = 1;
+            //superdash_timer_count = 1;
             dash_vfx_timer = 0;
             superdash_power = 0;
 }
@@ -886,12 +886,16 @@ if isRecoil = 1
 
 #region Superdash
 
-if isRecoil = 0 && key_item_pressed && SpecAbilMask = 3 && superdash_timer_count = 0 && isTakingdmg = 0 && (damage_cd > 30 || damage_cd = 0) && isAttacking = 0
+if  isRecoil = 0 && key_item_pressed && SpecAbilMask = 3 && superdash_timer_count = 0 && isTakingdmg = 0 && (damage_cd > 30 || damage_cd = 0) && isAttacking = 0 
 {
+    lanhit = 0;
+    lanplace = 0;
     isDashing = 0;
     isAttacking = 0;
     isAirattacking = 0;
     doublejumpspd = 0;
+    isDashing = 0;
+    
     
     #region Анимация
     

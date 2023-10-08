@@ -4,7 +4,7 @@
 if isOn = 0 && (place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_item_boomerang))
 {
 	isOn = 1;
-	if global.key_blue2 = 0 instance_create_depth(x,y-16,depth-1,obj_key_blue_tri);			
+	if global.key_blue2 = 0 {instance_create_depth(x,y-16,depth-1,obj_key_blue_tri);	isOn = 2}		
 	image_speed = 1;
 }
 if (image_index > image_number - 1) && isOn = 1
@@ -12,7 +12,10 @@ if (image_index > image_number - 1) && isOn = 1
     image_speed = 0;
 }
 
-
+if (image_index > image_number - 1) && isOn = 2
+{
+    image_speed = 0;
+}
 
 	if isOn = 1 && a < 201 && global.key_blue2 = 1
 	{

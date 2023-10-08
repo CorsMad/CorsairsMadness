@@ -13,6 +13,11 @@ anim+=0.1;
 if anim >= 5.9 anim = 0;
 
 player_input();
+var sl = keyboard_check_pressed(vk_left)
+var sr = keyboard_check_pressed(vk_right)
+var su = keyboard_check_pressed(vk_up)
+var sd = keyboard_check_pressed(vk_down)
+var saccept = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)
 
 if !instance_exists(obj_confirm_1) && !instance_exists(obj_confirm_2) && delay <= 0
 {
@@ -23,16 +28,16 @@ if !instance_exists(obj_confirm_1) && !instance_exists(obj_confirm_2) && delay <
     {
         switch(globalMapCounter)
         {
-            case 0: if key_up_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 2};
-                    if key_right_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 3};
+            case 0: if key_up_press    || su     {fnc_snd_play_over(snd_menu_select)globalMapCounter = 2};
+                    if key_right_press || sr     {fnc_snd_play_over(snd_menu_select)globalMapCounter = 3};
                     break;
-            case 2: if key_down {fnc_snd_play_over(snd_menu_select)globalMapCounter = 0};
-                    if key_right_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 3};
-                    if key_left_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 0};
+            case 2: if key_down        || sd    {fnc_snd_play_over(snd_menu_select)globalMapCounter = 0};
+                    if key_right_press || sr   {fnc_snd_play_over(snd_menu_select)globalMapCounter = 3};
+                    if key_left_press  || sl   {fnc_snd_play_over(snd_menu_select)globalMapCounter = 0};
                     break;
-            case 3: if key_up_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 2};
-                    if key_left_press {fnc_snd_play_over(snd_menu_select)globalMapCounter = 0};
-                    if key_down {fnc_snd_play_over(snd_menu_select)globalMapCounter = 0};
+            case 3: if key_up_press    || su    {fnc_snd_play_over(snd_menu_select)globalMapCounter = 2};
+                    if key_left_press  || sl    {fnc_snd_play_over(snd_menu_select)globalMapCounter = 0};
+                    if key_down        || sd    {fnc_snd_play_over(snd_menu_select)globalMapCounter = 0};
                     break;
         }
     }
@@ -41,24 +46,24 @@ if !instance_exists(obj_confirm_1) && !instance_exists(obj_confirm_2) && delay <
     {
         switch(globalMapCounter)
         {
-            case 0: if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
-                    if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
-                    break;
-            case 1: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
-                    if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
-                    if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
-                    break;
-            case 2: if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 4};
-                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
-                    if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
-                    break;
-            case 3: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
-                    if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 4};
-                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
-                    break;
-            case 4: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
-                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
-                    if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
+            case 0: if key_up_press     || su    {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+                    if key_right_press  || sr    {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    break;              
+            case 1: if key_left_press   || sl    {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
+                    if key_up_press     || su    {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+                    if key_right_press  || sr    {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
+                    break;             
+            case 2: if key_right_press  || sr    {fnc_snd_play_over(snd_menu_select);globalMapCounter = 4};
+                    if key_down_pressed || sd    {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    if key_left_press   || sl    {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
+                    break;             
+            case 3: if key_left_press   || sl    {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    if key_up_press     || su    {fnc_snd_play_over(snd_menu_select);globalMapCounter = 4};
+                    if key_down_pressed || sd    {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    break;             
+            case 4: if key_left_press   || sl    {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+                    if key_down_pressed || sd    {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    if key_right_press  || sr    {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
                     break;
         }
     }
@@ -67,24 +72,24 @@ if !instance_exists(obj_confirm_1) && !instance_exists(obj_confirm_2) && delay <
     {
         switch(globalMapCounter)
         {
-            case 0: if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
-                    if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
-                    break;
-            case 1: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
-                    if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
-                    if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
-                    break;
-            case 2: if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 5};
-                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
-                    if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
-                    break;
-            case 3: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
-                    if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 5};
-                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
-                    break;
-            case 5: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
-                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
-                    if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
+            case 0: if key_up_press     || su   {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+                    if key_right_press  || sr   {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    break;             
+            case 1: if key_left_press   || sl   {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
+                    if key_up_press     || su   {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+                    if key_right_press  || sr   {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
+                    break;              
+            case 2: if key_right_press  || sr   {fnc_snd_play_over(snd_menu_select);globalMapCounter = 5};
+                    if key_down_pressed || sd   {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    if key_left_press   || sl   {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
+                    break;              
+            case 3: if key_left_press   || sl   {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    if key_up_press     || su   {fnc_snd_play_over(snd_menu_select);globalMapCounter = 5};
+                    if key_down_pressed || sd   {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    break;              
+            case 5: if key_left_press   || sl   {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+                    if key_down_pressed || sd   {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    if key_right_press  || sr   {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
                     break;
         }
     }
@@ -93,20 +98,20 @@ if !instance_exists(obj_confirm_1) && !instance_exists(obj_confirm_2) && delay <
     {
         switch(globalMapCounter)
         {
-            case 0: if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
-                    if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
-                    break;
-            case 1: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
-                    if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
-                    if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
-                    break;
-            case 2: if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
-                    if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
-                    if key_right_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
-                    break;
-            case 3: if key_left_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
-                    if key_down_pressed {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
-                    if key_up_press {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+            case 0: if key_up_press      || su  {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+                    if key_right_press   || sr  {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    break;              
+            case 1: if key_left_press    || sl  {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
+                    if key_up_press      || su  {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
+                    if key_right_press   || sr  {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
+                    break;              
+            case 2: if key_down_pressed  || sd  {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    if key_left_press    || sl  {fnc_snd_play_over(snd_menu_select);globalMapCounter = 0};
+                    if key_right_press   || sr  {fnc_snd_play_over(snd_menu_select);globalMapCounter = 3};
+                    break;               
+            case 3: if key_left_press    || sl  {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    if key_down_pressed  || sd  {fnc_snd_play_over(snd_menu_select);globalMapCounter = 1};
+                    if key_up_press      || su  {fnc_snd_play_over(snd_menu_select);globalMapCounter = 2};
                     break;
         }
     }
@@ -115,7 +120,7 @@ if !instance_exists(obj_confirm_1) && !instance_exists(obj_confirm_2) && delay <
 
     #region Подтверждение
 
-    if key_attack || key_jump
+    if key_attack || key_jump || saccept
     {
         fnc_snd_play_over(snd_menu_accept);
         switch(globalMapCounter)
