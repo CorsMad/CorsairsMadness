@@ -12,7 +12,7 @@ if key_skip
     if scr_t > scr_t_max 
     {
         global.dia_jungleMerch = 1;
-        instance_create_depth(x,y,-100000,obj_txt_tip_possessed);          
+        instance_create_depth(0,0,-100000,obj_txt_tip_possessed_pre);          
         instance_destroy();   
     } 
 }

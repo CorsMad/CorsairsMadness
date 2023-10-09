@@ -28,7 +28,7 @@ if place_meeting(x,y,obj_Player)
     instance_create_depth(x+12,y-12,depth-1,obj_sfx2);
     instance_create_depth(x-12,y+12,depth-1,obj_sfx2);
     instance_create_depth(x+12,y+12,depth-1,obj_sfx2);
-    instance_create_depth(0,0,-9999999999,obj_txt_tip_possessed_djump);
+    instance_create_depth(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),-9999,obj_txt_tip_possessed_djump_pre);
     instance_destroy();    
 }
 

@@ -21,12 +21,11 @@ switch(state){
 		if canSkip = 1 && (key_attack || key_jump)
 		{
 			   instance_destroy();
-				obj_txt_tip_possessed_hook_pre.state = 2;;
+			   obj_txt_tip_possessed_pre.state = 2;	
 		}
 		break;
-
+	case 2:
+		break;
 }
-
-
 
 

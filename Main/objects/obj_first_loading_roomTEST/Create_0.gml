@@ -4,12 +4,12 @@
 global.TargetX      = 112;
 //global.TargetY      = 784;
 global.TargetY      = 240;
-global.TargetRoom   = Village_desert;
+global.TargetRoom   = Village_jungle_merchant;
 
 
-global.fTargetX     = 128;
-global.fTargetY     = 480;
-global.fTargetRoom  = PG2_boss;
+global.fTargetX     = 384;
+global.fTargetY     = 256;
+global.fTargetRoom  = PG1_r45;
 
 
 
@@ -44,7 +44,7 @@ global.language = 0;
 #region ТЕСТ
     display_reset(0, false);
     //0
-    global.dia_jungleChief = 0; 
+    global.dia_jungleChief = 1; 
     global.dia_desertChief = 0;
     global.dia_snowChief = 0;
     global.dia_shadowChief = 0;

@@ -3,9 +3,11 @@
 image_speed = 0.2;
 alpha = 0;
 t=0;
-depth = -100;
+depth = -999999999999;
 script_lng_pos_tip_clone();
 
 canSkip = 0;
 
 t = 0;
+
+state = 1;

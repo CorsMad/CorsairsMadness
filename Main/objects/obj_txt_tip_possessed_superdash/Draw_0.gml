@@ -4,7 +4,7 @@ draw_set_alpha(1)
 if global.language = 1 draw_set_font(fnt_pixel_ru) else draw_set_font(fnt_pixel);
 draw_set_color(c_black)
 draw_rectangle(0,0,room_width,room_height,-1);
-draw_set_alpha(1)
+
 
 draw_set_alpha(alpha);
 

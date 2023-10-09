@@ -2,21 +2,27 @@
 // You can write your code in this editor
 player_input();
 
-if t < 102 t++;
-switch(t)
-{
-    case 50: alpha = 0.5;break;   
-    case 100: 
-        alpha = 1;
-        break;   
-	case 101:
-		canSkip = 1;
+switch(state){
+	case 1:
+		if t < 27 t++;
+		switch(t)
+		{
+		    case 5: alpha = 0.25;break;   
+		    case 10: alpha = 0.5;break;
+			case 15: alpha = 0.75;break;
+			case 20: 
+		        alpha = 1;
+		        break;   
+			case 25:
+				canSkip = 1;
+				break;
+		}
+
+		if canSkip = 1 && (key_attack || key_jump)
+		{
+			   instance_destroy();
+				obj_txt_tip_possessed_tp_pre.state = 2;;
+		}
 		break;
-}
 
-if canSkip = 1 && (key_attack || key_jump)
-{
-    instance_destroy();
-	obj_Player.isDead = 2.1;
 }
-

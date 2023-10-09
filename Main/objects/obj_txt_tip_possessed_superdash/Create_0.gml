@@ -3,18 +3,11 @@
 image_speed = 0.2;
 alpha = 0;
 t=0;
-depth = -100;
+depth = -999999999999;
 script_lng_pos_tip_superdash();
-/*
-text1 = @"Every fourth successful strike against an enemy 
-other than a red one will be special.";
-text2 = @"Combine different strikes to improve your rating.";
-text3 = @"The higher the rating, the more dark 
-essence will be dropped from defeated enemies.";
 
-textair = "in the air";
-textground = "on the ground";
-*/
 canSkip = 0;
 
 t = 0;
+
+state = 1;

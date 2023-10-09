@@ -2,21 +2,28 @@
 // You can write your code in this editor
 player_input();
 
-if t < 102 t++;
-switch(t)
-{
-    case 50: alpha = 0.5;break;   
-    case 100: 
-        alpha = 1;
-        break;   
-	case 101:
-		canSkip = 1;
+switch(state){
+	case 1:
+		if t < 27 t++;
+		switch(t)
+		{
+		    case 5: alpha = 0.25;break;   
+		    case 10: alpha = 0.5;break;
+			case 15: alpha = 0.75;break;
+			case 20: 
+		        alpha = 1;
+		        break;   
+			case 25:
+				canSkip = 1;
+				break;
+		}
+
+		if canSkip = 1 && (key_attack || key_jump)
+		{
+			 instance_destroy();
+			instance_create_depth(x,y,depth,obj_txt_tip_possessed2);
+		}
+		break;
+	case 2:
 		break;
 }
-
-if canSkip = 1 && (key_attack || key_jump)
-{
-    instance_create_depth(x,y,-100000,obj_npc_junglev_merch_choose);
-    instance_destroy();
-}
-

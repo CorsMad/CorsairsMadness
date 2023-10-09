@@ -3,11 +3,11 @@
 image_speed = 0.2;
 alpha = 0;
 t=0;
-depth = -999999999999;
-script_lng_pos_tip_tp();
-
+depth = -1000;
+script_lng_pos_tip_hook();
+image_alpha = 0;
 canSkip = 0;
 
 t = 0;
 
-state = 1;
+state = 0;
