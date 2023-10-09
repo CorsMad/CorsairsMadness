@@ -79,17 +79,17 @@ function fnc_lng_store(){
                 dHMenu[0,1] = "Deals damage on hit\nand bounces back";
                 dHMenu[0,2] = "goes through \nall the enemies \nin its trajectory";
 
-                dHMenu[1,0] = "";
-                dHMenu[1,1] = "";
-                dHMenu[1,2] = "";
+                dHMenu[1,0] = "Spins around.\nDeals damage on hit";
+                dHMenu[1,1] = "The radius is\ngradually increasing";
+                dHMenu[1,2] = "creates 2 more bombs \non hit";
 
-                dHMenu[2,0] = "";
-                dHMenu[2,1] = "";
-                dHMenu[2,2] = "";
+                dHMenu[2,0] = "Flies forward.\nPeriodically creates \nan area that \ndeals damage.";
+                dHMenu[2,1] = "flies farther.\nimpact area is larger.";
+                dHMenu[2,2] = "flying in a \nwave trajectory.";
 
-                dHMenu[3,0] = "";
-                dHMenu[3,1] = "";
-                dHMenu[3,2] = "";
+                dHMenu[3,0] = "Parrot releases a\nprojectile forward.";
+                dHMenu[3,1] = "The projectile is\nhoming in on \nthe nearest enemy.";
+                dHMenu[3,2] = "creates an explosion \non hit that also \ndeals damage";
 
 
                 dHMenu[4,0] = "";
@@ -101,30 +101,30 @@ function fnc_lng_store(){
 
                 #region Одержимый
 
-                dPMenu[0,0] = "Deals heavy damage \nby knocking enemies \nback a short distance";
-                dPMenu[1,0] = "Strikes forward, \nthrowing the enemy \nfar away"; 
-                dPMenu[2,0] = "Throws the enemy \nin the air \n<on the ground only>"; 
-                dPMenu[3,0] = "Throws the opponent \ndown \n<in the air only>";
+                dPMenu[0,0] = "Throws his arm \nforward and deals \nmassive damage.";
+                dPMenu[1,0] = "Throws 2 arms, \ndealing damage \nfrom behind \nand in front."; 
+                dPMenu[2,0] = "Hits around him \nin a large radius \nand deals damage."; 
+                dPMenu[3,0] = "Launches 3 orbs \nthat fly at \nthe nearest enemy.";
 
                 #endregion
 
                 #region Лодка
 
-                dBMenu[0,0] = "";
-                dBMenu[0,1] = "";
-                dBMenu[0,2] = "";
+                dBMenu[0,0] = "2 quick shots \nin a row";
+                dBMenu[0,1] = "3 quick shots \nin a row";
+                dBMenu[0,2] = "3rd bullet -\nreinforced";
   
                 dBMenu[1,0] = "two guns \nalternate firing";
                 dBMenu[1,1] = "two guns \nsimultaneous firing";
                 dBMenu[1,2] = "High damage \ntwo guns \nsimultaneous firing.";
  
-                dBMenu[2,0] = "";
-                dBMenu[2,1] = "";
-                dBMenu[2,2] = "";
+                dBMenu[2,0] = "3 bullets \nspread";
+                dBMenu[2,1] = "4 bullets \nspread";
+                dBMenu[2,2] = "5 bullets \nspread";
  
-                dBMenu[3,0] = "";
-                dBMenu[3,1] = "";
-                dBMenu[3,2] = "";
+                dBMenu[3,0] = "Homing in on \nthe nearest enemy";
+                dBMenu[3,1] = "Deals more \damage";
+                dBMenu[3,2] = "creates an explosion \non hit that also \ndeals damage";
                 /*
                 dBMenu[4,0] = "Bounces back at solid objects \n2 times";
                 dBMenu[4,1] = "Bounces back at solid objects \n4 times";

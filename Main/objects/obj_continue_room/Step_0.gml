@@ -13,11 +13,21 @@ if t = 50
             i.DashEnabled = 1;
             i.state = 0;
             i.specabilnumber = 1;
-            i.HookEnabled = 1;      
+            i.HookEnabled = 0;      
             instance_create_depth(16,16,101,obj_room_transition_to_loading);  
         #endregion
         break;
-        
+        case 0.05:
+            global.TargetX      = 112; 
+            global.TargetY      = 240;
+            global.TargetRoom   = Village_jungle_merchant;
+            var i = instance_create_depth(16,16,0,obj_Player);
+            i.DashEnabled = 1;
+            i.state = 0;
+            i.specabilnumber = 1;
+            i.HookEnabled = 0;      
+            instance_create_depth(16,16,101,obj_room_transition_to_loading);  
+            break;
         case 0.1:
         #region карта джугнлей
             room_goto(GlobalMapPrologueJungle);
@@ -36,7 +46,19 @@ if t = 50
             instance_create_depth(16,16,101,obj_room_transition_to_loading);  
         #endregion
         break;
-        
+        case 1.05: 
+        #region Пустыня
+            global.TargetX      = 112; 
+            global.TargetY      = 240;
+            global.TargetRoom   = Village_desert_store;
+            var i = instance_create_depth(16,16,0,obj_Player);
+            i.DashEnabled = 1;
+            i.state = 0;
+            i.specabilnumber = 4;
+            i.HookEnabled = 1;      
+            instance_create_depth(16,16,101,obj_room_transition_to_loading);  
+        #endregion
+        break;
         case 1.1:
         #region карта пустыня
             room_goto(GlobalMapPrologueDesert);
@@ -55,7 +77,19 @@ if t = 50
             instance_create_depth(16,16,101,obj_room_transition_to_loading);  
         #endregion
         break;
-        
+        case 2.05: 
+        #region Снег
+            global.TargetX      = 112; 
+            global.TargetY      = 240;
+            global.TargetRoom   = Village_snow_store;
+            var i = instance_create_depth(16,16,0,obj_Player);
+            i.DashEnabled = 1;
+            i.state = 0;
+            i.specabilnumber = 5;
+            i.HookEnabled = 1;      
+            instance_create_depth(16,16,101,obj_room_transition_to_loading);  
+        #endregion
+        break;
         case 2.1:
         #region карта снег
             room_goto(GlobalMapPrologueSnow);
@@ -74,7 +108,19 @@ if t = 50
             instance_create_depth(16,16,101,obj_room_transition_to_loading);  
         #endregion
         break;
-        
+        case 3.05: 
+        #region Шадов
+            global.TargetX      = 112; 
+            global.TargetY      = 240;
+            global.TargetRoom   = Village_shadow_store;
+            var i = instance_create_depth(16,16,0,obj_Player);
+            i.DashEnabled = 1;
+            i.state = 0;
+            i.specabilnumber = 2;
+            i.HookEnabled = 1;      
+            instance_create_depth(16,16,101,obj_room_transition_to_loading);  
+        #endregion
+        break;
         case 3.1:
         #region карта шадов
             room_goto(GlobalMapPrologueShadow);
@@ -93,7 +139,19 @@ if t = 50
             instance_create_depth(16,16,101,obj_room_transition_to_loading);  
         #endregion
         break;
-        
+        case 4.05: 
+        #region Лава
+            global.TargetX      = 214; 
+            global.TargetY      = 240;
+            global.TargetRoom   = Village_lava_hall_store;
+            var i = instance_create_depth(16,16,0,obj_Player);
+            i.DashEnabled = 1;
+            i.state = 0;
+            i.specabilnumber = 3;
+            i.HookEnabled = 1;      
+            instance_create_depth(16,16,101,obj_room_transition_to_loading);  
+        #endregion
+        break;
         case 4.1:
         #region карта шадов
             room_goto(GlobalMapPrologueLava);

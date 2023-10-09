@@ -4,7 +4,7 @@ image_speed = 0.2;
 alpha = 0;
 t=0;
 depth = -9999999;
-fnc_lng_tip_possessed();
+fnc_lng_tip_possessed2();
 
 canSkip = 0;
 

@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "J2_boss",
-  "creationCodeFile": "${project_dir}/rooms/J2_boss/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/J2_boss/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "Village_desert_hall",
-  "creationCodeFile": "",
+  "creationCodeFile": "rooms/Village_desert_hall/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

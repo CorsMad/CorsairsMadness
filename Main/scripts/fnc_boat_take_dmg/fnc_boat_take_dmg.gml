@@ -102,7 +102,14 @@ function fnc_boat_take_dmg_parrotcage(hp1,hp2,hp3,hp4)
 			instance_create_depth(parrothit.x,parrothit.y,-1000,obj_sfx_weapon_slash);
             parrothit.a = 1;
     		enemy_hp -= hp3//;       
-        }     
+        }  
+        var parrothitexpl = instance_place(x,y,obj_player_boat_parrotcage_t3_expl);
+        if (parrothitexpl !=noone)
+        {
+			instance_create_depth(parrothitexpl.x,parrothitexpl.y,-1000,obj_sfx_weapon_slash);
+            parrothitexpl.a = 1;
+    		enemy_hp -= hp4//;       
+        }  
     #endregion
 }
 

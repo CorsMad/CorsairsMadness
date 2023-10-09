@@ -127,8 +127,7 @@ switch(submenu)
 
 #region Описание человек
 
-#region Названия 
-#endregion
+
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_center);
@@ -215,17 +214,27 @@ switch(submenu)
         }
         break;  
     case 4:
-        for (var m = 0; m < global.hp_max; ++m) {  // MAX HP
+        for (var o = 0; o < global.hp_max; ++o) {  // MAX HP
+                    draw_sprite(spr_hud_heart_mana,0,216+16*o,65)
+                }
+        for (var p = 0; p < global.mana_max; ++p) {  // MAX MANA
+                    draw_sprite(spr_hud_heart_mana,1,216+16*p,97)
+                }
+    
+    
+        for (var m = 0; m < 5; ++m) {  // MAX HP
                     draw_sprite(spr_hud_heart,0,216+16*m,65)
                 }
-        for (var n = 0; n < global.mana_max; ++n) {  // MAX MANA
+        for (var n = 0; n < 3; ++n) {  // MAX MANA
                     draw_sprite(spr_hud_mana,0,216+16*n,97)
                 }
+                
+                
+        
         break;
 }
 
-#region ранг
-#endregion
+
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_left);
@@ -235,10 +244,7 @@ switch(submenu)
         if index != 4 
         {
             draw_text(218,70,dHMenu[index,dindex]);
-            
-            if index = 0 // Использование предмета
-            {
-                switch(isKeyboard)
+            switch(isKeyboard)
                 {
                     case 0: 
                         draw_text(218,130,name_use);
@@ -251,12 +257,92 @@ switch(submenu)
                         draw_sprite_ext(spr_key_icon,scr_key_sprite(global.item_key),300,135,1,1,0,c_white,1); 
                         break;
                 }
-            }
+            
             
         }
         break; 
     case 2:
         if index != 4 draw_text(218,70,dPMenu[index,0]);
+        
+        switch(index){
+            case 0:
+                switch(isKeyboard)
+                {
+                    case 0: 
+                        draw_text(218,130,name_use);
+                        draw_sprite_ext(spr_gp_icon,6,250,135,1,1,0,c_white,1);                    
+                        draw_text(272,130,"/");
+                        draw_sprite_ext(spr_gp_icon,7,285,135,1,1,0,c_white,1);                               
+                        draw_text(307,130,"+");
+                        draw_sprite_ext(spr_gp_icon,10,329,135,1,1,0,c_white,1);  
+                        break;
+                    case 1: 
+                        draw_text(218,130,name_use);
+                        draw_sprite_ext(spr_gp_icon,6,250,135,1,1,0,c_white,1);                    
+                        draw_text(272,130,"/");
+                        draw_sprite_ext(spr_gp_icon,7,285,135,1,1,0,c_white,1);                               
+                        draw_text(307,130,"+");
+                        draw_sprite_ext(spr_key_icon,scr_key_sprite(global.abil_key),329,135,1,1,0,c_white,1); 
+                        break;
+                }
+                break;
+            case 1:
+                switch(isKeyboard)
+                {
+                    case 0: 
+                        draw_text(218,130,name_use);
+                        draw_sprite_ext(spr_gp_icon,6,250,135,1,1,0,c_white,1);                    
+                        draw_text(272,130,"/");
+                        draw_sprite_ext(spr_gp_icon,7,285,135,1,1,0,c_white,1);                               
+                        draw_text(307,130,"+");
+                        draw_sprite_ext(spr_gp_icon,10,329,135,1,1,0,c_white,1);  
+                        break;
+                    case 1: 
+                        draw_text(218,130,name_use);
+                        draw_sprite_ext(spr_gp_icon,6,250,135,1,1,0,c_white,1);                    
+                        draw_text(272,130,"/");
+                        draw_sprite_ext(spr_gp_icon,7,285,135,1,1,0,c_white,1);                               
+                        draw_text(307,130,"+");
+                        draw_sprite_ext(spr_key_icon,scr_key_sprite(global.abil_key),329,135,1,1,0,c_white,1); 
+                        break;
+                }
+                break;
+            case 2:
+                switch(isKeyboard)
+                {
+                    case 0: 
+                        draw_text(218,130,name_use);
+                        draw_sprite_ext(spr_gp_icon,5,250,135,1,1,0,c_white,1);                                                 
+                        draw_text(272,130,"+");
+                        draw_sprite_ext(spr_gp_icon,10,285,135,1,1,0,c_white,1);  
+                        break;
+                    case 1: 
+                        draw_text(218,130,name_use);
+                        draw_sprite_ext(spr_gp_icon,5,250,135,1,1,0,c_white,1);                    
+                        draw_text(272,130,"+");
+                        draw_sprite_ext(spr_key_icon,scr_key_sprite(global.abil_key),285,135,1,1,0,c_white,1); 
+                        break;
+                }
+                break;
+            case 3:
+                switch(isKeyboard)
+                {
+                    case 0: 
+                        draw_text(218,130,name_use);
+                        draw_sprite_ext(spr_gp_icon,4,250,135,1,1,0,c_white,1);                                                 
+                        draw_text(272,130,"+");
+                        draw_sprite_ext(spr_gp_icon,10,285,135,1,1,0,c_white,1);  
+                        break;
+                    case 1: 
+                        draw_text(218,130,name_use);
+                        draw_sprite_ext(spr_gp_icon,4,250,135,1,1,0,c_white,1);                    
+                        draw_text(272,130,"+");
+                        draw_sprite_ext(spr_key_icon,scr_key_sprite(global.abil_key),285,135,1,1,0,c_white,1); 
+                        break;
+                }
+                break;
+                break;
+        }
         break;
     case 3:
         if index != 4 draw_text(218,70,dBMenu[index,dindex]);
@@ -273,7 +359,20 @@ draw_set_halign(fa_center);
 draw_set_color(c_white);
 
 if global.gold < itemprice draw_set_color(c_red) else draw_set_color(c_white)
-if itemprice != 0 draw_text(344,159.5,string(itemprice)) else draw_text(344,159.5,"");
+
+// Отрисовка стоимости
+draw_set_halign(fa_left)
+if itemprice != 0 {
+    draw_text(334,159.5,string(itemprice))
+    if submenu = 2 {
+        draw_sprite(spr_shop_gold_darkessence,0,306,157)   ;
+    } else draw_sprite(spr_shop_gold_darkessence,1,306,157)   ;
+} else {
+    draw_text(334,159.5,"");   
+}
+
+
+
 
 #endregion
 
@@ -371,7 +470,7 @@ switch(submenu)
     case 2: // Одержимый spr_icons_shop_pos
         if global.superattack1 = 0{
             draw_sprite(spr_icons_shop_pos,0,152,72); 
-            draw_sprite(spr_icons_shop_pos,1,152,104); 
+            draw_sprite(spr_icons_confirm,0,152,104); 
         } else if global.superattack1 = 1 {
             draw_sprite(spr_icons_shop_pos,4,152,72); 
             draw_sprite(spr_icons_shop_pos,1,152,104);    

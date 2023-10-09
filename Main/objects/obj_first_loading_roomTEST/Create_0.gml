@@ -51,7 +51,7 @@ global.language = 0;
     global.dia_lavaChief = 0;
     
     //0
-    global.dia_jungleMerch = 0; 
+    global.dia_jungleMerch = 1; 
     global.dia_desertMerch = 0; 
     global.dia_snowMerch = 0;     
     global.dia_shadowMerch = 0; 
@@ -172,9 +172,9 @@ global.choosed_item = 5; // 1- бумер 2 -топ // 3 - бомба // 4 - eba
 global.choosed_item_tier = 3; // ТИР предмета
 global.choosed_itemboat = 4; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
 global.choosed_itemboat_tier = 3; // ТИП предмета для лодки
-global.superattack1 = 2;// Суператаки  max 2  default - 0
-global.superattack2 = 1;// Суператаки  max 1  default - 0
-global.superattack3 = 1;// Суператаки  max 1  default - 0
+global.superattack1 = 0;// Суператаки  max 2  default - 0
+global.superattack2 = 0;// Суператаки  max 1  default - 0
+global.superattack3 = 0;// Суператаки  max 1  default - 0
 global.PlayerTransition = 0;
 global.mana = 6000000//3;
 global.mana_max = 3;

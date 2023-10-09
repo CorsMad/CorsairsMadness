@@ -39,6 +39,7 @@ if key_jump_pressed || key_attack // accept
                     index = 0;
                     break;
                 case 1:   
+                    fnc_snd_play_over(snd_menu_accept);
                     submenu = 2;
                     index = 0;
                     break;
@@ -680,15 +681,90 @@ switch(submenu)
                         break;  
                 }
                 break;
+            case 1: 
+                switch(dindex)
+                {
+                    case 0:
+                        if global.purch_bomb1 = 0 itemprice = 250; else itemprice = 0;                      
+                        break;
+                    case 1:
+                        if global.purch_bomb2 = 0 itemprice = 500; else itemprice = 0;
+                        break;
+                    case 2:
+                        if global.purch_bomb3 = 0 itemprice = 750; else itemprice = 0;
+                        break;  
+                }
+                break;
+            case 2: 
+                switch(dindex)
+                {
+                    case 0:
+                        if global.purch_sparkle1 = 0 itemprice = 250; else itemprice = 0;                      
+                        break;
+                    case 1:
+                        if global.purch_sparkle2 = 0 itemprice = 500; else itemprice = 0;
+                        break;
+                    case 2:
+                        if global.purch_sparkle3 = 0 itemprice = 750; else itemprice = 0;
+                        break;  
+                }
+                break;
+            case 3: 
+                switch(dindex)
+                {
+                    case 0:
+                        if global.purch_eparrot1 = 0 itemprice = 250; else itemprice = 0;                      
+                        break;
+                    case 1:
+                        if global.purch_eparrot2 = 0 itemprice = 500; else itemprice = 0;
+                        break;
+                    case 2:
+                        if global.purch_eparrot3 = 0 itemprice = 750; else itemprice = 0;
+                        break;  
+                }
+                break;
+            
                 default :
                 itemprice = 0;             
         }     
         break;
     case 2:
+         switch(index)
+        {
+            case 0: 
+                if global.superattack1 = 0 itemprice = 1000; else itemprice = 0;            
+                break;
+            case 1: 
+                if global.superattack1 = 1 itemprice = 1000; else itemprice = 0;
+                break;
+            case 2: 
+                if global.superattack2 = 0 itemprice = 1000; else itemprice = 0;
+                break;
+            case 3: 
+                if global.superattack3 = 0 itemprice = 1000; else itemprice = 0;
+                break;
+            
+                default :
+                itemprice = 0;             
+        }     
         break;
     case 3: 
         switch(index)
         {
+            case 0: 
+                switch(dindex)
+                {
+                    case 0:
+                        if global.purch_rapidfire1 = 0 itemprice = 250; else itemprice = 0;                      
+                        break;
+                    case 1:
+                        if global.purch_rapidfire2 = 0 itemprice = 500; else itemprice = 0;
+                        break;
+                    case 2:
+                        if global.purch_rapidfire3 = 0 itemprice = 750; else itemprice = 0;
+                        break;   
+                }
+            break;
             case 1: 
                 switch(dindex)
                 {
@@ -702,9 +778,37 @@ switch(submenu)
                         if global.purch_dualpistols3 = 0 itemprice = 750; else itemprice = 0;
                         break;   
                 }
-                break;
-                default :
-                itemprice = 0;             
+            break;
+            case 2: 
+                switch(dindex)
+                {
+                    case 0:
+                        if global.purch_blunderbuss1 = 0 itemprice = 250; else itemprice = 0;                      
+                        break;
+                    case 1:
+                        if global.purch_blunderbuss2 = 0 itemprice = 500; else itemprice = 0;
+                        break;
+                    case 2:
+                        if global.purch_blunderbuss3 = 0 itemprice = 750; else itemprice = 0;
+                        break;   
+                }
+            break;
+            case 3: 
+                switch(dindex)
+                {
+                    case 0:
+                        if global.purch_parrotcage1 = 0 itemprice = 250; else itemprice = 0;                      
+                        break;
+                    case 1:
+                        if global.purch_parrotcage2 = 0 itemprice = 500; else itemprice = 0;
+                        break;
+                    case 2:
+                        if global.purch_parrotcage3 = 0 itemprice = 750; else itemprice = 0;
+                        break;   
+                }
+            break;
+            default :
+            itemprice = 0;             
         }  
         break;
 }

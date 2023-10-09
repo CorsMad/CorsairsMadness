@@ -7,3 +7,4 @@ t1 = 0;
 phase = 0;
 var water = instance_create_depth(x,y,depth+1,obj_boat_boss_desert_water);
 water.fol = id;
+fnc_msc_stop_play_slow();

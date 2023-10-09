@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "EnduranceJungle",
-  "creationCodeFile": "${project_dir}/rooms/EnduranceJungle/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/EnduranceJungle/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

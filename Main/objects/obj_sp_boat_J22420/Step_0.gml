@@ -337,11 +337,11 @@ if state = 8
     }
     switch(t)
     {
-            case 60:        instance_create_depth(496,112,depth,obj_boat_obstacle_big);
-                            instance_create_depth(736,192,depth,obj_boat_obstacle_small);
-                            instance_create_depth(912,128,depth,obj_boat_obstacle_small);
-                            instance_create_depth(1136,192,depth,obj_boat_obstacle_small);
-                            instance_create_depth(1248,112,depth,obj_boat_obstacle_small);
+            case 60:        instance_create_depth(496,112+80,depth,obj_boat_obstacle_big);
+                            instance_create_depth(736,192+40,depth,obj_boat_obstacle_small);
+                            instance_create_depth(912,128+40,depth,obj_boat_obstacle_small);
+                            instance_create_depth(1136,192+40,depth,obj_boat_obstacle_small);
+                            instance_create_depth(1248,112+40,depth,obj_boat_obstacle_small);
                     
                             instance_create_depth(576,128,depth,obj_boat_stone);
                             instance_create_depth(608,176,depth,obj_boat_stone);
@@ -473,7 +473,7 @@ if state = 10
                     instance_create_depth(1136,208,depth,obj_boat_algae_fast);
                     instance_create_depth(1152,192,depth,obj_boat_algae_fast);
                     
-                    instance_create_depth(975,192,depth,obj_boat_obstacle_small);
+                    instance_create_depth(975,192+40,depth,obj_boat_obstacle_small);
                     break;
                     
         case 1400:  instance_create_depth(496,144,depth,obj_boat_algae_fast); //1400

@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "J2b_r5",
-  "creationCodeFile": "${project_dir}/rooms/J2b_r5/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/J2b_r5/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

@@ -44,6 +44,7 @@ if state = 1
     {
         obj_sp_boat_D2.state = 16.5;
         obj_sp_boat_D2.t = 0;
+        fnc_msc_play(msc_tutor_shore);
         instance_destroy(obj_boat_boss_desert_water);
         instance_destroy();
         

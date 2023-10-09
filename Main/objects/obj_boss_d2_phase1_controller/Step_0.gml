@@ -16,6 +16,7 @@ if state = 1
     }
     if t= 100
     {   
+        fnc_msc_play(msc_j2_boss);
         instance_create_depth(456,96-6,0,obj_boss_d2_earth_right);   
         var en_mask = instance_create_depth(448,96,0,obj_boss_d2_phase1_1);
         en_mask.enemy_hp = enemy_hp;

@@ -38,7 +38,7 @@ if a = 1
 {
     instance_create_depth(x,y,-1000,obj_sfx_dust_expl_small);
     
-    // создание взрыва
+    instance_create_depth(x,y,depth,obj_player_boat_parrotcage_t3_expl);
     
     instance_destroy();
 }

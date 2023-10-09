@@ -552,7 +552,184 @@ verrà rilasciata dai nemici sconfitti.";
             break;
     }    
 }    
-    
+  
+function fnc_lng_tip_possessed2(){
+   switch(global.language)
+    {
+        case 0: //English  
+        #region  ENG text
+            confirm = "confirm";
+            confirmy = "yes";
+            confirmn = "no";
+
+            text1 = @"When you deal damage to enemies,
+you fill up your power bar.";
+            text2 = @"The higher your rating, the faster it fills up.";
+            text3 = @"When it is full, you can use a special move.";
+            text4 = @"These moves can be purchased at the store."
+            textair = "in the air";
+            textground = "on the ground";
+            #endregion
+            break;
+        case 1: //russian
+        #region  кг text
+            text1 = @"каждый четвертый успешный удар по врагу 
+кроме красных будет специальным.";
+            text2 = @"Комбинируйте разные атаки чтобы улучшить рейтинг.";
+            text3 = @"чем выше рейтнг, тем больше темной 
+эссенции будет выпадать из врагов.";
+
+            textair = "в воздухе";
+            textground = "на земле";
+            #endregion           
+            break;
+        case 2: //spanish
+        #region  ENG text
+            confirm = "Confirmar";
+            confirmy = "sí";
+            confirmn = "no";
+
+            text1 = @"Cada cuarto golpe exitoso contra un enemigo 
+que no sea rojo será especial.";
+            text2 = @"Combina diferentes golpes para mejorar tu puntuación.";
+            text3 = @"Cuanto mayor sea la puntuación,
+más esencia oscura soltarán los enemigos derrotados.";
+
+            textair = "en el aire";
+            textground = "en el suelo";
+            #endregion
+            break;
+        case 3: //chinese
+        #region  CN text
+            confirm = "证实";
+            confirmy = "对";
+            confirmn = "no";
+
+            text1 = @"对除红色敌人以外的敌人的每四次成功打击都是特殊的."; 
+            text2 = @"结合不同的罢工以提高您的评级.";
+            text3 = @"等级越高, 被击败的敌人掉落的黑暗精华就越多.";
+
+            textair = "在空中";
+            textground = "在地面上";
+            #endregion
+            break;
+        case 4: //portug
+        #region  ENG text
+            confirm = "Confirmar";
+            confirmy = "sim";
+            confirmn = "não";
+
+            text1 = @"Cada quarto ataque bem-sucedido contra um inimigo 
+que não seja vermelho será especial.";
+            text2 = @"Combina diferentes greves para melhorar a tua classificação.";
+            text3 = @"Quanto maior for a classificação, 
+mais a essência escura sairá dos inimigos derrotados.";
+
+            textair = "no ar";
+            textground = "no chão";
+            #endregion
+            break;
+        case 5: //brazil
+        #region  ENG text
+            confirm = "Confirmar";
+            confirmy = "sim";
+            confirmn = "não";
+
+            text1 = @"Cada quarto ataque bem-sucedido contra um inimigo 
+que não seja vermelho será especial.";
+            text2 = @"Combine diferentes golpes para melhorar sua classificação.";
+            text3 = @"Quanto maior a classificação, 
+mais essência negra sairá dos inimigos derrotados.";
+
+            textair = "no ar";
+            textground = "no chão";
+            #endregion
+            break;
+        case 6: //polish
+        #region  ENG text
+            confirm = "Potwierdź";
+            confirmy = "Tak";
+            confirmn = "Nie";
+
+            text1 = @"Co czwarte celne trafienie w przeciwnika będzie specjalne.
+Z wyjątkiem czerwonego";
+            text2 = @"Połącz różne uderzenia, aby poprawić swój rating.";
+            text3 = @"Im wyższy rating, tym więcej mrocznej
+esencji oddadzą pokonani wrogowie.";
+
+            textair = "W powietrzu";
+            textground = "Na ziemi.";
+            #endregion
+            break;
+        case 7: //japanese
+        #region  ENG text
+            confirm = "確認";
+            confirmy = "はい";
+            confirmn = "いいえ";
+
+            text1 = @"赤以外の敵に4回目の攻撃を成功させるごとに、 
+特別な効果が得られる。";
+            text2 = @"さまざまなストライクを組み合わせて、レーティングを上げよう。";
+            text3 = @"レーティングが高いほど、 
+倒した敵からダークエッセンスが多くドロップされる。";
+
+            textair = "空中で";
+            textground = "地上で";
+            #endregion
+            break;
+        case 8: //deutch
+        #region  ENG text
+            confirm = "Bestätigen";
+            confirmy = "ja";
+            confirmn = "nein";
+
+            text1 = @"Jeder vierte erfolgreiche Schlag gegen einen anderen 
+als einen roten Feind ist speziell.";
+            text2 = @"Kombiniere verschiedene Schläge, 
+um deine Bewertung zu verbessern.";
+            text3 = @"Je höher die Wertung, 
+desto mehr dunkle Essenz erhältst 
+du von den besiegten Feinden.";
+
+            textair = "in der Luft";
+            textground = "auf dem Boden";
+            #endregion
+            break;
+        case 9: //french
+        #region  ENG text
+            confirm = "Confirmez";
+            confirmy = "oui";
+            confirmn = "non";
+
+            text1 = @"Chaque quatrième coup réussi contre un ennemi 
+autre qu'un rouge sera spécial.";
+            text2 = @"Combinez différents coups pour améliorer votre classement.";
+            text3 = @"Plus la note est élevée,
+plus les ennemis vaincus laissent échapper de l'essence noire.";
+
+            textair = "dans les airs";
+            textground = "au sol";
+            #endregion
+            break;
+        case 10: // Italian
+            #region  ENG text
+            confirm = "Conferma";
+            confirmy = "Sì";
+            confirmn = "No";
+
+            text1 = @"Ogni quarto colpo andato a segno contro un nemico
+diverso da quello rosso sarà speciale.";
+            text2 = @"Combina diversi colpi per migliorare la tua valutazione.";
+            text3 = @"Più alto è il punteggio, più essenza oscura
+verrà rilasciata dai nemici sconfitti.";
+
+            textair = "nell'aria ";
+            textground = "a terra";
+            #endregion
+            break;
+    }    
+}      
+  
 function fnc_lng_tip_hook_hand()
 {
     switch(global.language)
@@ -665,6 +842,8 @@ function fnc_lng_tip_tp()
             break;
     }   
 }    
+
+
 
 function fnc_lng_save_game(){
 switch(global.language)

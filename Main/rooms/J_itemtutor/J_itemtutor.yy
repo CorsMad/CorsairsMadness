@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "J_itemtutor",
-  "creationCodeFile": "${project_dir}/rooms/J_itemtutor/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/J_itemtutor/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

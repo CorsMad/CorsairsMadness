@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "J2_r9_boat",
-  "creationCodeFile": "${project_dir}/rooms/J2_r9_boat/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/J2_r9_boat/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

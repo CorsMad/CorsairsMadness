@@ -154,18 +154,18 @@ switch(state){
 		if t < 500 t++;
 		switch(t){
 			case 50: 
-					instance_create_depth(512,96,0,obj_boat_obstacle_small);
-					instance_create_depth(512,176,0,obj_boat_obstacle_small);
+					instance_create_depth(512,96+40,0,obj_boat_obstacle_small);
+					instance_create_depth(512,176+40,0,obj_boat_obstacle_small);
 					break;
 			case 100:  var s = instance_create_depth(512,224,0,obj_skeleton_surf_wave_3hp);s.a = irandom(1);break;
 			case 200: 
-					instance_create_depth(512,96,0,obj_boat_obstacle_small);
-					instance_create_depth(512,176,0,obj_boat_obstacle_small);
+					instance_create_depth(512,96+40,0,obj_boat_obstacle_small);
+					instance_create_depth(512,176+40,0,obj_boat_obstacle_small);
 					break;
 			case 250:  var s = instance_create_depth(512,224,0,obj_skeleton_surf_wave_3hp);s.a = irandom(1);break;
 			case 350: 
-					instance_create_depth(512,96,0,obj_boat_obstacle_small);
-					instance_create_depth(512,176,0,obj_boat_obstacle_small);
+					instance_create_depth(512,96+40,0,obj_boat_obstacle_small);
+					instance_create_depth(512,176+40,0,obj_boat_obstacle_small);
 					break;
 			case 400:  var s = instance_create_depth(512,224,0,obj_skeleton_surf_wave_3hp);s.a = irandom(1);break;
 			case 500:
@@ -389,14 +389,14 @@ switch(state){
 				instance_create_depth(512,128,0,obj_boat_stone15); //1
 				instance_create_depth(512,160,0,obj_boat_stone15); //2
 				instance_create_depth(512,192,0,obj_boat_stone15); //3
-				var o = instance_create_depth(512,192,0,obj_boat_obstacle_small); //3
+				var o = instance_create_depth(512,192+40,0,obj_boat_obstacle_small); //3
 				o.hspd = -1.5;
 				break;
 			case 500:
 				instance_create_depth(512,128,0,obj_boat_stone15); //1
 				instance_create_depth(512,160,0,obj_boat_stone15); //2
 				instance_create_depth(512,192,0,obj_boat_stone15); //3
-				var o = instance_create_depth(512,192,0,obj_boat_obstacle_small); //3
+				var o = instance_create_depth(512,192+40,0,obj_boat_obstacle_small); //3
 				o.hspd = -1.5;
 				break;
 			case 530:
@@ -408,7 +408,7 @@ switch(state){
 				instance_create_depth(512,128,0,obj_boat_stone15); //1
 				instance_create_depth(512,160,0,obj_boat_stone15); //2
 				instance_create_depth(512,192,0,obj_boat_stone15); //3
-				var o = instance_create_depth(512,192,0,obj_boat_obstacle_small); //3
+				var o = instance_create_depth(512,192+40,0,obj_boat_obstacle_small); //3
 				o.hspd = -1.5;
 				break;
 			case 590:
@@ -437,13 +437,13 @@ switch(state){
 			case 770:
 				instance_create_depth(512,128,0,obj_boat_stone15); //1
 				instance_create_depth(512,256,0,obj_boat_stone15); //5
-				var o = instance_create_depth(512,144,0,obj_boat_obstacle_small); //3
+				var o = instance_create_depth(512,144+40,0,obj_boat_obstacle_small); //3
 				o.hspd = -1.5;
 				break;
 			case 800:
 				instance_create_depth(512,128,0,obj_boat_stone15); //1
 				instance_create_depth(512,256,0,obj_boat_stone15); //5
-				var o = instance_create_depth(512,144,0,obj_boat_obstacle_small); //3
+				var o = instance_create_depth(512,144+40,0,obj_boat_obstacle_small); //3
 				o.hspd = -1.5;
 				break;
 			case 830:
@@ -468,19 +468,19 @@ switch(state){
 			case 980:
 				instance_create_depth(512,224,0,obj_boat_stone15); //4
 				instance_create_depth(512,256,0,obj_boat_stone15); //5
-				var o = instance_create_depth(512,112,0,obj_boat_obstacle_small); //3
+				var o = instance_create_depth(512,112+40,0,obj_boat_obstacle_small); //3
 				o.hspd = -1.5;
 				break;
 			case 1010:
 				instance_create_depth(512,224,0,obj_boat_stone15); //4
 				instance_create_depth(512,256,0,obj_boat_stone15); //5
-				var o = instance_create_depth(512,112,0,obj_boat_obstacle_small); //3
+				var o = instance_create_depth(512,112+40,0,obj_boat_obstacle_small); //3
 				o.hspd = -1.5;
 				break;
 			case 1040:
 				instance_create_depth(512,224,0,obj_boat_stone15); //4
 				instance_create_depth(512,256,0,obj_boat_stone15); //5
-				var o = instance_create_depth(512,112,0,obj_boat_obstacle_small); //3
+				var o = instance_create_depth(512,112+40,0,obj_boat_obstacle_small); //3
 				o.hspd = -1.5;
 				break;
 			case 1070:
@@ -521,7 +521,7 @@ switch(state){
 				instance_create_depth(512,128,0,obj_boat_stone15); //1
 				instance_create_depth(512,160,0,obj_boat_stone15); //2
 				instance_create_depth(512,192,0,obj_boat_stone15); //3
-				var o = instance_create_depth(512,192,0,obj_boat_obstacle_small); //3
+				var o = instance_create_depth(512,192+40,0,obj_boat_obstacle_small); //3
 				o.hspd = -1.5;
 				break;
 			case 1370:
@@ -535,7 +535,7 @@ switch(state){
 				instance_create_depth(512,192,0,obj_boat_stone15); //3
 				break;
 			case 1490:
-				var o = instance_create_depth(512,112,0,obj_boat_obstacle_big);
+				var o = instance_create_depth(512,112+80,0,obj_boat_obstacle_big);
 				o.hspd = -1.5;
 				break;
 			case 1550:
@@ -554,7 +554,7 @@ switch(state){
 				instance_create_depth(512,256,0,obj_boat_stone15); //5
 				break;
 			case 1700:
-				var o = instance_create_depth(512,112,0,obj_boat_obstacle_big);
+				var o = instance_create_depth(512,112+80,0,obj_boat_obstacle_big);
 				o.hspd = -1.5;
 				break;
 			case 1790:

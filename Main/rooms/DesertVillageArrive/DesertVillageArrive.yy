@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "DesertVillageArrive",
-  "creationCodeFile": "",
+  "creationCodeFile": "rooms/DesertVillageArrive/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
