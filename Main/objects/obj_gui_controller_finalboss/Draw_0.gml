@@ -241,6 +241,22 @@ draw_sprite_stretched(spr_boss_hp_bar,0,(camera_get_view_x(view_camera[0]))+373,
 #endregion
 #endregion
 
+#region death
+
+#region state1
+if instance_exists(obj_bossmerch_phase1){
+draw_sprite_stretched(spr_boss_hp_bar,0,(camera_get_view_x(view_camera[0]))+373,camera_get_view_y(view_camera[0])+6,(obj_bossmerch_phase1.enemy_hp/obj_bossmerch_phase1.enemy_hp_max)*100,18);
+}
+#endregion
+
+#region state2
+#endregion
+
+#region state3
+#endregion
+
+#endregion
+
 #endregion
 
 draw_sprite_ext(spr_boss_hp_bar_border,0,(camera_get_view_x(view_camera[0]))+370,camera_get_view_y(view_camera[0])+3,1,1,0, c_white,1);

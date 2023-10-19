@@ -30,7 +30,10 @@ if state = 0
 
 if (state = 0.5) {
     t++;
-    if t = 75 state = 1;
+    if t = 75 {
+        state = 1;
+        fnc_snd_play_onetime(snd_follower_laser);
+    }
 }
 
 if state = 1

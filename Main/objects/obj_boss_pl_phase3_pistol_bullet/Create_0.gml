@@ -7,3 +7,4 @@ t = 0;
 spd = 4;
 
 
+fnc_snd_play_boat_pistol();

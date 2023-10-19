@@ -14,7 +14,7 @@ if instance_exists(obj_Player)
 if state = 0
 {
     var dis = point_distance(x,y,obj_Player.x,obj_Player.y);
-    if dis < 160 {state = 1;sprite_index = spr_bat_fly;  }    
+    if dis < 160 {state = 1;sprite_index = spr_bat_fly;fnc_snd_play_onetime(snd_bat_start);  }    
 }
 #endregion
 
@@ -104,8 +104,11 @@ if state = 3
 
 #region Смерть
 
-if enemy_hp < 1 
+if enemy_hp < 1
 {
+    var death = instance_create_depth(x,y,depth,obj_bat_death);
+    death.sprite_index = sprite_index;
+    death.image_index = image_index;
     instance_destroy();   
 }
 #endregion

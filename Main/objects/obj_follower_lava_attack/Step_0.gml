@@ -32,6 +32,7 @@ switch(state)
 		case 75: 
 			sprite_index = spr_follower_lp_shot;
 			image_index = 1;
+            fnc_snd_play_onetime(snd_cannon_fire);
 			var bullet = instance_create_depth(x+42*image_xscale,y-12,depth-1,obj_follower_lava_bullet);
 			bullet.x_dest = x_dest;
 			bullet.y_dest = y_dest;
@@ -46,7 +47,7 @@ switch(state)
 			image_index = 3;
 			break;
 		case 105: image_index = 2;break;
-		case 110: image_index = 1;break;
+		case 110: image_index = 1;fnc_snd_play_over(snd_spikes_trap_activation);break;
 		case 115: image_index = 0;break;
 		case 120: instance_destroy();break;
 	}

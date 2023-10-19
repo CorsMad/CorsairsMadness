@@ -82,7 +82,7 @@ if (state = 2) { //стрельба в игрока плевками вверх/
     }
     if (!place_meeting(x,y,obj_abil_flute_aoe) && t_flute > 0) t_flute--;
     
-    if t_flute > 100 {state = 3;t = 0;}
+    if t_flute > 100 {state = 3;fnc_snd_play_onetime(snd_enemy_get_flute);t = 0;}
     
 }
 
@@ -122,7 +122,7 @@ if state!=0
     
 // Топор
 
-    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1,0);
     
 // Удар вниз   
 
@@ -130,15 +130,15 @@ if state!=0
 
 // Бомба
 
-    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,0);
 
 // Eball
 
-	fnc_take_dmg_eball(0,-16,-1,1);
+	fnc_take_dmg_eball(0,-16,-1,0);
 
 // Parrot
 
-	fnc_take_dmg_parrot_laser(0,-16,-1,1)
+	fnc_take_dmg_parrot_laser(0,-16,-1,0)
     fnc_enemy_no_armor_dmg();
 }
 

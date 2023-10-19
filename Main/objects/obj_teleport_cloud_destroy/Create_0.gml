@@ -1,1 +1,2 @@
 instance_create_depth(x,y-24,depth,obj_teleport_boom);
+fnc_snd_play_onetime(snd_tp_cloud_human_destroy)

@@ -29,6 +29,7 @@ if state = 1
 			image_index = 0;
 			sprite_index = spr_armored_thing_hide;
 	        state = 2;
+            fnc_snd_play_onetime(snd_enemy_sander_close);
 	    }
 	}
 }
@@ -54,6 +55,7 @@ if state = 2
 if state = 3 
 {
 	a++;
+    image_blend = c_white;
 	if place_meeting(x,y,obj_hitbox)
 	{
 		a = 60;
@@ -63,6 +65,7 @@ if state = 3
 		image_index = 0;
 		sprite_index = spr_armored_thing_prepare;
 		state = 4;
+        fnc_snd_play_onetime(snd_enemy_sander_open);
 		a = 0;
 	}
 }

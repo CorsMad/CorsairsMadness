@@ -97,6 +97,7 @@ switch(state)
             case 20: image_index = 4;break;
             case 45:    image_index = 5;break;
             case 50:    image_index = 6;
+                    fnc_snd_play_onetime(snd_follower_ground_hit);
                     instance_create_depth(x-24,y,depth-1,obj_sfx4)
                     instance_create_depth(x+24,y,depth-1,obj_sfx4)
                     var w1 = instance_create_depth(x,y,depth-1,obj_boss_ps_ph1_wave)   
@@ -108,6 +109,7 @@ switch(state)
             case 65:    image_index = 4;break;
             case 95:    image_index = 5;break;
             case 100:    
+                    fnc_snd_play_onetime(snd_follower_ground_hit);
                     instance_create_depth(x-24,y,depth-1,obj_sfx4)
                     instance_create_depth(x+24,y,depth-1,obj_sfx4)
                     var w1 = instance_create_depth(x,y,depth-1,obj_boss_ps_ph1_wave)   
@@ -120,6 +122,7 @@ switch(state)
             case 115:image_index = 4;break;
             case 145:image_index = 5;break;
             case 150:
+                    fnc_snd_play_onetime(snd_follower_ground_hit);
                     image_index = 6;
                     instance_create_depth(x-24,y,depth-1,obj_sfx4)
                     instance_create_depth(x+24,y,depth-1,obj_sfx4)
@@ -313,6 +316,7 @@ switch(state)
         
         if t> 40
         {
+            if t mod 10 = 0 fnc_snd_play_onetime(snd_player_jump);
             if image_index >=12 image_index = 6;
             
         } else 
@@ -331,6 +335,7 @@ switch(state)
         }
         if place_meeting(x+hspd,y,obj_block)
             {
+                fnc_snd_play_onetime(snd_follower_ground_hit);
                 hspd = -sign(hspd)*1.5
                 vspd = -3;
                 t = 0;
@@ -346,6 +351,7 @@ switch(state)
         t = 0;
         if  place_meeting(x,y+1,obj_block)
         {
+            fnc_snd_play_onetime(snd_follower_landing);
             hspd = 0;
             vspd = 0;
             state = 0;
@@ -544,6 +550,7 @@ if !instance_exists(obj_masked_clone)
         }
         if armor = 0
         {
+            fnc_snd_play_onetime(snd_follower_getlight);
             state = 6;
             hit_stored = 0;
             t = 0;

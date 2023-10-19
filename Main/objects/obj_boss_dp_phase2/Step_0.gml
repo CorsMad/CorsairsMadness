@@ -36,7 +36,7 @@ switch(state)
         t++;
         switch(t)
         {
-            case 1: sprite_index = spr_boss_dp_appear;image_index = 0;break;  
+            case 1: sprite_index = spr_boss_dp_appear;fnc_snd_play_onetime(snd_desert_follower_tp);image_index = 0;break;  
             case 5: image_index = 1;break;
             case 10:image_index = 2;break;
             case 15:image_index = 3;break;
@@ -159,7 +159,7 @@ switch(state)
     switch(t)
     {        
         case 1:image_index = 0;sprite_index = spr_boss_dp_dash;image_speed = 0;break;
-        case 5:image_index = 1;break;
+        case 5:image_index = 1;fnc_snd_play_over(snd_desert_follower_aoeattack);break;
         case 10:image_index = 2;break;
         case 15:image_index = 3;break;
         case 20:image_index = 4;break;
@@ -173,6 +173,7 @@ switch(state)
     {
         t =0;        
         state =3;
+        fnc_snd_play_over(snd_desert_follower_flyaoe);
         if instance_exists(obj_Player)
         {
             playerpoint_x = obj_Player.x;
@@ -329,6 +330,7 @@ switch(state)
             sprite_index = spr_boss_dp_appear;
             image_index = 7;
             image_speed = 0;
+            fnc_snd_play_onetime(snd_desert_follower_tp);
             break;
         case 5:image_index = 6;break;
         case 10:image_index = 5;break;
@@ -352,6 +354,7 @@ switch(state)
     switch(t)
     {
         case 1:
+            fnc_snd_play_onetime(snd_desert_follower_tp);
             sprite_index = spr_boss_dp_appear;
             image_index = 7;
             image_speed = 0;

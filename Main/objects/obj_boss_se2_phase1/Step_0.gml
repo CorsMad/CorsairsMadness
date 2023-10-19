@@ -264,19 +264,19 @@ if (state = 6) { // Ожидание
     
 // Топор
 
-    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1,0);
 
 // Бомба
 
-    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,0);
 
 // Eball
 
-	fnc_take_dmg_eball(0,-16,-1,1);
+	fnc_take_dmg_eball(0,-16,-1,0);
 
 // Parrot
 
-	fnc_take_dmg_parrot_laser(0,-16,-1,1)
+	fnc_take_dmg_parrot_laser(0,-16,-1,0)
 
 // Удар вниз   
 

@@ -12,6 +12,7 @@ if key_skip
     
     if scr_t > scr_t_max 
     {
+        fnc_msc_stop_play_slow();
         obj_Player.isDead = 2.1; 
         obj_follower_snow_cutscene.state = 2;
         obj_follower_snow_cutscene.t = 0;

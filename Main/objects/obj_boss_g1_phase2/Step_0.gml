@@ -42,6 +42,7 @@ if (state = 1) { // Полет вправо
 		y+=vspd;	
 		if y >= 224 
 		{
+            fnc_snd_play_onetime(snd_enemy_boss1_dust);
 			var expl = instance_create_depth(x,256,depth-1,obj_sfx4);
 			expl.image_xscale = 2;
 			expl.image_yscale = 2;
@@ -65,6 +66,7 @@ if (state = 1) { // Полет вправо
 		y-=vspd;	
 		if y <= 64
 		{
+            fnc_snd_play_onetime(snd_enemy_boss1_dust);
 			var expl = instance_create_depth(x,32,depth-1,obj_sfx4);
 			expl.image_xscale = 2;
 			expl.image_yscale = -2;
@@ -139,6 +141,7 @@ if (state = 5) { // Полет влево
 		y+=vspd;	
 		if y >= 224 
 		{
+            fnc_snd_play_onetime(snd_enemy_boss1_dust);
 			var expl = instance_create_depth(x,256,depth-1,obj_sfx4);
 			expl.image_xscale = 2;
 			expl.image_yscale = 2;
@@ -162,6 +165,7 @@ if (state = 5) { // Полет влево
 		y-=vspd;	
 		if y <= 64
 		{
+            fnc_snd_play_onetime(snd_enemy_boss1_dust);
 			var expl = instance_create_depth(x,32,depth-1,obj_sfx4);
 			expl.image_xscale = 2;
 			expl.image_yscale = -2;
@@ -227,7 +231,7 @@ if (state = 8) { // Ожидание
     
 // Топор
 
-    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1,0);
     
 // Удар вниз   
 
@@ -235,15 +239,15 @@ if (state = 8) { // Ожидание
 
 // Бомба
 
-    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,0);
 
 // Eball
 
-	fnc_take_dmg_eball(0,-16,-1,1);
+	fnc_take_dmg_eball(0,-16,-1,0);
 
 // Parrot
 
-	fnc_take_dmg_parrot_laser(0,-16,-1,1)
+	fnc_take_dmg_parrot_laser(0,-16,-1,0)
     
 
 // Получение урона

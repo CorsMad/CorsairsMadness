@@ -8,6 +8,7 @@ y+=vspd;
 if state = 1 {
 	vspd= 1;
 	if y > room_height+16 {
+        fnc_snd_play_onetime(snd_wall_explosion);
 		obj_endurance_lava.state = 1.51;
 		if instance_exists(obj_block_lava_endurancebot)
 		&& instance_exists(obj_block_lava_endurancetop){

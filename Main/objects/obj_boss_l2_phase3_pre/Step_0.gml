@@ -26,7 +26,8 @@ if state = 0
             instance_create_depth(x+46,y-52,depth-1,obj_boss_l2_bomb_small_pre);
             break; // чуть больше времени
         case 70:     image_index = 10;break;  
-        case 130:    
+        case 130:   
+            fnc_snd_play_onetime(snd_follower_landing);
             instance_create_depth(98-16,192-16,depth-1,obj_sfx_explosion);   
             instance_create_depth(98-16,192+16,depth-1,obj_sfx_explosion);   
             instance_create_depth(98+16,192-16,depth-1,obj_sfx_explosion);   
@@ -49,6 +50,7 @@ if state = 0
         case 263:   image_index = 15; break; 
         case 266:   image_index = 16; break; 
         case 269: 
+            fnc_snd_play_onetime(snd_follower_landing);
             instance_create_depth(98-16,192-16,depth-1,obj_sfx_explosion);   
             instance_create_depth(98-16,192+16,depth-1,obj_sfx_explosion);   
             instance_create_depth(98+16,192-16,depth-1,obj_sfx_explosion);   

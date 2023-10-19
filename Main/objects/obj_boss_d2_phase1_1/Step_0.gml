@@ -19,7 +19,7 @@ if state = 1 // вылез справа
     t++;
     sprite_index = spr_boss_d2_digout;
     switch(t)
-    {
+    {   
         case 50:    image_index = 2;break;
         case 55:    image_index = 3;break;
         case 60:    image_index = 4;break;
@@ -66,13 +66,13 @@ if (state = 3) // Выстрелы
         case 10:    image_index = 1;break;
         case 20:    image_index = 2;break;
         case 30:    image_index = 3;break;
-        case 50:    image_index = 4;instance_create_depth(x-24,y,depth,obj_boss_d2_throw_proj);break; // выстрел
+        case 50:    image_index = 4;instance_create_depth(x-24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
         case 80:    image_index = 3;break; 
-        case 90:    image_index = 4;instance_create_depth(x-24,y,depth,obj_boss_d2_throw_proj);break; // выстрел
+        case 90:    image_index = 4;instance_create_depth(x-24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
         case 120:   image_index = 3;break; 
-        case 130:   image_index = 4;instance_create_depth(x-24,y,depth,obj_boss_d2_throw_proj);break; // выстрел
+        case 130:   image_index = 4;instance_create_depth(x-24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
         case 160:   image_index = 3;break; 
-        case 170:   image_index = 4;instance_create_depth(x-24,y,depth,obj_boss_d2_throw_proj);break; // выстрел
+        case 170:   image_index = 4;instance_create_depth(x-24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
         case 200:   image_index = 5;break; 
         case 210:   image_index = 6;break; 
         case 220:
@@ -207,7 +207,7 @@ if instance_exists(fol)
     
     // Топор
 
-        fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
+        fnc_take_dmg_axe(-10,0,-1,10,0,-1,0);
     
     // Удар вниз   
 
@@ -215,15 +215,15 @@ if instance_exists(fol)
 
     // Бомба
 
-        fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+        fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,0);
 
     // Eball
 
-    	fnc_take_dmg_eball(0,-16,-1,1);
+    	fnc_take_dmg_eball(0,-16,-1,0);
 
     // Parrot
 
-    	fnc_take_dmg_parrot_laser(0,-16,-1,1)
+    	fnc_take_dmg_parrot_laser(0,-16,-1,0)
 
 // Получение урона
 

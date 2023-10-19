@@ -68,6 +68,9 @@ switch(state)
         if t = 70
         {
 			t = 0;
+            var mask = instance_create_depth(x,y,depth,obj_boss_gp_attack_forward_aoe_mask);
+            mask.image_xscale = image_xscale;
+            mask.fol = id;
             state = 3;   
         }
         break;

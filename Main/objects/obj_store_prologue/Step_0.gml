@@ -149,16 +149,16 @@ if key_jump_pressed || key_attack // accept
             switch(index)
             {
                 case 0: // horizontal1
-                    if (global.superattack1 = 0 && global.darkessence >= 500) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                    if (global.superattack1 = 0 && global.darkessence >= 1000) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
                     break;
                 case 1: // horizontal2
-                    if (global.superattack1 = 1 && global.darkessence >= 500) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                    if (global.superattack1 = 1 && global.darkessence >= 2000) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
                     break;
                 case 2: // aoe
-                    if (global.superattack2 = 0 && global.darkessence >= 500) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                    if (global.superattack2 = 0 && global.darkessence >= 2000) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
                     break;
                 case 3: // missle
-                    if (global.superattack3 = 0 && global.darkessence >= 500) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                    if (global.superattack3 = 0 && global.darkessence >= 2000) {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
                     break;
                 case 4:
                     fnc_snd_play_over(snd_menu_accept);
@@ -422,39 +422,39 @@ if buy_confirm
                     case 2:
                     switch(index){
                         case 0: // Покупка супер гориз1
-                            if global.superattack1 = 0 && global.darkessence >=100
+                            if global.superattack1 = 0 && global.darkessence >=1000
                             {
                                 fnc_snd_play_over(snd_menu_accept);
     	                        buy_confirm = 0;
     	                        global.superattack1 = 1;
-    	                        global.darkessence -= 500;
+    	                        global.darkessence -= 1000;
                             }
                             break;
                         case 1: // Покупка супер гориз2
-                            if global.superattack1 = 1 && global.darkessence >=100
+                            if global.superattack1 = 1 && global.darkessence >=2000
                             {
                                 fnc_snd_play_over(snd_menu_accept);
     	                        buy_confirm = 0;
     	                        global.superattack1 = 2;
-    	                        global.darkessence -= 500;
+    	                        global.darkessence -= 2000;
                             }
                             break;
                         case 2: // Покупка супер aoe
-                            if global.superattack2 = 0 && global.darkessence >=100
+                            if global.superattack2 = 0 && global.darkessence >=2000
                             {
                                 fnc_snd_play_over(snd_menu_accept);
     	                        buy_confirm = 0;
     	                        global.superattack2 = 1;
-    	                        global.darkessence -= 500;
+    	                        global.darkessence -= 2000;
                             }
                             break;
                         case 3: // Покупка супер ракеты
-                            if global.superattack3 = 0 && global.darkessence >=100
+                            if global.superattack3 = 0 && global.darkessence >=2000
                             {
                                 fnc_snd_play_over(snd_menu_accept);
     	                        buy_confirm = 0;
     	                        global.superattack3 = 1;
-    	                        global.darkessence -= 500;
+    	                        global.darkessence -= 2000;
                             }
                             break;
                     }
@@ -735,13 +735,13 @@ switch(submenu)
                 if global.superattack1 = 0 itemprice = 1000; else itemprice = 0;            
                 break;
             case 1: 
-                if global.superattack1 = 1 itemprice = 1000; else itemprice = 0;
+                if global.superattack1 = 1 itemprice = 2000; else itemprice = 0;
                 break;
             case 2: 
-                if global.superattack2 = 0 itemprice = 1000; else itemprice = 0;
+                if global.superattack2 = 0 itemprice = 2000; else itemprice = 0;
                 break;
             case 3: 
-                if global.superattack3 = 0 itemprice = 1000; else itemprice = 0;
+                if global.superattack3 = 0 itemprice = 2000; else itemprice = 0;
                 break;
             
                 default :

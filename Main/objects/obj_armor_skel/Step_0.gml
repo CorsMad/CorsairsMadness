@@ -302,6 +302,7 @@ if state = 5
             break;
         case 40: 
             image_index = 3;
+            fnc_snd_play_onetime(snd_follower_ground_hit);
             instance_create_depth(x-14,y,depth-1,obj_sfx_dust_expl_small);
             instance_create_depth(x+14,y,depth-1,obj_sfx_dust_expl_small);
             instance_create_depth(x-14,y,depth-1,obj_armor_skel_boulder);
@@ -414,4 +415,5 @@ if enemy_hp < 1
     d.image_xscale = image_xscale;
     d.image_index = image_index;
 }
+
 #endregion

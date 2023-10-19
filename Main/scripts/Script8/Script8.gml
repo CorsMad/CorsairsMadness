@@ -38,9 +38,9 @@ function fnc_snd_play_over(argument0)
 
 function fnc_snd_play_onetime(argument1)
 {
-    if !audio_play_sound(argument1,0,0)   
+    if !audio_play_sound(argument1,0,false)   
     {
-        audio_play_sound(argument1,0,0);   
+        audio_play_sound(argument1,0,false);   
     }
 }
 

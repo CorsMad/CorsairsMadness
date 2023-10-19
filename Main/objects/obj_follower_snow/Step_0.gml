@@ -50,6 +50,7 @@ switch(on)
         vspd+=0.2;
         if vspd>0 && y>=start_y
         {
+            fnc_snd_play_onetime(snd_follower_landing);
             y = start_y;
             on = 1;
             landed = 1;
@@ -62,7 +63,7 @@ switch(on)
         {
             case 0: // остановка
             #region anim
-                if landed = 1 {landed_t++;};
+                if landed = 1 {landed_t++;};                
                 if landed_t = 20 {landed_t=0;landed=0;};
                 if landed = 1{
                 sprite_index = spr_boss_sp_jump;
@@ -89,6 +90,7 @@ switch(on)
                 
                 #region anim
                     if landed = 1 {landed_t++;};
+                    
                     if landed_t = 20 {landed_t=0;landed=0;};
                     if landed = 1 && place_meeting(x,y+1,obj_block_flw){
                         sprite_index = spr_boss_sp_jump;
@@ -143,7 +145,8 @@ switch(on)
                     landed = 1;
                     landed_t = 0;
                     if place_meeting(x,y+1,obj_block_flw) 
-                    {                        
+                    {      
+                        fnc_snd_play_onetime(snd_follower_landing);
                         jump = 0
                     }
                 }
@@ -242,6 +245,7 @@ switch(on)
                 hspd = 0;
                 if t = 50 
                 {
+                    fnc_snd_play_onetime(snd_follower_ground_hit);
                     instance_create_depth(x-24,y,depth-1,obj_sfx4)
                     instance_create_depth(x+24,y,depth-1,obj_sfx4)
                     var w1 = instance_create_depth(x-24,y,depth-1,obj_molded_purple_wave)   
@@ -257,6 +261,11 @@ switch(on)
                 break;
                 
                 
+        }
+        
+        if y > room_height + 64 {
+            instance_destroy();
+            
         }
     #endregion 
         break;

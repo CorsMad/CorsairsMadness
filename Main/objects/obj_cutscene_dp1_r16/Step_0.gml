@@ -25,6 +25,7 @@ if state = 2
     t++
     if t = 60 
     {
+        
         instance_create_depth(0,0,-1000,obj_text_dp1_r16_cutscene);
         instance_destroy();
     }

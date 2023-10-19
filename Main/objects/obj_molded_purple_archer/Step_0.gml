@@ -525,6 +525,7 @@ if state = 7
 #region смерть
 if enemy_hp <=0 || y > room_height+32
 {
+    fnc_molded_dark_essence_none();
     var death = instance_create_depth(x,y,depth,obj_molded_purple_archer_death)   ;
     death.image_xscale = image_xscale;
     instance_destroy();

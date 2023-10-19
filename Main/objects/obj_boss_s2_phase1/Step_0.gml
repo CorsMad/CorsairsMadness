@@ -113,6 +113,7 @@ if (state = 1) { // 2 удара вперед с выпадом
         case 40: image_index = 4;break;   
         case 45: 
             image_index = 5;
+            fnc_snd_play_onetime(snd_enemy_boss2_attack);
             var hitbox = instance_create_depth(x,y,depth,obj_boss_s2_phase1_attack1_1);
             hitbox.image_xscale = image_xscale;
             break;   
@@ -124,6 +125,7 @@ if (state = 1) { // 2 удара вперед с выпадом
         case 60: image_index = 4;break;   
         case 100: 
             if obj_Player.x < x hspd = -2 else hspd = 2;
+            fnc_snd_play_onetime(snd_enemy_boss2_attack);
             var hitbox2 = instance_create_depth(x,y,depth,obj_boss_s2_phase1_attack1_2);
             hitbox2.image_xscale = image_xscale;
             image_index = 5;
@@ -161,6 +163,7 @@ if (state = 2) { // размашистый удар
     {
         case 30:    image_index = 1;break;   
         case 35:    
+        fnc_snd_play_onetime(snd_enemy_boss2_attack);
             var hitboxup = instance_create_depth(x,y,depth,obj_boss_s2_phase1_attack2);
             hitboxup.image_xscale = image_xscale;
             image_index = 2;
@@ -264,19 +267,19 @@ if (state = 6) { // Ожидание
     
 // Топор
 
-    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1,0);
 
 // Бомба
 
-    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,0);
 
 // Eball
 
-	fnc_take_dmg_eball(0,-16,-1,1);
+	fnc_take_dmg_eball(0,-16,-1,0);
 
 // Parrot
 
-	fnc_take_dmg_parrot_laser(0,-16,-1,1)
+	fnc_take_dmg_parrot_laser(0,-16,-1,0)
 
 // Удар вниз   
 

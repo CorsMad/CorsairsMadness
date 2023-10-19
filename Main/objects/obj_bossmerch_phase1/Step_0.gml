@@ -34,7 +34,9 @@ switch(state){
 			if image_index = 5 image_index = 4 else image_index = 5;	
 		}
 		switch(t){
-			case 1: sprite_index = spr_bossmerch_phase1_attack1;image_index = 0;image_speed = 0;image_xscale = -1;break;	
+			case 1: sprite_index = spr_bossmerch_phase1_attack1;image_index = 0;image_speed = 0;image_xscale = -1;
+                fnc_snd_play_over(snd_enemy_desert_boat_charge);
+                break;	
 			case 10: image_index = 1;break;
 			case 15: image_index = 2;break;
 			case 20: image_index = 3;break;
@@ -50,13 +52,13 @@ switch(state){
 		#endregion
 		if t > 50 && t < 400
 		if t mod 40 = 0 scr_finalboss_phase1_proj_l();
-		if t = 500 {
+		if t = 450 {
 			t = 0;
 			state = 2;
 		}
 		break;
 	case 2: // перемещение в середину
-		x-=2;
+		x-=3;
 		sprite_index = spr_bossmerch_phase1_walk;
 		image_speed = 1;
 		if x <= room_width/2 {
@@ -137,11 +139,11 @@ switch(state){
 	}
 		break;
 	case 4: // перемещение влево
-		x-=2; 
+		x-=4; 
 		sprite_index = spr_bossmerch_phase1_walk;
 		image_speed = 1;
-		if x <=48{
-			x = 48;
+		if x <=32{
+			x = 32;
 			state = 5;
 			t = 0;
 		}
@@ -154,7 +156,9 @@ switch(state){
 			if image_index = 5 image_index = 4 else image_index = 5;	
 		}
 		switch(t){
-			case 1: sprite_index = spr_bossmerch_phase1_attack1;image_index = 0;image_speed = 0;image_xscale = -1;break;	
+			case 1: sprite_index = spr_bossmerch_phase1_attack1;image_index = 0;image_speed = 0;image_xscale = -1;
+            fnc_snd_play_over(snd_enemy_desert_boat_charge);
+            break;	
 			case 10: image_index = 1;break;
 			case 15: image_index = 2;break;
 			case 20: image_index = 3;break;
@@ -170,7 +174,7 @@ switch(state){
 		#endregion
 		if t > 50 && t < 400
 		if t mod 40 = 0 scr_finalboss_phase1_proj();
-		if t = 500 {
+		if t = 450 {
 			t = 0;
 			state = 7;
 		}
@@ -178,7 +182,7 @@ switch(state){
 	case 7: // полет в середину
 		sprite_index = spr_bossmerch_phase1_walk;
 		image_speed = 1;
-		x+=2;
+		x+=3;
 		if x > room_width/2{
 			x = room_width/2;
 			state = 8;
@@ -254,7 +258,7 @@ switch(state){
 	}
 		break;
 	case 9: // перемещение вправо
-		x+=2;
+		x+=3;
 		sprite_index = spr_bossmerch_phase1_walk;
 		image_speed = 1;
 		if x >= 448{

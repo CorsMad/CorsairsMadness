@@ -77,6 +77,7 @@ if state = 2
     {   
         sprite_index = spr_sh_attack;
         image_index = 0;
+        fnc_snd_play_onetime(snd_spikehedge_fire);
         var s1 = instance_create_depth(x,y-10,depth,obj_spikehedge_spike); // Поменять Y
         var s2 = instance_create_depth(x,y-10,depth,obj_spikehedge_spike);
         var s3 = instance_create_depth(x,y-10,depth,obj_spikehedge_spike);
@@ -116,6 +117,7 @@ if instance_exists(obj_Player)
     if place_meeting(x,y,obj_abil_boots_hitbox) && armored = 1//obj_Player.bbox_bottom > bbox_top && armored = 1
     {
         fnc_snd_play_onetime(snd_player_springboots);
+        fnc_snd_play_onetime(snd_spikehedge_losearmor);
         var s5 = instance_create_depth(x,y-20,depth,obj_spikehedge_spike);
         s5.hspd = -3;
         s5.vspd = 0;

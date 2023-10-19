@@ -357,11 +357,15 @@ switch(state)
 	#region третья фаза
 	case 3:
 		t++; 
-		if global.secrets_sn_endurance = 0
-        {
-            instance_create_depth(240,240,0,obj_chest_sne_3_s);   
-        } else instance_create_depth(240,240,0,obj_chest_sne_3);  
-        instance_destroy();
+        if t = 20{
+            fnc_msc_stop_play_slow()
+            if global.secrets_sn_endurance = 0
+            {
+                instance_create_depth(240,240,0,obj_chest_sne_3_s);   
+            } else instance_create_depth(240,240,0,obj_chest_sne_3);  
+            instance_destroy();
+        }
+		
 		break;
 	#endregion
 }

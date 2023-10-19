@@ -21,8 +21,8 @@ if gravitate = 0
 if gravitate = 1
 {
     
-        obj_Player.x = lerp(obj_Player.x,x,0.1);   
-        obj_Player.y = lerp(obj_Player.y,y+22,0.1);   
+        obj_Player.x = lerp(obj_Player.x,x,0.2);   
+        obj_Player.y = lerp(obj_Player.y,y+22,0.2);   
         obj_Player.fspd = 0;
         obj_Player.vspd = 0;
         obj_Player.dash_count= 1;

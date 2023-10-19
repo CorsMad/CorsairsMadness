@@ -5,6 +5,7 @@ if place_meeting(x,y,obj_hitbox)
 {
 	if instance_exists(obj_maze5_counter_controller)
 	{
+        fnc_snd_play_coin();
         instance_create_depth(x,y,depth-1,obj_sfx_weapon_slash);
 		obj_maze5_counter_controller.CurrentScore+=30;
 		instance_destroy();

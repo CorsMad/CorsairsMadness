@@ -38,6 +38,7 @@ if state = 2.2
     t++;
     if t = 1
     {
+        fnc_snd_play_over(snd_boss_expl);
         instance_create_depth(240+32,136+32,depth-1,obj_sfx_explosion_bomb);
         instance_create_depth(240-32,136+32,depth-1,obj_sfx_explosion_bomb);
         instance_create_depth(240+32,136-32,depth-1,obj_sfx_explosion_bomb);
@@ -46,6 +47,7 @@ if state = 2.2
     }
     if t = 10
     {
+        fnc_snd_play_over(snd_boss_expl);
         t = 0;
         instance_destroy(obj_boss_s1_phase2_1_death);
         instance_destroy(obj_boss_s1_phase2_2_death);
@@ -62,6 +64,7 @@ if state = 3
 {
     if !instance_exists(obj_boss_s1_phase3_1) && !instance_exists(obj_boss_s1_phase3_2) && !instance_exists(obj_boss_s1_phase3_3) && !instance_exists(obj_boss_s1_phase3_4)  
     {
+        fnc_msc_stop_play_slow();
         if global.key_blue1 = 0 instance_create_depth(240,135,depth,obj_key_blue_sq);
         else instance_create_depth(x,y,0,obj_room_transition_black_screen_s1_stats);   
         instance_destroy();

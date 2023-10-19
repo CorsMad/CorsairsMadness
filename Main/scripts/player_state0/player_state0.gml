@@ -1011,9 +1011,9 @@ if global.choosed_item = 4 // Eball
 		#region eball
 	
 		#region on ground
-			if key_item && isFlueting = 0 && global.mana > 2 && isUsingabil = 0 && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
+			if key_item && isFlueting = 0 && global.mana > 0 && isUsingabil = 0 && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 			{
-				global.mana-=2
+				global.mana-=1
 				
 				
                 sbootsbuffer = 0;  
@@ -1042,9 +1042,9 @@ if global.choosed_item = 4 // Eball
 		#endregion
 		#region in air
 	
-			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0 && isAirUsingabil = 0 ) || (key_attack && key_jump && isGrounded = 1)) && global.mana > 2 && isFlueting = 0 && isAirUsingabil = 0 && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
+			if ((key_item && isGrounded = 0 && isAirUsingitem = 0 && isAirattacking = 0 && isAirUsingabil = 0 ) || (key_attack && key_jump && isGrounded = 1)) && global.mana > 0 && isFlueting = 0 && isAirUsingabil = 0 && isAirUsingitem = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 			{
-				global.mana-=2;
+				global.mana-=1;
 				image_index = 0;
 				isAirUsingitem = 1;
 				sprite_index = spr_player_item_use;
@@ -1322,6 +1322,7 @@ if specabilnumber = 4
         
 			if key_abil && isSkating = 0 && isAirUsingitem = 0 && isUsingitem = 0 && isUsingabil = 0 && isAirUsingabil = 0 && isCarry = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0
 			{
+                fnc_snd_play_onetime(snd_use_ring1_human);
 				image_index = 0;
 				isUsingabil = 1;
 				sprite_index = spr_player_abiluse;
@@ -1352,7 +1353,7 @@ if specabilnumber = 4
 		  
 			if ((key_abil && isGrounded = 0 && isAirUsingitem = 0 && isAirUsingabil = 0 ) || (key_abil && key_jump && isGrounded = 1)) && isUsingabil = 0 && isAirUsingabil = 0 && isSkating = 0 && isAirUsingabil = 0 && isAirUsingitem = 0 && isCarry = 0 &&  isAirattacking = 0 && isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 
 			{
-				
+				fnc_snd_play_onetime(snd_use_ring1_human);
 				image_index = 0;
 				isAirUsingabil = 1;
 				sprite_index = spr_player_abiluse;
@@ -1426,12 +1427,13 @@ if key_jump && isGrounded = 0 && !instance_exists(obj_skates_mask) && isSkating 
 }
 if isSkating = 1
 {
+    
     isAttacking = 0;
     isAirattacking = 0;
     
     switch(sprite_index)
     {
-        case spr_player_slide:  image_speed = 0.5;break; //abs(sspd)*0.5;break;
+        case spr_player_slide:  image_speed = 0.5;fnc_snd_play_onetime(snd_skate_humanlong); break; //abs(sspd)*0.5;break;
         case spr_player_slide_jump: 
             image_speed = 0;    
             if vspd <= 0 image_index = 0;
@@ -1444,22 +1446,28 @@ if isSkating = 1
     spd = 0;
     if place_meeting(x,y+1,obj_block_slope_r)
     {
+
+
+        
         image_xscale = 1;
         if sspd < 3 sspd += 0.1;
     }
     if place_meeting(x,y+1,obj_block_slope_l)
     {
+
         if sspd > -3 sspd -= 0.1;
         image_xscale = -1;
     }
 
     if place_meeting(x,y+1,obj_block_slope_r_f)
     {
+
         image_xscale = 1;
         sspd = 3;
     }
     if place_meeting(x,y+1,obj_block_slope_l_f)
     {
+
         sspd = -3;
         image_xscale = -1;
     }
@@ -1544,7 +1552,7 @@ if specabilnumber = 3
 			}
 			if isUsingabil = 1 && image_index = 1 && !instance_exists(obj_item_boomerang)
 			{
-				var itemBoom = instance_create_depth(x,y-16,1,obj_item_boomerang);         
+				var itemBoom = instance_create_depth(x,y-16,depth,obj_item_boomerang);         
                 itemBoom.acc = 5*sign(image_xscale);
 			           
 			}		
@@ -1608,7 +1616,7 @@ if specabilnumber = 3
 			}
 			if isAirUsingabil = 1 && image_index = 1 && !instance_exists(obj_item_boomerang)
 			{
-				var itemBoom = instance_create_depth(x,y-16,1,obj_item_boomerang);         
+				var itemBoom = instance_create_depth(x,y-16,depth,obj_item_boomerang);         
                 itemBoom.acc = 5*sign(image_xscale); 
 			}
 			if isAirUsingabil = 1 && image_index = 5
@@ -1639,6 +1647,7 @@ if key_attack && isThrowingBomb = 0 && isCarry = 1 && isUsingabil = 0 && isUsing
 {
 	image_index = 0;
 	isThrowingBomb = 1;
+    fnc_snd_play_onetime(snd_player_throw_bomb);
 	sprite_index = spr_player_throw_bomb;
 	image_speed = 0.5;
 }
@@ -1668,6 +1677,7 @@ if isThrowingBomb = 1 && !place_meeting(x,y+1,obj_block)
 
 if ((key_attack && isGrounded = 0 && isAirThrowingBomb = 0 && isCarry = 1) || (key_attack && key_jump && isGrounded = 1 && isCarry = 1)) && isAirThrowingBomb = 0 && isAirattacking = 0 && isCarry = 1 && isAirUsingabil = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isAttackingdown = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0
 {
+    fnc_snd_play_onetime(snd_player_throw_bomb);
 	image_index = 0;
 	isAirThrowingBomb = 1;
 	sprite_index = spr_player_throw_bomb;

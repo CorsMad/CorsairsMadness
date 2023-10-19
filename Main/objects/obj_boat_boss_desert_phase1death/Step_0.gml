@@ -2,6 +2,7 @@ t1++;
 if t1 = 10
 {
     instance_create_depth(x+random_range(-16,16),y+random_range(-16,16),depth-1000,obj_sfx_explosion)   ;
+    instance_create_depth(x,y,depth-1,obj_sfx_sparkle_1);
     t1 = 0;
 }
 
@@ -31,3 +32,4 @@ if state = 1
         instance_create_depth(x,y,depth,obj_boat_boss_desert_phase2);
     }
 }
+

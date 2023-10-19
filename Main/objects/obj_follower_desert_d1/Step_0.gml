@@ -113,6 +113,7 @@ if dead = 1
     switch(t)
     {
         case 1:
+        fnc_snd_play_onetime(snd_desert_follower_tp);
             sprite_index = spr_boss_dp_appear;
             image_index = 7;
             break;

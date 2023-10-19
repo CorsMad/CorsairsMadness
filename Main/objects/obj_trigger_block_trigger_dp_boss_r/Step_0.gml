@@ -29,6 +29,7 @@ switch(state)
     case 2:
         if pressed = 0 && place_meeting(x,y,obj_hitbox_mask)        
         {
+            fnc_snd_play_onetime(snd_bomb_selektor);
             instance_create_depth(x-16,y,depth-1,obj_sfx_weapon_slash);
             pressed = 1;
             state = 2.5;

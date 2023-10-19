@@ -16,3 +16,4 @@ if t = 41
 
 
 
+if t mod 10 = 0 instance_create_depth(x,y-16,depth-1,obj_sfx_sparkle_1);

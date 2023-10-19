@@ -18,10 +18,10 @@ if (state = 0) {
 		{
 			switch(place_appear)
 			{
-				case 0: state = 1.2;break;	
-				case 1: state = 1.4;break;	
-				case 2: state = 1.6;break;	
-				case 3: state = 1.8;break;	
+				case 0: state = 1.2;fnc_snd_play_onetime(snd_enemy_sander_open); break;	
+				case 1: state = 1.4;fnc_snd_play_onetime(snd_enemy_sander_open); break;	
+				case 2: state = 1.6;fnc_snd_play_onetime(snd_enemy_sander_open); break;	
+				case 3: state = 1.8;fnc_snd_play_onetime(snd_enemy_sander_open); break;	
 			}
 			place_appear_prev = place_appear;
 			t = 0;
@@ -54,7 +54,9 @@ if (state = 1.2) { // вверху слева
         case 155: image_index = 2;break;
         case 160: image_index = 1;break;
         case 170: sprite_index = spr_boss_g2_p1_idle;image_speed = 1;break;       
-        case 175: sprite_index = spr_boss_g2_p1_appear;image_speed = 0;image_index = 4;break;
+        case 175: sprite_index = spr_boss_g2_p1_appear;
+            fnc_snd_play_onetime(snd_enemy_sander_close);
+            image_speed = 0;image_index = 4;break;
         case 180: image_index = 3;break;
         case 185: image_index = 2;break;
         case 190: image_index = 1;break;
@@ -102,7 +104,9 @@ if (state = 1.4) { // вверху справа
         case 155: image_index = 2;break;
         case 160: image_index = 1;break;
         case 170: sprite_index = spr_boss_g2_p1_idle;image_speed = 1;break;       
-        case 175: sprite_index = spr_boss_g2_p1_appear;image_speed = 0;image_index = 4;break;
+        case 175: sprite_index = spr_boss_g2_p1_appear;image_speed = 0;image_index = 4;
+        fnc_snd_play_onetime(snd_enemy_sander_close);
+        break;
         case 180: image_index = 3;break;
         case 185: image_index = 2;break;
         case 190: image_index = 1;break;
@@ -148,7 +152,9 @@ if (state = 1.6) { // внизу слева
         case 155: image_index = 2;break;
         case 160: image_index = 1;break;
         case 170: sprite_index = spr_boss_g2_p1_idle;image_speed = 1;break;       
-        case 175: sprite_index = spr_boss_g2_p1_appear;image_speed = 0;image_index = 4;break;
+        case 175: sprite_index = spr_boss_g2_p1_appear;image_speed = 0;image_index = 4;
+        fnc_snd_play_onetime(snd_enemy_sander_close);
+        break;
         case 180: image_index = 3;break;
         case 185: image_index = 2;break;
         case 190: image_index = 1;break;
@@ -192,7 +198,9 @@ if (state = 1.8) { // вверху справа
         case 155: image_index = 2;break;
         case 160: image_index = 1;break;
         case 170: sprite_index = spr_boss_g2_p1_idle;image_speed = 1;break;       
-        case 175: sprite_index = spr_boss_g2_p1_appear;image_speed = 0;image_index = 4;break;
+        case 175: sprite_index = spr_boss_g2_p1_appear;image_speed = 0;image_index = 4;
+        fnc_snd_play_onetime(snd_enemy_sander_close);
+        break;
         case 180: image_index = 3;break;
         case 185: image_index = 2;break;
         case 190: image_index = 1;break;

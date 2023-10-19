@@ -3,7 +3,7 @@
 a = 0;
 spd = 5;
 depth = -9999;
-fnc_snd_play_boat_pistol();
+fnc_snd_play_onetime(snd_boat_parrot);
 
 state = 1;
 t = 0;

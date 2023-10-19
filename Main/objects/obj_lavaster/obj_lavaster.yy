@@ -7,6 +7,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_abil_arbalet_proj","path":"objects/obj_abil_arbalet_proj/obj_abil_arbalet_proj.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_item_boomerang","path":"objects/obj_item_boomerang/obj_item_boomerang.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -15,8 +16,8 @@
     "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Lava/Lavamonster.yy",
   },
   "parentObjectId": {
-    "name": "obj_enemy_parent_object",
-    "path": "objects/obj_enemy_parent_object/obj_enemy_parent_object.yy",
+    "name": "obj_enemy_parent",
+    "path": "objects/obj_enemy_parent/obj_enemy_parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

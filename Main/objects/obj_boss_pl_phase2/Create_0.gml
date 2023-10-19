@@ -5,7 +5,7 @@ state= 0//0;
 t = 0;
 hspd = 0;
 vspd = 0;
-
+fnc_snd_play_over(snd_spikes_trap_activation);
 image_speed = 0;
 player_near = 0;
 player_near_timer = 0;

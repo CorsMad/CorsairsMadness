@@ -4,7 +4,7 @@
 
 state = 0;
 t = 0;
-
+hit_cd = 0;
 
 
 

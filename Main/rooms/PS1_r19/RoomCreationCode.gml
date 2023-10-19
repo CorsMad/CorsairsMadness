@@ -1,1 +1,1 @@
-fnc_msc_start_checkpoint(msc_spos);
+fnc_msc_start_checkpoint(msc_jp1_prepurch);

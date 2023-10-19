@@ -22,7 +22,7 @@ switch(state)
         image_xscale = 1;
         switch(t)
         {
-            case 1: sprite_index = spr_boss_dp_appear;image_index = 0;image_speed = 0;break;   
+            case 1: sprite_index = spr_boss_dp_appear;fnc_snd_play_onetime(snd_desert_follower_tp);image_index = 0;image_speed = 0;break;   
             case 5: image_index = 1;break;   
             case 10: image_index = 2;break;   
             case 15: image_index = 3;break;   
@@ -39,7 +39,7 @@ switch(state)
             case 70: image_index = 9;break;   
             case 75: image_index = 10;break;               
             case 80: image_index = 11;break;               
-            case 85: sprite_index = spr_boss_dp_appear;image_index = 7;image_speed = 0;break;    
+            case 85: sprite_index = spr_boss_dp_appear;image_index = 7;fnc_snd_play_onetime(snd_desert_follower_tp);image_speed = 0;break;    
             case 90: image_index = 6;break;   
             case 95: image_index = 5;break;   
             case 100: image_index = 4;break;   
@@ -70,7 +70,7 @@ switch(state)
         t++;
         switch(t)
         {
-            case 1: sprite_index = spr_boss_dp_appear;image_index = 0;image_speed = 0;break;   
+            case 1: sprite_index = spr_boss_dp_appear;image_index = 0;fnc_snd_play_onetime(snd_desert_follower_tp);image_speed = 0;break;   
             case 5: image_index = 1;break;   
             case 10: image_index = 2;break;   
             case 15: image_index = 3;break;   
@@ -87,7 +87,7 @@ switch(state)
             case 70: image_index = 9;break;   
             case 75: image_index = 10;break;               
             case 80: image_index = 11;break;               
-            case 85: sprite_index = spr_boss_dp_appear;image_index = 7;image_speed = 0;break;    
+            case 85: sprite_index = spr_boss_dp_appear;image_index = 7;fnc_snd_play_onetime(snd_desert_follower_tp);image_speed = 0;break;    
             case 90: image_index = 6;break;   
             case 95: image_index = 5;break;   
             case 100: image_index = 4;break;   
@@ -114,7 +114,7 @@ switch(state)
         t++;
         switch(t)
         {
-            case 1: sprite_index = spr_boss_dp_appear;image_index = 0;image_speed = 0;break;   
+            case 1: sprite_index = spr_boss_dp_appear;image_index = 0;fnc_snd_play_onetime(snd_desert_follower_tp);image_speed = 0;break;   
             case 5: image_index = 1;break;   
             case 10: image_index = 2;break;   
             case 15: image_index = 3;break;   
@@ -131,7 +131,7 @@ switch(state)
             case 70: image_index = 9;break;   
             case 75: image_index = 10;break;               
             case 80: image_index = 11;break;               
-            case 85: sprite_index = spr_boss_dp_appear;image_index = 7;image_speed = 0;break;    
+            case 85: sprite_index = spr_boss_dp_appear;image_index = 7;fnc_snd_play_onetime(snd_desert_follower_tp);image_speed = 0;break;    
             case 90: image_index = 6;break;   
             case 95: image_index = 5;break;   
             case 100: image_index = 4;break;   
@@ -158,7 +158,7 @@ switch(state)
         t++;
         switch(t)
         {
-            case 1: sprite_index = spr_boss_dp_appear;image_index = 0;image_speed = 0;break;   
+            case 1: sprite_index = spr_boss_dp_appear;image_index = 0;fnc_snd_play_onetime(snd_desert_follower_tp);image_speed = 0;break;   
             case 5: image_index = 1;break;   
             case 10: image_index = 2;break;   
             case 15: image_index = 3;break;   
@@ -166,7 +166,7 @@ switch(state)
             case 25: image_index = 5;break;   
             case 30: image_index = 6;break;   
             case 35: image_index = 7;break;               
-            case 40: sprite_index = spr_boss_dp_lasershot; image_index = 0;break;   
+            case 40: sprite_index = spr_boss_dp_lasershot; image_index = 0;fnc_snd_play_onetime(snd_desert_follower_tp);break;   
             case 45: image_index = 1;break;   
             case 50: image_index = 2;break;   
             case 55: image_index = 3;break;   
@@ -193,7 +193,7 @@ switch(state)
     switch(t)
     {
         case 1:sprite_index = spr_boss_dp_idle;image_speed = 1;break;
-        case 65:sprite_index = spr_boss_dp_appear;image_index = 7;image_speed = 0;break;
+        case 65:sprite_index = spr_boss_dp_appear;fnc_snd_play_onetime(snd_desert_follower_tp);image_index = 7;image_speed = 0;break;
         case 70:image_index = 6;break;
         case 75:image_index = 5;break;
         case 80:image_index = 4;break;
@@ -215,7 +215,7 @@ switch(state)
     
     switch(t) // АНИМ
     {
-        case 15:sprite_index = spr_boss_dp_appear;image_index = 0;image_speed =0 ;break;
+        case 15:sprite_index = spr_boss_dp_appear;fnc_snd_play_onetime(snd_desert_follower_tp);image_index = 0;image_speed =0 ;break;
         case 20:image_index = 1;break;
         case 25:image_index = 2;break;
         case 30:image_index = 3;break;
@@ -235,7 +235,7 @@ switch(state)
         case 100:image_index = 9;break;
         case 105:image_index = 10;break;
         case 110:image_index = 11;break;
-        case 115:sprite_index = spr_boss_dp_appear;image_index = 7;image_speed =0;break;
+        case 115:sprite_index = spr_boss_dp_appear;fnc_snd_play_onetime(snd_desert_follower_tp);image_index = 7;image_speed =0;break;
         case 120:image_index = 6;break;
         case 125:image_index = 5;break;
         case 130:image_index = 4;break;
@@ -244,7 +244,7 @@ switch(state)
         case 145:image_index = 1;break;
         case 150:sprite_index = spr_blank;y=-200;break;        
         
-        case 160:sprite_index = spr_boss_dp_appear;image_index = 0;image_speed =0 ;break;
+        case 160:sprite_index = spr_boss_dp_appear;fnc_snd_play_onetime(snd_desert_follower_tp);image_index = 0;image_speed =0 ;break;
         case 165:image_index = 1;break;
         case 170:image_index = 2;break;
         case 175:image_index = 3;break;
@@ -264,7 +264,7 @@ switch(state)
         case 250:image_index = 9;break;
         case 255:image_index = 10;break;
         case 260:image_index = 11;break;
-        case 265:sprite_index = spr_boss_dp_appear;image_index = 7;image_speed =0;break;
+        case 265:sprite_index = spr_boss_dp_appear;fnc_snd_play_onetime(snd_desert_follower_tp);image_index = 7;image_speed =0;break;
         case 270:image_index = 6;break;
         case 275:image_index = 5;break;
         case 280:image_index = 4;break;
@@ -273,7 +273,7 @@ switch(state)
         case 295:image_index = 1;break;
         case 300:sprite_index = spr_blank;y=-200;break;
         
-        case 315:sprite_index = spr_boss_dp_appear;image_index = 0;image_speed =0 ;break;
+        case 315:sprite_index = spr_boss_dp_appear;fnc_snd_play_onetime(snd_desert_follower_tp);image_index = 0;image_speed =0 ;break;
         case 320:image_index = 1;break;
         case 325:image_index = 2;break;
         case 330:image_index = 3;break;
@@ -293,7 +293,7 @@ switch(state)
         case 400:image_index = 9;break;
         case 405:image_index = 10;break;
         case 410:image_index = 11;break;
-        case 415:sprite_index = spr_boss_dp_appear;image_index = 7;image_speed =0;break;
+        case 415:sprite_index = spr_boss_dp_appear;fnc_snd_play_onetime(snd_desert_follower_tp);image_index = 7;image_speed =0;break;
         case 420:image_index = 6;break;
         case 425:image_index = 5;break;
         case 430:image_index = 4;break;
@@ -302,7 +302,7 @@ switch(state)
         case 445:image_index = 1;break;
         case 450:sprite_index = spr_blank;y=-200;break;
         
-        case 465:sprite_index = spr_boss_dp_appear;image_index = 0;image_speed =0 ;break;
+        case 465:sprite_index = spr_boss_dp_appear;fnc_snd_play_onetime(snd_desert_follower_tp);image_index = 0;image_speed =0 ;break;
         case 470:image_index = 1;break;
         case 475:image_index = 2;break;
         case 480:image_index = 3;break;
@@ -422,6 +422,7 @@ switch(state)
     switch(t)
     {
         case 1:
+            fnc_snd_play_onetime(snd_desert_follower_tp);
             sprite_index = spr_boss_dp_appear;
             image_index = 7;
             image_speed = 0;

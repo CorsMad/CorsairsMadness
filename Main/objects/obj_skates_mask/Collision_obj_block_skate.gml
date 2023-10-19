@@ -5,6 +5,7 @@ if instance_exists(obj_Player)
     
     if obj_Player.isDashing = 0
     {
+        fnc_snd_play_onetime(snd_skate_human);
         instance_create_depth(x,y,depth,obj_sfx_sliding_big)
         obj_Player.isSkatingonrail = 1;
         obj_Player.isSkating = 1;

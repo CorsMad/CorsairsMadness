@@ -19,7 +19,7 @@ if state = 0 // fly lanc fly lanc fly
                 }
             }  
             break;
-        case 400: // lanc
+        case 200: // lanc
             if instance_exists(obj_Player)
             {
                 if obj_Player.x > 736
@@ -35,7 +35,7 @@ if state = 0 // fly lanc fly lanc fly
                 }
             }
             break;
-        case 800: // fly
+        case 300: // fly
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> 736
@@ -51,7 +51,7 @@ if state = 0 // fly lanc fly lanc fly
                 }
             }  
             break;
-        case 1500: // lanc
+        case 800: // lanc
             if instance_exists(obj_Player)
             {
                 if obj_Player.x > 736
@@ -67,7 +67,7 @@ if state = 0 // fly lanc fly lanc fly
                 }
             }
             break;
-        case 2000: // fly
+        case 900: // fly
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> 736
@@ -83,7 +83,7 @@ if state = 0 // fly lanc fly lanc fly
                 }
             }  
             break;
-        case 2100:
+        case 1000:
             state = 0.5;
             t = 0;
             break;       

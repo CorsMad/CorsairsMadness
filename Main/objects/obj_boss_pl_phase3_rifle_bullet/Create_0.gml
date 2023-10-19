@@ -17,3 +17,5 @@ hspeed = lengthdir_x(spd,dir);
 vspeed = lengthdir_y(spd,dir);
 image_alpha = 1;
 image_angle = dir
+
+fnc_snd_play_onetime(snd_cannon_fire);

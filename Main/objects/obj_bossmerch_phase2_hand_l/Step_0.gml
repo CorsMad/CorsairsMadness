@@ -67,6 +67,7 @@ switch(state){
         if vspd!=0 && vspd < 7 vspd+=0.5;
 		y+=vspd;
 		if y >= room_height-32 {
+            fnc_snd_play_onetime(snd_follower_ground_hit);
             instance_create_depth(x,784,depth-2,obj_sfx4);
             instance_create_depth(x-24,784,depth-2,obj_sfx4);
             instance_create_depth(x-48,784,depth-2,obj_sfx4);
@@ -76,6 +77,10 @@ switch(state){
             instance_create_depth(x+8,784,depth-1,obj_sfx_dust_expl_small);
             instance_create_depth(x-16,784,depth-1,obj_sfx_dust_expl_small);
             instance_create_depth(x+16,784,depth-1,obj_sfx_dust_expl_small);
+            var l = instance_create_depth(x,784,depth,obj_boss_d2_proj_down_wave);
+            var r = instance_create_depth(x,784,depth,obj_boss_d2_proj_down_wave);
+            l.hspd = -2;
+            r.hspd = 2;
 			state = 3;	
 			t = 0;
 			vspd = -4;
@@ -114,9 +119,14 @@ switch(state){
 	case 5:
 		y+=vspd;
 		if y >= room_height-48 {
+            fnc_snd_play_onetime(snd_follower_ground_hit);
             instance_create_depth(x,784,depth-2,obj_sfx4);
             instance_create_depth(x-8,784,depth-1,obj_sfx_dust_expl_small);
             instance_create_depth(x+8,784,depth-1,obj_sfx_dust_expl_small);
+            var l = instance_create_depth(x,784,depth,obj_boss_d2_proj_down_wave);
+            var r = instance_create_depth(x,784,depth,obj_boss_d2_proj_down_wave);
+            l.hspd = -2;
+            r.hspd = 2;
 			state = 6;	
 			t = 0;
 			vspd = -7;
@@ -150,12 +160,17 @@ switch(state){
 	case 8:
 		y+=vspd;
 		if y >= room_height-48 {
+            fnc_snd_play_onetime(snd_follower_ground_hit);
             instance_create_depth(x,784,depth-2,obj_sfx4);
             instance_create_depth(x-8,784,depth-1,obj_sfx_dust_expl_small);
             instance_create_depth(x+8,784,depth-1,obj_sfx_dust_expl_small);
 			state = 9;	
 			t = 0;
 			vspd = -7;
+            var l = instance_create_depth(x,784,depth,obj_boss_d2_proj_down_wave);
+            var r = instance_create_depth(x,784,depth,obj_boss_d2_proj_down_wave);
+            l.hspd = -2;
+            r.hspd = 2;
 		}
 		break;
 	case 9:
@@ -190,29 +205,34 @@ switch(state){
 	case 11:
 		y+=vspd;
 		if y >= room_height-48 {
+            fnc_snd_play_onetime(snd_follower_ground_hit);
             instance_create_depth(x,784,depth-2,obj_sfx4);
             instance_create_depth(x-8,784,depth-1,obj_sfx_dust_expl_small);
             instance_create_depth(x+8,784,depth-1,obj_sfx_dust_expl_small);
 			state = 12;	
 			t = 0;
 			vspd = 0;
+            var l = instance_create_depth(x,784,depth,obj_boss_d2_proj_down_wave);
+            var r = instance_create_depth(x,784,depth,obj_boss_d2_proj_down_wave);
+            l.hspd = -2;
+            r.hspd = 2;
 		}
 		break;
 	case 12:
 		t++;
         
-        if t > 100 && t < 150 {
+        if t > 50 && t < 100 {
             if t mod 15 = 0 {
                 if image_index = 9 image_index = 10 else image_index = 9;  
             }
         }
-        if t >= 150  {
+        if t >= 100  {
             if t mod 5 = 0 {
                 if image_index = 9 image_index = 10 else image_index = 9;  
             }
         }
         
-		if t = 200{
+		if t = 150{
 			t = 0;
 			state = 13;
 			vspd = -4;

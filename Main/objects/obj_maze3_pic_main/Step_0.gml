@@ -13,6 +13,7 @@ if state = 0
                 obj_maze3_pic3.image = 4  && obj_maze3_pic3.mov = 0 
                 {
                     mov = 1;   
+                    fnc_snd_play_onetime(snd_desert_maze_compl1);
                 }
         }
     
@@ -22,6 +23,7 @@ if state = 0
                 obj_maze3_pic2.image = 8   && obj_maze3_pic2.mov = 0 && 
                 obj_maze3_pic3.image = 12  && obj_maze3_pic3.mov = 0 
                 {
+                    fnc_snd_play_onetime(snd_desert_maze_compl1);
                     mov = 1;   
                 }
         }
@@ -32,6 +34,7 @@ if state = 0
                 obj_maze3_pic2.image = 0   && obj_maze3_pic2.mov = 0 && 
                 obj_maze3_pic3.image = 0   && obj_maze3_pic3.mov = 0 
                 {
+                    fnc_snd_play_onetime(snd_desert_maze_compl1);
                     state = 1;
                     t = 0;
                     obj_maze3_pic1.mov = 10;
@@ -55,7 +58,8 @@ if state = 1
 {
     t++;
     if t = 50 
-    {        
+    {      
+        fnc_snd_play_onetime(snd_maze_complete);
         if instance_exists(obj_maze3_chest)
         {
             obj_maze3_chest.isOn = 1;   

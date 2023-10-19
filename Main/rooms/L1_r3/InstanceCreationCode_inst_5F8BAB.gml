@@ -1,2 +1,2 @@
 sprite_index = spr_destructable_tile_vulcano;
-image_index = 5;
+image_index = 19;

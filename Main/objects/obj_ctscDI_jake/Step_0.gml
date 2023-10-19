@@ -13,6 +13,8 @@ switch(state){
             vspd = -5;
             hspd = -2;
             t = 0;
+            fnc_snd_play_onetime(snd_follower_landing);
+            obj_ctscDI_merch2.hit_cd = 1;
             if instance_exists(obj_ctscDI_jake_part) obj_ctscDI_jake_part.state = 1;
         }
         break;
@@ -31,7 +33,7 @@ switch(state){
             vspd = 0;
             t = 0;
             hspd = 0;
-            
+            fnc_snd_play_onetime(snd_player_landing);
             state = 2;
             image_index = 1;
         }

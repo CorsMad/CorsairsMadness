@@ -6,6 +6,7 @@ switch(state)
         {
             state = 1; 
             instance_create_depth(x,y,depth-1,obj_sfx_weapon_slash);
+            fnc_snd_play_onetime(snd_ps_block_series1);
         }
         break;
     case 1: //вкл
@@ -13,6 +14,7 @@ switch(state)
         break;
     case 2: // error
         t++;
+        if t = 1 fnc_snd_play_onetime(snd_ps_block_series_off);
         if t = 50
         {
             t =0 ;

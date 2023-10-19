@@ -1,7 +1,7 @@
  /// @description Insert description here
 // You can write your code in this editor
 Orbit = 60; // Orbit distance
-
+fnc_snd_play_onetime(snd_enemy_boss2_attack);
 
 Speed = sign(obj_Player.image_xscale)*5; // Orbital speed
 Center_X = obj_Player.x; // x of orbital center

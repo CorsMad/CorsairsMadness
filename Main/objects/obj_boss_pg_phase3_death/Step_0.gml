@@ -92,6 +92,7 @@ switch(t)
         image_index = 6;
         break;
     case 295:
+        fnc_msc_play(msc_jp1_c_jp2_c);
         image_index = 7;
         break;
     case 300:

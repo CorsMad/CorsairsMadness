@@ -12,7 +12,7 @@ switch(state){
             case 10: image_index =2 ;break;   
             case 15: image_index =3 ;break;   
             case 20: sprite_index = spr_bossmerch_phase2_head_idle;image_speed = 1;break;   
-            case 330: sprite_index = spr_bossmerch_phase3_appear;image_index = 3;image_speed = 0;break;
+            case 330: sprite_index = spr_bossmerch_phase3_appear;fnc_snd_play_onetime(snd_di_boss_appear)image_index = 3;image_speed = 0;break;
             case 335: image_index = 2;break;
             case 340: image_index = 1;break;
             case 345: image_index = 0;break;
@@ -49,7 +49,7 @@ switch(state){
 						proj1.direction = 270 + 18*i;
 				}					
 				break;
-            case 200: sprite_index = spr_bossmerch_phase3_appear_side;image_index = 3;image_speed = 0;break;
+            case 200: sprite_index = spr_bossmerch_phase3_appear_side;fnc_snd_play_onetime(snd_di_boss_appear)image_index = 3;image_speed = 0;break;
             case 205: image_index = 2;break;
             case 210: image_index = 1;break;
             case 215: image_index = 0;break;
@@ -75,7 +75,7 @@ switch(state){
                     proj1.direction = 270 - 18*i
 				}					
 				break;
-			case 200: sprite_index = spr_bossmerch_phase3_appear_side;image_index = 3;image_speed = 0;break;
+			case 200: sprite_index = spr_bossmerch_phase3_appear_side;image_index = 3;fnc_snd_play_onetime(snd_di_boss_appear)image_speed = 0;break;
             case 205: image_index = 2;break;
             case 210: image_index = 1;break;
             case 215: image_index = 0;break;
@@ -95,7 +95,7 @@ switch(state){
                 case 10: image_index =2 ;break;   
                 case 15: image_index =3 ;break;   
                 case 20: sprite_index = spr_bossmerch_phase2_head_idle;image_speed = 1;break;   
-                case 730: sprite_index = spr_bossmerch_phase3_appear;image_index = 3;image_speed = 0;break;
+                case 730: sprite_index = spr_bossmerch_phase3_appear;image_index = 3;fnc_snd_play_onetime(snd_di_boss_appear)image_speed = 0;break;
                 case 735: image_index = 2;break;
                 case 740: image_index = 1;break;
                 case 745: image_index = 0;break;

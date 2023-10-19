@@ -194,9 +194,10 @@ function fnc_take_dmg_parrot_laser(x1,y1,d1,dmg)
 	
 	#region eballexpl
 		var bombhit = instance_place(x,y,obj_item_parrot_proj3_expl);
-	    if (bombhit !=noone) && (hit_cd = 0)
+	    if (bombhit !=noone) //&& (hit_cd = 0)
 	    {
 	        hit_cd = 1;
+            bombhit.mask_index = spr_blank;
 			enemy_hp -= 1+dmg;
 			instance_create_depth(x+x1,y+y1,d1,obj_sfx_weapon_slash);
 	    }

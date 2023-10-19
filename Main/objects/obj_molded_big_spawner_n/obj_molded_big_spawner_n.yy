@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "!MOLDED GROUP",
-    "path": "folders/Objects/Enemies/!MOLDED GROUP.yy",
+    "name": "1.objPARENTING",
+    "path": "folders/Objects/Enemies/1.objPARENTING.yy",
   },
   "parentObjectId": null,
   "persistent": false,

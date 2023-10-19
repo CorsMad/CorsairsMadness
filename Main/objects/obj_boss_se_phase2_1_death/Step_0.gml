@@ -56,6 +56,7 @@ if (state = 2) {// Внизу
 
 if (state = 3) { // в центр
     t++;
+    if t mod 15 = 0 fnc_snd_play_over(snd_boss_expl);
 	if point_distance(x, y, 240, 160) > 2
 	{
 	    move_towards_point(240, 160, 2);

@@ -19,29 +19,29 @@ if t > 5 && !instance_exists(obj_global_map_confirm)
 switch(island)
 {
     case 0:
-        if key_up_press      || su      {island = 4;OutlinerAlpha_t=0}
-        if key_right_press   || sr      {island = 2;OutlinerAlpha_t=0}
-        if key_down_pressed  || sd      {island = 1;OutlinerAlpha_t=0}
+        if key_up_press      || su      {island = 4;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_right_press   || sr      {island = 2;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_down_pressed  || sd      {island = 1;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
         break;
     case 1:
-        if key_left_press    || sl       {island = 0;OutlinerAlpha_t=0}
-        if key_right_press   || sr       {island = 2;OutlinerAlpha_t=0}
-        if key_up_press      || su       {island = 3;OutlinerAlpha_t=0}
+        if key_left_press    || sl       {island = 0;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_right_press   || sr       {island = 2;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_up_press      || su       {island = 3;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
         break;
     case 2:
-        if key_up_press      || su     {island = 3;OutlinerAlpha_t=0}
-        if key_left_press    || sl     {island = 0;OutlinerAlpha_t=0}
-        if key_down_pressed  || sd     {island = 1;OutlinerAlpha_t=0}
+        if key_up_press      || su     {island = 3;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_left_press    || sl     {island = 0;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_down_pressed  || sd     {island = 1;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
         break;
     case 3:
-        if key_left_press    || sl     {island = 4;OutlinerAlpha_t=0}
-        if key_right_press   || sr     {island = 2;OutlinerAlpha_t=0}
-        if key_down_pressed  || sd     {island = 1;OutlinerAlpha_t=0}
+        if key_left_press    || sl     {island = 4;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_right_press   || sr     {island = 2;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_down_pressed  || sd     {island = 1;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
         break;
     case 4:
-        if key_left_press    || sl     {island = 0;OutlinerAlpha_t=0}
-        if key_right_press   || sr     {island = 3;OutlinerAlpha_t=0}
-        if key_down_pressed  || sd     {island = 1;OutlinerAlpha_t=0}
+        if key_left_press    || sl     {island = 0;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_right_press   || sr     {island = 3;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_down_pressed  || sd     {island = 1;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
         break;
 }
 
@@ -55,16 +55,16 @@ if key_jump || key_attack || saccept
         case 0:        
             break;
         case 1:
-            if global.completed_PD2 = 0 instance_create_depth(room_width/2,room_height/2,depth-1,obj_global_map_confirm);           
+            if global.completed_PD2 = 0 {instance_create_depth(room_width/2,room_height/2,depth-1,obj_global_map_confirm);fnc_snd_play_over(snd_menu_accept);}           
             break;
         case 2:
-            if global.completed_PS2 = 0 instance_create_depth(room_width/2,room_height/2,depth-1,obj_global_map_confirm);            
+            if global.completed_PS2 = 0 {instance_create_depth(room_width/2,room_height/2,depth-1,obj_global_map_confirm);fnc_snd_play_over(snd_menu_accept);}             
             break;
         case 3:
-            if global.completed_PG2 = 0 instance_create_depth(room_width/2,room_height/2,depth-1,obj_global_map_confirm);            
+            if global.completed_PG2 = 0 {instance_create_depth(room_width/2,room_height/2,depth-1,obj_global_map_confirm);fnc_snd_play_over(snd_menu_accept);}             
             break;
         case 4:
-            if global.completed_PL2 = 0 instance_create_depth(room_width/2,room_height/2,depth-1,obj_global_map_confirm);            
+            if global.completed_PL2 = 0 {instance_create_depth(room_width/2,room_height/2,depth-1,obj_global_map_confirm);fnc_snd_play_over(snd_menu_accept);}             
             break;
     }
 }

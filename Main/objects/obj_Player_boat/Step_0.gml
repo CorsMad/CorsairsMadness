@@ -472,12 +472,12 @@ if fastshoot_count = 0
         case 0.3: // попугай
                 cd_1 = 2;
                 cd_2 = 20;
-                cd_max = 24;
+                cd_max = 40;
                 break;
         case 0.4: // быстровыстрел
                 cd_1 = 2;
                 cd_2 = 20;
-                cd_max = 40;
+                cd_max = 44;
                 break;
     }   
 }

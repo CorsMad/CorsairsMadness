@@ -9,7 +9,7 @@ states
 
 fnc_Collision_player(obj_block)
 
-if x > 400 fnc_msc_stop_play_slow();
+//if x > 400 fnc_msc_stop_play_slow();
 
 if !place_meeting(x,y+1,obj_block)
 {

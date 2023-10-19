@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bird_coconut",
-    "path": "sprites/spr_bird_coconut/spr_bird_coconut.yy",
+    "name": "spr_sander_projectile",
+    "path": "sprites/spr_sander_projectile/spr_sander_projectile.yy",
   },
   "spriteMaskId": null,
   "visible": true,

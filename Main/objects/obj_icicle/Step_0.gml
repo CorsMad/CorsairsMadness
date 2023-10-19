@@ -23,6 +23,7 @@ if t = 1 || t = 15 || t = 29
 
 if place_meeting(x,y,obj_hitbox){
     instance_destroy();
+    fnc_snd_play_over(snd_vase_destruct);
     instance_create_depth(x,y+16,depth-1,obj_sfx2);
     instance_create_depth(x,y,depth,obj_icicle_d1);
     instance_create_depth(x,y,depth,obj_icicle_d2);

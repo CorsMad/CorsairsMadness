@@ -14,14 +14,16 @@ if t < 10 t++;
 
 if t > 5
 {
-    if (key_left  || sl)  select = 0;
-    if (key_right || sr)  select = 1;
+    if ((key_left  || sl) && select = 1)  {select = 0;;fnc_snd_play_over(snd_menu_select);} 
+    if ((key_right || sr) && select = 0)  {select = 1;;fnc_snd_play_over(snd_menu_select);} 
     
     if key_jump || key_attack || saccept
     {
         switch(select)
         {
             case 0:
+                fnc_snd_play_over(snd_menu_accept); 
+                fnc_msc_stop_play_slow();
                 switch(obj_globalmap_contoller.island)
                 {
                     case 1:
@@ -67,6 +69,7 @@ if t > 5
                 }
                 break;
             case 1:
+                fnc_snd_play_over(snd_menu_accept);
                 obj_globalmap_contoller.t = 0;
                 instance_destroy();                
                 break;

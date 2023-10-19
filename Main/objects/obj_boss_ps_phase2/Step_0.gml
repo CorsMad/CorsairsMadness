@@ -65,6 +65,8 @@ switch(state)
         
         if t = 50
         {
+            scr_snowboss_lantern_create(144,144);
+            scr_snowboss_lantern_create(336,144);
             t = 0;
             state = 1;
             if x > room_width/2 image_xscale = -1 else image_xscale = 1;
@@ -125,8 +127,7 @@ switch(state)
             case 170:   image_index = 4;break;
             case 175:   sprite_index = spr_boss_sp_hanging;image_speed = 0.5;image_index = 0;image_xscale = 1;break;                
         }
-        
-        
+              
         switch(t)
         {
             case 50:
@@ -208,6 +209,8 @@ switch(state)
         image_index = 1;
         if place_meeting(x,y+1,obj_block)
         {
+            scr_snowboss_lantern_destroy();
+            fnc_snd_play_onetime(snd_follower_landing);
             instance_create_depth(x-4,y,depth-1,obj_sfx4)
             instance_create_depth(x+4,y,depth-1,obj_sfx4)
             var w1 = instance_create_depth(x,y,depth-1,obj_boss_ps_ph2_wave)   
@@ -303,6 +306,8 @@ switch(state)
         image_speed = 2;
         if image_index >= 12 image_index = 6
         
+        if t mod 10 = 0 fnc_snd_play_onetime(snd_player_jump);
+        
         if t mod 3 = 0
         {
             instance_create_depth(x,y,depth+1,obj_boss_ps_fire)  
@@ -312,6 +317,7 @@ switch(state)
         }
         if place_meeting(x+hspd,y,obj_block)
         {
+            fnc_snd_play_onetime(snd_follower_ground_hit);
             hspd = -sign(hspd)*1.5;
             vspd = -2;
             state = 5.5;
@@ -345,6 +351,9 @@ switch(state)
             t++;
             hspd = 0;
             vspd = 0;
+            if t = 1 {
+                fnc_snd_play_onetime(snd_follower_landing);   
+            }
             if t = 50
             {
                 t = 0;   
@@ -355,6 +364,7 @@ switch(state)
     case 6:
         #region застанен
         t++;
+        
         sprite_index = spr_boss_sp_stun;
         image_speed = 0;
         image_index = 0;
@@ -549,7 +559,9 @@ if !instance_exists(obj_masked_clone)
         }
         if armor = 0
         {
+            fnc_snd_play_onetime(snd_follower_getlight);
             state = 6;
+            scr_snowboss_lantern_destroy();
             hit_stored = 0;
             t = 0;
         }

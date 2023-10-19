@@ -21,6 +21,7 @@ if state = 1
         sprite_index = spr_boss_d2_feltdown;
         image_index = 0;
         t=0;
+        fnc_snd_play_onetime(snd_follower_ground_hit);
         depth = 0;
     }
 }   
@@ -103,7 +104,7 @@ if instance_exists(fol)
     
     // Топор
 
-        fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
+        fnc_take_dmg_axe(-10,0,-1,10,0,-1,0);
     
     // Удар вниз   
 
@@ -111,15 +112,15 @@ if instance_exists(fol)
 
     // Бомба
 
-        fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+        fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,0);
 
     // Eball
 
-    	fnc_take_dmg_eball(0,-16,-1,1);
+    	fnc_take_dmg_eball(0,-16,-1,0);
 
     // Parrot
 
-    	fnc_take_dmg_parrot_laser(0,-16,-1,1)
+    	fnc_take_dmg_parrot_laser(0,-16,-1,0)
     
 
 // Получение урона

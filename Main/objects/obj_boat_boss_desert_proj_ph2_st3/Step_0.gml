@@ -5,7 +5,10 @@
 if state = 0
 {
     t++;
-    if t = 50 state = 1;
+    if t = 50 {
+        state = 1;
+        fnc_snd_play_onetime(snd_enemy_sander_attack);
+    }
     if image_alpha <1 image_alpha+=0.1;   
 }
 

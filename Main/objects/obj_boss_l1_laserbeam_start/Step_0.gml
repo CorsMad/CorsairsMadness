@@ -36,7 +36,7 @@ if pos = 1
     }
     if rotate = 1
     {
-        image_angle -=0.5;  
+        image_angle -=0.75//0.5;  
     }
     
     if image_angle <= -90
@@ -67,7 +67,7 @@ if pos = -1
     }
     if rotate = 1
     {
-        image_angle +=0.5;  
+        image_angle +=0.75//0.5;  
     }
     
     if image_angle >= 90

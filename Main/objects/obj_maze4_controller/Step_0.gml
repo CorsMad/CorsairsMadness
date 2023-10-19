@@ -10,6 +10,7 @@ if phase = 0 && place_meeting(x,y,obj_hitbox)
     image_index = 1;
     t = -50;
     obj_maze4_alarm.image_index = 1;
+    fnc_snd_play_onetime(snd_bomb_selektor)
 }
 
 if phase = 1
@@ -22,12 +23,12 @@ if phase = 1
 			t++;
 			switch(t)
 			{
-				case 50:	obj_maze4_button1.isOn = 1;break;
-				case 100:	obj_maze4_button1.isOn = 0;break;
-				case 150:	obj_maze4_button5.isOn = 1;break;
-				case 200:	obj_maze4_button5.isOn = 0;break;
-				case 250:	obj_maze4_button6.isOn = 1;break;
-				case 300:	obj_maze4_button6.isOn = 0;break;
+				case 50:	obj_maze4_button1.isOn = 1;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 100:	obj_maze4_button1.isOn = 0;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 150:	obj_maze4_button5.isOn = 1;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 200:	obj_maze4_button5.isOn = 0;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 250:	obj_maze4_button6.isOn = 1;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 300:	obj_maze4_button6.isOn = 0;fnc_snd_play_onetime(snd_maze_g_on);break;
 				case 350:	
 					show_example = 0;
 					t = 0;
@@ -53,15 +54,16 @@ if phase = 1
 			switch(step)
 			{
 				case 0:	
-				if b1 = 1 step++;
-				if (b2=1 || b3=1 || b4=1 || b5=1 || b6=1) reset = 1;
+				if b1 = 1 {step++;fnc_snd_play_onetime(snd_maze_g_on);}
+				if (b2=1 || b3=1 || b4=1 || b5=1 || b6=1) {reset = 1;fnc_snd_play_onetime(snd_maze_g_wrong);}
 				break;
 				case 1:
-				if b5 = 1 step++;
-				if (b2=1 || b3=1 || b4=1 || b6=1) reset = 1;
+				if b5 = 1 {step++;fnc_snd_play_onetime(snd_maze_g_on);}
+				if (b2=1 || b3=1 || b4=1 || b6=1) {reset = 1;fnc_snd_play_onetime(snd_maze_g_wrong);}
 				break;
 				case 2:
 				if b6 = 1	{phase = 1.5;
+                            fnc_snd_play_onetime(snd_maze_g_on);
                             t = 0;
 							b1 = 0;	
 							b2 = 0;	
@@ -82,7 +84,7 @@ if phase = 1
 							obj_maze4_button5.isOn = 1;
 							obj_maze4_button6.isOn = 1;
 							}
-				if (b2=1 || b3=1 || b4=1) reset = 1;
+				if (b2=1 || b3=1 || b4=1) {reset = 1;fnc_snd_play_onetime(snd_maze_g_wrong);}
 				break;			
 			}
 		}
@@ -131,6 +133,7 @@ if phase = 1.5 // перехо на 2 фазу
     switch(t)
     {
         case 50:
+            fnc_snd_play_onetime(snd_maze_g_complete1);
             obj_maze4_button1.isOn = 1;
             obj_maze4_button2.isOn = 1;
             obj_maze4_button3.isOn = 1;
@@ -147,6 +150,7 @@ if phase = 1.5 // перехо на 2 фазу
             obj_maze4_button6.isOn = 0;
             break;
         case 150:
+            fnc_snd_play_onetime(snd_maze_g_complete1);
             obj_maze4_button1.isOn = 1;
             obj_maze4_button2.isOn = 1;
             obj_maze4_button3.isOn = 1;
@@ -181,14 +185,14 @@ if phase = 2
 			t++;
 			switch(t)
 			{
-				case 50:	obj_maze4_button4.isOn = 1;break;
-				case 90:	obj_maze4_button4.isOn = 0;break;
-				case 130:	obj_maze4_button2.isOn = 1;break;
-				case 170:	obj_maze4_button2.isOn = 0;break;
-				case 210:	obj_maze4_button6.isOn = 1;break;
-				case 250:	obj_maze4_button6.isOn = 0;break;
-				case 290:	obj_maze4_button1.isOn = 1;break;
-				case 330:	obj_maze4_button1.isOn = 0;break;
+				case 50:	obj_maze4_button4.isOn = 1;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 90:	obj_maze4_button4.isOn = 0;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 130:	obj_maze4_button2.isOn = 1;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 170:	obj_maze4_button2.isOn = 0;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 210:	obj_maze4_button6.isOn = 1;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 250:	obj_maze4_button6.isOn = 0;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 290:	obj_maze4_button1.isOn = 1;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 330:	obj_maze4_button1.isOn = 0;fnc_snd_play_onetime(snd_maze_g_on);break;
 				case 370:	
 					show_example = 0;
 					t = 0;
@@ -214,19 +218,20 @@ if phase = 2
 			switch(step)
 			{
 				case 0:	
-				if b4 = 1 step++;
-				if (b1=1 || b2=1 || b3=1 || b5=1 || b6=1) reset = 1;
+				if b4 = 1 {step++;fnc_snd_play_onetime(snd_maze_g_on);}
+				if (b1=1 || b2=1 || b3=1 || b5=1 || b6=1) {reset = 1;fnc_snd_play_onetime(snd_maze_g_wrong);}
 				break;
 				case 1:
-				if b2 = 1 step++;
-				if (b1=1 || b3=1 || b5=1 || b6=1) reset = 1;
+				if b2 = 1 {step++;fnc_snd_play_onetime(snd_maze_g_on);}
+				if (b1=1 || b3=1 || b5=1 || b6=1) {reset = 1;fnc_snd_play_onetime(snd_maze_g_wrong);}
 				break;
 				case 2:
-				if b6 = 1 step++;
-				if (b1=1  || b3=1  || b5=1 ) reset = 1;
+				if b6 = 1 {step++;fnc_snd_play_onetime(snd_maze_g_on);}
+				if (b1=1  || b3=1  || b5=1 ) {reset = 1;fnc_snd_play_onetime(snd_maze_g_wrong);}
 				break;			
 				case 3:
 				if b1 = 1 {t=0;phase = 2.5;
+                            fnc_snd_play_onetime(snd_maze_g_on);
 							b1 = 0;	
 							b2 = 0;	
 							b3 = 0;	
@@ -246,7 +251,7 @@ if phase = 2
 							obj_maze4_button5.isOn = 1;
 							obj_maze4_button6.isOn = 1;			
 							}
-				if ( b3=1 || b5=1 ) reset = 1;
+				if ( b3=1 || b5=1 ) {reset = 1;fnc_snd_play_onetime(snd_maze_g_wrong);}
 				break;		
 			}
 		}
@@ -291,6 +296,7 @@ if phase = 2.5 // перехо на 3 фазу
     switch(t)
     {
         case 50:
+            fnc_snd_play_onetime(snd_maze_g_complete1);
             obj_maze4_button1.isOn = 1;
             obj_maze4_button2.isOn = 1;
             obj_maze4_button3.isOn = 1;
@@ -307,6 +313,7 @@ if phase = 2.5 // перехо на 3 фазу
             obj_maze4_button6.isOn = 0;
             break;
         case 150:
+            fnc_snd_play_onetime(snd_maze_g_complete1);
             obj_maze4_button1.isOn = 1;
             obj_maze4_button2.isOn = 1;
             obj_maze4_button3.isOn = 1;
@@ -341,16 +348,16 @@ if phase = 3
 			t++;
 			switch(t)
 			{
-				case 50:	obj_maze4_button3.isOn = 1;break;
-				case 75:	obj_maze4_button3.isOn = 0;break;
-				case 100:	obj_maze4_button2.isOn = 1;break;
-				case 125:	obj_maze4_button2.isOn = 0;break;
-				case 150:	obj_maze4_button5.isOn = 1;break;
-				case 175:	obj_maze4_button5.isOn = 0;break;
-				case 200:	obj_maze4_button1.isOn = 1;break;
-				case 225:	obj_maze4_button1.isOn = 0;break;
-				case 250:	obj_maze4_button4.isOn = 1;break;
-				case 275:	obj_maze4_button4.isOn = 0;break;
+				case 50:	obj_maze4_button3.isOn = 1;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 75:	obj_maze4_button3.isOn = 0;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 100:	obj_maze4_button2.isOn = 1;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 125:	obj_maze4_button2.isOn = 0;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 150:	obj_maze4_button5.isOn = 1;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 175:	obj_maze4_button5.isOn = 0;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 200:	obj_maze4_button1.isOn = 1;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 225:	obj_maze4_button1.isOn = 0;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 250:	obj_maze4_button4.isOn = 1;fnc_snd_play_onetime(snd_maze_g_on);break;
+				case 275:	obj_maze4_button4.isOn = 0;fnc_snd_play_onetime(snd_maze_g_on);break;
 				case 300:	
 					show_example = 0;
 					t = 0;
@@ -376,23 +383,24 @@ if phase = 3
 			switch(step)
 			{
 				case 0:	
-				if b3 = 1 step++;
-				if (b1=1  || b2=1 || b4=1 || b5=1 || b6=1) reset = 1;
+				if b3 = 1 {step++;fnc_snd_play_onetime(snd_maze_g_on);}
+				if (b1=1  || b2=1 || b4=1 || b5=1 || b6=1) {reset = 1;fnc_snd_play_onetime(snd_maze_g_wrong);}
 				break;
 				case 1:
-				if b2 = 1 step++;
-				if (b1=1  || b4=1 || b5=1 || b6=1) reset = 1;
+				if b2 = 1 {step++;fnc_snd_play_onetime(snd_maze_g_on);}
+				if (b1=1  || b4=1 || b5=1 || b6=1) {reset = 1;fnc_snd_play_onetime(snd_maze_g_wrong);}
 				break;
 				case 2:
-				if b5 = 1 step++;
-				if (b1=1  || b4=1 || b6=1) reset = 1;
+				if b5 = 1 {step++;fnc_snd_play_onetime(snd_maze_g_on);}
+				if (b1=1  || b4=1 || b6=1) {reset = 1;fnc_snd_play_onetime(snd_maze_g_wrong);}
 				break;	
 				case 3:
-				if b1 = 1 step++;
-				if (b4=1 || b6=1) reset = 1;
+				if b1 = 1 {step++;fnc_snd_play_onetime(snd_maze_g_on);}
+				if (b4=1 || b6=1) {reset = 1;fnc_snd_play_onetime(snd_maze_g_wrong);}
 				break;	
 				case 4:
 				if b4 = 1 {t=0;phase = 3.5;
+                            fnc_snd_play_onetime(snd_maze_g_on);
 							b1 = 0;	
 							b2 = 0;	
 							b3 = 0;	
@@ -412,7 +420,7 @@ if phase = 3
 							obj_maze4_button5.isOn = 1;
 							obj_maze4_button6.isOn = 1;			
 							}
-				if ( b6 = 1 ) reset = 1;
+				if ( b6 = 1 ) {reset = 1;fnc_snd_play_onetime(snd_maze_g_wrong);}
 				break;		
 			}
 		}
@@ -457,6 +465,7 @@ if phase = 3.5 // перехо на 4 фазу
     switch(t)
     {
         case 50:
+            fnc_snd_play_onetime(snd_maze_g_complete1);
             obj_maze4_button1.isOn = 1;
             obj_maze4_button2.isOn = 1;
             obj_maze4_button3.isOn = 1;
@@ -473,6 +482,7 @@ if phase = 3.5 // перехо на 4 фазу
             obj_maze4_button6.isOn = 0;
             break;
         case 150:
+            fnc_snd_play_onetime(snd_maze_g_complete1);
             obj_maze4_button1.isOn = 1;
             obj_maze4_button2.isOn = 1;
             obj_maze4_button3.isOn = 1;
@@ -503,6 +513,7 @@ if phase = 4
 	
     if t = 50
     {
+        fnc_snd_play_onetime(snd_maze_complete);
         obj_maze4_alarm.image_index = 0;
         obj_maze4_alarm.state = 2;
         obj_maze4_alarm_open.isOn = 1;    

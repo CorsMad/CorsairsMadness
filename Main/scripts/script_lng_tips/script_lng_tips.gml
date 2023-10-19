@@ -234,7 +234,7 @@ function fnc_lng_tip_downstrike()
     switch(global.language)
     {
         case 0: //English 
-            text = "press"
+            text = "press down + attack"
             text2 = "while in air to strike down";
             break;
         case 1: //russian

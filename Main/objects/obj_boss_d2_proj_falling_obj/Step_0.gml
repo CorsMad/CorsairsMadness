@@ -26,6 +26,7 @@ if state = 0
     {
         if place_meeting(x,y,obj_item_boomerang)
         {
+            fnc_snd_play_onetime(snd_get_boomerang);
             instance_create_depth(x,y,depth-1,obj_sfx2);
             if obj_item_boomerang.x > x hspd = -4 else hspd = 4;  
             vspd = -1;
@@ -55,8 +56,9 @@ if state = 2
         }
         else 
         {
-            // Нанести урон
+            instance_create_depth(x,y,depth-1,obj_sfx_dust_expl_small);           
             obj_boss_l1_3.item_hit += 1;
+            fnc_snd_play_onetime(snd_get_boomerang);
             instance_destroy();   
         }
    
@@ -69,7 +71,10 @@ if state = 2
         else 
         {
             // Нанести урон
+            fnc_snd_play_onetime(snd_get_boomerang);
+            instance_create_depth(x,y,depth-1,obj_sfx_dust_expl_small);
             obj_boss_le1_3.item_hit += 1;
+            
             instance_destroy();   
         }
 	} else instance_destroy();

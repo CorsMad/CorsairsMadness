@@ -68,6 +68,7 @@ switch(state){
 		#region обычная атака
 		if t < 21 t++;
 		if t = 20{
+            fnc_snd_play_onetime(snd_di_boss_appear)
 			var i = instance_create_depth(x,y,depth,obj_bossmerch_phase3_mask);
 			i.fol = id;
 			i.enemy_hp = enemy_hp;
@@ -98,6 +99,7 @@ switch(state){
 		#region обычная атака
 		if t < 21 t++;
 		if t = 20{
+            fnc_snd_play_onetime(snd_di_boss_appear)
 			var i = instance_create_depth(x,y,depth,obj_bossmerch_phase3_mask);
 			i.fol = id;
 			i.enemy_hp = enemy_hp;
@@ -127,6 +129,7 @@ switch(state){
 		#region обычная атака
 		if t < 21 t++;
 		if t = 20{
+            fnc_snd_play_onetime(snd_di_boss_appear)
 			var i = instance_create_depth(x,y,depth,obj_bossmerch_phase3_mask);
 			i.fol = id;
 			i.enemy_hp = enemy_hp;
@@ -154,6 +157,7 @@ switch(state){
 		#region 
 		if t < 21 t++;
 		if t = 20{
+            fnc_snd_play_onetime(snd_di_boss_appear)
 			var i = instance_create_depth(x,y,depth,obj_bossmerch_phase3_mask);
 			i.fol = id;
 			i.state = 1;
@@ -210,6 +214,7 @@ switch(state){
 		#region
 		if t < 21 t++;
 		if t = 20{
+            fnc_snd_play_onetime(snd_di_boss_appear)
 			var i = instance_create_depth(x,y,depth,obj_bossmerch_phase3_mask);
 			i.fol = id;
 			i.state = 3;
@@ -227,6 +232,9 @@ switch(state){
 #region Death
 if enemy_hp<=0 {
 	instance_create_depth(x,y,depth,obj_bossmerch_phase3_d);
+    instance_destroy(obj_Player)
+    fnc_msc_stop_play_slow();
+    room_goto(TESTRNDING)
 	instance_destroy();	
 }
 #endregion

@@ -8,9 +8,9 @@ function script_lng_pos_tip_djump(){
         text1 = "You gained wings!";
 		text2 = @"When you press the jump button in the air, 
 you will be able to fly up a bit";
-		text3 = @"While on this sphere, use your wings to fly forward.";
-		text4 = @"While on this sphere, use your wings to fly upwards.";
-		text5 = @"While on this sphere, 
+		text3 = @"While on this block, use your wings to fly forward.";
+		text4 = @"While on this block, use your wings to fly upwards.";
+		text5 = @"While on this block, 
 you can use the wings an unlimited number of times";
 		text6 = @"Some enemies can be thrown into the air 
 if you use your wings near them.";

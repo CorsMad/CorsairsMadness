@@ -21,6 +21,7 @@ if state = 1 // Создание луча
     t++;
     if t = 40
     {
+        fnc_snd_play_over(snd_beam_start)
         var l = instance_create_depth(x,y,depth,obj_cemetery_laser_beam); 
         l.angle = image_angle;
         l.a_max = length;
@@ -34,6 +35,7 @@ if state = 2 // Изменение анимации
     t++;
     if t = 50
     {
+        fnc_snd_play_over(snd_beam)
         image_speed = 1.5;
         sprite_index = spr_cemetery_laser_emitter_fire;       
     }

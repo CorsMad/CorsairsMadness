@@ -12,7 +12,7 @@ switch(state){
 			image_alpha = 1
 			t = 0;
 			state = 1;
-			instance_create_depth(0,0,depth-999,obj_txt_tip_possessed);
+			instance_create_depth(0,0,depth-999,obj_txt_tip_possessed_clone);
 		}
 		break;
 	case 2:

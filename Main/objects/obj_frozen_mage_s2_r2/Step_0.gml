@@ -16,10 +16,12 @@ if place = 0
 	
 	if isAttacking = 1
 	{
+        
 		sprite_index = spr_frozenmage_attack;
 	    t++;
 	    if t = 120 
 		{
+            fnc_snd_play_onetime(snd_enemy_frozenmage_attack);
 			instance_create_depth(x,y,depth-1,obj_frozen_mage_missle);
 		} // выстрел
 	    if (image_index > image_number - 1) 
@@ -39,6 +41,7 @@ if place = 1
     t++;
     if t = 100
     {
+        fnc_snd_play_onetime(snd_enemy_frozenmage_tp);
         t = 0;
         place = 2;
 		sprite_index = spr_frozenmage_hide;
@@ -53,6 +56,7 @@ if place = 2 // переход
     
     if (image_index > image_number - 1) 
 	{
+        fnc_snd_play_onetime(snd_enemy_frozenmage_tp);
         place = 3;
         switch(place_goto)
         {

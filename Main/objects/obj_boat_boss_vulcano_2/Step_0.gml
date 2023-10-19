@@ -66,6 +66,7 @@ switch(state)
                 break;
             case 50:
                 image_index = 3;
+                fnc_snd_play_onetime(snd_enemy_boss2_attack);
                 instance_create_depth(512,choose(0,48,96,128),depth-10000,obj_boat_boss_vulcano_skeleton_approach);
                 break;
             case 55:
@@ -82,6 +83,7 @@ switch(state)
                 break;
             case 100:
                 image_index = 3;
+                fnc_snd_play_onetime(snd_enemy_boss2_attack);
                 instance_create_depth(512,choose(0,48,96,128),depth-10000,obj_boat_boss_vulcano_skeleton_approach);
                 break;
             case 105:
@@ -98,6 +100,7 @@ switch(state)
                 break;
             case 150:
                 image_index = 3;
+                fnc_snd_play_onetime(snd_enemy_boss2_attack);
                 instance_create_depth(512,choose(0,48,96,128),depth-10000,obj_boat_boss_vulcano_skeleton_approach);
                 break;
             case 155:

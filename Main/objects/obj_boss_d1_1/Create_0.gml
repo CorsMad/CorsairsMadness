@@ -13,6 +13,5 @@ enemy_hp = 10;
 hit_cd = 0;
 
 
-
 t_sand = 0;
 red = 0;

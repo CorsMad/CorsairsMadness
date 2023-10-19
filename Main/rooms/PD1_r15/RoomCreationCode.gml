@@ -1,3 +1,3 @@
-audio_group_load(MusicVolume);
-audio_group_load(SFXvolume);
 
+
+if global.Cutscene_dp1_r16 = 0 fnc_msc_start_checkpoint(msc_follower_chase);

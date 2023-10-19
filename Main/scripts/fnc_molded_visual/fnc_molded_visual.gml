@@ -375,7 +375,7 @@ function fnc_molded_dark_blood_player(){
 function fnc_molded_dark_essence_none(){
     if instance_exists(obj_combometer)
     {
-        switch(obj_combometer.sprite_index)
+        switch(obj_combometer.sprite)
         {
             case -1:    
                     #region  draw

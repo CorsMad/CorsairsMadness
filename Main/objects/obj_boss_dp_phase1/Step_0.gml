@@ -36,7 +36,7 @@ switch(state)
         t++;
         switch(t)
         {
-            case 1: sprite_index = spr_boss_dp_appear;image_index = 0;break;  
+            case 1: sprite_index = spr_boss_dp_appear;fnc_snd_play_onetime(snd_desert_follower_tp);image_index = 0;break;  
             case 5: image_index = 1;break;
             case 10:image_index = 2;break;
             case 15:image_index = 3;break;
@@ -101,7 +101,8 @@ switch(state)
     t++;
     switch(t)
     {
-        case 35:
+        case 35: 
+            fnc_snd_play_onetime(snd_desert_follower_tp);
             sprite_index = spr_boss_dp_appear;
             image_speed = 0;
             image_index = 7;
@@ -132,7 +133,7 @@ switch(state)
     t++;
         switch(t)
         {
-            case 1: image_index = 0;sprite_index = spr_boss_dp_appear;image_speed = 0;break;  
+            case 1: image_index = 0;sprite_index = spr_boss_dp_appear;fnc_snd_play_onetime(snd_desert_follower_tp);image_speed = 0;break;  
             case 5: image_index = 1;break;
             case 10:image_index = 2;break;
             case 15:image_index = 3;break;
@@ -144,7 +145,7 @@ switch(state)
                 can_hit_light = 1; 
                 break;
             case 45:image_index = 0;sprite_index = spr_boss_dp_dash;break;
-            case 50:image_index = 1;break;
+            case 50:image_index = 1;fnc_snd_play_over(snd_desert_follower_aoeattack);break;
             case 55:image_index = 2;break;
             case 60:image_index = 3;break;
             case 65:image_index = 4;break;
@@ -161,6 +162,7 @@ switch(state)
                     playerpoint_y = obj_Player.y-24;   
                 }
                 state = 4;
+                fnc_snd_play_over(snd_desert_follower_flyaoe);
                 break;    
         }   
     
@@ -276,6 +278,7 @@ switch(state)
     switch(t)
     {
         case 1:
+            fnc_snd_play_onetime(snd_desert_follower_tp);
             sprite_index = spr_boss_dp_appear;
             image_index = 7;
             image_speed = 0;

@@ -6,3 +6,4 @@ vspd = 0;
 max_height = 224;
 
 t = 0;
+vspd_spd = -0.5;

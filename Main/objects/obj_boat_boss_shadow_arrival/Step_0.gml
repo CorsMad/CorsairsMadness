@@ -6,6 +6,7 @@ switch(t)
     {
         case 100:   image_index = 1;break;   
         case 105:   image_index = 2;
+        fnc_snd_play_onetime(snd_vase_destruct);
 		instance_create_depth(x,y+36,depth+1,obj_boat_boss_shadow_water_main)
 		break;   
         case 110:   image_index = 3;break;   
@@ -18,4 +19,4 @@ switch(t)
     }
     
 
-    
+

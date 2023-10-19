@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 spd = 4;
+fnc_snd_play_onetime(snd_player_preattackdown)
 image_alpha = 0;
 if instance_exists(obj_Player) 
 {

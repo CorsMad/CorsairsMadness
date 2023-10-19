@@ -5,7 +5,7 @@ state = 0;
 t = 0;
 place_appear = 0; // всего 4
 place_appear_prev = 0;
-
+fnc_msc_play(msc_j2_boss);
 shoot_time = 0;
 
 

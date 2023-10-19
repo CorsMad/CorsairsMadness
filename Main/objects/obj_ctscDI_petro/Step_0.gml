@@ -19,6 +19,7 @@ switch(state){
         if t mod 4 = 0 && t > 20 && t < 90 {
              instance_create_depth(x+random_range(60,70),y-random_range(30,34),depth-2,obj_sfx_weapon_slash);
              if image_index = 1 image_index = 2 else image_index = 1;
+             obj_ctscDI_merch8.hit_cd = 1;
         }
         
         switch(t){
@@ -38,6 +39,7 @@ switch(state){
         t++;
         if t mod 5 = 0 {
             instance_create_depth(x+32,y-48,depth-1,obj_sfx_sparkle_1);
+            obj_ctscDI_merch8.hit_cd = 1;
             instance_create_depth(x+random_range(30,34),y-random_range(46,50),depth-1,obj_sfx_weapon_slash);
         }
         
@@ -59,6 +61,7 @@ switch(state){
             image_index = 1;
             state = 3;
             t = 0;
+            fnc_snd_play_onetime(snd_player_landing);
             instance_create_depth(x,y,0,obj_txt_DI_p8_end_merch2);
         }
         break;

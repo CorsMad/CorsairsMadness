@@ -7,8 +7,7 @@ if state = 0
     {
         
         state = 1;
-        instance_create_depth(x+8,y+11,depth-1,obj_sfx3);
-        fnc_snd_play_over(snd_player_landing);
+        instance_create_depth(x,y,depth-1,obj_sfx_weapon_slash);
         
         if instance_exists(obj_platform_3_v_e_stop)
         {

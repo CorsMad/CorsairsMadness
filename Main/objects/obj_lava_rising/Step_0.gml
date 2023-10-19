@@ -4,7 +4,7 @@ if (isOn = 1) {
     if y > max_height 
     {
         if t < 102 t++; 
-        if t > 100 vspd = -0.5;
+        if t > 100 vspd = vspd_spd;
     } else isOn = 2;  
 }
 

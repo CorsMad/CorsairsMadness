@@ -33,7 +33,7 @@ if global.Cutscene_di_lastboss = 1
 		obj_Player.image_xscale = -1;
     }   
     fnc_msc_stop_play()
-    instance_create_depth(36,688,0,obj_bossmerch_cutscene);
+    instance_create_depth(32,688,0,obj_bossmerch_cutscene);
 } else
 {
 	var b = instance_create_depth(32,688,0,obj_bossmerch_phase1);

@@ -16,17 +16,13 @@ if instance_exists(obj_Player)
     x1 = camera_get_view_x(view_camera[0])+330;
     y1 = camera_get_view_y(view_camera[0])+52;
     
-    switch(isKeyboard)
-    {
-        case 0: draw_sprite_ext(spr_gp_icon,5,x1 + 20, y1-8, 1,1,0,c_white,alpha);break;        
-        case 1: draw_sprite_ext(spr_key_icon,scr_key_sprite(global.down_key),x1 + 20, y1-8, 1,1,0,c_white,alpha);break;        
-    }
+
     
 //    draw_sprite(spr_key_icon,scr_key_sprite(global.down_key),x1 + 40, y1);
     
     draw_set_color(c_white)
     if global.language = 1 draw_set_font(fnt_pixel_ru) else draw_set_font(fnt_pixel);
-    draw_set_halign(fa_right)
+    draw_set_halign(fa_center)
     draw_text_color(x1-10,y1-11,text,c_white,c_white,c_white,c_white,alpha)
     //draw_text(x1-8,y1-4,text);
     draw_set_halign(fa_center)

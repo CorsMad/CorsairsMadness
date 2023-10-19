@@ -206,6 +206,7 @@ if state = 5
 	y = obj_Player.y;	
 	if !instance_exists(obj_hitbox_mask_superdash)
 	{
+        fnc_snd_play_onetime(snd_follower_ground_hit);
 		state = 10;
         if !place_meeting(x,y-1,obj_block) y-=1;
 		if obj_Player.dir = 1 hspd = -2 else hspd = 2;
@@ -260,6 +261,10 @@ if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0
     enemy_hp-=1;
     t_red = 1;
     fnc_molded_blood_hit(4);
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
     instance_create_depth(x,y-16,depth-1,obj_sfx_weapon_slash);
 }
 
@@ -276,6 +281,10 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0
     enemy_hp-=1;
     t_red = 1;
     fnc_molded_blood_up(4);
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
     instance_create_depth(x,y-16,depth-1,obj_sfx_weapon_slash);
 }
 
@@ -292,6 +301,10 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0
     enemy_hp-=1;
     t_red = 1;
     fnc_molded_blood_forward(4);
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
     instance_create_depth(x,y-16,depth-1,obj_sfx_weapon_slash);
 }
 
@@ -308,6 +321,10 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0
     enemy_hp-=1;
     t_red = 1;
     fnc_molded_blood_down(4);
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
     instance_create_depth(x,y-16,depth-1,obj_sfx_weapon_slash);
 }
 
@@ -328,6 +345,10 @@ place_meeting(x,y,obj_hitbox_mask_superattack_h1) || place_meeting(x,y,obj_hitbo
 	bounce = 1;
     enemy_hp-=10;
     t_red = 1;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
     fnc_molded_blood_forward(4);
     fnc_molded_blood_forward(4);
     fnc_molded_blood_up(4);
@@ -350,6 +371,10 @@ var supermissle = instance_place(x,y,obj_hitbox_mask_superattack_missle)
 
 if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0
 {
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
     fnc_superattack_gain_attack_dash();
 	hit_cd = 1;
     t = 0;
@@ -376,6 +401,10 @@ if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0
 
 if place_meeting(x,y,obj_hitbox_mask) && hit_cd=0
 {
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
     fnc_superattack_gain_attack_dash();
 	hit_cd = 1;
 	flip = 1;
@@ -397,6 +426,7 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd=0
 
 if enemy_hp <=0
 {
+    fnc_molded_dark_essence_none();
     var d = instance_create_depth(x,y,depth,obj_molded_lava_boomer_death);
     d.image_xscale = image_xscale;
     instance_destroy();   

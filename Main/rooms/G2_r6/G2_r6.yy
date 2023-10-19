@@ -80,6 +80,7 @@
     {"name":"inst_7E1BAE2","path":"rooms/G2_r6/G2_r6.yy",},
     {"name":"inst_5AAE8BCB","path":"rooms/G2_r6/G2_r6.yy",},
     {"name":"inst_3CF49C6E","path":"rooms/G2_r6/G2_r6.yy",},
+    {"name":"inst_776C8C83","path":"rooms/G2_r6/G2_r6.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -157,6 +158,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7E1BAE2","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_death_pit_creator","path":"objects/obj_death_pit_creator/obj_death_pit_creator.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":368.0,"y":304.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5AAE8BCB","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_death_pit_creator","path":"objects/obj_death_pit_creator/obj_death_pit_creator.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":304.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3CF49C6E","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_death_pit_creator","path":"objects/obj_death_pit_creator/obj_death_pit_creator.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":304.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_776C8C83","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pause_controller","path":"objects/obj_pause_controller/obj_pause_controller.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":80.0,"y":0.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"main_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":38,"TileCompressedData":[
 3,-2147483648,27,27,-3,-2147483648,8,27,-2147483648,-2147483648,27,27,-2147483648,27,27,-3,-2147483648,1,27,-3,-2147483648,1,24,-4,26,3,24,25,24,-9,-2147483648,7,24,-2147483648,-2147483648,27,25,27,

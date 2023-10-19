@@ -4,3 +4,4 @@ spd = 2;
 t = 0;
 turn = 0;
 image_speed = 2;
+fnc_snd_play_over(snd_di_boss_phase1attack);

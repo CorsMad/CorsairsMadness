@@ -144,6 +144,7 @@ if (state = 2) { // Падение
     sprite_index = spr_boss_l2_skeleton_falldown2;
 	if y >=256
 	{
+        fnc_snd_play_onetime(snd_follower_landing);
 		y = 256;
 		state = 3;
 		t = 0;
@@ -192,3 +193,15 @@ if state = 4
 		instance_destroy()
 	}
 }
+
+
+#region Графен
+if bomb_hit = 1{
+     t_anim++;
+     if t_anim = 20 {
+        instance_create_depth(x+random_range(-32,32),y+random_range(-8,8),depth-1,obj_sfx_sparkle_2_player);
+        instance_create_depth(x+random_range(-32,32),y+random_range(-8,8),depth-1,obj_sfx_sparkle_2_player);    
+        t_anim = 0;
+     }
+}
+#endregion

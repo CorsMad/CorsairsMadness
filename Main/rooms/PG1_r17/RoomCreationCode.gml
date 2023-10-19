@@ -1,3 +1,1 @@
-audio_group_load(MusicVolume);
-audio_group_load(SFXvolume);
-
+fnc_msc_start_checkpoint(msc_follower_chase);

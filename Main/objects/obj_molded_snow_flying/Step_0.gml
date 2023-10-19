@@ -123,8 +123,9 @@ if state = 1 //перемещение
 if state = 2 // атака
 {
     t++;
-    if t=100
+    if t = 100
     {    
+        
         hitb = instance_create_depth(x,y,depth,obj_molded_snow_flying_hitbox);
         hitb.fol = id;
         hitb.image_xscale = image_xscale;
@@ -176,6 +177,8 @@ if state = 3 // ожидание
 
 if place_meeting(x,y,obj_doublejump) && state!=6
 {
+    var cl = instance_create_depth(x,y,depth-1,obj_molded_fly_cloud);
+    cl.fol = id;
     state = 6;   
     t = 0;
     hspeed = 0;
@@ -300,6 +303,10 @@ if hit_cd = 0 && place_meeting(x,y,obj_hitbox_mask)
     }     
     t_red = 1;
     enemy_hp-=1;
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
 }
 //Dash
 if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0
@@ -314,6 +321,10 @@ if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0
     enemy_hp-=1;
     t_red = 1;
     fnc_molded_blood_forward(3);
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
 }
 
 #endregion
@@ -322,6 +333,7 @@ if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0
 #region смерть
 if enemy_hp<=0
 {
+    fnc_molded_dark_essence_none();
     var d = instance_create_depth(x,y,depth,obj_molded_snow_flying_death)
     d.image_xscale = image_xscale;
     instance_destroy();   

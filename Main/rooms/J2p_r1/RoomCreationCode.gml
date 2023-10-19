@@ -1,1 +1,1 @@
-fnc_msc_start_checkpoint(msc_j2);
+fnc_msc_start_checkpoint(msc_tutor_shore);

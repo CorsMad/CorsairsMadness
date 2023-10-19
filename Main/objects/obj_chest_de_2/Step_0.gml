@@ -9,6 +9,7 @@ if isOn = -1
 
 if isOn = 0 && (place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_item_boomerang))
 {
+    
     fnc_snd_play_over(snd_chest_destruct);
 	isOn = 1;
 	image_speed = 1;

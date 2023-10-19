@@ -1,9 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-fnc_msc_stop_play_slow();
+
 image_speed = 0;
 image_index = 3;
 instance_create_depth(x,y,depth-1,obj_hpmax_some_mana_gain_gift);
+fnc_snd_play_over(snd_boss_expl);
 state = 1;
 t = 0;
 var i1 = instance_create_depth(x-16,y-39,depth-1,obj_boss1_particle,{

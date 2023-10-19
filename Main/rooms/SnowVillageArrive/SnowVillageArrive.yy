@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "SnowVillageArrive",
-  "creationCodeFile": "",
+  "creationCodeFile": "rooms/SnowVillageArrive/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

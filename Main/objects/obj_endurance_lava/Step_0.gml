@@ -379,6 +379,7 @@ if state = 3.2
     t++;
     if t = 20
     {
+        fnc_msc_stop_play()
         if global.secrets_l_endurance = 0
         {
             instance_create_depth(240,256,0,obj_chest_le_3_s);   

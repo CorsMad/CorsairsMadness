@@ -8,6 +8,7 @@ switch(state){
 		t++;
 		switch(t){
 			case 1: 
+                fnc_snd_play_onetime(snd_transform);
 				sprite_index = spr_bossmerch_transform;
 				image_speed = 0;
 				image_index = 0;

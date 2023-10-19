@@ -2,7 +2,7 @@
 // You can write your code in this editor
 x+=hspd*acc;
 acc+=0.05;
-if image_index >=1 {image_speed = 0;image_index = 1;}
+
 image_xscale = -sign(hspd);
 if place_meeting(x+sign(hspd),y,obj_block) || !place_meeting(x,y+1,obj_block)
 {

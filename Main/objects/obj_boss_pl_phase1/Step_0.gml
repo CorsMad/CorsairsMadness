@@ -124,6 +124,7 @@ switch(state)
 		case 20:	image_index = 4;break;
 		case 50:
 			image_index = 5;
+            
 			var ricochet = instance_create_depth(x+24*image_xscale,y-32,depth-1,obj_boss_pl_phase1_pistol_bullet_ricochet);
 			if x > room_width/2 ricochet.dir = -1 else ricochet.dir = 1;	
 			instance_create_depth(x+24*image_xscale,y-32,depth-1,obj_follower_lava_steam)
@@ -143,7 +144,7 @@ switch(state)
 	#region anim
 	
 	if t > 35 && t < 85 {
-		if t mod 10 = 0 instance_create_depth(x+16*image_xscale,y-32,depth-1,obj_boss_pl_phase1_rigle_aoe);
+		if t mod 10 = 0 {instance_create_depth(x+16*image_xscale,y-32,depth-1,obj_boss_pl_phase1_rigle_aoe);fnc_snd_play_over(snd_enemy_boss2_attack);  }
 		if image_index = 6 image_index = 2;
 	}
 	
@@ -254,6 +255,7 @@ if instance_exists(obj_boss_pl_light) && instance_exists(obj_boss_pl_light_block
 {
 	if place_meeting(x,y,obj_boss_pl_light) && obj_boss_pl_light.image_index = 5
 	{
+        fnc_snd_play_onetime(snd_follower_getlight)
 		state = 6;
 		t = 0;
 		obj_boss_pl_light_block.state = 3;
@@ -268,6 +270,7 @@ if place_meeting(x,y,obj_Player)
 {
     if obj_Player.isDead = 12
         {
+            fnc_snd_play_onetime(snd_follower_ground_hit);
             obj_Player.doublejumpspd = -obj_Player.image_xscale*6;        
             obj_Player.isDead = 0;
             obj_Player.superdash_power = 0;

@@ -15,3 +15,4 @@ if dis < 480 && dis > -480
     } else spd = 3;
 }
 
+fnc_snd_play_onetime(snd_follower_snow_bomb_start);

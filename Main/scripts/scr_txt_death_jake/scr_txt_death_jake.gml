@@ -2,12 +2,9 @@ function scr_txt_death_jake1(){
     switch(global.language){
         case 0:
             text1 = "[fnt_pixel].....";
-            text2 = "[fnt_pixel]....a";
-            text3 = "[fnt_pixel]..aaa";
-            text4 = "[fnt_pixel].aaaA";
-            text5 = "[fnt_pixel]aaaAA!";
-            text6 = "[fnt_pixel]aAAAA!!";
-            text7 = "[fnt_pixel]AAAAA!!!";
+            text2 = "[fnt_pixel]..aaa";
+            text3 = "[fnt_pixel]aaaAA!";
+            text4 = "[fnt_pixel]AAAAA!!!";
             break;
     }
 }

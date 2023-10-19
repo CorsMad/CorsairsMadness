@@ -188,7 +188,7 @@ if state = 1 // Berserker redfly Berserker walkred Jumper
             }
             break;
         case 1100:
-            state = 2.5;
+            state = 1.5;
             t = 0;
             break;
     }    

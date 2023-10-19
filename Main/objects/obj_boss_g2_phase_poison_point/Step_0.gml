@@ -40,6 +40,7 @@ if place_meeting(x+spd, y, obj_skeleton_limiter)
 
 if place_meeting(x,y+1,obj_block)
 {
+    fnc_snd_play_onetime(snd_vase_destruct)
 	instance_destroy();
 	var pois_r = instance_create_depth(x,256,depth+1,obj_boss_g2_phase_poison)
 	pois_r.dir = 1;
@@ -53,7 +54,7 @@ if place_meeting(x,y+1,obj_block)
 
 if place_meeting(x+sign(spd),y,obj_block)
 {
-	
+	fnc_snd_play_onetime(snd_vase_destruct)
 	if spd > 0 var pois_down = instance_create_depth(448,y,depth+1,obj_boss_g2_phase_poison) else
 	{instance_create_depth(16,y,depth+1,obj_boss_g2_phase_poison)}
 	

@@ -7,3 +7,4 @@ state = 0;
 t =0;
 spd = 4;
 
+fnc_snd_play_onetime(snd_teleporter);

@@ -4,7 +4,7 @@ t++;
 if t mod 10 == 0
 {
 	instance_create_depth(x+random_range(-28,28),y+random_range(-28,+12),depth-1,obj_sfx_explosion_bomb);
-    fnc_snd_play_over(snd_boss_expl);
+    
 }
 
 if t mod 5 == 0

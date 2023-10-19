@@ -18,7 +18,8 @@ if shocked = 0
     }
     if attack_timer = 60
     {
-        instance_create_depth(x,y,depth,obj_scarab_mini); 
+        fnc_snd_play_over(snd_enemy_portal);
+        instance_create_depth(x,y,depth-1,obj_scarab_creator); 
         attack_timer = 0;
         trigger = 0;
     }

@@ -18,6 +18,8 @@ if key_skip
             obj_wall_trigger_pl1_r15.state = 2;
             obj_wall_trigger_pl1_r15.t = 0;   
         }
+        fnc_msc_stop_play();
+        fnc_msc_start_checkpoint(msc_follower_chase);
         obj_follower_lava_cutscene.state = 2;
         obj_follower_lava_cutscene.t = 0;
         global.Cutscene_pl1_r15 = 0;
@@ -27,36 +29,3 @@ if key_skip
 
 #endregion
 
-/*
-
-
-
-player_input();
-if key_jump || key_attack 
-{
-    var _len = string_length(text[0,text_current]);
-    if (char_current < _len)
-    {
-    char_current = _len;
-    }
-    else
-    {
-    text_current += 1;
-    if (text_current > text_last)
-        {
-        obj_Player.isDead = 2.1;
-        instance_destroy();
-        }
-    else
-        {
-        text[0,text_current] = string_wrap(text[0,text_current], text_width);
-        char_current = 0;
-        }
-    }   
-}
-
-if t !=0 t++;
-if t = 2
-{
-       
-}

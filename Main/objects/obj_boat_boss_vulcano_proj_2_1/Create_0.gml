@@ -7,3 +7,5 @@ dest_point = 0;
 orient = choose(0,1); // 0 верт, 1 гориз
 image_alpha = 0;
 image_speed = 0;
+
+fnc_snd_play_onetime(snd_cannon_fire);

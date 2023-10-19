@@ -33,6 +33,7 @@ switch(state)
                 case 40: image_index = 10;break;
                 case 45: image_index = 11;break;
                 case 50: 
+                    fnc_snd_play_onetime(snd_vase_destruct);
                     image_index = 12;
                     t = 0;
                     state = 2;

@@ -32,10 +32,12 @@ switch(state){
                     image_yscale : 2
                 });
                 image_index = 2;
+                fnc_snd_play_onetime(snd_player_boat_pistol);
 				instance_create_depth(x,y,depth-1,obj_bossmerch_phase1_proj1_1);
 				break;
             case 70:image_index = 1;break;
 			case 100:
+                fnc_snd_play_onetime(snd_player_boat_pistol);
                 instance_create_depth(x,y,depth-1,obj_sfx3,{
                     image_xscale : 2,
                     image_yscale : 2
@@ -45,6 +47,7 @@ switch(state){
 				break;
             case 120: image_index = 1;break;
 			case 150:
+                fnc_snd_play_onetime(snd_player_boat_pistol);
                 instance_create_depth(x,y,depth-1,obj_sfx3,{
                     image_xscale : 2,
                     image_yscale : 2
@@ -65,6 +68,11 @@ switch(state){
 		y+=vspd;
 		if y>= room_height-48{
 			vspd = 0;
+            fnc_snd_play_onetime(snd_follower_ground_hit);
+            var l = instance_create_depth(x,784,depth,obj_boss_d2_proj_down_wave);
+            var r = instance_create_depth(x,784,depth,obj_boss_d2_proj_down_wave);
+            l.hspd = -2;
+            r.hspd = 2;
             instance_create_depth(x,784,depth-2,obj_sfx4);
             instance_create_depth(x-8,784,depth-1,obj_sfx_dust_expl_small);
             instance_create_depth(x+8,784,depth-1,obj_sfx_dust_expl_small);
@@ -81,6 +89,7 @@ switch(state){
 		x+=hspd;
 		if x <= 40{
 			x = 40;
+            fnc_snd_play_onetime(snd_follower_ground_hit);
 			hspd = 0;
 			state = 4;
             instance_create_depth(16,y+8,depth-2,obj_sfx4,{image_angle : 270});
@@ -100,6 +109,7 @@ switch(state){
 			x = 448-8;
 			hspd = 0;
 			state = 5;
+            fnc_snd_play_onetime(snd_follower_ground_hit);
 			t = 0;
             instance_create_depth(464,y+8,depth-2,obj_sfx4,{image_angle : 90});
             instance_create_depth(464,y-8,depth-1,obj_sfx_dust_expl_small);
@@ -109,18 +119,18 @@ switch(state){
 		break;
 	case 5:
 		t++;
-        if t > 100 && t < 150 {
+        if t > 50 && t < 100 {
             if t mod 15 = 0 {
                 if image_index = 3 image_index = 4 else image_index = 3;  
             }
         }
-        if t >=150 {
+        if t >=100 {
             if t mod 5 = 0 {
                 if image_index = 3 image_index = 4 else image_index = 3;  
             }   
         }
         
-		if t = 200{
+		if t = 150{
 			t = 0;
 			state = 6;	
 		}

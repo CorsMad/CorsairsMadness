@@ -6,7 +6,7 @@ hspd = 0;
 
 state = 0;
 
-
+fnc_snd_play_onetime(snd_player_jump);
 
 
 

@@ -85,6 +85,9 @@ switch(state)
         }
         if t = 100
         {
+            var mask_aoe = instance_create_depth(x,y,depth,obj_boss_gp_attack_forward_aoe_mask);
+            mask_aoe.fol = id;
+            mask_aoe.image_xscale = image_xscale;
             t = 0;
             state = 1;
 			t_anim = 0;
@@ -103,7 +106,9 @@ switch(state)
 			{
 				switch(t)
 				{
-					case 1:image_index = 2;break;	
+					case 1:image_index = 2;
+                    instance_destroy(obj_boss_gp_attack_forward_aoe_mask);
+                    break;	
 					case 5:image_index = 1;break;	
 					case 10:image_index = 0;break;	
 					case 15:sprite_index = spr_boss_gp_idle;image_speed = 1;break;
@@ -172,6 +177,9 @@ switch(state)
         }
         if t = 100
         {
+            var mask_aoe = instance_create_depth(x,y,depth,obj_boss_gp_attack_forward_aoe_mask);
+            mask_aoe.fol = id;
+            mask_aoe.image_xscale = image_xscale;
             t = 0; 
             state = 3;
 			t_anim = 0; 
@@ -190,7 +198,9 @@ switch(state)
 			{
 				switch(t)
 				{
-					case 1:image_index = 2;break;	
+					case 1:image_index = 2;
+                    instance_destroy(obj_boss_gp_attack_forward_aoe_mask);
+                    break;	
 					case 5:image_index = 1;break;	
 					case 10:image_index = 0;break;	
 					case 15:sprite_index = spr_boss_gp_idle;image_speed = 1;break;
@@ -277,6 +287,7 @@ if instance_exists(obj_boss_pg_light) && instance_exists(obj_boss_pg_light_block
 {
 	if place_meeting(x,y,obj_boss_pg_light_block) && obj_boss_pg_light_block.image_index = 5
 	{
+        fnc_snd_play_onetime(snd_follower_getlight);
 		state = 6;
 		t = 0;
 		obj_boss_pg_light_block.state = 3;

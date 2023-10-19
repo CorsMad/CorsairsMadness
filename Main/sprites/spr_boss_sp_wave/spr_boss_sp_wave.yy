@@ -13,8 +13,8 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dbf8abd6-7ac7-4f90-b0d1-952f50985697",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4ea77f58-7dde-4df8-a0f0-32b3144b1ee8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5f06deb2-77bf-480b-b4cf-8b116b58ebe8",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"dbf8abd6-7ac7-4f90-b0d1-952f50985697","path":"sprites/spr_boss_sp_wave/spr_boss_sp_wave.yy",},},},"Disabled":false,"id":"55bca17f-a6b8-4b1e-a19c-ed811dfb6b39","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4ea77f58-7dde-4df8-a0f0-32b3144b1ee8","path":"sprites/spr_boss_sp_wave/spr_boss_sp_wave.yy",},},},"Disabled":false,"id":"237c7fdf-445e-48da-a51e-1282690bca82","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4ea77f58-7dde-4df8-a0f0-32b3144b1ee8","path":"sprites/spr_boss_sp_wave/spr_boss_sp_wave.yy",},},},"Disabled":false,"id":"237c7fdf-445e-48da-a51e-1282690bca82","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5f06deb2-77bf-480b-b4cf-8b116b58ebe8","path":"sprites/spr_boss_sp_wave/spr_boss_sp_wave.yy",},},},"Disabled":false,"id":"68f387dd-b60b-43a4-a258-08a7e858b2bd","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

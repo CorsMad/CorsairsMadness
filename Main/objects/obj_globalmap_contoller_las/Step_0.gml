@@ -1,7 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
-menu_input();
+
 kb_gp_input_check();
+var sl = keyboard_check_pressed(vk_left)
+var sr = keyboard_check_pressed(vk_right)
+var su = keyboard_check_pressed(vk_up)
+var sd = keyboard_check_pressed(vk_down)
+var saccept = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)
+player_input();
+
 
 // возможность управления
  if t < 90 t++;
@@ -19,8 +26,9 @@ if t > 85 && !instance_exists(obj_confirm_death)
 
 
 #region Выбор острова
-if key_jump || key_attack
+if key_jump || key_attack || saccept
 {
+    fnc_snd_play_over(snd_menu_accept);
     instance_create_depth(room_width/2,room_height/2,depth-2,obj_confirm_death);
 }
 #endregion

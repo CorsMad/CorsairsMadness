@@ -926,9 +926,9 @@ if  isRecoil = 0 && key_item_pressed && SpecAbilMask = 3 && superdash_timer_coun
     
     switch(superdash_timer) 
     {
-        case 1:  sprite_index = spr_player_masked_presuperdash1;break;
-        case 30: sprite_index = spr_player_masked_presuperdash2;superdash_power = 1;break;   
-        case 60: sprite_index = spr_player_masked_presuperdash3;superdash_power = 2;break;
+        case 1:  sprite_index = spr_player_masked_presuperdash1;fnc_snd_play_onetime(snd_superdash1);break;
+        case 30: sprite_index = spr_player_masked_presuperdash2;fnc_snd_play_onetime(snd_superdash2);superdash_power = 1;break;   
+        case 60: sprite_index = spr_player_masked_presuperdash3;fnc_snd_play_onetime(snd_superdash3);superdash_power = 2;break;
     }
     if superdash_timer!= 0 
     {
@@ -952,6 +952,7 @@ if  isRecoil = 0 && key_item_pressed && SpecAbilMask = 3 && superdash_timer_coun
         {
             superdash_timer = 0;
             isDead = 12;
+            fnc_snd_play_onetime(snd_superdash_fly);
             instance_create_depth(x,y,depth,obj_hitbox_mask_superdash);
             superdash_timer_count = 1;
             var superdash_vfx = instance_create_depth(x,y,depth-1,obj_superdash_stream);
@@ -1030,7 +1031,10 @@ if isGrounded = 0 && key_jump_pressed && !instance_exists(obj_doublejump) && Spe
 
 if key_item && SpecAbilMask = 5 && !instance_exists(obj_masked_clone)
 {
+    fnc_snd_play_onetime(snd_player_clone1);
     isDead = 131;
+    lanhit = 0;
+    lanplace = 0;
     sprite_index = spr_player_masked_clone_use;
     image_index = 0;
 
@@ -1043,6 +1047,7 @@ if clone_timer!=0
     clone_timer++;  
     if key_item && SpecAbilMask = 5
     {
+        fnc_snd_play_onetime(snd_player_clone2);
         clone_timer = 0;
         isDead = 132;
         sprite_index = spr_player_masked_clone_use;
@@ -1053,6 +1058,7 @@ if clone_timer!=0
 
 if clone_timer = 300//300
 {
+    fnc_snd_play_onetime(snd_player_clone2);
     clone_timer = 0;
     isDead = 132;
     sprite_index = spr_player_masked_clone_use;
@@ -1803,6 +1809,7 @@ if isDead = 1
 		superattack_timer++;
         switch(superattack_timer){
             case 1:
+                fnc_snd_play_onetime(snd_superprepare);
                 sprite_index = spr_player_masked_superattack_h1;
                 image_index = 0;
                 image_speed = 0;
@@ -1818,6 +1825,7 @@ if isDead = 1
             case 17: image_index = 8;break;
             case 30: image_index = 9;break;
             case 34: image_index = 10;
+                fnc_snd_play_onetime(snd_superattack);
                 var hb = instance_create_depth(x,y,depth,obj_hitbox_mask_superattack_h1);
                 hb.image_xscale = image_xscale;
                 instance_destroy(obj_superdash_screen);
@@ -1842,6 +1850,7 @@ if isDead = 1
 		superattack_timer++;
         switch(superattack_timer){
             case 1:
+                fnc_snd_play_onetime(snd_superprepare);
                 sprite_index = spr_player_masked_superattack_h2;
                 image_index = 0;
                 image_speed = 0;
@@ -1857,6 +1866,7 @@ if isDead = 1
             case 17: image_index = 8;break;
             case 30: image_index = 9;break;
             case 34: image_index = 10;
+                fnc_snd_play_onetime(snd_superattack);
                 var hb = instance_create_depth(x,y,depth,obj_hitbox_mask_superattack_h2);
                 hb.image_xscale = image_xscale;
                 instance_destroy(obj_superdash_screen);
@@ -1879,6 +1889,7 @@ if isDead = 1
 		superattack_timer++;
 		switch(superattack_timer){
             case 1:
+                fnc_snd_play_onetime(snd_superprepare);
                 sprite_index = spr_player_masked_superattack_aoe;
                 image_index = 0;
                 image_speed = 0;
@@ -1894,6 +1905,7 @@ if isDead = 1
             case 17: image_index = 8;break;
             case 30: image_index = 9;break;
             case 34: image_index = 10;
+                fnc_snd_play_onetime(snd_superattack);
                 var hb = instance_create_depth(x,y,depth,obj_hitbox_mask_superattack_aoe);
                 hb.image_xscale = image_xscale;
                 instance_destroy(obj_superdash_screen);
@@ -1966,7 +1978,7 @@ if isDead = 1
         y-=7;
         cutscene_timer++;
         if cutscene_timer > 50 && cutscene_timer <= 100 {
-            if cutscene_timer mod 30 = 0 fnc_molded_dark_blood_player();   
+            if cutscene_timer mod 30 = 0 {fnc_molded_dark_blood_player();fnc_snd_play_onetime(snd_enemy_dies_sparkles);   }
         }
         
         if cutscene_timer > 100 && cutscene_timer <= 150 {
@@ -1974,6 +1986,7 @@ if isDead = 1
                 fnc_molded_dark_blood_player();  
             }
             if cutscene_timer mod 25 = 0 {  
+                fnc_snd_play_onetime(snd_enemy_dies_sparkles); 
                 instance_create_depth(x,y-8,depth-1,obj_sfx_player_dead_big_chase);
             }
             
@@ -1981,9 +1994,11 @@ if isDead = 1
         
         if cutscene_timer > 150 && cutscene_timer < 200 {
             if cutscene_timer mod 5 = 0 {
+                fnc_snd_play_onetime(snd_enemy_dies_sparkles); 
                 fnc_molded_dark_blood_player();   
             }
             if cutscene_timer mod 15 = 0 {
+                
                 instance_create_depth(x,y-8,depth-1,obj_sfx_player_dead_big_chase);
             }
         }
@@ -1994,7 +2009,11 @@ if isDead = 1
                 sprite_index = spr_player_masked_superdash_ctscn;
                 image_speed = 1;
                 break;
+            case 150:
+            fnc_snd_play_onetime(snd_transform);
+                break;
             case 200:
+                fnc_msc_stop_play_slow()
                 sprite_index = spr_player_cannon_shot;
                 image_speed = 0;
                 image_index = 2;

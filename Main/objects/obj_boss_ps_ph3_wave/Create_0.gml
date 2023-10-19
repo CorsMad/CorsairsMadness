@@ -6,6 +6,7 @@ image_speed = 0;
 t = 0;
 hspd = -2;
 acc = 1;
+anim = 1;
 
 
 

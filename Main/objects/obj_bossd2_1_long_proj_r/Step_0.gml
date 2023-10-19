@@ -2,12 +2,15 @@
 // You can write your code in this editor
 if state = 0
 {
+    t++;
+    if t mod 15 = 0 fnc_snd_play_onetime(snd_enemy_sander_open);
     x+=spd;
 
         if x >= 32
         {
             x = 32; 
             state = 1;
+            t = 0;
         }   
 
 }
@@ -22,6 +25,7 @@ if state = 1 // ожадание
         if instance_exists(obj_boss_d2_phase1_2)
         {
             obj_boss_d2_phase1_2.mov = 1   
+            fnc_snd_play_onetime(snd_follower_block_fall);
         } 
     }
 }
@@ -31,11 +35,13 @@ if state = 2
     y+=2; 
     if place_meeting(x,y+1,obj_block)
     {
+        fnc_snd_play_onetime(snd_wall_explosion);
         state = 3;        
     }
 }
 if state = 3
 {
+    
     for (var e = 0; e<24; e+=1) {
         var ear = instance_create_depth(x+16+16*e,y,depth+1,obj_boss_d2_eath_proj);
         ear.hspd = random_range(-1,1);

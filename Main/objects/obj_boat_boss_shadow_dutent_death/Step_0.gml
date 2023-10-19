@@ -23,3 +23,5 @@ switch(t){
 	case 90: image_index = 0;break;
 	case 95: instance_destroy();break;
 }
+
+if t mod 10 = 0 instance_create_depth(x,y+8,depth-1,obj_sfx_sparkle_1);

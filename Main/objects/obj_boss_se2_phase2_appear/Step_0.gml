@@ -16,9 +16,10 @@ if (state = 1) { // Формирование
     t++;
     image_angle = 0;
     switch(t)
-    {
-        case 50: image_index = 1;break;   
-        case 100: image_index = 2;break;   
+    {   
+        case 1: fnc_snd_play_onetime(snd_transform); break;
+        case 50: fnc_snd_play_onetime(snd_transform);image_index = 1;break;   
+        case 100: fnc_snd_play_onetime(snd_transform);image_index = 2;break;   
         case 150: 
             instance_create_depth(x,y,0,obj_boss_se2_phase2);
             instance_destroy();            

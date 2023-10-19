@@ -12,10 +12,11 @@ switch(state){
             hspd = 0;
             vspd = 0;
             state = 1;
+            fnc_snd_play_over(snd_player_landing);
         }
         break;
     case 2:
-        var b = instance_create_depth(x,y,depth-1,obj_sfx_explosion_bomb);
+        var b = instance_create_depth(x,y,-1,obj_sfx_explosion_bomb);
         fnc_snd_play_over(snd_item_bomb_explosion);
         b.image_xscale = 2;
         b.image_yscale = 2;

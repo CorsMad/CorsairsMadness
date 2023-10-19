@@ -43,6 +43,7 @@ if back = 1
 
     if place_meeting(x,y,origin)
     { 
+        fnc_snd_play_onetime(snd_player_jump);
 		origin.state = 3.5;
         instance_destroy();  
     }	

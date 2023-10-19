@@ -18,6 +18,7 @@ switch(state)
 		}
 		else 
 		{
+            fnc_snd_play_onetime(snd_coin_ctscn_end);
 			instance_destroy();	
 		}
 		break;

@@ -13,3 +13,5 @@ t_red = 0;
 enemy_hp = 15;
 jump = 0;
 
+icon = instance_create_depth(x,y-64,depth,obj_molded_purple_shield_icon);
+icon.fol = id;

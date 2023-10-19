@@ -3,5 +3,5 @@
 
 t=0;
 
-
+fnc_snd_play_onetime(snd_enemy_boss2_attack);
 

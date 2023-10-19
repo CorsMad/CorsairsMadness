@@ -1,7 +1,7 @@
 if state = 0{
 	t++;
-	if t = 50{
+	if t = 100{
 		instance_create_depth(x,y,-100000,obj_txt_bossmerch_cutscene);	
 	}
-	if t = 100 state = 1;
+	if t = 200 state = 1;
 }

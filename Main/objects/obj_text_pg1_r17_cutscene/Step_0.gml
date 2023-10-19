@@ -12,6 +12,7 @@ if key_skip
     
     if scr_t > scr_t_max 
     {
+        fnc_msc_stop_play_slow()
         obj_Player.isDead = 2.1; 
         obj_follower_graveyard_cutscene.state = 2;
         global.Cutscene_pg1_r17 = 0;

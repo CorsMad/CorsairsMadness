@@ -5,7 +5,7 @@
 switch(state){
 	case 0:
 	t++;
-	if t = 100{
+	if t = 50{
 		t = 0;
 		state = 1
 	}
@@ -14,7 +14,7 @@ switch(state){
 		if vspd > -6 vspd -=0.2;
 		y+=vspd;
 		t++;
-		if t = 100 {
+		if t = 30 {
 			obj_camera_lastboss.state = 1;
 			obj_bossmerch_bigblock.state = 1;
 			instance_create_depth(112,736,depth+1,obj_ow_boss_merch_platoform_creator);
@@ -22,9 +22,6 @@ switch(state){
 			instance_create_depth(192,640,depth+1,obj_ow_boss_merch_platoform_creator);
 			instance_create_depth(336,624,depth+1,obj_ow_boss_merch_platoform_creator);
 			instance_create_depth(384,576,depth+1,obj_ow_boss_merch_platoform_creator);
-			var d = instance_create_depth(16,656,0,obj_bossmerch_death_creator);
-			d.image_xscale = 28;
-			d.image_yscale = 1;
 	
 			instance_destroy();			
 		}

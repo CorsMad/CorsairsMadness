@@ -62,6 +62,8 @@ switch(pos)
         t++;
         if t = 50
         {
+            fnc_snd_play_onetime(snd_ps_block_series_finish);
+            fnc_snd_play_onetime(snd_ps_block_destr);
          if instance_exists(obj_ps1_block_dis2){
             obj_ps1_block_dis2.isOn = 0; 
          }

@@ -40,9 +40,9 @@ if enemy_hp < 2
 if enemy_hp<=0
 {
     fnc_snd_play_over(snd_item_bomb_explosion);
-    instance_create_depth(x+12,y+20,depth,obj_sfx_explosion);
-    instance_create_depth(x+12,y+40,depth,obj_sfx_explosion);
-    instance_create_depth(x+12,y+60,depth,obj_sfx_explosion);
+    instance_create_depth(x+12,y+20-48,depth,obj_sfx_explosion);
+    instance_create_depth(x+12,y+40-48,depth,obj_sfx_explosion);
+    instance_create_depth(x+12,y+60-48,depth,obj_sfx_explosion);
 
     instance_destroy();   
 }

@@ -81,6 +81,7 @@ if state = 0.5
     sprite_index = spr_sander_idle;
     if t = 60
     {
+        fnc_snd_play_onetime(snd_enemy_sander_close);
         state = 1;
         t = 0;
         image_index = 0;
@@ -120,6 +121,7 @@ if state = 2
         t = 0;
         spd = 0;
         state = 3;
+        
         image_index = 0;
         image_speed = 0;
     }
@@ -130,11 +132,12 @@ if state = 2
 
 if state = 3
 {
+    
     t++;
     // анимация
     switch(t)
     {
-        case 30:image_speed = 1;sprite_index = spr_sander_unhide;break;       
+        case 30:image_speed = 1;fnc_snd_play_onetime(snd_enemy_sander_open);sprite_index = spr_sander_unhide;break;       
         case 60: 
             image_speed = 0;
             hide = 0;
@@ -166,6 +169,7 @@ if state = 4
     //анимация атаки
     if (t = 50 || t = 110) 
     {
+        
         instance_create_depth(x-sign(image_xscale)*8,y-22,depth-1,obj_sander_projectile);
     }
     if t = 140

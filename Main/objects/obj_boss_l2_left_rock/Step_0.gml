@@ -7,6 +7,7 @@ if state = 0
     	var fireCollision = instance_place(x,y,obj_boss_l2_bomb_small_fire);
     	if fireCollision != noone 
     	{
+            fnc_snd_play_onetime(snd_enemy_dies_sparkles);
     		fireCollision.state = 1;	
     		armor-=1;
     	}
@@ -99,6 +100,7 @@ if state = 2
      
     if hit_cd = 0 && place_meeting(x,y,obj_hitbox)
     {
+        fnc_snd_play_onetime(snd_vase_destruct);
         t_red = 1;
         hit_cd = 1;
         hp -=1;
@@ -110,6 +112,7 @@ if state = 2
     if hp<=0
     {
     	instance_destroy();
+        fnc_snd_play_onetime(snd_explosions_standart);
         instance_create_depth(x,y,depth,obj_boss_l2_left_rock_destroy)
     }
     

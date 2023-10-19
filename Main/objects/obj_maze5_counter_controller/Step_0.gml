@@ -13,6 +13,7 @@ if (StartEvent = 1) {
         {
             if prize1 = 0
             {
+                fnc_snd_play_over(snd_secrets_gain);
                 prize1 = 1;
                 obj_maze5_prizegift.prize1 = 1;
                 // Изменить картнку выдачи призов
@@ -23,6 +24,7 @@ if (StartEvent = 1) {
         {
             if prize2 = 0
             {
+                fnc_snd_play_over(snd_secrets_gain);
                 prize2 = 1;
                 obj_maze5_prizegift.prize2 = 1;
                 // Изменить картнку выдачи призов
@@ -33,6 +35,7 @@ if (StartEvent = 1) {
         {
             if prize3 = 0
             {
+                fnc_snd_play_over(snd_secrets_gain);
                 prize3 = 1;
                 obj_maze5_prizegift.prize3 = 1;
                 // Изменить картнку выдачи призов

@@ -92,6 +92,7 @@ if  instance_exists(obj_maze2_but1) &&
             obj_maze2_but4.sw = 0;   
             break;
             case 50:
+            fnc_snd_play_onetime(snd_maze_g_complete);
             obj_maze2_but1.sw = 1;
             obj_maze2_but2.sw = 1;
             obj_maze2_but3.sw = 1;
@@ -104,6 +105,7 @@ if  instance_exists(obj_maze2_but1) &&
             obj_maze2_but4.sw = 0;   
             break;
             case 150:
+            fnc_snd_play_onetime(snd_maze_g_complete);
             obj_maze2_but1.sw = 1;
             obj_maze2_but2.sw = 1;
             obj_maze2_but3.sw = 1;
@@ -166,6 +168,7 @@ if  instance_exists(obj_maze2_but1) &&
             obj_maze2_but4.sw = 0;   
             break;
             case 50:
+            fnc_snd_play_onetime(snd_maze_g_complete);
             obj_maze2_but1.sw = 1;
             obj_maze2_but2.sw = 1;
             obj_maze2_but3.sw = 1;
@@ -178,6 +181,7 @@ if  instance_exists(obj_maze2_but1) &&
             obj_maze2_but4.sw = 0;   
             break;
             case 150:
+            fnc_snd_play_onetime(snd_maze_g_complete);
             obj_maze2_but1.sw = 1;
             obj_maze2_but2.sw = 1;
             obj_maze2_but3.sw = 1;
@@ -195,8 +199,7 @@ if  instance_exists(obj_maze2_but1) &&
             break;
         }
     }    
-    
-    
+       
     if puzzlen = 2.5
     {
         obj_maze2_solve2.on = 0;
@@ -242,6 +245,7 @@ if  instance_exists(obj_maze2_but1) &&
             obj_maze2_but4.sw = 0;   
             break;
             case 50:
+            fnc_snd_play_onetime(snd_maze_g_complete);
             obj_maze2_but1.sw = 1;
             obj_maze2_but2.sw = 1;
             obj_maze2_but3.sw = 1;
@@ -254,6 +258,7 @@ if  instance_exists(obj_maze2_but1) &&
             obj_maze2_but4.sw = 0;   
             break;
             case 150:
+            fnc_snd_play_onetime(snd_maze_g_complete);
             obj_maze2_but1.sw = 1;
             obj_maze2_but2.sw = 1;
             obj_maze2_but3.sw = 1;
@@ -303,6 +308,7 @@ if (Working = 2) {
         case 25: image_index =5;break;
         case 30: 
         // ОТКРЫТИЕ ДВЕРИ
+        fnc_snd_play_onetime(snd_maze_complete);
         obj_maze2_starter.isOn = 0;        
         obj_wall_trigger_close1_l1_r17.state = 2;
         obj_wall_trigger_close1_l1_r17.t = 0;

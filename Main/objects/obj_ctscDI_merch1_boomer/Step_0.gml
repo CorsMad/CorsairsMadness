@@ -7,15 +7,15 @@ switch(state) {
      fnc_Collision(obj_block)
     
 
-    if !place_meeting(x,y+1,obj_block){
-        vspd+=0.2; 
+        if !place_meeting(x,y+1,obj_block){
+            vspd+=0.2; 
         
-    } else {state = 0.5;hspd = 0;}
+        } else {state = 0.5;hspd = 0;fnc_snd_play_onetime(snd_player_landing) ; }
         break;
     case 1:
-    x+=hspd;
-    y+=vspd;
-    vspd+=0.2;
+        x+=hspd;
+        y+=vspd;
+        vspd+=0.2;
         break;
 }
 

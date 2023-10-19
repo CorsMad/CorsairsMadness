@@ -53,7 +53,7 @@ if (state = 1) { // Появление лазеровmm
         l.pos = -1;
     }
     
-    if t = 400 
+    if t = 300 
     {
         t = 0;
         state = 2;
@@ -62,9 +62,11 @@ if (state = 1) { // Появление лазеровmm
 }
 
 if (state = 2) { // движение влево чуть чуть
-    x-=1;
+    x+=spd;
+    if spd > -1.5 spd-=0.05;
     if x <= 64
     {
+        spd = 0;
         x = 64;
         state = 3;
         sprite_index = spr_boss_l1_phase3_laser_idle;
@@ -73,7 +75,7 @@ if (state = 2) { // движение влево чуть чуть
 
 if (state = 3) { // ожидание
     t++;
-    if t = 50
+    if t = 25
     {
         t = 0;
         state = 4;
@@ -84,9 +86,11 @@ if (state = 3) { // ожидание
 }
 
 if (state = 4) { // движение вправо на середина    
-    x+=1.25;
+    x+=spd;
+    if spd < 1.5 spd+=0.05;
     if x >= 480-64
     {
+        spd = 0;
         x = 480-64;
         state = 5;
         sprite_index = spr_boss_l1_phase3_laser_idle;
@@ -95,7 +99,7 @@ if (state = 4) { // движение вправо на середина
     
 if (state = 5) { // остановка
     t++;
-    if t = 70
+    if t = 25
     {
         t = 0;
         state = 6;
@@ -105,9 +109,11 @@ if (state = 5) { // остановка
 }
     
 if (state = 6) { // полет в центр
-    x-=1;
+    x+=spd;
+    if spd > -1.5 spd-=0.05;
     if x <= 240
     {
+        spd = 0;
         x = 250;
         state = 7;
         sprite_index = spr_boss_l1_phase3_prepare_to_laser;
@@ -152,7 +158,23 @@ if (state = 8) { // Ужар по верху
     t_anim++;
     if t_anim mod 5 = 0
     {
+        if image_index = 5 {
+            if instance_exists(obj_cutscene_l1_boss_screenshake){
+                obj_cutscene_l1_boss_screenshake.state = 1;   
+            }
+            instance_create_depth(x-24,y-40,depth-1,obj_sfx_dust_expl_small);
+            fnc_snd_play_onetime(snd_boss_expl);
+        }
+        if image_index = 9 {
+            if instance_exists(obj_cutscene_l1_boss_screenshake){
+                obj_cutscene_l1_boss_screenshake.state = 1;   
+            }
+            fnc_snd_play_onetime(snd_boss_expl);
+            instance_create_depth(x+32,y-40,depth-1,obj_sfx_dust_expl_small)
+        }
+        
         image_index+=1;
+        
         if image_index > 11 image_index = 3
     }
     
@@ -229,11 +251,12 @@ if (state = 10) { // Падение
     y+=2;
     if y >= 256-26 
     {
+        fnc_snd_play_onetime(snd_follower_ground_hit);
         var l = instance_create_depth(x,256,depth,obj_boss_d2_proj_down_wave);
         var r = instance_create_depth(x,256,depth,obj_boss_d2_proj_down_wave);
         l.hspd = -2;
         r.hspd = 3;
-        y = 256-26;
+        y = 256-12;
         instance_create_depth(x,256,depth-1,obj_sfx4);
         state = 11;
     }
@@ -253,7 +276,7 @@ if (state = 11) {
     
 // Топор
 
-    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1,0);
     
 // Удар вниз   
 
@@ -261,15 +284,15 @@ if (state = 11) {
 
 // Бомба
 
-    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,0);
 
 // Eball
 
-	fnc_take_dmg_eball(0,-16,-1,1);
+	fnc_take_dmg_eball(0,-16,-1,0);
 
 // Parrot
 
-	fnc_take_dmg_parrot_laser(0,-16,-1,1)
+	fnc_take_dmg_parrot_laser(0,-16,-1,0)
 
 // Получение урона
 

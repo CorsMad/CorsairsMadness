@@ -448,6 +448,7 @@ if instance_exists(obj_boss_pl_light) && instance_exists(obj_boss_pl_light_block
 {
 	if place_meeting(x,y,obj_boss_pl_light) && obj_boss_pl_light.image_index = 5
 	{
+        fnc_snd_play_onetime(snd_follower_getlight);
 		state = 6;
 		t = 0;
 		obj_boss_pl_light_block.state = 3;

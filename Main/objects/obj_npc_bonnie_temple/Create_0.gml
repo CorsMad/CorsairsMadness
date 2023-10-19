@@ -6,7 +6,7 @@ vspd = 0;
 hspd = 0;
 
 
-pointer = instance_create_depth(x,y-64,depth-1,obj_icon_talk_npc_walking);
+pointer = instance_create_depth(x,y-32,depth-1,obj_icon_talk_npc_walking);
 pointer.own = id;
 
 

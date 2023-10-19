@@ -3,3 +3,5 @@
 isDead = 0;
 
 haveTarget = 0;
+
+fnc_snd_play_onetime(snd_human_parrot);

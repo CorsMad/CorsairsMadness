@@ -33,9 +33,6 @@
     "name": "spr_boat_boss_vulcano_proj_1_2",
     "path": "sprites/spr_boat_boss_vulcano_proj_1_2/spr_boat_boss_vulcano_proj_1_2.yy",
   },
-  "spriteMaskId": {
-    "name": "spr_boat_boss_vulcano_mask",
-    "path": "sprites/spr_boat_boss_vulcano_mask/spr_boat_boss_vulcano_mask.yy",
-  },
+  "spriteMaskId": null,
   "visible": true,
 }

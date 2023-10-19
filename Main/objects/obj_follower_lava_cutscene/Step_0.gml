@@ -33,7 +33,7 @@ switch(state)
 		{
 			case 30:image_index = 3;break;	
 			case 35:image_index = 2;break;	
-			case 40:image_index = 1;break;	
+			case 40:image_index = 1;fnc_snd_play_over(snd_spikes_trap_activation);break;	
 			case 45:image_index = 0;break;	
 		}
         if t = 50

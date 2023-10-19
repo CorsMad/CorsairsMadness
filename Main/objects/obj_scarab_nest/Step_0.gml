@@ -23,6 +23,7 @@ if state = 0
             case 40:image_index = 4;break;   
             case 45:
                 image_index = 5;
+                fnc_snd_play_over(snd_enemy_portal);
                 instance_create_depth(x,y,depth-1,obj_scarab_nest_creator);
                 t = 0;
 

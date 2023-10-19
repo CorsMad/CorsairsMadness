@@ -21,6 +21,7 @@ if state = 0
         case 125: image_index=4;break;
         case 130: image_index=3;break;
         case 135: image_index=2;
+            fnc_snd_play_onetime(snd_vase_destruct);
 			instance_destroy(obj_boat_boss_desert_water);
 			instance_destroy(obj_boat_boss_shadow_water_main);
 			instance_destroy(obj_boat_boss_shadow_water);
@@ -36,3 +37,5 @@ if state = 0
 		break;        
     }
 }
+
+if t mod 10 = 0 instance_create_depth(x,y+random_range(-16,16),depth-1,obj_sfx_sparkle_1);

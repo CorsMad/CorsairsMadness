@@ -25,6 +25,7 @@ switch(state)
             obj_cutscene_sp1_r14.t = 0;
             vspd = 0;
             landed = 1;
+            fnc_snd_play_onetime(snd_follower_landing);
         }
         break;
     case 1:

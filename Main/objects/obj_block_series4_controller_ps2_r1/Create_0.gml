@@ -5,5 +5,5 @@ pos = 0;
 t = 0;
 s1 = instance_create_depth(640,176,0,obj_block_series1);
 s2 = instance_create_depth(288,144,0,obj_block_series2);
-s3 = instance_create_depth(560,224,0,obj_block_series3);
+s3 = instance_create_depth(560,112,0,obj_block_series3);
 s4 = instance_create_depth(400,112,0,obj_block_series4);

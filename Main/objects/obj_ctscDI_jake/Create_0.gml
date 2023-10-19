@@ -8,3 +8,4 @@ vspd = 0;
 sprite_index = spr_npc_jake_salto;
 image_speed = 0;
 instance_create_depth(x,y,depth-1,obj_ctscDI_jake_part);
+fnc_snd_play_onetime(snd_follower_block_fall);

@@ -6,3 +6,5 @@ vspd = 0;
 
 image_speed = 0;
 image_index = 1;
+
+fnc_snd_play_onetime(snd_chest_destruct)

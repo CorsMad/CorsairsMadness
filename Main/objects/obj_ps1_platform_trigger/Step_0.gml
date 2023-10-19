@@ -3,11 +3,12 @@
 
 if place_meeting(x,y,obj_hitbox_mask) && isOn = 0
 {
+    fnc_snd_play_onetime(snd_bomb_selektor)
     instance_create_depth(x,y,depth-1,obj_sfx_weapon_slash);
     isOn = 1;
-    if instance_exists(obj_ps1_platform_enable)
+    if instance_exists(obj_ps1_platform_enable_ow)
     {
-        obj_ps1_platform_enable.turn = 1;   
+        obj_ps1_platform_enable_ow.turn = 1;   
     }
 }
 

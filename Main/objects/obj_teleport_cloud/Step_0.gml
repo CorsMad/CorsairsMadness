@@ -37,6 +37,7 @@ if pressed = 1
 	    obj_Player.coyote_timer = 0;
         obj_Player.isDead = 11;
         obj_Player.sprite_index = spr_player_masked_transform_to_cloud; 
+        fnc_snd_play_over(snd_tp_cloud_human_transf)
         moving = 0;
     }
 }

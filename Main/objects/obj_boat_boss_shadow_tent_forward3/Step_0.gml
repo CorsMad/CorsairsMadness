@@ -36,6 +36,7 @@ switch(state)
                     image_index = 12;
                     t = 0;
                     state = 2;
+                    fnc_snd_play_onetime(snd_vase_destruct);
                     break;
             }
         #endregion

@@ -65,9 +65,10 @@ if ((spd < spd_max) && state = 1) spd = lerp(spd,spd_max,0.075);
 #region Получение урона
 if (place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_hitbox_down) )&& hit_cd = 0 && state = 1
 {
+    fnc_snd_play_onetime(snd_player_hit);
     spd = -10
     hit_cd = 1;
-    spd_max+=0.1;
+    spd_max+=0.2;
     enemy_hp-=1;
     state = 1;
     t = 0;
@@ -81,19 +82,19 @@ if t_red=5 {t_red=0;image_blend = c_white;}
 
 // Топор
 
-    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1,0);
 
 // Бомба
 
-    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,0);
 
 // Eball
 
-	fnc_take_dmg_eball(0,-16,-1,1);
+	fnc_take_dmg_eball(0,-16,-1,0);
 
 // Parrot
 
-	fnc_take_dmg_parrot_laser(0,-16,-1,1)
+	fnc_take_dmg_parrot_laser(0,-16,-1,0)
 	
 #endregion
 

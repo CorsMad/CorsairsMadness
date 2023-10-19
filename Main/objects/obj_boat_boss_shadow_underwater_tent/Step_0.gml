@@ -80,6 +80,7 @@ switch(state)
             case 40:image_index = 1;break;
             case 45:image_index = 2;break;
             case 50:
+            fnc_snd_play_onetime(snd_vase_destruct);
                 image_index = 3;
                 instance_create_depth(x,y,depth,obj_boat_boss_shadow_underwater_tent_proj);                                
                 break;
@@ -121,6 +122,7 @@ switch(state)
             case 40:image_index = 1;break;
             case 45:image_index = 2;break;
             case 50:
+                fnc_snd_play_onetime(snd_vase_destruct);
                 image_index = 3;
                 instance_create_depth(x,y,depth,obj_boat_boss_shadow_underwater_tent_proj);
                 break;

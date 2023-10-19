@@ -19,7 +19,8 @@ switch(t)
      case 60:       image_index = 2;break;
      case 90:       image_index = 3;break;
      case 120:      image_blend = c_red;break;
-     case 150:      
+     case 150:   
+     fnc_msc_stop_play_slow();
             obj_endurance_desert.state = 3;
 			obj_endurance_desert.t = 0;            
             instance_destroy();

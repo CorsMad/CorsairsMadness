@@ -7,3 +7,8 @@ if instance_exists(obj_enemy_test)
 }
 
 */
+/*
+if instance_exists(obj_bossmerch_bigblock)
+{   
+    if obj_bossmerch_bigblock.state = 0  obj_bossmerch_bigblock.state = 1;
+}

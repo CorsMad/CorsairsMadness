@@ -40,7 +40,8 @@ if state = 1
         t1 = 0;
         instance_create_depth(98+random_range(-4,4),260,depth-2,obj_sfx_dust_expl_big);
         instance_create_depth(98+random_range(-4,4),256+random_range(0,-8),depth-3,obj_sfx_dust_expl_small);
-        
+        fnc_snd_play_onetime(snd_j2_boss_walls);
     }
+    
 }
 if y > 270-64 instance_destroy();

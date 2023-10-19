@@ -25,6 +25,7 @@ switch(on)
         image_speed = 1;
         if place_meeting(x,y,obj_hitbox_mask)
         {
+            fnc_snd_play_onetime(snd_bomb_selektor);
             if instance_exists(obj_tp_redirect_horiz)   
             {
                 instance_create_depth(obj_tp_redirect_horiz.x,obj_tp_redirect_horiz.y,obj_tp_redirect_horiz.depth-1,obj_sfx_player_dead_big);

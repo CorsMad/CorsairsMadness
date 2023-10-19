@@ -47,7 +47,7 @@ switch(t)
 	case 165: image_index = 4; break;
 	case 170: image_index = 3; break;
 	case 175: image_index = 2; break;
-	case 180: image_index = 1; break;
+	case 180: image_index = 1;fnc_snd_play_over(snd_spikes_trap_activation); break;
 	case 185: image_index = 0; break;
     case 190:
         instance_destroy();

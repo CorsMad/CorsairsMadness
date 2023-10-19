@@ -28,6 +28,7 @@ if place_meeting(x+hspd, y, obj_skeleton_limiter)
 	}
 	if place_meeting(x+hspd, y, obj_block)
 		{
+            fnc_snd_play_onetime(snd_enemy_boss1_dust);
 		while (!place_meeting(x+sign(hspd), y, obj_block )) 
 		{
 		    x+= sign(hspd);
@@ -43,6 +44,7 @@ if place_meeting(x, y+vspd, obj_skeleton_limiter)
 	}
 	if place_meeting(x, y+vspd, obj_block)
 		{
+            fnc_snd_play_onetime(snd_enemy_boss1_dust);
 		while (!place_meeting(x, y+sign(vspd), obj_block )) 
 		{
 		    y+= sign(vspd);
@@ -96,6 +98,7 @@ if t_red = 5 {t_red = 0;image_blend = c_white;}
 
 if place_meeting(x,y,obj_hitbox) && hit_cd = 0
 {
+    fnc_snd_play_onetime(snd_player_hit);
     if enemy_hp > 7
     {
         if obj_Player.x < x     {hspd = 2  ;} 
@@ -123,6 +126,7 @@ if place_meeting(x,y,obj_hitbox) && hit_cd = 0
 }
 if place_meeting(x,y,obj_hitbox_down) && hit_cd = 0
 {
+    fnc_snd_play_onetime(snd_player_hit);
     if enemy_hp > 7
     {
         if obj_Player.x < x     {hspd = 2  ;vspd = 2;} 
@@ -148,19 +152,19 @@ if place_meeting(x,y,obj_hitbox_down) && hit_cd = 0
 
 // Топор
 
-    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1,0);
 
 // Бомба
 
-    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,0);
 
 // Eball
 
-	fnc_take_dmg_eball(0,-16,-1,1);
+	fnc_take_dmg_eball(0,-16,-1,0);
 
 // Parrot
 
-	fnc_take_dmg_parrot_laser(0,-16,-1,1)
+	fnc_take_dmg_parrot_laser(0,-16,-1,0)
 
 #endregion
 

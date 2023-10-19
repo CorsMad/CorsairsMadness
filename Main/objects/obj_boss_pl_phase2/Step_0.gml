@@ -403,6 +403,7 @@ if instance_exists(obj_boss_pl_light) && instance_exists(obj_boss_pl_light_block
 {
 	if place_meeting(x,y,obj_boss_pl_light) && obj_boss_pl_light.image_index = 5
 	{
+        fnc_snd_play_onetime(snd_follower_getlight)
 		state = 6;
 		t = 0;
 		obj_boss_pl_light_block.state = 3;
@@ -417,6 +418,7 @@ if place_meeting(x,y,obj_Player)
 {
     if obj_Player.isDead = 12
         {
+            fnc_snd_play_onetime(snd_follower_ground_hit);
             obj_Player.doublejumpspd = -obj_Player.image_xscale*6;        
             obj_Player.isDead = 0;
             obj_Player.superdash_power = 0;

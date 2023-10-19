@@ -29,6 +29,7 @@ if state = 4
         case 30: image_index = 1;break;   
         case 35: image_index = 0;break; 
         case 40:
+        
             instance_destroy(obj_boss_dp_mold_create);
             instance_create_depth(400,176,0,obj_boss_dp_phase1);
             obj_Player.isDead = 0;

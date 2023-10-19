@@ -8,3 +8,5 @@ if instance_exists(obj_Player)
     hspeed = lengthdir_x(spd,dir);
     vspeed = lengthdir_y(spd,dir);
 }
+
+fnc_snd_play_onetime(snd_player_preattackdown)

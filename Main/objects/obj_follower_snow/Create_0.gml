@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+fnc_msc_play(msc_jp1_purch);
 on = 0
 start_y = 224;
 state = 0;

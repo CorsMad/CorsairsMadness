@@ -39,7 +39,7 @@ if (phase = 1) { // Фаза1
                     vspd = -vspd;
                 }
                 
-                if t = 330
+                if t = 245
                 {
                     t = 0;
                     t1 = 0;

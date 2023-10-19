@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 state = 0;
-
+fnc_msc_play(msc_boss_p2);
 
 spd = 0;
 pos = 0;

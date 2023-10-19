@@ -50,7 +50,7 @@ fnc_boat_take_dmg_dual_pistol(0.4,0.6,0.8)
 
 fnc_boat_take_dmg_cannon(10) 
 
-fnc_boat_take_dmg_parrotcage(1,1.4,1.8,2)
+fnc_boat_take_dmg_parrotcage(1,1.4,1.8,1)
 
 fnc_boat_take_dmg_blunderbuss(0.5)
 

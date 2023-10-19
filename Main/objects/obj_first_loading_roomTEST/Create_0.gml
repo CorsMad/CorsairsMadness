@@ -1,15 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
+randomise();
+global.TargetX      = 32;
+//global.TargetY      =240784;
+global.TargetY      = 208;
+global.TargetRoom   = D1_r1;
 
-global.TargetX      = 112;
-//global.TargetY      = 784;
-global.TargetY      = 240;
-global.TargetRoom   = Village_jungle_merchant;
 
-
-global.fTargetX     = 384;
-global.fTargetY     = 256;
-global.fTargetRoom  = PG1_r45;
+global.fTargetX     = 240;
+global.fTargetY     = 240;
+global.fTargetRoom  = TESTROOM;
 
 
 
@@ -37,21 +37,21 @@ global.language = 0;
     global.completed_PG2 = 0;
     
     global.completed_PL1 = 0;
-    global.completed_PL2 = 0;
+    global.completed_PL2 = 1;
         
     #endregion
     
 #region ТЕСТ
-    display_reset(0, false);
+    
     //0
-    global.dia_jungleChief = 1; 
+    global.dia_jungleChief = 0; 
     global.dia_desertChief = 0;
     global.dia_snowChief = 0;
     global.dia_shadowChief = 0;
-    global.dia_lavaChief = 0;
+    global.dia_lavaChief = 1;
     
     //0
-    global.dia_jungleMerch = 1; 
+    global.dia_jungleMerch = 0; 
     global.dia_desertMerch = 0; 
     global.dia_snowMerch = 0;     
     global.dia_shadowMerch = 0; 
@@ -65,11 +65,11 @@ global.language = 0;
     global.dia_lavaComt = 2;
      
     //0 
-    global.saved_jungle = 0;
-    global.saved_desert = 0;
-    global.saved_snow = 0;
-    global.saved_shadow = 0;
-    global.saved_vulcano = 0;
+    global.saved_jungle = 1;
+    global.saved_desert = 1;
+    global.saved_snow = 1;
+    global.saved_shadow = 1;
+    global.saved_vulcano = 1;
     
     //0
     global.dia_jungleMerch_f_talk = 0;
@@ -82,8 +82,8 @@ global.language = 0;
 
 
 #region  ключи
-global.key_green1 = 1;
-global.key_green2 = 1;
+global.key_green1 = 0;
+global.key_green2 = 0;
 
 global.key_yellow1 = 0;
 global.key_yellow2 = 0;
@@ -168,10 +168,10 @@ global.purch_parrotcage3 = 0;
 #region Игрок
 global.hp = 5;           // 4
 global.hp_max = 5;       // 4
-global.choosed_item = 5; // 1- бумер 2 -топ // 3 - бомба // 4 - eball // 5 - parrot // 11 - арбалет
+global.choosed_item = 5; // 2 -тоорп // 3 - бомба // 4 - eball // 5 - parrot 
 global.choosed_item_tier = 3; // ТИР предмета
-global.choosed_itemboat = 4; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
-global.choosed_itemboat_tier = 3; // ТИП предмета для лодки
+global.choosed_itemboat = 3; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
+global.choosed_itemboat_tier = 3 // ТИП предмета для лодки
 global.superattack1 = 0;// Суператаки  max 2  default - 0
 global.superattack2 = 0;// Суператаки  max 1  default - 0
 global.superattack3 = 0;// Суператаки  max 1  default - 0
@@ -498,3 +498,7 @@ global.secrets_g2p_r6 = 0;
 #endregion
 
 #endregion
+
+
+//surface_resize(application_surface, display_get_width(), display_get_height());
+//display_reset(0, false);

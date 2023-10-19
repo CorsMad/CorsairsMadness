@@ -12,6 +12,7 @@ if t = 2
 
 if y >= 256 
 {
+    fnc_snd_play_onetime(snd_item_bomb_explosion);
 	instance_create_depth(x,y,depth-1,obj_sfx_weapon_slash);
     instance_create_depth(x-18,y-18-18,depth-1,obj_sfx_explosion_bomb);
     instance_create_depth(x-18,y+18-18,depth-1,obj_sfx_explosion_bomb);
@@ -31,6 +32,7 @@ if state = 0
     y+=vspd;
     if place_meeting(x,y,obj_hitbox)
     {
+        fnc_snd_play_onetime(snd_item_bomb_explosion);
         instance_create_depth(x,y,depth-1,obj_sfx_weapon_slash);
         instance_create_depth(x-18,y-18,depth-1,obj_sfx_explosion_bomb);
         instance_create_depth(x-18,y+18,depth-1,obj_sfx_explosion_bomb);
@@ -45,6 +47,7 @@ if state = 0
     {
         if place_meeting(x,y,obj_item_boomerang)
         {
+            fnc_snd_play_onetime(snd_get_boomerang);
             instance_create_depth(x,y,depth-1,obj_sfx2);
             if obj_item_boomerang.x > x hspd = -4 else hspd = 4;  
             vspd = -1;
@@ -75,6 +78,7 @@ if state = 2
         else 
         {
             // Нанести урон
+            fnc_snd_play_onetime(snd_item_bomb_explosion);
             obj_boss_l2_phase2.bomb_hit += 1;
 			instance_create_depth(x,y,depth-1,obj_sfx_explosion_bomb);
             instance_create_depth(x-18,y-18,depth-1,obj_sfx_explosion_bomb);
@@ -93,6 +97,7 @@ if state = 2
         else 
         {
             // Нанести урон
+            fnc_snd_play_onetime(snd_item_bomb_explosion);
             obj_boss_le2_phase2.bomb_hit += 1;
 			instance_create_depth(x,y,depth-1,obj_sfx_explosion_bomb);
             instance_create_depth(x-18,y-18,depth-1,obj_sfx_explosion_bomb);

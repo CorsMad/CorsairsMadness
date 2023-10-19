@@ -33,12 +33,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bird_coconut",
-    "path": "sprites/spr_bird_coconut/spr_bird_coconut.yy",
+    "name": "spr_boat_boss_desert_proj_tier2_st2",
+    "path": "sprites/spr_boat_boss_desert_proj_tier2_st2/spr_boat_boss_desert_proj_tier2_st2.yy",
   },
   "spriteMaskId": {
-    "name": "spr_bird_coconut_mask",
-    "path": "sprites/spr_bird_coconut_mask/spr_bird_coconut_mask.yy",
+    "name": "spr_boat_boss_desert_proj_tier2_st2",
+    "path": "sprites/spr_boat_boss_desert_proj_tier2_st2/spr_boat_boss_desert_proj_tier2_st2.yy",
   },
   "visible": true,
 }

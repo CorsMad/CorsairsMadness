@@ -5,7 +5,7 @@ t=0;
 
 image_speed =0.1;
 
-
+fnc_msc_stop_play_slow();
 
 
 if instance_exists(obj_boss_g2_phase_poison) instance_destroy(obj_boss_g2_phase_poison)     

@@ -24,3 +24,4 @@ switch(t)
         instance_destroy();
         break;
 }
+if t mod 10 = 0 instance_create_depth(x,y-16,depth-1,obj_sfx_sparkle_1);

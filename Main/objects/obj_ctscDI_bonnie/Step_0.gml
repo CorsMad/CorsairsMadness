@@ -26,6 +26,7 @@ switch(state){
         switch(t){
             case 50: // выстрел
                 image_index = 5;
+                obj_ctscDI_merch10.hit_cd = 1;
                 instance_create_depth(x+29,y-10,-2,obj_ctscDI_bonnie_trace);
                 fnc_snd_play_onetime(snd_cannon_fire);
                 var sm = instance_create_depth(x-32,y-10,-3,obj_cannon_level_smoke);

@@ -11,6 +11,7 @@ switch(on)
     {
         if obj_Player.isDead = 12
         {
+            fnc_snd_play_over(snd_lava_block_destr)
             //obj_Player.doublejumpspd = obj_Player.image_xscale*spd;        
             obj_Player.isDead = 0;
             obj_Player.superdash_power = 0;

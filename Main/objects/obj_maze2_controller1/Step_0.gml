@@ -2,8 +2,8 @@
 // You can write your code in this editor
 player_input();
 
-if key_left_press   choosed-=1;
-if key_right_press  choosed+=1;
+if key_left_press   {choosed-=1;fnc_snd_play_onetime(snd_menu_select); }
+if key_right_press  {choosed+=1;fnc_snd_play_onetime(snd_menu_select);}
 
 if choosed < 0 choosed = 3;
 if choosed > 3 choosed = 0;
@@ -15,6 +15,7 @@ if  instance_exists(obj_maze2_but1) &&
 {
     if key_jump || key_attack
     {
+        fnc_snd_play_onetime(snd_menu_accept);
         switch(choosed)
         {
             case 0:

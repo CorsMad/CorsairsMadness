@@ -12,3 +12,5 @@ image_blend = c_red;
 enemy_hp = 15;
 hit_cd = 0;
 t_red = 0;
+
+fnc_snd_play_onetime(snd_follower_getlight)

@@ -3,3 +3,4 @@
 hspd = 0;
 vspd = 0;
 state = 0;
+fnc_snd_play_onetime(snd_enemy_boss2_attack);

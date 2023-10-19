@@ -9,6 +9,7 @@ if instance_exists(fol)
         var def = instance_place(x,y,obj_abil_arbalet_proj)
         if def!= noone
         {
+            fnc_snd_play_onetime(snd_follower_getlight);
             def.isDead = 1;
             instance_create_depth(x,y,depth-1,obj_sfx2);
             isOn = 0;

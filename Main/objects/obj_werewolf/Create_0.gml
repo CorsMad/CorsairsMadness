@@ -21,3 +21,5 @@ grounded = 0;
 vulnerable = 1;
 t_madness = 0;
 madness = 0;
+
+snd = 0;

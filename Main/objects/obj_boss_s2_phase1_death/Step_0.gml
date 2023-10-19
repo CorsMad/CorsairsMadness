@@ -42,6 +42,7 @@ if state = 0
         case 20:    image_blend = c_white;break;
         case 50:    image_index = 1;break;
         case 70:   
+            fnc_snd_play_onetime(snd_follower_landing);
             instance_create_depth(x-30*sign(image_xscale),y,depth-2,obj_sfx3);
             instance_create_depth(x-30*sign(image_xscale),y,depth-1,obj_sfx4);
             for (var m = 0; m < 28; m+=1) {
@@ -49,7 +50,8 @@ if state = 0
             image_index = 2;
             break;
         case 100:   image_index = 1;break;
-        case 120:   
+        case 120:  
+            fnc_snd_play_onetime(snd_follower_landing);
             instance_create_depth(x-30*sign(image_xscale),y,depth-2,obj_sfx3);
             instance_create_depth(x-30*sign(image_xscale),y,depth-1,obj_sfx4);
             for (var m = 0; m < 28; m+=1) {
@@ -58,6 +60,8 @@ if state = 0
             break;
         case 150:   image_index = 1;break;
         case 170:   
+            fnc_snd_play_onetime(snd_follower_landing);
+            fnc_snd_play_onetime(snd_wall_explosion);
             instance_create_depth(x-30*sign(image_xscale),y,depth-2,obj_sfx3);
             instance_create_depth(x-30*sign(image_xscale),y,depth-1,obj_sfx4);
             for (var m = 0; m < 28; m+=1) {
@@ -79,6 +83,7 @@ if state = 3
 {
     if place_meeting(x,y+1,obj_block)
     {
+        fnc_snd_play_onetime(snd_boss_expl);
         instance_create_depth(x,y,0,obj_skeleton_bone);  
         instance_create_depth(x,y,0,obj_skeleton_bone);  
         instance_create_depth(x,y,0,obj_skeleton_bone);  

@@ -96,7 +96,7 @@ switch(state)
             d_aoe.fol = id;
             d_aoe.image_xscale = image_xscale;   
         }
-        
+        if t mod 10 = 0 fnc_snd_play_onetime(snd_player_jump);
         t++;
         if t mod 3 = 0
         {
@@ -107,6 +107,7 @@ switch(state)
         }
         if place_meeting(x+hspd,y,obj_block)
         {
+            fnc_snd_play_onetime(snd_follower_ground_hit);
             hspd = -sign(hspd)*1.5;
             vspd = -2;
             state = 1.5;
@@ -343,7 +344,7 @@ switch(state)
         }
         if t = 80
         {
-            
+            fnc_snd_play_onetime(snd_follower_ground_hit);
             var bw = instance_create_depth(x,y,depth-1,obj_boss_ps_ph3_wave);
             if x > room_width/2 bw.hspd = -1 else bw.hspd = 1;
         }
@@ -562,6 +563,7 @@ if !instance_exists(obj_masked_clone)
         }
         if armor = 0
         {
+            fnc_snd_play_onetime(snd_follower_getlight);
             state = 6;
             hit_stored = 0;
             t = 0;

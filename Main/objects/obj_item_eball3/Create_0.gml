@@ -9,3 +9,4 @@ start = y;
 
 t_create = 0;
 image_angle = choose(0,90,180,270);
+fnc_snd_play_onetime(snd_human_eball);

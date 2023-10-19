@@ -5,6 +5,7 @@ if (state = 0) {
     if (image_index > image_number - 1) {
         sprite_index = spr_boat_boss_desert_proj_tier1;
         state = 1;
+        fnc_snd_play_onetime(snd_follower_laser);
         x = x-56;
         y = y-10;
     }

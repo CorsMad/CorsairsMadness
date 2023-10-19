@@ -14,6 +14,7 @@ if _enabled = 1
 
     if place_meeting(x,y,obj_hitbox) && isActive = 0
     {
+        fnc_snd_play_onetime(snd_bomb_selektor)
         image_index = 2;
         isActive = 1;
         

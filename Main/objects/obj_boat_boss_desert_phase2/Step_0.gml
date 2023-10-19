@@ -328,6 +328,7 @@ if (phase = 2) { // Фаза2
                     case 0:    image_index = 3;break;
                     case 100:    
                         image_index = 4;
+                        
                         instance_create_depth(400,y,depth-1,obj_boat_boss_desert_proj_ph2_st3);
                         break;
                     case 150:
@@ -364,8 +365,10 @@ if (phase = 2) { // Фаза2
                     case -10:    image_index = 1;instance_create_depth(x-64,y,depth-1,obj_boat_boss_desert_proj_ph2_proj3_cr);break;
                     case -5:    image_index = 2;break;
                     case 0:    image_index = 3;break;
+                    
                     case 100:    
                         image_index = 4;
+                        fnc_snd_play_onetime(snd_enemy_desert_boat_charge);
                         instance_create_depth(400,y,depth-1,obj_boat_boss_desert_proj_ph2_st3);
                         break;
                     case 150:

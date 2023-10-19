@@ -22,8 +22,9 @@ switch(state){
             sprite_index = spr_player_masked_run;
             image_speed = 1.25;   
         }
-        if place_meeting(x,y+1,obj_block) && x > 144 {
+        if place_meeting(x,y+1,obj_block) && x > 120 {
             fspd = 0;
+            fnc_snd_play_onetime(snd_player_landing);
             state = 1;
         }
         if !place_meeting(x,y+1,obj_block){
@@ -41,8 +42,14 @@ switch(state){
         break;
     case 2:
         t++;
+        if t < 45 vspd = -0.4; else {
+            if !place_meeting(x,y+1,obj_block){
+                    vspd +=0.2;            
+                } else vspd = 0;   
+        }
         switch(t){
             case 1:
+            fnc_snd_play_onetime(snd_transform);
                 sprite_index = spr_player_transform;
                 image_speed = 0;
                 image_index = 8;

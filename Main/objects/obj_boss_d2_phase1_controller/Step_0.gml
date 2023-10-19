@@ -7,6 +7,11 @@
 
 */
 
+if state = -1 {
+    t++;
+    if t = 50 {fnc_msc_play(msc_j2_boss);state = 1;t = 0;}
+}
+
 if state = 1
 {
     t++;
@@ -16,7 +21,7 @@ if state = 1
     }
     if t= 100
     {   
-        fnc_msc_play(msc_j2_boss);
+        
         instance_create_depth(456,96-6,0,obj_boss_d2_earth_right);   
         var en_mask = instance_create_depth(448,96,0,obj_boss_d2_phase1_1);
         en_mask.enemy_hp = enemy_hp;
@@ -52,6 +57,8 @@ if state = 3
                 
         instance_create_depth(obj_boss_d2_phase1_1.x,obj_boss_d2_phase1_1.y,depth,obj_boss_d2_phase1_death);
         instance_destroy(obj_boss_d2_phase1_1);
+        instance_exists(obj_bossd2_1_long_proj_l) instance_destroy(obj_bossd2_1_long_proj_l)
+        instance_exists(obj_bossd2_1_long_proj_r) instance_destroy(obj_bossd2_1_long_proj_r)
         instance_destroy();
     } else
     if instance_exists(obj_boss_d2_phase1_2)

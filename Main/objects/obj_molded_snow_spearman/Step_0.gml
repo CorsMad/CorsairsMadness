@@ -202,6 +202,8 @@ if state = 3 // отпрыг
 
 if place_meeting(x,y,obj_doublejump)
 {
+    var cl = instance_create_depth(x,y,depth-1,obj_molded_lance_cloud);
+    cl.fol = id;
     state = 5;
     vspd = -6;
     if!place_meeting(x,y-1,obj_block) y-=1;
@@ -339,6 +341,10 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd=0
         obj_Player.vspd = -1.4;
     }  
     if state = 5 {flip = 1;vspd=0;hspd = 0;}
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
 }
 
 if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd=0
@@ -355,12 +361,17 @@ if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd=0
     hit_cd=1;
     t = 0;
     if state = 5 {hspd = sign(obj_Player.dir)*4;vspd=-2}
+    if obj_Player.x < x 
+        		{
+        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
 }
 
 #endregion
 
 #region смерть
 if enemy_hp <=0 {
+    fnc_molded_dark_essence_none();
     var d = instance_create_depth(x,y,depth,obj_molded_snow_spearman_death)   ;
     d.image_xscale = image_xscale;
     instance_destroy();

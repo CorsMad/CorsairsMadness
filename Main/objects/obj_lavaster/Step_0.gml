@@ -9,6 +9,7 @@ if state = 0
     {
         if abs(obj_Player.x - x) < range 
         {
+            fnc_snd_play_onetime(snd_lavaster_appear);
             state = 1;   
         }
     }
@@ -49,10 +50,9 @@ if state = 1
 
 #endregion
 
-#region  Полет в игрока
+#region Полет в игрока
 
 #endregion
-
 
 #region Отлет
 
@@ -122,6 +122,7 @@ if state > 1 {
 #region Смерть
 if enemy_hp < 1 
 {
+    fnc_snd_play_onetime(snd_chest_destruct);
     instance_destroy();
     instance_create_depth(x,y,depth-1,obj_sfx_dust_expl_small)
     var d1 = instance_create_depth(x,y,depth,obj_lavaster_death);

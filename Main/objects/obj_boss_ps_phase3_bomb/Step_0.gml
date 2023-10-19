@@ -29,6 +29,7 @@ if state = 1
     t++;
     if t = 100
     {
+        fnc_snd_play_onetime(snd_ps_follower_bomb);
         instance_create_depth(x,y,depth-1,obj_sfx_explosion_bomb);
         instance_create_depth(x,y,depth,obj_boss_ps_ph1_bomb_aoe)
         instance_destroy();

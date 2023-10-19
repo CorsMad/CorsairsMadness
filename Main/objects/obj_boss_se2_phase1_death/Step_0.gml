@@ -35,6 +35,7 @@ if state = 3
 {
     if place_meeting(x,y+1,obj_block)
     {
+        fnc_snd_play_onetime(snd_boss_expl);
         instance_create_depth(x,y,0,obj_skeleton_bone);  
         instance_create_depth(x,y,0,obj_skeleton_bone);  
         instance_create_depth(x,y,0,obj_skeleton_bone);  

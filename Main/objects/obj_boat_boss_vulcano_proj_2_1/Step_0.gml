@@ -43,6 +43,7 @@ switch(state)
 	case 2:
 		y+=vspd;
 		if y >= dest_point {
+            fnc_snd_play_onetime(snd_item_bomb_explosion);
             instance_create_depth(x,y,depth-1,obj_sfx_explosion);
             instance_destroy();	
             switch(orient)

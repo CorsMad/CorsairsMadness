@@ -142,6 +142,7 @@ if (state = 2) {
     sprite_index = spr_boss_l2_skeleton_falldown1;
 	if y >=256
 	{
+        fnc_snd_play_onetime(snd_follower_landing);
 		y = 256;
 		state = 3;
 		t = 0;

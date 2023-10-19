@@ -7,3 +7,5 @@ image_index = 2;
 instance_create_depth(x,y,depth-1,obj_hpmax_some_mana_gain_gift);
 depth = -100;
 image_blend = c_red;
+
+fnc_msc_stop_play_slow()

@@ -3,6 +3,7 @@
 
 switch(state){
 	case 0:
+        if t mod 10 = 0 fnc_snd_play_onetime(snd_enemy_dies_sparkles);
 		t++;
         if t= 50 image_index = 1;
 		if t > 100 {

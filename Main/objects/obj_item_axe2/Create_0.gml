@@ -6,3 +6,5 @@ image_xscale = 1.25;
 image_yscale = 1.25;
 
 a = 0;
+
+fnc_snd_play_onetime(snd_human_axe);

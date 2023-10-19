@@ -3,6 +3,7 @@
 t++;
 if t = 5
 {
+    fnc_snd_play_onetime(snd_use_ring2_human);
     var i = instance_create_depth(x+sign(image_xscale)*16,y,depth-1,obj_abil_arbalet_proj);   
     if image_xscale = 1
     {

@@ -1,2 +1,2 @@
-TargetRoom = PS2_r9;
+TargetRoom = PS2_r7;
 TargetX = 480-16;

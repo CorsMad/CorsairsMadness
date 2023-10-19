@@ -2,6 +2,8 @@
 // You can write your code in this editor
 vspd = -5;
 
+fnc_snd_play_onetime(snd_follower_snow_bomb_start);
+
 dis = round(x-obj_Player.x);
 if dis < 180 && dis > -180 
 {

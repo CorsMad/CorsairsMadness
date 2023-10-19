@@ -33,6 +33,7 @@ hspd = lerp(hspd,0,0.05);
 
 if place_meeting(x,y+1,obj_block)
 {
+    fnc_snd_play_onetime(snd_vase_destruct)
 	instance_destroy();
 	var pois_r = instance_create_depth(x,256,depth+1,obj_boss_g2_phase_poison2)
 	pois_r.dir = 1;
@@ -46,6 +47,7 @@ if place_meeting(x,y+1,obj_block)
 
 if place_meeting(x+sign(hspd),y,obj_block)
 {
+    fnc_snd_play_onetime(snd_vase_destruct)
 	instance_destroy();
 	var pois_down = instance_create_depth(x,256,depth+1,obj_boss_g2_phase_poison2)
 	pois_down.dir = 1;

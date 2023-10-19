@@ -3,6 +3,7 @@
 
 if place_meeting(x,y,obj_Player)
 {   
+    fnc_msc_stop_play_slow();
     if obj_Player.clone_timer = 0 && obj_Player.isDead!= 131 && obj_Player.isDead!=132
     {
         with(obj_Player)

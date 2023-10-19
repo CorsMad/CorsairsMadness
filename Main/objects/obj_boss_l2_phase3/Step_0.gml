@@ -143,6 +143,7 @@ if (state = 2) {
 	if y >=256
 	{
 		y = 256;
+        fnc_snd_play_onetime(snd_follower_landing);
 		state = 3;
 		t = 0;
         image_index = 0;
@@ -181,6 +182,7 @@ if state = 4
 {
 	if !instance_exists(obj_armor_skel)
 	{
+        fnc_msc_stop_play_slow();
         if global.key_red2 = 0 instance_create_depth(240,128,depth,obj_key_red_tri);
         else instance_create_depth(x,y,0,obj_room_transition_black_screen_l1_stats); 
 		instance_destroy()

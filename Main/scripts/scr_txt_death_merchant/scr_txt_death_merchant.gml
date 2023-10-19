@@ -93,3 +93,16 @@ function scr_txt_death_merch2(){
             break;
     }    
 }
+    
+function scr_txt_death_merch3(){
+    switch(global.language){
+        case 0:
+            #region Eng
+            text1 = "[fnt_pixel]And why did you come here? You'll be here forever anyway.";
+            text2 = "[fnt_pixel]You, your foolish crew, those damned inhabitants who imprisoned me here will rot forever on this archipelago.";
+            text3 = "[fnt_pixel]You're only human. What can you do against me?";
+            text4 = "[fnt_pixel]Prepare to die.";
+            #endregion
+            break;
+    }
+}

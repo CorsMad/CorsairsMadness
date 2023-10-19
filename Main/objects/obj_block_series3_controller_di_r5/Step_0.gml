@@ -36,6 +36,8 @@ switch(pos)
         t++;
         if t = 50
         {
+            fnc_snd_play_onetime(snd_ps_block_series_finish);
+            fnc_snd_play_onetime(snd_ps_block_destr);
             b1.isOn = 0;
             b2.isOn = 0;
             b3.isOn = 0;

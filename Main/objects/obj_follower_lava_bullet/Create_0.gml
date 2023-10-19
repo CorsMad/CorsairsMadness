@@ -5,5 +5,5 @@ image_index = 0;
 image_speed = 0;
 t = 0;
 spd = 6;
-
+fnc_snd_play_onetime(snd_cannon_fire);
 t_anim = 0;

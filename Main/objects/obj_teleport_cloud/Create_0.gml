@@ -11,3 +11,5 @@ blob_cr_timer = 0;
 isDead = 0;
 
 vspd = 0;
+
+fnc_snd_play_onetime(snd_tp_cloud_human_start);

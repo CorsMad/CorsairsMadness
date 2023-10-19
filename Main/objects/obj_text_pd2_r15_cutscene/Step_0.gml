@@ -14,7 +14,7 @@ if key_skip
     if scr_t > scr_t_max 
     {
         fnc_msc_stop_play();        
-        global.Cutscene_dp2_r15 = 0;
+        global.Cutscene_pd2_r15 = 0;
         obj_boss_dp_npc.state = 4;
         obj_boss_dp_npc.t = 0;
         instance_destroy();    

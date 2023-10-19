@@ -24,6 +24,7 @@ switch(state){
         }
         if place_meeting(x,y+1,obj_block) && x > 144 {
             fspd = 0;
+            fnc_snd_play_onetime(snd_player_landing);
             state = 1;
         }
         if !place_meeting(x,y+1,obj_block){
@@ -41,8 +42,14 @@ switch(state){
         break;
     case 2:
         t++;
+        if t < 45 vspd = -0.4; else {
+            if !place_meeting(x,y+1,obj_block){
+                    vspd +=0.2;            
+                } else vspd = 0;   
+        }
         switch(t){
             case 1:
+            fnc_snd_play_onetime(snd_transform);
                 sprite_index = spr_player_transform;
                 image_speed = 0;
                 image_index = 8;
@@ -56,6 +63,7 @@ switch(state){
             case 35: image_index = 1;break;
             case 40: image_index = 0;break;
             case 45:
+                
                 sprite_index = spr_player_idle;
                 image_speed = 1;
                 break;
@@ -66,7 +74,13 @@ switch(state){
                 break;
         }
         break;
+    case 3:
+        if !place_meeting(x,y+1,obj_block){
+                    vspd +=0.2;            
+                } else vspd = 0;
+        break;
     case 4:
+        
         if !place_meeting(x,y+1,obj_block){
             image_speed =0;
             sprite_index = spr_player_jump;   

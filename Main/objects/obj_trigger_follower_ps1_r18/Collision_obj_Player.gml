@@ -3,6 +3,7 @@
 
 if instance_exists(obj_Player)
 {
+    fnc_msc_stop_play();
     if obj_Player.clone_timer = 0 && obj_Player.isDead!= 131 && obj_Player.isDead!=132
     {
         var fol = instance_create_depth(1280,352,0,obj_follower_snow);

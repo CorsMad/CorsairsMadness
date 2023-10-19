@@ -15,10 +15,10 @@ function fnc_lng_store(){
             nameh_shockball =  "shockball";
             nameh_parrot    =  "parrot";
 
-            namep_double_strike     = "double strike";
-            namep_lunge             = "lunge";
-            namep_toss_up           = "toss-up";
-            namep_top_down          = "top-down strike"
+            namep_double_strike     = "front strike";
+            namep_lunge             = "double-side";
+            namep_toss_up           = "round strike";
+            namep_top_down          = "three spheres"
 
             nameb_qhands        = "Quick Hands";
             nameb_dpistol       = "Double pistol";

@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bossmerch_phase1",
-    "path": "sprites/spr_bossmerch_phase1/spr_bossmerch_phase1.yy",
+    "name": "spr_bossmerch_phase1_idle",
+    "path": "sprites/spr_bossmerch_phase1_idle/spr_bossmerch_phase1_idle.yy",
   },
   "spriteMaskId": null,
   "visible": true,

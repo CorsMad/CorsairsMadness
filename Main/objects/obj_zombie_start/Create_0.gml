@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+fnc_snd_play_onetime(snd_zombie_start);
+
 instance_create_depth(x,y-4,depth-1,obj_sfx_dust_expl_small);
 var i1 = instance_create_depth(x+random_range(-8,-4),y-4,depth-1,obj_zombie_dirt);
 var i2 = instance_create_depth(x+random_range(-8,-4),y-4,depth-1,obj_zombie_dirt);

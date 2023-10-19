@@ -18,6 +18,7 @@ if state = 0
     {
         instance_create_depth(382+random_range(8,-8),192+random_range(8,-8),depth-1,obj_sfx_explosion); 
         t1 = 0;
+        fnc_snd_play_onetime(snd_j2_boss_walls);
     }
 }
 

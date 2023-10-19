@@ -57,6 +57,7 @@ if enemy_hp <=0
 
 if state = 7
 {
+    fnc_msc_stop_play_slow();
     if instance_exists(obj_boss_d2_phase3)
     {
                 

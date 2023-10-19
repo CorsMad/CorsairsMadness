@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "S1_boss",
-  "creationCodeFile": "",
+  "creationCodeFile": "rooms/S1_boss/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
@@ -25,6 +25,7 @@
     {"name":"inst_177CACA5","path":"rooms/S1_boss/S1_boss.yy",},
     {"name":"inst_BEED693","path":"rooms/S1_boss/S1_boss.yy",},
     {"name":"inst_1F4CB8C1","path":"rooms/S1_boss/S1_boss.yy",},
+    {"name":"inst_2EBF1F1D","path":"rooms/S1_boss/S1_boss.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -47,6 +48,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_177CACA5","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_silver_key_door4_s1_boss","path":"objects/obj_silver_key_door4_s1_boss/obj_silver_key_door4_s1_boss.yy",},"properties":[],"rotation":90.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":48.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_BEED693","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_silver_key_door4_s1_boss_trigger","path":"objects/obj_silver_key_door4_s1_boss_trigger/obj_silver_key_door4_s1_boss_trigger.yy",},"properties":[],"rotation":0.0,"scaleX":15.117647,"scaleY":1.0,"x":256.0,"y":160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1F4CB8C1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_gui_controller_s1_boss","path":"objects/obj_gui_controller_s1_boss/obj_gui_controller_s1_boss.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":16.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2EBF1F1D","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pause_controller","path":"objects/obj_pause_controller/obj_pause_controller.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":80.0,"y":0.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -22,-2147483648,-5,0,-24,-2147483648,-7,0,-21,-2147483648,-11,0,-13,-2147483648,-17,0,-13,-2147483648,-17,0,-9,-2147483648,-21,0,-6,-2147483648,-24,0,-6,-2147483648,

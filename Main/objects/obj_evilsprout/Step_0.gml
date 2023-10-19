@@ -97,6 +97,7 @@ if state = 0
         t++;
         if t = 90 
         {
+            fnc_snd_play_onetime(snd_enemy_evilsprout_fire);
             // выстрел 
             var m1 = instance_create_depth(x,y-12,depth-1,obj_evilsprout_missle);
             var m2 = instance_create_depth(x,y-12,depth-1,obj_evilsprout_missle);
@@ -132,16 +133,16 @@ if state = 0
 
 if instance_exists(obj_abil_flute_aoe)
 {
-    if (place_meeting(x,y,obj_abil_flute_aoe) && obj_abil_flute_aoe.image_alpha = 1 && t_flute < 120) t_flute++; 
+    if (place_meeting(x,y,obj_abil_flute_aoe) && obj_abil_flute_aoe.image_alpha = 1 && t_flute < 90) t_flute++; 
 }
 if (!place_meeting(x,y,obj_abil_flute_aoe) && t_flute > 0) t_flute--;
 
-if t_flute = 60 
+if t_flute = 30 
 {  
     var mask1 = instance_create_depth(x,y,depth,obj_evilsprout_mask_1hp);
     mask1.own = id;
     state = 1; 
-    
+    fnc_snd_play_onetime(snd_enemy_get_flute);
     t = 0;
     trigger_attack = 0;
     t_attack = 0;

@@ -14,12 +14,11 @@ if key_skip
         obj_npc_lavav_merch.talk = 0;
         obj_Player.isDead = 2.1;  
         global.dia_vulcanoMerch_f_talk = 1;
-        var i = instance_create_depth(238,240,depth,obj_teleport_junglevillage);
+        var i = instance_create_depth(214,240,depth,obj_teleport_junglevillage);
         i.TargetRoom = Village_lava;
         i.TargetX = 368;
         i.TargetY = 240;
         instance_destroy();   
     } 
 }
-
 #endregion

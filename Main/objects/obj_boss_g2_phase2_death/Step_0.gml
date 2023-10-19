@@ -30,3 +30,5 @@ if y>=room_height+64
     }
     instance_destroy();   
 }
+
+if t mod 10 = 0 instance_create_depth(x,y-16,depth-1,obj_sfx_sparkle_1);

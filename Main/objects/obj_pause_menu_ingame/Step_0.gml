@@ -140,6 +140,7 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                         case 2: room_goto(GlobalMapPrologueSnow);break;
                         case 3: room_goto(GlobalMapPrologueShadow);break;
                         case 4: room_goto(GlobalMapPrologueLava);break;     
+                        case 5: room_goto(GlobalMapLast);break;     
                     }
                     
                     break;

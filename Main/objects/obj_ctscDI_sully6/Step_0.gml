@@ -48,6 +48,7 @@ switch(state){
             vspd = 0;
             state = 3;
             t = 0;
+            fnc_snd_play_onetime(snd_player_landing);
             image_index = 2;
         }
         break;

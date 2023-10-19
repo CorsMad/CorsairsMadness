@@ -9,3 +9,4 @@ hspd = 0;
 sprite_index = spr_boss_gp_fly;
 			image_speed = 1;
 			
+fnc_snd_play_onetime(snd_desert_follower_tp);

@@ -124,13 +124,14 @@ if state = 1
 
 if instance_exists(obj_abil_flute_aoe)
 {
-    if (place_meeting(x,y,obj_abil_flute_aoe) && obj_abil_flute_aoe.image_alpha = 1 && t_madness < 120) t_madness++; 
+    if (place_meeting(x,y,obj_abil_flute_aoe) && obj_abil_flute_aoe.image_alpha = 1 && t_madness < 80) t_madness++; 
 }
 if (!place_meeting(x,y,obj_abil_flute_aoe) && t_madness > 0) t_madness--;
 
 
-if t_madness > 50
+if t_madness > 30
 {
+    if snd!= 1 {fnc_snd_play_onetime(snd_enemy_get_flute) ;snd = 1}
     madness = 1;
     state = 3;
 }
@@ -142,6 +143,7 @@ if state = 3
     hspd = lerp(hspd,0,0.05);
     if t_madness = 0
     {  
+        snd = 0;
         hspd = choose(-3,3);
         madness = 0;
         state = 1;
@@ -172,6 +174,7 @@ if state = 2
 
 if hit_cd = 1	
 {
+    snd = 0;
     state = 2;
     vspd = -3;
     t = 0;

@@ -3,7 +3,7 @@
 t = 0;
 state = 0;
 hspd = 0;
-
+fnc_msc_play(msc_boss_fight);
 groundHit = 0;
 image_speed = 0;
 

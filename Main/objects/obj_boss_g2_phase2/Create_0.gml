@@ -8,3 +8,5 @@ attack = irandom(1);
 
 enemy_hp = 10;
 hit_cd =0;
+
+fnc_snd_play_onetime(snd_wall_explosion);

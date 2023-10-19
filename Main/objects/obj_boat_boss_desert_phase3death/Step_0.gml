@@ -1,7 +1,8 @@
 if t<160 t1++;
-if t1 mod 20
+if t1 mod 20 = 0
 {
     instance_create_depth(x+random_range(-16,16),y+random_range(-16,16),depth-1000,obj_sfx_explosion)   ;
+    instance_create_depth(x,y,depth-1,obj_sfx_sparkle_1);
 }
 
 
@@ -33,7 +34,7 @@ if state = 1
         case 125: image_index=8;break;
         case 130: image_index=7;break;
         case 135: image_index=6;break;
-        case 140: image_index=5;break;
+        case 140: image_index=5;fnc_snd_play_onetime(snd_vase_destruct);break;
         case 145: image_index=4;break;
         case 150: image_index=3;break;
         case 155: image_index=2;break;
@@ -51,3 +52,4 @@ if state = 1
         
     }
 }
+

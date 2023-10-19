@@ -6,3 +6,4 @@ state = 0.5//0;
 bomb_hit = 0;
 
 image_speed = 0;
+t_anim = 0;

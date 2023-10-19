@@ -5,7 +5,7 @@ radius = 24;
 Speed = sign(obj_Player.image_xscale)*5; // Orbital speed
 Center_X = obj_Player.x; // x of orbital center
 Center_Y = obj_Player.y-16; // y of orbital center
-
+fnc_snd_play_onetime(snd_enemy_boss2_attack);
 isDead = 0;
 a = 0;
 a_max = 200

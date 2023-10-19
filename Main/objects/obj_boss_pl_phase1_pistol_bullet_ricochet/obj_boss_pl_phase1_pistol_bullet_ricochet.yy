@@ -12,7 +12,10 @@
     "name": "Phase1",
     "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Lava/Bosses/Boss3/Phase1.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_parent_object",
+    "path": "objects/obj_enemy_parent_object/obj_enemy_parent_object.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

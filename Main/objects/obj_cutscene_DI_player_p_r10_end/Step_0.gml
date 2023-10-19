@@ -41,6 +41,7 @@ switch(state){
         break;
     case 2:
         t++;
+        
         switch(t){
             case 50:
                 state = 3;

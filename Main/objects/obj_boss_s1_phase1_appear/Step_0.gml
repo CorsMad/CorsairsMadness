@@ -5,7 +5,9 @@ if state = 1
     t++;
     switch(t)
     {
-        case 50:  image_index = 1;break;   
+        case 50:  image_index = 1;
+        fnc_msc_start_checkpoint(msc_boss_fight);
+        break;   
         case 60 : image_index = 2;break;   
         case 70: image_index = 3;break;   
         case 80: image_index = 4;break;   

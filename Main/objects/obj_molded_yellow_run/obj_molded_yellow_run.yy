@@ -32,12 +32,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_molded_grounded_mask",
-    "path": "sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",
+    "name": "spr_molded_yellow_mask",
+    "path": "sprites/spr_molded_yellow_mask/spr_molded_yellow_mask.yy",
   },
   "spriteMaskId": {
-    "name": "spr_molded_grounded_mask",
-    "path": "sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",
+    "name": "spr_molded_yellow_mask",
+    "path": "sprites/spr_molded_yellow_mask/spr_molded_yellow_mask.yy",
   },
   "visible": true,
 }

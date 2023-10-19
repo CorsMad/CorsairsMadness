@@ -11,6 +11,7 @@ animstate =0;
 t_anim = 0;
 image_speed = 0;
 
+fnc_snd_play_onetime(snd_vase_destruct);
 
 t1 = 0;
 t2 = 0;

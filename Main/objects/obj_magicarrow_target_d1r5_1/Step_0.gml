@@ -5,6 +5,7 @@ if isOn = 1
     var def = instance_place(x,y,obj_abil_arbalet_proj)
     if def!= noone
     {
+        fnc_snd_play_over(snd_target_destroy);
         def.isDead = 1;
         isOn = 0;
         sprite_index = spr_abil_magicalbow_target_death;

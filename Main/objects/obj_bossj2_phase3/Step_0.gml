@@ -71,6 +71,7 @@ if state = 3
             case 10: image_index = 2;break;
             case 14: image_index = 3;break;
             case 20: image_index = 4;
+                
                      instance_create_depth(x-sign(image_xscale)*42,y+10,depth-1,obj_boss2_bomb_left);  
                      break;
             case 22: image_index = 5;break;

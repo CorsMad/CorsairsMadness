@@ -83,6 +83,7 @@ if (state = 5) { // полет вниз
     y+=5;
     if y>=211
     {
+        fnc_snd_play_onetime(snd_follower_ground_hit);
         var l = instance_create_depth(x,256,depth,obj_boss_d2_proj_down_wave);
         var r = instance_create_depth(x,256,depth,obj_boss_d2_proj_down_wave);
         l.hspd = -2;
@@ -155,7 +156,7 @@ if state = 1 || state = 2 || state = 3
     
 // Топор
 
-    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1,0);
     
 // Удар вниз   
 
@@ -163,15 +164,15 @@ if state = 1 || state = 2 || state = 3
 
 // Бомба
 
-    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,0);
 
 // Eball
 
-	fnc_take_dmg_eball(0,-16,-1,1);
+	fnc_take_dmg_eball(0,-16,-1,0);
 
 // Parrot
 
-	fnc_take_dmg_parrot_laser(0,-16,-1,1)
+	fnc_take_dmg_parrot_laser(0,-16,-1,0)
     
 
 // Получение урона

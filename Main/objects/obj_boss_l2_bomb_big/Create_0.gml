@@ -7,3 +7,4 @@ t = 0;
 icon = instance_create_depth(x,y,depth,obj_boss_d2_proj_falling_obj_icon)
 icon.fol = id;
 image_speed = 1;
+fnc_snd_play_over(snd_lavaboss_bomb_drop);

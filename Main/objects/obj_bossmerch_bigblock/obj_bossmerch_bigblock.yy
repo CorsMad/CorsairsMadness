@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bossmerch_block",
-    "path": "sprites/spr_bossmerch_block/spr_bossmerch_block.yy",
+    "name": "spr_block_di_destr",
+    "path": "sprites/spr_block_di_destr/spr_block_di_destr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

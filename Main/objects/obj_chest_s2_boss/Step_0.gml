@@ -3,6 +3,8 @@
 
 if isOn = 0 && (place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_item_boomerang))
 {
+    fnc_snd_play_onetime(snd_chest_destruct);
+    fnc_msc_stop_play_slow();
 	isOn = 1;
 	if global.key_blue2 = 0 {instance_create_depth(x,y-16,depth-1,obj_key_blue_tri);	isOn = 2}		
 	image_speed = 1;

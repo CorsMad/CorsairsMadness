@@ -12,7 +12,7 @@ if state = 0
 
 	if place_meeting(x,y+vspd,obj_block)
 	{
-	
+	    fnc_snd_play_onetime(snd_explosions_standart);
 		instance_create_depth(x,256,depth-2,obj_sfx4)	
 		instance_create_depth(x,256,depth-1,obj_sfx3)	
 		var l = instance_create_depth(x,256,depth,obj_boss_l2_bomb_small_fire);
@@ -24,6 +24,7 @@ if state = 0
 
 	if place_meeting(x,y,obj_hitbox)
 	{
+        fnc_snd_play_onetime(snd_explosions_standart);
 		instance_create_depth(x,y,depth-2,obj_sfx4);	
 		instance_create_depth(x,y,depth-1,obj_sfx3);
 		instance_create_depth(x,y,depth,obj_boss_l2_bomb_small_destr)  
@@ -35,6 +36,7 @@ if state = 0
 	    {
 	        if place_meeting(x,y,obj_item_boomerang)
 	        {
+                fnc_snd_play_onetime(snd_get_boomerang);
 	            instance_create_depth(x,y,depth-1,obj_sfx2);
 	            if obj_item_boomerang.x > x hspd = -4 else hspd = 4;  
 	            vspd = -1;

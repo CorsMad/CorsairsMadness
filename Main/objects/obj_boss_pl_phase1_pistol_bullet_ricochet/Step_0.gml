@@ -20,6 +20,7 @@ switch(state)
 	case 1:
 		if place_meeting(x,y,obj_boss_pl_light_trigger) && obj_boss_pl_light_trigger.isOn = 0{
 			instance_destroy();
+            fnc_snd_play_onetime(snd_bomb_selektor);
 			instance_create_depth(x,y,-10,obj_sfx2)
 			obj_boss_pl_light_trigger.isOn = 1;
 		}

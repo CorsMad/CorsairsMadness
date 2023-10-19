@@ -15,7 +15,7 @@ switch(state)
     case 1:
         t++;
         image_alpha = 1;
-        if t = 50
+        if t = 100
         {
             state = 2;
         }

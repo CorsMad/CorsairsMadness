@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "S_itemtutor",
-  "creationCodeFile": "",
+  "creationCodeFile": "rooms/S_itemtutor/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

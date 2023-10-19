@@ -17,7 +17,9 @@ if state = 0.5
         case 8: image_index = 2;break;   
         case 12: image_index = 3;break;   
         case 15: image_index = 4;break;   
-        case 80: image_index = 5;break;   
+        case 80: image_index = 5;
+            fnc_msc_play(msc_j2_boss);
+            break;   
         case 110: image_index = 4;break;   
         case 140: image_index = 5;break;   
         case 170: image_index = 4;break;   
@@ -122,6 +124,7 @@ if (state = 2) {
     sprite_index = spr_boss_l2_skeleton_falldown1;
 	if y >=256
 	{  
+        fnc_snd_play_onetime(snd_follower_landing);
 		y = 256;
 		state = 3
         t = 0;

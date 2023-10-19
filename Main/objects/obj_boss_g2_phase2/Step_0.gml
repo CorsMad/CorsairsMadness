@@ -112,6 +112,7 @@ if (state = 3) { // ожидание
     sprite_index = spr_boss_g2_p2_idle;
     if t = 50
     {
+        fnc_snd_play_onetime(snd_enemy_sander_close);
         t= 0;
         state = 4;
     }
@@ -130,7 +131,7 @@ if (state = 5) { // ожидание
     t++;
     
     
-    if t = 50 {y =0;x = obj_Player.x;}
+    if t = 50 {y =0;x = obj_Player.x;fnc_snd_play_onetime(snd_enemy_sander_open)}
     if t > 50 {if y < 48 y+=2;}
     if t = 150
     {
@@ -141,6 +142,7 @@ if (state = 5) { // ожидание
 if (state = 6) { // Полет в игрока сверху
     y+=6;
     if y > 270+32 {
+        fnc_snd_play_onetime(snd_wall_explosion);
         state = 7;
     }
 }    
@@ -148,7 +150,7 @@ if (state = 6) { // Полет в игрока сверху
 if (state = 7) { // ожидание
     t++;
     
-    if t = 50 {y =0;x = obj_Player.x;}
+    if t = 50 {y =0;x = obj_Player.x;fnc_snd_play_onetime(snd_enemy_sander_open)}
     if t > 50 {if y < 48 y+=2;} 
     if t = 150
     {
@@ -161,6 +163,7 @@ if (state = 8) { // Полет сверху2
     {
         if y>= 240
         {
+            fnc_snd_play_onetime(snd_follower_ground_hit);
             if instance_exists(obj_boss_g2_phase_poison2)
             {
                 obj_boss_g2_phase_poison2.state = 2;   
@@ -178,6 +181,7 @@ if (state = 9) { // оказывается внизу + рековер
     if t mod 10 = 0 instance_create_depth(x+random_range(-16,16),y+random_range(-16,16),depth-1,obj_sfx_desert_boss1_stars)
     if t = 200
     {
+        fnc_snd_play_onetime(snd_wall_explosion);
         t = 0;
         state = 10
     }
@@ -202,6 +206,7 @@ if (state = 10.5)
         t = 0;
         x = -48;
         y = 64;
+        fnc_snd_play_onetime(snd_wall_explosion);
     } 
 }
 
@@ -301,6 +306,7 @@ if (state = 14) { // ожидание
     if t = 50
     {
         t= 0;
+        fnc_snd_play_onetime(snd_enemy_sander_close);
         state = 15;
     }
 }    
@@ -317,7 +323,7 @@ if (state = 16) { // ожидание
     t++;
     
     sprite_index = spr_boss_g2_p2_fly;
-    if t = 50 {y =0;x = obj_Player.x;}
+    if t = 50 {y =0;x = obj_Player.x;fnc_snd_play_onetime(snd_enemy_sander_open)}
     if t > 50 {if y < 48 y+=2;}  
     if t = 150
     {
@@ -334,7 +340,7 @@ if (state = 17) { // Полет в игрока сверху
     
 if (state = 18) { // ожидание
     t++;
-    if t = 50 {y =0;x = obj_Player.x;}
+    if t = 50 {y =0;x = obj_Player.x;fnc_snd_play_onetime(snd_enemy_sander_open)}
     if t > 50 {if y < 48 y+=2;}  
     if t = 150
     {
@@ -347,6 +353,7 @@ if (state = 19) { // Полет сверху2
     {
         if y>= 240
         {
+            fnc_snd_play_onetime(snd_follower_ground_hit);
             if instance_exists(obj_boss_g2_phase_poison2)
             {
                 obj_boss_g2_phase_poison2.state = 2;   
@@ -366,6 +373,7 @@ if (state = 20) { // оказывается внизу + рековер
     {
         t = 0;
         state = 21
+        fnc_snd_play_onetime(snd_wall_explosion);
     }
 }    
 
@@ -383,6 +391,7 @@ if (state = 22) {
     t++;
     if t = 50
     {
+        fnc_snd_play_onetime(snd_wall_explosion);
         state = 0;
         t = 0;
         x = 480+48;
@@ -409,7 +418,7 @@ if state!=0
     
 // Топор
 
-    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
+    fnc_take_dmg_axe(-10,0,-1,10,0,-1,0);
     
 // Удар вниз   
 
@@ -417,15 +426,15 @@ if state!=0
 
 // Бомба
 
-    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
+    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,0);
 
 // Eball
 
-	fnc_take_dmg_eball(0,-16,-1,1);
+	fnc_take_dmg_eball(0,-16,-1,0);
 
 // Parrot
 
-	fnc_take_dmg_parrot_laser(0,-16,-1,1)
+	fnc_take_dmg_parrot_laser(0,-16,-1,0)
     fnc_enemy_no_armor_dmg();
 }
 

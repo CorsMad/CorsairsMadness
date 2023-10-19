@@ -17,3 +17,5 @@ if t = 100
     instance_destroy();
     instance_create_depth(x,y,depth,obj_boat_boss_vulcano_3);
 }
+
+if t mod 10 = 0 instance_create_depth(x,y+random_range(-16,16),depth-1,obj_sfx_sparkle_1);

@@ -4,6 +4,7 @@ image_alpha = 0.2;
 state = 0;
 t = 0;
 t1 = 0;
+fnc_snd_play_onetime(snd_enemy_desert_boat_charge);
 
 var e1 = instance_create_depth(x,y,depth-50,choose(obj_sfx_electricity_follow,obj_sfx_electricity2_follow))
     e1.fol = id;

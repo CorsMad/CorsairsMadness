@@ -1,1 +1,1 @@
-dir = 0;
+dir = 0;depth = 99;

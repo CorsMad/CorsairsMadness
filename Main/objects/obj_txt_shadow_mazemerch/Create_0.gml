@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-fnc_lng_maze_skeleton1();
+sciprt_lng_dialogues_maze_shadow_merch();
 
-scr_text_starter(3,0.5);
+scr_text_starter(4,0.5);

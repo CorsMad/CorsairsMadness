@@ -30,14 +30,13 @@ if (t mod 10 = 0) && t < 100
 switch(t)
 {
     case 1: 
-        instance_create_depth(128,160,-1,obj_sfx_dust_expl_big);
-        instance_create_depth(384,160,-1,obj_sfx_dust_expl_big);
-        instance_create_depth(240,160,-1,obj_sfx_dust_expl_big);
+        scr_snowboss_lantern_destroy();
+
         break;
     case 3:
-        instance_destroy(obj_lantern_green);break;
+        
     case 4:
-        instance_create_depth(240,144,1,obj_lantern_green)break;
+        scr_snowboss_lantern_create(240,144);
     case 115:
         instance_destroy();
         var d = instance_create_depth(x,y,depth,obj_boss_ps_phase3);

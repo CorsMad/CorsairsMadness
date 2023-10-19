@@ -161,6 +161,7 @@ if state = 2 // атака щитом по земле
 	t++;
     if t = 105
     {
+        fnc_snd_play_onetime(snd_follower_ground_hit);
         instance_create_depth(x-24,y,depth-1,obj_sfx4)
         instance_create_depth(x+24,y,depth-1,obj_sfx4)
         var w1 = instance_create_depth(x-24,y,depth-1,obj_molded_purple_wave)   
@@ -354,6 +355,10 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
 
 if hit_stored > 0
 {
+    if instance_exists(icon) && state != 5  {
+        if (hit_stored >=14 && icon.state = 0) icon.state = 1;
+    }
+    
 	if obj_Player.isDead = 132
 	{
 		if hit_stored >= 14
@@ -361,6 +366,9 @@ if hit_stored > 0
 			hit_stored = 0;
 			hit_cd = 1;
 			state = 5;
+            if instance_exists(icon) icon.state = 2;
+    
+            icon.image_alpha = 1;
 			t = 0;
 		} else {hit_stored = 0;t=0;hit_cd =1;}
 	}
@@ -373,6 +381,7 @@ if state = 5
 {
 	t++;
 	hspd = 0;
+    
     if t mod 20 = 0 instance_create_depth(x+random_range(-10,10),y-random_range(20,28),depth-1,obj_sfx_boss1_stars);
 	if t = 200 
 	{
@@ -386,6 +395,7 @@ if state = 5
 
 if enemy_hp <= 0 || y > room_height+32
 {
+    fnc_molded_dark_essence_none();
     var death = instance_create_depth(x,y,depth,obj_molded_purple_shielder_death)   ;
     death.image_xscale = image_xscale;
     instance_destroy();

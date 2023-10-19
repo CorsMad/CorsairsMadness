@@ -31,6 +31,7 @@ switch(state)
 		if abs(y-dest_point)<24 {
 			if place_meeting(x,y,obj_player_boat_hitbox) && obj_Player_boat.hit_cd = 0
 		    {
+                fnc_snd_play_onetime(snd_item_bomb_explosion);
 		        obj_Player_boat.hit_cd = 1; 
 		        global.hp-=1;
 		    }	
@@ -40,6 +41,7 @@ switch(state)
 		
 		y+=vspd;
 		if y >= dest_point {
+            fnc_snd_play_onetime(snd_item_bomb_explosion);
 			instance_create_depth(x,y,depth-1,obj_boat_boss_vulcano_proj_1_1_expl);
 			instance_destroy();	
 		}
