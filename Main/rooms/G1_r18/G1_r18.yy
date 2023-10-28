@@ -93,7 +93,10 @@
 -90,-2147483648,-9,0,-21,-2147483648,-9,0,-21,-2147483648,-9,0,-21,-2147483648,-9,0,-21,-2147483648,-9,0,-291,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_cemetery_shroom","path":"tilesets/tls_cemetery_shroom/tls_cemetery_shroom.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"graves","depth":700,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -510,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_cemetery_graves","path":"tilesets/tls_cemetery_graves/tls_cemetery_graves.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"main_bgr","depth":800,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"main_bgr","depth":800,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.8",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.75",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -163,-2147483648,-5,0,-25,-2147483648,-5,0,-21,-2147483648,1,40,-12,31,1,39,-6,0,-3,-2147483648,-6,0,2,40,43,-12,34,2,42,39,
 -6,0,-2,-2147483648,-5,0,2,40,43,-14,34,2,42,39,-5,0,-2,-2147483648,-4,0,2,40,43,-16,34,2,42,39,-6,0,
 1,-2147483648,-3,31,1,43,-18,34,1,42,-4,31,-2,0,-28,34,1,0,-29,34,-2,0,-28,34,-2,0,-28,34,-3,0,

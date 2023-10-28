@@ -87,10 +87,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_712FD63E","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pause_controller","path":"objects/obj_pause_controller/obj_pause_controller.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":80.0,"y":0.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"main_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
-1,27,-27,0,-2,-2147483648,1,27,-29,0,4,26,24,25,24,-26,0,4,24,26,25,24,-29,0,1,24,-26,0,2,25,
-24,-28,0,4,27,24,25,25,-26,0,-3,27,-27,0,3,25,27,27,-27,0,-2,26,2,24,25,-26,0,4,27,24,
-26,25,-26,0,2,25,24,-29,0,2,25,24,-27,0,-2,26,2,27,25,-29,0,1,27,-26,0,3,27,25,27,-27,
-0,3,25,0,24,-27,0,],"TileDataFormat":1,},"tilesetId":{"name":"tls_cemetery","path":"tilesets/tls_cemetery/tls_cemetery.yy",},"userdefinedDepth":false,"visible":true,"x":8,"y":8,},
+1,27,-27,0,-2,-2147483648,1,27,-29,0,4,26,24,25,24,-27,0,3,26,25,24,-29,0,1,24,-59,0,1,25,-88,
+0,2,24,25,-28,0,2,26,25,-58,0,1,24,-29,0,2,27,25,-29,0,1,27,-27,0,2,25,27,-27,0,3,
+25,0,24,-27,0,],"TileDataFormat":1,},"tilesetId":{"name":"tls_cemetery","path":"tilesets/tls_cemetery/tls_cemetery.yy",},"userdefinedDepth":false,"visible":true,"x":8,"y":8,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"main","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -25,7,1,8,-3,0,1,6,-5,7,1,16,-19,10,1,11,-3,0,1,6,-5,7,1,8,-23,0,1,6,-5,7,
 1,8,-23,0,1,6,-5,7,1,8,-23,0,1,6,-5,7,1,8,-3,0,1,12,-18,13,2,14,9,-5,7,1,
@@ -101,15 +100,27 @@
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_3C275999","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_cemetery_lamp","path":"sprites/spr_cemetery_lamp/spr_cemetery_lamp.yy",},"x":384.0,"y":256.0,},
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_2372C9A","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_cemetery_lamp","path":"sprites/spr_cemetery_lamp/spr_cemetery_lamp.yy",},"x":288.0,"y":256.0,},
       ],"depth":300,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"thorns","depth":400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
--70,-2147483648,-3,0,-23,-2147483648,-11,0,-11,-2147483648,-2,0,-6,-2147483648,-12,0,-3,-2147483648,-9,0,-4,-2147483648,-14,0,-2,-2147483648,-10,0,-3,-2147483648,
--15,0,1,-2147483648,-11,0,1,-2147483648,-17,0,1,-2147483648,-11,0,1,-2147483648,-61,0,1,-2147483648,-29,0,1,-2147483648,-135,0,1,-2147483648,-24,0,
-1,-2147483648,-3,0,-2,-2147483648,-11,0,],"TileDataFormat":1,},"tilesetId":{"name":"tls_cemetery_thorns","path":"tilesets/tls_cemetery_thorns/tls_cemetery_thorns.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"thorns","depth":400,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.5",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.2",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
+-40,-2147483648,19,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,-10,-2147483648,20,36,37,38,39,40,
+41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,-7,-2147483648,-3,0,21,72,73,74,75,76,77,78,79,80,81,
+82,83,84,85,86,87,88,89,90,91,0,-6,-2147483648,-3,0,21,108,109,110,111,112,113,114,115,116,117,118,119,120,121,
+122,123,124,125,126,127,0,-4,-2147483648,-14,0,-2,-2147483648,-10,0,-3,-2147483648,-14,0,10,32,33,34,35,0,0,28,29,30,31,
+-3,0,1,-2147483648,-16,0,10,68,69,70,71,0,0,64,65,66,67,-3,0,1,-2147483648,-16,0,10,104,105,106,107,0,0,
+100,101,102,103,-20,0,10,140,141,142,143,0,0,136,137,138,139,-5,0,1,-2147483648,-29,0,1,-2147483648,-32,0,14,32,33,
+34,35,0,0,20,21,22,23,24,25,26,27,-16,0,14,68,69,70,71,0,0,56,57,58,59,60,61,62,63,-16,
+0,14,104,105,106,107,0,0,92,93,94,95,96,97,98,99,-16,0,14,140,141,142,143,0,0,128,129,130,131,132,
+133,134,135,-24,0,1,-2147483648,-3,0,-2,-2147483648,-11,0,],"TileDataFormat":1,},"tilesetId":{"name":"tls_cemetery_thorns","path":"tilesets/tls_cemetery_thorns/tls_cemetery_thorns.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"shrooms","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -90,-2147483648,-9,0,-21,-2147483648,-9,0,-21,-2147483648,-9,0,-21,-2147483648,-9,0,-21,-2147483648,-9,0,-291,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_cemetery_shroom","path":"tilesets/tls_cemetery_shroom/tls_cemetery_shroom.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"graves","depth":600,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -510,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_cemetery_graves","path":"tilesets/tls_cemetery_graves/tls_cemetery_graves.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"main_bgr","depth":700,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"main_bgr","depth":700,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.8",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.75",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -90,0,-10,31,1,32,-19,0,-10,34,1,35,-19,0,-10,34,3,48,31,39,-17,0,-12,34,2,42,39,-16,0,-13,
 34,3,42,31,32,-14,0,-15,34,1,35,-14,0,-15,34,1,48,-3,31,1,39,-10,0,-19,34,4,42,31,31,32,
 -7,0,-22,34,1,35,-7,0,-22,34,1,35,-3,0,1,30,-3,31,-22,34,1,35,-3,0,1,33,-25,34,1,48,

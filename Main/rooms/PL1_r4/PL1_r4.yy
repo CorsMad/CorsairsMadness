@@ -122,12 +122,18 @@
 -2147483648,2,10,11,-3,12,-2,17,4,18,19,15,19,-24,0,-18,-2147483648,2,15,16,-5,17,4,18,19,15,19,-24,0,-18,-2147483648,2,15,16,-5,17,4,18,19,15,19,-24,0,-18,-2147483648,2,15,16,-5,17,4,32,33,
 15,19,-7,0,5,5,6,7,8,9,-12,0,-18,-2147483648,2,15,16,-7,17,2,15,19,-7,0,5,10,11,12,13,14,-12,0,-8,-2147483648,2,5,6,-6,7,4,8,9,15,16,-7,17,4,15,19,5,6,-3,7,
 9,8,9,30,31,17,32,33,5,6,-16,7,3,8,9,30,-8,50,3,33,15,16,-3,17,],"TileDataFormat":1,},"tilesetId":{"name":"tls_lava_pos","path":"tilesets/tls_lava_pos/tls_lava_pos.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR2","depth":400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":53,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR2","depth":400,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.7",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.7",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":53,"TileCompressedData":[
 -26,-2147483648,2,281,282,-16,-2147483648,2,596,597,-33,-2147483648,2,437,438,-16,-2147483648,2,752,753,-18,-2147483648,2,284,285,-13,-2147483648,2,593,594,-16,-2147483648,2,908,909,-18,-2147483648,2,440,441,-13,-2147483648,2,749,750,-16,-2147483648,2,1064,1065,-18,-2147483648,2,
 596,597,-13,-2147483648,2,905,906,-16,-2147483648,2,1220,1221,-18,-2147483648,2,752,753,-13,-2147483648,2,1061,1062,-16,-2147483648,2,1376,1377,-18,-2147483648,2,908,909,-13,-2147483648,2,1217,1218,-16,-2147483648,2,1532,1533,-18,-2147483648,2,1064,1065,-13,-2147483648,2,1373,1374,-16,
 -2147483648,2,1688,1689,-18,-2147483648,2,1220,1221,-13,-2147483648,2,1529,1530,-36,-2147483648,2,1376,1377,-13,-2147483648,2,1685,1686,-36,-2147483648,2,1532,1533,-51,-2147483648,2,1688,1689,-136,-2147483648,3,1999,1997,1998,-15,-2147483648,2,1997,1998,-33,-2147483648,3,2155,2153,2154,-15,-2147483648,
 2,2153,2154,-20,-2147483648,2,2157,2158,-74,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_lava_pos_bgr","path":"tilesets/tls_lava_pos_bgr/tls_lava_pos_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":53,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":500,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.5",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.3",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":53,"TileCompressedData":[
 -159,1095,636,706,707,514,515,516,517,518,519,520,521,522,523,524,525,706,707,514,515,516,517,518,519,520,521,522,523,524,525,706,707,514,515,516,517,518,519,520,521,522,523,524,525,706,707,514,515,516,517,518,519,
 520,521,522,862,863,670,671,672,673,674,675,676,677,678,679,680,681,862,863,670,671,672,673,674,675,676,677,678,679,680,681,862,863,670,671,672,673,674,675,676,677,678,679,680,681,862,863,670,671,672,673,674,675,
 676,677,678,1018,1019,826,827,828,829,830,831,832,833,834,835,836,837,1018,1019,826,827,828,829,830,831,832,833,834,835,836,837,1018,1019,826,827,828,829,830,831,832,833,834,835,836,837,1018,1019,826,827,828,829,830,831,

@@ -202,8 +202,12 @@
 18,19,5,57,-3,7,6,17,18,19,5,6,56,-3,7,3,57,8,9,-7,-2147483648,8,59,5,55,7,8,9,15,16,-3,17,4,18,19,10,11,
 -3,12,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_sand","path":"tilesets/tls_fol_sand/tls_fol_sand.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR2","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":37,"TileCompressedData":[
--629,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_sand_bgr","path":"tilesets/tls_fol_sand_bgr/tls_fol_sand_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":600,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":37,"TileCompressedData":[
+-115,-2147483648,2,751,752,-35,-2147483648,2,907,908,-35,-2147483648,2,1063,1064,-35,-2147483648,2,1219,1220,-35,-2147483648,2,1375,1376,-258,-2147483648,1,1843,-15,-2147483648,1,1843,-20,-2147483648,3,1999,
+1531,1532,-13,-2147483648,1,1999,-52,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_sand_bgr","path":"tilesets/tls_fol_sand_bgr/tls_fol_sand_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":600,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.8",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.75",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":37,"TileCompressedData":[
 -111,641,444,519,520,521,522,523,524,525,705,706,514,515,516,517,518,519,520,521,522,523,524,525,705,706,514,515,516,517,518,519,520,521,522,523,524,
 525,705,706,675,676,677,678,679,680,681,861,862,670,671,672,673,674,675,676,677,678,679,680,681,861,862,670,671,672,673,674,675,676,677,678,679,680,
 681,861,862,831,832,833,834,835,836,837,1017,1018,826,827,828,829,830,831,832,833,834,835,836,837,1017,1018,826,827,828,829,830,831,832,833,834,835,836,

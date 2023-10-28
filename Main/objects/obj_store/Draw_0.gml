@@ -20,7 +20,7 @@ for (var i = 0; i < array_length_2d(menu, submenu); ++i) {
         draw_set_color(c_red);
     }
     
-    draw_text(105,52 + gap*i, menu[submenu, i]);
+    draw_text(41,52 + gap*i, menu[submenu, i]);
 }
 #endregion
 

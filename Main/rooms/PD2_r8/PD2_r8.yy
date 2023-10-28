@@ -190,8 +190,16 @@
 -2147483648,2,18,19,-20,-2147483648,3,10,17,19,-5,-2147483648,4,18,19,5,6,-16,7,7,8,9,10,17,19,5,6,-3,7,4,
 18,19,10,11,-16,12,7,13,14,10,17,19,10,11,-3,12,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_sand","path":"tilesets/tls_fol_sand/tls_fol_sand.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR2","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":28,"SerialiseWidth":30,"TileCompressedData":[
--840,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_sand_bgr","path":"tilesets/tls_fol_sand_bgr/tls_fol_sand_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":600,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":28,"SerialiseWidth":30,"TileCompressedData":[
+-63,-2147483648,2,751,752,-12,-2147483648,2,751,752,-14,-2147483648,2,907,908,-12,-2147483648,2,907,908,-14,-2147483648,2,1063,1064,-12,-2147483648,2,1063,1064,
+-14,-2147483648,2,1219,1220,-12,-2147483648,2,1219,1220,-14,-2147483648,2,1375,1376,-12,-2147483648,2,1375,1376,-214,-2147483648,3,1687,1688,1689,-98,-2147483648,2,751,
+752,-5,-2147483648,2,751,752,-5,-2147483648,2,751,752,-14,-2147483648,2,907,908,-5,-2147483648,2,907,908,-5,-2147483648,2,907,908,-14,-2147483648,2,1063,
+1064,-5,-2147483648,2,1063,1064,-5,-2147483648,2,1063,1064,-14,-2147483648,2,1219,1220,-5,-2147483648,2,1219,1220,-5,-2147483648,2,1219,1220,-14,-2147483648,2,1375,
+1376,-5,-2147483648,2,1375,1376,-5,-2147483648,2,1375,1376,-75,-2147483648,1,1843,-4,-2147483648,4,1845,-2147483648,-2147483648,1843,-4,-2147483648,1,1845,-16,-2147483648,14,1999,
+-2147483648,1531,1532,-2147483648,2001,-2147483648,-2147483648,1999,-2147483648,1531,1532,-2147483648,2001,-71,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_sand_bgr","path":"tilesets/tls_fol_sand_bgr/tls_fol_sand_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":600,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.8",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.75",},
+      ],"tiles":{"SerialiseHeight":28,"SerialiseWidth":30,"TileCompressedData":[
 -90,641,360,705,706,514,515,516,517,518,519,520,521,522,523,524,525,705,706,514,515,516,517,518,519,520,521,522,523,524,
 525,705,706,861,862,670,671,672,673,674,675,676,677,678,679,680,681,861,862,670,671,672,673,674,675,676,677,678,679,680,
 681,861,862,1017,1018,826,827,828,829,830,831,832,833,834,835,836,837,1017,1018,826,827,828,829,830,831,832,833,834,835,836,

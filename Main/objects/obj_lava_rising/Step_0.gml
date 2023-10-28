@@ -26,3 +26,15 @@ if place_meeting(x,y,obj_Player)
 {
     global.hp=0;  
 }
+
+
+
+
+t_sp++;
+if t_sp = 10 {
+    
+    for (var k = 0; k < 16; k++) {
+        instance_create_depth(x+random_range(32,480-32),y+random_range(16,40),depth-1000,obj_lava_sparkle);
+    }
+    t_sp = 0;
+}

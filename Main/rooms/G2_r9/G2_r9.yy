@@ -36,9 +36,8 @@
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"main_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -150,-2147483648,-10,0,-20,-2147483648,-10,0,-20,-2147483648,-10,0,1,-2147483648,-3,0,-2,-2147483648,-13,0,1,-2147483648,-60,0,-2,-2147483648,1,27,-27,0,
--3,26,1,24,-26,0,4,24,27,24,26,-24,0,4,-2147483648,0,25,25,-3,0,2,24,25,-3,27,-19,0,11,-2147483648,25,
-0,25,24,0,0,26,0,0,27,-19,0,7,-2147483648,25,26,26,27,25,24,-4,26,1,24,-19,0,11,27,0,0,25,
-26,24,0,24,27,24,26,-19,0,],"TileDataFormat":1,},"tilesetId":{"name":"tls_cemetery","path":"tilesets/tls_cemetery/tls_cemetery.yy",},"userdefinedDepth":false,"visible":true,"x":8,"y":8,},
+4,26,0,26,24,-28,0,2,24,26,-24,0,1,-2147483648,-6,0,2,24,25,-3,27,-19,0,1,-2147483648,-6,0,4,26,0,
+0,27,-19,0,1,-2147483648,-9,0,2,26,24,-28,0,2,24,26,-19,0,],"TileDataFormat":1,},"tilesetId":{"name":"tls_cemetery","path":"tilesets/tls_cemetery/tls_cemetery.yy",},"userdefinedDepth":false,"visible":true,"x":8,"y":8,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"main","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -221,-2147483648,-3,0,-2,-2147483648,-13,0,1,-2147483648,-5,4,1,5,-24,0,-5,7,1,8,-24,0,-5,7,1,8,-24,0,-5,7,
 1,8,-24,0,-5,7,1,19,-6,4,1,5,-15,0,2,-2147483648,0,-12,7,1,8,-16,0,1,-2147483648,-12,7,1,8,-16,

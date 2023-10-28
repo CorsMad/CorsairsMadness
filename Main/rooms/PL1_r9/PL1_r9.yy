@@ -95,9 +95,20 @@
 27,27,7,8,9,-27,0,-7,-2147483648,-2,49,1,14,-27,0,-7,-2147483648,3,13,49,19,-17,0,1,35,-3,36,1,37,-5,0,-7,-2147483648,3,18,49,19,
 -27,0,-3,-2147483648,7,5,6,7,7,18,49,19,-27,0,-3,-2147483648,1,10,-3,49,3,18,49,19,-27,0,-3,-2147483648,1,15,-3,49,5,18,49,19,5,
 6,-26,7,3,8,9,10,-3,49,4,18,49,19,10,-28,49,2,14,10,-3,49,],"TileDataFormat":1,},"tilesetId":{"name":"tls_lava_pos","path":"tilesets/tls_lava_pos/tls_lava_pos.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR2","depth":400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":37,"TileCompressedData":[
--629,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_lava_pos_bgr","path":"tilesets/tls_lava_pos_bgr/tls_lava_pos_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":37,"TileSerialiseData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR2","depth":400,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.7",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.7",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":37,"TileCompressedData":[
+-3,-2147483648,2,596,597,-8,-2147483648,6,596,597,-2147483648,-2147483648,596,597,-8,-2147483648,6,593,594,-2147483648,-2147483648,593,594,-7,-2147483648,2,752,753,-8,-2147483648,6,752,753,-2147483648,-2147483648,752,753,
+-8,-2147483648,6,749,750,-2147483648,-2147483648,749,750,-7,-2147483648,2,908,909,-8,-2147483648,6,908,909,-2147483648,-2147483648,908,909,-8,-2147483648,6,905,906,-2147483648,-2147483648,905,906,-7,-2147483648,2,1064,1065,
+-8,-2147483648,6,1064,1065,-2147483648,-2147483648,1064,1065,-8,-2147483648,6,1061,1062,-2147483648,-2147483648,1061,1062,-7,-2147483648,2,1220,1221,-8,-2147483648,6,1220,1221,-2147483648,-2147483648,1220,1221,-8,-2147483648,6,1217,1218,
+-2147483648,-2147483648,1217,1218,-7,-2147483648,2,1376,1377,-8,-2147483648,6,1376,1377,-2147483648,-2147483648,1376,1377,-8,-2147483648,6,1373,1374,-2147483648,-2147483648,1373,1374,-7,-2147483648,2,1532,1533,-8,-2147483648,6,1532,1533,
+-2147483648,-2147483648,1532,1533,-8,-2147483648,6,1529,1530,-2147483648,-2147483648,1529,1530,-7,-2147483648,2,1688,1689,-8,-2147483648,6,1688,1689,-2147483648,-2147483648,1688,1689,-8,-2147483648,6,1685,1686,-2147483648,-2147483648,1685,1686,-199,
+-2147483648,6,1999,-2147483648,1997,1998,-2147483648,2000,-5,-2147483648,1,1999,-4,-2147483648,1,2000,-20,-2147483648,6,2155,-2147483648,2153,2154,-2147483648,2156,-5,-2147483648,6,2155,-2147483648,2157,2158,-2147483648,2156,-84,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_lava_pos_bgr","path":"tilesets/tls_lava_pos_bgr/tls_lava_pos_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":500,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.5",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.3",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":37,"TileSerialiseData":[
 1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,
 1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,
 1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,

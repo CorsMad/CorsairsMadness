@@ -1,15 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 randomise();
-global.TargetX      = 984;
+global.TargetX      = 128;
 //global.TargetY      =240784;
-global.TargetY      = 160;
-global.TargetRoom   = D1_s3;
+global.TargetY      = 240;
+global.TargetRoom   = Village_snow_store;
 
 
-global.fTargetX     = 240;
+global.fTargetX     = 48;
 global.fTargetY     = 240;
-global.fTargetRoom  = TESTROOM;
+global.fTargetRoom  = PL1_r3;
 
 
 
@@ -37,7 +37,7 @@ global.language = 0;
     global.completed_PG2 = 0;
     
     global.completed_PL1 = 0;
-    global.completed_PL2 = 1;
+    global.completed_PL2 = 0;
         
     #endregion
     
@@ -46,14 +46,14 @@ global.language = 0;
     //0
     global.dia_jungleChief = 0; 
     global.dia_desertChief = 0;
-    global.dia_snowChief = 0;
+    global.dia_snowChief = 1;
     global.dia_shadowChief = 0;
-    global.dia_lavaChief = 1;
+    global.dia_lavaChief = 0;
     
     //0
     global.dia_jungleMerch = 0; 
     global.dia_desertMerch = 0; 
-    global.dia_snowMerch = 0;     
+    global.dia_snowMerch = 1;     
     global.dia_shadowMerch = 0; 
     global.dia_lavaMerch = 0; 
     
@@ -168,6 +168,8 @@ global.purch_parrotcage3 = 0;
 #region Игрок
 global.hp = 5;           // 4
 global.hp_max = 5;       // 4
+global.hp_add = 0;       // 0
+global.mana_add = 0;       // 0
 global.choosed_item = 5; // 2 -тоорп // 3 - бомба // 4 - eball // 5 - parrot 
 global.choosed_item_tier = 3; // ТИР предмета
 global.choosed_itemboat = 3; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай

@@ -1,2 +1,2 @@
 range = 128;
-heigh = y-150;
+heigh = y-150+32;

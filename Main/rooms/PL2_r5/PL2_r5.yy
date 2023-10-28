@@ -91,9 +91,19 @@
 8,6,7,8,6,7,8,6,7,8,6,6,7,8,9,-5,0,8,15,24,20,0,24,20,24,10,-16,49,1,19,
 -5,0,25,15,29,25,27,29,25,29,25,26,27,28,28,26,27,28,26,27,28,26,27,28,26,27,28,29,-5,0,
 1,15,-29,0,1,15,-29,0,1,15,-29,0,1,15,-28,7,2,9,15,-28,12,2,14,15,],"TileDataFormat":1,},"tilesetId":{"name":"tls_lava_pos","path":"tilesets/tls_lava_pos/tls_lava_pos.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR2","depth":400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
--510,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_lava_pos_bgr","path":"tilesets/tls_lava_pos_bgr/tls_lava_pos_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileSerialiseData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR2","depth":400,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.7",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.7",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
+-13,-2147483648,-7,0,-4,-2147483648,2,284,285,-10,-2147483648,-14,0,-4,-2147483648,2,440,441,-10,-2147483648,-14,0,-4,-2147483648,2,596,597,-10,-2147483648,-14,
+0,-4,-2147483648,2,752,753,-10,-2147483648,-14,0,-4,-2147483648,2,908,909,-10,-2147483648,-14,0,-4,-2147483648,2,1064,1065,-10,-2147483648,-14,0,-4,-2147483648,
+2,1220,1221,-10,-2147483648,-14,0,-4,-2147483648,2,1376,1377,-10,-2147483648,-14,0,-4,-2147483648,2,1532,1533,-10,-2147483648,-14,0,-4,-2147483648,2,1688,1689,
+-10,-2147483648,-9,0,3,-2147483648,0,0,-20,-2147483648,3,1373,1374,0,-5,-2147483648,2,1373,1374,-20,-2147483648,3,1529,1530,0,-5,-2147483648,2,1529,1530,
+-20,-2147483648,3,1685,1686,1999,-4,-2147483648,3,2000,1685,1686,-21,-2147483648,7,0,2155,-2147483648,2157,2158,-2147483648,2156,-74,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_lava_pos_bgr","path":"tilesets/tls_lava_pos_bgr/tls_lava_pos_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":500,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.5",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.3",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileSerialiseData":[
 1095,1251,1252,1251,1252,1251,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,
 1251,1251,1252,1251,1252,1251,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,
 1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,

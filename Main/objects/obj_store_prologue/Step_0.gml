@@ -245,10 +245,10 @@ if key_jump_pressed || key_attack // accept
                     if global.secrets >= 3 {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
                     break;
                 case 2:
-                    if global.hp_max > 5 {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                    if global.hp_max > 5+global.hp_add {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
                     break;
                 case 3:
-                    if global.mana_max > 3 {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                    if global.mana_max > 3+global.mana_add {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
                     break;
                 case 4:
                     fnc_snd_play_over(snd_menu_accept);
@@ -625,7 +625,7 @@ if buy_confirm
                                 }
                                 break;
                             case 2: // Обмен моент на ману
-                                if global.hp_max > 5 
+                                if global.hp_max > 5+global.hp_add 
                                 {
                                     fnc_snd_play_over(snd_menu_accept);
                                     buy_confirm = 0;
@@ -635,7 +635,7 @@ if buy_confirm
                                 }
                                 break;
                             case 3: // Обмен моент на ману
-                                if global.mana_max > 3 
+                                if global.mana_max > 3+global.mana_add
                                 {
                                     fnc_snd_play_over(snd_menu_accept);
                                     buy_confirm = 0;

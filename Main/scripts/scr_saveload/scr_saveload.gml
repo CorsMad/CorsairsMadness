@@ -14,7 +14,9 @@ var _saveStorage =
 	fTargetY                    : global.fTargetY	   ,
 	
     hp_max                      : global.hp_max, // max HP
+    hp_add                      : global.hp_add, // max HP
     mana_max                    : global.mana_max,
+    mana_add                    : global.mana_add,
     gold                        : global.gold,
     darkessence                 : global.darkessence,
     secrets                     : global.secrets,
@@ -375,11 +377,13 @@ function scr_load_progress(){
 			global.fTargetY  	  =  _loadStorage.fTargetY  
 			
             global.hp_max                   =   _loadStorage.hp_max                 ; // max HP
+            global.hp_add                   =   _loadStorage.hp_add                 ; 
             global.mana_max                 =   _loadStorage.mana_max               ;  
+            global.mana_add                 =   _loadStorage.mana_add               ;  
             global.gold                     =   _loadStorage.gold                   ;
             global.darkessence              =   _loadStorage.darkessence            ;
             global.secrets                  =   _loadStorage.secrets                ;
-            global.hp                       =   _loadStorage.hp                     ;      
+            global.hp                       =   _loadStorage.hp                     ;                 
             global.mana                     =   _loadStorage.mana                   ;  
             global.ftp                      =   _loadStorage.ftp                    ;
             global.gold_prelevel            =   _loadStorage.gold_prelevel          ;     

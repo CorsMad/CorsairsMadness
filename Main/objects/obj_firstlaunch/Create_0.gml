@@ -9,12 +9,14 @@
 
     global.hp = 5;           
     global.hp_max = 5;       
+    global.hp_add = 0;
     global.choosed_item = 0; 
     global.choosed_item_tier = 0; 
     global.choosed_itemboat = 0; 
     global.choosed_itemboat_tier = 0; 
     global.mana = 3;
     global.mana_max = 3;
+    global.mana_add = 0;
     global.gold = 0;
     global.gold_prelevel = 0; 
     global.darkessence = 0;

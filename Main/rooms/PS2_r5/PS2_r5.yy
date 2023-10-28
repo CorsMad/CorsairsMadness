@@ -132,8 +132,12 @@
 -3,41,4,52,53,20,40,-7,41,4,42,24,10,11,-5,12,-3,41,4,42,24,50,51,-5,41,2,50,51,-7,41,
 4,52,53,15,35,-5,36,-3,41,2,52,53,-18,41,2,50,51,-35,41,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_snow","path":"tilesets/tls_fol_snow/tls_fol_snow.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR2","depth":400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
--510,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_snow_bgr","path":"tilesets/tls_fol_snow_bgr/tls_fol_snow_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
+-252,-2147483648,4,2153,2155,2156,2157,-15,-2147483648,1,2153,-10,-2147483648,4,2309,2311,2312,2313,-15,-2147483648,1,2309,-21,-2147483648,6,2153,-2147483648,2155,2156,2157,
+2154,-24,-2147483648,6,2309,-2147483648,2311,2312,2313,2310,-151,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_snow_bgr","path":"tilesets/tls_fol_snow_bgr/tls_fol_snow_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":500,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.8",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.7",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -90,1095,360,515,516,517,518,519,520,521,522,523,524,525,706,707,514,515,516,517,518,519,520,521,522,523,524,525,706,707,
 514,515,516,671,672,673,674,675,676,677,678,679,680,681,862,863,670,671,672,673,674,675,676,677,678,679,680,681,862,863,
 670,671,672,827,828,829,830,831,832,833,834,835,836,837,1018,1019,826,827,828,829,830,831,832,833,834,835,836,837,1018,1019,

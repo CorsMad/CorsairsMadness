@@ -11,3 +11,8 @@ if global.dia_desertChief = 0
 #endregion
 
 
+if global.completed_PG2 = 0 {
+    instance_create_depth(208,144,100,obj_shadow_amulet);
+    instance_create_depth(256,240,100,obj_shadow_amulet);
+    instance_create_depth(384,192,100,obj_shadow_amulet);
+}

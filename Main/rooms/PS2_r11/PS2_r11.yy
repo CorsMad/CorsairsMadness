@@ -80,6 +80,10 @@
     {"name":"inst_5474242","path":"rooms/PS2_r11/PS2_r11.yy",},
     {"name":"inst_21800E7E","path":"rooms/PS2_r11/PS2_r11.yy",},
     {"name":"inst_1FB47EF","path":"rooms/PS2_r11/PS2_r11.yy",},
+    {"name":"inst_3583D69","path":"rooms/PS2_r11/PS2_r11.yy",},
+    {"name":"inst_2D5082B5","path":"rooms/PS2_r11/PS2_r11.yy",},
+    {"name":"inst_1A925890","path":"rooms/PS2_r11/PS2_r11.yy",},
+    {"name":"inst_506C2672","path":"rooms/PS2_r11/PS2_r11.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -159,6 +163,10 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5474242","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_vase_s2","path":"objects/obj_vase_s2/obj_vase_s2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":384.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_21800E7E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_vase_s3","path":"objects/obj_vase_s3/obj_vase_s3.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":368.0,"y":416.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1FB47EF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_vase_s1","path":"objects/obj_vase_s1/obj_vase_s1.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":144.0,"y":320.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3583D69","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_blob_molded_creator","path":"objects/obj_blob_molded_creator/obj_blob_molded_creator.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":208.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2D5082B5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_blob_molded_creator","path":"objects/obj_blob_molded_creator/obj_blob_molded_creator.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":208.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1A925890","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_blob_molded_creator","path":"objects/obj_blob_molded_creator/obj_blob_molded_creator.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":304.0,"y":416.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_506C2672","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_blob_molded_creator","path":"objects/obj_blob_molded_creator/obj_blob_molded_creator.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":384.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tls2","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":37,"SerialiseWidth":30,"TileCompressedData":[
 -180,-2147483648,-3,0,-27,-2147483648,-3,0,-27,-2147483648,-3,0,-27,-2147483648,-4,0,-26,-2147483648,-4,0,-26,-2147483648,-4,0,-26,-2147483648,-3,0,-27,-2147483648,
@@ -191,8 +199,17 @@
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_5B503F4E","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_tp_mold2","path":"sprites/spr_tp_mold2/spr_tp_mold2.yy",},"x":64.0,"y":432.0,},
       ],"depth":400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR2","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":37,"SerialiseWidth":30,"TileCompressedData":[
--1110,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_snow_bgr","path":"tilesets/tls_fol_snow_bgr/tls_fol_snow_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":600,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":37,"SerialiseWidth":30,"TileCompressedData":[
+-8,-2147483648,2,1061,1062,-12,-2147483648,2,749,750,-14,-2147483648,2,1217,1218,-12,-2147483648,2,905,906,-14,-2147483648,2,1373,1374,-12,-2147483648,2,1061,1062,
+-14,-2147483648,2,1529,1530,-12,-2147483648,2,1217,1218,-14,-2147483648,2,1685,1686,-12,-2147483648,2,1373,1374,-14,-2147483648,2,1841,1842,-12,-2147483648,2,1529,1530,
+-14,-2147483648,2,1997,1998,-12,-2147483648,2,1685,1686,-28,-2147483648,2,1841,1842,-28,-2147483648,2,1997,1998,-81,-2147483648,6,2153,-2147483648,2155,2156,2157,2154,-24,
+-2147483648,6,2309,-2147483648,2311,2312,2313,2310,-5,-2147483648,2,596,597,-28,-2147483648,2,752,753,-28,-2147483648,2,908,909,-28,-2147483648,2,1064,1065,-18,-2147483648,
+7,2153,-2147483648,2155,2156,2157,-2147483648,2154,-3,-2147483648,2,1220,1221,-18,-2147483648,7,2309,-2147483648,2311,2312,2313,-2147483648,2310,-3,-2147483648,2,1376,1377,-28,-2147483648,
+2,1532,1533,-28,-2147483648,2,1688,1689,-28,-2147483648,2,1844,1845,-28,-2147483648,2,2000,2001,-225,-2147483648,5,2155,2156,2157,-2147483648,2154,-25,-2147483648,5,2311,
+2312,2313,-2147483648,2310,-107,-2147483648,5,2153,-2147483648,2155,2156,2157,-25,-2147483648,5,2309,-2147483648,2311,2312,2313,-50,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_snow_bgr","path":"tilesets/tls_fol_snow_bgr/tls_fol_snow_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":600,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.8",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.7",},
+      ],"tiles":{"SerialiseHeight":37,"SerialiseWidth":30,"TileCompressedData":[
 -90,1095,360,481,482,483,484,485,486,667,668,475,476,477,478,479,480,481,482,483,484,485,486,667,668,475,476,477,478,479,
 480,481,482,637,638,639,640,641,642,823,824,631,632,633,634,635,636,637,638,639,640,641,642,823,824,631,632,633,634,635,
 636,637,638,793,794,795,796,797,798,979,980,787,788,789,790,791,792,793,794,795,796,797,798,979,980,787,788,789,790,791,

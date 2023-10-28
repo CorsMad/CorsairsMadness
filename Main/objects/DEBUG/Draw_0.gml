@@ -2,11 +2,10 @@
 // You can write your code in this editor
 
 
+//draw_set_color(c_white);
 
 
-/*
-draw_set_color(c_white);
-    	
+    /*	
 	
     if instance_exists(obj_music_controller)
     {

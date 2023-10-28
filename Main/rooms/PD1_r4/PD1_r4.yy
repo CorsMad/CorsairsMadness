@@ -91,8 +91,13 @@
 16,17,17,18,19,50,53,50,51,17,52,53,50,17,19,50,51,-5,17,4,52,53,41,19,-3,-2147483648,6,15,16,17,
 17,52,53,-7,41,-2,17,1,53,-9,17,1,41,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_sand","path":"tilesets/tls_fol_sand/tls_fol_sand.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR2","depth":400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
--510,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_sand_bgr","path":"tilesets/tls_fol_sand_bgr/tls_fol_sand_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
+-123,-2147483648,2,751,752,-16,-2147483648,2,751,752,-10,-2147483648,2,907,908,-16,-2147483648,2,907,908,-10,-2147483648,2,1063,1064,-16,-2147483648,2,1063,1064,
+-10,-2147483648,2,1219,1220,-16,-2147483648,2,1219,1220,-10,-2147483648,2,1375,1376,-16,-2147483648,2,1375,1376,-73,-2147483648,1,1843,-17,-2147483648,1,1845,-11,-2147483648,
+3,1999,1531,1532,-12,-2147483648,4,1687,1688,1689,2001,-125,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_sand_bgr","path":"tilesets/tls_fol_sand_bgr/tls_fol_sand_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":500,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.8",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.75",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -90,641,360,479,480,481,482,483,666,667,472,473,474,475,476,477,478,479,480,481,482,483,666,667,472,473,474,475,476,477,
 478,479,480,635,636,637,638,639,822,823,628,629,630,631,632,633,634,635,636,637,638,639,822,823,628,629,630,631,632,633,
 634,635,636,791,792,793,794,795,978,979,784,785,786,787,788,789,790,791,792,793,794,795,978,979,784,785,786,787,788,789,

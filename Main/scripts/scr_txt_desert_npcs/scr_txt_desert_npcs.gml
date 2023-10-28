@@ -165,3 +165,14 @@ function scr_txt_desert_npc2_2(){
             break;
     }    
 }
+    
+function scr_txt_desert_npc3(){
+    switch(global.language){
+        case 0:
+            #region eng
+            text1 = "[fnt_pixel]I'm doing my best. I'm waiting for my replacement to show up.";
+            text2 = "[fnt_pixel]I've been waiting for him for seven hours!";
+            #endregion
+            break;
+    }
+}
