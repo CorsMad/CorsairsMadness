@@ -1750,6 +1750,9 @@ if global.hp <= 0
 		vspd = -2;
 	}
 #endregion
+
+
+
 }
 #endregion
     #region Dead

@@ -4193,6 +4193,7 @@
     {"id":{"name":"obj_key_yellow_tri","path":"objects/obj_key_yellow_tri/obj_key_yellow_tri.yy",},},
     {"id":{"name":"obj_icon_pointerdown","path":"objects/obj_icon_pointerdown/obj_icon_pointerdown.yy",},},
     {"id":{"name":"spr_player_masked_hooking_on_place","path":"sprites/spr_player_masked_hooking_on_place/spr_player_masked_hooking_on_place.yy",},},
+    {"id":{"name":"obj_weapon_select","path":"objects/obj_weapon_select/obj_weapon_select.yy",},},
     {"id":{"name":"spr_snow_snowman","path":"sprites/spr_snow_snowman/spr_snow_snowman.yy",},},
     {"id":{"name":"obj_cutscene_DI_player_p_r3_presave","path":"objects/obj_cutscene_DI_player_p_r3_presave/obj_cutscene_DI_player_p_r3_presave.yy",},},
     {"id":{"name":"snd_pause_on","path":"sounds/snd_pause_on/snd_pause_on.yy",},},

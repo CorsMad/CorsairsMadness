@@ -22,6 +22,8 @@ function player_input()
     key_item = keyboard_check_pressed(global.item_key) || gamepad_button_check_pressed(4,gp_face4) || gamepad_button_check_pressed(4,gp_shoulderlb) || gamepad_button_check_pressed(0,gp_face4) || gamepad_button_check_pressed(0,gp_shoulderlb); 
     key_item_pressed = keyboard_check(global.item_key);
     key_item_released = keyboard_check_released(global.item_key);
+	key_select = keyboard_check_pressed(global.select_key);
+	
     // ДОБАВИТЬ КОНТРОЛЛЕР
     key_abil = keyboard_check_pressed(global.abil_key) || gamepad_button_check_pressed(4,gp_shoulderr) || gamepad_button_check_pressed(0,gp_shoulderr) ;
     key_abil_pressed = keyboard_check(global.abil_key) || gamepad_button_check(4,gp_shoulderr) || gamepad_button_check(0,gp_shoulderr) ;

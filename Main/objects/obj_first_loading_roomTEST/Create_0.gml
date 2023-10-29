@@ -4,7 +4,7 @@ randomise();
 global.TargetX      = 128;
 //global.TargetY      =240784;
 global.TargetY      = 240;
-global.TargetRoom   = Village_snow_store;
+global.TargetRoom   = TESTROOM;
 
 
 global.fTargetX     = 48;
@@ -121,21 +121,21 @@ global.shop_parrotcage_can_upgrade2 = 0;
 #region Покупки человека
 
 //якорь
-global.purch_anch1 = 0;
-global.purch_anch2 = 0;
-global.purch_anch3 = 0;
+global.purch_anch1 = 1;
+global.purch_anch2 = 1;
+global.purch_anch3 = 1;
 // Бомба
-global.purch_bomb1 = 0;
-global.purch_bomb2 = 0;
-global.purch_bomb3 = 0;
+global.purch_bomb1 = 1;
+global.purch_bomb2 = 1;
+global.purch_bomb3 = 1;
 // Sparkle
-global.purch_sparkle1 = 0;
-global.purch_sparkle2 = 0;
-global.purch_sparkle3 = 0;
+global.purch_sparkle1 = 1;
+global.purch_sparkle2 = 1;
+global.purch_sparkle3 = 1;
 // Eparrot
-global.purch_eparrot1 = 0;
-global.purch_eparrot2 = 0;
-global.purch_eparrot3 = 0;
+global.purch_eparrot1 = 1;
+global.purch_eparrot2 = 1;
+global.purch_eparrot3 = 1;
 
 #endregion
 
@@ -281,6 +281,8 @@ global.attack_key = ord("J");
 global.dash_key   = ord("L");
 global.item_key   = ord("I");
 global.abil_key   = ord("U");
+
+global.select_key = ord("O");
 
 #endregion
 

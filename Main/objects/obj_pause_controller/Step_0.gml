@@ -41,3 +41,18 @@ switch(state){
         #endregion
         break;
 }
+
+
+
+
+if instance_exists(obj_Player){
+	player_input();
+	if obj_Player.state = 0 && obj_Player.isDead = 0 && obj_Player.isUsingitem = 0  && obj_Player.isAirUsingitem = 0 {
+		if key_select {
+		fnc_snd_play_over(snd_pause_on);
+		instance_deactivate_all(1);	
+		instance_create_depth(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),-99999999999999999999999,obj_weapon_select);   
+		}
+	}
+}
+	

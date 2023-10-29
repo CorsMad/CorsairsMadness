@@ -6,7 +6,8 @@ if en != noone{
 	if en.x < x image_xscale = -1;
 } else {
 	if instance_exists(obj_Player)
-	{
+	{	
 		if obj_Player.x > x image_xscale = 1 else image_xscale = -1;	
+		if global.choosed_item!= 5 instance_destroy();
 	}
 }

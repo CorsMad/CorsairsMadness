@@ -3604,6 +3604,7 @@
     {"name":"obj_key_yellow_tri","order":1,"path":"objects/obj_key_yellow_tri/obj_key_yellow_tri.yy",},
     {"name":"obj_icon_pointerdown","order":4,"path":"objects/obj_icon_pointerdown/obj_icon_pointerdown.yy",},
     {"name":"spr_player_masked_hooking_on_place","order":11,"path":"sprites/spr_player_masked_hooking_on_place/spr_player_masked_hooking_on_place.yy",},
+    {"name":"obj_weapon_select","order":13,"path":"objects/obj_weapon_select/obj_weapon_select.yy",},
     {"name":"obj_cutscene_DI_player_p_r3_presave","order":1,"path":"objects/obj_cutscene_DI_player_p_r3_presave/obj_cutscene_DI_player_p_r3_presave.yy",},
     {"name":"snd_pause_on","order":2,"path":"sounds/snd_pause_on/snd_pause_on.yy",},
     {"name":"obj_global_map_map","order":11,"path":"objects/obj_global_map_map/obj_global_map_map.yy",},
