@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "L2",
-    "path": "folders/Objects/Level objects/Collectables/Secrets/!Master/!Lava/L2.yy",
+    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/!Jungle/Lvl1/Collectables/Secrets/!Master/!Lava/L2.yy",
   },
   "parentObjectId": null,
   "persistent": false,

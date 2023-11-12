@@ -8,7 +8,8 @@ function script_lng_conf(){
             #region eng
 			text = "Travel to the island?"
             yes = "yes";
-			no = "no"
+			no = "no";
+            text_onisldn = "Confirm ?"
 
             #endregion
             break;

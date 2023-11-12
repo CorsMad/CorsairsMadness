@@ -258,8 +258,8 @@
         {"name":"g_ContrastBrightness","type":0,"value":"0.7",},
       ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":60,"TileCompressedData":[
 -255,-2147483648,3,63,64,65,-30,-2147483648,3,66,67,68,-24,-2147483648,7,75,76,77,-2147483648,99,100,101,-20,-2147483648,3,18,19,20,-3,-2147483648,3,78,79,80,-28,-2147483648,6,111,112,113,63,64,65,-17,-2147483648,6,30,31,32,60,61,62,-34,-2147483648,3,75,76,77,-7,-2147483648,
-3,66,67,68,-7,-2147483648,6,42,43,44,72,73,74,-23,-2147483648,3,99,100,101,-14,-2147483648,7,18,19,20,-2147483648,78,79,80,-36,-2147483648,3,111,112,113,-14,-2147483648,3,30,31,32,-57,-2147483648,3,42,43,44,-30,-2147483648,3,21,22,23,-3,-2147483648,3,15,16,17,-51,
--2147483648,3,33,34,35,-3,-2147483648,3,27,28,29,-51,-2147483648,3,45,46,47,-3,-2147483648,3,39,40,41,-230,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_sand_cact","path":"tilesets/tls_sand_cact/tls_sand_cact.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+3,66,67,68,-7,-2147483648,6,42,43,44,72,73,74,-23,-2147483648,3,99,100,101,-14,-2147483648,7,18,19,20,-2147483648,78,79,80,-36,-2147483648,3,111,112,113,-14,-2147483648,3,30,31,32,-32,-2147483648,-6,0,-19,-2147483648,3,42,43,44,-30,-2147483648,-9,0,-51,-2147483648,-9,0,-51,
+-2147483648,-9,0,-51,-2147483648,-2,0,6,-2147483648,0,0,-2147483648,0,0,-171,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_sand_cact","path":"tilesets/tls_sand_cact/tls_sand_cact.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Backgrounds_3","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":700,"effectEnabled":true,"effectType":"_filter_heathaze","gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Distort1Speed","type":0,"value":"0.01",},
         {"name":"g_Distort2Speed","type":0,"value":"0.025",},

@@ -190,10 +190,10 @@ switch(submenu)
         break;  
     case 4:
         for (var m = 0; m < 6; ++m) {  // MAX HP
-                    draw_sprite(spr_hud_heart,0,216+16*m,65)
+                    draw_sprite(spr_hud_heart,0,216+11*m,65)
                 }
         for (var n = 0; n < 5; ++n) {  // MAX MANA
-                    draw_sprite(spr_hud_mana,0,216+16*n,97)
+                    draw_sprite(spr_hud_mana,0,216+11*n,97)
                 }
 }
 

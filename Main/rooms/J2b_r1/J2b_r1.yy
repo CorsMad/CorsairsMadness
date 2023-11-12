@@ -51,7 +51,10 @@
 16,-14,17,2,18,43,],"TileDataFormat":1,},"tilesetId":{"name":"tls_jngl_main","path":"tilesets/tls_jngl_main/tls_jngl_main.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_42F888A7","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_tls_tree_palms2","path":"sprites/spr_tls_tree_palms2/spr_tls_tree_palms2.yy",},"x":208.0,"y":16.0,},
-      ],"depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+      ],"depth":200,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.8",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.9",},
+      ],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":300,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -28,-2147483648,-2,0,-28,-2147483648,-2,0,-28,-2147483648,-2,0,-27,-2147483648,-3,0,-27,-2147483648,-3,0,-27,-2147483648,-3,0,-27,-2147483648,-3,0,1,-2147483648,
 -15,0,-11,-2147483648,-3,0,1,-2147483648,-15,0,-11,-2147483648,-3,0,1,-2147483648,-15,0,-11,-2147483648,-3,0,1,-2147483648,-21,0,-5,-2147483648,-3,0,

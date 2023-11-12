@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_hud_mana",
-  "bbox_bottom": 13,
+  "bbox_bottom": 8,
   "bbox_left": 0,
-  "bbox_right": 13,
+  "bbox_right": 8,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -18,7 +18,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 14,
+  "height": 9,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3f73dbba-f3a7-4c73-8c04-a50d58aba614","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -72,5 +72,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 14,
+  "width": 9,
 }

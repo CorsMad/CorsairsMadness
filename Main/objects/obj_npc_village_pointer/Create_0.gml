@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 on = 1;
-
+image_xscale = 2;
+image_yscale = 2;
 village = 0;
 /*
 1 - джунгли
@@ -16,4 +17,7 @@ position = 0;
 2 - внутри торговец
 */
 
-image_speed = 0.1;
+image_speed = 0;
+image_index = 1;
+state = 0;
+t = 0;

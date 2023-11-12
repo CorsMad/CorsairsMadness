@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Endurance",
-    "path": "folders/Objects/Level objects/Collectables/Secrets/!Master/!Snow/Endurance.yy",
+    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/!Jungle/Lvl1/Collectables/Secrets/!Master/!Snow/Endurance.yy",
   },
   "parentObjectId": {
     "name": "obj_objects_delete",

@@ -46,7 +46,7 @@ switch(t_state)
 
 if instance_exists(obj_Player)
 {
-    if place_meeting(x,y,obj_Player) && talk_cr_t = 0 && obj_Player.isDead !=2 && obj_Player.key_up_press && obj_Player.isGrounded = 1 && obj_Player.isAttacking = 0 && obj_Player.isDashing = 0 && obj_Player.isAttackingdown = 0 && obj_Player.isAirattacking = 0 && obj_Player.isUsingitem = 0
+    if place_meeting(x,y,obj_Player) && global.dia_lavaComt != 0 && talk_cr_t = 0 && obj_Player.isDead !=2 && obj_Player.key_up_press && obj_Player.isGrounded = 1 && obj_Player.isAttacking = 0 && obj_Player.isDashing = 0 && obj_Player.isAttackingdown = 0 && obj_Player.isAirattacking = 0 && obj_Player.isUsingitem = 0
     {
         talk = 1;
         obj_Player.isDead = 2;
@@ -69,9 +69,13 @@ if talk_cr_t!= 0
         talk_cr_t = 0;
         switch(global.dia_lavaComt)
         {
-            case 0: instance_create_depth(x,y,-100000,obj_txt_lavav_comt3); //3 разговор
+            case 0.5: 
+                var point = instance_nearest(x,y,obj_npc_village_pointer);
+                if point!=noone instance_destroy(point);
+                
+                instance_create_depth(x,y,-100000,obj_txt_lavav_comt3); //3 разговор
                 break;
-            case 1: instance_create_depth(x,y,-100000,obj_npc_lavav_comt_choose); //2 разговор
+            case 1: instance_create_depth(x,y,-100000,obj_npc_lavav_comt_choose);  ; //2 разговор
                 break;
             case 2: instance_create_depth(x,y,-100000,obj_txt_lavav_comt1); //1 разговор
                 break;
@@ -85,7 +89,7 @@ if talk_cr_t!= 0
 
 #region Иконка
 
-if place_meeting(x,y,obj_Player) && obj_Player.isDead != 2
+if place_meeting(x,y,obj_Player) && obj_Player.isDead != 2 && global.dia_lavaComt != 0
 {
     pointer.on = 1;   
 } else pointer.on = 0;

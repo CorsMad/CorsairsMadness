@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "HP & mana",
-    "path": "folders/Objects/Level objects/Collectables/HP & mana.yy",
+    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/!Jungle/Lvl1/Collectables/HP & mana.yy",
   },
   "parentObjectId": {
     "name": "obj_objects_delete",

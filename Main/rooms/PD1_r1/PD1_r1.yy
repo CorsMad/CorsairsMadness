@@ -78,7 +78,12 @@
 -2147483648,-29,0,1,-2147483648,-29,0,1,-2147483648,-29,0,1,-2147483648,-7,0,4,1843,0,0,1845,-18,0,1,-2147483648,-7,0,4,1999,1531,1532,
 2001,-18,0,1,-2147483648,-29,0,1,-2147483648,-14,0,1,1843,-14,0,1,-2147483648,-14,0,7,1999,1531,1532,0,1687,1688,1689,-8,0,1,
 -2147483648,-29,0,-2,-2147483648,-28,0,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_sand_bgr","path":"tilesets/tls_fol_sand_bgr/tls_fol_sand_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":500,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+    {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_72DB32FD","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"spriteId":{"name":"spr_torch","path":"sprites/spr_torch/spr_torch.yy",},"x":80.0,"y":96.0,},
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_E5DD80","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_torch","path":"sprites/spr_torch/spr_torch.yy",},"x":352.0,"y":192.0,},
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_2E409945","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_torch","path":"sprites/spr_torch/spr_torch.yy",},"x":192.0,"y":144.0,},
+      ],"depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":600,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"0.8",},
         {"name":"g_ContrastBrightness","type":0,"value":"0.8",},
       ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
@@ -95,7 +100,7 @@
 2040,2041,2031,2032,2070,2071,2031,2032,2052,2053,2054,2055,2056,2057,2058,2059,2031,2032,2070,2206,2226,2227,2187,2188,2190,2191,2192,2193,2194,2195,
 2196,2197,2187,2188,2226,2227,2187,2188,2208,2209,2210,2211,2212,2213,2214,2215,2187,2188,2226,2503,2504,2505,2506,2507,2508,2509,2502,2503,2504,2505,
 2506,2507,2508,2509,2502,2503,2504,2505,2506,2507,2508,2509,2502,2503,2504,2505,2506,2507,2508,-60,641,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_sand_bgr","path":"tilesets/tls_fol_sand_bgr/tls_fol_sand_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4289901234,"depth":600,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":5.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":64,"y":0,},
+    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4289901234,"depth":700,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":5.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":64,"y":0,},
   ],
   "parent": {
     "name": "PD1",

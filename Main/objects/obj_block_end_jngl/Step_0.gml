@@ -45,14 +45,14 @@ if state = 1
             instance_create_depth(x+24,y+8,-2,obj_sfx_dust_expl_big);
             instance_create_depth(x+72,y+8,-2,obj_sfx_dust_expl_big);
             
-            instance_create_depth(120,248,100,obj_spikes);
-            instance_create_depth(136,248,100,obj_spikes);
-            instance_create_depth(152,248,100,obj_spikes);
-            instance_create_depth(168,248,100,obj_spikes);  
-            instance_create_depth(312,248,100,obj_spikes);
-            instance_create_depth(328,248,100,obj_spikes);
-            instance_create_depth(344,248,100,obj_spikes);
-            instance_create_depth(360,248,100,obj_spikes);
+            instance_create_depth(120,248,100,obj_spikes,{image_angle : 0});
+            instance_create_depth(136,248,100,obj_spikes,{image_angle : 0});
+            instance_create_depth(152,248,100,obj_spikes,{image_angle : 0});
+            instance_create_depth(168,248,100,obj_spikes,{image_angle : 0});  
+            instance_create_depth(312,248,100,obj_spikes,{image_angle : 0});
+            instance_create_depth(328,248,100,obj_spikes,{image_angle : 0});
+            instance_create_depth(344,248,100,obj_spikes,{image_angle : 0});
+            instance_create_depth(360,248,100,obj_spikes,{image_angle : 0});
             obj_endurance_jungle.state = 1.7;
             obj_endurance_jungle.t = 0;
             instance_destroy();            

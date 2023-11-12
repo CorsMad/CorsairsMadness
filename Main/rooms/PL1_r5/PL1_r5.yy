@@ -73,9 +73,13 @@
 -2,-2147483648,2,593,594,-28,-2147483648,2,749,750,-28,-2147483648,2,905,906,-28,-2147483648,2,1061,1062,-28,-2147483648,2,1217,1218,-28,-2147483648,2,1373,1374,
 -28,-2147483648,2,1529,1530,-28,-2147483648,2,1685,1686,-28,-2147483648,5,2157,2158,-2147483648,0,0,-125,-2147483648,4,1999,-2147483648,-2147483648,2000,-26,-2147483648,4,2155,2157,
 2158,2156,-104,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_lava_pos_bgr","path":"tilesets/tls_lava_pos_bgr/tls_lava_pos_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":500,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+    {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_57839BE5","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_torch","path":"sprites/spr_torch/spr_torch.yy",},"x":160.0,"y":96.0,},
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_38FADB84","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"spriteId":{"name":"spr_torch","path":"sprites/spr_torch/spr_torch.yy",},"x":128.0,"y":96.0,},
+      ],"depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":600,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"0.5",},
-        {"name":"g_ContrastBrightness","type":0,"value":"0.3",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.25",},
       ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileSerialiseData":[
 1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,
 1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,
@@ -95,7 +99,7 @@
 1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,
 1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,
 ],},"tilesetId":{"name":"tls_lava_pos_bgr","path":"tilesets/tls_lava_pos_bgr/tls_lava_pos_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4289901234,"depth":600,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":5.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":64,"y":0,},
+    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4289901234,"depth":700,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":5.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":64,"y":0,},
   ],
   "parent": {
     "name": "PL1",

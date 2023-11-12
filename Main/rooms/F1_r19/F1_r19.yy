@@ -76,7 +76,10 @@
       ],"depth":300,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_4","depth":400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -394,-2147483648,2,215,216,-27,-2147483648,3,226,231,232,-27,-2147483648,3,242,247,248,-54,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol1_furniture","path":"tilesets/tls_fol1_furniture/tls_fol1_furniture.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileSerialiseData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":500,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.7",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.7",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileSerialiseData":[
 707,708,709,710,711,712,713,706,707,708,709,710,711,712,713,706,707,708,709,710,711,712,713,706,707,708,709,710,711,712,
 769,770,771,772,773,774,775,768,769,770,771,772,773,774,775,768,769,770,771,772,773,774,775,768,769,770,771,772,773,774,
 831,832,833,834,835,836,837,830,831,832,833,834,835,836,837,830,831,832,833,834,835,836,837,830,831,832,833,834,835,836,

@@ -1,2 +1,2 @@
-TargetRoom = F1_r9;
-TargetX = 464;
+TargetRoom = F1_r8;
+TargetX = 1712-16;

@@ -111,7 +111,10 @@
 91,10,111,91,92,95,93,97,95,93,106,93,],"TileDataFormat":1,},"tilesetId":{"name":"tls_jngl_main","path":"tilesets/tls_jngl_main/tls_jngl_main.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":34,"SerialiseWidth":60,"TileCompressedData":[
 -602,-2147483648,-4,0,-48,2,1,3,-59,-2147483648,1,4,-5,2,-1320,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_bomb_wires","path":"tilesets/tls_bomb_wires/tls_bomb_wires.yy",},"userdefinedDepth":false,"visible":true,"x":4,"y":4,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":300,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":300,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.8",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.8",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -24,-2147483648,-6,76,-22,-2147483648,1,73,-7,76,-21,-2147483648,2,73,78,-7,76,-20,-2147483648,2,73,78,-8,76,-5,-2147483648,4,70,71,71,
 74,-10,-2147483648,2,73,78,-9,76,-4,-2147483648,8,70,78,76,76,79,71,71,74,-5,-2147483648,3,73,71,78,-10,76,-2,-2147483648,-9,
 76,1,79,-5,71,1,78,-12,76,1,-2147483648,-29,76,3,-2147483648,76,0,-27,76,3,-2147483648,0,0,-27,76,3,-2147483648,0,0,-27,

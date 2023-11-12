@@ -141,6 +141,7 @@ if key_jump_pressed || key_attack // accept
                 
                 case 4:
                     //if instance_exists(obj_weapon_select) obj_weapon_select.isPaused = 0;
+                    fnc_snd_play_over(snd_pause_off);
                     instance_activate_all();
                     instance_destroy();
                     break;

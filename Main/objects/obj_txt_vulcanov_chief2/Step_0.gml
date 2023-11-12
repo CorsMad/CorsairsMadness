@@ -13,38 +13,23 @@ if key_skip
     if scr_t > scr_t_max 
     {
         obj_npc_vulcanov_chief.talk = 0;
-        obj_Player.isDead = 2.1;           
+        obj_Player.isDead = 2.1;  
+        
+        global.dia_lavaChief = 3; 
+        
+        var g1 = instance_create_depth(64,208,-1,obj_money10);
+        var g2 = instance_create_depth(64,208,-1,obj_money20);
+        var g3 = instance_create_depth(64,208,-1,obj_money20);
+        
+        g1.hspd = -0.5;
+        g2.hspd = 0;
+        g3.hspd = 0.5;
+        g1.vspd = -5;
+        g2.vspd = -5;
+        g3.vspd = -5;
+        
         instance_destroy();   
     } 
 }
 
 #endregion
-
-
-/*
-
-
-player_input();
-if key_attack || key_jump
-{
-    var _len = string_length(text[0,text_current]);
-if (char_current < _len)
-    {
-    char_current = _len;
-    }
-    else
-    {
-    text_current += 1;
-    if (text_current > text_last)
-        {
-        obj_npc_junglev_chief.talk = 0;
-        obj_Player.isDead = 2.1;
-        instance_destroy();
-        }
-    else
-        {
-        text[0,text_current] = string_wrap(text[0,text_current], text_width);
-        char_current = 0;
-        }
-    }   
-}

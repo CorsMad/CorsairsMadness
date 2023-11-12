@@ -162,6 +162,10 @@
     {"name":"inst_390BDDC3","path":"rooms/L1_r9/L1_r9.yy",},
     {"name":"inst_335D1512","path":"rooms/L1_r9/L1_r9.yy",},
     {"name":"inst_55315D81","path":"rooms/L1_r9/L1_r9.yy",},
+    {"name":"inst_28A8FBF7","path":"rooms/L1_r9/L1_r9.yy",},
+    {"name":"inst_1A8D151F","path":"rooms/L1_r9/L1_r9.yy",},
+    {"name":"inst_28D9B71A","path":"rooms/L1_r9/L1_r9.yy",},
+    {"name":"inst_59183BD","path":"rooms/L1_r9/L1_r9.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -323,6 +327,10 @@
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","depth":100,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_55315D81","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":1,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lava_destruct","path":"objects/obj_lava_destruct/obj_lava_destruct.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":528.0,"y":224.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_28A8FBF7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lavacryst_gr_s","path":"objects/obj_lavacryst_gr_s/obj_lavacryst_gr_s.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":48.0,"y":128.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1A8D151F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lavacryst_gr_s","path":"objects/obj_lavacryst_gr_s/obj_lavacryst_gr_s.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":496.0,"y":224.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_28D9B71A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lavacryst_bl_s","path":"objects/obj_lavacryst_bl_s/obj_lavacryst_bl_s.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":144.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_59183BD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lavacryst_ye_l","path":"objects/obj_lavacryst_ye_l/obj_lavacryst_ye_l.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":1264.0,"y":208.0,},
       ],"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"1.15",},
         {"name":"g_ContrastBrightness","type":0,"value":"1",},
@@ -387,10 +395,6 @@
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_44EAEDB7","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":1.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_lava_tiles","path":"sprites/spr_lava_tiles/spr_lava_tiles.yy",},"x":32.0,"y":208.0,},
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_1E598520","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_lava_tiles","path":"sprites/spr_lava_tiles/spr_lava_tiles.yy",},"x":6.0,"y":208.0,},
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_279105BD","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":1.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_lava_tiles","path":"sprites/spr_lava_tiles/spr_lava_tiles.yy",},"x":88.0,"y":208.0,},
-        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_55B4C6A3","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":7.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_lava_tiles","path":"sprites/spr_lava_tiles/spr_lava_tiles.yy",},"x":48.0,"y":128.0,},
-        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_293D750","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":9.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_lava_tiles","path":"sprites/spr_lava_tiles/spr_lava_tiles.yy",},"x":448.0,"y":144.0,},
-        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_3A63218","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":10.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"spriteId":{"name":"spr_lava_tiles","path":"sprites/spr_lava_tiles/spr_lava_tiles.yy",},"x":1264.0,"y":208.0,},
-        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_E6B32DE","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":7.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_lava_tiles","path":"sprites/spr_lava_tiles/spr_lava_tiles.yy",},"x":496.0,"y":224.0,},
       ],"depth":300,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"0.5",},
         {"name":"g_ContrastBrightness","type":0,"value":"0.3",},

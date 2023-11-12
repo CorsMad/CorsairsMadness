@@ -2,12 +2,12 @@
 // You can write your code in this editor
 draw_set_colour(c_black);
 
-draw_rectangle(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+270,-9999999);
+draw_rectangle(0,0,room_width,room_height,false);
 
-draw_rectangle(camera_get_view_x(view_camera[0]),0,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+30,false);
+draw_rectangle(0,0,room_width,room_height,false);
 #region визуал
 
-draw_sprite(spr_shop,6,240,135);
+draw_sprite(spr_shop,6,camera_get_view_x(view_camera[0])+240,camera_get_view_y(view_camera[0])+135);
 
 #endregion
 
@@ -20,7 +20,7 @@ if global.language = 1 draw_set_font(fnt_pixel_ru) else draw_set_font(fnt_pixel)
 #region название магазина
 draw_set_halign(fa_center);
 draw_set_color(c_white);
-draw_text(room_width/2,16,store);
+draw_text(camera_get_view_x(view_camera[0])+240,camera_get_view_y(view_camera[0])+16,store);
 
 #endregion
 
@@ -45,7 +45,7 @@ for (var i = 0; i < array_length(menu); ++i) {
     }
     
     //draw_text(105,52 + gap*i, menu[i]);
-    draw_text(105-64,52 + gap*i, menu[submenu, i]);
+    draw_text(camera_get_view_x(view_camera[0])+105-64,camera_get_view_y(view_camera[0])+52 + gap*i, menu[submenu, i]);
 }
 #endregion
 
@@ -57,16 +57,16 @@ switch(submenu)
             switch(index)
             {
                 case 0:   
-                    draw_sprite(spr_shop_selector,0,120-64+32*dindex,72);
+                    draw_sprite(spr_shop_selector,0,camera_get_view_x(view_camera[0])+120-64+32*dindex,camera_get_view_y(view_camera[0])+72);
                     break;
                 case 1:   
-                    draw_sprite(spr_shop_selector,0,120-64+32*dindex,104);
+                    draw_sprite(spr_shop_selector,0,camera_get_view_x(view_camera[0])+120-64+32*dindex,camera_get_view_y(view_camera[0])+104);
                     break;
                 case 2:   
-                    draw_sprite(spr_shop_selector,0,120-64+32*dindex,136);
+                    draw_sprite(spr_shop_selector,0,camera_get_view_x(view_camera[0])+120-64+32*dindex,camera_get_view_y(view_camera[0])+136);
                     break;
                 case 3:   
-                    draw_sprite(spr_shop_selector,0,120-64+32*dindex,168);
+                    draw_sprite(spr_shop_selector,0,camera_get_view_x(view_camera[0])+120-64+32*dindex,camera_get_view_y(view_camera[0])+168);
                     break;            
             }      
             break;
@@ -75,16 +75,16 @@ switch(submenu)
             switch(index)
             {
                 case 0:   
-                    draw_sprite(spr_shop_selector,0,120-64+32,72);
+                    draw_sprite(spr_shop_selector,0,camera_get_view_x(view_camera[0])+120-64+32,camera_get_view_y(view_camera[0])+72);
                     break;
                 case 1:   
-                    draw_sprite(spr_shop_selector,0,120-64+32,104);
+                    draw_sprite(spr_shop_selector,0,camera_get_view_x(view_camera[0])+120-64+32,camera_get_view_y(view_camera[0])+104);
                     break;
                 case 2:   
-                    draw_sprite(spr_shop_selector,0,120-64+32,136);
+                    draw_sprite(spr_shop_selector,0,camera_get_view_x(view_camera[0])+120-64+32,camera_get_view_y(view_camera[0])+136);
                     break;   
                 case 3:   
-                    draw_sprite(spr_shop_selector,0,120-64+32,168);
+                    draw_sprite(spr_shop_selector,0,camera_get_view_x(view_camera[0])+120-64+32,camera_get_view_y(view_camera[0])+168);
                     break;  
             }
             break;
@@ -93,16 +93,16 @@ switch(submenu)
             switch(index)
             {
                 case 0:   
-                    draw_sprite(spr_shop_selector,0,120-64+32*dindex,72);
+                    draw_sprite(spr_shop_selector,0,camera_get_view_x(view_camera[0])+120-64+32*dindex,camera_get_view_y(view_camera[0])+72);
                     break;
                 case 1:   
-                    draw_sprite(spr_shop_selector,0,120-64+32*dindex,104);
+                    draw_sprite(spr_shop_selector,0,camera_get_view_x(view_camera[0])+120-64+32*dindex,camera_get_view_y(view_camera[0])+104);
                     break;
                 case 2:   
-                    draw_sprite(spr_shop_selector,0,120-64+32*dindex,136);
+                    draw_sprite(spr_shop_selector,0,camera_get_view_x(view_camera[0])+120-64+32*dindex,camera_get_view_y(view_camera[0])+136);
                     break;
                 case 3:   
-                    draw_sprite(spr_shop_selector,0,120-64+32*dindex,168);
+                    draw_sprite(spr_shop_selector,0,camera_get_view_x(view_camera[0])+120-64+32*dindex,camera_get_view_y(view_camera[0])+168);
                     break;            
             }      
             break;
@@ -110,16 +110,16 @@ switch(submenu)
             switch(index)
             {
                 case 0:
-                    draw_sprite(spr_shop_selector_wide,0,152-64,72);
+                    draw_sprite(spr_shop_selector_wide,0,camera_get_view_x(view_camera[0])+152-64,camera_get_view_y(view_camera[0])+72);
                     break;
                 case 1:
-                    draw_sprite(spr_shop_selector_wide,0,152-64,104);
+                    draw_sprite(spr_shop_selector_wide,0,camera_get_view_x(view_camera[0])+152-64,camera_get_view_y(view_camera[0])+104);
                     break;
                 case 2:
-                    draw_sprite(spr_shop_selector_wide,0,152-64,136);
+                    draw_sprite(spr_shop_selector_wide,0,camera_get_view_x(view_camera[0])+152-64,camera_get_view_y(view_camera[0])+136);
                     break;
                 case 3:
-                    draw_sprite(spr_shop_selector_wide,0,152-64,168);
+                    draw_sprite(spr_shop_selector_wide,0,camera_get_view_x(view_camera[0])+152-64,camera_get_view_y(view_camera[0])+168);
                     break;
             }
             
@@ -143,27 +143,27 @@ switch(submenu)
         {
             case 0:
                 draw_set_halign(fa_center);
-                draw_text(272,58,nameh_anchor);   
+                draw_text(camera_get_view_x(view_camera[0])+272,camera_get_view_y(view_camera[0])+58,nameh_anchor);   
                 draw_set_halign(fa_left);
-                draw_text(406,58,"lvl " + string(dindex+1));   
+                draw_text(camera_get_view_x(view_camera[0])+406,camera_get_view_y(view_camera[0])+58,"lvl " + string(dindex+1));   
                 break;
             case 1:
                 draw_set_halign(fa_center);
-                draw_text(272,58,nameh_grenade);   
+                draw_text(camera_get_view_x(view_camera[0])+272,camera_get_view_y(view_camera[0])+58,nameh_grenade);   
                 draw_set_halign(fa_left);
-                draw_text(406,58,"lvl " + string(dindex+1));   
+                draw_text(camera_get_view_x(view_camera[0])+406,camera_get_view_y(view_camera[0])+58,"lvl " + string(dindex+1));   
                 break;
             case 2:
                 draw_set_halign(fa_center);
-                draw_text(272,58,nameh_shockball);   
+                draw_text(camera_get_view_x(view_camera[0])+272,camera_get_view_y(view_camera[0])+58,nameh_shockball);   
                 draw_set_halign(fa_left);
-                draw_text(406,58,"lvl " + string(dindex+1));   
+                draw_text(camera_get_view_x(view_camera[0])+406,camera_get_view_y(view_camera[0])+58,"lvl " + string(dindex+1));   
                 break;
             case 3:
                 draw_set_halign(fa_center);
-                draw_text(272,58,nameh_parrot);   
+                draw_text(camera_get_view_x(view_camera[0])+272,camera_get_view_y(view_camera[0])+58,nameh_parrot);   
                 draw_set_halign(fa_left);
-                draw_text(406,58,"lvl " + string(dindex+1));   
+                draw_text(camera_get_view_x(view_camera[0])+406,camera_get_view_y(view_camera[0])+58,"lvl " + string(dindex+1));   
                 break;
 
             
@@ -175,16 +175,16 @@ switch(submenu)
         switch(index)
         {
             case 0:
-                draw_text(296,58,namep_double_strike);   
+                draw_text(camera_get_view_x(view_camera[0])+296,camera_get_view_y(view_camera[0])+58,namep_double_strike);   
                 break;
             case 1:
-                draw_text(296,58,namep_lunge); 
+                draw_text(camera_get_view_x(view_camera[0])+296,camera_get_view_y(view_camera[0])+58,namep_lunge); 
                 break;
             case 2:
-                draw_text(296,58,namep_toss_up); 
+                draw_text(camera_get_view_x(view_camera[0])+296,camera_get_view_y(view_camera[0])+58,namep_toss_up); 
                 break;
             case 3:
-                draw_text(296,58,namep_top_down); 
+                draw_text(camera_get_view_x(view_camera[0])+296,camera_get_view_y(view_camera[0])+58,namep_top_down); 
                 break;
         }
         break;
@@ -219,7 +219,7 @@ switch(submenu)
         break;  
     case 4:
         for (var o = 0; o < global.hp_max; ++o) {  // MAX HP
-                    draw_sprite(spr_hud_heart_mana,0,152+16*o,65)
+                    draw_sprite(spr_hud_heart_mana,0,152+11*o,65)
                 }
         for (var p = 0; p < global.mana_max; ++p) {  // MAX MANA
                     draw_sprite(spr_hud_heart_mana,1,152+16*p,97)
@@ -227,7 +227,7 @@ switch(submenu)
     
     
         for (var m = 0; m < 5+global.hp_add; ++m) {  // MAX HP
-                    draw_sprite(spr_hud_heart,0,152+16*m,65)
+                    draw_sprite(spr_hud_heart,0,152+11*m,65)
                 }
         for (var n = 0; n < 3+global.mana_add; ++n) {  // MAX MANA
                     draw_sprite(spr_hud_mana,0,152+16*n,97)
@@ -247,18 +247,62 @@ switch(submenu)
     case 1:  
         if index != 4 
         {
-            draw_text(154,70,dHMenu[index,dindex]);
+            switch(index){
+                case 0: // Якорь
+                    switch(dindex){
+                        case 0: if global.purch_anch1 = 1 draw_text(camera_get_view_x(view_camera[0])+154,camera_get_view_y(view_camera[0])+70,dHMenu[index,dindex]);
+                            break;
+                        case 1: if global.purch_anch2 = 1 draw_text(camera_get_view_x(view_camera[0])+154,camera_get_view_y(view_camera[0])+70,dHMenu[index,dindex]);
+                            break;
+                        case 2: if global.purch_anch3 = 1 draw_text(camera_get_view_x(view_camera[0])+154,camera_get_view_y(view_camera[0])+70,dHMenu[index,dindex]);
+                            break;
+                    }                    
+                    break;
+                case 1: // Бомба
+                    switch(dindex){
+                        case 0: if global.purch_bomb1 = 1 draw_text(camera_get_view_x(view_camera[0])+154,camera_get_view_y(view_camera[0])+70,dHMenu[index,dindex]);
+                            break;
+                        case 1: if global.purch_bomb2 = 1 draw_text(camera_get_view_x(view_camera[0])+154,camera_get_view_y(view_camera[0])+70,dHMenu[index,dindex]); 
+                            break;
+                        case 2: if global.purch_bomb3 = 1 draw_text(camera_get_view_x(view_camera[0])+154,camera_get_view_y(view_camera[0])+70,dHMenu[index,dindex]);
+                            break;
+                    }  
+                    break;
+                case 2: // Спарк
+                    switch(dindex){
+                        case 0: if global.purch_sparkle1 = 1 draw_text(camera_get_view_x(view_camera[0])+154,camera_get_view_y(view_camera[0])+70,dHMenu[index,dindex]);
+                            break;
+                        case 1: if global.purch_sparkle2 = 1 draw_text(camera_get_view_x(view_camera[0])+154,camera_get_view_y(view_camera[0])+70,dHMenu[index,dindex]);
+                            break;
+                        case 2: if global.purch_sparkle3 = 1 draw_text(camera_get_view_x(view_camera[0])+154,camera_get_view_y(view_camera[0])+70,dHMenu[index,dindex]);
+                            break;
+                    }  
+                    break;
+                case 3: // Попуг
+                    switch(dindex){
+                        case 0: if global.purch_eparrot1 = 1 draw_text(camera_get_view_x(view_camera[0])+154,camera_get_view_y(view_camera[0])+70,dHMenu[index,dindex]);
+                            break;
+                        case 1: if global.purch_eparrot2 = 1 draw_text(camera_get_view_x(view_camera[0])+154,camera_get_view_y(view_camera[0])+70,dHMenu[index,dindex]);
+                            break;
+                        case 2: if global.purch_eparrot3 = 1 draw_text(camera_get_view_x(view_camera[0])+154,camera_get_view_y(view_camera[0])+70,dHMenu[index,dindex]);
+                            break;
+                    }  
+                    break;
+            }
+            
+            
+            
             switch(isKeyboard)
                 {
                     case 0: 
-                        draw_text(218,130,name_use);
-                        draw_sprite_ext(spr_gp_icon,3,300,135,1,1,0,c_white,1);                    
-                        draw_text(322,130,"/");
-                        draw_sprite_ext(spr_gp_icon,9,335,135,1,1,0,c_white,1);                    
+                        draw_text(camera_get_view_x(view_camera[0])+218,camera_get_view_y(view_camera[0])+130,name_use);
+                        draw_sprite_ext(spr_gp_icon,3,camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+135,1,1,0,c_white,1);                    
+                        draw_text(camera_get_view_x(view_camera[0])+322,camera_get_view_y(view_camera[0])+130,"/");
+                        draw_sprite_ext(spr_gp_icon,9,camera_get_view_x(view_camera[0])+335,camera_get_view_y(view_camera[0])+135,1,1,0,c_white,1);                    
                         break;
                     case 1: 
-                        draw_text(218,130,name_use);
-                        draw_sprite_ext(spr_key_icon,scr_key_sprite(global.item_key),300,135,1,1,0,c_white,1); 
+                        draw_text(camera_get_view_x(view_camera[0])+218,camera_get_view_y(view_camera[0])+130,name_use);
+                        draw_sprite_ext(spr_key_icon,scr_key_sprite(global.item_key),camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+135,1,1,0,c_white,1); 
                         break;
                 }
             
@@ -359,41 +403,41 @@ switch(submenu)
 #region отрисовка апгрейдов
 
 #region Якорь			
-    if global.purch_anch1 = 1 draw_sprite(spr_icons_confirm,1,120-64,72)     
-    if global.purch_anch1 = 1 draw_sprite(spr_icons_confirm,2,152-64,72)                 
-    if global.purch_anch3 = 1 draw_sprite(spr_icons_confirm,3,184-64,72);                
+    if global.purch_anch1 = 1 draw_sprite(spr_icons_confirm,1,camera_get_view_x(view_camera[0])+120-64,camera_get_view_y(view_camera[0])+72)     
+    if global.purch_anch1 = 1 draw_sprite(spr_icons_confirm,2,camera_get_view_x(view_camera[0])+152-64,camera_get_view_y(view_camera[0])+72)                 
+    if global.purch_anch3 = 1 draw_sprite(spr_icons_confirm,3,camera_get_view_x(view_camera[0])+184-64,camera_get_view_y(view_camera[0])+72);                
 #endregion
 #region Бомба
-    if global.purch_bomb1 = 1 draw_sprite(spr_icons_confirm,4,120-64,104)    
-    if global.purch_bomb2 = 1 draw_sprite(spr_icons_confirm,5,152-64,104)
-    if global.purch_bomb3 = 1 draw_sprite(spr_icons_confirm,6,184-64,104);         
+    if global.purch_bomb1 = 1 draw_sprite(spr_icons_confirm,4,camera_get_view_x(view_camera[0])+120-64,camera_get_view_y(view_camera[0])+104)    
+    if global.purch_bomb2 = 1 draw_sprite(spr_icons_confirm,5,camera_get_view_x(view_camera[0])+152-64,camera_get_view_y(view_camera[0])+104)
+    if global.purch_bomb3 = 1 draw_sprite(spr_icons_confirm,6,camera_get_view_x(view_camera[0])+184-64,camera_get_view_y(view_camera[0])+104);         
 #endregion
 #region esparkle
-    if global.purch_sparkle1 = 1 draw_sprite(spr_icons_confirm,7,120-64,136);
-    if global.purch_sparkle2 = 1 draw_sprite(spr_icons_confirm,8,152-64,136);
-    if global.purch_sparkle3 = 1 draw_sprite(spr_icons_confirm,9,184-64,136);
+    if global.purch_sparkle1 = 1 draw_sprite(spr_icons_confirm,7,camera_get_view_x(view_camera[0])+120-64,camera_get_view_y(view_camera[0])+136);
+    if global.purch_sparkle2 = 1 draw_sprite(spr_icons_confirm,8,camera_get_view_x(view_camera[0])+152-64,camera_get_view_y(view_camera[0])+136);
+    if global.purch_sparkle3 = 1 draw_sprite(spr_icons_confirm,9,camera_get_view_x(view_camera[0])+184-64,camera_get_view_y(view_camera[0])+136);
 #endregion
 #region eparrot
-    if global.purch_eparrot1 = 1 draw_sprite(spr_icons_confirm,10,120-64,168);
-    if global.purch_eparrot2 = 1 draw_sprite(spr_icons_confirm,11,152-64,168);
-    if global.purch_eparrot3 = 1 draw_sprite(spr_icons_confirm,12,184-64,168);
+    if global.purch_eparrot1 = 1 draw_sprite(spr_icons_confirm,10,camera_get_view_x(view_camera[0])+120-64,camera_get_view_y(view_camera[0])+168);
+    if global.purch_eparrot2 = 1 draw_sprite(spr_icons_confirm,11,camera_get_view_x(view_camera[0])+152-64,camera_get_view_y(view_camera[0])+168);
+    if global.purch_eparrot3 = 1 draw_sprite(spr_icons_confirm,12,camera_get_view_x(view_camera[0])+184-64,camera_get_view_y(view_camera[0])+168);
 #endregion        
 
 #endregion
 
 #region Отрисовка подтверждения
 switch(selected){
-	case 21: draw_sprite(spr_shop_solditem,0,120-64,72); break;
-	case 22: draw_sprite(spr_shop_solditem,0,152-64,72); break;
-	case 23: draw_sprite(spr_shop_solditem,0,184-64,72); break;
-	case 31: draw_sprite(spr_shop_solditem,0,120-64,104); break;
-	case 32: draw_sprite(spr_shop_solditem,0,152-64,104); break;
-	case 33: draw_sprite(spr_shop_solditem,0,184-64,104); break;
-	case 41: draw_sprite(spr_shop_solditem,0,120-64,136);break;
-	case 42: draw_sprite(spr_shop_solditem,0,152-64,136);break;
-	case 43: draw_sprite(spr_shop_solditem,0,184-64,136);break;
-	case 51: draw_sprite(spr_shop_solditem,0,120-64,168);  break;
-	case 52: draw_sprite(spr_shop_solditem,0,152-64,168);  break;
-	case 53: draw_sprite(spr_shop_solditem,0,184-64,168); break;
+	case 21: draw_sprite(spr_shop_solditem,0,camera_get_view_x(view_camera[0])+120-64,camera_get_view_y(view_camera[0])+72); break;
+	case 22: draw_sprite(spr_shop_solditem,0,camera_get_view_x(view_camera[0])+152-64,camera_get_view_y(view_camera[0])+72); break;
+	case 23: draw_sprite(spr_shop_solditem,0,camera_get_view_x(view_camera[0])+184-64,camera_get_view_y(view_camera[0])+72); break;
+	case 31: draw_sprite(spr_shop_solditem,0,camera_get_view_x(view_camera[0])+120-64,camera_get_view_y(view_camera[0])+104); break;
+	case 32: draw_sprite(spr_shop_solditem,0,camera_get_view_x(view_camera[0])+152-64,camera_get_view_y(view_camera[0])+104); break;
+	case 33: draw_sprite(spr_shop_solditem,0,camera_get_view_x(view_camera[0])+184-64,camera_get_view_y(view_camera[0])+104); break;
+	case 41: draw_sprite(spr_shop_solditem,0,camera_get_view_x(view_camera[0])+120-64,camera_get_view_y(view_camera[0])+136);break;
+	case 42: draw_sprite(spr_shop_solditem,0,camera_get_view_x(view_camera[0])+152-64,camera_get_view_y(view_camera[0])+136);break;
+	case 43: draw_sprite(spr_shop_solditem,0,camera_get_view_x(view_camera[0])+184-64,camera_get_view_y(view_camera[0])+136);break;
+	case 51: draw_sprite(spr_shop_solditem,0,camera_get_view_x(view_camera[0])+120-64,camera_get_view_y(view_camera[0])+168);  break;
+	case 52: draw_sprite(spr_shop_solditem,0,camera_get_view_x(view_camera[0])+152-64,camera_get_view_y(view_camera[0])+168);  break;
+	case 53: draw_sprite(spr_shop_solditem,0,camera_get_view_x(view_camera[0])+184-64,camera_get_view_y(view_camera[0])+168); break;
 }	
 #endregion

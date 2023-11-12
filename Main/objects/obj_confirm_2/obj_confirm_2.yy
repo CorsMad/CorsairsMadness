@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Desert",
-    "path": "folders/Objects/Menues/MapConfirms/Desert.yy",
+    "name": "Confirms",
+    "path": "folders/Objects/Menues/MapConfirms/Confirms.yy",
   },
   "parentObjectId": null,
   "persistent": false,

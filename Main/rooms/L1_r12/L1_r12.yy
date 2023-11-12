@@ -46,6 +46,9 @@
     {"name":"inst_7176BDA2","path":"rooms/L1_r12/L1_r12.yy",},
     {"name":"inst_7CBE880F","path":"rooms/L1_r12/L1_r12.yy",},
     {"name":"inst_64D8F0F","path":"rooms/L1_r12/L1_r12.yy",},
+    {"name":"inst_4D336AB7","path":"rooms/L1_r12/L1_r12.yy",},
+    {"name":"inst_5A48D3D8","path":"rooms/L1_r12/L1_r12.yy",},
+    {"name":"inst_530442BE","path":"rooms/L1_r12/L1_r12.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -93,6 +96,9 @@
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","depth":100,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7176BDA2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lava_destruct","path":"objects/obj_lava_destruct/obj_lava_destruct.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":112.0,"y":160.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4D336AB7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lavacryst_ye_l","path":"objects/obj_lavacryst_ye_l/obj_lavacryst_ye_l.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":368.0,"y":160.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5A48D3D8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lavacryst_bl_l","path":"objects/obj_lavacryst_bl_l/obj_lavacryst_bl_l.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":336.0,"y":160.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_530442BE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lavacryst_gr_s","path":"objects/obj_lavacryst_gr_s/obj_lavacryst_gr_s.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":432.0,"y":112.0,},
       ],"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"1.15",},
         {"name":"g_ContrastBrightness","type":0,"value":"1",},
@@ -122,9 +128,6 @@
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_4486512F","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_lava_tiles","path":"sprites/spr_lava_tiles/spr_lava_tiles.yy",},"x":336.0,"y":96.0,},
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_7DCCB7AC","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_lava_tiles","path":"sprites/spr_lava_tiles/spr_lava_tiles.yy",},"x":48.0,"y":96.0,},
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_3CA9A7CE","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":1.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_lava_tiles","path":"sprites/spr_lava_tiles/spr_lava_tiles.yy",},"x":32.0,"y":96.0,},
-        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_70DCAA60","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":10.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_lava_tiles","path":"sprites/spr_lava_tiles/spr_lava_tiles.yy",},"x":368.0,"y":160.0,},
-        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_171E5C8F","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":7.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_lava_tiles","path":"sprites/spr_lava_tiles/spr_lava_tiles.yy",},"x":432.0,"y":112.0,},
-        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_6E275909","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":8.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"spriteId":{"name":"spr_lava_tiles","path":"sprites/spr_lava_tiles/spr_lava_tiles.yy",},"x":336.0,"y":160.0,},
       ],"depth":300,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"0.5",},
         {"name":"g_ContrastBrightness","type":0,"value":"0.3",},

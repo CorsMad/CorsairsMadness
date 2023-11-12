@@ -233,7 +233,11 @@
 -8,-2147483648,2,751,752,-10,-2147483648,2,751,752,-16,-2147483648,2,907,908,-10,-2147483648,2,907,908,-16,-2147483648,2,1063,1064,-10,-2147483648,2,1063,1064,
 -16,-2147483648,2,1219,1220,-10,-2147483648,2,1219,1220,-16,-2147483648,2,1375,1376,-10,-2147483648,2,1375,1376,-290,-2147483648,1,1843,-4,-2147483648,1,1845,-24,-2147483648,
 6,1999,-2147483648,1531,1532,-2147483648,2001,-42,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_sand_bgr","path":"tilesets/tls_fol_sand_bgr/tls_fol_sand_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":600,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+    {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_6E460527","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_torch","path":"sprites/spr_torch/spr_torch.yy",},"x":400.0,"y":208.0,},
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_115C6C54","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"spriteId":{"name":"spr_torch","path":"sprites/spr_torch/spr_torch.yy",},"x":80.0,"y":208.0,},
+      ],"depth":600,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":700,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"0.8",},
         {"name":"g_ContrastBrightness","type":0,"value":"0.8",},
       ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
@@ -250,7 +254,7 @@
 2034,2035,2036,2195,2196,2197,2187,2188,2226,2227,2187,2188,2187,2188,2187,2188,2187,2188,2187,2188,2187,2188,2187,2188,2187,2188,2226,2227,2187,2188,
 2190,2191,2192,2503,2504,2505,2506,2507,2508,2509,2502,2503,2504,2505,2506,2507,2508,2509,2502,2503,2504,2505,2506,2507,2508,2509,2502,2503,2504,2505,
 2506,2507,2508,-60,641,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_sand_bgr","path":"tilesets/tls_fol_sand_bgr/tls_fol_sand_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4289901234,"depth":700,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":5.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":64,"y":0,},
+    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4289901234,"depth":800,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":5.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":64,"y":0,},
   ],
   "parent": {
     "name": "PD2",

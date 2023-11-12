@@ -225,7 +225,10 @@
 1,108,-22,-2147483648,1,99,-12,-2147483648,2,95,97,-6,0,1,94,-5,0,2,113,0,-21,-2147483648,1,104,-12,-2147483648,4,95,90,91,112,-4,0,1,99,-5,0,3,118,0,0,-33,-2147483648,4,95,93,88,97,-4,0,
 1,104,-8,0,-5,-2147483648,-8,0,-20,-2147483648,4,95,93,93,97,-27,0,-17,-2147483648,6,85,87,95,93,93,97,-27,0,-19,-2147483648,8,95,88,93,97,90,111,91,112,-23,0,-19,-2147483648,8,95,93,88,97,95,88,
 88,97,-23,0,-10,-2147483648,1,110,-3,91,1,111,-3,91,9,92,95,93,93,97,95,88,93,97,-23,0,-10,-2147483648,3,95,93,88,-3,93,4,88,93,97,95,],"TileDataFormat":1,},"tilesetId":{"name":"tls_jngl_main","path":"tilesets/tls_jngl_main/tls_jngl_main.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":50,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":200,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.8",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.8",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":50,"TileCompressedData":[
 -8,-2147483648,-3,76,-2,-2147483648,1,0,-35,76,-6,-2147483648,1,73,-43,76,-5,-2147483648,2,73,78,-44,76,-3,-2147483648,2,70,78,-45,76,-3,-2147483648,1,75,-46,76,-3,-2147483648,1,75,-17,76,-6,81,1,83,-22,76,-3,-2147483648,
 2,80,83,-7,76,1,84,-7,81,1,82,-6,-2147483648,1,80,-7,81,1,83,-14,76,1,-2147483648,-3,0,5,80,81,83,76,84,-3,81,1,82,-7,0,-7,-2147483648,-3,0,-5,-2147483648,4,80,81,81,83,-11,76,
 1,-2147483648,-5,0,3,80,81,82,-11,0,-7,-2147483648,-3,0,-8,-2147483648,2,80,83,-10,76,1,-2147483648,-15,0,-11,-2147483648,-3,0,-9,-2147483648,1,75,-10,76,1,-2147483648,-21,0,-5,-2147483648,-3,0,-9,-2147483648,1,75,-10,76,1,

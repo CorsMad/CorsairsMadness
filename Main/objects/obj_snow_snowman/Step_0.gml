@@ -20,10 +20,12 @@ if instance_exists(obj_Player){
     
         var c = instance_create_depth(x,y-38,depth,obj_snow_snowman_casc);
         if obj_Player.x < x c.hspd = 1.5; else c.hspd = -1.5;
-        
-        if chanse < 10 {
-            var mon = instance_create_depth(x,y-5,depth-1,choose(obj_money1,obj_money10));
-            mon.hspd = 0;
+    
+        if give = 1{
+            if chanse < 10 {
+                var mon = instance_create_depth(x,y-5,depth-1,choose(obj_money1,obj_money10));
+                mon.hspd = 0;
+            }
         }
         
         instance_destroy()   ;

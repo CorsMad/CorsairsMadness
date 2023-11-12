@@ -8,3 +8,4 @@ eng2 = "[fnt_pixel]Let those boots help you with your exploration. And don't for
 */
 scr_text_starter(1,0.5);
 
+

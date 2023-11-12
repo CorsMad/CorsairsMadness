@@ -3,7 +3,7 @@
 
 chanse = irandom(100)
 
-
+give = 1;
 
 
 

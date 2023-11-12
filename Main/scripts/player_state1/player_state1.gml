@@ -9,6 +9,12 @@ if isDead = 0
     player_input();
 #region Conditions
 //Направление спрайта
+if place_meeting(x,y-1,obj_block){
+    lanhit = 0; 
+    lanplace = 0;
+}
+
+
 if image_xscale = 1 
 {
 	dir = 1;	

@@ -18,16 +18,16 @@ if t1 = 10
 
 // 1 - hook, 2 - teleport, 3 - superdash , 4 - doublejump, 5 - clone
 
-   // room_goto(GlobalMapPrologueJungle)
+   //room_goto(GlobalMapPrologueJungle)
    // room_goto(DI_prebossfight)
-   // room_goto(BOATEST);
+   // room_goto(Tutor1);
 
    var i = instance_create_depth(16,16,0,obj_Player);
    i.DashEnabled = 1;
    i.state = 0;
-   i.specabilnumber = 5;
+   i.specabilnumber = 4;
    i.HookEnabled = 0//1;
-   i.SpecAbilMask = 0;       
+   i.SpecAbilMask = 5;       
    instance_create_depth(16,16,101,obj_room_transition_to_loading);  
 
 }

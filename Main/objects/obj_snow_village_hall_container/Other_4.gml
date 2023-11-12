@@ -4,7 +4,7 @@
 #region указатель
 if global.dia_snowChief = 0 
 {
-    var p = instance_create_depth(160,160,0,obj_npc_village_pointer)   ;
+    var p = instance_create_depth(146,160,0,obj_npc_village_pointer)   ;
     p.village = 3;
     p.position = 1;
 }

@@ -215,18 +215,18 @@ switch(submenu)
         break;  
     case 4:
         for (var o = 0; o < global.hp_max; ++o) {  // MAX HP
-                    draw_sprite(spr_hud_heart_mana,0,152+16*o,65)
+                    draw_sprite(spr_hud_heart_mana,0,152+11*o,65)
                 }
         for (var p = 0; p < global.mana_max; ++p) {  // MAX MANA
-                    draw_sprite(spr_hud_heart_mana,1,152+16*p,97)
+                    draw_sprite(spr_hud_heart_mana,1,152+11*p,97)
                 }
     
     
         for (var m = 0; m < 5+global.hp_add; ++m) {  // MAX HP
-                    draw_sprite(spr_hud_heart,0,152+16*m,65)
+                    draw_sprite(spr_hud_heart,0,152+11*m,65)
                 }
         for (var n = 0; n < 3+global.mana_add; ++n) {  // MAX MANA
-                    draw_sprite(spr_hud_mana,0,152+16*n,97)
+                    draw_sprite(spr_hud_mana,0,152+11*n,97)
                 }
                 
                 
@@ -387,13 +387,13 @@ switch(submenu)
             else {
                 draw_sprite(spr_icons_confirm,1,120-64,72)    
             }
-	        if global.shop_axe_can_upgrade1 = 0 draw_sprite(spr_icons_confirm,0,152-64,72); 
+	        if (global.shop_axe_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava = 0)) draw_sprite(spr_icons_confirm,0,152-64,72); 
             else {
                     if global.purch_anch2 = 0 draw_sprite(spr_shop_icons_anchor,2,152-64,72)
                     else draw_sprite(spr_icons_confirm,2,152-64,72);      
                 }
             
-	        if global.shop_axe_can_upgrade2 = 0 draw_sprite(spr_icons_confirm,0,184-64,72); 
+	        if (global.shop_axe_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava < 2)) draw_sprite(spr_icons_confirm,0,184-64,72); 
             else {
                     if global.purch_anch3 = 0 draw_sprite(spr_shop_icons_anchor,3,184-64,72);
                     else draw_sprite(spr_icons_confirm,3,184-64,72);
@@ -408,13 +408,13 @@ switch(submenu)
             else {
                 draw_sprite(spr_icons_confirm,4,120-64,104)    
             }
-	        if global.shop_bomb_can_upgrade1 = 0 draw_sprite(spr_icons_confirm,0,152-64,104); 
+	        if (global.shop_bomb_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava = 0)) draw_sprite(spr_icons_confirm,0,152-64,104); 
             else {
                     if global.purch_bomb2 = 0 draw_sprite(spr_shop_icons_anchor,5,152-64,104)
                     else draw_sprite(spr_icons_confirm,5,152-64,104);      
                 }
             
-	        if global.shop_bomb_can_upgrade2 = 0 draw_sprite(spr_icons_confirm,0,184-64,104); 
+	        if (global.shop_bomb_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava < 2)) draw_sprite(spr_icons_confirm,0,184-64,104); 
             else {
                     if global.purch_bomb3 = 0 draw_sprite(spr_shop_icons_anchor,6,184-64,104);
                     else draw_sprite(spr_icons_confirm,6,184-64,104);
@@ -429,13 +429,13 @@ switch(submenu)
             else {
                 draw_sprite(spr_icons_confirm,7,120-64,136)    
             }
-	        if global.shop_sparkle_can_upgrade1 = 0 draw_sprite(spr_icons_confirm,0,152-64,136); 
+	        if (global.shop_sparkle_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava = 0)) draw_sprite(spr_icons_confirm,0,152-64,136); 
             else {
                     if global.purch_sparkle2 = 0 draw_sprite(spr_shop_icons_anchor,8,152-64,136)
                     else draw_sprite(spr_icons_confirm,8,152-64,136);      
                 }
             
-	        if global.shop_sparkle_can_upgrade2 = 0 draw_sprite(spr_icons_confirm,0,184-64,136); 
+	        if (global.shop_sparkle_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava < 2)) draw_sprite(spr_icons_confirm,0,184-64,136); 
             else {
                     if global.purch_sparkle3 = 0 draw_sprite(spr_shop_icons_anchor,9,184-64,136);
                     else draw_sprite(spr_icons_confirm,9,184-64,136);
@@ -450,13 +450,13 @@ switch(submenu)
             else {
                 draw_sprite(spr_icons_confirm,10,120-64,168)    
             }
-	        if global.shop_eparrot_can_upgrade1 = 0 draw_sprite(spr_icons_confirm,0,152-64,168); 
+	        if (global.shop_eparrot_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava = 0)) draw_sprite(spr_icons_confirm,0,152-64,168); 
             else {
                     if global.purch_eparrot2 = 0 draw_sprite(spr_shop_icons_anchor,11,152-64,168)
                     else draw_sprite(spr_icons_confirm,11,152-64,168);      
                 }
             
-	        if global.shop_eparrot_can_upgrade2 = 0 draw_sprite(spr_icons_confirm,0,184-64,168); 
+	        if (global.shop_eparrot_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava < 2)) draw_sprite(spr_icons_confirm,0,184-64,168); 
             else {
                     if global.purch_eparrot3 = 0 draw_sprite(spr_shop_icons_anchor,12,184-64,168);
                     else draw_sprite(spr_icons_confirm,12,184-64,168);
@@ -512,13 +512,13 @@ switch(submenu)
             else {
                 draw_sprite(spr_icons_confirm,14,120-64,72)    
             }
-	        if global.shop_rapidfire_can_upgrade1 = 0 draw_sprite(spr_icons_confirm,0,152-64,72); 
+	        if (global.shop_rapidfire_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava = 0)) draw_sprite(spr_icons_confirm,0,152-64,72); 
             else {
                     if global.purch_rapidfire2 = 0 draw_sprite(spr_shop_icons_anchor,15,152-64,72)
                     else draw_sprite(spr_icons_confirm,14,152-64,72);      
                 }
             
-	        if global.shop_rapidfire_can_upgrade2 = 0 draw_sprite(spr_icons_confirm,0,184-64,72); 
+	        if (global.shop_rapidfire_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava < 2)) draw_sprite(spr_icons_confirm,0,184-64,72); 
             else {
                     if global.purch_rapidfire3 = 0 draw_sprite(spr_shop_icons_anchor,16,184-64,72);
                     else draw_sprite(spr_icons_confirm,14,184-64,72);
@@ -533,13 +533,13 @@ switch(submenu)
             else {
                 draw_sprite(spr_icons_confirm,16,120-64,104)    
             }
-	        if global.shop_dualpistols_can_upgrade1 = 0 draw_sprite(spr_icons_confirm,0,152-64,104); 
+	        if (global.shop_dualpistols_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava = 0)) draw_sprite(spr_icons_confirm,0,152-64,104); 
             else {
                     if global.purch_dualpistols2 = 0 draw_sprite(spr_shop_icons_anchor,17,152-64,104)
                     else draw_sprite(spr_icons_confirm,17,152-64,104);      
                 }
             
-	        if global.shop_dualpistols_can_upgrade2 = 0 draw_sprite(spr_icons_confirm,0,184-64,104); 
+	        if (global.shop_dualpistols_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava < 2)) draw_sprite(spr_icons_confirm,0,184-64,104); 
             else {
                     if global.purch_dualpistols3 = 0 draw_sprite(spr_shop_icons_anchor,18,184-64,104);
                     else draw_sprite(spr_icons_confirm,18,184-64,104);
@@ -554,13 +554,13 @@ switch(submenu)
             else {
                 draw_sprite(spr_icons_confirm,19,120-64,136)    
             }
-	        if global.shop_blunderbuss_can_upgrade1 = 0 draw_sprite(spr_icons_confirm,0,152-64,136); 
+	        if (global.shop_blunderbuss_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava = 0)) draw_sprite(spr_icons_confirm,0,152-64,136); 
             else {
                     if global.purch_blunderbuss2 = 0 draw_sprite(spr_shop_icons_anchor,20,152-64,136)
                     else draw_sprite(spr_icons_confirm,20,152-64,136);      
                 }
             
-	        if global.shop_blunderbuss_can_upgrade2 = 0 draw_sprite(spr_icons_confirm,0,184-64,136); 
+	        if (global.shop_blunderbuss_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava < 2)) draw_sprite(spr_icons_confirm,0,184-64,136); 
             else {
                     if global.purch_blunderbuss3 = 0 draw_sprite(spr_shop_icons_anchor,21,184-64,136);
                     else draw_sprite(spr_icons_confirm,21,184-64,136);
@@ -575,13 +575,13 @@ switch(submenu)
             else {
                 draw_sprite(spr_icons_confirm,22,120-64,168)    
             }
-	        if global.shop_parrotcage_can_upgrade1 = 0 draw_sprite(spr_icons_confirm,0,152-64,168); 
+	        if (global.shop_parrotcage_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava = 0)) draw_sprite(spr_icons_confirm,0,152-64,168); 
             else {
                     if global.purch_parrotcage2 = 0 draw_sprite(spr_shop_icons_anchor,23,152-64,168)
                     else draw_sprite(spr_icons_confirm,23,152-64,168);      
                 }
             
-	        if global.shop_parrotcage_can_upgrade2 = 0 draw_sprite(spr_icons_confirm,0,184-64,168); 
+	        if (global.shop_parrotcage_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava < 2)) draw_sprite(spr_icons_confirm,0,184-64,168); 
             else {
                     if global.purch_parrotcage3 = 0 draw_sprite(spr_shop_icons_anchor,24,184-64,168);
                     else draw_sprite(spr_icons_confirm,24,184-64,168);

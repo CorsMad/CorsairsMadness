@@ -83,9 +83,13 @@
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR2","depth":400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -11,-2147483648,2,905,906,-28,-2147483648,2,1061,1062,-28,-2147483648,2,1217,1218,-28,-2147483648,2,1373,1374,-28,-2147483648,2,1529,1530,-28,-2147483648,2,1685,1686,
 -28,-2147483648,2,1841,1842,-28,-2147483648,2,1997,1998,-207,-2147483648,3,2155,2156,2157,-27,-2147483648,3,2311,2312,2313,-47,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_snow_bgr","path":"tilesets/tls_fol_snow_bgr/tls_fol_snow_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":500,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+    {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_5A659D3B","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"spriteId":{"name":"spr_torch","path":"sprites/spr_torch/spr_torch.yy",},"x":160.0,"y":208.0,},
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_1889E232","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"spriteId":{"name":"spr_torch","path":"sprites/spr_torch/spr_torch.yy",},"x":112.0,"y":48.0,},
+      ],"depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":600,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"0.8",},
-        {"name":"g_ContrastBrightness","type":0,"value":"0.7",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.8",},
       ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -90,1095,27,668,475,476,477,478,479,480,481,482,483,484,485,486,667,668,475,476,477,478,479,480,481,482,483,484,485,486,
 -3,-2147483648,27,824,631,632,633,634,635,636,637,638,639,640,641,642,823,824,631,632,633,634,635,636,637,638,639,640,641,642,
@@ -100,7 +104,7 @@
 -3,-2147483648,27,2228,2187,2188,2191,2192,2193,2194,2195,2196,2197,2198,2187,2188,2227,2228,2187,2188,2200,2201,2202,2203,2204,2205,2206,2207,2187,2188,
 -3,0,24,2503,2504,2505,2506,2507,2508,2509,2510,2503,2504,2505,2506,2507,2508,2509,2510,2503,2504,2505,2506,2507,2508,2509,2510,-6,0,-23,
 1095,-7,0,-23,1095,-7,0,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_snow_bgr","path":"tilesets/tls_fol_snow_bgr/tls_fol_snow_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4289901234,"depth":600,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":5.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":64,"y":0,},
+    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4289901234,"depth":700,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":5.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":64,"y":0,},
   ],
   "parent": {
     "name": "PS1",

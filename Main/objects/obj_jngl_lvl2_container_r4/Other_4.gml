@@ -9,8 +9,3 @@ if global.secretpass_j2_r4 = 1
 
 
 
-if global.TargetRoom = J2_r4 && !instance_exists(obj_checkpoint_projectile)
-{
-    var ch_off = instance_create_depth(256,112,0,obj_checkpoint_projectile);
-    ch_off.isOn = 2;
-} else instance_create_depth(256,112,0,obj_checkpoint_projectile);

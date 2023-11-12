@@ -29,9 +29,6 @@ if global.dia_lavaChief = 0
     var p1 = instance_create_depth(64,144,0,obj_npc_village_pointer)   ;
     p1.village = 5;
     p1.position = 1;
-    var p2 = instance_create_depth(416,144,0,obj_npc_village_pointer)   ;
-    p2.village = 5;
-    p2.position = 1;
 }
 
 

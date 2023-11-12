@@ -31,9 +31,7 @@ if talk_cr_t!= 0
         switch(global.completed_PD2)
         {
             case 0:
-                if (global.dia_desertChief = 0 && global.dia_desertMerch = 0) instance_create_depth(x,y,-100000,obj_txt_desertv_merch1); // Отправить к вождю
-                if (global.dia_desertChief = 1 && global.dia_desertMerch = 0) instance_create_depth(x,y,-100000,obj_txt_desertv_merch2); // Первый разговор
-                if (global.dia_desertMerch = 1 && global.dia_desertChief = 1) instance_create_depth(x,y,-100000,obj_npc_desertv_merch_choose); // Последующие разговоры
+                instance_create_depth(x,y,-100000,obj_npc_desertv_merch_choose); // Последующие разговоры
                 break;
             case 1:
                 switch(global.dia_desertMerch_f_talk)

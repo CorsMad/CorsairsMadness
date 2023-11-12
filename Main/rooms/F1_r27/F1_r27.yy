@@ -165,7 +165,10 @@
 -49,-2147483648,2,48,49,-22,-2147483648,2,50,51,-20,-2147483648,2,64,65,-22,-2147483648,2,66,67,-20,-2147483648,2,80,81,-22,-2147483648,2,82,83,-20,-2147483648,2,96,97,-22,-2147483648,2,98,99,-20,-2147483648,2,112,113,-22,
 -2147483648,2,114,115,-20,-2147483648,2,128,129,-22,-2147483648,2,130,131,-20,-2147483648,2,144,145,-22,-2147483648,2,146,147,-20,-2147483648,2,160,161,-22,-2147483648,2,162,163,-8,-2147483648,3,224,225,227,-9,-2147483648,2,176,177,-22,
 -2147483648,2,178,179,-8,-2147483648,3,240,241,243,-9,-2147483648,2,192,193,-22,-2147483648,2,194,195,-51,-2147483648,1,227,-17,-2147483648,3,244,245,246,-25,-2147483648,1,243,-195,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol1_furniture","path":"tilesets/tls_fol1_furniture/tls_fol1_furniture.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":46,"TileSerialiseData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":500,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.7",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.7",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":46,"TileSerialiseData":[
 541,542,543,544,545,546,547,548,603,604,605,606,607,608,609,610,601,602,603,604,605,606,607,608,609,610,601,602,603,604,605,606,607,608,609,610,601,602,603,604,605,606,607,608,609,610,
 603,604,605,606,607,608,609,610,485,486,481,482,483,484,485,486,477,478,479,480,481,482,483,484,485,486,477,478,479,480,481,482,483,484,485,486,477,478,479,480,481,482,483,484,485,486,
 539,540,541,542,543,544,545,546,547,548,543,544,545,546,547,548,539,540,541,542,543,544,545,546,547,548,539,540,541,542,543,544,545,546,547,548,539,540,541,542,543,544,545,546,547,548,

@@ -4,7 +4,7 @@
 
 fnc_lng_level_confirm2();
 index = 0;
-submenu = 0;
+submenu = 1;
 dindex = 0;
 dsubmenu = 0;
 itemprice = "";

@@ -1,1 +1,0 @@
-TargetRoom = PS2_r10;

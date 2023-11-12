@@ -12,38 +12,11 @@ if key_skip
     
     if scr_t > scr_t_max 
     {
-        obj_npc_desertv_npc1.talk = 0;
-        obj_Player.isDead = 2.1;       
+        
+        instance_create_depth(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),depth-1000,obj_npc_desertv_npc1_map);
+        global.dia_dnpc = 1;
         instance_destroy();   
     } 
 }
 
 #endregion
-/*
-
-
-player_input();
-
-if key_jump || key_attack 
-{
-    var _len = string_length(text[0,text_current]);
-if (char_current < _len)
-    {
-    char_current = _len;
-    }
-    else
-    {
-    text_current += 1;
-    if (text_current > text_last)
-        {
-        obj_npc_junglev_npc1.talk = 0;
-        obj_Player.isDead = 2.1;
-        instance_destroy();
-        }
-    else
-        {
-        text[0,text_current] = string_wrap(text[0,text_current], text_width);
-        char_current = 0;
-        }
-    }
-}

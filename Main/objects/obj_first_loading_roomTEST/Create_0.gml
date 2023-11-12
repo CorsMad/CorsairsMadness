@@ -4,15 +4,29 @@ randomise();
 global.TargetX      = 128;
 //global.TargetY      =240784;
 global.TargetY      = 240;
-global.TargetRoom   = TESTROOM;
+global.TargetRoom   = Village_lava;
 
 
-global.fTargetX     = 48;
-global.fTargetY     = 240;
-global.fTargetRoom  = PL1_r3;
+global.fTargetX     = 464;
+global.fTargetY     = 608;
+global.fTargetRoom  = PS1_r9;
 
 
+///////////////////* CHANGES Внести изменения в launch и saveload /////////////////////
 
+global.dia_jnpc = 0;
+global.dia_dnpc = 0;
+global.dia_snpc = 0;
+global.dia_gnpc = 0;
+global.dia_lnpc = 0;
+
+global.dia_hpmana_jake   = 0;
+global.dia_hpmana_pew    = 0;
+global.dia_hpmana_sully  = 0;
+global.dia_hpmana_petro  = 0;
+global.dia_hpmana_bonnie = 0;
+
+///////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -39,6 +53,13 @@ global.language = 0;
     global.completed_PL1 = 0;
     global.completed_PL2 = 0;
         
+        
+    global.completedJungle = 0;    
+    global.completedDesert = 0;    
+    global.completedSnow = 0;    
+    global.completedShadow = 0;    
+    global.completedLava = 0;    
+        
     #endregion
     
 #region ТЕСТ
@@ -46,14 +67,14 @@ global.language = 0;
     //0
     global.dia_jungleChief = 0; 
     global.dia_desertChief = 0;
-    global.dia_snowChief = 1;
+    global.dia_snowChief = 0;
     global.dia_shadowChief = 0;
     global.dia_lavaChief = 0;
     
     //0
     global.dia_jungleMerch = 0; 
     global.dia_desertMerch = 0; 
-    global.dia_snowMerch = 1;     
+    global.dia_snowMerch = 0;     
     global.dia_shadowMerch = 0; 
     global.dia_lavaMerch = 0; 
     
@@ -64,12 +85,18 @@ global.language = 0;
     global.dia_shadowComt = 2; 
     global.dia_lavaComt = 2;
      
-    //0 
-    global.saved_jungle = 1;
-    global.saved_desert = 1;
-    global.saved_snow = 1;
-    global.saved_shadow = 1;
-    global.saved_vulcano = 1;
+    //0
+    
+    global.saved_jungle = 0;
+    global.saved_desert = 0;
+    global.saved_snow = 0;
+    global.saved_shadow = 0;
+    global.saved_vulcano = 0;
+    
+    
+    
+    
+    
     
     //0
     global.dia_jungleMerch_f_talk = 0;
@@ -77,6 +104,14 @@ global.language = 0;
     global.dia_snowMerch_f_talk = 0;
     global.dia_shadowMerch_f_talk = 0;
     global.dia_vulcanoMerch_f_talk = 0;
+
+    //0
+    global.dia_jake = 0;
+    global.dia_pew = 0;
+    global.dia_sully = 0;
+    global.dia_petro = 0;
+    global.dia_bonnie = 0;
+
 
 #endregion
 
@@ -121,21 +156,21 @@ global.shop_parrotcage_can_upgrade2 = 0;
 #region Покупки человека
 
 //якорь
-global.purch_anch1 = 1;
-global.purch_anch2 = 1;
-global.purch_anch3 = 1;
+global.purch_anch1 = 0;
+global.purch_anch2 = 0;
+global.purch_anch3 = 0;
 // Бомба
 global.purch_bomb1 = 1;
 global.purch_bomb2 = 1;
-global.purch_bomb3 = 1;
+global.purch_bomb3 = 0;
 // Sparkle
 global.purch_sparkle1 = 1;
 global.purch_sparkle2 = 1;
-global.purch_sparkle3 = 1;
+global.purch_sparkle3 = 0;
 // Eparrot
-global.purch_eparrot1 = 1;
-global.purch_eparrot2 = 1;
-global.purch_eparrot3 = 1;
+global.purch_eparrot1 = 0;
+global.purch_eparrot2 = 0;
+global.purch_eparrot3 = 0;
 
 #endregion
 
@@ -166,8 +201,8 @@ global.purch_parrotcage3 = 0;
 
 
 #region Игрок
-global.hp = 5;           // 4
-global.hp_max = 5;       // 4
+global.hp = 5;           // 5
+global.hp_max = 5;       // 5
 global.hp_add = 0;       // 0
 global.mana_add = 0;       // 0
 global.choosed_item = 5; // 2 -тоорп // 3 - бомба // 4 - eball // 5 - parrot 
@@ -178,7 +213,7 @@ global.superattack1 = 0;// Суператаки  max 2  default - 0
 global.superattack2 = 0;// Суператаки  max 1  default - 0
 global.superattack3 = 0;// Суператаки  max 1  default - 0
 global.PlayerTransition = 0;
-global.mana = 6000000//3;
+global.mana = 3//3;
 global.mana_max = 3;
 global.gold = 10000 //global.money_saved;          // 0
 global.gold_prelevel = 0;

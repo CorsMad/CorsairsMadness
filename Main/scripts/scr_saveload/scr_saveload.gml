@@ -73,6 +73,12 @@ var _saveStorage =
     dia_shadowMerch_f_talk   :  global.dia_shadowMerch_f_talk      ,
     dia_vulcanoMerch_f_talk  :  global.dia_vulcanoMerch_f_talk     ,
     
+    dia_jake                 :  global.dia_jake                    ,
+    dia_pew                  :  global.dia_pew                     ,
+    dia_sully                :  global.dia_sully                   ,
+    dia_petro                :  global.dia_petro                   ,
+    dia_bonnie               :  global.dia_bonnie                  ,
+
 
     
     //Ключи
@@ -160,6 +166,12 @@ var _saveStorage =
     
     completed_PL1 : global.completed_PL1,
     completed_PL2 : global.completed_PL2,
+    
+    completedJungle   : global.completedJungle  ,
+    completedDesert   : global.completedDesert  ,
+    completedSnow     : global.completedSnow    ,
+    completedShadow   : global.completedShadow  ,
+    completedLava     : global.completedLava    ,
     
     // Важные Катсцены
     
@@ -409,36 +421,36 @@ function scr_load_progress(){
             global.dia_snowChief              = _loadStorage.dia_snowChief           ;
             global.dia_shadowChief            = _loadStorage.dia_shadowChief         ;
             global.dia_lavaChief              = _loadStorage.dia_lavaChief           ;
-                                                                                     ;
-                                                                                     ;
+                                                                                     
             global.dia_jungleMerch            = _loadStorage.dia_jungleMerch         ;
             global.dia_desertMerch            = _loadStorage.dia_desertMerch         ;
             global.dia_snowMerch              = _loadStorage.dia_snowMerch           ;
             global.dia_shadowMerch            = _loadStorage.dia_shadowMerch         ;
             global.dia_lavaMerch              = _loadStorage.dia_lavaMerch           ;
-                                                                                     ;
-                                                                                     ;
+                                                                                     
             global.dia_jungleComt             = _loadStorage.dia_jungleComt          ;
             global.dia_desertComt             = _loadStorage.dia_desertComt          ;
             global.dia_snowComt               = _loadStorage.dia_snowComt            ;
             global.dia_shadowComt             = _loadStorage.dia_shadowComt          ;
             global.dia_lavaComt               = _loadStorage.dia_lavaComt            ;
-                                                                                     ;
-                                                                                     ;
+                                                                                     
             global.saved_jungle               = _loadStorage.saved_jungle            ;
             global.saved_desert               = _loadStorage.saved_desert            ;
             global.saved_snow                 = _loadStorage.saved_snow              ;
             global.saved_shadow               = _loadStorage.saved_shadow            ;
             global.saved_vulcano              = _loadStorage.saved_vulcano           ;
-                                                                                     ;
-                                                                                     ;
+                                                                                     
             global.dia_jungleMerch_f_talk     = _loadStorage.dia_jungleMerch_f_talk  ;
             global.dia_desertMerch_f_talk     = _loadStorage.dia_desertMerch_f_talk  ;
             global.dia_snowMerch_f_talk       = _loadStorage.dia_snowMerch_f_talk    ;
             global.dia_shadowMerch_f_talk     = _loadStorage.dia_shadowMerch_f_talk  ;
             global.dia_vulcanoMerch_f_talk    = _loadStorage.dia_vulcanoMerch_f_talk ;
     
-
+            global.dia_jake                   = _loadStorage.dia_jake                ;
+            global.dia_pew                    = _loadStorage.dia_pew                 ;
+            global.dia_sully                  = _loadStorage.dia_sully               ;
+            global.dia_petro                  = _loadStorage.dia_petro               ;
+            global.dia_bonnie                 = _loadStorage.dia_bonnie              ;
             
             
             //Ключи
@@ -532,6 +544,12 @@ function scr_load_progress(){
             
             global.completed_PL1 = _loadStorage.completed_PL1;
             global.completed_PL2 = _loadStorage.completed_PL2;
+            
+            global.completedJungle  = _loadStorage.completedJungle ;
+            global.completedDesert  = _loadStorage.completedDesert ;
+            global.completedSnow    = _loadStorage.completedSnow   ;
+            global.completedShadow  = _loadStorage.completedShadow ;
+            global.completedLava    = _loadStorage.completedLava   ;
             
             // Катсцены
             
@@ -750,6 +768,7 @@ function scr_save_settings(){
         dash_key   : global.dash_key   ,
         item_key   : global.item_key   ,
         abil_key   : global.abil_key   ,
+        select_key : global.select_key ,
         
         #endregion
         
@@ -809,7 +828,7 @@ if file_exists("CMsettings.save")
         global.dash_key   =  _loadStorageSet.dash_key   ;
         global.item_key   =  _loadStorageSet.item_key   ;
         global.abil_key   =  _loadStorageSet.abil_key   ;
-        
+        global.select_key =  _loadStorageSet.select_key ;
         #endregion
         
         #region Language

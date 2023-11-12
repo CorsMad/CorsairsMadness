@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "EnemiesDrop",
-    "path": "folders/Objects/Level objects/Collectables/Gold/EnemiesDrop.yy",
+    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/!Jungle/Lvl1/Collectables/Gold/EnemiesDrop.yy",
   },
   "parentObjectId": {
     "name": "obj_money",

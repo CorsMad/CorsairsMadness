@@ -10,21 +10,8 @@ if key_skip
     if scr_t > scr_t_max 
     {        
         obj_npc_junglev_comt.talk = 0;
-        obj_Player.isDead = 2.1;          
+        obj_Player.isDead = 2.1;   
+        global.dia_jungleComt = 0;
         instance_destroy();   
     } 
-}
-/*
-if key_attack
-{
-    if typist.get_state() != 1 {typist.skip();} else scr_t++;
-    
-    // выход
-    
-    if scr_t > 1 
-    {      
-        obj_npc_junglev_comt.talk = 0;
-        obj_Player.isDead = 2.1;
-        instance_destroy();   
-    }
 }

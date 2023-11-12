@@ -234,7 +234,11 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     KBControlChange = 1;
                     delay = 1;
                     break; 
-                case 9:      
+                case 9:
+                    KBControlChange = 1;
+                    delay = 1;
+                    break; 
+                case 10:      
                     global.left_key = vk_left;
                     pk_left = fnc_keyboard_key_change(vk_left);
                     global.right_key = vk_right;
@@ -253,8 +257,10 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     pk_use_item = fnc_keyboard_key_change(ord("S"));
                     global.abil_key = ord("A");
                     pk_use_abil = fnc_keyboard_key_change(ord("A")); 
+                    global.select_key = ord("D");
+                    pk_weapon_select = fnc_keyboard_key_change(ord("D")); 
                     break;                       
-                case 10:                
+                case 11:                
                     global.left_key = (ord("A"));
                     pk_left = fnc_keyboard_key_change(ord("A"));
                     global.right_key = (ord("D"));
@@ -273,9 +279,11 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     pk_use_item = fnc_keyboard_key_change(ord("I"));                          
                     global.abil_key = ord("U");
                     pk_use_abil = fnc_keyboard_key_change(ord("U")); 
+                    global.select_key = ord("O");
+                    pk_weapon_select = fnc_keyboard_key_change(ord("O")); 
 
                     break;  
-                case 11:
+                case 12:
                     submenu = 3;
                     index = 0;
                     break;  
@@ -418,6 +426,10 @@ if KBControlChange = 1 && delay >= 4 &&
         case 8:
             pk_use_abil = fnc_keyboard_key_change(keyboard_lastkey); 
             global.abil_key = keyboard_lastkey;
+            break;
+        case 9:
+            pk_weapon_select = fnc_keyboard_key_change(keyboard_lastkey); 
+            global.select_key = keyboard_lastkey;
             break;
     }
     

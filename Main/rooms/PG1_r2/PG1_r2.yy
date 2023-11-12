@@ -118,7 +118,11 @@
 -2147483648,1,1061,-9,-2147483648,1,1061,-3,-2147483648,1,1061,-18,-2147483648,1,1217,-3,-2147483648,1,1217,-9,-2147483648,1,1217,-3,-2147483648,1,1217,-18,-2147483648,1,1373,-3,-2147483648,1,1373,-9,-2147483648,
 1,1373,-3,-2147483648,1,1373,-18,-2147483648,1,1529,-3,-2147483648,1,1529,-9,-2147483648,1,1529,-3,-2147483648,1,1529,-18,-2147483648,1,1685,-3,-2147483648,1,1685,-9,-2147483648,1,1685,-3,-2147483648,1,
 1685,-39,-2147483648,2,0,2000,-155,-2147483648,3,1997,1998,1999,-142,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_shadow_pos_bgr","path":"tilesets/tls_shadow_pos_bgr/tls_shadow_pos_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":8,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":500,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+    {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_47FF54CA","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_torch","path":"sprites/spr_torch/spr_torch.yy",},"x":96.0,"y":176.0,},
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_67A36204","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_torch","path":"sprites/spr_torch/spr_torch.yy",},"x":480.0,"y":96.0,},
+      ],"depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":600,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"1.3",},
         {"name":"g_ContrastBrightness","type":0,"value":"1",},
       ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":37,"TileSerialiseData":[
@@ -140,7 +144,7 @@
 1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,
 1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,
 ],},"tilesetId":{"name":"tls_shadow_pos_bgr","path":"tilesets/tls_shadow_pos_bgr/tls_shadow_pos_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4289901234,"depth":600,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":5.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":64,"y":0,},
+    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4289901234,"depth":700,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":5.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":64,"y":0,},
   ],
   "parent": {
     "name": "PG1",

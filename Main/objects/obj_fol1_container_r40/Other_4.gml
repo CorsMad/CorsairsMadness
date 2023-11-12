@@ -11,4 +11,3 @@ var i = instance_create_depth(1280,64,0,obj_follower_grounded_creator);
 i.x_cr = 1200;
 i.image_yscale = 14;
 
-instance_create_depth(0,0,0,obj_dc_onl_f1r40);

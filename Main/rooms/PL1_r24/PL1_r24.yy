@@ -70,7 +70,7 @@
 -24,-2147483648,6,2155,0,2157,2158,-2147483648,2156,-131,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_lava_pos_bgr","path":"tilesets/tls_lava_pos_bgr/tls_lava_pos_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":600,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"0.5",},
-        {"name":"g_ContrastBrightness","type":0,"value":"0.3",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.35",},
       ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileSerialiseData":[
 1095,1096,1095,1096,1095,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,1096,1095,
 1251,1252,1251,1252,1251,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,1252,1251,

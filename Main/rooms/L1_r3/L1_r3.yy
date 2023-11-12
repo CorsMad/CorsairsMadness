@@ -89,6 +89,7 @@
     {"name":"inst_4FF2FFB6","path":"rooms/L1_r3/L1_r3.yy",},
     {"name":"inst_5111CE39","path":"rooms/L1_r3/L1_r3.yy",},
     {"name":"inst_79D626D7","path":"rooms/L1_r3/L1_r3.yy",},
+    {"name":"inst_63AB202A","path":"rooms/L1_r3/L1_r3.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -179,6 +180,7 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","depth":100,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5111CE39","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lava_destruct","path":"objects/obj_lava_destruct/obj_lava_destruct.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":304.0,"y":160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_79D626D7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":1,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lava_destruct","path":"objects/obj_lava_destruct/obj_lava_destruct.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":560.0,"y":160.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_63AB202A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lavacryst_ye_l","path":"objects/obj_lavacryst_ye_l/obj_lavacryst_ye_l.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":768.0,"y":224.0,},
       ],"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"1.15",},
         {"name":"g_ContrastBrightness","type":0,"value":"1",},

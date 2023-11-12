@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_village_npc_pointer",
-    "path": "sprites/spr_village_npc_pointer/spr_village_npc_pointer.yy",
+    "name": "spr_npc_questmark",
+    "path": "sprites/spr_npc_questmark/spr_npc_questmark.yy",
   },
   "spriteMaskId": null,
   "visible": true,

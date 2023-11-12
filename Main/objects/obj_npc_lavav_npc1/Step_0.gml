@@ -85,10 +85,43 @@ if talk_cr_t!= 0
     if talk_cr_t = 10
     {
         talk_cr_t = 0;
-        if global.dia_lavaChief = 0 instance_create_depth(x,y,-100000,obj_txt_lavav_npc1_1);
-        if global.dia_lavaChief = 1 instance_create_depth(x,y,-100000,obj_txt_lavav_npc1_2);
+        
+        switch(global.dia_lavaChief){
+            case 0: instance_create_depth(x,y,-100000,obj_txt_lavav_npc1_1); break;                         
+            default:  
+                switch(global.chest_l2p_r4){
+                    case 1: // если еще не взял секрет
+                                    switch(global.dia_lnpc){ // не говорил/говорил 1 раз
+                                        case 0: instance_create_depth(x,y,-100000,obj_txt_lavav_npc1_2); break;                                                           
+                                        case 1: instance_create_depth(x,y,-100000,obj_txt_lavav_npc1_3); break;                                                                                 
+                                    }                       
+                        break;
+                    case 0: // если взял секрет
+                                    switch(global.dia_lnpc){
+                                        case 0: instance_create_depth(x,y,-100000,obj_txt_lavav_npc1_5); break;
+                                        case 1: instance_create_depth(x,y,-100000,obj_txt_lavav_npc1_4); break;
+                                        case 2: instance_create_depth(x,y,-100000,obj_txt_lavav_npc1_6); break;                                           
+                                    } 
+                        break;
+                }           
+                break;       
+        } 
         
     }
+}
+#endregion
+
+#region Знак доп.квеста
+if (global.dia_lavaChief) != 0 {   
+    switch(global.chest_l2p_r4){
+        case 1:
+            if global.dia_lnpc = 0  qm.image_index = 1;
+            if global.dia_lnpc = 1  qm.image_index = 2;
+            break;
+        case 0:
+            if global.dia_lnpc = 2 qm.image_index = 0; else qm.image_index = 3;
+            break;
+    }                        
 }
 #endregion
 
@@ -101,6 +134,3 @@ if place_meeting(x,y,obj_Player) && obj_Player.isDead != 2
 
 #endregion
 
-#region Anim
-
-#endregion

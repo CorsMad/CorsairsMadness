@@ -64,7 +64,7 @@ if talk = 1
 
 if instance_exists(obj_Player)
 {
-    if place_meeting(x,y,obj_Player) && talk_cr_t = 0 && obj_Player.isDead !=2 && obj_Player.key_up_press && obj_Player.isGrounded = 1 && obj_Player.isAttacking = 0 && obj_Player.isDashing = 0 && obj_Player.isAttackingdown = 0 && obj_Player.isAirattacking = 0 && obj_Player.isUsingitem = 0
+    if place_meeting(x,y,obj_Player) && (global.dia_jnpc < 3 || (global.secrets_j1_s1 = 1 && global.completed_JF2= 1)) && talk_cr_t = 0 && obj_Player.isDead !=2 && obj_Player.key_up_press && obj_Player.isGrounded = 1 && obj_Player.isAttacking = 0 && obj_Player.isDashing = 0 && obj_Player.isAttackingdown = 0 && obj_Player.isAirattacking = 0 && obj_Player.isUsingitem = 0
     {
         talk = 1;
         obj_Player.isDead = 2;
@@ -85,22 +85,93 @@ if talk_cr_t!= 0
     if talk_cr_t = 10
     {
         talk_cr_t = 0;
-        if global.dia_jungleChief = 0 instance_create_depth(x,y,-100000,obj_txt_junglev_npc1_1);
-        if global.dia_jungleChief = 1 instance_create_depth(x,y,-100000,obj_txt_junglev_npc1_2);
         
+        switch(global.dia_jungleChief){
+            case 0: 
+                instance_create_depth(x,y,-100000,obj_txt_junglev_npc1_1);
+                break;
+            default:
+            
+                switch(global.completed_JF2){
+                   case 0:
+                        switch(global.dia_jnpc){
+                            case 0:
+                                instance_create_depth(x,y,-100000,obj_txt_junglev_npc1_2);
+                                break;
+                            case 1:
+                                instance_create_depth(x,y,-100000,obj_txt_junglev_npc1_3);
+                                break;
+                            case 2:
+                                instance_create_depth(x,y,-100000,obj_txt_junglev_npc1_4);
+                                break;
+                        }      
+                        break;
+                   case 1:
+                        if global.secrets_j1_s1 = 0{
+                            switch(global.dia_jnpc){
+                                case 0:
+                                    instance_create_depth(x,y,-100000,obj_txt_junglev_npc1_2);
+                                    break;
+                                case 1:
+                                    instance_create_depth(x,y,-100000,obj_txt_junglev_npc1_3);
+                                    break;
+                                case 2:
+                                    instance_create_depth(x,y,-100000,obj_txt_junglev_npc1_4);
+                                    break;
+                            }        
+                        } else {
+                            switch(global.dia_jnpc){
+                                case 0:
+                                    instance_create_depth(x,y,-100000,obj_txt_junglev_npc1_2);
+                                    break;
+                                case 1:
+                                    instance_create_depth(x,y,-100000,obj_txt_junglev_npc1_3);
+                                    break;
+                                case 2:
+                                    instance_create_depth(x,y,-100000,obj_txt_junglev_npc1_4);
+                                    break;   
+                                case 3:
+                                    instance_create_depth(x,y,-100000,obj_txt_junglev_npc1_5);
+                                    break; 
+                            }
+                        }
+                        break;
+                }       
+                break;
+        }             
     }
 }
+
 #endregion
 
 #region Иконка
 
-if place_meeting(x,y,obj_Player) && obj_Player.isDead != 2
+if place_meeting(x,y,obj_Player) && obj_Player.isDead != 2 && (global.dia_jnpc < 3 || (global.secrets_j1_s1 = 1 && global.completed_JF2= 1) )
 {
     pointer.on = 1;   
 } else pointer.on = 0;
 
 #endregion
 
-#region Anim
+#region Anim quest
+
+if (global.dia_jungleChief) != 0 {
+
+        switch(global.dia_jnpc){
+            case 0:
+                qm.image_index = 1;
+                break;
+            case 1:
+                qm.image_index = 2;
+                break;
+            case 2:
+                qm.image_index = 3;
+                break;
+            case 3:
+                qm.image_index = 0;
+                break;
+        }                   
+
+}
 
 #endregion

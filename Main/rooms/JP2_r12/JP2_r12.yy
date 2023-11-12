@@ -74,6 +74,7 @@
     {"name":"inst_3515A641","path":"rooms/JP2_r12/JP2_r12.yy",},
     {"name":"inst_25E91891","path":"rooms/JP2_r12/JP2_r12.yy",},
     {"name":"inst_43B518F7","path":"rooms/JP2_r12/JP2_r12.yy",},
+    {"name":"inst_6896BE05","path":"rooms/JP2_r12/JP2_r12.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -145,6 +146,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3515A641","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_vase_s3","path":"objects/obj_vase_s3/obj_vase_s3.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":448.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_25E91891","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_vase_s2","path":"objects/obj_vase_s2/obj_vase_s2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":448.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_43B518F7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_vase_s1","path":"objects/obj_vase_s1/obj_vase_s1.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":368.0,"y":448.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6896BE05","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_tp_death_counter","path":"objects/obj_tp_death_counter/obj_tp_death_counter.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":-59.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":29,"SerialiseWidth":30,"TileCompressedData":[
 -38,-2147483648,-7,0,-20,-2147483648,-10,0,-20,-2147483648,-10,0,-20,-2147483648,-10,0,-18,-2147483648,-12,0,-15,-2147483648,-16,0,-14,-2147483648,-16,0,-14,-2147483648,
@@ -172,7 +174,10 @@
 162,163,-28,-2147483648,2,178,179,-28,-2147483648,2,194,195,-7,-2147483648,3,203,204,205,-27,-2147483648,3,219,220,221,-5,-2147483648,2,215,216,-20,
 -2147483648,3,235,236,237,-5,-2147483648,2,231,232,-5,-2147483648,1,226,-3,-2147483648,1,227,-10,-2147483648,3,251,252,253,-5,-2147483648,2,247,248,-5,
 -2147483648,5,242,244,245,246,243,-38,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol1_furniture","path":"tilesets/tls_fol1_furniture/tls_fol1_furniture.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":29,"SerialiseWidth":30,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":400,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.7",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.7",},
+      ],"tiles":{"SerialiseHeight":29,"SerialiseWidth":30,"TileCompressedData":[
 24,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,10,11,9,10,1,2,3,4,5,-4,24,25,10,11,
 4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,10,11,9,10,1,2,3,4,-4,24,26,86,10,11,124,
 125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,-4,86,363,24,124,125,186,187,
@@ -189,7 +194,10 @@
 4,5,6,7,8,9,10,11,8,9,10,11,2,3,4,5,6,7,8,9,10,11,900,901,902,1,2,3,933,934,
 935,936,937,938,939,940,941,942,943,944,945,946,947,948,949,950,951,952,953,954,955,956,957,958,959,960,961,962,-420,-2147483648,
 ],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol1_bgr_up","path":"tilesets/tls_fol1_bgr_up/tls_fol1_bgr_up.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":8,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_5","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":29,"SerialiseWidth":30,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_5","depth":500,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.7",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.7",},
+      ],"tiles":{"SerialiseHeight":29,"SerialiseWidth":30,"TileCompressedData":[
 -450,-2147483648,420,930,931,932,933,934,935,936,937,938,939,940,941,942,943,944,945,946,947,948,949,950,951,952,953,954,955,956,
 957,958,959,135,136,137,138,139,140,141,142,143,144,145,146,280,281,282,124,125,126,127,128,129,130,131,132,133,134,135,
 136,137,138,197,198,199,200,201,202,203,204,205,206,207,208,342,343,344,186,187,188,189,190,191,192,193,194,195,196,197,

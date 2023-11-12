@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Gold boat",
-    "path": "folders/Objects/Level objects/Collectables/Gold/Gold boat.yy",
+    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/!Jungle/Lvl1/Collectables/Gold/Gold boat.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -111,7 +111,7 @@ if submenu = 4
 
 if submenu = 31
 {
-    for (var k = 0; k < 9; ++k) {
+    for (var k = 0; k < 10; ++k) {
         if submenu = 31 && KBControlChange = 1
         {
             if index == k draw_line_color(280,44+16*k,320,44+16*k,c_red,c_red) else draw_line_color(280,44+16*k,320,44+16*k,c_white,c_white)          
@@ -130,6 +130,7 @@ if submenu = 31
     if (index = 6 && KBControlChange = 1) draw_text_color(300,32+16*6,"<...>",c_red,c_red,c_red,c_red,1) else draw_text_color(300,32+16*6,string(pk_dash),c_white,c_white,c_white,c_white,1);
     if (index = 7 && KBControlChange = 1) draw_text_color(300,32+16*7,"<...>",c_red,c_red,c_red,c_red,1) else draw_text_color(300,32+16*7,string(pk_use_item),c_white,c_white,c_white,c_white,1);
     if (index = 8 && KBControlChange = 1) draw_text_color(300,32+16*8,"<...>",c_red,c_red,c_red,c_red,1) else draw_text_color(300,32+16*8,string(pk_use_abil),c_white,c_white,c_white,c_white,1);
+    if (index = 9 && KBControlChange = 1) draw_text_color(300,32+16*9,"<...>",c_red,c_red,c_red,c_red,1) else draw_text_color(300,32+16*9,string(pk_weapon_select),c_white,c_white,c_white,c_white,1);
     
 /*
     draw_text(300,32+16*0,string(pk_up));

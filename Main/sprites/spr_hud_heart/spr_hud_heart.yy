@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_hud_heart",
-  "bbox_bottom": 13,
+  "bbox_bottom": 9,
   "bbox_left": 0,
-  "bbox_right": 13,
+  "bbox_right": 9,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -18,7 +18,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 14,
+  "height": 10,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e199a3d1-7212-4723-a23e-50018acc85a7","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"90108677-a7b7-4d0f-ae4e-462bca5f8f03","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},},},"Disabled":false,"id":"da7aab41-3e3b-4876-bfb1-dc5d076360c1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0873efd5-9e4f-4bc1-8916-dc657a80564c","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},},},"Disabled":false,"id":"e28fdc27-b1a4-4642-9ad0-e0c422399c00","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"90108677-a7b7-4d0f-ae4e-462bca5f8f03","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},},},"Disabled":false,"id":"8131559d-8fa4-4721-a478-53b9e1abd684","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0873efd5-9e4f-4bc1-8916-dc657a80564c","path":"sprites/spr_hud_heart/spr_hud_heart.yy",},},},"Disabled":false,"id":"3160e41a-b676-4b85-b0bc-c9f932b3bb83","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -72,5 +72,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 14,
+  "width": 10,
 }

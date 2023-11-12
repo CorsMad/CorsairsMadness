@@ -2,11 +2,7 @@
 // You can write your code in this editor
 
 player_input();
-var sl = keyboard_check_pressed(vk_left)
-var sr = keyboard_check_pressed(vk_right)
-var su = keyboard_check_pressed(vk_up)
-var sd = keyboard_check_pressed(vk_down)
-var saccept = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)
+
 image_index = select;
 
 
@@ -14,10 +10,10 @@ if t < 10 t++;
 
 if t > 5
 {
-    if ((key_left  || sl) && select = 1)  {select = 0;;fnc_snd_play_over(snd_menu_select);} 
-    if ((key_right || sr) && select = 0)  {select = 1;;fnc_snd_play_over(snd_menu_select);} 
+    if ((key_left ) && select = 1)  {select = 0;;fnc_snd_play_over(snd_menu_select);} 
+    if ((key_right) && select = 0)  {select = 1;;fnc_snd_play_over(snd_menu_select);} 
     
-    if key_jump || key_attack || saccept
+    if key_jump || key_attack 
     {
         switch(select)
         {

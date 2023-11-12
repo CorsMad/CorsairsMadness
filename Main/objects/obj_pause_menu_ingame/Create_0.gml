@@ -128,6 +128,7 @@ pk_attack = fnc_keyboard_key_change(global.attack_key);
 pk_dash = fnc_keyboard_key_change(global.dash_key);
 pk_use_item = fnc_keyboard_key_change(global.item_key);
 pk_use_abil = fnc_keyboard_key_change(global.abil_key);
+pk_weapon_select = fnc_keyboard_key_change(global.select_key);
 
 
 delay = 0;

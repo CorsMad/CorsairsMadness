@@ -15,5 +15,8 @@ if place_meeting(x,y,obj_Player)
 	instance_create_depth(x,y,depth-1,obj_sfx2);
 	global.secrets_j1_s1 = 1;
 	global.secrets +=1;
+    
+    if global.dia_jnpc = 0 global.dia_jnpc = 3 else global.dia_jnpc = 2;
+    
 	instance_destroy();
 }

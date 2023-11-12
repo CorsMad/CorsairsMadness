@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Gold destr",
-    "path": "folders/Objects/Level objects/Collectables/Gold/Gold destr.yy",
+    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/!Jungle/Lvl1/Collectables/Gold/Gold destr.yy",
   },
   "parentObjectId": {
     "name": "obj_money",

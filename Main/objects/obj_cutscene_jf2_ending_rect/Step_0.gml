@@ -6,6 +6,7 @@ if a > 100
     alpha += 0.01;
     if alpha >= 1 
     {
+        global.dia_jungleChief = 2;
         room_goto(JP2_ending);
         instance_destroy(obj_Player);
         instance_destroy();	

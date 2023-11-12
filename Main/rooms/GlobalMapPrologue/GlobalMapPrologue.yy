@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "GlobalMapPrologue",
-  "creationCodeFile": "${project_dir}/rooms/GlobalMapPrologue/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/GlobalMapPrologue/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

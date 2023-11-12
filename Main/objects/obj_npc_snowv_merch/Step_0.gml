@@ -31,9 +31,7 @@ if talk_cr_t!= 0
         switch(global.completed_PS2)
         {
             case 0:
-                if (global.dia_snowChief = 0 && global.dia_snowMerch = 0) instance_create_depth(x,y,-100000,obj_txt_snowv_merch1); // Отправить к вождю
-                if (global.dia_snowChief = 1 && global.dia_snowMerch = 0) instance_create_depth(x,y,-100000,obj_txt_snowv_merch2); // Первый разговор
-                if (global.dia_snowMerch = 1 && global.dia_snowChief = 1) instance_create_depth(x,y,-100000,obj_npc_snowv_merch_choose); // Последующие разговоры
+                instance_create_depth(x,y,-100000,obj_npc_snowv_merch_choose); // Последующие разговоры
                 break;
             case 1:
                 switch(global.dia_snowMerch_f_talk)

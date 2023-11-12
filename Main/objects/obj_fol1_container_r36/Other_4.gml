@@ -7,4 +7,3 @@ i.x_cr = 576;
 i.image_xscale = 2;
 i.image_yscale = 8;
 
-instance_create_depth(0,0,0,obj_dc_onl_f1r36);

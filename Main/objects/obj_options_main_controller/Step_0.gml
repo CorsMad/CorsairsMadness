@@ -3,6 +3,7 @@
 menu_input()
 audio_group_set_gain(MusicVolume,global.MSCvolume,0);
 audio_group_set_gain(SFXvolume,global.SFXvolume,0);
+
 #region переключатель
 
 if confirm_input_change != 1

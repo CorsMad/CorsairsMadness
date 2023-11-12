@@ -121,6 +121,7 @@ if submenu = 31
     if (index = 6 && KBControlChange = 1) draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*6),"<...>",c_red,c_red,c_red,c_red,1); else draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*6),string(pk_dash),c_white,c_white,c_white,c_white,1);
     if (index = 7 && KBControlChange = 1) draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*7),"<...>",c_red,c_red,c_red,c_red,1); else draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*7),string(pk_use_item),c_white,c_white,c_white,c_white,1);
     if (index = 8 && KBControlChange = 1) draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*8),"<...>",c_red,c_red,c_red,c_red,1); else draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*8),string(pk_use_abil),c_white,c_white,c_white,c_white,1);
+    if (index = 9 && KBControlChange = 1) draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*9),"<...>",c_red,c_red,c_red,c_red,1); else draw_text_color(camera_get_view_x(view_camera[0])+300,camera_get_view_y(view_camera[0])+(32+16*9),string(pk_weapon_select),c_white,c_white,c_white,c_white,1);
 }
 
 

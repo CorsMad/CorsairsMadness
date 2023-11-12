@@ -13,7 +13,8 @@ if key_skip
     if scr_t > scr_t_max 
     {
         obj_npc_pew_village.talk = 0;
-        obj_Player.isDead = 2.1;       
+        instance_create_depth(0,0,-9999999,obj_hpmax_gain_BIGgift_ctsn);
+        instance_create_depth(obj_npc_pew_village.x,obj_npc_pew_village.y-64,depth-1,obj_hpmax_gain_BIGgift);     
         instance_destroy();   
     } 
 }

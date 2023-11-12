@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Dark Essence",
-    "path": "folders/Objects/Level objects/Collectables/Dark Essence.yy",
+    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/!Jungle/Lvl1/Collectables/Dark Essence.yy",
   },
   "parentObjectId": {
     "name": "obj_objects_delete",

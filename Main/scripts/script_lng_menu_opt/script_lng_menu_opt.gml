@@ -4,7 +4,7 @@ switch(global.language)
 {
     case 0: //English
         #region
-             #region Разное
+            #region Разное
 
             confirm_eng = @"do you want to start new game ?
 all previous progress will be lost";
@@ -56,9 +56,10 @@ all previous progress will be lost";
             menu[31, 6] = "dash";
             menu[31, 7] = "item";
             menu[31, 8] = "spec ability";
-            menu[31, 9] = "default 1";
-            menu[31, 10] = "default 2";
-            menu[31, 11] = "\nback";
+            menu[31, 9] = "weapon select";
+            menu[31, 10] = "default 1";
+            menu[31, 11] = "default 2";
+            menu[31, 12] = "back";
 
             menu[32, 0] = "\n\n\n\n\n\n\nback";
 
@@ -1177,9 +1178,10 @@ function fnc_lng_pause_ingame(){
             menu[31, 6] = "dash";
             menu[31, 7] = "item";
             menu[31, 8] = "spec ability";
-            menu[31, 9] = "default 1";
-            menu[31, 10] = "default 2";
-            menu[31, 11] = "\nback";
+            menu[31, 9] = "weapon select";
+            menu[31, 10] = "default 1";
+            menu[31, 11] = "default 2";
+            menu[31, 12] = "back";
 
             menu[32, 0] = "\n\n\n\n\n\n\nback";
 
@@ -2321,9 +2323,10 @@ function fnc_lng_pause_junglecourse(){
             menu[31, 6] = "dash";
             menu[31, 7] = "item";
             menu[31, 8] = "spec ability";
-            menu[31, 9] = "default 1";
-            menu[31, 10] = "default 2";
-            menu[31, 11] = "\nback";
+            menu[31, 9] = "weapon select";
+            menu[31, 10] = "default 1";
+            menu[31, 11] = "default 2";
+            menu[31, 12] = "back";
 
             menu[32, 0] = "\n\n\n\n\n\n\nback";
 
@@ -3435,9 +3438,10 @@ menu[31, 5] = "attack";
 menu[31, 6] = "dash";
 menu[31, 7] = "item";
 menu[31, 8] = "spec ability";
-menu[31, 9] = "default 1";
-menu[31, 10] = "default 2";
-menu[31, 11] = "\nback";
+menu[31, 9] = "weapon select";
+menu[31, 10] = "default 1";
+menu[31, 11] = "default 2";
+menu[31, 12] = "back";
 
 menu[32, 0] = "\n\n\n\n\n\n\nback";
 #endregion

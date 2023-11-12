@@ -23,7 +23,6 @@
     {"name":"inst_50C7098D","path":"rooms/L2_boss/L2_boss.yy",},
     {"name":"inst_36F5CFDF","path":"rooms/L2_boss/L2_boss.yy",},
     {"name":"inst_26B35796","path":"rooms/L2_boss/L2_boss.yy",},
-    {"name":"inst_7BF8E121","path":"rooms/L2_boss/L2_boss.yy",},
     {"name":"inst_74B2AB54","path":"rooms/L2_boss/L2_boss.yy",},
   ],
   "isDnd": false,
@@ -48,7 +47,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_50C7098D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_boss_l2_right_rock","path":"objects/obj_boss_l2_right_rock/obj_boss_l2_right_rock.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":432.0,"y":256.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_36F5CFDF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_boss_l2_tower_floor_left","path":"objects/obj_boss_l2_tower_floor_left/obj_boss_l2_tower_floor_left.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":225.0,"y":104.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_26B35796","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_boss_l2_tower_floor_right","path":"objects/obj_boss_l2_tower_floor_right/obj_boss_l2_tower_floor_right.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":255.0,"y":104.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7BF8E121","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_boss_l2_phase1","path":"objects/obj_boss_l2_phase1/obj_boss_l2_phase1.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":240.0,"y":96.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_4","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -25,7,1,8,-3,0,1,6,-25,7,1,8,-3,0,2,6,27,-24,10,1,11,-3,0,2,6,8,-28,0,2,6,

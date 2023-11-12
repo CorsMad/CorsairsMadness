@@ -121,7 +121,10 @@
 -15,-2147483648,2,64,65,-36,-2147483648,2,80,81,-5,-2147483648,2,50,51,-29,-2147483648,2,96,97,-5,-2147483648,2,66,67,-29,-2147483648,2,112,113,-5,-2147483648,2,82,83,-29,-2147483648,2,
 128,129,-5,-2147483648,2,98,99,-29,-2147483648,2,144,145,-5,-2147483648,2,114,115,-29,-2147483648,2,160,161,-5,-2147483648,2,130,131,-29,-2147483648,2,176,177,-5,-2147483648,2,146,147,-29,
 -2147483648,2,192,193,-5,-2147483648,2,162,163,-36,-2147483648,2,178,179,-36,-2147483648,2,194,195,-95,-2147483648,1,227,-34,-2147483648,4,244,245,246,243,-108,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol1_furniture","path":"tilesets/tls_fol1_furniture/tls_fol1_furniture.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":38,"TileSerialiseData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":500,"effectEnabled":true,"effectType":"_filter_contrast","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.7",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.7",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":38,"TileSerialiseData":[
 761,762,763,764,765,766,767,760,761,762,763,764,765,766,767,760,761,762,763,764,765,766,767,760,761,762,763,764,765,766,767,760,761,762,763,764,765,766,
 823,824,825,826,827,828,829,822,823,824,825,826,827,828,829,822,823,824,825,826,827,828,829,822,823,824,825,826,827,828,829,822,823,824,825,826,827,828,
 885,886,887,888,889,890,891,884,885,886,887,888,889,890,891,884,885,886,887,888,889,890,891,884,885,886,887,888,889,890,891,884,885,886,887,888,889,890,

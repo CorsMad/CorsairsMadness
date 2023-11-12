@@ -31,9 +31,7 @@ if talk_cr_t!= 0
         switch(global.completed_PG2)
         {
             case 0:
-                if (global.dia_shadowChief = 0 && global.dia_shadowMerch = 0) instance_create_depth(x,y,-100000,obj_txt_shadowv_merch1); // Отправить к вождю
-                if (global.dia_shadowChief = 1 && global.dia_shadowMerch = 0) instance_create_depth(x,y,-100000,obj_txt_shadowv_merch2); // Первый разговор
-                if (global.dia_shadowMerch = 1 && global.dia_shadowChief = 1) instance_create_depth(x,y,-100000,obj_npc_shadowv_merch_choose); // Последующие разговоры
+                instance_create_depth(x,y,-100000,obj_npc_shadowv_merch_choose); // Последующие разговоры
                 break;
             case 1:
                 switch(global.dia_shadowMerch_f_talk)

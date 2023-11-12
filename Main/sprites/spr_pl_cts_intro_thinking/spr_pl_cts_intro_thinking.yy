@@ -3,9 +3,9 @@
   "resourceVersion": "1.0",
   "name": "spr_pl_cts_intro_thinking",
   "bbox_bottom": 127,
-  "bbox_left": 53,
+  "bbox_left": 51,
   "bbox_right": 88,
-  "bbox_top": 93,
+  "bbox_top": 85,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1c34a74e-fd7c-4df6-ad7d-6c1c59d61850",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"88b703ad-76f3-4049-ae23-d7788deb46fa",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 128,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"52cff3a0-f718-4443-a6f0-cf3df1b0f899","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ed5134f9-2a11-4df4-a475-d5b8b4e8355e","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1c34a74e-fd7c-4df6-ad7d-6c1c59d61850","path":"sprites/spr_pl_cts_intro_thinking/spr_pl_cts_intro_thinking.yy",},},},"Disabled":false,"id":"c95998c9-55c9-4f57-9596-6ae636c3cb4a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"88b703ad-76f3-4049-ae23-d7788deb46fa","path":"sprites/spr_pl_cts_intro_thinking/spr_pl_cts_intro_thinking.yy",},},},"Disabled":false,"id":"67516663-aa65-40e7-9a48-3a67c3299150","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

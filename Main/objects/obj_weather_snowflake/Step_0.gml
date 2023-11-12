@@ -1,7 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
-x+=hspd;
+
 y+=vspd;
+x+=hspd;
+
+
+
+
 if state = 0{	
 	if place_meeting(x,y,obj_block){
 		state =1;

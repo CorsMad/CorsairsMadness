@@ -21,10 +21,9 @@
     {"name":"inst_6D94AC6B","path":"rooms/J1_r18/J1_r18.yy",},
     {"name":"inst_7FB3752D","path":"rooms/J1_r18/J1_r18.yy",},
     {"name":"inst_7EC66A0C","path":"rooms/J1_r18/J1_r18.yy",},
-    {"name":"inst_24CB50CE","path":"rooms/J1_r18/J1_r18.yy",},
-    {"name":"inst_210D5442","path":"rooms/J1_r18/J1_r18.yy",},
     {"name":"inst_1171680","path":"rooms/J1_r18/J1_r18.yy",},
     {"name":"inst_4F876BF2","path":"rooms/J1_r18/J1_r18.yy",},
+    {"name":"inst_76C99B99","path":"rooms/J1_r18/J1_r18.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -43,10 +42,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6D94AC6B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":14.0,"x":64.0,"y":160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7FB3752D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"properties":[],"rotation":0.0,"scaleX":3.0,"scaleY":1.0,"x":16.0,"y":368.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7EC66A0C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"properties":[],"rotation":0.0,"scaleX":5.0,"scaleY":1.0,"x":208.0,"y":-64.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_24CB50CE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_jngl_lvl1_container_r18","path":"objects/obj_jngl_lvl1_container_r18/obj_jngl_lvl1_container_r18.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":80.0,"y":0.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_210D5442","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_checkpoint_j1_r18","path":"objects/obj_checkpoint_j1_r18/obj_checkpoint_j1_r18.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.1860465,"x":144.0,"y":144.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1171680","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_room_transition_vertical","path":"objects/obj_room_transition_vertical/obj_room_transition_vertical.yy",},"properties":[],"rotation":0.0,"scaleX":3.4,"scaleY":1.0,"x":32.0,"y":288.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4F876BF2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pause_controller","path":"objects/obj_pause_controller/obj_pause_controller.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_76C99B99","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_checkpoint_NEW","path":"objects/obj_checkpoint_NEW/obj_checkpoint_NEW.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":144.0,"y":144.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 2,97,95,-10,93,1,97,-3,-2147483648,2,0,95,-12,93,3,97,95,88,-3,93,7,88,93,88,93,88,93,97,-3,-2147483648,
@@ -62,7 +60,10 @@
 93,93,88,-4,93,1,97,-3,0,17,95,106,105,93,107,88,107,106,93,106,88,93,97,95,93,93,107,-9,93,1,
 97,-3,0,19,95,88,105,105,93,106,93,93,88,105,93,88,97,95,105,105,88,106,106,-7,93,1,97,-3,0,16,
 95,93,107,93,106,93,93,107,93,105,93,93,97,95,107,106,-10,93,],"TileDataFormat":1,},"tilesetId":{"name":"tls_jngl_main","path":"tilesets/tls_jngl_main/tls_jngl_main.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":200,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.8",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.8",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -10,-2147483648,2,76,-2147483648,-5,76,-11,-2147483648,-2,0,-7,-2147483648,-3,76,1,-2147483648,-6,76,-11,-2147483648,-2,0,-17,76,-11,-2147483648,-2,0,-17,
 76,-10,-2147483648,-3,0,-17,76,-10,-2147483648,-3,0,-17,76,-10,-2147483648,-3,0,2,80,83,-16,76,-9,-2147483648,-3,0,4,-2147483648,80,81,
 83,-14,76,-9,-2147483648,-3,0,5,-2147483648,0,0,80,83,-12,76,-10,-2147483648,-3,0,1,-2147483648,-4,0,-7,76,-2,0,-3,76,-10,

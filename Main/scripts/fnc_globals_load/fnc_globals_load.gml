@@ -147,6 +147,7 @@ function fnc_settings_load()
     global.dash_key = ord("C");
     global.item_key = ord("S");
     global.abil_key = ord("A");
+    global.select_key = ord("D");
 
     #endregion  
     

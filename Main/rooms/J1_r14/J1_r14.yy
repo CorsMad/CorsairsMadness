@@ -85,7 +85,10 @@
 95,106,107,97,90,91,91,111,-6,91,6,111,91,91,92,91,90,-6,91,3,111,91,91,],"TileDataFormat":1,},"tilesetId":{"name":"tls_jngl_main","path":"tilesets/tls_jngl_main/tls_jngl_main.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":34,"SerialiseWidth":60,"TileCompressedData":[
 -1325,-2147483648,-42,2,1,3,-59,-2147483648,1,1,-59,-2147483648,1,1,-59,-2147483648,1,1,-59,-2147483648,1,1,-59,-2147483648,1,1,-59,-2147483648,1,1,-59,-2147483648,1,1,-6,0,-53,-2147483648,1,4,-12,2,-180,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_bomb_wires","path":"tilesets/tls_bomb_wires/tls_bomb_wires.yy",},"userdefinedDepth":false,"visible":true,"x":4,"y":4,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":300,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":300,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"0.8",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.8",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -5,-2147483648,-5,76,1,-2147483648,-10,76,1,-2147483648,-5,76,3,-2147483648,0,0,-3,-2147483648,1,80,-24,76,-2,0,-4,-2147483648,2,80,83,-22,
 76,-2,0,-5,-2147483648,1,75,-22,76,-2,0,-5,-2147483648,2,80,83,-23,76,-6,-2147483648,2,80,83,-22,76,-7,-2147483648,2,80,83,
 -21,76,1,-2147483648,-7,0,2,80,83,-20,76,1,-2147483648,-8,0,2,80,83,-19,76,1,-2147483648,-9,0,2,80,83,-18,76,1,

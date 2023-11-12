@@ -35,9 +35,7 @@ if talk_cr_t!= 0
     if talk_cr_t = 10
     {
         talk_cr_t = 0;
-        if global.dia_snowChief = 0 instance_create_depth(x,y,-100000,obj_txt_snowv_npc2_1);
-        if global.dia_snowChief = 1 instance_create_depth(x,y,-100000,obj_txt_snowv_npc2_2);
-        
+        if instance_exists(obj_snow_snowman) instance_create_depth(x,y,-100000,obj_txt_snowv_npc2_1); else instance_create_depth(x,y,-100000,obj_txt_snowv_npc2_2);   
     }
 }
 #endregion

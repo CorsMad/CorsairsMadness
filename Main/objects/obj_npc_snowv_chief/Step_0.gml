@@ -8,7 +8,7 @@
 
 if instance_exists(obj_Player)
 {
-    if place_meeting(x,y,obj_Player) && talk_cr_t = 0 && obj_Player.isDead !=2 && obj_Player.key_up_press && obj_Player.isGrounded = 1 && obj_Player.isAttacking = 0 && obj_Player.isDashing = 0 && obj_Player.isAttackingdown = 0 && obj_Player.isAirattacking = 0 && obj_Player.isUsingitem = 0
+    if place_meeting(x,y,obj_Player) && (global.dia_snowChief = 0 || global.dia_snowChief = 2) && talk_cr_t = 0 && obj_Player.isDead !=2 && obj_Player.key_up_press && obj_Player.isGrounded = 1 && obj_Player.isAttacking = 0 && obj_Player.isDashing = 0 && obj_Player.isAttackingdown = 0 && obj_Player.isAirattacking = 0 && obj_Player.isUsingitem = 0
     {
         talk = 1;
         obj_Player.isDead = 2;
@@ -30,11 +30,8 @@ if talk_cr_t!= 0
     {
         talk_cr_t = 0;
         
-        if global.completed_PS2 = 0 {
-            if global.dia_snowChief = 0 instance_create_depth(x,y,-100000,obj_txt_snowv_chief1);
-            if global.dia_snowChief = 1 instance_create_depth(x,y,-100000,obj_txt_snowv_chief2);
-        } else instance_create_depth(x,y,-100000,obj_txt_snowv_chief3);
-
+        if global.dia_snowChief = 0 instance_create_depth(x,y,-100000,obj_txt_snowv_chief1);
+        if global.dia_snowChief = 2 instance_create_depth(x,y,-100000,obj_txt_snowv_chief2);
     }
 }
 #endregion
@@ -42,7 +39,7 @@ if talk_cr_t!= 0
 
 #region Иконка
 
-if place_meeting(x,y,obj_Player) && obj_Player.isDead != 2
+if place_meeting(x,y,obj_Player) && obj_Player.isDead != 2 && (global.dia_snowChief = 0 || global.dia_snowChief = 2)
 {
     pointer.on = 1;   
 } else pointer.on = 0;

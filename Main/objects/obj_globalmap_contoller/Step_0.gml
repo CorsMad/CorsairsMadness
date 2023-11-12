@@ -1,11 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 kb_gp_input_check();
-var sl = keyboard_check_pressed(vk_left)
-var sr = keyboard_check_pressed(vk_right)
-var su = keyboard_check_pressed(vk_up)
-var sd = keyboard_check_pressed(vk_down)
-var saccept = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)
+
 player_input();
 
 // возможность управления
@@ -19,36 +15,36 @@ if t > 5 && !instance_exists(obj_global_map_confirm)
 switch(island)
 {
     case 0:
-        if key_up_press      || su      {island = 4;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
-        if key_right_press   || sr      {island = 2;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
-        if key_down_pressed  || sd      {island = 1;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_up_press         {island = 4;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_right_press      {island = 2;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_down_pressed     {island = 1;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
         break;
     case 1:
-        if key_left_press    || sl       {island = 0;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
-        if key_right_press   || sr       {island = 2;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
-        if key_up_press      || su       {island = 3;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_left_press        {island = 0;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_right_press       {island = 2;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_up_press          {island = 3;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
         break;
     case 2:
-        if key_up_press      || su     {island = 3;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
-        if key_left_press    || sl     {island = 0;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
-        if key_down_pressed  || sd     {island = 1;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_up_press        {island = 3;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_left_press      {island = 0;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_down_pressed    {island = 1;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
         break;
     case 3:
-        if key_left_press    || sl     {island = 4;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
-        if key_right_press   || sr     {island = 2;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
-        if key_down_pressed  || sd     {island = 1;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_left_press      {island = 4;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_right_press     {island = 2;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_down_pressed    {island = 1;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
         break;
     case 4:
-        if key_left_press    || sl     {island = 0;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
-        if key_right_press   || sr     {island = 3;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
-        if key_down_pressed  || sd     {island = 1;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_left_press      {island = 0;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_right_press     {island = 3;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
+        if key_down_pressed    {island = 1;OutlinerAlpha_t=0;fnc_snd_play_over(snd_menu_select);}
         break;
 }
 
 #endregion
 
 #region Выбор острова
-if key_jump || key_attack || saccept
+if key_jump || key_attack 
 {
     switch(island)
     {

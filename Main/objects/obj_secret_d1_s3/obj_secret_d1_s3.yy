@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "D1",
-    "path": "folders/Objects/Level objects/Collectables/Secrets/!Master/!Desert/D1.yy",
+    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/!Jungle/Lvl1/Collectables/Secrets/!Master/!Desert/D1.yy",
   },
   "parentObjectId": null,
   "persistent": false,

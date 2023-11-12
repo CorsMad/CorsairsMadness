@@ -69,6 +69,13 @@
     global.dia_shadowMerch_f_talk = 0;
     global.dia_vulcanoMerch_f_talk = 0;
     
+    //0
+    global.dia_jake    = 0;
+    global.dia_pew     = 0;
+    global.dia_sully   = 0;
+    global.dia_petro   = 0;
+    global.dia_bonnie  = 0;
+    
     #endregion
 
     #region ключи
@@ -198,6 +205,11 @@
     global.completed_PL1 = 0;
     global.completed_PL2 = 0;
     
+    global.completedJungle = 0;
+    global.completedDesert = 0;
+    global.completedSnow   = 0;
+    global.completedShadow = 0;
+    global.completedLava   = 0;
     #endregion
     
     #region Важные катсцены 

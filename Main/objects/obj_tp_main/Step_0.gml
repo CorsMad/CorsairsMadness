@@ -138,5 +138,17 @@ switch(num)
             if obj_Player.tp > 8 && obj_Player.tp < 11 isOn = 1;   
         }
         break;
+    case 6:
+        if instance_exists(obj_Player)
+        {
+            if obj_Player.tp > 10 && obj_Player.tp < 13 isOn = 1;   
+        }
+        break;
+    case 7:
+        if instance_exists(obj_Player)
+        {
+            if obj_Player.tp > 12 && obj_Player.tp < 15 isOn = 1;   
+        }
+        break;
 }
 #endregion
