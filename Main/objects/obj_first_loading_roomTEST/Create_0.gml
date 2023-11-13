@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 randomise();
-global.TargetX      = 128;
+global.TargetX      = 48;
 //global.TargetY      =240784;
-global.TargetY      = 240;
-global.TargetRoom   = Village_lava;
+global.TargetY      = 144;
+global.TargetRoom   = DI_h_r3;
 
 
 global.fTargetX     = 464;
