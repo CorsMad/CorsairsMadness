@@ -3,7 +3,7 @@ function scr_txt_jungle_merchant1(){
     {
         case 0: //English  
             #region  ENG text
-            eng1 = choose("[fnt_pixel]Maybe talk to a chief first?","[fnt_pixel]I advise you to go to the chief.");
+            text0 = "[fnt_pixel]Why don't you go to the [c_red]chief[/c] first, and then we'll chat."
             #endregion
             break;
         case 1: //russian
@@ -64,13 +64,14 @@ function scr_txt_jungle_merchant2(){
     {
         case 0: //English  
             #region  ENG text
-            eng1 = "[fnt_pixel]Well, I'm glad you got here safely. I knew you were the one for me. Heh heh...";
-            eng2 = "[fnt_pixel]As you can see, there's a lot of interesting things in my shop. I'd sell you anything for the right price. Speaking of money.";
-            eng3 = "[fnt_pixel]You might find some green coins along the way, be sure to collect them-they're very valuable, you know. For example, you can give them to me, and I'll make you stronger";
-            eng4 = "[fnt_pixel]Also, I saw you in action in that underground temple. You'll be able to drop dark essence from some of your enemies. Depending on your actions, your style rating will go up and more essence will drop out!";
-            eng5 = "[fnt_pixel]Later on I will be able to exchange it for your training.";
-            eng6 = "[fnt_pixel]At this point, I bid you farewell. My dear friend, captain, I'm sure you'll manage to save your crew and come back safe and sound. Good luck on your journey!";
-            eng7 = "[fnt_pixel]In the meantime, here's a memo to help you figure out your battles.";
+            text0 = "[fnt_pixel]Well, finally we can chat. Your name's Sam, right? ";
+            text1 = "[fnt_pixel]Sometimes other pirates come into our waters to bury their treasure."
+            text2 = "[fnt_pixel]I suggest you keep your eyes open and look for vulnerable spots in the walls. In the chests you will find various [c_yellow]crystals[/c] and [c_yellow]coins[/c]. Bring them to me and we can bargain."
+            text3 = "[fnt_pixel]However, you can find more than treasures here. There are [c_green]6 green coins[/c] hidden on each of our islands and [c_green]one coin[/c on special arenas."
+            text4 = "[fnt_pixel]You can exchange them for additional [c_red]health[/c] and [c_blue]mana[/c]."
+            text5 = "[fnt_pixel]And by knocking the spirit out of enemies in the temple you will get [c_grey]dark essence[/c]. You can exchange it with me for super moves."
+            text6 = "[fnt_pixel]That's all I've got, you can go find your friends."
+            text7 = "[fnt_pixel]In the meantime, here's a memo to help you understand your battles."
             #endregion
             break;
         case 1: //russian
@@ -191,7 +192,7 @@ function scr_txt_jungle_merchant3(){
     {
         case 0: //English  
             #region  ENG text
-            eng1 = choose("[fnt_pixel]Well, what are you waiting for? Just go. I said good luck on your journey!","[fnt_pixel]Tick-tock, the clock is ticking. Go save the team. Good luck!");
+            text0 = choose("[fnt_pixel]It's an interesting place. It's warm, peaceful.","[fnt_pixel]Look around carefully. There's a lot of crumbling walls!");
             #endregion
             break;
         case 1: //russian
@@ -251,13 +252,13 @@ function scr_txt_jungle_merchant4(){
     switch(global.language){
         case 0:
             #region  english
-            text1 = "[fnt_pixel]It's done. Now you can sail to the other island.";
-            text2 = "[fnt_pixel]However, there's a little problem. It's your friend Jake.";
-            text3 = "[fnt_pixel]I can help you get rid of his curse, but I will need 7 green coins that you could find on this island.";
-            text4 = "[fnt_pixel]Just insert them into the coin receiver on the left, magic will happen and your friend will be in the village!";
-            text5 = "[fnt_pixel]Whether you save him, keep the coins or do without them at all is up to you.";
-            text6 = "[fnt_pixel]When you decide to go, let me know. But remember.";
-            text7 = "[fnt_pixel]You'll never make it back to this island. Hehehe.";
+            text0 = "[fnt_pixel]Well done! The effects of the mask have weakened and now your friend is saved[delay,2000]...almost.";
+            text1 = "[fnt_pixel]You see, once he's been exposed to the dark forces, it's almost impossible to escape them.";
+            text2 = "[fnt_pixel]But I know a way. All you have to do is put [c_green]7 coins[/c] in the coin slot behind you.";
+            text3 = "[fnt_pixel]This bowl will permanently destroy the mask and your friend will be free.";
+            text4 = "[fnt_pixel]And I'll tell you this. If you want to leave this island right now, there's no turning back.";
+            text5 = "[fnt_pixel]Poor [c_red]Jake[/c] will stay in that temple until the day he dies [shake]HA HA HA HA[/shake].... sorry.";
+            text6 = "[fnt_pixel]As soon as you're ready to move on, let me know.";
             #endregion
             break;
     }
@@ -267,7 +268,7 @@ function scr_txt_jungle_merchant5(){
     switch(global.language){
         case 0:
             #region Eng
-            text1 = "[fnt_pixel]You're about to set sail, huh? There's no turning back, Jake will stay in the temple forever.";
+            text0 = "[fnt_pixel]You're about to set sail, huh? There's no turning back, Jake will stay in the temple forever.";
             #endregion
             break;
     }      
@@ -277,7 +278,7 @@ function scr_txt_jungle_merchant6(){
     switch(global.language){
         case 0:
             #region Eng
-            text1 = "[fnt_pixel]It's time to go! Jake's saved, you can still talk to him in the village.";
+            text0 = "[fnt_pixel]Ready to go?";
             #endregion
             break;
     }  
@@ -288,6 +289,18 @@ function scr_txt_jungle_merchant7(){
         case 0:
             #region Eng
             text1 = "[fnt_pixel]Let's set sail now!";
+            #endregion
+            break;
+    }  
+}    
+function scr_txt_jungle_merchant8(){  
+    switch(global.language){
+        case 0:
+            #region Eng
+            text0 = "[fnt_pixel]You found all the coins! Great job. Now [c_red]Jake[/c] is saved!";
+            text1 = "[fnt_pixel]I've already moved[delay,2000]...he's already ended up here in the village by himself!";
+            text2 = "[fnt_pixel]I [wave]HIGHLY[/wave] recommend you talk to him before you set sail.";
+            text3 = "[fnt_pixel]He has a VERY [c_red]important message[/c] for you.";
             #endregion
             break;
     }  

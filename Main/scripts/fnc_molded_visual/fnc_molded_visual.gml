@@ -240,21 +240,21 @@ function fnc_molded_dark_blood_hit(){
     var gbh2 = instance_create_depth(x,y-8,depth+0.1,obj_molded_dark_blood);
     var gbh3 = instance_create_depth(x,y-8,depth+0.1,obj_molded_dark_blood);
     var gbh4 = instance_create_depth(x,y-8,depth+0.1,obj_molded_dark_blood);
-
-    if obj_Player.x >= x
-    {
-        var dest = -1;
-    } else var dest = 1;
+    if instance_exists(obj_Player){
+        if obj_Player.x >= x
+        {
+            var dest = -1;
+        } else var dest = 1;
     
-    gbh1.hspd = dest*choose(0.2,0.25,0.3,0.35,0.7,0.75,0.7,0.75);
-    gbh1.vspd = choose(-3,-2.75);  
-    gbh2.hspd = dest*choose(0.85,0.9,1,1.25,1.65,1.7,1.75,1.8);
-    gbh2.vspd = choose(-2.5,-2.25);
-    gbh3.hspd = dest*choose(0.2,0.25,0.3,0.35,0.7,0.75,0.7,0.75);
-    gbh3.vspd = choose(-3,-2.75);  
-    gbh4.hspd = dest*choose(0.85,0.9,1,1.25,1.65,1.7,1.75,1.8);
-    gbh4.vspd = choose(-2.5,-2.25);
-
+        gbh1.hspd = dest*choose(0.2,0.25,0.3,0.35,0.7,0.75,0.7,0.75);
+        gbh1.vspd = choose(-3,-2.75);  
+        gbh2.hspd = dest*choose(0.85,0.9,1,1.25,1.65,1.7,1.75,1.8);
+        gbh2.vspd = choose(-2.5,-2.25);
+        gbh3.hspd = dest*choose(0.2,0.25,0.3,0.35,0.7,0.75,0.7,0.75);
+        gbh3.vspd = choose(-3,-2.75);  
+        gbh4.hspd = dest*choose(0.85,0.9,1,1.25,1.65,1.7,1.75,1.8);
+        gbh4.vspd = choose(-2.5,-2.25);
+    }
 }
 
 function fnc_molded_dark_blood_forward(){
@@ -262,27 +262,28 @@ function fnc_molded_dark_blood_forward(){
     var gbf2 = instance_create_depth(x,y-8,depth+0.1,obj_molded_dark_blood);
     var gbf3 = instance_create_depth(x,y-16,depth+0.1,obj_molded_dark_blood);
     var gbf4 = instance_create_depth(x,y-8,depth+0.1,obj_molded_dark_blood);
-
-    if obj_Player.x >= x
-    {
-        var dest = -1;
-    } else var dest = 1;
+    if instance_exists(obj_Player){
+        if obj_Player.x >= x
+        {
+            var dest = -1;
+        } else var dest = 1;
     
-    gbf1.hspd = dest*choose(6,5.75);
-    gbf1.vspd = choose(-2.75,-2.5);
-    gbf1.grav = choose(0.1,0.111);
+        gbf1.hspd = dest*choose(6,5.75);
+        gbf1.vspd = choose(-2.75,-2.5);
+        gbf1.grav = choose(0.1,0.111);
         
-    gbf2.hspd = dest*choose(5.5,5.25);
-    gbf2.vspd = -2.25;
-    gbf2.grav = choose(0.112,0.113);
+        gbf2.hspd = dest*choose(5.5,5.25);
+        gbf2.vspd = -2.25;
+        gbf2.grav = choose(0.112,0.113);
     
-    gbf3.hspd = dest*choose(6,5.75);
-    gbf3.vspd = choose(-2.75,-2.5);
-    gbf3.grav = choose(0.1,0.111);
+        gbf3.hspd = dest*choose(6,5.75);
+        gbf3.vspd = choose(-2.75,-2.5);
+        gbf3.grav = choose(0.1,0.111);
         
-    gbf4.hspd = dest*choose(5.5,5.25);
-    gbf4.vspd = -2.25;
-    gbf4.grav = choose(0.112,0.113);
+        gbf4.hspd = dest*choose(5.5,5.25);
+        gbf4.vspd = -2.25;
+        gbf4.grav = choose(0.112,0.113);
+    }
 }
     
 function fnc_molded_dark_blood_up(){
@@ -290,27 +291,28 @@ function fnc_molded_dark_blood_up(){
     var gbu2 = instance_create_depth(x,y-8,depth+0.1,obj_molded_dark_blood);
     var gbu3 = instance_create_depth(x,y-16,depth+0.1,obj_molded_dark_blood);
     var gbu4 = instance_create_depth(x,y-8,depth+0.1,obj_molded_dark_blood);
-
-    if obj_Player.x >= x
-    {
-        var dest = -1;
-    } else var dest = 1;
+    if instance_exists(obj_Player){
+        if obj_Player.x >= x
+        {
+            var dest = -1;
+        } else var dest = 1;
     
-    gbu1.hspd = dest*choose(0.1,0.25);
-    gbu1.vspd = choose(-6,-5.9);
-    gbu1.grav = choose(0.11,0.12);
+        gbu1.hspd = dest*choose(0.1,0.25);
+        gbu1.vspd = choose(-6,-5.9);
+        gbu1.grav = choose(0.11,0.12);
     
-    gbu2.hspd = dest*choose(0.35,0.45);
-    gbu2.vspd = -5.8;
-    gbu2.grav = choose(0.13,0.15);
+        gbu2.hspd = dest*choose(0.35,0.45);
+        gbu2.vspd = -5.8;
+        gbu2.grav = choose(0.13,0.15);
     
-    gbu3.hspd = dest*choose(0.1,0.25);
-    gbu3.vspd = choose(-6,-5.9);
-    gbu3.grav = choose(0.11,0.12);
+        gbu3.hspd = dest*choose(0.1,0.25);
+        gbu3.vspd = choose(-6,-5.9);
+        gbu3.grav = choose(0.11,0.12);
     
-    gbu4.hspd = dest*choose(0.35,0.45);
-    gbu4.vspd = -5.8;
-    gbu4.grav = choose(0.13,0.15);
+        gbu4.hspd = dest*choose(0.35,0.45);
+        gbu4.vspd = -5.8;
+        gbu4.grav = choose(0.13,0.15);
+    }
 }
 
 function fnc_molded_dark_blood_down(){
@@ -318,28 +320,28 @@ function fnc_molded_dark_blood_down(){
     var gbd2 = instance_create_depth(x,y-8,depth+0.1,obj_molded_dark_blood);
     var gbd3 = instance_create_depth(x,y-16,depth+0.1,obj_molded_dark_blood);
     var gbd4 = instance_create_depth(x,y-8,depth+0.1,obj_molded_dark_blood);
-
-    if obj_Player.x >= x
-    {
-        var dest = -1;
-    } else var dest = 1;
+    if instance_exists(obj_Player){
+        if obj_Player.x >= x
+        {
+            var dest = -1;
+        } else var dest = 1;
     
-    gbd1.hspd = dest*choose(2,1);
-    gbd1.vspd = 1;
-    gbd1.grav = choose(0.2,0.12);
+        gbd1.hspd = dest*choose(2,1);
+        gbd1.vspd = 1;
+        gbd1.grav = choose(0.2,0.12);
     
-    gbd2.hspd = dest*choose(0.5,0);
-    gbd2.vspd = 1;
-    gbd2.grav = choose(0.13,0.15);
+        gbd2.hspd = dest*choose(0.5,0);
+        gbd2.vspd = 1;
+        gbd2.grav = choose(0.13,0.15);
     
-    gbd3.hspd = dest*choose(2,1);
-    gbd3.vspd = 1;
-    gbd3.grav = choose(0.2,0.12);
+        gbd3.hspd = dest*choose(2,1);
+        gbd3.vspd = 1;
+        gbd3.grav = choose(0.2,0.12);
     
-    gbd4.hspd = dest*choose(0.5,0);
-    gbd4.vspd = 1;
-    gbd4.grav = choose(0.13,0.15);
-
+        gbd4.hspd = dest*choose(0.5,0);
+        gbd4.vspd = 1;
+        gbd4.grav = choose(0.13,0.15);
+    }
 }
     
 function fnc_molded_dark_blood_player(){

@@ -44,10 +44,7 @@ if talk_cr_t!= 0
                         break;
                 }
                 break;
-        }
-        
-        
-        
+        }                      
     }
 }
 #endregion

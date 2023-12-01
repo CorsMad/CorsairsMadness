@@ -2,5 +2,6 @@
 // You can write your code in this editor
 scr_txt_jungle_merchant2();
 
-scr_text_starter(6,0.5);
+scr_text_starter(7,0.5,snd_vo_npc_merch);
+
 

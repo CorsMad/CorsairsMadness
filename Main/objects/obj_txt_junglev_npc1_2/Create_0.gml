@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-fnc_lng_jnpc1_2();
+scr_txt_jungle_npc2();
 
-scr_text_starter(0,0.5);
+scr_text_starter(5,0.5,snd_vo_npc_guard);
 

@@ -19,7 +19,7 @@ if state = 0 // Lancer flyer Lancer
                 }
             }  
             break;
-        case 400:
+        case 200:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x > 272
@@ -41,7 +41,7 @@ if state = 0 // Lancer flyer Lancer
                 }
             }
             break;
-        case 500:
+        case 300:
             state = 0.5;
             t = 0;
             break;       

@@ -100,7 +100,9 @@ if talk_cr_t!= 0
                                     switch(global.dia_snpc){
                                         case 0: instance_create_depth(x,y,-100000,obj_txt_snowv_npc1_5); break;
                                         case 1: instance_create_depth(x,y,-100000,obj_txt_snowv_npc1_4); break;
-                                        case 2: instance_create_depth(x,y,-100000,obj_txt_snowv_npc1_6); break;                                           
+                                        case 2: if global.completed_PS2 = 0 instance_create_depth(x,y,-100000,obj_txt_snowv_npc1_6);
+                                                else{                       instance_create_depth(x,y,-100000,obj_txt_snowv_npc1_7);}
+                                                break;                                           
                                     } 
                         break;
                 }           

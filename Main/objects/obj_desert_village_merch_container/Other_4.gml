@@ -23,7 +23,7 @@ switch(global.completed_PD2)
         }
         break;
 }
-
+/*
 #region указатель
 if global.dia_desertChief != 0 && global.dia_desertMerch = 0
 {

@@ -231,10 +231,10 @@ switch(state){
 
 #region Death
 if enemy_hp<=0 {
-	instance_create_depth(x,y,depth,obj_bossmerch_phase3_d);
+	instance_create_depth(x,y,-10,obj_cutscene_deathisland_ending_merch);
     instance_destroy(obj_Player)
     fnc_msc_stop_play_slow();
-    room_goto(TESTRNDING)
+    room_goto(DI_ending)
 	instance_destroy();	
 }
 #endregion

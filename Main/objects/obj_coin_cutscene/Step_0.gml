@@ -36,6 +36,23 @@ if instance_exists(obj_Player){
 
 if t > 110 && !instance_exists(obj_coin_cutscene1){
     fnc_snd_play_onetime(snd_coin_ctscn_finish);
-	obj_Player.isDead = 0;
+	//obj_Player.isDead = 0;
+    switch(merch){
+        case 0:
+            instance_create_depth(0,0,-9999999,obj_txt_junglev_merch8);
+            break;
+        case 1:
+            instance_create_depth(0,0,-9999999,obj_txt_desertv_merch8);
+            break;
+        case 2:
+            instance_create_depth(0,0,-9999999,obj_txt_snowv_merch8);
+            break;
+        case 3:
+            instance_create_depth(0,0,-9999999,obj_txt_shadowv_merch8);
+            break;
+        case 4:
+            instance_create_depth(0,0,-9999999,obj_txt_lavav_merch8);
+            break;
+    }
 	instance_destroy();	
 }

@@ -28,8 +28,7 @@ function scr_txt_snow_merch3(){
     switch(global.language){
         case 0:
         #region English
-            text1 = "[fnt_pixel]I found a busy cave with a strange mechanism that drops coins from the ceiling.";
-            text2 = "[fnt_pixel]If you find me there, I'll tell you how to use it. Maybe you'll win something.";
+            text1 = choose("[fnt_pixel]It's really weird that I'm not cold. Oh yeah, I'm in a room with a fireplace! [wave]ha ha ha[/wave]","[fnt_pixel]It's about time I installed a fireplace in here. ");
         #endregion
             
             break;
@@ -40,12 +39,11 @@ function scr_txt_snow_merch4(){
     switch(global.language){
         case 0:
         #region English
-            text1 = "[fnt_pixel]And this time you really did it fast. You want to get it all done before the ice age?";
-            text2 = "[fnt_pixel]Heh-heh...";
-            text3 = "[fnt_pixel]okay, that's it, I won't do it again, honestly.";
-            text4 = "[fnt_pixel]Anyway, now that we're done here, it's time for the next island, but there's still one unfinished business.";
-            text5 = "[fnt_pixel]What are you going to do with your crew member?";
-        #endregion
+            text1 = "[fnt_pixel]You're back already? I didn't doubt your ability [wave]heh heh heh[/wave]!";
+            text2 = "[fnt_pixel]Poor [c_red]Sully[/c], what he's been through so far...";
+            text3 = "[fnt_pixel]Well, it's time to move on. or didn't you finish your business here?";
+            text4 = "[fnt_pixel]Either way, let me know as soon as you're ready to go.";            
+        #endregion              
             
             break;
     }
@@ -67,7 +65,8 @@ function scr_txt_snow_merch6(){
     switch(global.language){
         case 0:
         #region English
-            text1 = "[fnt_pixel]Let's set sail now!";
+            text1 = "[fnt_pixel]Oh, [c_red]Sully's[/c] been released. You might want to talk to him outside.";
+            text2 = "[fnt_pixel]I'm sure he has something to [c_red]say[/c]!";
         #endregion
             
             break;

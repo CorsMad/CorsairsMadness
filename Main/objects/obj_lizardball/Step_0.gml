@@ -1,251 +1,109 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+fnc_Collision(obj_block);
+if !place_meeting(x,y+1,obj_block) vspd+=0.2;
 
-#region Коллизии
+/*
+0 - хождение
+1 - сворачивание + подготовка
+2 - полет в сторону игрока + кдарение 
+3 - отлет назад и переворот на спину
+4 - переворот на спину
+5 - переворот назад
+6 - ожидание
+*/
 
-if place_meeting(x+hspd, y, obj_block)
-    {
-        while (!place_meeting(x+sign(hspd), y, obj_block )) 
+switch(state){
+    case 0:
+        #region хождение
+        if place_meeting(x+hspd,y,obj_block)
         {
-        	x+= sign(hspd);
+            hspd = -hspd;   
         }
-        hspd = 0;   
-    }
-    x += hspd;
-
-    if place_meeting(x, y+vspd, obj_block) 
-    {
-    	while (!place_meeting(x,y+sign(vspd), obj_block )) 
-    	{
-    	    y+= sign(vspd);
-    	}
-    	vspd = 0;
-    }
-    y += vspd;
-
-    if !place_meeting(x,y+vspd, obj_block) 
-    {
-    	vspd +=0.2;	
-    }    
+        var dis = point_distance(x,y,obj_Player.x,obj_Player.y);
+        if dis < 160 
+        {
+            state = 1;
+            t = 0;
+            hspd = 0;           
+        }  
         
-
-#endregion
-
-#region Ходьба влево вправо
-
-if state = 0
-{
-    if place_meeting(x+hspd,y,obj_block)
-    {
-        hspd = -hspd;   
-    }
-    /*
-    if !position_meeting(bbox_left-1, bbox_bottom+1, obj_block) || !position_meeting(bbox_right+1, bbox_bottom+1, obj_block)
-	{
-		hspd = -hspd;
-	}
-    */
-    // Встреча с игроком
-    
-    var dis = point_distance(x,y,obj_Player.x,obj_Player.y);
-    if dis < 160 
-    {
-        state = 2;
-        t = 0;
-        hspd = 0;
-        image_index = 0;
-    }  
-    
-    //Анимац
-    image_speed = 1;
-    sprite_index = spr_lizard_walk;
-    if hspd>0 image_xscale = 1;
-    if hspd<0 image_xscale = -1;
-    
-}
-
-
-#endregion
-
-#region Разворачивание
-
-if state = 1
-{
-    // Анимация разворачивания
-    t++;
-    image_speed = 1;
-    if t = 11
-    {
+        #endregion
+        break;
+    case 1:
+        #region сворачивание + подготовка
+        t++;
+        if t = 100 {
+            if instance_exists(obj_Player)   {
+                if obj_Player.x < x {
+                    hspd = -3;
+                    state = 2;
+                    t = 0;
+                } else {
+                    hspd = 3;
+                    state = 2;   
+                    t = 0;
+                }
+            } else state = 0;
+        }            
+        #endregion
+        break;
+    case 2:
+        #region полет в сторону игрока + кдарение 
+        if place_meeting(x+hspd,y,obj_block){
+            y-=1; 
+            vspd = -3;            
+            hspd = -sign(hspd)*2;
+            state = 3;
+        }
         
-        t = 0;
-        state = 0;
-        
-        hspd = choose(-1,1);
-    }     
+        #endregion
+        break;
+    case 3:
+        #region отлет назад и переворот на спину
+        if place_meeting(x,y+1,obj_block){
+            hspd = 0;
+            vspd = 0;
+            state = 4;
+        }
+        #endregion
+        break;
+    case 4:
+        #region переворот на спину
+        t++;
+        if t = 150 {
+            t = 0;
+            state = 5;
+        }
+        #endregion
+        break;
+    case 5:
+        #region переворот назад
+        t++;
+        if t = 50 {
+            t = 0;
+            state = 6;
+        }
+        #endregion
+        break;
+    case 6:
+        #region переворот назад
+        t++;
+        if t = 50 {
+            t = 0;
+            var dis = point_distance(x,y,obj_Player.x,obj_Player.y);
+            if dis < 160 
+            {
+                state = 1;
+                t = 0;
+                hspd = choose(-1,1); 
+                vspd = 0;
+            }   else {
+                state = 0;
+                hspd = choose(-1,1);
+            }
+        }
+        #endregion
+        break;
 }
-
-#endregion
-
-#region Сворачивание
-
-if state = 2
-{
-    // Играет анимация
-    sprite_index = spr_lizard_svor;
-    if image_index = 1 image_speed = 0;    
-    
-    
-    // Игрок далеко
-    
-    var dis = point_distance(x,y,obj_Player.x,obj_Player.y);
-    if dis > 200 
-    {
-        state = 1;
-        t = 0;
-        hspd = 0;
-    }       
-}
-
-
-#endregion
-
-#region Переворачивается на ноги
-
-if state = 5
-{
-    // играет анимация переворота на ноги
-    t++;
-    sprite_index = spr_lizard_turn;
-    if t < 5 image_index = 0; else image_index = 1;
-    if t = 10 {state = 0;t = 0;hspd = choose(-1,1)}
-}
-
-#endregion
-
-#region Полет после удара
-
-if state = 6 
-{
-    sprite_index = spr_lizard_kat;
-    image_speed = 1;
-    if place_meeting(x,y+abs(vspd),obj_block) {state = 8; hspd = 0; vspd = 0;}
-    else if place_meeting(x+hspd, y, obj_block) {hspd = -hspd;}   
-    else if place_meeting(x,y-abs(vspd), obj_block) {vspd = -vspd;}
-}
-
-#endregion
-
-#region Катится по прямой
-
-if state = 7
-{
-    image_speed = 1;
-    sprite_index = spr_lizard_kat;
-    if place_meeting(x+(hspd),y,obj_block) {hspd = 0;state = 8;}
-}
-
-#endregion
-
-#region После пружины
-
-if state = 9
-{
-    sprite_index = spr_lizard_kat;
-    hspd = 0;
-    image_speed = 2;
-    if place_meeting(x,y+1,obj_block)
-    {
-        state = 8;   
-    }
-}
-
-#endregion
-
-#region Находится в стане
-
-if state = 8
-{
-    sprite_index = spr_lizard_stun;
-    image_speed = 1;
-    //анимация стана
-    t++; 
-    if t = 100
-    {
-        t = 0;
-        image_index = 0;
-        state = 5;
-    }
-}
-
-#endregion
-
-#region получение урона
-
-    if hit_cd > 0 
-    {
-    	hit_cd+=1;	
-    }
-    if hit_cd > 11 
-    {
-    	hit_cd = 0;	
-    }
-
-// Атака
-
-    if place_meeting(x,y,obj_abil_boots_hitbox)
-    {
-        fnc_snd_play_onetime(snd_player_springboots);
-        obj_Player.vspd = -6;
-        obj_Player.sbootsbuffer = 1;
-        if place_meeting(x,y+1,obj_block) vspd = -3;
-        obj_Player.dash_counts = 1;
-        instance_create_depth(obj_abil_boots_hitbox.x,obj_abil_boots_hitbox.y+20,obj_abil_boots_hitbox.depth-1,obj_sfx4);
-        instance_destroy(obj_abil_boots_hitbox);
-        state = 9;
-        t = 0;
-    }
-
-         // Атака
-
-    fnc_take_dmg_hitbox(-10,0,-1,10,0,-1);
-    
-// Топор
-
-    fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
-    
-// Удар вниз   
-
-    fnc_take_dmg_hitbox_down(0,-16,-1);
-
-// Бомба
-
-    fnc_take_dmg_bomb(-10,-16,-1,10,-16,-1,1);
-
-// Eball
-
-	fnc_take_dmg_eball(0,-16,-1,1);
-
-// Parrot
-
-	fnc_take_dmg_parrot_laser(0,-16,-1,1)
-    
-
-// Получение урона
-
-    //fnc_enemy_no_armor_dmg();
-
-#endregion
-
-#region Смерть
-if enemy_hp <= 0
-{
-
-    fnc_drop_mana_gold_after_death(30,45);
-  
-    instance_destroy();
-    var d = instance_create_depth(x,y,depth,obj_llizardball_death);
-    d.vspd = -3;
-    if obj_Player.x<x d.hspd = 2; else d.hspd = -2;
-}
-#endregion

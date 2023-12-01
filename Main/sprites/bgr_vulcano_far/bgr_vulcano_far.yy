@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "bgr_vulcano_far",
-  "bbox_bottom": 226,
+  "bbox_bottom": 271,
   "bbox_left": 0,
   "bbox_right": 200,
   "bbox_top": 0,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 227,
+  "height": 272,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"584514f9-2fe6-46da-aeb2-c35f41a3c324","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},

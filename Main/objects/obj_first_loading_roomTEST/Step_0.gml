@@ -20,14 +20,14 @@ if t1 = 10
 
    //room_goto(GlobalMapPrologueJungle)
    // room_goto(DI_prebossfight)
-   // room_goto(Tutor1);
+   //room_goto(DI_ending);
 
    var i = instance_create_depth(16,16,0,obj_Player);
    i.DashEnabled = 1;
    i.state = 0;
-   i.specabilnumber = 4;
-   i.HookEnabled = 0//1;
-   i.SpecAbilMask = 5;       
+   i.specabilnumber = 1;
+   i.HookEnabled = 1//1;
+   i.SpecAbilMask = 1;       
    instance_create_depth(16,16,101,obj_room_transition_to_loading);  
 
 }

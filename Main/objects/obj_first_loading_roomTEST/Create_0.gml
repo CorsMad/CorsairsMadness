@@ -1,15 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 randomise();
-global.TargetX      = 48;
-//global.TargetY      =240784;
-global.TargetY      = 144;
-global.TargetRoom   = DI_h_r3;
+global.TargetX      = 240;
+global.TargetY      = 160;
+global.TargetRoom   = Village_jungle;
 
 
-global.fTargetX     = 464;
-global.fTargetY     = 608;
-global.fTargetRoom  = PS1_r9;
+global.fTargetX     = 32;
+global.fTargetY     = 256;
+global.fTargetRoom  = DI_p_r1;
 
 
 ///////////////////* CHANGES Внести изменения в launch и saveload /////////////////////
@@ -27,6 +26,7 @@ global.dia_hpmana_petro  = 0;
 global.dia_hpmana_bonnie = 0;
 
 ///////////////////////////////////////////////////////////////////////////////////////
+
 
 
 
@@ -209,7 +209,7 @@ global.choosed_item = 5; // 2 -тоорп // 3 - бомба // 4 - eball // 5 - 
 global.choosed_item_tier = 3; // ТИР предмета
 global.choosed_itemboat = 3; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
 global.choosed_itemboat_tier = 3 // ТИП предмета для лодки
-global.superattack1 = 0;// Суператаки  max 2  default - 0
+global.superattack1 = 2;// Суператаки  max 2  default - 0
 global.superattack2 = 0;// Суператаки  max 1  default - 0
 global.superattack3 = 0;// Суператаки  max 1  default - 0
 global.PlayerTransition = 0;

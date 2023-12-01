@@ -2,10 +2,13 @@ function scr_txt_snow_chief1(){
     switch(global.language){
         case 0:   
             #region English 
-            text1 = "[fnt_pixel]Greetings, traveler!";
-            text2 = "[fnt_pixel]Don't take this as a cold welcome, but there's no time to rest, you have friends to save.";
-            text3 = "[fnt_pixel]I'm pretty sure one of your crew is in the cursed temple. There's been some suspicious activity there recently, out of the blue. Just take your time, cool your heels.";
-            text4 = "[fnt_pixel]Don't worry, I won't let you go empty-handed. Go to the Inventor, he'll give you something useful. Hopefully, it'll break the ice in our relationship...you know.";
+            text1 = "[fnt_pixel]Welcome to our [c_blue]snow island[/c]!";
+            text2 = "[fnt_pixel][shake]What[/shake]? Aren't you cold? It's freezing and snowing outside and you're not cold!";
+            text3 = "[fnt_pixel]Maybe this cold and cold has no effect on the newcomers.";
+            text4 = "[fnt_pixel]I'm saying this because recently there was a [c_red]guy[/c] ...[delay,500] [shake]wearing nothing but his underpants[/shake]!";
+            text5 = "[fnt_pixel]Even though it was before his visit, but we're still, you know. it's not a resort.";
+            text6 = "[fnt_pixel]And later on, it got even worse! I'm sure it has something to do with that [c_red]man in underpants[/c].";
+            text7 = "[fnt_pixel]Since you don't care about the cold, maybe you can figure it out.";
             #endregion
             break;
     }
@@ -15,23 +18,11 @@ function scr_txt_snow_chief2(){
     switch(global.language){
         case 0:   
             #region English 
-            text1 = choose("[fnt_pixel]How can you not be cold in those clothes?","[fnt_pixel]Don't just stand there, there's a team waiting for you.","[fnt_pixel]How long are you gonna stand there looking at me?");                                   
+            text1 = "[fnt_pixel]I see you fixed it, huh? The cold is gone with the snowfall.";
+            text2 = "[fnt_pixel]And I still can't get [shake]warm[/shake]...maybe I need a hot water bath or a drink of something hot. Heh heh heh heh.";
+            text3 = "[fnt_pixel]You did a great job! Here's a little present from us.";
             #endregion
             break;
     }
 }
 
-function scr_txt_snow_chief3(){
-    switch(global.language){
-        case 0:   
-            #region English 
-            text1 = "[fnt_pixel]Hey Captain. It's...my deputy asked me to stop using stupid puns about the cold anymore, kinda like everyone is sick of it...";
-            text2 = "[fnt_pixel]what a COLD PUBLIC.";
-            text3 = "[fnt_pixel]Ouch. They don't say for nothing that habit is second nature.";
-            text4 = "[fnt_pixel]Before you sail to the next island, hear me out.";
-            text5 = "[fnt_pixel]The awakening of the cursed temples cannot be a mere coincidence. The fact is, our tribes swore to protect these temples centuries ago. Except no one remembers why.";
-            text6 = "[fnt_pixel]Either way, it's not good. I hope you can find answers on the other islands. Go on.";
-            #endregion
-            break;
-    }
-}

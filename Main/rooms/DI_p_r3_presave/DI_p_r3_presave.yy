@@ -83,7 +83,7 @@
 60,56,0,0,-12,-2147483648,-17,62,-2,0,-11,-2147483648,-18,62,3,0,-2147483648,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_deathisland_human","path":"tilesets/tls_deathisland_human/tls_deathisland_human.yy",},"userdefinedDepth":false,"visible":true,"x":8,"y":-8,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_4","depth":700,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"0.7",},
-        {"name":"g_ContrastBrightness","type":0,"value":"0.65",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.6",},
       ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -130,-2147483648,20,366,367,368,369,370,371,372,373,374,358,359,360,348,349,350,351,352,353,354,355,-10,-2147483648,20,453,454,455,456,
 457,458,459,460,461,445,446,447,435,436,437,438,439,440,441,442,-10,-2147483648,20,540,541,542,543,544,545,546,547,548,532,533,

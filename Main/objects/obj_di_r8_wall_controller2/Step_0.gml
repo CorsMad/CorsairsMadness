@@ -19,7 +19,7 @@ if state = 0 // fly lanc fly lanc fly
                 }
             }  
             break;
-        case 200: // lanc
+        case 150: // lanc
             if instance_exists(obj_Player)
             {
                 if obj_Player.x > 736
@@ -51,7 +51,7 @@ if state = 0 // fly lanc fly lanc fly
                 }
             }  
             break;
-        case 800: // lanc
+        case 400: // lanc
             if instance_exists(obj_Player)
             {
                 if obj_Player.x > 736
@@ -67,23 +67,7 @@ if state = 0 // fly lanc fly lanc fly
                 }
             }
             break;
-        case 900: // fly
-            if instance_exists(obj_Player)
-            {
-                if obj_Player.x> 736
-                {
-                    var e1 = instance_create_depth(640,128,0,obj_molded_big_spawner_n);
-                    e1.obj_cr = obj_molded_snow_flying;    
-                    e1.y_cr = 16;
-                } else 
-                {
-                    var e1 = instance_create_depth(864,80,0,obj_molded_big_spawner_n);
-                    e1.obj_cr = obj_molded_snow_flying;   
-                    e1.y_cr = 16;
-                }
-            }  
-            break;
-        case 1000:
+        case 500: // fly
             state = 0.5;
             t = 0;
             break;       

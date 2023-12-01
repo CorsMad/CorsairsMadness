@@ -1,0 +1,1 @@
+draw_sprite_tiled(bgr_cemetery_sky,0, camera_get_view_x(view_camera[0]), 0);

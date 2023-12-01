@@ -2,13 +2,13 @@ function scr_txt_vulcano_chief1(){
     switch(global.language){
         case 0:
             #region English
-            text1 = "[fnt_pixel]Where have you been again?";
-            text2 = "[fnt_pixel]Please don't start. You know, I have a demanding job, I have to travel all the time. I have a lot of work";
-            text3 = "[fnt_pixel]I'm bored sitting here alone. Even though you bring stories from other islands.";
-            text4 = "[fnt_pixel]All right, all right. I'll try to be here more often from now on.";
-            text5 = "[fnt_pixel]Oh, Cap, you're getting there. Ahem...hehehe...welcome?";
-            text6 = "[fnt_pixel]Anyway, you know what to do. Buy something from me, go to Inventor for gear, and clear out the damn temple and save a crew member.";
-            text7 = "[fnt_pixel]That's...I'll talk to you later, okay?";
+            text1 = "[fnt_pixel]Welcome to our [c_brown]vulcan island[/c]!";
+            text2 = "[fnt_pixel]Our island is rich in [c_red]crystals[/c], which we use as currency in our archipelago.";
+            text3 = "[fnt_pixel]Unfortunately something went wrong, the volcanoes woke up and now our village is filled with smog.";
+            text4 = "[fnt_pixel]This is probably due to a [c_red]girl[/c] who recently passed by our village.";
+            text5 = "[fnt_pixel]She was on her way to our temple and it's likely to have affected our island in some way.";
+            text6 = "[fnt_pixel]I see you're not affected by this smog, so maybe you can dispel it.";
+            text7 = "[fnt_pixel]You should head to the temple, perhaps there you can find the source of the problem.";
             #endregion
             break;
     }
@@ -18,19 +18,9 @@ function scr_txt_vulcano_chief2(){
     switch(global.language){
         case 0:
             #region English
-            text1 = choose("[fnt_pixel]I want to hear more stories from the merchant.","[fnt_pixel]Good luck on your adventures!");
-            #endregion
-            break;
-    }
-}
-
-function scr_txt_vulcano_chief3(){
-    switch(global.language){
-        case 0:
-            #region English
-            text1 = "[fnt_pixel]Thank you so much for cleaning the temple. We'll never forget it.";
-            text2 = "[fnt_pixel]We'll always look forward to seeing you here with the Torovian. Hope to hear exciting stories from you in the future.";
-            text3 = "[fnt_pixel]Good luck on your adventures. Don't forget about us after you leave the island.";
+            text1 = "[fnt_pixel]I don't know how I got here, but I feel great!";
+            text2 = "[fnt_pixel]I talked to the local inventor and we decided to improve my cannons [shake]ha ha ha[/shake].";
+            text3 = "[fnt_pixel]Cannons, blunderbusses, pistols! My favorites!";
             #endregion
             break;
     }

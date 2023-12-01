@@ -12,10 +12,7 @@
     "name": "LizardBall",
     "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Jungle/LizardBall.yy",
   },
-  "parentObjectId": {
-    "name": "obj_enemy_parent",
-    "path": "objects/obj_enemy_parent/obj_enemy_parent.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -32,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_lizard_walk",
-    "path": "sprites/spr_lizard_walk/spr_lizard_walk.yy",
+    "name": "spr_lizard_mask",
+    "path": "sprites/spr_lizard_mask/spr_lizard_mask.yy",
   },
   "spriteMaskId": {
     "name": "spr_lizard_mask",

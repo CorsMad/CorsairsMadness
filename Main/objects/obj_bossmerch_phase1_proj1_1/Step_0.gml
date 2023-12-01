@@ -6,6 +6,13 @@ switch(state){
         direction =  point_direction(x,y,obj_Player.x,obj_Player.y-16);
     }
     image_angle = direction;
+    
+    t++;
+    if t mod 10 = 0 {
+        var vfx = instance_create_depth(x+random_range(-3,3),y+random_range(-3,3),depth-1,obj_sfx_checkpoint_small)   
+        vfx.hspd = random_range(-2,2);
+        vfx.vspd = random_range(-2,-1);
+    }   
         break;
 
 }

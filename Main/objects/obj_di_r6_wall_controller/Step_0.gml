@@ -14,7 +14,7 @@ if state = 0 // archer archer Shielder
                 e1.obj_cr = obj_molded_purple_archer;   
             }
             break;
-        case 400:
+        case 200:
             if obj_Player.x > 240{
                 var e1 = instance_create_depth(112,224,0,obj_molded_big_spawner_n);
                 e1.y_cr = 16;
@@ -25,7 +25,7 @@ if state = 0 // archer archer Shielder
                 e1.obj_cr = obj_molded_purple_archer;   
             }
             break;
-        case 800:
+        case 250:
             if obj_Player.x > 240{
                 var e1 = instance_create_depth(96,224,0,obj_molded_big_spawner_n);
                 e1.y_cr = 16;
@@ -36,7 +36,7 @@ if state = 0 // archer archer Shielder
                 e1.obj_cr = obj_molded_purple_shield;   
             }
             break;
-        case 1000:
+        case 350:
             t = 0;
             state = 0.5;
             break;
@@ -67,7 +67,7 @@ if state = 1 // Archer Shielder Aracher Shielder
                 e1.obj_cr = obj_molded_purple_archer;   
             }                
             break;
-        case 300:
+        case 150:
             if obj_Player.x > 240{
                 var e1 = instance_create_depth(80,224,0,obj_molded_big_spawner_n);
                 e1.y_cr = 16;
@@ -78,7 +78,7 @@ if state = 1 // Archer Shielder Aracher Shielder
                 e1.obj_cr = obj_molded_purple_shield;   
             }                
             break;
-        case 600:
+        case 300:
             if obj_Player.x > 240{
                 var e1 = instance_create_depth(112,224,0,obj_molded_big_spawner_n);
                 e1.y_cr = 16;
@@ -89,7 +89,7 @@ if state = 1 // Archer Shielder Aracher Shielder
                 e1.obj_cr = obj_molded_purple_archer;   
             } 
             break;
-        case 1100:
+        case 400:
             if obj_Player.x > 240{
                 var e1 = instance_create_depth(96,224,0,obj_molded_big_spawner_n);
                 e1.y_cr = 16;
@@ -100,7 +100,7 @@ if state = 1 // Archer Shielder Aracher Shielder
                 e1.obj_cr = obj_molded_purple_shield;   
             } 
             break;
-        case 1200:
+        case 500:
             t = 0;
             state = 1.5;
             break;

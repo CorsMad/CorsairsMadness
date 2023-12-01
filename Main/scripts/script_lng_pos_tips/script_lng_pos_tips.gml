@@ -75,7 +75,7 @@ function script_lng_pos_tip_hook(){
     case 0: //English   
     #region
         text1 = "You gained grab-hand!";
-		text2 = @"Press the special ability button 
+		text2 = @"Press the item use button 
 to release the grab-hand forward";
 		text3 = "you can cling to special rings";
 		text4 = @"You can also grab enemies 
@@ -141,7 +141,7 @@ function script_lng_pos_tip_clone(){
     case 0: //English   
     #region
         text1 = "You gained soul release";
-		text2 = @"Press the special ability button 
+		text2 = @"Press the item use button 
 to leave the body for a few seconds";
 		text3 = @"Press the button again 
 to force return";
@@ -212,12 +212,12 @@ function script_lng_pos_tip_superdash(){
     case 0: //English   
     #region
         text1 = "You gained superdash";
-		text2 = @"Hold the special ability button
+		text2 = @"Hold the item use button
 to get ready for the superdash";
-		text3 = @"Once fully charged, release the button
+		text3 = @"Once fully charged, press attack button
 and you'll fly forward at high speed.";
 		text4 = @"To cancel the preparation
-press the attack button.";
+release the item key";
 		text5 = @"Some objects can only be 
 destroyed with a superdash";
 		text6 = "You are invulnerable during flight";
@@ -282,10 +282,10 @@ function script_lng_pos_tip_tp(){
     case 0: //English   
     #region
         text1 = "You gained cloud";
-		text2 = @"Press the special ability button 
+		text2 = @"Press the item use button 
 to release the cloud.";
 		text3 = @"If you press the button again,
-you will move to it. ";
+you will move to it.";
 		text4 = @"If you hold the button,
 the cloud will disappear";
 		text5 = @"The cloud can pass through the surface";

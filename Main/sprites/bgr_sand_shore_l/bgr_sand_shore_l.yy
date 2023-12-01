@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "bgr_sand_shore_l",
-  "bbox_bottom": 269,
+  "bbox_bottom": 268,
   "bbox_left": 0,
   "bbox_right": 479,
   "bbox_top": 0,

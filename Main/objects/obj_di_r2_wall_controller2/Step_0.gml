@@ -19,7 +19,7 @@ if state = 0 // Grounded Flying Grounded Flying Grounded
                 }
             }  
             break;
-        case 400:
+        case 200:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x > 832
@@ -33,7 +33,7 @@ if state = 0 // Grounded Flying Grounded Flying Grounded
                 }
             }
             break;
-        case 800:
+        case 400:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> 832
@@ -49,7 +49,7 @@ if state = 0 // Grounded Flying Grounded Flying Grounded
                 }
             }  
             break;
-        case 1500:
+        case 500:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x > 832
@@ -63,23 +63,7 @@ if state = 0 // Grounded Flying Grounded Flying Grounded
                 }
             }
             break;
-        case 2000:
-            if instance_exists(obj_Player)
-            {
-                if obj_Player.x> 832
-                {
-                    var e1 = instance_create_depth(720,224,0,obj_molded_big_spawner_n);
-                    e1.obj_cr = obj_grounded_molded;    
-                    e1.y_cr = 16;
-                } else 
-                {
-                    var e1 = instance_create_depth(928,224,0,obj_molded_big_spawner_n);
-                    e1.obj_cr = obj_grounded_molded;   
-                    e1.y_cr = 16;
-                }
-            }  
-            break;
-        case 2100:
+        case 600:
             state = 0.5;
             t = 0;
             break;       

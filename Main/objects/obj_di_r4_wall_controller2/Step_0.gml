@@ -19,7 +19,7 @@ if state = 0 // fly run fly run run
                 }
             }  
             break;
-        case 400:
+        case 150:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x > 944
@@ -35,7 +35,7 @@ if state = 0 // fly run fly run run
                 }
             }
             break;
-        case 800:
+        case 300:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> 944
@@ -51,7 +51,7 @@ if state = 0 // fly run fly run run
                 }
             }  
             break;
-        case 1500:
+        case 400:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x > 944
@@ -67,23 +67,7 @@ if state = 0 // fly run fly run run
                 }
             }
             break;
-        case 2000:
-            if instance_exists(obj_Player)
-            {
-                if obj_Player.x> 944
-                {
-                    var e1 = instance_create_depth(800,240,0,obj_molded_big_spawner_n);
-                    e1.obj_cr = obj_molded_yellow_run;    
-                    e1.y_cr = 16;
-                } else 
-                {
-                    var e1 = instance_create_depth(1056,240,0,obj_molded_big_spawner_n);
-                    e1.obj_cr = obj_molded_yellow_run;   
-                    e1.y_cr = 16;
-                }
-            }  
-            break;
-        case 2100:
+        case 500:
             state = 0.5;
             t = 0;
             break;       

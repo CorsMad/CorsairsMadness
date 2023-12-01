@@ -2549,4 +2549,5 @@ function fnc_lng_jmerch_to_map(){
             break;
     }    
 }  
-    
+
+

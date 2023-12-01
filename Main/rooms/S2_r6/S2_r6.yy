@@ -122,8 +122,8 @@
 17,100,101,102,-24,0,3,15,16,17,-22,0,1,8,-4,0,3,15,16,25,-22,6,1,7,-4,0,3,15,16,30,
 -22,11,1,12,-4,0,1,15,],"TileDataFormat":1,},"tilesetId":{"name":"tls_snow_level2","path":"tilesets/tls_snow_level2/tls_snow_level2.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":300,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
-        {"name":"g_ContrastIntensity","type":0,"value":"1.15",},
-        {"name":"g_ContrastBrightness","type":0,"value":"1.15",},
+        {"name":"g_ContrastIntensity","type":0,"value":"1",},
+        {"name":"g_ContrastBrightness","type":0,"value":"1.1",},
       ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -8,-2147483648,-3,49,-15,-2147483648,-4,0,-8,-2147483648,-3,49,-8,-2147483648,1,64,-6,-2147483648,-4,0,-13,49,-5,33,4,48,69,-2147483648,-2147483648,-3,
 0,2,55,56,-3,0,-16,49,3,40,50,51,-3,33,5,48,74,0,60,61,-3,0,-20,49,7,51,49,50,33,48,

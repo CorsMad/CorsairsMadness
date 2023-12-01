@@ -2,9 +2,10 @@ function scr_txt_shadow_petro1(){
     switch(global.language){
         case 0:
             #region English
-            text1 = "[fnt_pixel]Cap, you've got a lot of nerve getting to me.";
-            text2 = "[fnt_pixel]This island is perfect for me. It's so dark and creepy, you never know what might jump out at you.";
-            text3 = "[fnt_pixel]But in our case, it makes sense. That someone would be me.";
+            text1 = "[fnt_pixel]There he is! Imagine, Captain, I've got real [wave]wings[/wave]!";
+            text2 = "[fnt_pixel][c_red]Mask[/c] - she was calling me and I didn't resist. Not only am I strong, but I can fly!";
+            text3 = "[fnt_pixel]But why are you here? Are you trying to take all this away from me?";
+            text4 = "[fnt_pixel]No way! Not this time!";
             #endregion
             break;
     }
@@ -14,8 +15,10 @@ function scr_txt_shadow_petro2(){
     switch(global.language){
         case 0:
             #region English
-            text1 = "[fnt_pixel]A hunter should never underestimate his prey.";
-            text2 = "[fnt_pixel]But that's not the case. Let the hunt begin!";
+            text1 = "[fnt_pixel]Well, I wonder how you can beat me.";
+            text2 = "[fnt_pixel]It's impossible! You're not trying hard enough.";
+            text3 = "[fnt_pixel]But since you're here, let's see what you can do.";
+            text4 = "[fnt_pixel][shake]Defend yourself[/shake]!";
             #endregion
             break;
     }
@@ -25,11 +28,10 @@ function scr_txt_shadow_petro3(){
     switch(global.language){
         case 0:
             #region English
-            text1 = "[fnt_pixel]That...that was terrible, captain.";
-            text2 = "[fnt_pixel]I don't understand it. Why did I even attack you?";
-            text3 = "[fnt_pixel]Wait, what's going on?!";
-            text4 = "[fnt_pixel]No no no no no! Not again!";
-            text5 = "[fnt_pixel]Save me, Captain!";
+            text1 = "[fnt_pixel][wave]Damn it[/wave]... my head hurts. Even standing up is a big problem for me.";
+            text2 = "[fnt_pixel]Did I really say all those things. How embarrassing...";
+            text3 = "[fnt_pixel]I hope you can get me out of here.... I'm sure you can still use me.";
+
             #endregion
             break;
     }
@@ -39,10 +41,10 @@ function scr_txt_shadow_petro4(){
     switch(global.language){
         case 0:
             #region English
-            text1 = "[fnt_pixel]It's a lousy place, isn't it, Cap?";
-            text2 = "[fnt_pixel]I wouldn't want to stay here forever. Thanks for saving me.";
-            text3 = "[fnt_pixel]Why don't we find the rest of the guys, get out of here, and dock at a safe harbor? I've had enough of this horror.";
-            text4 = "[fnt_pixel]Cap, I promised the Inventor I'd have a couple bottles of rum with him, so you go on without me for now, and I'll come to my senses and come to your rescue, all right?";
+            text1 = "[fnt_pixel]Oh, captain, greetings!";
+            text2 = "[fnt_pixel]I have great news. I've made friends with a man named <inventor> and maybe we can come up with some new gear for me.";
+            text3 = "[fnt_pixel]And I'm standing here because of you, thank you very much!";
+            text4 = "[fnt_pixel]I'll be sure to be there for you when you need me. In the meantime, please accept this gift from me.";
             #endregion
             break;
     }

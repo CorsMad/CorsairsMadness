@@ -41,7 +41,7 @@ function scr_skip_texticon_blink()
     if iconspd>1 iconspd = 0;   
 }
 
-function scr_text_starter(_scr_t_max,_typist_spd)
+function scr_text_starter(_scr_t_max,_typist_spd,_snd)
 {
     text = "";
     scr_t = 0;
@@ -49,7 +49,11 @@ function scr_text_starter(_scr_t_max,_typist_spd)
     
     typist = scribble_typist();
     typist.in(_typist_spd, 0); // скорость печатания и проявления
-    //typist.sound_per_char(snd_beam_start, 1, 1, 0, 1)
+    
+    
+    if _snd!=undefined typist.sound(_snd,1,1,1);
+    //if _snd!=undefined typist.sound_per_char(_snd,1,1);
+    
     text_width = 400;
     text_x = camera_get_view_x(view_camera[0])+40;
     text_y = camera_get_view_y(view_camera[0])+8;

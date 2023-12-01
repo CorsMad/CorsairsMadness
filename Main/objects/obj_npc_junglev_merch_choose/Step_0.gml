@@ -3,7 +3,7 @@
 
 player_input();
 
-if key_left_press {fnc_snd_play_over(snd_menu_select);select -= 1;}
+if key_left_press {fnc_snd_play_over(snd_menu_select); select -= 1;}
 if key_right_press {fnc_snd_play_over(snd_menu_select);select += 1;}
 if select < 0 select = 2;
 if select > 2 select = 0;

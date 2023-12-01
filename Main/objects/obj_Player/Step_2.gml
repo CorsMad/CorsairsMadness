@@ -7,3 +7,5 @@ if instance_exists(obj_item_hook_masked)
         y = obj_item_hook_masked.y+16;   
     }
 }
+
+

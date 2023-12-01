@@ -3,4 +3,4 @@
 
 scr_txt_vulcano_bonnie2();
 
-scr_text_starter(1,0.5);
+scr_text_starter(2,0.5,snd_vo_npc_bonnieP);

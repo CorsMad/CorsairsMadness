@@ -23,12 +23,3 @@ switch(global.completed_PS2)
         }
         break;
 }
-
-#region указатель
-if global.dia_snowChief != 0 && global.dia_snowMerch = 0
-{
-    var p = instance_create_depth(184,151,0,obj_npc_village_pointer)   ;
-    p.village = 3;
-    p.position = 2;
-}
-#endregion

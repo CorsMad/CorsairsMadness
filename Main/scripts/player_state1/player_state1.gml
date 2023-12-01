@@ -284,14 +284,19 @@ if comboTimer <= 0
 
 #region Attack on ground
 
-if key_attack && isRecoil = 0 && isAfterhook = 0 && isAirThrowingBomb = 0 && isCarry = 0 && !instance_exists(obj_item_hook_masked) && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0
+if key_attack && superdash_timer=0 && isRecoil = 0 && isAfterhook = 0 && isAirThrowingBomb = 0 && isCarry = 0 && !instance_exists(obj_item_hook_masked) && isUsingitem = 0 && isAttacking = 0 && isGrounded = 1 && isAirattacking = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0
 {
 	image_index = 0;
 	isAttacking = 1;
+    
+    #region  SUPERDASH CANCELL
+    /*
     superdash_timer = 0;
             superdash_timer_count = 1;
             dash_vfx_timer = 0;
             superdash_power = 0;
+    */ 
+    #endregion   
     sprite_index = choose(spr_player_masked_attack1,spr_player_masked_attack2);
     
 	image_speed = 1;
@@ -386,17 +391,23 @@ if isAttacking = 1
 
 #region Attack in air
 
-if ((key_attack && isGrounded = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && ((isAfterhook = 0) || (isAfterhook = 1 && !instance_exists(obj_hitbox_mask_hook)))  && !instance_exists(obj_item_hook_masked) && isAttacking = 0 && isAirattacking = 0 && isRecoil = 0 && isAirThrowingBomb = 0 && isCarry = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0
+if ((key_attack && isGrounded = 0 && isAirattacking = 0) || (key_attack && key_jump && isGrounded = 1)) && ((isAfterhook = 0) || (isAfterhook = 1 && !instance_exists(obj_hitbox_mask_hook)))  && !instance_exists(obj_item_hook_masked) && isAttacking = 0 && isAirattacking = 0 && superdash_timer=0 && isRecoil = 0 && isAirThrowingBomb = 0 && isCarry = 0 && isAirUsingitem = 0 &&  isDashing = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0
 {
 	image_index = 0;
 	isAirattacking = 1;
 	sprite_index = spr_player_masked_attack1;
 	image_speed = 1;
     isAfterhook = 0;
-	superdash_timer = 0;
+    
+    #region superdash CANCEL
+    /*
+    superdash_timer = 0;
     //superdash_timer_count = 1;
     dash_vfx_timer = 0;
     superdash_power = 0;
+    */
+    #endregion
+	
     
 }
 if isAirattacking = 1 
@@ -522,7 +533,7 @@ if isAirattacking = 1
 #endregion
 
 #region Dashing
-if key_dashing && dashing_timer_count = 0 && isCarry = 0 && isAfterhook = 0 && !instance_exists(obj_item_hook_masked) && isRecoil = 0 && isUsingitem = 0 && isAttacking = 0 && isDashing = 0  && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0
+if key_dashing && superdash_timer=0 && dashing_timer_count = 0 && isCarry = 0 && isAfterhook = 0 && !instance_exists(obj_item_hook_masked) && isRecoil = 0 && isUsingitem = 0 && isAttacking = 0 && isDashing = 0  && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0
 {
     audio_play_sound(snd_player_dash_masked,0,0);
     dashingbuffer = 0;
@@ -547,10 +558,15 @@ if key_dashing && dashing_timer_count = 0 && isCarry = 0 && isAfterhook = 0 && !
         image_xscale = -1;
         dir = -1;   
     }
-	superdash_timer = 0;
+    #region superdashCANCEL
+        /*
+        superdash_timer = 0;
             //superdash_timer_count = 1;
             dash_vfx_timer = 0;
             superdash_power = 0;
+            */
+    #endregion
+	        
 }
 if isDashing = 1
 {
@@ -952,7 +968,11 @@ if  isRecoil = 0 && key_item_pressed && SpecAbilMask = 3 && superdash_timer_coun
     }
     
 }
- if (key_item_released) 
+
+
+#region OLD ACTIVATION
+/*
+if (key_item_released) 
     {
         if superdash_timer>=60
         {
@@ -976,6 +996,36 @@ if  isRecoil = 0 && key_item_pressed && SpecAbilMask = 3 && superdash_timer_coun
             superdash_power = 0;
         }
     }
+    */
+#endregion
+
+
+if superdash_timer>=60 && key_attack
+        {
+            superdash_timer = 0;
+            isDead = 12;
+            fnc_snd_play_onetime(snd_superdash_fly);
+            instance_create_depth(x,y,depth,obj_hitbox_mask_superdash);
+            superdash_timer_count = 1;
+            var superdash_vfx = instance_create_depth(x,y,depth-1,obj_superdash_stream);
+            switch(superdash_power)
+            {
+                case 0: superdash_vfx.sprite_index = spr_superdash_stream1;break;
+                case 1: superdash_vfx.sprite_index = spr_superdash_stream2;break;
+                case 2: superdash_vfx.sprite_index = spr_superdash_stream3;break;
+            }
+        }
+
+if (key_item_released) 
+    {
+        superdash_timer = 0;
+        superdash_timer_count = 1;
+        dash_vfx_timer = 0;
+        superdash_power = 0;
+    }
+
+
+
     
 
 #endregion
@@ -1395,6 +1445,11 @@ if superattack>superattack_max superattack = superattack_max;
 
 
 if superattack >= superattack_max{
+    
+    #region VFX
+    if !instance_exists(obj_player_mask_superaatack_vfx) instance_create_depth(x,y,depth-1,obj_player_mask_superaatack_vfx)
+    #endregion
+    
 	#region horizontal t1
 	if  global.superattack1 = 1 && key_abil && (key_right || key_left){
         hooking_timer = 0;
@@ -1432,7 +1487,7 @@ if superattack >= superattack_max{
 	    isVulnerable = 1;
 		turn_out_clone_timer = 0;
 		clone_timer= 0;
-        
+        if instance_exists(obj_player_mask_superaatack_vfx) instance_destroy(obj_player_mask_superaatack_vfx);
 	}
 	#endregion	
 	
@@ -1485,7 +1540,7 @@ if superattack >= superattack_max{
 		turn_out_clone_timer = 0;
         
 		
-        
+        if instance_exists(obj_player_mask_superaatack_vfx) instance_destroy(obj_player_mask_superaatack_vfx);
 	}
 	#endregion	
 	
@@ -1523,7 +1578,7 @@ if superattack >= superattack_max{
 		coyote_timer = 0;
 		damage_cd = 0;
 	    isVulnerable = 1;
-
+        if instance_exists(obj_player_mask_superaatack_vfx) instance_destroy(obj_player_mask_superaatack_vfx);
 	}
 	#endregion	
 	
@@ -1563,6 +1618,7 @@ if superattack >= superattack_max{
 	    isVulnerable = 1;
 		turn_out_clone_timer = 0;
 		clone_timer= 0;
+        if instance_exists(obj_player_mask_superaatack_vfx) instance_destroy(obj_player_mask_superaatack_vfx);
 	}
 	#endregion	
 }

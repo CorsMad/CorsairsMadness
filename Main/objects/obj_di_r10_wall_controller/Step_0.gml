@@ -14,7 +14,7 @@ if state = 0 // Berserker Boomber Boomer
                 e1.obj_cr = obj_molded_lava_berserker;   
             }
             break;
-        case 400:
+        case 200:
             if obj_Player.x > 288{
                 var e1 = instance_create_depth(96,224,0,obj_molded_big_spawner_n);
                 e1.y_cr = 16;
@@ -31,7 +31,7 @@ if state = 0 // Berserker Boomber Boomer
                 e2.obj_cr = obj_molded_lava_boomer; 
             }
             break;
-        case 1000:
+        case 300:
             t = 0;
             state = 0.5;
             break;
@@ -62,7 +62,7 @@ if state = 1 // Berserker Boomer Berserker Boomer Berserker
                 e1.obj_cr = obj_molded_lava_berserker;   
             }                
             break;
-        case 400:
+        case 150:
             if obj_Player.x > 288{
                 var e1 = instance_create_depth(208,224,0,obj_molded_big_spawner_n);
                 e1.y_cr = 16;
@@ -73,7 +73,7 @@ if state = 1 // Berserker Boomer Berserker Boomer Berserker
                 e1.obj_cr = obj_molded_lava_boomer;   
             }                
             break;
-        case 800:
+        case 300:
             if obj_Player.x > 288{
                 var e1 = instance_create_depth(112,224,0,obj_molded_big_spawner_n);
                 e1.y_cr = 16;
@@ -84,7 +84,7 @@ if state = 1 // Berserker Boomer Berserker Boomer Berserker
                 e1.obj_cr = obj_molded_lava_berserker;   
             } 
             break;
-        case 1100:
+        case 400:
             if obj_Player.x > 288{
                 var e1 = instance_create_depth(160,224,0,obj_molded_big_spawner_n);
                 e1.y_cr = 16;
@@ -95,7 +95,7 @@ if state = 1 // Berserker Boomer Berserker Boomer Berserker
                 e1.obj_cr = obj_molded_lava_boomer;   
             } 
             break;
-        case 1200:
+        case 500:
             t = 0;
             state = 1.5;
             break;

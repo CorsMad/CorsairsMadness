@@ -3,13 +3,9 @@
 //draw_rectangle(camera_get_view_x(view_camera[0]),0,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+30,false);
 scr_text_graphics();
 #region иконка
-if text = text1 || text = text3 {
-    draw_sprite(spr_text_icons,8,camera_get_view_x(view_camera[0])+6,camera_get_view_y(view_camera[0])+9);    
-    if obj_Player.x > obj_npc_vulcanov_chief.x obj_Player.image_xscale = -1 else image_xscale = 1
-} else {
-    draw_sprite(spr_text_icons,2,camera_get_view_x(view_camera[0])+6,camera_get_view_y(view_camera[0])+9);    
-    if obj_Player.x > obj_npc_lavav_merch.x obj_Player.image_xscale = -1 else image_xscale = 1
-}
+
+  draw_sprite(spr_text_icons,8,camera_get_view_x(view_camera[0])+6,camera_get_view_y(view_camera[0])+9);    
+
 #endregion
 if typist.get_state() = 1 draw_sprite(spr_text_icon_button_k,iconspd,camera_get_view_x(view_camera[0])+480-12,camera_get_view_y(view_camera[0])+64-10)
 

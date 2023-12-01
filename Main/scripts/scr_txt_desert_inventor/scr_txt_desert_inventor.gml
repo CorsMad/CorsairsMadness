@@ -5,10 +5,9 @@ function scr_txt_desert_comt1(){
     {
         case 0: //English  
             #region  ENG text
-            text1 = "[fnt_pixel]Hey, Sam! You going on a case? I got just the thing for you. A magic ring that can summon a cool bow.";
-            text2 = "[fnt_pixel]Took this bow off some crazy kid in leather pants, what's his name, Eagle...something. But I couldn't carry it around with me, so I put it in a magic ring.";
-            text3 = "[fnt_pixel]With the help of this bow you can cut vines, shoot at all sorts of mechanisms and stop enemies.";
-            text4 = "[fnt_pixel]Basically, it can do all the same things as any other bow. You better go try it.";
+            text1 = "[fnt_pixel]Oh, [wave]hey[/wave]! I was hoping I'd run into you here. Imagine, in one of the underground buildings, I found this [c_red]ring[/c].";
+            text2 = "[fnt_pixel]Look, I snap my fingers and a spirit appears! [wave]How exciting[/wave]!";
+            text3 = "[fnt_pixel]I used my gadgets to set it to shoot. Would you like to try it out? I've just prepared an obstacle course.";
             #endregion
             break;
         case 1: //russian
@@ -49,9 +48,9 @@ function scr_txt_desert_comt2(){
     {
         case 0: //English  
             #region  ENG text
-            text1 = "[fnt_pixel]To use the ring - just press the special attack button and the bow will shoot right in front of you.";
-            text2 = "[fnt_pixel]Although it doesn't pierce enemies, but it can affect their behavior. Good luck."; 
-			text3 = "[fnt_pixel]Mission accomplished!"
+            text1 = "[fnt_pixel]It's pretty simple. Just press the [c_red]use item button[/c] and the spirit that appears will release a magic arrow.";
+            text2 = "[fnt_pixel]Even though it doesn't deal damage, you should still try it out on the local monsters."; 
+			text3 = "[fnt_pixel]You can also break the magical green threads that hold the platforms or knock down targets."
             #endregion
             break;
         case 1: //russian
@@ -92,7 +91,8 @@ function scr_txt_desert_comt3(){
     {
         case 0: //English  
             #region  ENG text
-            text1 = "[fnt_pixel]Well done, Sam, I couldn't have done it better. Now, let's go.";
+            text1 = "[fnt_pixel]Wow, that was [wave]awesome[/wave]! I'll give you an ecopy of the ring for now, you might need it now.";
+            text2 = "[fnt_pixel]But as soon as you set sail, bring it back to me. I'll try experimenting with it some more.";
             #endregion
             break;
         case 1: //russian

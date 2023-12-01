@@ -36,8 +36,8 @@
     "path": "sprites/spr_bossmerch_phase2_hand_idle/spr_bossmerch_phase2_hand_idle.yy",
   },
   "spriteMaskId": {
-    "name": "spr_bossmerch_phase2_hand_small",
-    "path": "sprites/spr_bossmerch_phase2_hand_small/spr_bossmerch_phase2_hand_small.yy",
+    "name": "spr_bossmerch_phase2_hand_attackr_mask",
+    "path": "sprites/spr_bossmerch_phase2_hand_attackr_mask/spr_bossmerch_phase2_hand_attackr_mask.yy",
   },
   "visible": true,
 }

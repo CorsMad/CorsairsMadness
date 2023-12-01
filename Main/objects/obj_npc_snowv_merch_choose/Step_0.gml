@@ -21,16 +21,7 @@ if key_jump || key_attack
                     instance_create_depth(x,y,-100000,obj_txt_snowv_merch3)
                     break;
                 case 1:
-                    switch(global.saved_snow)
-                    {
-                        case 0:
-                            instance_create_depth(x,y,-100000,obj_txt_snowv_merch_f2)
-                            break;
-                        case 1:
-                            instance_create_depth(x,y,-100000,obj_txt_snowv_merch_f3)
-                            break;
-                    }
-                    
+                    instance_create_depth(x,y,-100000,obj_txt_snowv_merch_f2)
                     break;
             }
             

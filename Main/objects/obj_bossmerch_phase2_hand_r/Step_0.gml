@@ -33,7 +33,7 @@ switch(state){
                 });
                 image_index = 2;
                 fnc_snd_play_onetime(snd_player_boat_pistol);
-				instance_create_depth(x,y,depth-1,obj_bossmerch_phase1_proj1_1);
+				instance_create_depth(x-8,y-10,depth-1,obj_bossmerch_phase1_proj1_1);
 				break;
             case 70:image_index = 1;break;
 			case 100:
@@ -43,7 +43,7 @@ switch(state){
                     image_yscale : 2
                 });
                 image_index = 2;
-				instance_create_depth(x,y,depth-1,obj_bossmerch_phase1_proj1_1);
+				instance_create_depth(x-8,y-10,depth-1,obj_bossmerch_phase1_proj1_1);
 				break;
             case 120: image_index = 1;break;
 			case 150:
@@ -53,7 +53,7 @@ switch(state){
                     image_yscale : 2
                 });
                 image_index = 2;
-				instance_create_depth(x,y,depth-1,obj_bossmerch_phase1_proj1_1);
+				instance_create_depth(x-8,y-10,depth-1,obj_bossmerch_phase1_proj1_1);
 				break;
             case 175:image_index = 0;break;
             case 180:image_index = 3;break;

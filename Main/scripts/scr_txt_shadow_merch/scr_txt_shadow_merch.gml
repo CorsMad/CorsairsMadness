@@ -26,7 +26,7 @@ function scr_txt_shadow_merch3(){
     switch(global.language){
         case 0:
             #region English
-            text1 = "[fnt_pixel]Zombies, abominations. You ever heard of it? It's all over the place.";
+            text1 = choose("[fnt_pixel]I wonder why it's always night on this island?","[fnt_pixel]I like skeletons. They don't talk much, and they drink a lot. They can drink endlessly if you think about it.");
             #endregion
             break;
     }
@@ -36,12 +36,9 @@ function scr_txt_shadow_merch4(){
     switch(global.language){
         case 0:
             #region English
-            text1 = "[fnt_pixel]So, how'd it go, Cap? To be honest, I'd like to stay a little longer.";
-            text2 = "[fnt_pixel]I like these dark and uninviting places. Why don't you take a little break here with me?";
-            text3 = "[fnt_pixel]It's not like you have some important goal you're working towards. Heh-heh...";
-            text4 = "[fnt_pixel]Okay, okay, I'm just kidding. Of course you have to hurry, and naturally I'll always be by your side, after all, who are you without me, right?";
-            text5 = "[fnt_pixel]Hehehe...";
-            text6 = "[fnt_pixel]Let's go to the next island! Just don't forget to solve the crew member issue first.";
+            text1 = "[fnt_pixel]Oh, Sam, hello! I see another temple has been freed from the dark forces?";
+            text2 = "[fnt_pixel]I hope you're not leaving your bouncer [c_red]Petro[/c] there. Or are you?";
+            text3 = "[fnt_pixel]Either way, it's time for you to set sail, so let me know when you're ready.";
             #endregion
             break;
     }
@@ -65,5 +62,32 @@ function scr_txt_shadow_merch6(){
             text1 = "[fnt_pixel]Let's set sail now!";
             #endregion
             break;
+    }
+}    
+
+function scr_txt_shadow_merch8(){
+    switch(global.language){
+        case 0:
+            #region eng
+            text1 = "[fnt_pixel]Great, great! You can talk to [c_red]Petro[/c] outside.";
+            text2 = "[fnt_pixel]He might have some kind of [c_red]gift[/c] for you.";
+            text3 = "[fnt_pixel]As soon as you're done with that, let me know.";
+            #endregion
+            break;
+    }
+}
+    
+function scr_txt_shadow_merchhelp(){
+    switch(global.language){
+        case 0:
+            #region eng
+            text1 = "[fnt_pixel]Oh, hey! I was traveling and came across this mechanism."
+            text2 = "[fnt_pixel]The lever that activates it looks unreliable, so I didn't touch it."
+            text3 = "[fnt_pixel]I've seen this device before. I think you have to turn on the lights in the order shown."
+            text4 = "[fnt_pixel]Well, you can figure it out, I don't think it's too complicated."
+            text5 = "[fnt_pixel]I gotta go, see you later."
+            #endregion
+            break;
+            
     }
 }    

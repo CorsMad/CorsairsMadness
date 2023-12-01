@@ -49,7 +49,11 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2948FBD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_checkpoint_NEW","path":"objects/obj_checkpoint_NEW/obj_checkpoint_NEW.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":256.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
--314,-2147483648,-15,86,-181,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_jngl_main","path":"tilesets/tls_jngl_main/tls_jngl_main.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
+-25,7,1,8,-4,-2147483648,-25,7,1,8,-4,-2147483648,-8,7,1,12,-16,10,1,11,-4,-2147483648,-8,7,1,8,-15,-2147483648,-2,0,
+-4,-2147483648,-8,7,1,8,-21,-2147483648,-8,7,1,8,-21,-2147483648,-8,7,1,8,-21,-2147483648,-8,7,1,8,-11,-2147483648,-3,0,3,-2147483648,
+0,0,-4,-2147483648,-8,7,1,8,-7,-2147483648,-4,0,-6,-2147483648,-2,0,-2,-2147483648,-8,7,1,8,-7,-2147483648,1,0,-10,-2147483648,-2,0,
+1,-2147483648,-8,7,1,8,-5,-2147483648,-16,0,-8,7,1,8,-6,-2147483648,-6,0,-9,-2147483648,-8,7,1,8,-21,-2147483648,-8,7,1,8,
+-21,-2147483648,-8,7,1,8,-21,-2147483648,-8,7,1,8,-21,-2147483648,-8,7,1,8,-21,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_dark","path":"tilesets/tls_dark/tls_dark.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 3,107,93,93,-3,105,5,107,105,105,97,95,-4,93,1,110,-10,93,5,97,-2147483648,-2147483648,95,93,-3,107,2,106,107,-3,
 105,21,97,95,106,107,107,61,107,93,107,61,93,46,107,93,96,96,106,97,-2147483648,-2147483648,95,-3,105,9,107,46,105,107,

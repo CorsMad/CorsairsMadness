@@ -34,12 +34,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bossmerch_phase2_proj_big",
-    "path": "sprites/spr_bossmerch_phase2_proj_big/spr_bossmerch_phase2_proj_big.yy",
+    "name": "spr_bossmerch_phase2_proj_big2",
+    "path": "sprites/spr_bossmerch_phase2_proj_big2/spr_bossmerch_phase2_proj_big2.yy",
   },
   "spriteMaskId": {
-    "name": "spr_bossmerch_phase2_proj_big",
-    "path": "sprites/spr_bossmerch_phase2_proj_big/spr_bossmerch_phase2_proj_big.yy",
+    "name": "spr_bossmerch_phase2_proj_big2",
+    "path": "sprites/spr_bossmerch_phase2_proj_big2/spr_bossmerch_phase2_proj_big2.yy",
   },
   "visible": true,
 }

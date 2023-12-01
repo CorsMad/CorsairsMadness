@@ -55,7 +55,7 @@ switch(state){
 		switch(t){
 			case 50:
 				sprite_index = spr_bossmerch_phase2_hand_attackL;
-				mask_index = spr_bossmerch_phase2_hand_big;
+				mask_index = spr_bossmerch_phase2_hand_attackL_big_mask;
                 image_index = 4;
                 image_speed = 0;
 				break;
@@ -105,7 +105,7 @@ switch(state){
 		switch(t){
 			case 5:
                 image_index = 4;
-				mask_index = spr_bossmerch_phase2_hand_small;
+				mask_index = spr_bossmerch_phase2_hand_attackr_mask;
 				break;
             case 10:image_index = 1;break;
             case 15:image_index = 2;break;

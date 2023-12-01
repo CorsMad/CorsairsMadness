@@ -2,11 +2,11 @@ function scr_txt_shadow_chief1(){
     switch(global.language){
         case 0:
             #region English
-            text1 = "[fnt_pixel]Who are you? Believe me, we have nothing of value. Please leave.";
-            text2 = "[fnt_pixel]What, you've come to find out about the cursed temple? I don't know anything, or rather, I don't want to know anything. Cursed temple - sounds very scary.";
-            text3 = "[fnt_pixel]All the walls have ears and there's always something hiding in the shadows. I can't even go to the bathroom alone in case something happens to me.";
-            text4 = "[fnt_pixel]Anyway, please don't ask me about any chthonic creepiness, traveler, just go on your way.";
-            text5 = "[fnt_pixel]Better yet, talk to the Inventor or the shopkeeper, but don't come to me again.";
+            text1 = "[fnt_pixel]Hello! Welcome to our [c_purple]shadow island[/c]! As you can see, it's chaos outside!";
+            text2 = "[fnt_pixel]The streets are overrun with [shake]skeletons[/shake]. And it all started after one [c_red]big guy[/c] sneaked past the village.";
+            text3 = "[fnt_pixel]I bet it's someone you know, because our visitors don't usually move around on their own anymore, heh heh heh.";
+            text4 = "[fnt_pixel]That's because our island is a big [c_red]Graveyard[/c] where people are brought to be buried.";
+            text5 = "[fnt_pixel]But these skeletons will scare away all the people and they'll stop visiting us altogether. Why don't you go to our temple and deal with it?";
             #endregion
             break;
     }   
@@ -17,26 +17,10 @@ function scr_txt_shadow_chief2(){
     switch(global.language){
         case 0:
             #region English
-            text1 = choose("[fnt_pixel]Please go away, you're scaring me.","[fnt_pixel]Ouch! Ah, it's your shadow. I thought a ghost had come to haunt me.");
+            text1 = "[fnt_pixel]Finally, my boys can get back to their posts. And it's all thanks to you!";
+            text2 = "[fnt_pixel]Now people from neighboring islands will be able to come here as before without fear.";
+            text3 = "[fnt_pixel]You've done a great job! Here's a little gift from all of us.";
             #endregion
             break;
-    }   
-        
-}
-
-function scr_txt_shadow_chief3(){
-    switch(global.language){
-        case 0:
-            #region English
-            text1 = "[fnt_pixel]Why did you come to see me again? I told you not to come again.";
-            text2 = "[fnt_pixel]Did you clean the temple? I don't believe you. It smells like a trap. I go check the temple and you'll stab me in the back, right?";
-            text3 = "[fnt_pixel]No, no, don't say anything. I'm not falling for your tricks.";
-            text4 = "[fnt_pixel]I've been telling the others for a long time that the day is coming when these temples will be a problem.";
-            text5 = "[fnt_pixel]I reminded them of the old prophecy that a great evil would at some point break out of these temples and consume first us and then the whole world.";
-            text6 = "[fnt_pixel]But no one believed me.";
-            text7 = "[fnt_pixel]I will stay here and accept my fate, and you do what you want.";
-            #endregion
-            break;
-    }   
-        
+    }       
 }

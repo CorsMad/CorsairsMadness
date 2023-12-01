@@ -51,7 +51,7 @@ switch(state){
 		}
 		#endregion
 		if t > 50 && t < 400
-		if t mod 40 = 0 scr_finalboss_phase1_proj_l();
+		if t mod 60 = 0 scr_finalboss_phase1_proj_l();
 		if t = 450 {
 			t = 0;
 			state = 2;
@@ -132,7 +132,7 @@ switch(state){
 		case 395:image_index = 4;break;
 		case 400:image_index = 5;break;
 		case 450: sprite_index = spr_bossmerch_phase1_idle;image_speed =1 ;break;
-		case 500:
+		case 650:
 			state = 4;
 			t = 0;
 			break;
@@ -173,7 +173,7 @@ switch(state){
 		}
 		#endregion
 		if t > 50 && t < 400
-		if t mod 40 = 0 scr_finalboss_phase1_proj();
+		if t mod 60 = 0 scr_finalboss_phase1_proj();
 		if t = 450 {
 			t = 0;
 			state = 7;
@@ -251,7 +251,7 @@ switch(state){
 		case 395:image_index = 4;break;
 		case 400:image_index = 5;break;
 		case 450: sprite_index = spr_bossmerch_phase1_idle;image_speed =1 ;break;
-		case 500:
+		case 650:
 			state = 9;
 			t = 0;
 			break;

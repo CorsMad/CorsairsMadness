@@ -11,20 +11,8 @@ scribble_text.wrap(text_width);
 
 switch(scr_t)
 {
-    case 0: text = eng1;break;                                                                                               
+    case 0: text = text0;break; 
+    case 1: text = text1;break; 
+    case 2: text = text2;break; 
+    case 3: text = text3;break; 
 }
-/*
-
-draw_set_font(fnt_pixel);
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
-draw_set_color(c_white);
-
-var _len = string_length(text[0,text_current]);
-if (char_current < _len)
-    {
-    char_current += char_speed;
-    }
-    
-var _str = string_copy(text[0,text_current], 1, char_current);
-draw_text(text_x, text_y,  _str);    

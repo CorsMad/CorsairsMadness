@@ -15,4 +15,6 @@ switch(scr_t)
     case 1: text = text2;break;
     case 2: text = text3;break;
     case 3: text = text4;break;
+    case 4: text = text5;break;
+    case 5: text = text6;break;
 }

@@ -19,6 +19,7 @@ if key_jump || key_attack
                 global.saved_shadow = 1;
                 global.secrets -=7; 
                 var cutsc = instance_create_depth(0,0,0,obj_coin_cutscene);
+                cutsc.merch = 3;
 				cutsc.target = obj_shadow_coin_exchanger;
                 instance_destroy();
             }       
@@ -26,7 +27,7 @@ if key_jump || key_attack
         case 1:
             instance_destroy();
             obj_npc_shadowv_merch.talk = 0;
-            obj_Player.isDead = 0;
+            obj_Player.isDead = 2.1;
             break;
     }
 }

@@ -11,7 +11,8 @@ scribble_text.wrap(text_width);
 
 switch(scr_t)
 {
-    case 0: text = eng1;break;                
-    case 1: text = eng2;break;                
-    case 2: text = eng3;break;                
+    case 0: text = text0;break;                
+    case 1: text = text1;break;                
+    case 2: text = text2;break;                
+    case 3: text = text3;break;                
 }
