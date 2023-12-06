@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if instance_exists(obj_end_sam){
+    if obj_end_sam.x < x image_xscale = -1 else image_xscale = 1
+}
+
 switch(state){
 	case 1:
 		t++;
@@ -17,7 +21,7 @@ switch(state){
 			case 95:
 				sprite_index = spr_ending_sully_idle;
 				image_speed = 1;
-				//obj_ending.step+=0.5;
+				obj_ending.step+=0.5;
 				break;
 				
 		}

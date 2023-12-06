@@ -4,14 +4,13 @@
 
 draw_set_color(c_white);
 
-if instance_exists(obj_lizardball){
-   draw_text(64,64,string(obj_lizardball.state));    
-   draw_text(64,96,string(obj_lizardball.t));    
-   draw_text(64,128,string(obj_lizardball.hspd));    
-   draw_text(64,164,string(obj_lizardball.vspd));    
-   draw_text(64,192,string(obj_lizardball.x));    
+if instance_exists(obj_ending){
+   draw_text(240,64, string(obj_ending.state));    
+   draw_text(240,96, string(obj_ending.t));    
+   draw_text(240,128,string(obj_ending.ending));    
+   draw_text(240,164,string(obj_ending.end_start));    
+   draw_text(240,192,string(obj_ending.step));    
 }
-
 
 
     /*	

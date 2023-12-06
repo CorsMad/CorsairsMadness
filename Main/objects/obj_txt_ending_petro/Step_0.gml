@@ -12,7 +12,7 @@ if key_skip
     
     if scr_t > scr_t_max 
     {		     
-		obj_ending.step+=0.5;
+		obj_end_petro.state=1;
         instance_destroy();   
     } 
 }

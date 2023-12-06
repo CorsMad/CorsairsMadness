@@ -24,9 +24,9 @@ if global.saved_desert	= 1	{
 if global.saved_snow	= 1	{
 	instance_create_depth(448,240,0,obj_end_sully)
 }
-if global.saved_shadow	= 1	{
-	instance_create_depth(576,240,0,obj_end_petro)
-}
 if global.saved_vulcano = 1	{
 	instance_create_depth(608,240,0,obj_end_bonnie)
+}
+if global.saved_shadow	= 1	{
+	instance_create_depth(576,240,0,obj_end_petro)
 }

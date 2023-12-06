@@ -28,13 +28,13 @@ if state = 1 {
 				scr_ending_step1(obj_txt_ending_chief_shadow);
 				break;	
 			case 7: // разговор с петро
-				scr_ending_step1();
+				scr_ending_step1(obj_txt_ending_petro);
 				break;
 			case 8: // разговор с дава вождь
 				scr_ending_step1(obj_txt_ending_chief_vulcano);
 				break;	
-			case 9: // разговор с петро
-				scr_ending_step1();
+			case 9: // разговор с бонни
+				scr_ending_step1(obj_txt_ending_bonnie);
 				break;
 			case 10:
 				// Переход героя влево к изобретателю

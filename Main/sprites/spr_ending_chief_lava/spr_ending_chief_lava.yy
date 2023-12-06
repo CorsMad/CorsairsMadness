@@ -32,7 +32,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bdfa860f-0443-4618-8749-d639abe57a6a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 7,
+  "origin": 9,
   "parent": {
     "name": "Ending",
     "path": "folders/Sprites/Characters/Chiefs/Ending.yy",
@@ -77,7 +77,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 15,
+    "xorigin": 20,
     "yorigin": 55,
   },
   "swatchColours": null,

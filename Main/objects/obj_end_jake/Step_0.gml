@@ -3,6 +3,10 @@
 
 fnc_Collision(obj_block);
 
+if instance_exists(obj_end_sam){
+    if obj_end_sam.x < x image_xscale = -1 else image_xscale = 1
+}
+
 switch(state){
 	case 1:
 		t++;
