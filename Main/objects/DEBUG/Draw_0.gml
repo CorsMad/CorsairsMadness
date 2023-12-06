@@ -9,6 +9,7 @@ if instance_exists(obj_lizardball){
    draw_text(64,96,string(obj_lizardball.t));    
    draw_text(64,128,string(obj_lizardball.hspd));    
    draw_text(64,164,string(obj_lizardball.vspd));    
+   draw_text(64,192,string(obj_lizardball.x));    
 }
 
 

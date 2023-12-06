@@ -3,3 +3,5 @@
 
 state = 0;
 t = 0;
+vspd = 0;
+hspd = 0;

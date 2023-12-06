@@ -3,7 +3,7 @@
 randomise();
 global.TargetX      = 240;
 global.TargetY      = 160;
-global.TargetRoom   = Village_jungle;
+global.TargetRoom   = TESTROOM;
 
 
 global.fTargetX     = 32;

@@ -8,7 +8,7 @@ if a = 9
 
 if instance_exists(obj_Player)
 {
-	x = obj_Player.x+obj_Player.dir*16;
+	x = obj_Player.x+obj_Player.dir*24;
 	y = obj_Player.y; 	
 }
 

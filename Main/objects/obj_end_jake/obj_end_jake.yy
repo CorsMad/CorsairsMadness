@@ -4,6 +4,7 @@
   "name": "obj_end_jake",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -31,6 +32,9 @@
     "name": "spr_npc_jake_idle",
     "path": "sprites/spr_npc_jake_idle/spr_npc_jake_idle.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_skeleton_mask",
+    "path": "sprites/spr_skeleton_mask/spr_skeleton_mask.yy",
+  },
   "visible": true,
 }

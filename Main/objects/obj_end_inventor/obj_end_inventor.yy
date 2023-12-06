@@ -27,7 +27,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_ct_ending",
+    "path": "sprites/spr_ct_ending/spr_ct_ending.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

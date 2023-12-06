@@ -12,9 +12,21 @@ switch(sum){
         break;
 }
 
-// ПОЯВЛЕНИЕ ЧЕЛИКОВ
-if global.saved_jungle  = 1 instance_create_depth(x,y,0,obj_end_jake);
-if global.saved_desert  = 1 instance_create_depth(x,y,0,obj_end_pew);
-if global.saved_snow    = 1 instance_create_depth(x,y,0,obj_end_sully);
-if global.saved_shadow  = 1 instance_create_depth(x,y,0,obj_end_petro);
-if global.saved_vulcano = 1 instance_create_depth(x,y,0,obj_end_bonnie);
+
+// Появление команды
+
+if global.saved_jungle	= 1	{
+	instance_create_depth(368,240,0,obj_end_jake)
+}
+if global.saved_desert	= 1	{
+	instance_create_depth(400,240,0,obj_end_pew)
+}
+if global.saved_snow	= 1	{
+	instance_create_depth(448,240,0,obj_end_sully)
+}
+if global.saved_shadow	= 1	{
+	instance_create_depth(576,240,0,obj_end_petro)
+}
+if global.saved_vulcano = 1	{
+	instance_create_depth(608,240,0,obj_end_bonnie)
+}

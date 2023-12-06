@@ -290,7 +290,7 @@ if isAttacking = 1 && image_index = 5
 }
 if isAttacking = 1 && image_index = 1
 {
-	instance_create_depth(x,y,0,obj_hitbox);
+	instance_create_depth(x+image_xscale*30,y,0,obj_hitbox);
 }
 if isAttacking = 1 && !place_meeting(x,y+1,obj_block)
 {
