@@ -16,7 +16,7 @@ function scr_txt_ending_chief_desert(){
 		case 0:
 			#region eng
 			text1 = "[fnt_pixel]I hope there are no more storms. We'll continue to protect our temples.";
-			text2 = "[fnt_pixel]I'm also glad that [c_red]Pew[/c]is free. He's a cheapskate, but it's still good that he's saved.";
+			text2 = "[fnt_pixel]I'm also glad that [c_red]Pew[/c] is free. He's a cheapskate, but it's still good that he's saved.";
 			#endregion
 			break;
 	}	

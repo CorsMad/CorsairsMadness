@@ -30,6 +30,16 @@ switch(state){
         break;
     case 5:
         #region уход
+		hspd = -2;
+		sprite_index = spr_player_run;
+		image_speed = 1;
+		if x <= 224 {
+			x = 224;
+			hspd = 0;
+			state = 6;
+			sprite_index = spr_player_idle;
+			image_speed = 1;
+		}
         #endregion
         break;
     case 6:

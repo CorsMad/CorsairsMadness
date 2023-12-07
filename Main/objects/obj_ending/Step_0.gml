@@ -38,7 +38,9 @@ if state = 1 {
 				break;
 			case 10:
 				// Переход героя влево к изобретателю
-				
+				obj_end_sam.state = 5;
+				obj_camera_ending.state = 2;
+				step+=0.5;
 				break;
 			case 11:
 				scr_ending_step1();
