@@ -87,10 +87,10 @@ global.language = 0;
      
     //0
     
-    global.saved_jungle  = 1;  //0
-    global.saved_desert  = 1;  //0
-    global.saved_snow    = 1;  //0
-    global.saved_shadow  = 1;  //0
+    global.saved_jungle  = 0;  //0
+    global.saved_desert  = 0;  //0
+    global.saved_snow    = 0;  //0
+    global.saved_shadow  = 0;  //0
     global.saved_vulcano = 1;  //0
     
     

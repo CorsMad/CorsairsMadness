@@ -10,8 +10,9 @@ if instance_exists(obj_end_sam){
 switch(state){
 	case 1:
 		t++;
-		if t = 50{
+		if t = 10{
 			t = 0;
+            fnc_snd_play_onetime(snd_player_jump);
 			vspd = -5;
 			state = 2;
 			sprite_index = spr_npc_jake_jumpland;
@@ -29,6 +30,7 @@ switch(state){
 		if vspd>=0 {
 			instance_create_depth(x,y,depth-1,obj_end_jake_part)
 			vspd = 0;
+            fnc_snd_play_onetime(snd_player_hook_recover);
 			state = 3;
 		}
 		break;
@@ -37,8 +39,9 @@ switch(state){
 		if place_meeting(x,y+vspd,obj_block){
 			vspd = -5;
 			state = 4;
-			instance_create_depth(x,240,depth-2,obj_sfx4);
-			instance_create_depth(x,240,depth-1,obj_sfx_dust_expl_big);
+            fnc_snd_play_onetime(snd_terrain_destroy);
+			instance_create_depth(x,1584,depth-2,obj_sfx4);
+			instance_create_depth(x,1584,depth-1,obj_sfx_dust_expl_big);
 			if instance_exists(obj_end_jake_part) obj_end_jake_part.state = 1;
 		}
 		break;
@@ -51,6 +54,7 @@ switch(state){
 		if vspd < 5 vspd+=0.2; else vspd = 5;
 		if place_meeting(x,y+vspd,obj_block){
 			state = 5;	
+            fnc_snd_play_onetime(snd_player_landing);
 			instance_create_depth(x,240,depth-2,obj_sfx4);
 			image_index = 1;
 		}

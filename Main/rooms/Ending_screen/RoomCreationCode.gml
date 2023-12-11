@@ -16,17 +16,17 @@ switch(sum){
 // Появление команды
 
 if global.saved_jungle	= 1	{
-	instance_create_depth(368,240,0,obj_end_jake)
+	instance_create_depth(368,1584,0,obj_end_jake)
 }
 if global.saved_desert	= 1	{
-	instance_create_depth(400,240,0,obj_end_pew)
+	instance_create_depth(400,1584,0,obj_end_pew)
 }
 if global.saved_snow	= 1	{
-	instance_create_depth(448,240,0,obj_end_sully)
+	instance_create_depth(448,1584,0,obj_end_sully)
 }
 if global.saved_vulcano = 1	{
-	instance_create_depth(608,240,0,obj_end_bonnie)
+	instance_create_depth(608,1584,0,obj_end_bonnie)
 }
 if global.saved_shadow	= 1	{
-	instance_create_depth(576,240,0,obj_end_petro)
+	instance_create_depth(576,1584,0,obj_end_petro)
 }

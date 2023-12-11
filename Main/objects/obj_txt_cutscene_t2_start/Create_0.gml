@@ -10,4 +10,4 @@ eng4 = "[fnt_pixel]I guess i need to get out of here. "
 
 #endregion
 
-scr_text_starter(3,0.5);
+scr_text_starter(3,0.5,snd_vo_npc_sam_p);

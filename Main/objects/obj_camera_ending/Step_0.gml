@@ -8,7 +8,7 @@
 */
 
 x+=hspd;
-
+y+=vspd;
 switch(state){
 	case 0:
 		hspd=-3;
@@ -26,16 +26,11 @@ switch(state){
 	case 3:
 		if hspd <0 hspd+=0.029 else hspd = 0;
 		break;
+	case 4:
+        t++;
+        if t > 50 {
+            vspd -= 0.02;   
+        }
+        break;
 		
-		
-	/*	
-	case 2:
-		if hspd >-2 hspd-=0.01;
-		if x <= 240 {
-			x = 240;
-			hspd = 0;
-			state = 3;
-		}		
-		break;
-	*/
 }

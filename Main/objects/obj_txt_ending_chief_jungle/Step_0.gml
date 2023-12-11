@@ -11,8 +11,9 @@ if key_skip
     if typist.get_state() != 1 {typist.skip();} else scr_t++;
     
     if scr_t > scr_t_max 
-    {		     
-		obj_ending.step+=0.5;
+    {		
+        if global.saved_jungle = 1 obj_ending.step+=0.5; else obj_ending.step+=1.5;
+		if instance_exists(icon) icon.on = 0;
         instance_destroy();   
     } 
 }

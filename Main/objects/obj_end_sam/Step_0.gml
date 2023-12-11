@@ -37,6 +37,7 @@ switch(state){
 			x = 224;
 			hspd = 0;
 			state = 6;
+            t=0;
 			sprite_index = spr_player_idle;
 			image_speed = 1;
 		}
@@ -44,6 +45,12 @@ switch(state){
         break;
     case 6:
         #region последний разговор
+        t++
+        if t = 50 {
+            state = 7;
+            t = 0;
+            obj_ending.step = 11;
+        }
         #endregion
         break;
 }

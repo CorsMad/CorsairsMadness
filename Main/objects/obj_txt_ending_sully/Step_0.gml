@@ -13,6 +13,7 @@ if key_skip
     if scr_t > scr_t_max 
     {		     
 		obj_end_sully.state=1;
+        if instance_exists(icon) icon.on = 0;
         instance_destroy();   
     } 
 }

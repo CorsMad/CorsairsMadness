@@ -13,3 +13,9 @@ if a != 0 {
 if a >=10 {
    a = 0;
 }
+
+if place_meeting(x,y,obj_end_sam) && a = 0 && obj_end_sam.hspd !=0 
+{
+   instance_create_depth(obj_end_sam.x,obj_end_sam.y-8,depth,obj_leaf);
+   a = 1;
+}
