@@ -4,5 +4,5 @@ instance_create_depth(x,y,0,obj_room_transition_black_screen);
 
 if global.secrets_s2p_s = 0 
 {
-	instance_create_depth(1248,112,100,obj_secret_s2p_s);
+	instance_create_depth(32,192,100,obj_secret_s2p_s);
 }

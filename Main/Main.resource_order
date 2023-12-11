@@ -970,6 +970,7 @@
     {"name":"Shadow","order":12,"path":"folders/Sounds/BGR music/Shadow.yy",},
     {"name":"Snow","order":11,"path":"folders/Sounds/BGR music/Snow.yy",},
     {"name":"Tutorial","order":7,"path":"folders/Sounds/BGR music/Tutorial.yy",},
+    {"name":"Ending","order":7,"path":"folders/Sounds/Ending.yy",},
     {"name":"Enemy sounds","order":3,"path":"folders/Sounds/Enemy sounds.yy",},
     {"name":"Death","order":15,"path":"folders/Sounds/Enemy sounds/Death.yy",},
     {"name":"Dsert","order":8,"path":"folders/Sounds/Enemy sounds/Dsert.yy",},
@@ -1339,7 +1340,6 @@
     {"name":"Temple","order":13,"path":"folders/Tile Sets/Temple.yy",},
     {"name":"Special tiles","order":5,"path":"folders/Tile Sets/Temple/Special tiles.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Ending","order":7,"path":"folders/Sounds/Ending.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"PL1_r8","order":7,"path":"rooms/PL1_r8/PL1_r8.yy",},
@@ -2062,6 +2062,7 @@
     {"name":"spr_fastfly_molded_slowfly","order":2,"path":"sprites/spr_fastfly_molded_slowfly/spr_fastfly_molded_slowfly.yy",},
     {"name":"obj_des_lvl2_container_preboss","order":10,"path":"objects/obj_des_lvl2_container_preboss/obj_des_lvl2_container_preboss.yy",},
     {"name":"msc_jp1_prepurch","order":9,"path":"sounds/msc_jp1_prepurch/msc_jp1_prepurch.yy",},
+    {"name":"obj_player_questmark","order":9,"path":"objects/obj_player_questmark/obj_player_questmark.yy",},
     {"name":"obj_snow_aoe_trigger_s2r1_2","order":1,"path":"objects/obj_snow_aoe_trigger_s2r1_2/obj_snow_aoe_trigger_s2r1_2.yy",},
     {"name":"spr_molded_brown_blood","order":7,"path":"sprites/spr_molded_brown_blood/spr_molded_brown_blood.yy",},
     {"name":"obj_bjoss3_hook_block_l_cr","order":4,"path":"objects/obj_bjoss3_hook_block_l_cr/obj_bjoss3_hook_block_l_cr.yy",},

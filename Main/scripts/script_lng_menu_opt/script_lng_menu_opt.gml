@@ -1183,7 +1183,7 @@ function fnc_lng_pause_ingame(){
             menu[31, 11] = "default 2";
             menu[31, 12] = "back";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nback";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nback";
 
             #endregion
 
@@ -1206,7 +1206,7 @@ function fnc_lng_pause_ingame(){
             menu[41, 6]  = "Polski";
             menu[41, 7]  = "日本語";
             menu[41, 8]  = "Deutsch";
-            menu[41, 9] = "Français";
+            menu[41, 9]  = "Français";
             menu[41, 10] = "Italiano";
             menu[41, 11] = "\nback";
 
@@ -1287,7 +1287,7 @@ All unsaved progress will be lost";
         menu[31, 10] = "ПО УМОЛЧАНИЮ 2";
         menu[31, 11] = "\nНАЗАД"
 
-        menu[32, 0] = "\n\n\n\n\n\n\n\nназад";
+        menu[32, 0] = "\n\n\n\n\n\n\n\n\nназад";
 
         #endregion
 
@@ -1390,7 +1390,7 @@ All unsaved progress will be lost";
             menu[31, 10] = "por defecto 2";
             menu[31, 11] = "\natrás";
 
-            menu[32, 0] = "\n\n\n\n\n\n\natrás";
+            menu[32, 0] = "\n\n\n\n\n\n\n\natrás";
 
 
             #endregion
@@ -1494,7 +1494,7 @@ todo el progreso no guardado se perderá";
             menu[31, 10] = "缺省 2";
             menu[31, 11] = "\n回去";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n回去";
+            menu[32, 0] = "\n\n\n\n\n\n\n\n回去";
 
             #endregion
 
@@ -1597,7 +1597,7 @@ todo el progreso no guardado se perderá";
             menu[31, 10] = "padrão 2";
             menu[31, 11] = "\nvolta";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nvolta";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nvolta";
 
 
             #endregion
@@ -1700,7 +1700,7 @@ todo os progresso não guardado será perdido";
             menu[31, 10] = "padrão 2";
             menu[31, 11] = "\nvoltar";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nvoltar";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nvoltar";
 
 
             #endregion
@@ -1804,7 +1804,7 @@ todo o progresso não salvo será perdido";
             menu[31, 10] = "domyślny 2";
             menu[31, 11] = "\nPowrót";
                           
-            menu[32, 0] = "\n\n\n\n\n\n\nPowrót";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nPowrót";
 
             #endregion
 
@@ -1907,7 +1907,7 @@ Stracisz cały nie zapisany postęp.";
             menu[31, 10] = "デフォルト2";
             menu[31, 11] = "\nバック";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nバック";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nバック";
 
 
             #endregion
@@ -2011,7 +2011,7 @@ Stracisz cały nie zapisany postęp.";
             menu[31, 10] = "Standard 2";
             menu[31, 11] = "\nzurück";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nzurück";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nzurück";
 
 
             #endregion
@@ -2115,7 +2115,7 @@ alle nicht gespeicherten Fortschritte gehen verloren";
             menu[31, 10] = "défaut 2";
             menu[31, 11] = "\nretour";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nretour";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nretour";
 
 
             #endregion
@@ -2219,7 +2219,7 @@ toute progression non sauvegardée sera perdue";
             menu[31, 10] = "Predefinito 2";
             menu[31, 11] = "\nTorna";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nTorna";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nTorna";
 
             #endregion
 
@@ -2328,7 +2328,7 @@ function fnc_lng_pause_junglecourse(){
             menu[31, 11] = "default 2";
             menu[31, 12] = "back";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nback";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nback";
 
             #endregion
 
@@ -2429,7 +2429,7 @@ menu[0, 3] = "\nв главное меню";
         menu[31, 10] = "по умолчанию 2";
         menu[31, 11] = "\nназад";
 
-        menu[32, 0] = "\n\n\n\n\n\n\n\nназад";
+        menu[32, 0] = "\n\n\n\n\n\n\n\n\nназад";
 
         #endregion
 
@@ -2529,7 +2529,7 @@ confirm2 = @"вы уверены?
             menu[31, 10] = "por defecto 2";
             menu[31, 11] = "\natrás";
 
-            menu[32, 0] = "\n\n\n\n\n\n\natrás";
+            menu[32, 0] = "\n\n\n\n\n\n\n\natrás";
 
 
             #endregion
@@ -2630,7 +2630,7 @@ todo el progreso no guardado se perderá";
             menu[31, 10] = "缺省 2";
             menu[31, 11] = "\n回去";
             
-            menu[32, 0] = "\n\n\n\n\n\n\n回去";
+            menu[32, 0] = "\n\n\n\n\n\n\n\n回去";
 
             #endregion
 
@@ -2730,7 +2730,7 @@ todo el progreso no guardado se perderá";
             menu[31, 10] = "padrão 2";
             menu[31, 11] = "\nvolta";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nvolta";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nvolta";
 
 
             #endregion
@@ -2830,7 +2830,7 @@ todo os progresso não guardado será perdido";
             menu[31, 10] = "padrão 2";
             menu[31, 11] = "\nvoltar";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nvoltar";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nvoltar";
 
 
             #endregion
@@ -2931,7 +2931,7 @@ todo o progresso não salvo será perdido";
             menu[31, 10] = "domyślny 2";
             menu[31, 11] = "\nPowrót";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nPowrót";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nPowrót";
 
             #endregion
 
@@ -3032,7 +3032,7 @@ Stracisz cały nie zapisany postęp.";
             menu[31, 10] = "デフォルト2";
             menu[31, 11] = "\nバック";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nバック";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nバック";
 
 
             #endregion
@@ -3133,7 +3133,7 @@ Stracisz cały nie zapisany postęp.";
             menu[31, 10] = "Standard 2";
             menu[31, 11] = "\nzurück";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nzurück";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nzurück";
 
 
             #endregion
@@ -3235,7 +3235,7 @@ alle nicht gespeicherten Fortschritte gehen verloren";
             menu[31, 10] = "défaut 2";
             menu[31, 11] = "\nretour";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nretour";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nretour";
 
 
             #endregion
@@ -3336,7 +3336,7 @@ toute progression non sauvegardée sera perdue";
             menu[31, 10] = "Predefinito 2";
             menu[31, 11] = "\nTorna";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nTorna";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nTorna";
 
             #endregion
 
@@ -3387,7 +3387,7 @@ Tutti i progressi non salvati andranno persi";
             
             #endregion
             break;
-            break;
+            //break;
     }
 }   
 
@@ -3443,7 +3443,7 @@ menu[31, 10] = "default 1";
 menu[31, 11] = "default 2";
 menu[31, 12] = "back";
 
-menu[32, 0] = "\n\n\n\n\n\n\nback";
+menu[32, 0] = "\n\n\n\n\n\n\n\nback";
 #endregion
 
 #endregion
@@ -3532,7 +3532,7 @@ menu[31, 9] = "по умолчанию 1";
 menu[31, 10] = "по умолчанию 2";
 menu[31, 11] = "\nназад";
 
-menu[32, 0] = "\n\n\n\n\n\n\n\nназад";
+menu[32, 0] = "\n\n\n\n\n\n\n\n\nназад";
 #endregion
 
 #endregion
@@ -3621,7 +3621,7 @@ menu[0, 2] = "\nsalir al menú principal";
             menu[31, 10] = "por defecto 2";
             menu[31, 11] = "\natrás";
 
-            menu[32, 0] = "\n\n\n\n\n\n\natrás";
+            menu[32, 0] = "\n\n\n\n\n\n\n\natrás";
 
 
             #endregion
@@ -3712,7 +3712,7 @@ todo el progreso no guardado se perderá";
         menu[31, 10] = "缺省 2";
         menu[31, 11] = "\n回去";
         
-        menu[32, 0] = "\n\n\n\n\n\n\n回去";
+        menu[32, 0] = "\n\n\n\n\n\n\n\n回去";
         #endregion
 
         #endregion
@@ -3801,7 +3801,7 @@ menu[0, 2] = "\nsalir al menú principal";
             menu[31, 10] = "padrão 2";
             menu[31, 11] = "\nvolta";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nvolta";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nvolta";
 
 
             #endregion
@@ -3891,7 +3891,7 @@ menu[0, 2] = "\nsair para o menu principal";
             menu[31, 10] = "padrão 2";
             menu[31, 11] = "\nvoltar";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nvoltar";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nvoltar";
 
 
             #endregion
@@ -3982,7 +3982,7 @@ menu[31, 9] = "domyślny 1";
 menu[31, 10] = "domyślny 2";
 menu[31, 11] = "\nPowrót";
               
-menu[32, 0] = "\n\n\n\n\n\n\nPowrót";
+menu[32, 0] = "\n\n\n\n\n\n\n\nPowrót";
 #endregion
 
 #endregion
@@ -4071,7 +4071,7 @@ menu[0, 2] = "\nメインメニューに戻る";
             menu[31, 10] = "デフォルト2";
             menu[31, 11] = "\nバック";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nバック";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nバック";
 
 
             #endregion
@@ -4162,7 +4162,7 @@ menu[0, 2] = "\nzurück zum Hauptmenü";
             menu[31, 10] = "Standard 2";
             menu[31, 11] = "\nzurück";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nzurück";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nzurück";
 
 
             #endregion
@@ -4253,7 +4253,7 @@ menu[0, 2] = "\nquitter le menu principal";
             menu[31, 10] = "défaut 2";
             menu[31, 11] = "\nretour";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nretour";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nretour";
 
 
             #endregion
@@ -4344,7 +4344,7 @@ menu[31, 9] =   "Predefinito 1";
 menu[31, 10] =  "Predefinito 2";
 menu[31, 11] =  "\nTorna";
 
-menu[32, 0] = "\n\n\n\n\n\n\nTorna";
+menu[32, 0] = "\n\n\n\n\n\n\n\nTorna";
 #endregion
 
 #endregion

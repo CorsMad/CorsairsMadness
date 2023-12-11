@@ -1,29 +1,29 @@
 /// @description Insert description here
 // You can write your code in this editor
 randomise();
-global.TargetX      = 240;
-global.TargetY      = 160;
+global.TargetX      = 32;
+global.TargetY      = 256;
 global.TargetRoom   = TESTROOM;
 
 
 global.fTargetX     = 32;
 global.fTargetY     = 256;
-global.fTargetRoom  = DI_p_r1;
+global.fTargetRoom  = TESTROOM;
 
 
 ///////////////////* CHANGES Внести изменения в launch и saveload /////////////////////
 
-global.dia_jnpc = 0;
-global.dia_dnpc = 0;
-global.dia_snpc = 0;
-global.dia_gnpc = 0;
-global.dia_lnpc = 0;
+global.dia_jnpc = 0;    //0
+global.dia_dnpc = 0;    //0
+global.dia_snpc = 0;    //0
+global.dia_gnpc = 0;    //0
+global.dia_lnpc = 0;    //0
 
-global.dia_hpmana_jake   = 0;
-global.dia_hpmana_pew    = 0;
-global.dia_hpmana_sully  = 0;
-global.dia_hpmana_petro  = 0;
-global.dia_hpmana_bonnie = 0;
+global.dia_hpmana_jake   = 0;	 //0
+global.dia_hpmana_pew    = 0;	 //0
+global.dia_hpmana_sully  = 0;	 //0
+global.dia_hpmana_petro  = 0;	 //0
+global.dia_hpmana_bonnie = 0;	 //0
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
@@ -91,7 +91,7 @@ global.language = 0;
     global.saved_desert  = 0;  //0
     global.saved_snow    = 0;  //0
     global.saved_shadow  = 0;  //0
-    global.saved_vulcano = 1;  //0
+    global.saved_vulcano = 0;  //0
     
     
     
@@ -156,21 +156,21 @@ global.shop_parrotcage_can_upgrade2 = 0;
 #region Покупки человека
 
 //якорь
-global.purch_anch1 = 0;
-global.purch_anch2 = 0;
-global.purch_anch3 = 0;
-// Бомба
-global.purch_bomb1 = 1;
-global.purch_bomb2 = 1;
-global.purch_bomb3 = 0;
-// Sparkle
-global.purch_sparkle1 = 1;
-global.purch_sparkle2 = 1;
-global.purch_sparkle3 = 0;
-// Eparrot
-global.purch_eparrot1 = 0;
-global.purch_eparrot2 = 0;
-global.purch_eparrot3 = 0;
+global.purch_anch1 = 1;			//0
+global.purch_anch2 = 1;			//0
+global.purch_anch3 = 1;			//0
+// Бомба						
+global.purch_bomb1 = 1;			//0
+global.purch_bomb2 = 1;			//0
+global.purch_bomb3 = 1;			//0
+// Sparkle						
+global.purch_sparkle1 = 1;		//0
+global.purch_sparkle2 = 1;		//0
+global.purch_sparkle3 = 1;		//0
+// Eparrot						
+global.purch_eparrot1 = 1;		//0
+global.purch_eparrot2 = 1;		//0
+global.purch_eparrot3 = 1;		//0
 
 #endregion
 

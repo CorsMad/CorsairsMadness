@@ -1042,6 +1042,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shadow","folderPath":"folders/Sounds/BGR music/Shadow.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Snow","folderPath":"folders/Sounds/BGR music/Snow.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tutorial","folderPath":"folders/Sounds/BGR music/Tutorial.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Ending","folderPath":"folders/Sounds/Ending.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemy sounds","folderPath":"folders/Sounds/Enemy sounds.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Death","folderPath":"folders/Sounds/Enemy sounds/Death.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Dsert","folderPath":"folders/Sounds/Enemy sounds/Dsert.yy",},
@@ -1424,7 +1425,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Temple","folderPath":"folders/Tile Sets/Temple.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Special tiles","folderPath":"folders/Tile Sets/Temple/Special tiles.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Ending","folderPath":"folders/Sounds/Ending.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Steamworks_Extension_Documentation.html","CopyToMask":0,"filePath":"datafiles",},
@@ -2307,6 +2307,7 @@
     {"id":{"name":"obj_des_lvl2_container_preboss","path":"objects/obj_des_lvl2_container_preboss/obj_des_lvl2_container_preboss.yy",},},
     {"id":{"name":"DI_h_r1","path":"rooms/DI_h_r1/DI_h_r1.yy",},},
     {"id":{"name":"msc_jp1_prepurch","path":"sounds/msc_jp1_prepurch/msc_jp1_prepurch.yy",},},
+    {"id":{"name":"obj_player_questmark","path":"objects/obj_player_questmark/obj_player_questmark.yy",},},
     {"id":{"name":"obj_snow_aoe_trigger_s2r1_2","path":"objects/obj_snow_aoe_trigger_s2r1_2/obj_snow_aoe_trigger_s2r1_2.yy",},},
     {"id":{"name":"obj_magicarrow_target_d1r5_1","path":"objects/obj_magicarrow_target_d1r5_1/obj_magicarrow_target_d1r5_1.yy",},},
     {"id":{"name":"spr_molded_brown_blood","path":"sprites/spr_molded_brown_blood/spr_molded_brown_blood.yy",},},
