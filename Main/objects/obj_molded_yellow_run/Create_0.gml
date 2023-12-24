@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-state = 0;
+state = -1;
 hspd = 0;
 vspd = 0;
 fspd = 0;
@@ -23,3 +23,5 @@ cloud_cr.obj_cr = id;
 enemy_hp = 10;
 
 t_red = 0;
+
+oleg = 0;

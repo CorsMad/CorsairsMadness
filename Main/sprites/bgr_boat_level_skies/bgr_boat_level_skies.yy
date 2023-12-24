@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "bgr_boat_level_skies",
-  "bbox_bottom": 79,
+  "bbox_bottom": 95,
   "bbox_left": 0,
   "bbox_right": 479,
   "bbox_top": 0,

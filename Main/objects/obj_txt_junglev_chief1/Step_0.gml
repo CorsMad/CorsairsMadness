@@ -14,7 +14,8 @@ if key_skip
     {
         obj_npc_junglev_chief.talk = 0;
         obj_Player.isDead = 2.1;
-        global.dia_jungleChief = 1;            
+        global.dia_jungleChief = 1;       
+        scr_save_progress();
         instance_destroy();   
     } 
 }

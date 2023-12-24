@@ -11,7 +11,7 @@ eng4 = "[fnt_pixel]Wait a minute, what's happening?"
 
 #endregion
 */
-scr_text_starter(3,0.5);
+scr_text_starter(3,0.5,snd_vo_npc_sam_h);
 
 /*
 text = "";

@@ -20,6 +20,7 @@ switch(t){
 	case 125:image_index = 1;break;
 	case 130:image_index = 0;break;
 	case 140:
+        fnc_msc_play(msc_tutor_shore);
 		obj_sp_boat_G2.state = 16.5;
         obj_sp_boat_G2.t = 0;
 		instance_destroy();

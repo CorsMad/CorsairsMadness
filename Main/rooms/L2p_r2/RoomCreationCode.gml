@@ -1,1 +1,0 @@
-fnc_msc_start_checkpoint(msc_j1);

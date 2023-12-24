@@ -25,6 +25,7 @@ switch(state){
             image_index = 1; 
             instance_create_depth(x-12,y-42,depth-1,obj_sfx_checkpoint_cretor_big);
             instance_create_depth(x-12,y-42,depth-1,obj_sfx3);
+            fnc_snd_play_onetime(msc_level_end);
         }
         
         if t = 120 {

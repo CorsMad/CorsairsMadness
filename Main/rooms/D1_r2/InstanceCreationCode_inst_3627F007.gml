@@ -1,2 +1,2 @@
 sprite_index = spr_destructable_tile_sand;
-image_index = 10;
+image_index = 3;

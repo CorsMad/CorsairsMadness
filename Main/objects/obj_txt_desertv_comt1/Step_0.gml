@@ -12,6 +12,7 @@ if key_skip
     if scr_t > scr_t_max 
     {
         global.dia_desertComt = 1;
+        scr_save_progress();
         instance_create_depth(x,y,-100000,obj_npc_desertv_comt_choose);          
         instance_destroy();   
     } 

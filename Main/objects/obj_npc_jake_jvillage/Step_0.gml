@@ -34,6 +34,7 @@ if talk_cr_t!= 0
         talk_cr_t = 0;
         instance_create_depth(x,y,-100000,obj_txt_jake_jvillage1);
         global.dia_hpmana_jake = 1;
+        if instance_exists(questmark) instance_destroy(questmark);
 
     }
 }

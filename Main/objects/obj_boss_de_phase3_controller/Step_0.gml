@@ -57,6 +57,7 @@ if enemy_hp <=0
 
 if state = 7
 {
+    if instance_exists(obj_pause_controller) instance_destroy(obj_pause_controller);
     fnc_msc_stop_play_slow();
     if instance_exists(obj_boss_d2_phase3)
     {

@@ -12,5 +12,5 @@ if isOn = 1
 if isOn = 0
 {
     image_alpha -=0.05;
-    if image_alpha <= 0 {fnc_snd_play_onetime(snd_ps_block_destr);instance_destroy();}
+    if image_alpha <= 0 {fnc_snd_play_over(snd_ps_block_destr);instance_destroy();}
 }

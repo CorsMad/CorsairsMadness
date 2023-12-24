@@ -65,6 +65,22 @@ if state = 1
             {
                 instance_create_depth(368,128,0,obj_molded_small_crawling_left);
             }
+            
+            if instance_exists(obj_Player)
+            {
+                if obj_Player.x> 192
+                {
+                    var e1 = instance_create_depth(48,176,0,obj_molded_big_spawner_n);
+                    e1.y_cr = 16;
+                    e1.obj_cr = obj_molded_yellow_run;
+                
+                } else 
+                {
+                    var e1 = instance_create_depth(352,240,0,obj_molded_big_spawner_n);
+                    e1.y_cr = 16;
+                    e1.obj_cr = obj_molded_yellow_run;   
+                }
+            }   
             break;
         case 300:
             if obj_Player.x> 192
@@ -76,7 +92,7 @@ if state = 1
             }
             break;
         case 400:
-            state = 1.5;
+            state = 2.5;
             t = 0;
             break;
     }   

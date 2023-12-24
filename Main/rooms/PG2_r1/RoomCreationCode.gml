@@ -1,1 +1,1 @@
-fnc_msc_start_checkpoint(msc_jp1);
+fnc_msc_start_checkpoint(msc_gpos);

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-state = 0;
+state = -1;
 t = 0;
 isGrounded= 1;
 jump_count = 0;
@@ -15,3 +15,4 @@ bounce = 0;
 hits_cd = 0;
 t_red = 0;
 enemy_hp = 10;
+oleg = 0;

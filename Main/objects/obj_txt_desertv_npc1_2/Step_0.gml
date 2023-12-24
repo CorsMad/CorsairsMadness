@@ -15,6 +15,7 @@ if key_skip
         
         instance_create_depth(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),depth-1000,obj_npc_desertv_npc1_map);
         global.dia_dnpc = 1;
+        scr_save_progress();
         instance_destroy();   
     } 
 }

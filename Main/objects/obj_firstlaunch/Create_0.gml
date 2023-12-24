@@ -76,6 +76,19 @@
     global.dia_petro   = 0;
     global.dia_bonnie  = 0;
     
+    //0
+    global.dia_jnpc    = 0;
+    global.dia_dnpc    = 0;
+    global.dia_snpc    = 0;
+    global.dia_gnpc    = 0;
+    global.dia_lnpc    = 0;
+    
+    global.dia_hpmana_jake   = 0;
+    global.dia_hpmana_pew    = 0;
+    global.dia_hpmana_sully  = 0;
+    global.dia_hpmana_petro  = 0;
+    global.dia_hpmana_bonnie = 0;
+    
     #endregion
 
     #region ключи
@@ -421,9 +434,20 @@ global.secrets_g2p_r6 = 0;
     
     #endregion
 
+    #region Отдельные сундуки
+    global.itemtutor_chest_j = 1;
+    global.itemtutor_chest_d = 1;
+    global.itemtutor_chest_s = 1;
+    global.itemtutor_chest_g = 1;
+    global.itemtutor_chest_l = 1;
+    #endregion
+    
 global.TargetX = 64;
 global.TargetY = 224;
 global.TargetRoom = T1_r1;
 
+global.fTargetX = 0;
+global.fTargetY = 0;
+global.fTargetRoom = T2_r1;
 
 

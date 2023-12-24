@@ -404,7 +404,7 @@ switch(submenu)
 
 #region Якорь			
     if global.purch_anch1 = 1 draw_sprite(spr_icons_confirm,1,camera_get_view_x(view_camera[0])+120-64,camera_get_view_y(view_camera[0])+72)     
-    if global.purch_anch1 = 1 draw_sprite(spr_icons_confirm,2,camera_get_view_x(view_camera[0])+152-64,camera_get_view_y(view_camera[0])+72)                 
+    if global.purch_anch2 = 1 draw_sprite(spr_icons_confirm,2,camera_get_view_x(view_camera[0])+152-64,camera_get_view_y(view_camera[0])+72)                 
     if global.purch_anch3 = 1 draw_sprite(spr_icons_confirm,3,camera_get_view_x(view_camera[0])+184-64,camera_get_view_y(view_camera[0])+72);                
 #endregion
 #region Бомба

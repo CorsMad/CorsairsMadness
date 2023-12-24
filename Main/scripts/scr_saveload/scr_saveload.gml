@@ -39,7 +39,7 @@ var _saveStorage =
     dash : global.dash ,
     hook : global.fhook,
     
-    PlayerTransition : global.PlayerTransition,
+    PlayerTransition : global.PlayerTransition,        
     
     // Диалоги
     
@@ -79,7 +79,20 @@ var _saveStorage =
     dia_petro                :  global.dia_petro                   ,
     dia_bonnie               :  global.dia_bonnie                  ,
 
-
+    dia_jnpc                 :  global.dia_jnpc                    ,
+    dia_dnpc                 :  global.dia_dnpc                    ,
+    dia_snpc                 :  global.dia_snpc                    ,
+    dia_gnpc                 :  global.dia_gnpc                    ,
+    dia_lnpc                 :  global.dia_lnpc                    ,
+    
+    // Получение ХП
+    
+    dia_hpmana_jake          :  global.dia_hpmana_jake             ,
+    dia_hpmana_pew           :  global.dia_hpmana_pew              ,
+    dia_hpmana_sully         :  global.dia_hpmana_sully            ,
+    dia_hpmana_petro         :  global.dia_hpmana_petro            ,
+    dia_hpmana_bonnie        :  global.dia_hpmana_bonnie           ,
+    
     
     //Ключи
     
@@ -190,7 +203,13 @@ var _saveStorage =
     
     Cutscene_di_lastboss :  global.Cutscene_di_lastboss,
     
-    
+    #region chest tutor
+    itemtutor_chest_j  :  global.itemtutor_chest_j ,
+    itemtutor_chest_d  :  global.itemtutor_chest_d ,
+    itemtutor_chest_s  :  global.itemtutor_chest_s ,
+    itemtutor_chest_g  :  global.itemtutor_chest_g ,
+    itemtutor_chest_l  :  global.itemtutor_chest_l ,
+    #endregion
     
     #region Jungle
     
@@ -357,6 +376,7 @@ var _saveStorage =
     
     #endregion
     
+    
 }
 
 // turn data into json
@@ -451,6 +471,19 @@ function scr_load_progress(){
             global.dia_sully                  = _loadStorage.dia_sully               ;
             global.dia_petro                  = _loadStorage.dia_petro               ;
             global.dia_bonnie                 = _loadStorage.dia_bonnie              ;
+            
+            global.dia_jnpc                   = _loadStorage.dia_jnpc                ;
+            global.dia_dnpc                   = _loadStorage.dia_dnpc                ;
+            global.dia_snpc                   = _loadStorage.dia_snpc                ;
+            global.dia_gnpc                   = _loadStorage.dia_gnpc                ;
+            global.dia_lnpc                   = _loadStorage.dia_lnpc                ;
+            
+            global.dia_hpmana_jake            = _loadStorage.dia_hpmana_jake         ;
+            global.dia_hpmana_pew             = _loadStorage.dia_hpmana_pew          ;
+            global.dia_hpmana_sully           = _loadStorage.dia_hpmana_sully        ;
+            global.dia_hpmana_petro           = _loadStorage.dia_hpmana_petro        ;
+            global.dia_hpmana_bonnie          = _loadStorage.dia_hpmana_bonnie       ;
+            
             
             
             //Ключи
@@ -566,6 +599,16 @@ function scr_load_progress(){
             global.Cutscene_lp2_r16  =  _loadStorage.Cutscene_lp2_r16;
         
             global.Cutscene_di_lastboss = _loadStorage.Cutscene_di_lastboss;
+            
+            #region tutor chest
+            
+            global.itemtutor_chest_j = _loadStorage.itemtutor_chest_j;
+            global.itemtutor_chest_d = _loadStorage.itemtutor_chest_d;
+            global.itemtutor_chest_s = _loadStorage.itemtutor_chest_s;
+            global.itemtutor_chest_g = _loadStorage.itemtutor_chest_g;
+            global.itemtutor_chest_l = _loadStorage.itemtutor_chest_l;
+            
+            #endregion
             
             #region Jungle
         

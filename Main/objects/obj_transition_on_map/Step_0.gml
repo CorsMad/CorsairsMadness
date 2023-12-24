@@ -25,7 +25,10 @@ switch(on)
                     break;
                 case 4:
                     room_goto(VulcanoVillageArrive);
-                    break;      
+                    break;  
+                case 10:
+                    room_goto(DI_introLoad); 
+                    break;
             }
         }
         break;

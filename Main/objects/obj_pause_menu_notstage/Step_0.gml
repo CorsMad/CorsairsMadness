@@ -38,12 +38,13 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     break;
                 case 1: 
                     if instance_exists(obj_pause_controller) obj_pause_controller.isPaused = 0;
+                    if instance_exists(obj_pause_controller_map) obj_pause_controller_map.isPaused = 0;
                     instance_activate_all();
                     instance_destroy();
                     break;
                 case 2: 
                     submenu = 10;
-                    index = 0;
+                    index = 1;
                     break;                             
             }
             break;
@@ -136,6 +137,7 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     index = 2;
                     break;
             }
+            break;
         case 31: // Keyboard control submenu
             switch(index)
             {

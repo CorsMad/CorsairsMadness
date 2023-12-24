@@ -7,15 +7,22 @@ if state = 0 // Berserker Berserker
             var e2 = instance_create_depth(192,240,0,obj_molded_big_spawner_n);
             e2.y_cr = 16;
             e2.obj_cr = obj_molded_lava_berserker;
-            e2.state = 1;
 
             var e1 = instance_create_depth(704,240,0,obj_molded_big_spawner_n);
             e1.y_cr = 16;
             e1.obj_cr = obj_molded_lava_berserker;   
-            e1.state = 1;
        
             break;
         case 150:
+            var e2 = instance_create_depth(224,112,0,obj_molded_big_spawner_n);
+            e2.y_cr = 16;
+            e2.obj_cr = obj_molded_lava_boomer;
+
+            var e1 = instance_create_depth(688,112,0,obj_molded_big_spawner_n);
+            e1.y_cr = 16;
+            e1.obj_cr = obj_molded_lava_boomer;
+            break;
+        case 250:
             state = 0.5;
             t = 0;
             break;
@@ -24,9 +31,9 @@ if state = 0 // Berserker Berserker
 
 if state = 0.5
 {
-    if !instance_exists(obj_molded_lava_berserker) && !instance_exists(obj_fastfly_molded)
+    if !instance_exists(obj_molded_lava_berserker) && !instance_exists(obj_fastfly_molded) && !instance_exists(obj_molded_lava_boomer)
     {
-        state = 1;          
+        state = 2;          
     }
 }
 
@@ -39,12 +46,10 @@ if state = 1 // Jumper Jumper
             var e2 = instance_create_depth(224,112,0,obj_molded_big_spawner_n);
             e2.y_cr = 16;
             e2.obj_cr = obj_molded_lava_boomer;
-            e2.state = 1;
 
             var e1 = instance_create_depth(688,112,0,obj_molded_big_spawner_n);
             e1.y_cr = 16;
             e1.obj_cr = obj_molded_lava_boomer;   
-            e1.state = 1;
        
             break;
         case 150:

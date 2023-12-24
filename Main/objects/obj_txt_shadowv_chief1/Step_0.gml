@@ -14,36 +14,10 @@ if key_skip
     {
         obj_npc_shadowv_chief.talk = 0;
         obj_Player.isDead = 2.1;
-        global.dia_shadowChief = 1;            
+        global.dia_shadowChief = 1;  
+        scr_save_progress();
         instance_destroy();   
     } 
 }
 
 #endregion
-
-/*
-player_input();
-if key_jump || key_attack
-{
-      var _len = string_length(text[0,text_current]);
-if (char_current < _len)
-    {
-    char_current = _len;
-    }
-    else
-    {
-    text_current += 1;
-    if (text_current > text_last)
-        {
-        obj_npc_junglev_chief.talk = 0;
-        obj_Player.isDead = 2.1;
-        global.dia_jungleChief = 1;
-        instance_destroy();
-        }
-    else
-        {
-        text[0,text_current] = string_wrap(text[0,text_current], text_width);
-        char_current = 0;
-        }
-    } 
-}

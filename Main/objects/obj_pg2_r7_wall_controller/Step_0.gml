@@ -50,7 +50,7 @@ if state = 0.5
 {
     if !instance_exists(obj_molded_snow_spearman) && !instance_exists(obj_molded_snow_flying)
     {
-        state = 1;          
+        state = 2;          
     }
 }
 

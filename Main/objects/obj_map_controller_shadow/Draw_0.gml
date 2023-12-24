@@ -17,10 +17,10 @@ switch(globalMapCounter)
         draw_text(14,9,endurance);
         break;
     case 2:
-        draw_text(14,9,lvl1);
+        draw_text(14,9,glvl1);
         break;
     case 3:
-        draw_text(14,9,lvl2);
+        draw_text(14,9,glvl2);
         break;
     case 4:
         draw_text(14,9,temple);
@@ -57,7 +57,7 @@ switch(globalMapCounter) // Секреты
                 
                 break;                  
             case 5: // 
-                draw_sprite(spr_map_global_follower_jngl,global.completed_PG2,72,54);
+                draw_sprite(spr_map_global_follower_shadow,global.completed_PG2,72,54);
                 break;   
         }    
 

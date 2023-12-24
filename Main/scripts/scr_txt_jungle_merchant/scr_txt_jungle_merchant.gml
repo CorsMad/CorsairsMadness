@@ -67,7 +67,7 @@ function scr_txt_jungle_merchant2(){
             text0 = "[fnt_pixel]Well, finally we can chat. Your name's Sam, right? ";
             text1 = "[fnt_pixel]Sometimes other pirates come into our waters to bury their treasure."
             text2 = "[fnt_pixel]I suggest you keep your eyes open and look for vulnerable spots in the walls. In the chests you will find various [c_yellow]crystals[/c] and [c_yellow]coins[/c]. Bring them to me and we can bargain."
-            text3 = "[fnt_pixel]However, you can find more than treasures here. There are [c_green]6 green coins[/c] hidden on each of our islands and [c_green]one coin[/c on special arenas."
+            text3 = "[fnt_pixel]However, you can find more than treasures here. There are [c_green]6 green coins[/c] hidden on each of our islands and [c_green]one coin[/c] on special arenas."
             text4 = "[fnt_pixel]You can exchange them for additional [c_red]health[/c] and [c_blue]mana[/c]."
             text5 = "[fnt_pixel]And by knocking the spirit out of enemies in the temple you will get [c_grey]dark essence[/c]. You can exchange it with me for super moves."
             text6 = "[fnt_pixel]That's all I've got, you can go find your friends."

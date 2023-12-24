@@ -2,15 +2,16 @@
 // You can write your code in this editor
 
 
-draw_set_color(c_white);
 
-if instance_exists(obj_ending){
-   draw_text(240,64, string(obj_ending.state));    
-   draw_text(240,96, string(obj_ending.t));    
-   draw_text(240,128,string(obj_ending.ending));    
-   draw_text(240,164,string(obj_ending.end_start));    
-   draw_text(240,192,string(obj_ending.step));    
-}
+   //draw_set_color(c_white);
+   //
+   //if instance_exists(obj_molded_purple_shield){
+   //   draw_text(240,64, string(obj_molded_purple_shield.state));    
+   //   draw_text(240,96, string(obj_molded_purple_shield.oleg));    
+   //   //draw_text(240,128,string(obj_Player.ending));    
+   //   //draw_text(240,164,string(obj_Player.end_start));    
+   //   //draw_text(240,192,string(obj_Player.step));    
+   //}
 
 
     /*	

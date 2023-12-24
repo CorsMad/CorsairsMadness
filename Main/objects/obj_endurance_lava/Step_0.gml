@@ -379,6 +379,7 @@ if state = 3.2
     t++;
     if t = 20
     {
+        if instance_exists(obj_pause_controller) instance_destroy(obj_pause_controller);
         fnc_msc_stop_play()
         if global.secrets_l_endurance = 0
         {

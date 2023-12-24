@@ -36,19 +36,19 @@ function fnc_snd_play_over(argument0)
     }
 }
 
-function fnc_snd_play_onetime(argument1)
+function fnc_snd_play_onetime(argument0)
 {
-    if !audio_play_sound(argument1,0,false)   
+    if !audio_play_sound(argument0,0,false)   
     {
-        audio_play_sound(argument1,0,false);   
+        audio_play_sound(argument0,0,false);   
     }
 }
 
-function fnc_msc_play(argument1)
+function fnc_msc_play(argument0)
 {
     if instance_exists(obj_music_controller)
     {
-        obj_music_controller.musicId = argument1;
+        obj_music_controller.musicId = argument0;
         obj_music_controller.t = 0;
     }   
 }
@@ -72,14 +72,24 @@ function fnc_msc_stop_play_slow()
     }
 }
 
-function fnc_msc_start_checkpoint(argument1)
+function fnc_msc_start_checkpoint(argument0)
 {
     if instance_exists(obj_music_controller)   
     {
-        if obj_music_controller.musicId != argument1
+        if obj_music_controller.musicId != argument0
         {
-            obj_music_controller.musicId = argument1;
+            obj_music_controller.musicId = argument0;
             obj_music_controller.t = 0;
         }
     }
+}
+
+
+function fnc_msc_play_one_time(argument0)
+{
+    if instance_exists(obj_music_controller)
+    {
+        obj_music_controller.musicId = argument0;
+        obj_music_controller.t = 0;
+    }   
 }

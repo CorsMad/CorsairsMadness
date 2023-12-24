@@ -71,7 +71,7 @@ if state = 16.5
 layer_hspeed(l_water,sp_wat);
 layer_hspeed(l_farwater,sp_farwat);
 layer_hspeed(l_toofarwater,sp_toofarwat);
-layer_hspeed(l_Skies,sp_skies);
+//layer_hspeed(l_Skies,sp_skies);
 
 
 if state = 17

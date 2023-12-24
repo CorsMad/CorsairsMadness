@@ -4,15 +4,26 @@ if state = 0 // SHIELDER redfly redfly
     switch(t)
     {
         case 100:
-            var e1 = instance_create_depth(128,304,0,obj_molded_big_spawner_n);
-            e1.y_cr = 16;
-            e1.obj_cr = obj_molded_purple_shield;               
+            if instance_exists(obj_Player){
+                if obj_Player.x > room_width/2 {
+                    var e1 = instance_create_depth(128,304,0,obj_molded_big_spawner_n);
+                    e1.y_cr = 16;
+                    e1.obj_cr = obj_molded_purple_shield;    
+                } else {
+                    var e1 = instance_create_depth(368,304,0,obj_molded_big_spawner_n);
+                    e1.y_cr = 16;
+                    e1.obj_cr = obj_molded_purple_shield; 
+                }
+            }
             break;
         case 200:
-            if instance_exists(obj_Player) 
-            var e1 = instance_create_depth(368,304,0,obj_molded_big_spawner_n);
-            e1.y_cr = 16;
-            e1.obj_cr = obj_molded_purple_archer;
+            if instance_exists(obj_Player){
+                if obj_Player.x > room_width/2 {
+                    instance_create_depth(80,240,0,obj_molded_small_fastfly)
+                } else {
+                    instance_create_depth(400,240,0,obj_molded_small_fastfly)
+                }
+            }
             break;
         case 300:
             state = 0.5;
@@ -22,7 +33,7 @@ if state = 0 // SHIELDER redfly redfly
 
 if state = 0.5
 {
-    if !instance_exists(obj_molded_purple_shield) && !instance_exists(obj_molded_purple_archer) 
+    if !instance_exists(obj_molded_purple_shield) && !instance_exists(obj_fastfly_molded) 
     {
         if instance_exists(obj_wall_trigger_close1_h)
         {

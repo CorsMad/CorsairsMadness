@@ -168,7 +168,7 @@ if state = 4
         obj_boss_l2_tower_floor_left.state = 3;
         obj_boss_l2_tower_floor_right.state = 3;
 		instance_create_depth(240,96,depth,obj_boss_l2_phase2);
-		instance_create_depth(x,y,depth-1,obj_hpmax_some_mana_gain_gift);
+		instance_create_depth(x,y,depth-1,obj_hpmax_some_2mana_gain_gift);
 		instance_destroy()
 	}
 }

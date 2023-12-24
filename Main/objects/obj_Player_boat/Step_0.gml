@@ -388,8 +388,10 @@ if state = 3
     
     if cannonshoot_count<= 0
     {
-        t = cd_max-10;
+        t = 0;
         image_index = 0;
+        state = prev_weapon;
+        /*
         switch(global.choosed_itemboat)
         {
             case 0:
@@ -408,6 +410,7 @@ if state = 3
 		        state = 0.3; // попугай
 		        break; 
         }
+        */
     }
     
 }
@@ -488,6 +491,30 @@ if fastshoot_count = 0
 
 #endregion
 
+#region смена оружия
+
+if canControl = 1 && state != 3 {
+    if key_select || gamepad_button_check_pressed(4,gp_shoulderrb) || gamepad_button_check_pressed(4,gp_shoulderrb) || gamepad_button_check_pressed(0,gp_shoulderrb)  {
+        ws_select = 1;   
+        fnc_snd_play_onetime(snd_player_boat_ws);
+    }
+
+    if ws_select = 1 && t = 0 && state != 3 {
+        ws_select = 0;
+        switch(state){
+            case 0:    fnc_boat_ws0(); break;
+            case 0.1:  fnc_boat_ws2(); break;
+            case 0.2:  fnc_boat_ws3(); break;
+            case 0.3:  fnc_boat_ws4(); break;
+            case 0.4:  fnc_boat_ws1(); break;       
+        }       
+    }
+}
+
+
+if ws_select = 1 && state = 3 {ws_select = 0}
+
+#endregion
 
 #endregion
 

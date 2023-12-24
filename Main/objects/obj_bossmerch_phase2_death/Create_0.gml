@@ -5,5 +5,5 @@
 t = 0;
 state = 0;
 vspd = 0;
-
+instance_create_depth(x,y,depth-1,obj_hpmax_some_2mana_gain_gift);
 fnc_snd_play_onetime(snd_follower_getlight);

@@ -7,7 +7,7 @@ if pos < 3
         timer++;
     if timer = 200
     {
-        instance_destroy(timer_pl);
+        if instance_exists(timer_pl) instance_destroy(timer_pl);
         timer = 0;
         pos = 0;
         s1.state = 2

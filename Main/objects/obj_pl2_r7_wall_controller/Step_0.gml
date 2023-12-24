@@ -12,14 +12,12 @@ if state = 0 // Berserker redfly Berserker walkred Berserker
                     var e1 = instance_create_depth(96,224,0,obj_molded_big_spawner_n);
                     e1.y_cr = 16;
                     e1.obj_cr = obj_molded_lava_berserker;
-                    e1.state = 1;
                 
                 } else 
                 {
                     var e1 = instance_create_depth(368,192,0,obj_molded_big_spawner_n);
                     e1.y_cr = 16;
                     e1.obj_cr = obj_molded_lava_berserker;   
-                    e1.state = 1;
                 }
             } 
             break;
@@ -35,7 +33,7 @@ if state = 0 // Berserker redfly Berserker walkred Berserker
                 }
             }          
             break;
-        case 450:
+        case 350:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> room_width/2
@@ -43,18 +41,16 @@ if state = 0 // Berserker redfly Berserker walkred Berserker
                     var e1 = instance_create_depth(144,224,0,obj_molded_big_spawner_n);
                     e1.y_cr = 16;
                     e1.obj_cr = obj_molded_lava_berserker;
-                    e1.state = 1;
                 
                 } else 
                 {
                     var e1 = instance_create_depth(352,192,0,obj_molded_big_spawner_n);
                     e1.y_cr = 16;
                     e1.obj_cr = obj_molded_lava_berserker;   
-                    e1.state = 1;
                 }
             } 
             break;
-        case 850:
+        case 400:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> room_width/2
@@ -66,7 +62,7 @@ if state = 0 // Berserker redfly Berserker walkred Berserker
                 }
             }   
             break;
-        case 1000: 
+        case 500: 
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> room_width/2
@@ -74,18 +70,16 @@ if state = 0 // Berserker redfly Berserker walkred Berserker
                     var e1 = instance_create_depth(128,224,0,obj_molded_big_spawner_n);
                     e1.y_cr = 16;
                     e1.obj_cr = obj_molded_lava_berserker;
-                    e1.state = 1;
                 
                 } else 
                 {
                     var e1 = instance_create_depth(336,192,0,obj_molded_big_spawner_n);
                     e1.y_cr = 16;
                     e1.obj_cr = obj_molded_lava_berserker;   
-                    e1.state = 1;
                 }
             }
             break;
-        case 1100:
+        case 600:
             state = 0.5;
             t = 0;
             break;
@@ -97,7 +91,7 @@ if state = 0.5
     if !instance_exists(obj_molded_lava_berserker) && !instance_exists(obj_crawling_molded_l)
     && !instance_exists(obj_crawling_molded) && !instance_exists(obj_molded_lava_boomer) && !instance_exists(obj_fastfly_molded)
     {
-        state = 1;   
+        state = 3;   
     }
 }
 

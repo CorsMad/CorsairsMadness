@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-state = 0;
+state = -1;
 t = 0;
 t_attack = 0;
 flip = 0;
@@ -14,3 +14,5 @@ hit_stored = 0;
 
 enemy_hp = 10;
 t_red =0 ;
+
+oleg = 0;

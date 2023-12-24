@@ -143,7 +143,7 @@ function fnc_boat_take_dmg_fastshot(hp1,hp2)
     	instance_create_depth(fastshothit2.x,fastshothit2.y,-1000,obj_sfx_weapon_slash);
         fastshothit2.a = 1;
     	enemy_hp -= hp2;   //2    
-    }        
+    }         
 }
 
 function fnc_boat_take_dmg_obstacle()

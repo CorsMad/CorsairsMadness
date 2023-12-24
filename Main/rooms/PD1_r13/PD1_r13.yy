@@ -270,7 +270,7 @@
       ],"depth":600,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":700,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"0.8",},
-        {"name":"g_ContrastBrightness","type":0,"value":"0.75",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.55",},
       ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":66,"TileCompressedData":[
 -198,641,792,555,556,557,558,559,560,561,562,563,564,705,706,553,554,555,556,557,558,559,560,561,562,563,564,744,745,553,554,555,556,557,558,559,560,561,562,563,564,705,706,514,515,516,517,518,519,520,521,522,523,524,525,705,706,514,515,516,517,518,519,520,521,522,
 523,524,525,711,712,713,714,715,716,717,718,719,720,861,862,709,710,711,712,713,714,715,716,717,718,719,720,900,901,709,710,711,712,713,714,715,716,717,718,719,720,861,862,670,671,672,673,674,675,676,677,678,679,680,681,861,862,670,671,672,673,674,675,676,677,678,

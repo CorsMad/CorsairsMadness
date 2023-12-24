@@ -15,7 +15,6 @@ switch(scr_t)
             break;            
     case 1: text = eng2;break;          
     case 2: text = eng3;
-            fnc_msc_stop_play()
             break;          
     case 3: text = eng4;break;                    
 }

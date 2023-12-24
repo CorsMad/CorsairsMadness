@@ -15,6 +15,8 @@ if key_skip
         obj_npc_shadowv_npc1.talk = 0;
         obj_Player.isDead = 2.1;      
         global.dia_gnpc = 2;
+        scr_save_progress();
+        
         var g1 = instance_create_depth(x,y-16,-1,obj_money10);
         var g2 = instance_create_depth(x,y-16,-1,obj_money10);
         var g3 = instance_create_depth(x,y-16,-1,obj_money10);

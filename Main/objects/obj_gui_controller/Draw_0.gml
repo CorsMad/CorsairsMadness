@@ -36,7 +36,7 @@
         if obj_Player.state = 1
         {
 	        draw_sprite_ext(spr_hud_heart_molded,0,(camera_get_view_x(view_camera[0]))+i*9,camera_get_view_y(view_camera[0])+2,1,1,0, c_white,1);
-			draw_sprite_stretched(spr_hud_superattack_power,0,(camera_get_view_x(view_camera[0]))+18,camera_get_view_y(view_camera[0])+20,(obj_Player.superattack/obj_Player.superattack_max)*100,7);
+			draw_sprite_stretched(spr_hud_superattack_power,0,(camera_get_view_x(view_camera[0]))+18-4,camera_get_view_y(view_camera[0])+20-2,(obj_Player.superattack/obj_Player.superattack_max)*100,7);
         }
         
 	}
@@ -203,7 +203,7 @@ if instance_exists(obj_Player)
 #endregion
 
 if instance_exists(obj_Player){
-    if obj_Player.state = 1 draw_sprite_ext(spr_hud_superattack_border,0,(camera_get_view_x(view_camera[0]))+12,camera_get_view_y(view_camera[0])+16,1,1,0, c_white,1);
+    if obj_Player.state = 1 draw_sprite_ext(spr_hud_superattack_border,0,(camera_get_view_x(view_camera[0]))+8,camera_get_view_y(view_camera[0])+14,1,1,0, c_white,1);
 }
 
 

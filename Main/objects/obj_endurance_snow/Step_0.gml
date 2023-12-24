@@ -292,7 +292,7 @@ switch(state)
 		{
 			obj_boss_se_phase2_1_death.state = 3;
 			obj_boss_se_phase2_2_death.state = 3;
-			instance_create_depth(obj_boss_se_phase2_1_death.x,obj_boss_se_phase2_1_death.y,obj_boss_se_phase2_1_death.depth-1,obj_hpmax_some_mana_gain_gift);
+			instance_create_depth(obj_boss_se_phase2_1_death.x,obj_boss_se_phase2_1_death.y,obj_boss_se_phase2_1_death.depth-1,obj_hpmax_some_2mana_gain_gift);
 			state = 2.1;
 		}
 		break;
@@ -358,6 +358,7 @@ switch(state)
 	case 3:
 		t++; 
         if t = 20{
+            if instance_exists(obj_pause_controller) instance_destroy(obj_pause_controller);
             fnc_msc_stop_play_slow()
             if global.secrets_sn_endurance = 0
             {

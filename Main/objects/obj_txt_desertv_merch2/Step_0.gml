@@ -12,6 +12,7 @@ if key_skip
     if scr_t > scr_t_max 
     {
         global.dia_desertMerch = 1; 
+        scr_save_progress();
         obj_npc_desertv_merch.talk = 0;
         obj_Player.isDead = 2.1;  
         instance_destroy();   

@@ -1,9 +1,10 @@
-fnc_msc_stop_play_slow();
+
 
 if global.key_blue2 = 0 {
    instance_create_depth(0,0,0,obj_gui_controller_s2_boss);
    instance_create_depth(0,0,0,obj_snow_boss_controller); 
    instance_create_depth(336,224,201,obj_boss_s2_phase_appear);
+   fnc_msc_stop_play_slow();
 } else {
    for (var i = 0; i < 28; i+=1) {
     var b1 = instance_create_depth(24+16*i,224+8,0,obj_block_boss_s2_floor_s1);

@@ -12,6 +12,7 @@ if key_skip
         obj_npc_shadowv_comt.talk = 0;
         obj_Player.isDead = 2.1;  
         global.dia_shadowComt = 0;
+        scr_save_progress();
         if instance_exists(obj_block_jungle_village) instance_destroy(obj_block_jungle_village)
         if instance_exists(obj_popup_creator_village_trigger) instance_destroy(obj_popup_creator_village_trigger)
         instance_destroy();   

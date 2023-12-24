@@ -141,7 +141,7 @@ if (state = 6) // Ожидание
         case 35:image_index = 7;break;
         
     }
-    if t = 150
+    if t = 250
     {   
         t= 0;
         state = 7;

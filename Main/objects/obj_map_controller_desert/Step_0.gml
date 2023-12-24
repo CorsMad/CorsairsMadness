@@ -131,8 +131,8 @@ if !instance_exists(obj_confirm_1) && !instance_exists(obj_confirm_2) && delay <
                 l1.dest = 1;
                 break;
             case 3: // 2 уровень
-                var l2 = instance_create_depth(240,135,depth-1,obj_confirm_2);
-                l2.dest = 1;
+                var l2 = instance_create_depth(240,135,depth-1,obj_confirm_1);
+                l2.dest = 1.1;
                 break;
             case 4: // храм1
                 if global.completed_PD1 = 0

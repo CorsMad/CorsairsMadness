@@ -4,7 +4,7 @@
 switch(teleport)
 {
     case 0:
-        if global.dia_jungleChief = 1 
+        if global.dia_jungleChief >= 1 
         {
             fnc_msc_stop_play();
             room_goto(GlobalMapPrologueJungle);
@@ -12,7 +12,7 @@ switch(teleport)
         }
         break;
     case 1:
-        if global.dia_desertChief = 1 
+        if global.dia_desertChief >= 1 
         {
             fnc_msc_stop_play();
             room_goto(GlobalMapPrologueDesert);
@@ -20,7 +20,7 @@ switch(teleport)
         }
         break;
     case 2:
-        if global.dia_snowChief = 1 
+        if global.dia_snowChief >= 1 
         {
             fnc_msc_stop_play();
             room_goto(GlobalMapPrologueSnow);
@@ -28,7 +28,7 @@ switch(teleport)
         }
         break;
     case 3:
-        if global.dia_shadowChief = 1 
+        if global.dia_shadowChief >= 1 
         {
             fnc_msc_stop_play();
             room_goto(GlobalMapPrologueShadow);
@@ -36,7 +36,7 @@ switch(teleport)
         }
         break;
     case 4:
-        if global.dia_lavaChief = 1 
+        if global.dia_lavaChief >= 1 
         {
             fnc_msc_stop_play();
             room_goto(GlobalMapPrologueLava);

@@ -13,7 +13,8 @@ if key_skip
     if scr_t > scr_t_max 
     {
         obj_npc_shadowv_npc1.talk = 0;
-        obj_Player.isDead = 2.1;       
+        obj_Player.isDead = 2.1;  
+        scr_save_progress();
         instance_destroy();   
     } 
 }

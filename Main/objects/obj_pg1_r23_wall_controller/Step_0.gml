@@ -32,24 +32,8 @@ if state = 0 // Flyer redfly Flyer Spearman
                 }
             }  
             break;
+
         case 400:
-            if instance_exists(obj_Player)
-            {
-                if obj_Player.x> room_width/2
-                {
-                    var e1 = instance_create_depth(144,112,0,obj_molded_big_spawner_n);
-                    e1.obj_cr = obj_molded_snow_flying;
-                    
-                
-                } else 
-                {
-                    var e1 = instance_create_depth(416,80,0,obj_molded_big_spawner_n);
-                    e1.obj_cr = obj_molded_snow_flying;
-                    
-                }
-            } 
-            break;
-        case 500:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> room_width/2
@@ -66,7 +50,7 @@ if state = 0 // Flyer redfly Flyer Spearman
                 }
             } 
             break;
-        case 600:
+        case 500:
             state = 0.5;
             t = 0;
             break;

@@ -10,6 +10,8 @@ function fnc_lng_store(){
             
             store = "shop";
             
+            sservice = "self \nservice";
+            
             nameh_anchor    =  "anchor";
             nameh_grenade   =  "grenade";
             nameh_shockball =  "shockball";
@@ -25,10 +27,11 @@ function fnc_lng_store(){
             nameb_blunderbuss   = "blunderbuss";
             nameb_parrotc       = "parrot cage";
 
-            name_use = "use:";
+            name_use = "use:"; //"use:"
             name_or = "or";
             
-            
+            tipWS = "select:";
+            tipBS = "switch weapon:";
             #region mainmenu
                 menu[0, 0] = "Human";
                 menu[0, 1] = "possessed";
@@ -75,21 +78,21 @@ function fnc_lng_store(){
 
 
 
-                dHMenu[0,0] = "Deals damage on hit";
-                dHMenu[0,1] = "Deals damage on hit\nand bounces back";
-                dHMenu[0,2] = "goes through \nall the enemies \nin its trajectory";
+                dHMenu[0,0] = "Deals damage on hit.";
+                dHMenu[0,1] = "Deals damage on hit\nand bounces back.";
+                dHMenu[0,2] = "goes through \nall the enemies \nin its trajectory.";
 
                 dHMenu[1,0] = "Spins around.\nDeals damage on hit";
-                dHMenu[1,1] = "The radius is\ngradually increasing";
-                dHMenu[1,2] = "creates 2 more bombs \non hit";
+                dHMenu[1,1] = "Spins around and \nthe radius gradually increases.";
+                dHMenu[1,2] = "Spins around, \nradius gradually increases.\n2 more bombs appear after \ngrenade explosion.";
 
-                dHMenu[2,0] = "Flies forward.\nPeriodically creates \nan area that \ndeals damage.";
-                dHMenu[2,1] = "flies farther.\nimpact area is larger.";
-                dHMenu[2,2] = "flying in a \nwave trajectory.";
+                dHMenu[2,0] = "The electric charge \nflies forward, periodically \ncreating an area of damage.";
+                dHMenu[2,1] = "The electric charge \nflies a little farther, \nperiodically creating a larger \narea of damage.";
+                dHMenu[2,2] = "The electric charge \nflies in a wave trajectory, \nperiodically creating a larger \narea of damage.";
 
-                dHMenu[3,0] = "Parrot releases a\nprojectile forward.";
-                dHMenu[3,1] = "The projectile is\nhoming in on \nthe nearest enemy.";
-                dHMenu[3,2] = "creates an explosion \non hit that also \ndeals damage";
+                dHMenu[3,0] = "Robo Parrot fires a bullet \nflying forward.";
+                dHMenu[3,1] = "Robo Parrot fires a bullet \nflying at the nearest enemy.";
+                dHMenu[3,2] = "Robo Parrot fires a bullet \nflying at the nearest enemy. \nOn contact, the bullet explodes.";
 
 
                 dHMenu[4,0] = "";
@@ -101,30 +104,30 @@ function fnc_lng_store(){
 
                 #region Одержимый
 
-                dPMenu[0,0] = "Throws his arm \nforward and deals \nmassive damage.";
-                dPMenu[1,0] = "Throws 2 arms, \ndealing damage \nfrom behind \nand in front."; 
-                dPMenu[2,0] = "Hits around him \nin a large radius \nand deals damage."; 
-                dPMenu[3,0] = "Launches 3 orbs \nthat fly at \nthe nearest enemy.";
+                dPMenu[0,0] = "Lunges his arm far forward \nand does a lot of damage.";
+                dPMenu[1,0] = "Lunges his arms back and forth, \ndealing heavy damage."; 
+                dPMenu[2,0] = "Makes a round strike, \ndealing massive amounts of damage."; 
+                dPMenu[3,0] = "Launches 3 orbs that fly at \nthe nearest enemy.";
 
                 #endregion
 
                 #region Лодка
 
-                dBMenu[0,0] = "2 quick shots \nin a row";
-                dBMenu[0,1] = "3 quick shots \nin a row";
-                dBMenu[0,2] = "3rd bullet -\nreinforced";
+                dBMenu[0,0] = "Fires 2 quick shots in a row.";
+                dBMenu[0,1] = "Fires 3 quick shots in a row.";
+                dBMenu[0,2] = "Fires 3 quick shots in a row. \nThe third bullet is reinforced.";
   
-                dBMenu[1,0] = "two guns \nalternate firing";
-                dBMenu[1,1] = "two guns \nsimultaneous firing";
-                dBMenu[1,2] = "High damage \ntwo guns \nsimultaneous firing.";
+                dBMenu[1,0] = "fires 2 pistols at the same time.";
+                dBMenu[1,1] = "fires 2 pistols at the same time.\nBullets do more damage.";
+                dBMenu[1,2] = "fires 2 pistols at the same time.\nBullets do massive damage";
  
-                dBMenu[2,0] = "3 bullets \nspread";
-                dBMenu[2,1] = "4 bullets \nspread";
-                dBMenu[2,2] = "5 bullets \nspread";
+                dBMenu[2,0] = "Blunderbuss fires 3 bullets \nin a spread.";
+                dBMenu[2,1] = "Blunderbuss fires 4 bullets \nin a spread.";
+                dBMenu[2,2] = "Blunderbuss fires 5 bullets \nin a spread.";
  
-                dBMenu[3,0] = "Homing in on \nthe nearest enemy";
-                dBMenu[3,1] = "Deals more \damage";
-                dBMenu[3,2] = "creates an explosion \non hit that also \ndeals damage";
+                dBMenu[3,0] = "The robo-parrot flies into the \nnearest enemy \nand deals damage.";
+                dBMenu[3,1] = "The robo-parrot flies into the \nnearest enemy \nand deals more damage.";
+                dBMenu[3,2] = "The robo-parrot flies into the \nnearest enemy \nand explodes on touch.";
                 /*
                 dBMenu[4,0] = "Bounces back at solid objects \n2 times";
                 dBMenu[4,1] = "Bounces back at solid objects \n4 times";

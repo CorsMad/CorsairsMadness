@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "T1_r9",
-  "creationCodeFile": "${project_dir}/rooms/T1_r9/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/T1_r9/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
@@ -47,7 +47,10 @@
 15,-5,17,-24,0,1,15,-5,17,-24,0,1,15,-5,17,-24,0,1,15,-5,17,],"TileDataFormat":1,},"tilesetId":{"name":"tls_underground_lvl1","path":"tilesets/tls_underground_lvl1/tls_underground_lvl1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -390,0,-23,4,1,5,-6,0,-23,7,1,8,-6,0,-23,10,1,11,-6,0,-23,10,3,11,0,0,-4,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol1_level1","path":"tilesets/tls_fol1_level1/tls_fol1_level1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":400,"effectEnabled":true,"effectType":"_filter_contrast","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_ContrastIntensity","type":0,"value":"1.1",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.95",},
+      ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -5,22,-15,-2147483648,-10,0,-4,22,1,-2147483648,-11,0,-3,-2147483648,-11,0,-4,22,-5,0,-3,22,1,59,-11,22,-6,0,-4,22,
 -8,0,2,64,59,-13,22,-3,0,-3,22,2,58,22,-8,0,3,64,61,59,-8,22,-2,0,-2,22,-2,0,-2,22,
 2,58,63,-11,0,3,64,61,59,-6,22,-3,0,6,22,0,0,60,61,63,-14,0,2,64,62,-5,22,-3,0,4,

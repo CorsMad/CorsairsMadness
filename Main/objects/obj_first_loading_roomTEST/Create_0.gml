@@ -1,17 +1,17 @@
 /// @description Insert description here
 // You can write your code in this editor
 randomise();
-global.TargetX      = 32;
-global.TargetY      = 256;
-global.TargetRoom   = TESTROOM;
+global.TargetX      = 320;
+global.TargetY      = 784;
+global.TargetRoom   = DI_Boss
 
 
-global.fTargetX     = 32;
-global.fTargetY     = 256;
-global.fTargetRoom  = TESTROOM;
+global.fTargetX     = 112;
+global.fTargetY     = 160;
+global.fTargetRoom  = PL1_r15;
 
 
-///////////////////* CHANGES Внести изменения в launch и saveload /////////////////////
+////////////////////////////////////////
 
 global.dia_jnpc = 0;    //0
 global.dia_dnpc = 0;    //0
@@ -25,11 +25,7 @@ global.dia_hpmana_sully  = 0;	 //0
 global.dia_hpmana_petro  = 0;	 //0
 global.dia_hpmana_bonnie = 0;	 //0
 
-///////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
+////////////////////////////////////////
 
 
 instance_create_depth(0,0,0,obj_music_controller);
@@ -38,23 +34,23 @@ global.language = 0;
 
 #region Завершеннсоть уровней
     
-    global.completed_JF1 = 0;
-    global.completed_JF2 = 0;
-    
-    global.completed_PD1 = 0;
-    global.completed_PD2 = 0;
-    
-    global.completed_PS1 = 0;
-    global.completed_PS2 = 0;
-    
-    global.completed_PG1 = 0;
-    global.completed_PG2 = 0;
-    
-    global.completed_PL1 = 0;
-    global.completed_PL2 = 0;
+    global.completed_JF1 = 1;   //0
+    global.completed_JF2 = 0;   //0
+                                //0
+    global.completed_PD1 = 1;   //0
+    global.completed_PD2 = 0;   //0
+                                //0
+    global.completed_PS1 = 1;   //0
+    global.completed_PS2 = 0;   //0
+                                //0
+    global.completed_PG1 = 1;   //0
+    global.completed_PG2 = 0;   //0
+                                //0
+    global.completed_PL1 = 1;   //0
+    global.completed_PL2 = 0;   //0
         
         
-    global.completedJungle = 0;    
+    global.completedJungle = 1;    
     global.completedDesert = 0;    
     global.completedSnow = 0;    
     global.completedShadow = 0;    
@@ -87,11 +83,11 @@ global.language = 0;
      
     //0
     
-    global.saved_jungle  = 0;  //0
-    global.saved_desert  = 0;  //0
-    global.saved_snow    = 0;  //0
-    global.saved_shadow  = 0;  //0
-    global.saved_vulcano = 0;  //0
+    global.saved_jungle  = 1;  //0
+    global.saved_desert  = 1;  //0
+    global.saved_snow    = 1;  //0
+    global.saved_shadow  = 1;  //0
+    global.saved_vulcano = 1;  //0
     
     
     
@@ -117,20 +113,20 @@ global.language = 0;
 
 
 #region  ключи
-global.key_green1 = 0;
-global.key_green2 = 0;
-
-global.key_yellow1 = 0;
-global.key_yellow2 = 0;
-
-global.key_blue1 = 0;
-global.key_blue2 = 0;
-
-global.key_purple1 = 0;
-global.key_purple2 = 0;
-
-global.key_red1 = 0;
-global.key_red2 = 0;
+global.key_green1 = 1;      //0
+global.key_green2 = 1;      //0
+                            //0
+global.key_yellow1 = 1;     //0
+global.key_yellow2 = 1;     //0
+                            //0
+global.key_blue1 = 1;       //0
+global.key_blue2 = 0;       //0
+                            //0
+global.key_purple1 = 1;     //0
+global.key_purple2 = 1;     //0
+                            //0
+global.key_red1 = 0;        //0
+global.key_red2 = 0;        //0
 #endregion
 
 #region ТЕСТ Магазин
@@ -156,44 +152,44 @@ global.shop_parrotcage_can_upgrade2 = 0;
 #region Покупки человека
 
 //якорь
-global.purch_anch1 = 1;			//0
-global.purch_anch2 = 1;			//0
-global.purch_anch3 = 1;			//0
+global.purch_anch1 = 0;			//0
+global.purch_anch2 = 0;			//0
+global.purch_anch3 = 0;			//0
 // Бомба						
-global.purch_bomb1 = 1;			//0
-global.purch_bomb2 = 1;			//0
-global.purch_bomb3 = 1;			//0
+global.purch_bomb1 = 0;			//0
+global.purch_bomb2 = 0;			//0
+global.purch_bomb3 = 0;			//0
 // Sparkle						
-global.purch_sparkle1 = 1;		//0
-global.purch_sparkle2 = 1;		//0
-global.purch_sparkle3 = 1;		//0
+global.purch_sparkle1 = 0;		//0
+global.purch_sparkle2 = 0;		//0
+global.purch_sparkle3 = 0;		//0
 // Eparrot						
-global.purch_eparrot1 = 1;		//0
-global.purch_eparrot2 = 1;		//0
-global.purch_eparrot3 = 1;		//0
+global.purch_eparrot1 = 0;		//0
+global.purch_eparrot2 = 0;		//0
+global.purch_eparrot3 = 0;		//0
 
 #endregion
 
 #region Покупки Лодки
 // Быстровыстр
-global.purch_rapidfire1 = 0;
-global.purch_rapidfire2 = 0;
-global.purch_rapidfire3 = 0;
+global.purch_rapidfire1 = 1;
+global.purch_rapidfire2 = 1;
+global.purch_rapidfire3 = 1;
 
 //двойные пистолеты
-global.purch_dualpistols1 = 0;
-global.purch_dualpistols2 = 0;
-global.purch_dualpistols3 = 0;
+global.purch_dualpistols1 = 1;
+global.purch_dualpistols2 = 1;
+global.purch_dualpistols3 = 1;
 
 // blunderbuss
-global.purch_blunderbuss1 = 0;
-global.purch_blunderbuss2 = 0;
-global.purch_blunderbuss3 = 0;
+global.purch_blunderbuss1 = 1;
+global.purch_blunderbuss2 = 1;
+global.purch_blunderbuss3 = 1;
 
 // parrot cage
-global.purch_parrotcage1 = 0;
-global.purch_parrotcage2 = 0;
-global.purch_parrotcage3 = 0;
+global.purch_parrotcage1 = 1;
+global.purch_parrotcage2 = 1;
+global.purch_parrotcage3 = 1;
 
 #endregion
 
@@ -201,23 +197,23 @@ global.purch_parrotcage3 = 0;
 
 
 #region Игрок
-global.hp = 5;           // 5
+global.hp = 3;           // 5
 global.hp_max = 5;       // 5
 global.hp_add = 0;       // 0
 global.mana_add = 0;       // 0
 global.choosed_item = 5; // 2 -тоорп // 3 - бомба // 4 - eball // 5 - parrot 
 global.choosed_item_tier = 3; // ТИР предмета
-global.choosed_itemboat = 3; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
-global.choosed_itemboat_tier = 3 // ТИП предмета для лодки
+global.choosed_itemboat = 4; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
+global.choosed_itemboat_tier = 1 // ТИП предмета для лодки
 global.superattack1 = 2;// Суператаки  max 2  default - 0
 global.superattack2 = 0;// Суператаки  max 1  default - 0
-global.superattack3 = 0;// Суператаки  max 1  default - 0
+global.superattack3 = 1;// Суператаки  max 1  default - 0
 global.PlayerTransition = 0;
 global.mana = 3//3;
-global.mana_max = 3;
+global.mana_max = 7;
 global.gold = 10000 //global.money_saved;          // 0
 global.gold_prelevel = 0;
-global.darkessence = 5000//global.darkessence_saved;
+global.darkessence = 3000//global.darkessence_saved;
 
 #region Объявление переменных
     scr_create_array_objects();
@@ -538,6 +534,13 @@ global.secrets_g2p_r6 = 0;
 
 #endregion
 
+global.itemtutor_chest_j = 1;
+global.itemtutor_chest_d = 1;
+global.itemtutor_chest_s = 1;
+global.itemtutor_chest_g = 1;
+global.itemtutor_chest_l = 1;
 
+global.chest_tutor_r7 = 1;
+    global.chest_tutor_r8 = 1;
 //surface_resize(application_surface, display_get_width(), display_get_height());
 //display_reset(0, false);

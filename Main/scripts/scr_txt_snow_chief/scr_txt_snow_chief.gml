@@ -4,7 +4,7 @@ function scr_txt_snow_chief1(){
             #region English 
             text1 = "[fnt_pixel]Welcome to our [c_blue]snow island[/c]!";
             text2 = "[fnt_pixel][shake]What[/shake]? Aren't you cold? It's freezing and snowing outside and you're not cold!";
-            text3 = "[fnt_pixel]Maybe this cold and cold has no effect on the newcomers.";
+            text3 = "[fnt_pixel]Maybe this cold has no effect on the newcomers.";
             text4 = "[fnt_pixel]I'm saying this because recently there was a [c_red]guy[/c] ...[delay,500] [shake]wearing nothing but his underpants[/shake]!";
             text5 = "[fnt_pixel]Even though it was before his visit, but we're still, you know. it's not a resort.";
             text6 = "[fnt_pixel]And later on, it got even worse! I'm sure it has something to do with that [c_red]man in underpants[/c].";

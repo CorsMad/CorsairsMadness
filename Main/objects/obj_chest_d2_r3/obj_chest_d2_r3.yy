@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "D2_r3",
-    "path": "folders/Objects/Level objects/!MASTER/!Desert/D2/D2_r3.yy",
+    "name": "D2",
+    "path": "folders/Objects/Level objects/!MASTER/!Desert/D2.yy",
   },
   "parentObjectId": null,
   "persistent": false,

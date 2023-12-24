@@ -18,6 +18,7 @@ if global.saved_vulcano = 1 hp5 = 0 else hp5 = 3;
 
 
 enemy_hp = 25+hp1+hp2+hp3+hp4+hp5;
+//enemy_hp = 0;
 enemy_hp_max = 40
 
 t_sparkle = 0;

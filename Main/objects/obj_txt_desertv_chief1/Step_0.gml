@@ -14,7 +14,8 @@ if key_skip
     {
         obj_npc_desertv_chief.talk = 0;
         global.dia_desertChief = 1;  
-        obj_Player.isDead = 2.1;           
+        obj_Player.isDead = 2.1;     
+        scr_save_progress();
         instance_destroy();   
     } 
 }

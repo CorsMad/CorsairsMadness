@@ -198,9 +198,9 @@ switch(state){
 		#region переход в центр и обстрел сверх в одну из сторон и в другую 
 		t++;
 		if t > 30 {
-			if point_distance(x, y, 240, 64) > 2
+			if point_distance(x, y, 232, 128) > 2
 			{
-			    move_towards_point(240, 64, 2);
+			    move_towards_point(232, 128, 2);
 			}
 			else {
 				state = 6.1;	

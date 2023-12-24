@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 t = 0;
-
+fnc_msc_stop_play_slow();
 if instance_exists(obj_boat_boss_shadow_dtent){
 	obj_boat_boss_shadow_dtent.death = 1;
 }

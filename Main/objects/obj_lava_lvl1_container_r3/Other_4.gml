@@ -5,7 +5,7 @@ instance_create_depth(x,y,0,obj_room_transition_black_screen);
 
 if global.chest_l1_r3 = 1
 {
-    instance_create_depth(272,224,200,obj_chest_l1_r3);
+    instance_create_depth(288,224,200,obj_chest_l1_r3);
 }
 
 if global.secrets_l1_r3 = 0 

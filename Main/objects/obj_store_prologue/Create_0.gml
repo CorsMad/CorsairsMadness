@@ -11,7 +11,7 @@ itemprice = 0;
 delay = 0;
 
 buy_confirm = 0;
-buy_confirm_yesno = 0;
+buy_confirm_yesno = 1;
 
 #region Использование
 isKeyboard = 0;

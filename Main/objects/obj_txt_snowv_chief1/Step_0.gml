@@ -14,7 +14,8 @@ if key_skip
     {
         obj_npc_snowv_chief.talk = 0;
         obj_Player.isDead = 2.1;
-        global.dia_snowChief = 1;           
+        global.dia_snowChief = 1; 
+        scr_save_progress();
         instance_destroy();   
     } 
 }

@@ -13,6 +13,8 @@ if place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_destrutable_chain_bloc
 }
 
 
+
+
 /*
 if global.Destructable_tiles_array[MyID,0] == 1 
 {

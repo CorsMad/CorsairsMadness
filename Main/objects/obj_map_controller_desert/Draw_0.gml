@@ -17,10 +17,10 @@ switch(globalMapCounter)
         draw_text(14,9,endurance);
         break;
     case 2:
-        draw_text(14,9,lvl1);
+        draw_text(14,9,dlvl1);
         break;
     case 3:
-        draw_text(14,9,lvl2);
+        draw_text(14,9,dlvl2);
         break;
     case 4:
         draw_text(14,9,temple);
@@ -57,7 +57,7 @@ switch(globalMapCounter) // Секреты
                 
                 break;                  
             case 5: // 
-                draw_sprite(spr_map_global_follower_jngl,global.completed_PD2,72,54);
+                draw_sprite(spr_map_global_follower_desert,global.completed_PD2,72,54);
                 break;   
         }    
 
@@ -67,30 +67,30 @@ switch(globalMapCounter) // Секреты
     switch(globalMapCounter)
     {
         case 0:
-            draw_sprite_ext(spr_map_border,PointerFrame,396,162,1,1,0,c_white,1);
+            draw_sprite_ext(spr_map_border,PointerFrame,394,200,1,1,0,c_white,1);
             break;
         case 1:
-            draw_sprite_ext(spr_map_border,PointerFrame,321,120,1,1,0,c_white,1);
+            draw_sprite_ext(spr_map_border,PointerFrame,324,142,1,1,0,c_white,1);
             break;
         case 2:
-            draw_sprite_ext(spr_map_border,PointerFrame,294,150,1,1,0,c_white,1);                    
+            draw_sprite_ext(spr_map_border,PointerFrame,278,168,1,1,0,c_white,1);                    
             break;
         case 3:
-            draw_sprite_ext(spr_map_border,PointerFrame,192,168,1,1,0,c_white,1);                    
+            draw_sprite_ext(spr_map_border,PointerFrame,194,188,1,1,0,c_white,1);                    
             break;
         case 4:
-            draw_sprite_ext(spr_map_border,PointerFrame,239,93,1,1,0,c_white,1);                    
+            draw_sprite_ext(spr_map_border,PointerFrame,240,104,1,1,0,c_white,1);                    
             break;        
         case 5:
-            draw_sprite_ext(spr_map_border,PointerFrame,239,40,1,1,0,c_white,1);                    
+            draw_sprite_ext(spr_map_border,PointerFrame,240,60,1,1,0,c_white,1);                    
             break;    
     }
 #endregion
 
 // Деревня
-    draw_sprite(spr_map_pointer,2,396,162); // Деревня
-    if Opened = 1 draw_sprite(spr_map_pointer,global.secrets_d_endurance,321,120); // Колизей                  
-    draw_sprite(spr_map_pointer,global.key_yellow1,294,150); // 1 уровень
-    draw_sprite(spr_map_pointer,global.key_yellow2,192,168); // 2 уровень
-    if Opened = 1 draw_sprite(spr_map_pointer,global.completed_PD1,239,93); // Одержимый
-    if global.completed_PD1 = 1 draw_sprite(spr_map_pointer,global.completed_PD2,239,40); // Одержимый
+    draw_sprite(spr_map_pointer,2,394,200); // Деревня
+    if Opened = 1 draw_sprite(spr_map_pointer,global.secrets_d_endurance,324,142); // Колизей                  
+    draw_sprite(spr_map_pointer,global.key_yellow1,278,168); // 1 уровень
+    draw_sprite(spr_map_pointer,global.key_yellow2,194,188); // 2 уровень
+    if Opened = 1 draw_sprite(spr_map_pointer,global.completed_PD1,240,104); // Одержимый
+    if global.completed_PD1 = 1 draw_sprite(spr_map_pointer,global.completed_PD2,239,60); // Одержимый

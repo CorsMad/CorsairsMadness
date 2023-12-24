@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "msc_di_boss_fight.mp3",
   "type": 0,
-  "volume": 0.59,
+  "volume": 0.24,
 }

@@ -44,6 +44,12 @@ if state = 0 // SHIELDER archer redfly
             }
             break;
         case 300:
+            if instance_exists(obj_Player) 
+            {
+                instance_create_depth(obj_Player.x+choose(-128,128),obj_Player.y-random_range(8,32),depth,obj_molded_small_fastfly);
+            }
+            break;
+        case 400:
             state = 0.5;
             t = 0;
             break;
@@ -55,7 +61,7 @@ if state = 0.5
     if !instance_exists(obj_molded_purple_shield) && !instance_exists(obj_fastfly_molded)
     && !instance_exists(obj_molded_purple_archer)
     {
-        state = 1;          
+        state = 3;          
     }
 }
 

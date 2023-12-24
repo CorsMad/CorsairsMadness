@@ -62,6 +62,23 @@ if state = 0 // красныйход, летающий, раннер, красн
             }   
             break;
         case 600:
+            if instance_exists(obj_Player)
+            {
+                if obj_Player.x> 224
+                {
+                    var e3 = instance_create_depth(96,176,0,obj_molded_big_spawner_n);
+                    e3.y_cr = 16;
+                    e3.obj_cr = obj_molded_yellow_run;
+                
+                } else 
+                {
+                    var e3 = instance_create_depth(352,192,0,obj_molded_big_spawner_n);
+                    e3.y_cr = 16;
+                    e3.obj_cr = obj_molded_yellow_run;   
+                }
+            }  
+            break;
+        case 700:
             state = 0.5;
             t = 0;
             break;
@@ -73,7 +90,7 @@ if state = 0.5
     if !instance_exists(obj_molded_yellow_flying) && !instance_exists(obj_molded_yellow_run) &&
     !instance_exists(obj_crawling_molded_l) && !instance_exists(obj_crawling_molded)
     {
-        state = 1;          
+        state = 3;          
     }
     
 }

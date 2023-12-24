@@ -20,7 +20,27 @@ if state = 0
             }
         }        
             break;
+            
         case 200:
+            {
+            if obj_Player.x> 240
+            {
+                var e1 = instance_create_depth(96,144,0,obj_molded_big_spawner_n);
+                e1.y_cr = 16;
+                e1.obj_cr = obj_molded_yellow_flying;
+                
+            } else 
+            {
+                var e1 = instance_create_depth(384,144,0,obj_molded_big_spawner_n);
+                e1.y_cr = 16;
+                e1.obj_cr = obj_molded_yellow_flying;   
+            }
+            }  
+            break;
+            
+            
+            
+        case 300:
             state = 0.5;
             t = 0;
             break;
@@ -57,6 +77,18 @@ if state = 1
                 }
             }    
             break;
+        case 100:
+            if instance_exists(obj_Player)
+            {
+                if obj_Player.x> 240
+                {
+                    instance_create_depth(96,192,0,obj_molded_small_fastfly);                    
+                } else 
+                {
+                    instance_create_depth(384,192,0,obj_molded_small_fastfly);  
+                }
+            }
+            break;
         case 200:
             if instance_exists(obj_Player)
             {
@@ -75,7 +107,7 @@ if state = 1
             }  
             break;
         case 300:
-            state = 1.5;
+            state = 2.5;
             t = 0;
             break;
     }   
@@ -177,7 +209,7 @@ if state = 2
 if state = 2.5
 {    
     if !instance_exists(obj_molded_yellow_run) && 
-    !instance_exists(obj_crawling_molded) && !instance_exists(obj_crawling_molded_l) &&
+    !instance_exists(obj_crawling_molded) && !instance_exists(obj_fastfly_molded) &&
     !instance_exists(obj_molded_yellow_flying)
     {
         state = 3;  

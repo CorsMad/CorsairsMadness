@@ -20,7 +20,7 @@ if state = 0 // Berserker redfly Berserker redfly Jumper
                 }
             }        
             break;
-        case 250:
+        case 150:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> room_width/2
@@ -32,7 +32,7 @@ if state = 0 // Berserker redfly Berserker redfly Jumper
                 }
             }   
             break;
-        case 550:
+        case 200:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> room_width/2
@@ -49,7 +49,7 @@ if state = 0 // Berserker redfly Berserker redfly Jumper
                 }
             }   
             break;
-        case 850:
+        case 300:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> room_width/2
@@ -61,24 +61,19 @@ if state = 0 // Berserker redfly Berserker redfly Jumper
                 }
             }   
             break;
-        case 900:
+        case 350:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> room_width/2
                 {
-                    var e1 = instance_create_depth(336,96,0,obj_molded_big_spawner_n);
-                    e1.y_cr = 16;
-                    e1.obj_cr = obj_molded_lava_boomer;
-                
+                    instance_create_depth(296,128,0,obj_molded_small_fastfly);                
                 } else 
                 {
-                    var e1 = instance_create_depth(432,96,0,obj_molded_big_spawner_n);
-                    e1.y_cr = 16;
-                    e1.obj_cr = obj_molded_lava_boomer;   
+                    instance_create_depth(464,128,0,obj_molded_small_fastfly);
                 }
-            }   
+            }
             break;
-        case 1200:
+        case 450:
             state = 0.5;
             t = 0;
             break;
@@ -90,7 +85,7 @@ if state = 0.5
     if !instance_exists(obj_molded_lava_berserker) && !instance_exists(obj_fastfly_molded)
     && !instance_exists(obj_molded_lava_boomer)
     {
-        state = 1;          
+        state = 2;          
     }
 }
 

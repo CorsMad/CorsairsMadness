@@ -81,10 +81,10 @@ switch(state){
 			rand_n2 = irandom(15);
 			break;
 		case 50:
-			for (var i = 0; i < 14; i += 1)
+			for (var i = 0; i < 19; i += 1) //14
 			{
 				if i!= rand_n1 && i!= rand_n2{
-			    instance_create_depth(32+32*i,592,depth-1,obj_bossmerch_phase1_proj1_2,{
+			    instance_create_depth(24+24*i,592,depth-1,obj_bossmerch_phase1_proj1_2,{
                     image_angle : 270   
                 });}
 			} 
@@ -101,10 +101,10 @@ switch(state){
 			rand_n2 = irandom(15);
 			break;
 		case 200:
-			for (var i = 0; i < 14; i += 1)
+			for (var i = 0; i < 19; i += 1)
 			{
 			    if i!= rand_n1 && i!= rand_n2{
-			    instance_create_depth(32+32*i,592,depth-1,obj_bossmerch_phase1_proj1_2,{
+			    instance_create_depth(24+24*i,592,depth-1,obj_bossmerch_phase1_proj1_2,{ //592
                     image_angle : 270   
                 });}
 			} 
@@ -121,10 +121,10 @@ switch(state){
 			rand_n2 = irandom(15);
 			break;
 		case 350:
-			for (var i = 0; i < 14; i += 1)
+			for (var i = 0; i < 19; i += 1)
 			{
 			    if i!= rand_n1 && i!= rand_n2{
-			    instance_create_depth(32+32*i,592,depth-1,obj_bossmerch_phase1_proj1_2,{
+			    instance_create_depth(24+24*i,592,depth-1,obj_bossmerch_phase1_proj1_2,{
                     image_angle : 270   
                 });}
 			} 
@@ -206,10 +206,10 @@ switch(state){
 			rand_n2 = irandom(15);
 			break;
 		case 50:
-			for (var i = 0; i < 14; i += 1)
+			for (var i = 0; i < 19; i += 1)
 			{
 				if i!= rand_n1 && i!= rand_n2{
-			    instance_create_depth(32+32*i,592,depth-1,obj_bossmerch_phase1_proj1_2);}
+			    instance_create_depth(24+24*i,592,depth-1,obj_bossmerch_phase1_proj1_2);}
 			} 
 			break;
 		case 95:image_index = 4;break;
@@ -224,10 +224,10 @@ switch(state){
 			rand_n2 = irandom(15);
 			break;
 		case 200:
-			for (var i = 0; i < 14; i += 1)
+			for (var i = 0; i < 19; i += 1)
 			{
 			    if i!= rand_n1 && i!= rand_n2{
-			    instance_create_depth(32+32*i,592,depth-1,obj_bossmerch_phase1_proj1_2);}
+			    instance_create_depth(24+24*i,592,depth-1,obj_bossmerch_phase1_proj1_2);}
 			} 
 			break;
 		case 245:image_index = 4;break;
@@ -242,10 +242,10 @@ switch(state){
 			rand_n2 = irandom(15);
 			break;
 		case 350:
-			for (var i = 0; i < 14; i += 1)
+			for (var i = 0; i < 19; i += 1)
 			{
 			    if i!= rand_n1 && i!= rand_n2{
-			    instance_create_depth(32+32*i,592,depth-1,obj_bossmerch_phase1_proj1_2);}
+			    instance_create_depth(24+24*i,592,depth-1,obj_bossmerch_phase1_proj1_2);}
 			} 
 			break;
 		case 395:image_index = 4;break;

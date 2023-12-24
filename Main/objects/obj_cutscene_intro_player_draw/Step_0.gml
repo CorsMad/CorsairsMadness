@@ -98,7 +98,9 @@ if state = 3
     switch(t)
     {
         case 1: subimg = 0;break;   
-        case 50: subimg = 1;break;   
+        case 50: subimg = 1;
+            fnc_snd_play_onetime(snd_spikes_trap_activation);
+            break;   
         case 55: subimg = 2;break;   
         case 60: subimg = 3;break;   
         case 100: 

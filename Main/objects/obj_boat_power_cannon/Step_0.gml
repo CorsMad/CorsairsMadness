@@ -24,6 +24,7 @@ if place_meeting(x,y,obj_player_boat_hitbox)
     instance_destroy();
     if obj_Player_boat.state != 9
     {
+        obj_Player_boat.prev_weapon = obj_Player_boat.state;
         fnc_snd_play_over(snd_ability_gain);
         global.hp = global.hp_max;
         obj_Player_boat.image_index = 0;
@@ -31,6 +32,7 @@ if place_meeting(x,y,obj_player_boat_hitbox)
         obj_Player_boat.cannonshoot_count= 25 
         obj_Player_boat.t = 0;
         obj_Player_boat.state = 3;
+        
         
     }
     //obj_Player_boat.image_index = 0;

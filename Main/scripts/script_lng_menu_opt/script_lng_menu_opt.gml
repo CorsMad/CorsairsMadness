@@ -61,7 +61,7 @@ all previous progress will be lost";
             menu[31, 11] = "default 2";
             menu[31, 12] = "back";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nback";
+            menu[32, 0] = "\n\n\n\n\n\n\n\nback";
 
 
             #endregion

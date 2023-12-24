@@ -44,6 +44,12 @@ if state = 0 //  летающий , красныйлет, летающий
             }  
             break;
         case 350:
+            if instance_exists(obj_Player)
+            {
+                instance_create_depth(obj_Player.x - 96*obj_Player.image_xscale,obj_Player.y,0,obj_molded_small_fastfly);      
+            }
+            break;
+        case 450:
             state = 0.5;
             t = 0;
             break;
@@ -53,9 +59,9 @@ if state = 0 //  летающий , красныйлет, летающий
 if state = 0.5
 {
     if !instance_exists(obj_molded_yellow_flying) && !instance_exists(obj_molded_yellow_run) &&
-    !instance_exists(obj_crawling_molded_l) && !instance_exists(obj_flying_molded)
+    !instance_exists(obj_crawling_molded_l) && !instance_exists(obj_flying_molded) && !instance_exists(obj_molded_small_fastfly)
     {
-        state = 1;          
+        state = 3;          
     }
     
 }
@@ -142,7 +148,7 @@ if state = 1.5
     if !instance_exists(obj_molded_yellow_run) && !instance_exists(obj_molded_yellow_flying) &&
     !instance_exists(obj_crawling_molded) && !instance_exists(obj_crawling_molded_l)
     {
-        state = 2;   
+        state = 3;   
     }
 }
 

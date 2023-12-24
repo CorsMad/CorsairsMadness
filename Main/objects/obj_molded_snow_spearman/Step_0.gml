@@ -126,6 +126,14 @@ switch(state)
 }
 #endregion
 
+oleg++;
+if oleg = 50{
+   if state = -1 {
+       state = 1;
+   }
+   oleg = 0;
+}
+
 
 if state = 0
 {

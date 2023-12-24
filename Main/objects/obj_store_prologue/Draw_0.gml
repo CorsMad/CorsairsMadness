@@ -132,6 +132,8 @@ switch(submenu)
 draw_set_halign(fa_left);
 draw_set_valign(fa_center);
 
+
+
 switch(submenu)
 {
     case 1:
@@ -238,116 +240,24 @@ switch(submenu)
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_left);
+
 switch(submenu)
 {
     case 1:  
-        if index != 4 
-        {
-            draw_text(154,70,dHMenu[index,dindex]);
-            switch(isKeyboard)
-                {
-                    case 0: 
-                        draw_text(218,130,name_use);
-                        draw_sprite_ext(spr_gp_icon,3,300,135,1,1,0,c_white,1);                    
-                        draw_text(322,130,"/");
-                        draw_sprite_ext(spr_gp_icon,9,335,135,1,1,0,c_white,1);                    
-                        break;
-                    case 1: 
-                        draw_text(218,130,name_use);
-                        draw_sprite_ext(spr_key_icon,scr_key_sprite(global.item_key),300,135,1,1,0,c_white,1); 
-                        break;
-                }
-            
-            
-        }
+        if index != 4  draw_text(154,70,dHMenu[index,dindex]);
         break; 
     case 2:
-        if index != 4 draw_text(154,70,dPMenu[index,0]);
-        
-        switch(index){
-            case 0:
-                switch(isKeyboard)
-                {
-                    case 0: 
-                        draw_text(218,130,name_use);
-                        draw_sprite_ext(spr_gp_icon,6,250,135,1,1,0,c_white,1);                    
-                        draw_text(272,130,"/");
-                        draw_sprite_ext(spr_gp_icon,7,285,135,1,1,0,c_white,1);                               
-                        draw_text(307,130,"+");
-                        draw_sprite_ext(spr_gp_icon,10,329,135,1,1,0,c_white,1);  
-                        break;
-                    case 1: 
-                        draw_text(218,130,name_use);
-                        draw_sprite_ext(spr_gp_icon,6,250,135,1,1,0,c_white,1);                    
-                        draw_text(272,130,"/");
-                        draw_sprite_ext(spr_gp_icon,7,285,135,1,1,0,c_white,1);                               
-                        draw_text(307,130,"+");
-                        draw_sprite_ext(spr_key_icon,scr_key_sprite(global.abil_key),329,135,1,1,0,c_white,1); 
-                        break;
-                }
-                break;
-            case 1:
-                switch(isKeyboard)
-                {
-                    case 0: 
-                        draw_text(218,130,name_use);
-                        draw_sprite_ext(spr_gp_icon,6,250,135,1,1,0,c_white,1);                    
-                        draw_text(272,130,"/");
-                        draw_sprite_ext(spr_gp_icon,7,285,135,1,1,0,c_white,1);                               
-                        draw_text(307,130,"+");
-                        draw_sprite_ext(spr_gp_icon,10,329,135,1,1,0,c_white,1);  
-                        break;
-                    case 1: 
-                        draw_text(218,130,name_use);
-                        draw_sprite_ext(spr_gp_icon,6,250,135,1,1,0,c_white,1);                    
-                        draw_text(272,130,"/");
-                        draw_sprite_ext(spr_gp_icon,7,285,135,1,1,0,c_white,1);                               
-                        draw_text(307,130,"+");
-                        draw_sprite_ext(spr_key_icon,scr_key_sprite(global.abil_key),329,135,1,1,0,c_white,1); 
-                        break;
-                }
-                break;
-            case 2:
-                switch(isKeyboard)
-                {
-                    case 0: 
-                        draw_text(218,130,name_use);
-                        draw_sprite_ext(spr_gp_icon,5,250,135,1,1,0,c_white,1);                                                 
-                        draw_text(272,130,"+");
-                        draw_sprite_ext(spr_gp_icon,10,285,135,1,1,0,c_white,1);  
-                        break;
-                    case 1: 
-                        draw_text(218,130,name_use);
-                        draw_sprite_ext(spr_gp_icon,5,250,135,1,1,0,c_white,1);                    
-                        draw_text(272,130,"+");
-                        draw_sprite_ext(spr_key_icon,scr_key_sprite(global.abil_key),285,135,1,1,0,c_white,1); 
-                        break;
-                }
-                break;
-            case 3:
-                switch(isKeyboard)
-                {
-                    case 0: 
-                        draw_text(218,130,name_use);
-                        draw_sprite_ext(spr_gp_icon,4,250,135,1,1,0,c_white,1);                                                 
-                        draw_text(272,130,"+");
-                        draw_sprite_ext(spr_gp_icon,10,285,135,1,1,0,c_white,1);  
-                        break;
-                    case 1: 
-                        draw_text(218,130,name_use);
-                        draw_sprite_ext(spr_gp_icon,4,250,135,1,1,0,c_white,1);                    
-                        draw_text(272,130,"+");
-                        draw_sprite_ext(spr_key_icon,scr_key_sprite(global.abil_key),285,135,1,1,0,c_white,1); 
-                        break;
-                }
-                break;
-                break;
-        }
+        if index != 4 draw_text(154,70,dPMenu[index,0]);        
         break;
     case 3:
         if index != 4 draw_text(154,70,dBMenu[index,dindex]);
         break;
 }
+
+
+
+
+
 #endregion
 
 #endregion
@@ -358,13 +268,17 @@ draw_set_halign(fa_center);
 //draw_set_font(fnt_pixel);
 draw_set_color(c_white);
 
+if submenu!= 2 {    
 if global.gold < itemprice draw_set_color(c_red) else draw_set_color(c_white)
+} else if submenu = 2 {
+     if global.darkessence < itemprice draw_set_color(c_red) else draw_set_color(c_white)  
+}
 
 // Отрисовка стоимости
 draw_set_halign(fa_left)
 if itemprice != 0 {
     draw_text(306,159.5,string(itemprice))
-    if submenu = 2 {
+    if submenu = 2 {       
         draw_sprite(spr_shop_gold_darkessence,0,306-24,157)   ;
     } else draw_sprite(spr_shop_gold_darkessence,1,306-24,157)   ;
 } else {
@@ -387,13 +301,13 @@ switch(submenu)
             else {
                 draw_sprite(spr_icons_confirm,1,120-64,72)    
             }
-	        if (global.shop_axe_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava = 0)) draw_sprite(spr_icons_confirm,0,152-64,72); 
+	        if (global.shop_axe_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava) = 0) draw_sprite(spr_icons_confirm,0,152-64,72); 
             else {
                     if global.purch_anch2 = 0 draw_sprite(spr_shop_icons_anchor,2,152-64,72)
                     else draw_sprite(spr_icons_confirm,2,152-64,72);      
                 }
             
-	        if (global.shop_axe_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava < 2)) draw_sprite(spr_icons_confirm,0,184-64,72); 
+	        if (global.shop_axe_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava) < 2) draw_sprite(spr_icons_confirm,0,184-64,72); 
             else {
                     if global.purch_anch3 = 0 draw_sprite(spr_shop_icons_anchor,3,184-64,72);
                     else draw_sprite(spr_icons_confirm,3,184-64,72);
@@ -408,13 +322,13 @@ switch(submenu)
             else {
                 draw_sprite(spr_icons_confirm,4,120-64,104)    
             }
-	        if (global.shop_bomb_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava = 0)) draw_sprite(spr_icons_confirm,0,152-64,104); 
+	        if (global.shop_bomb_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava) = 0) draw_sprite(spr_icons_confirm,0,152-64,104); 
             else {
                     if global.purch_bomb2 = 0 draw_sprite(spr_shop_icons_anchor,5,152-64,104)
                     else draw_sprite(spr_icons_confirm,5,152-64,104);      
                 }
             
-	        if (global.shop_bomb_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava < 2)) draw_sprite(spr_icons_confirm,0,184-64,104); 
+	        if (global.shop_bomb_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava) < 2) draw_sprite(spr_icons_confirm,0,184-64,104); 
             else {
                     if global.purch_bomb3 = 0 draw_sprite(spr_shop_icons_anchor,6,184-64,104);
                     else draw_sprite(spr_icons_confirm,6,184-64,104);
@@ -429,13 +343,13 @@ switch(submenu)
             else {
                 draw_sprite(spr_icons_confirm,7,120-64,136)    
             }
-	        if (global.shop_sparkle_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava = 0)) draw_sprite(spr_icons_confirm,0,152-64,136); 
+	        if (global.shop_sparkle_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava) = 0) draw_sprite(spr_icons_confirm,0,152-64,136); 
             else {
                     if global.purch_sparkle2 = 0 draw_sprite(spr_shop_icons_anchor,8,152-64,136)
                     else draw_sprite(spr_icons_confirm,8,152-64,136);      
                 }
             
-	        if (global.shop_sparkle_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava < 2)) draw_sprite(spr_icons_confirm,0,184-64,136); 
+	        if (global.shop_sparkle_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava) < 2) draw_sprite(spr_icons_confirm,0,184-64,136); 
             else {
                     if global.purch_sparkle3 = 0 draw_sprite(spr_shop_icons_anchor,9,184-64,136);
                     else draw_sprite(spr_icons_confirm,9,184-64,136);
@@ -512,13 +426,13 @@ switch(submenu)
             else {
                 draw_sprite(spr_icons_confirm,14,120-64,72)    
             }
-	        if (global.shop_rapidfire_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava = 0)) draw_sprite(spr_icons_confirm,0,152-64,72); 
+	        if (global.shop_rapidfire_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava) = 0) draw_sprite(spr_icons_confirm,0,152-64,72); 
             else {
                     if global.purch_rapidfire2 = 0 draw_sprite(spr_shop_icons_anchor,15,152-64,72)
                     else draw_sprite(spr_icons_confirm,14,152-64,72);      
                 }
             
-	        if (global.shop_rapidfire_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava < 2)) draw_sprite(spr_icons_confirm,0,184-64,72); 
+	        if (global.shop_rapidfire_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava) < 2) draw_sprite(spr_icons_confirm,0,184-64,72); 
             else {
                     if global.purch_rapidfire3 = 0 draw_sprite(spr_shop_icons_anchor,16,184-64,72);
                     else draw_sprite(spr_icons_confirm,14,184-64,72);
@@ -533,13 +447,13 @@ switch(submenu)
             else {
                 draw_sprite(spr_icons_confirm,16,120-64,104)    
             }
-	        if (global.shop_dualpistols_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava = 0)) draw_sprite(spr_icons_confirm,0,152-64,104); 
+	        if (global.shop_dualpistols_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava) = 0) draw_sprite(spr_icons_confirm,0,152-64,104); 
             else {
                     if global.purch_dualpistols2 = 0 draw_sprite(spr_shop_icons_anchor,17,152-64,104)
                     else draw_sprite(spr_icons_confirm,17,152-64,104);      
                 }
             
-	        if (global.shop_dualpistols_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava < 2)) draw_sprite(spr_icons_confirm,0,184-64,104); 
+	        if (global.shop_dualpistols_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava) < 2) draw_sprite(spr_icons_confirm,0,184-64,104); 
             else {
                     if global.purch_dualpistols3 = 0 draw_sprite(spr_shop_icons_anchor,18,184-64,104);
                     else draw_sprite(spr_icons_confirm,18,184-64,104);
@@ -554,13 +468,13 @@ switch(submenu)
             else {
                 draw_sprite(spr_icons_confirm,19,120-64,136)    
             }
-	        if (global.shop_blunderbuss_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava = 0)) draw_sprite(spr_icons_confirm,0,152-64,136); 
+	        if (global.shop_blunderbuss_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava) = 0) draw_sprite(spr_icons_confirm,0,152-64,136); 
             else {
                     if global.purch_blunderbuss2 = 0 draw_sprite(spr_shop_icons_anchor,20,152-64,136)
                     else draw_sprite(spr_icons_confirm,20,152-64,136);      
                 }
             
-	        if (global.shop_blunderbuss_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava < 2)) draw_sprite(spr_icons_confirm,0,184-64,136); 
+	        if (global.shop_blunderbuss_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava) < 2) draw_sprite(spr_icons_confirm,0,184-64,136); 
             else {
                     if global.purch_blunderbuss3 = 0 draw_sprite(spr_shop_icons_anchor,21,184-64,136);
                     else draw_sprite(spr_icons_confirm,21,184-64,136);
@@ -575,13 +489,13 @@ switch(submenu)
             else {
                 draw_sprite(spr_icons_confirm,22,120-64,168)    
             }
-	        if (global.shop_parrotcage_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava = 0)) draw_sprite(spr_icons_confirm,0,152-64,168); 
+	        if (global.shop_parrotcage_can_upgrade1 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava) = 0) draw_sprite(spr_icons_confirm,0,152-64,168); 
             else {
                     if global.purch_parrotcage2 = 0 draw_sprite(spr_shop_icons_anchor,23,152-64,168)
                     else draw_sprite(spr_icons_confirm,23,152-64,168);      
                 }
             
-	        if (global.shop_parrotcage_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava < 2)) draw_sprite(spr_icons_confirm,0,184-64,168); 
+	        if (global.shop_parrotcage_can_upgrade2 = 0 || (global.completedJungle + global.completedDesert + global.completedSnow + global.completedShadow + global.completedLava) < 2) draw_sprite(spr_icons_confirm,0,184-64,168); 
             else {
                     if global.purch_parrotcage3 = 0 draw_sprite(spr_shop_icons_anchor,24,184-64,168);
                     else draw_sprite(spr_icons_confirm,24,184-64,168);
@@ -619,5 +533,138 @@ if buy_confirm = 1
     draw_text(302+27,204,confirmn);
     
 }
+
+#endregion
+
+
+#region Помозь
+
+
+if submenu = 1 && index !=4{ // Человек
+    draw_set_halign(fa_right);  
+    draw_set_color(c_yellow);
+    draw_text(218,130,name_use);
+    draw_text(350,130,tipWS);
+
+    draw_set_halign(fa_left)
+    draw_set_color(c_white);
+    switch(isKeyboard)
+    {
+        case 0:         
+            draw_sprite_ext(spr_gp_icon,3,224,135,1,1,0,c_white,1);                    
+            draw_text(244,130,"/");
+            draw_sprite_ext(spr_gp_icon,9,254,135,1,1,0,c_white,1);    
+            draw_sprite_ext(spr_gp_icon,12,356,135,1,1,0,c_white,1);                    
+            break;
+        case 1: 
+            draw_sprite_ext(spr_key_icon,scr_key_sprite(global.item_key),224,135,1,1,0,c_white,1);                         
+            draw_sprite_ext(spr_key_icon,scr_key_sprite(global.select_key),356,135,1,1,0,c_white,1); 
+            break;
+    }   
+}
+
+
+
+if submenu = 2 && index !=4 { // Possessed
+    
+    draw_set_halign(fa_right);
+    draw_set_color(c_yellow);
+    draw_text(260,130,name_use);
+    draw_set_halign(fa_left);
+    draw_set_color(c_white);
+    switch(index){
+            case 0:
+                switch(isKeyboard)
+                {
+                    case 0: 
+                        draw_sprite_ext(spr_gp_icon,6,264,135,1,1,0,c_white,1);                    
+                        draw_text(286,130,"/");
+                        draw_sprite_ext(spr_gp_icon,7,298,135,1,1,0,c_white,1);                               
+                        draw_text(322,130,"+");
+                        draw_sprite_ext(spr_gp_icon,10,334,135,1,1,0,c_white,1);  
+                        break;
+                    case 1: 
+                        draw_sprite_ext(spr_gp_icon,6,264,135,1,1,0,c_white,1);                    
+                        draw_text(286,130,"/");
+                        draw_sprite_ext(spr_gp_icon,7,298,135,1,1,0,c_white,1);                               
+                        draw_text(322,130,"+");
+                        draw_sprite_ext(spr_key_icon,scr_key_sprite(global.abil_key),334,135,1,1,0,c_white,1); 
+                        break;
+                }
+                break;
+            case 1:
+                switch(isKeyboard)
+                {
+                    case 0: 
+                        draw_sprite_ext(spr_gp_icon,6,264,135,1,1,0,c_white,1);                    
+                        draw_text(286,130,"/");
+                        draw_sprite_ext(spr_gp_icon,7,298,135,1,1,0,c_white,1);                               
+                        draw_text(322,130,"+");
+                        draw_sprite_ext(spr_gp_icon,10,334,135,1,1,0,c_white,1);  
+                        break;
+                    case 1: 
+                        draw_sprite_ext(spr_gp_icon,6,264,135,1,1,0,c_white,1);                    
+                        draw_text(286,130,"/");
+                        draw_sprite_ext(spr_gp_icon,7,298,135,1,1,0,c_white,1);                               
+                        draw_text(322,130,"+");
+                        draw_sprite_ext(spr_key_icon,scr_key_sprite(global.abil_key),334,135,1,1,0,c_white,1); 
+                        break;
+                }
+                break;
+            case 2:
+                switch(isKeyboard)
+                {
+                    case 0: 
+                        draw_sprite_ext(spr_gp_icon,5,264,135,1,1,0,c_white,1);                                                 
+                        draw_text(286,130,"+");
+                        draw_sprite_ext(spr_gp_icon,10,298,135,1,1,0,c_white,1);  
+                        break;
+                    case 1: 
+                        draw_sprite_ext(spr_gp_icon,5,264,135,1,1,0,c_white,1);                    
+                        draw_text(286,130,"+");
+                        draw_sprite_ext(spr_key_icon,scr_key_sprite(global.abil_key),298,135,1,1,0,c_white,1); 
+                        break;
+                }
+                break;
+            case 3:
+                switch(isKeyboard)
+                {
+                    case 0: 
+                        draw_sprite_ext(spr_gp_icon,4,264,135,1,1,0,c_white,1);                                                 
+                        draw_text(286,130,"+");
+                        draw_sprite_ext(spr_gp_icon,10,298,135,1,1,0,c_white,1);  
+                        break;
+                    case 1: 
+                        draw_sprite_ext(spr_gp_icon,4,264,135,1,1,0,c_white,1);                    
+                        draw_text(286,130,"+");
+                        draw_sprite_ext(spr_key_icon,scr_key_sprite(global.abil_key),298,135,1,1,0,c_white,1); 
+                        break;
+                }
+                break;               
+        }
+       
+}
+
+if submenu = 3 && index !=4 { // Лодка
+    draw_set_halign(fa_right);  
+    draw_set_color(c_yellow);
+    draw_text(280,130,tipBS);
+    
+    draw_set_halign(fa_left)
+    draw_set_color(c_white);
+    switch(isKeyboard)
+    {
+        case 0:
+            draw_sprite_ext(spr_gp_icon,12,286,135,1,1,0,c_white,1);                                                 
+            draw_text(308,130,"/");
+            draw_sprite_ext(spr_gp_icon,8,320,135,1,1,0,c_white,1); 
+            break;
+        case 1:
+            draw_sprite_ext(spr_key_icon,scr_key_sprite(global.select_key),286,135,1,1,0,c_white,1);
+            break;
+    }
+}
+
+
 
 #endregion

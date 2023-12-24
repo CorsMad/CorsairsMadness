@@ -16,16 +16,15 @@ switch(t){
         instance_create_depth(0,0,-1,obj_map_deathisland_beam);
         
 }
-if t > 85 && !instance_exists(obj_confirm_death)
+if t > 85 && !instance_exists(obj_global_map_confirm_end)
 {
     
-
 
 #region Выбор острова
 if key_jump || key_attack 
 {
     fnc_snd_play_over(snd_menu_accept);
-    instance_create_depth(room_width/2,room_height/2,depth-2,obj_confirm_death);
+    instance_create_depth(room_width/2,room_height/2,-15000,obj_global_map_confirm_end);fnc_snd_play_over(snd_menu_accept);
 }
 #endregion
 

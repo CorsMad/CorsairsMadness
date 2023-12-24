@@ -20,10 +20,10 @@ switch(globalMapCounter)
         draw_text(14,9,endurance);
         break;
     case 2:
-        draw_text(14,9,lvl1);
+        draw_text(14,9,slvl1);
         break;
     case 3:
-        draw_text(14,9,lvl2);
+        draw_text(14,9,slvl2);
         break;
     case 4:
         draw_text(14,9,temple);
@@ -61,7 +61,7 @@ switch(globalMapCounter) // Секреты
                 
                 break;                  
             case 5: // 
-                draw_sprite(spr_map_global_follower_jngl,global.completed_PS2,72,54);
+                draw_sprite(spr_map_global_follower_snow,global.completed_PS2,72,54);
                 break;   
         }    
 
@@ -86,7 +86,7 @@ switch(globalMapCounter) // Секреты
             draw_sprite_ext(spr_map_border,PointerFrame,171,88,1,1,0,c_white,1);                    
             break;        
         case 5:
-            draw_sprite_ext(spr_map_border,PointerFrame,171,29,1,1,0,c_white,1);                    
+            draw_sprite_ext(spr_map_border,PointerFrame,171,50,1,1,0,c_white,1);                    
             break;    
     }
 #endregion
@@ -97,4 +97,4 @@ switch(globalMapCounter) // Секреты
     draw_sprite(spr_map_pointer,global.key_blue1,375,217); // 1 уровень
     draw_sprite(spr_map_pointer,global.key_blue2,354,107); // 2 уровень
     if Opened = 1 draw_sprite(spr_map_pointer,global.completed_PS1,171,88); // Одержимый
-    if global.completed_PS1 = 1 draw_sprite(spr_map_pointer,global.completed_PS2,171,29); // Одержимый
+    if global.completed_PS1 = 1 draw_sprite(spr_map_pointer,global.completed_PS2,171,50); // Одержимый

@@ -3,7 +3,7 @@ if state = 0 // SHIELDER redfly redfly
     t++;
     switch(t)
     {
-        case 100:
+        case 100: 
             var e1 = instance_create_depth(480,160,0,obj_molded_big_spawner_n);
             e1.y_cr = 16;
             e1.obj_cr = obj_molded_purple_archer;               

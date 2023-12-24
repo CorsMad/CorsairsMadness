@@ -70,7 +70,7 @@ if state = 0.5
     }
 }
 
-if state = 0 // Jumper Berserker Jumper Jumper 
+if state = 1 // Jumper Berserker Jumper Jumper 
 {
     t++;
     switch(t)
@@ -109,7 +109,7 @@ if state = 0 // Jumper Berserker Jumper Jumper
                 }
             } 
             break;
-        case 550:
+        case 350:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> 448
@@ -126,7 +126,7 @@ if state = 0 // Jumper Berserker Jumper Jumper
                 }
             } 
             break;
-        case 850:
+        case 650:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> 448
@@ -143,7 +143,7 @@ if state = 0 // Jumper Berserker Jumper Jumper
                 }
             } 
             break;
-        case 1200:
+        case 750:
             state = 1.5;
             t = 0;
             break;

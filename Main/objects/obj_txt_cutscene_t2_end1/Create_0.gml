@@ -8,4 +8,4 @@ eng2 = "[fnt_pixel]And I still haven't found a single member of my team. What sh
 
 #endregion
 
-scr_text_starter(1,0.5);
+scr_text_starter(1,0.5,snd_vo_npc_sam_h);

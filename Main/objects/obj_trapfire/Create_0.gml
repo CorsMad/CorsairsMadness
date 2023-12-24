@@ -3,6 +3,8 @@
 t = 0
 t_max = 120; 
 
+image_speed = 0;
+
 if place_meeting(x,bbox_top-1,obj_block)
 {
 	image_angle = 0;

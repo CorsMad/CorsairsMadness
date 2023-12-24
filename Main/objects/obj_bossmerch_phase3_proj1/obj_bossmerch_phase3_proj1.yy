@@ -37,9 +37,6 @@
     "name": "spr_bossmerch_phase2_proj_big2",
     "path": "sprites/spr_bossmerch_phase2_proj_big2/spr_bossmerch_phase2_proj_big2.yy",
   },
-  "spriteMaskId": {
-    "name": "spr_bossmerch_phase2_proj_big2",
-    "path": "sprites/spr_bossmerch_phase2_proj_big2/spr_bossmerch_phase2_proj_big2.yy",
-  },
+  "spriteMaskId": null,
   "visible": true,
 }

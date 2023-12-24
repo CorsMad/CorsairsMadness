@@ -15,5 +15,5 @@ eng9 =  "[fnt_pixel]Good luck on your journey! We'll definitely meet again, and 
 
 #endregion
 
-scr_text_starter(8,0.5);
+scr_text_starter(8,0.5,[snd_vo_npc_merch,snd_vo_npc_merch2,snd_vo_npc_merch3]);
 

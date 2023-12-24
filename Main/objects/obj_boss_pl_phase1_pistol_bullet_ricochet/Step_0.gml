@@ -30,12 +30,13 @@ switch(state)
 		}
 		
 		if place_meeting(x,y-1,obj_block) {
+            fnc_snd_play_over(snd_lava_bonnie_ricochet);
 			vspd = 8; 
 			
 		}
 		if place_meeting(x,y+1,obj_block) {
 			vspd = -8;
-			
+			fnc_snd_play_over(snd_lava_bonnie_ricochet);
 		}
 		break;
 }

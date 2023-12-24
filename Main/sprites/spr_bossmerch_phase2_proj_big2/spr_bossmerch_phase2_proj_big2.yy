@@ -36,7 +36,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c3ac6fe4-225b-4b42-8809-817c8f1d9cf6","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 9,
+  "origin": 4,
   "parent": {
     "name": "Phase2",
     "path": "folders/Sprites/Enemies/!Death/MerchBoss/Phase2.yy",
@@ -86,7 +86,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 8,
-    "yorigin": 18,
+    "yorigin": 8,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

@@ -20,6 +20,18 @@ if state = 0 // Jumper Jumper
                 }
             }        
             break;
+        case 150:
+            if instance_exists(obj_Player)
+            {
+                if obj_Player.x> room_width/2
+                {
+                     instance_create_depth(208,176,0,obj_molded_small_fastfly);
+                } else 
+                {
+                    instance_create_depth(368,208,0,obj_molded_small_fastfly);
+                }
+            }
+            break;
         case 250:
             if instance_exists(obj_Player)
             {
@@ -37,7 +49,19 @@ if state = 0 // Jumper Jumper
                 }
             } 
             break;
-        case 350:
+        case 300:
+            if instance_exists(obj_Player)
+            {
+                if obj_Player.x> room_width/2
+                {
+                     instance_create_depth(192,176,0,obj_molded_small_fastfly);
+                } else 
+                {
+                    instance_create_depth(388,208,0,obj_molded_small_fastfly);
+                }
+            }
+            break;
+        case 400:
             state = 0.5;
             t = 0;
             break;
@@ -48,7 +72,7 @@ if state = 0.5
 {
     if !instance_exists(obj_molded_lava_boomer) && !instance_exists(obj_fastfly_molded)
     {
-        state = 1;          
+        state = 3;          
     }
 }
 

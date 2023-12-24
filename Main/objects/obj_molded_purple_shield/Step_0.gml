@@ -39,7 +39,15 @@
 6 - получение урона от суперов
 */
 
+oleg++;
+if oleg = 50{
+   if state = -1 state = 1;
+   oleg = 0;
+}
+
 #region anim
+
+
 
 if state = 0
 {
@@ -356,7 +364,7 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
 if hit_stored > 0
 {
     if instance_exists(icon) && state != 5  {
-        if (hit_stored >=14 && icon.state = 0) icon.state = 1;
+        if (hit_stored >=14 && icon.state = 0) {icon.state = 1;fnc_snd_play_over(snd_boat_parrot);}
     }
     
 	if obj_Player.isDead = 132
@@ -366,7 +374,7 @@ if hit_stored > 0
 			hit_stored = 0;
 			hit_cd = 1;
 			state = 5;
-            if instance_exists(icon) icon.state = 2;
+            if instance_exists(icon) {icon.state = 2;fnc_snd_play_over(snd_skate_human);}
     
             icon.image_alpha = 1;
 			t = 0;

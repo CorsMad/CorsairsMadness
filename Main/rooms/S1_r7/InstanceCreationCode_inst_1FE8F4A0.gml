@@ -1,2 +1,2 @@
 sprite_index = spr_destructable_tile_snow;
-image_index = 7;
+image_index = 18;

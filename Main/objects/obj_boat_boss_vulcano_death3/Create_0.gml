@@ -6,7 +6,7 @@ state = 0;
 t = 0;
 t1 = 0;
 phase = 0;
-
+fnc_msc_stop_play_slow();
 
 instance_destroy(obj_boat_boss_vulcano_proj_1_1);
 instance_destroy(obj_boat_boss_vulcano_proj_1_2);

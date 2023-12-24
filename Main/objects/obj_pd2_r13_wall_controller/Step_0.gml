@@ -20,22 +20,22 @@ if state = 0 //  летающий , летающий, раннер, летающ
                 }
             }            
             break;
-        case 200://летающий
+        case 150://летающий
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> 352
                 {
-                    var e4 = instance_create_depth(224,160,0,obj_molded_big_spawner_n);
+                    var e4 = instance_create_depth(544,176,0,obj_molded_big_spawner_n);
                     e4.y_cr = 16;
-                    e4.obj_cr = obj_molded_yellow_flying;
+                    e4.obj_cr = obj_molded_yellow_run;
                 
                 } else 
                 {
-                    var e4 = instance_create_depth(464,160,0,obj_molded_big_spawner_n);
+                    var e4 = instance_create_depth(144,160,0,obj_molded_big_spawner_n);
                     e4.y_cr = 16;
-                    e4.obj_cr = obj_molded_yellow_flying;   
+                    e4.obj_cr = obj_molded_yellow_run;   
                 }
-            } 
+            }                       
             break;
         case 250: //раннер
             if instance_exists(obj_Player)
@@ -54,24 +54,7 @@ if state = 0 //  летающий , летающий, раннер, летающ
                 }
             }                       
             break;
-        case 300: //летающий
-            if instance_exists(obj_Player)
-            {
-                if obj_Player.x> 352
-                {
-                    var e4 = instance_create_depth(224,160,0,obj_molded_big_spawner_n);
-                    e4.y_cr = 16;
-                    e4.obj_cr = obj_molded_yellow_flying;
-                
-                } else 
-                {
-                    var e4 = instance_create_depth(464,160,0,obj_molded_big_spawner_n);
-                    e4.y_cr = 16;
-                    e4.obj_cr = obj_molded_yellow_flying;   
-                }
-            } 
-            break;
-        case 400:
+        case 350:
             state = 0.5;
             t = 0;
             break;
@@ -83,7 +66,7 @@ if state = 0.5
     if !instance_exists(obj_molded_yellow_flying) && !instance_exists(obj_molded_yellow_run) &&
     !instance_exists(obj_crawling_molded_l) && !instance_exists(obj_flying_molded)
     {
-        state = 1;          
+        state = 3;          
     }
     
 }

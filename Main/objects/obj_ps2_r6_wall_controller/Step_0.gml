@@ -15,6 +15,10 @@ if state = 0 // archer archer
             
             break;
         case 200:
+            var e1 = instance_create_depth(448,240,0,obj_molded_big_spawner_n);
+            e1.y_cr = 16;
+            e1.obj_cr = obj_molded_purple_shield;
+        case 300:
             t = 0;
             state = 0.5;
             break;
@@ -23,9 +27,9 @@ if state = 0 // archer archer
 
 if state = 0.5
 {
-    if !instance_exists(obj_molded_purple_archer)
+    if !instance_exists(obj_molded_purple_archer) && !instance_exists(obj_molded_purple_shield)
     {
-        state = 1;   
+        state = 2;   
     }
 }
 

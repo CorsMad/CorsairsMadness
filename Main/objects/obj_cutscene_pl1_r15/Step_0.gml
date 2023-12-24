@@ -3,6 +3,16 @@
 if state = 0
 {
     t++;
+    if t = 1 {
+        obj_Player.isAttacking = 0;
+        obj_Player.isAirattacking = 0;
+        obj_Player.isAirattacking_timer = 0;
+        obj_Player.key_attack = 0;
+        obj_Player.key_attack = 0;
+        obj_Player.dash_timer = 0;
+        obj_Player.superdash_power = 0;
+        
+    }
     if t = 120
     {
         fnc_msc_start_checkpoint(msc_jp1_c_jp2_c);

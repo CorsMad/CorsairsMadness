@@ -12,6 +12,7 @@ if key_skip
         obj_npc_junglev_comt.talk = 0;
         obj_Player.isDead = 2.1;   
         global.dia_jungleComt = 0;
+        scr_save_progress();
         instance_destroy();   
     } 
 }

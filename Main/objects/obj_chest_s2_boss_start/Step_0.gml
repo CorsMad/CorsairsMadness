@@ -3,6 +3,8 @@
 
 if isOn = 0 && (place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_item_boomerang))
 {
+    if instance_exists(obj_pause_controller) instance_destroy(obj_pause_controller);
+    fnc_msc_stop_play();
     fnc_snd_play_onetime(snd_chest_destruct);
 	isOn = 1;
 	image_speed = 1;

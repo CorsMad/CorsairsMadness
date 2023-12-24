@@ -32,8 +32,24 @@ if state = 0 // spearman flying
                 }
             }  
             break;
-            
-        case 300:
+        case 350:
+            if instance_exists(obj_Player)
+            {
+                if obj_Player.x> 240
+                {
+                    var e1 = instance_create_depth(96,192,0,obj_molded_big_spawner_n);
+                    e1.obj_cr = obj_molded_snow_spearman;
+                    e1.y_cr = 16; 
+                
+                } else 
+                {
+                    var e1 = instance_create_depth(352,128,0,obj_molded_big_spawner_n);
+                    e1.obj_cr = obj_molded_snow_spearman;
+                    e1.y_cr = 16; 
+                }
+            } 
+            break;    
+        case 450:
             state = 0.5;
             t = 0;
             break;
@@ -44,7 +60,7 @@ if state = 0.5
 {
     if !instance_exists(obj_molded_snow_spearman) && !instance_exists(obj_fastfly_molded)
     {
-        state = 1;          
+        state = 2;          
     }
 }
 

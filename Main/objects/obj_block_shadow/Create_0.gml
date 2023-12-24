@@ -2,4 +2,4 @@
 // You can write your code in this editor
 image_alpha = 0;
 isOn = 1;
-fnc_snd_play_onetime(snd_ps_block_destr);
+fnc_snd_play_over(snd_ps_block_destr);

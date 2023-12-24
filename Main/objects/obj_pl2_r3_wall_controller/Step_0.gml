@@ -11,14 +11,12 @@ if state = 0 // Jumper Berserker redfly redfly
                     var e1 = instance_create_depth(288,144,0,obj_molded_big_spawner_n);
                     e1.y_cr = 16;
                     e1.obj_cr = obj_molded_lava_boomer;
-                    e1.state = 1;
                 
                 } else 
                 {
                     var e1 = instance_create_depth(384,144,0,obj_molded_big_spawner_n);
                     e1.y_cr = 16;
                     e1.obj_cr = obj_molded_lava_boomer;   
-                    e1.state = 1;
                 }
             }        
             break;
@@ -30,18 +28,16 @@ if state = 0 // Jumper Berserker redfly redfly
                     var e1 = instance_create_depth(128,176,0,obj_molded_big_spawner_n);
                     e1.y_cr = 16;
                     e1.obj_cr = obj_molded_lava_berserker;
-                    e1.state = 1;
                 
                 } else 
                 {
                     var e1 = instance_create_depth(544,176,0,obj_molded_big_spawner_n);
                     e1.y_cr = 16;
                     e1.obj_cr = obj_molded_lava_berserker;   
-                    e1.state = 1;
                 }
             } 
             break;
-        case 400:
+        case 200:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> 336
@@ -53,7 +49,7 @@ if state = 0 // Jumper Berserker redfly redfly
                 }
             } 
             break;
-        case 450:
+        case 250:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> 336
@@ -65,7 +61,7 @@ if state = 0 // Jumper Berserker redfly redfly
                 }
             } 
             break;
-        case 550:
+        case 350:
             state = 0.5;
             t = 0;
             break;
@@ -77,7 +73,7 @@ if state = 0.5
     if !instance_exists(obj_molded_lava_berserker) && !instance_exists(obj_fastfly_molded) 
     && !instance_exists(obj_molded_lava_boomer)
     {
-        state = 1;          
+        state = 2;          
     }
 }
 

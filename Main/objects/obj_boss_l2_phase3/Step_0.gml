@@ -182,6 +182,7 @@ if state = 4
 {
 	if !instance_exists(obj_armor_skel)
 	{
+        if instance_exists(obj_pause_controller) instance_destroy(obj_pause_controller);
         fnc_msc_stop_play_slow();
         if global.key_red2 = 0 instance_create_depth(240,128,depth,obj_key_red_tri);
         else instance_create_depth(x,y,0,obj_room_transition_black_screen_l1_stats); 

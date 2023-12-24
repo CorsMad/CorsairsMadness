@@ -36,6 +36,7 @@ if talk_cr_t!= 0
         talk_cr_t = 0;
         instance_create_depth(x,y,-100000,obj_txt_bonnie_village);
         global.dia_hpmana_bonnie = 1;
+        if instance_exists(questmark) instance_destroy(questmark);
 
     }
 }

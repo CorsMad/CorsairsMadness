@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 2,
   "conversionMode": 0,
-  "duration": 195.8146,
+  "duration": 82.011,
   "parent": {
     "name": "Desert",
     "path": "folders/Sounds/BGR music/Desert.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "msc_d1.ogg",
+  "soundFile": "msc_d1.wav",
   "type": 0,
   "volume": 0.17,
 }

@@ -38,6 +38,29 @@ if state = 0 //  летающий, раннер
             }  
             break;
         case 250:
+            if instance_exists(obj_Player)
+            {
+                if obj_Player.x> 400
+                {
+                    var e3 = instance_create_depth(208,144,0,obj_molded_big_spawner_n);
+                    e3.y_cr = 16;
+                    e3.obj_cr = obj_molded_yellow_run;
+                
+                } else 
+                {
+                    var e3 = instance_create_depth(576,144,0,obj_molded_big_spawner_n);
+                    e3.y_cr = 16;
+                    e3.obj_cr = obj_molded_yellow_run;   
+                }
+            }  
+            break;
+        case 300:
+            if instance_exists(obj_Player)
+            {
+                instance_create_depth(obj_Player.x - 96*obj_Player.image_xscale,obj_Player.y,0,obj_molded_small_fastfly);      
+            }
+            break;
+        case 400:
             state = 0.5;
             t = 0;
             break;
@@ -47,9 +70,10 @@ if state = 0 //  летающий, раннер
 if state = 0.5
 {
     if !instance_exists(obj_molded_yellow_flying) && !instance_exists(obj_molded_yellow_run) &&
-    !instance_exists(obj_crawling_molded_l) && !instance_exists(obj_crawling_molded)
+    !instance_exists(obj_crawling_molded_l) && !instance_exists(obj_crawling_molded) && !instance_exists(obj_molded_small_fastfly) &&
+    !instance_exists(obj_molded_small_fastfly)
     {
-        state = 1;          
+        state = 3;          
     }
     
 }

@@ -28,7 +28,7 @@ if state = 0 // Flyer Flyer Spearman Flyer
                     e1.obj_cr = obj_molded_snow_flying;                    
                 } else 
                 {
-                    var e1 = instance_create_depth(368,528,obj_molded_big_spawner_n);
+                    var e1 = instance_create_depth(368,528,0,obj_molded_big_spawner_n);
                     e1.obj_cr = obj_molded_snow_flying;   
                 }
             }  
@@ -36,36 +36,28 @@ if state = 0 // Flyer Flyer Spearman Flyer
         case 400:
             if instance_exists(obj_Player)
             {
-                if obj_Player.x> 272
+                if obj_Player.x> room_width/2
                 {
-                    var e1 = instance_create_depth(112,608,0,obj_molded_big_spawner_n);
-                    e1.obj_cr = obj_molded_snow_spearman; 
-                    e1.y_cr = 16;
+                    instance_create_depth(128,528,0,obj_molded_small_fastfly);
                 } else 
                 {
-                    var e1 = instance_create_depth(368,640,0,obj_molded_big_spawner_n);
-                    e1.obj_cr = obj_molded_snow_spearman; 
-                    e1.y_cr = 16;
+                    instance_create_depth(400,608,0,obj_molded_small_fastfly);
                 }
             } 
             break;
-        case 600:
+        case 450:
             if instance_exists(obj_Player)
             {
-                if obj_Player.x> 272
+                if obj_Player.x> room_width/2
                 {
-                    var e1 = instance_create_depth(144,608,0,obj_molded_big_spawner_n);
-                    e1.obj_cr = obj_molded_snow_spearman;   
-                    e1.y_cr = 16;
+                    instance_create_depth(112,592,0,obj_molded_small_fastfly);
                 } else 
                 {
-                    var e1 = instance_create_depth(384,640,0,obj_molded_big_spawner_n);
-                    e1.obj_cr = obj_molded_snow_spearman;   
-                    e1.y_cr = 16;
+                    instance_create_depth(384,528,0,obj_molded_small_fastfly);
                 }
-            }
+            } 
             break;
-        case 700:
+        case 550:
             state = 0.5;
             t = 0;
             break;       
@@ -74,7 +66,7 @@ if state = 0 // Flyer Flyer Spearman Flyer
 
 if state = 0.5
 {
-    if !instance_exists(obj_molded_snow_spearman) && !instance_exists(obj_molded_snow_flying)
+    if !instance_exists(obj_molded_snow_spearman) && !instance_exists(obj_molded_snow_flying) && !instance_exists(obj_fastfly_molded)
     {
         state = 1;          
     }

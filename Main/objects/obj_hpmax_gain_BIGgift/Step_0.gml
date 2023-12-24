@@ -32,7 +32,7 @@ switch(state){
     
         if place_meeting(x,y,obj_Player)
     	{
-            fnc_snd_play_over(snd_player_hpmana_gain);
+            fnc_snd_play_over(snd_player_hpmana_gainBIG);
     		global.hp_add += 1;
             global.hp_max += 1;
     		global.mana_add += 1;

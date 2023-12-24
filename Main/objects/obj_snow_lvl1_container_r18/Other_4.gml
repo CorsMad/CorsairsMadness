@@ -15,10 +15,10 @@ if instance_exists(obj_Player)
 		var i2  = instance_create_depth(424,184,0,obj_destrutable_chain_block_simple);
 			    
 		i1.sprite_index = spr_destructable_tile_snow;
-		i1.image_index = 6;		
+		i1.image_index = 16;		
 		
 		i2.sprite_index = spr_destructable_tile_snow;
-		i2.image_index = 16;		
+		i2.image_index = 6;		
 				
 		var i3  = instance_create_depth(440,168,0,obj_destrutable_chain_block_simple);
 		var i4  = instance_create_depth(440,184,0,obj_destrutable_chain_block_simple);

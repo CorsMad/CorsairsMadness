@@ -111,24 +111,7 @@ if state = 1 // летащий, красныйлет, летащий, красн
                 instance_create_depth(obj_Player.x - 96*obj_Player.image_xscale,obj_Player.y,0,obj_molded_small_fastfly);      
             }
             break;
-        case 400:
-            if instance_exists(obj_Player)
-            {
-                if obj_Player.x> 456
-                {
-                    var e3 = instance_create_depth(336,192,0,obj_molded_big_spawner_n);
-                    e3.y_cr = 16;
-                    e3.obj_cr = obj_molded_yellow_run;
-                
-                } else 
-                {
-                    var e3 = instance_create_depth(592,128,0,obj_molded_big_spawner_n);
-                    e3.y_cr = 16;
-                    e3.obj_cr = obj_molded_yellow_run;   
-                }
-            } 
-            break;
-        case 500:
+        case 450:
             state = 1.5;
             t = 0;
             break;

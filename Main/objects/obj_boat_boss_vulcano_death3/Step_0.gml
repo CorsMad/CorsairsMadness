@@ -30,6 +30,7 @@ if state = 0
         case 145: image_index=0;break;
 
         case 165: 
+        fnc_msc_play(msc_tutor_shore);
 		obj_sp_boat_L2.state = 16.5;
         obj_sp_boat_L2.t = 0;
         

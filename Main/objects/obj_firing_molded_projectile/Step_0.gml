@@ -2,6 +2,7 @@
 // You can write your code in this editor
 if  place_meeting(x,y,obj_hitbox_mask)
 {
+    fnc_snd_play_over(snd_skate_human)
     var i = instance_create_depth(x,y,depth,obj_firing_molded_projectile_reverse)
     if obj_Player.dir = 1
 	{

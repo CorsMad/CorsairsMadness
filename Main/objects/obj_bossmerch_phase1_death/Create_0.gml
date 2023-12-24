@@ -8,5 +8,7 @@ vspd = 0;
 image_speed = 0;
 t_red = 0;
 
+
+instance_create_depth(x,y,depth-1,obj_hpmax_some_2mana_gain_gift);
 fnc_snd_play_onetime(snd_follower_takedmg)
 fnc_snd_play_onetime(snd_follower_getlight)

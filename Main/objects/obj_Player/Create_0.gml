@@ -222,6 +222,8 @@ superdash_power = 0;
 superdash_timer = 0;
 dash_timer = 0;
 dash_vfx_timer = 0;
+superdash_delay = 0;
+superdash_boost = 0;
 #endregion
 
 #region

@@ -21,7 +21,18 @@ if instance_exists(obj_Player)
     if obj_Player.x < x image_xscale = 1 else image_xscale = -1;   
 }
 
-if state = 1 //Патрулирование
+oleg++;
+if oleg = 50{
+   if state = -1 {
+       state = 2;
+       image_index = 0;
+       image_speed = 0;
+       sprite_index = spr_molded_yellow_flying_teleport;
+   }
+   oleg = 0;
+}
+
+if state = 1 || state = -1 //Патрулирование
 {
 	
     image_speed = 1;

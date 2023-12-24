@@ -58,7 +58,21 @@ if state = 0 // Spearman redfly redfly Flyer
                     e1.y_cr = 16;
                 }
             }  
-        case 500:
+            break;
+        case 600:
+            {
+                if obj_Player.x> 352
+                {
+                    var e1 = instance_create_depth(304,96,0,obj_molded_big_spawner_n);
+                    e1.obj_cr = obj_molded_snow_flying; 
+                } else 
+                {
+                    var e1 = instance_create_depth(512,96,0,obj_molded_big_spawner_n);
+                    e1.obj_cr = obj_molded_snow_flying; 
+                }
+            } 
+            break;
+        case 700:
             state = 0.5;
             t = 0;
             break;     
@@ -70,7 +84,7 @@ if state = 0.5
     if !instance_exists(obj_molded_snow_spearman) && !instance_exists(obj_molded_snow_flying)
     && !instance_exists(obj_fastfly_molded)
     {
-        state = 1;          
+        state = 2;          
     }
 }
 

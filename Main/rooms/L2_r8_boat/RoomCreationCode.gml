@@ -1,1 +1,1 @@
-fnc_msc_start_checkpoint(msc_Jungle1_boss);
+fnc_msc_start_checkpoint(msc_Boat_level_boss);

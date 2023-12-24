@@ -48,7 +48,7 @@ function scr_txt_desert_comt2(){
     {
         case 0: //English  
             #region  ENG text
-            text1 = "[fnt_pixel]It's pretty simple. Just press the [c_red]use item button[/c] and the spirit that appears will release a magic arrow.";
+            text1 = "[fnt_pixel]It's pretty simple. Just press the [c_red]spec ability button[/c] and the spirit that appears will release a magic arrow.";
             text2 = "[fnt_pixel]Even though it doesn't deal damage, you should still try it out on the local monsters."; 
 			text3 = "[fnt_pixel]You can also break the magical green threads that hold the platforms or knock down targets."
             #endregion

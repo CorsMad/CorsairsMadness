@@ -7,13 +7,15 @@ switch(state){
         if instance_exists(obj_Player) && isPaused = 0 && (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4,gp_start) || gamepad_button_check_pressed(0,gp_start)) && (obj_Player.isDead = 0 || obj_Player.isDead = 3) {
             fnc_snd_play_over(snd_pause_on);
             instance_deactivate_all(1);	
+            instance_activate_object(obj_music_controller);
             isPaused = 1;
             var p = instance_create_depth(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),-16000,obj_pause_menu_ingame);   
             p.dest = dest;
         }     
         if instance_exists(obj_Player_boat) && isPaused = 0 && (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4,gp_start) || gamepad_button_check_pressed(0,gp_start)) && (obj_Player_boat.canControl = 1) {
             fnc_snd_play_over(snd_pause_on);
-            instance_deactivate_all(1);			
+            instance_deactivate_all(1);		
+            instance_activate_object(obj_music_controller);
             isPaused = 1;
             var p = instance_create_depth(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),-16000,obj_pause_menu_ingame);
             p.dest = dest;
@@ -25,6 +27,7 @@ switch(state){
         if instance_exists(obj_Player) && isPaused = 0 && (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4,gp_start) || gamepad_button_check_pressed(0,gp_start)) && (obj_Player.isDead = 0 || obj_Player.isDead = 3) {
             fnc_snd_play_over(snd_pause_on);
             instance_deactivate_all(1);
+            instance_activate_object(obj_music_controller);
             isPaused = 1;
             instance_create_depth(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),-16000,obj_pause_menu_notstage);  
         }
@@ -35,6 +38,7 @@ switch(state){
         if  isPaused = 0 && (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(4,gp_start) || gamepad_button_check_pressed(0,gp_start))  {
             fnc_snd_play_over(snd_pause_on);
             instance_deactivate_all(1);
+            instance_activate_object(obj_music_controller);
             isPaused = 1;
             instance_create_depth(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),-16000,obj_pause_menu_notstage);  
         }
@@ -51,6 +55,7 @@ if instance_exists(obj_Player){
 		if key_select {
 		fnc_snd_play_over(snd_pause_on);
 		instance_deactivate_all(1);	
+        instance_activate_object(obj_music_controller);
 		instance_create_depth(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),-16000,obj_weapon_select);   
 		}
 	}

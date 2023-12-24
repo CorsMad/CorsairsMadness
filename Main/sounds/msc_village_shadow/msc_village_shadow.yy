@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 2,
   "conversionMode": 0,
-  "duration": 118.147934,
+  "duration": 67.81596,
   "parent": {
     "name": "Shadow",
     "path": "folders/Sounds/BGR music/Shadow.yy",
@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "msc_village_shadow.wav",
   "type": 0,
-  "volume": 1.0,
+  "volume": 0.66,
 }

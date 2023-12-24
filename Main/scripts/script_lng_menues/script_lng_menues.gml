@@ -560,10 +560,22 @@ function fnc_lng_jmap()
             #region  ENG text
             village     = "Village"
             endurance   = "endurance test"
-            lvl1        = "1st level"
-            lvl2        = "2nd level"
+            lvl1        = "Bomb Catacombs"
+            lvl2        = "tropical hazard"
             temple      = "Jungle Temple"
             lair        = "Temple Lair"
+            
+            #region LEVEL NAMES
+            dlvl1       = "sand caves";
+            dlvl2       = "A storm in the desert";
+            slvl1       = "Snowy peaks";
+            slvl2       = "Trouble on the mountain";
+            glvl1       = "Buried in the rain";
+            glvl2       = "Melody of Terror";
+            llvl1       = "Active Volcanoes";
+            llvl2       = "Flaming abyss";
+            #endregion
+            
             #endregion
             break;
         case 1: //russian

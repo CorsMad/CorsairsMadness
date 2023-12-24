@@ -371,7 +371,6 @@ function fnc_molded_dark_blood_player(){
 
 #endregion
 
-
 #region Dark Essence
 
 function fnc_molded_dark_essence_none(){
@@ -380,7 +379,8 @@ function fnc_molded_dark_essence_none(){
         switch(obj_combometer.sprite)
         {
             case -1:    
-                    #region  draw
+                                          
+            #region  draw
                 var den5_1 = instance_create_depth(x,y,depth+1,obj_dark_essence);
                 var den5_2 = instance_create_depth(x,y,depth+1,obj_dark_essence);
                 var den5_3 = instance_create_depth(x,y,depth+1,obj_dark_essence);
@@ -426,10 +426,12 @@ function fnc_molded_dark_essence_none(){
                     var den5_4 = instance_create_depth(x,y,depth+1,obj_dark_essence);
                     var den5_5 = instance_create_depth(x,y,depth+1,obj_dark_essence);
                     var den5_6 = instance_create_depth(x,y,depth+1,obj_dark_essence);
+                    var den5_7 = instance_create_depth(x,y,depth+1,obj_dark_essence);
                     
                     var den10_1 = instance_create_depth(x,y,depth+1,obj_dark_essence);
                     var den10_2 = instance_create_depth(x,y,depth+1,obj_dark_essence);
                     var den10_3 = instance_create_depth(x,y,depth+1,obj_dark_essence);
+                    var den10_4 = instance_create_depth(x,y,depth+1,obj_dark_essence);
     
                     den5_1.hspd = -4;
                     den5_1.vspd = -1;
@@ -454,6 +456,10 @@ function fnc_molded_dark_essence_none(){
                     den5_6.hspd = 3;
                     den5_6.vspd = 1.25;
                     den5_6.val = 5;
+                    
+                    den5_7.hspd = -2;
+                    den5_7.vspd = -1.25;
+                    den5_7.val = 5;
     
                     den10_1.hspd = -2.5;
                     den10_1.vspd = -2;
@@ -466,6 +472,11 @@ function fnc_molded_dark_essence_none(){
                     den10_3.hspd = 2.5;
                     den10_3.vspd = -2;
                     den10_3.val = 10;
+    
+                    den10_4.hspd = 2;
+                    den10_4.vspd = -1.25;
+                    den10_4.val = 10;
+                    
                     #endregion
                     break;
             case spr_combo_b:

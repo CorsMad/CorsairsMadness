@@ -76,9 +76,11 @@
         {"name":"g_ContrastIntensity","type":0,"value":"1",},
         {"name":"g_ContrastBrightness","type":0,"value":"1",},
       ],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
--28,-2147483648,-2,0,-28,-2147483648,-2,0,-28,-2147483648,-2,0,-27,-2147483648,-3,0,-27,-2147483648,-3,0,-27,-2147483648,-3,0,-27,-2147483648,-3,0,1,-2147483648,
--15,0,-11,-2147483648,-3,0,1,-2147483648,-15,0,-11,-2147483648,-3,0,1,-2147483648,-15,0,-11,-2147483648,-3,0,1,-2147483648,-21,0,-5,-2147483648,-3,0,
-1,-2147483648,-29,0,1,-2147483648,-29,0,1,-2147483648,-29,0,1,-2147483648,-29,0,-4,-2147483648,-26,0,-15,-2147483648,-15,0,],"TileDataFormat":1,},"tilesetId":{"name":"tls_jngl_main","path":"tilesets/tls_jngl_main/tls_jngl_main.yy",},"userdefinedDepth":false,"visible":true,"x":8,"y":8,},
+-28,-2147483648,-2,0,-28,-2147483648,-2,0,-3,71,1,74,-24,-2147483648,-2,0,-3,76,3,79,71,74,-21,-2147483648,-3,0,-5,76,2,79,
+74,-20,-2147483648,-3,0,-6,76,2,79,74,-19,-2147483648,-3,0,-7,76,2,79,74,-18,-2147483648,-3,0,-8,76,3,79,71,74,-5,
+0,-11,-2147483648,-3,0,-10,76,3,79,71,74,-3,0,-11,-2147483648,-3,0,-12,76,4,79,74,0,0,-11,-2147483648,-3,0,-13,76,
+4,79,71,71,74,-5,0,-5,-2147483648,-3,0,-16,76,1,79,-6,71,-7,0,-25,76,-5,0,-26,76,-4,0,-10,76,1,
+0,-5,76,6,0,76,76,0,76,76,-8,0,-2,76,6,-2147483648,76,0,76,0,76,-22,0,-15,-2147483648,-15,0,],"TileDataFormat":1,},"tilesetId":{"name":"tls_jngl_main","path":"tilesets/tls_jngl_main/tls_jngl_main.yy",},"userdefinedDepth":false,"visible":true,"x":-8,"y":8,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Backgrounds_2","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":400,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"1.1",},
         {"name":"g_ContrastBrightness","type":0,"value":"1.1",},

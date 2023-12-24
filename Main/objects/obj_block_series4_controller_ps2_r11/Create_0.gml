@@ -9,3 +9,4 @@ s3 = instance_create_depth(400,464,0,obj_block_series3);
 
 
 timer = 0;
+timer_pl = noone;

@@ -46,8 +46,19 @@ if state = 0 //  летающий , летающий, красныйлет, кр
         case 300:
             if instance_exists(obj_Player)
             {
-                instance_create_depth(obj_Player.x - 96*obj_Player.image_xscale,obj_Player.y,0,obj_molded_small_fastfly);      
-            } 
+                if obj_Player.x> 448
+                {
+                    var e4 = instance_create_depth(352,192,0,obj_molded_big_spawner_n);
+                    e4.y_cr = 16;
+                    e4.obj_cr = obj_molded_yellow_run;
+                
+                } else 
+                {
+                    var e4 = instance_create_depth(576,224,0,obj_molded_big_spawner_n);
+                    e4.y_cr = 16;
+                    e4.obj_cr = obj_molded_yellow_run;   
+                }
+            }                       
             break;
         case 400:
             state = 0.5;
@@ -61,7 +72,7 @@ if state = 0.5
     if !instance_exists(obj_molded_yellow_flying) && !instance_exists(obj_molded_yellow_run) &&
     !instance_exists(obj_crawling_molded_l) && !instance_exists(obj_flying_molded)
     {
-        state = 1;          
+        state = 3;          
     }
     
 }

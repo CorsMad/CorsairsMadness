@@ -43,11 +43,11 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     break;
                 case 2: // Выход на карту
                     submenu = 10;
-                    index = 0;
+                    index = 1;
                     break;        
                 case 3: // Выход в глав меню
                     submenu = 11;
-                    index = 0;
+                    index = 1;
                     break;   
             }
             break;
@@ -132,7 +132,7 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                 case 0:   
                     instance_activate_object(obj_music_controller);
                     fnc_msc_stop_play();
-                    global.gold = global.gold_prelevel;    
+                    //global.gold = global.gold_prelevel;    
                     instance_destroy(obj_Player);
                     switch(dest) {
                         case 0: room_goto(GlobalMapPrologueJungle);break;
@@ -387,3 +387,4 @@ if KBControlChange = 1 && delay >= 4 &&
 }
 
 #endregion
+

@@ -14,6 +14,7 @@ if key_skip
         obj_npc_desertv_merch.talk = 0;
         obj_Player.isDead = 2.1;  
         global.dia_desertMerch_f_talk = 1;
+        scr_save_progress();
         var i = instance_create_depth(119,240,depth,obj_teleport_junglevillage);
         i.TargetRoom = Village_desert;
         i.TargetX = 734;

@@ -4,7 +4,7 @@
 // You can write your code in this editor
 image_speed = 0;
 image_index = 2;
-instance_create_depth(x,y,depth-1,obj_hpmax_some_mana_gain_gift);
+instance_create_depth(x,y,depth-1,obj_hpmax_some_2mana_gain_gift);
 state = 1;
 t = 0;
 var i1 = instance_create_depth(x-16,y-39,depth-1,obj_boss_g1_particle);

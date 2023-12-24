@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_molded_yellow_mask",
-    "path": "sprites/spr_molded_yellow_mask/spr_molded_yellow_mask.yy",
+    "name": "spr_molded_yellow_idle",
+    "path": "sprites/spr_molded_yellow_idle/spr_molded_yellow_idle.yy",
   },
   "spriteMaskId": {
     "name": "spr_molded_yellow_mask",

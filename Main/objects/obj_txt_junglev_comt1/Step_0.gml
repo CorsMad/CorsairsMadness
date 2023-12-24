@@ -13,6 +13,7 @@ if key_skip
     {
         global.dia_jungleComt = 1;
         instance_create_depth(x,y,-100000,obj_npc_junglev_comt_choose);          
+        scr_save_progress();
         instance_destroy();   
     } 
 }

@@ -22,6 +22,6 @@ instance_create_depth(736,240,0,obj_trapspikes);
 var o2 = instance_create_depth(856,144,0,obj_trapfire);
 o2.t_max = 120;
 var o3 = instance_create_depth(792,80,0,obj_trapfire);
-o3.t_max = 120;
-var o4 = instance_create_depth(440,80,0,obj_trapfire);
+o3.t_max = 200;
+var o4 = instance_create_depth(600,80,0,obj_trapfire);
 o4.t_max = 200;

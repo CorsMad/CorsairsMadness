@@ -33,12 +33,7 @@ if isGrounded = 1
 
 #region Collision check
 fnc_Collision_player(obj_block);
-    /*
-	if clone_timer= 0
-    {
-        fnc_Collision_player(obj_block);
-    } else fnc_Collision_player(obj_block_clone);
-	*/
+
 #endregion	
 
 #region Movement
@@ -908,7 +903,7 @@ if isRecoil = 1
 
 #region Superdash
 
-if  isRecoil = 0 && key_item_pressed && SpecAbilMask = 3 && superdash_timer_count = 0 && isTakingdmg = 0 && (damage_cd > 30 || damage_cd = 0) && isAttacking = 0 
+if superdash_delay=0 && isRecoil = 0 && key_item_pressed && SpecAbilMask = 3 && superdash_timer_count = 0 && isTakingdmg = 0 && (damage_cd > 30 || damage_cd = 0) && isAttacking = 0 
 {
     lanhit = 0;
     lanplace = 0;
@@ -917,34 +912,29 @@ if  isRecoil = 0 && key_item_pressed && SpecAbilMask = 3 && superdash_timer_coun
     isAirattacking = 0;
     doublejumpspd = 0;
     isDashing = 0;
-    
-    
-    #region Анимация
-    
-    
-    #endregion
-    
+    superdash_boost = 0;
+        
     if superdash_timer < 62 
     {
         superdash_timer++; 
     }
+    ///////////////////////
+    dash_vfx_timer++;
     
-    dash_vfx_timer ++
-    {
-        if dash_vfx_timer = 15
-        {
-            dash_vfx_timer = 0;
-            var dash_vfx = instance_create_depth(x,y,depth-1,obj_superdash_vfx);
-            dash_vfx.image_xscale = image_xscale;
-            switch(superdash_power)
+     if dash_vfx_timer = 15
+     {
+         dash_vfx_timer = 0;
+         var dash_vfx = instance_create_depth(x,y,depth-1,obj_superdash_vfx);
+         dash_vfx.image_xscale = image_xscale;
+         switch(superdash_power)
             {
                 case 0: dash_vfx.sprite_index = spr_superdash_vfx_1;break;
                 case 1: dash_vfx.sprite_index = spr_superdash_vfx_2;break;
                 case 2: dash_vfx.sprite_index = spr_superdash_vfx_3;break;
             }
-        }
-    }
+     }
     
+    /////////////////
     
     switch(superdash_timer) 
     {
@@ -970,62 +960,36 @@ if  isRecoil = 0 && key_item_pressed && SpecAbilMask = 3 && superdash_timer_coun
 }
 
 
-#region OLD ACTIVATION
-/*
-if (key_item_released) 
-    {
-        if superdash_timer>=60
-        {
-            superdash_timer = 0;
-            isDead = 12;
-            fnc_snd_play_onetime(snd_superdash_fly);
-            instance_create_depth(x,y,depth,obj_hitbox_mask_superdash);
-            superdash_timer_count = 1;
-            var superdash_vfx = instance_create_depth(x,y,depth-1,obj_superdash_stream);
-            switch(superdash_power)
-            {
-                case 0: superdash_vfx.sprite_index = spr_superdash_stream1;break;
-                case 1: superdash_vfx.sprite_index = spr_superdash_stream2;break;
-                case 2: superdash_vfx.sprite_index = spr_superdash_stream3;break;
-            }
-        } else 
-        {
-            superdash_timer = 0;
-            superdash_timer_count = 1;
-            dash_vfx_timer = 0;
-            superdash_power = 0;
-        }
-    }
-    */
-#endregion
-
-
 if superdash_timer>=60 && key_attack
-        {
-            superdash_timer = 0;
-            isDead = 12;
-            fnc_snd_play_onetime(snd_superdash_fly);
-            instance_create_depth(x,y,depth,obj_hitbox_mask_superdash);
-            superdash_timer_count = 1;
-            var superdash_vfx = instance_create_depth(x,y,depth-1,obj_superdash_stream);
-            switch(superdash_power)
-            {
-                case 0: superdash_vfx.sprite_index = spr_superdash_stream1;break;
-                case 1: superdash_vfx.sprite_index = spr_superdash_stream2;break;
-                case 2: superdash_vfx.sprite_index = spr_superdash_stream3;break;
-            }
-        }
+{
+    superdash_timer = 0;
+    isDead = 12;
+    fnc_snd_play_onetime(snd_superdash_fly);
+    instance_create_depth(x,y,depth,obj_hitbox_mask_superdash);
+    superdash_timer_count = 1;
+    superdash_boost = 0;
+    var superdash_vfx = instance_create_depth(x,y,depth-1,obj_superdash_stream);
+    switch(superdash_power)
+    {
+        case 0: superdash_vfx.sprite_index = spr_superdash_stream1;break;
+        case 1: superdash_vfx.sprite_index = spr_superdash_stream2;break;
+        case 2: superdash_vfx.sprite_index = spr_superdash_stream3;break;
+    }
+}
 
 if (key_item_released) 
-    {
-        superdash_timer = 0;
-        superdash_timer_count = 1;
-        dash_vfx_timer = 0;
-        superdash_power = 0;
+{
+    superdash_timer = 0;
+    if place_meeting(x,y+1,obj_block) superdash_timer_count = 0; else {
+        if superdash_boost = 0 superdash_timer_count = 1;     
     }
+    
+    dash_vfx_timer = 0;
+    superdash_power = 0;
+    
+}
 
-
-
+if !key_item_pressed superdash_delay = 0;
     
 
 #endregion
@@ -1435,7 +1399,7 @@ if spectp_timer_count = 0 && SpectpEnabled = 1 && SpecAbilMask = 2
 
 #endregion
 
-}
+
 #endregion
 
 #region superattack
@@ -1447,7 +1411,7 @@ if superattack>superattack_max superattack = superattack_max;
 if superattack >= superattack_max{
     
     #region VFX
-    if !instance_exists(obj_player_mask_superaatack_vfx) instance_create_depth(x,y,depth-1,obj_player_mask_superaatack_vfx)
+    if (!instance_exists(obj_player_mask_superaatack_vfx) && isDead = 0 && (global.superattack1 >=1 || global.superattack2 = 1 || global.superattack3 = 1)) instance_create_depth(x,y,depth-1,obj_player_mask_superaatack_vfx)
     #endregion
     
 	#region horizontal t1
@@ -1625,10 +1589,11 @@ if superattack >= superattack_max{
 
 #endregion
 
+}
 #endregion
 
 
-#region Dead
+    #region Dead
 
 if isDead = 1
 {	
@@ -1775,9 +1740,7 @@ if isDead = 1
     #endregion
     #region применение супердеша
     if isDead = 12
-    {
-		
-		
+    {	
 		y = lerp(y,superdash_y,1);
 		
         vspd =0 ;
@@ -1804,6 +1767,9 @@ if isDead = 1
             superdash_power = 0;
         }
     }
+    
+    // делэй
+    
     #endregion
     #region применение клона
     if isDead = 131
@@ -1990,6 +1956,7 @@ if isDead = 1
 		superattack_timer++;
 		switch(superattack_timer){
             case 1:
+                fnc_snd_play_onetime(snd_superprepare);
                 sprite_index = spr_player_masked_superattack_missle_attack;
                 image_index = 0;
                 image_speed = 0;
@@ -2011,6 +1978,7 @@ if isDead = 1
             case 29: image_index = 14;break;
             case 31: image_index = 15;break;
             case 50: image_index = 16;
+                
                 instance_create_depth(x-24,y+8,depth,obj_hitbox_mask_superattack_missle);
                 instance_destroy(obj_superdash_screen);
                 break;   
@@ -2076,6 +2044,7 @@ if isDead = 1
                 break;
             case 200:
                 fnc_msc_stop_play_slow()
+                instance_create_depth(x,y,depth-1,obj_di_sam_mask);
                 sprite_index = spr_player_cannon_shot;
                 image_speed = 0;
                 image_index = 2;
@@ -2084,4 +2053,7 @@ if isDead = 1
         }
     }
     #endregion
+    
+    
+    //#endregion
 }

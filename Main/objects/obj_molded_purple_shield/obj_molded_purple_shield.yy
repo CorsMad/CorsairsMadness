@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_ground_molded_mask",
-    "path": "sprites/spr_ground_molded_mask/spr_ground_molded_mask.yy",
+    "name": "spr_molded_purple_shielder_idle",
+    "path": "sprites/spr_molded_purple_shielder_idle/spr_molded_purple_shielder_idle.yy",
   },
   "spriteMaskId": {
     "name": "spr_molded_purple_shielder_mask",

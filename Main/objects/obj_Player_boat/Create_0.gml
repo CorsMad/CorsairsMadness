@@ -62,7 +62,8 @@ death_timer = 0;
 2 - пушка
 3 - пушка автомат
 */
-
+state = 0
+/*
 switch(global.choosed_itemboat)
 {
     case 0:
@@ -81,7 +82,7 @@ switch(global.choosed_itemboat)
         state = 0.3; // попугай
         break;
 }
-
+*/
 #endregion
 
 //bonus
@@ -103,3 +104,5 @@ TargetRoom = 0;// МЕСТО ПЕРЕМЕЩЕНИЯ
 /* Создание индикатора */
 instance_create_depth(x,y,depth-1,obj_powerup_counter);
 
+ws_select = 0;
+prev_weapon = 0;

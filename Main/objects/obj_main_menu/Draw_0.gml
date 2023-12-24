@@ -39,7 +39,7 @@ for (var i = 0; i < array_length_2d(menu, submenu); ++i) {
     
     if submenu = 32
     {
-        draw_sprite(spr_options_gamepad,0,room_width/2,room_height/2-50); 
+        draw_sprite(spr_options_gamepad,0,room_width/2,room_height/2-35); 
         
     }
     if submenu = 0
@@ -62,11 +62,23 @@ for (var i = 0; i < array_length_2d(menu, submenu); ++i) {
 if submenu = 32
 {
     draw_set_halign(fa_left);
-draw_set_color(c_white);
+    draw_set_color(c_white);
+
+    draw_text(camera_get_view_x(view_camera[0])+240+20,camera_get_view_y(view_camera[0])+16+16,menu[31, 7]);
+	draw_text(camera_get_view_x(view_camera[0])+240+20,camera_get_view_y(view_camera[0])+32+16,menu[31, 9]);
+	draw_text(camera_get_view_x(view_camera[0])+240+20,camera_get_view_y(view_camera[0])+48+16,menu[31, 6]);
+	draw_text(camera_get_view_x(view_camera[0])+240+20,camera_get_view_y(view_camera[0])+64+16,menu[31, 8]);
+	
+	draw_text(camera_get_view_x(view_camera[0])+240+20,camera_get_view_y(view_camera[0])+80 +16,menu[31, 7]);
+	draw_text(camera_get_view_x(view_camera[0])+240+20,camera_get_view_y(view_camera[0])+96 +16,menu[31, 6]);
+	draw_text(camera_get_view_x(view_camera[0])+240+20,camera_get_view_y(view_camera[0])+112+16,menu[31, 4]);
+	draw_text(camera_get_view_x(view_camera[0])+240+20,camera_get_view_y(view_camera[0])+128+16,menu[31, 5]);
+
+/*
 draw_text(room_width/2+36,59,menu[31, 7]);
 draw_text(room_width/2+36,75,menu[31, 6]);
 draw_text(room_width/2+36,91,menu[31, 4]);
-draw_text(room_width/2+36,107,menu[31, 5]);
+draw_text(room_width/2+36,107,menu[31, 5]);*/
 }
 #endregion
 
@@ -167,7 +179,11 @@ if submenu = 6
     draw_text(416,80,"Snabisch");
     draw_text(416,96,"Joel Francis Burford");
     draw_text(416,112,"CATHRAN MUSIC");
-    
+    draw_text(416,112,"wyver9");
+    draw_text(416,112,"R-sen");
+    //HyphenPixel
+    //thetiptoptomcat
+    //chippy01302
 }
 
 #endregion

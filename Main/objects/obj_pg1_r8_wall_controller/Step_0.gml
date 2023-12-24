@@ -19,6 +19,33 @@ if state = 0 // Flyer
             }  
             break;
         case 150:
+            if instance_exists(obj_Player)
+            {
+                if obj_Player.x> 272
+                {
+                    instance_create_depth(160,96,0,obj_molded_small_crawling_right);
+                } else 
+                {
+                    instance_create_depth(384,96,0,obj_molded_small_crawling_left); 
+                }
+            } 
+            break;
+        case 350:
+            if instance_exists(obj_Player)
+            {
+                if obj_Player.x> 272
+                {
+                    var e1 = instance_create_depth(144,128,0,obj_molded_big_spawner_n);
+                    e1.obj_cr = obj_molded_snow_flying;
+                
+                } else 
+                {
+                    var e1 = instance_create_depth(400,128,0,obj_molded_big_spawner_n);
+                    e1.obj_cr = obj_molded_snow_flying;   
+                }
+            }  
+            break;
+        case 450:
             state = 0.5;
             t = 0;
             break;
@@ -27,9 +54,9 @@ if state = 0 // Flyer
 
 if state = 0.5
 {
-    if !instance_exists(obj_molded_snow_flying)
+    if !instance_exists(obj_molded_snow_flying) && !instance_exists(obj_crawling_molded) && !instance_exists(obj_crawling_molded_l)
     {
-        state = 1;          
+        state = 3;          
     }
 }
 

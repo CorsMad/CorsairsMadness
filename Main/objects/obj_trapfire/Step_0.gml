@@ -21,3 +21,14 @@ if t = t_max
 						d.a = 4; break;
 	}
 }
+
+switch(t){
+    case 1: image_index = 0;break;   
+}
+
+if t = 1 image_index = 0;
+if (t = t_max-5 ) image_index = 5;
+if (t = t_max-25 ) image_index = 4;
+if (t = t_max-30 ) image_index = 3;
+if (t = t_max-35 ) image_index = 2;
+if (t = t_max-40 ) image_index = 1;

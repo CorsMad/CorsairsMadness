@@ -11,14 +11,12 @@ if state = 0 // Berserker Berserker
                     var e1 = instance_create_depth(368,208,0,obj_molded_big_spawner_n);
                     e1.y_cr = 16;
                     e1.obj_cr = obj_molded_lava_berserker;
-                    e1.state = 1;
                 
                 } else 
                 {
                     var e1 = instance_create_depth(656,208,0,obj_molded_big_spawner_n);
                     e1.y_cr = 16;
                     e1.obj_cr = obj_molded_lava_berserker;   
-                    e1.state = 1;
                 }
             }        
             break;
@@ -29,15 +27,12 @@ if state = 0 // Berserker Berserker
                 {
                     var e1 = instance_create_depth(480,240,0,obj_molded_big_spawner_n);
                     e1.y_cr = 16;
-                    e1.obj_cr = obj_molded_lava_berserker;
-                    e1.state = 1;
-                
+                    e1.obj_cr = obj_molded_lava_berserker;                
                 } else 
                 {
                     var e1 = instance_create_depth(752,176,0,obj_molded_big_spawner_n);
                     e1.y_cr = 16;
                     e1.obj_cr = obj_molded_lava_berserker;   
-                    e1.state = 1;
                 }
             }  
             break;
@@ -69,18 +64,16 @@ if state = 1 // Berserker redfly Berserker Jumper
                     var e1 = instance_create_depth(352,208,0,obj_molded_big_spawner_n);
                     e1.y_cr = 16;
                     e1.obj_cr = obj_molded_lava_berserker;
-                    e1.state = 1;
                 
                 } else 
                 {
                     var e1 = instance_create_depth(688,208,0,obj_molded_big_spawner_n);
                     e1.y_cr = 16;
                     e1.obj_cr = obj_molded_lava_berserker;   
-                    e1.state = 1;
                 }
             }  
             break;
-        case 250:
+        case 150:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> 544
@@ -93,7 +86,7 @@ if state = 1 // Berserker redfly Berserker Jumper
                 }
             }  
             break;
-        case 350:
+        case 250:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> 544
@@ -112,26 +105,7 @@ if state = 1 // Berserker redfly Berserker Jumper
                 }
             }  
             break;
-        case 550:
-            if instance_exists(obj_Player)
-            {
-                if obj_Player.x> 544
-                {
-                    var e1 = instance_create_depth(416,240,0,obj_molded_big_spawner_n);
-                    e1.y_cr = 16;
-                    e1.obj_cr = obj_molded_lava_berserker;
-                    e1.state = 1;
-                
-                } else 
-                {
-                    var e1 = instance_create_depth(768,176,0,obj_molded_big_spawner_n);
-                    e1.y_cr = 16;
-                    e1.obj_cr = obj_molded_lava_berserker;   
-                    e1.state = 1;
-                }
-            }  
-            break;
-        case 650:
+        case 350:
             state = 1.5;
             t = 0;
             break;

@@ -63,4 +63,4 @@ l_Skies = layer_get_id("Skies");
 layer_hspeed(l_water,sp_wat);
 layer_hspeed(l_farwater,sp_farwat);
 layer_hspeed(l_toofarwater,sp_toofarwat);
-layer_hspeed(l_Skies,sp_skies);
+//layer_hspeed(l_Skies,sp_skies);

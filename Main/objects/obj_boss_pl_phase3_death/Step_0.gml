@@ -89,6 +89,7 @@ switch(t)
         break;
     case 295:
         image_index = 7;
+        fnc_msc_play(msc_jp1_c_jp2_c);
         break;
     case 300:
         instance_destroy();

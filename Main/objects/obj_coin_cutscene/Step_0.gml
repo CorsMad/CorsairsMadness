@@ -36,7 +36,7 @@ if instance_exists(obj_Player){
 
 if t > 110 && !instance_exists(obj_coin_cutscene1){
     fnc_snd_play_onetime(snd_coin_ctscn_finish);
-	//obj_Player.isDead = 0;
+	scr_save_progress();
     switch(merch){
         case 0:
             instance_create_depth(0,0,-9999999,obj_txt_junglev_merch8);

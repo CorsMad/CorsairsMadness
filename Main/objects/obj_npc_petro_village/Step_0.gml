@@ -38,6 +38,7 @@ if talk_cr_t!= 0
         talk_cr_t = 0;
         instance_create_depth(x,y,-100000,obj_txt_petro_village);
         global.dia_hpmana_petro = 1;
+        if instance_exists(questmark) instance_destroy(questmark);
 
     }
 }

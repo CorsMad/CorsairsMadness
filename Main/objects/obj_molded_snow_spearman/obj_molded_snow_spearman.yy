@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_molded_grounded_mask",
-    "path": "sprites/spr_molded_grounded_mask/spr_molded_grounded_mask.yy",
+    "name": "spr_molded_blue_spearman_attack_idle",
+    "path": "sprites/spr_molded_blue_spearman_attack_idle/spr_molded_blue_spearman_attack_idle.yy",
   },
   "spriteMaskId": {
     "name": "spr_molded_grounded_mask",

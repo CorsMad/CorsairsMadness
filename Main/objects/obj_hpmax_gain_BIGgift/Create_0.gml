@@ -7,3 +7,5 @@ image_alpha = 0;
 spd = 0;
 vspd = -3;
 t_p = 0;
+
+fnc_snd_play_over(snd_player_hpmana_gainSTART);

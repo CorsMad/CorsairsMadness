@@ -12,7 +12,7 @@ switch(on)
         if obj_Player.isDead = 12
         {
             fnc_snd_play_over(snd_lava_block_destr)
-            //obj_Player.doublejumpspd = obj_Player.image_xscale*spd;        
+            if instance_exists(obj_player_mask_superaatack_vfx)  instance_destroy(obj_player_mask_superaatack_vfx)   ;
             obj_Player.isDead = 800;
             obj_Player.superdash_power = 0;
             //obj_Player.isRecoil = 1;

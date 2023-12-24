@@ -102,6 +102,15 @@ switch(state)
 
 if place_meeting(x,y+1,obj_block) isGrounded = 1 else isGrounded = 0;
 
+oleg++;
+if oleg = 50{
+   if state = -1 {
+       state = 1;
+   }
+   oleg = 0;
+}
+
+
 if state = 0 //патруль
 {
 	if instance_exists(obj_Player)

@@ -60,7 +60,7 @@ if state = 0.5
 {
     if !instance_exists(obj_molded_lava_boomer) && !instance_exists(obj_fastfly_molded)
     {
-        state = 1;          
+        state = 2;          
     }
 }
 

@@ -43,7 +43,14 @@
 
 */
 
-if state = 0 // юег к игроку
+oleg++;
+if oleg = 50{
+   if state = -1 state = 1;
+   oleg = 0;
+}
+
+
+if state = 0 || state = -1 // бег к игроку
 {
     sprite_index = spr_molded_yellow_idle;
 	if abs(obj_Player.x - x) < 200 

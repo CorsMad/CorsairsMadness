@@ -42,8 +42,27 @@ if state = 0 // Flyer Flyer redwalk
             {
                 instance_create_depth(224,128,0,obj_molded_small_fastfly)    
             } else instance_create_depth(448,128,0,obj_molded_small_fastfly)    
-
-        case 150:
+            break;
+        case 450:
+            if instance_exists(obj_Player)
+            {
+                if obj_Player.x> room_width/2
+                {
+                    var e1 = instance_create_depth(176,224,0,obj_molded_big_spawner_n);
+                    e1.obj_cr = obj_molded_snow_spearman;
+                    e1.y_cr = 16;
+                    e1.state = 1;
+                
+                } else 
+                {                
+                    var e1 = instance_create_depth(480,208,0,obj_molded_big_spawner_n);
+                    e1.obj_cr = obj_molded_snow_spearman; 
+                    e1.y_cr = 16;
+                    e1.state = 1;
+                }
+            } 
+            break;
+        case 550:
             state = 0.5;
             t = 0;
             break;
@@ -52,9 +71,9 @@ if state = 0 // Flyer Flyer redwalk
 
 if state = 0.5
 {
-    if !instance_exists(obj_fastfly_molded) && !instance_exists(obj_molded_snow_flying)
+    if !instance_exists(obj_fastfly_molded) && !instance_exists(obj_molded_snow_flying) && !instance_exists(obj_molded_snow_spearman)
     {
-        state = 1;          
+        state = 3;          
     }
 }
 

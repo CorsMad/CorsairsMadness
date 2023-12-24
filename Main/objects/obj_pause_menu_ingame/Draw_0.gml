@@ -1,13 +1,17 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+
+
+
 #region Отриосвка черн
 
 draw_set_colour(c_black);
 
-draw_rectangle(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+270,-9999999);
+draw_rectangle(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+270,-91);
 
-
+//draw_sprite_ext(Sprite1682,0,camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),1,1,0,c_white,1);
 
 draw_set_alpha(1);
 
@@ -23,14 +27,16 @@ var gap = 16;
 
 for (var i = 0; i < array_length_2d(menu, submenu); ++i) {
     draw_set_color(c_white);
+    //text_col = c_white;
     if i == index 
     {
         draw_set_color(c_red);
+        //text_col = c_red
     }
     
     if submenu = 32
     {
-        draw_sprite(spr_options_gamepad,0,camera_get_view_x(view_camera[0])+240,camera_get_view_y(view_camera[0])+135-35);    
+       draw_sprite(spr_options_gamepad,0,camera_get_view_x(view_camera[0])+240,camera_get_view_y(view_camera[0])+135-35);    
     }
     
     if submenu = 31
@@ -41,11 +47,18 @@ for (var i = 0; i < array_length_2d(menu, submenu); ++i) {
     if submenu = 31
     {
         draw_text(camera_get_view_x(view_camera[0])+120,camera_get_view_y(view_camera[0])+32+gap*i, menu[submenu, i])   
+        //text_drop_shadow(camera_get_view_x(view_camera[0])+120,camera_get_view_y(view_camera[0])+32+gap*i,text_col,c_black,menu[submenu, i],1,1);
     } else if submenu = 41
     {
         draw_set_font(fnt_pixel);
+        //text_drop_shadow(camera_get_view_x(view_camera[0])+240,camera_get_view_y(view_camera[0])+32+gap*i,text_col,c_black,menu[submenu, i],1,1);
         draw_text(camera_get_view_x(view_camera[0])+240,camera_get_view_y(view_camera[0])+32 + gap*i, menu[submenu, i]);   
-    } else draw_text(camera_get_view_x(view_camera[0])+240,camera_get_view_y(view_camera[0])+64+gap*i, menu[submenu, i]);
+    } else {
+     
+        //text_drop_shadow(camera_get_view_x(view_camera[0])+240,camera_get_view_y(view_camera[0])+64+gap*i,text_col,c_black,menu[submenu, i],1,1);
+        draw_text(camera_get_view_x(view_camera[0])+240,camera_get_view_y(view_camera[0])+64+gap*i, menu[submenu, i]);
+        
+    }
     
     
 }
@@ -144,3 +157,5 @@ if submenu = 31
 #endregion
 
 #endregion
+
+ 

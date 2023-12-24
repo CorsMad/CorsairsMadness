@@ -57,7 +57,7 @@ if state = 1 // Jumper redfly Berserker
                 }
             } 
             break;
-        case 250:
+        case 150:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> 352
@@ -69,7 +69,7 @@ if state = 1 // Jumper redfly Berserker
                 }
             } 
             break;
-        case 350:
+        case 250:
             if instance_exists(obj_Player)
             {
                 if obj_Player.x> 352
@@ -86,7 +86,7 @@ if state = 1 // Jumper redfly Berserker
                 }
             } 
             break;
-        case 450:
+        case 350:
             state = 1.5;
             t = 0;
             break;
@@ -99,7 +99,7 @@ if state = 1.5
     if !instance_exists(obj_molded_lava_berserker) && !instance_exists(obj_crawling_molded_l)
     && !instance_exists(obj_fastfly_molded) && !instance_exists(obj_molded_lava_boomer)
     {
-        state = 2;   
+        state = 3;   
     }
 }
 

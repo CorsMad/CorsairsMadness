@@ -41,6 +41,11 @@
 7 - стан от клонурона
 
 */
+oleg++;
+if oleg = 50{
+   if state = -1 state = 1;
+   oleg = 0;
+}
 
 #region anim
 

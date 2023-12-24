@@ -11,3 +11,7 @@ talk_cr_t = 0;
 image_speed = 1;
 
 pointer = instance_create_depth(x,y-64,depth-1,obj_icon_talk_npc);
+
+if global.dia_hpmana_bonnie = 0 {
+    questmark = instance_create_depth(x,y-96,depth-1,obj_crew_questmark);   
+}

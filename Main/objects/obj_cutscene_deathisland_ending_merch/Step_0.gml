@@ -6,7 +6,10 @@ switch(state){
     case 0:
         t++;  
         t_expl++;
-        if t_expl mod 15 = 0 instance_create_depth(x+random_range(-12,12),y+random_range(-12,12),depth-1,obj_sfx_explosion,{image_alpha : random_range(0.5,0.7)});
+        if t_expl mod 15 = 0 {
+            instance_create_depth(x+random_range(-12,12),y+random_range(-12,12),depth-1,obj_sfx_explosion,{image_alpha : random_range(0.5,0.7)});
+            fnc_snd_play_over(snd_di_boss_explosion);
+            }
         if t > 100{
             if point_distance(x, y, room_width/2, room_height/2) > 3
             {
@@ -22,20 +25,24 @@ switch(state){
         }
         break;
     case 0.5:
+        
         t_expl++;
         if t_expl >= 15 {
             instance_create_depth(x+random_range(-12,12),y+random_range(-12,12),depth-1,obj_sfx_explosion,{image_alpha : random_range(0.5,0.7)});
+            fnc_snd_play_over(snd_di_boss_explosion);
             t_expl = 0;
         }
+        
         break;
-    
+
     case 1:
         t++;
+        /*
         t_expl++;
         if t_expl >= 25 {
             instance_create_depth(x+random_range(-12,12),y+random_range(-12,12),depth-1,obj_sfx_explosion,{image_alpha : random_range(0.5,0.7)});
             t_expl = 0;
-        }
+        }*/
         if t = 50 {
             instance_create_depth(0,0,depth-999999999999,obj_cutscene_deathisland_ending_txt) 
             state = 1.5;
@@ -43,17 +50,19 @@ switch(state){
         }
         break;
     case 1.5:
+        /*
         t_expl++;
         if t_expl >= 35 {
             instance_create_depth(x+random_range(-12,12),y+random_range(-12,12),depth-1,obj_sfx_explosion,{image_alpha : random_range(0.5,0.7)});
             t_expl = 0;
-        }
+        }*/
         break;
     case 2:
         t++;
         
         t_expl++;
         if t_expl >= 10 {
+            fnc_snd_play_over(snd_di_boss_explosion);
             instance_create_depth(x+random_range(-12,12),y+random_range(-12,12),depth-1,obj_sfx_explosion,{image_alpha : random_range(0.5,0.7)});
             t_expl = 0;
         }
@@ -69,6 +78,7 @@ switch(state){
                 instance_create_depth(x-16,y+16,depth-1,obj_sfx_explosion);
                 instance_create_depth(x+16,y+16,depth-1,obj_sfx_explosion);
                 instance_create_depth(x,y,depth-2,obj_sfx_explosion);
+                fnc_snd_play_onetime(snd_explosions_standart);
                 break;
              case 400: 
                 obj_cutscene_deathisland_ending_player.state = 1;
@@ -113,7 +123,19 @@ if t_anim mod 10 = 0{
     t_anim = 0;
 }
 
-
+if state > 0.5 {
+    x = shake_x_1 
+    y = shake_y_1 
+    shake_x_1 = lerp(shake_x_1,240,0.1);
+    shake_y_1 = lerp(shake_y_1,135,0.1);
+    t_shake++;
+    if t_shake = 20 
+    {
+        t_shake = 0;
+        shake_x_1 = choose(240-1,240+1);
+        shake_y_1 = choose(135-1,135+1);
+    }   
+}
 
 
 

@@ -87,10 +87,12 @@ switch(state){
                 if obj_Player.x < x {
                     hspd = -3;
                     state = 2;
+                    fnc_snd_play_onetime(snd_lizardball);
                     t = 0;
                 } else {
                     hspd = 3;
                     state = 2;   
+                    fnc_snd_play_onetime(snd_lizardball);
                     t = 0;
                 }
             } else state = 0;
