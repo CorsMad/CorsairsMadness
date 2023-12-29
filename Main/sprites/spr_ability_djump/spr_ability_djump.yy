@@ -32,7 +32,7 @@
   "origin": 4,
   "parent": {
     "name": "Abilities",
-    "path": "folders/Abilities.yy",
+    "path": "folders/Sprites/Abilities.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -76,12 +76,16 @@ if state = 4
 {
 
     if place_meeting(x,y,obj_mask_level_mask)
-    {
+    {       
         state = 5;  
         instance_destroy(obj_mask_level_mask);
         image_index = 0;
         sprite_index = spr_player_transform;
         image_speed = 0;
+        
+        //ahiev
+        fnc_achiev_get("ACH1");
+        
         instance_create_depth(x,y,0,obj_cutscene_t1_end_screenshake);
     }
 }

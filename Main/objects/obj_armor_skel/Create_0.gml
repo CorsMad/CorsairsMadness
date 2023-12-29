@@ -24,5 +24,11 @@ t = 0;
 t_attack = 0;
 spd = 0;
 mov = 0;
+scare_t = 0;
+
 boomer = 0;
 boom_timer = 0;
+
+
+count_attack = 0;
+count_boomer = 0

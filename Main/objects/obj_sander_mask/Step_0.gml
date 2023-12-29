@@ -15,7 +15,25 @@ if instance_exists(owner)
 
 // Удар вниз   
 
-    fnc_take_dmg_hitbox_down(0,-32,-1);
+    if place_meeting(x,y,obj_hitbox_down) && hit_cd = 0
+	{
+        
+        if instance_exists(obj_hitbox_down)
+        {
+            hit_cd = 1;
+		    enemy_hp -= 1;
+            if owner.state = 2 && owner.enemy_hp <= 1{
+                fnc_achiev_get("ACH24"); 
+            }
+            obj_Player.isAttackingdown = 0;
+    		obj_Player.attackingdown_timer = 0;
+    		obj_Player.vspd = -5;                         
+        }
+		instance_create_depth(x,y-32,-1,obj_sfx_weapon_slash);
+	}  
+
+
+    //fnc_take_dmg_hitbox_down(0,-32,-1);
 	
 // Топор
 

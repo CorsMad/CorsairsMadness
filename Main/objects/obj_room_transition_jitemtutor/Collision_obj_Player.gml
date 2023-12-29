@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+fnc_achiev_get("ACH18");
+
 fnc_msc_stop_play_slow();
                                  
  global.TargetX = 448;
@@ -9,3 +11,5 @@ fnc_msc_stop_play_slow();
  global.dia_jungleComt = 0.5;
  room_goto(VillageJunlgeFirstLoading);      
  instance_destroy(obj_Player);
+ 
+ 

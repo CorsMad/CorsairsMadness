@@ -212,8 +212,8 @@ function fnc_take_dmg_hitbox_down(x1,y1,d1)
         
         if instance_exists(obj_hitbox_down)
         {
-            hit_cd = 1;
-		    enemy_hp -= 1;
+            hit_cd = 1;  
+            enemy_hp -= 1;
             
             obj_Player.isAttackingdown = 0;
     		obj_Player.attackingdown_timer = 0;

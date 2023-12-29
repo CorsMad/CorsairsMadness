@@ -361,6 +361,13 @@ if state = 7
     if obj_Player.x < x spd = 3; else spd = -3;
     if place_meeting(x+spd,y,obj_block) spd = 0;
     
+    if spd = 0 scare_t++ else scare_t = 0;
+    
+    if scare_t = 150 {
+        instance_destroy();
+        var scare_skel = instance_create_depth(x,y,depth,obj_armor_skel_def);
+        scare_skel.image_xscale = image_xscale;
+    }
     
     #region Anim
         if spd != 0 sprite_index = spr_bigskel_r0run; else sprite_index = spr_bigskel_t0hide;
@@ -377,15 +384,48 @@ if state = 7
 
      // Атака
 
-    fnc_take_dmg_hitbox(-10,0,-1,10,0,-1);
+    //fnc_take_dmg_hitbox(-10,0,-1,10,0,-1);
+    
+    
+        if (place_meeting(x,y,obj_hitbox)) && hit_cd = 0	
+        {
+            count_attack++;
+    		hit_cd = 1;
+    		enemy_hp -= 1;
+            if obj_Player.x < x 
+    		{
+    			instance_create_depth(x-10,y+0,-1,obj_sfx_weapon_slash);
+    		} else instance_create_depth(x+10,y+0,-1,obj_sfx_weapon_slash);
+    	}
+    
+    
+    // Удар вниз   
+
+    //fnc_take_dmg_hitbox_down(0,-16,-1);
+        
+        if place_meeting(x,y,obj_hitbox_down) && hit_cd = 0
+    	{
+        
+            if instance_exists(obj_hitbox_down)
+            {
+                count_attack++;
+                
+                hit_cd = 1;  
+                enemy_hp -= 1;
+            
+                obj_Player.isAttackingdown = 0;
+        		obj_Player.attackingdown_timer = 0;
+        		obj_Player.vspd = -5;          
+            }
+    		instance_create_depth(x+0,y-16,-1,obj_sfx_weapon_slash);
+    	}    
+    
     
 // Топор
 
     fnc_take_dmg_axe(-10,0,-1,10,0,-1,1);
     
-// Удар вниз   
 
-    fnc_take_dmg_hitbox_down(0,-16,-1);
 
 // Бомба
 
@@ -409,6 +449,11 @@ if state = 7
 
 if enemy_hp < 1 
 {
+    //achiev
+    if count_attack >=12 && count_boomer = 0 {
+        fnc_achiev_get("ACH26");
+    }
+    
     instance_destroy();   
     var d = instance_create_depth(x,y,depth,obj_armor_skel_dead);
     d.sprite_index = sprite_index;

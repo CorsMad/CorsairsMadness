@@ -10,6 +10,11 @@ if place_meeting(x,y,obj_cutscene_JVArrive_player_draw)
     global.TargetRoom = Village_jungle;
     global.TargetX = 32;
     global.TargetY = 240;
+    
+    //achiev
+    
+    fnc_achiev_get("ACH2");
+    
     instance_destroy();
     
 }

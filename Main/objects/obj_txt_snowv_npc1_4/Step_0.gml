@@ -15,7 +15,7 @@ if key_skip
         obj_npc_snowv_npc1.talk = 0;
         obj_Player.isDead = 2.1;   
         global.dia_snpc = 2;
-        
+        fnc_achiev_get("ACH32");
         var g1 = instance_create_depth(x,y-16,-1,obj_money10);
         var g2 = instance_create_depth(x,y-16,-1,obj_money10);
         var g3 = instance_create_depth(x,y-16,-1,obj_money10);
@@ -26,7 +26,7 @@ if key_skip
         g1.vspd = -5;
         g2.vspd = -5;
         g3.vspd = -5;
-        
+        scr_save_progress();
         instance_destroy();   
     } 
 }

@@ -134,6 +134,8 @@ if t_madness > 30
     if snd!= 1 {fnc_snd_play_onetime(snd_enemy_get_flute) ;snd = 1}
     madness = 1;
     state = 3;
+    
+    fnc_achiev_get("ACH25");
 }
 
 if (!place_meeting(x,y,obj_abil_flute_aoe) && t_madness > 0) t_madness--;

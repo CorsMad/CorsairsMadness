@@ -27,6 +27,10 @@ switch(state){
             fnc_snd_play_over(snd_secrets_gain);
         	instance_create_depth(x,y,depth-1,obj_sfx2);
         	global.secrets_g1_s2 = 1;
+            
+            //achiev
+            fnc_achiev_coin_shadow();
+        
         	global.secrets +=1;
         	instance_destroy();
         }

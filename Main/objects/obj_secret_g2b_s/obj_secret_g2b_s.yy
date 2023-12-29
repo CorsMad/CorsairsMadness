@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "G2",
-    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/!Jungle/Lvl1/Collectables/Secrets/!Master/!GraveyardSecrets/G2.yy",
+    "path": "folders/Objects/Level Containers (PERS objects)/!MASTER/Secrets/!Master/!GraveyardSecrets/G2.yy",
   },
   "parentObjectId": null,
   "persistent": false,

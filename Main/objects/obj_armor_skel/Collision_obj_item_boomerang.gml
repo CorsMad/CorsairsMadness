@@ -3,6 +3,7 @@
 
 if boomer = 0 && boom_timer = 0
 {
+    count_boomer++;
     fnc_snd_play_onetime(snd_get_boomerang);
     t = 0;
     boomer = 1;
@@ -29,6 +30,7 @@ if boomer = 0 && boom_timer = 0
 
 if boomer = 1 && boom_timer = 0 
 {
+    count_boomer++;
     fnc_snd_play_onetime(snd_get_boomerang);
     boomer = 2;
     boom_timer = 1;

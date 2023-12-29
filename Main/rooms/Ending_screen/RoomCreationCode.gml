@@ -1,5 +1,7 @@
 fnc_msc_start_checkpoint(msc_endscr)
 
+fnc_achiev_all();
+
 var sum = global.saved_jungle + global.saved_desert + global.saved_snow + global.saved_shadow + global.saved_vulcano;
 
 switch(sum){

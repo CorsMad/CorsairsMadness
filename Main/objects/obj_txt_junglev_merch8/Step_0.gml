@@ -11,6 +11,7 @@ if key_skip
     
     if scr_t > scr_t_max 
     {
+        
         obj_Player.isDead = 2.1;        
         instance_destroy();   
     } 

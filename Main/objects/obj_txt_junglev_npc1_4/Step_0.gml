@@ -13,7 +13,8 @@ if key_skip
     if scr_t > scr_t_max 
     {
         obj_npc_junglev_npc1.talk = 0;
-        obj_Player.isDead = 2.1;   
+        obj_Player.isDead = 2.1;  
+        fnc_achiev_get("ACH30");
         global.dia_jnpc = 2;
         scr_save_progress();
         var g1 = instance_create_depth(x,y-16,-1,obj_money10);

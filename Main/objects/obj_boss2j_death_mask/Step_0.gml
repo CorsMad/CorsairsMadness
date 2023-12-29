@@ -23,7 +23,8 @@
         if instance_exists(obj_bossj2_phase_between) || instance_exists(obj_bossj2_phase_between2) ||
         instance_exists(obj_bossj2e_phase_between) || instance_exists(obj_bossj2e_phase_between2)         
         {
-            instance_create_depth(x,y,depth-1,obj_money1);   
+            instance_create_depth(x,y,depth-1,obj_money1);  
+            if instance_exists(obj_steam_ach_boss_j2) obj_steam_ach_boss_j2.count+=1;
         }
                 
         instance_create_depth(obj_abil_boots_hitbox.x,obj_abil_boots_hitbox.y+20,obj_abil_boots_hitbox.depth-1,obj_sfx4);

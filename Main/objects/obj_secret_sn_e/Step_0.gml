@@ -27,6 +27,10 @@ if to_player = 1
         fnc_snd_play_onetime(msc_level_end);
         fnc_snd_play_over(snd_player_hpmana_gain);
 	    global.secrets_sn_endurance = 1;
+        
+        //achiev
+        fnc_achiev_coin_snow();
+    
         global.secrets +=1;
         instance_create_depth(0,0,0,obj_room_transition_black_screen_s1_stats);
 		instance_destroy();	     

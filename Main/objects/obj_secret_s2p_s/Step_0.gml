@@ -14,6 +14,10 @@ if place_meeting(x,y,obj_Player)
     fnc_snd_play_over(snd_secrets_gain);
 	instance_create_depth(x,y,depth-1,obj_sfx2);
 	global.secrets_s2p_s = 1;
+    
+    //achiev
+    fnc_achiev_coin_snow();
+    
 	global.secrets +=1;
 	instance_destroy();
 }

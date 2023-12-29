@@ -20,6 +20,7 @@
     {"name":"inst_5083516B","path":"rooms/J2_boss/J2_boss.yy",},
     {"name":"inst_3B85D04D","path":"rooms/J2_boss/J2_boss.yy",},
     {"name":"inst_309A1FBE","path":"rooms/J2_boss/J2_boss.yy",},
+    {"name":"inst_7AA5BEC9","path":"rooms/J2_boss/J2_boss.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -32,6 +33,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7B9D40E2_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":26.0,"x":464.0,"y":-160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4DB7FEC6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_pause_controller","path":"objects/obj_pause_controller/obj_pause_controller.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":48.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3B85D04D","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_bomb_emitter","path":"objects/obj_bomb_emitter/obj_bomb_emitter.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":48.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7AA5BEC9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_steam_ach_boss_j2","path":"objects/obj_steam_ach_boss_j2/obj_steam_ach_boss_j2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":-64.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_626C9F3F","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_ow_platform_3","path":"objects/obj_ow_platform_3/obj_ow_platform_3.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":144.0,},

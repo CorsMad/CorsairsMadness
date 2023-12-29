@@ -15,6 +15,7 @@ if key_skip
         obj_npc_desertv_npc1.talk = 0;
         obj_Player.isDead = 2.1;
         global.dia_dnpc = 2;
+        fnc_achiev_get("ACH31");
         scr_save_progress();
         
         var g1 = instance_create_depth(x,y-16,-1,obj_money10);

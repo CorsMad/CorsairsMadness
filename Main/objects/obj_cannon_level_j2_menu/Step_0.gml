@@ -14,7 +14,7 @@ if key_attack || key_jump
             obj_cannon_level_j2.TargetRoom = J2b_r2;
             obj_cannon_level_j2.TargetX = 64;
             obj_cannon_level_j2.TargetY = 0;
-
+            fnc_achiev_get("ACH29");
 
             instance_destroy();
             break;
@@ -23,6 +23,7 @@ if key_attack || key_jump
             obj_cannon_level_j2.TargetRoom = J2p_r2;
             obj_cannon_level_j2.TargetX = 400;
             obj_cannon_level_j2.TargetY = 0;
+            fnc_achiev_get("ACH29");
             instance_destroy();
             break;
         case 2:

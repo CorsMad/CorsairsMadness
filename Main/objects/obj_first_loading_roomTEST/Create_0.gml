@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 randomise();
-global.TargetX      = 320;
-global.TargetY      = 784;
-global.TargetRoom   = DI_Boss
+global.TargetX      = 64;
+global.TargetY      = 240;
+global.TargetRoom   = TESTROOM;
 
 
 global.fTargetX     = 112;
@@ -52,8 +52,8 @@ global.language = 0;
         
     global.completedJungle = 1;    
     global.completedDesert = 0;    
-    global.completedSnow = 0;    
-    global.completedShadow = 0;    
+    global.completedSnow = 1;    
+    global.completedShadow = 1;    
     global.completedLava = 0;    
         
     #endregion
@@ -83,11 +83,11 @@ global.language = 0;
      
     //0
     
-    global.saved_jungle  = 1;  //0
-    global.saved_desert  = 1;  //0
-    global.saved_snow    = 1;  //0
-    global.saved_shadow  = 1;  //0
-    global.saved_vulcano = 1;  //0
+    global.saved_jungle  = 0;  //0
+    global.saved_desert  = 0;  //0
+    global.saved_snow    = 0;  //0
+    global.saved_shadow  = 0;  //0
+    global.saved_vulcano = 0;  //0
     
     
     
@@ -95,11 +95,11 @@ global.language = 0;
     
     
     //0
-    global.dia_jungleMerch_f_talk = 0;
-    global.dia_desertMerch_f_talk = 0;
-    global.dia_snowMerch_f_talk = 0;
-    global.dia_shadowMerch_f_talk = 0;
-    global.dia_vulcanoMerch_f_talk = 0;
+    global.dia_jungleMerch_f_talk  = 0;   //0
+    global.dia_desertMerch_f_talk  = 0;   //0
+    global.dia_snowMerch_f_talk    = 0;   //0
+    global.dia_shadowMerch_f_talk  = 0;   //0
+    global.dia_vulcanoMerch_f_talk = 0;   //0
 
     //0
     global.dia_jake = 0;
@@ -172,24 +172,24 @@ global.purch_eparrot3 = 0;		//0
 
 #region Покупки Лодки
 // Быстровыстр
-global.purch_rapidfire1 = 1;
-global.purch_rapidfire2 = 1;
-global.purch_rapidfire3 = 1;
+global.purch_rapidfire1 = 0;
+global.purch_rapidfire2 = 0;
+global.purch_rapidfire3 = 0;
 
 //двойные пистолеты
-global.purch_dualpistols1 = 1;
-global.purch_dualpistols2 = 1;
-global.purch_dualpistols3 = 1;
+global.purch_dualpistols1 = 0;
+global.purch_dualpistols2 = 0;
+global.purch_dualpistols3 = 0;
 
 // blunderbuss
-global.purch_blunderbuss1 = 1;
-global.purch_blunderbuss2 = 1;
-global.purch_blunderbuss3 = 1;
+global.purch_blunderbuss1 = 0;
+global.purch_blunderbuss2 = 0;
+global.purch_blunderbuss3 = 0;
 
 // parrot cage
-global.purch_parrotcage1 = 1;
-global.purch_parrotcage2 = 1;
-global.purch_parrotcage3 = 1;
+global.purch_parrotcage1 = 0;
+global.purch_parrotcage2 = 0;
+global.purch_parrotcage3 = 0;
 
 #endregion
 
@@ -211,9 +211,9 @@ global.superattack3 = 1;// Суператаки  max 1  default - 0
 global.PlayerTransition = 0;
 global.mana = 3//3;
 global.mana_max = 7;
-global.gold = 10000 //global.money_saved;          // 0
+global.gold = 20000 //global.money_saved;          // 0
 global.gold_prelevel = 0;
-global.darkessence = 3000//global.darkessence_saved;
+global.darkessence = 10000//global.darkessence_saved;
 
 #region Объявление переменных
     scr_create_array_objects();
@@ -280,7 +280,7 @@ global.darkessence_saved = 0;
 
 // Установка секретов
 
-global.secrets = 10;
+global.secrets = 35;
 
 // Установка ограничений игрока
 
@@ -466,7 +466,7 @@ global.chest_s2p_r3 = 1;
 
 global.secrets_s2_s1 = 0;
 global.secrets_s2b_r5 = 0;
-global.secrets_s2p_s = 0 
+global.secrets_s2p_s = 0;
 
 #endregion
 

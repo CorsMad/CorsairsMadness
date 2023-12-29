@@ -5,10 +5,9 @@
 
    //draw_set_color(c_white);
    //
-   //if instance_exists(obj_molded_purple_shield){
-   //   draw_text(240,64, string(obj_molded_purple_shield.state));    
-   //   draw_text(240,96, string(obj_molded_purple_shield.oleg));    
-   //   //draw_text(240,128,string(obj_Player.ending));    
+   //if instance_exists(obj_steam_ach){
+   //   draw_text(240,64, obj_steam_ach.ach1_name);      
+   //   draw_text(240,128,string(obj_steam_ach.ready));    
    //   //draw_text(240,164,string(obj_Player.end_start));    
    //   //draw_text(240,192,string(obj_Player.step));    
    //}

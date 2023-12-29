@@ -290,6 +290,7 @@ if buy_confirm
 	                                    global.purch_anch1 = 1;
 	                                    global.shop_axe_can_upgrade1 = 1;
 	                                    global.gold -= 250;
+                                        fnc_achiev_get("ACH28");
 	                                }
 	                                break;
 	                            case 1: // Покупка якорь 2 ур
@@ -309,6 +310,8 @@ if buy_confirm
 	                                    buy_confirm = 0;
 	                                    global.purch_anch3 = 1;
 	                                    global.gold -= 1000;
+                                        fnc_achiev_store_human();
+                                        fnc_achiev_store_all();
 	                                }
 	                                break;
 	                        }
@@ -324,6 +327,7 @@ if buy_confirm
 	                                    global.purch_bomb1 = 1;
 	                                    global.shop_bomb_can_upgrade1 = 1;
 	                                    global.gold -= 250;
+                                        fnc_achiev_get("ACH28");
 	                                }
 	                                break;
 	                            case 1: // Покупка Бомбы 2 ур
@@ -343,6 +347,8 @@ if buy_confirm
 	                                    buy_confirm = 0;
 	                                    global.purch_bomb3 = 1;
 	                                    global.gold -= 1000;
+                                        fnc_achiev_store_human();
+                                        fnc_achiev_store_all();
 	                                }
 	                                break;
 	                        }
@@ -358,6 +364,7 @@ if buy_confirm
 	                                    global.purch_sparkle1 = 1;
 	                                    global.shop_sparkle_can_upgrade1 = 1;
 	                                    global.gold -= 250;
+                                        fnc_achiev_get("ACH28");
 	                                }
 	                                break;
 	                            case 1: // Покупка sparkle 2 ур
@@ -377,6 +384,8 @@ if buy_confirm
 	                                    buy_confirm = 0;
 	                                    global.purch_sparkle3 = 1;
 	                                    global.gold -= 1000;
+                                        fnc_achiev_store_human();
+                                        fnc_achiev_store_all();
 	                                }
 	                                break;
 	                        }
@@ -392,6 +401,7 @@ if buy_confirm
 	                                    global.purch_eparrot1 = 1;
 	                                    global.shop_eparrot_can_upgrade1 = 1;
 	                                    global.gold -= 250;
+                                        fnc_achiev_get("ACH28");
 	                                }
 	                                break;
 	                            case 1: // Покупка EPARROT 2 ур
@@ -411,6 +421,8 @@ if buy_confirm
 	                                    buy_confirm = 0;
 	                                    global.purch_eparrot3 = 1;
 	                                    global.gold -= 1000;
+                                        fnc_achiev_store_human();
+                                        fnc_achiev_store_all();
 	                                }
 	                                break;
 	                        }
@@ -428,6 +440,7 @@ if buy_confirm
     	                        buy_confirm = 0;
     	                        global.superattack1 = 1;
     	                        global.darkessence -= 1000;
+                                fnc_achiev_get("ACH28");
                             }
                             break;
                         case 1: // Покупка супер гориз2
@@ -437,6 +450,8 @@ if buy_confirm
     	                        buy_confirm = 0;
     	                        global.superattack1 = 2;
     	                        global.darkessence -= 2000;
+                                fnc_achiev_store_possessed();
+                                fnc_achiev_store_all();
                             }
                             break;
                         case 2: // Покупка супер aoe
@@ -446,6 +461,9 @@ if buy_confirm
     	                        buy_confirm = 0;
     	                        global.superattack2 = 1;
     	                        global.darkessence -= 3000;
+                                fnc_achiev_get("ACH28");
+                                fnc_achiev_store_possessed();
+                                fnc_achiev_store_all();
                             }
                             break;
                         case 3: // Покупка супер ракеты
@@ -455,6 +473,9 @@ if buy_confirm
     	                        buy_confirm = 0;
     	                        global.superattack3 = 1;
     	                        global.darkessence -= 2000;
+                                fnc_achiev_get("ACH28");
+                                fnc_achiev_store_possessed();
+                                fnc_achiev_store_all();
                             }
                             break;
                     }
@@ -473,6 +494,7 @@ if buy_confirm
 	                                    global.purch_rapidfire1 = 1;
 	                                    global.shop_rapidfire_can_upgrade1 = 1;
 	                                    global.gold -= 250;
+                                        fnc_achiev_get("ACH28");
 	                                }
                                     break;
 	                            case 1: // Покупка якорь 2 ур
@@ -492,6 +514,8 @@ if buy_confirm
 	                                    buy_confirm = 0;
 	                                    global.purch_rapidfire3 = 1;
 	                                    global.gold -= 1000;
+                                        fnc_achiev_store_boat();
+                                        fnc_achiev_store_all();
 	                                }
 	                                break;
                             }
@@ -507,6 +531,7 @@ if buy_confirm
 	                                    global.purch_dualpistols1 = 1;
 	                                    global.shop_dualpistols_can_upgrade1 = 1;
 	                                    global.gold -= 250;
+                                        fnc_achiev_get("ACH28");
 	                                }
                                     break;
 	                            case 1: // Покупка якорь 2 ур
@@ -526,6 +551,8 @@ if buy_confirm
 	                                    buy_confirm = 0;
 	                                    global.purch_dualpistols3 = 1;
 	                                    global.gold -= 1000;
+                                        fnc_achiev_store_boat();
+                                        fnc_achiev_store_all();
 	                                }
 	                                break;
                             }
@@ -541,6 +568,7 @@ if buy_confirm
 	                                    global.purch_blunderbuss1 = 1;
 	                                    global.shop_blunderbuss_can_upgrade1 = 1;
 	                                    global.gold -= 250;
+                                        fnc_achiev_get("ACH28");
 	                                }
                                     break;
 	                            case 1: // Покупка якорь 2 ур
@@ -560,6 +588,8 @@ if buy_confirm
 	                                    buy_confirm = 0;
 	                                    global.purch_blunderbuss3 = 1;
 	                                    global.gold -= 1000;
+                                        fnc_achiev_store_boat();
+                                        fnc_achiev_store_all();
 	                                }
 	                                break;
                             }
@@ -575,6 +605,7 @@ if buy_confirm
 	                                    global.purch_parrotcage1 = 1;
 	                                    global.shop_parrotcage_can_upgrade1 = 1;
 	                                    global.gold -= 250;
+                                        fnc_achiev_get("ACH28");
 	                                }
                                     break;
 	                            case 1: // Покупка якорь 2 ур
@@ -594,6 +625,8 @@ if buy_confirm
 	                                    buy_confirm = 0;
 	                                    global.purch_parrotcage3 = 1;
 	                                    global.gold -= 1000;
+                                        fnc_achiev_store_boat();
+                                        fnc_achiev_store_all();
 	                                }
 	                                break;
                             }
@@ -652,8 +685,8 @@ if buy_confirm
                 break;
             case 1:
                 fnc_snd_play_over(snd_menu_accept);
-                buy_confirm_yesno = 1;
                 buy_confirm = 0;
+                buy_confirm_yesno = 1;
                 break;
         }
     }
