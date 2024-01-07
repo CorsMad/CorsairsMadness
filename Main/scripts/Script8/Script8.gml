@@ -44,6 +44,12 @@ function fnc_snd_play_onetime(argument0)
     }
 }
 
+function fnc_snd_play_loop(argument0)
+{
+	var snd_loop = audio_play_sound(argument0, 0, false);
+	audio_sound_loop(argument0, true);	
+}
+
 function fnc_msc_play(argument0)
 {
     if instance_exists(obj_music_controller)

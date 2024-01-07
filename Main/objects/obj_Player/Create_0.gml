@@ -199,6 +199,8 @@ comboTimer = 0;
 comboMeter = 0;
 canDoubleJump = 1;
 canSuperDash = 1;
+darkessence_saved = 0;
+darkessence_start = global.darkessence;
 #endregion
 
 #region TIPS

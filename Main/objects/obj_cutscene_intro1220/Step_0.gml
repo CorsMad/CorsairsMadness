@@ -140,9 +140,43 @@ if page = 6
 }
 #endregion
 
+#region skiptest
+if  keyboard_check(vk_anykey)             || (keyboard_check_pressed(vk_anykey)    ||
+    gamepad_button_check(0,gp_face1)      || gamepad_button_check(0,gp_face2)      ||
+    gamepad_button_check(0,gp_face3)      || gamepad_button_check(0,gp_face4)      ||
+    gamepad_button_check(0,gp_select)     || gamepad_button_check(0,gp_start)      ||
+    gamepad_button_check(0,gp_shoulderl)  || gamepad_button_check(0,gp_shoulderr)  ||
+    gamepad_button_check(0,gp_shoulderlb) || gamepad_button_check(0,gp_shoulderrb) ||
+    gamepad_button_check(4,gp_face1)      || gamepad_button_check(4,gp_face2)      ||
+    gamepad_button_check(4,gp_face3)      || gamepad_button_check(4,gp_face4)      ||
+    gamepad_button_check(4,gp_select)     || gamepad_button_check(4,gp_start)      ||
+    gamepad_button_check(4,gp_shoulderl)  || gamepad_button_check(4,gp_shoulderr)  ||
+    gamepad_button_check(4,gp_shoulderlb) || gamepad_button_check(4,gp_shoulderrb) ) {
+	if skip_t < skip_t_max skip_t+=1;
+	skip = 1;
+} else {
+	skip_t=0;
+	skip = 0;
+}
+
+switch(skip) {
+	case 0: if alpha_skip >0 alpha_skip-=0.2;
+		break;
+	case 1: if alpha_skip <1 alpha_skip+=0.2;
+		break;
+}
+
+if skip_t >= skip_t_max {
+	fnc_msc_stop_play();
+    room_goto(Tutor1);  	
+}
+#endregion
+
+/*
+
 #region  Skip
 
-if  skip = 0 && (keyboard_check_pressed(vk_anykey) ||
+if skip = 0 && (keyboard_check_pressed(vk_anykey) ||
     gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(0,gp_face2) ||
     gamepad_button_check_pressed(0,gp_face3) || gamepad_button_check_pressed(0,gp_face4) ||
     gamepad_button_check_pressed(0,gp_select) || gamepad_button_check_pressed(0,gp_start) ||

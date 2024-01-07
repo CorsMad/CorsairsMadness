@@ -10,7 +10,7 @@ if key_attack
     
     if scr_t > 1 
     {
-        obj_Player.isDead = 0;
+        obj_Player.isDead = 2.1;
         instance_destroy();   
     }
 }

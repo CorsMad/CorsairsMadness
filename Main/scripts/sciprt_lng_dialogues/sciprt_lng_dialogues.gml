@@ -14,7 +14,7 @@ switch(global.language)
         eng4 = "[fnt_pixel]Many believed the story and went to seek the adventure.";
         eng5 = "[fnt_pixel]It is said that the curse itself finds the ships of those worthy to set foot on its soil.[delay,5000] \nOnly the bravest trailblazers will be able to unravel all the secrets of this mysterious land.";
         eng6 = "[fnt_pixel]<Oh, it seems another guest has come ashore. I hope we'll get along.>";
-        skip_txt = "press any key to skip";
+        skip_txt = "[fnt_pixel]skip";
         #endregion        
         break;
     case 1: //russian
@@ -139,7 +139,7 @@ function fnc_lng_tutor1_ctscn_start()
     #region
         eng1 = "[fnt_pixel]No no no no! My ship!"
         eng2 = "[fnt_pixel]What happened? I don't remember anything. I must have taken too much rum on board."
-        eng3 = "[fnt_pixel]PEW !!! JOHNNY !!!!"
+        eng3 = "[fnt_pixel]PEW !!! SULLY !!!!"
         eng4 = "[fnt_pixel]Hmm, no one's answering. God damn it, I hope they're still alive."
         eng5 = "[fnt_pixel]It's time to take a look around. "
     #endregion
@@ -148,7 +148,7 @@ function fnc_lng_tutor1_ctscn_start()
     #region
         eng1 = "[fnt_pixel_ru]Нет, нет, нет, нет! Мой корабль!"
         eng2 = "[fnt_pixel_ru]Что случилось? Я ничего не помню. Наверное, я взял слишком много рома на борт."
-        eng3 = "[fnt_pixel_ru]ПЬЮ!!! ДЖОННИ !!!!"
+        eng3 = "[fnt_pixel_ru]ПЬЮ!!! САЛЛИ !!!!"
         eng4 = "[fnt_pixel_ru]Хм, никто не отвечает. Черт возьми, надеюсь, они еще живы."
         eng5 = "[fnt_pixel_ru]Пора осмотреться."
     #endregion
@@ -157,7 +157,7 @@ function fnc_lng_tutor1_ctscn_start()
         #region
         eng1 = "[fnt_pixel]¡No, no, no, no! ¡Mi barco!"
         eng2 = "[fnt_pixel]¿Qué ha pasado? No recuerdo nada. Debo haber tomado demasiado ron a bordo."
-        eng3 = "[fnt_pixel]¡¡¡PEW !!! ¡¡¡¡JOHNNY !!!!"
+        eng3 = "[fnt_pixel]¡¡¡PEW !!! ¡¡¡¡SULLY !!!!"
         eng4 = "[fnt_pixel]Hmm, nadie responde. Maldita sea, espero que todavía estén vivos."
         eng5 = "[fnt_pixel]Es hora de echar un vistazo alrededor."
     #endregion
@@ -166,7 +166,7 @@ function fnc_lng_tutor1_ctscn_start()
         #region
         eng1 = "[fnt_pixel]不不不不! 我的船!"
         eng2 = "[fnt_pixel]发生了什么? 我什么都不记得了. 我一定是在船上喝了太多朗姆酒."
-        eng3 = "[fnt_pixel]PEW !!! JOHNNY !!!!"
+        eng3 = "[fnt_pixel]PEW !!! SULLY !!!!"
         eng4 = "[fnt_pixel]嗯，没人回答. 该死, 我希望他们还活着."
         eng5 = "[fnt_pixel]现在让我们四处看看."
         #endregion
@@ -175,7 +175,7 @@ function fnc_lng_tutor1_ctscn_start()
         #region
         eng1 = "[fnt_pixel]Nãão! Meu navio!"
         eng2 = "[fnt_pixel]O que aconteceu? Não me lembro de nada. Devo ter tomado muito rum a bordo."
-        eng3 = "[fnt_pixel]PEW!!! JOHNNY !!!!"
+        eng3 = "[fnt_pixel]PEW!!! SULLY !!!!"
         eng4 = "[fnt_pixel]Ninguém responde. Raios, espero que ainda estejam vivos."
         eng5 = "[fnt_pixel]É hora de dar uma olhada por aí."
     #endregion
@@ -184,7 +184,7 @@ function fnc_lng_tutor1_ctscn_start()
         #region
         eng1 = "[fnt_pixel]Nãão! Meu navio!"
         eng2 = "[fnt_pixel]O que aconteceu? Eu não me lembro de nada. Acho que levei rum demais a bordo."
-        eng3 = "[fnt_pixel]PEW!!! JOHNNY !!!!"
+        eng3 = "[fnt_pixel]PEW!!! SULLY !!!!"
         eng4 = "[fnt_pixel]Hmm, a ninguém responde. Droga, espero que ainda estejam vivos."
         eng5 = "[fnt_pixel]É hora de dar uma olhada ao redor."
     #endregion
@@ -193,7 +193,7 @@ function fnc_lng_tutor1_ctscn_start()
         #region
         eng1 = "[fnt_pixel]O nie, nie nie! Mój statek!"
         eng2 = "[fnt_pixel]Co się stało? Nic nie pamiętam. Musiałem wziąć za dużo rumu na pokład."
-        eng3 = "[fnt_pixel]PEW !!! JOHNNY !!!!"
+        eng3 = "[fnt_pixel]PEW !!! SULLY !!!!"
         eng4 = "[fnt_pixel]Hmm, nikt nie odpowiada. Cholera jasna, mam nadzieję, że jeszcze żyją."
         eng5 = "[fnt_pixel]Pora aby rozejrzeć się tu dookoła."
     #endregion
@@ -211,7 +211,7 @@ function fnc_lng_tutor1_ctscn_start()
         #region
         eng1 = "[fnt_pixel]Nein, nein, nein, nein! Mein Schiff!"
         eng2 = "[fnt_pixel]Was ist passiert? Ich kann mich an nichts erinnern. Ich hatte wohl zu viel Rum an Bord."
-        eng3 = "[fnt_pixel]PEW !!! JOHNNY !!!!"
+        eng3 = "[fnt_pixel]PEW !!! SULLY !!!!"
         eng4 = "[fnt_pixel]Hmm, niemand antwortet. Verdammt noch mal, ich hoffe, sie leben noch."
         eng5 = "[fnt_pixel]Es wird Zeit, sich umzusehen."
     #endregion
@@ -220,7 +220,7 @@ function fnc_lng_tutor1_ctscn_start()
         #region
         eng1 = "[fnt_pixel]Non non non non ! Mon bateau !"
         eng2 = "[fnt_pixel]Que s'est-il passé ? Je ne me souviens de rien. J'ai dû prendre trop de rhum à bord."
-        eng3 = "[fnt_pixel]PEW !!! JOHNNY !!!!"
+        eng3 = "[fnt_pixel]PEW !!! SULLY !!!!"
         eng4 = "[fnt_pixel]Hmm, personne ne répond. Bon sang, j'espère qu'ils sont encore en vie."
         eng5 = "[fnt_pixel]Il est temps de jeter un coup d'oeil aux alentours."
     #endregion
@@ -229,7 +229,7 @@ function fnc_lng_tutor1_ctscn_start()
     #region
         eng1 = "[fnt_pixel]No, no, no, no! Il mio vascello!"
         eng2 = "[fnt_pixel]Quello che è successo? Non ricordo niente. Devo aver preso troppo rum a bordo."
-        eng3 = "[fnt_pixel]PEW !!! JOHNNY !!!!"
+        eng3 = "[fnt_pixel]PEW !!! SULLY !!!!"
         eng4 = "[fnt_pixel]Hmm, nessuno risponde. Merda, spero che siano ancora vivi."
         eng5 = "[fnt_pixel]Diamo un'occhiata in giro ora."
     #endregion

@@ -9,8 +9,11 @@
     
     
     draw_text(16+81,32,i0);
-    
-    
+    draw_sprite(spr_map_global_knife,0,163,120);
+	draw_sprite(spr_map_global_knife,0,325,177);
+	draw_sprite(spr_map_global_knife,0,389,123);
+    draw_sprite(spr_map_global_knife,0,345,36);
+	draw_sprite(spr_map_global_knife,0,196,54);
 #region иконки
 
     

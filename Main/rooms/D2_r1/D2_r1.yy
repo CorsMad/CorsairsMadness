@@ -54,6 +54,8 @@
     {"name":"inst_28268B9B","path":"rooms/D2_r1/D2_r1.yy",},
     {"name":"inst_43B08B74","path":"rooms/D2_r1/D2_r1.yy",},
     {"name":"inst_1788F36B","path":"rooms/D2_r1/D2_r1.yy",},
+    {"name":"inst_6EB52C98","path":"rooms/D2_r1/D2_r1.yy",},
+    {"name":"inst_75D70338","path":"rooms/D2_r1/D2_r1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -146,7 +148,9 @@
 -3,0,-10,-2147483648,1,66,-5,0,-15,-2147483648,-3,0,-10,-2147483648,-6,0,-16,-2147483648,-2,0,-6,-2147483648,7,18,19,20,-2147483648,-2147483648,0,0,-3,-2147483648,1,0,
 -23,-2147483648,11,30,31,32,-2147483648,-2147483648,0,0,-2147483648,-2147483648,0,0,-21,-2147483648,-3,0,6,43,44,-2147483648,0,0,-2147483648,-5,0,-20,-2147483648,-2,0,1,74,-3,
 -2147483648,-2,0,-3,-2147483648,-3,0,-20,-2147483648,-2,0,-9,-2147483648,-2,0,-78,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_sand_cact","path":"tilesets/tls_sand_cact/tls_sand_cact.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Backgrounds_3","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":800,"effectEnabled":true,"effectType":"_filter_heathaze","gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_2","depth":800,"effectEnabled":true,"effectType":"_filter_heathaze","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6EB52C98","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_parallax_desert1","path":"objects/obj_parallax_desert1/obj_parallax_desert1.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":-96.0,},
+      ],"layers":[],"properties":[
         {"name":"g_Distort1Speed","type":0,"value":"0.01",},
         {"name":"g_Distort2Speed","type":0,"value":"0.025",},
         {"name":"g_Distort1Scale","type":0,"value":"13.3",},
@@ -158,8 +162,24 @@
         {"name":"g_ChromaSpreadAmount","type":0,"value":"0",},
         {"name":"g_CamOffsetScale","type":0,"value":"0",},
         {"name":"g_DistortTexture","type":2,"value":"_filter_heathaze_noise_sprite",},
-      ],"spriteId":{"name":"bgr_sand_level1","path":"sprites/bgr_sand_level1/bgr_sand_level1.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
-    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":900,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"bgr_sand_level_sky","path":"sprites/bgr_sand_level_sky/bgr_sand_level_sky.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+      ],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","depth":900,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_75D70338","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_parallax_desert2","path":"objects/obj_parallax_desert2/obj_parallax_desert2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":80.0,"y":-64.0,},
+      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Backgrounds_3","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":1000,"effectEnabled":true,"effectType":"_filter_heathaze","gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_Distort1Speed","type":0,"value":"0.01",},
+        {"name":"g_Distort2Speed","type":0,"value":"0.025",},
+        {"name":"g_Distort1Scale","type":0,"value":"13.3",},
+        {"name":"g_Distort1Scale","type":0,"value":"1.3",},
+        {"name":"g_Distort2Scale","type":0,"value":"33.3",},
+        {"name":"g_Distort2Scale","type":0,"value":"3.3",},
+        {"name":"g_Distort1Amount","type":0,"value":"2",},
+        {"name":"g_Distort2Amount","type":0,"value":"4",},
+        {"name":"g_ChromaSpreadAmount","type":0,"value":"0",},
+        {"name":"g_CamOffsetScale","type":0,"value":"0",},
+        {"name":"g_DistortTexture","type":2,"value":"_filter_heathaze_noise_sprite",},
+      ],"spriteId":{"name":"bgr_sand_level1","path":"sprites/bgr_sand_level1/bgr_sand_level1.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":false,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":1100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"bgr_sand_level_sky","path":"sprites/bgr_sand_level_sky/bgr_sand_level_sky.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":false,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
     "name": "D2",

@@ -21,7 +21,7 @@ if key_skip
 }
 
 #endregion
-
+/*
 #region иконка
 if text = text1 || text = text3 { 
     if obj_Player.x > obj_npc_vulcanov_chief.x obj_Player.image_xscale = -1 else obj_Player.image_xscale = 1

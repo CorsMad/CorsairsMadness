@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.10449,
+  "duration": 0.26517,
   "parent": {
     "name": "Skat",
     "path": "folders/Sounds/Player sounds/Skat.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_skate_humanlong.mp3",
+  "soundFile": "snd_skate_humanlong.wav",
   "type": 0,
-  "volume": 0.005,
+  "volume": 1.0,
 }

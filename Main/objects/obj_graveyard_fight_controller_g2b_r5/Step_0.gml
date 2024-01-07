@@ -3,11 +3,21 @@
 if state = 0
 {
      t++;
-     if t = 50
-     {
-        var p = instance_create_depth(32,208,0,obj_plant);
-        p.image_xscale = -1;
-        instance_create_depth(224,224,0,obj_plant);        
+     if t = 75
+     {		
+		if obj_Player.x > 208
+            {
+                var e1 = instance_create_depth(48,192,0,obj_molded_big_spawner_n);
+                e1.y_cr = 16;
+                e1.obj_cr = obj_werewolf;   
+            } else 
+            {
+                var e1 = instance_create_depth(352,224,0,obj_molded_big_spawner_n);
+                e1.y_cr = 16;
+                e1.obj_cr = obj_plant;      
+            }    
+		
+		
      }
      
      if (t = 100) {
@@ -28,7 +38,8 @@ if state = 0
 
 if state = 0.5
 {
-    if !instance_exists(obj_zombie_start) && !instance_exists(obj_zombie) && !instance_exists(obj_plant)      
+    if !instance_exists(obj_zombie_start) && !instance_exists(obj_zombie) && !instance_exists(obj_plant) &&
+	! instance_exists(obj_werewolf)
     {
         state = 1;   
     }

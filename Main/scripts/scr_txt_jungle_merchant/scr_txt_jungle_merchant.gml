@@ -8,52 +8,52 @@ function scr_txt_jungle_merchant1(){
             break;
         case 1: //russian
             #region  кг text
-            eng1 = choose("[fnt_pixel_ru]Может, сначала поговорить с вождем?","[fnt_pixel_ru]Я советую вам обратиться к вождю.");
+            text0 = choose("[fnt_pixel_ru]Может, сначала поговорить с вождем?","[fnt_pixel_ru]Я советую вам обратиться к вождю.");
             #endregion           
             break;
         case 2: //spanish
             #region  ENG text
-            eng1 = choose("[fnt_pixel]¿Tal vez habla con el jefe primero?","[fnt_pixel]Te aconsejo que vayas con el jefe.");
+            text0 = choose("[fnt_pixel]¿Tal vez habla con el jefe primero?","[fnt_pixel]Te aconsejo que vayas con el jefe.");
             #endregion
             break;
         case 3: //chinese
             #region  ENG text
-            eng1 = choose("[fnt_pixel]你为什么不先和酋长谈谈？","[fnt_pixel]我劝你去见酋长.");
+            text0 = choose("[fnt_pixel]你为什么不先和酋长谈谈？","[fnt_pixel]我劝你去见酋长.");
             #endregion
             break;
         case 4: //portug
             #region  ENG text
-            eng1 = choose("[fnt_pixel]Talvez fala com um chefe primeiro?","[fnt_pixel]Aconselho-te a ir falar com o chefe.");
+            text0 = choose("[fnt_pixel]Talvez fala com um chefe primeiro?","[fnt_pixel]Aconselho-te a ir falar com o chefe.");
             #endregion
             break;
         case 5: //brazil
             #region  ENG text
-            eng1 = choose("[fnt_pixel]Talvez fale com um chefe primeiro?","[fnt_pixel]Eu te aconselho a ir ver o chefe.");
+            text0 = choose("[fnt_pixel]Talvez fale com um chefe primeiro?","[fnt_pixel]Eu te aconselho a ir ver o chefe.");
             #endregion
             break;
         case 6: //polish
             #region  ENG text
-            eng1 = choose("[fnt_pixel]Może pierwsze porozmawiaj z szefem?","[fnt_pixel]Radzę ci iść do szefa.");
+            text0 = choose("[fnt_pixel]Może pierwsze porozmawiaj z szefem?","[fnt_pixel]Radzę ci iść do szefa.");
             #endregion
             break;
         case 7: //japanese
             #region  ENG text
-            eng1 = choose("[fnt_pixel]先にチーフと話したら？","[fnt_pixel]チーフのところへ行くことをお勧めする。");
+            text0 = choose("[fnt_pixel]先にチーフと話したら？","[fnt_pixel]チーフのところへ行くことをお勧めする。");
             #endregion
             break;
         case 8: //deutch
             #region  ENG text
-            eng1 = choose("[fnt_pixel]Vielleicht solltest du zuerst mit dem Häupling sprechen?","[fnt_pixel]Ich rate dir, zum Häupling zu gehen.");
+            text0 = choose("[fnt_pixel]Vielleicht solltest du zuerst mit dem Häupling sprechen?","[fnt_pixel]Ich rate dir, zum Häupling zu gehen.");
             #endregion
             break;
         case 9: //french
             #region  ENG text
-            eng1 = choose("[fnt_pixel]Peut-être parler à un chef d'abord ? ","[fnt_pixel]Je vous conseille d'aller voir le chef.");
+            text0 = choose("[fnt_pixel]Peut-être parler à un chef d'abord ? ","[fnt_pixel]Je vous conseille d'aller voir le chef.");
             #endregion
             break;
         case 10: //Italian
             #region  ENG text
-            eng1 = choose("[fnt_pixel]Perché non parli prima con un capo?","[fnt_pixel]Ti consiglio di andare dal capo.");
+            text0 = choose("[fnt_pixel]Perché non parli prima con un capo?","[fnt_pixel]Ti consiglio di andare dal capo.");
             #endregion
             break;
     }    
@@ -252,7 +252,7 @@ function scr_txt_jungle_merchant4(){
     switch(global.language){
         case 0:
             #region  english
-            text0 = "[fnt_pixel]Well done! The effects of the mask have weakened and now your friend is saved[delay,2000]...almost.";
+            text0 = "[fnt_pixel]Well done! The effects of the mask have weakened and now your friend is saved[delay,500]...almost.";
             text1 = "[fnt_pixel]You see, once he's been exposed to the dark forces, it's almost impossible to escape them.";
             text2 = "[fnt_pixel]But I know a way. All you have to do is put [c_green]7 coins[/c] in the coin slot behind you.";
             text3 = "[fnt_pixel]This bowl will permanently destroy the mask and your friend will be free.";
@@ -298,7 +298,7 @@ function scr_txt_jungle_merchant8(){
         case 0:
             #region Eng
             text0 = "[fnt_pixel]You found all the coins! Great job. Now [c_red]Jake[/c] is saved!";
-            text1 = "[fnt_pixel]I've already moved[delay,2000]...he's already ended up here in the village by himself!";
+            text1 = "[fnt_pixel]I've already moved[delay,500]...he's already ended up here in the village by himself!";
             text2 = "[fnt_pixel]I [wave]HIGHLY[/wave] recommend you talk to him before you set sail.";
             text3 = "[fnt_pixel]He has a VERY [c_red]important message[/c] for you.";
             #endregion

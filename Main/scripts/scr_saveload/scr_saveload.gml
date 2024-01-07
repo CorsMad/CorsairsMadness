@@ -827,7 +827,7 @@ function scr_save_settings(){
     var _string = json_stringify(_saveSettings);
     var _buffer = buffer_create(string_byte_length(_string) +1, buffer_fixed, 1);
     buffer_write(_buffer, buffer_string, _string);
-    buffer_save(_buffer, "CMsettings.save");
+    buffer_save(_buffer, "CMsettingsN1.save");
     buffer_delete(_buffer);
 
     show_debug_message("Settings Saved! " + _string);
@@ -835,9 +835,9 @@ function scr_save_settings(){
 
 function scr_load_settings(){
 
-if file_exists("CMsettings.save")
+if file_exists("CMsettingsN1.save")
     {
-        var _buffer = buffer_load("CMsettings.save");
+        var _buffer = buffer_load("CMsettingsN1.save");
         var _string = buffer_read(_buffer, buffer_string);
         buffer_delete(_buffer);
         

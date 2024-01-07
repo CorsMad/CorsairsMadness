@@ -14,4 +14,4 @@ if instance_exists(obj_Player)
 
 paused = 0;
 
-instance_create_depth(x,y,depth,obj_combometer) ;
+instance_create_depth(x,y,-400,obj_combometer) ;

@@ -4,7 +4,11 @@
 //spd -=0.5;
 
 switch(state){
-    case 0: t++;
-    if t = 50 state = 1;
-        break;
+	case 1:	
+		t++;
+		if t = 50 {
+			instance_create_depth(480,0,0,obj_credits_good_frame);
+			state = 2;
+		}
+		break;
 }

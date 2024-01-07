@@ -24,7 +24,7 @@ if prize1 = 1
 if prize2 = 1
 {
     obj_maze5_prize2_pic.isOn = 1;
-    instance_create_depth(112,192,depth-1,obj_silver_key_creator);
+    instance_create_depth(112,192,-500,obj_silver_key_creator);
     prize2 = 0;
 }
 

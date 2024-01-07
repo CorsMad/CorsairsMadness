@@ -132,8 +132,9 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                 case 0:   
                     instance_activate_object(obj_music_controller);
                     fnc_msc_stop_play();
-                    //global.gold = global.gold_prelevel;    
-                    instance_destroy(obj_Player);
+					global.darkessence = darkessence_start;	
+					instance_destroy(obj_Player);
+                    
                     switch(dest) {
                         case 0: room_goto(GlobalMapPrologueJungle);break;
                         case 1: room_goto(GlobalMapPrologueDesert);break;
@@ -156,7 +157,8 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                 case 0:
                     instance_activate_object(obj_music_controller);
                     fnc_msc_stop_play();
-                    instance_destroy(obj_Player);
+					global.darkessence = darkessence_start;	
+					instance_destroy(obj_Player);
                     room_goto(MainMenu);
                     break;
                 case 1:

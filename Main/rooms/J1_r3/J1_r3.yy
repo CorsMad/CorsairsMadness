@@ -156,7 +156,7 @@
 43,32,41,49,48,40,41,42,41,41,42,41,42,41,40,-3,41,12,40,41,42,49,48,41,42,40,49,0,0,10,
 ],"TileDataFormat":1,},"tilesetId":{"name":"tls_jngl_main","path":"tilesets/tls_jngl_main/tls_jngl_main.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
-        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_500D00D2","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_tls_tree_palms1","path":"sprites/spr_tls_tree_palms1/spr_tls_tree_palms1.yy",},"x":-16.0,"y":32.0,},
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_500D00D2","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_tls_tree_palms1","path":"sprites/spr_tls_tree_palms1/spr_tls_tree_palms1.yy",},"x":-32.0,"y":32.0,},
       ],"depth":300,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"0.8",},
         {"name":"g_ContrastBrightness","type":0,"value":"0.9",},

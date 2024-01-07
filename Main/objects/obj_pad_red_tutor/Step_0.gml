@@ -25,7 +25,7 @@ if isOn = 0
 	a++;
 	if a = 88
 	{
-		instance_create_depth(x,y,-2,obj_pad_red_proj);	
+		instance_create_depth(x,y,depth-1,obj_pad_red_proj);	
 	}
 	if a = 90
 	{

@@ -45,10 +45,12 @@ if state = 3
     t++;
     if t >= 50
     {
-        if instance_exists(obj_wall_trigger)
+        if instance_exists(obj_wall_trigger) && instance_exists(obj_wall_trigger_close1_h)
         {
             obj_wall_trigger.state = 2;
             obj_wall_trigger.t = 0;
+            obj_wall_trigger_close1_h.state = 2;
+            obj_wall_trigger_close1_h.t = 0;
         }
     instance_destroy();  
     }

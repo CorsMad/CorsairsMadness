@@ -1,8 +1,11 @@
 player_input();
 fnc_lng_cannon_choose()
-if key_right_press {fnc_snd_play_over(snd_menu_select);state = 1}
-if key_left_press {fnc_snd_play_over(snd_menu_select);state = 0;}
-if key_down_pressed {fnc_snd_play_over(snd_menu_select);state = 2;}
+if key_right_press {fnc_snd_play_over(snd_menu_select);t_alpha = 0;
+        alpha = 1;state = 1}
+if key_left_press {fnc_snd_play_over(snd_menu_select);t_alpha = 0;
+        alpha = 1;state = 0;}
+if key_down_pressed {fnc_snd_play_over(snd_menu_select);t_alpha = 0;
+        alpha = 1;state = 2;}
 
 if key_attack || key_jump
 {
@@ -28,7 +31,13 @@ if key_attack || key_jump
             break;
         case 2:
             instance_destroy();
-            obj_Player.isDead = 0;
+            obj_Player.isDead = 2.1;
             break;
     }
 }
+
+t_alpha++;
+if t_alpha = 0   alpha = 1;
+if t_alpha > 50 && t_alpha < 75  alpha -=0.04;
+if t_alpha >= 75 alpha +=0.04;
+if t_alpha = 100 {t_alpha = 0;alpha=1} 

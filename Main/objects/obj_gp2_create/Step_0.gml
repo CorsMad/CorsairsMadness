@@ -8,7 +8,7 @@ if t = 100
     i.state = 1;
     i.HookEnabled = 0;
     i.SpecAbilMask = 4;
-    
+    i.isDead = 2.1;
     
     instance_create_depth(-16,-16,0,obj_room_transition_to_loading); 
     

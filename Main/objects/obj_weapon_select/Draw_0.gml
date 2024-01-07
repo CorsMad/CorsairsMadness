@@ -143,27 +143,83 @@ switch(submenu)
         {
             case 0:
                 draw_set_halign(fa_center);
-                draw_text(camera_get_view_x(view_camera[0])+272,camera_get_view_y(view_camera[0])+58,nameh_anchor);   
+                draw_text(camera_get_view_x(view_camera[0])+248,camera_get_view_y(view_camera[0])+58,nameh_anchor);   
                 draw_set_halign(fa_left);
-                draw_text(camera_get_view_x(view_camera[0])+406,camera_get_view_y(view_camera[0])+58,"lvl " + string(dindex+1));   
+                draw_text(camera_get_view_x(view_camera[0])+358,camera_get_view_y(view_camera[0])+58,"lvl " + string(dindex+1));   
+				switch(dindex){
+					case 0: 
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+425,camera_get_view_y(view_camera[0])+56);
+					break;	
+					case 1: 
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+425-8,camera_get_view_y(view_camera[0])+56) ;
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+425+8,camera_get_view_y(view_camera[0])+56) ;
+					break;	
+					case 2: 
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+410,camera_get_view_y(view_camera[0])+56) ;
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+425,camera_get_view_y(view_camera[0])+56) ;
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+440,camera_get_view_y(view_camera[0])+56) ;
+					break;	
+				}
                 break;
             case 1:
                 draw_set_halign(fa_center);
-                draw_text(camera_get_view_x(view_camera[0])+272,camera_get_view_y(view_camera[0])+58,nameh_grenade);   
+                draw_text(camera_get_view_x(view_camera[0])+248,camera_get_view_y(view_camera[0])+58,nameh_grenade);   
                 draw_set_halign(fa_left);
-                draw_text(camera_get_view_x(view_camera[0])+406,camera_get_view_y(view_camera[0])+58,"lvl " + string(dindex+1));   
+                draw_text(camera_get_view_x(view_camera[0])+358,camera_get_view_y(view_camera[0])+58,"lvl " + string(dindex+1));   
+				switch(dindex){
+					case 0: 
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+425,camera_get_view_y(view_camera[0])+56);
+					break;	
+					case 1: 
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+425-8,camera_get_view_y(view_camera[0])+56) ;
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+425+8,camera_get_view_y(view_camera[0])+56) ;
+					break;	
+					case 2: 
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+410,camera_get_view_y(view_camera[0])+56) ;
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+425,camera_get_view_y(view_camera[0])+56) ;
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+440,camera_get_view_y(view_camera[0])+56) ;
+					break;	
+				}
                 break;
             case 2:
                 draw_set_halign(fa_center);
-                draw_text(camera_get_view_x(view_camera[0])+272,camera_get_view_y(view_camera[0])+58,nameh_shockball);   
+                draw_text(camera_get_view_x(view_camera[0])+248,camera_get_view_y(view_camera[0])+58,nameh_shockball);   
                 draw_set_halign(fa_left);
-                draw_text(camera_get_view_x(view_camera[0])+406,camera_get_view_y(view_camera[0])+58,"lvl " + string(dindex+1));   
+                draw_text(camera_get_view_x(view_camera[0])+358,camera_get_view_y(view_camera[0])+58,"lvl " + string(dindex+1));   
+				switch(dindex){
+					case 0: 
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+425,camera_get_view_y(view_camera[0])+56);
+					break;	
+					case 1: 
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+425-8,camera_get_view_y(view_camera[0])+56) ;
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+425+8,camera_get_view_y(view_camera[0])+56) ;
+					break;	
+					case 2: 
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+410,camera_get_view_y(view_camera[0])+56) ;
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+425,camera_get_view_y(view_camera[0])+56) ;
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+440,camera_get_view_y(view_camera[0])+56) ;
+					break;	
+				}
                 break;
             case 3:
                 draw_set_halign(fa_center);
-                draw_text(camera_get_view_x(view_camera[0])+272,camera_get_view_y(view_camera[0])+58,nameh_parrot);   
+                draw_text(camera_get_view_x(view_camera[0])+248,camera_get_view_y(view_camera[0])+58,nameh_parrot);   
                 draw_set_halign(fa_left);
-                draw_text(camera_get_view_x(view_camera[0])+406,camera_get_view_y(view_camera[0])+58,"lvl " + string(dindex+1));   
+                draw_text(camera_get_view_x(view_camera[0])+358,camera_get_view_y(view_camera[0])+58,"lvl " + string(dindex+1));   
+				switch(dindex){
+					case 0: 
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+425,camera_get_view_y(view_camera[0])+56);
+					break;	
+					case 1: 
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+425-8,camera_get_view_y(view_camera[0])+56) ;
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+425+8,camera_get_view_y(view_camera[0])+56) ;
+					break;	
+					case 2: 
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+410,camera_get_view_y(view_camera[0])+56) ;
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+425,camera_get_view_y(view_camera[0])+56) ;
+						draw_sprite(spr_collectable_mana1,0,camera_get_view_x(view_camera[0])+440,camera_get_view_y(view_camera[0])+56) ;
+					break;	
+				}
                 break;
 
             

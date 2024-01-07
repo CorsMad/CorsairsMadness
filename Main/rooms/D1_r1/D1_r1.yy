@@ -99,7 +99,6 @@
     {"name":"inst_34097A15","path":"rooms/D1_r1/D1_r1.yy",},
     {"name":"inst_5271F566","path":"rooms/D1_r1/D1_r1.yy",},
     {"name":"inst_9CD17D7","path":"rooms/D1_r1/D1_r1.yy",},
-    {"name":"inst_403065C1","path":"rooms/D1_r1/D1_r1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -248,7 +247,6 @@
       ],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_2","depth":1000,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_9CD17D7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_parallax_desert2","path":"objects/obj_parallax_desert2/obj_parallax_desert2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":-48.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_403065C1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_parallax_desert2","path":"objects/obj_parallax_desert2/obj_parallax_desert2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":-48.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Backgrounds_2","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":1100,"effectEnabled":true,"effectType":"_filter_heathaze","gridX":16,"gridY":16,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Distort1Speed","type":0,"value":"0.01",},

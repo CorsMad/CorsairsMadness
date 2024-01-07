@@ -18,9 +18,9 @@ function scr_txt_vulcano_chief2(){
     switch(global.language){
         case 0:
             #region English
-            text1 = "[fnt_pixel]I don't know how I got here, but I feel great!";
-            text2 = "[fnt_pixel]I talked to the local inventor and we decided to improve my cannons [shake]ha ha ha[/shake].";
-            text3 = "[fnt_pixel]Cannons, blunderbusses, pistols! My favorites!";
+            text1 = "[fnt_pixel]The smog is gone...that was your effort, right? Good job!";
+            text2 = "[fnt_pixel]Somehow I was sure you could do it. Now our people can go back to mining the crystals.";
+            text3 = "[fnt_pixel]Here's a little gift for your help.";
             #endregion
             break;
     }

@@ -17,6 +17,8 @@ if instance_exists(obj_Player)
         obj_Player.hspd = 0;
         obj_Player.hspd = 0;
         obj_Player.y = other.y;
+		
+		
         //obj_Player.x = other.x+8;
         instance_destroy();
     }

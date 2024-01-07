@@ -147,6 +147,7 @@ if !instance_exists(obj_confirm_1) && !instance_exists(obj_confirm_2) && delay <
                     global.fTargetX = 48;
                     global.fTargetY = 112;
                     global.fTargetRoom = F1_r1;
+					global.Cutscene_f1_r33 = 1;
                     room_goto(JP1FirstLoading);
                 }
                 break;

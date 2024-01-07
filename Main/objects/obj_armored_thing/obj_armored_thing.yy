@@ -36,8 +36,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_armored_thing_mask",
-    "path": "sprites/spr_armored_thing_mask/spr_armored_thing_mask.yy",
+    "name": "spr_armored_thing_walk",
+    "path": "sprites/spr_armored_thing_walk/spr_armored_thing_walk.yy",
   },
   "spriteMaskId": {
     "name": "spr_armored_thing_mask",

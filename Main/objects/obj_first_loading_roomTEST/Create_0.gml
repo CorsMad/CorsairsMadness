@@ -1,14 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 randomise();
-global.TargetX      = 64;
-global.TargetY      = 240;
-global.TargetRoom   = TESTROOM;
+
+global.TargetX      = 144;
+global.TargetY      = 176;
+global.TargetRoom   = J1_r3;
 
 
-global.fTargetX     = 112;
-global.fTargetY     = 160;
-global.fTargetRoom  = PL1_r15;
+global.fTargetX     = 128;
+global.fTargetY     = 384;
+global.fTargetRoom  = F1_r28;
 
 
 ////////////////////////////////////////
@@ -83,11 +84,11 @@ global.language = 0;
      
     //0
     
-    global.saved_jungle  = 0;  //0
-    global.saved_desert  = 0;  //0
-    global.saved_snow    = 0;  //0
-    global.saved_shadow  = 0;  //0
-    global.saved_vulcano = 0;  //0
+    global.saved_jungle  = 1;  //0
+    global.saved_desert  = 1;  //0
+    global.saved_snow    = 1;  //0
+    global.saved_shadow  = 1;  //0
+    global.saved_vulcano = 1;  //0
     
     
     
@@ -120,13 +121,13 @@ global.key_yellow1 = 1;     //0
 global.key_yellow2 = 1;     //0
                             //0
 global.key_blue1 = 1;       //0
-global.key_blue2 = 0;       //0
+global.key_blue2 = 1;       //0
                             //0
 global.key_purple1 = 1;     //0
 global.key_purple2 = 1;     //0
                             //0
 global.key_red1 = 0;        //0
-global.key_red2 = 0;        //0
+global.key_red2 = 1;        //0
 #endregion
 
 #region ТЕСТ Магазин
@@ -152,21 +153,21 @@ global.shop_parrotcage_can_upgrade2 = 0;
 #region Покупки человека
 
 //якорь
-global.purch_anch1 = 0;			//0
-global.purch_anch2 = 0;			//0
-global.purch_anch3 = 0;			//0
+global.purch_anch1 = 1;			//0
+global.purch_anch2 = 1;			//0
+global.purch_anch3 = 1;			//0
 // Бомба						
-global.purch_bomb1 = 0;			//0
-global.purch_bomb2 = 0;			//0
-global.purch_bomb3 = 0;			//0
+global.purch_bomb1 = 1;			//0
+global.purch_bomb2 = 1;			//0
+global.purch_bomb3 = 1;			//0
 // Sparkle						
-global.purch_sparkle1 = 0;		//0
-global.purch_sparkle2 = 0;		//0
-global.purch_sparkle3 = 0;		//0
+global.purch_sparkle1 = 1;		//0
+global.purch_sparkle2 = 1;		//0
+global.purch_sparkle3 = 1;		//0
 // Eparrot						
-global.purch_eparrot1 = 0;		//0
-global.purch_eparrot2 = 0;		//0
-global.purch_eparrot3 = 0;		//0
+global.purch_eparrot1 = 1;		//0
+global.purch_eparrot2 = 1;		//0
+global.purch_eparrot3 = 1;		//0
 
 #endregion
 
@@ -210,7 +211,7 @@ global.superattack2 = 0;// Суператаки  max 1  default - 0
 global.superattack3 = 1;// Суператаки  max 1  default - 0
 global.PlayerTransition = 0;
 global.mana = 3//3;
-global.mana_max = 7;
+global.mana_max = 5000; //7
 global.gold = 20000 //global.money_saved;          // 0
 global.gold_prelevel = 0;
 global.darkessence = 10000//global.darkessence_saved;
@@ -496,8 +497,8 @@ global.secrets_lava1_s1 = 0;
 global.secrets_lava1_s2 = 0;
 
 global.secrets_l2_r3 = 0;
-global.secrets_l2b_r5 = 0;
-global.secrets_l2p_s = 0;
+global.secrets_l2b_r5 = 1;
+global.secrets_l2p_s = 1;
 
 #endregion
 
@@ -528,7 +529,7 @@ global.secrets_g1_r12 = 0;
 global.secrets_g1_s2 = 0;
 
 global.secrets_g2_r6 = 0;
-global.secrets_g2b_s = 0;
+global.secrets_g2b_s = 1;
 global.secrets_g2p_r6 = 0;
 #endregion
 

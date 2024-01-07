@@ -188,6 +188,7 @@ if instance_exists(obj_Player)
 		{
 			draw_sprite_ext(spr_hud_boss_hp,1,(camera_get_view_x(view_camera[0])+460)-i*9,camera_get_view_y(view_camera[0])+16,1,1,0, c_white,1);
 		}
+		draw_text_colour(camera_get_view_x(view_camera[0])+403,camera_get_view_y(view_camera[0])+4,"boss hp",c_white,c_white,c_white,c_white,1);
 	}
 	if instance_exists(obj_boss_se2_phase2)
 	{
@@ -195,12 +196,22 @@ if instance_exists(obj_Player)
 		{
 			draw_sprite_ext(spr_hud_boss_hp,1,(camera_get_view_x(view_camera[0])+460)-i*9,camera_get_view_y(view_camera[0])+16,1,1,0, c_white,1);
 		}
+		draw_text_colour(camera_get_view_x(view_camera[0])+403,camera_get_view_y(view_camera[0])+4,"boss hp",c_white,c_white,c_white,c_white,1);
 	}
 
-
+	
 
 	draw_set_font(fnt_pixel);
-    
+	
+	if	instance_exists(obj_boss_se_phase2_1) || instance_exists(obj_boss_se_phase2_2) ||
+		instance_exists(obj_boss_se_phase3_1) || instance_exists(obj_boss_se_phase3_2) ||
+		instance_exists(obj_boss_se_phase3_3) || instance_exists(obj_boss_se_phase3_4) {
+			draw_text_colour(camera_get_view_x(view_camera[0])+290,camera_get_view_y(view_camera[0])+8,"boss hp",c_white,c_white,c_white,c_white,1);
+		}	
+		
+	
+	
+    /*
     if instance_exists(obj_endurance_snow){
         if obj_endurance_snow.state > 2 && obj_endurance_snow.state < 3 {
             draw_text_colour(camera_get_view_x(view_camera[0])+280,camera_get_view_y(view_camera[0])+8,"boss hp",c_white,c_white,c_white,c_white,1);   
@@ -208,7 +219,7 @@ if instance_exists(obj_Player)
             draw_text_colour(camera_get_view_x(view_camera[0])+403,camera_get_view_y(view_camera[0])+4,"boss hp",c_white,c_white,c_white,c_white,1);
         }
     }
-     
+     */
 	
 #endregion
 

@@ -7,6 +7,7 @@ if t = 100
     var i = instance_create_depth(-16,-16,0,obj_Player);
     i.state = 1;
     i.SpecAbilMask = 5;
+	i.isDead = 2.1;
     instance_create_depth(-16,-16,0,obj_room_transition_to_loading); 
     
     #region Загрузка ворот

@@ -143,27 +143,83 @@ switch(submenu)
         {
             case 0:
                 draw_set_halign(fa_center);
-                draw_text(272,58,nameh_anchor);   
-                draw_set_halign(fa_left);
-                draw_text(406,58,"lvl " + string(dindex+1));   
+                draw_text(248,58,nameh_anchor);   
+				draw_set_halign(fa_left);
+                draw_text(358,58,"lvl " + string(dindex+1));   
+				switch(dindex){
+					case 0: 
+						draw_sprite(spr_collectable_mana1,0,425,56);
+					break;	
+					case 1: 
+						draw_sprite(spr_collectable_mana1,0,425-8,56) ;
+						draw_sprite(spr_collectable_mana1,0,425+8,56) ;
+					break;	
+					case 2: 
+						draw_sprite(spr_collectable_mana1,0,410,56) ;
+						draw_sprite(spr_collectable_mana1,0,425,56) ;
+						draw_sprite(spr_collectable_mana1,0,440,56) ;
+					break;	
+				}  
                 break;
             case 1:
                 draw_set_halign(fa_center);
-                draw_text(272,58,nameh_grenade);   
-                draw_set_halign(fa_left);
-                draw_text(406,58,"lvl " + string(dindex+1));   
+                draw_text(248,58,nameh_grenade);  
+				draw_set_halign(fa_left);
+                draw_text(358,58,"lvl " + string(dindex+1)); 
+				switch(dindex){
+					case 0: 
+						draw_sprite(spr_collectable_mana1,0,425,56);
+					break;	
+					case 1: 
+						draw_sprite(spr_collectable_mana1,0,425-8,56) ;
+						draw_sprite(spr_collectable_mana1,0,425+8,56) ;
+					break;	
+					case 2: 
+						draw_sprite(spr_collectable_mana1,0,410,56) ;
+						draw_sprite(spr_collectable_mana1,0,425,56) ;
+						draw_sprite(spr_collectable_mana1,0,440,56) ;
+					break;	
+				}  
                 break;
             case 2:
                 draw_set_halign(fa_center);
-                draw_text(272,58,nameh_shockball);   
-                draw_set_halign(fa_left);
-                draw_text(406,58,"lvl " + string(dindex+1));   
+                draw_text(248,58,nameh_shockball); 
+				draw_set_halign(fa_left);
+                draw_text(358,58,"lvl " + string(dindex+1));  
+				switch(dindex){
+					case 0: 
+						draw_sprite(spr_collectable_mana1,0,425,56);
+					break;	
+					case 1: 
+						draw_sprite(spr_collectable_mana1,0,425-8,56) ;
+						draw_sprite(spr_collectable_mana1,0,425+8,56) ;
+					break;	
+					case 2: 
+						draw_sprite(spr_collectable_mana1,0,410,56) ;
+						draw_sprite(spr_collectable_mana1,0,425,56) ;
+						draw_sprite(spr_collectable_mana1,0,440,56) ;
+					break;	
+				}  
                 break;
             case 3:
                 draw_set_halign(fa_center);
-                draw_text(272,58,nameh_parrot);   
-                draw_set_halign(fa_left);
-                draw_text(406,58,"lvl " + string(dindex+1));   
+                draw_text(248,58,nameh_parrot); 
+				draw_set_halign(fa_left);
+                draw_text(358,58,"lvl " + string(dindex+1));   
+				switch(dindex){
+					case 0: 
+						draw_sprite(spr_collectable_mana1,0,425,56);
+					break;	
+					case 1: 
+						draw_sprite(spr_collectable_mana1,0,425-8,56) ;
+						draw_sprite(spr_collectable_mana1,0,425+8,56) ;
+					break;	
+					case 2: 
+						draw_sprite(spr_collectable_mana1,0,410,56) ;
+						draw_sprite(spr_collectable_mana1,0,425,56) ;
+						draw_sprite(spr_collectable_mana1,0,440,56) ;
+					break;	
+				}  
                 break;
 
             

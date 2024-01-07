@@ -567,7 +567,7 @@ if place_meeting(x,y,obj_boss_jp_light) && light_cd = 0
 
 if state = 10
 {
-    
+    vspd+=0.2;
     #region anim
     t_anim++;
     if t_anim > 10 && t_anim mod 5 = 0
@@ -610,7 +610,7 @@ if state = 10.1
             break;
     }
     #endregion
-    
+    vspd+=0.2;
     t++;  
     if t = 50
     {

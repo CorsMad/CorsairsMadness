@@ -27,6 +27,6 @@ switch(a)
 
 if place_meeting(x,y,obj_trapfire_arrow_block) || place_meeting(x,y,obj_destructable_parent)
 {
-	instance_create_depth(x,y,-1,obj_sfx1);
+	instance_create_depth(x,y,depth,obj_sfx1);
 	instance_destroy();
 }

@@ -1,9 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 instance_create_depth(0,0,0,obj_music_controller);
+instance_create_depth(0,0,0,obj_steam_ach);
 t = 0;
 
-if file_exists("CMsettings.save")
+if file_exists("CMsettingsN1.save")
 {
     scr_load_settings();
     switch(global.resolution)

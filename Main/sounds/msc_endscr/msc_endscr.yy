@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "msc_endscr.wav",
   "type": 0,
-  "volume": 0.66,
+  "volume": 0.77,
 }

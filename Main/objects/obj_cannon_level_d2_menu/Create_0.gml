@@ -2,7 +2,8 @@
 // You can write your code in this editor
 fnc_lng_cannon_choose()
 state = 0;
-
+alpha = 1;
+t_alpha = 0;
 #region text
 
 text_l = "More Enemies";

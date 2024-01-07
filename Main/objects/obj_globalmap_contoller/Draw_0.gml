@@ -16,8 +16,9 @@
                     draw_sprite(spr_text_icons,13,81+2,48);break;
                     break;
                 case 1:
-					draw_sprite(spr_text_icons,18,81+2,48)
-					draw_sprite(spr_text_icons,global.saved_jungle+24,81+2,48) 
+					draw_sprite(spr_text_icons,18,81+2,48);
+					draw_sprite(spr_text_icons,global.saved_jungle+24,81+2,48) ;
+					draw_sprite(spr_map_global_knife,0,163,120);
                     break;
             }     
 			draw_text(16+81,32,i0);
@@ -29,8 +30,9 @@
                     draw_sprite(spr_text_icons,14,81+2,48);break;
                     break;
                 case 1:
-					draw_sprite(spr_text_icons,19,81+2,48)
-					draw_sprite(spr_text_icons,global.saved_desert+24,81+2,48) 
+					draw_sprite(spr_text_icons,19,81+2,48);
+					draw_sprite(spr_text_icons,global.saved_desert+24,81+2,48) ;
+					draw_sprite(spr_map_global_knife,0,325,177);
                     break;
             }  
             draw_text(16+81,32,i1);
@@ -42,8 +44,9 @@
                     draw_sprite(spr_text_icons,15,81+2,48);break;
                     break;
                 case 1:
-					draw_sprite(spr_text_icons,20,81+2,48)
-					draw_sprite(spr_text_icons,global.saved_snow+24,81+2,48) 
+					draw_sprite(spr_text_icons,20,81+2,48);
+					draw_sprite(spr_text_icons,global.saved_snow+24,81+2,48) ;
+					draw_sprite(spr_map_global_knife,0,389,123);
                     break;
             } 
             draw_text(16+81,32,i2);
@@ -57,6 +60,7 @@
                 case 1:
 					draw_sprite(spr_text_icons,21,81+2,48)
 					draw_sprite(spr_text_icons,global.saved_shadow+24,81+2,48) 
+					draw_sprite(spr_map_global_knife,0,345,36)
                     break;
             } 
             draw_text(16+81,32,i3);
@@ -70,6 +74,7 @@
                 case 1:
 					draw_sprite(spr_text_icons,22,81+2,48)
 					draw_sprite(spr_text_icons,global.saved_vulcano+24,81+2,48) 
+					draw_sprite(spr_map_global_knife,0,196,54)
                     break;
             } 
             draw_text(16+81,32,i4);

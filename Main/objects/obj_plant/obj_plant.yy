@@ -36,8 +36,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_plant_mask",
-    "path": "sprites/spr_plant_mask/spr_plant_mask.yy",
+    "name": "spr_plant_idle",
+    "path": "sprites/spr_plant_idle/spr_plant_idle.yy",
   },
   "spriteMaskId": {
     "name": "spr_plant_mask",
