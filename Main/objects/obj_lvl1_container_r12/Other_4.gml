@@ -12,4 +12,3 @@ instance_create_depth(608,208,0,obj_platform_3_v_e);
 instance_create_depth(432,176,0,obj_bird_vertical);
 instance_create_depth(608,160,0,obj_bird_horizontal);
 
-instance_create_depth(0,0,0,obj_dc_onl_l1r12);

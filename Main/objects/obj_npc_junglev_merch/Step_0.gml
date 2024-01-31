@@ -6,7 +6,8 @@
 
 if instance_exists(obj_Player)
 {
-    if place_meeting(x,y,obj_Player) && talk_cr_t = 0 && obj_Player.isDead !=2 && obj_Player.key_up_press && obj_Player.isGrounded = 1 && obj_Player.isAttacking = 0 && obj_Player.isDashing = 0 && obj_Player.isAttackingdown = 0 && obj_Player.isAirattacking = 0 && obj_Player.isUsingitem = 0
+	if place_meeting(x,y,obj_Player) && talk_cr_t = 0 && obj_Player.canTalk = 1
+    //if place_meeting(x,y,obj_Player) && talk_cr_t = 0 && obj_Player.isDead !=2 && obj_Player.key_up_press && obj_Player.isGrounded = 1 && obj_Player.isAttacking = 0 && obj_Player.isDashing = 0 && obj_Player.isAttackingdown = 0 && obj_Player.isAirattacking = 0 && obj_Player.isUsingitem = 0
     {
         talk = 1;
         obj_Player.isDead = 2;
@@ -21,10 +22,14 @@ if instance_exists(obj_Player)
     }
 }
 
-if talk_cr_t!= 0 
+if talk_cr_t = 1 {
+	fnc_player_mov_left(self);	
+}
+
+if talk_cr_t > 1 
 {
     talk_cr_t++;
-    if talk_cr_t = 10
+    if talk_cr_t = 20
     {
         talk_cr_t = 0;
         

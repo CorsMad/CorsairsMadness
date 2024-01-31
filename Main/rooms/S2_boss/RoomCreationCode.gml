@@ -7,12 +7,12 @@ if global.key_blue2 = 0 {
    fnc_msc_stop_play_slow();
 } else {
    for (var i = 0; i < 28; i+=1) {
-    var b1 = instance_create_depth(24+16*i,224+8,0,obj_block_boss_s2_floor_s1);
+    var b1 = instance_create_depth(24+16*i,224+8,1,obj_block_boss_s2_floor_s1);
     b1.sprite_index = spr_destructable_tile_snow;
     b1.image_index = 1;
     }
     for (var k = 0; k < 28; k+=1) {
-        var b2 = instance_create_depth(24+16*k,224+8+16,0,obj_block_boss_s2_floor_s1);
+        var b2 = instance_create_depth(24+16*k,224+8+16,1,obj_block_boss_s2_floor_s1);
         b2.sprite_index = spr_destructable_tile_snow;
         b2.image_index = 4;
     

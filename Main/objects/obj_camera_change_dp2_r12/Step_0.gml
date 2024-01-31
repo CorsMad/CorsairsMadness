@@ -19,7 +19,7 @@ if state = 0
 	        obj_camera_vert_dp2_r12.state = 1;   
 			obj_camera_vert_dp2_r12.conf = 0;
 	     }
-		var c2 = instance_create_depth(32,496,depth,obj_camera_change_dp2_r12)
+		var c2 = instance_create_depth(32,480,depth,obj_camera_change_dp2_r12)
 		c2.image_xscale = 28;
 		c2.image_yscale = 7;
 		c2.state = 1;
@@ -37,8 +37,8 @@ if state = 1
 			obj_camera_vert_dp2_r12.conf = 0;
 	     }
 		var c1 = instance_create_depth(32,256,depth,obj_camera_change_dp2_r12)
-		c1.image_yscale = 28;
-		c1.image_xscale = 7;
+		c1.image_yscale = 7;
+		c1.image_xscale = 28;
 		c1.state = 0;
 		instance_destroy();	
 	}		

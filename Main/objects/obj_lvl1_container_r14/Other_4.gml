@@ -21,4 +21,3 @@ o4.t = 80;
 instance_create_depth(352,240,100,obj_trapspikes);
 instance_create_depth(384,240,100,obj_trapspikes);
 
-instance_create_depth(0,0,0,obj_dc_onl_l1r13);

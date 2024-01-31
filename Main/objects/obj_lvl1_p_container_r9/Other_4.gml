@@ -4,4 +4,3 @@ instance_create_depth(x,y,0,obj_room_transition_black_screen);
 
 instance_create_depth(288,112,0,obj_pad_red);
 
-instance_create_depth(0,0,0,obj_dc_onl_l1pr8);

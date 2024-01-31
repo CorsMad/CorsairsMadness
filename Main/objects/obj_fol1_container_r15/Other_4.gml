@@ -16,6 +16,6 @@ k.x_cr = 608;
 k.y_cr = 80;
 k.obj_cr = obj_crawling_molded_l;
 
-instance_create_depth(0,0,0,obj_dc_onl_f1r14);
+
 
 

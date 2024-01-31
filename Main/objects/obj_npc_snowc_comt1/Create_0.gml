@@ -15,3 +15,5 @@ pointer = instance_create_depth(x,y-72,depth-1,obj_icon_talk_npc);
 talked = 0;
 
 t_anim = 0;
+
+player_pos = 0;

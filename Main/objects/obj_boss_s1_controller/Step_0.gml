@@ -39,11 +39,11 @@ if state = 2.2
     if t = 1
     {
         fnc_snd_play_over(snd_boss_expl);
-        instance_create_depth(240+32,136+32,depth-1,obj_sfx_explosion_bomb);
-        instance_create_depth(240-32,136+32,depth-1,obj_sfx_explosion_bomb);
-        instance_create_depth(240+32,136-32,depth-1,obj_sfx_explosion_bomb);
-        instance_create_depth(240-32,136-32,depth-1,obj_sfx_explosion_bomb);
-        instance_create_depth(240,136,depth-1,obj_sfx_explosion_bomb);   
+        instance_create_depth(240+32,136+32,1,obj_sfx_explosion_bomb);
+        instance_create_depth(240-32,136+32,1,obj_sfx_explosion_bomb);
+        instance_create_depth(240+32,136-32,1,obj_sfx_explosion_bomb);
+        instance_create_depth(240-32,136-32,1,obj_sfx_explosion_bomb);
+        instance_create_depth(240,136,0,obj_sfx_explosion_bomb);   
     }
     if t = 10
     {
@@ -51,10 +51,10 @@ if state = 2.2
         t = 0;
         instance_destroy(obj_boss_s1_phase2_1_death);
         instance_destroy(obj_boss_s1_phase2_2_death);
-        instance_create_depth(224,128,0,obj_boss_s1_phase3_1);
-        instance_create_depth(256,128,0,obj_boss_s1_phase3_2);
-        instance_create_depth(224,160,0,obj_boss_s1_phase3_3);
-        instance_create_depth(256,160,0,obj_boss_s1_phase3_4);
+        instance_create_depth(224,128,1,obj_boss_s1_phase3_1);
+        instance_create_depth(256,128,1,obj_boss_s1_phase3_2);
+        instance_create_depth(224,160,1,obj_boss_s1_phase3_3);
+        instance_create_depth(256,160,1,obj_boss_s1_phase3_4);
         state = 3;
         
     }

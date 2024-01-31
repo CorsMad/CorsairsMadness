@@ -14,24 +14,24 @@ if instance_exists(obj_Player)
 			
 	} else 
 	{
-		var i1  = instance_create_depth(328,56,0,obj_destrutable_chain_block_expl)	;
-		var i2  = instance_create_depth(328,72,0,obj_destrutable_chain_block_expl)	;
+		var i1  = instance_create_depth(328,56,1,obj_destrutable_chain_block_expl)	;
+		var i2  = instance_create_depth(328,72,1,obj_destrutable_chain_block_expl)	;
 			    
-		var i3  = instance_create_depth(344,40,0,obj_destrutable_chain_block_destr)	;
-		var i4  = instance_create_depth(344,56,0,obj_destrutable_chain_block_destr)	;
-		var i5  = instance_create_depth(344,72,0,obj_destrutable_chain_block_destr)	;
+		var i3  = instance_create_depth(344,40,1,obj_destrutable_chain_block_destr)	;
+		var i4  = instance_create_depth(344,56,1,obj_destrutable_chain_block_destr)	;
+		var i5  = instance_create_depth(344,72,1,obj_destrutable_chain_block_destr)	;
 			    
-		var i6  = instance_create_depth(360,40,0,obj_destrutable_chain_block_destr)	;
-		var i7  = instance_create_depth(360,56,0,obj_destrutable_chain_block_destr)	;
-		var i8  = instance_create_depth(360,72,0,obj_destrutable_chain_block_destr)	;
+		var i6  = instance_create_depth(360,40,1,obj_destrutable_chain_block_destr)	;
+		var i7  = instance_create_depth(360,56,1,obj_destrutable_chain_block_destr)	;
+		var i8  = instance_create_depth(360,72,1,obj_destrutable_chain_block_destr)	;
 		
-		var i9 = instance_create_depth(376,40,0,obj_destrutable_chain_block_destr)	;
-		var i10 = instance_create_depth(376,56,0,obj_destrutable_chain_block_destr)	;
-		var i11 = instance_create_depth(376,72,0,obj_destrutable_chain_block_destr)	;
+		var i9 = instance_create_depth(376,40,1,obj_destrutable_chain_block_destr)	;
+		var i10 = instance_create_depth(376,56,1,obj_destrutable_chain_block_destr)	;
+		var i11 = instance_create_depth(376,72,1,obj_destrutable_chain_block_destr)	;
 		
-		var i12 = instance_create_depth(392,40,0,obj_destrutable_chain_block_destr)	;
-		var i13 = instance_create_depth(392,56,0,obj_destrutable_chain_block_destr)	;
-		var i14 = instance_create_depth(392,72,0,obj_destrutable_chain_block_destr)	;
+		var i12 = instance_create_depth(392,40,1,obj_destrutable_chain_block_destr)	;
+		var i13 = instance_create_depth(392,56,1,obj_destrutable_chain_block_destr)	;
+		var i14 = instance_create_depth(392,72,1,obj_destrutable_chain_block_destr)	;
 		
 		i1.sprite_index = spr_destructable_tile_snow;
 		i1.image_index = 6;

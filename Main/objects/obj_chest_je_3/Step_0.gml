@@ -12,7 +12,7 @@ if isOn = 0 && (place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_item_boom
     fnc_snd_play_over(snd_chest_destruct);
 	isOn = 1;
 	image_speed = 1;
-
+	if instance_exists(obj_pause_controller) instance_destroy(obj_pause_controller)
 }
 if (image_index > image_number - 1) && isOn = 1
 {
@@ -55,6 +55,7 @@ if a >=56 && !instance_exists(obj_money1)
 && !instance_exists(obj_money10)
 && !instance_exists(obj_money20)
 {
+	
     fnc_snd_play_onetime(msc_level_end);
     instance_create_depth(0,0,0,obj_room_transition_black_screen_j1_stats);
 }

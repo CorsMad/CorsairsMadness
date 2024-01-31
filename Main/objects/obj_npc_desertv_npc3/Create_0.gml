@@ -9,7 +9,7 @@ talk = 0;
 
 talk_cr_t = 0;
 
-pointer = instance_create_depth(x,y-64,depth-1,obj_icon_talk_npc_walking);
+pointer = instance_create_depth(x,y-70,depth-1,obj_icon_talk_npc_walking);
 pointer.own = id;
 
 image_speed = 1;

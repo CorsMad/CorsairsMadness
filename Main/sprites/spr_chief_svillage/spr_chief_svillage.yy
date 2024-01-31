@@ -26,7 +26,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"aeb5f6e0-b6c1-47ac-895c-549d4cde11db","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 7,
+  "origin": 9,
   "parent": {
     "name": "Village",
     "path": "folders/Sprites/Characters/Chiefs/Village.yy",
@@ -65,7 +65,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 36,
+    "xorigin": 10,
     "yorigin": 84,
   },
   "swatchColours": null,

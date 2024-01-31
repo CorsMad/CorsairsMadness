@@ -28,11 +28,11 @@ if global.saved_desert = 1
 
 if global.dia_desertChief = 0 
 {
-    instance_create_depth(152.5,160,-200,obj_npc_village_pointer);
+    instance_create_depth(152.5,152,-200,obj_npc_village_pointer);
 }
 
 if instance_exists(obj_npc_desertv_comt) && global.dia_desertComt > 0 
 {
-    instance_create_depth(528,192,-200,obj_npc_village_pointer)   ;
+    instance_create_depth(528,176,-200,obj_npc_village_pointer)   ;
 }
 #endregion

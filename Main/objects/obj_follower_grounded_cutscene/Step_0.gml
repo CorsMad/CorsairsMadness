@@ -193,6 +193,7 @@ if hits >= 5 && state != 7
     }
     if instance_exists(obj_Player)
     {
+		obj_Player.isDead = 2; 
         obj_Player.attackbuffer = 0;
         obj_Player.airattackbuffer = 0;
         obj_Player.dashingbuffer = 0;
@@ -211,6 +212,12 @@ if hits >= 5 && state != 7
         obj_Player.isDashing = 0;
         obj_Player.isHooking = 0;
         obj_Player.isRecoil = 0;
+		obj_Player.attackbuffer = 0;
+        obj_Player.airattackbuffer = 0;
+        obj_Player.dashingbuffer = 0;
+        obj_Player.hookingbuffer = 0;
+		obj_Player.comboMeter = 0;
+		
     }
     
 }

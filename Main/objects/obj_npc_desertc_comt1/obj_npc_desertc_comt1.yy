@@ -32,6 +32,9 @@
     "name": "spr_ct_desert_idle",
     "path": "sprites/spr_ct_desert_idle/spr_ct_desert_idle.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_ct_desert_mask",
+    "path": "sprites/spr_ct_desert_mask/spr_ct_desert_mask.yy",
+  },
   "visible": true,
 }

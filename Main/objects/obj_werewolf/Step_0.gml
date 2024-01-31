@@ -70,11 +70,18 @@ if state = 1
     }
 }
 
-if state = 2
+if state = 2 // take dmg
 {
-    sprite_index = spr_werewolf_mad;
-    image_speed = 0;
-    image_index = 0;
+    sprite_index = spr_werewolf_takedmg;
+	if !place_meeting(x,y+1,obj_block){
+		image_speed = 0;
+		image_index = 0; 
+	} else {
+		image_speed = 0;
+		if t mod 5 = 0 {
+			if image_index = 1 image_index = 2 else image_index = 1;	
+		}
+	}
 }
 
 if state = 3 
@@ -162,7 +169,7 @@ if state = 2
         t++;
         hspd = 0;
         vspd = 0;
-        if t = 20
+        if t = 50
         {
             t = 0;
             state = 1;   
@@ -237,7 +244,7 @@ if state = 0 || state = 1 || (state = 2 && t > 5) || state = 3
 
 if enemy_hp <=0 
 {
-    var d = instance_create_depth(x,y,depth,obj_werewolf_death);
+    var d = instance_create_depth(x,y-8,depth,obj_werewolf_death);
     d.image_xscale = image_xscale;
     instance_destroy();   
 }

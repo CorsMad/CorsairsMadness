@@ -21,11 +21,13 @@ if key_jump || key_attack
                 var cutsc = instance_create_depth(0,0,0,obj_coin_cutscene);
                 cutsc.merch = 1;
 				cutsc.target = obj_desert_coin_exchanger;
+				obj_desert_coin_exchanger.talk = 0;
                 instance_destroy();
             }       
             break;
         case 1:
             instance_destroy();
+			obj_desert_coin_exchanger.talk = 0;
             obj_npc_desertv_merch.talk = 0;
             obj_Player.isDead = 2.1;
             break;

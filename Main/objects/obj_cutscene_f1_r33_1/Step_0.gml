@@ -22,7 +22,7 @@ if state = 1
 
 if state = 2
 {
-    obj_Player.isDead = 2; 
+    
     t++
     if t = 60 
     {

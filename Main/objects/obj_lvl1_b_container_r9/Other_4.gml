@@ -9,4 +9,3 @@ o1.obj_cr = obj_skeleton_thrower;
 o1.x_cr = 72;
 o1.y_cr = 160;
 
-instance_create_depth(0,0,0,obj_dc_onl_l1br9);

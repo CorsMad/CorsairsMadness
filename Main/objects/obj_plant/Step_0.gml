@@ -64,12 +64,12 @@ if state = 3
 	{
 		if image_xscale = 1
 		{
-			instance_create_depth(x-10,y-16,1,obj_plant_projectile);
+			instance_create_depth(x-10,y-16,depth,obj_plant_projectile);
 		}
 		if image_xscale = -1 
 		{
-			var a = instance_create_depth(x+10,y-16,1,obj_plant_projectile);
-			a.spd = 3
+			var a = instance_create_depth(x+10,y-16,depth,obj_plant_projectile);
+			a.spd = 2
 		}
 	}
 	

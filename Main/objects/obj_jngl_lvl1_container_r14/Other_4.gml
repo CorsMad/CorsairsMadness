@@ -9,10 +9,10 @@ if global.chest_j1_r14 = 1
 
 if global.maze_trigger1_j1_r13 = 0 
 {
-    var sw1 = instance_create_depth(48,192,0,obj_j1_r14_switch);   
+    var sw1 = instance_create_depth(46,192,0,obj_j1_r14_switch);   
     sw1.isOn = 0;
 } else 
 {
-    var sw1 = instance_create_depth(48,192,0,obj_j1_r14_switch);   
+    var sw1 = instance_create_depth(46,192,0,obj_j1_r14_switch);   
     sw1.isOn = 1;
 }

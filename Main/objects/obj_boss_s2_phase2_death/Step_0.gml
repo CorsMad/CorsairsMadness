@@ -31,6 +31,8 @@ if state = 1
     
     if t = 100
     {
+		var p = instance_create_depth(0,0,0,obj_pause_controller);
+		p.dest = 2;
         fnc_msc_play(msc_s1);
         obj_camera_boss_s2.state = 3;
         obj_snow_boss_controller.state = 3;

@@ -21,7 +21,7 @@ switch(state){
             instance_activate_object(obj_music_controller);
             var p = instance_create_depth(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),-16000,obj_pause_menu_ingame);
             p.dest = dest;
-			p.darkessence_start = obj_Player.darkessence_start;
+			
 			
         }
         #endregion

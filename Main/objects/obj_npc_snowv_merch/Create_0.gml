@@ -14,4 +14,4 @@ image_speed = 0;
 
 t_anim = 0;
 
-pointer = instance_create_depth(x,y-64,depth-1,obj_icon_talk_npc);
+pointer = instance_create_depth(x,y-70,depth-1,obj_icon_talk_npc);

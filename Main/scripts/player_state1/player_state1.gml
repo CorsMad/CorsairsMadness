@@ -963,6 +963,7 @@ if superdash_delay=0 && isRecoil = 0 && key_item_pressed && SpecAbilMask = 3 && 
 if superdash_timer>=60 && key_attack
 {
     superdash_timer = 0;
+	superdash_delay_collision_timer = 10;
     isDead = 12;
     fnc_snd_play_onetime(snd_superdash_fly);
     instance_create_depth(x,y,depth,obj_hitbox_mask_superdash);
@@ -1589,6 +1590,16 @@ if superattack >= superattack_max{
 
 #endregion
 
+#region Разговор
+	if isHooking = 0 &&
+	isDead !=2 && key_up_press && 
+	isGrounded = 1 && isAttacking = 0 && 
+	isDashing = 0 && isAttackingdown = 0 && 
+	isAirattacking = 0 && isUsingitem = 0 && 
+	!instance_exists(obj_masked_clone){
+		canTalk = 1	
+	} else canTalk = 0;
+	#endregion
 }
 #endregion
 
@@ -1761,7 +1772,7 @@ if isDead = 1
             isDead = 0;
             superdash_power = 0;
         }
-        if place_meeting(x+1,y,obj_block) || place_meeting(x-1,y,obj_block) 
+        if (place_meeting(x+1,y,obj_block) || place_meeting(x-1,y,obj_block)) && superdash_delay_collision_timer = 0
         {
             isDead = 0;
             superdash_power = 0;
@@ -2054,6 +2065,11 @@ if isDead = 1
     }
     #endregion
     
-    
+    #region TIMER
+	
+	if superdash_delay_collision_timer!=0 superdash_delay_collision_timer-=1;
+	#endregion
+	
+	
     //#endregion
 }

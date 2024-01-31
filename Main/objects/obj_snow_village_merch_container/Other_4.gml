@@ -20,6 +20,7 @@ switch(global.completed_PS2)
                 i.TargetRoom = Village_snow;
                 i.TargetX = 520;
                 i.TargetY = 240;   
+				i.pointer = instance_create_depth(x,y-58,1,obj_icon_pointerup);
         }
         break;
 }

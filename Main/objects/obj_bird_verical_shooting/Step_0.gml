@@ -23,7 +23,7 @@ if state = 1
 	}
     if a = 240
     {
-        instance_create_depth(x,y+22,depth-1,obj_bird_vertical_coconut);		
+        instance_create_depth(x,y+22,depth,obj_bird_vertical_coconut);		
     }   
     
     if a = 279

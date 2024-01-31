@@ -122,11 +122,8 @@ if !instance_exists(obj_confirm_1) && !instance_exists(obj_confirm_2) && delay <
         switch(globalMapCounter)
         {
             case 0:
-                fnc_msc_stop_play();       
-                global.TargetX = 32;
-                global.TargetY = 240;
-                global.TargetRoom = Village_jungle;
-                room_goto(VillageJunlgeFirstLoading);
+                var lv = instance_create_depth(240,135,depth-1,obj_confirm_1);;
+                lv.dest = 0.01;
                 break;
             case 1: // колизей
                 var le = instance_create_depth(240,135,depth-1,obj_confirm_1);;
@@ -141,25 +138,12 @@ if !instance_exists(obj_confirm_1) && !instance_exists(obj_confirm_2) && delay <
                 l2.dest = 0.1;                
                 break;
             case 4: // храм1
-                if global.completed_JF1 = 0
-                {
-                    fnc_msc_stop_play();
-                    global.fTargetX = 48;
-                    global.fTargetY = 112;
-                    global.fTargetRoom = F1_r1;
-					global.Cutscene_f1_r33 = 1;
-                    room_goto(JP1FirstLoading);
-                }
+				var l3 = instance_create_depth(240,135,depth-1,obj_confirm_1);
+                l3.dest = 0.11; 	
                 break;
             case 5: //  храм2
-                if global.completed_JF2 = 0
-                {
-                    fnc_msc_stop_play();
-                    global.fTargetX = 48;
-                    global.fTargetY = 0;
-                    global.fTargetRoom = JP2_r1;
-                    room_goto(JP2FirstLoading);
-                }
+				var l4 = instance_create_depth(240,135,depth-1,obj_confirm_1);
+                l4.dest = 0.12; 
                 break;
         }
     }

@@ -1,15 +1,17 @@
 /// @description Insert description here
 // You can write your code in this editor
 randomise();
-
-global.TargetX      = 144;
-global.TargetY      = 176;
-global.TargetRoom   = J1_r3;
+instance_create_depth(0,0,0,DEBUG);
 
 
-global.fTargetX     = 128;
-global.fTargetY     = 384;
-global.fTargetRoom  = F1_r28;
+global.TargetX      = 64;
+global.TargetY      = 128;
+global.TargetRoom   = EnduranceSnow;
+
+
+global.fTargetX     = 240;
+global.fTargetY     = 240;
+global.fTargetRoom  = TESTROOM;
 
 
 ////////////////////////////////////////
@@ -35,7 +37,7 @@ global.language = 0;
 
 #region Завершеннсоть уровней
     
-    global.completed_JF1 = 1;   //0
+    global.completed_JF1 = 0;   //0
     global.completed_JF2 = 0;   //0
                                 //0
     global.completed_PD1 = 1;   //0
@@ -62,7 +64,7 @@ global.language = 0;
 #region ТЕСТ
     
     //0
-    global.dia_jungleChief = 0; 
+    global.dia_jungleChief = 1; 
     global.dia_desertChief = 0;
     global.dia_snowChief = 0;
     global.dia_shadowChief = 0;
@@ -84,11 +86,11 @@ global.language = 0;
      
     //0
     
-    global.saved_jungle  = 1;  //0
-    global.saved_desert  = 1;  //0
-    global.saved_snow    = 1;  //0
-    global.saved_shadow  = 1;  //0
-    global.saved_vulcano = 1;  //0
+    global.saved_jungle  = 0;  //0
+    global.saved_desert  = 0;  //0
+    global.saved_snow    = 0;  //0
+    global.saved_shadow  = 0;  //0
+    global.saved_vulcano = 0;  //0
     
     
     
@@ -117,17 +119,17 @@ global.language = 0;
 global.key_green1 = 1;      //0
 global.key_green2 = 1;      //0
                             //0
-global.key_yellow1 = 1;     //0
-global.key_yellow2 = 1;     //0
+global.key_yellow1 = 0;     //0
+global.key_yellow2 = 0;     //0
                             //0
 global.key_blue1 = 1;       //0
 global.key_blue2 = 1;       //0
                             //0
-global.key_purple1 = 1;     //0
-global.key_purple2 = 1;     //0
+global.key_purple1 = 0;     //0
+global.key_purple2 = 0;     //0
                             //0
 global.key_red1 = 0;        //0
-global.key_red2 = 1;        //0
+global.key_red2 = 0;        //0
 #endregion
 
 #region ТЕСТ Магазин
@@ -178,9 +180,9 @@ global.purch_rapidfire2 = 0;
 global.purch_rapidfire3 = 0;
 
 //двойные пистолеты
-global.purch_dualpistols1 = 0;
-global.purch_dualpistols2 = 0;
-global.purch_dualpistols3 = 0;
+global.purch_dualpistols1 = 1;
+global.purch_dualpistols2 = 1;
+global.purch_dualpistols3 = 1;
 
 // blunderbuss
 global.purch_blunderbuss1 = 0;
@@ -188,9 +190,9 @@ global.purch_blunderbuss2 = 0;
 global.purch_blunderbuss3 = 0;
 
 // parrot cage
-global.purch_parrotcage1 = 0;
-global.purch_parrotcage2 = 0;
-global.purch_parrotcage3 = 0;
+global.purch_parrotcage1 = 1;
+global.purch_parrotcage2 = 1;
+global.purch_parrotcage3 = 1;
 
 #endregion
 
@@ -198,23 +200,23 @@ global.purch_parrotcage3 = 0;
 
 
 #region Игрок
-global.hp = 3;           // 5
+global.hp = 5;           // 5
 global.hp_max = 5;       // 5
 global.hp_add = 0;       // 0
 global.mana_add = 0;       // 0
-global.choosed_item = 5; // 2 -тоорп // 3 - бомба // 4 - eball // 5 - parrot 
-global.choosed_item_tier = 3; // ТИР предмета
-global.choosed_itemboat = 4; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
-global.choosed_itemboat_tier = 1 // ТИП предмета для лодки
+global.choosed_item = 0; // 2 -тоорп // 3 - бомба // 4 - eball // 5 - parrot 
+global.choosed_item_tier = 0; // ТИР предмета
+global.choosed_itemboat = 0; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
+global.choosed_itemboat_tier = 0 // ТИП предмета для лодки
 global.superattack1 = 2;// Суператаки  max 2  default - 0
-global.superattack2 = 0;// Суператаки  max 1  default - 0
+global.superattack2 = 1;// Суператаки  max 1  default - 0
 global.superattack3 = 1;// Суператаки  max 1  default - 0
 global.PlayerTransition = 0;
 global.mana = 3//3;
-global.mana_max = 5000; //7
-global.gold = 20000 //global.money_saved;          // 0
+global.mana_max = 5; //7
+global.gold = 655 //global.money_saved;          // 0
 global.gold_prelevel = 0;
-global.darkessence = 10000//global.darkessence_saved;
+global.darkessence = 955//global.darkessence_saved;
 
 #region Объявление переменных
     scr_create_array_objects();
@@ -258,9 +260,9 @@ global.windowHeight = 1080;
 // Установка громкости звука
 
 
-global.MSCvolume = 0.5; //0.5
+global.MSCvolume =0.5;// 0.5; //0.5
 global.MSCvolume_max = global.MSCvolume;
-global.SFXvolume = 0.5; //0.5
+global.SFXvolume =0.5// 0.5; //0.5
 
 audio_group_set_gain(MusicVolume,global.MSCvolume,0);
 audio_group_set_gain(SFXvolume,global.SFXvolume,0);
@@ -281,7 +283,7 @@ global.darkessence_saved = 0;
 
 // Установка секретов
 
-global.secrets = 35;
+global.secrets = 1;
 
 // Установка ограничений игрока
 
@@ -497,7 +499,7 @@ global.secrets_lava1_s1 = 0;
 global.secrets_lava1_s2 = 0;
 
 global.secrets_l2_r3 = 0;
-global.secrets_l2b_r5 = 1;
+global.secrets_l2b_r5 = 0;
 global.secrets_l2p_s = 1;
 
 #endregion

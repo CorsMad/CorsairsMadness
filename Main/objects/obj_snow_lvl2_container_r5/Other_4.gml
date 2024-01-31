@@ -9,41 +9,41 @@ if instance_exists(obj_Player)
 			
 	} else 
 	{
-		var i1  = instance_create_depth(936,168,-1,obj_destrutable_chain_block_destr)	;
-		var i2  = instance_create_depth(936,184,-1,obj_destrutable_chain_block_destr)	;			   
-		var i3  = instance_create_depth(936,200,-1,obj_destrutable_chain_block_destr)	;
-		var i4  = instance_create_depth(936,216,-1,obj_destrutable_chain_block_destr)	;
-		var i5  = instance_create_depth(936,232,-1,obj_destrutable_chain_block_destr)	;			   
-		var i6  = instance_create_depth(936,248,-1,obj_destrutable_chain_block_destr)	;
-		var i7  = instance_create_depth(936,264,-1,obj_destrutable_chain_block_destr)	;
+		var i1  = instance_create_depth(936,168,1,obj_destrutable_chain_block_destr)	;
+		var i2  = instance_create_depth(936,184,1,obj_destrutable_chain_block_destr)	;			   
+		var i3  = instance_create_depth(936,200,1,obj_destrutable_chain_block_destr)	;
+		var i4  = instance_create_depth(936,216,1,obj_destrutable_chain_block_destr)	;
+		var i5  = instance_create_depth(936,232,1,obj_destrutable_chain_block_destr)	;			   
+		var i6  = instance_create_depth(936,248,1,obj_destrutable_chain_block_destr)	;
+		var i7  = instance_create_depth(936,264,1,obj_destrutable_chain_block_destr)	;
 		
-		var i8  = instance_create_depth(952,168,-1,obj_destrutable_chain_block_destr)	;		
-		var i9  = instance_create_depth(952,184,-1,obj_destrutable_chain_block_destr)	;
-		var i10 = instance_create_depth(952,200,-1,obj_destrutable_chain_block_destr)	;
-		var i11 = instance_create_depth(952,216,-1,obj_destrutable_chain_block_destr)	;		
-		var i12 = instance_create_depth(952,232,-1,obj_destrutable_chain_block_destr)	;
-		var i13 = instance_create_depth(952,248,-1,obj_destrutable_chain_block_destr)	;
-		var i14 = instance_create_depth(952,264,-1,obj_destrutable_chain_block_destr)	;
+		var i8  = instance_create_depth(952,168,1,obj_destrutable_chain_block_destr)	;		
+		var i9  = instance_create_depth(952,184,1,obj_destrutable_chain_block_destr)	;
+		var i10 = instance_create_depth(952,200,1,obj_destrutable_chain_block_destr)	;
+		var i11 = instance_create_depth(952,216,1,obj_destrutable_chain_block_destr)	;		
+		var i12 = instance_create_depth(952,232,1,obj_destrutable_chain_block_destr)	;
+		var i13 = instance_create_depth(952,248,1,obj_destrutable_chain_block_destr)	;
+		var i14 = instance_create_depth(952,264,1,obj_destrutable_chain_block_destr)	;
 		
-		var i15 = instance_create_depth(968,168,-1,obj_destrutable_chain_block_destr)	;		
-		var i16 = instance_create_depth(968,184,-1,obj_destrutable_chain_block_destr)	;
-		var i17 = instance_create_depth(968,200,-1,obj_destrutable_chain_block_destr)	;
-		var i18 = instance_create_depth(968,216,-1,obj_destrutable_chain_block_destr)	;		
-		var i19 = instance_create_depth(968,232,-1,obj_destrutable_chain_block_destr)	;
-		var i20 = instance_create_depth(968,248,-1,obj_destrutable_chain_block_destr)	;
-		var i21 = instance_create_depth(968,264,-1,obj_destrutable_chain_block_destr)	;
+		var i15 = instance_create_depth(968,168,1,obj_destrutable_chain_block_destr)	;		
+		var i16 = instance_create_depth(968,184,1,obj_destrutable_chain_block_destr)	;
+		var i17 = instance_create_depth(968,200,1,obj_destrutable_chain_block_destr)	;
+		var i18 = instance_create_depth(968,216,1,obj_destrutable_chain_block_destr)	;		
+		var i19 = instance_create_depth(968,232,1,obj_destrutable_chain_block_destr)	;
+		var i20 = instance_create_depth(968,248,1,obj_destrutable_chain_block_destr)	;
+		var i21 = instance_create_depth(968,264,1,obj_destrutable_chain_block_destr)	;
 		
-		var i22 = instance_create_depth(984,168,-1,obj_destrutable_chain_block_destr)	;		
-		var i23 = instance_create_depth(984,184,-1,obj_destrutable_chain_block_destr)	;
-		var i24 = instance_create_depth(984,200,-1,obj_destrutable_chain_block_destr)	;
-		var i25 = instance_create_depth(984,216,-1,obj_destrutable_chain_block_destr)	;		
-		var i26 = instance_create_depth(984,232,-1,obj_destrutable_chain_block_destr)	;
-		var i27 = instance_create_depth(984,248,-1,obj_destrutable_chain_block_destr)	;
-		var i28 = instance_create_depth(984,264,-1,obj_destrutable_chain_block_destr)	;
+		var i22 = instance_create_depth(984,168,1,obj_destrutable_chain_block_destr)	;		
+		var i23 = instance_create_depth(984,184,1,obj_destrutable_chain_block_destr)	;
+		var i24 = instance_create_depth(984,200,1,obj_destrutable_chain_block_destr)	;
+		var i25 = instance_create_depth(984,216,1,obj_destrutable_chain_block_destr)	;		
+		var i26 = instance_create_depth(984,232,1,obj_destrutable_chain_block_destr)	;
+		var i27 = instance_create_depth(984,248,1,obj_destrutable_chain_block_destr)	;
+		var i28 = instance_create_depth(984,264,1,obj_destrutable_chain_block_destr)	;
 		
-		var i29 = instance_create_depth(1000,168,-1,obj_destrutable_chain_block_destr)	;
-		var i30 = instance_create_depth(1000,184,-1,obj_destrutable_chain_block_destr)	;
-		var i31 = instance_create_depth(1000,200,-1,obj_destrutable_chain_block_destr)	;
+		var i29 = instance_create_depth(1000,168,1,obj_destrutable_chain_block_destr)	;
+		var i30 = instance_create_depth(1000,184,1,obj_destrutable_chain_block_destr)	;
+		var i31 = instance_create_depth(1000,200,1,obj_destrutable_chain_block_destr)	;
 		
 		i1.sprite_index = spr_destructable_tile_snow;
 		i1.image_index = 4;		

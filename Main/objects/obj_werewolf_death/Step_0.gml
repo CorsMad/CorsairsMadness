@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+y+=vspd;
+vspd = lerp(vspd,0,0.05);
 t++
 {
     if t mod 5 == 0

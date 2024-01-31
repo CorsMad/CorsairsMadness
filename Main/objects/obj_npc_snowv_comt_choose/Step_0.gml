@@ -21,9 +21,9 @@ if key_jump || key_attack
             instance_destroy(obj_Player);
             break;
         case 1:
-            instance_destroy();
             obj_npc_snowv_comt.talk = 0;
             obj_Player.isDead = 2.1;
+			instance_destroy();
             break;
     }
 }

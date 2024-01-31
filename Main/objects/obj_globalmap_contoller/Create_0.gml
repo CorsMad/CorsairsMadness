@@ -21,6 +21,12 @@ Transition = 0;
 Scale = 1;
 Scale_spd = 0;
 
+#region Ножи
+knives_t = 0;
+knives = 0;
+knives_alpha = 0;
+#endregion
+
 #region text
 switch(global.language)
 {

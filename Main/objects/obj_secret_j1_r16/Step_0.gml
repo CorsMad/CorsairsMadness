@@ -5,7 +5,7 @@ t++;
 if t = t_max
 {
 	t = 0;
-	instance_create_depth(x+random_range(-8,8), y+random_range(-8,8),depth-1,obj_sfx3);
+	instance_create_depth(x+random_range(-8,8), y+random_range(-8,8),depth+1,obj_sfx3);
 }
 
 

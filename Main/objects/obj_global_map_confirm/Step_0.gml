@@ -29,6 +29,7 @@ if t > 5
                         obj_transition_on_map.travel_island = 1;
                         obj_global_map_map.start = 1;
                         obj_globalmap_cloud.start = 0;
+						obj_globalmap_contoller.knives = 2;
                         instance_destroy(obj_globalmap_contoller);
                         instance_destroy();
                         break;
@@ -39,6 +40,7 @@ if t > 5
                         obj_transition_on_map.travel_island = 2;
                         obj_global_map_map.start = 1;
                         obj_globalmap_cloud.start = 0;
+						obj_globalmap_contoller.knives = 2;
                         instance_destroy(obj_globalmap_contoller);
                         instance_destroy();
                         break;
@@ -49,6 +51,7 @@ if t > 5
                         obj_transition_on_map.travel_island = 3;
                         obj_global_map_map.start = 1;
                         obj_globalmap_cloud.start = 0;
+						obj_globalmap_contoller.knives = 2;
                         instance_destroy(obj_globalmap_contoller);
                         instance_destroy();
                         break;
@@ -59,6 +62,7 @@ if t > 5
                         obj_global_map_map.start = 1;
                         obj_transition_on_map.travel_island = 4;
                         obj_globalmap_cloud.start = 0;
+						obj_globalmap_contoller.knives = 2;
                         instance_destroy(obj_globalmap_contoller);
                         instance_destroy();
                         break;

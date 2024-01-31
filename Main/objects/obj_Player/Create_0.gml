@@ -23,7 +23,7 @@ airattacking_buffer = 0;
 
 //state = 1; // 0 - человек, 1 - маск, 11 - переход в телепорт, 2 - катсцена
 isDead = 0;
-
+canTalk = 0;
 isAttacking = 0;
 isAirattacking = 0;
 isAirattacking_timer = 0;
@@ -148,6 +148,7 @@ pos_teleport_turn_timer = 0;
 move_to_cloud = 0;
 teleport_delay_timer = 0;
 cloud_exist_timer = 0;
+superdash_delay_collision_timer = 0;
 #endregion
 
 #endregion

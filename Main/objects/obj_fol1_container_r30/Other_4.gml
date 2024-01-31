@@ -15,4 +15,3 @@ i.x_cr = 496;
 i.y_cr = 224;
 i.obj_cr = obj_molded_small_fastfly;
 
-instance_create_depth(0,0,0,obj_dc_onl_f1r29);

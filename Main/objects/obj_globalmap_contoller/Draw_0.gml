@@ -18,7 +18,7 @@
                 case 1:
 					draw_sprite(spr_text_icons,18,81+2,48);
 					draw_sprite(spr_text_icons,global.saved_jungle+24,81+2,48) ;
-					draw_sprite(spr_map_global_knife,0,163,120);
+					
                     break;
             }     
 			draw_text(16+81,32,i0);
@@ -32,7 +32,7 @@
                 case 1:
 					draw_sprite(spr_text_icons,19,81+2,48);
 					draw_sprite(spr_text_icons,global.saved_desert+24,81+2,48) ;
-					draw_sprite(spr_map_global_knife,0,325,177);
+					
                     break;
             }  
             draw_text(16+81,32,i1);
@@ -46,7 +46,7 @@
                 case 1:
 					draw_sprite(spr_text_icons,20,81+2,48);
 					draw_sprite(spr_text_icons,global.saved_snow+24,81+2,48) ;
-					draw_sprite(spr_map_global_knife,0,389,123);
+					
                     break;
             } 
             draw_text(16+81,32,i2);
@@ -60,7 +60,7 @@
                 case 1:
 					draw_sprite(spr_text_icons,21,81+2,48)
 					draw_sprite(spr_text_icons,global.saved_shadow+24,81+2,48) 
-					draw_sprite(spr_map_global_knife,0,345,36)
+					
                     break;
             } 
             draw_text(16+81,32,i3);
@@ -74,7 +74,7 @@
                 case 1:
 					draw_sprite(spr_text_icons,22,81+2,48)
 					draw_sprite(spr_text_icons,global.saved_vulcano+24,81+2,48) 
-					draw_sprite(spr_map_global_knife,0,196,54)
+					
                     break;
             } 
             draw_text(16+81,32,i4);
@@ -91,8 +91,16 @@
 if t > 5
 {       
     #region otline выбора острова
-    draw_sprite_ext(spr_map_global_outline,island,240,135,1,1,0,c_white,OutlinerAlpha);
+    draw_sprite_ext(spr_map_global_outline,island,240,135,1,1,0,c_white,OutlinerAlpha);	
+	
     #endregion   
 }
 
+if knives = 1{
 
+	if global.completed_JF2 = 1 draw_sprite_ext(spr_map_global_knife,0,163,120,1,1,0,c_white,knives_alpha);
+	if global.completed_PD2 = 1 draw_sprite_ext(spr_map_global_knife,0,325,177,1,1,0,c_white,knives_alpha);
+	if global.completed_PS2 = 1 draw_sprite_ext(spr_map_global_knife,0,389,123,1,1,0,c_white,knives_alpha);
+	if global.completed_PG2 = 1 draw_sprite_ext(spr_map_global_knife,0,345,36 ,1,1,0,c_white,knives_alpha);
+	if global.completed_PL2 = 1 draw_sprite_ext(spr_map_global_knife,0,196,54 ,1,1,0,c_white,knives_alpha);	 
+}

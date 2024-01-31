@@ -51,11 +51,12 @@
 5,-2147483648,33,33,38,44,-3,34,-2,44,1,34,-3,0,-2,-2147483648,9,44,49,43,34,34,39,48,39,44,-5,0,7,44,
 49,33,34,34,44,49,-4,34,-3,0,5,-2147483648,49,43,34,44,-3,34,-2,44,1,34,-5,0,4,-2147483648,34,44,34,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_snow","path":"tilesets/tls_fol_snow/tls_fol_snow.yy",},"userdefinedDepth":false,"visible":true,"x":8,"y":8,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"MainTls","depth":400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
--180,0,-8,7,2,8,9,-20,0,-8,12,2,13,14,-14,0,2,5,6,-4,7,-8,36,2,37,19,-14,0,2,10,
-11,-4,12,-8,41,4,42,19,5,6,-10,7,4,8,9,15,35,-4,36,-8,41,4,42,19,10,11,-10,12,4,13,
-14,15,40,-12,41,4,42,19,15,35,-10,36,4,37,19,15,40,-12,41,4,42,19,15,40,-10,41,4,42,19,15,
-40,-12,41,4,42,19,15,40,-10,41,4,42,19,15,40,-12,41,4,42,19,15,40,-10,41,4,42,19,15,40,-12,
-41,4,42,19,15,40,-10,41,4,42,19,15,40,-12,41,4,42,19,15,40,-10,41,4,42,19,15,40,-4,41,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_snow","path":"tilesets/tls_fol_snow/tls_fol_snow.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+-2,17,2,18,19,-26,0,-2,22,2,23,24,-26,0,-2,27,2,28,29,-116,0,-8,7,2,8,9,-20,0,-8,12,
+2,13,14,-14,0,2,5,6,-4,7,-8,36,2,37,19,-14,0,2,10,11,-4,12,-8,41,4,42,19,5,6,-10,
+7,4,8,9,15,35,-4,36,-8,41,4,42,19,10,11,-10,12,4,13,14,15,40,-12,41,4,42,19,15,35,-10,
+36,4,37,19,15,40,-12,41,4,42,19,15,40,-10,41,4,42,19,15,40,-12,41,4,42,19,15,40,-10,41,4,
+42,19,15,40,-12,41,4,42,19,15,40,-10,41,4,42,19,15,40,-12,41,4,42,19,15,40,-10,41,4,42,19,
+15,40,-12,41,4,42,19,15,40,-10,41,4,42,19,15,40,-4,41,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_snow","path":"tilesets/tls_fol_snow/tls_fol_snow.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR2","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -510,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tls_fol_snow_bgr","path":"tilesets/tls_fol_snow_bgr/tls_fol_snow_bgr.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BGR","depth":600,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[

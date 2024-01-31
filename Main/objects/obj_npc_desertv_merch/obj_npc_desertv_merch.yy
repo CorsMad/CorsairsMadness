@@ -32,9 +32,6 @@
     "name": "spr_merchant",
     "path": "sprites/spr_merchant/spr_merchant.yy",
   },
-  "spriteMaskId": {
-    "name": "spr_skeleton_mask",
-    "path": "sprites/spr_skeleton_mask/spr_skeleton_mask.yy",
-  },
+  "spriteMaskId": null,
   "visible": true,
 }

@@ -264,6 +264,9 @@ fnc_enemy_no_armor_dmg();
 
 
 #region Смерть
+
+if y >= room_height+64 instance_destroy();
+
 if enemy_hp <= 0
 {
 

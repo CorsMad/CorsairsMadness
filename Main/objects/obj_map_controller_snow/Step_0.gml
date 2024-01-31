@@ -117,11 +117,8 @@ if !instance_exists(obj_confirm_1) && !instance_exists(obj_confirm_2) && delay <
         switch(globalMapCounter)
         {
             case 0:
-                fnc_msc_stop_play();
-                global.TargetX = 864;
-                global.TargetY = 240;
-                global.TargetRoom = Village_snow;
-                room_goto(VillageSnowFirstLoading);
+				var lv = instance_create_depth(240,135,depth-1,obj_confirm_1);;
+                lv.dest = 2.01;  
                 break;
             case 1: // колизей
                 var le = instance_create_depth(240,135,depth-1,obj_confirm_1);;
@@ -136,25 +133,12 @@ if !instance_exists(obj_confirm_1) && !instance_exists(obj_confirm_2) && delay <
                 l2.dest = 2.1;
                 break;
             case 4: // храм1
-                if global.completed_PS1 = 0
-                {
-                    fnc_msc_stop_play();
-                    global.fTargetX = 64;
-                    global.fTargetY = 32;
-                    global.fTargetRoom = PS1_r1;
-					global.Cutscene_sp1_r14 = 1
-                    room_goto(PS1FirstLoading);
-                }
+				var l3 = instance_create_depth(240,135,depth-1,obj_confirm_1);
+                l3.dest = 2.11;
                 break;
             case 5: //  храм2
-                if global.completed_PS2 = 0
-                {
-                    fnc_msc_stop_play();
-                    global.fTargetX = 48;
-                    global.fTargetY = 0;
-                    global.fTargetRoom = PS2_r1;
-                    room_goto(PS2FirstLoading);
-                }
+				var l4 = instance_create_depth(240,135,depth-1,obj_confirm_1);
+                l4.dest = 2.12;
                 break;
         }
     }

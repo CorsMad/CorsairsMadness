@@ -2,7 +2,7 @@
 
 if global.key_blue1 = 0 {
    instance_create_depth(0,0,0,obj_gui_controller_s1_boss);
-   instance_create_depth(0,0,0,obj_boss_s1_controller);  
+   instance_create_depth(0,0,1,obj_boss_s1_controller);  
    instance_create_depth(240,144,0,obj_boss_s1_phase1_appear)
    fnc_msc_stop_play_slow();
 } else {

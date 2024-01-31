@@ -12,7 +12,7 @@ if instance_exists(obj_Player)
        
    } else {
 	   instance_create_depth(0,0,0,obj_destruct_creator_d1r11);
-	   instance_create_depth(400,544,101,obj_scarab_vertical);
+	   instance_create_depth(400,544,10,obj_scarab_vertical);
    }
 }
 

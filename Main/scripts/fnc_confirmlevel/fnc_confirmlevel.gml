@@ -268,18 +268,44 @@ function fnc_confirmlevel1N(argument0)    {
     fnc_msc_stop_play();
         switch(argument0)
                         {
-                            case 0: // джунгли
+                            case 0: // джунгли1
                                 global.TargetX = 48;
                                 global.TargetY = 160;
                                 global.TargetRoom = J1_r1;
                                 room_goto(J1FirstLoading);
                                 break;
-                            case 0.1: // джунгли
+							case 0.01: // деревня
+								global.TargetX = 32;
+					            global.TargetY = 240;
+					            global.TargetRoom = Village_jungle;
+					            room_goto(VillageJunlgeFirstLoading);
+								break;
+                            case 0.1: // джунгли2
                                 global.TargetX = 32;
                                 global.TargetY = 112;
                                 global.TargetRoom = J2_r1;
                                 room_goto(J1FirstLoading);
                                 break;
+							case 0.11: // джунгли пос
+								global.fTargetX = 48;
+			                    global.fTargetY = 112;
+			                    global.fTargetRoom = F1_r1;
+								global.Cutscene_f1_r33 = 1;
+			                    room_goto(JP1FirstLoading);
+								break;
+							case 0.12: // джунгли логово
+								global.fTargetX = 48;
+								global.fTargetY = 0;
+								global.fTargetRoom = JP2_r1;
+								room_goto(JP2FirstLoading);
+								break;
+								
+							case 1.01:// Деревня
+								global.TargetX = 32;
+				                global.TargetY = 240;
+				                global.TargetRoom = Village_desert;
+				                room_goto(VillageDesertFirstLoading);
+								break;
                             case 1: // desert
                                 global.TargetX = 32;
                                 global.TargetY = 160;
@@ -292,6 +318,26 @@ function fnc_confirmlevel1N(argument0)    {
                                 global.TargetRoom = D2_r1;
                                 room_goto(D1FirstLoading);
                                 break;
+							case 1.11:
+				                global.fTargetX = 40;
+				                global.fTargetY = 32;
+				                global.fTargetRoom = PD1_r1;
+								global.Cutscene_dp1_r16 = 1;
+				                room_goto(PD1FirstLoading);
+								break;
+							case 1.12:
+								global.fTargetX = 40;
+			                    global.fTargetY = 0;
+			                    global.fTargetRoom = PD2_r1;
+			                    room_goto(PD2FirstLoading);
+								break;
+							
+							case 2.01: //snow village
+								global.TargetX = 864;
+								global.TargetY = 240;
+								global.TargetRoom = Village_snow;
+								room_goto(VillageSnowFirstLoading);
+								break;
                             case 2: // snow
                                 global.TargetX = 32;
                                 global.TargetY = 240;
@@ -304,6 +350,20 @@ function fnc_confirmlevel1N(argument0)    {
                                 global.TargetRoom = S2_r1;
                                 room_goto(SN1FirstLoading);
                                 break;
+							case 2.11:
+								global.fTargetX = 64;
+								global.fTargetY = 32;
+								global.fTargetRoom = PS1_r1;
+								global.Cutscene_sp1_r14 = 1
+								room_goto(PS1FirstLoading);
+								break;
+							case 2.12:
+								global.fTargetX = 48;
+			                    global.fTargetY = 0;
+			                    global.fTargetRoom = PS2_r1;
+			                    room_goto(PS2FirstLoading);
+								break;
+								
                             case 3: // shadow
                                 global.TargetX = 32;
                                 global.TargetY = 144;
@@ -316,6 +376,7 @@ function fnc_confirmlevel1N(argument0)    {
                                 global.TargetRoom = G2_r1;
                                 room_goto(G1FirstLoading);
                                 break;
+								
                             case 4: // lava
                                 global.TargetX = 32;
                                 global.TargetY = 224;
@@ -328,6 +389,7 @@ function fnc_confirmlevel1N(argument0)    {
                                 global.TargetRoom = L2_r1;
                                 room_goto(L1FirstLoading);
                                 break;
+								
                             case 90: // колиз джунгли
                                 global.TargetX = 48;
                                 global.TargetY = 240;

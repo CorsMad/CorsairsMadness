@@ -1,1 +1,3 @@
-sprite_index = spr_blank;
+sprite_index = spr_destructable_tile_jungle;
+image_index = 28;
+depth = 101;

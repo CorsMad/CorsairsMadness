@@ -16,3 +16,5 @@ image_speed = 0.5;
 
 qm = instance_create_depth(x,y-88,-200,obj_npc_npc_questmark);
 qm.fol = id;
+
+player_pos = 0;

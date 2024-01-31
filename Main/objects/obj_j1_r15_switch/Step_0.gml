@@ -6,6 +6,7 @@ if place_meeting(x,y,obj_hitbox) && isOn = 0
     fnc_snd_play_onetime(snd_bomb_selektor);
 	image_index = 1;
 	isOn = 1;  
+	instance_create_depth(52,88,1,obj_maze1_elect_r15);
     global.maze_trigger2_j1_r13 = 1;
 }
 

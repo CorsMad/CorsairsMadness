@@ -15,12 +15,12 @@ switch(state)
 				y = lerp(y,obj_Player.y,0.1);
 				if abs(y-obj_Player.y) <= 1 {
 					conf = 1;
-					y=obj_Player.y;
+					y = lerp(y,obj_Player.y,0.1);;
 				}
 			}
 			if conf = 1
 			{
-				y = obj_Player.y;					
+				y = lerp(y,obj_Player.y,0.1);;					
 			}
 			x = 0;
 		}
@@ -33,12 +33,12 @@ switch(state)
 				y = lerp(y,obj_Player.y-64,0.1);
 				if abs(y-(obj_Player.y-64)) <= 1 {
 					conf = 1;
-					y=obj_Player.y-64;
+					y=lerp(y,obj_Player.y-64,0.1);
 				}
 			}
 			if conf = 1
 			{
-				y = obj_Player.y-64;	
+				y=lerp(y,obj_Player.y-64,0.1);	
 			}
 			x = 0;	
 		}

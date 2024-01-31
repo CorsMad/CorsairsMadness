@@ -28,7 +28,7 @@ if global.saved_snow = 1
 
 if global.dia_snowChief = 0 
 {
-    instance_create_depth(277,161,-200,obj_npc_village_pointer);
+    instance_create_depth(277,152,-200,obj_npc_village_pointer);
 }
 
 if instance_exists(obj_npc_snowv_comt) && global.dia_snowComt > 0 

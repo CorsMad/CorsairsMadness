@@ -66,8 +66,9 @@
 -5,43,1,16,-4,17,5,18,32,43,14,0,-3,-2147483648,1,35,-9,36,2,37,5,-5,43,1,16,-4,17,6,18,32,
 43,14,0,0,-13,-2147483648,7,10,43,43,11,12,12,33,-4,17,6,18,32,43,24,0,0,-5,-2147483648,-8,0,4,10,43,
 43,16,-7,17,4,18,32,43,14,-15,0,4,10,43,43,16,-7,17,4,18,43,43,14,-15,0,4,10,43,43,21,
--7,22,7,23,32,32,30,7,7,6,-4,7,3,8,7,9,-5,0,1,10,-12,43,12,32,43,42,43,43,40,43,
-42,40,40,41,49,-5,0,1,48,-14,43,10,47,43,48,47,49,45,47,46,61,62,-5,0,1,60,],"TileDataFormat":1,},"tilesetId":{"name":"tls_jngl_main","path":"tilesets/tls_jngl_main/tls_jngl_main.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+-7,22,7,23,32,32,30,7,7,6,-4,7,3,8,7,9,-5,0,25,10,40,41,40,42,42,41,41,40,41,42,
+41,42,41,42,42,40,41,40,40,42,40,40,41,49,-5,0,25,48,47,45,47,47,46,47,45,46,47,46,45,47,
+45,46,45,46,47,46,47,45,47,46,61,62,-5,0,1,60,],"TileDataFormat":1,},"tilesetId":{"name":"tls_jngl_main","path":"tilesets/tls_jngl_main/tls_jngl_main.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_22416CA0","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_tls_tree_palms1","path":"sprites/spr_tls_tree_palms1/spr_tls_tree_palms1.yy",},"x":288.0,"y":80.0,},
       ],"depth":200,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[

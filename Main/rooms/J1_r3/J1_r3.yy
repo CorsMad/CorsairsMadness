@@ -153,7 +153,7 @@
 0,-13,-2147483648,6,10,7,7,6,9,5,-5,7,1,9,-5,0,-5,-2147483648,9,0,5,6,7,8,9,0,0,10,-3,43,
 1,14,-18,0,12,10,11,12,13,14,0,0,10,32,43,32,14,-18,0,8,10,16,17,18,19,0,0,20,-3,43,
 1,19,-18,0,13,15,16,17,18,14,0,0,10,43,43,32,14,5,-16,7,24,9,10,21,22,23,24,0,0,10,
-43,32,41,49,48,40,41,42,41,41,42,41,42,41,40,-3,41,12,40,41,42,49,48,41,42,40,49,0,0,10,
+40,42,41,49,48,40,41,42,41,41,42,41,42,41,40,-3,41,12,40,41,42,49,48,41,42,40,49,0,0,10,
 ],"TileDataFormat":1,},"tilesetId":{"name":"tls_jngl_main","path":"tilesets/tls_jngl_main/tls_jngl_main.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_500D00D2","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_tls_tree_palms1","path":"sprites/spr_tls_tree_palms1/spr_tls_tree_palms1.yy",},"x":-32.0,"y":32.0,},

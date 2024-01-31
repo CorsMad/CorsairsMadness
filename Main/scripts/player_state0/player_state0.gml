@@ -1288,7 +1288,7 @@ if global.choosed_item = 4 // Eball
 if global.choosed_item = 5 // Попугай
 {
 	if !instance_exists(obj_item_parrot) {
-		instance_create_depth(x,y-48,depth+1,obj_item_parrot);	
+		instance_create_depth(x,y-48,depth,obj_item_parrot);	
 	}
     if key_item && instance_exists(obj_item_parrot) {
         switch(global.choosed_item_tier)
@@ -2397,7 +2397,17 @@ if global.hp <= 0
 		vspd = -2;
 	}
 #endregion
-
+#region Разговор
+	if isFlueting = 0 && 
+	isUsingabil = 0 && !instance_exists(obj_item_boomerang) && 
+	!instance_exists(obj_item_boomerang_dot) &&  
+	key_up_press && 
+	isGrounded = 1 && isAttacking = 0 && 
+	isDashing = 0 && isAttackingdown = 0 && 
+	isAirattacking = 0 && isUsingitem = 0 {
+		canTalk = 1	
+	} else canTalk = 0;
+	#endregion
 
 
 }
@@ -2574,6 +2584,7 @@ if isDead = 1
         sprite_index = spr_player_propfly;
     }
     #endregion
+	
 }
 
 

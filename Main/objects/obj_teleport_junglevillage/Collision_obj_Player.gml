@@ -3,11 +3,17 @@
 
 if instance_exists(obj_Player)
 {
-    if obj_Player.isDead !=2 && obj_Player.key_up_press && obj_Player.isGrounded = 1 && obj_Player.isAttacking = 0 && obj_Player.isDashing = 0 && obj_Player.isAttackingdown = 0 && obj_Player.isAirattacking = 0 && obj_Player.isUsingitem = 0
+    if obj_Player.isDead !=2 && 
+	obj_Player.isFlueting = 0 && obj_Player.isUsingabil = 0 && !instance_exists(obj_item_boomerang) &&
+	!instance_exists(obj_item_boomerang_dot) &&
+	obj_Player.key_up_press && obj_Player.isGrounded = 1 && obj_Player.isAttacking = 0 &&
+	obj_Player.isDashing = 0 && obj_Player.isAttackingdown = 0 &&
+	obj_Player.isAirattacking = 0 && obj_Player.isUsingitem = 0
     {
         obj_Player.isDead = 2;
         obj_Player.key_right = 0;
         obj_Player.key_left = 0;
+		
         obj_Player.key_attack = 0;
         obj_Player.key_dashing = 0; 
         obj_Player.key_up = 0;

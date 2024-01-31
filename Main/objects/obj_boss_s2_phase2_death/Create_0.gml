@@ -9,3 +9,4 @@ depth = -100;
 image_blend = c_red;
 
 fnc_msc_stop_play_slow()
+if instance_exists(obj_pause_controller) instance_destroy(obj_pause_controller);

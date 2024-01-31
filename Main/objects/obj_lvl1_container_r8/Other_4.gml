@@ -31,4 +31,3 @@ o7.y_cr = 160;
 o7.obj_cr = obj_skeleton_l;
 o7.image_yscale = 11;
 
-instance_create_depth(0,0,0,obj_dc_onl_l1r8);

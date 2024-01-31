@@ -74,3 +74,14 @@ OutlinerAlpha_t +=1
 if OutlinerAlpha_t = 50 OutlinerAlpha_t = 0;
 if OutlinerAlpha_t < 25 OutlinerAlpha = 1 else OutlinerAlpha = 0.5;
 #endregion
+
+#region Ножи
+if knives = 0 knives_t++;
+if knives_t = 30 {
+	knives = 1;
+	knives_t = 0;
+}
+if knives = 1 {
+	if knives_alpha <1 knives_alpha+=0.05;	
+}
+#endregion
