@@ -34,7 +34,7 @@ if key_jump || key_attack
         case 2:
             instance_destroy();
             obj_npc_shadowv_merch.talk = 0;
-            obj_Player.isDead = 0;
+            obj_Player.isDead = 2.1;
             break;
     }
 }

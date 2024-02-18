@@ -23,7 +23,7 @@ if state = 2
 	t2++;
 	if t2 = 60 
 	{
-		instance_create_depth(x,y,depth-1,obj_boss1_excl_mark);	
+		instance_create_depth(x,y,-1,obj_boss1_excl_mark);	
 	}
 	if t2 = 140
 	{
@@ -77,7 +77,7 @@ if state = 4
 	t2++;
 	if t2 = 60 
 	{
-		instance_create_depth(x,y,depth-1,obj_boss1_excl_mark);	
+		instance_create_depth(x,y,-1,obj_boss1_excl_mark);	
 	}
 	if t2 = 140 
 	{
@@ -112,7 +112,7 @@ if state = 6
 	t6++;
 	if t6 = 60 
 	{
-		instance_create_depth(x,y,depth-1,obj_boss1_excl_mark);	
+		instance_create_depth(x,y,-1,obj_boss1_excl_mark);	
 	}
 	if t6 = 140
 	{

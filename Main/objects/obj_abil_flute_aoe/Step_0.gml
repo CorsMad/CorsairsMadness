@@ -24,4 +24,6 @@ if t >= 60 {
 if instance_exists(obj_Player)
 {
     if obj_Player.isFlueting = 0 instance_destroy()   
+	if obj_Player.isDead!=0 instance_destroy();
+	if obj_Player.isClimbing = 1 instance_destroy();
 }

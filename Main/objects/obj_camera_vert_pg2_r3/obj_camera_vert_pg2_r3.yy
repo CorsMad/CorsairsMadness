@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "PG2",
-    "path": "folders/Objects/Level objects/!MASTER/!Graveyard/PG2.yy",
+    "name": "Main",
+    "path": "Main.yyp",
   },
   "parentObjectId": null,
   "persistent": false,

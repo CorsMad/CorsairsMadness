@@ -86,13 +86,14 @@ switch(state)
 
 if state = 0
 {
-    if instance_exists(obj_Player)
-    {
-        if abs(obj_Player.x-x) <128 && abs(obj_Player.y-y) < 128{
-            if obj_Player.x < x side = -1; else side = 1;
-            state = 1;   
-        }
-    }
+	t_wait++;
+	if t_wait = 50 {
+		if instance_exists(obj_Player)
+		{
+			if obj_Player.x > x side = -1; else side = 1;
+	            state = 1; 
+		}
+	}
 }
 
 if state = 1 //перемещение
@@ -107,14 +108,14 @@ if state = 1 //перемещение
     }
     if instance_exists(obj_Player)
     {
-        if (point_distance(x, y, obj_Player.x+sign(side)*80, obj_Player.y-16) > 3 && magnet = 0)
+        if (point_distance(x, y, obj_Player.x+side*80, obj_Player.y-16) > 3 && magnet = 0)
         {
-            move_towards_point(obj_Player.x+sign(side)*80  , obj_Player.y-16, 3);
+            move_towards_point(obj_Player.x+side*80  , obj_Player.y-16, 3);
         }
         else {
             magnet = 1;
             speed = 0;
-            x = lerp(x,obj_Player.x+sign(side)*80,0.1);
+            x = lerp(x,obj_Player.x+side*80,0.1);
             y = lerp(y,obj_Player.y-16,0.1);
         }
     }
@@ -179,10 +180,14 @@ if place_meeting(x,y,obj_doublejump) && state!=6
 {
     var cl = instance_create_depth(x,y,depth-1,obj_molded_fly_cloud);
     cl.fol = id;
+	cl.image_xscale = image_xscale;
     state = 6;   
     t = 0;
     hspeed = 0;
     vspeed = 0;
+	//var graph = instance_create_depth(x,y,depth-1,obj_molded_get_winged);
+	//graph.fol = id;
+	//graph.yoffset = 16;
 }
 
 if state = 6
@@ -190,7 +195,11 @@ if state = 6
     hspeed = 0;
     vspeed = 0;
     if t < 160 t++;
-    if (t = 150 && hspd = 0 && vspd = 0 ){t=0;state=1;}
+    if (t = 150 && hspd = 0 && vspd = 0 ){
+		t=0;
+		state=1;
+		if obj_Player.x > x side =-1; else side = 1;
+		}
 }
 
 #endregion

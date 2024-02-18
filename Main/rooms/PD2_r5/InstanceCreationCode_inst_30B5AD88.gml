@@ -10,8 +10,8 @@ if instance_exists(obj_Player)
             break;
         case 2:
             x_tp = 48;
-            y_tp = 240;
-            room_tp = PD2_r9;
+            y_tp = 176;
+            room_tp = PD2_r8;
             graph = 2;
             break;
     }

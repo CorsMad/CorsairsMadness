@@ -32,7 +32,7 @@ if key_jump || key_attack
             break;
         case 2:            
             obj_npc_desertv_merch.talk = 0;
-            obj_Player.isDead = 0;
+            obj_Player.isDead = 2.1;
 			instance_destroy();
             break;
     }

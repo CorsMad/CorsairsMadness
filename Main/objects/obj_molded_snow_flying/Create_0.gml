@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-state = 1;
+state = 0;
 side = -1;//-1 слева, 1  справа
 dir = 0;
 spd = 3;
@@ -14,3 +14,4 @@ magnet = 0;
 
 enemy_hp = 10;
 t_red = 0;
+t_wait = 0;

@@ -21,7 +21,7 @@ if (state = 1) { // Формирование
         case 50: fnc_snd_play_onetime(snd_transform);image_index = 1;break;   
         case 100: fnc_snd_play_onetime(snd_transform);image_index = 2;break;   
         case 150: 
-            instance_create_depth(x,y,0,obj_boss_se2_phase2);
+            instance_create_depth(x,y,10,obj_boss_se2_phase2);
             instance_destroy();            
             break;   
     }

@@ -249,7 +249,7 @@ switch(state)
 	case 3:
 		t++; 
         if t = 20{
-            fnc_msc_stop_play_slow();
+            
            if global.secrets_d_endurance = 0
         {
             instance_create_depth(240,256,0,obj_chest_de_3_s);   

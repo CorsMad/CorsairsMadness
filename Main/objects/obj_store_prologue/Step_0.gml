@@ -71,6 +71,8 @@ if key_jump_pressed || key_attack // accept
 					if instance_exists(obj_npc_lavav_merch)    instance_create_depth(x,y,-100000,obj_npc_lavav_merch_choose);
 					if instance_exists(obj_npc_snowv_merch)    instance_create_depth(x,y,-100000,obj_npc_snowv_merch_choose);
                     
+					
+					
                     instance_destroy();
                     
                     break;

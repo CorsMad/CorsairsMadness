@@ -6,7 +6,9 @@ if key_left_press {fnc_snd_play_over(snd_menu_select);t_alpha = 0;
         alpha = 1;state = 0;}
 if key_down_pressed {fnc_snd_play_over(snd_menu_select);t_alpha = 0;
         alpha = 1;state = 2;}
-
+if key_up_press && state = 2 {fnc_snd_play_over(snd_menu_select);t_alpha = 0;
+        alpha = 1;state = 0;}
+		
 if key_attack || key_jump
 {
     fnc_snd_play_over(snd_menu_accept);

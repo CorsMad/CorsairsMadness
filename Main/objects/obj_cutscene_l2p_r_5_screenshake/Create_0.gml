@@ -6,3 +6,4 @@ shake_x_2 = random_range(-1,1);
 shake_y_2 = random_range(863,865);
 t=0;
 state = 0;
+t_fallpart = 0;

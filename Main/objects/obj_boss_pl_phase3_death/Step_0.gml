@@ -1,17 +1,26 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+if state = 0 {
+	
+if point_distance(x, y, 480, 144) > 4
+	{
+	    move_towards_point(480, 144, 4);
+	}
+else{ speed = 0;state = 1}
+}
+
+if state = 1 {
 t++;
-
-vspd = lerp(vspd,0,0.1);
-
-if t > 80 && t < 240 && t mod 10 = 0
+if t > 20 && t < 240 && t mod 10 = 0
 {
+	
     if image_index = 1 image_index = 2 else image_index = 1;   
 }
 
 t_blood++;
-if t_blood >= 80 && t_blood < 260
+if t_blood >= 20 && t_blood < 260
 {
     if t mod 10 = 0
     {
@@ -95,6 +104,6 @@ switch(t)
         instance_destroy();
         var j = instance_create_depth(x,y,depth,obj_npc_bonnie_temple);
         j.image_xscale = image_xscale;
-        break;  
-    
+        break;    
+}
 }

@@ -27,6 +27,18 @@ function fnc_snd_play_boat_cannon()
 	}   
 }
 
+function fnc_snd_play_near_player(argument0){
+	
+	if x > (camera_get_view_x(view_camera[0])-32) && x < (camera_get_view_x(view_camera[0])+480+32) &&
+	y > (camera_get_view_y(view_camera[0])-32) && y < (camera_get_view_y(view_camera[0])+270+32){
+		if audio_play_sound(argument0,0,0)
+	    {
+	        audio_stop_sound(argument0);
+	        audio_play_sound(argument0,0,0);
+	    }	
+	}
+}
+
 function fnc_snd_play_over(argument0)
 {
     if audio_play_sound(argument0,0,0)

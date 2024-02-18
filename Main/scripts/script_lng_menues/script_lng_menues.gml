@@ -562,7 +562,7 @@ function fnc_lng_jmap()
             endurance   = "endurance test"
             lvl1        = "Bomb Catacombs"
             lvl2        = "tropical hazard"
-            temple      = "Jungle Temple"
+            temple      = "Temple entrance"
             lair        = "Temple Lair"
             
             #region LEVEL NAMES

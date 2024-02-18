@@ -28,11 +28,15 @@ if state = 0
 	        talk_cr_t = 1;
 	    }
 	}
+	
+	if talk_cr_t = 1 {
+		fnc_player_mov_right(self);	
+	}
 
-	if talk_cr_t!= 0 
+	if talk_cr_t > 1
 	{
 	    talk_cr_t++;
-	    if talk_cr_t = 10
+	    if talk_cr_t = 20
 	    {
 	        talk_cr_t = 0;
 	        instance_create_depth(x,y,-100000,obj_txt_shadow_mazemerch);         

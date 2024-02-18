@@ -3,6 +3,6 @@
 t++;
 if t >= 120 
 {
-	instance_create_depth(x+8,y+8,0,obj_death_pit);
+	instance_create_depth(x+8,y+8,_depth,obj_death_pit);
 	t = 0;
 }

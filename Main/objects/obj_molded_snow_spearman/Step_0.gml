@@ -210,8 +210,8 @@ if state = 3 // отпрыг
 
 if place_meeting(x,y,obj_doublejump)
 {
-    var cl = instance_create_depth(x,y,depth-1,obj_molded_lance_cloud);
-    cl.fol = id;
+    //var cl = instance_create_depth(x,y,depth-1,obj_molded_lance_cloud);
+    //cl.fol = id;
     state = 5;
     vspd = -6;
     if!place_meeting(x,y-1,obj_block) y-=1;
@@ -219,6 +219,8 @@ if place_meeting(x,y,obj_doublejump)
     hspd = 0;
     t = 0;
     bounce = 1;
+	var graph = instance_create_depth(x,y,depth-1,obj_molded_get_winged);
+	graph.fol = id;
 }
 
 #endregion

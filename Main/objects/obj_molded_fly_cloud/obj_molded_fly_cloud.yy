@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_molded_yellow_cloud",
-    "path": "sprites/spr_molded_yellow_cloud/spr_molded_yellow_cloud.yy",
+    "name": "spr_molded_get_winged_f",
+    "path": "sprites/spr_molded_get_winged_f/spr_molded_get_winged_f.yy",
   },
   "spriteMaskId": null,
   "visible": true,

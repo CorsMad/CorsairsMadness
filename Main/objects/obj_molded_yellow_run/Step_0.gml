@@ -386,8 +386,8 @@ place_meeting(x,y,obj_hitbox_mask_superattack_h2) || place_meeting(x,y,obj_hitbo
 var supermissle = instance_place(x,y,obj_hitbox_mask_superattack_missle) 
     if supermissle!=noone{
         supermissle.state = 1;
-        fnc_molded_blood_forward(3);
-        fnc_molded_blood_up(3);
+        fnc_molded_blood_forward(1);
+        fnc_molded_blood_up(1);
         enemy_hp-=5;
     }
 #endregion

@@ -4,14 +4,13 @@ randomise();
 instance_create_depth(0,0,0,DEBUG);
 
 
-global.TargetX      = 64;
-global.TargetY      = 128;
-global.TargetRoom   = EnduranceSnow;
+global.TargetX      = 48
+global.TargetY      = 160;
+global.TargetRoom   = L2b_r5;
 
-
-global.fTargetX     = 240;
-global.fTargetY     = 240;
-global.fTargetRoom  = TESTROOM;
+global.fTargetX     = 1376;
+global.fTargetY     = 208;
+global.fTargetRoom  = PL1_r23;
 
 
 ////////////////////////////////////////
@@ -46,8 +45,8 @@ global.language = 0;
     global.completed_PS1 = 1;   //0
     global.completed_PS2 = 0;   //0
                                 //0
-    global.completed_PG1 = 1;   //0
-    global.completed_PG2 = 0;   //0
+    global.completed_PG1 = 0;   //0
+    global.completed_PG2 = 1;   //0
                                 //0
     global.completed_PL1 = 1;   //0
     global.completed_PL2 = 0;   //0
@@ -116,20 +115,20 @@ global.language = 0;
 
 
 #region  ключи
-global.key_green1 = 1;      //0
+global.key_green1 = 0;      //0
 global.key_green2 = 1;      //0
                             //0
 global.key_yellow1 = 0;     //0
-global.key_yellow2 = 0;     //0
+global.key_yellow2 = 1;     //0
                             //0
-global.key_blue1 = 1;       //0
+global.key_blue1 = 0;       //0
 global.key_blue2 = 1;       //0
                             //0
 global.key_purple1 = 0;     //0
-global.key_purple2 = 0;     //0
+global.key_purple2 = 1;     //0
                             //0
 global.key_red1 = 0;        //0
-global.key_red2 = 0;        //0
+global.key_red2 = 1;        //0
 #endregion
 
 #region ТЕСТ Магазин
@@ -262,7 +261,7 @@ global.windowHeight = 1080;
 
 global.MSCvolume =0.5;// 0.5; //0.5
 global.MSCvolume_max = global.MSCvolume;
-global.SFXvolume =0.5// 0.5; //0.5
+global.SFXvolume = 0.5// 0.5; //0.5
 
 audio_group_set_gain(MusicVolume,global.MSCvolume,0);
 audio_group_set_gain(SFXvolume,global.SFXvolume,0);
@@ -531,7 +530,7 @@ global.secrets_g1_r12 = 0;
 global.secrets_g1_s2 = 0;
 
 global.secrets_g2_r6 = 0;
-global.secrets_g2b_s = 1;
+global.secrets_g2b_s = 0;
 global.secrets_g2p_r6 = 0;
 #endregion
 

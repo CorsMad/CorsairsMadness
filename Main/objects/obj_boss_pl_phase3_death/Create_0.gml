@@ -5,6 +5,7 @@ fnc_msc_stop_play_slow();
 t=0;
 t_blood = 0;
 hspd = 0;
+state = 0;
 image_speed = 0;
 instance_destroy(obj_follower_grounded_laser_vfx);
 instance_destroy(obj_fastfly_molded);

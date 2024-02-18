@@ -33,7 +33,8 @@ if instance_exists(obj_Player)
         obj_Player.isDashing = 0;
         obj_Player.isHooking = 0;
         obj_Player.isRecoil = 0;
-        if x > room_width/2 player_pos = -1 else player_pos = 1
+		if image_xscale = 1 player_pos = 1 else player_pos = -1;
+        //if obj_Player.x < x player_pos = -1 else player_pos = 1
 		//if obj_Player.x < x player_pos = -1 else player_pos = 1
         talk_cr_t = 1;  		
     } 

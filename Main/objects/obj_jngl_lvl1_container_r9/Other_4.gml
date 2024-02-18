@@ -4,5 +4,5 @@ instance_create_depth(x,y,0,obj_room_transition_black_screen);
 
 if global.chest_j1_r9 = 1
 {
-    instance_create_depth(336,240,0,obj_chest_j1_r9);
+    instance_create_depth(336,240,102,obj_chest_j1_r9);
 }

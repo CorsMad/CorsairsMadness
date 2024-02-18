@@ -3,3 +3,5 @@
 choosed =0;
 
 fnc_snd_play_onetime(snd_maze_g_complete1);
+
+row = 0

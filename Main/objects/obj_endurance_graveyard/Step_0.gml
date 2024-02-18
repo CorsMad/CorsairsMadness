@@ -43,28 +43,28 @@ if state = 1.1 // 4 Зомби Абоминация
         case 50: 
             if obj_Player.x>room_width/2 
 			{
-				instance_create_depth(64,256,1,obj_zombie_start)	
-				instance_create_depth(144,256,1,obj_zombie_start)	
+				instance_create_depth(64,256,50,obj_zombie_start)	
+				instance_create_depth(144,256,50,obj_zombie_start)	
 			} else 
 			{
-				instance_create_depth(336,256,1,obj_zombie_start)	
-				instance_create_depth(416,256,1,obj_zombie_start)	
+				instance_create_depth(336,256,50,obj_zombie_start)	
+				instance_create_depth(416,256,50,obj_zombie_start)	
 			}	
 			break;
-        case 200: instance_create_depth(obj_Player.x,256,1,obj_zombie_start);break;
-        case 250: instance_create_depth(obj_Player.x,256,1,obj_zombie_start);break;
-        case 300: instance_create_depth(obj_Player.x,256,1,obj_zombie_start);break;
-        case 350: instance_create_depth(obj_Player.x,256,1,obj_zombie_start);break;
+        case 200: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
+        case 250: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
+        case 300: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
+        case 350: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
 			
 		case 450:
 			if obj_Player.x>room_width/2 
 			{
-				var e1 = instance_create_depth(80,240,1,obj_molded_big_spawner_n)	
+				var e1 = instance_create_depth(80,240,50,obj_molded_big_spawner_n)	
 				e1.obj_cr = obj_abomination;
 				e1.y_cr = 16;
 			} else 
 			{
-				var e1 = instance_create_depth(416,240,1,obj_molded_big_spawner_n)	
+				var e1 = instance_create_depth(416,240,50,obj_molded_big_spawner_n)	
 				e1.obj_cr = obj_abomination;
 				e1.y_cr = 16;
 			}	
@@ -89,33 +89,33 @@ if state = 1.2 // Спрут Абоминация Абоминация
    {	
 	   case 50:
 		if obj_Player.x>room_width/2 {
-			var e1 = instance_create_depth(80,240,0,obj_molded_big_spawner_n)
+			var e1 = instance_create_depth(80,240,50,obj_molded_big_spawner_n)
 			e1.obj_cr = obj_evilsprout
 			e1.y_cr = 16;
 		} else {
-			var e1 = instance_create_depth(400,240,0,obj_molded_big_spawner_n)
+			var e1 = instance_create_depth(400,240,50,obj_molded_big_spawner_n)
 			e1.obj_cr = obj_evilsprout
 			e1.y_cr = 16;	
 		}
 		break;
 		case 200:
 			if obj_Player.x>room_width/2 {
-			var e1 = instance_create_depth(144,240,0,obj_molded_big_spawner_n)
+			var e1 = instance_create_depth(144,240,50,obj_molded_big_spawner_n)
 			e1.obj_cr = obj_abomination
 			e1.y_cr = 16;
 		} else {
-			var e1 = instance_create_depth(352,240,0,obj_molded_big_spawner_n)
+			var e1 = instance_create_depth(352,240,50,obj_molded_big_spawner_n)
 			e1.obj_cr = obj_abomination
 			e1.y_cr = 16;	
 		}
 			break;
 		case 400:
 			if obj_Player.x>room_width/2 {
-			var e1 = instance_create_depth(128,240,0,obj_molded_big_spawner_n)
+			var e1 = instance_create_depth(128,240,50,obj_molded_big_spawner_n)
 			e1.obj_cr = obj_abomination
 			e1.y_cr = 16;
 		} else {
-			var e1 = instance_create_depth(368,240,0,obj_molded_big_spawner_n)
+			var e1 = instance_create_depth(368,240,50,obj_molded_big_spawner_n)
 			e1.obj_cr = obj_abomination
 			e1.y_cr = 16;	
 		}
@@ -141,25 +141,25 @@ if state = 1.3 // Оборотень 3 зомби ОБоротень
 	{
 		case 50:
 		if obj_Player.x>room_width/2 {
-			var e2 = instance_create_depth(96,240,0,obj_molded_big_spawner_n)	
+			var e2 = instance_create_depth(96,240,50,obj_molded_big_spawner_n)	
 			e2.obj_cr = obj_werewolf;
 			e2.y_cr = 16;
 		} else {
-			var e2 = instance_create_depth(384,240,0,obj_molded_big_spawner_n)	
+			var e2 = instance_create_depth(384,240,50,obj_molded_big_spawner_n)	
 			e2.obj_cr = obj_werewolf;
 			e2.y_cr = 16;
 		}	
 			break;
-		case 150: instance_create_depth(obj_Player.x,256,1,obj_zombie_start);break;
-		case 200: instance_create_depth(obj_Player.x,256,1,obj_zombie_start);break;
-		case 220: instance_create_depth(obj_Player.x,256,1,obj_zombie_start);break;
+		case 150: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
+		case 200: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
+		case 220: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
 		case 400:		
 		if obj_Player.x>room_width/2 {
-			var e2 = instance_create_depth(80,240,0,obj_molded_big_spawner_n)	
+			var e2 = instance_create_depth(80,240,50,obj_molded_big_spawner_n)	
 			e2.obj_cr = obj_werewolf;
 			e2.y_cr = 16;
 		} else {
-			var e2 = instance_create_depth(400,240,0,obj_molded_big_spawner_n)	
+			var e2 = instance_create_depth(400,240,50,obj_molded_big_spawner_n)	
 			e2.obj_cr = obj_werewolf;
 			e2.y_cr = 16;
 		}	
@@ -183,30 +183,30 @@ if state = 1.4 // 2 зомби + абоминация Оборотень + сп�
 	switch(t)
 	{
 		case 50:
-			instance_create_depth(96,256,1,obj_zombie_start);
-			instance_create_depth(224,256,1,obj_zombie_start);
-			instance_create_depth(368,256,1,obj_zombie_start);
+			instance_create_depth(96,256,50,obj_zombie_start);
+			instance_create_depth(224,256,50,obj_zombie_start);
+			instance_create_depth(368,256,50,obj_zombie_start);
 			if obj_Player.x > room_width/2{
-				var e1 = instance_create_depth(112,240,0,obj_molded_big_spawner_n);
+				var e1 = instance_create_depth(112,240,50,obj_molded_big_spawner_n);
 				e1.obj_cr = obj_abomination;
 				e1.y_cr = 16;
 			} else {
-				var e1 = instance_create_depth(368,240,0,obj_molded_big_spawner_n);
+				var e1 = instance_create_depth(368,240,50,obj_molded_big_spawner_n);
 				e1.obj_cr = obj_abomination;
 				e1.y_cr = 16;	
 			}			
 			break;
 		case 250:
 			if obj_Player.x> room_width/2{
-				var e1 = instance_create_depth(64,240,0,obj_molded_big_spawner)	
-				var e2 = instance_create_depth(112,240,0,obj_molded_big_spawner)
+				var e1 = instance_create_depth(64,240,50,obj_molded_big_spawner)	
+				var e2 = instance_create_depth(112,240,50,obj_molded_big_spawner)
 				e1.obj_cr = obj_werewolf;
 				e2.obj_cr = obj_evilsprout;
 				e1.y_cr = 16;
 				e2.y_cr = 16;
 			} else {
-				var e1 = instance_create_depth(416,240,0,obj_molded_big_spawner)	
-				var e2 = instance_create_depth(352,240,0,obj_molded_big_spawner)
+				var e1 = instance_create_depth(416,240,50,obj_molded_big_spawner)	
+				var e2 = instance_create_depth(352,240,50,obj_molded_big_spawner)
 				e1.obj_cr = obj_werewolf;
 				e2.obj_cr = obj_evilsprout;
 				e1.y_cr = 16;
@@ -214,14 +214,14 @@ if state = 1.4 // 2 зомби + абоминация Оборотень + сп�
 			}
 			break;
 		case 650:
-			instance_create_depth(96,256,1,obj_zombie_start);			
-			instance_create_depth(368,256,1,obj_zombie_start);
+			instance_create_depth(96,256,50,obj_zombie_start);			
+			instance_create_depth(368,256,50,obj_zombie_start);
 			if obj_Player.x > room_width/2{
-				var e1 = instance_create_depth(112,240,0,obj_molded_big_spawner_n);
+				var e1 = instance_create_depth(112,240,50,obj_molded_big_spawner_n);
 				e1.obj_cr = obj_werewolf;
 				e1.y_cr = 16;
 			} else {
-				var e1 = instance_create_depth(368,416,0,obj_molded_big_spawner_n);
+				var e1 = instance_create_depth(368,416,50,obj_molded_big_spawner_n);
 				e1.obj_cr = obj_werewolf;
 				e1.y_cr = 16;	
 			}
@@ -244,7 +244,7 @@ if state = 1.4 // 2 зомби + абоминация Оборотень + сп�
 if state = 1.5 // получение сундука
 {
     if t < 22 t++;
-    if t = 20 instance_create_depth(48,256,1,obj_chest_ge_1);
+    if t = 20 instance_create_depth(48,256,80,obj_chest_ge_1);
 }
 
 if state = 1.51 // Разбивка сундук
@@ -275,7 +275,7 @@ if state = 1.6 // Ожидание перед боссом 1
 if state = 2.1
 {
     if t < 22 t++;
-    if t = 20 instance_create_depth(320,256,1,obj_chest_ge_2);
+    if t = 20 instance_create_depth(320,256,80,obj_chest_ge_2);
 }
 
 if state = 2.3 // Ожидание перед 2 боссом
@@ -297,7 +297,7 @@ if state = 3.1
     if t < 3 t++;
     if t = 1
     {
-        instance_create_depth(-64,64,0,obj_boss_ge1_phase2);
+        instance_create_depth(-64,64,50,obj_boss_ge1_phase2);
     }
 }
 
@@ -308,8 +308,8 @@ if state = 3.2
     {
         if global.secrets_g_endurance = 0
         {
-            instance_create_depth(240,256,0,obj_chest_ge_3_s);   
-        } else instance_create_depth(240,256,0,obj_chest_ge_3);  
+            instance_create_depth(240,256,80,obj_chest_ge_3_s);   
+        } else instance_create_depth(240,256,80,obj_chest_ge_3);  
         instance_destroy();
     }
     

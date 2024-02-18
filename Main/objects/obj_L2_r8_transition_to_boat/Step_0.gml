@@ -5,6 +5,7 @@ t++;
 
 if t = 50
 {
+	global.hp = global.hp_max;
     global.boatCheckpoint = 0;
     room_goto(L2_r8_boat); 
 }

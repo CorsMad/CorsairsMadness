@@ -6,21 +6,21 @@ if instance_exists(obj_Player)
 {
 	if obj_Player.x > room_width/2
 	{
-		var i1 = instance_create_depth(8,200,0,obj_destrutable_chain_block_simple);
-		var i2 = instance_create_depth(8,216,0,obj_destrutable_chain_block_simple);
-		var i3 = instance_create_depth(8,232,0,obj_destrutable_chain_block_simple);
+		var i1 = instance_create_depth(8,200,101,obj_destrutable_chain_block_simple);
+		var i2 = instance_create_depth(8,216,101,obj_destrutable_chain_block_simple);
+		var i3 = instance_create_depth(8,232,101,obj_destrutable_chain_block_simple);
 		
-		var i4 = instance_create_depth(24,200,0,obj_destrutable_chain_block_simple);
-		var i5 = instance_create_depth(24,216,0,obj_destrutable_chain_block_simple);
-		var i6 = instance_create_depth(24,232,0,obj_destrutable_chain_block_simple);
+		var i4 = instance_create_depth(24,200,101,obj_destrutable_chain_block_simple);
+		var i5 = instance_create_depth(24,216,101,obj_destrutable_chain_block_simple);
+		var i6 = instance_create_depth(24,232,101,obj_destrutable_chain_block_simple);
 		
-		var i7 = instance_create_depth(40,200,0,obj_destrutable_chain_block_simple);
-		var i8 = instance_create_depth(40,216,0,obj_destrutable_chain_block_simple);
-		var i9 = instance_create_depth(40,232,0,obj_destrutable_chain_block_simple);
+		var i7 = instance_create_depth(40,200,101,obj_destrutable_chain_block_simple);
+		var i8 = instance_create_depth(40,216,101,obj_destrutable_chain_block_simple);
+		var i9 = instance_create_depth(40,232,101,obj_destrutable_chain_block_simple);
 		
-		var i10 = instance_create_depth(56,200,0,obj_destrutable_chain_block_simple);
-		var i11 = instance_create_depth(56,216,0,obj_destrutable_chain_block_simple);
-		var i12 = instance_create_depth(56,232,0,obj_destrutable_chain_block_simple);
+		var i10 = instance_create_depth(56,200,101,obj_destrutable_chain_block_simple);
+		var i11 = instance_create_depth(56,216,101,obj_destrutable_chain_block_simple);
+		var i12 = instance_create_depth(56,232,101,obj_destrutable_chain_block_simple);
 		
 		i1.sprite_index = spr_destructable_tile_sand;
 		i1.image_index = 4;

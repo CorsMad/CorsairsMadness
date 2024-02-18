@@ -2,17 +2,27 @@
 // You can write your code in this editor
 fnc_Collision(obj_block);
 
+
+if state = 0 {
+	if point_distance(x, y, room_width/2, room_height/2) > 4
+	{
+	    move_towards_point(room_width/2, room_height/2, 4);
+	}
+	else{ speed = 0;state = 1}
+}
+
+
+if state = 1 {
 t++;
 
-vspd = lerp(vspd,0,0.1);
 
-if t > 80 && t < 240 && t mod 10 = 0
+if t > 20 && t < 240 && t mod 10 = 0
 {
     if image_index = 3 image_index = 4 else image_index = 3;   
 }
 
 t_blood++;
-if t_blood >= 80 && t_blood < 260
+if t_blood >= 20 && t_blood < 260
 {
     if t mod 10 = 0
     {
@@ -104,4 +114,6 @@ switch(t)
         var j = instance_create_depth(x-18*sign(image_xscale),y-18,depth,obj_npc_jake_temple);
         j.image_xscale = image_xscale;
     
+}
+
 }

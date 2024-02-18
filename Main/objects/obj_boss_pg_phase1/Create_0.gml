@@ -17,5 +17,5 @@ hit_cd = 0;
 enemy_hp = 70;
 enemy_hp_max = 70;
 t_red =0;
-
+dmg_multiplier = 1;
 turn_light = 0;

@@ -242,6 +242,7 @@ if enemy_hp <= 0
 }
 if place_meeting(x,y,obj_hitbox_mask_superdash)
 {
+	fnc_snd_play_over(snd_j2_boss_walls);
     enemy_hp = 0;   
 }
 #endregion

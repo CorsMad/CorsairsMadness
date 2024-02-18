@@ -1092,8 +1092,8 @@
         {"name":"g_ContrastBrightness","type":0,"value":"1.25",},
       ],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_5","depth":700,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
-        {"name":"g_ContrastIntensity","type":0,"value":"1.15",},
-        {"name":"g_ContrastBrightness","type":0,"value":"1.15",},
+        {"name":"g_ContrastIntensity","type":0,"value":"0.9",},
+        {"name":"g_ContrastBrightness","type":0,"value":"0.9",},
       ],"tiles":{"SerialiseHeight":90,"SerialiseWidth":30,"TileCompressedData":[
 -49,-2147483648,-2,0,-28,-2147483648,-2,0,-2,-2147483648,-2,0,-21,-2147483648,9,0,-2147483648,-2147483648,0,0,-2147483648,-2147483648,0,0,-12,-2147483648,2,55,56,-5,
 -2147483648,1,47,-10,33,2,48,74,-10,-2147483648,2,60,61,-3,-2147483648,3,47,33,45,-4,49,1,38,-3,49,-2,38,3,46,33,

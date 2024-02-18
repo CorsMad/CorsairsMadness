@@ -16,3 +16,5 @@ talked = 0;
 
 t_state = 0;
 t_anim = 0;
+
+player_pos = 0;

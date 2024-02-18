@@ -268,6 +268,8 @@ function fnc_confirmlevel1N(argument0)    {
     fnc_msc_stop_play();
         switch(argument0)
                         {
+							//////////////////JUNGLE//////////////////////	
+							
                             case 0: // джунгли1
                                 global.TargetX = 48;
                                 global.TargetY = 160;
@@ -300,6 +302,8 @@ function fnc_confirmlevel1N(argument0)    {
 								room_goto(JP2FirstLoading);
 								break;
 								
+							//////////////////DESERT//////////////////////	
+							
 							case 1.01:// Деревня
 								global.TargetX = 32;
 				                global.TargetY = 240;
@@ -331,6 +335,8 @@ function fnc_confirmlevel1N(argument0)    {
 			                    global.fTargetRoom = PD2_r1;
 			                    room_goto(PD2FirstLoading);
 								break;
+							
+							//////////////////SNOW//////////////////////	
 							
 							case 2.01: //snow village
 								global.TargetX = 864;
@@ -364,6 +370,14 @@ function fnc_confirmlevel1N(argument0)    {
 			                    room_goto(PS2FirstLoading);
 								break;
 								
+							//////////////////SHADOW//////////////////////	
+							
+							case 3.01: //snow village
+								global.TargetX = 864;
+								global.TargetY = 240;
+								global.TargetRoom = Village_shadow;
+								room_goto(VillageShadowFirstLoading);
+								break;
                             case 3: // shadow
                                 global.TargetX = 32;
                                 global.TargetY = 144;
@@ -376,7 +390,28 @@ function fnc_confirmlevel1N(argument0)    {
                                 global.TargetRoom = G2_r1;
                                 room_goto(G1FirstLoading);
                                 break;
-								
+							case 3.11:								
+			                    global.fTargetX = 48;
+			                    global.fTargetY = 0;
+			                    global.fTargetRoom = PG1_r1;
+								global.Cutscene_pg1_r17 = 1;
+			                    room_goto(PG1FirstLoading);
+								break;
+							case 3.12:
+								global.fTargetX = 40;
+			                    global.fTargetY = 0;
+			                    global.fTargetRoom = PG2_r1;
+			                    room_goto(PG2FirstLoading);
+								break;
+							
+							//////////////////VULCANO//////////////////////	
+							
+							case 4.01: // Village
+								global.TargetX = 576;
+					            global.TargetY = 240;
+					            global.TargetRoom = Village_lava;
+					            room_goto(VillageLavaFirstLoading);
+								break;
                             case 4: // lava
                                 global.TargetX = 32;
                                 global.TargetY = 224;
@@ -389,6 +424,21 @@ function fnc_confirmlevel1N(argument0)    {
                                 global.TargetRoom = L2_r1;
                                 room_goto(L1FirstLoading);
                                 break;
+							case 4.11: // temple
+								global.fTargetX = 40;
+								global.fTargetY = 0;
+								global.fTargetRoom = PL1_r1;
+								global.Cutscene_pl1_r15 = 1
+								room_goto(PL1FirstLoading);
+								break;
+							case 4.12: // lair
+								global.fTargetX = 48;
+			                    global.fTargetY = 0;
+			                    global.fTargetRoom = PL2_r1;
+			                    room_goto(PL2FirstLoading);
+								break;
+								
+								
 								
                             case 90: // колиз джунгли
                                 global.TargetX = 48;

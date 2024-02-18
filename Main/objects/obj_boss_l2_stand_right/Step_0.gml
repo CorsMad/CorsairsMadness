@@ -27,5 +27,5 @@ if t_red=10 {t_red=0;image_blend = c_white;}
 if hp <=0 
 {
     instance_destroy();
-    instance_create_depth(x,y,depth,obj_boss_l2_stand_right_death);
+    instance_create_depth(x,y,201,obj_boss_l2_stand_right_death);
 }

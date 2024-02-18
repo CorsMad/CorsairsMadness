@@ -7,12 +7,12 @@ if state = 0
      {		
 		if obj_Player.x > 208
             {
-                var e1 = instance_create_depth(48,192,0,obj_molded_big_spawner_n);
+                var e1 = instance_create_depth(48,192,100,obj_molded_big_spawner_n);
                 e1.y_cr = 16;
                 e1.obj_cr = obj_werewolf;   
             } else 
             {
-                var e1 = instance_create_depth(352,224,0,obj_molded_big_spawner_n);
+                var e1 = instance_create_depth(352,224,100,obj_molded_big_spawner_n);
                 e1.y_cr = 16;
                 e1.obj_cr = obj_plant;      
             }    
@@ -21,12 +21,12 @@ if state = 0
      }
      
      if (t = 100) {
-        instance_create_depth(128,240,0,obj_zombie_start);        
+        instance_create_depth(128,240,100,obj_zombie_start);        
      }
      
      if t =150 
      {
-        instance_create_depth(320,240,0,obj_zombie_start);                
+        instance_create_depth(320,240,100,obj_zombie_start);                
      }
      
      if t = 200
@@ -53,12 +53,12 @@ if state = 1
         case 50: 
             if obj_Player.x > 208
             {
-                var e1 = instance_create_depth(48,192,0,obj_molded_big_spawner_n);
+                var e1 = instance_create_depth(48,192,100,obj_molded_big_spawner_n);
                 e1.y_cr = 16;
                 e1.obj_cr = obj_werewolf;    
             } else 
             {
-                var e1 = instance_create_depth(352,224,0,obj_molded_big_spawner_n);
+                var e1 = instance_create_depth(352,224,100,obj_molded_big_spawner_n);
                 e1.y_cr = 16;
                 e1.obj_cr = obj_werewolf;      
             }            
@@ -66,12 +66,12 @@ if state = 1
         case 300:
             if obj_Player.x > 208
             {
-                var e1 = instance_create_depth(112,224,0,obj_molded_big_spawner_n);
+                var e1 = instance_create_depth(112,224,100,obj_molded_big_spawner_n);
                 e1.y_cr = 16;
                 e1.obj_cr = obj_abomination;    
             } else 
             {
-                var e1 = instance_create_depth(336,224,0,obj_molded_big_spawner_n);
+                var e1 = instance_create_depth(336,224,100,obj_molded_big_spawner_n);
                 e1.y_cr = 16;
                 e1.obj_cr = obj_abomination;      
             }                 

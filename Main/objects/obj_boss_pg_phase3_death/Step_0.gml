@@ -3,9 +3,9 @@
 
 t++;
 
-if (point_distance(x, y, 240, 288) > 3)
+if (point_distance(x, y, 240, 416) > 3)
 {
-    move_towards_point(240, 288, 3);   
+    move_towards_point(240, 416, 3);   
 }
 else { speed = 0; }
 

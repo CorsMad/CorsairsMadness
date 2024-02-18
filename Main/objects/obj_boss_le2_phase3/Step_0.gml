@@ -80,7 +80,7 @@ if (state = 1.5) { // вправо
         case 56: image_index = 10;break;   
         case 59: image_index = 11;break;   
     }
-	if t = 100
+	if t = 70
 	{
 		state = 0;
 		t = 0;

@@ -299,7 +299,7 @@ if state = 1.4 // Волновые птицы, 2 растения, 2 ежа, 1 �
 if state = 1.5 // получение сундука
 {
     if t < 22 t++;
-    if t = 20 instance_create_depth(48,240,1,obj_chest_je_1);
+    if t = 20 instance_create_depth(48,240,150,obj_chest_je_1);
 }
 
 if state = 1.51 // Разбивка сундук
@@ -353,7 +353,7 @@ if state = 2.1
 if state = 2.2
 {
     if t < 22 t++;
-    if t = 20 instance_create_depth(416,240,1,obj_chest_je_2);
+    if t = 20 instance_create_depth(416,240,150,obj_chest_je_2);
 }
 
 if state = 2.3 // Ожидание перед 2 боссом
@@ -384,11 +384,11 @@ if state = 3.2
     t++;
     if t = 20
     {
-        fnc_msc_stop_play_slow();
+        
         if global.secrets_j2_endurance = 0
         {
-            instance_create_depth(240,240,0,obj_chest_je_3_s);   
-        } else instance_create_depth(240,240,0,obj_chest_je_3);  
+            instance_create_depth(240,240,150,obj_chest_je_3_s);   
+        } else instance_create_depth(240,240,150,obj_chest_je_3);  
         instance_destroy();
     }
     

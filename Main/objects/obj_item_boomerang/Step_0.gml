@@ -49,7 +49,9 @@ if state = 1 // К игроку
 }
  if acc!=0
  {
-    image_speed = acc/1.5;   
+	 if acc > 0 image_speed = 1.25; 
+	 if acc < 0 image_speed = -1.25;
+    //image_speed = acc/1.5;   
  }
 
 

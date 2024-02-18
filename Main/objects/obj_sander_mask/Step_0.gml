@@ -57,10 +57,7 @@ if instance_exists(owner)
     fnc_enemy_no_armor_dmg();
 	#endregion
 	
-	
-	
-	
-	
+	owner.t_red = hit_cd;
 	
 }
 

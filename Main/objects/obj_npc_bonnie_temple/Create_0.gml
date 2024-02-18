@@ -12,3 +12,5 @@ pointer.own = id;
 
 isGrounded = 0;
 talk_cr_t = 0;
+
+player_pos= 0;

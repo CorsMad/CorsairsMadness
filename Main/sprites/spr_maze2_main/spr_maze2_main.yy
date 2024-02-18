@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_maze2_main",
-  "bbox_bottom": 201,
+  "bbox_bottom": 237,
   "bbox_left": 118,
   "bbox_right": 361,
   "bbox_top": 54,

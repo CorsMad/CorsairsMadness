@@ -74,6 +74,18 @@ if (place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_hitbox_down) )&& hit_
     t = 0;
     t_red = 1;
 }
+
+if (place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_hitbox_down) )&& hit_cd = 0 && state = 2
+{
+    fnc_snd_play_onetime(snd_player_hit);
+    hit_cd = 1;
+    enemy_hp-=1;
+    state = 1;
+    t = 0;
+    t_red = 1;
+}
+
+
 if hit_cd!=0 hit_cd++;
 if hit_cd=11 hit_cd = 0;
 

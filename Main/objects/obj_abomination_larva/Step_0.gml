@@ -91,5 +91,5 @@ if enemy_hp < 1
     instance_destroy();
     
 }
-
+if y > room_height+32 instance_destroy();
 #endregion

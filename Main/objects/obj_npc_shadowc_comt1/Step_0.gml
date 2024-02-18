@@ -16,14 +16,20 @@ if instance_exists(obj_Player)
         obj_Player.key_up = 0;
         obj_Player.key_up_press = 0;
         obj_Player.key_item = 0;
-        talk_cr_t = 1;  
+		if obj_Player.x < x player_pos = -1 else player_pos = 1
+        talk_cr_t = 1;  		
     } 
 }
 
-if talk_cr_t!= 0 
+if talk_cr_t = 1 {
+	if player_pos = -1 fnc_player_mov_left(self)
+	if player_pos = 1  fnc_player_mov_right(self);			
+}
+
+if talk_cr_t > 1	
 {
     talk_cr_t++;
-    if talk_cr_t = 10
+    if talk_cr_t = 20
     {
         talk_cr_t = 0;
         instance_create_depth(x,y,-100000,obj_txt_shadowc_comt1); //3 разговор  //3 разговор              

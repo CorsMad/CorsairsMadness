@@ -3,7 +3,7 @@ if instance_exists(obj_Player)
     switch(obj_Player.tp)
     {
         case 1:
-            x_tp = 32;
+            x_tp = 16;
             y_tp = 160;
             room_tp = PG1_r8;
             graph = 1;

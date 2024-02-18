@@ -34,7 +34,7 @@ if (state = 1) { // влево
         case 36: image_index = 6;break;   
         case 39: image_index = 7;break;   
         case 50: 
-            var l_b = instance_create_depth(x-30,y-14,depth-1,obj_boss_l2_bomb_small);
+            var l_b = instance_create_depth(x-30,y-14,-1,obj_boss_l2_bomb_small);
             l_b.hspd = random_range(-4,-0.5); 
             l_b.vspd = -1 
             image_index = 8;
@@ -43,7 +43,7 @@ if (state = 1) { // влево
         case 56: image_index = 10;break;   
         case 59: image_index = 11;break;   
     }
-	if t = 100
+	if t = 70
 	{
 		state = 0;
 		t = 0;
@@ -71,7 +71,7 @@ if (state = 1.5) { // вправо
         case 36: image_index = 6;break;   
         case 39: image_index = 7;break;   
         case 50: 
-            var l_b = instance_create_depth(x+30,y-14,depth-1,obj_boss_l2_bomb_small);
+            var l_b = instance_create_depth(x+30,y-14,-1,obj_boss_l2_bomb_small);
             l_b.hspd = random_range(0.5,4); 
             l_b.vspd = -1; 
             image_index = 8;
@@ -80,7 +80,7 @@ if (state = 1.5) { // вправо
         case 56: image_index = 10;break;   
         case 59: image_index = 11;break;   
     }
-	if t = 100
+	if t = 70
 	{
 		state = 0;
 		t = 0;
@@ -118,13 +118,22 @@ if state = 1.9
     if t = 70
     {
         instance_destroy(obj_boss_l2_tower_phase3);
-        instance_create_depth(0,0,depth+1,obj_boss_l2_tower_phase3_tower)
-        obj_boss_l2_stand_left_death.state = 1;
-        obj_boss_l2_stand_left_death.t = 0
-        obj_boss_l2_stand_left_death.t1 = 0
-        obj_boss_l2_stand_right_death.state = 1;
-        obj_boss_l2_stand_right_death.t = 0
-        obj_boss_l2_stand_right_death.t1 = 0
+        //instance_create_depth(0,0,depth+1,obj_boss_l2_tower_phase3_tower)
+        //obj_boss_l2_stand_left_death.state = 1;
+        //obj_boss_l2_stand_left_death.t = 0
+        //obj_boss_l2_stand_left_death.t1 = 0
+        //obj_boss_l2_stand_right_death.state = 1;
+        //obj_boss_l2_stand_right_death.t = 0
+        //obj_boss_l2_stand_right_death.t1 = 0
+		
+		instance_create_depth(0,0,201,obj_boss_l2_tower_phase3_tower)
+		obj_boss_l2_stand_left_death.state = 1;
+		obj_boss_l2_stand_left_death.t = 0
+		obj_boss_l2_stand_left_death.t1 = 0
+		obj_boss_l2_stand_right_death.state = 1;
+		obj_boss_l2_stand_right_death.t = 0
+		obj_boss_l2_stand_right_death.t1 = 0
+		
         state = 2;
         t = 0;
     }
@@ -183,7 +192,7 @@ if state = 4
 	if !instance_exists(obj_armor_skel)
 	{
         if instance_exists(obj_pause_controller) instance_destroy(obj_pause_controller);
-        fnc_msc_stop_play_slow();
+        fnc_msc_stop_play();
         if global.key_red2 = 0 instance_create_depth(240,128,depth,obj_key_red_tri);
         else instance_create_depth(x,y,0,obj_room_transition_black_screen_l1_stats); 
 		instance_destroy()

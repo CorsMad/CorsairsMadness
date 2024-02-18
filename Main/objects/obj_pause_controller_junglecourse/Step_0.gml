@@ -5,6 +5,7 @@ if (instance_exists(obj_Player) || instance_exists(obj_Player_boat)) && isPaused
 {
     fnc_snd_play_over(snd_pause_on);
     instance_deactivate_all(1);
+	instance_activate_object(obj_music_controller);
     isPaused = 1;
     var p = instance_create_depth(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),-1000,obj_pause_menu_junglecourse);
     p.transitionPlace = transitionPlace;
@@ -12,7 +13,17 @@ if (instance_exists(obj_Player) || instance_exists(obj_Player_boat)) && isPaused
 }
 
 
-
+if instance_exists(obj_Player){
+	player_input();
+	if obj_Player.state = 0 && obj_Player.isDead = 0 && obj_Player.isUsingitem = 0  && obj_Player.isAirUsingitem = 0 {
+		if key_select {
+		fnc_snd_play_over(snd_pause_on);
+		instance_deactivate_all(1);	
+        instance_activate_object(obj_music_controller);
+		instance_create_depth(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),-16000,obj_weapon_select);   
+		}
+	}
+}
 
 
 

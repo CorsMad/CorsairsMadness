@@ -45,7 +45,7 @@ if state = 3
         instance_create_depth(x,y,0,obj_skeleton_bone);  
         instance_create_depth(x,y,0,obj_skeleton_bone);
         instance_create_depth(x,y,-1,obj_sfx_dust_expl_big);
-        instance_create_depth(x,y-24,-1,obj_boss_se2_phase2_appear);
+        instance_create_depth(x,y-24,1,obj_boss_se2_phase2_appear);
         instance_destroy();
     }
 }

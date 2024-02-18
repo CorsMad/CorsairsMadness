@@ -5,3 +5,4 @@ if instance_exists(obj_Player)
         image_xscale = 1;   
     } else image_xscale = -1;
 }   
+depth = 100;

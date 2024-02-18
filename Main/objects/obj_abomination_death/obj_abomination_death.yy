@@ -12,10 +12,7 @@
     "name": "Abomination",
     "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Graveyard/Abomination.yy",
   },
-  "parentObjectId": {
-    "name": "obj_enemy_parent_no_armor",
-    "path": "objects/obj_enemy_parent_no_armor/obj_enemy_parent_no_armor.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

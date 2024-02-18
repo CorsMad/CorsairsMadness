@@ -12,10 +12,10 @@ if instance_exists(obj_Player)
 {
     if obj_Player.x < room_width/2
     {
-        var i1 = instance_create_depth(776,136,0,obj_destrutable_chain_block_simple);
-        var i2 = instance_create_depth(776,152,0,obj_destrutable_chain_block_simple);
-        var i3 = instance_create_depth(776,168,0,obj_destrutable_chain_block_simple);
-        var i4 = instance_create_depth(776,184,0,obj_destrutable_chain_block_simple);
+        var i1 = instance_create_depth(776,136,101,obj_destrutable_chain_block_simple);
+        var i2 = instance_create_depth(776,152,101,obj_destrutable_chain_block_simple);
+        var i3 = instance_create_depth(776,168,101,obj_destrutable_chain_block_simple);
+        var i4 = instance_create_depth(776,184,101,obj_destrutable_chain_block_simple);
 
         
         i1.sprite_index = spr_destructable_tile_vulcano;
@@ -28,10 +28,10 @@ if instance_exists(obj_Player)
         i4.image_index = 18;
 
         
-        var k1 = instance_create_depth(792,136,0,obj_destrutable_chain_block_simple);
-        var k2 = instance_create_depth(792,152,0,obj_destrutable_chain_block_simple);
-        var k3 = instance_create_depth(792,168,0,obj_destrutable_chain_block_simple);
-        var k4 = instance_create_depth(792,184,0,obj_destrutable_chain_block_simple);
+        var k1 = instance_create_depth(792,136,101,obj_destrutable_chain_block_simple);
+        var k2 = instance_create_depth(792,152,101,obj_destrutable_chain_block_simple);
+        var k3 = instance_create_depth(792,168,101,obj_destrutable_chain_block_simple);
+        var k4 = instance_create_depth(792,184,101,obj_destrutable_chain_block_simple);
         
         k1.sprite_index = spr_destructable_tile_vulcano;
         k1.image_index = 4;
@@ -42,10 +42,10 @@ if instance_exists(obj_Player)
         k4.sprite_index = spr_destructable_tile_vulcano;
         k4.image_index = 4;
         
-        var l1 = instance_create_depth(808,136,0,obj_destrutable_chain_block_simple);
-        var l2 = instance_create_depth(808,152,0,obj_destrutable_chain_block_simple);
-        var l3 = instance_create_depth(808,168,0,obj_destrutable_chain_block_simple);
-        var l4 = instance_create_depth(808,184,0,obj_destrutable_chain_block_simple);
+        var l1 = instance_create_depth(808,136,101,obj_destrutable_chain_block_simple);
+        var l2 = instance_create_depth(808,152,101,obj_destrutable_chain_block_simple);
+        var l3 = instance_create_depth(808,168,101,obj_destrutable_chain_block_simple);
+        var l4 = instance_create_depth(808,184,101,obj_destrutable_chain_block_simple);
         
         l1.sprite_index = spr_destructable_tile_vulcano;
         l1.image_index = 4;
@@ -56,10 +56,10 @@ if instance_exists(obj_Player)
         l4.sprite_index = spr_destructable_tile_vulcano;
         l4.image_index = 4;
         
-        var m1 = instance_create_depth(824,136,0,obj_destrutable_chain_block_simple);
-        var m2 = instance_create_depth(824,152,0,obj_destrutable_chain_block_simple);
-        var m3 = instance_create_depth(824,168,0,obj_destrutable_chain_block_simple);
-        var m4 = instance_create_depth(824,184,0,obj_destrutable_chain_block_simple);
+        var m1 = instance_create_depth(824,136,101,obj_destrutable_chain_block_simple);
+        var m2 = instance_create_depth(824,152,101,obj_destrutable_chain_block_simple);
+        var m3 = instance_create_depth(824,168,101,obj_destrutable_chain_block_simple);
+        var m4 = instance_create_depth(824,184,101,obj_destrutable_chain_block_simple);
         
         m1.sprite_index = spr_destructable_tile_vulcano;
         m1.image_index = 4;
@@ -70,10 +70,10 @@ if instance_exists(obj_Player)
         m4.sprite_index = spr_destructable_tile_vulcano;
         m4.image_index = 4;
         
-        var n1 = instance_create_depth(840,136,0,obj_destrutable_chain_block_simple);
-        var n2 = instance_create_depth(840,152,0,obj_destrutable_chain_block_simple);
-        var n3 = instance_create_depth(840,168,0,obj_destrutable_chain_block_simple);
-        var n4 = instance_create_depth(840,184,0,obj_destrutable_chain_block_simple);
+        var n1 = instance_create_depth(840,136,101,obj_destrutable_chain_block_simple);
+        var n2 = instance_create_depth(840,152,101,obj_destrutable_chain_block_simple);
+        var n3 = instance_create_depth(840,168,101,obj_destrutable_chain_block_simple);
+        var n4 = instance_create_depth(840,184,101,obj_destrutable_chain_block_simple);
         
         n1.sprite_index = spr_destructable_tile_vulcano;
         n1.image_index = 4;

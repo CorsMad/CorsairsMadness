@@ -216,6 +216,7 @@ if place_meeting(x,y,obj_firing_molded_projectile_reverse) && hit_cd = 0
 
 if place_meeting(x,y,obj_hitbox_mask_superdash)
 {
+	fnc_snd_play_over(snd_j2_boss_walls);
     enemy_hp = 0;   
 }
 
@@ -224,6 +225,7 @@ place_meeting(x,y,obj_hitbox_mask_superattack_h2) ||
 place_meeting(x,y,obj_hitbox_mask_superattack_aoe) ||
 place_meeting(x,y,obj_hitbox_mask_superattack_missle){
     enemy_hp = 0;   
+	fnc_snd_play_over(snd_player_hit);
 }
 #endregion
 

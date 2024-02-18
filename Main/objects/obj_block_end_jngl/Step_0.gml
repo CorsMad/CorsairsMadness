@@ -45,14 +45,14 @@ if state = 1
             instance_create_depth(x+24,y+8,-2,obj_sfx_dust_expl_big);
             instance_create_depth(x+72,y+8,-2,obj_sfx_dust_expl_big);
             
-            instance_create_depth(120,248,100,obj_spikes,{image_angle : 0});
-            instance_create_depth(136,248,100,obj_spikes,{image_angle : 0});
-            instance_create_depth(152,248,100,obj_spikes,{image_angle : 0});
-            instance_create_depth(168,248,100,obj_spikes,{image_angle : 0});  
-            instance_create_depth(312,248,100,obj_spikes,{image_angle : 0});
-            instance_create_depth(328,248,100,obj_spikes,{image_angle : 0});
-            instance_create_depth(344,248,100,obj_spikes,{image_angle : 0});
-            instance_create_depth(360,248,100,obj_spikes,{image_angle : 0});
+            var s1 = instance_create_depth(120,248,150,obj_spikes);s1.image_angle = 0;
+            var s2 = instance_create_depth(136,248,150,obj_spikes);s2.image_angle = 0;
+            var s3 = instance_create_depth(152,248,150,obj_spikes);s3.image_angle = 0;
+            var s4 = instance_create_depth(168,248,150,obj_spikes);s4.image_angle = 0;
+            var s5 = instance_create_depth(312,248,150,obj_spikes);s5.image_angle = 0;
+            var s6 = instance_create_depth(328,248,150,obj_spikes);s6.image_angle = 0;
+            var s7 = instance_create_depth(344,248,150,obj_spikes);s7.image_angle = 0;
+            var s8 = instance_create_depth(360,248,150,obj_spikes);s8.image_angle = 0;
             obj_endurance_jungle.state = 1.7;
             obj_endurance_jungle.t = 0;
             instance_destroy();            

@@ -11,19 +11,19 @@ if state = 0
                 {
                     if obj_Player.x > room_width/2
                     {
-                        var e1 = instance_create_depth(48,192,0,obj_molded_big_spawner_n);
+                        var e1 = instance_create_depth(48,192,101,obj_molded_big_spawner_n);
                         e1.y_cr = 16;
                         e1.obj_cr = obj_werewolf;    
                     } else 
                     {
-                        var e1 = instance_create_depth(400,192,0,obj_molded_big_spawner_n);
+                        var e1 = instance_create_depth(400,192,101,obj_molded_big_spawner_n);
                         e1.y_cr = 16;
                         e1.obj_cr = obj_werewolf;      
                     }
                 }
                 break;
-            case 100: instance_create_depth(160,240,0,obj_zombie_start);break;
-            case 150: instance_create_depth(304,240,0,obj_zombie_start);break;
+            case 100: instance_create_depth(160,240,101,obj_zombie_start);break;
+            case 150: instance_create_depth(304,240,101,obj_zombie_start);break;
             case 200: t = 0;state = 0.5;break;
         }
 }
@@ -46,12 +46,12 @@ if state = 1
                 {
                     if obj_Player.x > room_width/2
                     {
-                        var e1 = instance_create_depth(48,192,0,obj_molded_big_spawner_n);
+                        var e1 = instance_create_depth(48,192,101,obj_molded_big_spawner_n);
                         e1.y_cr = 16;
                         e1.obj_cr = obj_werewolf;    
                     } else 
                     {
-                        var e1 = instance_create_depth(400,192,0,obj_molded_big_spawner_n);
+                        var e1 = instance_create_depth(400,192,101,obj_molded_big_spawner_n);
                         e1.y_cr = 16;
                         e1.obj_cr = obj_werewolf;      
                     }
@@ -62,12 +62,12 @@ if state = 1
                 {
                     if obj_Player.x > room_width/2
                     {
-                        var e1 = instance_create_depth(48,192,0,obj_molded_big_spawner_n);
+                        var e1 = instance_create_depth(48,192,101,obj_molded_big_spawner_n);
                         e1.y_cr = 16;
                         e1.obj_cr = obj_evilsprout;    
                     } else 
                     {
-                        var e1 = instance_create_depth(400,192,0,obj_molded_big_spawner_n);
+                        var e1 = instance_create_depth(400,192,101,obj_molded_big_spawner_n);
                         e1.y_cr = 16;
                         e1.obj_cr = obj_evilsprout;      
                     }
@@ -78,12 +78,12 @@ if state = 1
                 {
                     if obj_Player.x > room_width/2
                     {
-                        var e1 = instance_create_depth(128,224,0,obj_molded_big_spawner_n);
+                        var e1 = instance_create_depth(128,224,101,obj_molded_big_spawner_n);
                         e1.y_cr = 16;
                         e1.obj_cr = obj_evilsprout;    
                     } else 
                     {
-                        var e1 = instance_create_depth(336,224,0,obj_molded_big_spawner_n);
+                        var e1 = instance_create_depth(336,224,101,obj_molded_big_spawner_n);
                         e1.y_cr = 16;
                         e1.obj_cr = obj_evilsprout;      
                     }

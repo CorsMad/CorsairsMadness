@@ -88,7 +88,6 @@
     {"name":"inst_F494CD9","path":"rooms/L1_r10/L1_r10.yy",},
     {"name":"inst_21DA3D3F","path":"rooms/L1_r10/L1_r10.yy",},
     {"name":"inst_4A063C0","path":"rooms/L1_r10/L1_r10.yy",},
-    {"name":"inst_6A135E09","path":"rooms/L1_r10/L1_r10.yy",},
     {"name":"inst_BF07AA7","path":"rooms/L1_r10/L1_r10.yy",},
     {"name":"inst_38F8F4BA","path":"rooms/L1_r10/L1_r10.yy",},
   ],
@@ -178,7 +177,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_F494CD9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lava_destruct","path":"objects/obj_lava_destruct/obj_lava_destruct.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":112.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_21DA3D3F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lavacryst_bl_l","path":"objects/obj_lavacryst_bl_l/obj_lavacryst_bl_l.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":80.0,"y":208.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4A063C0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lavacryst_ye_s","path":"objects/obj_lavacryst_ye_s/obj_lavacryst_ye_s.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":672.0,"y":112.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A135E09","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lavacryst_bl_l","path":"objects/obj_lavacryst_bl_l/obj_lavacryst_bl_l.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":800.0,"y":192.0,},
       ],"layers":[],"properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"1.15",},
         {"name":"g_ContrastBrightness","type":0,"value":"1",},

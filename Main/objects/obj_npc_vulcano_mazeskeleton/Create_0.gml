@@ -19,3 +19,5 @@ pointer = instance_create_depth(x,y-64,depth-1,obj_icon_talk_npc_walking);
 pointer.own = id;
 
 image_speed = 0.5;
+
+player_pos = 0;

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 fnc_lng_cannon_choose()
-state = 0;
+state = 2;
 alpha = 1;
 t_alpha = 0;
 #region text

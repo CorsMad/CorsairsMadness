@@ -111,4 +111,7 @@ if enemy_hp < 1
     death.image_index = image_index;
     instance_destroy();   
 }
+
+if place_meeting(x,y,obj_lava_rising) enemy_hp = 0;
+
 #endregion

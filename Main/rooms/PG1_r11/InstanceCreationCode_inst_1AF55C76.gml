@@ -11,7 +11,7 @@ if instance_exists(obj_Player)
         case 4:
             x_tp = 256;
             y_tp = 464;
-            room_tp = PG1_r10;
+            room_tp = PG1_r15;
             graph = 2;
             break;
     }

@@ -35,9 +35,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_lavaster_reveal",
-    "path": "sprites/spr_lavaster_reveal/spr_lavaster_reveal.yy",
+    "name": "spr_lavastern_attack",
+    "path": "sprites/spr_lavastern_attack/spr_lavastern_attack.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_lavastern_attack_mask",
+    "path": "sprites/spr_lavastern_attack_mask/spr_lavastern_attack_mask.yy",
+  },
   "visible": true,
 }

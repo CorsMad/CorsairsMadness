@@ -28,4 +28,3 @@ i6.vspd = -1;
 var i7 = instance_create_depth(x+26,y+12,depth-1,obj_boss_g1_particle);
 i7.hspd = 1;
 i7.vspd = -2;
-instance_create_depth(x,y,depth-1,obj_hpmax_gain_gift);

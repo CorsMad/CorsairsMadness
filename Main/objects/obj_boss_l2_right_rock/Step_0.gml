@@ -102,6 +102,7 @@ if state = 2
     if hit_cd = 0 && place_meeting(x,y,obj_hitbox)
     {
         fnc_snd_play_onetime(snd_vase_destruct);
+		instance_create_depth(x+random_range(-8,8),y+random_range(-12,-6),depth-1,obj_sfx3);
         t_red = 1;
         hit_cd = 1;
         hp -=1;

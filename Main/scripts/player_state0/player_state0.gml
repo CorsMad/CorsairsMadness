@@ -1919,7 +1919,7 @@ if specabilnumber = 1
 #region Flute
 if specabilnumber = 2
 {
-    if key_abil_pressed && isAttacking = 0 && isAttackingdown = 0 && isDashing = 0 && isTakingdmg = 0 
+    if key_abil_pressed && isAttacking = 0 && isClimbing = 0 && isAttackingdown = 0 && isDashing = 0 && isTakingdmg = 0 
     {
         if !instance_exists(obj_abil_flute_aoe)
         {
@@ -2063,9 +2063,9 @@ if specabilnumber = 4
 
 #region Slide
 
-if key_jump && isGrounded = 0 && !instance_exists(obj_skates_mask) && isSkating = 0 && specabilnumber = 5
+if key_jump && isClimbing = 0 && isGrounded = 0 && !instance_exists(obj_skates_mask) && isSkating = 0 && specabilnumber = 5
 {
-    instance_create_depth(x,y,depth,obj_skates_mask);   
+	if !instance_exists(obj_skates_mask) instance_create_depth(x,y,depth,obj_skates_mask);   
 }
 if isSkating = 1
 {
@@ -2475,6 +2475,7 @@ if isDead = 1
     #region Cutscene
     if isDead = 2
     {
+		canTalk = 0;
         sbootsbuffer = 0;  
         fnc_player_cutscene_hum();
     }

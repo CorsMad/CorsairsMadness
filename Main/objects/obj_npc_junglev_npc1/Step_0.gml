@@ -76,6 +76,7 @@ if instance_exists(obj_Player)
         obj_Player.key_up = 0;
         obj_Player.key_up_press = 0;
         obj_Player.key_item = 0;
+		if obj_Player.x < x player_pos = -1 else player_pos = 1
         talk_cr_t = 1;
     }
 }
@@ -142,3 +143,10 @@ if place_meeting(x,y,obj_Player) && obj_Player.isDead != 2
 
 #endregion
 
+#region Поворот к игроку
+if talk = 1 {
+if instance_exists(obj_Player) {
+	if obj_Player.x < x image_xscale = 1 else image_xscale = -1;	
+}
+}
+#endregion

@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"72487880-d2d7-40b1-9045-c561860c9bf0",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"468f3a6e-cc7c-46f1-b493-d6b6bd9d9d73",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"79057fa8-fe26-418f-b134-98d14f16b050",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c6b5b27b-d4fa-4a75-ab94-863f49e79a96",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 256,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4ecf0614-a394-4fa6-ba99-c8849a02cd67","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0b9e96e0-4a49-443b-b41b-e515fa627460","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"72487880-d2d7-40b1-9045-c561860c9bf0","path":"sprites/spr_molded_desert_berserker_take_dmg/spr_molded_desert_berserker_take_dmg.yy",},},},"Disabled":false,"id":"36223630-4b4b-4885-8d51-05cbcbc723a5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"468f3a6e-cc7c-46f1-b493-d6b6bd9d9d73","path":"sprites/spr_molded_desert_berserker_take_dmg/spr_molded_desert_berserker_take_dmg.yy",},},},"Disabled":false,"id":"dd72e696-7b3d-468a-9645-910ee6caa02d","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"79057fa8-fe26-418f-b134-98d14f16b050","path":"sprites/spr_molded_desert_berserker_take_dmg/spr_molded_desert_berserker_take_dmg.yy",},},},"Disabled":false,"id":"a7617c24-069b-4daf-bb65-784b4a2b4f13","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c6b5b27b-d4fa-4a75-ab94-863f49e79a96","path":"sprites/spr_molded_desert_berserker_take_dmg/spr_molded_desert_berserker_take_dmg.yy",},},},"Disabled":false,"id":"a8481312-8288-41ab-bf9b-4820944b623f","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

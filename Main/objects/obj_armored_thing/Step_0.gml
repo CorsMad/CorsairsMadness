@@ -60,7 +60,7 @@ if state = 3
 	{
 		a = 60;
 	}
-	if a = 120 
+	if a = 60 
 	{
 		image_index = 0;
 		sprite_index = spr_armored_thing_prepare;
@@ -106,7 +106,7 @@ if state = 5
 	{
 		instance_create_depth(x,y-16,1,obj_armored_thing_projectile); 	
 	}
-	if a = 60
+	if a = 80
 	{
 		if  instance_exists(obj_Player) 
 		{

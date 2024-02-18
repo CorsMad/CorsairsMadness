@@ -14,8 +14,8 @@
     "path": "folders/Objects/Enemies/!CORSAIR GROUP/!Jungle/Endurance/Boss2.yy",
   },
   "parentObjectId": {
-    "name": "obj_enemy_test",
-    "path": "objects/obj_enemy_test/obj_enemy_test.yy",
+    "name": "obj_enemy_parent",
+    "path": "objects/obj_enemy_parent/obj_enemy_parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

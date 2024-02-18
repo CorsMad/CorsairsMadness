@@ -12,7 +12,7 @@ if t = 50
             var i = instance_create_depth(16,16,0,obj_Player);
             i.DashEnabled = 1;
             i.state = 0;
-            i.specabilnumber = 1;
+			if global.dia_jungleComt < 1 i.specabilnumber = 1; else i.specabilnumber = 0;            
             i.HookEnabled = 0;      
             instance_create_depth(16,16,101,obj_room_transition_to_loading);  
         #endregion
@@ -24,7 +24,7 @@ if t = 50
             var i = instance_create_depth(16,16,0,obj_Player);
             i.DashEnabled = 1;
             i.state = 0;
-            i.specabilnumber = 1;
+            if global.dia_jungleComt < 1 i.specabilnumber = 1; else i.specabilnumber = 0;   
             i.HookEnabled = 0;      
             instance_create_depth(16,16,101,obj_room_transition_to_loading);  
             break;
@@ -41,7 +41,7 @@ if t = 50
             var i = instance_create_depth(16,16,0,obj_Player);
             i.DashEnabled = 1;
             i.state = 0;
-            i.specabilnumber = 4;
+			if global.dia_desertComt < 1 i.specabilnumber = 4; else i.specabilnumber = 0;   
             i.HookEnabled = 1;      
             instance_create_depth(16,16,101,obj_room_transition_to_loading);  
         #endregion
@@ -54,7 +54,7 @@ if t = 50
             var i = instance_create_depth(16,16,0,obj_Player);
             i.DashEnabled = 1;
             i.state = 0;
-            i.specabilnumber = 4;
+            if global.dia_desertComt < 1 i.specabilnumber = 4; else i.specabilnumber = 0;   
             i.HookEnabled = 1;      
             instance_create_depth(16,16,101,obj_room_transition_to_loading);  
         #endregion
@@ -72,7 +72,7 @@ if t = 50
             var i = instance_create_depth(16,16,0,obj_Player);
             i.DashEnabled = 1;
             i.state = 0;
-            i.specabilnumber = 5;
+			if global.dia_snowComt < 1 i.specabilnumber = 5; else i.specabilnumber = 0;   
             i.HookEnabled = 1;      
             instance_create_depth(16,16,101,obj_room_transition_to_loading);  
         #endregion
@@ -85,7 +85,7 @@ if t = 50
             var i = instance_create_depth(16,16,0,obj_Player);
             i.DashEnabled = 1;
             i.state = 0;
-            i.specabilnumber = 5;
+            if global.dia_snowComt < 1 i.specabilnumber = 5; else i.specabilnumber = 0;   
             i.HookEnabled = 1;      
             instance_create_depth(16,16,101,obj_room_transition_to_loading);  
         #endregion
@@ -103,7 +103,7 @@ if t = 50
             var i = instance_create_depth(16,16,0,obj_Player);
             i.DashEnabled = 1;
             i.state = 0;
-            i.specabilnumber = 2;
+			if global.dia_shadowComt < 1 i.specabilnumber = 2; else i.specabilnumber = 0;               
             i.HookEnabled = 1;      
             instance_create_depth(16,16,101,obj_room_transition_to_loading);  
         #endregion
@@ -116,7 +116,7 @@ if t = 50
             var i = instance_create_depth(16,16,0,obj_Player);
             i.DashEnabled = 1;
             i.state = 0;
-            i.specabilnumber = 2;
+            if global.dia_shadowComt < 1 i.specabilnumber = 2; else i.specabilnumber = 0;   
             i.HookEnabled = 1;      
             instance_create_depth(16,16,101,obj_room_transition_to_loading);  
         #endregion
@@ -134,7 +134,7 @@ if t = 50
             var i = instance_create_depth(16,16,0,obj_Player);
             i.DashEnabled = 1;
             i.state = 0;
-            i.specabilnumber = 3;
+			if global.dia_lavaComt < 1 i.specabilnumber = 3; else i.specabilnumber = 0;               
             i.HookEnabled = 1;      
             instance_create_depth(16,16,101,obj_room_transition_to_loading);  
         #endregion
@@ -147,7 +147,7 @@ if t = 50
             var i = instance_create_depth(16,16,0,obj_Player);
             i.DashEnabled = 1;
             i.state = 0;
-            i.specabilnumber = 3;
+            if global.dia_lavaComt < 1 i.specabilnumber = 3; else i.specabilnumber = 0;   
             i.HookEnabled = 1;      
             instance_create_depth(16,16,101,obj_room_transition_to_loading);  
         #endregion

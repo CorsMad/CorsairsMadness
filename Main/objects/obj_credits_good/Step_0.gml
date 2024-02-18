@@ -11,4 +11,6 @@ switch(state){
 			state = 2;
 		}
 		break;
+	case 2:
+		break;
 }

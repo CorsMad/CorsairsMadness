@@ -245,12 +245,13 @@ if enemy_hp <= 0
 {    
     instance_destroy();
     instance_destroy(mask);
-    
+    fnc_snd_play_over(snd_player_hit);
     var i = instance_create_depth(x,y,depth,obj_crawling_molded_dead);
     i.hspd = fspd;
 }
 if place_meeting(x,y,obj_hitbox_mask_superdash)
 {
+	fnc_snd_play_over(snd_j2_boss_walls);
     enemy_hp = 0;   
 }
 if y > room_height+32 {

@@ -5,7 +5,7 @@ if instance_exists(obj_Player)
         case 5:
             x_tp = 32;
             y_tp = 240;
-            room_tp = F1_r20;
+            room_tp = F1_r21;
             graph = 1;
             break;
         case 6:

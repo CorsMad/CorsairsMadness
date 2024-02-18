@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+fnc_lng_main_menu();
 #region Not Working
 if Working = 0
 {
@@ -61,7 +61,7 @@ if  instance_exists(obj_maze2_but1) &&
             obj_maze2_but4.sw = 0;
             goal = 0;
             instance_create_depth(0,0,0,obj_maze2_controller1);
-            instance_create_depth(0,182,depth-1,obj_maze2_pointer);
+            instance_create_depth(-32,182,depth-1,obj_maze2_pointer);
         }
     }
     
@@ -138,7 +138,7 @@ if  instance_exists(obj_maze2_but1) &&
             obj_maze2_but4.sw = 0;
             goal = 1;
             instance_create_depth(0,0,0,obj_maze2_controller1);
-            instance_create_depth(0,182,depth-1,obj_maze2_pointer);
+            instance_create_depth(-32,182,depth-1,obj_maze2_pointer);
         }
     }
     
@@ -214,7 +214,7 @@ if  instance_exists(obj_maze2_but1) &&
             obj_maze2_but4.sw = 0;
             goal = 3;
             instance_create_depth(0,0,0,obj_maze2_controller1);
-            instance_create_depth(0,182,depth-1,obj_maze2_pointer);
+            instance_create_depth(-32,182,depth-1,obj_maze2_pointer);
         }
     }
     
@@ -321,6 +321,44 @@ if (Working = 2) {
 }
 #endregion
 
-#region Выход
 
+#region Выход
+if (Working = 3) {
+    t++;
+    switch(t)
+    {        
+        case 5: 
+            image_index = 1;
+			instance_destroy(obj_maze2_pointer);
+            instance_destroy(obj_maze2_but1);
+            instance_destroy(obj_maze2_but2);
+            instance_destroy(obj_maze2_but3);
+            instance_destroy(obj_maze2_but4);
+            instance_destroy(obj_maze2_button1);
+            instance_destroy(obj_maze2_button2);
+            instance_destroy(obj_maze2_button3);
+            instance_destroy(obj_maze2_button4);           
+            instance_destroy(obj_maze2_solve1);
+            instance_destroy(obj_maze2_solve2);
+            instance_destroy(obj_maze2_solve3);
+            instance_destroy(obj_maze2_solve4);
+            break;
+        case 10: image_index =2;break;
+        case 15: image_index =3;break;
+        case 20: image_index =4;break;
+        case 25: image_index =5;break;
+        case 30:         
+        obj_maze2_starter.isOn = 1;        
+		obj_maze2_starter.puzzlen = 0;
+		obj_maze2_starter.goal = 0;
+		obj_maze2_starter.t = 0;
+		obj_maze2_starter.Working = 0;
+			
+        instance_destroy(obj_maze2_controller1);
+        obj_Player.isDead = 2.1;    
+        instance_destroy();
+        break;
+              
+    }
+}
 #endregion

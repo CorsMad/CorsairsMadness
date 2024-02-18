@@ -313,7 +313,7 @@ if state = 1.5 // получение сундука
 if state = 1.51 
 {
 	if t < 80 t++;
-    if t = 78 instance_create_depth(48,256,1,obj_chest_le_1);	
+    if t = 78 instance_create_depth(48,256,101,obj_chest_le_1);	
 }
 
 if state = 1.52 // Разбивка сундук
@@ -348,7 +348,7 @@ if state = 1.6 // Ожидание перед боссом 1
 if state = 2.1
 {
     if t < 22 t++;
-    if t = 20 instance_create_depth(320,256,1,obj_chest_le_2);
+    if t = 20 instance_create_depth(320,256,101,obj_chest_le_2);
 }
 
 if state = 2.3 // Ожидание перед 2 боссом
@@ -378,9 +378,8 @@ if state = 3.2
 {
     t++;
     if t = 20
-    {
-        if instance_exists(obj_pause_controller) instance_destroy(obj_pause_controller);
-        fnc_msc_stop_play()
+    {       
+        
         if global.secrets_l_endurance = 0
         {
             instance_create_depth(240,256,0,obj_chest_le_3_s);   

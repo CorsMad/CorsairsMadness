@@ -9,7 +9,7 @@ if state = 2
 	t++;
 	if t=180 
 	{
-		instance_create_depth(532,0,0,obj_boss1e_phase2);	
+		instance_create_depth(532,0,100,obj_boss1e_phase2);	
 		t = 0;
 		state = 0;
 	}
@@ -23,7 +23,7 @@ if state = 3
 	t++;
 	if t=180 
 	{
-		instance_create_depth(532,0,0,obj_boss1e_phase3);	
+		instance_create_depth(532,0,100,obj_boss1e_phase3);	
 		t = 0;
 		state = 0;
 	}

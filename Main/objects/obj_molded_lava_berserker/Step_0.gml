@@ -225,16 +225,17 @@ if state = 5
 	y = obj_Player.y;	
 	if !instance_exists(obj_hitbox_mask_superdash)
 	{ 
+		instance_create_depth(x,y-32,depth-1,obj_sfx_dust_expl_big);
         fnc_snd_play_onetime(snd_follower_ground_hit);
-        vspd = -4;
+        vspd = choose(-6,-5,-4);
         if !place_meeting(x,y-1,obj_block) y-=1
         if image_xscale = 1 
         {
-            hspd = -1 
+            hspd = choose(-2,-1.5,-1); 
             var d = instance_create_depth(x+7,y-16,depth-1,obj_sfx4);
             d.image_angle = 90;
         }else {
-            hspd = 1; 
+            hspd = choose(1,1.5,2); 
             var d = instance_create_depth(x-7,y-16,depth-1,obj_sfx4);
             d.image_angle = 270;
         }

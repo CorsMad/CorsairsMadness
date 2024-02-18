@@ -260,7 +260,7 @@ switch(state)
 		break;
 	case 1.5:	
 		if t < 22 t++;
-		if t = 20 instance_create_depth(112,240,1,obj_chest_sne_1);
+		if t = 20 instance_create_depth(112,240,20,obj_chest_sne_1);
 		break;
 	case 1.51:
 		t++;
@@ -342,7 +342,7 @@ switch(state)
 		break;
 	case 2.4:
 		if t < 22 t++;
-		if t = 20 instance_create_depth(368,240,1,obj_chest_sne_2);
+		if t = 20 instance_create_depth(368,240,10,obj_chest_sne_2);
 		break;
 	case 2.5:
 		t++;
@@ -357,9 +357,8 @@ switch(state)
 	#region третья фаза
 	case 3:
 		t++; 
-        if t = 20{
-            if instance_exists(obj_pause_controller) instance_destroy(obj_pause_controller);
-            fnc_msc_stop_play_slow()
+        if t = 20{         
+            
             if global.secrets_sn_endurance = 0
             {
                 instance_create_depth(240,240,0,obj_chest_sne_3_s);   

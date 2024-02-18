@@ -115,11 +115,11 @@ if (state = 1) {
         case 174: image_index = 7;break;
         case 177: image_index = 8;break;
         case 180: image_index = 7;break;
-        case 183: image_index = 9;instance_create_depth(x,y-18,depth-1,obj_boss_l2_bomb_big)break;
+        case 183: image_index = 9;instance_create_depth(x,y-18,1,obj_boss_l2_bomb_big)break;
         case 210: image_index = 10;break;
         case 213: image_index = 11;break;
         case 215: image_index = 12;break;
-        case 280:         
+        case 230:         
             state = 0;
 		    t = 0;
             sprite_index = spr_boss_l2_skeleton_appear1;
@@ -188,7 +188,7 @@ if state = 4
 {
 	if !instance_exists(obj_armor_skel)
 	{
-		instance_create_depth(x,y,depth-1,obj_hpmax_some_2mana_gain_gift);
+		instance_create_depth(240,74,depth-1,obj_hpmax_some_2mana_gain_gift);
 		instance_create_depth(240,96,depth,obj_boss_l2_phase3_pre);
 		instance_destroy()
 	}

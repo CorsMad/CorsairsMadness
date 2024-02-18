@@ -3,9 +3,9 @@
   "resourceVersion": "1.0",
   "name": "spr_hud_weapon_boomerang",
   "bbox_bottom": 23,
-  "bbox_left": 4,
+  "bbox_left": 3,
   "bbox_right": 23,
-  "bbox_top": 4,
+  "bbox_top": 3,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ce6b68cd-b702-4438-9a33-759b568365c3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6523b9bf-3fd8-4db4-9a9d-dfb30feb08cf",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 27,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"89eeecca-fd8d-47dd-acac-efe06b767078","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9efeb839-1e72-4eb9-bed2-de081e3825b9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ce6b68cd-b702-4438-9a33-759b568365c3","path":"sprites/spr_hud_weapon_boomerang/spr_hud_weapon_boomerang.yy",},},},"Disabled":false,"id":"617ee3c3-d338-4dca-af7e-49f90e516a4d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6523b9bf-3fd8-4db4-9a9d-dfb30feb08cf","path":"sprites/spr_hud_weapon_boomerang/spr_hud_weapon_boomerang.yy",},},},"Disabled":false,"id":"5b7eedba-10ac-4f14-94d4-9911931e5332","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

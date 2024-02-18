@@ -14,21 +14,21 @@ if t1 = 10
 2 - флейта
 3 - бумеранг
 4 - арбалет
-5 - коньки
+5 - коньки.
 */
 
 // 1 - hook, 2 - teleport, 3 - superdash , 4 - doublejump, 5 - clone
 
-   //room_goto(GlobalMapPrologueSnow)
+   room_goto(CreditsGood)
    //room_goto(Ending_screen)
    //room_goto(G2_r9_to_boat);
 
-   var i = instance_create_depth(16,16,0,obj_Player);
-   i.DashEnabled = 1;
-   i.state = 0;
-   i.specabilnumber = 5;
-   i.HookEnabled = 1//1;
-   i.SpecAbilMask = 5;       
-   instance_create_depth(16,16,101,obj_room_transition_to_loading);  
+   //var i = instance_create_depth(16,16,0,obj_Player);
+   //i.DashEnabled = 1;
+   //i.state = 1;
+   //i.specabilnumber = 3;
+   //i.HookEnabled = 1//1;
+   //i.SpecAbilMask = 3;       
+   //instance_create_depth(16,16,101,obj_room_transition_to_loading);  
 
 }

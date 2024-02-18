@@ -219,3 +219,5 @@ if def!= noone && (state = 0 || state = 4 || state = 5)
     def.isDead = 1;
 }
 #endregion
+
+if t_red > 0 && t_red < 6 image_blend = c_red else image_blend = c_white;

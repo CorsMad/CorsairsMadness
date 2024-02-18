@@ -997,7 +997,8 @@ if !key_item_pressed superdash_delay = 0;
 
 #region DoubleJump
 
-if isGrounded = 0 && key_jump_pressed && !instance_exists(obj_doublejump) && SpecAbilMask = 4 && isDashing = 0
+if isGrounded = 0 && key_jump_pressed && !instance_exists(obj_doublejump) && 
+	SpecAbilMask = 4 && isDashing = 0 && coyote_timer = 0 //&& isRecoil = 0
 {  
         if place_meeting(x,y,obj_doublejump_reset) || place_meeting(x,y,obj_doublejump_aoe_reset)         
         {
@@ -1014,29 +1015,38 @@ if isGrounded = 0 && key_jump_pressed && !instance_exists(obj_doublejump) && Spe
     
         if DJumpHoriz != noone
         {
+			isRecoil = 0;
             doublejumpspd = DJumpHoriz.hspd;   
             vspd = DJumpHoriz.vspd;  
             x = DJumpHoriz.x;
             y = DJumpHoriz.y;
             canDoubleJump = 0; 
-            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+			jumpbuffer = 0;
+            //instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+            instance_create_depth(x,y,depth,obj_doublejump_wings);
             instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
         } else 
         if DJumpUp != noone
         {
+			isRecoil = 0;
             x = DJumpUp.x;
             y = DJumpUp.y;
-            canDoubleJump = 0; 
+            canDoubleJump = 0; 		
             vspd = DJumpUp.vspd; 
-            instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+			jumpbuffer = 0;
+            instance_create_depth(x,y,depth,obj_doublejump_wings);
+            //instance_create_depth(x,y,depth+1,obj_doublejump_wings);
             instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
         } else
         {
             if canDoubleJump = 1
             {
+				isRecoil = 0;
                 doublejumpspd = 0;
+				jumpbuffer = 0;
                 instance_create_depth(x,y,depth,obj_doublejump);
-                instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+                //instance_create_depth(x,y,depth+1,obj_doublejump_wings);
+                instance_create_depth(x,y,depth,obj_doublejump_wings);
                 instance_create_depth(x,y-24,depth-1,obj_teleport_boom);
                 canDoubleJump = 0;   
             } 

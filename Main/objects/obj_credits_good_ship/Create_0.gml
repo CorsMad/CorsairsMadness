@@ -3,6 +3,7 @@
 
 hspd = 0;
 vspd = 0;
+xspd = 0;
 
 state = 0;
 t = 0;
@@ -14,3 +15,4 @@ direction = 180
 //clone the x- and y-positions
 xx = x;
 yy = y;
+t_talk = 0;

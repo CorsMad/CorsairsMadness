@@ -1,2 +1,2 @@
-max_height = 352;
+max_height = 256;
 depth = -100;

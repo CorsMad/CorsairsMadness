@@ -19,6 +19,6 @@ enemy_hp_max = 70;
 hits_cd =0;
 hit_cd = 0;
 delay = 0;
-
+dmg_multiplier = 1;
 var mold = instance_create_depth(0,0,0,obj_boss_dp_mold_create);
 mold.fol =id;

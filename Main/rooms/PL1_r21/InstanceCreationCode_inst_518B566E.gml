@@ -1,1 +1,2 @@
-boost=-11
+boost=-11;
+depth = 101;

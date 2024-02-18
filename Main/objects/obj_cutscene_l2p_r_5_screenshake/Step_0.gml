@@ -32,6 +32,11 @@ if state = 1 {
         shake_y_1 = random_range(-2,2);
         shake_y_2 = random_range(862,866);
     }
-    if t mod 8 = 0 instance_create_depth(random_range(16,480-16),camera_get_view_y(view_camera[0])-32,choose(450,-1),obj_l1_r16_fallingstone); 
+    
 }
 
+t_fallpart++
+if t_fallpart = 25 {
+	instance_create_depth(random_range(16,480-16),camera_get_view_y(view_camera[0])-32,choose(450,-1),obj_l1_r16_fallingstone); 	
+	t_fallpart = 0;
+}

@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"550aa3b0-fca8-4eef-beb5-b5e341758799",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"875d892d-5348-46b1-877a-affa20d87f00",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 128,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d8488ad4-f641-4d0f-9776-6048b89f34f1","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"08893d9f-fcf0-48bc-9e80-9c4e8182e328","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"550aa3b0-fca8-4eef-beb5-b5e341758799","path":"sprites/spr_molded_desert_boomer_getdash/spr_molded_desert_boomer_getdash.yy",},},},"Disabled":false,"id":"e7fb9898-d431-4c32-a9e8-b28b6d695056","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"875d892d-5348-46b1-877a-affa20d87f00","path":"sprites/spr_molded_desert_boomer_getdash/spr_molded_desert_boomer_getdash.yy",},},},"Disabled":false,"id":"1e3bbdea-19c2-4ff5-9957-cd4934a0ddf5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

@@ -12,3 +12,5 @@ switch(image_angle)
 	case 180: a = 3;
 	case 270: a = 4;
 }
+
+fnc_snd_play_near_player(snd_trapfire);

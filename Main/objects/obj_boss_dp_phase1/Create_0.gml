@@ -19,3 +19,5 @@ hit_cd = 0;
 delay = 0;
 var mold = instance_create_depth(0,0,0,obj_boss_dp_mold_create);
 mold.fol =id;
+
+dmg_multiplier = 1;
