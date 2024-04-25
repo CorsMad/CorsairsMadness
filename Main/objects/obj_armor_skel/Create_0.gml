@@ -28,7 +28,8 @@ scare_t = 0;
 
 boomer = 0;
 boom_timer = 0;
-
+boomer_armor1 = 4;
+boomer_armor2 = 4;
 
 count_attack = 0;
 count_boomer = 0

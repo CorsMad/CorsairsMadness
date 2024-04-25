@@ -4,6 +4,22 @@ x-=0.5;
 y+=vspd;
 vspd = lerp(vspd,0,0.1);
 depth = -y;
+
+#region red
+if hit_cd_master!=enemy_hp {
+	hit_cd_master = enemy_hp;
+	red = 1;
+}
+
+if red!=0 {red++;image_blend = c_red;}
+if red>=5 red=0;
+if red = 0 image_blend = c_white;
+
+
+#endregion
+
+
+
 #region Попадание
 
 fnc_boat_take_dmg_pistol(1)

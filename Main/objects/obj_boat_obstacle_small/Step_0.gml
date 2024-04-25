@@ -16,7 +16,7 @@ x+=hspd;
 
 fnc_boat_destroyer();
 
-fnc_boat_take_dmg_obstacle()
+//fnc_boat_take_dmg_obstacle()
 
 fnc_boat_take_dmg_pistol(1)
 fnc_boat_take_dmg_fastshot(0.6,1.3)
@@ -53,9 +53,19 @@ if instance_exists(obj_Player_boat)
     {
         fnc_snd_play_over(snd_item_bomb_explosion);
         obj_Player_boat.hit_cd = 1; 
-        global.hp-=1;
+        global.hp-=2;
         enemy_hp = 0;
     } 
 }
 
 #endregion
+
+
+if hit_cd_master!=enemy_hp {
+	hit_cd_master = enemy_hp;
+	red = 1;
+}
+
+if red!=0 {red++;image_blend = c_red;}
+if red>=5 red=0;
+if red = 0 image_blend = c_white;

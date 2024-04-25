@@ -18,7 +18,7 @@ if hspd < -2
 #region перемещение
 
 y = y + cos(a)*2;
-	a+= 0.05;
+	a+= amp;
 x+=hspd;
 /*
 x+=hspd

@@ -3,29 +3,28 @@
 if instance_exists(obj_Player)
 {
     draw_set_colour(c_black);
-    draw_sprite_ext(spr_text_9slicesmall,0,camera_get_view_x(view_camera[0])+330,58,12,3,0,c_white,alpha);
+    draw_sprite_ext(spr_text_9slicesmall,0,camera_get_view_x(view_camera[0])+330,65,12,2.6,0,c_white,alpha);
 	//draw_rectangle(camera_get_view_x(view_camera[0])+180,30,camera_get_view_x(view_camera[0])+480-60,camera_get_view_y(view_camera[0])+68,false);
     
-    draw_set_halign(fa_left);
+    draw_set_halign(fa_center);
     var xx,yy;
     xx = camera_get_view_x(view_camera[0])+330;
-    yy = camera_get_view_y(view_camera[0])+66;
+    yy = camera_get_view_y(view_camera[0])+58;
     
     
     //x1 = camera_get_view_x(view_camera[0])+280;
     x1 = camera_get_view_x(view_camera[0])+330;
-    y1 = camera_get_view_y(view_camera[0])+52;
+    y1 = camera_get_view_y(view_camera[0])+44;
     
-
     
 //    draw_sprite(spr_key_icon,scr_key_sprite(global.down_key),x1 + 40, y1);
     
     draw_set_color(c_white)
     if global.language = 1 draw_set_font(fnt_pixel_ru) else draw_set_font(fnt_pixel);
     draw_set_halign(fa_center)
-    draw_text_color(x1-10,y1-11,text,c_white,c_white,c_white,c_white,alpha)
+    draw_text_color(x1,y1,text,c_white,c_white,c_white,c_white,alpha)
     //draw_text(x1-8,y1-4,text);
     draw_set_halign(fa_center)
-    draw_text_color(xx+10,yy-10,text2,c_white,c_white,c_white,c_white,alpha);
+    draw_text_color(xx,yy,text2,c_white,c_white,c_white,c_white,alpha);
     //draw_text(xx,yy,text2);
 }

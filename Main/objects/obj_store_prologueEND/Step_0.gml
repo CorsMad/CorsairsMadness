@@ -2,6 +2,7 @@
 // You can write your code in this editor
 kb_gp_input_check();
 player_input()
+fnc_lng_store();
 var move = key_down_pressed - key_up_press;
 var movelr = key_right_press - key_left_press;
 

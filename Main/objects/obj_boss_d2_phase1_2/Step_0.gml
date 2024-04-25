@@ -65,20 +65,21 @@ if (state = 3) // Выстрелы
         case 10:    image_index = 1;break;
         case 20:    image_index = 2;break;
         case 30:    image_index = 3;break;
-        case 50:    image_index = 4;instance_create_depth(x+24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
-        case 80:    image_index = 3;break;                                                     
-        case 90:    image_index = 4;instance_create_depth(x+24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
-        case 120:   image_index = 3;break;                                                     
-        case 130:   image_index = 4;instance_create_depth(x+24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
-        case 160:   image_index = 3;break;                                                     
-        case 170:   image_index = 4;instance_create_depth(x+24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
-        case 200:   image_index = 5;break; 
-        case 210:   image_index = 6;break; 
-        case 220:
+        case 50:    image_index = 4;instance_create_depth(x-24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
+        case 80:    image_index = 3;break; 
+        case 90:    image_index = 4;instance_create_depth(x-24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
+        case 110:   image_index = 3;break; 
+        case 120:   image_index = 4;instance_create_depth(x-24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
+        case 130:   image_index = 3;break; 
+        case 140:   image_index = 4;instance_create_depth(x-24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
+        case 145:   image_index = 5;break; 
+        case 150:   image_index = 6;break; 
+        case 155:
             t = 0;
-            state = 4;
-            sprite_index = spr_boss_d2_idle_horizontal;
-            image_index = 0;
+            state = 5;
+            sprite_index = spr_boss_d2_idle_take_long;
+	        image_index = 0;
+	        image_speed = 0;
             break;
     }
 }
@@ -99,15 +100,15 @@ if (state = 4) // Ожидание
 
 if (state = 5) // выстрел длинной штукой
 {
-    if t< 60 t++;
+    if t< 20 t++;
     switch(t)
     {
-        case 50: 
+        case 10: 
             var i = instance_create_depth(x-400,y-22,depth,obj_bossd2_1_long_proj_r);
-            i.spd = 2;
+            i.spd = 3;
             break;
     }
-    if mov!= 1 && t > 50
+    if mov!= 1 && t > 10
     {
          image_speed = 0.5;
     }

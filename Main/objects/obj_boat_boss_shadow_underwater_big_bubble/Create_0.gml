@@ -6,3 +6,5 @@ enemy_hp = 10;
 hit_cd = 0;
 vspd = choose(-5,5);
 image_alpha = 0.75;
+hit_cd_master = enemy_hp;
+red = 0;

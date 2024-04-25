@@ -2,16 +2,16 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 function player_input()
-{ 
-    key_left_press = keyboard_check_pressed(global.left_key) || gamepad_button_check_pressed(4,gp_padl) || gamepad_button_check_pressed(0,gp_padl);
-    key_right_press = keyboard_check_pressed(global.right_key) || gamepad_button_check_pressed(4,gp_padr) || gamepad_button_check_pressed(0,gp_padr);
-    key_up_press = keyboard_check_pressed(global.up_key) || gamepad_button_check_pressed(4,gp_padu) || gamepad_button_check_pressed(0,gp_padu);
+{ 	
+    key_left_press = keyboard_check_pressed(global.left_key) || gamepad_button_check_pressed(4,gp_padl) || gamepad_button_check_pressed(0,gp_padl) //|| gamepad_axis_value(4, gp_axislh) < -0.5 || gamepad_axis_value(0, gp_axislh) < -0.5 ;
+    key_right_press = keyboard_check_pressed(global.right_key) || gamepad_button_check_pressed(4,gp_padr) || gamepad_button_check_pressed(0,gp_padr) //|| gamepad_axis_value(4, gp_axislh) > 0.5 || gamepad_axis_value(0, gp_axislh) > 0.5;
+    key_up_press = keyboard_check_pressed(global.up_key) || gamepad_button_check_pressed(4,gp_padu) || gamepad_button_check_pressed(0,gp_padu) //|| gamepad_axis_value(4, gp_axislv) < -0.5 || gamepad_axis_value(0, gp_axislv) < -0.5;
           
-    key_left = keyboard_check(global.left_key) || gamepad_button_check(4,gp_padl) || gamepad_button_check(0,gp_padl);
-    key_right = keyboard_check(global.right_key) || gamepad_button_check(4,gp_padr) || gamepad_button_check(0,gp_padr);
-    key_down = keyboard_check(global.down_key) || gamepad_button_check(4,gp_padd) || gamepad_button_check(0,gp_padd);
-    key_down_pressed = keyboard_check_pressed(global.down_key) ||  gamepad_button_check_pressed(4,gp_padd) || gamepad_button_check_pressed(0,gp_padd);
-    key_up = keyboard_check(global.up_key) || gamepad_button_check(4,gp_padu) || gamepad_button_check(0,gp_padu) ;
+    key_left = keyboard_check(global.left_key) || gamepad_button_check(4,gp_padl) || gamepad_button_check(0,gp_padl) //|| gamepad_axis_value(4, gp_axislh) < -0.5 || gamepad_axis_value(0, gp_axislh) < -0.5;
+    key_right = keyboard_check(global.right_key) || gamepad_button_check(4,gp_padr) || gamepad_button_check(0,gp_padr) ///|| gamepad_axis_value(4, gp_axislh) > 0.5 || gamepad_axis_value(0, gp_axislh) > 0.5;
+    key_down = keyboard_check(global.down_key) || gamepad_button_check(4,gp_padd) || gamepad_button_check(0,gp_padd) //|| gamepad_axis_value(4, gp_axislv) > 0.5 || gamepad_axis_value(0, gp_axislv) > 0.5;
+    key_down_pressed = keyboard_check_pressed(global.down_key) ||  gamepad_button_check_pressed(4,gp_padd) || gamepad_button_check_pressed(0,gp_padd) //|| gamepad_axis_value(4, gp_axislv) > 0.5 || gamepad_axis_value(0, gp_axislv) > 0.5;
+    key_up = keyboard_check(global.up_key) || gamepad_button_check(4,gp_padu) || gamepad_button_check(0,gp_padu) //|| gamepad_axis_value(4, gp_axislv) < -0.5 || gamepad_axis_value(0, gp_axislv) < -0.5;
     key_jump = keyboard_check_pressed(global.jump_key) || gamepad_button_check_pressed(4,gp_face1) || gamepad_button_check_pressed(0,gp_face1);
     key_jump_release = keyboard_check_released(global.jump_key) || gamepad_button_check_released(4,gp_face1) || gamepad_button_check_released(0,gp_face1);
     key_jump_pressed = keyboard_check_pressed(global.jump_key) || gamepad_button_check_pressed(4,gp_face1) || gamepad_button_check_pressed(0,gp_face1);

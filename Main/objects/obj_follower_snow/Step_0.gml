@@ -264,6 +264,8 @@ switch(on)
         }
         
         if y > room_height + 64 {
+			fnc_msc_stop_play();
+			fnc_msc_play(msc_jp1_prepurch); 
             instance_destroy();
             
         }

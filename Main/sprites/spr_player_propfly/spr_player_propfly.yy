@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_player_propfly",
-  "bbox_bottom": 63,
+  "bbox_bottom": 60,
   "bbox_left": 8,
   "bbox_right": 41,
   "bbox_top": 21,

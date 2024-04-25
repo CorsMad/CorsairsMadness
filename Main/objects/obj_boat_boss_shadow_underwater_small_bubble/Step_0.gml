@@ -42,3 +42,16 @@ if instance_exists(obj_Player_boat)
 }
 
 #endregion
+
+#region red
+if hit_cd_master!=enemy_hp {
+	hit_cd_master = enemy_hp;
+	red = 1;
+}
+
+if red!=0 {red++;image_blend = c_red;}
+if red>=5 red=0;
+if red = 0 image_blend = c_white;
+
+
+#endregion

@@ -16,3 +16,6 @@ fnc_snd_play_onetime(snd_vase_destruct);
 t1 = 0;
 t2 = 0;
 t3 = 0;
+
+hit_cd_master = enemy_hp;
+red = 0;

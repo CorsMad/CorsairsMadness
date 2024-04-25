@@ -48,13 +48,14 @@ for (var i = 0; i < array_length_2d(menu, submenu); ++i) {
     {
         draw_text(camera_get_view_x(view_camera[0])+120,camera_get_view_y(view_camera[0])+32+gap*i, menu[submenu, i])   
         //text_drop_shadow(camera_get_view_x(view_camera[0])+120,camera_get_view_y(view_camera[0])+32+gap*i,text_col,c_black,menu[submenu, i],1,1);
-    } else if submenu = 41
+    } else if submenu = 32{
+		draw_text(camera_get_view_x(view_camera[0])+240,camera_get_view_y(view_camera[0])+180 + gap*i, menu[submenu, i]);	
+	} else if submenu = 41
     {
         draw_set_font(fnt_pixel);
         //text_drop_shadow(camera_get_view_x(view_camera[0])+240,camera_get_view_y(view_camera[0])+32+gap*i,text_col,c_black,menu[submenu, i],1,1);
         draw_text(camera_get_view_x(view_camera[0])+240,camera_get_view_y(view_camera[0])+32 + gap*i, menu[submenu, i]);   
-    } else {
-     
+    } else { 
         //text_drop_shadow(camera_get_view_x(view_camera[0])+240,camera_get_view_y(view_camera[0])+64+gap*i,text_col,c_black,menu[submenu, i],1,1);
         draw_text(camera_get_view_x(view_camera[0])+240,camera_get_view_y(view_camera[0])+64+gap*i, menu[submenu, i]);
         
@@ -129,7 +130,7 @@ if submenu = 4
 
 if submenu = 31
 {
-    for (var k = 0; k < 9; ++k) {
+    for (var k = 0; k < 10; ++k) {
         if submenu = 31 && KBControlChange = 1
         {
             if index == k draw_line_color(camera_get_view_x(view_camera[0])+280,camera_get_view_y(view_camera[0])+(44+16*k),camera_get_view_x(view_camera[0])+320,camera_get_view_y(view_camera[0])+(44+16*k),c_red,c_red) else draw_line_color(camera_get_view_x(view_camera[0])+280,camera_get_view_y(view_camera[0])+(44+16*k),camera_get_view_x(view_camera[0])+320,camera_get_view_y(view_camera[0])+(44+16*k),c_white,c_white)          

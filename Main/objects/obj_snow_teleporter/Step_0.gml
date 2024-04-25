@@ -13,6 +13,9 @@ switch(state)
             var dir = point_direction(x,y,dest_x,dest_y);
             hspeed = lengthdir_x(spd,dir);
             vspeed = lengthdir_y(spd,dir);
+			if instance_exists(obj_Player){
+				if hspeed > 0 obj_Player.image_xscale = 1 else obj_Player.image_xscale = -1;
+			}
 
         }
     }

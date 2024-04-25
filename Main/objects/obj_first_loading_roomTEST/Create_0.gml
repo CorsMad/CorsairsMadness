@@ -1,16 +1,17 @@
+
 /// @description Insert description here
 // You can write your code in this editor
 randomise();
 instance_create_depth(0,0,0,DEBUG);
 
 
-global.TargetX      = 48
-global.TargetY      = 160;
-global.TargetRoom   = L2b_r5;
+global.TargetX      = 256;
+global.TargetY      = 200;
+global.TargetRoom   = L1_r1;
 
-global.fTargetX     = 1376;
+global.fTargetX     = 56;
 global.fTargetY     = 208;
-global.fTargetRoom  = PL1_r23;
+global.fTargetRoom  = PG1_r7;
 
 
 ////////////////////////////////////////
@@ -39,23 +40,23 @@ global.language = 0;
     global.completed_JF1 = 0;   //0
     global.completed_JF2 = 0;   //0
                                 //0
-    global.completed_PD1 = 1;   //0
+    global.completed_PD1 = 0;   //0
     global.completed_PD2 = 0;   //0
                                 //0
     global.completed_PS1 = 1;   //0
     global.completed_PS2 = 0;   //0
                                 //0
     global.completed_PG1 = 0;   //0
-    global.completed_PG2 = 1;   //0
+    global.completed_PG2 = 0;   //0
                                 //0
-    global.completed_PL1 = 1;   //0
+    global.completed_PL1 = 0;   //0
     global.completed_PL2 = 0;   //0
         
         
-    global.completedJungle = 1;    
+    global.completedJungle = 0;    
     global.completedDesert = 0;    
-    global.completedSnow = 1;    
-    global.completedShadow = 1;    
+    global.completedSnow = 0;    
+    global.completedShadow = 0;    
     global.completedLava = 0;    
         
     #endregion
@@ -63,7 +64,7 @@ global.language = 0;
 #region ТЕСТ
     
     //0
-    global.dia_jungleChief = 1; 
+    global.dia_jungleChief = 0; 
     global.dia_desertChief = 0;
     global.dia_snowChief = 0;
     global.dia_shadowChief = 0;
@@ -115,19 +116,19 @@ global.language = 0;
 
 
 #region  ключи
-global.key_green1 = 0;      //0
+global.key_green1 = 1;      //0
 global.key_green2 = 1;      //0
                             //0
 global.key_yellow1 = 0;     //0
-global.key_yellow2 = 1;     //0
+global.key_yellow2 = 0;     //0
                             //0
-global.key_blue1 = 0;       //0
+global.key_blue1 = 1;       //0
 global.key_blue2 = 1;       //0
                             //0
 global.key_purple1 = 0;     //0
-global.key_purple2 = 1;     //0
+global.key_purple2 = 0;     //0
                             //0
-global.key_red1 = 0;        //0
+global.key_red1 = 1;        //0
 global.key_red2 = 1;        //0
 #endregion
 
@@ -191,7 +192,7 @@ global.purch_blunderbuss3 = 0;
 // parrot cage
 global.purch_parrotcage1 = 1;
 global.purch_parrotcage2 = 1;
-global.purch_parrotcage3 = 1;
+global.purch_parrotcage3 = 0;
 
 #endregion
 
@@ -259,9 +260,9 @@ global.windowHeight = 1080;
 // Установка громкости звука
 
 
-global.MSCvolume =0.5;// 0.5; //0.5
+global.MSCvolume =0.0;// 0.5; //0.5
 global.MSCvolume_max = global.MSCvolume;
-global.SFXvolume = 0.5// 0.5; //0.5
+global.SFXvolume = 0.0// 0.5; //0.5
 
 audio_group_set_gain(MusicVolume,global.MSCvolume,0);
 audio_group_set_gain(SFXvolume,global.SFXvolume,0);

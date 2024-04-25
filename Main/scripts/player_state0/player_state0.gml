@@ -34,7 +34,7 @@ if isGrounded = 1
 #region Movement
 
 // Move left-right
-
+if isGrounded = 1 isGravitate = 0;
 
 hspd = spd;
 fspd = hspd + carryspd + sspd;
@@ -164,7 +164,7 @@ if place_meeting(x,y+1,obj_block)
         
 if isGrounded = 0 && isSkating = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 0 &&  isAirattacking = 0 && isAirUsingabil = 0 && isAirUsingitem = 0 &&  isAttackingdown = 0 && isWallclimbing = 0 && isWallclimbing = 0 && isOutjump = 0 && isClimbing = 0 && isHooking = 0 && isTakingdmg = 0 && isPickup = 0 && isDashing = 0
 {
-	if isCarry = 0 && isFlueting = 0 && !instance_exists(obj_abil_boots_hitbox) && sbootsbuffer = 0
+	if isCarry = 0 && isFlueting = 0 && isGravitate = 0 && !instance_exists(obj_abil_boots_hitbox) && sbootsbuffer = 0
 	{
 		sprite_index = spr_player_jump;
 	} else if isCarry = 1 
@@ -176,12 +176,17 @@ if isGrounded = 0 && isSkating = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 
     } else if instance_exists(obj_abil_boots_hitbox)
     {
         sprite_index = spr_player_springboots;   
-    } 
-    else if sbootsbuffer = 1
+    } else if sbootsbuffer = 1
     {
         sprite_index = spr_player_springboots;   
-    }
-	image_speed = 0;
+    } else if isGravitate = 1
+	{
+		sprite_index = spr_player_gravitate 
+	}
+	if isGravitate = 1 image_speed = 1 else 
+	    {
+		
+		image_speed = 0;	
 	
 		if vspd > 0 
 		{
@@ -206,6 +211,7 @@ if isGrounded = 0 && isSkating = 0 && isAirThrowingBomb = 0 && isThrowingBomb = 
 			{
 				vspd +=0.25;//0.25;
 			}
+		}
 }
 if isGrounded  = 1
 {

@@ -23,7 +23,7 @@ if state = 0
         case 135: image_index=2;
             fnc_snd_play_onetime(snd_vase_destruct);
 			instance_destroy(obj_boat_boss_desert_water);
-			instance_destroy(obj_boat_boss_shadow_water_main);
+			instance_destroy(obj_boat_boss_shadow_water_main_darkl);
 			instance_destroy(obj_boat_boss_shadow_water);
 			break;
         case 140: image_index=1;break;

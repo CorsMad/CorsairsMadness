@@ -138,24 +138,24 @@ if (phase = 1) { // Фаза1
                     case 45:   image_index = 9;break;
                     case 50:   image_index = 10;break;
                     case 60:   image_index = 11;break;
-                    case 240:  image_index = 12;break;                        
-//-100
-                    case 250:
-                        image_index = 13;
-                        hspd = -6;
-                        break;  
-                    case 400:   image_index = 11;break;   
-                    case 600:   image_index = 10;break;
-                    case 605:   image_index = 9;break;
-                    case 610:   image_index = 8;break;
-                    case 615:   image_index = 7;break;
-                    case 620:   image_index = 6;break;
-                    case 625:   image_index = 5;break;
-                    case 630:   image_index = 4;break;
-                    case 635:   image_index = 3;break;
-                    case 640:   image_index = 2;break;
-                    case 645:   image_index = 1;break;            
-                    case 650: 
+                    case 190:  image_index = 12;break;                      
+//-100															 
+                    case 200:									 
+                        image_index = 13;						 
+                        hspd = -6;								 
+                        break;  								 
+                    case 350:   image_index = 11;break;   		 
+                    case 550:   image_index = 10;break;			 
+                    case 555:   image_index = 9;break;			 
+                    case 560:   image_index = 8;break;			 
+                    case 565:   image_index = 7;break;			 
+                    case 570:   image_index = 6;break;			 
+                    case 575:   image_index = 5;break;			 
+                    case 580:   image_index = 4;break;			 
+                    case 585:   image_index = 3;break;			 
+                    case 590:   image_index = 2;break;			 
+                    case 595:   image_index = 1;break;           
+                    case 600: 									 
                         image_index = 0;
                         t = 0;
                         hspd = 0;

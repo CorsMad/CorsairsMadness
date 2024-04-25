@@ -18,6 +18,7 @@
     {"name":"inst_16CE009B","path":"rooms/J2_r9_boat/J2_r9_boat.yy",},
     {"name":"inst_51742D63","path":"rooms/J2_r9_boat/J2_r9_boat.yy",},
     {"name":"inst_6065A0CA","path":"rooms/J2_r9_boat/J2_r9_boat.yy",},
+    {"name":"inst_1DF08565","path":"rooms/J2_r9_boat/J2_r9_boat.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -34,6 +35,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_765ED673_2_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_trigger_boat_level_global_destroyer","path":"objects/obj_trigger_boat_level_global_destroyer/obj_trigger_boat_level_global_destroyer.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":30.600002,"x":-64.0,"y":-112.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_76827BC0_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_gui_controller_boat","path":"objects/obj_gui_controller_boat/obj_gui_controller_boat.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6065A0CA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_sp_boat_J2","path":"objects/obj_sp_boat_J2/obj_sp_boat_J2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":80.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1DF08565","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_vfx_boat_wind_creator","path":"objects/obj_vfx_boat_wind_creator/obj_vfx_boat_wind_creator.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":208.0,"y":-64.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_2","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_16CE009B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_bgr_islandj2","path":"objects/obj_bgr_islandj2/obj_bgr_islandj2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},

@@ -64,3 +64,20 @@ if  state = 11.2
 }
 
 
+#region Вода
+draw_set_alpha(1)
+
+
+
+if instance_exists(obj_sp_boat_L2) || instance_exists(obj_sp_boat_G2){
+	if state = 11.2 {
+		draw_sprite_ext(spr_player_boat_wave_dark,wave_spd_a,x+20,y+8+yob,-1,1,0,c_white,1);	
+	} else draw_sprite_ext(spr_player_boat_wave_dark,wave_spd_a,x-20,y+8+yob,1,1,0,c_white,1);
+	
+} else {
+	if state = 11.2 {
+		draw_sprite_ext(spr_player_boat_wave_light,wave_spd_a,x+20,y+8+yob,-1,1,0,c_white,1);	
+	} else draw_sprite_ext(spr_player_boat_wave_light,wave_spd_a,x-20,y+8+yob,1,1,0,c_white,1);	
+}
+#endregion
+

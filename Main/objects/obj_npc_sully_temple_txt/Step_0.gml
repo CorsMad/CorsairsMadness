@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-fnc_lng_fgroundedf_2_r15_2();
+//fnc_lng_fgroundedf_2_r15_2();
 dialogue_input();
 scr_skip_texticon_blink();
 

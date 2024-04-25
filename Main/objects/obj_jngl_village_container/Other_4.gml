@@ -34,7 +34,7 @@ if global.dia_jungleChief = 0
 
 if global.dia_jungleChief != 0 && global.dia_jungleMerch = 0 
 {
-    instance_create_depth(404+28,180,10,obj_npc_village_pointer);
+    instance_create_depth(404-28,180,10,obj_npc_village_pointer);
 }
 
 if instance_exists(obj_npc_junglev_comt) && global.dia_jungleComt > 0 

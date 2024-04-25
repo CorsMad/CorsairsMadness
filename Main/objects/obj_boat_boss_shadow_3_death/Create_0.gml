@@ -26,3 +26,5 @@ if instance_exists(obj_boat_boss_shadow_underwater_tent3){
 
 instance_destroy(obj_boat_boss_shadow_underwater_big_bubble_create)
 instance_destroy(obj_boat_boss_shadow_underwater_small_bubble_create)
+
+if instance_exists(obj_boat_boss_shadow_tent_projectile) instance_destroy(obj_boat_boss_shadow_tent_projectile);

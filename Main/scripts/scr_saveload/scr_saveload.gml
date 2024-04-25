@@ -385,6 +385,7 @@ var _string = json_stringify(_saveStorage);
 var _buffer = buffer_create(string_byte_length(_string) +1, buffer_fixed, 1);
 buffer_write(_buffer, buffer_string, _string);
 buffer_save(_buffer, "save1.save");
+
 buffer_delete(_buffer);
 
 show_debug_message("Gave Saved! " + _string);
@@ -828,8 +829,7 @@ function scr_save_settings(){
     var _buffer = buffer_create(string_byte_length(_string) +1, buffer_fixed, 1);
     buffer_write(_buffer, buffer_string, _string);
     buffer_save(_buffer, "CMsettingsN1.save");
-    buffer_delete(_buffer);
-
+	buffer_delete(_buffer);
     show_debug_message("Settings Saved! " + _string);
 }
 

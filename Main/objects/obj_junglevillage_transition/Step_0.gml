@@ -7,7 +7,9 @@ if alpha >= 1
     room_goto(TargetRoom);
     obj_Player.x = TargetX;
     obj_Player.y = TargetY;
-    obj_Player.isDead = 0;
+    obj_Player.isDead = 2.1;
+    obj_Player.t_dia = -30;
+    //obj_Player.isDead = 0;
     instance_destroy();
 }
 

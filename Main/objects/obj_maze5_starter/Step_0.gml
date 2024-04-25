@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 	t++;
+	/*
 	switch(t)
 	{
 		case 100    :           instance_create_depth(240+64, -16,depth-1, obj_maze5_coin_10 ); break;	
@@ -30,8 +31,37 @@
 		case 1900   :	var i8= instance_create_depth(240+64, -16,depth-1, obj_maze5_coin_m20);i8.vspd = 2; break;		
 		case 2000   :	        instance_create_depth(240+64, -16,depth-1, obj_maze5_coin_10 ); break;
 	}
-
-if t > 2000 && !instance_exists(obj_maze5_coin_10) && !instance_exists(obj_maze5_coin_30) && !instance_exists(obj_maze5_coin_m20) 
+	*/
+	switch(t)
+	{
+		case 50    :           instance_create_depth(240+64, -16,depth-1, obj_maze5_coin_10 ); break;	
+		case 100    :	        instance_create_depth(360+64, -16,depth-1, obj_maze5_coin_10 ); break;	
+		case 150    :	        instance_create_depth(360+64, -16,depth-1, obj_maze5_coin_10 ); break;	
+		case 200    :	        instance_create_depth(100+64+32, -16,depth-1, obj_maze5_coin_30 ); break;	
+		case 250    :	        instance_create_depth(100+64+32, -16,depth-1, obj_maze5_coin_m20); break;	
+		case 300    :	        instance_create_depth(360+64, -16,depth-1, obj_maze5_coin_10 ); break;	
+		case 400    :	        instance_create_depth(240+64, -16,depth-1, obj_maze5_coin_30 ); break;	
+		case 450    :	var i1= instance_create_depth(240+64, -16,depth-1, obj_maze5_coin_m20);i1.vspd = 2; break;		
+		case 500    :	        instance_create_depth(140+64, -16,depth-1, obj_maze5_coin_10 ); break;	
+		case 550    :	        instance_create_depth(240+64, -16,depth-1, obj_maze5_coin_10 ); break;	
+		case 600   :	        instance_create_depth(360+64, -16,depth-1, obj_maze5_coin_30 ); break;	
+		case 650   :	        instance_create_depth(240+64, -16,depth-1, obj_maze5_coin_10 ); break;	
+		case 675   :	        instance_create_depth(240+64, -16,depth-1, obj_maze5_coin_10 ); break;	
+		case 725   :	var i2= instance_create_depth(240+64, -16,depth-1, obj_maze5_coin_m20);i2.vspd = 2; break;		
+		case 750  :	        instance_create_depth(100+64+32, -16,depth-1, obj_maze5_coin_30 ); break;	
+		case 840   :	        instance_create_depth(360+64, -16,depth-1, obj_maze5_coin_10 ); break;	
+		case 850   :   var i3= instance_create_depth(360+64, -16,depth-1, obj_maze5_coin_m20);i3.vspd = 2; break;		
+		case 900   :	        instance_create_depth(240+64, -16,depth-1, obj_maze5_coin_30 ); break;	
+		case 1000   :	var i4= instance_create_depth(240+64, -16,depth-1, obj_maze5_coin_m20);i4.vspd = 2; break;instance_create_depth(250+64, -16,depth-1, obj_maze5_coin_m20); break;	
+		case 1090   :	var i5= instance_create_depth(360+64, -16,depth-1, obj_maze5_coin_10);i5.vspd = 2; break;
+		case 1100   :	var i6= instance_create_depth(360+64, -16,depth-1, obj_maze5_coin_30);i6.vspd = 2; break;
+		case 1150   :	var i7= instance_create_depth(360+64, -16,depth-1, obj_maze5_coin_m20);i7.vspd = 2; break;	
+		case 1200   :	        instance_create_depth(360+64, -16,depth-1, obj_maze5_coin_10 ); break;	
+		case 1250   :	        instance_create_depth(240+64, -16,depth-1, obj_maze5_coin_10 ); break;
+		case 1300   :	var i8= instance_create_depth(240+64, -16,depth-1, obj_maze5_coin_m20);i8.vspd = 2; break;		
+		
+	}
+if t > 1400 && !instance_exists(obj_maze5_coin_10) && !instance_exists(obj_maze5_coin_30) && !instance_exists(obj_maze5_coin_m20) 
 {
     obj_maze5_counter_controller.StartEvent = 1;
     instance_destroy();

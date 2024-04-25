@@ -26,7 +26,7 @@ if en!=noone
         lb.y < camera_get_view_y(view_camera[0])+272+64
         { 
     		en_x = lb.x
-    		en_y = lb.y-sprite_get_yoffset(rollback_connection_rejected.sprite_index) + lb.sprite_height / 2;
+    		en_y = lb.y-sprite_get_yoffset(lb.sprite_index) + lb.sprite_height / 2;
             haveTarget = 1;  
     		if point_distance(x, y, en_x, en_y) > 6
     	    {

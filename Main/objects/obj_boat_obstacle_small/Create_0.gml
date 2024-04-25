@@ -5,3 +5,5 @@ hspd = -1;
 vspd = 0;
 hit_cd = 0;
 enemy_hp = 4;
+hit_cd_master = enemy_hp;
+red = 0;

@@ -14,6 +14,10 @@ if dis < 180 && dis > -180
     } else spd = 3;
 }
 
+
+if spd > 0 image_xscale = 1; else image_xscale = -1;
+t=0;
+
 /*
 dis = point_distance(x,y,obj_Player.x,obj_Player.y);
 */

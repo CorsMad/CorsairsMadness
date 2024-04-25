@@ -15,6 +15,15 @@ instance_destroy(obj_boat_boss_vulcano_proj_2_1);
 instance_destroy(obj_boat_boss_vulcano_proj_2_2);
 instance_destroy(obj_boat_boss_vulcano_shadow);
 
+
 if instance_exists(obj_boat_boss_vulcano_1_wall){
 	obj_boat_boss_vulcano_1_wall.enemy_hp = 0;
+}
+
+if instance_exists(obj_boat_boss_vulcano_skeleton_approach){
+	instance_destroy(obj_boat_boss_vulcano_skeleton_approach);	
+}
+
+if instance_exists(obj_skeleton_surf_pointing_2hp){
+	instance_destroy(obj_skeleton_surf_pointing_2hp);	
 }

@@ -7,7 +7,7 @@ if t = 50
     var pl = instance_create_depth(96,239,0,obj_Player)
     pl.DashEnabled = 1;
     pl.state = 0;
-    pl.specabilnumber = 4;
+    pl.specabilnumber = 5;
     pl.HookEnabled = 0;
     pl.SpecAbilMask = 2;       
     room_goto(Village_snow_store);  

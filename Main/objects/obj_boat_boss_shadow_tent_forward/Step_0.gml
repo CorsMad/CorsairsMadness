@@ -17,7 +17,7 @@ switch(state)
                 case 35: image_index = 7;break;   
                 case 45: image_index = 8;break;   
                 case 50: image_index = 9;break;   
-                case 200:   
+                case 150:   
                     t = 0;
                     state = 1;
                     break;                   
@@ -43,8 +43,9 @@ switch(state)
         break;
     case 2: 
         #region выстрел вперед
+		if acc > -8 acc-=0.5;
         image_index = 15;
-            x -= 5;
+            x +=acc;
             if x <= -16
             {
                 instance_destroy();

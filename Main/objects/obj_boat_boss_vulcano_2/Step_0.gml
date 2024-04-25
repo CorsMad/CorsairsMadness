@@ -36,7 +36,7 @@ switch(state)
             case 90:
                 image_index = 0;
                 break;
-            case 400:
+            case 150:
                 state = 1;
                 t = 0;
                 break;
@@ -112,12 +112,18 @@ switch(state)
         }
         
         
-        if t > 160 && !instance_exists(obj_boat_boss_vulcano_skeleton_approach) && !instance_exists(obj_skeleton_surf_pointing_2hp)
-        {
-            t = 0;
-            state = 2;
-        }
+        //if t > 160 && !instance_exists(obj_boat_boss_vulcano_skeleton_approach) && !instance_exists(obj_skeleton_surf_pointing_2hp)
+        //{
+        //    t = 0;
+        //    state = 2;
+        //}
         
+		if t =180
+		{
+		    t = 0;
+		    state = 2;
+		}
+		
 		#endregion
 		break;
 	case 2:

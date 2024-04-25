@@ -2,7 +2,7 @@
 // You can write your code in this editor
 dialogue_input();
 scr_skip_texticon_blink();
-
+scr_txt_shadow_inventor2();
 if key_skip
 {
     if typist.get_state() != 1 {typist.skip();} else scr_t++;

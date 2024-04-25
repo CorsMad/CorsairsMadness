@@ -4,7 +4,7 @@ if instance_exists(obj_Player)
 {
     draw_set_colour(c_black);
 	//draw_rectangle(camera_get_view_x(view_camera[0])+160,30,camera_get_view_x(view_camera[0])+480-160,camera_get_view_y(view_camera[0])+68,false);
-    draw_sprite_ext(spr_text_9slicesmall,0,camera_get_view_x(view_camera[0])+240,52,8,2,0,c_white,alpha);
+    draw_sprite_ext(spr_text_9slicesmall,0,camera_get_view_x(view_camera[0])+240,52,15,2,0,c_white,alpha);
     
     draw_set_halign(fa_left);
     var xx,yy;

@@ -1,12 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if global.language = 1 draw_set_font(fnt_pixel_ru) else draw_set_font(fnt_pixel);
+
+
 if instance_exists(obj_Player)
 {
     
     var xx,yy;
     xx = camera_get_view_x(view_camera[0])+240;
-    yy = camera_get_view_y(view_camera[0])+32;
+	if global.language = 1 yy = camera_get_view_y(view_camera[0])+34; else yy = camera_get_view_y(view_camera[0])+32;
+    
     
     draw_set_halign(fa_center);    
     

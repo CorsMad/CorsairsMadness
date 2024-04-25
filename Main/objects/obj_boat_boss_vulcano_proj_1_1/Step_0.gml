@@ -18,7 +18,7 @@ switch(state)
 		break;
 	case 1:
 		t++;
-		if t = 100 {
+		if t = 50 {
 			t = 0;
 			dest_point = y+272;
 			vspd = 4;

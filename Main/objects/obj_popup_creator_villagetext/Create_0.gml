@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-text = "i need something to do here"
+text = ""
 alpha = 0;
 t = 0;
 

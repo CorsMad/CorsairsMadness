@@ -7,6 +7,7 @@ if instance_exists(obj_Player_boat)
     obj_Player_boat.obj_sp_boat_level = obj_sp_boat_L2; 
 }
 
+
 switch(global.boatCheckpoint)  // Чекпоинт
 {
     case 0: state = 0;break;

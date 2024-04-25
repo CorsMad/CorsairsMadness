@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 player_input();
-
+script_lng_pos_tip_superdash();
 switch(state){
 	case 1:
 		if t < 27 t++;

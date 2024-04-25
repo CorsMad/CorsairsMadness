@@ -8,6 +8,7 @@ if instance_exists(obj_Player_boat)
 }
 
 
+
 switch(global.boatCheckpoint)  // Чекпоинт
 {
     case 0: state = 0;break;

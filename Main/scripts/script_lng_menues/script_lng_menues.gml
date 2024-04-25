@@ -394,14 +394,15 @@ function fnc_lng_jmerch_c(){
             eng1 = "talk";
             eng2 = "trade";
             eng3 = "exit";
-            eng4 = "set sail";
+            eng4 = "Let's set sail!";
             #endregion
             break;
         case 1: //russian
             #region  кг text
             eng1 = "говорить";
-            eng2 = "магазин"
-            eng3 = "назад"
+            eng2 = "магазин";
+            eng3 = "назад";
+			eng4 = "Отчаливаем!";
             #endregion           
             break;
         case 2: //spanish
@@ -409,6 +410,7 @@ function fnc_lng_jmerch_c(){
             eng1 = "hablar";
             eng2 = "comercio"
             eng3 = "salir"
+			eng4 = "¡Zarpemos ahora!";
             #endregion
             break;
         case 3: //chinese
@@ -416,6 +418,7 @@ function fnc_lng_jmerch_c(){
             eng1 = "说出来";
             eng2 = "营业"
             eng3 = "退出"
+			eng4 = "让我们现在就启航！";
             #endregion
             break;
         case 4: //portug
@@ -423,6 +426,7 @@ function fnc_lng_jmerch_c(){
             eng1 = "falar";
             eng2 = "negociar"
             eng3 = "salir"
+			eng4 = "Vamos zarpar agora!";
             #endregion
             break;
         case 5: //brazil
@@ -430,6 +434,7 @@ function fnc_lng_jmerch_c(){
             eng1 = "falar";
             eng2 = "negociar"
             eng3 = "salir"
+			eng4 = "Vamos zarpar agora!";
             #endregion
             break;
         case 6: //polish
@@ -437,6 +442,7 @@ function fnc_lng_jmerch_c(){
             eng1 = "porozmawiaj";
             eng2 = "handel"
             eng3 = "Wyjście"
+			eng4 = "Wyruszajmy w rejs teraz!";
             #endregion
             break;
         case 7: //japanese
@@ -444,6 +450,7 @@ function fnc_lng_jmerch_c(){
             eng1 = "話す";
             eng2 = "交換"
             eng3 = "終了"
+			eng4 = "さあ、出航しましょう！";
             #endregion
             break;
         case 8: //deutch
@@ -451,6 +458,7 @@ function fnc_lng_jmerch_c(){
             eng1 = "rede mit";
             eng2 = "Handel"
             eng3 = "beenden"
+			eng4 = "Lassen Sie uns jetzt in See stechen!";
             #endregion
             break;
         case 9: //french
@@ -458,6 +466,7 @@ function fnc_lng_jmerch_c(){
             eng1 = "parler";
             eng2 = "commerce"
             eng3 = "quitter"
+			eng4 = "Mettons les voiles maintenant !";
             #endregion
             break;
         case 10: // Italian
@@ -465,6 +474,7 @@ function fnc_lng_jmerch_c(){
             eng1 = "parla";
             eng2 = "negozia"
             eng3 = "Exit"
+			eng4 = "Andiamo a navigare ora!";
             #endregion
             break;
     }    
@@ -481,72 +491,62 @@ function fnc_lng_jmerch_coin_exch(){
             break;
         case 1: //russian
             #region  кг text
-            eng1 = "говорить";
-            eng2 = "магазин"
-            eng3 = "назад"
+            eng1 = "7";
+            eng2 = "назад"
             #endregion           
             break;
         case 2: //spanish
             #region  ENG text
-            eng1 = "hablar";
-            eng2 = "comercio"
-            eng3 = "salir"
+            eng1 = "7";
+            eng2 = "salir"
             #endregion
             break;
         case 3: //chinese
             #region  ENG text
-            eng1 = "说出来";
-            eng2 = "营业"
-            eng3 = "退出"
+            eng1 = "7";
+            eng2= "退出"
             #endregion
             break;
         case 4: //portug
             #region  ENG text
-            eng1 = "falar";
-            eng2 = "negociar"
-            eng3 = "salir"
+            eng1 = "7";
+            eng2 = "salir"
             #endregion
             break;
         case 5: //brazil
             #region  ENG text
-            eng1 = "falar";
-            eng2 = "negociar"
+            eng1 = "7";
             eng3 = "salir"
             #endregion
             break;
         case 6: //polish
             #region  ENG text
-            eng1 = "porozmawiaj";
-            eng2 = "handel"
-            eng3 = "Wyjście"
+            eng1 = "7";
+            eng2 = "Wyjście"
             #endregion
             break;
         case 7: //japanese
             #region  ENG text
-            eng1 = "話す";
-            eng2 = "交換"
-            eng3 = "終了"
+            eng1 = "7";
+            eng2 = "終了"
             #endregion
             break;
         case 8: //deutch
             #region  ENG text
-            eng1 = "rede mit";
-            eng2 = "Handel"
-            eng3 = "beenden"
+            eng1 = "7";
+            eng2 = "beenden"
             #endregion
             break;
         case 9: //french
             #region  ENG text
-            eng1 = "parler";
-            eng2 = "commerce"
-            eng3 = "quitter"
+            eng1 = "7";
+            eng2 = "quitter"
             #endregion
             break;
         case 10: // Italian
             #region  ENG text
-            eng1 = "parla";
-            eng2 = "negozia"
-            eng3 = "Exit"
+            eng1 = "7";
+            eng2 = "Exit"
             #endregion
             break;
     }    
@@ -559,17 +559,17 @@ function fnc_lng_jmap()
         case 0: //English  
             #region  ENG text
             village     = "Village"
-            endurance   = "endurance test"
-            lvl1        = "Bomb Catacombs"
-            lvl2        = "tropical hazard"
+            endurance   = "arena"            
             temple      = "Temple entrance"
             lair        = "Temple Lair"
             
             #region LEVEL NAMES
+			lvl1        = "Bomb Catacombs"
+            lvl2        = "tropical hazard"
             dlvl1       = "sand caves";
             dlvl2       = "A storm in the desert";
             slvl1       = "Snowy peaks";
-            slvl2       = "Trouble on the mountain";
+            slvl2       = "A steep descent";
             glvl1       = "Buried in the rain";
             glvl2       = "Melody of Terror";
             llvl1       = "Active Volcanoes";
@@ -582,100 +582,193 @@ function fnc_lng_jmap()
             #region  кг text
             village     = "деревня"
             endurance   = "арена"
-            lvl1        = "1й уровень"
-            lvl2        = "2й уровень"
-            temple      = "Храм"
-            lair        = "Логово"
-            #endregion           
+            temple      = "вход в Храм"
+            lair        = "Логово храма"
+            #endregion         
+			#region LEVEL NAMES
+			lvl1        = "Катакомбы Бомб"
+            lvl2        = "Тропическая угроза"
+            dlvl1       = "Песчаные пещеры";
+            dlvl2       = "Буря в пустыне";
+            slvl1       = "Снежные вершины";
+            slvl2       = "Крутой спуск";
+            glvl1       = "Похороненный под дождем";
+            glvl2       = "Мелодия Ужаса";
+            llvl1       = "Активные вулканы";
+            llvl2       = "Пламенная бездна";
+            #endregion
             break;
         case 2: //spanish
             #region  ENG text
             village     = "Pueblo"
             endurance   = "arena"
-            lvl1        = "nivel 1"
-            lvl2        = "nivel 2"
-            temple      = "Templo"
-            lair        = "Guarida"
+            temple      = "Entrada del templo"
+            lair        = "Guarida del templo"
+
+			
+			lvl1        = "Catacumbas de la Bomba";
+			lvl2        = "Peligro Tropical";
+			dlvl1       = "Cuevas de Arena";
+			dlvl2       = "Una tormenta en el desierto";
+			slvl1       = "Picos nevados";
+			slvl2       = "Un descenso empinado";
+			glvl1       = "Enterrado en la lluvia";
+			glvl2       = "Melodía del Terror";
+			llvl1       = "Volcanes Activos";
+			llvl2       = "Abismo en llamas";
             #endregion
             break;
         case 3: //chinese
             #region  ENG text
             village     = "从林村"
             endurance   = "竞技场"
-            lvl1        = "第1级"
-            lvl2        = "第2级"
-            temple      = "寺庙"
-            lair        = "巢穴"
+            temple      = "门入口"
+            lair        = "潜伏点"
+			
+			lvl1        =  "弹墓地";
+			lvl2        =  "带危险";
+			dlvl1       =  "洞";
+			dlvl2       =  "漠的风暴";
+			slvl1       =  "山之巅";
+			slvl2       =  "峭的下降";
+			glvl1       =  "中埋葬";
+			glvl2       =  "怖的旋律";
+			llvl1       =  "火山";
+			llvl2       =  "焰深渊";
             #endregion
             break;
         case 4: //portug
             #region  ENG text
             village     = "Aldeia"
             endurance   = "arena"
-            lvl1        = "nível 1"
-            lvl2        = "nível 2"
-            temple      = "Templo"
-            lair        = "Lair"
+            temple      = "Entrada do Templo"
+            lair        = "Antro do Templo"
+
+			lvl1        =  "Catacumbas da Bomba";
+			lvl2        =  "Perigo Tropical";
+			dlvl1       =  "Cavernas de Areia";
+			dlvl2       =  "Uma tempestade no deserto";
+			slvl1       =  "Picos Nevados";
+			slvl2       =  "Uma descida íngreme";
+			glvl1       =  "Enterrado na chuva";
+			glvl2       =  "Melodia do Terror";
+			llvl1       =  "Vulcões Ativos";
+			llvl2       =  "Abismo Flamejante";
             #endregion
             break;
         case 5: //brazil
             #region  ENG text
             village     = "Aldeia"
             endurance   = "arena"
-            lvl1        = "nível 1"
-            lvl2        = "nível 2"
-            temple      = "Templo"
-            lair        = "Lair"
+            temple      = "Entrada do Templo"
+            lair        = "Covil do Templo"
+
+			lvl1        =  "Catacumbas da Bomba";
+			lvl2        =  "Perigo Tropical";
+			dlvl1       =  "Cavernas de Areia";
+			dlvl2       =  "Uma tempestade no deserto";
+			slvl1       =  "Picos Nevados";
+			slvl2       =  "Uma descida íngreme";
+			glvl1       =  "Enterrado na chuva";
+			glvl2       =  "Melodia do Terror";
+			llvl1       =  "Vulcões Ativos";
+			llvl2       =  "Abismo em Chamas";
             #endregion
             break;
         case 6: //polish
             #region  ENG text
             village     = "Wioska"
             endurance   = "arena"
-            lvl1        = "Poziom 1"
-            lvl2        = "Poziom 2"
-            temple      = "Świątynia"
-            lair        = "Legowisko "
+            temple      = "Wejście do świątyni"
+            lair        = "Kryjówka świątynna"
+
+			lvl1        =  "Katakumby Bomb";
+			lvl2        =  "Tropikalne zagrożenie";
+			dlvl1       =  "Piaskowe jaskinie";
+			dlvl2       =  "Burza na pustyni";
+			slvl1       =  "Śnieżne szczyty";
+			slvl2       =  "Strome zejście";
+			glvl1       =  "Zakopany w deszczu";
+			glvl2       =  "Melodia Terroru";
+			llvl1       =  "Aktywne Wulkany";
+			llvl2       =  "Płonąca przepaść";
             #endregion
             break;
         case 7: //japanese
             #region  ENG text
             village     = "ビレッジ"
             endurance   = "アリーナ"
-            lvl1        = "レベル1"
-            lvl2        = "レベル2"
-            temple      = "神殿"
-            lair        = "レア"
+            temple      = "寺院の入口"
+            lair        = "寺院の巣窟"
+
+
+			lvl1        =  "爆弾地下墓地";
+			lvl2        =  "トロピカルハザード";
+			dlvl1       =  "砂の洞窟";
+			dlvl2       =  "砂漠の嵐";
+			slvl1       =  "雪のピーク";
+			slvl2       =  "急な下降";
+			glvl1       =  "雨に埋もれた";
+			glvl2       =  "テラーのメロディ";
+			llvl1       =  "活動的な火山";
+			llvl2       =  "炎の深淵";
             #endregion
             break;
         case 8: //deutch
             #region  ENG text
             village     = "Dorf"
             endurance   = "arena"
-            lvl1        = "Ebene 1"
-            lvl2        = "Ebene 2"
-            temple      = "Tempel"
-            lair        = "Versteck"
+            temple      = "Tempel Eingang";
+            lair        = "Tempel Versteck";
+
+			lvl1        =  "Bombenkatakomben";
+			lvl2        =  "Tropisches Risiko";
+			dlvl1       =  "Sandhöhlen";
+			dlvl2       =  "Ein Sturm in der Wüste";
+			slvl1       =  "Schneebedeckte Gipfel";
+			slvl2       =  "Ein steiler Abstieg";
+			glvl1       =  "Im Regen begraben";
+			glvl2       =  "Melodie des Terrors";
+			llvl1       =  "Aktive Vulkane";
+			llvl2       =  "Flammender Abgrund";
             #endregion
             break;
         case 9: //french
             #region  ENG text
             village     = "Village"
             endurance   = "Arène"
-            lvl1        = "niveau 1"
-            lvl2        = "niveau 2"
-            temple      = "Temple"
-            lair        = "Repaire"
+            temple      = "Entrée du Temple";
+            lair        = "Repaire du Temple";
+
+			lvl1        =  "Catacombes de la Bombe";
+			lvl2        =  "Danger Tropical";
+			dlvl1       =  "Grottes de Sable";
+			dlvl2       =  "Une tempête dans le désert";
+			slvl1       =  "Pics Enneigés";
+			slvl2       =  "Une descente abrupte";
+			glvl1       =  "Enterré sous la pluie";
+			glvl2       =  "Mélodie de la Terreur";
+			llvl1       =  "Volcans Actifs";
+			llvl2       =  "Abîme en Flammes";
             #endregion
             break;
         case 10: //Italian
             #region  ENG text
             village     = "il villaggio di"
             endurance   = "arena"
-            lvl1        = "Livello 1"
-            lvl2        = "Livello 2"
-            temple      = "Il tempio"
-            lair        = "Il Covo"
+            temple      = "Entrata del tempio";
+            lair        = "Tana del tempio";
+
+			lvl1        =  "Catacombe della Bomba";
+			lvl2        =  "Pericolo tropicale";
+			dlvl1       =  "Grotte di sabbia";
+			dlvl2       =  "Una tempesta nel deserto";
+			slvl1       =  "Cime nevose";
+			slvl2       =  "Una discesa ripida";
+			glvl1       =  "Sepolto nella pioggia";
+			glvl2       =  "Melodia del Terrore";
+			llvl1       =  "Vulcani attivi";
+			llvl2       =  "Abisso fiammeggiante";
             #endregion
             break;
     }    

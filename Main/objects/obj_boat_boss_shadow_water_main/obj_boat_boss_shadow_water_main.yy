@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boat_boss_shadow_water",
-    "path": "sprites/spr_boat_boss_shadow_water/spr_boat_boss_shadow_water.yy",
+    "name": "spr_boat_boss_shadow_waterN",
+    "path": "sprites/spr_boat_boss_shadow_waterN/spr_boat_boss_shadow_waterN.yy",
   },
   "spriteMaskId": null,
   "visible": true,

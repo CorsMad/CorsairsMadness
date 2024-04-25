@@ -32,7 +32,7 @@ for (var i = 0; i < array_length_2d(menu, submenu); ++i) {
     }
         
     
-    if submenu = 31 || submenu = 32
+    if submenu = 31 //|| submenu = 32
     {
         draw_set_halign(fa_left);   
     } else draw_set_halign(fa_center);
@@ -48,11 +48,16 @@ for (var i = 0; i < array_length_2d(menu, submenu); ++i) {
     } else if submenu = 31
     {
         draw_text(120,32 + gap*i, menu[submenu, i]);
-    } else if submenu = 41
+	} else if submenu = 32
+	{
+		draw_text(room_width/2,180 + gap*i, menu[submenu, i]);	
+	} else if submenu = 41
     {
         draw_set_font(fnt_pixel);
         draw_text(room_width/2,32 + gap*i, menu[submenu, i]);   
-    } else
+    } else if submenu = 6 {
+		draw_text(64,96 + gap*i, menu[submenu, i]);	
+	} else
     draw_text(room_width/2,64 + gap*i, menu[submenu, i]);
       
 }
@@ -165,22 +170,39 @@ if submenu = 31
 
 if submenu = 6
 {
-    draw_set_color(c_white);
-    draw_set_halign(fa_center);
-    draw_text(240,32,string(musiccred));
-    draw_set_halign(fa_left);
-    draw_text(64,64,"xDeviruchi");
-    draw_text(64,80,"Joshua McLean");
-    draw_text(64,96,"How2Bboss");
-    draw_text(64,112,"RyanAvx");
-    draw_text(64,128,"Hefka");
-    draw_set_halign(fa_right);
-    draw_text(416,64,"DanzMacabre- Music");
-    draw_text(416,80,"Snabisch");
-    draw_text(416,96,"Joel Francis Burford");
-    draw_text(416,112,"CATHRAN MUSIC");
-    draw_text(416,112,"wyver9");
-    draw_text(416,112,"R-sen");
+	draw_set_alpha(1)
+	draw_set_halign(fa_center);
+	draw_set_color(c_white);
+	var cr_gap = 16;
+
+	for (var i = 0; i < array_length(cr_menu[0]); ++i) {
+		draw_text_scribble(room_width/2,(start_y + cr_gap*i) + move_y, cr_menu[0, i]);	
+	}
+
+	//draw_sprite(spr_credits_logo,0,354,96);
+	draw_sprite_ext(spr_credits_logo,0,room_width/2,310+move_y,0.25,0.25,0,c_white,1);
+	
+	
+	
+	
+	
+	
+   // draw_set_color(c_white);
+   // draw_set_halign(fa_center);
+   // draw_text(240,32,string(musiccred));
+   // draw_set_halign(fa_left);
+   // draw_text(64,64,"xDeviruchi");
+   // draw_text(64,80,"Joshua McLean");
+   // draw_text(64,96,"How2Bboss");
+   // draw_text(64,112,"RyanAvx");
+   // draw_text(64,128,"Hefka");
+   // draw_set_halign(fa_right);
+   // draw_text(416,64,"DanzMacabre- Music");
+   // draw_text(416,80,"Snabisch");
+   // draw_text(416,96,"Joel Francis Burford");
+   // draw_text(416,112,"CATHRAN MUSIC");
+   // draw_text(416,112,"wyver9");
+   // draw_text(416,112,"R-sen");
     //HyphenPixel
     //thetiptoptomcat
     //chippy01302

@@ -8,5 +8,7 @@ hspd = 0;
 skip = 0;
 skip_t = 0;
 
+move_y_spd = 0.5;
+
 skip_t_max = 100;
 alpha =0 ;

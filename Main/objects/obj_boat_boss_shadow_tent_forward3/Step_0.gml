@@ -43,8 +43,9 @@ switch(state)
         break;
     case 2: 
         #region выстрел вперед
+		if acc > -8 acc-=0.75;
         image_index = 15;
-            x -= 5;
+            x +=acc;
             if x <= -16
             {
                 instance_destroy();

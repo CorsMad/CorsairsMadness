@@ -1,9 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-text1 = "press";
-text = "to dash";
-
+fnc_lng_tip_dash();
 alpha = 0;
 isOn = 1;
 isKeyboard = 0;

@@ -4,7 +4,7 @@
 #region Информация
     draw_sprite_ext(spr_map_info,0,16,16,1,1,0,c_white,1);
 	draw_set_color(c_white);
-    draw_set_font(fnt_pixel);
+    if global.language = 1 draw_set_font(fnt_pixel_ru); else draw_set_font(fnt_pixel);	
     draw_set_halign(fa_center)
     
     switch(island)

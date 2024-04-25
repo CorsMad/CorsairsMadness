@@ -19,9 +19,9 @@ if !position_meeting(bbox_left-1, bbox_bottom+1, obj_block) || !position_meeting
 
 #region CD Boomerang
 
-if boom_timer != 0
+if boom_timer > 0
 {
-    boom_timer -= 0.01;   
+    boom_timer -= 0.04;   
 }
 
 #endregion
@@ -305,8 +305,18 @@ if state = 5
             fnc_snd_play_onetime(snd_follower_ground_hit);
             instance_create_depth(x-14,y,depth-1,obj_sfx_dust_expl_small);
             instance_create_depth(x+14,y,depth-1,obj_sfx_dust_expl_small);
-            instance_create_depth(x-14,y,depth-1,obj_armor_skel_boulder);
-            instance_create_depth(x+14,y,depth-1,obj_armor_skel_boulder);
+			
+			if instance_exists(obj_Player){
+				if obj_Player.x > x {
+					instance_create_depth(x+14,y,depth-1,obj_armor_skel_boulder_at_player);
+					instance_create_depth(x-14,y,depth-1,obj_armor_skel_boulder_left);
+				} else {
+					instance_create_depth(x-14,y,depth-1,obj_armor_skel_boulder_at_player);
+					instance_create_depth(x+14,y,depth-1,obj_armor_skel_boulder_right);
+				}
+			}
+            //instance_create_depth(x-14,y,depth-1,obj_armor_skel_boulder);
+            //instance_create_depth(x+14,y,depth-1,obj_armor_skel_boulder);
             break;
         case 60: 
             image_index = 4;

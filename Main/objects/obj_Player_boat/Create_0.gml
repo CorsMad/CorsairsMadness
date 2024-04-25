@@ -9,10 +9,10 @@ if !instance_exists(obj_player_boat_hitbox)
 {
     instance_create_depth(x,y,depth,obj_player_boat_hitbox);
 }
-if !instance_exists(obj_player_boat_wave)
-{
-    instance_create_depth(x,y,depth,obj_player_boat_wave);
-}
+////////if !instance_exists(obj_player_boat_wave)
+////////{
+////////    instance_create_depth(x,y,depth,obj_player_boat_wave);
+////////}
 
 
 hp = 4; // 4 
@@ -106,3 +106,7 @@ instance_create_depth(x,y,depth-1,obj_powerup_counter);
 
 ws_select = 0;
 prev_weapon = 0;
+
+wave_spd_t = 0;
+wave_spd_a =0 ;
+

@@ -2,6 +2,9 @@
 // You can write your code in this editor
 depth = -1111111111111111111111111;
 darkessence_start = 0;
+
+fnc_lng_pause_ingame();
+/*
 #region mainmenu
 menu[0, 0] = "options";
 menu[0, 1] = "\nresume";
@@ -101,6 +104,7 @@ confirm2 = @"are you sure?
 All unsaved progress will be lost";
 #endregion
 
+*/
 /*
 #region Ползунки музыки и эффектов
 sfx = global.SFXvolume;

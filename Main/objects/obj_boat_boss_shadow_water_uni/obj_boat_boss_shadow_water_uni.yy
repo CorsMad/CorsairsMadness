@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boat_boss_shadow_water",
-    "path": "sprites/spr_boat_boss_shadow_water/spr_boat_boss_shadow_water.yy",
+    "name": "spr_boat_boss_shadow_waterdark",
+    "path": "sprites/spr_boat_boss_shadow_waterdark/spr_boat_boss_shadow_waterdark.yy",
   },
   "spriteMaskId": null,
   "visible": true,

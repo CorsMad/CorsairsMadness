@@ -16,7 +16,9 @@ if global.language = 1 draw_set_font(fnt_pixel_ru) else draw_set_font(fnt_pixel)
 #region название магазина
 draw_set_halign(fa_center);
 draw_set_color(c_white);
-draw_text(room_width/2,16,store);
+if global.language = 1 draw_text(room_width/2,20,store); else {
+	draw_text(room_width/2,18,store);
+}
 
 #endregion
 
@@ -41,7 +43,11 @@ for (var i = 0; i < array_length(menu); ++i) {
     }
     
     //draw_text(105,52 + gap*i, menu[i]);
-    draw_text(105-64,52 + gap*i, menu[submenu, i]);
+	if global.language = 1 draw_text(105-64,52 + gap*i, menu[submenu, i]); else {
+		draw_text(105-64,54 + gap*i, menu[submenu, i])
+	}
+	
+    
 }
 #endregion
 

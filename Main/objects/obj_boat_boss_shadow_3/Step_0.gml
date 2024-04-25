@@ -31,7 +31,7 @@ switch(phase)
         {
             instance_create_depth(352,192+40,depth-1,obj_boat_boss_shadow_underwater_big_bubble_create);
         }
-        if t = 100
+        if t = 90
         {   
             t = 0;
             phase = 3;
@@ -64,7 +64,7 @@ switch(phase)
                 if t mod 30 = 0 instance_create_depth(368,192,depth-1,obj_boat_boss_shadow_underwater_small_bubble_create);
             }
 
-            if t = 800
+            if t = 550
             {   
                 t = 0;
                 phase = 1;

@@ -38,6 +38,9 @@
     "name": "spr_skeleton_thrower_axe",
     "path": "sprites/spr_skeleton_thrower_axe/spr_skeleton_thrower_axe.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_skeleton_thrower_axe_mask",
+    "path": "sprites/spr_skeleton_thrower_axe_mask/spr_skeleton_thrower_axe_mask.yy",
+  },
   "visible": true,
 }

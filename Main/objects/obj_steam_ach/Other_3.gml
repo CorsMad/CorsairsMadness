@@ -3,9 +3,9 @@
 
 
 // УДАЛИТЬ В КОНЕЧНОЙ ИГРЕ
-steam_reset_all_stats_achievements();
+//steam_reset_all_stats_achievements();
 //steam_clear_achievement("ach_test1");
-steam_shutdown();
+//steam_shutdown();
 
 
 

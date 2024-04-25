@@ -61,7 +61,7 @@ all previous progress will be lost";
             menu[31, 11] = "default 2";
             menu[31, 12] = "back";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nback";
+            menu[32, 0] = "back";
 
 
             #endregion
@@ -110,7 +110,7 @@ all previous progress will be lost";
             #region Разное
 
             confirm_eng = @"ХОТИТЕ НАЧАТЬ НОВУЮ ИГРУ?
-ВЕСЬ ПРОГРЕСС БУДЕТ УДАЛЁН";
+ВЕСЬ ПРОГРЕСС БУДЕТ УДАЛеН";
 
             #endregion
 
@@ -159,11 +159,12 @@ all previous progress will be lost";
             menu[31, 6] = "РЫВОК";
             menu[31, 7] = "ПРЕДМЕТ";
             menu[31, 8] = "ОСОБ. СПОСОБНОСТЬ";
-            menu[31, 9] = "ПО УМОЛЧАНИЮ 1";
-            menu[31, 10] = "ПО УМОЛЧАНИЮ 2";
-            menu[31, 11] = "\nНАЗАД";
+            menu[31, 9] = "СМЕНА ОРУЖИЯ";
+            menu[31, 10] = "ПО УМОЛЧАНИЮ 1";
+            menu[31, 11] = "ПО УМОЛЧАНИЮ 2";
+            menu[31, 12] = "\nНАЗАД";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nНАЗАД";
+            menu[32, 0] = "НАЗАД";
 
 
             #endregion
@@ -210,7 +211,7 @@ all previous progress will be lost";
         break;
     case 2: //spanish
      #region
-             #region Разное
+            #region Разное
 
             confirm_eng = @"¿quieres empezar una nueva partida?
 todo el progreso anterior se perderá";
@@ -262,11 +263,12 @@ todo el progreso anterior se perderá";
             menu[31, 6] = "dash";
             menu[31, 7] = "objeto";
             menu[31, 8] = "habilidad espec.";
-            menu[31, 9] = "por defecto 1";
-            menu[31, 10] = "por defecto 2";
-            menu[31, 11] = "\natrás";
+            menu[31, 9] = "Selección de arma";
+            menu[31, 10] = "por defecto 1";
+            menu[31, 11] = "por defecto 2";
+            menu[31, 12] = "\natrás";
 
-            menu[32, 0] = "\n\n\n\n\n\n\natrás";
+            menu[32, 0] = "atrás";
 
 
             #endregion
@@ -364,11 +366,12 @@ todo el progreso anterior se perderá";
             menu[31, 6] = "突";
             menu[31, 7] = "项目";
             menu[31, 8] = "专长";
-            menu[31, 9] = "缺省 1";
-            menu[31, 10] = "缺省 2";
-            menu[31, 11] = "\n回去";
+            menu[31, 9] = "择武器";
+            menu[31, 10] = "缺省 1";
+            menu[31, 11] = "缺省 2";
+            menu[31, 12] = "\n回去";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n回去";
+            menu[32, 0] = "回去";
 
 
             #endregion
@@ -465,11 +468,12 @@ todos os progressos anteriores serão perdidos";
             menu[31, 6] = "dash";
             menu[31, 7] = "item";
             menu[31, 8] = "habilidade esp.";
-            menu[31, 9] = "padrão 1";
-            menu[31, 10] = "padrão 2";
-            menu[31, 11] = "\nvolta";
+            menu[31, 9] = "Seleção de arma";
+            menu[31, 10] = "padrão 1";
+            menu[31, 11] = "padrão 2";
+            menu[31, 12] = "\nvolta";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nvolta";
+            menu[32, 0] = "volta";
 
 
             #endregion
@@ -567,11 +571,12 @@ todo o progresso anterior será perdido";
             menu[31, 6] = "dash";
             menu[31, 7] = "item";
             menu[31, 8] = "habilidade esp.";
-            menu[31, 9] = "padrão 1";
-            menu[31, 10] = "padrão 2";
-            menu[31, 11] = "\nvoltar";
+            menu[31, 9] = "Seleção de arma";
+            menu[31, 10] = "padrão 1";
+            menu[31, 11] = "padrão 2";
+            menu[31, 12] = "\nvoltar";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nvoltar";
+            menu[32, 0] = "voltar";
 
 
             #endregion
@@ -669,11 +674,12 @@ wszystkie poprzednie postępy zostaną utracone";
             menu[31, 6] = "Przeskok";
             menu[31, 7] = "przedmiot";
             menu[31, 8] = "umiejętność spec.";
-            menu[31, 9] = "domyślny 1";
-            menu[31, 10] = "domyślny 2";
-            menu[31, 11] = "\nPowrót";
+            menu[31, 9] = "Wybór broni";
+            menu[31, 10] = "domyślny 1";
+            menu[31, 11] = "domyślny 2";
+            menu[31, 12] = "\nPowrót";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nPowrót";
+            menu[32, 0] = "Powrót";
 
 
             #endregion
@@ -771,11 +777,12 @@ wszystkie poprzednie postępy zostaną utracone";
             menu[31, 6] = "ダッシュ";
             menu[31, 7] = "アイテム";
             menu[31, 8] = "スペック能力";
-            menu[31, 9] = "デフォルト1";
-            menu[31, 10] = "デフォルト2";
-            menu[31, 11] = "\nバック";
+            menu[31, 9] = "武器選択";
+            menu[31, 10] = "デフォルト1";
+            menu[31, 11] = "デフォルト2";
+            menu[31, 12] = "\nバック";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nバック";
+            menu[32, 0] = "バック";
 
 
             #endregion
@@ -873,11 +880,12 @@ alle bisherigen Fortschritte gehen verloren";
             menu[31, 6] = "Dashboard";
             menu[31, 7] = "Artikel";
             menu[31, 8] = "bes.Fähigkeit";
-            menu[31, 9] = "Standard 1";
-            menu[31, 10] = "Standard 2";
-            menu[31, 11] = "\nzurück";
+            menu[31, 9] = "Waffenauswahl";
+            menu[31, 10] = "Standard 1";
+            menu[31, 11] = "Standard 2";
+            menu[31, 12] = "\nzurück";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nzurück";
+            menu[32, 0] = "zurück";
 
 
             #endregion
@@ -975,11 +983,12 @@ tous les progrès précédents seront perdus";
             menu[31, 6] = "tableau de bord";
             menu[31, 7] = "objet";
             menu[31, 8] = "capacité spéc.";
-            menu[31, 9] = "défaut 1";
-            menu[31, 10] = "défaut 2";
-            menu[31, 11] = "\nretour";
+            menu[31, 9] = "Sélection d'arme";
+            menu[31, 10] = "défaut 1";
+            menu[31, 11] = "défaut 2";
+            menu[31, 12] = "\nretour";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nretour";
+            menu[32, 0] = "retour";
 
 
             #endregion
@@ -1077,11 +1086,12 @@ Tutti I progressi precedenti andranno persi.";
             menu[31, 6] = "Lanciarsi";
             menu[31, 7] = "Articolo";
             menu[31, 8] = "Abilità speciale";
-            menu[31, 9] = "Predefinito 1";
-            menu[31, 10] = "Predefinito 2";
-            menu[31, 11] = "\nTorna";
+            menu[31, 9] = "Selezione arma";
+            menu[31, 10] = "Predefinito 1";
+            menu[31, 11] = "Predefinito 2";
+            menu[31, 12] = "\nTorna";
 
-            menu[32, 0] = "\n\n\n\n\n\n\nTorna";
+            menu[32, 0] = "Torna";
 
 
             #endregion
@@ -1183,7 +1193,7 @@ function fnc_lng_pause_ingame(){
             menu[31, 11] = "default 2";
             menu[31, 12] = "back";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nback";
+            menu[32, 0] = "back";
 
             #endregion
 
@@ -1227,9 +1237,9 @@ function fnc_lng_pause_ingame(){
             #endregion
 
             confirm1 = @"Are you sure? 
-You'll lose all the gold you've collected
-on the level, but you'll keep the secrets 
-you've found";
+You will lose all level progress and 
+the collected dark essence,
+but you will keep the found gold and green coins";
 
             confirm2 = @"are you sure?
 All unsaved progress will be lost";
@@ -1283,11 +1293,12 @@ All unsaved progress will be lost";
         menu[31, 6] = "РЫВОК";
         menu[31, 7] = "ПРЕДМЕТ";
         menu[31, 8] = "ОСОБ. СПОСОБНОСТЬ";
-        menu[31, 9] = "ПО УМОЛЧАНИЮ 1";
-        menu[31, 10] = "ПО УМОЛЧАНИЮ 2";
-        menu[31, 11] = "\nНАЗАД"
+        menu[31, 9] = "СМЕНА ОРУЖИЯ";
+        menu[31, 10] = "ПО УМОЛЧАНИЮ 1";
+        menu[31, 11] = "ПО УМОЛЧАНИЮ 2";
+        menu[31, 12] = "\nНАЗАД"
 
-        menu[32, 0] = "\n\n\n\n\n\n\n\n\nназад";
+        menu[32, 0] = "назад";
 
         #endregion
 
@@ -1319,8 +1330,8 @@ All unsaved progress will be lost";
         #region ПОдтверждения
 
         #region Подтверждения выхода на карту
-        menu[10,0] = "\n\n\n\n\nда";
-        menu[10,1] = "\n\n\n\n\nнет";
+        menu[10,0] = "\n\n\n\n\n\n\nда";
+        menu[10,1] = "\n\n\n\n\n\n\nнет";
 
         #endregion
 
@@ -1331,8 +1342,10 @@ All unsaved progress will be lost";
         #endregion
 
         confirm1 = @"Вы уверены? 
-Вы потеряете все заработанное золото на уровне,
-но сохраните найденные секреты";
+Вы потеряете весь прогресс уровня 
+и собранную темную эссенцию,
+но сохранившееся золото и зеленые 
+монеты останутся у вас";
 
         confirm2 = @"вы уверены?
 весь несохраненный прогресс будет утерян";
@@ -1386,11 +1399,12 @@ All unsaved progress will be lost";
             menu[31, 6] = "dash";
             menu[31, 7] = "objeto";
             menu[31, 8] = "habilidad espec.";
-            menu[31, 9] = "por defecto 1";
-            menu[31, 10] = "por defecto 2";
-            menu[31, 11] = "\natrás";
+            menu[31, 9] = "Selección de arma";
+            menu[31, 10] = "por defecto 1";
+            menu[31, 11] = "por defecto 2";
+            menu[31, 12] = "\natrás";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\natrás";
+            menu[32, 0] = "atrás";
 
 
             #endregion
@@ -1423,8 +1437,8 @@ All unsaved progress will be lost";
             #region ПОдтверждения
 
             #region Подтверждения выхода на карту
-            menu[10,0] = "\n\n\n\n\nsí";
-            menu[10,1] = "\n\n\n\n\nno";
+            menu[10,0] = "\n\n\n\n\n\nsí";
+            menu[10,1] = "\n\n\n\n\n\nno";
 
             #endregion
 
@@ -1435,8 +1449,10 @@ All unsaved progress will be lost";
             #endregion
 
             confirm1 = @"¿estás seguro? 
-perderás todo el oro que hayas conseguido hasta ahora,
-pero conservarás los secretos que hayas descubierto.";
+Perderás todo el progreso del nivel 
+y la esencia oscura recogida, 
+pero conservarás el oro encontrado 
+y las monedas verdes.";
 
             confirm2 = @"¿estás seguro?
 todo el progreso no guardado se perderá";
@@ -1490,11 +1506,12 @@ todo el progreso no guardado se perderá";
             menu[31, 6] = "突";
             menu[31, 7] = "项目";
             menu[31, 8] = "专长";
-            menu[31, 9] = "缺省 1";
-            menu[31, 10] = "缺省 2";
-            menu[31, 11] = "\n回去";
+            menu[31, 9] = "择武器";
+            menu[31, 10] = "缺省 1";
+            menu[31, 11] = "缺省 2";
+            menu[31, 12] = "\n回去";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\n回去";
+            menu[32, 0] = "回去";
 
             #endregion
 
@@ -1538,8 +1555,8 @@ todo el progreso no guardado se perderá";
             #endregion
 
             confirm1 = @"你确定吗? 
-你会失去到目前为止收集的所有金币,
-但你会保留你发现的秘密.";
+将失去所有级别进度和收集的黑暗精华,
+但是你会保留找到的金币和绿色硬币.";
 
             confirm2 = @"你确定吗?
 所有未保存的进度都将丢失";
@@ -1593,9 +1610,10 @@ todo el progreso no guardado se perderá";
             menu[31, 6] = "dash";
             menu[31, 7] = "item";
             menu[31, 8] = "habilidade esp.";
-            menu[31, 9] = "padrão 1";
-            menu[31, 10] = "padrão 2";
-            menu[31, 11] = "\nvolta";
+            menu[31, 9] = "Seleção de arma";
+            menu[31, 10] = "padrão 1";
+            menu[31, 11] = "padrão 2";
+            menu[31, 12] = "\nvolta";
 
             menu[32, 0] = "\n\n\n\n\n\n\n\nvolta";
 
@@ -1641,8 +1659,9 @@ todo el progreso no guardado se perderá";
             #endregion
 
             confirm1 = @"Tens a certeza?  
-Vais perder todo o ouro que recolheste até agora,
-mas vais guardar os segredos que descobriste.";
+Perderás todo el progreso en el nivel 
+y la esencia oscura recogida,
+mas manterá o ouro encontrado e as moedas verdes.";
 
             confirm2 = @"Tens a certeza?
 todo os progresso não guardado será perdido";
@@ -1696,11 +1715,12 @@ todo os progresso não guardado será perdido";
             menu[31, 6] = "dash";
             menu[31, 7] = "item";
             menu[31, 8] = "habilidade esp.";
-            menu[31, 9] = "padrão 1";
-            menu[31, 10] = "padrão 2";
-            menu[31, 11] = "\nvoltar";
+            menu[31, 9] = "Seleção de arma";
+            menu[31, 10] = "padrão 1";
+            menu[31, 11] = "padrão 2";
+            menu[31, 12] = "\nvoltar";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nvoltar";
+            menu[32, 0] = "voltar";
 
 
             #endregion
@@ -1744,9 +1764,10 @@ todo os progresso não guardado será perdido";
 
             #endregion
 
-            confirm1 = @"Tem certeza?  
-você perderá todo o ouro que coletou até agora,
-mas manterá os segredos que descobriu.";
+            confirm1 = @"Tens a certeza?  
+Perderás todo el progreso en el nivel 
+y la esencia oscura recogida,
+mas manterá o ouro encontrado e as moedas verdes.";
 
             confirm2 = @"Tem certeza? 
 todo o progresso não salvo será perdido";
@@ -1800,11 +1821,12 @@ todo o progresso não salvo será perdido";
             menu[31, 6] = "Przeskok";
             menu[31, 7] = "przedmiot";
             menu[31, 8] = "umiejętność spec.";
-            menu[31, 9] = "domyślny 1";
-            menu[31, 10] = "domyślny 2";
-            menu[31, 11] = "\nPowrót";
+            menu[31, 9] = "Wybór broni";
+            menu[31, 10] = "domyślny 1";
+            menu[31, 11] = "domyślny 2";
+            menu[31, 12] = "\nPowrót";
                           
-            menu[32, 0] = "\n\n\n\n\n\n\n\nPowrót";
+            menu[32, 0] = "Powrót";
 
             #endregion
 
@@ -1836,8 +1858,8 @@ todo o progresso não salvo será perdido";
             #region ПОдтверждения
 
             #region Подтверждения выхода на карту
-            menu[10,0] = "\n\n\n\n\nTak";
-            menu[10,1] = "\n\n\n\n\nNie";
+            menu[10,0] = "\n\n\n\nTak";
+            menu[10,1] = "\n\n\n\nNie";
 
             #endregion
 
@@ -1848,8 +1870,8 @@ todo o progresso não salvo será perdido";
             #endregion
 
             confirm1 = @"Czy jesteś pewien?  
-Stracisz całe złoto, które zebrałeś do tej pory.
-Zachowasz jednynie, odkryte sekrety.";
+Stracisz cały postęp poziomu i zebraną ciemną esencję,
+ale zachowasz znalezione złoto i zielone monety.";
 
             confirm2 = @"Czy jesteś pewien?
 Stracisz cały nie zapisany postęp.";
@@ -1903,11 +1925,12 @@ Stracisz cały nie zapisany postęp.";
             menu[31, 6] = "ダッシュ";
             menu[31, 7] = "アイテム";
             menu[31, 8] = "スペック能力";
-            menu[31, 9] = "デフォルト1";
-            menu[31, 10] = "デフォルト2";
-            menu[31, 11] = "\nバック";
+            menu[31, 9] = "武器選択";
+            menu[31, 10] = "デフォルト1";
+            menu[31, 11] = "デフォルト2";
+            menu[31, 12] = "\nバック";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nバック";
+            menu[32, 0] = "バック";
 
 
             #endregion
@@ -1940,8 +1963,8 @@ Stracisz cały nie zapisany postęp.";
             #region ПОдтверждения
 
             #region Подтверждения выхода на карту
-            menu[10,0] = "\n\n\n\n\nはい";
-            menu[10,1] = "\n\n\n\n\nいいえ";
+            menu[10,0] = "\n\n\n\nはい";
+            menu[10,1] = "\n\n\n\nいいえ";
 
             #endregion
 
@@ -1952,8 +1975,8 @@ Stracisz cały nie zapisany postęp.";
             #endregion
 
             confirm1 = @"本当によろしいですか？ 
-これまでに集めたゴールドは失われますが、
-発見した秘密は残ります。";
+すべてのレベルの進行と収集したダークエッセンスが失われますが、
+見つけた金と緑のコインは保持されます。";
 
             confirm2 = @"本当によろしいですか？
 セーブされていない進行状況はすべて失われます";
@@ -2007,11 +2030,12 @@ Stracisz cały nie zapisany postęp.";
             menu[31, 6] = "Dashboard";
             menu[31, 7] = "Artikel";
             menu[31, 8] = "bes.Fähigkeit";
-            menu[31, 9] = "Standard 1";
-            menu[31, 10] = "Standard 2";
-            menu[31, 11] = "\nzurück";
+            menu[31, 9] = "Waffenauswahl";
+            menu[31, 10] = "Standard 1";
+            menu[31, 11] = "Standard 2";
+            menu[31, 12] = "\nzurück";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nzurück";
+            menu[32, 0] = "zurück";
 
 
             #endregion
@@ -2044,8 +2068,8 @@ Stracisz cały nie zapisany postęp.";
             #region ПОдтверждения
 
             #region Подтверждения выхода на карту
-            menu[10,0] = "\n\n\n\n\nja";
-            menu[10,1] = "\n\n\n\n\nnein";
+            menu[10,0] = "\n\n\n\n\n\nja";
+            menu[10,1] = "\n\n\n\n\n\nnein";
 
             #endregion
 
@@ -2056,8 +2080,10 @@ Stracisz cały nie zapisany postęp.";
             #endregion
 
             confirm1 = @"Bist du sicher? 
-Du verlierst alles Gold, das du bisher gesammelt hast,
-aber du behältst die Geheimnisse, die du entdeckt hast.";
+Sie werden alle Level-Fortschritte 
+und die gesammelte dunkle Essenz verlieren,
+aber Sie behalten das gefundene Gold 
+und die grünen Münzen.";
 
             confirm2 = @"Bist du sicher?
 alle nicht gespeicherten Fortschritte gehen verloren";
@@ -2111,11 +2137,12 @@ alle nicht gespeicherten Fortschritte gehen verloren";
             menu[31, 6] = "tableau de bord";
             menu[31, 7] = "objet";
             menu[31, 8] = "capacité spéc.";
-            menu[31, 9] = "défaut 1";
-            menu[31, 10] = "défaut 2";
-            menu[31, 11] = "\nretour";
+            menu[31, 9] = "Sélection d'arme";
+            menu[31, 10] = "défaut 1";
+            menu[31, 11] = "défaut 2";
+            menu[31, 12] = "\nretour";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nretour";
+            menu[32, 0] = "retour";
 
 
             #endregion
@@ -2148,8 +2175,8 @@ alle nicht gespeicherten Fortschritte gehen verloren";
             #region ПОдтверждения
 
             #region Подтверждения выхода на карту
-            menu[10,0] = "\n\n\n\n\noui";
-            menu[10,1] = "\n\n\n\n\nnon";
+            menu[10,0] = "\n\n\n\n\n\noui";
+            menu[10,1] = "\n\n\n\n\n\nnon";
 
             #endregion
 
@@ -2160,8 +2187,10 @@ alle nicht gespeicherten Fortschritte gehen verloren";
             #endregion
 
             confirm1 = @"Vous êtes sûr ?  
-Vous perdrez tout l'or que vous avez collecté jusqu'à présent,
-mais vous garderez les secrets que vous avez découverts.";
+Vous perdrez toute progression de niveau 
+et l'essence sombre collectée,
+mais vous garderez l'or trouvé 
+et les pièces vertes";
 
             confirm2 = @"Vous êtes sûr ? 
 toute progression non sauvegardée sera perdue";
@@ -2215,11 +2244,12 @@ toute progression non sauvegardée sera perdue";
             menu[31, 6] = "Lanciarsi";
             menu[31, 7] = "Articolo";
             menu[31, 8] = "Abilità speciale";
-            menu[31, 9] = "Predefinito 1";
-            menu[31, 10] = "Predefinito 2";
-            menu[31, 11] = "\nTorna";
+            menu[31, 9] = "Selezione arma";
+            menu[31, 10] = "Predefinito 1";
+            menu[31, 11] = "Predefinito 2";
+            menu[31, 12] = "\nTorna";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nTorna";
+            menu[32, 0] = "Torna";
 
             #endregion
 
@@ -2251,8 +2281,8 @@ toute progression non sauvegardée sera perdue";
             #region ПОдтверждения
 
             #region Подтверждения выхода на карту
-            menu[10,0] = "\n\n\n\n\nSì";
-            menu[10,1] = "\n\n\n\n\nNo";
+            menu[10,0] = "\n\n\n\n\n\nSì";
+            menu[10,1] = "\n\n\n\n\n\nNo";
 
             #endregion
 
@@ -2263,7 +2293,8 @@ toute progression non sauvegardée sera perdue";
             #endregion
 
             confirm1 = @"Sei sicuro? 
-Perderai tutto l'oro che hai raccolto finora,
+Perderai tutti i progressi di livello 
+e l'essenza oscura raccolta,
 ma conserverai i segreti che hai scoperto.";
 
             confirm2 = @"Sei sicuro?
@@ -2326,9 +2357,9 @@ function fnc_lng_pause_junglecourse(){
             menu[31, 9] = "weapon select";
             menu[31, 10] = "default 1";
             menu[31, 11] = "default 2";
-            menu[31, 12] = "back";
+            menu[31, 12] = "\nback";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nback";
+            menu[32, 0] = "back";
 
             #endregion
 
@@ -2425,11 +2456,12 @@ menu[0, 3] = "\nв главное меню";
         menu[31, 6] = "рывок";
         menu[31, 7] = "предмет";
         menu[31, 8] = "особ. способность";
-        menu[31, 9] = "по умолчанию 1";
-        menu[31, 10] = "по умолчанию 2";
-        menu[31, 11] = "\nназад";
+        menu[31, 9] = "выбор оружия";
+        menu[31, 10] = "по умолчанию 1";
+        menu[31, 11] = "по умолчанию 2";
+        menu[31, 12] = "\nназад";
 
-        menu[32, 0] = "\n\n\n\n\n\n\n\n\nназад";
+        menu[32, 0] = "назад";
 
         #endregion
 
@@ -2525,11 +2557,12 @@ confirm2 = @"вы уверены?
             menu[31, 6] = "dash";
             menu[31, 7] = "objeto";
             menu[31, 8] = "habilidad espec.";
-            menu[31, 9] = "por defecto 1";
-            menu[31, 10] = "por defecto 2";
-            menu[31, 11] = "\natrás";
+            menu[31, 9] = "Selección de arma";
+            menu[31, 10] = "por defecto 1";
+            menu[31, 11] = "por defecto 2";
+            menu[31, 12] = "\natrás";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\natrás";
+            menu[32, 0] = "atrás";
 
 
             #endregion
@@ -2626,11 +2659,13 @@ todo el progreso no guardado se perderá";
             menu[31, 6] = "突";
             menu[31, 7] = "项目";
             menu[31, 8] = "专长";
-            menu[31, 9] = "缺省 1";
-            menu[31, 10] = "缺省 2";
-            menu[31, 11] = "\n回去";
+            menu[31, 8] = "专长";
+            menu[31, 9] = "择武器";
+            menu[31, 10] = "缺省 1";
+            menu[31, 11] = "缺省 2";
+            menu[31, 12] = "\n回去";
             
-            menu[32, 0] = "\n\n\n\n\n\n\n\n回去";
+            menu[32, 0] = "回去";
 
             #endregion
 
@@ -2726,11 +2761,12 @@ todo el progreso no guardado se perderá";
             menu[31, 6] = "dash";
             menu[31, 7] = "item";
             menu[31, 8] = "habilidade esp.";
-            menu[31, 9] = "padrão 1";
-            menu[31, 10] = "padrão 2";
-            menu[31, 11] = "\nvolta";
+            menu[31, 9] = "Seleção de arma";
+            menu[31, 10] = "padrão 1";
+            menu[31, 11] = "padrão 2";
+            menu[31, 12] = "\nvolta";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nvolta";
+            menu[32, 0] = "volta";
 
 
             #endregion
@@ -2826,11 +2862,12 @@ todo os progresso não guardado será perdido";
             menu[31, 6] = "dash";
             menu[31, 7] = "item";
             menu[31, 8] = "habilidade esp.";
-            menu[31, 9] = "padrão 1";
-            menu[31, 10] = "padrão 2";
-            menu[31, 11] = "\nvoltar";
+            menu[31, 9] = "Seleção de arma";
+            menu[31, 10] = "padrão 1";
+            menu[31, 11] = "padrão 2";
+            menu[31, 12] = "\nvoltar";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nvoltar";
+            menu[32, 0] = "voltar";
 
 
             #endregion
@@ -2927,11 +2964,12 @@ todo o progresso não salvo será perdido";
             menu[31, 6] = "Przeskok";
             menu[31, 7] = "przedmiot";
             menu[31, 8] = "umiejętność spec.";
-            menu[31, 9] = "domyślny 1";
-            menu[31, 10] = "domyślny 2";
-            menu[31, 11] = "\nPowrót";
+            menu[31, 9] = "Wybór broni";
+            menu[31, 10] = "domyślny 1";
+            menu[31, 11] = "domyślny 2";
+            menu[31, 12] = "\nPowrót";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nPowrót";
+            menu[32, 0] = "Powrót";
 
             #endregion
 
@@ -3028,11 +3066,12 @@ Stracisz cały nie zapisany postęp.";
             menu[31, 6] = "ダッシュ";
             menu[31, 7] = "アイテム";
             menu[31, 8] = "スペック能力";
-            menu[31, 9] = "デフォルト1";
-            menu[31, 10] = "デフォルト2";
-            menu[31, 11] = "\nバック";
+            menu[31, 9] = "武器選択";
+            menu[31, 10] = "デフォルト1";
+            menu[31, 11] = "デフォルト2";
+            menu[31, 12] = "\nバック";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nバック";
+            menu[32, 0] = "バック";
 
 
             #endregion
@@ -3129,11 +3168,12 @@ Stracisz cały nie zapisany postęp.";
             menu[31, 6] = "Dashboard";
             menu[31, 7] = "Artikel";
             menu[31, 8] = "bes.Fähigkeit";
-            menu[31, 9] = "Standard 1";
-            menu[31, 10] = "Standard 2";
-            menu[31, 11] = "\nzurück";
+            menu[31, 9] = "Waffenauswahl";
+            menu[31, 10] = "Standard 1";
+            menu[31, 11] = "Standard 2";
+            menu[31, 12] = "\nzurück";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nzurück";
+            menu[32, 0] = "zurück";
 
 
             #endregion
@@ -3231,11 +3271,12 @@ alle nicht gespeicherten Fortschritte gehen verloren";
             menu[31, 6] = "tableau de bord";
             menu[31, 7] = "objet";
             menu[31, 8] = "capacité spéc.";
-            menu[31, 9] = "défaut 1";
-            menu[31, 10] = "défaut 2";
-            menu[31, 11] = "\nretour";
+            menu[31, 9] = "Sélection d'arme";
+            menu[31, 10] = "défaut 1";
+            menu[31, 11] = "défaut 2";
+            menu[31, 12] = "\nretour";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nretour";
+            menu[32, 0] = "retour";
 
 
             #endregion
@@ -3332,11 +3373,12 @@ toute progression non sauvegardée sera perdue";
             menu[31, 6] = "Lanciarsi";
             menu[31, 7] = "Articolo";
             menu[31, 8] = "Abilità speciale";
-            menu[31, 9] = "Predefinito 1";
-            menu[31, 10] = "Predefinito 2";
-            menu[31, 11] = "\nTorna";
+            menu[31, 9] = "Selezione arma";
+            menu[31, 10] = "Predefinito 1";
+            menu[31, 11] = "Predefinito 2";
+            menu[31, 12] = "\nTorna";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nTorna";
+            menu[32, 0] = "Torna";
 
             #endregion
 
@@ -3443,7 +3485,7 @@ menu[31, 10] = "default 1";
 menu[31, 11] = "default 2";
 menu[31, 12] = "back";
 
-menu[32, 0] = "\n\n\n\n\n\n\n\nback";
+menu[32, 0] = "back";
 #endregion
 
 #endregion
@@ -3528,11 +3570,12 @@ menu[31, 5] = "удар";
 menu[31, 6] = "рывок";
 menu[31, 7] = "предмет";
 menu[31, 8] = "особ. способность";
-menu[31, 9] = "по умолчанию 1";
-menu[31, 10] = "по умолчанию 2";
-menu[31, 11] = "\nназад";
+menu[31, 9] = "СМЕНА ОРУЖИЯ";
+menu[31, 10] = "по умолчанию 1";
+menu[31, 11] = "по умолчанию 2";
+menu[31, 12] = "\nназад";
 
-menu[32, 0] = "\n\n\n\n\n\n\n\n\nназад";
+menu[32, 0] = "назад";
 #endregion
 
 #endregion
@@ -3617,11 +3660,12 @@ menu[0, 2] = "\nsalir al menú principal";
             menu[31, 6] = "dash";
             menu[31, 7] = "objeto";
             menu[31, 8] = "habilidad espec.";
-            menu[31, 9] = "por defecto 1";
-            menu[31, 10] = "por defecto 2";
-            menu[31, 11] = "\natrás";
+            menu[31, 9] = "Selección de arma";
+            menu[31, 10] = "por defecto 1";
+            menu[31, 11] = "por defecto 2";
+            menu[31, 12] = "\natrás";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\natrás";
+            menu[32, 0] = "atrás";
 
 
             #endregion
@@ -3708,11 +3752,12 @@ todo el progreso no guardado se perderá";
         menu[31, 6] = "突";
         menu[31, 7] = "项目";
         menu[31, 8] = "专长";
-        menu[31, 9] = "缺省 1";
-        menu[31, 10] = "缺省 2";
-        menu[31, 11] = "\n回去";
+        menu[31, 9] = "择武器";
+        menu[31, 10] = "缺省 1";
+        menu[31, 11] = "缺省 2";
+        menu[31, 12] = "\n回去";
         
-        menu[32, 0] = "\n\n\n\n\n\n\n\n回去";
+        menu[32, 0] = "回去";
         #endregion
 
         #endregion
@@ -3797,11 +3842,12 @@ menu[0, 2] = "\nsalir al menú principal";
             menu[31, 6] = "dash";
             menu[31, 7] = "item";
             menu[31, 8] = "habilidade esp.";
-            menu[31, 9] = "padrão 1";
-            menu[31, 10] = "padrão 2";
-            menu[31, 11] = "\nvolta";
+            menu[31, 9] = "Seleção de arma";
+            menu[31, 10] = "padrão 1";
+            menu[31, 11] = "padrão 2";
+            menu[31, 12] = "\nvolta";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nvolta";
+            menu[32, 0] = "volta";
 
 
             #endregion
@@ -3887,11 +3933,12 @@ menu[0, 2] = "\nsair para o menu principal";
             menu[31, 6] = "dash";
             menu[31, 7] = "item";
             menu[31, 8] = "habilidade esp.";
-            menu[31, 9] = "padrão 1";
-            menu[31, 10] = "padrão 2";
-            menu[31, 11] = "\nvoltar";
+            menu[31, 9] = "Seleção de arma";
+            menu[31, 10] = "padrão 1";
+            menu[31, 11] = "padrão 2";
+            menu[31, 12] = "\nvoltar";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nvoltar";
+            menu[32, 0] = "voltar";
 
 
             #endregion
@@ -3978,11 +4025,12 @@ menu[31, 5] = "Atak";
 menu[31, 6] = "Przeskok";
 menu[31, 7] = "przedmiot";
 menu[31, 8] = "umiejętność spec.";
-menu[31, 9] = "domyślny 1";
-menu[31, 10] = "domyślny 2";
-menu[31, 11] = "\nPowrót";
+menu[31, 9] = "Wybór broni";
+menu[31, 10] = "domyślny 1";
+menu[31, 11] = "domyślny 2";
+menu[31, 12] = "\nPowrót";
               
-menu[32, 0] = "\n\n\n\n\n\n\n\nPowrót";
+menu[32, 0] = "Powrót";
 #endregion
 
 #endregion
@@ -4067,11 +4115,12 @@ menu[0, 2] = "\nメインメニューに戻る";
             menu[31, 6] = "ダッシュ";
             menu[31, 7] = "アイテム";
             menu[31, 8] = "スペック能力";
-            menu[31, 9] = "デフォルト1";
-            menu[31, 10] = "デフォルト2";
-            menu[31, 11] = "\nバック";
+            menu[31, 9] = "武器選択";
+            menu[31, 10] = "デフォルト1";
+            menu[31, 11] = "デフォルト2";
+            menu[31, 12] = "\nバック";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nバック";
+            menu[32, 0] = "バック";
 
 
             #endregion
@@ -4158,11 +4207,12 @@ menu[0, 2] = "\nzurück zum Hauptmenü";
             menu[31, 6] = "Dashboard";
             menu[31, 7] = "Artikel";
             menu[31, 8] = "bes.Fähigkeit";
-            menu[31, 9] = "Standard 1";
-            menu[31, 10] = "Standard 2";
-            menu[31, 11] = "\nzurück";
+            menu[31, 9] = "Waffenauswahl";
+            menu[31, 10] = "Standard 1";
+            menu[31, 11] = "Standard 2";
+            menu[31, 12] = "\nzurück";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nzurück";
+            menu[32, 0] = "zurück";
 
 
             #endregion
@@ -4249,11 +4299,12 @@ menu[0, 2] = "\nquitter le menu principal";
             menu[31, 6] = "tableau de bord";
             menu[31, 7] = "objet";
             menu[31, 8] = "capacité spéc.";
-            menu[31, 9] = "défaut 1";
-            menu[31, 10] = "défaut 2";
-            menu[31, 11] = "\nretour";
+            menu[31, 9] = "Sélection d'arme";
+            menu[31, 10] = "défaut 1";
+            menu[31, 11] = "défaut 2";
+            menu[31, 12] = "\nretour";
 
-            menu[32, 0] = "\n\n\n\n\n\n\n\nretour";
+            menu[32, 0] = "retour";
 
 
             #endregion
@@ -4340,11 +4391,12 @@ menu[31, 5] =   "Assalire";
 menu[31, 6] =   "Lanciarsi";
 menu[31, 7] =   "Articolo";
 menu[31, 8] =   "Abilità speciale";
-menu[31, 9] =   "Predefinito 1";
-menu[31, 10] =  "Predefinito 2";
-menu[31, 11] =  "\nTorna";
+menu[31, 9] =   "Selezione arma";
+menu[31, 10] =  "Predefinito 1";
+menu[31, 11] =  "Predefinito 2";
+menu[31, 12] =  "\nTorna";
 
-menu[32, 0] = "\n\n\n\n\n\n\n\nTorna";
+menu[32, 0] = "Torna";
 #endregion
 
 #endregion

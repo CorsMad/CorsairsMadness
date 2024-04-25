@@ -1,0 +1,7 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+image_speed = 0;
+t = 0;
+yoffset = 0;
+y_start= 0;

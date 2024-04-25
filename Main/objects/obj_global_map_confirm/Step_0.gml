@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+script_lng_conf();
 player_input();
 
 image_index = select;

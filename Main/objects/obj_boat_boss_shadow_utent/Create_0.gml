@@ -9,3 +9,6 @@ w.fol_y = 25;
 enemy_hp = 40
 hit_cd = 0;
 death = 0;
+
+hit_cd_master = enemy_hp;
+red = 0;

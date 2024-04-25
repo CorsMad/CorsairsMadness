@@ -2,6 +2,7 @@
 // You can write your code in this editor
 fnc_lng_main_menu();
 menu_input_new();
+script_lng_credits_mainmenu();
 /*
 var key_down = keyboard_check_pressed(vk_down);
 var key_up = keyboard_check_pressed(vk_up);
@@ -95,6 +96,7 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                 case 3:
                     submenu = 6;
                     index = 0;
+					
                     break;
                 case 4:
                     game_end();
@@ -352,6 +354,7 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                 case 0: 
                     submenu = 0;
                     index = 3;
+					move_y = 0;
                     break;
             }
     }
@@ -450,4 +453,12 @@ if (submenu > 0 && submenu < 5) || submenu = 6
     if title_alpha > 0 title_alpha -= 0.1;
 }
 
+#endregion
+
+#region Credits
+if submenu = 6{
+	if move_y > -2100{
+		move_y -= 0.5;	
+	}
+}
 #endregion

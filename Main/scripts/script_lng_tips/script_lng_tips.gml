@@ -238,48 +238,50 @@ function fnc_lng_tip_downstrike()
             text2 = "while in air to strike down";
             break;
         case 1: //russian
-            text = "нажмите"
-            text2 = "в воздухе,чтобы ударить вниз";
+            text = "нажмите вниз + атака"
+            text2 = @"в воздухе, чтобы нанести 
+удар вниз";
             break;
         case 2: //spanish
-            text = "pulsa "
-            text2 = "en el aire para derribar";
+            text = "presiona abajo + ataque"
+            text2 = @"mientras estás en el aire
+para golpear hacia abajo";
             break;
         case 3: //chinese
-            text = "在空中按"
-            text2 = "击落";
+            text = "按下 + 攻击"
+            text2 = "在空中时向下攻击。";
             break;
         case 4: //portug
-            text = "prima"
-            text2 = @"enquanto estiveres 
-no ar para dar o golpe";
+            text = "pressione para baixo + ataque"
+            text2 = @"enquanto estiver no ar 
+para golpear para baixo";
             break;
         case 5: //brazil
-            text = "pressione"
-            text2 = @"enquanto estiver 
-no ar para dar o golpe";
+            text = "pressione para baixo + ataque"
+            text2 = @"enquanto estiver no ar 
+para atacar para baixo";
             break;
         case 6: //polish
-            text = "naciśnij"
-            text2 = @"będąc w powietrzu, 
-aby uderzyć w dół";
+            text = "naciśnij dół + atak"
+            text2 = "w powietrzu, aby uderzyć w dół";
             break;
         case 7: //japanese
-            text = "空中で"
-            text2 = "キーを押すと下攻撃";
+            text = "ダウン + アタックキーを押す"
+            text2 = "空中にいる間に下に突き刺す";
             break;
         case 8: //deutch
-            text = "Drücke"
-            text2 = @"in der Luft,
+            text = "Drücken Sie nach unten + Angriff"
+            text2 = @"während Sie in der Luft sind, 
 um nach unten zu schlagen";
             break;
         case 9: //french
-            text = "appuyez sur"
+            text = "appuyez sur bas + attaque"
             text2 = "en l'air pour frapper vers le bas";
             break;
         case 10: //Italian
-            text = "Premi"
-            text2 = "mentre sei in aria per abbattere";
+            text = "premi giù + attacco"
+            text2 = @"mentre sei in aria per 
+colpire verso il basso";
             break;
     }   
 }
@@ -399,7 +401,7 @@ essence will be dropped from defeated enemies.";
             text1 = @"каждый четвертый успешный удар по врагу 
 кроме красных будет специальным.";
             text2 = @"Комбинируйте разные атаки чтобы улучшить рейтинг.";
-            text3 = @"чем выше рейтнг, тем больше темной 
+            text3 = @"чем выше рейтинг, тем больше темной 
 эссенции будет выпадать из врагов.";
 
             textair = "в воздухе";
@@ -567,20 +569,23 @@ you fill up your power bar.";
             text2 = @"The higher your rating, the faster it fills up.";
             text3 = @"When it is full, you can use a special move.";
             text4 = @"These moves can be purchased at the store."
-            textair = "in the air";
-            textground = "on the ground";
+            //textair = "in the air";
+            //textground = "on the ground";
             #endregion
             break;
         case 1: //russian
         #region  кг text
-            text1 = @"каждый четвертый успешный удар по врагу 
-кроме красных будет специальным.";
-            text2 = @"Комбинируйте разные атаки чтобы улучшить рейтинг.";
-            text3 = @"чем выше рейтнг, тем больше темной 
-эссенции будет выпадать из врагов.";
-
-            textair = "в воздухе";
-            textground = "на земле";
+			confirm = "подтвердить";
+			confirmy = "да";
+			confirmn = "нет";
+	
+            text1 = @"Когда вы наносите урон врагам,
+вы заполняете свою шкалу энергии.";
+            text2 = @"Чем выше ваш рейтинг, тем быстрее она заполняется.";
+            text3 = @"Когда она полна, вы можете выполнить специальный прием.";
+            text4 = @"Эти приемы можно приобрести в магазине."
+            //textair = "in the air";
+            //textground = "on the ground";
             #endregion           
             break;
         case 2: //spanish
@@ -588,12 +593,12 @@ you fill up your power bar.";
             confirm = "Confirmar";
             confirmy = "sí";
             confirmn = "no";
-
-            text1 = @"Cada cuarto golpe exitoso contra un enemigo 
-que no sea rojo será especial.";
-            text2 = @"Combina diferentes golpes para mejorar tu puntuación.";
-            text3 = @"Cuanto mayor sea la puntuación,
-más esencia oscura soltarán los enemigos derrotados.";
+ 
+            text1 = @"Cuando infliges daño a los enemigos,
+llenas tu barra de poder.";
+            text2 = @"Cuanto más alta sea tu puntuación, más rápido se llena.";
+            text3 = @"Cuando esté llena, puedes realizar un movimiento especial.";
+			text4 = "Estos movimientos se pueden comprar en la tienda.";
 
             textair = "en el aire";
             textground = "en el suelo";
@@ -605,10 +610,12 @@ más esencia oscura soltarán los enemigos derrotados.";
             confirmy = "对";
             confirmn = "no";
 
-            text1 = @"对除红色敌人以外的敌人的每四次成功打击都是特殊的."; 
-            text2 = @"结合不同的罢工以提高您的评级.";
-            text3 = @"等级越高, 被击败的敌人掉落的黑暗精华就越多.";
-
+            text1 = @"当你对敌人造成伤害时，
+你会填充你的力量条。"; 
+            text2 = @"你的评级越高，它填充得越快。";
+            text3 = @"当它满时，你可以执行一个特殊动作。";
+			text4 = @"这些动作可以在商店中购买。";
+			
             textair = "在空中";
             textground = "在地面上";
             #endregion
@@ -618,12 +625,12 @@ más esencia oscura soltarán los enemigos derrotados.";
             confirm = "Confirmar";
             confirmy = "sim";
             confirmn = "não";
-
-            text1 = @"Cada quarto ataque bem-sucedido contra um inimigo 
-que não seja vermelho será especial.";
-            text2 = @"Combina diferentes greves para melhorar a tua classificação.";
-            text3 = @"Quanto maior for a classificação, 
-mais a essência escura sairá dos inimigos derrotados.";
+ 
+            text1 = @"Quando você causa dano aos inimigos,
+enche sua barra de poder.";
+            text2 = @"Quanto maior a avaliação, mais rápido ela enche.";
+            text3 = @"Quando está cheia, você pode realizar um movimento especial.";
+            text4 = @"Esses movimentos podem ser comprados na loja.";
 
             textair = "no ar";
             textground = "no chão";
@@ -635,11 +642,12 @@ mais a essência escura sairá dos inimigos derrotados.";
             confirmy = "sim";
             confirmn = "não";
 
-            text1 = @"Cada quarto ataque bem-sucedido contra um inimigo 
-que não seja vermelho será especial.";
-            text2 = @"Combine diferentes golpes para melhorar sua classificação.";
-            text3 = @"Quanto maior a classificação, 
-mais essência negra sairá dos inimigos derrotados.";
+
+            text1 = @"Quando você causa dano aos inimigos,
+enche a sua barra de energia.";
+            text2 = @"Quanto maior a sua classificação, mais rápido ela enche.";
+            text3 = @"Quando está cheia, pode realizar um movimento especial.";
+            text4 = @"Estes movimentos podem ser comprados na loja.";
 
             textair = "no ar";
             textground = "no chão";
@@ -650,12 +658,12 @@ mais essência negra sairá dos inimigos derrotados.";
             confirm = "Potwierdź";
             confirmy = "Tak";
             confirmn = "Nie";
-
-            text1 = @"Co czwarte celne trafienie w przeciwnika będzie specjalne.
-Z wyjątkiem czerwonego";
-            text2 = @"Połącz różne uderzenia, aby poprawić swój rating.";
-            text3 = @"Im wyższy rating, tym więcej mrocznej
-esencji oddadzą pokonani wrogowie.";
+ 
+            text1 = @"Kiedy zadajesz obrażenia wrogom,
+zapełniasz pasek mocy.";
+            text2 = @"Im wyższa twoja ocena, tym szybciej się zapełnia.";
+            text3 = @"Kiedy jest pełny, możesz wykonać specjalny ruch.";
+            text4 = @"Te ruchy można kupić w sklepie.";
 
             textair = "W powietrzu";
             textground = "Na ziemi.";
@@ -667,11 +675,11 @@ esencji oddadzą pokonani wrogowie.";
             confirmy = "はい";
             confirmn = "いいえ";
 
-            text1 = @"赤以外の敵に4回目の攻撃を成功させるごとに、 
-特別な効果が得られる。";
-            text2 = @"さまざまなストライクを組み合わせて、レーティングを上げよう。";
-            text3 = @"レーティングが高いほど、 
-倒した敵からダークエッセンスが多くドロップされる。";
+            text1 = @"敵にダメージを与えると、
+パワーバーが満たされます。";
+            text2 = @"レーティングが高いほど、それが早く満たされます。";
+            text3 = @"フルになったとき、特殊なムーブを実行できます。";
+            text4 = @"これらのムーブは店で購入できます。";
 
             textair = "空中で";
             textground = "地上で";
@@ -682,14 +690,13 @@ esencji oddadzą pokonani wrogowie.";
             confirm = "Bestätigen";
             confirmy = "ja";
             confirmn = "nein";
-
-            text1 = @"Jeder vierte erfolgreiche Schlag gegen einen anderen 
-als einen roten Feind ist speziell.";
-            text2 = @"Kombiniere verschiedene Schläge, 
-um deine Bewertung zu verbessern.";
-            text3 = @"Je höher die Wertung, 
-desto mehr dunkle Essenz erhältst 
-du von den besiegten Feinden.";
+ 
+            text1 = @"Wenn Sie Schaden an Feinden verursachen,
+füllen Sie Ihre Kraftleiste auf.";
+            text2 = @"Je höher Ihre Bewertung ist, desto schneller 
+füllt sie sich auf.";
+            text3 = @"Wenn sie voll ist, können Sie eine Spezialbewegung ausführen.";
+            text4 = @"Diese Bewegungen können im Laden gekauft werden.";
 
             textair = "in der Luft";
             textground = "auf dem Boden";
@@ -700,12 +707,14 @@ du von den besiegten Feinden.";
             confirm = "Confirmez";
             confirmy = "oui";
             confirmn = "non";
-
-            text1 = @"Chaque quatrième coup réussi contre un ennemi 
-autre qu'un rouge sera spécial.";
-            text2 = @"Combinez différents coups pour améliorer votre classement.";
-            text3 = @"Plus la note est élevée,
-plus les ennemis vaincus laissent échapper de l'essence noire.";
+ 
+            text1 = @"Lorsque vous infligez des dégâts à des ennemis,
+vous remplissez votre barre de puissance.";
+            text2 = @"Plus votre évaluation est élevée, 
+plus elle se remplit rapidement.";
+            text3 = @"Lorsqu'elle est pleine, vous pouvez effectuer 
+un mouvement spécial.";
+            text4 = @"Ces mouvements peuvent être achetés dans le magasin.";
 
             textair = "dans les airs";
             textground = "au sol";
@@ -717,11 +726,12 @@ plus les ennemis vaincus laissent échapper de l'essence noire.";
             confirmy = "Sì";
             confirmn = "No";
 
-            text1 = @"Ogni quarto colpo andato a segno contro un nemico
-diverso da quello rosso sarà speciale.";
-            text2 = @"Combina diversi colpi per migliorare la tua valutazione.";
-            text3 = @"Più alto è il punteggio, più essenza oscura
-verrà rilasciata dai nemici sconfitti.";
+
+            text1 = @"Quando infliggi danni ai nemici
+riempi la tua barra di potenza.";
+            text2 = @"Più alto è il tuo punteggio, più velocemente si riempie.";
+            text3 = @"Quando è pieno, puoi eseguire una mossa speciale.";
+            text4 = @"Queste mosse possono essere acquistate nel negozio.";
 
             textair = "nell'aria ";
             textground = "a terra";

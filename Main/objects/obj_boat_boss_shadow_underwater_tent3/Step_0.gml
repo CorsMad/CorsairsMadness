@@ -60,7 +60,7 @@ switch(state)
         break;
     case 1:
         #region перемещение в игрока
-        if spd < 3 spd+=0.01;
+        if spd < 4 spd+=0.02;
         if instance_exists(obj_Player_boat)
         {
             if point_distance(x, y, obj_Player_boat.x, obj_Player_boat.y) > spd
@@ -101,7 +101,7 @@ switch(state)
         break;
     case 4:
         #region перемещение в игрока
-        if spd < 3 spd+=0.05;
+        if spd < 5 spd+=0.075;
         if instance_exists(obj_Player_boat)
         {
             if point_distance(x, y, obj_Player_boat.x, obj_Player_boat.y) > spd

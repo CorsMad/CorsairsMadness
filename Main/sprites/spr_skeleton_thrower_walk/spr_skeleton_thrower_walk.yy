@@ -4,7 +4,7 @@
   "name": "spr_skeleton_thrower_walk",
   "bbox_bottom": 35,
   "bbox_left": 26,
-  "bbox_right": 59,
+  "bbox_right": 60,
   "bbox_top": 5,
   "bboxMode": 0,
   "collisionKind": 1,

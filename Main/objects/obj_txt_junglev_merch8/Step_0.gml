@@ -3,6 +3,7 @@
 dialogue_input();
 scr_skip_texticon_blink();
 
+
 #region skip
 
 if key_skip

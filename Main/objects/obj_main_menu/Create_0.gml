@@ -116,6 +116,9 @@ index = 1;
 submenu = 0;
 title_alpha = 1;
 t_sfx = 0;
+
+start_y = 370
+move_y = 0;
 #region TEST
 
 pk_up = fnc_keyboard_key_change(global.up_key);

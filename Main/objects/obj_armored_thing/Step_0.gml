@@ -56,9 +56,9 @@ if state = 3
 {
 	a++;
     image_blend = c_white;
-	if place_meeting(x,y,obj_hitbox)
+	if place_meeting(x,y,obj_hitbox) || place_meeting(x,y,obj_hitbox_down)
 	{
-		a = 60;
+		a = 0;
 	}
 	if a = 60 
 	{

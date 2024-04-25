@@ -4,7 +4,7 @@
 
 
 scr_text_graphics();
-draw_sprite(spr_text_icon_follower_grounded,0,camera_get_view_x(view_camera[0])+6,camera_get_view_y(view_camera[0])+9);
+draw_sprite(spr_text_icons,14,camera_get_view_x(view_camera[0])+6,camera_get_view_y(view_camera[0])+9);
 if typist.get_state() = 1 draw_sprite(spr_text_icon_button_k,iconspd,camera_get_view_x(view_camera[0])+480-12,camera_get_view_y(view_camera[0])+64-10)
 
 var scribble_text = scribble(text)

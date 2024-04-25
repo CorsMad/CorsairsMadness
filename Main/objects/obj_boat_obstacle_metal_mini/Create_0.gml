@@ -1,0 +1,9 @@
+/// @description Insert description here
+// You can write your code in this editor
+to_follow = id;
+hspd = -1;
+vspd = 0;
+hit_cd = 0;
+enemy_hp = 50000;
+var mask = instance_create_depth(x,y,depth,obj_boat_obstacle_metal_mini_mask)
+mask.fol = id;

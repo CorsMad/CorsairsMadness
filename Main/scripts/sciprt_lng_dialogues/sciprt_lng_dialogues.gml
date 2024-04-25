@@ -25,7 +25,7 @@ switch(global.language)
         eng4 = "[fnt_pixel_ru]Многие поверили в эту историю и отправились на поиски приключений.";
         eng5 = "[fnt_pixel_ru]Говорят, что само проклятие находит корабли тех, кто достоин ступить на его землю.[delay,5000] \nТолько самые отважные первопроходцы смогут разгадать все секреты этой загадочной земли.";
         eng6 = "[fnt_pixel_ru]<О, кажется, еще один гость сошел на берег. Надеюсь, мы поладим.>";
-        skip_txt = "нажмите любую клавишу для пропуска";
+        skip_txt = "[fnt_pixel_ru]пропустить";
         #endregion
         break;
     case 2: //spanish
@@ -36,7 +36,7 @@ switch(global.language)
         eng4 = "[fnt_pixel]Muchos creyeron la historia y partieron en busca de aventuras.";
         eng5 = "[fnt_pixel]Se dice que la propia maldición encuentra los barcos de aquellos dignos de pisar su suelo.[delay,5000] \nSólo los pioneros más valientes podrán desenmascarar todos los secretos de esta tierra misteriosa.";
         eng6 = "[fnt_pixel]<Oh, parece que otro invitado ha desembarcado. Espero que nos llevemos bien.>";
-        skip_txt = "pulsa cualquier tecla para saltar";
+        skip_txt = "[fnt_pixel]omitir";
         #endregion
         break;
     case 3: //chinese
@@ -47,7 +47,7 @@ switch(global.language)
         eng4 = "[fnt_pixel]许多人相信了这个故事并去寻求冒险.";
         eng5 = "[fnt_pixel]他们说诅咒本身会发现那些值得踏上群岛的人的船只.[delay,5000] \n只有最勇敢的开拓者才能揭开这片神秘土地的所有秘密.";
         eng6 = "[fnt_pixel]<哦, 好像又来了一位客人. 希望我们能找到共同语言.>";
-        skip_txt = "按任意键跳过";
+        skip_txt = "[fnt_pixel]遗漏";
         #endregion
         break;
     case 4: //portug
@@ -58,7 +58,7 @@ switch(global.language)
         eng4 = "[fnt_pixel]Muitos acreditaram na história e foram à procura da aventura.";
         eng5 = "[fnt_pixel]Diz-se que a maldição em si encontra os navios daqueles dignos de pisar o seu solo.[delay,5000] \nSó os mais corajosos pioneiros serão capazes de desvendar todos os segredos desta misteriosa terra.";
         eng6 = "[fnt_pixel]<Parece que outro convidado chegou à costa. Espero que nos demos bem.>";
-        skip_txt = "prima qualquer tecla para saltar";
+        skip_txt = "[fnt_pixel]saltar";
         #endregion
         break;
     case 5: //brazil
@@ -69,7 +69,7 @@ switch(global.language)
         eng4 = "[fnt_pixel]Muitos acreditaram na história e foram em busca da aventura.";
         eng5 = "[fnt_pixel]Dizem que a própria maldição encontra os navios das pessoas dignas de pisar em seu solo.[delay,5000] \nApenas os pioneiros mais corajosos serão capazes de desvendar todos os segredos desta terra misteriosa.";
         eng6 = "[fnt_pixel]<Oh, parece que outro convidado desembarcou. Espero dar-nos bem com eles.>";
-        skip_txt = "pressione qualquer tecla para pular";
+        skip_txt = "[fnt_pixel]pular";
         #endregion
         break;
     case 6: //polish
@@ -80,7 +80,7 @@ switch(global.language)
         eng4 = "[fnt_pixel]Wielu śmiałków uwierzyło w tę historię i wyruszyło na poszukiwanie przygód.";
         eng5 = "[fnt_pixel]Mówi się, że klątwa sama znajduje statki tych, którzy są godni postawić stopę na tej ziemi.[delay,5000] \nTylko najodważniejsi tropiciele będą w stanie odkryć wszystkie sekrety tej tajemniczej krainy.";
         eng6 = "[fnt_pixel]<Wygląda na to, że na brzegu pojawił się kolejny gość. Mam nadzieję, że się dogadamy.>";
-        skip_txt = "Naciśnij dowolny klawisz aby pominąć";
+        skip_txt = "[fnt_pixel]pominąć";
         #endregion
         break;
     case 7: //japanese
@@ -91,7 +91,7 @@ switch(global.language)
         eng4 = "[fnt_pixel]多くの人がその話を信じ、冒険を求め旅立った。";
         eng5 = "[fnt_pixel]呪いそのものが、その地に足を踏み入れるにふさわしい者の船を見つけると言われている。[delay,5000] \n勇敢な先駆者だけが、この神秘的な土地のすべての秘密を解き明かすことができる。";
         eng6 = "[fnt_pixel]<おっと、また一人お客が来たみたいだ。馬が合うといい。>";
-        skip_txt = "いずれかのキーを押してスキップ";
+        skip_txt = "[fnt_pixel]スキップ";
         #endregion
         break;
     case 8: //deutch
@@ -102,7 +102,7 @@ switch(global.language)
         eng4 = "[fnt_pixel]Viele glaubten an die Geschichte und machten sich auf den Weg, um ein Abenteuer zu suchen.";
         eng5 = "[fnt_pixel]Es heißt, dass der Fluch selbst die Schiffe derjenigen findet, die würdig sind, ihren Fuß auf den Boden zu setzen.[delay,5000] \nNur die mutigsten Wegbereiter werden in der Lage sein, alle Geheimnisse dieses mysteriösen Eilands zu enträtseln.";
         eng6 = "[fnt_pixel]<Oh, es scheint, als sei ein weiterer Gast an Land gekommen. Ich hoffe, wir werden uns gut verstehen.>";
-        skip_txt = "Drücke eine beliebige Taste zum Überspringen";
+        skip_txt = "[fnt_pixel]überspringen";
         #endregion
         break;
     case 9: //french
@@ -113,7 +113,7 @@ switch(global.language)
         eng4 = "[fnt_pixel]Beaucoup ont cru à cette histoire et sont partis à la recherche de l'aventure.";
         eng5 = "[fnt_pixel]On dit que la malédiction elle-même trouve les navires de ceux qui sont dignes de poser le pied sur son sol.[delay,5000] \nSeuls les pionniers les plus courageux seront en mesure de percer tous les secrets de cette terre mystérieuse.";
         eng6 = "[fnt_pixel]<Oh, il semble qu'un autre invité ait débarqué. J'espère que nous allons nous entendre.>";
-        skip_txt = "appuyez sur n'importe quelle touche pour passer";
+        skip_txt = "[fnt_pixel]sauter";
         #endregion
         break;
     case 10: //Italian
@@ -124,7 +124,7 @@ switch(global.language)
         eng4 = "[fnt_pixel]Molti credettero alla storia e andarono a cercare l'avventura.";
         eng5 = "[fnt_pixel]Dicono che la maledizione stessa trovi le navi di coloro degni di mettere piede nell'arcipelago.[delay,5000] \nSolo i pionieri più coraggiosi potranno svelare tutti i segreti di questa terra misteriosa.";
         eng6 = "[fnt_pixel]<Oh, sembra che un altro viaggiatore sia a terra. Spero che troveremo una lingua comune.>";
-        skip_txt = "Premere un tasto qualsiasi per saltare";
+        skip_txt = "[fnt_pixel]saltare";
         #endregion
         break;
 } 
@@ -591,7 +591,7 @@ function fnc_lng_t2_end2(){
             eng3 =  "[fnt_pixel_ru]Эй, уберите рапиру, капитан, я совсем не опасен. хе хе.";
             eng4 =  "[fnt_pixel_ru]Позвольте представиться, капитан, меня зовут... неважно, как меня зовут, я просто скромный владелец магазина безделушек"
             eng5 =  "[fnt_pixel_ru]Я уверен, что у вас много вопросов. Но не все сразу, капитан. Курочка по зернышку клюет. Сначала я скажу тебе, что делать дальше.";
-            eng6 =  "[fnt_pixel_ru]Может быть, ты еще можешт найти свою команду. Я не знаю точно, что с ними случилось, но это ведь как раз ваша работа, верно?";
+            eng6 =  "[fnt_pixel_ru]Может быть, ты еще можешь найти свою команду. Я не знаю точно, что с ними случилось, но это ведь как раз ваша работа, верно?";
             eng7 =  "[fnt_pixel_ru]Друг мой, капитан, чтобы продолжить поиски, тебе нужно добраться до следующего острова. Я не рекомендую вам пересекать море вплавь, это может быть неразумно.";
             eng8 =  "[fnt_pixel_ru]Я могу помочь тебе в этом, капитан. Мы ведь теперь друзья, не так ли? Я дам вам эту лодку. Вы можете доплыть до следующего острова без особых проблем";
             eng9 =  "[fnt_pixel_ru]Удачи вам в путешествии! Мы обязательно встретимся снова, и не забудьте заглянуть в мою лавку";

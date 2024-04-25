@@ -375,7 +375,11 @@ if hit_stored > 0
 			hit_cd = 1;
 			state = 5;
             if instance_exists(icon) {icon.state = 2;fnc_snd_play_over(snd_skate_human);}
-    
+			
+			if obj_Player.x > x {
+						instance_create_depth(x,y-24,depth-1,obj_molded_purple_armor_destr,{image_xscale : -1});
+					}  else	instance_create_depth(x,y-24,depth-1,obj_molded_purple_armor_destr);
+			
             icon.image_alpha = 1;
 			t = 0;
 		} else {hit_stored = 0;t=0;hit_cd =1;}

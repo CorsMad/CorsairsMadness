@@ -1,6 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 depth = -y;
+wave_spd_t++;
+if wave_spd_t > 14 wave_spd_t = 0;
+if wave_spd_t mod 5 = 0  wave_spd_a+=1;
+if wave_spd_t = 0 wave_spd_a = 0;
+
+//if wave_spd_t = 3 wave_spd_a = 1;
+//if wave_spd_t = 6 wave_spd_a = 2;
+//if wave_spd_t = 9 wave_spd_a = 0;
+
+
 
 if canControl = 1 
 {
