@@ -24,20 +24,20 @@ switch(action){
 							dmg.number =  obj_player_stats.dmg_output_normal*0.5;
 							break;
 						case 0:
-							obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*1.5;	
+							obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_crit;	
 							var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-							dmg.number =  obj_player_stats.dmg_output_normal*1.5;
+							dmg.number =  obj_player_stats.dmg_output_crit;
 							break;
 						case 1:// слабость
 							if obj_enemy_parent.weak_crit_t = 0 {
-								obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*2;								
+								obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_crit*1.2;								
 								obj_enemy_parent.weak_crit_t = 300;
 								var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-								dmg.number =  obj_player_stats.dmg_output_normal*2;
+								dmg.number =  obj_player_stats.dmg_output_crit*1.2;
 							} else {
-								obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*1.2; 
+								obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_crit*0.8; 
 								var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-								dmg.number =  obj_player_stats.dmg_output_normal*1.2;	
+								dmg.number =  obj_player_stats.dmg_output_crit*0.8;	
 							}
 							break;
 					}
@@ -57,27 +57,27 @@ switch(action){
 								case 1:
 									#region FIRE
 										switch(obj_enemy_parent.EnemyCreator.weak_res_fire){
-										case -1: 
-											#region ЕСТЬ РЕЗИСТ
-												obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*0.8;	
-												var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-												dmg.number =  obj_player_stats.dmg_output_normal*0.8;
-											#endregion
-											break;
-										case 0: 
-											#region НИЧЕГО
-												obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*1.5;		
-												var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-												dmg.number =  obj_player_stats.dmg_output_normal*1.5;
-											#endregion	
-											break;
-										case 1: 
-											#region УЯЗВИМОСТЬ
-												obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*2.2;	
-												var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-												dmg.number =  obj_player_stats.dmg_output_normal*2.2;
-											#endregion
-											break;
+        								case -1: 
+        									#region ЕСТЬ РЕЗИСТ
+        										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_fire*0.5;	
+        										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
+        										dmg.number =  obj_player_stats.dmg_output_fire*0.5;
+        									#endregion
+        									break;
+        								case 0: 
+        									#region НИЧЕГО
+        										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_fire*0.8;		
+        										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
+        										dmg.number =  obj_player_stats.dmg_output_fire*0.8;
+        									#endregion	
+        									break;
+        								case 1: 
+        									#region УЯЗВИМОСТЬ
+        										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_fire*1.2;	
+        										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
+        										dmg.number =  obj_player_stats.dmg_output_fire*1.2;
+        									#endregion
+									break;
 										}
 									#endregion					
 									obj_player_stats.el_count_fire --;
@@ -85,84 +85,84 @@ switch(action){
 								case 2:
 									#region ICE
 										switch(obj_enemy_parent.EnemyCreator.weak_res_ice){
-										case -1: 
-											#region ЕСТЬ РЕЗИСТ
-												obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*0.8;	
-												var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-												dmg.number =  obj_player_stats.dmg_output_normal*0.8;
-											#endregion
-											break;
-										case 0: 
-											#region НИЧЕГО
-												obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*1.5;		
-												var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-												dmg.number =  obj_player_stats.dmg_output_normal*1.5;
-											#endregion	
-											break;
-										case 1: 
-											#region УЯЗВИМОСТЬ
-												obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*2.2;	
-												var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-												dmg.number =  obj_player_stats.dmg_output_normal*2.2;
-											#endregion
-											break;
-										}
+        								case -1: 
+        									#region ЕСТЬ РЕЗИСТ
+        										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_ice*0.5;	
+        										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
+        										dmg.number =  obj_player_stats.dmg_output_ice*0.5;
+        									#endregion
+        									break;
+        								case 0: 
+        									#region НИЧЕГО
+        										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_ice*0.8;		
+        										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
+        										dmg.number =  obj_player_stats.dmg_output_ice*0.8;
+        									#endregion	
+        									break;
+        								case 1: 
+        									#region УЯЗВИМОСТЬ
+        										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_ice*1.5;	
+        										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
+        										dmg.number =  obj_player_stats.dmg_output_ice*1.5;
+        									#endregion
+        									break;
+        								}
 									#endregion
 									obj_player_stats.el_count_ice --;
 									break;
 								case 3:
 									#region LIGHT
 										switch(obj_enemy_parent.EnemyCreator.weak_res_light){
-										case -1: 
-											#region ЕСТЬ РЕЗИСТ
-												obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*0.8;	
-												var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-												dmg.number =  obj_player_stats.dmg_output_normal*0.8;
-											#endregion
-											break;
-										case 0: 
-											#region НИЧЕГО
-												obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*1.5;		
-												var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-												dmg.number =  obj_player_stats.dmg_output_normal*1.5;
-											#endregion	
-											break;
-										case 1: 
-											#region УЯЗВИМОСТЬ
-												obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*2.2;	
-												var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-												dmg.number =  obj_player_stats.dmg_output_normal*2.2;
-											#endregion
-											break;
-										}
+        								case -1: 
+        									#region ЕСТЬ РЕЗИСТ
+        										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_light*0.5;	
+        										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
+        										dmg.number =  obj_player_stats.dmg_output_light*0.5;
+        									#endregion
+        									break;
+        								case 0: 
+        									#region НИЧЕГО
+        										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_light*0.8;		
+        										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
+        										dmg.number =  obj_player_stats.dmg_output_light*0.8;
+        									#endregion	
+        									break;
+        								case 1: 
+        									#region УЯЗВИМОСТЬ
+        										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_light*1.2;	
+        										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
+        										dmg.number =  obj_player_stats.dmg_output_light*1.2;
+        									#endregion
+        									break;
+        								}
 									#endregion
 									obj_player_stats.el_count_light --;
 									break;
 								case 4:
 									#region WIND
 										switch(obj_enemy_parent.EnemyCreator.weak_res_wind){
-										case -1: 
-											#region ЕСТЬ РЕЗИСТ
-												obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*0.8;	
-												var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-												dmg.number =  obj_player_stats.dmg_output_normal*0.8;
-											#endregion
-											break;
-										case 0: 
-											#region НИЧЕГО
-												obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*1.5;		
-												var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-												dmg.number =  obj_player_stats.dmg_output_normal*1.5;
-											#endregion	
-											break;
-										case 1: 
-											#region УЯЗВИМОСТЬ
-												obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*2.2;	
-												var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-												dmg.number =  obj_player_stats.dmg_output_normal*2.2;
-											#endregion
-											break;
-										}
+        								case -1: 
+        									#region ЕСТЬ РЕЗИСТ
+        										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_wind*0.5;	
+        										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
+        										dmg.number =  obj_player_stats.dmg_output_wind*0.5;
+        									#endregion
+        									break;
+        								case 0: 
+        									#region НИЧЕГО
+        										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_wind*0.8;		
+        										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
+        										dmg.number =  obj_player_stats.dmg_output_wind*0.8;
+        									#endregion	
+        									break;
+        								case 1: 
+        									#region УЯЗВИМОСТЬ
+        										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_wind*1.2;	
+        										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
+        										dmg.number =  obj_player_stats.dmg_output_wind*1.2;
+        									#endregion
+        									break;
+        								}
 									#endregion
 									obj_player_stats.el_count_wind --;
 									break;
@@ -174,23 +174,23 @@ switch(action){
 								switch(obj_enemy_parent.EnemyCreator.weak_res_fire){
 								case -1: 
 									#region ЕСТЬ РЕЗИСТ
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal;	
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_fire*0.5;	
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal;
+										dmg.number =  obj_player_stats.dmg_output_fire*0.5;
 									#endregion
 									break;
 								case 0: 
 									#region НИЧЕГО
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*1.8;		
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_fire*0.8;		
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal*1.8;
+										dmg.number =  obj_player_stats.dmg_output_fire*0.8;
 									#endregion	
 									break;
 								case 1: 
 									#region УЯЗВИМОСТЬ
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*2.5;	
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_fire*1.2;	
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal*2.5;
+										dmg.number =  obj_player_stats.dmg_output_fire*1.2;
 									#endregion
 									break;
 								}
@@ -201,23 +201,23 @@ switch(action){
 								switch(obj_enemy_parent.EnemyCreator.weak_res_ice){
 								case -1: 
 									#region ЕСТЬ РЕЗИСТ
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal;	
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_ice*0.5;	
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal;
+										dmg.number =  obj_player_stats.dmg_output_ice*0.5;
 									#endregion
 									break;
 								case 0: 
 									#region НИЧЕГО
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*1.8;		
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_ice*0.8;		
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal*1.8;
+										dmg.number =  obj_player_stats.dmg_output_ice*0.8;
 									#endregion	
 									break;
 								case 1: 
 									#region УЯЗВИМОСТЬ
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*2.5;	
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_ice*1.5;	
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal*2.5;
+										dmg.number =  obj_player_stats.dmg_output_ice*1.5;
 									#endregion
 									break;
 								}
@@ -228,23 +228,23 @@ switch(action){
 								switch(obj_enemy_parent.EnemyCreator.weak_res_light){
 								case -1: 
 									#region ЕСТЬ РЕЗИСТ
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal;	
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_light*0.5;	
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal;
+										dmg.number =  obj_player_stats.dmg_output_light*0.5;
 									#endregion
 									break;
 								case 0: 
 									#region НИЧЕГО
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*1.8;		
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_light*0.8;		
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal*1.8;
+										dmg.number =  obj_player_stats.dmg_output_light*0.8;
 									#endregion	
 									break;
 								case 1: 
 									#region УЯЗВИМОСТЬ
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*2.5;	
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_light*1.2;	
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal*2.5;
+										dmg.number =  obj_player_stats.dmg_output_light*1.2;
 									#endregion
 									break;
 								}
@@ -255,33 +255,30 @@ switch(action){
 								switch(obj_enemy_parent.EnemyCreator.weak_res_wind){
 								case -1: 
 									#region ЕСТЬ РЕЗИСТ
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal;	
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_wind*0.5;	
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal;
+										dmg.number =  obj_player_stats.dmg_output_wind*0.5;
 									#endregion
 									break;
 								case 0: 
 									#region НИЧЕГО
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*1.8;		
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_wind*0.8;		
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal*1.8;
+										dmg.number =  obj_player_stats.dmg_output_wind*0.8;
 									#endregion	
 									break;
 								case 1: 
 									#region УЯЗВИМОСТЬ
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*2.5;	
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_wind*1.2;	
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal*2.5;
+										dmg.number =  obj_player_stats.dmg_output_wind*1.2;
 									#endregion
 									break;
 								}
 							#endregion					
 							break;
 					}
-					
-					
-					
-				   	
+													   
 					
 				} else if place_meeting(x,y,obj_action_bar_element) {
 					 
@@ -295,29 +292,29 @@ switch(action){
 						switch(obj_enemy_parent.EnemyCreator.weak_res_fire){
 							case -1: 
 								#region ЕСТЬ РЕЗИСТ
-									obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*0.4;	
+									obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_fire*0.5;	
 									var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-									dmg.number =  obj_player_stats.dmg_output_normal*0.4;
+									dmg.number =  obj_player_stats.dmg_output_fire*0.5;
 								#endregion
 								break;
 							case 0: 
 								#region НИЧЕГО
-									obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*0.6;		
+									obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_fire*0.8;		
 									var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-									dmg.number =  obj_player_stats.dmg_output_normal*0.6;
+									dmg.number =  obj_player_stats.dmg_output_fire*0.8;
 								#endregion	
 								break;
 							case 1: 
 								#region УЯЗВИМОСТЬ
 									if obj_enemy_parent.weak_fire_t = 0 {
 										obj_enemy_parent.weak_fire_t = 300
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*2.2;	
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_fire*1.2;	
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal*2.2;
+										dmg.number =  obj_player_stats.dmg_output_fire*1.2;
 									} else {
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*0.8;	
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_fire*0.7;	
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal*0.8;
+										dmg.number =  obj_player_stats.dmg_output_fire*0.7;
 									}
 								#endregion
 								break;
@@ -331,29 +328,29 @@ switch(action){
 						switch(obj_enemy_parent.EnemyCreator.weak_res_ice){
 							case -1:
 								#region ЕСТЬ РЕЗИСТ
-									obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*0.4;	
+									obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_ice*0.5;	
 									var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-									dmg.number =  obj_player_stats.dmg_output_normal*0.4;
+									dmg.number =  obj_player_stats.dmg_output_ice*0.5;
 								#endregion
 								break;
 							case 0:
 								#region НИЧЕГО
-									obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*0.6;		
+									obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_ice*0.8;		
 									var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-									dmg.number =  obj_player_stats.dmg_output_normal*0.6;
+									dmg.number =  obj_player_stats.dmg_output_ice*0.8;
 								#endregion
 								break;
 							case 1:
 								#region УЯЗВИМОСТЬ
 									if obj_enemy_parent.weak_ice_t = 0 {
 										obj_enemy_parent.weak_ice_t = 300
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*2.2;	
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_ice*1.2;	
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal*2.2;
+										dmg.number =  obj_player_stats.dmg_output_ice*1.2;
 									} else {
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*0.8;	
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_ice*0.7;	
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal*0.8;
+										dmg.number =  obj_player_stats.dmg_output_ice*0.7;
 									}
 								#endregion
 								break;
@@ -367,29 +364,29 @@ switch(action){
 						switch(obj_enemy_parent.EnemyCreator.weak_res_light){
 							case -1:
 								#region ЕСТЬ РЕЗИСТ
-									obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*0.4;	
+									obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_light*0.5;	
 									var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-									dmg.number =  obj_player_stats.dmg_output_normal*0.4;
+									dmg.number =  obj_player_stats.dmg_output_light*0.5;
 								#endregion
 								break;
 							case 0: 
 								#region НИЧЕГО
-									obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*0.6;		
+									obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_light*0.8;		
 									var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-									dmg.number =  obj_player_stats.dmg_output_normal*0.6;
+									dmg.number =  obj_player_stats.dmg_output_light*0.8;
 								#endregion
 								break;
 							case 1:
 								#region УЯЗВИМОСТЬ
 									if obj_enemy_parent.weak_light_t = 0 {
 										obj_enemy_parent.weak_light_t = 300
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*2.2;	
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_light*1.2;	
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal*2.2;
+										dmg.number =  obj_player_stats.dmg_output_light*1.2;
 									} else {
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*0.8;	
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_light*0.7;	
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal*0.8;
+										dmg.number =  obj_player_stats.dmg_output_light*0.7;
 									}
 								#endregion
 								break;
@@ -403,29 +400,29 @@ switch(action){
 						switch(obj_enemy_parent.EnemyCreator.weak_res_wind){
 							case -1:
 								#region ЕСТЬ РЕЗИСТ
-									obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*0.4;	
+									obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_wind*0.5;	
 									var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-									dmg.number =  obj_player_stats.dmg_output_normal*0.4;
+									dmg.number =  obj_player_stats.dmg_output_wind*0.5;
 								#endregion
 								break;
 							case 0:
 								#region НИЧЕГО
-									obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*0.6;		
+									obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_wind*0.8;		
 									var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-									dmg.number =  obj_player_stats.dmg_output_normal*0.6;
+									dmg.number =  obj_player_stats.dmg_output_wind*0.8;
 								#endregion
 								break;
 							case 1:
 								#region УЯЗВИМОСТЬ
 									if obj_enemy_parent.weak_wind_t = 0 {
 										obj_enemy_parent.weak_wind_t = 300
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*2.2;	
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_wind*1.2;	
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal*2.2;
+										dmg.number =  obj_player_stats.dmg_output_wind*1.2;
 									} else {
-										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_normal*0.8;	
+										obj_enemy_parent.EnemyCreator.enemy_hp -= obj_player_stats.dmg_output_wind*0.7;	
 										var dmg = instance_create_depth(obj_enemy_parent.x,obj_enemy_parent.y,obj_enemy_parent.depth-10,obj_dmgdigit_crit);
-										dmg.number =  obj_player_stats.dmg_output_normal*0.8;
+										dmg.number =  obj_player_stats.dmg_output_wind*0.7;
 									}
 								#endregion
 								break;

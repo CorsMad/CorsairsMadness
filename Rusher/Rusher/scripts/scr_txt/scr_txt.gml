@@ -16,6 +16,24 @@ function txt_outline(_x,_y,offset,color,text){
 	draw_text(_x,_y,text);
 }
 
+function txt_outline_col(_x,_y,offset,color,text1,_sign){
+    draw_set_color(c_black);
+	draw_text(_x+offset,_y,_sign + text1);
+	draw_text(_x-offset,_y,_sign + text1);
+	draw_text(_x,_y+offset,_sign + text1);
+	draw_text(_x,_y-offset,_sign + text1);
+	
+	draw_text(_x+offset,_y+offset,_sign + text1);
+	draw_text(_x-offset,_y+offset,_sign + text1);
+	draw_text(_x-offset,_y+offset,_sign + text1);
+	draw_text(_x-offset,_y-offset,_sign + text1);
+
+    draw_set_color(color); 
+    draw_text(_x,_y,_sign + text1);
+
+}
+
+
 
 function txt_item_desc_weapon_stat(x_m,y_m,_desc_txt){	
 	var player_weapon = obj_player_equip.equip_item[equip.WEAPON];

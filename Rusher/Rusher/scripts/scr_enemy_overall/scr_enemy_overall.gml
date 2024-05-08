@@ -52,7 +52,11 @@ function scr_enemy_action_overall(){
 		sprite_index = EnemyCreator.s_death;
 		image_index = 0;
 		obj_player_sprite.sprite_index = spr_player_idle;	
-		//if obj_player_stats.player_hp > 0 obj_player_sprite.sprite_index = spr_player_idle;
+		
+        obj_inventory.gold += EnemyCreator.gold;
+        
+        instance_create_depth(x,y,depth+1,obj_gold_spawner);
+        
 		instance_destroy(obj_player_indicator);
 		instance_destroy(obj_player_indicator_sparkle_big);
 		instance_destroy(obj_player_indicator_sparkle_small);

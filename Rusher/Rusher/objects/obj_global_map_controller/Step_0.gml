@@ -48,12 +48,14 @@ if move = 0{
 	}
 }
 
-//инвентарь
-if move = 0 && control = 1 {
-	if point_in_rectangle(mouse_x,mouse_y,16,16,64,64) && mouse_check_button_pressed(mb_left) {
+
+if move = 0 && control = 1 && obj_inventory.invOn = 0  {
+	if point_in_rectangle(mouse_x,mouse_y,16,16,64,64) && mouse_check_button_pressed(mb_left){
 		control = 0;
 		move = 0;
-		instance_create_depth(0,0,depth-1,obj_inventory)
-		instance_create_depth(0,0,depth-1,obj_player_equip)
+        obj_inventory.invOn = 1;
 	}
 }
+
+
+

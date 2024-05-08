@@ -3,18 +3,18 @@
 //normal_change = 0;
 //dmg = random_range(4,6);
 
+
 obj_battle_info.player_hp = player_hp;
 obj_battle_info.player_hp_max = player_hp_max;
 
 
-el_dmg_fire  = dmg*el_dmg_fire_mp;
-el_dmg_ice   = dmg*el_dmg_ice_mp;
-el_dmg_light = dmg*el_dmg_light_mp;
-el_dmg_wind  = dmg*el_dmg_win_mp;
-
 dmg_output_miss   = dmg*0.1;
 dmg_output_normal = dmg;
 dmg_output_crit   = dmg*crit_dmg;
+dmg_output_fire   = dmg*el_fire;
+dmg_output_ice    = dmg*el_ice;
+dmg_output_light  = dmg*el_light;
+dmg_output_wind   = dmg*el_wind;
 
 if player_hp <=0 {
 	player_hp = 0;

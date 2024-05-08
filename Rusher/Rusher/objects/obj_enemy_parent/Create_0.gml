@@ -32,5 +32,6 @@ EnemyCreator = {
 	weak_res_fire		 :	 0									   ,
 	weak_res_ice		 :	 0									   ,
 	weak_res_light		 :	 0									   ,
-	weak_res_wind		 :	 0									   
+	weak_res_wind		 :	 0									   ,
+    gold                 :   0                      
 }

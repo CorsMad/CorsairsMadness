@@ -132,7 +132,7 @@ if to_map = 1 {
 }	
 
 
-
+if instance_exists(obj_inventory) txt_outline(32,8,1,c_white,"gold:" + string(obj_inventory.gold));
 
 
 

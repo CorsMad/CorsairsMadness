@@ -3,21 +3,63 @@
 
 level = 0 //0;
 
+#region урон от оружия
+if obj_inventory.a_equip[equip.WEAPON] != undefined {
+    var eq_w_dmg = obj_inventory.a_equip[equip.WEAPON].dmg;
+    dmg = eq_w_dmg //random_range(4,6);
+} else dmg = 4;
+#endregion
 
-player_hp = 100;
-player_hp_max = 100;
-dmg = 4//random_range(4,6);
-crit_dmg = 1.1;
+#region крит от оружия
+if obj_inventory.a_equip[equip.WEAPON] != undefined {
+    var eq_w_crt = obj_inventory.a_equip[equip.WEAPON].crit;
+    crit_dmg = eq_w_crt;
+} else crit_dmg = 1.1;
+#endregion
 
-el_dmg_fire  = 0;
-el_dmg_ice   = 0;
-el_dmg_light = 0;
-el_dmg_wind  = 0;
+#region хп от брони
+if obj_inventory.a_equip[equip.ARMOR] != undefined {
+    var eq_a_hp = obj_inventory.a_equip[equip.ARMOR].hp;
+    player_hp = 100+eq_a_hp;
+    player_hp_max = 100+eq_a_hp;
+} else {
+    player_hp = 100;
+    player_hp_max = 100;
+}
+#endregion
 
-el_dmg_fire_mp = 1.2;
-el_dmg_ice_mp = 1.2;
-el_dmg_light_mp = 1.2;
-el_dmg_win_mp = 1.2;
+#region fire
+if obj_inventory.a_equip[equip.TRINKET] != undefined {
+    var eq_w_dmg = obj_inventory.a_equip[equip.TRINKET].el_fire;
+    el_fire = eq_w_dmg //random_range(4,6);
+} else el_fire = 1.2;
+#endregion
+
+#region ice
+if obj_inventory.a_equip[equip.TRINKET] != undefined {
+    var eq_w_dmg = obj_inventory.a_equip[equip.TRINKET].el_ice;
+    el_ice = eq_w_dmg //random_range(4,6);
+} else el_ice = 1.2;
+#endregion
+
+#region light
+if obj_inventory.a_equip[equip.TRINKET] != undefined {
+    var eq_w_dmg = obj_inventory.a_equip[equip.TRINKET].el_light;
+    el_light = eq_w_dmg //random_range(4,6);
+} else el_light = 1.2;
+#endregion
+
+#region wind
+if obj_inventory.a_equip[equip.TRINKET] != undefined {
+    var eq_w_dmg = obj_inventory.a_equip[equip.TRINKET].el_wind;
+    el_wind = eq_w_dmg //random_range(4,6);
+} else el_wind = 1.2;
+#endregion
+
+dmg_output_fire  = 0;
+dmg_output_ice   = 0;
+dmg_output_light = 0;
+dmg_output_wind  = 0;
 
 
 dmg_output_miss    = 0;
@@ -30,6 +72,8 @@ el_count_light = 0;
 el_count_wind = 0;
 
 normal_change = 0; // 1 - Fire, 2 - ice, 3 - light, 4 - wind
+
+
 
 current_stats = {
 	bar_range_normal : 0,	

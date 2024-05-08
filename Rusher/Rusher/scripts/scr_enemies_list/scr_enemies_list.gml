@@ -20,7 +20,8 @@ function scr_en_creator_slime_small1(){
 		weak_res_fire		 :	  0						               ,
 		weak_res_ice		 :	  0					                   ,
 		weak_res_light		 :	  0						               ,
-		weak_res_wind		 :	  0									   								   
+		weak_res_wind		 :	  0									   ,
+        gold                 :    5                     
 	}							  
 	return(EnemyCreator);
 }
@@ -44,7 +45,8 @@ function scr_en_creator_slime_small2(){
 		weak_res_fire		 :	  1									   ,
 		weak_res_ice		 :	  0					                   ,
 		weak_res_light		 :	  0						               ,
-		weak_res_wind		 :	  0									   								   
+		weak_res_wind		 :	  0									   ,
+        gold                 :    5 
 	}							  
 	return(EnemyCreator);
 }
@@ -73,7 +75,8 @@ function scr_en_creator_slime_medium(){
 		weak_res_fire			 :	 -1							    ,
 		weak_res_ice			 :	 0							    ,
 		weak_res_light			 :	 0							    ,
-		weak_res_wind			 :	 0									   
+		weak_res_wind			 :	 0							    ,
+        gold                     :   irandom_range(5,7) 
 	}	
 	return(EnemyCreator);
 }	
@@ -97,7 +100,8 @@ function scr_en_creator_slime_big(){
 		weak_res_fire	   :    choose(-1,1)				,
 		weak_res_ice	   :    0							,
 		weak_res_light	   :    0							,
-		weak_res_wind	   :    0									   
+		weak_res_wind	   :    0							,
+        gold               :   irandom_range(6,9)
 	}	
 	return(EnemyCreator);
 }	
