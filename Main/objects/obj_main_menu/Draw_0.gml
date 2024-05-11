@@ -17,7 +17,7 @@ var gap = 16;
 
 for (var i = 0; i < array_length_2d(menu, submenu); ++i) {
    
-    if i = 0 && submenu = 0 && !file_exists(_path) draw_set_color(c_dkgrey); else draw_set_color(c_white);
+    if (i = 0 && submenu = 0 && global.Continue = 0) draw_set_color(c_dkgrey); else draw_set_color(c_white);
     
     
     if submenu = 5
@@ -27,7 +27,7 @@ for (var i = 0; i < array_length_2d(menu, submenu); ++i) {
     
     if i == index 
     {
-        if (index = 0 && submenu = 0 && !file_exists(_path)) draw_set_color(c_gray) else draw_set_color(c_red);
+        if (index = 0 && submenu = 0 && global.Continue = 0) draw_set_color(c_gray) else draw_set_color(c_red);
         
     }
         

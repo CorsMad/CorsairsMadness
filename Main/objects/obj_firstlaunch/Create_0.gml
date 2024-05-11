@@ -1,12 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-//Player stats
-
-
-//global.controlScheme = 1; //!!!!!!!!!!!!!!!!!!!!!
-
-
-
+    
     global.hp = 5;           
     global.hp_max = 5;       
     global.hp_add = 0;
@@ -450,4 +442,7 @@ global.fTargetX = 0;
 global.fTargetY = 0;
 global.fTargetRoom = T2_r1;
 
+global.Continue = 0;
+
+scr_save_progress();
 

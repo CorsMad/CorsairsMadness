@@ -71,14 +71,14 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
             switch(index)
             {
                 case 0:
-                    if file_exists(_path)                    
+                    if global.Continue = 1                  
                     {
                         room_goto(RoomContinue);
                         fnc_msc_stop_play();
                     }
                     break;
                 case 1: 
-                    if file_exists(_path) 
+                    if global.Continue = 1
                     {
                         submenu = 5;
                         index = 1;                        

@@ -3,6 +3,9 @@
 
 function scr_save_progress(){
 var _saveStorage = {
+    
+    Continue                    : global.Continue      ,
+    
 	TargetRoom                  : global.TargetRoom	   ,
 	TargetX                     : global.TargetX	   ,
 	TargetY                     : global.TargetY	   ,
@@ -398,12 +401,14 @@ if file_exists(_path) {
 	show_debug_message("Decoded" + _string);
 	var _loadStorage = json_parse(_string);
 	
-			global.TargetRoom	  =  _loadStorage.TargetRoom
-			global.TargetX   	  =  _loadStorage.TargetX   
-			global.TargetY   	  =  _loadStorage.TargetY   
-			global.fTargetRoom	  =  _loadStorage.fTargetRoom
-			global.fTargetX  	  =  _loadStorage.fTargetX  
-			global.fTargetY  	  =  _loadStorage.fTargetY  
+            global.Continue       =  _loadStorage.Continue;
+            
+			global.TargetRoom	  =  _loadStorage.TargetRoom  ;
+			global.TargetX   	  =  _loadStorage.TargetX     ;
+			global.TargetY   	  =  _loadStorage.TargetY     ;
+			global.fTargetRoom	  =  _loadStorage.fTargetRoom ;
+			global.fTargetX  	  =  _loadStorage.fTargetX    ;
+			global.fTargetY  	  =  _loadStorage.fTargetY    ;
 			
             global.hp_max                   =   _loadStorage.hp_max                 ; // max HP
             global.hp_add                   =   _loadStorage.hp_add                 ; 
