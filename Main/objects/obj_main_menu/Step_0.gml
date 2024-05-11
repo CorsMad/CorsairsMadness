@@ -52,7 +52,7 @@ if move!= 0 && KBControlChange = 0
     fnc_snd_play_over(snd_menu_select);
     var size = array_length_2d(menu, submenu);
     
-    if !file_exists("save1.save") && submenu = 0
+    if !file_exists(_path) && submenu = 0
     {
         if index < 1 index = size - 1;
         else if index >=size  index = 1;   
@@ -71,14 +71,14 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
             switch(index)
             {
                 case 0:
-                    if file_exists("save1.save")                    
+                    if file_exists(_path)                    
                     {
                         room_goto(RoomContinue);
                         fnc_msc_stop_play();
                     }
                     break;
                 case 1: 
-                    if file_exists("save1.save") 
+                    if file_exists(_path) 
                     {
                         submenu = 5;
                         index = 1;                        
@@ -337,7 +337,7 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
             switch(index)
             {
                 case 0: 
-                    file_delete("save1.save");
+                    file_delete(_path);
                     scr_secrets_chest_maze();
                     fnc_msc_stop_play();
                     room_goto(Cutscene_intro);

@@ -7,7 +7,7 @@ instance_create_depth(0,0,0,DEBUG);
 
 global.TargetX      = 256;
 global.TargetY      = 200;
-global.TargetRoom   = L1_r1;
+global.TargetRoom   = TESTROOM;
 
 global.fTargetX     = 56;
 global.fTargetY     = 208;

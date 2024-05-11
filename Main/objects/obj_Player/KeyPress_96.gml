@@ -1,1 +1,1 @@
-global.hp = 0;
+//global.hp = 0;

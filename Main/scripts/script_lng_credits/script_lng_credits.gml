@@ -1,8 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function script_lng_credits(){
-	switch(global.language) {
-		case 0:
+	
 			#region eng
 				menu[0,0]  = "[fnt_pixel][c_yellow]Game by[/c]";				
 				
@@ -34,13 +33,8 @@ function script_lng_credits(){
 		
 				skip_txt =  "[fnt_pixel]skip";
 			#endregion
-			break;
-		case 1:
-			#region rus
-				
-			#endregion
-			break;
-	}
+			
+	
 	// Overall
 	menu[0,1]  = "[fnt_pixel]Andrey Voronkov";
 	menu[0,2]  = "";
@@ -152,8 +146,7 @@ function script_lng_credits(){
 }
 
 function script_lng_credits_mainmenu(){
-	switch(global.language){
-		case 0:
+	
 			#region eng
 				cr_menu[0,0]  = "[fnt_pixel][c_yellow]Game by[/c]";				
 				
@@ -177,8 +170,7 @@ function script_lng_credits_mainmenu(){
 		
 				skip_txt =  "[fnt_pixel]skip";
 			#endregion
-			break;
-	}
+	
 		
 	// Overall
 	cr_menu[0,1]  = "[fnt_pixel]Andrey Voronkov";

@@ -21,14 +21,14 @@ if t1 = 10
 
    //room_goto(CreditsBad)
    //room_goto(Ending_screen)
-   room_goto(GlobalMapPrologueLava);
+   //room_goto(GlobalMapPrologueLava);
 
-   //var i = instance_create_depth(16,16,0,obj_Player);
-   //i.DashEnabled = 1;
-   //i.state = 0;
-   //i.specabilnumber = 3;
-   //i.HookEnabled = 1//1;
-   //i.SpecAbilMask = 4;       
-   //instance_create_depth(16,16,101,obj_room_transition_to_loading);  
+   var i = instance_create_depth(16,16,0,obj_Player);
+   i.DashEnabled = 1;
+   i.state = 0;
+   i.specabilnumber = 3;
+   i.HookEnabled = 1//1;
+   i.SpecAbilMask = 4;       
+   instance_create_depth(16,16,101,obj_room_transition_to_loading);  
 
 }

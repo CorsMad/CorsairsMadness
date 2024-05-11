@@ -135,3 +135,5 @@ pk_weapon_select = fnc_keyboard_key_change(global.select_key);
 
 delay = 0;
 #endregion
+
+_path = program_directory + "Progress.sav"
