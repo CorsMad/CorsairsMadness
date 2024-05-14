@@ -177,22 +177,27 @@ if page = 1
         case 1: window_set_fullscreen(false);   
                 global.windowHeight = 1080;
                 global.windowWidth = 1920;
+                window_set_position(display_get_width()/2 - global.windowWidth/2, display_get_height()/2 - global.windowHeight/2);
                 break;
         case 2: window_set_fullscreen(false);   
                 global.windowHeight = 900;
                 global.windowWidth = 1600;
+                window_set_position(display_get_width()/2 - global.windowWidth/2, display_get_height()/2 - global.windowHeight/2);
                 break;
         case 3: window_set_fullscreen(false);   
                 global.windowHeight = 768;
                 global.windowWidth = 1366;
+                window_set_position(display_get_width()/2 - global.windowWidth/2, display_get_height()/2 - global.windowHeight/2);
                 break;
         case 4: window_set_fullscreen(false);   
                 global.windowHeight = 720;
                 global.windowWidth = 1280;
+                window_set_position(display_get_width()/2 - global.windowWidth/2, display_get_height()/2 - global.windowHeight/2);
                 break;
         case 5: window_set_fullscreen(false);   
                 global.windowHeight = 600;
                 global.windowWidth = 800;
+                window_set_position(display_get_width()/2 - global.windowWidth/2, display_get_height()/2 - global.windowHeight/2);
                 break;
                 
     }

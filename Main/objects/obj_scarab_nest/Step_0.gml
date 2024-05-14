@@ -56,15 +56,15 @@ if state = 1
             el1.image_alpha = 0.7;
             el1.image_speed = 2;  
             break;
-        case 30:
+        case 5:
             var el2 = instance_create_depth(x+random_range(-8,8),y+random_range(8,20),depth-1,obj_sfx_electricity2_combo);
             el2.image_alpha = 0.7;
             el2.image_speed = 2;
             break;
-        case 50:
+        case 6:
             instance_create_depth(x,y,depth-1,obj_scarab_nest_electr);
             break;
-        case 60:
+        case 30:
             t = 0;
             state = 0;
             t_attack = 0;

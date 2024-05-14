@@ -354,7 +354,7 @@ switch(state)
 		}
 		break;
 	#endregion	
-	#region третья фаза
+	#region  третья фаза
 	case 3:
 		t++; 
         if t = 20{         

@@ -81,27 +81,50 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
             switch(index)
             {
                 case 0: 
-                    window_set_fullscreen(true); 
+                    window_set_fullscreen(true);
+                    global.resolution = 0;
+                    global.windowWidth = 1920;
+                    global.windowHeight = 1080;
                     break;
                 case 1: 
                     window_set_fullscreen(false);  
-                    window_set_size(1920, 1080);                    
+                    window_set_size(1920, 1080);  
+                    global.resolution = 1;
+                    global.windowWidth = 1920;
+                    global.windowHeight = 1080;
+                    window_set_position(display_get_width()/2 - 1920/2, display_get_height()/2 - 1080/2);
                     break;
                 case 2: 
                     window_set_fullscreen(false);
-                    window_set_size(1600, 900);     
+                    window_set_size(1600, 900);  
+                    global.resolution = 2;
+                    global.windowWidth = 1600;
+                    global.windowHeight = 900;
+                    window_set_position(display_get_width()/2 - 1600/2, display_get_height()/2 - 900/2);
                     break;
                 case 3:
                     window_set_fullscreen(false);
-                    window_set_size(1366, 768);  
+                    window_set_size(1366, 768); 
+                    global.resolution = 3;
+                    global.windowWidth = 1366;
+                    global.windowHeight = 768;
+                    window_set_position(display_get_width()/2 - 1366/2, display_get_height()/2 - 768/2);
                     break;
                 case 4: 
                     window_set_fullscreen(false);
                     window_set_size(1280, 720);
+                    global.resolution = 4;
+                    global.windowWidth = 1280;
+                    global.windowHeight = 720;
+                    window_set_position(display_get_width()/2 - 1280/2, display_get_height()/2 - 720/2);
                     break;
                 case 5: 
                     window_set_fullscreen(false);
                     window_set_size(800, 600);
+                    global.resolution = 5;
+                    global.windowWidth = 800;
+                    global.windowHeight = 600;
+                    window_set_position(display_get_width()/2 - 800/2, display_get_height()/2 - 600/2);
                     break;
                 case 6:
                     submenu = 1;
@@ -160,7 +183,7 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                             room_goto(VillageSnowFirstLoading); 
                             break;
                         case 4://лава
-                            global.TargetX = 160;
+                            global.TargetX = 512;
                             global.TargetY = 240;
                             global.TargetRoom = Village_lava;  
                             room_goto(VillageLavaFirstLoading); 

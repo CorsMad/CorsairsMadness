@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+draw_set_alpha(main_alpha);
 
 
 draw_sprite(spr_cannon_level_menu,0,camera_get_view_x(view_camera[0]),0);
@@ -21,3 +22,5 @@ draw_text(camera_get_view_x(view_camera[0])+240,161,text_b);
 
 draw_sprite(spr_green_coin_choose,global.secrets_g2b_s,camera_get_view_x(view_camera[0])+128,120);
 draw_sprite(spr_green_coin_choose,global.secrets_g2p_r6,camera_get_view_x(view_camera[0])+352,120);
+
+draw_set_alpha(1)

@@ -1,2 +1,2 @@
 TargetRoom = PL2_r7;
-TargetX = 16;
+TargetX = 480-16;

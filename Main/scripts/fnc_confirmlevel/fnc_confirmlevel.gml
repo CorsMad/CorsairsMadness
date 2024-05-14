@@ -277,8 +277,9 @@ function fnc_confirmlevel1N(argument0)    {
                                 room_goto(J1FirstLoading);
                                 break;
 							case 0.01: // деревня
-								global.TargetX = 32;
+								//global.TargetX = 32;
 					            global.TargetY = 240;
+								global.TargetX = 944;
 					            global.TargetRoom = Village_jungle;
 					            room_goto(VillageJunlgeFirstLoading);
 								break;

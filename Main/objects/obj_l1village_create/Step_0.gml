@@ -8,6 +8,7 @@ if t = 100
     i.state = 0;
 	if global.dia_lavaComt < 1 i.specabilnumber = 3; else i.specabilnumber = 0;           
 	i.isDead = 2.1;
+    i.t_dia = -50;
     instance_create_depth(-16,-16,0,obj_room_transition_to_loading); 
     
     #region Сохранение золота

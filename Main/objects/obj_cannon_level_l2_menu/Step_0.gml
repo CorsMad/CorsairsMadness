@@ -1,3 +1,20 @@
+
+if pick = 0 {
+    main_alpha+=0.05;
+    if main_alpha >= 1 {
+        main_alpha = 1;
+        t_pick++;
+        if t_pick = 50 {
+            pick = 1;
+            alpha = 1;
+        }
+    }
+}
+
+
+
+if pick = 1
+{
 player_input();
 fnc_lng_cannon_choose()
 if key_right_press && state!=1 {fnc_snd_play_over(snd_menu_select);t_alpha = 0;
@@ -45,4 +62,5 @@ t_alpha++;
 if t_alpha = 0   alpha = 1;
 if t_alpha > 50 && t_alpha < 75  alpha -=0.04;
 if t_alpha >= 75 alpha +=0.04;
-if t_alpha = 100 {t_alpha = 0;alpha=1} 
+if t_alpha = 100 {t_alpha = 0;alpha=1}
+}

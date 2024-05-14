@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "Cutscene_intro",
-  "creationCodeFile": "${project_dir}/rooms/Cutscene_intro/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/Cutscene_intro/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

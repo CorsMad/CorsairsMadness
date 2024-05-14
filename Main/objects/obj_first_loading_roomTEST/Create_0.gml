@@ -6,13 +6,13 @@ instance_create_depth(0,0,0,DEBUG);
 
 global.Continue = 0;
 
-global.TargetX      = 0;
-global.TargetY      = 0;
+global.TargetX      = 128;
+global.TargetY      = 240;
 global.TargetRoom   = TESTROOM;
 
-global.fTargetX     = 56;
-global.fTargetY     = 208;
-global.fTargetRoom  = PG1_r7;
+global.fTargetX     = 492;
+global.fTargetY     = 176;
+global.fTargetRoom  = DI_p_r10_end;
 
 
 ////////////////////////////////////////
@@ -27,7 +27,7 @@ global.dia_hpmana_jake   = 0;	 //0
 global.dia_hpmana_pew    = 0;	 //0
 global.dia_hpmana_sully  = 0;	 //0
 global.dia_hpmana_petro  = 0;	 //0
-global.dia_hpmana_bonnie = 0;	 //0
+global.dia_hpmana_bonnie = 1;	 //0
 
 ////////////////////////////////////////
 
@@ -65,11 +65,11 @@ global.language = 0;
 #region ТЕСТ
     
     //0
-    global.dia_jungleChief = 0; 
-    global.dia_desertChief = 0;
-    global.dia_snowChief = 0;
-    global.dia_shadowChief = 0;
-    global.dia_lavaChief = 0;
+    global.dia_jungleChief = 2; 
+    global.dia_desertChief = 2;
+    global.dia_snowChief =   2;
+    global.dia_shadowChief = 2;
+    global.dia_lavaChief =   2;
     
     //0
     global.dia_jungleMerch = 0; 
@@ -91,7 +91,7 @@ global.language = 0;
     global.saved_desert  = 0;  //0
     global.saved_snow    = 0;  //0
     global.saved_shadow  = 0;  //0
-    global.saved_vulcano = 0;  //0
+    global.saved_vulcano = 1;  //0
     
     
     
@@ -215,7 +215,7 @@ global.superattack3 = 1;// Суператаки  max 1  default - 0
 global.PlayerTransition = 0;
 global.mana = 3//3;
 global.mana_max = 5; //7
-global.gold = 655 //global.money_saved;          // 0
+global.gold = 10000 //global.money_saved;          // 0
 global.gold_prelevel = 0;
 global.darkessence = 955//global.darkessence_saved;
 
@@ -284,7 +284,7 @@ global.darkessence_saved = 0;
 
 // Установка секретов
 
-global.secrets = 1;
+global.secrets = 10;
 
 // Установка ограничений игрока
 

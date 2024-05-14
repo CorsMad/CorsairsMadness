@@ -137,7 +137,7 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     window_set_fullscreen(true);
                     global.resolution = 0;
                     global.windowWidth = 1920;
-                    global.windowHeight = 1080;
+                    global.windowHeight = 1080;                    
                     break;
                 case 1: 
                     window_set_fullscreen(false);  
@@ -145,6 +145,7 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     global.resolution = 1;
                     global.windowWidth = 1920;
                     global.windowHeight = 1080;
+                    window_set_position(display_get_width()/2 - global.windowWidth/2, display_get_height()/2 - global.windowHeight/2);
                     break;
                 case 2: 
                     window_set_fullscreen(false);
@@ -152,6 +153,7 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     global.resolution = 2;
                     global.windowWidth = 1600;
                     global.windowHeight = 900;
+                    window_set_position(display_get_width()/2 - global.windowWidth/2, display_get_height()/2 - global.windowHeight/2);
                     break;
                 case 3:
                     window_set_fullscreen(false);
@@ -159,6 +161,7 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     global.resolution = 3;
                     global.windowWidth = 1366;
                     global.windowHeight = 768;
+                    window_set_position(display_get_width()/2 - global.windowWidth/2, display_get_height()/2 - global.windowHeight/2);
                     break;
                 case 4: 
                     window_set_fullscreen(false);
@@ -166,6 +169,7 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     global.resolution = 4;
                     global.windowWidth = 1280;
                     global.windowHeight = 720;
+                    window_set_position(display_get_width()/2 - global.windowWidth/2, display_get_height()/2 - global.windowHeight/2);
                     break;
                 case 5: 
                     window_set_fullscreen(false);
@@ -173,6 +177,7 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     global.resolution = 5;
                     global.windowWidth = 800;
                     global.windowHeight = 600;
+                    window_set_position(display_get_width()/2 - global.windowWidth/2, display_get_height()/2 - global.windowHeight/2);
                     break;
                 case 6:
                     submenu = 1;

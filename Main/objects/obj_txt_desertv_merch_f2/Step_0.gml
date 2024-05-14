@@ -11,7 +11,7 @@ if key_skip
     
     if scr_t > scr_t_max 
     {
-        instance_create_depth(x,y,depth,obj_npc_desertv_merch_choose_leave)      ;
+        instance_create_depth(x,y,depth,obj_npc_junglev_merch_choose_leave)      ;
         instance_destroy();   
     } 
 }
