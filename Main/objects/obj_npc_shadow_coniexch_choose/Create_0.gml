@@ -3,3 +3,5 @@
 fnc_lng_jmerch_coin_exch();
 select = 1;
 
+canControl = 0;
+t_control = 0;

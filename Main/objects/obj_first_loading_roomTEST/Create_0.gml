@@ -6,13 +6,13 @@ instance_create_depth(0,0,0,DEBUG);
 
 global.Continue = 0;
 
-global.TargetX      = 128;
-global.TargetY      = 240;
-global.TargetRoom   = TESTROOM;
+global.TargetX      = 176;
+global.TargetY      = 224;
+global.TargetRoom   = EnduranceSnow;
 
-global.fTargetX     = 492;
-global.fTargetY     = 176;
-global.fTargetRoom  = DI_p_r10_end;
+global.fTargetX     = 432;
+global.fTargetY     = 256;
+global.fTargetRoom  = DI_p_r8;
 
 
 ////////////////////////////////////////
@@ -27,7 +27,7 @@ global.dia_hpmana_jake   = 0;	 //0
 global.dia_hpmana_pew    = 0;	 //0
 global.dia_hpmana_sully  = 0;	 //0
 global.dia_hpmana_petro  = 0;	 //0
-global.dia_hpmana_bonnie = 1;	 //0
+global.dia_hpmana_bonnie = 0;	 //0
 
 ////////////////////////////////////////
 
@@ -42,7 +42,7 @@ global.language = 0;
     global.completed_JF2 = 0;   //0
                                 //0
     global.completed_PD1 = 0;   //0
-    global.completed_PD2 = 0;   //0
+    global.completed_PD2 = 1;   //0
                                 //0
     global.completed_PS1 = 0;   //0
     global.completed_PS2 = 0;   //0
@@ -65,11 +65,11 @@ global.language = 0;
 #region ТЕСТ
     
     //0
-    global.dia_jungleChief = 2; 
-    global.dia_desertChief = 2;
-    global.dia_snowChief =   2;
-    global.dia_shadowChief = 2;
-    global.dia_lavaChief =   2;
+    global.dia_jungleChief = 0; 
+    global.dia_desertChief = 0;
+    global.dia_snowChief =   0;
+    global.dia_shadowChief = 0;
+    global.dia_lavaChief =   0;
     
     //0
     global.dia_jungleMerch = 0; 
@@ -87,10 +87,10 @@ global.language = 0;
      
     //0
     
-    global.saved_jungle  = 0;  //0
-    global.saved_desert  = 0;  //0
-    global.saved_snow    = 0;  //0
-    global.saved_shadow  = 0;  //0
+    global.saved_jungle  = 1;  //0
+    global.saved_desert  = 1;  //0
+    global.saved_snow    = 1;  //0
+    global.saved_shadow  = 1;  //0
     global.saved_vulcano = 1;  //0
     
     
@@ -100,7 +100,7 @@ global.language = 0;
     
     //0
     global.dia_jungleMerch_f_talk  = 0;   //0
-    global.dia_desertMerch_f_talk  = 0;   //0
+    global.dia_desertMerch_f_talk  = 1;   //0
     global.dia_snowMerch_f_talk    = 0;   //0
     global.dia_shadowMerch_f_talk  = 0;   //0
     global.dia_vulcanoMerch_f_talk = 0;   //0
@@ -123,8 +123,8 @@ global.key_green2 = 0;      //0
 global.key_yellow1 = 0;     //0
 global.key_yellow2 = 0;     //0
                             //0
-global.key_blue1 = 0;       //0
-global.key_blue2 = 0;       //0
+global.key_blue1 = 1;       //0
+global.key_blue2 = 1;       //0
                             //0
 global.key_purple1 = 0;     //0
 global.key_purple2 = 0;     //0
@@ -254,9 +254,10 @@ audio_group_load(SFXvolume);
 // Установка разрешения
 
 global.resolution = 0;
-global.windowWidth = 1920;
-global.windowHeight = 1080;
 
+global.windowWidth = 1600;
+global.windowHeight = 900;
+window_set_position(display_get_width()/2 - global.windowWidth/2, display_get_height()/2 - global.windowHeight/2);
 
 // Установка громкости звука
 
@@ -284,7 +285,7 @@ global.darkessence_saved = 0;
 
 // Установка секретов
 
-global.secrets = 10;
+global.secrets = 0;
 
 // Установка ограничений игрока
 

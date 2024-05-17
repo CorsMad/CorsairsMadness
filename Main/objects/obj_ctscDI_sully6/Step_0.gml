@@ -60,6 +60,7 @@ switch(state){
             case 40: 
                 image_index = 2;
                 if instance_exists(obj_ctscDI_sully6_bomb) obj_ctscDI_sully6_bomb.state = 2;
+                obj_ctscDI_merch6.hit_cd = 1;
                 break;
             case 45: image_index = 3;break;
             case 50: image_index = 4;break;

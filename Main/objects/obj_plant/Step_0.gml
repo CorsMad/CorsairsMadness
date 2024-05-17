@@ -62,7 +62,7 @@ if state = 3
 	}
 	if image_index = 4
 	{
-        fnc_snd_play_near_player(snd_plant_shoot);
+        //fnc_snd_play_near_player(snd_plant_shoot);
 		if image_xscale = 1
 		{  
 			instance_create_depth(x-10,y-16,depth,obj_plant_projectile);

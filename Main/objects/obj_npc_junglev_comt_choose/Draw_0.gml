@@ -12,27 +12,28 @@ draw_set_color(c_white);
 
 draw_set_halign(fa_center)
 if global.language = 1 draw_set_font(fnt_pixel_ru) else draw_set_font(fnt_pixel);
-draw_text(camera_get_view_x(view_camera[0])+89,camera_get_view_y(view_camera[0])+18,eng1);
-draw_text(camera_get_view_x(view_camera[0])+199,camera_get_view_y(view_camera[0])+18,eng2);
 
-draw_set_color(c_grey);
-draw_rectangle(camera_get_view_x(view_camera[0])+39,camera_get_view_y(view_camera[0])+11,camera_get_view_x(view_camera[0])+139,camera_get_view_y(view_camera[0])+33,1);   
-draw_rectangle(camera_get_view_x(view_camera[0])+149,camera_get_view_y(view_camera[0])+11,camera_get_view_x(view_camera[0])+249,camera_get_view_y(view_camera[0])+33,1);   
-
-
-
-draw_set_color(c_red);
-switch(select)
-{
-    case 0: 
-        draw_rectangle(camera_get_view_x(view_camera[0])+38,camera_get_view_y(view_camera[0])+10,camera_get_view_x(view_camera[0])+140,camera_get_view_y(view_camera[0])+34,1);   
-        draw_rectangle(camera_get_view_x(view_camera[0])+39,camera_get_view_y(view_camera[0])+11,camera_get_view_x(view_camera[0])+139,camera_get_view_y(view_camera[0])+33,1);   
-        
-        break;
-    case 1: 
-        draw_rectangle(camera_get_view_x(view_camera[0])+148,camera_get_view_y(view_camera[0])+10,camera_get_view_x(view_camera[0])+250,camera_get_view_y(view_camera[0])+34,1);   
-        draw_rectangle(camera_get_view_x(view_camera[0])+149,camera_get_view_y(view_camera[0])+11,camera_get_view_x(view_camera[0])+249,camera_get_view_y(view_camera[0])+33,1);   
-        
-        break;
+if global.language = 1 {
+    draw_text(camera_get_view_x(view_camera[0])+99,camera_get_view_y(view_camera[0])+18,eng1);
+    draw_text(camera_get_view_x(view_camera[0])+209,camera_get_view_y(view_camera[0])+18,eng2);
+} else {
+    draw_text(camera_get_view_x(view_camera[0])+99,camera_get_view_y(view_camera[0])+16,eng1);
+    draw_text(camera_get_view_x(view_camera[0])+209,camera_get_view_y(view_camera[0])+16,eng2);   
 }
 
+draw_set_color(c_grey);  
+
+if canControl = 1{
+
+    switch(select)
+    {
+        case 0:          
+            draw_sprite(spr_ct_choose,0,camera_get_view_x(view_camera[0])+48,camera_get_view_y(view_camera[0])+10);
+            draw_rectangle(camera_get_view_x(view_camera[0])+158+3,camera_get_view_y(view_camera[0])+10,camera_get_view_x(view_camera[0])+260-3,camera_get_view_y(view_camera[0])+34,1);   
+            break;
+        case 1:       
+            draw_sprite(spr_ct_choose,0,camera_get_view_x(view_camera[0])+158,camera_get_view_y(view_camera[0])+10);
+            draw_rectangle(camera_get_view_x(view_camera[0])+48+3,camera_get_view_y(view_camera[0])+10,camera_get_view_x(view_camera[0])+150-3,camera_get_view_y(view_camera[0])+34,1); 
+            break;
+    }
+}

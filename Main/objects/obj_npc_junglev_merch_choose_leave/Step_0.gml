@@ -13,15 +13,17 @@ if canControl = 1
 fnc_lng_jmerch_c();
 player_input();
 
+
 if key_up_press {fnc_snd_play_over(snd_menu_select);select  =0;}
 if key_down_pressed {fnc_snd_play_over(snd_menu_select);select = 1;}
 
 if key_jump || key_attack
 {
-    fnc_snd_play_over(snd_menu_accept);
+    
     switch(select)
     {
         case 1:
+            fnc_snd_play_over(snd_menu_accept);
             if instance_exists(obj_npc_junglev_merch)   obj_npc_junglev_merch.talk = 0;
             if instance_exists(obj_npc_desertv_merch)   obj_npc_desertv_merch.talk = 0;
             if instance_exists(obj_npc_snowv_merch)     obj_npc_snowv_merch.talk = 0;
@@ -53,6 +55,7 @@ if key_jump || key_attack
 
     if skip_t >= skip_t_max {
     	instance_destroy();
+        fnc_snd_play_over(snd_menu_accept);
         if instance_exists(obj_npc_junglev_merch) instance_create_depth(x,y,-100000,obj_txt_junglev_merch_tomap) 	 
         if instance_exists(obj_npc_desertv_merch) instance_create_depth(x,y,-100000,obj_txt_desertv_merch_tomap) 	 
         if instance_exists(obj_npc_snowv_merch)   instance_create_depth(x,y,-100000,obj_txt_snowv_merch_tomap) 	 

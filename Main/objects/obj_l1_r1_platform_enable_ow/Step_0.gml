@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+image_blend = c_red;
 switch(turn)
 {
     case 0:
@@ -27,12 +27,12 @@ switch(turn)
         }
         switch(t)
         {
-            case 200: alpha = 0.5;break;  
-            case 225: alpha = 1;break;  
-            case 250: alpha = 0.5;break;  
-            case 275: alpha = 1;break;  
-            case 300: alpha = 0.5;break;  
-            case 325: alpha = 1;break;  
+            case 200: alpha = 0.5;fnc_snd_play_over(snd_boss2_excl);break;  
+            case 225: alpha = 1;   break;  
+            case 250: alpha = 0.5; break;  
+            case 275: alpha = 1;   break;  
+            case 300: alpha = 0.5; break;  
+            case 325: alpha = 1;   break;  
         }
         
         
@@ -46,6 +46,9 @@ switch(turn)
         } 
         break;
 }
+
+if alpha = 0.5 blend = c_red else blend = c_white;
+
 
 /*
 if turn = 0

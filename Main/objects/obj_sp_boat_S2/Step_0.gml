@@ -160,7 +160,7 @@ switch(state){
 					instance_create_depth(512+10,126,0,obj_boat_stone)
 					instance_create_depth(512+10,151,0,obj_boat_stone)
 					instance_create_depth(512+10,176,0,obj_boat_stone)
-					
+					instance_create_depth(512+10,283,0,obj_boat_stone)
 					instance_create_depth(512,176+40,0,obj_boat_obstacle_small);
 					break;
 			case 100:	var s = instance_create_depth(512,192,0,obj_skeleton_surf_wave_3hp);
@@ -173,6 +173,7 @@ switch(state){
 					instance_create_depth(512+10,208,0,obj_boat_stone)
 					instance_create_depth(512+10,233,0,obj_boat_stone)
 					instance_create_depth(512+10,258,0,obj_boat_stone)
+					instance_create_depth(512+10,283,0,obj_boat_stone)
 					
 					//instance_create_depth(512,176+40,0,obj_boat_obstacle_small);
 					break;
@@ -184,7 +185,7 @@ switch(state){
 					instance_create_depth(512+10,126,0,obj_boat_stone)
 					instance_create_depth(512+10,151,0,obj_boat_stone)
 					instance_create_depth(512+10,176,0,obj_boat_stone)
-					
+					instance_create_depth(512+10,283,0,obj_boat_stone)
 					instance_create_depth(512,176+40,0,obj_boat_obstacle_small);
 					break;
 			case 600:	var s = instance_create_depth(512,192,0,obj_skeleton_surf_wave_3hp);
@@ -408,7 +409,7 @@ if state = 17
     
     if t = 299
     {
-        instance_create_depth(0,0,-1000000,obj_boat_menu_end_s2);   
+        instance_create_depth(0,0,-1000000,obj_boat_menu_end_j2);   
     }
     
  

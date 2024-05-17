@@ -41,7 +41,7 @@ if talk_cr_t > 1
                 
                 instance_create_depth(x,y,-100000,obj_txt_shadowv_comt3); //3 разговор
                 break;
-            case 1: instance_create_depth(x,y,-100000,obj_npc_shadowv_comt_choose);  ; //2 разговор
+            case 1: instance_create_depth(x,y,-100000,obj_npc_junglev_comt_choose);  ; //2 разговор
                 break;
             case 2: instance_create_depth(x,y,-100000,obj_txt_shadowv_comt1); //1 разговор
                 break;

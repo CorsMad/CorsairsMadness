@@ -13,7 +13,7 @@ if key_skip
         global.dia_desertComt = 1;
 		obj_npc_desertv_comt.talk = 0;
         scr_save_progress();
-        instance_create_depth(x,y,-100000,obj_npc_desertv_comt_choose);          
+        instance_create_depth(x,y,-100000,obj_npc_junglev_comt_choose);          
         instance_destroy();   
     } 
 }

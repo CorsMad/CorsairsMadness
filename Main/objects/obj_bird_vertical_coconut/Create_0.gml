@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 spd = 1.5;
-
+fnc_snd_play_near_player(snd_bird_coconut);
 
 if instance_exists(obj_Player) {
     var dir = point_direction(x,y,obj_Player.x,obj_Player.y-16);

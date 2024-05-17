@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+if canControl = 0 {
+    t++;
+    if t = 25 canControl = 1;
+}
+if canControl = 1 {
 player_input();
 
 if key_left_press {fnc_snd_play_over(snd_menu_select);select -= 1;}
@@ -35,4 +39,5 @@ if key_jump || key_attack
             obj_Player.t_dia = -15;
             break;
     }
+}
 }

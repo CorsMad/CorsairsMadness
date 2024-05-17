@@ -20,7 +20,7 @@ draw_text(camera_get_view_x(view_camera[0])+352,78,text_r_g);
 
 draw_text(camera_get_view_x(view_camera[0])+240,161,text_b);
 
-draw_sprite(spr_green_coin_choose,global.secrets_g2b_s,camera_get_view_x(view_camera[0])+128,120);
+draw_sprite(spr_green_coin_choose,global.secrets_g2b_s ,camera_get_view_x(view_camera[0])+128,120);
 draw_sprite(spr_green_coin_choose,global.secrets_g2p_r6,camera_get_view_x(view_camera[0])+352,120);
 
 draw_set_alpha(1)

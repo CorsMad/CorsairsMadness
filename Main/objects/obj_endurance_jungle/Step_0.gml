@@ -382,6 +382,15 @@ if state = 3.1
 if state = 3.2
 {
     t++;
+    
+    if t = 5 {
+        if instance_exists(obj_spikes) instance_destroy(obj_spikes); 
+        for (var i = 0; i < 4; i++) {
+            instance_create_depth(120+i*16,248,0,obj_sfx_dust_expl_small);
+            instance_create_depth(312+i*16,248,0,obj_sfx_dust_expl_small);
+        }
+    }
+    
     if t = 20
     {
         

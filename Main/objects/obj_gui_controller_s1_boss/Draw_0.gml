@@ -192,6 +192,7 @@ if instance_exists(obj_Player)
 	
 	
 	draw_set_font(fnt_pixel);
+    
     draw_text_colour(camera_get_view_x(view_camera[0])+280,camera_get_view_y(view_camera[0])+8,"boss hp",c_white,c_white,c_white,c_white,1);
 	
 #endregion

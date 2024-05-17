@@ -16,3 +16,9 @@ text_b = "back";
 pick = 0;
 main_alpha = 0;
 t_pick = 0;
+
+
+skip = 0;
+skip_t = 0;
+skip_t_max = 100;
+alpha_skip = 0;

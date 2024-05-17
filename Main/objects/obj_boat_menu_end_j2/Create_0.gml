@@ -4,6 +4,14 @@ alpha = 1;
 t_alpha = 0;
 state= 0;
 fnc_lng_boat_choose();
-#region text
 
-#endregion
+canControl = 0;
+t_control = 0;
+alpha_main = 0;
+
+skip = 0;
+skip_t = 0;
+skip_t_max = 100;
+alpha_skip = 0;
+
+current_room = room_get_name(room);

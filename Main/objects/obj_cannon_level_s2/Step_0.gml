@@ -39,7 +39,7 @@ if talk_cr_t!= 0
     talk_cr_t++;
     if talk_cr_t = 10
     {
-        instance_create_depth(0,0,-10000,obj_cannon_level_s2_menu);
+        instance_create_depth(0,0,-10000,obj_cannon_level_j2_menu);
         talk_cr_t = 0;   
     }
 }

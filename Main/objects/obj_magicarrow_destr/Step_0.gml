@@ -3,5 +3,6 @@
 var def = instance_place(x,y,obj_abil_arbalet_proj)
     if def!= noone
     {
+        fnc_snd_play_onetime(snd_enemy_sander_el);
         def.isDead = 1;
     }

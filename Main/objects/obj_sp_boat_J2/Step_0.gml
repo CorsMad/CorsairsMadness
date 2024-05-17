@@ -412,8 +412,8 @@ if state = 9
 
 if state = 10
 {
-    if t < 2100 t++;
-    if t = 2100 && !instance_exists(obj_skeleton_surf_archer_pointing)
+    if t < 1100 t++;
+    if t = 1100 && !instance_exists(obj_skeleton_surf_archer_pointing)
     && !instance_exists(obj_skeleton_surf_pointing_2hp)
     && !instance_exists(obj_skeleton_surf_1hp)
     && !instance_exists(obj_skeleton_surf_archer)
@@ -425,58 +425,9 @@ if state = 10
     
     switch(t)
     {
-        case 1:     instance_create_depth(512,208,depth,obj_powerup_barrel_cannon); break;   
-        case 100:   instance_create_depth(732,208,depth,obj_skeleton_surf_wave_2hp);break;
-        case 125:   var c14 = instance_create_depth(870,208,depth,obj_skeleton_surf_wave_3hp);
-                    c14.drop10 = 1;
-                    break;       
-        case 150:   var c15 = instance_create_depth(1050,208,depth,obj_skeleton_surf_wave_3hp);
-                    c15.drop10 = 1;
-                    break;  
-        case 175:   var c16 = instance_create_depth(1160,220,depth,obj_skeleton_surf_wave_3hp);
-                    c16.drop10 = 1;
-                    break; 
-        case 200:   var c17 = instance_create_depth(1400,220,depth,obj_skeleton_surf_wave_3hp);
-                    c17.drop10 = 1;
-                    break;
-
-         
-        case 500:   instance_create_depth(576,208,depth,obj_boat_stone);
-                    instance_create_depth(608,176,depth,obj_boat_stone);        
-                    instance_create_depth(640,272,depth,obj_boat_stone);
-                    instance_create_depth(672,224,depth,obj_boat_stone);
-                    instance_create_depth(944,128,depth,obj_boat_stone);
-                    instance_create_depth(976,176,depth,obj_boat_stone);
-                    instance_create_depth(1040,160,depth,obj_boat_stone);
-                    instance_create_depth(1184,256,depth,obj_boat_stone);
-                    instance_create_depth(1216,224,depth,obj_boat_stone);
+        case 1:     instance_create_depth(512,208,depth,obj_powerup_barrel_cannon); break;        
                     
-                    instance_create_depth(768,144,depth,obj_boat_mine);
-                    instance_create_depth(896,192,depth,obj_boat_mine);
-                    
-                    instance_create_depth(704,160,depth,obj_boat_algae_fast);
-                    instance_create_depth(720,192,depth,obj_boat_algae_fast);
-                    instance_create_depth(736,176,depth,obj_boat_algae_fast);
-                    instance_create_depth(736,208,depth,obj_boat_algae_fast);
-                    instance_create_depth(752,192,depth,obj_boat_algae_fast);
-                    instance_create_depth(768,176,depth,obj_boat_algae_fast);
-                    instance_create_depth(784,160,depth,obj_boat_algae_fast);
-                    instance_create_depth(784,208,depth,obj_boat_algae_fast);
-                    instance_create_depth(800,192,depth,obj_boat_algae_fast);
-                    instance_create_depth(800,224,depth,obj_boat_algae_fast);
-                    instance_create_depth(816,208,depth,obj_boat_algae_fast);
-                    instance_create_depth(1072,208,depth,obj_boat_algae_fast);
-                    instance_create_depth(1088,176,depth,obj_boat_algae_fast);
-                    instance_create_depth(1104,192,depth,obj_boat_algae_fast);
-                    instance_create_depth(1120,176,depth,obj_boat_algae_fast);
-                    instance_create_depth(1136,160,depth,obj_boat_algae_fast);
-                    instance_create_depth(1136,208,depth,obj_boat_algae_fast);
-                    instance_create_depth(1152,192,depth,obj_boat_algae_fast);
-                    
-                    instance_create_depth(975,192+40,depth,obj_boat_obstacle_small);
-                    break;
-                    
-        case 1400:  instance_create_depth(496,144,depth,obj_boat_algae_fast); //1400
+        case 400:  instance_create_depth(496,144,depth,obj_boat_algae_fast); //1400
                     instance_create_depth(512,192,depth,obj_boat_algae_fast);
        
                     instance_create_depth(512,256,depth,obj_boat_algae_fast);       
@@ -498,7 +449,7 @@ if state = 10
                     instance_create_depth(768,176,depth,obj_boat_algae_fast);       
                     instance_create_depth(800,192,depth,obj_boat_algae_fast);       
                     break;
-        case 1600:   
+        case 600:   
                     var b6 = instance_create_depth(512,208,depth,obj_skeleton_surf_pointing_2hp);
                     b6.drop5 = 1;
                     var a11 = instance_create_depth(512,192,depth,obj_skeleton_surf_1hp);
@@ -512,7 +463,7 @@ if state = 10
                     instance_create_depth(832,192,depth,obj_skeleton_surf_1hp);
                     instance_create_depth(896,208,depth,obj_skeleton_surf_1hp);
 
-        case 1650:  var c18 = instance_create_depth(496,160,depth,obj_skeleton_surf_archer_pointing);
+        case 650:  var c18 = instance_create_depth(496,160,depth,obj_skeleton_surf_archer_pointing);
                     c18.drop10 = 1;    
                     instance_create_depth(512,208,depth,obj_skeleton_surf_pointing_2hp);
                     var a14 = instance_create_depth(512,192,depth,obj_skeleton_surf_1hp);
@@ -523,15 +474,15 @@ if state = 10
         
         
                     break;
-        case 1750:  var b7 = instance_create_depth(512,176,depth,obj_skeleton_surf_pointing_2hp);
+        case 750:  var b7 = instance_create_depth(512,176,depth,obj_skeleton_surf_pointing_2hp);
                     b7.drop5 = 1;
                     break;
-        case 1800:  var c19 = instance_create_depth(496,224,depth,obj_skeleton_surf_archer);
+        case 800:  var c19 = instance_create_depth(496,224,depth,obj_skeleton_surf_archer);
                     c19.drop10 = 1;
                     break;
-        case 1900:  instance_create_depth(512,240,depth,obj_skeleton_surf_pointing_2hp);break;
-        case 1950:  instance_create_depth(496,176,depth,obj_skeleton_surf_archer_pointing);break;
-        case 2050:  var c20 = instance_create_depth(512,208,depth,obj_skeleton_surf_pointing_2hp);
+        case 900:  instance_create_depth(512,240,depth,obj_skeleton_surf_pointing_2hp);break;
+        case 950:  instance_create_depth(496,176,depth,obj_skeleton_surf_archer_pointing);break;
+        case 1050:  var c20 = instance_create_depth(512,208,depth,obj_skeleton_surf_pointing_2hp);
                     c20.drop10 = 1;
                     break;
     }

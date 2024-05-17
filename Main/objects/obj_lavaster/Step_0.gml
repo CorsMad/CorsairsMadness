@@ -79,7 +79,7 @@ if state = 3
     
     if place_meeting(x,y,obj_block)
     {
-        instance_destroy(); 
+        instance_destroy();         
         instance_create_depth(x,y,depth-1,obj_sfx_dust_expl_small)
         var d1 = instance_create_depth(x,y,depth,obj_lavaster_death);
         var d2 = instance_create_depth(x,y,depth,obj_lavaster_death);

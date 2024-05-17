@@ -19,7 +19,7 @@ draw_text(352+896-480,78,text_r_g);
 
 draw_text(240+896-480,161,text_b);
 
-draw_sprite(spr_green_coin_choose,global.secrets_s2p_s,896-480+128,120);
+draw_sprite(spr_green_coin_choose,global.secrets_s2p_s ,896-480+128,120);
 draw_sprite(spr_green_coin_choose,global.secrets_s2b_r5,896-480+352,120);
 
 draw_set_alpha(1)

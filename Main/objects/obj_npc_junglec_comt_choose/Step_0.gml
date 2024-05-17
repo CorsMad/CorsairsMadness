@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+fnc_lng_jcv_cmt_c();
 player_input();
 
 if key_left_press {fnc_snd_play_over(snd_menu_select);select = 0;}

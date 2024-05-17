@@ -92,7 +92,7 @@ if state = 17
     
     if t = 299
     {
-        instance_create_depth(0,0,-1000000,obj_boat_menu_end_l2);   
+        instance_create_depth(0,0,-1000000,obj_boat_menu_end_j2);   
     }
     
  

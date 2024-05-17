@@ -5,3 +5,4 @@ isOn = 0;
 alpha = 0;
 turn = 0;
 t = 0;
+blend = c_white;

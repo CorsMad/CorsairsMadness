@@ -1,4 +1,4 @@
-
+fnc_lng_cannon_choose()
 if pick = 0 {
     main_alpha+=0.05;
     if main_alpha >= 1 {
@@ -16,7 +16,7 @@ if pick = 0 {
 if pick = 1
 {
 player_input();
-fnc_lng_cannon_choose()
+
 if key_right_press && state!=1 {fnc_snd_play_over(snd_menu_select);t_alpha = 0;
         alpha = 1;state = 1}
 		
