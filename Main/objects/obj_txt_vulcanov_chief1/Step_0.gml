@@ -8,7 +8,7 @@ scr_skip_texticon_blink();
 
 if key_skip
 {
-    if typist.get_state() != 1 {typist.skip();} else scr_t++;
+    scr_text_skip();
     
     if scr_t > scr_t_max 
     {
@@ -20,12 +20,4 @@ if key_skip
     } 
 }
 
-#endregion
-/*
-#region иконка
-if text = text1 || text = text3 { 
-    if obj_Player.x > obj_npc_vulcanov_chief.x obj_Player.image_xscale = -1 else obj_Player.image_xscale = 1
-} else {  
-    if obj_Player.x > obj_npc_lavav_merch.x obj_Player.image_xscale = -1 else obj_Player.image_xscale = 1
-}
 #endregion

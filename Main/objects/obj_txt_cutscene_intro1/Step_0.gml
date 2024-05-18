@@ -8,7 +8,7 @@ scr_skip_texticon_blink();
 
 if key_skip
 {
-    if typist.get_state() != 1 {typist.skip();} else scr_t++;
+    scr_text_skip();
     
     if scr_t > 4 
     {

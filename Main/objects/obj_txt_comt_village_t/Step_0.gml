@@ -4,7 +4,7 @@ player_input()
 
 if key_attack
 {
-    if typist.get_state() != 1 {typist.skip();} else scr_t++;
+    scr_text_skip();
     
     // выход
     

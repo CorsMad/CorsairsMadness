@@ -7,7 +7,7 @@ scr_txt_vulcano_merch2();
  
 if key_skip
 {
-    if typist.get_state() != 1 {typist.skip();} else scr_t++;
+    scr_text_skip();
     
     if scr_t > scr_t_max 
     {

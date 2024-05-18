@@ -39,6 +39,10 @@ function scr_skip_texticon_blink()
         iconspdt=0;
     }
     if iconspd>1 iconspd = 0;   
+    
+    if typist.get_state() = 1 {
+    if delay_t<delay_t_max delay_t++;
+} 
 }
 
 function scr_text_starter(_scr_t_max,_typist_spd,_snd)
@@ -50,7 +54,8 @@ function scr_text_starter(_scr_t_max,_typist_spd,_snd)
     typist = scribble_typist();
     typist.in(_typist_spd, 0); // скорость печатания и проявления
     
-    
+    delay_t = 0;
+    delay_t_max = 15;
     if _snd!=undefined typist.sound(_snd,1,1,1);
     //if _snd!=undefined typist.sound_per_char(_snd,1,1);
     
@@ -196,4 +201,35 @@ function scr_text_graphics(){
     {
         draw_sprite(spr_text_bord,0,camera_get_view_x(view_camera[0])+kl,camera_get_view_y(view_camera[0])+81);   
     }
+    if (typist.get_state() = 1 && delay_t = delay_t_max)draw_sprite(spr_text_icon_button_k,iconspd,camera_get_view_x(view_camera[0])+480-12,camera_get_view_y(view_camera[0])+64-10)
+}
+    
+function scr_text_skip(){
+    if typist.get_state() != 1 {typist.skip();} else {
+    if delay_t = delay_t_max{
+        scr_t++;
+        delay_t=0;
+    }
+    }
+}
+    
+function scr_text_starter_old(_scr_t_max,_typist_spd,_snd)
+{
+    text = "";
+    scr_t = 0;
+    scr_t_max = _scr_t_max; //последняя строка
+    
+    typist = scribble_typist();
+    typist.in(_typist_spd, 0); // скорость печатания и проявления
+    
+    
+    if _snd!=undefined typist.sound(_snd,1,1,1);
+    //if _snd!=undefined typist.sound_per_char(_snd,1,1);
+    
+    text_width = 400;
+    text_x = camera_get_view_x(view_camera[0])+40;
+    text_y = camera_get_view_y(view_camera[0])+8;
+
+    iconspd = 0;
+    iconspdt= 0;   
 }

@@ -8,9 +8,9 @@ scr_skip_texticon_blink();
 
 if key_skip
 {
-    if typist.get_state() != 1 {typist.skip();} else scr_t++;
+    scr_text_skip();
     
-    if scr_t > scr_t_max 
+    if scr_t > scr_t_max
     {
         obj_npc_junglev_chief.talk = 0;
         obj_Player.isDead = 2.1;

@@ -5,7 +5,7 @@ scr_skip_texticon_blink();
 
 if key_skip
 {
-    if typist.get_state() != 1 {typist.skip();} else scr_t++;
+    scr_text_skip();
     
     if scr_t > scr_t_max 
     {                
@@ -13,17 +13,4 @@ if key_skip
         instance_create_depth(x,y,-100000,obj_npc_junglec_comt_choose);         
         instance_destroy();   
     } 
-}
-/*
-if key_attack
-{
-    if typist.get_state() != 1 {typist.skip();} else scr_t++;
-    
-    // выход
-    
-    if scr_t > 0 
-    {       
-        instance_create_depth(x,y,-100000,obj_npc_junglec_comt_choose);
-        instance_destroy();
-    }
 }
