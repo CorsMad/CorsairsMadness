@@ -18,6 +18,7 @@ if audio_group_is_loaded(MusicVolume) && audio_group_is_loaded(SFXvolume) && t1 
     
     
     {
+        fnc_msc_stop_play();
         room_goto(LogoTest);
         //room_goto(MainMenu);   
     }

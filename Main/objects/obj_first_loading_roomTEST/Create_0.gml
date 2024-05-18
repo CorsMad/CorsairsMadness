@@ -6,9 +6,9 @@ instance_create_depth(0,0,0,DEBUG);
 
 global.Continue = 0;
 
-global.TargetX      = 176;
-global.TargetY      = 224;
-global.TargetRoom   = EnduranceSnow;
+global.TargetX      = 128;
+global.TargetY      = 784;
+global.TargetRoom   = TESTROOM;
 
 global.fTargetX     = 432;
 global.fTargetY     = 256;
@@ -262,9 +262,9 @@ window_set_position(display_get_width()/2 - global.windowWidth/2, display_get_he
 // Установка громкости звука
 
 
-global.MSCvolume =0.0;// 0.5; //0.5
+global.MSCvolume =0.5;// 0.5; //0.5
 global.MSCvolume_max = global.MSCvolume;
-global.SFXvolume = 0.0// 0.5; //0.5
+global.SFXvolume = 0.5// 0.5; //0.5
 
 audio_group_set_gain(MusicVolume,global.MSCvolume,0);
 audio_group_set_gain(SFXvolume,global.SFXvolume,0);

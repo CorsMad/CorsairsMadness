@@ -297,8 +297,15 @@ switch(state){
 #region смерть
 if enemy_hp<=0{
 	instance_destroy();
-	obj_bossmerch_phase2.state = 1;
-	obj_bossmerch_phase2.t = 0;
+	if instance_exists(obj_bossmerch_phase2_hand_r){
+        if obj_bossmerch_phase2_hand_r.state < 1 {
+            obj_bossmerch_phase2.state = 1;
+	        obj_bossmerch_phase2.t = 0;   
+        }
+    } else {
+        obj_bossmerch_phase2.state = 1;
+	    obj_bossmerch_phase2.t = 0;   
+    }
 	var death =  instance_create_depth(x,y,depth,obj_bossmerch_phase2_hand_l_d);
     death.sprite_index = sprite_index;
     if x < room_width/2 death.hspd = -2 else death.hspd = 2;

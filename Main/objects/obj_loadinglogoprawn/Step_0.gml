@@ -19,6 +19,7 @@ switch(state){
 			case 125: image_index = 9;break;
 			case 130: image_index = 10;
 				instance_create_depth(x,y+80,depth,obj_loadinglogoprawntxt);
+                fnc_msc_play(msc_prawn);
 				state = 1;
 				break;
 		}
@@ -27,6 +28,7 @@ switch(state){
 			image_alpha-=0.1;
 			if image_alpha<=0{
 				room_goto(LogoTest)	
+                fnc_msc_stop_play();
 			}
 			break;
 }

@@ -10,6 +10,7 @@ switch(state){
         if t = 50{
             t = 0;
             state = 0;
+            fnc_snd_play_onetime(msc_madnetic_1);
         }
         break;
 	case 0:
@@ -17,7 +18,7 @@ switch(state){
 		t++;
 		if ((t mod 3 = 0) && im_index<21) im_index +=1;
 		//if t  = 80 {state = 1;t = 0;}
-		if t  = 60 {state = 1;t = 0;}
+		if t  = 60 {state = 1;t = 0;fnc_snd_play_onetime(msc_madnetic_2)}
 		break;
 	case 1:
 		if offset_x!=0 offset_x=lerp(offset_x,0,0.01);
@@ -47,22 +48,26 @@ switch(state){
             sprite = 1;
             t = 0;
             
-            #region parts 216 232
+            
             for (var k = 0;k < 9 ; k++;) {
                 for (var i = 0; i < 11; i++;) {
                     instance_create_depth(160+i*16,64+k*16,depth+1,obj_logo_part)
                 }
             }
             
-            
-            
-            #endregion
         }
 		t++;
 		break;
     case 2://0.058
+        t++;
+        if t = 10 {
+            fnc_snd_play_onetime(msc_madnetic_3);
+            fnc_snd_play_onetime(msc_madnetic_4);   
+        }
         if add > 0 {add-=0.01; scale2=lerp(scale2,0.085,0.1);offset_y=lerp(offset_y,-16,0.1)} else {
             state = 3;
+            t = 0;
+            
         }
         break;
     case 3:
@@ -97,7 +102,11 @@ if skip_t > 30 {
     gamepad_button_check_pressed(0,gp_face2) || gamepad_button_check_pressed(0,gp_face3) ||
     gamepad_button_check_pressed(0,gp_face4) || gamepad_button_check_pressed(0,gp_start) ||
     gamepad_button_check_pressed(0,gp_select) 	 {
-		room_goto(LogoManydev);	
+		room_goto(LogoManydev);
+        audio_stop_sound(msc_madnetic_1);
+        audio_stop_sound(msc_madnetic_2);
+        audio_stop_sound(msc_madnetic_3);
+        audio_stop_sound(msc_madnetic_4);
 	}
 }
 #endregion

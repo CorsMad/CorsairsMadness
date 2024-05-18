@@ -8,6 +8,7 @@ if t_skip > 30 {
     gamepad_button_check_pressed(0,gp_face4) || gamepad_button_check_pressed(0,gp_start) ||
     gamepad_button_check_pressed(0,gp_select) {
 		room_goto(PreMainMenu);
+        audio_stop_sound(msc_manydev1);
 	}
 }
 
