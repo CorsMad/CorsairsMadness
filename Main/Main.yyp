@@ -6740,6 +6740,7 @@
     {"id":{"name":"JP2FirstLoading","path":"rooms/JP2FirstLoading/JP2FirstLoading.yy",},},
     {"id":{"name":"obj_secret_d1_s1","path":"objects/obj_secret_d1_s1/obj_secret_d1_s1.yy",},},
     {"id":{"name":"obj_cutscene_DI_player_p_r1_presave","path":"objects/obj_cutscene_DI_player_p_r1_presave/obj_cutscene_DI_player_p_r1_presave.yy",},},
+    {"id":{"name":"snd_skel_throw","path":"sounds/snd_skel_throw/snd_skel_throw.yy",},},
     {"id":{"name":"obj_tp_projectile","path":"objects/obj_tp_projectile/obj_tp_projectile.yy",},},
     {"id":{"name":"obj_chest_p_r10","path":"objects/obj_chest_p_r10/obj_chest_p_r10.yy",},},
     {"id":{"name":"spr_diagonal_slime_wait","path":"sprites/spr_diagonal_slime_wait/spr_diagonal_slime_wait.yy",},},

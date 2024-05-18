@@ -71,14 +71,17 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
             switch(index)
             {
                 case 0:
-                    if global.Continue = 1                  
+                    if file_exists(_path) = 1                  
                     {
                         room_goto(RoomContinue);
                         fnc_msc_stop_play();
-                    }
+                    } else {
+						audio_stop_sound(snd_menu_accept);
+						fnc_snd_play_over(snd_coin_bad);
+					}
                     break;
                 case 1: 
-                    if global.Continue = 1
+                    if file_exists(_path) = 1
                     {
                         submenu = 5;
                         index = 1;                        

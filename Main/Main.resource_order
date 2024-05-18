@@ -5669,6 +5669,7 @@
     {"name":"spr_sand_fall_creator_mask","order":9,"path":"sprites/spr_sand_fall_creator_mask/spr_sand_fall_creator_mask.yy",},
     {"name":"spr_boss_lp_bullet_hit_sfx_small","order":13,"path":"sprites/spr_boss_lp_bullet_hit_sfx_small/spr_boss_lp_bullet_hit_sfx_small.yy",},
     {"name":"JP2FirstLoading","order":16,"path":"rooms/JP2FirstLoading/JP2FirstLoading.yy",},
+    {"name":"snd_skel_throw","order":1,"path":"sounds/snd_skel_throw/snd_skel_throw.yy",},
     {"name":"obj_tp_projectile","order":2,"path":"objects/obj_tp_projectile/obj_tp_projectile.yy",},
     {"name":"obj_chest_p_r10","order":10,"path":"objects/obj_chest_p_r10/obj_chest_p_r10.yy",},
     {"name":"spr_diagonal_slime_wait","order":1,"path":"sprites/spr_diagonal_slime_wait/spr_diagonal_slime_wait.yy",},

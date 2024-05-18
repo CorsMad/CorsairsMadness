@@ -22,3 +22,4 @@ t=0;
 dis = point_distance(x,y,obj_Player.x,obj_Player.y);
 */
 
+fnc_snd_play_near_player(snd_skel_throw);

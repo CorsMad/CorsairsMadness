@@ -4,7 +4,7 @@
 function scr_save_progress(){
 var _saveStorage = {
     
-    Continue                    : global.Continue      ,
+    //Continue                    : global.Continue      ,
     
 	TargetRoom                  : global.TargetRoom	   ,
 	TargetX                     : global.TargetX	   ,
@@ -401,7 +401,7 @@ if file_exists(_path) {
 	show_debug_message("Decoded" + _string);
 	var _loadStorage = json_parse(_string);
 	
-            global.Continue       =  _loadStorage.Continue;
+            //global.Continue       =  _loadStorage.Continue;
             
 			global.TargetRoom	  =  _loadStorage.TargetRoom  ;
 			global.TargetX   	  =  _loadStorage.TargetX     ;

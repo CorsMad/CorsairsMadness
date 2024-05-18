@@ -444,5 +444,5 @@ global.fTargetRoom = T2_r1;
 
 global.Continue = 0;
 
-scr_save_progress();
+//scr_save_progress();
 

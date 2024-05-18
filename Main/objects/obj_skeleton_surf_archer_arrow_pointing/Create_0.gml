@@ -7,3 +7,4 @@ if instance_exists(obj_Player_boat) {
     hspeed = lengthdir_x(spd,dir);
     vspeed = lengthdir_y(spd,dir);
 }
+fnc_snd_play_near_player(snd_skel_throw);
