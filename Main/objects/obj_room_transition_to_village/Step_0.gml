@@ -15,7 +15,7 @@ if place_meeting(x,y,obj_cutscene_JVArrive_player_draw)
     //achiev
     
     fnc_achiev_get("ACH2");
-    
+    fnc_achiev_all();
     instance_destroy();
     
 }

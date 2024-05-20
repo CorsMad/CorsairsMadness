@@ -278,6 +278,7 @@ if buy_confirm
 	                                    global.shop_axe_can_upgrade1 = 1;
 	                                    global.gold -= 250;
                                         fnc_achiev_get("ACH28");
+										fnc_achiev_all();
 	                                }
 	                                break;
 	                            case 1: // Покупка якорь 2 ур
@@ -315,6 +316,7 @@ if buy_confirm
 	                                    global.shop_bomb_can_upgrade1 = 1;
 	                                    global.gold -= 250;
                                         fnc_achiev_get("ACH28");
+										fnc_achiev_all();
 	                                }
 	                                break;
 	                            case 1: // Покупка Бомбы 2 ур
@@ -352,6 +354,7 @@ if buy_confirm
 	                                    global.shop_sparkle_can_upgrade1 = 1;
 	                                    global.gold -= 250;
                                         fnc_achiev_get("ACH28");
+										fnc_achiev_all();
 	                                }
 	                                break;
 	                            case 1: // Покупка sparkle 2 ур
@@ -389,6 +392,7 @@ if buy_confirm
 	                                    global.shop_eparrot_can_upgrade1 = 1;
 	                                    global.gold -= 250;
                                         fnc_achiev_get("ACH28");
+										fnc_achiev_all();
 	                                }
 	                                break;
 	                            case 1: // Покупка EPARROT 2 ур

@@ -143,6 +143,7 @@ if t_madness > 30
     state = 3;
     
     fnc_achiev_get("ACH25");
+	fnc_achiev_all();
 }
 
 if (!place_meeting(x,y,obj_abil_flute_aoe) && t_madness > 0) t_madness--;

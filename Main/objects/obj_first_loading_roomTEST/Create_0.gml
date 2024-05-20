@@ -6,13 +6,13 @@ instance_create_depth(0,0,0,DEBUG);
 
 global.Continue = 0;
 
-global.TargetX      = 128;
-global.TargetY      = 240;
-global.TargetRoom   = TESTROOM;
+global.TargetX      = 32;
+global.TargetY      = 112;
+global.TargetRoom   = DI_h_r10;
 
-global.fTargetX     = 432;
-global.fTargetY     = 256;
-global.fTargetRoom  = DI_p_r8;
+global.fTargetX     = 416;
+global.fTargetY     = 192;
+global.fTargetRoom  = DI_p_r10;
 
 
 ////////////////////////////////////////
@@ -62,7 +62,7 @@ global.language = 0;
         
     #endregion
     
-#region ТЕСТ
+#region ТЕСТ-
     
     //0
     global.dia_jungleChief = 0; 

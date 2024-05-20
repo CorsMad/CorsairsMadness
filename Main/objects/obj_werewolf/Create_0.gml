@@ -9,6 +9,12 @@ states
 2 - получение урона/отскок
 3 - бешенство
 */
+
+if instance_exists(obj_Player){
+	if obj_Player.x < x image_xscale = 1 else image_xscale = -1;	
+}
+
+
 turn_t = 0;
 turn = 0;
 state = 0;

@@ -17,6 +17,7 @@ if key_skip
         global.dia_dnpc = 2;
         scr_save_progress();
         fnc_achiev_get("ACH31");
+		fnc_achiev_all();
         var g1 = instance_create_depth(x,y-16,-1,obj_money10);
         var g2 = instance_create_depth(x,y-16,-1,obj_money10);
         var g3 = instance_create_depth(x,y-16,-1,obj_money10);

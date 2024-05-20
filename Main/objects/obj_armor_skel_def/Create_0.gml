@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 fnc_achiev_get("ACH27");
+fnc_achiev_all();
 
 t = 0;
 state = 0;

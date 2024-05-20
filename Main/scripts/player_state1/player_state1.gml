@@ -1426,7 +1426,7 @@ if superattack >= superattack_max{
     #endregion
     
 	#region horizontal t1
-	if  global.superattack1 = 1 && key_abil && (key_right || key_left){
+	if  global.superattack1 = 1 && key_abil && (key_right || key_left) && !key_item {
         hooking_timer = 0;
         hooking_timer_count = 0;
         isRecoil = 0;
@@ -1467,7 +1467,7 @@ if superattack >= superattack_max{
 	#endregion	
 	
 	#region horizontal t2
-	if  global.superattack1 = 2 && key_abil && (key_right || key_left)  {// && !instance_exists(obj_teleport_cloud) {
+	if  global.superattack1 = 2 && key_abil && (key_right || key_left) && !key_item  {// && !instance_exists(obj_teleport_cloud) {
         
         
         hooking_timer = 0;
@@ -1520,7 +1520,7 @@ if superattack >= superattack_max{
 	#endregion	
 	
 	#region AOE t
-	if  global.superattack2 = 1 && key_abil && key_down {
+	if  global.superattack2 = 1 && key_abil && key_down && !key_item{
         hooking_timer = 0;
         hooking_timer_count = 0;
         isRecoil = 0;
@@ -1558,7 +1558,7 @@ if superattack >= superattack_max{
 	#endregion	
 	
 	#region homing
-	if  global.superattack3 = 1 && key_abil && key_up {
+	if  global.superattack3 = 1 && key_abil && key_up && !key_item {
         hooking_timer = 0;
         hooking_timer_count = 0;
         isRecoil = 0;

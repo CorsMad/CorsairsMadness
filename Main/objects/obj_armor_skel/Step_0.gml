@@ -462,6 +462,7 @@ if enemy_hp < 1
     //achiev
     if count_attack >=12 && count_boomer = 0 {
         fnc_achiev_get("ACH26");
+		fnc_achiev_all();
     }
     
     instance_destroy();   

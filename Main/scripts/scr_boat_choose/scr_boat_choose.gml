@@ -54,6 +54,7 @@ function scr_cannon_choose(_cannon_name,_state,_targetroom1,_targetx1,_targety1,
                 _cannon_name.TargetX = _targetx1;
                 _cannon_name.TargetY = _targety1;
                 fnc_achiev_get("ACH29");
+				fnc_achiev_all();
                 break;
             case 1:
                 _cannon_name.pjump = 1;
@@ -61,6 +62,7 @@ function scr_cannon_choose(_cannon_name,_state,_targetroom1,_targetx1,_targety1,
                 _cannon_name.TargetX = _targetx2;
                 _cannon_name.TargetY = _targety2;
                 fnc_achiev_get("ACH29"); 
+				fnc_achiev_all();
                 break;
         }   
         fnc_snd_play_over(snd_menu_accept);

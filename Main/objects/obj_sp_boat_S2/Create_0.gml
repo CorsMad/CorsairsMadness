@@ -14,6 +14,7 @@ switch(global.boatCheckpoint)  // Чекпоинт
     case 2: state = 8;break;
 }
 
+
 // Музыка
 //instance_create_depth(0,0,0,obj_music_controller_boat);
 // Золото

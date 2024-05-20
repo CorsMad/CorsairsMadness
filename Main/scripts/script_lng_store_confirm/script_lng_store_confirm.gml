@@ -1000,8 +1000,8 @@ function fnc_lng_store(){
             #region eng
             
             confirm = "確認?";
-            confirmy = "sim";
-            confirmn = "não";
+            confirmy = "イエス";
+            confirmn = "いいえ";
 		
             tipWS = "選択:";
 			tipBS = "武器切り替え:"; 

@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 fnc_achiev_get("ACH21");
+fnc_achiev_all();
 fnc_msc_stop_play_slow();                                  
 global.TargetX = 512;
 global.TargetY = 240;

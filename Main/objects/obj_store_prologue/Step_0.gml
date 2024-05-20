@@ -294,6 +294,7 @@ if buy_confirm
 	                                    global.shop_axe_can_upgrade1 = 1;
 	                                    global.gold -= 250;
                                         fnc_achiev_get("ACH28");
+										fnc_achiev_all();
 	                                }
 	                                break;
 	                            case 1: // Покупка якорь 2 ур
@@ -331,6 +332,7 @@ if buy_confirm
 	                                    global.shop_bomb_can_upgrade1 = 1;
 	                                    global.gold -= 250;
                                         fnc_achiev_get("ACH28");
+										fnc_achiev_all();
 	                                }
 	                                break;
 	                            case 1: // Покупка Бомбы 2 ур
@@ -405,6 +407,7 @@ if buy_confirm
 	                                    global.shop_eparrot_can_upgrade1 = 1;
 	                                    global.gold -= 250;
                                         fnc_achiev_get("ACH28");
+										fnc_achiev_all();
 	                                }
 	                                break;
 	                            case 1: // Покупка EPARROT 2 ур
@@ -444,6 +447,7 @@ if buy_confirm
     	                        global.superattack1 = 1;
     	                        global.darkessence -= 1000;
                                 fnc_achiev_get("ACH28");
+								fnc_achiev_all();
                             }
                             break;
                         case 1: // Покупка супер гориз2
@@ -465,6 +469,7 @@ if buy_confirm
     	                        global.superattack2 = 1;
     	                        global.darkessence -= 3000;
                                 fnc_achiev_get("ACH28");
+								fnc_achiev_all();
                                 fnc_achiev_store_possessed();
                                 fnc_achiev_store_all();
                             }
@@ -477,6 +482,8 @@ if buy_confirm
     	                        global.superattack3 = 1;
     	                        global.darkessence -= 2000;
                                 fnc_achiev_get("ACH28");
+								
+								fnc_achiev_all();
                                 fnc_achiev_store_possessed();
                                 fnc_achiev_store_all();
                             }
@@ -498,6 +505,7 @@ if buy_confirm
 	                                    global.shop_rapidfire_can_upgrade1 = 1;
 	                                    global.gold -= 250;
                                         fnc_achiev_get("ACH28");
+										fnc_achiev_all();
 	                                }
                                     break;
 	                            case 1: // Покупка якорь 2 ур
@@ -535,6 +543,7 @@ if buy_confirm
 	                                    global.shop_dualpistols_can_upgrade1 = 1;
 	                                    global.gold -= 250;
                                         fnc_achiev_get("ACH28");
+										fnc_achiev_all();
 	                                }
                                     break;
 	                            case 1: // Покупка якорь 2 ур
@@ -572,6 +581,7 @@ if buy_confirm
 	                                    global.shop_blunderbuss_can_upgrade1 = 1;
 	                                    global.gold -= 250;
                                         fnc_achiev_get("ACH28");
+										fnc_achiev_all();
 	                                }
                                     break;
 	                            case 1: // Покупка якорь 2 ур
@@ -609,6 +619,7 @@ if buy_confirm
 	                                    global.shop_parrotcage_can_upgrade1 = 1;
 	                                    global.gold -= 250;
                                         fnc_achiev_get("ACH28");
+										fnc_achiev_all();
 	                                }
                                     break;
 	                            case 1: // Покупка якорь 2 ур

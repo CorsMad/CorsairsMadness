@@ -12,3 +12,5 @@
 //if keyboard_check(ord("9")) global.language = 8;
 //if keyboard_check(ord("0")) global.language = 9;
 //if keyboard_check(ord("P")) global.language = 10;
+
+

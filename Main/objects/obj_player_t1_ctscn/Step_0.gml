@@ -85,7 +85,7 @@ if state = 4
         
         //ahiev
         fnc_achiev_get("ACH1");
-        
+        fnc_achiev_all();
         instance_create_depth(x,y,0,obj_cutscene_t1_end_screenshake);
     }
 }

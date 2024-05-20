@@ -1,2 +1,2 @@
-vspd_spd = -0.25;
+vspd_spd = -0.5;
 depth = -1;

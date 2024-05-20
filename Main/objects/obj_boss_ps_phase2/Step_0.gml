@@ -398,6 +398,7 @@ if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd = 0
 	hit_cd = 1;
 	if instance_exists(obj_masked_clone)
 	{
+		scr_clone_hit_snd_1()
 		hit_stored++;
 	}
 	obj_Player.image_index = 0;
@@ -430,6 +431,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0
     t_red = 1;
 	if instance_exists(obj_masked_clone)
 	{
+		scr_clone_hit_snd_1()
 		hit_stored+=4;
 	}   
 }
@@ -446,6 +448,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0
     t_red = 1;
 	if instance_exists(obj_masked_clone)
 	{
+		scr_clone_hit_snd_1()
 		hit_stored+=4;
 	}   
 }
@@ -462,6 +465,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0
     t_red = 1;
 	if instance_exists(obj_masked_clone)
 	{
+		scr_clone_hit_snd_1()
 		hit_stored+=4;
 	}   
 }
@@ -478,6 +482,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0
     t_red = 1;
 	if instance_exists(obj_masked_clone)
 	{
+		scr_clone_hit_snd_1()
 		hit_stored+=4;
 	}   
 }
@@ -524,6 +529,7 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
     }  
 	if instance_exists(obj_masked_clone)
 	{
+		scr_clone_hit_snd_1()
 		hit_stored++;
 	}
     if obj_Player.x < x 

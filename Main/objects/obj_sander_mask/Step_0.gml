@@ -24,6 +24,7 @@ if instance_exists(owner)
 		    enemy_hp -= 1;
             if owner.state = 2 && owner.enemy_hp <= 1{
                 fnc_achiev_get("ACH24"); 
+				fnc_achiev_all();
             }
             obj_Player.isAttackingdown = 0;
     		obj_Player.attackingdown_timer = 0;

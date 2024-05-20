@@ -2,6 +2,7 @@
 // You can write your code in this editor
 scr_txt_shadow_merch8();
 fnc_achiev_get("ACH11");
+fnc_achiev_all();
 fnc_achiev_teamsaved();
 scr_text_starter(2,0.5,[snd_vo_npc_merch,snd_vo_npc_merch2,snd_vo_npc_merch3]);
 

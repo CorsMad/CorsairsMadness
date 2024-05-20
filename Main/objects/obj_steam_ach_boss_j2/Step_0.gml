@@ -4,6 +4,7 @@
 
 if count >=3 {
     fnc_achiev_get("ACH23")   ;
+	fnc_achiev_all();
 }
 
 

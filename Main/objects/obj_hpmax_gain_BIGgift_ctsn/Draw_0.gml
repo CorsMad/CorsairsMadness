@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-scr_text_graphics();
+draw_rectangle_color(camera_get_view_x(view_camera[0]),0,camera_get_view_x(view_camera[0])+480,camera_get_view_y(view_camera[0])+80,c_black,c_black,c_black,c_black,false);    
 
 for (var i=1; i-1<global.hp_max; i++) 
 {
