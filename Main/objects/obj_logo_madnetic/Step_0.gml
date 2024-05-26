@@ -1,9 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-
-
 switch(state){
     case -1:
         t++;
@@ -46,8 +43,7 @@ switch(state){
 		if t = 150 {
             state = 2;
             sprite = 1;
-            t = 0;
-            
+            t = 0;    
             
             for (var k = 0;k < 9 ; k++;) {
                 for (var i = 0; i < 11; i++;) {
@@ -96,8 +92,8 @@ switch(state){
 
 
 #region skip
-if skip_t < 50 skip_t++;
-if skip_t > 30 {
+if skip_t < 90 skip_t++;
+if skip_t > 80 {
 	if keyboard_check_pressed(vk_anykey) || gamepad_button_check_pressed(0,gp_face1) ||
     gamepad_button_check_pressed(0,gp_face2) || gamepad_button_check_pressed(0,gp_face3) ||
     gamepad_button_check_pressed(0,gp_face4) || gamepad_button_check_pressed(0,gp_start) ||

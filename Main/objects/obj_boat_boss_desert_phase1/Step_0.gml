@@ -100,7 +100,7 @@ if (phase = 1) { // Фаза1
                         pd.foly = 48;
                         // выстрел джвумя проджектайлами
                         break;
-                    case 200:
+                    case 150:
                         t = 0;
                         state = 1;
                         t1 = 0;
@@ -187,8 +187,8 @@ fnc_boat_take_dmg_fastshot(random_range(-16,8),random_range(-16,16),depth-1000);
 */
 
 fnc_boat_take_dmg_pistol(1)
-fnc_boat_take_dmg_fastshot(0.6,1.3)
-fnc_boat_take_dmg_dual_pistol(0.75,1,1.25) 
+fnc_boat_take_dmg_fastshot(0.6,1.8)
+fnc_boat_take_dmg_dual_pistol(0.75,1,1.4) 
 fnc_boat_take_dmg_blunderbuss(0.6)
 fnc_boat_take_dmg_parrotcage(1,1.25,1.25,1.25)
 fnc_boat_take_dmg_cannon(4) 

@@ -4,7 +4,7 @@
 
 draw_set_alpha(1)
 draw_set_halign(fa_center);
-
+draw_set_color(c_white)
 var gap = 16;
 
 for (var i = 0; i < array_length(menu[0]); ++i) {

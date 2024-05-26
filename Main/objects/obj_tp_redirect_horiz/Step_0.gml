@@ -25,12 +25,12 @@ if instance_exists(obj_teleport_cloud)
                 switch(dir)
                 {
                     case 0:   
-                        obj_teleport_cloud.spd = -2;   
+                        obj_teleport_cloud.spd = -3.5;   
                         obj_teleport_cloud.vspd = 0;
                         obj_teleport_cloud.y = y+16;
                         break;
                     case 1:   
-                        obj_teleport_cloud.spd = 2;   
+                        obj_teleport_cloud.spd = 3.5;   
                         obj_teleport_cloud.vspd = 0;  
                         obj_teleport_cloud.y = y+16;
                         break;

@@ -6,13 +6,13 @@ instance_create_depth(0,0,0,DEBUG);
 
 global.Continue = 0;
 
-global.TargetX      = 32;
-global.TargetY      = 112;
-global.TargetRoom   = DI_h_r10;
+global.TargetX      = 816;
+global.TargetY      = 240;
+global.TargetRoom   = J2_r2;
 
-global.fTargetX     = 416;
-global.fTargetY     = 192;
-global.fTargetRoom  = DI_p_r10;
+global.fTargetX     = 96;
+global.fTargetY     = 256;
+global.fTargetRoom  = TESTROOM;
 
 
 ////////////////////////////////////////
@@ -34,7 +34,7 @@ global.dia_hpmana_bonnie = 0;	 //0
 
 instance_create_depth(0,0,0,obj_music_controller);
 
-global.language = 0;
+global.language = 10;
 
 #region Завершеннсоть уровней
     
@@ -42,7 +42,7 @@ global.language = 0;
     global.completed_JF2 = 0;   //0
                                 //0
     global.completed_PD1 = 0;   //0
-    global.completed_PD2 = 1;   //0
+    global.completed_PD2 = 0;   //0
                                 //0
     global.completed_PS1 = 0;   //0
     global.completed_PS2 = 0;   //0
@@ -87,11 +87,11 @@ global.language = 0;
      
     //0
     
-    global.saved_jungle  = 1;  //0
-    global.saved_desert  = 1;  //0
-    global.saved_snow    = 1;  //0
-    global.saved_shadow  = 1;  //0
-    global.saved_vulcano = 1;  //0
+    global.saved_jungle  = 0;  //0
+    global.saved_desert  = 0;  //0
+    global.saved_snow    = 0;  //0
+    global.saved_shadow  = 0;  //0
+    global.saved_vulcano = 0;  //0
     
     
     
@@ -120,17 +120,17 @@ global.language = 0;
 global.key_green1 = 0;      //0
 global.key_green2 = 0;      //0
                             //0
-global.key_yellow1 = 0;     //0
-global.key_yellow2 = 0;     //0
+global.key_yellow1 = 1;     //0
+global.key_yellow2 = 1;     //0
                             //0
 global.key_blue1 = 1;       //0
 global.key_blue2 = 1;       //0
                             //0
-global.key_purple1 = 0;     //0
-global.key_purple2 = 0;     //0
+global.key_purple1 = 1;     //0
+global.key_purple2 = 1;     //0
                             //0
-global.key_red1 = 0;        //0
-global.key_red2 = 0;        //0
+global.key_red1 = 1;        //0
+global.key_red2 = 1;        //0
 #endregion
 
 #region ТЕСТ Магазин
@@ -156,21 +156,21 @@ global.shop_parrotcage_can_upgrade2 = 0;
 #region Покупки человека
 
 //якорь
-global.purch_anch1 = 0;			//0
-global.purch_anch2 = 0;			//0
-global.purch_anch3 = 0;			//0
+global.purch_anch1 = 1;			//0
+global.purch_anch2 = 1;			//0
+global.purch_anch3 = 1;			//0
 // Бомба						
-global.purch_bomb1 = 0;			//0
-global.purch_bomb2 = 0;			//0
-global.purch_bomb3 = 0;			//0
+global.purch_bomb1 = 1;			//0
+global.purch_bomb2 = 1;			//0
+global.purch_bomb3 = 1;			//0
 // Sparkle						
-global.purch_sparkle1 = 0;		//0
-global.purch_sparkle2 = 0;		//0
-global.purch_sparkle3 = 0;		//0
+global.purch_sparkle1 = 1;		//0
+global.purch_sparkle2 = 1;		//0
+global.purch_sparkle3 = 1;		//0
 // Eparrot						
-global.purch_eparrot1 = 0;		//0
-global.purch_eparrot2 = 0;		//0
-global.purch_eparrot3 = 0;		//0
+global.purch_eparrot1 = 1;		//0
+global.purch_eparrot2 = 1;		//0
+global.purch_eparrot3 = 1;		//0
 
 #endregion
 
@@ -285,7 +285,7 @@ global.darkessence_saved = 0;
 
 // Установка секретов
 
-global.secrets = 0;
+global.secrets = 35;
 
 // Установка ограничений игрока
 

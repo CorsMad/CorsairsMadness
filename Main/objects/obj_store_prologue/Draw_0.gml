@@ -36,11 +36,11 @@ for (var i = 0; i < array_length(menu); ++i) {
 
     draw_set_color(c_white);
     
-    if i == index 
+    if i == index
     {
         //if index = 1 draw_set_color(c_grey) else draw_set_color(c_red);
         draw_set_color(c_red);
-    }
+    } 
     
     //draw_text(105,52 + gap*i, menu[i]);
 	if global.language = 1 draw_text(105-64,52 + gap*i, menu[submenu, i]); else {
@@ -278,6 +278,9 @@ switch(submenu)
         }
         break;  
     case 4:
+		
+			
+		
         for (var o = 0; o < global.hp_max; ++o) {  // MAX HP
                     draw_sprite(spr_hud_heart_mana,0,152+11*o,65)
                 }
@@ -329,6 +332,14 @@ switch(submenu)
 draw_set_halign(fa_center);
 //draw_set_font(fnt_pixel);
 draw_set_color(c_white);
+
+if submenu = 4 {
+	if price_hp < 10 draw_text(59+4,71.5-5,price_hp);
+	if price_hp > 5 draw_text(91+4,134-5,price_hp-1);	
+	draw_text(59+4,103.5-5,"3");
+	if global.mana_max > 3 draw_text(91+4,166.5-5,"3");
+}
+
 
 if submenu!= 2 {    
 if global.gold < itemprice draw_set_color(c_red) else draw_set_color(c_white)
@@ -597,7 +608,6 @@ if buy_confirm = 1
 }
 
 #endregion
-
 
 #region Помозь
 

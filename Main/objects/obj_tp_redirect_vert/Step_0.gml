@@ -26,12 +26,12 @@ if instance_exists(obj_teleport_cloud)
                 {
                     case 0:   
                         obj_teleport_cloud.spd = 0;   
-                        obj_teleport_cloud.vspd = -2;  
+                        obj_teleport_cloud.vspd = -3.5;  
                         obj_teleport_cloud.x = x;
                         break;
                     case 1:   
                         obj_teleport_cloud.spd = 0;   
-                        obj_teleport_cloud.vspd = 2;  
+                        obj_teleport_cloud.vspd = 3.5;  
                         obj_teleport_cloud.x = x;
                         break;
                 }                  

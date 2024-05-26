@@ -12,7 +12,10 @@ hits_cd = 0;
 hit_cd = 0;
 hit_stored = 0;
 
-enemy_hp = 10;
+enemy_hp = 16;
 t_red =0 ;
 
 oleg = 0;
+
+icon = instance_create_depth(x,y-64,depth,obj_molded_purple_archer_icon);
+icon.fol = id;

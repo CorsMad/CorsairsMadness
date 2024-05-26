@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 image_speed = 0;
-image_index = 16;
+image_index = 21;
 state = 1;
 if instance_exists(obj_mainmenu_controller)
 {

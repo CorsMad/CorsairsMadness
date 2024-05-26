@@ -10,7 +10,7 @@ if t_skip > 30 {
     gamepad_button_check_pressed(4,gp_face2) || gamepad_button_check_pressed(4,gp_face3) ||
     gamepad_button_check_pressed(4,gp_face4) || gamepad_button_check_pressed(4,gp_start) ||
     gamepad_button_check_pressed(4,gp_select){
-		room_goto(PreMainMenu);
+		room_goto(AutosaveRoom);
         audio_stop_sound(msc_manydev1);
 	}
 }

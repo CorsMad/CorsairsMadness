@@ -104,7 +104,9 @@ if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
             {
         		if obj_Player.isGrounded = 0 
         		{
-        			obj_Player.vspd = -3.2;
+        			obj_Player.lanhit = 1;
+					obj_Player.lanplace = y;
+        			obj_Player.vspd = -3.6;
         		}
                 sprite_index = spr_molded_firing_takedmg;    
                 hit_cd = 1;

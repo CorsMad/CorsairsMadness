@@ -7,8 +7,8 @@
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_54517505","path":"rooms/LogoTest/LogoTest.yy",},
     {"name":"inst_4EB682A4","path":"rooms/LogoTest/LogoTest.yy",},
+    {"name":"inst_54517505","path":"rooms/LogoTest/LogoTest.yy",},
   ],
   "isDnd": false,
   "layers": [

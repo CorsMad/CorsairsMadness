@@ -5,12 +5,12 @@ switch(state){
 	case 0:	
 		t++;
 		switch(t){
-			case 20:
+			case 40:
 				image_alpha = 1;
 				fnc_snd_play_onetime(snd_logo);
 				break;
-			case 50: image_index = 2;break;
-			case 55: image_index = 3;break;
+			case 75: image_index = 2;break;
+			case 80: image_index = 3;break;
 			case 100: image_index = 4;break;
 			case 105: image_index = 5;break;
 			case 110: image_index = 6;break;

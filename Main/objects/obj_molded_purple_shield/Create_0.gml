@@ -9,7 +9,7 @@ flip = 0;
 hit_cd = 0;
 hits_cd = 0;
 t_red = 0;
-enemy_hp = 15;
+enemy_hp = 16;
 jump = 0;
 
 icon = instance_create_depth(x,y-64,depth,obj_molded_purple_shield_icon);

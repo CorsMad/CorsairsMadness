@@ -867,21 +867,35 @@ if isRecoil = 1
     if key_item && spectp_timer_count = 0 && !instance_exists(obj_teleport_cloud) && SpecAbilMask = 2 && isTakingdmg = 0 && (damage_cd > 30 || damage_cd = 0) && isDashing = 0
     {
         var tp_cr = instance_create_depth(x,y,depth-1,obj_teleport_cloud);
-        tp_cr.spd = 2*sign(image_xscale);  
+        tp_cr.spd = 3.5*sign(image_xscale);  
         tp_cr.image_xscale = sign(image_xscale);
         spectp_timer_count = 1;
     }
 
-    if  instance_exists(obj_teleport_cloud) && obj_teleport_cloud.moving = 1 && obj_teleport_cloud.teleport_delay_timer > 10 && obj_teleport_cloud.pressed = 0
-    {
-        if key_item_pressed cloud_exist_timer++;
-        if cloud_exist_timer = 50 
-            {
-                obj_teleport_cloud.isDead = 1;
-                spectp_timer = 70;     
-            }
-        else if key_item_released {obj_teleport_cloud.pressed = 1;cloud_exist_timer= 0} 
-    }
+    //if  instance_exists(obj_teleport_cloud) && obj_teleport_cloud.moving = 1 && obj_teleport_cloud.teleport_delay_timer > 10 && obj_teleport_cloud.pressed = 0
+    //{
+    //    if key_item_pressed cloud_exist_timer++;
+    //    if cloud_exist_timer = 50 
+    //        {
+    //            obj_teleport_cloud.isDead = 1;
+    //            spectp_timer = 70;     
+    //        }
+    //    else if key_item_released {obj_teleport_cloud.pressed = 1;cloud_exist_timer= 0} 
+    //}
+
+	#region Test
+	if  instance_exists(obj_teleport_cloud) && obj_teleport_cloud.moving = 1 && obj_teleport_cloud.teleport_delay_timer > 10 && obj_teleport_cloud.pressed = 0
+	{
+		if key_item {obj_teleport_cloud.pressed = 1;cloud_exist_timer= 0}
+	    //if key_item_pressed cloud_exist_timer++;
+	    //if cloud_exist_timer = 50 
+	    //    {
+	    //        obj_teleport_cloud.isDead = 1;
+	    //        spectp_timer = 70;     
+	    //    }
+	    //else if key_item_released {obj_teleport_cloud.pressed = 1;cloud_exist_timer= 0} 
+	}
+	#endregion
 
     if !instance_exists(obj_teleport_cloud) cloud_exist_timer = 0;
 
@@ -889,7 +903,8 @@ if isRecoil = 1
     if spectp_timer_count  = 1
     {
         if !instance_exists(obj_teleport_cloud) spectp_timer++;
-        if spectp_timer = 90
+        //if spectp_timer = 90
+        if spectp_timer = 40
         {
             instance_create_depth(x,y-24,depth+1,obj_sfx_hook_sparkle);
             spectp_timer = 0;
@@ -998,7 +1013,7 @@ if !key_item_pressed superdash_delay = 0;
 #region DoubleJump
 
 if isGrounded = 0 && key_jump_pressed && !instance_exists(obj_doublejump) && 
-	SpecAbilMask = 4 && isDashing = 0 && coyote_timer = 0 //&& isRecoil = 0
+	SpecAbilMask = 4 && isDashing = 0 && coyote_timer = 0 && isTakingdmg = 0
 {  
         if place_meeting(x,y,obj_doublejump_reset) || place_meeting(x,y,obj_doublejump_aoe_reset)         
         {

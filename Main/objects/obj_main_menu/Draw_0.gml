@@ -3,8 +3,22 @@
 
 #region отрисовка графики
 
-draw_sprite_ext(spr_mainmenu_mask_pic,7,0,-38,1,1,0,c_white,title_alpha);
-draw_sprite_ext(spr_mainmenu_mask_title,16,0,-64,1,1,0,c_white,title_alpha);
+//draw_sprite_ext(spr_mainmenu_mask_pic,7,0,-38,1,1,0,c_white,title_alpha);
+
+//draw_sprite_ext(bgr_sky,0,0,bgr_sky_yoffset,1,1,0,c_white,bgr_alpha)
+//draw_sprite_tiled_ext(bgr_bgr,0,bgr_move,bgr_yoffset,1,1,c_white,bgr_alpha)
+draw_sprite_ext(bgr_sky,0,0,bgr_sky_yoffset,1,1,0,c_white,bgr_main_alpha)
+draw_sprite_tiled_ext(bgr_bgr,0,bgr_move,bgr_yoffset,1,1,c_white,bgr_main_alpha)
+
+draw_sprite_ext(bgr_blackscreen,0,0,0,1,1,0,c_white,bgr_sky_cover_alpha);
+
+//draw_sprite_ext(spr_mainmenu_mask_pic_n,0,240,135-32,1,01,0,c_white,bgr_main_alpha);
+draw_sprite_ext(spr_mainmenu_mask_pic,9,0,0,1,1,0,c_white,bgr_main_alpha);
+
+draw_sprite_ext(spr_mainmenu_mask_title,21,0,-58,1,1,0,c_white,bgr_main_alpha);
+
+draw_sprite_ext(bgr_blackscreen,0,0,0,1,1,0,c_white,bgr_cover_alpha);
+
 
 #endregion
 

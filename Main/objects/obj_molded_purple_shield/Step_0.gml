@@ -219,9 +219,9 @@ if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0
     hit_cd = 1;
     fnc_superattack_gain_specattack();
     if obj_Player.x < x 
-        		{
-        			instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
-        		} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
+        	{
+        		instance_create_depth(x-10,y-16,-1,obj_sfx_weapon_slash);
+        	} else instance_create_depth(x+10,y-16,-1,obj_sfx_weapon_slash);
     fnc_molded_blood_hit(2);
     enemy_hp-=1;
     t_red = 1;

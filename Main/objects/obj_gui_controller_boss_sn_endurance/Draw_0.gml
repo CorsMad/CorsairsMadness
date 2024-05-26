@@ -205,9 +205,8 @@ if instance_exists(obj_Player)
 	
 	if	instance_exists(obj_boss_se_phase2_1) || instance_exists(obj_boss_se_phase2_2) ||
 		instance_exists(obj_boss_se_phase3_1) || instance_exists(obj_boss_se_phase3_2) ||
-		instance_exists(obj_boss_se_phase3_3) || instance_exists(obj_boss_se_phase3_4) {
-			//draw_text_colour(camera_get_view_x(view_camera[0])+280,camera_get_view_y(view_camera[0])+8,"boss hp",c_white,c_white,c_white,c_white,1);
-			draw_text_colour(camera_get_view_x(view_camera[0])+320,camera_get_view_y(view_camera[0])+8,"boss hp",c_white,c_white,c_white,c_white,1);
+		instance_exists(obj_boss_se_phase3_3) || instance_exists(obj_boss_se_phase3_4) {			
+			draw_text_colour(camera_get_view_x(view_camera[0])+305,camera_get_view_y(view_camera[0])+8,"boss hp",c_white,c_white,c_white,c_white,1);
 		}	
 		
 	

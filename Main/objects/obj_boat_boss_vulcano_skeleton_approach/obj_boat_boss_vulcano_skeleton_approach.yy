@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_skeleton_surf_1hp",
-    "path": "sprites/spr_skeleton_surf_1hp/spr_skeleton_surf_1hp.yy",
+    "name": "spr_skeleton_surf_appear",
+    "path": "sprites/spr_skeleton_surf_appear/spr_skeleton_surf_appear.yy",
   },
   "spriteMaskId": null,
   "visible": true,

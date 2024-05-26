@@ -65,13 +65,13 @@ if (state = 3) // Выстрелы
         case 10:    image_index = 1;break;
         case 20:    image_index = 2;break;
         case 30:    image_index = 3;break;
-        case 50:    image_index = 4;instance_create_depth(x-24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
+        case 50:    image_index = 4;instance_create_depth(x+24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
         case 80:    image_index = 3;break; 
-        case 90:    image_index = 4;instance_create_depth(x-24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
+        case 90:    image_index = 4;instance_create_depth(x+24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
         case 110:   image_index = 3;break; 
-        case 120:   image_index = 4;instance_create_depth(x-24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
+        case 120:   image_index = 4;instance_create_depth(x+24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
         case 130:   image_index = 3;break; 
-        case 140:   image_index = 4;instance_create_depth(x-24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
+        case 140:   image_index = 4;instance_create_depth(x+24,y,depth,obj_boss_d2_throw_proj);fnc_snd_play_onetime(snd_enemy_dies_sparkles);break; // выстрел
         case 145:   image_index = 5;break; 
         case 150:   image_index = 6;break; 
         case 155:

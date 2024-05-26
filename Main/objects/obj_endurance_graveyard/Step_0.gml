@@ -37,7 +37,7 @@ if state = 1
 
 if state = 1.1 // 4 Зомби Абоминация
 {
-    if t < 550 t++; 
+    if t < 400 t++; 
     switch(t)
     {
         case 50: 
@@ -51,12 +51,12 @@ if state = 1.1 // 4 Зомби Абоминация
 				instance_create_depth(416,256,50,obj_zombie_start)	
 			}	
 			break;
+        case 100: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
+        case 150: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
         case 200: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
         case 250: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
-        case 300: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
-        case 350: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
 			
-		case 450:
+		case 300:
 			if obj_Player.x>room_width/2 
 			{
 				var e1 = instance_create_depth(80,240,50,obj_molded_big_spawner_n)	
@@ -69,7 +69,7 @@ if state = 1.1 // 4 Зомби Абоминация
 				e1.y_cr = 16;
 			}	
             break;
-        case 550:   
+        case 400:   
 		if !instance_exists(obj_zombie) 
 		&& !instance_exists(obj_zombie_start)
 		&& !instance_exists(obj_abomination)
@@ -84,7 +84,7 @@ if state = 1.1 // 4 Зомби Абоминация
 
 if state = 1.2 // Спрут Абоминация Абоминация  
 {
-   if t < 500 t++;
+   if t < 300 t++;
    switch(t)
    {	
 	   case 50:
@@ -98,7 +98,7 @@ if state = 1.2 // Спрут Абоминация Абоминация
 			e1.y_cr = 16;	
 		}
 		break;
-		case 200:
+		case 100:
 			if obj_Player.x>room_width/2 {
 			var e1 = instance_create_depth(144,240,50,obj_molded_big_spawner_n)
 			e1.obj_cr = obj_abomination
@@ -109,7 +109,7 @@ if state = 1.2 // Спрут Абоминация Абоминация
 			e1.y_cr = 16;	
 		}
 			break;
-		case 400:
+		case 200:
 			if obj_Player.x>room_width/2 {
 			var e1 = instance_create_depth(128,240,50,obj_molded_big_spawner_n)
 			e1.obj_cr = obj_abomination
@@ -120,7 +120,7 @@ if state = 1.2 // Спрут Абоминация Абоминация
 			e1.y_cr = 16;	
 		}
 			break;
-		case 500:
+		case 300:
 			if !instance_exists(obj_evilsprout)
 			&& !instance_exists(obj_abomination)
 			&& !instance_exists(obj_abomination_larva)
@@ -136,7 +136,7 @@ if state = 1.2 // Спрут Абоминация Абоминация
 
 if state = 1.3 // Оборотень 3 зомби ОБоротень
 {
-    if t < 500 t++;
+    if t < 300 t++;
     switch(t)
 	{
 		case 50:
@@ -150,10 +150,10 @@ if state = 1.3 // Оборотень 3 зомби ОБоротень
 			e2.y_cr = 16;
 		}	
 			break;
-		case 150: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
-		case 200: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
-		case 220: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
-		case 400:		
+		case 100: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
+		case 120: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
+		case 160: instance_create_depth(obj_Player.x,256,50,obj_zombie_start);break;
+		case 200:		
 		if obj_Player.x>room_width/2 {
 			var e2 = instance_create_depth(80,240,50,obj_molded_big_spawner_n)	
 			e2.obj_cr = obj_werewolf;
@@ -164,7 +164,7 @@ if state = 1.3 // Оборотень 3 зомби ОБоротень
 			e2.y_cr = 16;
 		}	
 		break;
-		case 500:
+		case 300:
 		if !instance_exists(obj_werewolf)
 		&& !instance_exists(obj_werewolf_mad)
 		&& !instance_exists(obj_zombie)
@@ -179,9 +179,14 @@ if state = 1.3 // Оборотень 3 зомби ОБоротень
 
 if state = 1.4 // 2 зомби + абоминация Оборотень + спрут 2 зомби + Оборотень
 {
-    if t < 750 t++;
+    if t < 450 t++;
+	if t mod 30 = 0 && t < 60 {
+			instance_create_depth(obj_Player.x,256,50,obj_zombie_start);
+		}
 	switch(t)
 	{
+		
+		
 		case 50:
 			instance_create_depth(96,256,50,obj_zombie_start);
 			instance_create_depth(224,256,50,obj_zombie_start);
@@ -196,7 +201,7 @@ if state = 1.4 // 2 зомби + абоминация Оборотень + сп�
 				e1.y_cr = 16;	
 			}			
 			break;
-		case 250:
+		case 150:
 			if obj_Player.x> room_width/2{
 				var e1 = instance_create_depth(64,240,50,obj_molded_big_spawner)	
 				var e2 = instance_create_depth(112,240,50,obj_molded_big_spawner)
@@ -213,7 +218,7 @@ if state = 1.4 // 2 зомби + абоминация Оборотень + сп�
 				e2.y_cr = 16;	
 			}
 			break;
-		case 650:
+		case 350:
 			instance_create_depth(96,256,50,obj_zombie_start);			
 			instance_create_depth(368,256,50,obj_zombie_start);
 			if obj_Player.x > room_width/2{
@@ -226,7 +231,7 @@ if state = 1.4 // 2 зомби + абоминация Оборотень + сп�
 				e1.y_cr = 16;	
 			}
 			break;
-		case 750:
+		case 450:
 			if !instance_exists(obj_werewolf)
 			&& !instance_exists(obj_werewolf_mad)
 			&& !instance_exists(obj_abomination)

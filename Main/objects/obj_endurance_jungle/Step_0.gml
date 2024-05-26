@@ -35,7 +35,7 @@ if state = 1
 
 if state = 1.1 // Горизонтальные птицы, летящие в игрока по количеству
 {
-    t++; 
+    if t < 500 t++; 
     switch(t)
     {
         case 30: 
@@ -56,27 +56,27 @@ if state = 1.1 // Горизонтальные птицы, летящие в и�
         case 180:
             fnc_endurance_j_spwn_bird_hor_far();
             break;
-        case 400:
+        case 250:
             fnc_endurance_j_spwn_bird_hor_close();
             break;
-        case 420:
+        case 270:
             fnc_endurance_j_spwn_bird_hor_close();
             break;
-        case 440:
+        case 290:
             fnc_endurance_j_spwn_bird_hor_close();
             break;
-        case 460:
+        case 310:
             fnc_endurance_j_spwn_bird_hor_close();
             break;
-        case 480:
+        case 330:
             fnc_endurance_j_spwn_bird_hor_close();
             fnc_endurance_j_spwn_bird_hor_far();
             break;
-        case 500:
+        case 350:
             fnc_endurance_j_spwn_bird_hor_far();
             fnc_endurance_j_spwn_bird_hor_close();
             break;
-        case 900:   
+        case 500: 			
             state = 1.2;
             t = 0;
             break;
@@ -118,7 +118,7 @@ if state = 1.2 // Горизонтальные стреляющие и 2 ежа
             
             if obj_Player.x < 192
             {
-                var h_l = instance_create_depth(304,240,0,obj_big_spawner_j1_r17)   ;
+                var h_l = instance_create_depth(384,240,0,obj_big_spawner_j1_r17)   ;
                 h_l.x_cr = 0;
                 h_l.y_cr = 0;
                 h_l.obj_cr = obj_spikehedge;
@@ -133,7 +133,7 @@ if state = 1.2 // Горизонтальные стреляющие и 2 ежа
                 h_l.x_cr = 0;
                 h_l.y_cr = 0;
                 h_l.obj_cr = obj_spikehedge;
-                var h_r = instance_create_depth(176,240,0,obj_big_spawner_j1_r17)   ;
+                var h_r = instance_create_depth(80,240,0,obj_big_spawner_j1_r17)   ;
                 h_r.x_cr = 0;
                 h_r.y_cr = 0;
                 h_r.obj_cr = obj_spikehedge;
@@ -150,7 +150,7 @@ if state = 1.2 // Горизонтальные стреляющие и 2 ежа
 
 if state = 1.3 // Вертикальные стреляющие. Волновые, ящерица, еж 2
 {
-    if t < 410 t++;
+    if t < 250 t++;
     switch(t)
     {
         case 50: 
@@ -165,7 +165,7 @@ if state = 1.3 // Вертикальные стреляющие. Волновы�
             h_r.y_cr = 0;
             h_r.obj_cr = obj_bird_verical_shooting;
             
-            var h_r = instance_create_depth(416,176,0,obj_big_spawner_j1_r17)   ;
+            var h_r = instance_create_depth(416,80,0,obj_big_spawner_j1_r17)   ;
             h_r.x_cr = 0;
             h_r.y_cr = 0;
             h_r.obj_cr = obj_bird_verical_shooting;
@@ -187,16 +187,16 @@ if state = 1.3 // Вертикальные стреляющие. Волновы�
             }
             
             break;
-        case 260: 
+        case 120: 
             fnc_endurance_j_spwn_bird_wave_far();
             break;
 
-        case 380: 
+        case 160: 
             fnc_endurance_j_spwn_bird_wave_far();
             break;       
     }
     
-    if t > 400 && !instance_exists(obj_bird_horizontal_waving_l)
+    if t >= 250 && !instance_exists(obj_bird_horizontal_waving_l)
     && !instance_exists(obj_bird_horizontal_waving_r)
     && !instance_exists(obj_bird_verical_shooting)
     && !instance_exists(obj_lizardball)
@@ -209,67 +209,67 @@ if state = 1.3 // Вертикальные стреляющие. Волновы�
 
 if state = 1.4 // Волновые птицы, 2 растения, 2 ежа, 1 ящерица
 {
-    if t < 700 t++;
+    if t < 300 t++;
     switch(t)
     {
         case 100:
             if obj_Player.x <= 288 && obj_Player.x >= 192
             {
-                var h_l = instance_create_depth(64,224,0,obj_big_spawner_j1_r17)   ;
+                var h_l = instance_create_depth(48,224,0,obj_big_spawner_j1_r17)   ;
                 h_l.x_cr = 0;
                 h_l.y_cr = 16;
                 h_l.obj_cr = obj_plant_player;
                 
-                var h_r = instance_create_depth(416,224,0,obj_big_spawner_j1_r17)   ;
+                var h_r = instance_create_depth(432,224,0,obj_big_spawner_j1_r17)   ;
                 h_r.x_cr = 0;
                 h_r.y_cr = 16;
                 h_r.obj_cr = obj_plant_player;
             }           
             if obj_Player.x < 192
             {
-                var h_l = instance_create_depth(304,224,0,obj_big_spawner_j1_r17)   ;
+                var h_l = instance_create_depth(400,224,0,obj_big_spawner_j1_r17)   ;
                 h_l.x_cr = 0;
                 h_l.y_cr = 16;
                 h_l.obj_cr = obj_plant_player;
-                var h_r = instance_create_depth(416,224,0,obj_big_spawner_j1_r17)   ;
+                var h_r = instance_create_depth(432,224,0,obj_big_spawner_j1_r17)   ;
                 h_r.x_cr = 0;
                 h_r.y_cr = 16;
                 h_r.obj_cr = obj_plant_player;
             }   
             if obj_Player.x > 288
             {
-                var h_l = instance_create_depth(64,224,0,obj_big_spawner_j1_r17)   ;
+                var h_l = instance_create_depth(48,224,0,obj_big_spawner_j1_r17)   ;
                 h_l.x_cr = 0;
                 h_l.y_cr = 16;
                 h_l.obj_cr = obj_plant_player;
                 
-                var h_r = instance_create_depth(176,224,0,obj_big_spawner_j1_r17)   ;
+                var h_r = instance_create_depth(64,224,0,obj_big_spawner_j1_r17)   ;
                 h_r.x_cr = 0;
                 h_r.y_cr = 16;
                 h_r.obj_cr = obj_plant_player;
                 
             }    
             break;
-        case 200:
+        case 120:
             fnc_endurance_j_spwn_bird_wave_far();
             break;
-        case 450:
+        case 200:
             fnc_endurance_j_spwn_bird_wave_far();
             if  obj_Player.x < room_width/2 
             {
-                var liz1 = instance_create_depth(368,240,0,obj_big_spawner_j1_r17);
+                var liz1 = instance_create_depth(384,240,0,obj_big_spawner_j1_r17);
                 liz1.x_cr = 0;
                 liz1.y_cr = 0;
                 liz1.obj_cr = obj_lizardball;
             } else
             {
-                var liz1 = instance_create_depth(112,240,0,obj_big_spawner_j1_r17);
+                var liz1 = instance_create_depth(96,240,0,obj_big_spawner_j1_r17);
                 liz1.x_cr = 0;
                 liz1.y_cr = 0;
                 liz1.obj_cr = obj_lizardball;   
             }
             break;
-        case 600:
+        case 230:
             if  obj_Player.x < room_width/2 
             {
                 var liz1 = instance_create_depth(432,240,0,obj_big_spawner_j1_r17);
@@ -285,7 +285,7 @@ if state = 1.4 // Волновые птицы, 2 растения, 2 ежа, 1 �
             }
             break;            
     }   
-    if t > 660 && !instance_exists(obj_lizardball)
+    if t >= 300 && !instance_exists(obj_lizardball)
     && !instance_exists(obj_spikehedge)
     && !instance_exists(obj_plant_player)
     && !instance_exists(obj_bird_horizontal_waving_l)

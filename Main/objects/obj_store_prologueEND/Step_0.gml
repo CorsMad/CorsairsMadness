@@ -3,6 +3,7 @@
 kb_gp_input_check();
 player_input()
 fnc_lng_store();
+price_hp = global.hp_max - global.hp_add;
 var move = key_down_pressed - key_up_press;
 var movelr = key_right_press - key_left_press;
 
@@ -226,7 +227,7 @@ if key_jump_pressed || key_attack // accept
             switch(index)
             {
                 case 0:
-                    if global.secrets >= 4 {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
+                    if global.secrets >= price_hp {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
                     break;
                 case 1:
                     if global.secrets >= 3 {fnc_snd_play_over(snd_menu_accept);buy_confirm = 1;delay = 1;}
@@ -274,6 +275,7 @@ if buy_confirm
 	                                {
 	                                    fnc_snd_play_over(snd_menu_accept);
 	                                    buy_confirm = 0;
+										buy_confirm_yesno = 1;
 	                                    global.purch_anch1 = 1;
 	                                    global.shop_axe_can_upgrade1 = 1;
 	                                    global.gold -= 250;
@@ -286,6 +288,7 @@ if buy_confirm
 	                                {
 	                                    fnc_snd_play_over(snd_menu_accept);
 	                                    buy_confirm = 0;
+										buy_confirm_yesno = 1;
 	                                    global.purch_anch2 = 1;
 	                                    global.shop_axe_can_upgrade2 = 1;
 	                                    global.gold -= 500;
@@ -296,6 +299,7 @@ if buy_confirm
 	                                {
 	                                    fnc_snd_play_over(snd_menu_accept);
 	                                    buy_confirm = 0;
+										buy_confirm_yesno = 1;
 	                                    global.purch_anch3 = 1;
 	                                    global.gold -= 1000;
                                         fnc_achiev_store_human();
@@ -312,6 +316,7 @@ if buy_confirm
 	                                {
 	                                    fnc_snd_play_over(snd_menu_accept);
 	                                    buy_confirm = 0;
+										buy_confirm_yesno = 1;
 	                                    global.purch_bomb1 = 1;
 	                                    global.shop_bomb_can_upgrade1 = 1;
 	                                    global.gold -= 250;
@@ -324,6 +329,7 @@ if buy_confirm
 	                                {
 	                                    fnc_snd_play_over(snd_menu_accept);
 	                                    buy_confirm = 0;
+										buy_confirm_yesno = 1;
 	                                    global.purch_bomb2 = 1;
 	                                    global.shop_bomb_can_upgrade2 = 1;
 	                                    global.gold -= 500;
@@ -334,6 +340,7 @@ if buy_confirm
 	                                {
 	                                    fnc_snd_play_over(snd_menu_accept);
 	                                    buy_confirm = 0;
+										buy_confirm_yesno = 1;
 	                                    global.purch_bomb3 = 1;
 	                                    global.gold -= 1000;
                                         fnc_achiev_store_human();
@@ -350,6 +357,7 @@ if buy_confirm
 	                                {
 	                                    fnc_snd_play_over(snd_menu_accept);
 	                                    buy_confirm = 0;
+										buy_confirm_yesno = 1;
 	                                    global.purch_sparkle1 = 1;
 	                                    global.shop_sparkle_can_upgrade1 = 1;
 	                                    global.gold -= 250;
@@ -362,6 +370,7 @@ if buy_confirm
 	                                {
 	                                    fnc_snd_play_over(snd_menu_accept);
 	                                    buy_confirm = 0;
+										buy_confirm_yesno = 1;
 	                                    global.purch_sparkle2 = 1;
 	                                    global.shop_sparkle_can_upgrade2 = 1;
 	                                    global.gold -= 500;
@@ -372,6 +381,7 @@ if buy_confirm
 	                                {
 	                                    fnc_snd_play_over(snd_menu_accept);
 	                                    buy_confirm = 0;
+										buy_confirm_yesno = 1;
 	                                    global.purch_sparkle3 = 1;
 	                                    global.gold -= 1000;
                                         fnc_achiev_store_human();
@@ -388,6 +398,7 @@ if buy_confirm
 	                                {
 	                                    fnc_snd_play_over(snd_menu_accept);
 	                                    buy_confirm = 0;
+										buy_confirm_yesno = 1;
 	                                    global.purch_eparrot1 = 1;
 	                                    global.shop_eparrot_can_upgrade1 = 1;
 	                                    global.gold -= 250;
@@ -400,6 +411,7 @@ if buy_confirm
 	                                {
 	                                    fnc_snd_play_over(snd_menu_accept);
 	                                    buy_confirm = 0;
+										buy_confirm_yesno = 1;
 	                                    global.purch_eparrot2 = 1;
 	                                    global.shop_eparrot_can_upgrade2 = 1;
 	                                    global.gold -= 500;
@@ -410,6 +422,7 @@ if buy_confirm
 	                                {
 	                                    fnc_snd_play_over(snd_menu_accept);
 	                                    buy_confirm = 0;
+										buy_confirm_yesno = 1;
 	                                    global.purch_eparrot3 = 1;
 	                                    global.gold -= 1000;
                                         fnc_achiev_store_human();
@@ -608,11 +621,12 @@ if buy_confirm
                         switch(index)
                         {
                             case 0: // Обмен монет на ХП
-                                if global.secrets >=4 
+                                if global.secrets >=price_hp 
                                 {
                                     fnc_snd_play_over(snd_menu_accept);
                                     buy_confirm = 0;
-                                    global.secrets -= 4;
+									buy_confirm_yesno = 1;
+                                    global.secrets -= price_hp;
                                     global.hp_max +=1;
                                     global.hp = global.hp_max;
                                 }
@@ -622,6 +636,7 @@ if buy_confirm
                                 {
                                     fnc_snd_play_over(snd_menu_accept);
                                     buy_confirm = 0;
+									buy_confirm_yesno = 1;
                                     global.secrets -= 3;
                                     global.mana_max +=1;
                                     global.mana = global.mana_max;
@@ -632,7 +647,8 @@ if buy_confirm
                                 {
                                     fnc_snd_play_over(snd_menu_accept);
                                     buy_confirm = 0;
-                                    global.secrets += 4;
+									buy_confirm_yesno = 1;
+                                    global.secrets += price_hp-1;
                                     global.hp_max -=1;
                                     global.hp = global.hp_max;
                                 }
@@ -642,6 +658,7 @@ if buy_confirm
                                 {
                                     fnc_snd_play_over(snd_menu_accept);
                                     buy_confirm = 0;
+									buy_confirm_yesno = 1;
                                     global.secrets += 3;
                                     global.mana_max -=1;
                                     global.mana = global.mana_max;

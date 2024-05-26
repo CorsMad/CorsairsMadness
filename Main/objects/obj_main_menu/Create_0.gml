@@ -2,6 +2,23 @@
 // You can write your code in this editor
 fnc_msc_start_checkpoint(msc_main_menu);
 
+#region BGR
+bgr_move = 0
+bgr_state = 0;
+bgr_sky = 0;
+bgr_bgr = 0;
+bgr_yoffset = 0;
+bgr_sky_yoffset = 0;
+bgr_alpha = 0;
+bgr_t = 0;
+bgr_sky_cover_alpha = 1;
+bgr_cover_alpha = 0;
+bgr_main_alpha = 0;
+#endregion
+
+
+
+
 #region Разное
 
 confirm_eng = @"do you want to start new game ?

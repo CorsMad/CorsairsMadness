@@ -299,7 +299,7 @@ if t_red = 5 {t_red = 0;image_blend =c_white;}
 if place_meeting(x,y,obj_hitbox_mask_dash) && hit_cd=0
 {
     if place_meeting(x,y+1,obj_block) t_attack = 0;
-	if instance_exists(obj_masked_clone) hit_stored++;
+	if instance_exists(obj_masked_clone) {hit_stored++;scr_clone_hit_snd_1();}
 	hit_cd = 1;
 	state = 6
     fnc_superattack_gain_attack_dash();
@@ -359,7 +359,7 @@ if state = 6.5
 
 if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0
 {
-	if instance_exists(obj_masked_clone) hit_stored+=4;
+	if instance_exists(obj_masked_clone)  {hit_stored+=5;scr_clone_hit_snd_1();}
 	hit_cd = 1;
     t_attack = 0;
 	hspd = sign(obj_Player.dir)*2;
@@ -378,7 +378,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher) && hit_cd = 0
 }
 if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0
 {
-	if instance_exists(obj_masked_clone) hit_stored+=4;
+	if instance_exists(obj_masked_clone) {hit_stored+=5;scr_clone_hit_snd_1();}
 	hit_cd = 1;
     t_attack = 0;
     fnc_superattack_gain_specattack();
@@ -397,7 +397,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_forward) && hit_cd = 0
 }
 if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0
 {
-	if instance_exists(obj_masked_clone) hit_stored+=4;
+	if instance_exists(obj_masked_clone)  {hit_stored+=5;scr_clone_hit_snd_1();}
 	hit_cd = 1;
     fnc_superattack_gain_specattack();
 	//hspd = sign(obj_Player.dir)=2;
@@ -416,7 +416,7 @@ if place_meeting(x,y,obj_hitbox_mask_finisher_up) && hit_cd = 0
 }
 if place_meeting(x,y,obj_hitbox_mask_finisher_down) && hit_cd = 0
 {
-	if instance_exists(obj_masked_clone) hit_stored+=4;
+	if instance_exists(obj_masked_clone) {hit_stored+=5;scr_clone_hit_snd_1();}
 	hit_cd = 1;
     fnc_superattack_gain_specattack();
 	//hspd = sign(obj_Player.dir)=2;
@@ -460,7 +460,7 @@ place_meeting(x,y,obj_hitbox_mask_superattack_aoe)) {
     fnc_molded_blood_forward(2);
     fnc_molded_blood_up(2);
     fnc_molded_blood_up(2);
-    enemy_hp-=10;
+    enemy_hp-=16;
     t_red = 1;  
 }
 
@@ -469,7 +469,7 @@ var supermissle = instance_place(x,y,obj_hitbox_mask_superattack_missle)
         supermissle.state = 1;
         fnc_molded_blood_forward(2);
         fnc_molded_blood_up(2);
-        enemy_hp-=5;
+        enemy_hp-=6;
     }
 
 #endregion
@@ -478,7 +478,7 @@ var supermissle = instance_place(x,y,obj_hitbox_mask_superattack_missle)
 if place_meeting(x,y,obj_hitbox_mask) && hit_cd = 0
 {
     if place_meeting(x,y+1,obj_block) t_attack = 0;
-	if instance_exists(obj_masked_clone) hit_stored++;
+	if instance_exists(obj_masked_clone) {hit_stored++;scr_clone_hit_snd_1();}
 	hit_cd = 1;
     fnc_superattack_gain_attack_dash();
     enemy_hp-=1;
@@ -508,7 +508,7 @@ if obj_Player.isDead = 132
 		hit_stored = 0;
 		t = 0;
 		t_attack = 0;
-        enemy_hp-=10
+        enemy_hp = 0;
         t_red = 1;
 	} else hit_stored = 0
 }

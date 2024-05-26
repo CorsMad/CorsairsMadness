@@ -3,6 +3,11 @@
 fnc_lng_main_menu();
 menu_input_new();
 script_lng_credits_mainmenu();
+scr_bgr_move_main_menu();
+
+if (submenu = 0 || submenu = 5) bgr_cover_alpha = 0 else bgr_cover_alpha = 1
+if (submenu = 0 || submenu = 5) bgr_main_alpha = 1 else bgr_main_alpha = 0
+
 /*
 var key_down = keyboard_check_pressed(vk_down);
 var key_up = keyboard_check_pressed(vk_up);

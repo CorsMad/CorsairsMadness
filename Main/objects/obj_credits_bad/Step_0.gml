@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+script_lng_credits();
 
 switch(state){
 	case 0:
@@ -16,7 +16,7 @@ switch(state){
 		t++;
 		if t = 100 {
 			state = 2;
-			instance_create_depth(0,0,0,obj_credits_text_good)
+			//instance_create_depth(0,0,0,obj_credits_text_good)
 		}
 		break;
 	case 2:

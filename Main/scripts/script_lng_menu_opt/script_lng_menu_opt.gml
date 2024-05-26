@@ -386,8 +386,8 @@ todo el progreso anterior se perderá";
 
             #region Confirm
 
-            menu[5, 0] = "\n\n\n\n\n\n\n\n\n\n\n对";
-            menu[5, 1] = "\n\n\n\n\n\n\n\n\n\n\n不";
+            menu[5, 0] = "\n\n\n\n\n\n\n\n\n\n\n\n对";
+            menu[5, 1] = "\n\n\n\n\n\n\n\n\n\n\n\n不";
 
             #endregion
 
@@ -1106,8 +1106,8 @@ Tutti I progressi precedenti andranno persi.";
 
             #region Confirm
 
-            menu[5, 0] = "\n\n\n\n\n\n\n\n\n\n\nSì";
-            menu[5, 1] = "\n\n\n\n\n\n\n\n\n\n\nNo";
+            menu[5, 0] = "\n\n\n\n\n\n\n\n\n\n\n\nSì";
+            menu[5, 1] = "\n\n\n\n\n\n\n\n\n\n\n\nNo";
 
             #endregion
 

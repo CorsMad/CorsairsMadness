@@ -53,7 +53,7 @@ switch(state)
 		break;
 	case 1.2:
 		#region  2 улья + 1 сандер
-		if t < 550 t++;
+		if t < 180 t++;
 		switch(t)
 		{
 			case 50:
@@ -62,19 +62,19 @@ switch(state)
 				sc1.obj_cr = obj_scarab_nest;
 				sc1.y_cr = -16;
 				break;
-			case 250:
+			case 100:
 				if obj_Player.x > room_width/2 var sc1 = instance_create_depth(96,240,-1,obj_molded_big_spawner_n)
 				else  var sc1 = instance_create_depth(160,240,depth,obj_molded_big_spawner_n)				
 				sc1.obj_cr = obj_scarab_nest;
 				sc1.y_cr = -16;
 				break;
-			case 450:
+			case 130:
 				if obj_Player.x > room_width/2 var sc1 = instance_create_depth(112,240,-1,obj_molded_big_spawner_n)
 				else  var sc1 = instance_create_depth(368,240,depth,obj_molded_big_spawner_n)				
 				sc1.obj_cr = obj_sander;
 				sc1.y_cr = 16;
 				break;
-			case 550:
+			case 180:
 				if !instance_exists(obj_sander) && !instance_exists(obj_scarab_nest) && !instance_exists(obj_scarab_nest_mini) 
 				{
 					t =0 ;
@@ -86,7 +86,7 @@ switch(state)
 		break;
 	case 1.3:
 		#region 1 сандер 1 улей 1 большой летающий 1 сандер
-		if t < 500 t++;
+		if t < 190 t++;
 		switch(t)
 		{
 			case 50:
@@ -95,24 +95,24 @@ switch(state)
 				sc1.obj_cr = obj_sander;
 				sc1.y_cr = 16;
 				break;
-			case 200:
+			case 60:
 				if obj_Player.x > room_width/2 var sc1 = instance_create_depth(80,240,-1,obj_molded_big_spawner_n)
 				else  var sc1 = instance_create_depth(400,240,depth,obj_molded_big_spawner_n)				
 				sc1.obj_cr = obj_scarab_nest;
 				sc1.y_cr = -16;
 				break;
-			case 300:
+			case 100:
 				if obj_Player.x > room_width/2 var sc1 = instance_create_depth(64,176,-1,obj_molded_big_spawner_n)
 				else  var sc1 = instance_create_depth(416,176,depth,obj_molded_big_spawner_n)				
 				sc1.obj_cr = obj_scarab_horizontal;
 				break;
-			case 400:
+			case 140:
 				if obj_Player.x > room_width/2 var sc1 = instance_create_depth(96,240,-1,obj_molded_big_spawner_n)
 				else  var sc1 = instance_create_depth(84,240,depth,obj_molded_big_spawner_n)				
 				sc1.obj_cr = obj_sander;
 				sc1.y_cr = 16;
 				break;
-			case 500:
+			case 190:
 				if !instance_exists(obj_scarab_mini) &&
 				!instance_exists(obj_scarab_horizontal) && !instance_exists(obj_sander) && !instance_exists(obj_scarab_nest)
 				{
@@ -125,7 +125,7 @@ switch(state)
 		break;
 	case 1.4:
 		#region 2 сандер 2 улья 1 большой летающий
-		if t < 700 t++;
+		if t < 300 t++;
 		switch(t)
 		{
 			case 50:
@@ -147,26 +147,26 @@ switch(state)
 					e2.y_cr = 16;	
 				}
 				break;
-			case 400:
+			case 100:
 				if obj_Player.x > room_width/2 
 				{
-					var e1 = instance_create_depth(128,240,-1,obj_molded_big_spawner_n);
+					var e1 = instance_create_depth(96,240,-1,obj_molded_big_spawner_n);
 					e1.obj_cr = obj_scarab_nest;
 					e1.y_cr = -16;
-					var e2 = instance_create_depth(64,240,-1,obj_molded_big_spawner_n);
+					var e2 = instance_create_depth(48,240,-1,obj_molded_big_spawner_n);
 					e2.obj_cr = obj_scarab_nest;
 					e2.y_cr = -16;
 				} else 
 			{
-				var e1 = instance_create_depth(352,240,-1,obj_molded_big_spawner_n);
+				var e1 = instance_create_depth(384,240,-1,obj_molded_big_spawner_n);
 				e1.obj_cr = obj_scarab_nest;
 				e1.y_cr = -16;
-				var e2 = instance_create_depth(416,240,-1,obj_molded_big_spawner_n);
+				var e2 = instance_create_depth(432,240,-1,obj_molded_big_spawner_n);
 				e2.obj_cr = obj_scarab_nest;
 				e2.y_cr = -16;	
 			}
 				break;
-			case 550:
+			case 200:
 				if obj_Player.x > x 
 				{
 					var e1 = instance_create_depth(64,192,-1,obj_molded_big_spawner_n);
@@ -177,7 +177,7 @@ switch(state)
 					e1.obj_cr = obj_scarab_horizontal;			
 				}	
 				break;
-			case 700:
+			case 300:
 				if !instance_exists(obj_sander) && !instance_exists(obj_scarab_nest)
 				&& !instance_exists(obj_scarab_mini) && !instance_exists(obj_scarab_horizontal)
 				{

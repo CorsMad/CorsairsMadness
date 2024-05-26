@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 moving = 1;
-spd = 3;
+//spd = 3;
+spd = 5;
 teleport_delay_timer = 0;
 can_teleport = 0;
 pressed = 0;

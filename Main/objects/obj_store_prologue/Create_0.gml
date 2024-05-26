@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 fnc_lng_store();
-
+price_hp = 0;
 index = 0;
 submenu = 0;
 dindex = 0;

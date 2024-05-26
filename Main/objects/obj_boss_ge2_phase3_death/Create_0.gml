@@ -3,7 +3,7 @@
 t=0;
 
 
-image_speed =0.1;
+image_speed =0.5;
 
 if instance_exists(obj_boss_g2_phase_poison) instance_destroy(obj_boss_g2_phase_poison)     
 if instance_exists(obj_boss_g2_phase_poison2) instance_destroy(obj_boss_g2_phase_poison2)     

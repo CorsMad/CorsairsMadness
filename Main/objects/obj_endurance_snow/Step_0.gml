@@ -20,6 +20,7 @@
 3.2 - получение монеты
 
 */
+
 switch(state) 
 {
 	case 1:
@@ -94,7 +95,7 @@ switch(state)
 		break;
 	case 1.2:
 		#region СкТопор Бронированый Бронированый 
-		if t < 500 t++;
+		if t < 200 t++;
         		switch(t)
 		{
 			case 50:
@@ -117,7 +118,7 @@ switch(state)
 				e1.y_cr = 16;		
 				}
 				break;
-			case 400:
+			case 150:
 				if obj_Player.x > room_width/2 {
 				var e1 = instance_create_depth(80,224,0,obj_molded_big_spawner_n);
 				e1.obj_cr = obj_armored_thing;
@@ -128,7 +129,7 @@ switch(state)
 				e1.y_cr = 16;		
 				}
 				break;
-			case 500:
+			case 200:
 				if !instance_exists(obj_skeleton_thrower)
 				&& !instance_exists(obj_armored_thing)
 				{
@@ -203,7 +204,7 @@ switch(state)
 		break;
 	case 1.4:
 		#region ЛедянойМаг Бронирован СкТопор Бронирован
-		if t < 550 t++;
+		if t < 350 t++;
 		switch(t)
 		{
 			case 50:
@@ -235,7 +236,7 @@ switch(state)
 				e2.obj_cr = obj_skeleton_thrower
 				e2.y_cr = 16}
 				break;
-			case 450:
+			case 250:
 				if obj_Player.x > room_width/2 {
 				var e1 = instance_create_depth(80,224,0,obj_molded_big_spawner_n);
 				e1.obj_cr = obj_armored_thing;
@@ -246,7 +247,7 @@ switch(state)
 				e1.y_cr = 16;		
 				}
 				break;
-			case 550:
+			case 350:
 				if !instance_exists(obj_armored_thing)
 				&& !instance_exists(obj_skeleton_thrower)
 				&& !instance_exists(obj_frozen_mage_endurance)
@@ -369,9 +370,3 @@ switch(state)
 		break;
 	#endregion
 }
-
-
-
-
-        
-
