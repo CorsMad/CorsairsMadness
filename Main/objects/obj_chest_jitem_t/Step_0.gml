@@ -13,7 +13,7 @@ if (image_index > image_number - 1) && isOn = 1
 {
     image_speed = 0;
 }
-if isOn = 1 && a < 57
+if isOn = 1 && a < 62
 {
 	a++;
 }
@@ -43,5 +43,7 @@ switch(a)
     case 50:var k = instance_create_depth(x,y-16,-1,obj_money20);
 		   k.hspd = random_range(-20,20)/20; break;  
     case 55:var k = instance_create_depth(x,y-16,-1,obj_money20);
+		   k.hspd = random_range(-20,20)/20; break;
+    case 60:var k = instance_create_depth(x,y-16,-1,obj_money10);
 		   k.hspd = random_range(-20,20)/20; break;
 }

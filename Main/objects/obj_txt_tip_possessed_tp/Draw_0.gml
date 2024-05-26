@@ -27,7 +27,7 @@ draw_text(room_width/2,16,text1);
 draw_set_color(c_yellow)
 draw_text(room_width/2-72,48,text2);
 draw_text(room_width/2-72,80,text3);
-draw_text(room_width/2-72,112,text4);
+//draw_text(room_width/2-72,112,text4);
 draw_set_color(c_white);
 draw_text(room_width/2,160,text5);
 

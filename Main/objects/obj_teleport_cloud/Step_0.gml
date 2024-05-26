@@ -6,7 +6,7 @@ if moving = 1
     y+=vspd;
 }
 
-if teleport_delay_timer < 11 {teleport_delay_timer++;}
+if teleport_delay_timer < 21 {teleport_delay_timer++;}
 
 if pressed = 1
 {

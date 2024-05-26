@@ -20,3 +20,7 @@ if t_anim = t_anim_max{
 	if dir = -1 image_angle+=45;	
 }
 #endregion
+if instance_exists(obj_Player) {
+	if obj_Player.isDead!=0 instance_destroy();	
+}
+if !instance_exists(obj_Player) instance_destroy();

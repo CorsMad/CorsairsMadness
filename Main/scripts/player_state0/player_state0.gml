@@ -1022,8 +1022,8 @@ if global.choosed_item = 3 // Бомба
 				var itemAxe = instance_create_depth(x,y-32,0,item_tier);
 				if image_xscale = 1 
 				{
-					itemAxe.hspd = 2	
-				} else itemAxe.hspd = -2;
+					itemAxe.hspd = 5	
+				} else itemAxe.hspd = -5;
 				
 			}		
 			if isUsingitem = 1 && !place_meeting(x,y+1,obj_block)
@@ -1114,10 +1114,11 @@ if global.choosed_item = 3 // Бомба
 					case 3: global.mana-=3;break;	
 				}
 				var itemAxe = instance_create_depth(x,y-32,0,item_tier);
-				if image_xscale = 1 
-				{
-					itemAxe.hspd = 2	
-				} else itemAxe.hspd = -2;
+				itemAxe.hspd = 5*image_xscale;
+				//if image_xscale = 1 
+				//{
+				//	itemAxe.hspd = 5	
+				//} else itemAxe.hspd = -5;
 			}
 			if isAirUsingitem = 1 && image_index = 5
 			{

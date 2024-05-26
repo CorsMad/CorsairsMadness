@@ -20,6 +20,6 @@ i2.y_cr = 96;
 i2.obj_cr = obj_molded_small_crawling_right;
 
 
-instance_create_depth(848,144,0,obj_fastfly_molded);
-instance_create_depth(1056,80,0,obj_fastfly_molded);
+instance_create_depth(864,113,0,obj_fastfly_molded);
+instance_create_depth(1104,64,0,obj_fastfly_molded);
 instance_create_depth(1712,192,0,obj_fastfly_molded);

@@ -6,10 +6,10 @@ if image_alpha < 1
     switch(orient)
     {
         case 0:
-            image_index = 1;
+            image_index = 0;
             break;
         case 1:
-            image_index = 0;
+            image_index = 1;
             break;
     }
 }

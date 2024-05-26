@@ -14,3 +14,5 @@ if instance_exists(obj_boss_pg_light_block){
 	    obj_boss_pg_light_block.image_index = 4;
     }
 }
+
+if instance_exists(obj_boss_gp_attack_forward_aoe_mask)  instance_destroy(obj_boss_gp_attack_forward_aoe_mask);

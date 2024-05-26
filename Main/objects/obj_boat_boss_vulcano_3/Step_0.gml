@@ -266,8 +266,8 @@ if enemy_hp <= 0
 #region получение урона
 
 fnc_boat_take_dmg_pistol(1)
-fnc_boat_take_dmg_fastshot(0.6,1.3)
-fnc_boat_take_dmg_dual_pistol(0.75,1,1.25) 
+fnc_boat_take_dmg_fastshot(0.6,1.8)
+fnc_boat_take_dmg_dual_pistol(0.75,1,1.4) 
 fnc_boat_take_dmg_blunderbuss(0.6)
 fnc_boat_take_dmg_parrotcage(1,1.25,1.25,1.25)
 fnc_boat_take_dmg_cannon(8) 

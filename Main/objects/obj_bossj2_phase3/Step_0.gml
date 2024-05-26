@@ -225,8 +225,7 @@ if state = 8
 #region ПОПАДАНИЕ
 
 if hit != 0
-{
-    hit -=0.1;   
+{ 
     image_blend = c_red;
 } else image_blend = c_white;
 #endregion

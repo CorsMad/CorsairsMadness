@@ -516,7 +516,7 @@ function fnc_lng_jmerch_coin_exch(){
         case 5: //brazil
             #region  ENG text
             eng1 = "7";
-            eng3 = "salir"
+            eng2 = "salir"
             #endregion
             break;
         case 6: //polish

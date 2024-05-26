@@ -55,6 +55,11 @@ if canhit = 1
 	{
 		image_blend = make_color_hsv(245,255,255);
 	} else image_blend = c_white;
+	
+	if instance_exists(obj_bossj2_phase2){
+		 obj_bossj2_phase2.hit = hit_cd;
+	}
+	
     #endregion
 }
 

@@ -5,6 +5,8 @@ state = 1;
 t = 0;
 t_anim = 0;
 
+hit_cd = 0;
+
 hspd = 0;
 vspd = 0;
 spd = 4;

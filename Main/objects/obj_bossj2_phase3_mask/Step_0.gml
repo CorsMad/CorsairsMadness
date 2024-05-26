@@ -104,6 +104,9 @@ if canhit = 1
 	{
 		hit_cd = 0;	
 	}
+	if instance_exists(obj_bossj2_phase3){
+		 obj_bossj2_phase3.hit = hit_cd;
+	}
  #endregion
 
 

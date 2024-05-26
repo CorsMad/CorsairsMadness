@@ -40,9 +40,7 @@ if canhit = 1
 // Parrot
 
 	fnc_take_dmg_parrot_laser(0,-16,-1,0)
-    
-    
-    
+     
     #region моргание
     if hit_cd !=0 
 	{
@@ -57,6 +55,11 @@ if canhit = 1
 		image_blend = make_color_hsv(245,255,255);
 	} else image_blend = c_white;
     #endregion
+	
+	if instance_exists(obj_bossj2_phase1){
+		 obj_bossj2_phase1.hit = hit_cd;
+	}
+	
 }
 
 if enemy_hp <= 0

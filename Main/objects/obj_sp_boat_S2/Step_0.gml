@@ -323,7 +323,8 @@ switch(state){
 			case 350:
 				if !instance_exists(obj_skeleton_surf_archer_pointing) 
 				&& !instance_exists(obj_skeleton_surf_wave_3hp)
-				&& !instance_exists(obj_skeleton_surf_wave_2hp){
+				&& !instance_exists(obj_skeleton_surf_wave_2hp)
+				&& !instance_exists(obj_skeleton_surf_archer){
 					t= 0 ;
 					state = 10;
 					if instance_exists(obj_boat_stone20_act) obj_boat_stone20_act.act = 1;

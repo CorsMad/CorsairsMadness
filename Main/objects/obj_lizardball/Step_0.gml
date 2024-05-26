@@ -245,7 +245,22 @@ if place_meeting(x,y,obj_abil_boots_hitbox)
     
 // Удар вниз   
 
-    fnc_take_dmg_hitbox_down(0,-16,-1);
+	if state = 4 {
+		if place_meeting(x,y,obj_hitbox_down) && hit_cd = 0
+		{
+        
+	        if instance_exists(obj_hitbox_down)
+	        {
+	            hit_cd = 1;  
+	            enemy_hp = 0;
+            
+	            obj_Player.isAttackingdown = 0;
+	    		obj_Player.attackingdown_timer = 0;
+	    		obj_Player.vspd = -5;          
+	        }
+			instance_create_depth(x+0,y+-16,-1,obj_sfx_weapon_slash);
+		}    
+	} else fnc_take_dmg_hitbox_down(0,-16,-1);
 
 // Бомба
 

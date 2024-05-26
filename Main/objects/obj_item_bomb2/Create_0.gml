@@ -9,17 +9,27 @@ Center_Y = obj_Player.y-16; // y of orbital center
 
 isDead = 0;
 a = 0;
-a_max = 250;
+a_max = 300;
 
+//if obj_Player.image_xscale = 1 
+//{
+//	dir = 1;
+//	angle = 180; 
+//	instance_create_depth(x-48,y,-1,obj_sfx1);
+//} else  {
+//			dir = -1;
+//			angle = 0;
+//			instance_create_depth(x+48,y,-1,obj_sfx1);
+//		}
 if obj_Player.image_xscale = 1 
 {
 	dir = 1;
-	angle = 180; 
-	instance_create_depth(x-48,y,-1,obj_sfx1);
+	angle = 90; 
+	instance_create_depth(x,y-16,-1,obj_sfx1);
 } else  {
 			dir = -1;
-			angle = 0;
-			instance_create_depth(x+48,y,-1,obj_sfx1);
+			angle = 90;
+			instance_create_depth(x,y-16,-1,obj_sfx1);
 		}
 
 image_xscale = 1.25;
