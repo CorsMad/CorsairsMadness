@@ -5,4 +5,7 @@ control = 1;
 new_dest = 0;
 move = 0;
 
-spd =20;
+spd = 20;
+spr_x = 0;
+
+but_spr = 0;

@@ -90,30 +90,32 @@ switch(inven_shop){
 
 #region // Кнопка экипировать
 
-if shown!= undefined && shown!= a_equip[equip.TRINKET] && shown!= a_equip[equip.ARMOR] && shown!= a_equip[equip.WEAPON] && inven_shop = 0{  
-	draw_rectangle(128,190,164,240,0);	
-	if point_in_rectangle(mouse_x,mouse_y,128,190,164,240) && mouse_check_button_pressed(mb_left){
-		switch(shown.place){
-            case equip.WEAPON:
-				if a_equip[equip.WEAPON] != undefined array_push(inventory_w, a_equip[equip.WEAPON]);
-					a_equip[equip.WEAPON] = shown;
-					array_delete(inventory_w,shown_i,1);	
-					shown = undefined;	
-				break;
-            case equip.ARMOR:
-				if a_equip[equip.ARMOR] != undefined array_push(inventory_a, a_equip[equip.ARMOR]);
-					a_equip[equip.ARMOR] = shown;
-					array_delete(inventory_a,shown_i,1);	
-					shown = undefined;			
-				break;
-			case equip.TRINKET: 				
-				if a_equip[equip.TRINKET] != undefined array_push(inventory_t, a_equip[equip.TRINKET]);
-					a_equip[equip.TRINKET] = shown;
-					array_delete(inventory_t,shown_i,1);	
-					shown = undefined;				 					
-				break;		
-		}	
-	}
+if shown!= undefined && shown!= a_equip[equip.TRINKET] && shown!= a_equip[equip.ARMOR] && shown!= a_equip[equip.WEAPON] && inven_shop = 0{  	
+	if point_in_rectangle(mouse_x,mouse_y,162,202,162+75,202+21){ 
+		draw_sprite(spr_inv_button_sell_equip,1,162,202)
+		if mouse_check_button_pressed(mb_left){
+			switch(shown.place){
+	            case equip.WEAPON:
+					if a_equip[equip.WEAPON] != undefined array_push(inventory_w, a_equip[equip.WEAPON]);
+						a_equip[equip.WEAPON] = shown;
+						array_delete(inventory_w,shown_i,1);	
+						shown = undefined;	
+					break;
+	            case equip.ARMOR:
+					if a_equip[equip.ARMOR] != undefined array_push(inventory_a, a_equip[equip.ARMOR]);
+						a_equip[equip.ARMOR] = shown;
+						array_delete(inventory_a,shown_i,1);	
+						shown = undefined;			
+					break;
+				case equip.TRINKET: 				
+					if a_equip[equip.TRINKET] != undefined array_push(inventory_t, a_equip[equip.TRINKET]);
+						a_equip[equip.TRINKET] = shown;
+						array_delete(inventory_t,shown_i,1);	
+						shown = undefined;				 					
+					break;		
+			}
+		}
+	} else draw_sprite(spr_inv_button_sell_equip,0,162,202)
 }
 
 #endregion
@@ -121,26 +123,28 @@ if shown!= undefined && shown!= a_equip[equip.TRINKET] && shown!= a_equip[equip.
 #region // Кнопка продать
 
 if shown!= undefined && (inven_shop = 0 || shown = a_equip[equip.ARMOR] || shown = a_equip[equip.WEAPON] || shown = a_equip[equip.TRINKET]) {  
-	draw_rectangle(170,190,200,240,0);	
-	if point_in_rectangle(mouse_x,mouse_y,170,190,200,240) && mouse_check_button_pressed(mb_left){
-		switch(shown.place){
-            case equip.WEAPON:
-                if shown = a_equip[equip.WEAPON] a_equip[equip.WEAPON] = undefined; else array_delete(inventory_w,shown_i,1);	                  
-				shown = undefined;	
-                shown_i = undefined;
-				break;
-            case equip.ARMOR:
-                if shown = a_equip[equip.ARMOR] a_equip[equip.ARMOR] = undefined; else array_delete(inventory_a,shown_i,1);	                  
-				shown = undefined;	
-                shown_i = undefined;		
-				break;
-			case equip.TRINKET: 					
-                if shown = a_equip[equip.TRINKET] a_equip[equip.TRINKET] = undefined; else array_delete(inventory_t,shown_i,1);	                  
-				shown = undefined;	
-                shown_i = undefined;				 					
-				break;		
-		}	
-	}
+	if point_in_rectangle(mouse_x,mouse_y,241,202,241+77,202+21) {
+		draw_sprite(spr_inv_button_sell_equip,1,241,202)
+		if mouse_check_button_pressed(mb_left){
+			switch(shown.place){
+	            case equip.WEAPON:
+	                if shown = a_equip[equip.WEAPON] a_equip[equip.WEAPON] = undefined; else array_delete(inventory_w,shown_i,1);	                  
+					shown = undefined;	
+	                shown_i = undefined;
+					break;
+	            case equip.ARMOR:
+	                if shown = a_equip[equip.ARMOR] a_equip[equip.ARMOR] = undefined; else array_delete(inventory_a,shown_i,1);	                  
+					shown = undefined;	
+	                shown_i = undefined;		
+					break;
+				case equip.TRINKET: 					
+	                if shown = a_equip[equip.TRINKET] a_equip[equip.TRINKET] = undefined; else array_delete(inventory_t,shown_i,1);	                  
+					shown = undefined;	
+	                shown_i = undefined;				 					
+					break;		
+			}
+		}
+	} else draw_sprite(spr_inv_button_sell_equip,0,241,202)
 }
 
 
@@ -149,34 +153,35 @@ if shown!= undefined && (inven_shop = 0 || shown = a_equip[equip.ARMOR] || shown
 
 #region // Кнопка купить 
 
-if shown!= undefined && shown!= a_equip[equip.TRINKET] && shown!= a_equip[equip.ARMOR] && shown!= a_equip[equip.WEAPON] && inven_shop = 1{
-    draw_rectangle(128,190,164,240,0);	
-    if point_in_rectangle(mouse_x,mouse_y,128,190,164,240) && mouse_check_button_pressed(mb_left){
-        switch(shown.place){
-            case equip.WEAPON:
-				    array_push(inventory_w,shown);
-					array_delete(shop_w,shown_i,1);	
-					shown = undefined;	
-                    shown_i = undefined;
-				break;
-            case equip.ARMOR:
-    				array_push(inventory_a,shown);
-					array_delete(shop_a,shown_i,1);	
-					shown = undefined;	
-                    shown_i = undefined;
-				break;
-			case equip.TRINKET: 				
-				    array_push(inventory_t,shown);
-					array_delete(shop_t,shown_i,1);	
-					shown = undefined;	
-                    shown_i = undefined;
-				break;		
-		}	
-    }
+if shown!= undefined && shown!= a_equip[equip.TRINKET] && shown!= a_equip[equip.ARMOR] && shown!= a_equip[equip.WEAPON] && inven_shop = 1{    
+    if point_in_rectangle(mouse_x,mouse_y,162,202,162+156,202+21){
+		draw_sprite(spr_inv_button_buy,1,162,202)
+		if mouse_check_button_pressed(mb_left){
+	        switch(shown.place){
+	            case equip.WEAPON:
+					    array_push(inventory_w,shown);
+						array_delete(shop_w,shown_i,1);	
+						shown = undefined;	
+	                    shown_i = undefined;
+					break;
+	            case equip.ARMOR:
+	    				array_push(inventory_a,shown);
+						array_delete(shop_a,shown_i,1);	
+						shown = undefined;	
+	                    shown_i = undefined;
+					break;
+				case equip.TRINKET: 				
+					    array_push(inventory_t,shown);
+						array_delete(shop_t,shown_i,1);	
+						shown = undefined;	
+	                    shown_i = undefined;
+					break;		
+			}	
+		}
+    } else draw_sprite(spr_inv_button_buy,0,162,202)
 }
 
 #endregion
-
 
 
 
@@ -415,17 +420,24 @@ if a_equip[equip.TRINKET] != undefined {
 #endregion
 
 
-// выход
 
-draw_rectangle(16,room_height-64,32,room_height-32,0);
-if point_in_rectangle(mouse_x,mouse_y,6,room_height-64,32,room_height-32) && mouse_check_button_pressed(mb_left){
-    invOn = 0;
-    page = 0;
-    shown = undefined;
-    inven_shop = 0;
-	if instance_exists(obj_global_map_controller) obj_global_map_controller.control = 1;
+#region Выход
+
+if point_in_rectangle(mouse_x,mouse_y,34,226,34+76,226+28) {
+	draw_sprite(spr_inv_button_exit,1,34,226);
+	if mouse_check_button_pressed(mb_left){
+	    invOn = 0;
+	    page = 0;
+	    shown = undefined;
+	    inven_shop = 0;
+		if instance_exists(obj_global_map_controller) obj_global_map_controller.control = 1;
+	}
+} else draw_sprite(spr_inv_button_exit,0,34,226);
+
 }
 
-}
+#endregion
+
+
 #endregion
 
