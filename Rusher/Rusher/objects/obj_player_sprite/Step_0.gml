@@ -14,9 +14,9 @@ switch(state){
 			instance_create_depth(0,0,0,obj_enemy_spawner_lvl_1);
 		}
 		break;
-	case 3: 
-		t++;
-		if t = 1000 game_restart();
+	case 5: 
+		x+=4;
+        sprite_index = spr_player_run;
 		break;
 
 }

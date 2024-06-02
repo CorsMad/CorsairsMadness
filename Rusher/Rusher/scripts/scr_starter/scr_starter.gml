@@ -8,7 +8,8 @@ function init(){
 		ARMOR,
 		WEAPON
 	}
-	instance_create_depth(0,0,0,obj_debug);
+	instance_create_depth(0,0,0,obj_debug);  
+    randomize();
 }
 
 #region ФУНКЦИИ СОЗДАНИЯ ВСЕХ ПРЕДМЕТОВ

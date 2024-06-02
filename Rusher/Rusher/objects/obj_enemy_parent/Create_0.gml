@@ -2,15 +2,15 @@
 // You can write your code in this editor
 state = 0;
 
+boss = 0;
+turn = 0;
+special_weakness = [spr_blank,spr_blank,spr_blank,spr_blank,spr_blank];
+
 weak_crit_t = 0;
 weak_fire_t = 0
-weak_ice_t = 0
+weak_ice_t  =  0
 weak_light_t = 0	
 weak_wind_t	= 0;
-
-
-
-
 
 
 EnemyCreator = {
@@ -33,5 +33,20 @@ EnemyCreator = {
 	weak_res_ice		 :	 0									   ,
 	weak_res_light		 :	 0									   ,
 	weak_res_wind		 :	 0									   ,
-    gold                 :   0                      
+    gold                 :   0                                     ,
+    turn                 :   0                                     ,
+    weak_count           :   0   ,
+    boss : 0
 }
+weak_count_const = 0;
+#region БОСС
+
+#region инициация слабостей
+
+//инициализация массивов слабостей босса - спрайт
+
+
+#endregion
+
+
+#endregion

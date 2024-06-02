@@ -21,4 +21,8 @@ player_hp_max = 0;
 to_map = 0;
 
 
-
+#region БОСС АТАКА
+_weak_x_offset = 320;
+_atk_alpha = -5;
+_weak_scale = 1;
+#endregion

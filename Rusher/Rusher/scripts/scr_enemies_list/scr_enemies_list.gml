@@ -21,7 +21,9 @@ function scr_en_creator_slime_small1(){
 		weak_res_ice		 :	  0					                   ,
 		weak_res_light		 :	  0						               ,
 		weak_res_wind		 :	  0									   ,
-        gold                 :    5                     
+        gold                 :    5                     ,
+        weak_count                 :    0,
+        boss : 0
 	}							  
 	return(EnemyCreator);
 }
@@ -46,7 +48,9 @@ function scr_en_creator_slime_small2(){
 		weak_res_ice		 :	  0					                   ,
 		weak_res_light		 :	  0						               ,
 		weak_res_wind		 :	  0									   ,
-        gold                 :    5 
+        gold                 :    5 ,
+        weak_count                 :    0,
+        boss : 0
 	}							  
 	return(EnemyCreator);
 }
@@ -76,7 +80,9 @@ function scr_en_creator_slime_medium(){
 		weak_res_ice			 :	 0							    ,
 		weak_res_light			 :	 0							    ,
 		weak_res_wind			 :	 0							    ,
-        gold                     :   irandom_range(5,7) 
+        gold                     :   irandom_range(5,7) ,
+        weak_count                 :    0,
+        boss : 0
 	}	
 	return(EnemyCreator);
 }	
@@ -101,7 +107,9 @@ function scr_en_creator_slime_big(){
 		weak_res_ice	   :    0							,
 		weak_res_light	   :    0							,
 		weak_res_wind	   :    0							,
-        gold               :   irandom_range(6,9)
+        gold               :   irandom_range(6,9) ,
+        weak_count                 :    0,
+        boss : 0
 	}	
 	return(EnemyCreator);
 }	
@@ -109,11 +117,13 @@ function scr_en_creator_slime_boss(){
 	EnemyCreator = {
 		en_name            :    "slime boss"						   ,		
 		exp_gain           :    35				    				   ,		  
-		enemy_hp_max       :    17									   ,	  
-		enemy_hp           :    17									   ,	  
+		enemy_hp_max       :    100									   ,	  
+		enemy_hp           :    100									   ,	  
 		enemy_attack_max   :    100									   ,	  
 		enemy_attack       :    100			    					   ,	  
 		enemy_attack_spd   :    0.5			    					   ,		  
+		enemy_attack_spd_special:    0.1			    			   ,		  
+		enemy_attack_spd_stun   :    0.2			    			   ,		  
 		dmg                :    random_range(8,10)					   ,		  
 		effect_attack      :    obj_effect_slime_slash				   ,         
 		s_idle			   :    spr_slime_big						   ,          
@@ -121,11 +131,14 @@ function scr_en_creator_slime_boss(){
 		s_death		       :    spr_slime_big_death					   ,      
 		x_end			   :    352									   ,          
 		y_start		       :    80									   ,
-		weak_res_crit			 :	 0									   ,
-		weak_res_fire			 :	 0									   ,
-		weak_res_ice			 :	 0									   ,
-		weak_res_light			 :	 0									   ,
-		weak_res_wind			 :	 0									   
+		weak_res_crit			 :	 0								   ,
+		weak_res_fire			 :	 0								   ,
+		weak_res_ice			 :	 0								   ,
+		weak_res_light			 :	 0								   ,
+		weak_res_wind			 :	 0								   ,
+		boss			   :	1									   ,
+		weak_count		   :	3	,	
+        gold : 20
 	}	
 	return(EnemyCreator);
 }

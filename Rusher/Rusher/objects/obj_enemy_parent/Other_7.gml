@@ -9,7 +9,7 @@ if state = 1 {
 
 if state = 2 {
 	if instance_exists(obj_enemy_spawner_parent){
-		if obj_battle_info.player_xp>=obj_battle_info.player_hp_max {
+		if obj_battle_info.player_xp>=obj_battle_info.player_xp_max {
 			scr_lvlup();
 		} else obj_enemy_spawner_parent.state+=0.5;	
 	}

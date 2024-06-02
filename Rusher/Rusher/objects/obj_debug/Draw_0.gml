@@ -1,5 +1,6 @@
 //draw_set_color(c_black)
 //draw_text(room_width/2,64,obj_inventory.shown);
-
-if (show_debug_overlay(false) && keyboard_check_pressed(ord("`"))) show_debug_overlay(true);
-if (show_debug_overlay(true) && keyboard_check_pressed(ord("`"))) show_debug_overlay(false);
+if instance_exists(obj_enemy_parent){
+draw_text(64,64,obj_enemy_parent.EnemyCreator.weak_count);
+draw_text(64,96,obj_enemy_parent.turn);}
+//draw_text(96,64,obj_enemy_parent.special_weakness[0])}

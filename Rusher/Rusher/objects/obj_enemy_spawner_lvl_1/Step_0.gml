@@ -5,7 +5,7 @@
 switch(state){
 	case 0: // 
 		t++;
-		if t = 50 scr_enemy_creator(562,80,choose(scr_en_creator_slime_small1(),scr_en_creator_slime_small2()));
+		if t = 50 scr_enemy_creator(562,80,choose(scr_en_creator_slime_small1(),scr_en_creator_slime_small2()));		
 		break;
 	case 1: // 
 		t++;
@@ -67,4 +67,10 @@ switch(state){
 		t++;
 		if t = 50 scr_enemy_creator(562,80,scr_en_creator_slime_boss());
 		break;	
+    case 16: // END
+        obj_container_global.completed1 = 1;
+        t++;
+        if t = 50 obj_player_sprite.state = 5;
+        if t = 150 room_goto(globalmap);       
+        break;
 }

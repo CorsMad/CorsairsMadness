@@ -13,18 +13,16 @@ draw_sprite(spr_inventory,0,0,0);
 
 txt_outline(32,8,1,c_white,"gold:" + string(gold));
 
-//draw_sprite_stretched(spr_info_bord,0,128,32,sprite_get_width(spr_info_bord)*2,sprite_get_height(spr_info_bord)*3);
-//draw_sprite_stretched(spr_info_bord,0,256,32,sprite_get_width(spr_info_bord)*2,sprite_get_height(spr_info_bord)*3);
-
-
 
 #region // переключение вкладок
 
 draw_set_color(c_white);
  
-if point_in_rectangle(mouse_x,mouse_y,46,29,70,53) && mouse_check_button_pressed(mb_left) && page!=0 { page = 0;shown = undefined; shown_i = undefined;}
-if point_in_rectangle(mouse_x,mouse_y,76,29,100,53) && mouse_check_button_pressed(mb_left) && page!=1 { page = 1;shown = undefined; shown_i = undefined;}
-if point_in_rectangle(mouse_x,mouse_y,106,29,130,53) && mouse_check_button_pressed(mb_left) && page!=2 { page = 2;shown = undefined; shown_i = undefined;}
+draw_sprite(spr_inv_button_w_a_t,page,43,25); 
+ 
+if point_in_rectangle(mouse_x,mouse_y,44,29,72,53) && mouse_check_button_pressed(mb_left) && page!=0 { page = 0;shown = undefined; shown_i = undefined;}
+if point_in_rectangle(mouse_x,mouse_y,73,29,102,53) && mouse_check_button_pressed(mb_left) && page!=1 { page = 1;shown = undefined; shown_i = undefined;}
+if point_in_rectangle(mouse_x,mouse_y,103,29,132,53) && mouse_check_button_pressed(mb_left) && page!=2 { page = 2;shown = undefined; shown_i = undefined;}
 
 #endregion
 
@@ -32,17 +30,21 @@ if point_in_rectangle(mouse_x,mouse_y,106,29,130,53) && mouse_check_button_press
 
 draw_set_color(c_white);
  
-if point_in_rectangle(mouse_x,mouse_y,192,16,224,48) && mouse_check_button_pressed(mb_left) && inven_shop = 1 { 
+draw_sprite(spr_inv_button_inv_store,inven_shop,210,17) ;
+ 
+if point_in_rectangle(mouse_x,mouse_y,210,20,238,46) && mouse_check_button_pressed(mb_left) && inven_shop = 1 { 
     inven_shop = 0;
-    if shown = a_equip[equip.TRINKET] && shown = a_equip[equip.ARMOR] && shown = a_equip[equip.WEAPON]{
+    //if shown = a_equip[equip.TRINKET] && shown = a_equip[equip.ARMOR] && shown = a_equip[equip.WEAPON]{
+    if shown != a_equip[equip.TRINKET] && shown != a_equip[equip.ARMOR] && shown != a_equip[equip.WEAPON]{
         shown = undefined; 
         shown_i = undefined;
     }
 }//shown = undefined; shown_i = undefined;}
 
-if point_in_rectangle(mouse_x,mouse_y,256,16,288,48) && mouse_check_button_pressed(mb_left) && inven_shop = 0 {
+if point_in_rectangle(mouse_x,mouse_y,240,20,269,46) && mouse_check_button_pressed(mb_left) && inven_shop = 0 {
     inven_shop = 1;
     if shown!= a_equip[equip.TRINKET] && shown != a_equip[equip.ARMOR] && shown != a_equip[equip.WEAPON]{
+    //if shown= a_equip[equip.TRINKET] && shown = a_equip[equip.ARMOR] && shown = a_equip[equip.WEAPON]{
         shown = undefined; 
         shown_i = undefined;
     }

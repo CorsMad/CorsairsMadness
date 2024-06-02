@@ -105,6 +105,32 @@ switch(obj_enemy_parent.EnemyCreator.weak_res_wind){
 
 #endregion
 
+#region ОТРИСОВКА СЛАБОСТЕЙ БОССА 
+
+if instance_exists(obj_enemy_parent) {  
+    //var _x_start = 148;
+    var _x_start = 320-96;
+    var _x_offset = 24;
+    if obj_enemy_parent.EnemyCreator.boss = 1{  
+        if obj_enemy_parent.turn = 3{
+            var _wc = obj_enemy_parent.EnemyCreator.weak_count;
+            _weak_scale = lerp(_weak_scale,1.25,0.05);                       
+            
+            for (var i = 0; i < obj_enemy_parent.EnemyCreator.weak_count; i++) {            
+                if (_wc !=0 && _atk_alpha < 1) _atk_alpha +=0.05; else  if _atk_alpha > 0 _atk_alpha-=0.05;
+                draw_set_alpha(_atk_alpha);
+                if i = 0{                    
+                    draw_sprite_ext(obj_enemy_parent.special_weakness[i],0,(_x_start-_wc*_x_offset+i*_x_offset)+_weak_x_offset,138,_weak_scale,_weak_scale,0,c_white,_atk_alpha);              
+                } else draw_sprite(obj_enemy_parent.special_weakness[i],0,(_x_start-_wc*_x_offset+i*_x_offset)+_weak_x_offset,138)                                
+            }      
+            if _weak_x_offset > _wc*_x_offset-_x_start+320 _weak_x_offset = lerp(_weak_x_offset,_wc*_x_offset-_x_start+320,0.05);  //_weak_x_offset-=2;
+        }
+        draw_set_alpha(1)
+    }
+}
+
+#endregion
+
 #region ОТРИСОВКА ВЫХОДА
 
 draw_set_color(c_black)
