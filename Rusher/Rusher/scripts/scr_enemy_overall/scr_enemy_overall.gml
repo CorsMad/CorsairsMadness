@@ -225,6 +225,8 @@ function scr_enemy_boss_weakness_destroy(_dmg_type){
                 array_delete(obj_enemy_parent.special_weakness,0,1)  
                 show_debug_message(obj_enemy_parent.special_weakness);
                 obj_battle_info._weak_scale = 1;
+				
+				instance_create_depth(320-12,128-4,-1,obj_boss_weak_expl);
             }
         }
         if obj_enemy_parent.EnemyCreator.weak_count = 1 {
@@ -238,6 +240,8 @@ function scr_enemy_boss_weakness_destroy(_dmg_type){
         		dmg.number =  obj_player_stats.dmg_output_normal*5;
                 obj_enemy_parent.EnemyCreator.enemy_attack = 0
                 show_debug_message(obj_enemy_parent.special_weakness);
+				
+				instance_create_depth(320-12,128-4,-1,obj_boss_weak_expl);
             }
         }
     }

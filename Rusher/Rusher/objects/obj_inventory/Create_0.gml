@@ -38,13 +38,16 @@ a_equip[equip.TRINKET] = undefined;
 a_equip[equip.ARMOR]   = undefined;
 a_equip[equip.WEAPON]  = undefined;
 
-
+wheel = 0;
 // функция показа вкладок инвентаря
 function fnc_show_inventory(argument0) {
     for (var i = 0; i < array_length(argument0); i++) {
 	var itemX = 48+(i mod menuWidth) * itemSeparation
-	var itemY = 80+(i div menuWidth) * itemSeparation;
-
+	var itemY = 80+(i div menuWidth) * itemSeparation + wheel;
+	
+	
+	draw_set_alpha(1);
+	
     if argument0[i] != undefined draw_sprite(argument0[i].sprite,0,itemX,itemY)	
 	
 	// проверка наведения мыши
@@ -63,11 +66,7 @@ function fnc_show_inventory(argument0) {
 		draw_set_color(c_white)
 		
 	        }  
-        }
-        
-        //// ОПИСАНИЕ ПРЕДМЕТА
-        //
-        //  
-    
+        }    
 }
     
+	

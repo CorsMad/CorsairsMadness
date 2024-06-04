@@ -4,6 +4,9 @@
 gold = 0;
 
 #region Completed levels
+
+// Изменяются в каждом obj_enemy_spawner
+
 completed1 = 0;
 completed2 = 0;
 completed3 = 0;

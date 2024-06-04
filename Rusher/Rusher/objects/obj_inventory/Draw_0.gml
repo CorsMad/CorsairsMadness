@@ -88,8 +88,6 @@ switch(inven_shop){
         break;
 }
 
-
-
 #region // Кнопка экипировать
 
 if shown!= undefined && shown!= a_equip[equip.TRINKET] && shown!= a_equip[equip.ARMOR] && shown!= a_equip[equip.WEAPON] && inven_shop = 0{  	
@@ -389,6 +387,7 @@ if shown!= undefined {
             break;
     }
 }
+	
 #endregion
 
 #region Статы Экипировки

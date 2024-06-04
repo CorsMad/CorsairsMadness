@@ -10,8 +10,14 @@ switch(state){
 			x = 128;
 			state = 1;
 			sprite_index = spr_player_idle;
-			instance_create_depth(0,0,-1,obj_player_selector);
-			instance_create_depth(0,0,0,obj_enemy_spawner_lvl_1);
+			instance_create_depth(0,0,-1,obj_player_selector);	
+			
+			#region  Появление спавнера
+				switch(room){
+					case Lvl1:	instance_create_depth(0,0,0,obj_enemy_spawner_lvl_1);
+					case Lvl2:	instance_create_depth(0,0,0,obj_enemy_spawner_lvl_2);
+				}
+			#endregion					
 		}
 		break;
 	case 5: 
