@@ -3,7 +3,7 @@
 
 #region Inventory
 if invOn = 1 {
-
+draw_set_font(fnt_pixel);
 draw_set_alpha(0.95)
 draw_set_color(c_black)
 draw_rectangle(0,0,room_width,room_height,0);
@@ -11,7 +11,7 @@ draw_set_alpha(1);
 
 draw_sprite(spr_inventory,0,0,0);
 
-txt_outline(32,8,1,c_white,"gold:" + string(gold));
+txt_outline(160,240,1,c_white,"gold:" + string(obj_container_global.gold) + "/" + string(obj_container_global.gold_max));
 
 
 #region // переключение вкладок
@@ -91,8 +91,10 @@ switch(inven_shop){
 #region // Кнопка экипировать
 
 if shown!= undefined && shown!= a_equip[equip.TRINKET] && shown!= a_equip[equip.ARMOR] && shown!= a_equip[equip.WEAPON] && inven_shop = 0{  	
-	if point_in_rectangle(mouse_x,mouse_y,162,202,162+75,202+21){ 
-		draw_sprite(spr_inv_button_sell_equip,1,162,202)
+    
+	//if point_in_rectangle(mouse_x,mouse_y,162,202,162+75,202+21){ 
+    if point_in_rectangle(mouse_x,mouse_y,162,202,162+156,202+21){
+		draw_sprite(spr_inv_button_buy,1,162,202)
 		if mouse_check_button_pressed(mb_left){
 			switch(shown.place){
 	            case equip.WEAPON:
@@ -115,13 +117,16 @@ if shown!= undefined && shown!= a_equip[equip.TRINKET] && shown!= a_equip[equip.
 					break;		
 			}
 		}
-	} else draw_sprite(spr_inv_button_sell_equip,0,162,202)
+	} else draw_sprite(spr_inv_button_buy,0,162,202)
+    draw_set_halign(fa_left);
+    txt_outline(170,207,1,c_white,"equip")
+    
 }
 
 #endregion
   
-#region // Кнопка продать
-
+#region // Кнопка продать (ПОКА ОТКЛЮЧЕНА)
+/*
 if shown!= undefined && (inven_shop = 0 || shown = a_equip[equip.ARMOR] || shown = a_equip[equip.WEAPON] || shown = a_equip[equip.TRINKET]) {  
 	if point_in_rectangle(mouse_x,mouse_y,241,202,241+77,202+21) {
 		draw_sprite(spr_inv_button_sell_equip,1,241,202)
@@ -147,7 +152,7 @@ if shown!= undefined && (inven_shop = 0 || shown = a_equip[equip.ARMOR] || shown
 	} else draw_sprite(spr_inv_button_sell_equip,0,241,202)
 }
 
-
+*/
 
 #endregion
 
@@ -159,31 +164,44 @@ if shown!= undefined && shown!= a_equip[equip.TRINKET] && shown!= a_equip[equip.
 		if mouse_check_button_pressed(mb_left){
 	        switch(shown.place){
 	            case equip.WEAPON:
-					    array_push(inventory_w,shown);
-						array_delete(shop_w,shown_i,1);	
-						shown = undefined;	
-	                    shown_i = undefined;
+                        if shown.price < obj_container_global.gold {
+                            obj_container_global.gold -= shown.price
+    					    array_push(inventory_w,shown);
+    						array_delete(shop_w,shown_i,1);	
+    						shown = undefined;	
+    	                    shown_i = undefined;
+                        }
 					break;
 	            case equip.ARMOR:
-	    				array_push(inventory_a,shown);
-						array_delete(shop_a,shown_i,1);	
-						shown = undefined;	
-	                    shown_i = undefined;
+                        if shown.price < obj_container_global.gold {
+                            obj_container_global.gold -= shown.price
+    	    				array_push(inventory_a,shown);
+    						array_delete(shop_a,shown_i,1);	
+    						shown = undefined;	
+    	                    shown_i = undefined;
+                        }
 					break;
-				case equip.TRINKET: 				
-					    array_push(inventory_t,shown);
-						array_delete(shop_t,shown_i,1);	
-						shown = undefined;	
-	                    shown_i = undefined;
+				case equip.TRINKET: 
+                        if shown.price < obj_container_global.gold {
+                            obj_container_global.gold -= shown.price
+    					    array_push(inventory_t,shown);
+    						array_delete(shop_t,shown_i,1);	
+    						shown = undefined;	
+    	                    shown_i = undefined;
+                        }
 					break;		
 			}	
 		}
+    
     } else draw_sprite(spr_inv_button_buy,0,162,202)
+    draw_set_halign(fa_left);
+    if shown!= undefined txt_outline_sprite(170,206.5,1,c_white,string(shown.price));
+    
+    
+    //draw_text(room_width/2,207,string(shown.price));
 }
 
 #endregion
-
-
 
 #region экипировка
 
@@ -232,7 +250,7 @@ if point_in_rectangle(mouse_x,mouse_y,416,64,448,96) && a_equip[equip.TRINKET] !
 
 if shown!= undefined {
     //Название
-    draw_set_halign(fa_center);
+    //draw_set_halign(fa_center);
     txt_outline(240,80,1,shown.color,shown.name);
     
     //текстовое Описание
@@ -434,7 +452,9 @@ if point_in_rectangle(mouse_x,mouse_y,34,226,34+76,226+28) {
 		if instance_exists(obj_global_map_controller) obj_global_map_controller.control = 1;
 	}
 } else draw_sprite(spr_inv_button_exit,0,34,226);
-
+draw_set_halign(fa_center)  
+txt_outline(72,234,1,c_white,"exit");
+draw_set_halign(fa_left)  
 }
 
 #endregion

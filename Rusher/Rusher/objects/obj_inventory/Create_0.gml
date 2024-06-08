@@ -16,7 +16,7 @@ itemXY = 16;
 
 invOn = 0;
 shpOn = 0;
-gold = 0;
+//gold = 0;
 
 inven_shop = 0 // 0 - инв, 1 - маг
 page = 0 // 0 - оружие / 1 - броня / 2 - тринкет

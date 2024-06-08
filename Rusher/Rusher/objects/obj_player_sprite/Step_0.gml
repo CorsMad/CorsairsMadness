@@ -14,8 +14,8 @@ switch(state){
 			
 			#region  Появление спавнера
 				switch(room){
-					case Lvl1:	instance_create_depth(0,0,0,obj_enemy_spawner_lvl_1);
-					case Lvl2:	instance_create_depth(0,0,0,obj_enemy_spawner_lvl_2);
+					case Lvl1:	instance_create_depth(0,0,0,obj_enemy_spawner_lvl_1); break;
+					case Lvl2:	instance_create_depth(0,0,0,obj_enemy_spawner_lvl_2); break;
 				}
 			#endregion					
 		}

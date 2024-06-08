@@ -34,7 +34,7 @@ if move = 0{
 					control = 0;
 					break;
 				case -480: 
-					if obj_container_global.completed1 = 1 {
+					if obj_container_global.completed >= 1 {
 						var nlvl = instance_create_depth(0,0,depth-10000,obj_transition_bs_to_level);
 						nlvl.rm = Lvl2;
 						control = 0;

@@ -56,7 +56,9 @@ function scr_enemy_action_overall(){
 		image_index = 0;
 		obj_player_sprite.sprite_index = spr_player_idle;	
 		
-        obj_inventory.gold += EnemyCreator.gold;
+        if abs(obj_container_global.gold_max - obj_container_global.gold) > EnemyCreator.gold {
+            obj_container_global.gold += EnemyCreator.gold; 
+        } else obj_container_global.gold = obj_container_global.gold_max;        
         
         instance_create_depth(x,y,depth+1,obj_gold_spawner);
         
@@ -157,7 +159,9 @@ function scr_enemy_boss_action_overall(){
 		//image_index = 0;
 		obj_player_sprite.sprite_index = spr_player_idle;	
 		
-        obj_inventory.gold += EnemyCreator.gold;
+        if abs(obj_container_global.gold_max - obj_container_global.gold) > EnemyCreator.gold {
+            obj_container_global.gold += EnemyCreator.gold; 
+        } else obj_container_global.gold = obj_container_global.gold_max;    
         
         instance_create_depth(x,y,depth+1,obj_gold_spawner);
         

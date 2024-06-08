@@ -3,9 +3,10 @@
 t = 0;
 state = 0;
 x = -200;
-y = 42;
-image_xscale = 2;
-image_yscale = 2;
+//y = 42;
+y = 64;
+image_xscale = 1.5;
+image_yscale = 1.5;
 
 
 

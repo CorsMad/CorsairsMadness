@@ -1,5 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+/*
 function scr_en_creator_slime_small1(){
 	EnemyCreator = {
 		en_name              :    "slime"				               ,		
@@ -54,11 +55,6 @@ function scr_en_creator_slime_small2(){
 	}							  
 	return(EnemyCreator);
 }
-
-
-
-
-
 function scr_en_creator_slime_medium(){
 	EnemyCreator = {
 		en_name					 :    "slime medium"			    ,		

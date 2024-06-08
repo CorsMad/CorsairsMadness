@@ -29,7 +29,7 @@ function item_create(_name, _color, _dmg, _crit, _hp, _eldmg, _sprite, _place, _
 	
 }
 
-function item_create_w(_name,_color,_dmg,_crit,_sprite,_tier) constructor // ОРУЖИЕ
+function item_create_w(_name,_color,_dmg,_crit,_sprite,_price,_tier) constructor // ОРУЖИЕ
 {
     name = _name;		// Название
 	color = _color;		// Цвет названия
@@ -37,18 +37,20 @@ function item_create_w(_name,_color,_dmg,_crit,_sprite,_tier) constructor // О�
 	crit = _crit;		// Доп. крит. 1 - по умолчанию
 	sprite = _sprite;	// Спрайт предмета
 	place = equip.WEAPON;		// Место - equip.ARMOR, equip.TRINKET, equip.WEAPON
+    price = _price;
 	tier = _tier;		// Тир предмета, 1 - самый крутой, 10 - худший
 }
-function item_create_a(_name,_color,_hp,_sprite,_tier) constructor // БРОНЯ
+function item_create_a(_name,_color,_hp,_sprite,_price,_tier) constructor // БРОНЯ
 {
     name = _name;		// Название
 	color = _color;		// Цвет названия
 	hp = _hp;			// Доп. хп
 	sprite = _sprite;	// Спрайт предмета
 	place =  equip.ARMOR;		// Место - equip.ARMOR, equip.TRINKET, equip.WEAPON
+    price = _price;
 	tier = _tier;		// Тир предмета, 1 - самый крутой, 10 - худший
 }
-function item_create_t(_name,_color,_el_fire,_el_ice,_el_light,_el_wind,_sprite,_tier) constructor // ТРИНК
+function item_create_t(_name,_color,_el_fire,_el_ice,_el_light,_el_wind,_sprite,_price,_tier) constructor // ТРИНК
 {
     name = _name;		// Название
 	color = _color;		// Цвет названия
@@ -58,6 +60,7 @@ function item_create_t(_name,_color,_el_fire,_el_ice,_el_light,_el_wind,_sprite,
 	el_wind = _el_wind;
 	sprite = _sprite;	// Спрайт предмета
 	place =  equip.TRINKET;		// Место - equip.ARMOR, equip.TRINKET, equip.WEAPON
+    price = _price;
 	tier = _tier;		// Тир предмета, 1 - самый крутой, 10 - худший
 }
 
@@ -67,15 +70,22 @@ function item_create_t(_name,_color,_el_fire,_el_ice,_el_light,_el_wind,_sprite,
 
 
 #region Оружие
-// sword1  = new item_create("Sword1", "c_gray",   10 , spr_item_icon_1, equip.WEAPON);
-// sword2  = new item_create("Sword2", "c_gray",   10 , spr_item_icon_1, equip.WEAPON);
-// sword3  = new item_create("Sword3", "c_green",  10 , spr_item_icon_1, equip.WEAPON);
-// sword4  = new item_create("Sword4", "c_green",  10 , spr_item_icon_1, equip.WEAPON);
-// sword5  = new item_create("Sword5", "c_red",    10 , spr_item_icon_1, equip.WEAPON);
-// sword6  = new item_create("Sword6", "c_purple", 10 , spr_item_icon_1, equip.WEAPON);
+
+function scr_sword1() {  
+    return(new item_create_w("Sword1",   c_white  , 5  ,1.5,spr_info_sword1,       25,10)); 
+}
+
+function scr_sword2() {
+    return(new item_create_w("Sword2",   c_yellow , 8  ,1.2,spr_info_sword2,       40,10));
+}
+
+function scr_sword3() {
+    return(new item_create_w("Sword3",   c_white  , 10 ,1.1,spr_info_sword3,       25 ,10));
+}
 #endregion
 
 #region Броня
+
 #endregion
 
 #region Тринкеты
