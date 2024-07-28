@@ -1,0 +1,1 @@
+instance_create_depth(0,0,-10000,obj_transition_bs_start_lvl);

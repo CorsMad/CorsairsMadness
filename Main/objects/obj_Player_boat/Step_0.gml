@@ -10,8 +10,6 @@ if wave_spd_t = 0 wave_spd_a = 0;
 //if wave_spd_t = 6 wave_spd_a = 2;
 //if wave_spd_t = 9 wave_spd_a = 0;
 
-
-
 if canControl = 1 
 {
     player_input();
@@ -817,3 +815,4 @@ if global.hp <= 0
     
 }
 #endregion
+

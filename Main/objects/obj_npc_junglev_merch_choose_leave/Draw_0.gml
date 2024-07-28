@@ -20,6 +20,50 @@ draw_set_alpha(appear_alpha)
 
 draw_sprite(spr_merch_choose_leave,0,room_width/2,room_height/2-46)
 
+
+#region Надпись при выходе
+draw_set_color(c_yellow);
+draw_text(room_width/2,50.5,warning);
+
+var _txt_warning = "";
+
+if instance_exists(obj_npc_junglev_merch) {
+	if global.saved_jungle = 0 _txt_warning = warning_jake1;
+	if global.saved_jungle = 1 && global.dia_hpmana_jake = 0 _txt_warning = warning_jake2;
+	if global.saved_jungle = 1 && global.dia_hpmana_jake = 1 _txt_warning = "";
+}
+
+if instance_exists(obj_npc_desertv_merch) {
+	if global.saved_desert = 0 _txt_warning = warning_pew1;
+	if global.saved_desert = 1 && global.dia_hpmana_pew = 0 _txt_warning = warning_pew2;
+	if global.saved_desert = 1 && global.dia_hpmana_pew = 1 _txt_warning = "";
+}
+
+if instance_exists(obj_npc_snowv_merch) {
+	if global.saved_snow = 0 _txt_warning = warning_sully1;
+	if global.saved_snow = 1 && global.dia_hpmana_sully = 0 _txt_warning = warning_sully2;
+	if global.saved_snow = 1 && global.dia_hpmana_sully = 1 _txt_warning = "";
+}
+
+if instance_exists(obj_npc_shadowv_merch) {
+	if global.saved_shadow = 0 _txt_warning = warning_petro1;
+	if global.saved_shadow = 1 && global.dia_hpmana_petro = 0 _txt_warning = warning_petro2;
+	if global.saved_shadow = 1 && global.dia_hpmana_petro = 1 _txt_warning = "";
+}
+
+if instance_exists(obj_npc_lavav_merch) {
+	if global.saved_vulcano = 0 _txt_warning = warning_bonnie1;
+	if global.saved_vulcano = 1 && global.dia_hpmana_bonnie = 0 _txt_warning = warning_bonnie2;
+	if global.saved_vulcano = 1 && global.dia_hpmana_bonnie = 1 _txt_warning = "";
+}
+
+draw_set_color(c_red);
+draw_text(room_width/2,33.5,_txt_warning);
+
+#endregion
+
+draw_set_color(c_white);
+
 if global.language = 1 draw_text(room_width/2,158.5+2-46,eng3); else draw_text(room_width/2,158.5-46,eng3);;
 if global.language = 1 draw_text(room_width/2,131.5+2-46,eng4); else draw_text(room_width/2,131.5-46,eng4);;
 //draw_text(room_width/2,38,eng3);
@@ -89,8 +133,8 @@ switch(select)
 	draw_set_color(c_white)	
 	
 	//draw_set_halign(fa_left) 
-	draw_sprite_ext(spr_skip_frame,0,room_width/2-45,100-46,1,1,0,c_white,alpha_skip);
-	draw_sprite_stretched_ext(spr_skip_line,0,room_width/2-45+5,100+5-46,(skip_t/skip_t_max)*80,8,c_white,alpha_skip);
+	draw_sprite_ext(spr_skip_frame,0,room_width/2-45,           8+100-46,1,1,0,c_white,alpha_skip);
+	draw_sprite_stretched_ext(spr_skip_line,0,room_width/2-45+5,8+105-46,(skip_t/skip_t_max)*80,8,c_white,alpha_skip);
 #endregion
 
 }

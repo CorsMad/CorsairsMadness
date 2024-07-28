@@ -3,23 +3,23 @@ function scr_txt_credits(){
     {
         case 0:
         #region Eng
-            index1 = "Game by Andrey Voronkov";
-            index2 = "Gameplay,art,design";
-            index3 = "Music";
-            index4 = "Testers";
-            index5 = "Localization Support";  
-            index6 = "GameMaker Studio";
-            index7 = "Aseprite";
-            index8 = "PyxelEdit";
-            index9 = "LDtk";     
-            index10 = "Special Thanks";
-            index11 = "Extra Special Thanks";
+            index1 = ""
+            index2 = ""
+            index3 = ""
+            index4 = ""
+            index5 = ""
+            index6 = ""
+            index7 = ""
+            index8 = ""
+            index9 = ""
+            index10 = ""
+            index11 = ""
             
-            name2 = "Andrey Voronkov";
-            name3 = "oleg";
-            name4 = "stas";
-            name10 = "Bartlomey bartula";
-            name11 = "To my wife and my parents";
+            name2 =  ""
+            name3 =  ""
+            name4 =  ""
+            name10 = ""
+            name11 = ""
            
             
             

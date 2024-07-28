@@ -4,15 +4,15 @@ image_speed = 0;
 image_index = 0;
 
 canControl = 1;
-
+a = 0;
 if !instance_exists(obj_player_boat_hitbox)
 {
     instance_create_depth(x,y,depth,obj_player_boat_hitbox);
 }
-////////if !instance_exists(obj_player_boat_wave)
-////////{
-////////    instance_create_depth(x,y,depth,obj_player_boat_wave);
-////////}
+//if !instance_exists(obj_player_boat_wave)
+//{
+//    instance_create_depth(x,y,depth,obj_player_boat_wave);
+//}
 
 
 hp = 4; // 4 

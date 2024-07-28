@@ -5,7 +5,7 @@ if pos < 3
 {
     if timer!=0 
         timer++;
-    if timer = 200
+    if timer = 250
     {
         if instance_exists(timer_pl) instance_destroy(timer_pl);
         timer = 0;

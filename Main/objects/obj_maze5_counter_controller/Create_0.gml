@@ -9,3 +9,5 @@ t = 0;
 prize1 = 0;
 prize2 = 0;
 prize3 = 0;
+
+rm = room_get_name(room)

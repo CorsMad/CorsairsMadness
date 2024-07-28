@@ -2,6 +2,8 @@
 // You can write your code in this editor
 fnc_lng_pause_ingame();
 menu_input_new();
+kb_gp_input_check();
+
 /*
 var key_down = keyboard_check_pressed(vk_down);
 var key_up = keyboard_check_pressed(vk_up);
@@ -37,15 +39,19 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     index = 0;
                     break;
                 case 1: 
+                    submenu = 333;
+                    index = 0;
+                    break;
+                case 2: 
                     if instance_exists(obj_pause_controller) obj_pause_controller.isPaused = 0;
                     instance_activate_all();
                     instance_destroy();
                     break;
-                case 2: // Выход на карту
+                case 3: // Выход на карту
                     submenu = 10;
                     index = 1;
                     break;        
-                case 3: // Выход в глав меню
+                case 4: // Выход в глав меню
                     submenu = 11;
                     index = 1;
                     break;   
@@ -170,12 +176,12 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     break;
                 case 1:
                     submenu = 0;
-                    index = 2;
+                    index = 3;
                     break;
             }
             break;
         case 11:
-        switch(index)
+			switch(index)
             {
                 case 0:
                     instance_activate_object(obj_music_controller);
@@ -186,7 +192,7 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     break;
                 case 1:
                     submenu = 0;
-                    index = 3;
+                    index = 4;
                     break;
             }
             break;
@@ -328,8 +334,60 @@ if (key_attack || key_jump) && KBControlChange = 0 // accept
                     
             }
             break;
+		case 333:
+			submenu = 0;
+			index = 1;
+			break;
     }
 } else
+
+#region Выход
+
+if keyboard_check_pressed(vk_escape) && KBControlChange = 0 {
+	fnc_snd_play_over(snd_menu_accept);
+	switch(submenu){
+		case 0:
+			if instance_exists(obj_pause_controller) {obj_pause_controller.isPaused = 0;obj_pause_controller.delay = 3}
+            instance_activate_all();
+            instance_destroy();
+			break;
+		case 1:
+			scr_save_settings();
+            submenu = 0;
+            index = 0;
+			break;
+		case 2:
+			submenu = 1;
+            index = 0;
+			break;
+		case 3:
+			submenu = 1;
+            index = 1;
+			break;
+		case 31:
+			submenu = 3;
+            index = 0;
+			break;
+		case 32:
+			submenu = 3;
+            index = 1;
+			break;
+		case 4:
+			submenu = 1;
+            index = 2;
+			break;
+		case 41:
+			submenu = 1;
+            index = 3;
+			break;
+		case 333:
+			submenu = 0;
+			index = 1;
+			break;
+	}
+}
+
+#endregion
 
 #region ползунки музыки с спецэффектов
 
@@ -366,44 +424,175 @@ if KBControlChange = 1 && delay >= 4 &&
     switch(index)
     {
         case 0:
-            pk_up = fnc_keyboard_key_change(keyboard_lastkey);
-            global.up_key = keyboard_lastkey;
+			#region UP key
+			if  fnc_keyboard_key_change(keyboard_lastkey) != pk_down &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_left &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_right &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_jump &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_attack &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_dash &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_use_item &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_use_abil &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_weapon_select{
+				pk_up = fnc_keyboard_key_change(keyboard_lastkey)
+				global.up_key = keyboard_lastkey;
+				fnc_snd_play_onetime(snd_menu_accept);
+			} else fnc_snd_play_onetime(snd_menu_negative);
+		#endregion           
             break;
         case 1:
-            pk_down = fnc_keyboard_key_change(keyboard_lastkey);
-            global.down_key = keyboard_lastkey; 
+			#region DOWN key
+			if  fnc_keyboard_key_change(keyboard_lastkey) != pk_up &&
+			fnc_keyboard_key_change(keyboard_lastkey) != pk_left &&
+			fnc_keyboard_key_change(keyboard_lastkey) != pk_right &&
+			fnc_keyboard_key_change(keyboard_lastkey) != pk_jump &&
+			fnc_keyboard_key_change(keyboard_lastkey) != pk_attack &&
+			fnc_keyboard_key_change(keyboard_lastkey) != pk_dash &&
+			fnc_keyboard_key_change(keyboard_lastkey) != pk_use_item &&
+			fnc_keyboard_key_change(keyboard_lastkey) != pk_use_abil &&
+			fnc_keyboard_key_change(keyboard_lastkey) != pk_weapon_select{
+			fnc_snd_play_onetime(snd_menu_accept);		
+	        pk_down = fnc_keyboard_key_change(keyboard_lastkey);
+			global.down_key = keyboard_lastkey; 
+			} else fnc_snd_play_onetime(snd_menu_negative);
+			#endregion			
             break;
         case 2:
-            pk_left = fnc_keyboard_key_change(keyboard_lastkey);
-            global.left_key = keyboard_lastkey; 
+			#region LEFT key
+			if  fnc_keyboard_key_change(keyboard_lastkey) != pk_up &&
+			    fnc_keyboard_key_change(keyboard_lastkey) != pk_down &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_right &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_jump &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_attack &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_dash &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_use_item &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_use_abil &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_weapon_select{
+				fnc_snd_play_onetime(snd_menu_accept);		
+	            pk_left = fnc_keyboard_key_change(keyboard_lastkey);
+			    global.left_key = keyboard_lastkey; 
+				} else fnc_snd_play_onetime(snd_menu_negative);
+			#endregion			            
             break;
         case 3:
-            pk_right = fnc_keyboard_key_change(keyboard_lastkey);
-            global.right_key = keyboard_lastkey; 
+			#region RIGHT key
+			if  fnc_keyboard_key_change(keyboard_lastkey) != pk_up &&
+			    fnc_keyboard_key_change(keyboard_lastkey) != pk_down &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_left &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_jump &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_attack &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_dash &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_use_item &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_use_abil &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_weapon_select{
+				fnc_snd_play_onetime(snd_menu_accept);		
+	            pk_right = fnc_keyboard_key_change(keyboard_lastkey);
+			    global.right_key = keyboard_lastkey; 
+				} else fnc_snd_play_onetime(snd_menu_negative);
+			#endregion			
             break;
         case 4:
-            pk_jump = fnc_keyboard_key_change(keyboard_lastkey);
-            global.jump_key = keyboard_lastkey; 
+			#region JUMP key
+			if  fnc_keyboard_key_change(keyboard_lastkey) != pk_up &&
+			    fnc_keyboard_key_change(keyboard_lastkey) != pk_down &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_left &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_right &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_attack &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_dash &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_use_item &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_use_abil &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_weapon_select{
+				fnc_snd_play_onetime(snd_menu_accept);		
+	            pk_jump = fnc_keyboard_key_change(keyboard_lastkey);
+			    global.jump_key = keyboard_lastkey; 
+				} else fnc_snd_play_onetime(snd_menu_negative);
+			#endregion			
             break;
         case 5:
-            pk_attack = fnc_keyboard_key_change(keyboard_lastkey);
-            global.attack_key = keyboard_lastkey; 
+			#region ATTACK key
+			if  fnc_keyboard_key_change(keyboard_lastkey) != pk_up &&
+			    fnc_keyboard_key_change(keyboard_lastkey) != pk_down &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_left &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_right &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_jump &&				
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_dash &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_use_item &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_use_abil &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_weapon_select{
+	            fnc_snd_play_onetime(snd_menu_accept);		
+	            pk_attack = fnc_keyboard_key_change(keyboard_lastkey);
+			    global.attack_key = keyboard_lastkey; 
+				} else fnc_snd_play_onetime(snd_menu_negative);
+			#endregion			
             break;
         case 6:
-            pk_dash = fnc_keyboard_key_change(keyboard_lastkey);
-            global.dash_key = keyboard_lastkey; 
+			#region DASH key
+			if  fnc_keyboard_key_change(keyboard_lastkey) != pk_up &&
+			    fnc_keyboard_key_change(keyboard_lastkey) != pk_down &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_left &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_right &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_jump &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_attack &&				
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_use_item &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_use_abil &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_weapon_select{
+	            fnc_snd_play_onetime(snd_menu_accept);		
+	            pk_dash = fnc_keyboard_key_change(keyboard_lastkey);
+			    global.dash_key = keyboard_lastkey; 
+				} else fnc_snd_play_onetime(snd_menu_negative);
+			#endregion			
             break;
         case 7:
-            pk_use_item = fnc_keyboard_key_change(keyboard_lastkey);
-            global.item_key = keyboard_lastkey; 
+			#region ITEM key
+			if  fnc_keyboard_key_change(keyboard_lastkey) != pk_up &&
+			    fnc_keyboard_key_change(keyboard_lastkey) != pk_down &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_left &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_right &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_jump &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_attack &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_dash &&				
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_use_abil &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_weapon_select{
+	            fnc_snd_play_onetime(snd_menu_accept);		
+	            pk_use_item = fnc_keyboard_key_change(keyboard_lastkey);
+			    global.item_key = keyboard_lastkey; 
+				} else fnc_snd_play_onetime(snd_menu_negative);
+			#endregion			
             break;
         case 8:
-            pk_use_abil = fnc_keyboard_key_change(keyboard_lastkey); 
-            global.abil_key = keyboard_lastkey;
+			#region ABIL key
+			if  fnc_keyboard_key_change(keyboard_lastkey) != pk_up &&
+			    fnc_keyboard_key_change(keyboard_lastkey) != pk_down &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_left &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_right &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_jump &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_attack &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_dash &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_use_item &&				
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_weapon_select{
+	            fnc_snd_play_onetime(snd_menu_accept);		
+	            pk_use_abil = fnc_keyboard_key_change(keyboard_lastkey);
+			    global.abil_key = keyboard_lastkey; 
+				} else fnc_snd_play_onetime(snd_menu_negative);
+			#endregion			
             break;
         case 9:
-            pk_weapon_select = fnc_keyboard_key_change(keyboard_lastkey); 
-            global.select_key = keyboard_lastkey;
+			#region SELECT key
+			if  fnc_keyboard_key_change(keyboard_lastkey) != pk_up &&
+			    fnc_keyboard_key_change(keyboard_lastkey) != pk_down &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_left &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_right &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_jump &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_attack &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_dash &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_use_item &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_use_abil &&
+				fnc_keyboard_key_change(keyboard_lastkey) != pk_weapon_select{
+	            fnc_snd_play_onetime(snd_menu_accept);		
+	            pk_weapon_select = fnc_keyboard_key_change(keyboard_lastkey);
+			    global.select_key = keyboard_lastkey; 
+				} else fnc_snd_play_onetime(snd_menu_negative);
+			#endregion			
             break;
     }
     

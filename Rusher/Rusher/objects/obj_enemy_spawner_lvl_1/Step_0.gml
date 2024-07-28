@@ -21,11 +21,11 @@ switch(state){
 		break;
 	case 4: // 
 		t++;
-		if t = 50 scr_enemy_creator(562,80,scr_en_creator_slime_medium());
+		if t = 50 scr_enemy_creator(562,80,choose(scr_en_creator_slime_small1(),scr_en_creator_slime_small2());
 		break;
 	case 5: 
 		t++;
-		if t = 50 scr_enemy_creator(562,80,scr_en_creator_slime_medium());
+		if t = 50 scr_enemy_creator(562,80,choose(scr_en_creator_slime_small1(),scr_en_creator_slime_small2());
 		break;
 	case 6: // lvlup 2 
 		t++;
@@ -53,11 +53,11 @@ switch(state){
 		break;
 	case 12: // lvlup 4
 		t++;
-		if t = 50 scr_enemy_creator(562,80,scr_en_creator_slime_medium());
+		if t = 50 scr_enemy_creator(562,80,scr_en_creator_slime_big());
 		break;
 	case 13: // 
 		t++;
-		if t = 50 scr_enemy_creator(562,80,scr_en_creator_slime_medium());
+		if t = 50 scr_enemy_creator(562,80,scr_en_creator_slime_big());
 		break;
 	case 14: // lvlup 5
 		t++;

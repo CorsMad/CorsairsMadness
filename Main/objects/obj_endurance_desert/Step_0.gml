@@ -63,8 +63,8 @@ switch(state)
 				sc1.y_cr = -16;
 				break;
 			case 100:
-				if obj_Player.x > room_width/2 var sc1 = instance_create_depth(96,240,-1,obj_molded_big_spawner_n)
-				else  var sc1 = instance_create_depth(160,240,depth,obj_molded_big_spawner_n)				
+				if obj_Player.x > room_width/2 var sc1 = instance_create_depth(64,240,-1,obj_molded_big_spawner_n)
+				else  var sc1 = instance_create_depth(480-64,240,depth,obj_molded_big_spawner_n)				
 				sc1.obj_cr = obj_scarab_nest;
 				sc1.y_cr = -16;
 				break;
@@ -96,8 +96,8 @@ switch(state)
 				sc1.y_cr = 16;
 				break;
 			case 60:
-				if obj_Player.x > room_width/2 var sc1 = instance_create_depth(80,240,-1,obj_molded_big_spawner_n)
-				else  var sc1 = instance_create_depth(400,240,depth,obj_molded_big_spawner_n)				
+				if obj_Player.x > room_width/2 var sc1 = instance_create_depth(48,240,-1,obj_molded_big_spawner_n)
+				else  var sc1 = instance_create_depth(480-48,240,depth,obj_molded_big_spawner_n)				
 				sc1.obj_cr = obj_scarab_nest;
 				sc1.y_cr = -16;
 				break;

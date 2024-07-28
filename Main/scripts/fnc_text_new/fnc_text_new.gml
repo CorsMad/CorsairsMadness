@@ -233,3 +233,135 @@ function scr_text_starter_old(_scr_t_max,_typist_spd,_snd)
     iconspd = 0;
     iconspdt= 0;   
 }
+
+function scr_key_sprite_tip(_key_pressed){
+	
+    var _ind; 
+    switch(_key_pressed)
+    {
+        case 9   : _ind =   0; break;//= 'Tab'
+        case 8   : _ind =   1; break;//= 'Backspace'
+        case 160 : _ind =   2; break;//= 'Left Shift'
+        case 162 : _ind =   3; break;//= 'Left Control'
+        case 164 : _ind =   4; break;//= 'Left Alt'
+        case 165 : _ind =   5; break;//= 'Right Alt'
+        case 92  : _ind =   6; break;//=      'Right Wimage_indexows Key'
+        case 163 : _ind =   7; break;//= 'Right Control'
+        case 161 : _ind =   8; break;//= 'Right Shift'
+                     
+        case 12  :  _ind =   9; break;//= 'Num 5' // This is actual Num 5 but when Numlock is off, even Wiki says it "Does Nothing"
+        case 13  :  _ind =   10; break;//= 'Enter'
+                            
+        case 16  :  _ind =   11; break;//= 'Shift'
+        case 17  :  _ind =   12; break;//= 'Control'
+        case 18  :  _ind =   13; break;//= 'Alt'
+        case 19  :  _ind =   14; break;//= 'Pause'
+        case 20  :  _ind =   15; break;//= 'Capslock'
+                            
+        case 32  :  _ind =   16; break;//= 'Space'
+        case 33  :  _ind =   17; break;//= 'Page up'
+        case 34  :  _ind =   18; break;//= 'Page down'
+        case 35  :  _ind =   19; break;//= 'End'
+        case 36  :  _ind =   20; break;//= 'Home'        
+                            
+        case 37  :  _ind =   22; break;//= 'Left'
+        case 38  :  _ind =   23; break;//= 'Up'
+        case 39  :  _ind =   24; break;//= 'Right'
+        case 40  :  _ind =   25; break;//= 'Down'
+                            
+        case 45  :  _ind =   26; break;//= 'Insert'
+        case 46  :  _ind =   27; break;//= 'Delete'
+                            
+        case 48  :  _ind =   28; break;//= '0'
+        case 49  :  _ind =   29; break;//= '1'
+        case 50  :  _ind =   30; break;//= '2'
+        case 51  :  _ind =   31; break;//= '3'
+        case 52  :  _ind =   32; break;//= '4'
+        case 53  :  _ind =   33; break;//= '5'
+        case 54  :  _ind =   34; break;//= '6'
+        case 55  :  _ind =   35; break;//= '7'
+        case 56  :  _ind =   36; break;//= '8'
+        case 57  :  _ind =   37; break;//= '9'
+                            
+        case 65  :  _ind =   38; break;//= 'A'
+        case 66  :  _ind =   39; break;//= 'B'
+        case 67  :  _ind =   40; break;//= 'C'
+        case 68  :  _ind =   41; break;//= 'D'
+        case 69  :  _ind =   42; break;//= 'E'
+        case 70  :  _ind =   43; break;//= 'F'
+        case 71  :  _ind =   44; break;//= 'G'
+        case 72  :  _ind =   45; break;//= 'H'
+        case 73  :  _ind =   46; break;//= 'I'
+        case 74  :  _ind =   47; break;//= 'J'
+        case 75  :  _ind =   48; break;//= 'K'
+        case 76  :  _ind =   49; break;//= 'L'
+        case 77  :  _ind =   50; break;//= 'M'
+        case 78  :  _ind =   51; break;//= 'N'
+        case 79  :  _ind =   52; break;//= 'O'
+        case 80  :  _ind =   53; break;//= 'P'
+        case 81  :  _ind =   54; break;//= 'Q'
+        case 82  :  _ind =   55; break;//= 'R'
+        case 83  :  _ind =   56; break;//= 'S'
+        case 84  :  _ind =   57; break;//= 'T'
+        case 85  :  _ind =   58; break;//= 'U'
+        case 86  :  _ind =   59; break;//= 'V'
+        case 87  :  _ind =   60; break;//= 'W'
+        case 88  :  _ind =   61; break;//= 'X'
+        case 89  :  _ind =   62; break;//= 'Y'
+        case 90  :  _ind =   63; break;//= 'Z'
+        case 91  :  _ind =   64; break;//= 'Wimage_indexows Key'
+                          
+        case 93  :  _ind =   65; break;//= 'Context Menu'
+                           
+        case 96  :  _ind =   66; break;//= 'Num 0'
+        case 97  :  _ind =   67; break;//= 'Num 1'
+        case 98  :  _ind =   68; break;//= 'Num 2'
+        case 99  :  _ind =   69; break;//= 'Num 3'
+        case 100 :  _ind =   70; break;//= 'Num 4'
+        case 101 :  _ind =   71; break;//= 'Num 5'
+        case 102 :  _ind =   72; break;//= 'Num 6'
+        case 103 :  _ind =   73; break;//= 'Num 7'
+        case 104 :  _ind =   74; break;//= 'Num 8'
+        case 105 :  _ind =   75; break;//= 'Num 9'
+                            
+        case 106 :  _ind =   76; break;//= 'Num *'
+        case 107 :  _ind =   77; break;//= 'Num +'
+        case 109 :  _ind =   78; break;//= 'Num -'
+        case 110 :  _ind =   79; break;//= 'Num .'
+        case 111 :  _ind =   80; break;//= 'Num /'
+                            
+        case 112 :  _ind =   81; break;//= 'F1'
+        case 113 :  _ind =   82; break;//= 'F2'
+        case 114 :  _ind =   83; break;//= 'F3'
+        case 115 :  _ind =   84; break;//= 'F4' // was left black
+        case 116 :  _ind =   85; break;//= 'F5' // was left black
+        case 117 :  _ind =   86; break;//= 'F6' // was left black
+        case 118 :  _ind =   87; break;//= 'F7'
+        case 119 :  _ind =   88; break;//= 'F8'
+        case 120 :  _ind =   89; break;//= 'F9' // was left black
+        case 121 :  _ind =   90; break;//= 'F10'
+        case 122 :  _ind =   91; break;//= 'F11'
+        case 123 :  _ind =   92; break;//= 'F12' // was left black
+                            
+        case 144 :  _ind =   93; break;//= 'NUMLOCK'
+                            
+        case 186 :  _ind =   97; break;//= ';'
+        case 187 :  _ind =   98; break;//= '='
+        case 188 :  _ind =   99; break;//= ','
+        case 189 :  _ind =   100;break;//= '-'
+        case 190 :  _ind =   101;break;//= '.'
+        case 191 :  _ind =   102;break;//= '/'
+        case 192 :  _ind =   103;break;//= "'" // actually `
+                           
+        case 219 :  _ind =   104;break;//= '['
+        case 220 :  _ind =   105;break;//= '\'
+        case 221 :  _ind =   106;break;//= ']'
+        case 222 :  _ind =   107;break;//= "\#" // actually # but that needs to be escaped
+                
+        case 223 :  _ind =   108;break;//= "`" // actually ` but that needs to be escaped   
+    }    
+    return(_ind);
+
+}
+
+

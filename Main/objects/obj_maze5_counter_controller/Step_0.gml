@@ -51,3 +51,11 @@ if (StartEvent = 1) {
     }
     
 }
+	
+	
+rm = room_get_name(room)
+#region Комната
+if (rm = "S1_r17" || rm = "S1_r18") {
+} else instance_destroy();
+#endregion
+

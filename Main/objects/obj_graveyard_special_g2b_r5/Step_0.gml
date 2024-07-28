@@ -3,9 +3,9 @@
 
 if place_meeting(x,y,obj_Player)
 {
-    for (var i = 0; i < 3; i+=1;) {
-        instance_create_depth(16+i*16,128,100,obj_block_shadow);        
-    }   
+    //for (var i = 0; i < 3; i+=1;) {
+    //    instance_create_depth(16+i*16,128,100,obj_block_shadow);        
+    //}   
     for (var k = 0; k < 3; k+=1;) {
         instance_create_depth(384,160+k*16,100,obj_block_shadow);        
     }

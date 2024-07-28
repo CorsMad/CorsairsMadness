@@ -9,7 +9,7 @@ if canControl = 0 {
 
 if canControl = 1
 {
-
+scr_island_escape();
 fnc_lng_jmerch_c();
 player_input();
 

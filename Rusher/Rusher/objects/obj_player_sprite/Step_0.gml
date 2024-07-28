@@ -16,6 +16,7 @@ switch(state){
 				switch(room){
 					case Lvl1:	instance_create_depth(0,0,0,obj_enemy_spawner_lvl_1); break;
 					case Lvl2:	instance_create_depth(0,0,0,obj_enemy_spawner_lvl_2); break;
+					case Lvl3:	instance_create_depth(0,0,0,obj_enemy_spawner_lvl_3); break;
 				}
 			#endregion					
 		}

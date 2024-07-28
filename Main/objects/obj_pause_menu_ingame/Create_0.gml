@@ -2,8 +2,23 @@
 // You can write your code in this editor
 depth = -1111111111111111111111111;
 darkessence_start = 0;
-
+menu_input_new();
 fnc_lng_pause_ingame();
+image_speed = 0.2;
+pos_index = 0;
+
+isKeyboard = 0;
+
+if instance_exists(obj_Player) {
+		if obj_Player.SpecAbilMask=0 pos_index_max = 1; else {
+		pos_index_max = 2;
+		page_pos_tip = obj_Player.SpecAbilMask;
+	}		
+} else {
+	pos_index_max = 1;
+}
+
+
 /*
 #region mainmenu
 menu[0, 0] = "options";

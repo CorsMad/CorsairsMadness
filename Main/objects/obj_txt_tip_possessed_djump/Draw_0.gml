@@ -35,7 +35,3 @@ draw_text(64,180-8-16-3,text4);
 
 // на земле справа
 draw_text(64,240-13-32,text5);
-/*
-// 3
-draw_set_halign(fa_center);
-draw_text(room_width/2,220,text6);

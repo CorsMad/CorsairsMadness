@@ -12,10 +12,10 @@ switch(state){
             case 10: image_index =2 ;break;   
             case 15: image_index =3 ;break;   
             case 20: sprite_index = spr_bossmerch_phase2_head_idle;image_speed = 1;break;   
-            case 380: sprite_index = spr_bossmerch_phase3_appear;fnc_snd_play_onetime(snd_di_boss_appear)image_index = 3;image_speed = 0;break;
-            case 385: image_index = 2;break;
-            case 390: image_index = 1;break;
-            case 395: image_index = 0;break;
+            case 280: sprite_index = spr_bossmerch_phase3_appear;fnc_snd_play_onetime(snd_di_boss_appear)image_index = 3;image_speed = 0;break;
+            case 285: image_index = 2;break;
+            case 290: image_index = 1;break;
+            case 295: image_index = 0;break;
         }
         
         
@@ -25,15 +25,15 @@ switch(state){
     		var _proj1 =  instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-1,obj_bossmerch_phase1_proj1_1);
             _proj1.spd = 2;
          }
-         if t = 90{
+         if t = 70{
     		var _proj2 =   instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-1,obj_bossmerch_phase1_proj1_1);
-            _proj2.spd = 2;
+            _proj2.spd = 2.5;
          }
-         if t = 130 {
+         if t = 90 {
     		var _proj3 =  instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-1,obj_bossmerch_phase1_proj1_1);
-            _proj3.spd = 2;
+            _proj3.spd = 3;
          }
-		if t = 400 {
+		if t = 300 {
 			instance_destroy();
 			fol.state = next_state;
 			fol.t = 0;
@@ -47,8 +47,7 @@ switch(state){
             case 10: image_index = 2;break;
             case 15: image_index = 3;break;
             case 20: sprite_index = spr_bossmerch_phase3_side_idle;image_speed = 1;break;
-			case 50:	
-            
+			case 50:	    
 				for (var i = 0; i < 6; i += 1)
 				{
 				    var proj1 = instance_create_depth(x,y,depth-1,obj_bossmerch_phase3_proj1);
@@ -56,11 +55,19 @@ switch(state){
 						proj1.direction = 270 + 18*i;
 				}					
 				break;
-            case 400: sprite_index = spr_bossmerch_phase3_appear_side;fnc_snd_play_onetime(snd_di_boss_appear)image_index = 3;image_speed = 0;break;
-            case 405: image_index = 2;break;
-            case 410: image_index = 1;break;
-            case 415: image_index = 0;break;
-			case 420:
+			case 150:	    
+				var _proj3 =  instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-1,obj_bossmerch_phase1_proj1_1);
+				_proj3.spd = 2.5;					
+				break;
+			case 180:	    
+				var _proj3 =  instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-1,obj_bossmerch_phase1_proj1_1);
+				_proj3.spd = 2.5;					
+				break;
+            case 380: sprite_index = spr_bossmerch_phase3_appear_side;fnc_snd_play_onetime(snd_di_boss_appear)image_index = 3;image_speed = 0;break;
+            case 385: image_index = 2;break;
+            case 390: image_index = 1;break;
+            case 395: image_index = 0;break;
+			case 400:
 				instance_destroy();
 				fol.state = next_state;
 				fol.t = 0;
@@ -82,11 +89,19 @@ switch(state){
                     proj1.direction = 270 - 18*i
 				}					
 				break;
-			case 400: sprite_index = spr_bossmerch_phase3_appear_side;image_index = 3;fnc_snd_play_onetime(snd_di_boss_appear)image_speed = 0;break;
-            case 405: image_index = 2;break;
-            case 410: image_index = 1;break;
-            case 415: image_index = 0;break;
-			case 420:
+			case 150:	    
+				var _proj3 =  instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-1,obj_bossmerch_phase1_proj1_1);
+				_proj3.spd = 2.5;					
+				break;
+			case 180:	    
+				var _proj3 =  instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-1,obj_bossmerch_phase1_proj1_1);
+				_proj3.spd = 2.5;					
+				break;
+			case 380: sprite_index = spr_bossmerch_phase3_appear_side;image_index = 3;fnc_snd_play_onetime(snd_di_boss_appear)image_speed = 0;break;
+            case 385: image_index = 2;break;
+            case 390: image_index = 1;break;
+            case 395: image_index = 0;break;
+			case 400:
 				instance_destroy();
 				fol.state = next_state;
 				fol.t = 0;

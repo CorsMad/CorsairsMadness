@@ -76,3 +76,23 @@ switch(global.choosed_item)
         }
     break;
 }
+
+
+/*
+#region Cheats
+
+if keyboard_check_pressed(ord("1")) {if global.hp > 0 global.hp = global.hp_max;}
+if keyboard_check_pressed(ord("2")) global.mana = global.mana_max;
+if keyboard_check_pressed(ord("3")) global.gold += 500;
+if keyboard_check_pressed(ord("4")) global.darkessence += 500;
+if keyboard_check_pressed(ord("5")) global.secrets += 1;
+
+//if keyboard_check_pressed(ord("Q"))	SpecAbilMask= 1;
+//if keyboard_check_pressed(ord("W"))	SpecAbilMask= 2;
+//if keyboard_check_pressed(ord("E"))	SpecAbilMask= 3;
+//if keyboard_check_pressed(ord("R"))	SpecAbilMask= 4;
+//if keyboard_check_pressed(ord("T"))	SpecAbilMask= 5;
+
+
+
+#endregion

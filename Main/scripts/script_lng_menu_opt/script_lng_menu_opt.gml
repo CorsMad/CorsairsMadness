@@ -1147,12 +1147,17 @@ function fnc_lng_pause_ingame(){
         
             #region mainmenu
             menu[0, 0] = "options";
-            menu[0, 1] = "\nresume";
-            menu[0, 2] = "\nback to map";
-            menu[0, 3] = "\nexit to main menu";
+            menu[0, 1] = "tips";
+            menu[0, 2] = "\nresume";
+            menu[0, 3] = "\nback to map";
+            menu[0, 4] = "\nexit to main menu";            
 
             #endregion
 
+			#region ЗPOS TIP
+			menu[333,0] = "back";
+			#endregion
+			
             #region options
             menu[1, 0] = "Graphics";
             menu[1, 1] = "Controls";
@@ -1252,12 +1257,17 @@ All unsaved progress will be lost";
         
         #region mainmenu
         menu[0, 0] = "опции";
-        menu[0, 1] = "\nвозобновить";
-        menu[0, 2] = "\nна карту";
-        menu[0, 3] = "\nв главное меню";
+        menu[0, 1] = "советы";
+        menu[0, 2] = "\nвозобновить";
+        menu[0, 3] = "\nна карту";
+        menu[0, 4] = "\nв главное меню";
 
         #endregion
-
+		
+		#region ЗPOS TIP
+			menu[333,0] = "назад";
+			#endregion
+			
         #region options
         menu[1, 0] = "Графика";
         menu[1, 1] = "управление";
@@ -1358,12 +1368,17 @@ All unsaved progress will be lost";
         
             #region mainmenu
             menu[0, 0] = "opciones";
-            menu[0, 1] = "\nreanudar";
-            menu[0, 2] = "\nvolver al mapa";
-            menu[0, 3] = "\nsalir al menú principal";
+            menu[0, 1] = "Consejos";
+            menu[0, 2] = "\nreanudar";
+            menu[0, 3] = "\nvolver al mapa";
+            menu[0, 4] = "\nsalir al menú principal";
 
             #endregion
-
+			
+			#region ЗPOS TIP
+			menu[333,0] = "atrás";
+			#endregion
+			
             #region options
             menu[1, 0] = "gráficos";
             menu[1, 1] = "controles";
@@ -1465,12 +1480,17 @@ todo el progreso no guardado se perderá";
         
             #region chinese
             menu[0, 0] = "游戏设置";
-            menu[0, 1] = "\n收回";
-            menu[0, 2] = "\n返回地图";
-            menu[0, 3] = "\n退到主菜單";
+            menu[0, 1] = "助";
+            menu[0, 2] = "\n收回";
+            menu[0, 3] = "\n返回地图";
+            menu[0, 4] = "\n退到主菜單";
 
             #endregion
-
+			
+			#region ЗPOS TIP
+			menu[333,0] = "回去";
+			#endregion
+			
             #region options
             menu[1, 0] = "图形";
             menu[1, 1] = "控制键";
@@ -1569,12 +1589,17 @@ todo el progreso no guardado se perderá";
         
             #region mainmenu
             menu[0, 0] = "opções";
-            menu[0, 1] = "\nreanudar";
-            menu[0, 2] = "\nvolver al mapa";
-            menu[0, 3] = "\nsalir al menú principal";
+            menu[0, 1] = "dicas";
+            menu[0, 2] = "\nreanudar";
+            menu[0, 3] = "\nvolver al mapa";
+            menu[0, 4] = "\nsalir al menú principal";
 
             #endregion
-
+			
+			#region ЗPOS TIP
+			menu[333,0] = "voltar";
+			#endregion
+			
             #region options
             menu[1, 0] = "gráficos";
             menu[1, 1] = "controlos";
@@ -1674,12 +1699,17 @@ todo os progresso não guardado será perdido";
         
             #region mainmenu
             menu[0, 0] = "opções";
-            menu[0, 1] = "\nretomar";
-            menu[0, 2] = "\nvoltar ao mapa";
-            menu[0, 3] = "\nsair para o menu principal";
+            menu[0, 1] = "dicas";
+            menu[0, 2] = "\nretomar";
+            menu[0, 3] = "\nvoltar ao mapa";
+            menu[0, 4] = "\nsair para o menu principal";
 
             #endregion
-
+			
+			#region ЗPOS TIP
+			menu[333,0] = "voltar";
+			#endregion
+			
             #region options
             menu[1, 0] = "gráficos";
             menu[1, 1] = "controles";
@@ -1780,12 +1810,17 @@ todo o progresso não salvo será perdido";
         
             #region mainmenu
             menu[0, 0] = "Opcje";
-            menu[0, 1] = "\nWznów";
-            menu[0, 2] = "\nWróć na mapę";
-            menu[0, 3] = "\nWyjście do menu głównego";
+            menu[0, 1] = "wskazówki";
+            menu[0, 2] = "\nWznów";
+            menu[0, 3] = "\nWróć na mapę";
+            menu[0, 4] = "\nWyjście do menu głównego";
 
             #endregion
-
+			
+			#region ЗPOS TIP
+			menu[333,0] = "Powrót";
+			#endregion
+			
             #region options
             menu[1, 0] = "Grafika";
             menu[1, 1] = "Sterowanie";
@@ -1884,12 +1919,17 @@ Stracisz cały nie zapisany postęp.";
         
             #region mainmenu
             menu[0, 0] = "オプション";
-            menu[0, 1] = "\n再開";
-            menu[0, 2] = "\nマップに戻る";
-            menu[0, 3] = "\nメインメニューに戻る";
+            menu[0, 1] = "ヒント";
+            menu[0, 2] = "\n再開";
+            menu[0, 3] = "\nマップに戻る";
+            menu[0, 4] = "\nメインメニューに戻る";
 
             #endregion
-
+			
+			#region ЗPOS TIP
+			menu[333,0] = "バック";
+			#endregion
+			
             #region options
             menu[1, 0] = "グラフィック";
             menu[1, 1] = "コントロール";
@@ -1989,12 +2029,17 @@ Stracisz cały nie zapisany postęp.";
         
             #region mainmenu
             menu[0, 0] = "Optionen";
-            menu[0, 1] = "\nfortsetzen";
-            menu[0, 2] = "\nzurück zur Karte";
-            menu[0, 3] = "\nzurück zum Hauptmenü";
+            menu[0, 1] = "Tipps";
+            menu[0, 2] = "\nfortsetzen";
+            menu[0, 3] = "\nzurück zur Karte";
+            menu[0, 4] = "\nzurück zum Hauptmenü";
 
             #endregion
-
+			
+			#region ЗPOS TIP
+			menu[333,0] = "zurück";
+			#endregion
+			
             #region options
             menu[1, 0] = "Grafik";
             menu[1, 1] = "Steuerung";
@@ -2096,12 +2141,17 @@ alle nicht gespeicherten Fortschritte gehen verloren";
         
             #region mainmenu
             menu[0, 0] = "options";
-            menu[0, 1] = "\nreprendre";
-            menu[0, 2] = "\nretour à la carte";
-            menu[0, 3] = "\nquitter le menu principal";
+            menu[0, 1] = "Conseils";
+            menu[0, 2] = "\nreprendre";
+            menu[0, 3] = "\nretour à la carte";
+            menu[0, 4] = "\nquitter le menu principal";
 
             #endregion
-
+			
+			#region ЗPOS TIP
+			menu[333,0] = "retour";
+			#endregion
+			
              #region options
             menu[1, 0] = "graphiques";
             menu[1, 1] = "commandes";
@@ -2203,12 +2253,17 @@ toute progression non sauvegardée sera perdue";
         
             #region mainmenu
             menu[0, 0] = "Impostazioni di gioco";
-            menu[0, 1] = "\nResume ";
-            menu[0, 2] = "\nTorna alla mappa";
-            menu[0, 3] = "\nMenu principale";
+            menu[0, 1] = "Suggerimenti";
+            menu[0, 2] = "\nResume ";
+            menu[0, 3] = "\nTorna alla mappa";
+            menu[0, 4] = "\nMenu principale";
 
             #endregion
-
+			
+			#region ЗPOS TIP
+			menu[333,0] = "Torna";
+			#endregion
+			
             #region options
             menu[1, 0] = "Grafica";
             menu[1, 1] = "Tasti";

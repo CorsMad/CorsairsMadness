@@ -2,17 +2,17 @@
 /// @description Insert description here
 // You can write your code in this editor
 randomise();
-instance_create_depth(0,0,0,DEBUG);
+instance_create_depth(0,0,-15000,DEBUG);
 
 global.Continue = 0;
 
-global.TargetX      = 816;
-global.TargetY      = 240;
-global.TargetRoom   = J2_r2;
+global.TargetX      = 1104;
+global.TargetY      = 96;
+global.TargetRoom   = PD1_r9;
 
-global.fTargetX     = 96;
-global.fTargetY     = 256;
-global.fTargetRoom  = TESTROOM;
+global.fTargetX     = 160;
+global.fTargetY     = 160;
+global.fTargetRoom  = PD1_r9
 
 
 ////////////////////////////////////////
@@ -23,42 +23,49 @@ global.dia_snpc = 0;    //0
 global.dia_gnpc = 0;    //0
 global.dia_lnpc = 0;    //0
 
-global.dia_hpmana_jake   = 0;	 //0
-global.dia_hpmana_pew    = 0;	 //0
-global.dia_hpmana_sully  = 0;	 //0
-global.dia_hpmana_petro  = 0;	 //0
-global.dia_hpmana_bonnie = 0;	 //0
+global.dia_hpmana_jake   = 1;	 //0
+global.dia_hpmana_pew    = 1;	 //0
+global.dia_hpmana_sully  = 1;	 //0
+global.dia_hpmana_petro  = 1;	 //0
+global.dia_hpmana_bonnie = 1;	 //0
 
+//0
+    
+    global.saved_jungle  = 1;  //0
+    global.saved_desert  = 1;  //0
+    global.saved_snow    = 1;  //0
+    global.saved_shadow  = 1;  //0
+    global.saved_vulcano = 1;  //0
 ////////////////////////////////////////
 
 
 instance_create_depth(0,0,0,obj_music_controller);
 
-global.language = 10;
+global.language = 0;
 
 #region Завершеннсоть уровней
     
     global.completed_JF1 = 0;   //0
-    global.completed_JF2 = 0;   //0
+    global.completed_JF2 = 1;   //0
                                 //0
     global.completed_PD1 = 0;   //0
     global.completed_PD2 = 0;   //0
                                 //0
     global.completed_PS1 = 0;   //0
-    global.completed_PS2 = 0;   //0
+    global.completed_PS2 = 1;   //0
                                 //0
     global.completed_PG1 = 0;   //0
     global.completed_PG2 = 0;   //0
                                 //0
     global.completed_PL1 = 0;   //0
-    global.completed_PL2 = 0;   //0
+    global.completed_PL2 = 1;   //0
         
         
-    global.completedJungle = 0;    
-    global.completedDesert = 0;    
+    global.completedJungle = 1;    
+    global.completedDesert = 1;    
     global.completedSnow = 0;    
     global.completedShadow = 0;    
-    global.completedLava = 0;    
+    global.completedLava = 1;    
         
     #endregion
     
@@ -85,13 +92,7 @@ global.language = 10;
     global.dia_shadowComt = 2; 
     global.dia_lavaComt = 2;
      
-    //0
     
-    global.saved_jungle  = 0;  //0
-    global.saved_desert  = 0;  //0
-    global.saved_snow    = 0;  //0
-    global.saved_shadow  = 0;  //0
-    global.saved_vulcano = 0;  //0
     
     
     
@@ -156,21 +157,21 @@ global.shop_parrotcage_can_upgrade2 = 0;
 #region Покупки человека
 
 //якорь
-global.purch_anch1 = 1;			//0
-global.purch_anch2 = 1;			//0
-global.purch_anch3 = 1;			//0
+global.purch_anch1 = 0;			//0
+global.purch_anch2 = 0;			//0
+global.purch_anch3 = 0;			//0
 // Бомба						
-global.purch_bomb1 = 1;			//0
-global.purch_bomb2 = 1;			//0
-global.purch_bomb3 = 1;			//0
+global.purch_bomb1 = 0;			//0
+global.purch_bomb2 = 0;			//0
+global.purch_bomb3 = 0;			//0
 // Sparkle						
-global.purch_sparkle1 = 1;		//0
-global.purch_sparkle2 = 1;		//0
-global.purch_sparkle3 = 1;		//0
+global.purch_sparkle1 = 0;		//0
+global.purch_sparkle2 = 0;		//0
+global.purch_sparkle3 = 0;		//0
 // Eparrot						
-global.purch_eparrot1 = 1;		//0
-global.purch_eparrot2 = 1;		//0
-global.purch_eparrot3 = 1;		//0
+global.purch_eparrot1 = 0;		//0
+global.purch_eparrot2 = 0;		//0
+global.purch_eparrot3 = 0;		//0
 
 #endregion
 
@@ -201,23 +202,23 @@ global.purch_parrotcage3 = 0;
 
 
 #region Игрок
-global.hp = 5;           // 5
-global.hp_max = 5;       // 5
+global.hp = 7;           // 5
+global.hp_max = 7;       // 5
 global.hp_add = 0;       // 0
 global.mana_add = 0;       // 0
 global.choosed_item = 0; // 2 -тоорп // 3 - бомба // 4 - eball // 5 - parrot 
 global.choosed_item_tier = 0; // ТИР предмета
 global.choosed_itemboat = 0; // 1 - быстровыстрел 2 - 2пистолета  3-бландербасс - 4 - попугай
 global.choosed_itemboat_tier = 0 // ТИП предмета для лодки
-global.superattack1 = 2;// Суператаки  max 2  default - 0
-global.superattack2 = 1;// Суператаки  max 1  default - 0
-global.superattack3 = 1;// Суператаки  max 1  default - 0
+global.superattack1 = 0;// Суператаки  max 2  default - 0
+global.superattack2 = 0;// Суператаки  max 1  default - 0
+global.superattack3 = 0;// Суператаки  max 1  default - 0
 global.PlayerTransition = 0;
-global.mana = 3//3;
-global.mana_max = 5; //7
-global.gold = 10000 //global.money_saved;          // 0
+global.mana = 4//3;
+global.mana_max = 4; //7
+global.gold = 50000 //global.money_saved;          // 0
 global.gold_prelevel = 0;
-global.darkessence = 955//global.darkessence_saved;
+global.darkessence = 50000//global.darkessence_saved;
 
 #region Объявление переменных
     scr_create_array_objects();
@@ -255,8 +256,8 @@ audio_group_load(SFXvolume);
 
 global.resolution = 0;
 
-global.windowWidth = 1600;
-global.windowHeight = 900;
+global.windowWidth = 1920;
+global.windowHeight = 1080;
 window_set_position(display_get_width()/2 - global.windowWidth/2, display_get_height()/2 - global.windowHeight/2);
 
 // Установка громкости звука
@@ -281,11 +282,11 @@ global.money_saved = 0;
 
 // Установка глобальной эссенции
 
-global.darkessence_saved = 0;
+global.darkessence_saved = 300;
 
 // Установка секретов
 
-global.secrets = 35;
+global.secrets = 1;
 
 // Установка ограничений игрока
 
@@ -526,7 +527,7 @@ global.chest_g2p_r4 = 1;
 #endregion
 
 #region Секреты
-global.secrets_g_endurance = 0;
+global.secrets_g_endurance = 1;
 
 global.secrets_g1_s1 = 0;
 global.secrets_g1_r12 = 0;

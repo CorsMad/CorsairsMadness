@@ -52,9 +52,9 @@ switch(state){
 		if t = 29 {do {place_rand = irandom(3);} until (place_rand!=old_place) }
 		if t > 30 {
 			old_place = place_rand;
-			if point_distance(x, y, target_x, target_y) > 2
+			if point_distance(x, y, target_x, target_y) > 3
 			{
-			    move_towards_point(target_x, target_y, 2);
+			    move_towards_point(target_x, target_y, 3);
 			}
 			else {
 				state = 1.1;	
@@ -71,7 +71,7 @@ switch(state){
             fnc_snd_play_onetime(snd_di_boss_appear)
 			var i = instance_create_depth(x,y,depth,obj_bossmerch_phase3_mask);
 			i.fol = id;
-			i.enemy_hp = enemy_hp;
+			i.enemy_hp = enemy_hp;			
 			i.next_state = 2;
 		}
 		#endregion
@@ -83,9 +83,9 @@ switch(state){
 		
 		if t > 30 {
 			old_place = place_rand;
-			if point_distance(x, y, target_x, target_y) > 2
+			if point_distance(x, y, target_x, target_y) > 3
 			{
-			    move_towards_point(target_x, target_y, 2);
+			    move_towards_point(target_x, target_y, 3);
 			}
 			else {
 				state = 2.1;	
@@ -103,7 +103,7 @@ switch(state){
 			var i = instance_create_depth(x,y,depth,obj_bossmerch_phase3_mask);
 			i.fol = id;
 			i.enemy_hp = enemy_hp;
-			i.next_state = 3;
+			i.next_state = 4;
 		}
 		#endregion
 		break;
@@ -141,9 +141,9 @@ switch(state){
 		#region Переход на бок и обстрел 
 		t++;
 		if t > 30 {
-			if point_distance(x, y, 32, 80) > 2
+			if point_distance(x, y, 32, 80) > 3
 			{
-			    move_towards_point(32, 80, 2);
+			    move_towards_point(32, 80, 3);
 			}
 			else {
 				state = 4.1;	

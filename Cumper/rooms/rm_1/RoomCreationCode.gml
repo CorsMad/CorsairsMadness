@@ -1,0 +1,1 @@
+if !instance_exists(obj_cube) instance_create_depth(200,918,0,obj_cube);

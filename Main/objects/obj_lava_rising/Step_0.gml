@@ -10,7 +10,7 @@ if (isOn = 1) {
 		if t > 100 {			
 			vspd = vspd_spd;
 			if instance_exists(obj_Player){
-				if abs(y-obj_Player.y) < 96 vspd_spd = lerp(vspd_spd,-0.3,0.05) else vspd_spd = lerp(vspd_spd,-0.9,0.05) 
+				if abs(y-obj_Player.y) < 96 vspd_spd = lerp(vspd_spd,-0.15,0.05) else vspd_spd = lerp(vspd_spd,-0.9,0.05) 
 			}
 		}
 		

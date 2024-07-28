@@ -9,3 +9,4 @@ spd = 20;
 spr_x = 0;
 
 but_spr = 0;
+onoff_inv = 0;

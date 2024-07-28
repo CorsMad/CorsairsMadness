@@ -22,7 +22,7 @@ switch(state){
 	case 2:
 		move_y -= move_y_spd;	
 			
-		if move_y < -2100 {
+		if move_y < -2150 {
 			fnc_msc_stop_play_slow();
 			instance_create_depth(0,0,depth-1000,obj_black_screen_to_start);
 			state = 3;	

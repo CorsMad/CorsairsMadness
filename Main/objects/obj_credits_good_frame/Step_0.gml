@@ -22,7 +22,7 @@ switch(state){
 	case 2:
 	 
 		move_y -= move_y_spd;		
-		if move_y < -2100 {state = 3;fnc_msc_stop_play_slow();}
+		if move_y < -2150 {state = 3;fnc_msc_stop_play_slow();}
 	
 		break;
 	case 3:

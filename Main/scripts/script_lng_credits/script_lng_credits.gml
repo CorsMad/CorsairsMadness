@@ -12,22 +12,24 @@ function script_lng_credits(){
 				menu[0,14] = "[fnt_pixel][c_yellow]Music[/c]";					
 				
 				menu[0,31] = "[fnt_pixel][c_yellow]Translation[/c]";
+				
+				menu[0,35] = "[fnt_pixel][c_yellow]Lead QA Madnetic Games[/c]";
 
-				menu[0,35] = "[fnt_pixel][c_yellow]Testing[/c]";
+				menu[0,35+4] = "[fnt_pixel][c_yellow]Testing[/c]";
 							
-				menu[0,64] = "[fnt_pixel][c_yellow]Special Thanks[/c]";
+				menu[0,64+4] = "[fnt_pixel][c_yellow]Special Thanks[/c]";
 
-				menu[0,73] = "[fnt_pixel][c_yellow]Made with[/c]";		
+				menu[0,73+5] = "[fnt_pixel][c_yellow]Made with[/c]";		
 					
-				menu[0,79] = "[fnt_pixel][c_yellow]Extra Special Thanks[/c]";		
+				menu[0,79+5] = "[fnt_pixel][c_yellow]Extra Special Thanks[/c]";		
 
-				menu[0,92] = "[fnt_pixel]Thank you to my [c_yellow]wife[/c] ";	
+				menu[0,92+5] = "[fnt_pixel]Thank you to my [c_yellow]wife[/c] ";	
 				
-				menu[0,93] = "[fnt_pixel]from the bottom of my heart";	
+				menu[0,93+5] = "[fnt_pixel]from the bottom of my heart";	
 				
-				menu[0,104] = "[fnt_pixel]And thank to [c_yellow]you[/c]";	
+				menu[0,104+5] = "[fnt_pixel]And thank to [c_yellow]you[/c]";	
 				
-				menu[0,105] = "[fnt_pixel]for playing my game !";	
+				menu[0,105+5] = "[fnt_pixel]for playing my game !";	
 				
 				//menu[0,116] = "[fnt_pixel]The End";
 		
@@ -66,83 +68,87 @@ function script_lng_credits(){
 	menu[0,32] = "[fnt_pixel]Adrian <Czester16> Jabłonka";
 	menu[0,33] = "";
 	menu[0,34] = "";
-	menu[0,36] = "[fnt_pixel]Bulat Shakirov";
-	menu[0,37] = "[fnt_pixel]Aleksandra D";
-	menu[0,38] = "[fnt_pixel]Michał M";
-	menu[0,39] = "[fnt_pixel]Krzysiek R";
-	menu[0,40] = "[fnt_pixel]Jakub S";
-	menu[0,41] = "[fnt_pixel]Krzys iek F";
-	menu[0,42] = "[fnt_pixel]Krzysiek O";
-	menu[0,43] = "[fnt_pixel]Magdalen Z";
-	menu[0,44] = "[fnt_pixel]Marek C";
-	menu[0,45] = "[fnt_pixel]Marek M";
-	menu[0,46] = "[fnt_pixel]Martyna Z";
-	menu[0,47] = "[fnt_pixel]Marysia K";
-	menu[0,48] = "[fnt_pixel]Mateusz K";
-	menu[0,49] = "[fnt_pixel]Michał P";
-	menu[0,50] = "[fnt_pixel]Michał R";
-	menu[0,51] = "[fnt_pixel]Ola N";
-	menu[0,52] = "[fnt_pixel]Tomek S";
-	menu[0,53] = "[fnt_pixel]Wiktor Ch";
-	menu[0,54] = "[fnt_pixel]jakub W";
-	menu[0,55] = "[fnt_pixel]Radek G";
-	menu[0,56] = "[fnt_pixel]Wojtek Z";
-	menu[0,57] = "[fnt_pixel]Marta N";
-	menu[0,58] = "[fnt_pixel]Michał K";
-	menu[0,59] = "[fnt_pixel]Oskar L";
-	menu[0,60] = "[fnt_pixel]Wojtek P";
-	menu[0,61] = "[fnt_pixel]Arkadiusz B";
-	menu[0,62] = "";
-	menu[0,63] = "";
-	menu[0,65] = "[fnt_pixel]Bulat Shakirov";
-	menu[0,66] = "[fnt_pixel]rizorpolder";
-	menu[0,67] = "[fnt_pixel]Mr D";
-	menu[0,68] = "[fnt_pixel]Pavel Ryazhskikh";
-	menu[0,69] = "[fnt_pixel]Teotosian";
-	menu[0,70] = "[fnt_pixel]lyucii";		
-	menu[0,71] = "";		
-	menu[0,72] = "";		
-	menu[0,74] = "[fnt_pixel]Game Maker Studio 2";		
-	menu[0,75] = "[fnt_pixel]Aseprite";		
-	menu[0,76] = "[fnt_pixel]Pyxel Edit";		
-	menu[0,77] = "";		
-	menu[0,78] = "";				
-	menu[0,80] = "[fnt_pixel]Adrian <Czester16> Jabłonka";		
-	menu[0,81] = "[fnt_pixel]Bartlomey Bartula";		
-	menu[0,82] = "";		
-	menu[0,83] = "";	
-	menu[0,84] = "";		
-	menu[0,85] = "";
-	menu[0,86] = "";		
-	menu[0,87] = "";	
-	menu[0,88] = "";		
-	menu[0,89] = "";
-	menu[0,90] = "";
-	menu[0,91] = "";
+	menu[0,36] = "[fnt_pixel]Adrian Latuszek";
+	menu[0,37] = "";
+	menu[0,38] = "";
+	menu[0,36+4] = "[fnt_pixel]Bulat Shakirov";
+	menu[0,37+4] = "[fnt_pixel]Aleksandra D";
+	menu[0,38+4] = "[fnt_pixel]Michał M";
+	menu[0,39+4] = "[fnt_pixel]Krzysiek R";
+	menu[0,40+4] = "[fnt_pixel]Jakub S";
+	menu[0,41+4] = "[fnt_pixel]Krzys iek F";
+	menu[0,42+4] = "[fnt_pixel]Krzysiek O";
+	menu[0,43+4] = "[fnt_pixel]Magdalen Z";
+	menu[0,44+4] = "[fnt_pixel]Marek C";
+	menu[0,45+4] = "[fnt_pixel]Marek M";
+	menu[0,46+4] = "[fnt_pixel]Martyna Z";
+	menu[0,47+4] = "[fnt_pixel]Marysia K";
+	menu[0,48+4] = "[fnt_pixel]Mateusz K";
+	menu[0,49+4] = "[fnt_pixel]Michał P";
+	menu[0,50+4] = "[fnt_pixel]Michał R";
+	menu[0,51+4] = "[fnt_pixel]Ola N";
+	menu[0,52+4] = "[fnt_pixel]Tomek S";
+	menu[0,53+4] = "[fnt_pixel]Wiktor Ch";
+	menu[0,54+4] = "[fnt_pixel]jakub W";
+	menu[0,55+4] = "[fnt_pixel]Radek G";
+	menu[0,56+4] = "[fnt_pixel]Wojtek Z";
+	menu[0,57+4] = "[fnt_pixel]Marta N";
+	menu[0,58+4] = "[fnt_pixel]Michał K";
+	menu[0,59+4] = "[fnt_pixel]Oskar L";
+	menu[0,60+4] = "[fnt_pixel]Wojtek P";
+	menu[0,61+4] = "[fnt_pixel]Arkadiusz B";
+	menu[0,62+4] = "";
+	menu[0,63+4] = "";
+	menu[0,65+4] = "[fnt_pixel]Bulat Shakirov";
+	menu[0,66+4] = "[fnt_pixel]hypnorus";
+	menu[0,66+5] = "[fnt_pixel]rizorpolder";
+	menu[0,67+5] = "[fnt_pixel]Mr D";
+	menu[0,68+5] = "[fnt_pixel]Pavel Ryazhskikh";
+	menu[0,69+5] = "[fnt_pixel]Teotosian";
+	menu[0,70+5] = "[fnt_pixel]lyucii";		
+	menu[0,71+5] = "";		
+	menu[0,72+5] = "";		
+	menu[0,74+5] = "[fnt_pixel]Game Maker Studio 2";		
+	menu[0,75+5] = "[fnt_pixel]Aseprite";		
+	menu[0,76+5] = "[fnt_pixel]Pyxel Edit";		
+	menu[0,77+5] = "";		
+	menu[0,78+5] = "";				
+	menu[0,80+5] = "[fnt_pixel]Adrian <Czester16> Jabłonka";		
+	menu[0,81+5] = "[fnt_pixel]Bartlomey Bartula";		
+	menu[0,82+5] = "";		
+	menu[0,83+5] = "";	
+	menu[0,84+5] = "";		
+	menu[0,85+5] = "";
+	menu[0,86+5] = "";		
+	menu[0,87+5] = "";	
+	menu[0,88+5] = "";		
+	menu[0,89+5] = "";
+	menu[0,90+5] = "";
+	menu[0,91+5] = "";
 	
 	
 	
 	
-	menu[0,94] = "";	
-	menu[0,95] = "";	
-	menu[0,96] = "";	
-	menu[0,97] = "";	
-	menu[0,98] = "";	
-	menu[0,99] = "";	
-	menu[0,100] = "";	
-	menu[0,101] = "";
-	menu[0,102] = "";	
-	menu[0,103] = "";
-	menu[0,106] = "";
-	menu[0,107] = "";
-	menu[0,108] = "";
-	menu[0,109] = "";
-	menu[0,110] = "";
-	menu[0,111] = "";
-	menu[0,112] = "";
-	menu[0,113] = "";
-	menu[0,114] = "";
-	menu[0,115] = "";
+	menu[0,94+5] = "";	
+	menu[0,95+5] = "";	
+	menu[0,96+5] = "";	
+	menu[0,97+5] = "";	
+	menu[0,98+5] = "";	
+	menu[0,99+5] = "";	
+	menu[0,100+5] = "";	
+	menu[0,101+5] = "";
+	menu[0,102+5] = "";	
+	menu[0,103+5] = "";
+	menu[0,106+5] = "";
+	menu[0,107+5] = "";
+	menu[0,108+5] = "";
+	menu[0,109+5] = "";
+	menu[0,110+5] = "";
+	menu[0,111+5] = "";
+	menu[0,112+5] = "";
+	menu[0,113+5] = "";
+	menu[0,114+5] = "";
+	menu[0,115+5] = "";
 }
 
 function script_lng_credits_mainmenu(){
@@ -158,13 +164,15 @@ function script_lng_credits_mainmenu(){
 				
 				cr_menu[0,31] = "[fnt_pixel][c_yellow]Translation[/c]";
 
-				cr_menu[0,35] = "[fnt_pixel][c_yellow]Testing[/c]";
+				cr_menu[0,35] = "[fnt_pixel][c_yellow]Lead QA Madnetic Games[/c]";
+				
+				cr_menu[0,35+4] = "[fnt_pixel][c_yellow]Testing[/c]";
 							
-				cr_menu[0,64] = "[fnt_pixel][c_yellow]Special Thanks[/c]";
+				cr_menu[0,64+4] = "[fnt_pixel][c_yellow]Special Thanks[/c]";
 
-				cr_menu[0,73] = "[fnt_pixel][c_yellow]Made with[/c]";		
+				cr_menu[0,73+5] = "[fnt_pixel][c_yellow]Made with[/c]";		
 					
-				cr_menu[0,79] = "[fnt_pixel][c_yellow]Extra Special Thanks[/c]";		
+				cr_menu[0,79+5] = "[fnt_pixel][c_yellow]Extra Special Thanks[/c]";		
 				
 				//menu[0,116] = "[fnt_pixel]The End";
 		
@@ -203,83 +211,53 @@ function script_lng_credits_mainmenu(){
 	cr_menu[0,32] = "[fnt_pixel]Adrian <Czester16> Jabłonka";
 	cr_menu[0,33] = "";
 	cr_menu[0,34] = "";
-	cr_menu[0,36] = "[fnt_pixel]Bulat Shakirov";
-	cr_menu[0,37] = "[fnt_pixel]Aleksandra D";
-	cr_menu[0,38] = "[fnt_pixel]Michał M";
-	cr_menu[0,39] = "[fnt_pixel]Krzysiek R";
-	cr_menu[0,40] = "[fnt_pixel]Jakub S";
-	cr_menu[0,41] = "[fnt_pixel]Krzys iek F";
-	cr_menu[0,42] = "[fnt_pixel]Krzysiek O";
-	cr_menu[0,43] = "[fnt_pixel]Magdalen Z";
-	cr_menu[0,44] = "[fnt_pixel]Marek C";
-	cr_menu[0,45] = "[fnt_pixel]Marek M";
-	cr_menu[0,46] = "[fnt_pixel]Martyna Z";
-	cr_menu[0,47] = "[fnt_pixel]Marysia K";
-	cr_menu[0,48] = "[fnt_pixel]Mateusz K";
-	cr_menu[0,49] = "[fnt_pixel]Michał P";
-	cr_menu[0,50] = "[fnt_pixel]Michał R";
-	cr_menu[0,51] = "[fnt_pixel]Ola N";
-	cr_menu[0,52] = "[fnt_pixel]Tomek S";
-	cr_menu[0,53] = "[fnt_pixel]Wiktor Ch";
-	cr_menu[0,54] = "[fnt_pixel]jakub W";
-	cr_menu[0,55] = "[fnt_pixel]Radek G";
-	cr_menu[0,56] = "[fnt_pixel]Wojtek Z";
-	cr_menu[0,57] = "[fnt_pixel]Marta N";
-	cr_menu[0,58] = "[fnt_pixel]Michał K";
-	cr_menu[0,59] = "[fnt_pixel]Oskar L";
-	cr_menu[0,60] = "[fnt_pixel]Wojtek P";
-	cr_menu[0,61] = "[fnt_pixel]Arkadiusz B";
-	cr_menu[0,62] = "";
-	cr_menu[0,63] = "";
-	cr_menu[0,65] = "[fnt_pixel]Bulat Shakirov";
-	cr_menu[0,66] = "[fnt_pixel]rizorpolder";
-	cr_menu[0,67] = "[fnt_pixel]Mr D";
-	cr_menu[0,68] = "[fnt_pixel]Pavel Ryazhskikh";
-	cr_menu[0,69] = "[fnt_pixel]Teotosian";
-	cr_menu[0,70] = "[fnt_pixel]lyucii";		
-	cr_menu[0,71] = "";		
-	cr_menu[0,72] = "";		
-	cr_menu[0,74] = "[fnt_pixel]Game Maker Studio 2";		
-	cr_menu[0,75] = "[fnt_pixel]Aseprite";		
-	cr_menu[0,76] = "[fnt_pixel]Pyxel Edit";		
-	cr_menu[0,77] = "";		
-	cr_menu[0,78] = "";				
-	cr_menu[0,80] = "[fnt_pixel]Adrian <Czester16> Jabłonka";		
-	cr_menu[0,81] = "[fnt_pixel]Bartlomey Bartula";		
-	cr_menu[0,82] = "";		
-	cr_menu[0,83] = "";	
-	cr_menu[0,84] = "";		
-	cr_menu[0,85] = "";
-	cr_menu[0,86] = "";		
-	cr_menu[0,87] = "";	
-	cr_menu[0,88] = "";		
-	cr_menu[0,89] = "";
-	cr_menu[0,90] = "";
-	cr_menu[0,91] = "";
-	
-	
-	
-	
-	cr_menu[0,94] = "";	
-	cr_menu[0,95] = "";	
-	cr_menu[0,96] = "";	
-	cr_menu[0,97] = "";	
-	cr_menu[0,98] = "";	
-	cr_menu[0,99] = "";	
-	cr_menu[0,100] = "";	
-	cr_menu[0,101] = "";
-	cr_menu[0,102] = "";	
-	cr_menu[0,103] = "";
-	cr_menu[0,106] = "";
-	cr_menu[0,107] = "";
-	cr_menu[0,108] = "";
-	cr_menu[0,109] = "";
-	cr_menu[0,110] = "";
-	cr_menu[0,111] = "";
-	cr_menu[0,112] = "";
-	cr_menu[0,113] = "";
-	cr_menu[0,114] = "";
-	cr_menu[0,115] = "";
+	cr_menu[0,36] = "[fnt_pixel]Adrian Latuszek";
+	cr_menu[0,37] = "";
+	cr_menu[0,38] = "";
+	cr_menu[0,36+4] = "[fnt_pixel]Bulat Shakirov";
+	cr_menu[0,37+4] = "[fnt_pixel]Aleksandra D";
+	cr_menu[0,38+4] = "[fnt_pixel]Michał M";
+	cr_menu[0,39+4] = "[fnt_pixel]Krzysiek R";
+	cr_menu[0,40+4] = "[fnt_pixel]Jakub S";
+	cr_menu[0,41+4] = "[fnt_pixel]Krzys iek F";
+	cr_menu[0,42+4] = "[fnt_pixel]Krzysiek O";
+	cr_menu[0,43+4] = "[fnt_pixel]Magdalen Z";
+	cr_menu[0,44+4] = "[fnt_pixel]Marek C";
+	cr_menu[0,45+4] = "[fnt_pixel]Marek M";
+	cr_menu[0,46+4] = "[fnt_pixel]Martyna Z";
+	cr_menu[0,47+4] = "[fnt_pixel]Marysia K";
+	cr_menu[0,48+4] = "[fnt_pixel]Mateusz K";
+	cr_menu[0,49+4] = "[fnt_pixel]Michał P";
+	cr_menu[0,50+4] = "[fnt_pixel]Michał R";
+	cr_menu[0,51+4] = "[fnt_pixel]Ola N";
+	cr_menu[0,52+4] = "[fnt_pixel]Tomek S";
+	cr_menu[0,53+4] = "[fnt_pixel]Wiktor Ch";
+	cr_menu[0,54+4] = "[fnt_pixel]jakub W";
+	cr_menu[0,55+4] = "[fnt_pixel]Radek G";
+	cr_menu[0,56+4] = "[fnt_pixel]Wojtek Z";
+	cr_menu[0,57+4] = "[fnt_pixel]Marta N";
+	cr_menu[0,58+4] = "[fnt_pixel]Michał K";
+	cr_menu[0,59+4] = "[fnt_pixel]Oskar L";
+	cr_menu[0,60+4] = "[fnt_pixel]Wojtek P";
+	cr_menu[0,61+4] = "[fnt_pixel]Arkadiusz B";
+	cr_menu[0,62+4] = "";
+	cr_menu[0,63+4] = "";
+	cr_menu[0,65+4] = "[fnt_pixel]Bulat Shakirov";
+	cr_menu[0,66+4] = "[fnt_pixel]hypnorus";
+	cr_menu[0,66+5] = "[fnt_pixel]rizorpolder";
+	cr_menu[0,67+5] = "[fnt_pixel]Mr D";
+	cr_menu[0,68+5] = "[fnt_pixel]Pavel Ryazhskikh";
+	cr_menu[0,69+5] = "[fnt_pixel]Teotosian";
+	cr_menu[0,70+5] = "[fnt_pixel]lyucii";		
+	cr_menu[0,71+5] = "";		
+	cr_menu[0,72+5] = "";		
+	cr_menu[0,74+5] = "[fnt_pixel]Game Maker Studio 2";		
+	cr_menu[0,75+5] = "[fnt_pixel]Aseprite";		
+	cr_menu[0,76+5] = "[fnt_pixel]Pyxel Edit";		
+	cr_menu[0,77+5] = "";		
+	cr_menu[0,78+5] = "";				
+	cr_menu[0,80+5] = "[fnt_pixel]Adrian <Czester16> Jabłonka";		
+	cr_menu[0,81+5] = "[fnt_pixel]Bartlomey Bartula";		
 }
 
 function script_lng_after_credits(){
