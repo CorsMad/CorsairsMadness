@@ -1,4 +1,3 @@
-
 if place_meeting(x+hspd,y,obj_wall) {
 	firing = 0;
     while !place_meeting(x+sign(hspd),y,obj_wall) {
@@ -17,16 +16,6 @@ if place_meeting(x,y+vspd,obj_wall) {
     vspd = 0;
 }
 y += vspd;
-
-if sliding = 1 {
-    hspd = lerp(hspd,-8,0.05);   
-    vspd = lerp(vspd,8,0.05);   
-}
-
-isGrounded = place_meeting(x,y+1,obj_wall);
-
-
-
 if vspd>14 vspd = 14
 if !place_meeting(x,y+1,obj_wall) && firing = 0 && sliding = 0 vspd+=0.25;
 if place_meeting(x,y+1,obj_wall) && side = 0 hspd = 0;

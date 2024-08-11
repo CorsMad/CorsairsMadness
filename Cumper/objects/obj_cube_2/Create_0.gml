@@ -10,7 +10,6 @@ sliding = 0;
 jpower = 0.1;
 side = 0;
 air_t = 0;
-isGrounded = 0;
 instance_create_depth(x,y,depth+1,obj_dash_aoe)
 bigjump= 0;
 image_xscale = 1.5;
